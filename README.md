@@ -1,4 +1,4 @@
-add this to your descriptor or else mod will not run bc with this it allow to run on trial of allegiance (without this replace mod only work on AAT)
+add this to your descriptor or else mod will not run bc with this it allow to run on trial of allegiance (without this replace mod only work on AAT) and click raw or replace paths below will be bugged lol
 replace_path="common/abilities"
 replace_path="common/opinion_modifiers"
 replace_path="common/ai_areas"
