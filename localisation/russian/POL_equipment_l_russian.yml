@@ -1,0 +1,132 @@
+﻿l_russian:
+  #AIR 
+ POL_fighter_equipment_0: "PZL.11"
+ POL_fighter_equipment_0_short: "PZL.11"
+ POL_cv_fighter_equipment_0: "PZL.11 Флотый" #NT!
+ POL_cv_fighter_equipment_0_short: "PZL.11 Флотый" #NT!
+ POL_fighter_equipment_1: "PZL.50 Ястшиб" #NT!
+ POL_fighter_equipment_1_short: "Ястржаб" #NT!
+ POL_cv_fighter_equipment_1: "PZL.50 Ястшиб Флоты" #NT!
+ POL_cv_fighter_equipment_1_short: "Ястшиб Флоты" #NT!
+ POL_fighter_equipment_2: "PZL.56 Кания" #NT!
+ POL_fighter_equipment_2_short: "Кания" #NT!
+ POL_cv_fighter_equipment_2: "PZL.56 Кания Флоти" #NT!
+ POL_cv_fighter_equipment_2_short: "Кания Флоти" #NT!
+ POL_fighter_equipment_3: "PZL.62 Пустулка" #NT!
+ POL_fighter_equipment_3_short: "Пустулка" #NT!
+ POL_cv_fighter_equipment_3: "PZL.62 Пустулка Флотый" #NT!
+ POL_cv_fighter_equipment_3_short: "Пустулка Флоты" #NT!
+ POL_jet_fighter_equipment_1: "PZL.71 Озел" #NT!
+ POL_jet_fighter_equipment_1_short: "Озел" #NT!
+ POL_jet_fighter_equipment_2: "PZL.76 Сенп" #NT!
+ POL_jet_fighter_equipment_2_short: "Сенп" #NT!
+ POL_CAS_equipment_1: "PZL.23 Карась" #NT!
+ POL_CAS_equipment_1_short: "Карась" #NT!
+ POL_cv_CAS_equipment_1: "PZL.23 Карась Флоты" #NT!
+ POL_cv_CAS_equipment_1_short: "Карась Флоты" #NT!
+ POL_CAS_equipment_2: "PZL.46 Сумма" #NT!
+ POL_CAS_equipment_2_short: "Сумма" #NT!
+ POL_cv_CAS_equipment_2: "PZL.46 Сумма флота" #NT!
+ POL_cv_CAS_equipment_2_short: "Сумма Флоты" #NT!
+ POL_CAS_equipment_3: "PZL.59 Оконь" #NT!
+ POL_CAS_equipment_3_short: "Оконь" #NT!
+ POL_cv_CAS_equipment_3: "PZL.59 Оконь Флоты" #NT!
+ POL_cv_CAS_equipment_3_short: "Оконь Флоты" #NT!
+ POL_heavy_fighter_equipment_1: "PZL.38 Вилк" #NT!
+ POL_heavy_fighter_equipment_1_short: "Уилк" #NT!
+ POL_heavy_fighter_equipment_2: "PZL.54 Рысь" #NT!
+ POL_heavy_fighter_equipment_2_short: "Рысь" #NT!
+ POL_heavy_fighter_equipment_3: "PZL.65 Лис" #NT!
+ POL_heavy_fighter_equipment_3_short: "Лис" #NT!
+ POL_tac_bomber_equipment_0: "LWS-6 Зубр" #NT!
+ POL_tac_bomber_equipment_0_short: "Зубр" #NT!
+ POL_tac_bomber_equipment_1: "PZL.37 Лось" #NT!
+ POL_tac_bomber_equipment_1_short: "Лось" #NT!
+ POL_tac_bomber_equipment_2: "PZL.49 Мишь" #NT!
+ POL_tac_bomber_equipment_2_short: "Мишь" #NT!
+ POL_tac_bomber_equipment_3: "PZL.63 Дзик" #NT!
+ POL_tac_bomber_equipment_3_short: "Дзик" #NT!
+ POL_jet_tac_bomber_equipment_1: "PZL.70 Борсук" #NT!
+ POL_jet_tac_bomber_equipment_1_short: "Борсук" #NT!
+ POL_jet_tac_bomber_equipment_2: "PZL.78 Розомак" #NT!
+ POL_jet_tac_bomber_equipment_2_short: "Розомак" #NT!
+ POL_nav_bomber_equipment_1: "PZL.57 Фока" #NT!
+ POL_nav_bomber_equipment_1_short: "Фока" #NT!
+ POL_cv_nav_bomber_equipment_1: "PZL.57 Фока Флотый" #NT!
+ POL_cv_nav_bomber_equipment_1_short: "Фока Флотый" #NT!
+ POL_nav_bomber_equipment_2: "PZL.60 Лев Морски" #NT!
+ POL_nav_bomber_equipment_2_short: "Лью Морски" #NT!
+ POL_cv_nav_bomber_equipment_2: "PZL.60 Лев Морски Флоти" #NT!
+ POL_cv_nav_bomber_equipment_2_short: "Лев Морски Флоти" #NT!
+ POL_nav_bomber_equipment_3: "PZL.75 Морс" #NT!
+ POL_nav_bomber_equipment_3_short: "Морс" #NT!
+ POL_cv_nav_bomber_equipment_3: "PZL.75 Морс Флоти" #NT!
+ POL_cv_nav_bomber_equipment_3_short: "Морс Флоти" #NT!
+ POL_strat_bomber_equipment_1: "PZL.58 Пщола" #NT!
+ POL_strat_bomber_equipment_1_short: "Пщола" #NT!
+ POL_strat_bomber_equipment_2: "PZL.61 Оса" #NT!
+ POL_strat_bomber_equipment_2_short: "Оса" #NT!
+ POL_strat_bomber_equipment_3: "PZL.72 Сершень" #NT!
+ POL_strat_bomber_equipment_3_short: "Сершень" #NT!
+ POL_jet_strat_bomber_equipment_1: "ПЗЛ 79 Комар" #NT!
+ POL_jet_strat_bomber_equipment_1_short: "Комар" #NT!
+  #ARMOR 
+ POL_gw_tank_equipment: "Рено ФТ" #NT!
+ POL_gw_tank_equipment_short: "Рено ФТ" #NT!
+ POL_light_tank_equipment_1: "TKS"
+ POL_light_tank_equipment_1_short: "TKS"
+ POL_light_tank_equipment_2: "7TP"
+ POL_light_tank_equipment_2_short: "7TP"
+ POL_light_tank_equipment_3: "График 9TP" #NT!
+ POL_light_tank_equipment_3_short: "9TP"
+ POL_medium_tank_equipment_1: "10TP"
+ POL_medium_tank_equipment_1_short: "10TP"
+ POL_medium_tank_equipment_2: "14TP"
+ POL_medium_tank_equipment_2_short: "14TP"
+ POL_medium_tank_equipment_3: "41ТП Гусарз" #NT!
+ POL_medium_tank_equipment_3_short: "Гусарц" #NT!
+ POL_heavy_tank_equipment_1: "27TP"
+ POL_heavy_tank_equipment_1_short: "27TP"
+ POL_heavy_tank_equipment_2: "32TP"
+ POL_heavy_tank_equipment_2_short: "32TP"
+ POL_heavy_tank_equipment_3: "45ТП Бестия" #NT!
+ POL_heavy_tank_equipment_3_short: "Бестия" #NT!
+ POL_super_heavy_tank_equipment_1: "52ТП Бегемот" #NT!
+ POL_super_heavy_tank_equipment_1_short: "Бегемот" #NT!
+ POL_modern_tank_equipment_1: "57ТП Улан" #NT!
+ POL_modern_tank_equipment_1_short: "Улан" #NT!
+  #NAVAL 
+ POL_submarine_1: "Класс Уилка" #NT!
+ POL_submarine_1_desc: "Класс Wilk состоял из трех подводных лодок, построенных французами для ВМС Польши и вошедших в строй в начале 1930-х годов. Они были основаны на конструкции французского класса Saphir. Это были довольно крупные подводные лодки водоизмещением около 1000 тонн. Они были вооружены шестью 550-мм торпедными аппаратами и могли погружаться на глубину до 80 метров." #NT!
+ POL_submarine_2: "Орзел Класс" #NT!
+ POL_submarine_2_desc: "Класс Orzeł состоял из двух подводных лодок, построенных в Нидерландах для ВМС Польши. Корабли были построены всего за несколько месяцев до немецкого вторжения. Это были большие подводные лодки водоизмещением 1100 тонн. Они были вооружены двенадцатью 550-мм торпедными аппаратами и имели глубину погружения 80 метров." #NT!
+ POL_submarine_3: "Сокол Класс" #NT!
+ POL_submarine_3_desc: "Две подводные лодки класса «Сокол» были британскими подводными лодками класса U, построенными для ВМС Польши в изгнании в 1941–42 годах. Корабли водоизмещением 540 тонн и были вооружены четырьмя 533-мм торпедными аппаратами. У них был хороший комплект британских радаров и гидролокаторов, а также глубина погружения 60 метров." #NT!
+ POL_submarine_4: "Дельфин Класс" #NT!
+ POL_destroyer_1: "Уичер Класс" #NT!
+ POL_destroyer_1_desc: "Два эсминца класса Wicher были первыми крупными надводными кораблями польского флота и вошли в строй в период с 1930 по 1932 год. Они были большими, водоизмещением 1540 тонн. По проекту они были вооружены четырьмя 130-мм/40-мм пушками образца 1924 года, однако незадолго до немецкого вторжения они были модернизированы до 120-мм шведских орудий. Также были усовершенствованы торпедные аппараты и зенитное вооружение." #NT!
+ POL_destroyer_2: "Гром Класс" #NT!
+ POL_destroyer_2_desc: "Два эсминца класса «Гром» были построены в Великобритании для ВМС Польши и вступили в строй в 1937 году. Они были одними из крупнейших и быстроходных эсминцев Второй мировой войны. Их водоизмещение составляло почти 2000 тонн, а их основное вооружение состояло из пяти 120-мм/50-мм пушек Bofors M34. У них также было шесть 533-мм торпедных аппаратов и хороший противолодочный комплекс." #NT!
+ POL_destroyer_3: "Класс Пиорун" #NT!
+ POL_destroyer_3_desc: "Польский эсминец Piorun — британский эсминец класса N, построенный для ВМС Польши в изгнании и вошедший в строй в 1940 году. Он водоизмещением 1770 тонн, обладал приличной скоростью и надежностью. Он был вооружен шестью 120-мм/45-мм пушками QF Mk XII в качестве основного орудия, а также имел пять 533-мм торпедных аппаратов, достойное противолодочное оборудование и новейшие на тот момент британские радар и гидролокатор." #NT!
+ POL_destroyer_4: "Класс Бурза" #NT!
+ POL_light_cruiser_1: "Варшавский класс" #NT!
+ POL_light_cruiser_2: "Лодзь Класс" #NT!
+ POL_light_cruiser_3: "Львовский класс" #NT!
+ POL_light_cruiser_4: "Познань Класс" #NT!
+ POL_heavy_cruiser_1: "Неман Класс" #NT!
+ POL_heavy_cruiser_2: "Висла Класс" #NT!
+ POL_heavy_cruiser_3: "Жук Класс" #NT!
+ POL_heavy_cruiser_4: "Сан Класс" #NT!
+ POL_battle_cruiser_1: "Гданьск Класс" #NT!
+ POL_battle_cruiser_2: "Цешин Класс" #NT!
+ POL_battleship_1: "Пяст Класс" #NT!
+ POL_battleship_2: "Класс Пшемыслид" #NT!
+ POL_battleship_3: "Андегавен Класс" #NT!
+ POL_battleship_4: "Класс Ягеллон" #NT!
+ POL_SH_battleship_1: "Класс Пилсудского" #NT!
+ POL_SH_battleship_2: "Класс Понятовского" #NT!
+ POL_carrier_1: "Ян Собеский Класс" #NT!
+ POL_carrier_2: "Класс Зигмунт Ваза" #NT!
+ POL_carrier_3: "Станислав Август Класс" #NT!
+ POL_carrier_4: "Класс Фредерика Августа" #NT!

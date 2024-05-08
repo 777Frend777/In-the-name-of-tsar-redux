@@ -1,0 +1,70 @@
+﻿##### Division Templates #####
+
+division_template = {
+	name = "Milizia Volontaria per la Sicurezza Nazionale"		
+	division_names_group = ITA_MIL_01 
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+##### OOB #####
+units = {
+	division = {
+		name = "1. Milizia"
+		location = 6862
+		division_template = "Milizia Volontaria per la Sicurezza Nazionale"
+	}
+	division = {
+		name = "6. Milizia"
+		location = 6862
+		division_template = "Milizia Volontaria per la Sicurezza Nazionale"
+	}
+	division = {
+		name = "2. Milizia"
+		location = 11751
+		division_template = "Milizia Volontaria per la Sicurezza Nazionale"
+	}
+	division = {
+		name = "8. Milizia"
+		location = 11751
+		division_template = "Milizia Volontaria per la Sicurezza Nazionale"
+	}
+	division = {
+		name = "3. Milizia"
+		location = 9794
+		division_template = "Milizia Volontaria per la Sicurezza Nazionale"
+	}
+	division = {
+		name = "9. Milizia"
+		location = 9794
+		division_template = "Milizia Volontaria per la Sicurezza Nazionale"
+	}
+	division = {
+		name = "4. Milizia"
+		location = 3910
+		division_template = "Milizia Volontaria per la Sicurezza Nazionale"
+	}
+	division = {
+		name = "7. Milizia"
+		location = 3910
+		division_template = "Milizia Volontaria per la Sicurezza Nazionale"
+	}
+	division = {
+		name = "5. Milizia"
+		location = 9838
+		division_template = "Milizia Volontaria per la Sicurezza Nazionale"
+	}
+	division = {
+		name = "10. Milizia"
+		location = 9838
+		division_template = "Milizia Volontaria per la Sicurezza Nazionale"
+	}
+}

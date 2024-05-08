@@ -1,0 +1,665 @@
+﻿############## FRENCH EVENTS #################
+
+add_namespace = fcolony
+
+#################################
+#								#
+#								#
+#		COLONIAL EVENTS 		#
+#								#
+#################################
+#Peaceful rebellion North Africa
+country_event = {
+	id = fcolony.1
+	title = fcolony.1.t
+	desc = fcolony.1.d
+	picture = GFX_report_event_generic_panzer_attack
+
+	is_triggered_only = yes
+
+	option = {
+		name = fcolony.1.a	#sounds good
+		end_puppet = FNA
+		}
+}
+#Armed rebellion Western Africa
+country_event = {
+	id = fcolony.2
+	title = fcolony.2.t
+	desc = fcolony.2.d
+	picture = GFX_report_event_generic_panzer_attack
+
+	is_triggered_only = yes
+
+	option = {
+		name = fcolony.2.a	#sounds good
+		end_puppet = FTU
+		}
+}
+#Peaceful rebellion Equatorial Africa
+country_event = {
+	id = fcolony.3
+	title = fcolony.3.t
+	desc = fcolony.3.d
+	picture = GFX_report_event_generic_panzer_attack
+
+	is_triggered_only = yes
+
+	option = {
+		name = fcolony.3.a	#sounds good
+		end_puppet = FEA
+		}
+}
+#Peaceful rebellion Indochina
+country_event = {
+	id = fcolony.4
+	title = fcolony.4.t
+	desc = fcolony.4.d
+	picture = GFX_report_event_generic_panzer_attack
+
+	is_triggered_only = yes
+
+	option = {
+		name = fcolony.4.a	#sounds good
+		end_puppet = FIC
+		}
+}
+#Peaceful rebellion Syria
+country_event = {
+	id = fcolony.15
+	title = fcolony.15.t
+	desc = fcolony.15.d
+	picture = GFX_report_event_generic_panzer_attack
+
+	is_triggered_only = yes
+
+	option = {
+		name = fcolony.15.a	#sounds good
+		end_puppet = SYR
+		}
+}
+#Peace Revolution in Colonies
+country_event = {
+	id = fcolony.9
+	title = fcolony.9.t
+	desc = fcolony.9.d
+	picture = GFX_report_event_generic_panzer_attack
+
+	is_triggered_only = yes
+
+	option = {
+		name = fcolony.9.a	#sounds good
+		add_stability = -0.01
+		}
+}
+#Incertainty in French Colonies / Northern Africa
+news_event = { 
+    id = fcolony.5
+    title = fcolony.5.t
+    desc = fcolony.5.d
+    picture = news_event_012
+	major = yes
+
+        is_triggered_only = yes
+        option = {
+		name = fcolony.5.a
+		trigger = {
+			NOT = {
+				TAG = FRA
+			}
+			}
+	}
+			option = {
+		name = fcolony.5.b
+			trigger = { TAG = FRA }
+	}
+}
+#Incertainty in French Colonies / Western Africa
+news_event = { 
+    id = fcolony.6
+    title = fcolony.6.t
+    desc = fcolony.6.d
+    picture = news_event_012
+	major = yes
+
+        is_triggered_only = yes
+        option = {
+		name = fcolony.6.a
+		trigger = {
+			NOT = {
+				TAG = FRA
+			}
+			}
+	}
+			option = {
+		name = fcolony.6.b
+			trigger = { TAG = FRA }
+	}
+}
+#Incertainty in French Colonies / Equatorial Africa
+news_event = { 
+    id = fcolony.7
+    title = fcolony.7.t
+    desc = fcolony.7.d
+    picture = news_event_012
+	major = yes
+
+        is_triggered_only = yes
+        option = {
+		name = fcolony.7.a
+		trigger = {
+			NOT = {
+				TAG = FRA
+			}
+			}
+	}
+			option = {
+		name = fcolony.7.b
+			trigger = { TAG = FRA }
+	}
+}	
+#Incertainty in French Colonies / Indochina
+news_event = { 
+    id = fcolony.8
+    title = fcolony.8.t
+    desc = fcolony.8.d
+    picture = news_event_012
+	major = yes
+
+        is_triggered_only = yes
+        option = {
+		name = fcolony.8.a
+		trigger = {
+			NOT = {
+				TAG = FRA
+			}
+			}
+	}
+			option = {
+		name = fcolony.8.b
+			trigger = { TAG = FRA }
+	}
+} 
+#Incertainty in French Colonies / Syria
+news_event = { 
+    id = fcolony.16
+    title = fcolony.16.t
+    desc = fcolony.16.d
+    picture = news_event_012
+	major = yes
+
+        is_triggered_only = yes
+        option = {
+		name = fcolony.16.a
+		trigger = {
+			NOT = {
+				TAG = FRA
+			}
+			}
+	}
+			option = {
+		name = fcolony.16.b
+			trigger = { TAG = FRA }
+	}
+} 
+#Free Referendum North Africa
+country_event = {
+	id = fcolony.10
+	title = fcolony.10.t
+	desc = fcolony.10.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = fcolony.10.a	#
+		 ai_chance = {
+			factor = 90 }
+			give_guarantee = FNA
+		end_puppet = FNA
+		}
+	option = {
+		name = fcolony.10.b	#
+		 ai_chance = {
+			factor = 10 }
+			FRA = {
+				create_wargoal = { type = puppet_wargoal_focus target = FNA }
+				remove_ideas = FRA_disjointed_government
+						start_civil_war = {
+							ideology = communism
+							size = 0.3
+						}
+						
+					}
+			hidden_effect = {
+			end_puppet = FNA
+			}		
+		}	
+}
+#Free Referendum Western Africa
+country_event = {
+	id = fcolony.11
+	title = fcolony.11.t
+	desc = fcolony.11.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = fcolony.11.a	#
+		 ai_chance = {
+			factor = 90 }
+		give_guarantee = FTU	
+		end_puppet = FTU
+		}
+	option = {
+		name = fcolony.11.b	#
+		 ai_chance = {
+			factor = 10 }
+			FRA = {
+				create_wargoal = { type = puppet_wargoal_focus target = FTU }
+				remove_ideas = FRA_disjointed_government
+						start_civil_war = {
+							ideology = communism
+							size = 0.3
+						}
+						
+					}
+			hidden_effect = {
+			end_puppet = FTU
+			}		
+		}	
+}
+#Free Referendum Equatorial Africa
+country_event = {
+	id = fcolony.12
+	title = fcolony.12.t
+	desc = fcolony.12.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = fcolony.12.a	#
+		 ai_chance = {
+			factor = 90 }
+		give_guarantee = FEA		
+		end_puppet = FEA
+		}
+	option = {
+		name = fcolony.12.b	#
+		 ai_chance = {
+			factor = 10 }
+			FRA = {
+				create_wargoal = { type = puppet_wargoal_focus target = FEA }
+				remove_ideas = FRA_disjointed_government
+						start_civil_war = {
+							ideology = communism
+							size = 0.3
+						}
+						
+					}
+			hidden_effect = {
+			end_puppet = FEA
+			}		
+		}	
+}
+#Free Referendum Indochina
+country_event = {
+	id = fcolony.13
+	title = fcolony.13.t
+	desc = fcolony.13.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = fcolony.13.a	#
+		 ai_chance = {
+			factor = 90 }
+		give_guarantee = FIC	
+		end_puppet = FIC
+		}
+	option = {
+		name = fcolony.13.b	#
+		 ai_chance = {
+			factor = 10 }
+			FRA = {
+				create_wargoal = { type = puppet_wargoal_focus target = FIC }
+				remove_ideas = FRA_disjointed_government
+						start_civil_war = {
+							ideology = communism
+							size = 0.3
+						}
+						
+					}
+			hidden_effect = {
+			end_puppet = FIC
+			}		
+		}	
+}
+#Free Referendum Syria
+country_event = {
+	id = fcolony.17
+	title = fcolony.17.t
+	desc = fcolony.17.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = fcolony.17.a	#
+		 ai_chance = {
+			factor = 90 }
+		give_guarantee = SYR	
+		end_puppet = SYR
+		}
+	option = {
+		name = fcolony.17.b	#
+		 ai_chance = {
+			factor = 10 }
+			FRA = {
+				create_wargoal = { type = puppet_wargoal_focus target = SYR }
+				remove_ideas = FRA_disjointed_government
+						start_civil_war = {
+							ideology = communism
+							size = 0.3
+						}
+						
+					}
+			hidden_effect = {
+			end_puppet = SYR
+			}		
+		}	
+}
+#World revolution in Colonies
+country_event = {
+	id = fcolony.14
+	title = fcolony.14.t
+	desc = fcolony.14.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = fcolony.14.a	#sounds good
+		add_stability = -0.01
+		}
+}
+#World revolution in Colonies
+country_event = {
+	id = fcolony.9
+	title = fcolony.9.t
+	desc = fcolony.9.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = fcolony.9.a	#sounds good
+		add_stability = -0.01
+		}
+}
+#Turks Invade Syria
+country_event = {
+	id = fcolony.18
+	title = fcolony.18.t
+	desc = fcolony.18.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = fcolony.18.a	#
+		 ai_chance = {
+			factor = 90 }
+		TUR = {
+		annex_country = { target = SYR transfer_troops = yes }
+		}
+		}
+	option = {
+		name = fcolony.18.b	#
+		 ai_chance = {
+			factor = 10 }
+		if = {
+		limit = { SYR = { is_puppet_of = FRA } }
+		FRA = {
+		end_puppet = SYR 
+		}
+		}
+		TUR = {
+		puppet = SYR
+		}
+		}
+	option = {
+		name = fcolony.18.c	#
+		 ai_chance = {
+			factor = 0 }
+		TUR = {
+		create_wargoal = {
+					type = annex_everything
+					target = SYR
+				}	
+		}
+		}	
+}
+
+#Northern Colonies Break Away
+country_event = {
+	id = fcolony.20
+	title = fcolony.20.t
+	desc = fcolony.20.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = fcolony.20.a	#sounds good
+		if = { limit = { controls_state = 460 }
+		release = ALG
+		}
+		if = { limit = { controls_state = 461 }
+		release = MOR
+		}
+		if = { limit = { controls_state = 458 }
+		release = TUN
+		}
+		if = { limit = { controls_state = 677 }
+		release = SYR
+		}
+		hidden_effect = {
+		SYR = {
+		set_cosmetic_tag = SYR_state
+		}
+		}
+	}
+}
+#French West Africa sets up a government
+country_event = {
+	id = fcolony.22
+	title = fcolony.22.t
+	desc = fcolony.22.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = fcolony.22.a	#sounds good
+		hidden_effect = {
+		FTU = {
+		add_state_core = 786
+		add_state_core = 557
+		add_state_core = 782
+		add_state_core = 556
+		add_state_core = 272
+		add_state_core = 780
+		add_state_core = 779
+		add_state_core = 778
+		add_state_core = 776
+		add_state_core = 777
+		add_state_core = 515
+		add_state_core = 781
+		add_state_core = 772
+		add_state_core = 539
+		}
+		}
+		FRA = { 
+		add_manpower = -25000
+		release = FTU
+		}
+		FTU = {
+		add_manpower = 25000
+		}
+		
+		hidden_effect = {
+		FTU = {
+		load_oob = FTU_1936
+		random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+		}
+		random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		}
+		random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+		}
+		}
+		}
+	}
+}
+
+#England to Seize French Equatorial Africa
+country_event = {
+	id = fcolony.21
+	title = fcolony.21.t
+	desc = fcolony.21.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = fcolony.21.a	#sounds good
+		ai_chance = {
+			factor = 95 }
+		ENG = { 
+		transfer_state = 773
+		transfer_state = 660
+		transfer_state = 774
+		transfer_state = 775
+		transfer_state = 268
+		}
+		FRA = {
+		country_event = { id = fcolony.25 days = 1 }
+		}
+	}
+	option = {
+		name = fcolony.21.b	
+		ai_chance = {
+			factor = 5 }
+		if = { limit = { controls_state = 774 }
+		release = CHA
+		}
+		if = { limit = { controls_state = 773 }
+		release = CMR
+		}
+		if = { limit = { controls_state = 539 }
+		release = GAB
+		}
+		if = { limit = { controls_state = 460 }
+		release = ALG
+		}
+		if = { limit = { controls_state = 461 }
+		release = MOR
+		}
+		if = { limit = { controls_state = 772 }
+		release = RCG
+		}
+		if = { limit = { controls_state = 660 }
+		release = CAR
+		}
+		if = { limit = { controls_state = 268 }
+		release = DJI
+		}
+	}
+}
+#Far Eastern French Colonies Break Away
+country_event = {
+	id = fcolony.23
+	title = fcolony.23.t
+	desc = fcolony.23.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = fcolony.23.a	#sounds good
+		if = { limit = { controls_state = 543 }
+		release = MAD
+		}
+		if = { limit = { controls_state = 286 }
+		release = VIN
+		}
+		if = { limit = { controls_state = 741 }
+		release = CAM
+		}
+		if = { limit = { controls_state = 670 }
+		release = LAO
+		}
+	}
+}
+
+#Britain Seizes French Africa
+country_event = {
+	id = fcolony.25
+	title = fcolony.25.t
+	desc = fcolony.25.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = fcolony.25.a	#sounds good
+		add_opinion_modifier = {
+			target = ENG
+			modifier = eng_seized_colonies
+		}
+	}
+}
+
+#Collapse of the French Colonial Empire
+news_event = { 
+    id = fcolony.24
+    title = fcolony.24.t
+    desc = fcolony.24.d
+    picture = news_event_saf_civil_war
+	major = yes
+
+        is_triggered_only = yes
+        option = {
+		name = fcolony.24.a
+		trigger = {
+			NOT = {
+				TAG = FRA
+			}
+			}
+	}
+			option = {
+			name = fcolony.24.b
+			trigger = { TAG = FRA }
+	}
+}

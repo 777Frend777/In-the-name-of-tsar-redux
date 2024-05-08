@@ -1,0 +1,238 @@
+﻿add_namespace = ger_civilwar
+
+#Join Prussia
+country_event = {
+	id = ger_civilwar.1
+	title = ger_civilwar.1.t
+	desc = ger_civilwar.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = { #Join Germany
+	ai_chance = { base = 100 }
+		name = ger_civilwar.1.a
+		
+		#Saxony
+		if = { limit = { tag = SAX } 
+		GER = { add_state_core = 65 } }
+		#Rhine
+		if = { limit = { controls_state = 55 } 
+		GER = { 
+		add_state_core = 55
+		add_state_core = 42
+		add_state_core = 814
+		add_state_core = 817
+		add_state_core = 51
+		} }
+		#Baden
+		if = { limit = { tag = WUT } 
+		GER = { 
+		add_state_core = 50
+		
+		} }
+		#Hanover
+		if = { limit = { tag = WSM } 
+		GER = { 
+		set_cosmetic_tag = GER_conf
+		add_state_core = 57
+		 add_state_core = 56
+		 add_state_core = 59
+		 add_state_core = 58
+		} }
+		GER = { annex_country = { target = ROOT transfer_troops = yes } }
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+	option = { #Nope
+	ai_chance = { base = 0 }
+		name = ger_civilwar.1.b
+		#Saxony
+		if = { limit = { tag = SAX } 
+		GER = { add_state_core = 65 } }
+		#Rhine
+		if = { limit = { controls_state = 55 } 
+		GER = { 
+		add_state_core = 55
+		add_state_core = 42
+		add_state_core = 814
+		add_state_core = 817
+		add_state_core = 51
+		} }
+		#Baden
+		if = { limit = { tag = WUT } 
+		GER = { 
+		add_state_core = 50
+		
+		} }
+		#Hanover
+		if = { limit = { tag = WSM } 
+		GER = { 
+		add_state_core = 57
+		 add_state_core = 56
+		 add_state_core = 59
+		 add_state_core = 58
+		} }
+		GER = { create_wargoal = { type = annex_everything target = ROOT } }
+	 } 
+}
+
+#Join Bavaria
+country_event = {
+	id = ger_civilwar.2
+	title = ger_civilwar.2.t
+	desc = ger_civilwar.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = { #Join Bavaria
+	ai_chance = { base = 100 }
+		name = ger_civilwar.2.a
+		
+		#Saxony
+		if = { limit = { controls_state = 65 } 
+		BAV = { add_state_core = 65 } }
+		#Rhine
+		if = { limit = { controls_state = 55 } 
+		BAV = { 
+		add_state_core = 55
+		add_state_core = 42
+		add_state_core = 814
+		add_state_core = 817
+		add_state_core = 51
+		} }
+		#Baden
+		if = { limit = { controls_state = 50 } 
+		BAV = { 
+		add_state_core = 50
+		
+		} }
+		#Hanover
+		if = { limit = { controls_state = 50 } 
+		BAV = { 
+		add_state_core = 57
+		 add_state_core = 56
+		 add_state_core = 59
+		 add_state_core = 58
+		} }
+		BAV = { annex_country = { target = ROOT transfer_troops = yes } }
+		
+		custom_effect_tooltip = GAME_OVER_TT
+	 }
+	option = { #Nope
+	ai_chance = { base = 0 }
+		name = ger_civilwar.2.b
+		
+		#Saxony
+		if = { limit = { controls_state = 65 } 
+		BAV = { add_state_core = 65 } }
+		#Rhine
+		if = { limit = { controls_state = 55 } 
+		BAV = { 
+		add_state_core = 55
+		add_state_core = 42
+		add_state_core = 814
+		add_state_core = 817
+		add_state_core = 51
+		} }
+		#Baden
+		if = { limit = { controls_state = 50 } 
+		BAV = { 
+		add_state_core = 50
+		
+		} }
+		#Hanover
+		if = { limit = { controls_state = 50 } 
+		BAV = { 
+		set_cosmetic_tag = GER_conf
+		add_state_core = 57
+		 add_state_core = 56
+		 add_state_core = 59
+		 add_state_core = 58
+		} }
+		BAV = { create_wargoal = { type = annex_everything target = ROOT } }
+	 } 
+}
+country_event = {
+	id = ger_civilwar.3
+	title = ger_civilwar.3.t
+	desc = ger_civilwar.3.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ger_civilwar.3.a
+		ai_chance = {
+			base = 0
+		}
+		if = {
+			limit = {
+				country_exists = BAV
+			 }
+			 add_opinion_modifier = {
+				target = BAV
+				modifier = embargo
+			 }
+		}
+		if = {
+			limit = {
+				country_exists = GER
+			 }
+			 add_opinion_modifier = {
+				target = GER
+				modifier = embargo
+			 }
+		}
+	}
+	option = {
+		name = ger_civilwar.3.b
+		ai_chance = {
+			base = 100
+		}
+		add_stability = -0.05
+		if = {
+			limit = {
+				country_exists = BAV
+			 }
+			 add_opinion_modifier = {
+				target = BAV
+				modifier = large_increase
+			 }
+		}
+		if = {
+			limit = {
+				country_exists = GER
+			 }
+			 add_opinion_modifier = {
+				target = GER
+				modifier = large_increase
+			 }
+		}
+	}
+	option = {
+		name = ger_civilwar.3.c
+		ai_chance = {
+			base = 0
+		}
+		if = {
+			limit = {
+				country_exists = BAV
+			 }
+			 declare_war_on = {
+				target = BAV
+				type = topple_government
+			}
+		}
+		if = {
+			limit = {
+				country_exists = GER
+			 }
+			 declare_war_on = {
+				target = BAV
+				type = topple_government
+			}
+		}
+	}
+}
+  

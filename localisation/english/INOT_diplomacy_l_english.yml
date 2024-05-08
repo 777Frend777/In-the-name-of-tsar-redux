@@ -1,0 +1,67 @@
+﻿l_english:
+  INOT_disapproves_of_govt:0 "Disapproves of Government"
+  INOT_friendly_regime:0 "Friendly Regime"
+  INOT_close_allies:0 "Close Allies"
+  INOT_approves_of_govt:0 "Approves of Government"
+  INOT_hostile_regime:0 "Hostile Regime"
+  INOT_imposed_sanctions:0 "Imposed Sanctions"
+  
+  #Traits
+  INOT_entrepreneur:0 "Entrepreneur"
+  
+  improved_good:0 "Improved Relations"
+  improved_bad:0 "Severed Diplomatic Relations"
+  bulgaria-russo:0 "Slavic Unity"
+  czecho-russo:0 "Slavic Unity"
+  rus_improved_good:0 "Improved Relations"
+  yugo_russo:0 "Slavic Unity"
+  romania-russo:0 "Slavic Unity"
+  hungro-russo:0 "Slavic Unity"
+  franco-russo:0 "Franco-Russian Relations"
+  germano-russo:0 "Russo-Germanic Relations"
+  badfranco-russo:0 "Went with Germans"
+  badgermano-russo:0 "Went with French"
+  russo-japanese:0 "Improved Relations"
+  russo-communism:0 "Stands Against Communism"
+  RUS_bad_anglo_russo:0 "Refused Non-Aggression"
+  renewed_1920:0 "Renewed 1920 Agreement"
+  ger_diplo_mission:0 "German Diplomatic Mission"
+  democratic_leanings:0 "Democracy in Germany"
+  Zollverein_mod:0 "Modern Zollverein"
+  ger_anti_rus_policy:0 "Anti-Russian Propoganda"
+  sided_with_allies:0 "Sided with the West"
+  rus_russian_revolution:0 "European Revolution!"
+  GER_accept_british_naval_dominance_opinion:0 "Accept British Naval Dominance"
+  Konig_pact:0 "König Pakt"
+  balkan_expansion:0 "Balkan Policy"
+  bel_diplo_mission:0 "Belgian Diplomatic Mission"
+  ceased_trade_opinion:0 "Ceased Trade"
+  agreed_ceased_trade_opinion:0 "Agreed to Cease the Trade with the Germans"
+  refused_ceased_trade_opinion:0 "Refused to Cease Trade with the Germans"
+  ##### Turkish Stuff #####
+  TUR_seize_russian_investments:0 "Seized Russian Businesses and Land"
+  purged_french_presence:0 "Purged French Presence"
+  FTU_drills_with_ENG:0 "Training with England"
+  purged_french_presence:0 "French Presence Restrained"
+  FTU_remained_with_france:0 "Remained with France"
+  FTU_demanded_partition:0 "Demanded Patriation"
+  
+  ###MISC####
+  demobilization_required:0 "Demobilize the Economy!"
+  
+  #Generic +
+  ideology_boosting_neutrality:0 "Rally the Public Support"
+  ideology_boosting_conservatives:0 "Rally the Public Support"
+  ideology_boosting_socialist:0 "Rally the Public Support"
+  ideology_boosting_democratic:0 "Rally the Public Support"
+  ideology_boosting_fascism:0 "Rally the Public Support"
+  ideology_boosting_communism:0 "Rally the Public Support"
+  
+  impose_sactions_on_bavaria_decision:0 "Embargo [BAV.GetNameDef]"
+  impose_sactions_on_prussia_decision:0 "Embargo [GER.GetNameDef]"
+  impose_sactions_on_russia_decision:0 "Embargo [RUS.GetNameDef]"
+  impose_sactions_on_japan_decision:0 "Embargo [JAP.GetNameDef]"
+  
+  
+
+

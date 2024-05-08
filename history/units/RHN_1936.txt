@@ -1,0 +1,80 @@
+﻿division_template = {
+	name = "Infanterie-Division"			# Rifle Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+
+}
+division_template = {
+	name = "Militärpolizei" 	# Kavaleriyskaya Diviziya
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+# 6ya Kavaleriyskiy Korpus
+	division= {			
+		name = "1. Mobile Militärpolizei"		
+		location = 3512
+		division_template = "Militärpolizei"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {			
+		name = "2.Mobile Militärpolizei"		
+		location = 11531
+		division_template = "Militärpolizei"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	# 11ya Strelkoviy Korpus
+	division= {			
+		name = "1. Infanterie-Division"		
+		location = 587
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+		}
+	division= {			
+		name = "4. Infanterie-Division"		
+		location = 587
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+		}	
+	# 11ya Strelkoviy Korpus
+	division= {			
+		name = "2. Infanterie-Division"		
+		location = 6469
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+		}
+	division= {			
+		name = "3. Infanterie-Division"		
+		location = 6469
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+		}	
+}			

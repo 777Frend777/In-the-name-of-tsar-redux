@@ -1,0 +1,86 @@
+#################
+#### GERMANY ####
+#################
+GER_imminent_civil_war = {
+	priority = 10
+	icon = spr_the_seeds_of_revolution
+
+	picture = GFX_decision_cat_picture_spr_the_inevitable_civil_war
+	visible_when_empty = no
+	allowed = {
+		original_tag = GER
+	}
+	available = {
+		is_subject = no
+		country_exists = BAV 
+	}
+}
+GER_puppet_management_category = {
+	icon = generic_operation
+
+	picture = GFX_decision_cat_generic_mefo_bills
+
+	allowed = {
+		original_tag = GER
+	}
+}
+GER_reunification_category = {
+	icon = generic_operation
+
+	picture = GFX_decision_cat_generic_mefo_bills
+	available = {
+	BAV = { exists = no }
+	}
+	allowed = {
+		original_tag = GER
+	}
+}
+GER_generic_four_year_plan_category = {
+	priority = 9
+	icon = generic_operation
+	
+	picture = GFX_decision_cat_picture_soviet_national_academy_of_sciences
+	visible = {
+				AND = {
+					tag = GER
+					has_completed_focus = GER_four_year_plan
+				}
+	}
+	allowed = {
+		original_tag = GER
+	}
+}
+GER_generic_reunification_category = {
+	priority = 9
+	icon = generic_operation
+	
+	picture = GFX_decision_cat_generic_mefo_bills
+
+	allowed = {
+		OR = {
+		original_tag = GER
+		original_tag = BAV
+		original_tag = RHN
+		}
+	}
+}
+
+GER_generals_reintegrations_category = {
+	icon = generic_operation
+
+	picture = GFX_decision_cat_picture_government_in_exile
+
+	allowed = {
+		original_tag = GER
+	}
+}
+GER_sea_walls_category = {
+	icon = generic_operation
+
+	picture = GFX_decision_cat_generic_mefo_bills
+
+	allowed = {
+		original_tag = GER
+	}
+}
+

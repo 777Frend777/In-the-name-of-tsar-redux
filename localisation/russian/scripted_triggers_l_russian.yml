@@ -1,0 +1,7 @@
+﻿l_russian:
+ is_controlled_by_ROOT_or_ally: "Управляется §H[Root.GetNameDef]§! или один из их союзников." #NT!
+ is_league_of_nations_member_tt: "Является страной-членом Лиги Наций" #NT!
+ has_war_with_non_exiled_country_tt: "В состоянии войны с неизгнанной страной" #NT!
+ state_is_fully_controlled_by_ROOT_or_subject_tt: "Полностью контролируется §Y[ROOT.GetFlag][ROOT.GetNameDef]§! или любой §Y[ROOT.GetAdjective] предмет§!" #NT!
+ is_at_peace_exiled_countries_excluded_tt: "Находится в мире (исключая войну с изгнанными странами)" #NT!
+ is_alpine_TT: "Альпийский штат" #NT!

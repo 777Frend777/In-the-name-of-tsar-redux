@@ -1,0 +1,147 @@
+﻿##### ROM ######
+
+add_namespace = mandate
+
+#Negotiate for Independence
+country_event = {
+	id = mandate.5
+	title = mandate.5.t
+	desc = mandate.5.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = { #Palestine Porposal
+		name = mandate.5.a
+		ai_chance = { factor = 50 }
+		ENG = {
+			country_event = { id = britain.502 hours = 1 }
+		}
+	}
+	option = { #Israeli Porposal
+		name = mandate.5.b
+		ai_chance = { factor = 50 }
+		ENG = {
+			country_event = { id = britain.501 hours = 1 }
+		}
+	}
+}
+
+#Britain refuses the negotiated terms
+country_event = {
+	id = mandate.6
+	title = mandate.6.t
+	desc = mandate.6.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = { #PAL
+		name = mandate.6.a
+		ISR = {
+            transfer_state = 971 
+            transfer_state = 970
+            transfer_state = 454
+		    load_oob = "ISR_1936"
+        }
+		PAL = {
+			transfer_state = 972
+			transfer_state = 973
+			load_oob = "PAL_1936"
+
+            change_tag_from = MAP
+
+            declare_war_on = {
+	            target = ISR
+	            type = annex_everything
+            }		
+		}
+		news_event = { id = news.5002}
+
+        	
+	}
+	option = { #ISR
+		name = mandate.6.b
+        ISR = {
+            transfer_state = 971 
+            transfer_state = 970
+            transfer_state = 454
+		    load_oob = "ISR_1936"
+			change_tag_from = MAP
+			
+        }
+		PAL = {
+			transfer_state = 972
+			transfer_state = 973
+			load_oob = "PAL_1936"
+
+            declare_war_on = {
+	            target = ISR
+	            type = annex_everything
+            }		
+		}
+		news_event = { id = news.5002}
+	}
+}
+
+#Begins the General Stirke. Triggers in april
+country_event = {
+	id = mandate.10
+	title = mandate.10.t
+	desc = mandate.10.d
+	picture = GFX_report_event_generic_funeral
+	
+	trigger = {
+		tag = MAP
+		date > 1936.4.14
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	fire_only_once = yes
+
+	option = { 
+		name = mandate.10.a
+		add_ideas = MAP_arab_general_strikes
+		add_ideas = MAP_arab_revolt
+	}
+}
+country_event = {
+	id = mandate.13
+	title = mandate.13.t
+	desc = mandate.13.d
+	picture = GFX_report_white_paper
+
+	is_triggered_only = yes
+
+	option = { 
+		name = mandate.13.a
+		remove_ideas = MAP_jewish_immigration
+		add_ideas = MAP_limited_jewish_immigration
+		add_political_power = 150
+	}
+}
+#End of Arab Revolt (Triggered by "Put down the Arab Revolt" Focus)
+country_event = {
+	id = mandate.15
+	title = mandate.15.t
+	desc = mandate.15.d
+	picture = GFX_report_arab_revolt
+
+	is_triggered_only = yes
+
+	option = { 
+		name = mandate.15.a
+		if = {
+			limit = { has_idea = MAP_arab_revolt }
+			remove_ideas = MAP_arab_revolt
+		}
+
+		if = {
+			limit = { has_idea = MAP_arab_general_strikes }
+			remove_ideas = MAP_arab_general_strikes
+		}		
+	}
+}

@@ -1,0 +1,131 @@
+bookmarks = {
+	bookmark = {
+		name = "Occident_NAME"
+		desc = "Occident_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "RUS"
+		default = yes
+		
+		"FRA"={
+			history = "FRA_Occident_DESC"
+			ideology = democratic
+			ideas = {
+				FRA_scars_of_the_great_war
+				FRA_inefficient_gov_idea
+				FRA_political_instability_idea
+			}
+			focuses = {
+				FR_demo
+				FR_commi
+				FR_fascist
+			}
+		}
+		
+		"ENG"={
+			history = "ENG_Occident_DESC"
+			ideology = democratic
+			ideas = {
+				stiff_upper_lip
+				ENG_the_war_to_end_all_wars
+				george_v
+			}
+			focuses = {
+				UK_world_power
+				UK_embargo_RUS
+				UK_intervene_usa
+			}
+		}
+		"BAV"={
+			history = "BAV_Occident_DESC"
+			ideology = communism
+			ideas = {
+			BAV_home_of_revolution
+			BAV_national	
+			BAV_plot_against_the_commune
+			}
+			focuses = {
+				BAV_purge
+				BAV_liberate_french
+				BAV_world_revolution
+			}
+		}
+		
+
+		"GER"= {
+			history = "GER_Occident_DESC"
+			ideology = neutrality
+			ideas = {
+				GER_wilhelm_II
+			}
+			focuses = {
+				GER_freikorps
+				GER_prussian_eco
+				GER_army_innovations
+				
+			}
+		}
+		
+
+		"USA"={
+			history = "USA_Occident_DESC"
+			ideology = democratic
+			ideas = {
+				us_isolationism_policy
+				US_unemployment_rate
+				US_famine_stage_1_idea
+			}
+			focuses = {
+				US_dpt_labour
+				US_ally_silver_legion
+				US_reform_treasury
+			}
+		}
+			
+		"RUS"={
+			history = "RUS_Occident_DESC"
+			ideology = democratic
+			ideas = {
+			#RUS_agricole_power
+			RUS_russian_monarchy
+			RUS_church
+			RUS_peasant_unrest
+			
+				
+			}
+			focuses = {
+			RUS_consolidate_eastern_coalition
+			RUS_greater_russia
+			RUS_army_modernization	
+				
+			}	
+		}
+		"ITA"={
+			history = "ITA_Occident_DESC"
+			ideology = conservatives
+			ideas = {
+				victor_emmanuel
+				ITA_economic_dependence_allies
+				ITA_army_shortages_idea
+			}	
+			focuses = {
+				ITA_preserve_democracy
+				ITA_communist_party
+				ITA_nationalist_party
+			}			
+		}
+		
+		
+		
+
+		"---"={
+			history = "OTHER_Occident_DESC"
+		}
+		
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

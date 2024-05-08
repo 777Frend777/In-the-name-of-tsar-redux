@@ -1,0 +1,45 @@
+
+division_template = {
+	name = "Sovetskaya"			# Garrison Force
+	# For reserve and independent regiments, lower experience and equipment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+
+units = {
+division= {
+		name = "1ya Sovetskaya Diviziya"
+		location = 692
+		division_template = "Sovetskaya"
+		start_experience_factor = 0.3
+	}
+division= {
+		name = "2ya Sovetskaya Diviziya"
+		location = 692
+		division_template = "Sovetskaya"
+		start_experience_factor = 0.3
+	}
+division= {
+		name = "3ya Sovetskaya Diviziya"
+		location = 692
+		division_template = "Sovetskaya"
+		start_experience_factor = 0.3
+	}
+	division= {
+			name = "4ya Sovetskaya Diviziya"
+			location = 692
+			division_template = "Sovetskaya"
+			start_experience_factor = 0.3
+		}
+		division= {
+				name = "5ya Sovetskaya Diviziya"
+				location = 692
+				division_template = "Sovetskaya"
+				start_experience_factor = 0.3
+			}
+}

@@ -1,0 +1,319 @@
+﻿division_template = {
+	name = "Genossen-Divison"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+	}
+division_template = {
+	name = "Ortsgruppe"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Abteilung"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Panzer-Division"
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }		
+		light_armor = { x = 0 y = 1 }
+		#light_armor = { x = 0 y = 2 }
+		light_armor = { x = 1 y = 0 }		
+		light_armor = { x = 1 y = 1 }	
+		#light_armor = { x = 1 y = 2 }	
+		motorized = { x = 2 y = 0 }			
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		#motorized = { x = 2 y = 3 }
+	}
+}
+units = {	
+division= {	
+		name = "1. Abteilung"
+		location = 532
+		division_template = "Abteilung"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+		start_manpower_factor = 0.3
+	}
+division= {	
+		name = "1. Ortsgruppe"
+		location = 3474
+		division_template = "Ortsgruppe"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+		start_manpower_factor = 0.3
+	}
+division= {	
+		name = "2. Ortsgruppe"
+		location = 561
+		division_template = "Ortsgruppe"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+		start_manpower_factor = 0.3
+	}
+division= {	
+		name = "3. Ortsgruppe"
+		location = 6555
+		division_template = "Ortsgruppe"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+		start_manpower_factor = 0.3
+	}
+division= {	
+		name = "1. Rote-Division"
+		location = 692
+		division_template = "Genossen-Divison"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+		start_manpower_factor = 0.3
+	}
+division= {	
+		name = "2. Rote-Division"
+		location = 692
+		division_template = "Genossen-Divison"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+		start_manpower_factor = 0.3
+	}
+division= {	
+		name = "3. Rote-Division"
+		location = 692
+		division_template = "Genossen-Divison"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+		start_manpower_factor = 0.3
+	}
+division= {	
+		name = "4. Rote-Division"
+		location = 692
+		division_template = "Genossen-Divison"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+		start_manpower_factor = 0.3
+
+	}
+division= {	
+		name = "5. Rote-Division"
+		location = 11544
+		division_template = "Genossen-Divison"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+		start_manpower_factor = 0.3
+	}
+	#division= {	
+	#	name = "16. Rote-Division"
+	#	location = 707
+	#	division_template = "Genossen-Divison"
+	#	start_experience_factor = 0.3
+	#}
+	#division= {	
+	#	name = "17. Rote-Division"
+	#	location = 707
+	#	division_template = "Genossen-Divison"
+	#	start_experience_factor = 0.3
+	#}
+	
+	#division= {	
+	#	name = "18. Rote-Division"
+	#	location = 9517
+	#	division_template = "Genossen-Divison"
+	#	start_experience_factor = 0.3
+	#}
+	#division= {	
+	#	name = "19. Rote-Division"
+	#	location = 9547
+	#	division_template = "Genossen-Divison"
+	#	start_experience_factor = 0.3
+	#}
+	#division= {	
+	#	name = "20. Rote-Division"
+	#	location = 564
+	#	division_template = "Genossen-Divison"
+	#	start_experience_factor = 0.3
+	#}
+	#division= {	
+	#	name = "21. Rote-Division"
+	#	location = 6488
+	#	division_template = "Genossen-Divison"
+	#	start_experience_factor = 0.3
+	#}	
+	division= {	
+		name = "6. Panzer-Division"
+		location = 9517
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+		start_manpower_factor = 0.3
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "BAV" } }
+	}
+		
+	#division= {	
+	#	name = "1. Panzer-Division"
+	#	location = 692
+	#	division_template = "Panzer-Division"
+	#	start_experience_factor = 0.3
+	#	force_equipment_variants = { light_tank_equipment_1 = { owner = "BAV" } }
+	#}
+	division= {	
+		name = "2. Panzer-Division"
+		location = 6488
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+		start_manpower_factor = 0.3
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "BAV" } }
+	}
+	#division= {	
+	#	name = "3. Panzer-Division"
+	#	location = 692
+	#	division_template = "Panzer-Division"
+	#	start_experience_factor = 0.3
+	#	force_equipment_variants = { light_tank_equipment_1 = { owner = "BAV" } }
+	#}
+	#division= {	
+	#	name = "4. Panzer-Division"
+	#	location = 692
+	#	division_template = "Panzer-Division"
+	#	start_experience_factor = 0.3
+	#	force_equipment_variants = { light_tank_equipment_1 = { owner = "BAV" } }
+	#}
+	#division= {	
+	#	name = "5. Panzer-Division"
+	#	location = 692
+	#	division_template = "Panzer-Division"
+	#	start_experience_factor = 0.3
+	#	force_equipment_variants = { light_tank_equipment_1 = { owner = "BAV" } }
+	#}
+}
+	air_wings = {
+	53 = {
+		fighter_equipment_0 =  {
+			owner = "BAV" 
+			creator = "BAV"
+			amount = 150
+		}
+	}
+	52 = { 
+		# Jagdgeschwader 136		
+		fighter_equipment_0 =  {		# He 51
+			owner = "BAV" 
+			amount = 50
+		}
+		name = "Jagdgeschwader 136"
+		# Kampfgeschwader 154	
+		tac_bomber_equipment_0 = {		# Do 23
+			owner = "BAV" 
+			amount = 100
+		}
+		name = "Kampfgeschwader 154"
+	}
+	}
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "BAV"
+		}
+		requested_factories = 5
+		progress = 0.1
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "BAV" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "BAV" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_2
+			creator = "BAV" 
+		}
+		requested_factories = 2
+		progress = 0.4
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "BAV" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "BAV" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = tac_bomber_equipment_1
+			creator = "BAV" 
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+
+}

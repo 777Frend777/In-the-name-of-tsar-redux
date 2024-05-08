@@ -1,0 +1,121 @@
+#Non-Existant | Very Weak | Moderate | Strong | Very Strong
+#Cagoule
+defined_text = {
+	name = FRA_right_wing_influence
+	text = {
+		trigger = {
+			check_variable = { FRA.right_wing_influence > 4 }
+		}
+		localization_key = FRA_org_influence_5
+	}
+	text = {
+		trigger = {
+			check_variable = { FRA.right_wing_influence = 4 }
+		}
+		localization_key = FRA_org_influence_4
+	}
+	text = {
+		trigger = {
+			check_variable = { FRA.right_wing_influence = 3 }
+		}
+		localization_key = FRA_org_influence_3
+	}
+	text = {
+		trigger = {
+			check_variable = { FRA.right_wing_influence = 2 }
+		}
+		localization_key = FRA_org_influence_2
+	}
+	text = {
+		trigger = {
+			check_variable = { FRA.right_wing_influence = 1 }
+		}
+		localization_key = FRA_org_influence_1
+	}
+	text = {
+		trigger = {
+			check_variable = { FRA.right_wing_influence < 1 }
+		}
+		localization_key = FRA_org_influence_0
+	}
+}
+#Action Francaise
+defined_text = {
+	name = FRA_centre_wing_influence
+	text = {
+		trigger = {
+			check_variable = { FRA.centre_wing_influence > 4 }
+		}
+		localization_key = FRA_org_influence_5
+	}
+	text = {
+		trigger = {
+			check_variable = { FRA.centre_wing_influence = 4 }
+		}
+		localization_key = FRA_org_influence_4
+	}
+	text = {
+		trigger = {
+			check_variable = { FRA.centre_wing_influence = 3 }
+		}
+		localization_key = FRA_org_influence_3
+	}
+	text = {
+		trigger = {
+			check_variable = { FRA.centre_wing_influence = 2 }
+		}
+		localization_key = FRA_org_influence_2
+	}
+	text = {
+		trigger = {
+			check_variable = { FRA.centre_wing_influence = 1 }
+		}
+		localization_key = FRA_org_influence_1
+	}
+	text = {
+		trigger = {
+			check_variable = { FRA.centre_wing_influence < 1 }
+		}
+		localization_key = FRA_org_influence_0
+	}
+}
+#Marxist
+defined_text = {
+	name = FRA_left_wing_influence
+	text = {
+		trigger = {
+			check_variable = { FRA.left_wing_influence > 4 }
+		}
+		localization_key = FRA_org_influence_5
+	}
+	text = {
+		trigger = {
+			check_variable = { FRA.left_wing_influence = 4 }
+		}
+		localization_key = FRA_org_influence_4
+	}
+	text = {
+		trigger = {
+			check_variable = { FRA.left_wing_influence = 3 }
+		}
+		localization_key = FRA_org_influence_3
+	}
+	text = {
+		trigger = {
+			check_variable = { FRA.left_wing_influence = 2 }
+		}
+		localization_key = FRA_org_influence_2
+	}
+	text = {
+		trigger = {
+			check_variable = { FRA.left_wing_influence = 1 }
+		}
+		localization_key = FRA_org_influence_1
+	}
+	text = {
+		trigger = {
+			check_variable = { FRA.left_wing_influence < 1 }
+		}
+		localization_key = FRA_org_influence_0
+	}
+}

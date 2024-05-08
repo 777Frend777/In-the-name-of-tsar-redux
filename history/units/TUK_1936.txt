@@ -1,0 +1,74 @@
+﻿division_template = {
+	name = "Turkestan-Militia"				# Represents a corps of 3 NRA divisions (2 brigades of 2 regiments each)
+									# Militia-level training and equipment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "1. Turkestan Rebels"
+		location = 642
+		division_template = "Turkestan-Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "2. Turkestan Rebels"
+		location = 1591
+		division_template = "Turkestan-Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "3. Turkestan Rebels"
+		location = 4581
+		division_template = "Turkestan-Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "4. Turkestan Rebels"
+		location = 4686
+		division_template = "Turkestan-Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "5. Turkestan Rebels"
+		location = 10353
+		division_template = "Turkestan-Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "6. Turkestan Rebels"
+		location = 4224
+		division_template = "Turkestan-Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "TUK"
+		}
+		requested_factories = 1
+		progress = 0.52
+		efficiency = 100
+	}
+}

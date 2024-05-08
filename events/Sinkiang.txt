@@ -1,0 +1,137 @@
+﻿###########################
+# Sinkiang Events ##########
+###########################
+
+add_namespace = sink
+#HelpSheng1
+country_event = {
+	id = sink.1000
+	title = sink.1000.t
+	desc = sink.1000.d
+	picture = GFX_report_event_chinese_soldiers_02
+
+	trigger = {
+		date > 1936.2.1
+		tag = RUS
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = sink.1000.a	#Ofc
+		hidden_effect = {
+        QNG = { country_event = { id = sink.1001 days = 1 }}
+        country_event = { id = sink.1002 days = 20 }
+		}
+	}
+}
+
+#HelpSheng2
+country_event = {
+	id = sink.1001
+	title = sink.1001.t
+	desc = sink.1001.d
+	picture = GFX_report_event_chinese_soldiers_02
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = sink.1001.a	#Ofc
+	}
+}
+
+#HelpSheng3
+country_event = {
+	id = sink.1002
+	title = sink.1002.t
+	desc = sink.1002.d
+	picture = GFX_report_event_chinese_soldiers_02
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = sink.1002.a	#Ofc
+		add_equipment_to_stockpile = {
+        type = infantry_equipment
+        amount = -1500
+        producer = RUS
+        }
+        add_equipment_to_stockpile = {
+        type = light_tank_equipment_1 
+        amount = -5
+        producer = RUS
+        }
+        add_equipment_to_stockpile = {
+        type = artillery_equipment
+        amount = -15
+        producer = RUS
+        }
+        add_equipment_to_stockpile = {
+        type = fighter_equipment_0
+        amount = -2
+        producer = RUS
+        }
+        hidden_effect = {
+        SIK = { country_event = { id = sink.1003 days = 5 }}
+		}
+	}
+}
+
+#HelpSheng4
+country_event = {
+	id = sink.1003
+	title = sink.1003.t
+	desc = sink.1003.d
+	picture = GFX_report_event_chinese_soldiers_02
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = sink.1003.a	#WarBeginAgain
+		UGY={
+			transfer_state = 618
+			declare_war_on = {
+				target = SIK
+				type = annex_everything
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SIK
+			}
+		}
+		declare_war_on = {
+			target = UGY
+			type = annex_everything
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = UGY
+		}
+		hidden_effect = {
+        news_event = { id = sink.2000 days = 1 }
+		}
+	}
+}
+
+#######################################################################################NEWSEVENTS
+#WarReturns
+news_event = {
+	id = sink.2000
+	title = sink.2000.t
+	desc = sink.2000.d
+	picture = GFX_news_event_sinkiang
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = sink.2000.a	
+	}
+}

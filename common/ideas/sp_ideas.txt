@@ -1,0 +1,350 @@
+ideas = {
+
+	country = {
+
+	    sp_bed_gov = {
+
+			picture = SP_fragile
+			allowed = {
+				OR = {
+				original_tag = SPR
+				original_tag = SPA
+				original_tag = SPC
+				original_tag = SPB
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+			}
+		}
+		
+		sp_national_strikes = {
+
+			picture = SP_strikes
+			allowed = {
+				OR = {
+				original_tag = SPR
+				original_tag = SPA
+				original_tag = SPC
+				original_tag = SPB
+				}
+			}
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory  = -0.1
+			}
+		}
+		
+		sp_not_loyal_army = {
+
+			picture = SPR_disbanded_army
+			allowed = {
+				OR = {
+				original_tag = SPR
+				original_tag = SPA
+				original_tag = SPC
+				original_tag = SPB
+				}
+			}
+			removal_cost = -1
+			
+			modifier = {
+				army_org_Factor = -0.10
+			}
+		}
+		
+		sp_socialist_reforms = {
+
+			picture = FRA_matignon_agreements
+			allowed = {
+				always = no # Added via focus
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.25
+				conscription_factor = 0.01
+				production_factory_efficiency_gain_factor = 0.03
+				consumer_goods_factor = -0.03
+				communism_acceptance = 85
+			}
+		}
+		sp_socialist_education_idea = {
+			allowed = {
+				always = no # Added via focus
+			}
+			removal_cost = -1
+
+			#picture = GFX_idea_FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				research_speed_factor = 0.03
+			}
+		}
+		sp_popular_army_idea = {
+
+				allowed = {
+				always = no # Added via focus
+				}
+
+				picture = generic_morale_bonus
+				removal_cost = -1
+
+				modifier = {
+				army_core_defence_factor = 0.15
+		 	    army_core_attack_factor = 0.15
+				}
+		}
+		sp_red_army_idea = {
+
+				allowed = {
+				always = no # Added via focus
+				}
+
+				picture = idea_prc_low_popular_support3
+				removal_cost = -1
+
+				modifier = {
+				army_core_defence_factor = 0.05
+		 	    army_core_attack_factor = 0.05
+				}
+		}
+		sp_red_army_II_idea = {
+
+				allowed = {
+				always = no # Added via focus
+				}
+
+				picture = nkvd
+				removal_cost = -1
+
+				modifier = {
+				army_org_Factor = 0.05
+				land_reinforce_rate = 0.03
+				}
+		}
+		sp_offensive_army_idea = {
+
+				allowed = {
+				always = no # Added via focus
+				}
+
+				picture = generic_intel_bonus
+				removal_cost = -1
+
+				modifier = {
+				army_attack_factor = 0.2
+				}
+		}	
+		sp_the_civil_guard_idea = {
+			allowed = {
+				always = no # Added via focus
+			}
+
+			removal_cost = -1
+
+			picture = FRA_national_mobilization_focus
+			
+			modifier = {
+				conscription = 0.03
+			}
+		}
+		sp_expanded_conscription_idea = {
+			allowed = {
+				always = no # Added via focus
+			}
+
+			removal_cost = -1
+
+			picture = idea_chi_army_corruption3
+			
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		sp_spanish_gold_idea = {
+			allowed = {
+				always = no # Added via focus
+			}
+
+			removal_cost = -1
+
+			#picture = GFX_idea_FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+			}
+		}
+		sp_socialist_spain_idea = {
+			allowed = {
+				always = no # Added via focus
+			}
+
+			removal_cost = -1
+
+			picture = trotskyite_plot_purged
+			
+			modifier = {
+				political_power_gain = -0.15
+				consumer_goods_factor = -0.07
+			}
+		}
+		sp_monarchy_idea = {
+			allowed = {
+				always = no # Added via focus
+			}
+
+			removal_cost = -1
+
+			picture = idea_generic_monarchist_uprising
+			
+			modifier = {
+				political_power_gain = 0.25
+			}
+		}
+		sp_spanish_empire_idea = {
+			allowed = {
+				always = no # Added via focus
+			}
+
+			removal_cost = -1
+
+			picture = vittoria_mutilata
+			
+			modifier = {
+				political_power_gain = 0.25
+				justify_war_goal_time = -0.25
+			}
+		}
+		sp_gov_in_exile = {
+			allowed = {
+				always = no # Added via focus
+			}
+
+			removal_cost = -1
+
+			#picture = GFX_idea_FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				political_power_gain = 0.25
+				consumer_goods_factor = -0.05
+				conscription_factor = 0.02
+			}
+		}
+		sp_armed_conflicts_idea = {
+
+			picture = FRA_matignon_agreements
+			allowed = {
+				always = no # Added via focus
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				army_org_Factor = -0.5
+				industrial_capacity_factory  = -0.5
+				neutrality_drift = 0.2
+				stability_factor = -0.25
+			}
+		}
+		sp_rebuild_spain_idea = {
+
+			picture = idea_man_five_year_plan_industry
+			allowed = {
+				always = no # Added via focus
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				repair_speed_factor = 0.5
+				production_speed_infrastructure_factor = 0.15
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		sp_civil_war_idea = {
+
+			picture = idea_tfv_can_conscription_crisis
+
+			allowed = {
+				always = no # Added via focus
+			}
+			removal_cost = -1
+			modifier = {
+				surrender_limit = 0.15
+				ai_get_ally_desire_factor = -200
+				join_faction_tension = 0.5
+			}
+		}
+		sp_fight_continues = {
+
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				always = no # Added via focus
+			}
+			removal_cost = -1
+			modifier = {
+				surrender_limit = 1
+			}
+		}
+		sp_civil_war_recovery_idea = {
+
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				always = no # Added via focus
+			}
+			removal_cost = -1
+			modifier = {
+				ai_get_ally_desire_factor = -200
+				join_faction_tension = 0.5
+				stability_factor = -0.15
+				war_support_factor = -0.50
+			}
+		}
+		sp_recovering_from_civil_war = {
+
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				ai_get_ally_desire_factor = -200
+				join_faction_tension = 0.5
+			}
+		}
+		sp_neutrality_idea = {
+
+			picture = idea_hol_aloof_neutrality
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				ai_get_ally_desire_factor = -200
+				join_faction_tension = 0.5
+				stability_factor = 0.15
+				war_support_factor = -0.30
+				army_core_defence_factor = 0.1
+		 	    army_core_attack_factor = 0.1
+			}
+		}
+	}
+}

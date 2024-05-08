@@ -1,0 +1,2177 @@
+﻿##### Division Templates #####
+##### Division Templates #####
+division_template = {
+	name = "Pekhotnaya Diviziya"			# Rifle Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+	   
+		
+	}
+}
+division_template = {
+	name = "Reservnaya Diviziya"			# Garrison Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+	   
+		
+	}
+}
+division_template = {
+	name = "Leyb-Gvardiya"			# Garrison Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes	
+		military_police = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Gornostrelkovaya Diviziya"		# Motor Rifle Division
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }	
+		mountaineers = { x = 2 y = 1 }	
+		mountaineers = { x = 2 y = 2 }	
+		mountaineers = { x = 3 y = 0 }	
+		mountaineers = { x = 3 y = 1 }	
+		mountaineers = { x = 3 y = 2 }	
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 		# Engineer bn
+		artillery = { x = 0 y = 1 } 	# Heavy Arty Regiment had 2x 122mm bn
+	}
+}
+
+division_template = {
+	name = "Motostrelkovaya Diviziya"		# Motor Rifle Division
+											# Note: only represents Moscow Proletariat Division in 1936; after 1938-40, Motor Rifle Divisions had +1 mot regiment (3 bns) 
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		# Recon bn had 16x L tanks, 45 ACs #Eng and recon removed and they seem rather OP. Could revisit if balance changes 
+		engineer = { x = 0 y = 1 } 	# (mot) Engineer bn
+		#light_armor = { x = 0 y = 3 }	# Tank bn had 51 L tanks, 3 ACs - (removed)
+	}
+}
+
+division_template = {
+	name = "Kavaleriyskaya Diviziya" 	# Kavaleriyskaya Diviziya
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+	}
+	#support = {
+	#	light_armor = { x = 0 y = 0 }	# Tank "rgt" of 64 light tanks, 28 ACs - (removed)
+	#}
+}
+division_template = {
+	name = "Cossacks Brigada" 	# Cossacks Brigade
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+	#support = {
+	#	light_armor = { x = 0 y = 0 }	# Tank "rgt" of 64 light tanks, 28 ACs - (removed)
+	#}
+}
+division_template = {
+	name = "Okhranka Division"			# NKVD Border Guard Division - Garrison units (lolder experience, older equipment)
+
+	regiments = {
+		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = 	{
+		military_police = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Legko-Tankovaya Brigada" 				# Light Tank Brigades - Represents a pair of independent tank brigades (2 regular (light) brigades) 
+	#division_names_group = SOV_ARM_04
+	regiments = {
+		light_armor = { x = 0 y = 0 }		# T-26 or BT-5/7 tanks
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }	
+		light_armor = { x = 1 y = 0 }		# T-26 or BT-5/7 tanks		
+		light_armor = { x = 1 y = 1 }		
+		light_armor = { x = 1 y = 2 }		
+		motorized = { x = 2 y = 0 }		
+		motorized = { x = 2 y = 1 }	
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 		
+	}
+}
+division_template = {
+	name = "Tankovaya Brigada" 				# Tank Brigade - Represents a pair of independent tank brigades (1 heavy (medium) + 1 regular (light) brigades) 
+	#division_names_group = SOV_ARM_04
+	regiments = {
+		medium_armor = { x = 0 y = 0 }		# T-28 (medium) infantry tanks
+		medium_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }		# T-26 or BT-5/7 tanks		
+		light_armor = { x = 1 y = 0 }		# T-26 or BT-5/7 tanks		
+		light_armor = { x = 1 y = 1 }		
+		light_armor = { x = 1 y = 2 }		
+		motorized = { x = 2 y = 0 }	
+		motorized = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 		
+	}
+}
+division_template = {
+	name = "Tankovaya Korpus" 					# Note: Represents regular tank corps (formerly mechanized corps; 4 existed in 1938-40) 
+	#division_names_group = SOV_ARM_02
+	regiments = {
+		light_armor = { x = 0 y = 0 }		# BT-7 tanks
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }	
+		light_armor = { x = 1 y = 0 }		# BT-7 tanks	
+		light_armor = { x = 1 y = 1 }		
+		light_armor = { x = 1 y = 2 }			
+		motorized = { x = 2 y = 0 }		
+		motorized = { x = 2 y = 1 }		
+		motorized = { x = 3 y = 0 }		
+		motorized = { x = 3 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 		
+	}
+}
+division_template = {
+	name = "Mekhanizirovaniy Korpus" 				# Represents regular mechanized corps (4 existed in 1935-38); 
+													# Also represents groups of independent tank, mech brigades of the time, though groups are best represented by tank bge 
+													# (2x M/L tank + 1x mot), and 2x mech bge (2x L tank + 1x mot)
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 1 y = 0 }		
+		light_armor = { x = 1 y = 1 }		
+		#light_armor = { x = 1 y = 2 }		
+		motorized = { x = 2 y = 0 }		
+		motorized = { x = 2 y = 1 }	
+		motorized = { x = 2 y = 2 }		
+		motorized = { x = 2 y = 3 }		
+	}
+}
+division_template = {
+	name = "Tyazolaya-Tankovaya Brigada" 	# Heavy Tank Brigades - Represents a pair of independent tank brigades (1 heavy (truly heavy) + 1 regular (light) brigades) 
+	#division_names_group = SOV_ARM_04
+	regiments = {
+		heavy_armor = { x = 0 y = 0 }		# T-35 heavy tanks
+		heavy_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }		# T-26 or BT-5/7 tanks			
+		light_armor = { x = 1 y = 0 }		# T-26 or BT-5/7 tanks		
+		light_armor = { x = 1 y = 1 }		
+		light_armor = { x = 1 y = 2 }		
+		motorized = { x = 2 y = 0 }		
+		motorized = { x = 2 y = 1 }	
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 		
+	}
+}
+division_template = {
+	name = "Vozdushno-Desantnaya Brigada"			# Airborne Brigade
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+	}
+}
+
+### Note: OOB abstracts away the following:
+#	Marine Brigade (3x marine bn), 2 Brigades: Leningrad, Sevastopol
+#	Airborne Brigade (3x paratrooper bn), 1 Brigade: Moscow
+
+
+##### OOB ##### 114 +35 +16 GRAND TOTAL
+##### 1939 OOB #####
+	##### German Front ##### 35 Divisions
+units = { 
+	#Afghan Army 
+	division= {			
+		name = "202ya Pekhotnaya Diviziya"		
+		location = 12805
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "203ya Pekhotnaya Diviziya"		
+		location = 12805
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "204ya Pekhotnaya Diviziya"		
+		location = 10417
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "41iy Mekhanizirovaniy Korpus"		
+		location = 10417
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "205ya Pekhotnaya Diviziya"		
+		location = 8027
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "206ya Pekhotnaya Diviziya"		
+		location = 8027
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "207ya Pekhotnaya Diviziya"		
+		location = 7224
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "208ya Pekhotnaya Diviziya"		
+		location = 7224
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "208ya Pekhotnaya Diviziya"		
+		location = 12218
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "209ya Pekhotnaya Diviziya"		
+		location = 12239
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "210ya Pekhotnaya Diviziya"		
+		location = 12239
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "211ya Pekhotnaya Diviziya"		
+		location = 756
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "42iy Mekhanizirovaniy Korpus"		
+		location = 4549
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "212ya Pekhotnaya Diviziya"		
+		location = 4549
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "213ya Pekhotnaya Diviziya"		
+		location = 5003
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "214ya Pekhotnaya Diviziya"		
+		location = 5003
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "215ya Pekhotnaya Diviziya"		
+		location = 4958
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "216ya Pekhotnaya Diviziya"		
+		location = 4958
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+
+	
+	division= {			
+		name = "201ya Pekhotnaya Diviziya"		
+		location = 3288
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "102ya Pekhotnaya Diviziya"		
+		location = 3288
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "103ya Pekhotnaya Diviziya"		
+		location = 3288
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "104ya Pekhotnaya Diviziya"		
+		location = 6407
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "105ya Pekhotnaya Diviziya"		
+		location = 6407
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "20yi Mekhanizirovaniy Korpus"		
+		location = 11312
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "106ya Pekhotnaya Diviziya"		
+		location = 11312
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "107ya Pekhotnaya Diviziya"		
+		location = 3254
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "110ya Pekhotnaya Diviziya"		
+		location = 400
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "111ya Pekhotnaya Diviziya"		
+		location = 400
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "112ya Pekhotnaya Diviziya"		
+		location = 11357 
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "21yi Mekhanizirovaniy Korpus"		
+		location = 11357 
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "113ya Pekhotnaya Diviziya"		
+		location = 11329 
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "22yi Mekhanizirovaniy Korpus"		
+		location = 11329 
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "23yi Mekhanizirovaniy Korpus"		
+		location = 9316 
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "114ya Pekhotnaya Diviziya"		
+		location = 9316 
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "115ya Pekhotnaya Diviziya"		
+		location = 9290 
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "116ya Pekhotnaya Diviziya"		
+		location = 9290 
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "24yi Mekhanizirovaniy Korpus"		
+		location = 3230
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "117ya Pekhotnaya Diviziya"		
+		location = 3230 
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "25yi Mekhanizirovaniy Korpus"		
+		location = 6401 
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "118ya Pekhotnaya Diviziya"		
+		location = 11515
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "119ya Pekhotnaya Diviziya"		
+		location = 11515
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "120ya Pekhotnaya Diviziya"		
+		location = 9439 
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "121ya Pekhotnaya Diviziya"		
+		location = 9439
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "26yi Mekhanizirovaniy Korpus"		
+		location = 9546 
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "121ya Pekhotnaya Diviziya"		
+		location = 9546 
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "122ya Pekhotnaya Diviziya"		
+		location = 584
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "122ya Pekhotnaya Diviziya"		
+		location = 584
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "27yi Mekhanizirovaniy Korpus"		
+		location = 6464 
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "123ya Pekhotnaya Diviziya"		
+		location = 506
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "124ya Pekhotnaya Diviziya"		
+		location = 9567
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "125ya Pekhotnaya Diviziya"		
+		location = 9551
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "126ya Pekhotnaya Diviziya"		
+		location = 9412
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "127ya Pekhotnaya Diviziya"		
+		location = 11241
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	# Consantinople Garrison (now lwov garrison ) = 2 Divisions	
+	division= {			
+		name = "1ya Stambulskaya Diviziya"		
+		location = 11479
+		division_template = "Leyb-Gvardiya"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+
+	}			
+	division= {			
+		name = "2ya Stambulskaya Diviziya"		
+		location = 11479
+		division_template = "Leyb-Gvardiya"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	
+	##### Minsk Okrug (West Theatre) -- Minsk #####				
+	# 1ya Belorusskaya Armiya = 12 Divisions	
+	division= {			
+		name = "1ya Pekhotnaya Diviziya"		
+		location = 11370
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "95ya Pekhotnaya Diviziya"		
+		location = 11370
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}	
+	division= {			
+		name = "2ya Pekhotnaya Diviziya"		
+		location = 11370
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}			
+	division= {			
+		name = "3ya Pekhotnaya Diviziya"		
+		location = 11370
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+		
+	division= {			
+		name = "1iy Mekhanizirovaniy Korpus"		
+		location = 11370
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}	
+	division= {			
+		name = "4ya Pekhotnaya Diviziya"		
+		location = 11216
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "5ya Pekhotnaya Diviziya"		
+		location = 11322
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "6ya Pekhotnaya Diviziya"		
+		location = 11322
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "7ya Pekhotnaya Diviziya"		
+		location = 11322
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {			
+		name = "8ya Pekhotnaya Diviziya"		
+		location = 11391
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "1ya Motostrelkovaya Diviziya"		
+		location = 11391
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "2ya Motostrelkovaya Diviziya"		
+		location = 11391
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+
+	##### Riga Okrug (West Theatre) -- Riga #####
+	# 2ya Belorusskaya Armiya = 12 Divisions
+	
+	division= {			
+		name = "2ya Leyb-Gvardiya"		
+		location = 9340
+		division_template = "Leyb-Gvardiya"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "96ya Pekhotnaya Diviziya"		
+		location = 6459
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {			
+		name = "97ya Pekhotnaya Diviziya"		
+		location = 6459
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "98ya Pekhotnaya Diviziya"		
+		location = 6459
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "10ya Pekhotnaya Diviziya"		
+		location = 9340
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "1ya Okhranka Brigada"		
+		location = 6296
+		division_template = "Okhranka Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+
+	}
+	division= {			
+		name = "2ya Okhranka Brigada"		
+		location = 6296
+		division_template = "Okhranka Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+
+	}
+	division= {			
+		name = "3ya Motostrelkovaya Diviziya"		
+		location = 9483
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	
+	##### Warsaw Okrug (West Theatre) -- Warsaw #####
+	# 1ya Polskaya Armiya = 12 Divisions
+	
+	division= {			
+		name = "11iy Mekhanizirovaniy Korpus"		
+		location = 3544
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "4iy Mekhanizirovaniy Korpus"		
+		location = 3544
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "4ya Motostrelkovaya Diviziya"		
+		location = 3392
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "5ya Motostrelkovaya Diviziya"		
+		location = 3392
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "11ya Pekhotnaya Diviziya"		
+		location = 3392
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "12ya Pekhotnaya Diviziya"		
+		location = 9508
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {			
+		name = "98ya Pekhotnaya Diviziya"		
+		location = 6321
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {			
+		name = "99ya Pekhotnaya Diviziya"		
+		location = 6321
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "3ya Okhranka Brigada"		
+		location = 6296
+		division_template = "Okhranka Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+
+	}
+	division= {			
+		name = "4ya Okhranka Brigada"		
+		location = 6296
+		division_template = "Okhranka Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+
+	}
+	##### Kharkov Okrug 
+	division= {			
+		name = "30iy Mekhanizirovaniy Korpus"		
+		location = 418
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "130ya Pekhotnaya Diviziya"		
+		location = 418
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "131ya Pekhotnaya Diviziya"		
+		location = 418
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	##### Gomel Okrug
+	division= {			
+		name = "31iy Mekhanizirovaniy Korpus"		
+		location = 9288
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "133ya Pekhotnaya Diviziya"		
+		location = 9288
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "132ya Pekhotnaya Diviziya"		
+		location = 9288
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	##### Revel Okrug
+	division= {			
+		name = "32iy Mekhanizirovaniy Korpus"		
+		location = 3152
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "134ya Pekhotnaya Diviziya"		
+		location = 3152
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "135ya Pekhotnaya Diviziya"		
+		location = 3152
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	##### Erevan Okrug
+	division= {			
+		name = "33iy Mekhanizirovaniy Korpus"		
+		location = 12320
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "136ya Pekhotnaya Diviziya"		
+		location = 12320
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "137ya Pekhotnaya Diviziya"		
+		location = 12320
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	##### Baku Garrison
+	division= {			
+		name = "138ya Pekhotnaya Diviziya"		
+		location = 3653
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "139ya Pekhotnaya Diviziya"		
+		location = 3653
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "140ya Pekhotnaya Diviziya"		
+		location = 3653
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	##### Kiev Okrug (West Theatre) -- Kiev #####
+	# 1ya Ukrainskaya Armiya = 12 Divisions
+	division= {			
+		name = "5iy Mekhanizirovaniy Korpus"		
+		location = 525
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "6oy Mekhanizirovaniy Korpus"		
+		location = 525
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "6ya Motostrelkovaya Diviziya"		
+		location = 525
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "7a Motostrelkovaya Diviziya"		
+		location = 525
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "13ya Pekhotnaya Diviziya"		
+		location = 11561
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "14ya Pekhotnaya Diviziya"		
+		location = 11561
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "8ya Motostrelkovaya Diviziya"		
+		location = 11561
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "15ya Pekhotnaya Diviziya"		
+		location = 11670
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "9ya Motostrelkovaya Diviziya"		
+		location = 11670
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "10ya Motostrelkovaya Diviziya"		
+		location = 11670
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "16ya Pekhotnaya Diviziya"		
+		location = 11405
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "17ya Pekhotnaya Diviziya"		
+		location = 11405
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	##### Petrograd Okrug (West Theatre) -- Petrograd #####
+	# 1ya Russkaya Armiya = 24 Divisions
+	division= {			
+		name = "1ya Leyb-Gvardiya"		
+		location = 3151
+		division_template = "Leyb-Gvardiya"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "7oy Mekhanizirovaniy Korpus"		
+		location = 3151
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "8oy Mekhanizirovaniy Korpus"		
+		location = 3151
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "9iy Mekhanizirovaniy Korpus"		
+		location = 3151
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "11ya Motostrelkovaya Diviziya"		
+		location = 3151
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "12ya Motostrelkovaya Diviziya"		
+		location = 3151
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "13ya Motostrelkovaya Diviziya"		
+		location = 3151
+		division_template = "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "19ya Pekhotnaya Diviziya"		
+		location = 11105
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "3ya Leyb-Gvardiya"		
+		location = 9100
+		division_template = "Leyb-Gvardiya"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "4ya Leyb-Gvardiya"		
+		location = 9100
+		division_template = "Leyb-Gvardiya"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "102ya Pekhotnaya Diviziya"		
+		location = 9206
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "103ya Pekhotnaya Diviziya"		
+		location = 9097
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "20ya Pekhotnaya Diviziya"		
+		location = 11105
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "21ya Pekhotnaya Diviziya"		
+		location = 11105
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "22ya Pekhotnaya Diviziya"		
+		location = 3122
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "10iy Mekhanizirovaniy Korpus"		
+		location = 3122
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "23ya Pekhotnaya Diviziya"		
+		location = 3134
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "12iy Mekhanizirovaniy Korpus"		
+		location = 3134
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "24ya Pekhotnaya Diviziya"		
+		location = 11125
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "25ya Pekhotnaya Diviziya"		
+		location = 11125
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "26ya Pekhotnaya Diviziya"		
+		location = 11125
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	################### MOSCOW
+	division= {			
+		name = "13iy Mekhanizirovaniy Korpus"		
+		location = 6380
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "14iy Mekhanizirovaniy Korpus"		
+		location = 6380
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "103ya Pekhotnaya Diviziya"		
+		location = 6380
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "104ya Pekhotnaya Diviziya"		
+		location = 6380
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "105ya Pekhotnaya Diviziya"		
+		location = 6380
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "106ya Pekhotnaya Diviziya"		
+		location = 6380
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}	
+
+	####### Dal'nevostochnyi Teatr VD (Far Eastern TVD) (CO: ) #######
+	##### Dal'niy Vostok Voennyii Okrug (Far Eastern Military District) (CO: Blucker) #####
+	division= {	# 	
+		name = "6ya Pogranichnaya Diviziya"
+		location = 957
+		division_template = "Okhranka Division"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "RUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 8
+
+	}			
+	# Osbogo Strelkovyi Korpus (CO: ) #
+	division= {	# "79ya Gornostrelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 79
+		}
+		location = 6686
+		division_template = "Gornostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "101ya Gornostrelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 101
+		}
+		location = 11643
+		division_template = "Gornostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+
+	### 1ya Primorskaya Armiya (CO: Podlas) ###		
+	# 26ya Strelkovyi Korpus (CO: ) #
+	division= {	# 		
+		name = "21ya 'Permskaya' Pekhot. Div."
+		location = 3977
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {		
+		name = "22ya 'Krasnodarskaya' Pekhot. Div."
+		location = 6838
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {	# "26ya 'Zlatoustovskaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location = 3787
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	# 31ya Strelkovyi Korpus (CO: ) #
+	division= {	# "92ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 92
+		}
+		location = 12189
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "8ya 'Dal'nevostochnyi' Kav. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 10466
+		division_template = "Kavaleriyskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {			
+		name = "DVVO Tankovaya Gruppa"		
+		location = 12189
+		division_template = "Legko-Tankovaya Brigada"		# 3ya TB (T-26), 11ya TB (T-26)
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	# 39ya Strelkovyi Korpus (CO: ) #
+	division= {	# "32ya 'Saratovskaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		}
+		location = 11879
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {	# "40ya 'Bogucharskaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 40
+		}
+		location = 11879
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	# 43ya Strelkovyi Korpus (CO: ) #
+	division= {	# "66ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 66
+		}
+		location = 6684
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {	# "105ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 105
+		}
+		location = 664
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	# 59ya Strelkovyi Korpus (CO: ) #
+	division= {	# "39ya 'Tihookeanskaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 39
+		}
+		location = 4805
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {	# "59ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 59
+		}
+		location = 7672
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	
+	### 2ya Primorskaya Armiya (CO: ) ###		
+	division= {	# "69ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 69
+		}
+		location = 12657
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	# 18ya Strelkovyi Korpus (CO: ) #
+	division= {	# "12ya 'Amur' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 10722
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {	# "34ya 'Sredne-Volzh.' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 34
+		}
+		location = 7801
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {	# "35ya 'Sibirskaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 35
+		}
+		location = 10655
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	# 20ya Strelkovyi Korpus (CO: ) #
+	division= {	# "3ya 'Krymskaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 4725
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {	# "78ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 78
+		}
+		location = 7763
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	
+	#### Zabaikal'skii Voennyii Okrug (Transbaikal Military District) -- Argunsk ####
+	division= {	# "18ya NKVD Pogranichnaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 12641
+		division_template = "Okhranka Division"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "RUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}			
+	### 1ya Gruppa Armiya (CO: ) ###		
+	division= {	# "36ya 'Zabaikal'skaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 36
+		}
+		location = 10567
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {	# "57ya 'Ural'skaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 57
+		}
+		location = 12622
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {	# "82ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 82
+		}
+		location = 1776
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {			
+		name = "20ya Tankovaya Korpus"		
+		location = 1776
+		division_template = "Tankovaya Korpus"			# BT-5s
+		start_experience_factor = 0.3
+	}
+	# 12ya Strelkovyi Korpus (CO: )	#
+	division= {	# "93ya 'Vostochno -Sibir.' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 93
+		}
+		location = 12537
+		division_template = "Pekhotnaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "RUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}			
+	division= {	# "94ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 94
+		}
+		location = 10541
+		division_template = "Pekhotnaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "RUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}			
+	division= {	# "114ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 114
+		}
+		location = 7851
+		division_template = "Pekhotnaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "RUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}
+	# 32ya Strelkovyi Korpus (CO: )	#
+	division= {	# "46ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 46
+		}
+		location = 10638
+		division_template = "Pekhotnaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "RUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}			
+	division= {	# "109ya Motostrelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 109
+		}
+		location = 4745
+		division_template = "Motostrelkovaya Diviziya"
+		#force_equipment_variants = { infantry_equipment_0 = { owner = "RUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	# "152ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 152
+		}
+		location = 4719
+		division_template = "Pekhotnaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "RUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}		
+
+	#### Sibirskii Voennyii Okrug (Siberian Military District) -- Semipalatinsk ####
+	# Subordinatre to AG
+	division= {			
+		name = "71ya Pekhotnaya Diviziya"		
+		location = 12397
+		division_template = "Pekhotnaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "RUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}			
+	division= {			
+		name = "73ya Pekhotnaya Diviziya"		
+		location = 1840
+		division_template = "Pekhotnaya Diviziya"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "RUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}			
+	division= {			
+		name = "78ya Pekhotnaya Diviziya"		
+		location = 10264
+		division_template = "Pekhotnaya Diviziya"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "RUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}			
+	division= {			
+		name = "94ya Pekhotnaya Diviziya"		
+		location = 7243
+		division_template = "Pekhotnaya Diviziya"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "RUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}			
+	division= {			
+		name = "7ya Okhranka Brigada"		
+		location = 12108
+		division_template = "Okhranka Division"		# NKVD -- older equipment, training
+		force_equipment_variants = { infantry_equipment_1 = { owner = "RUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}	
+	##### Blizhniy Vostok Teatr VD (Near East Theater) -- Astrakhan #####
+	#### Zakavkaz'e Voennyii Okrug (Transcaucasus Military District) -- Tblisi ####
+	### Batumi Gruppa Armiya -- Batumi ###		
+	# 15ya Kavaleriyskiy Korpus		
+	division= {			
+		name = "17ya Gorno-Kav. Div."		
+		location = 7454
+		division_template = "Kavaleriyskaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "RUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "24ya Kavaleriyskaya Diviziya"		
+		location = 7454
+		division_template = "Kavaleriyskaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "RUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+
+	# Subordinate to AG
+	division= {			
+		name = "9ya 'Kavkazskaya' Gornostrelk. Div."		
+		location = 789
+		division_template = "Gornostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}			
+	division= {			
+		name = "20ya 'Kavkazskaya' Gornostrelk. Div."		
+		location = 789
+		division_template = "Gornostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}			
+	division= {			
+		name = "47ya 'Gruzinskaya' Gornostrelk. Div."		
+		location = 6991
+		division_template = "Gornostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}			
+
+	### Tiblisi Gruppa Armiya -- Tiblisi ###		
+	# Subordinate to AG
+	division= {			
+		name = "63ya 'Gruzinskaya' Gornostrelk. Div."		
+		location = 12376
+		division_template = "Gornostrelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "RUS" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}			
+	division= {			
+		name = "76ya 'Armyanskaya' Gornostrelk. Div."		
+		location = 6997
+		division_template = "Gornostrelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "RUS" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}			
+	division= {			
+		name = "77ya 'Azerbaidzhan.' Gornostrelk. Div."		
+		location = 4660
+		division_template = "Gornostrelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "RUS" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}			
+
+	# Subordinate to VO
+	division= {			
+		name = "9ya Okhranka Brigada"		
+		location = 1599
+		division_template = "Okhranka Division"		# NKVD -- older equipment, training
+		force_equipment_variants = { infantry_equipment_0 = { owner = "RUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}			
+
+	#### Severniy Kavkaz Voennyii Okrug (North Caucasus Military District) -- Rostov na Don ####
+	# 9ya Territorial'niy Korpus
+	division= {			
+		name = "10ya 'Severnogo Kraya' Pekhot. Div."		
+		location = 3686
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}			
+	division= {			
+		name = "13ya 'Dagestanskaya' Pekhot. Div."		
+		location = 3686
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}			
+	division= {			
+		name = "22ya 'Krasnodarskaya' Pekhot. Div."		
+		location = 3686
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}			
+	division= {			
+		name = "74ya 'Tamanskaya' Pekhot. Div."		
+		location = 3734
+		division_template = "Pekhotnaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "RUS" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}			
+	division= {			
+		name = "38ya 'Donskaya' Pekhot. Div."		
+		location = 3686
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}			
+
+	# 7ya Kavaleriyskiy Korpus		
+	division= {			
+		name = "10ya Kavaleriyskaya Diviziya"		
+		location = 6474
+		division_template = "Kavaleriyskaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "RUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "12ya 'Kubanskaya' Kav. Div."		
+		location = 6474
+		division_template = "Kavaleriyskaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "RUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}
+	division= {			
+		name = "13ya 'Kubanskaya' Kav. Div."		
+		location = 6474
+		division_template = "Kavaleriyskaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "RUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	division= {			
+		name = "15ya 'Donskaya' Kav. Div."		
+		location = 6474
+		division_template = "Kavaleriyskaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "RUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}
+
+	# Subordinate to AG
+	division= {			
+		name = "28ya 'Vyatskaya' Gornostrelk. Div."		
+		location = 9417
+		division_template = "Gornostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}			
+	division= {			
+		name = "11ya Okhranka Brigada"		
+		location = 9417
+		division_template = "Okhranka Division"		# NKVD -- older equipment, training
+		force_equipment_variants = { infantry_equipment_0 = { owner = "RUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}
+
+}					
+					
+
+### Air Wings
+air_wings = {
+	195 = {																# Leningrad 
+		### LVO Aviatsya Komandovaniya ###
+		fighter_equipment_1 = { owner = "RUS" amount = 225 }				# 14ya Istrebitel'nye Avia. Polk -- I-16
+						# 54ya Istrebitel'nye Avia. Polk -- I-16
+						# 59ya Istrebitel'nye Avia. Polk -- I-16
+						# 15ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
+		tac_bomber_equipment_1 =  { owner = "RUS" amount = 216 }			# 29ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
+					# 55ya Bombardirovochnye Avia. Polk -- DB-3A
+					# 68ya Bombardirovochnye Avia. Polk -- DB-3A
+					# 71ya Bombardirovochnye Avia. Polk -- DB-3A
+		### VVS - KBF Aviatsya Komandovaniya ###
+		nav_bomber_equipment_1 = { owner = "RUS" amount = 96 }			# 8ya VMF Aviabrigada -- MBR-2
+					# 10ya VMF Aviabrigada -- MBR-2
+	}
+	219 = {																# Moscow 
+		### MVO Aviatsya Komandovaniya ###
+		fighter_equipment_0 = { owner = "RUS" amount = 90 }				# 2ya Istrebitel'nye Avia. Polk -- I-15
+						# 54ya Istrebitel'nye Avia. Polk -- I-15
+		transport_plane_equipment_1 = { owner = "RUS" amount = 60 }		# 46ya Transporta Avia. Tupolev ANT-9
+		### 1ya Vozdushnaya Armiya ###
+		strat_bomber_equipment_1 =  { owner = "RUS" amount = 60 }		# 13ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M
+				# 27ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M
+	}
+	206 = {																# Minsk 
+		### BOVO Aviatsya Komandovaniya ###
+		fighter_equipment_1 = { owner = "RUS" amount = 90 }				# 56ya Istrebitel'nye Avia. Polk -- I-16
+						# 58ya Istrebitel'nye Avia. Polk -- I-16
+		fighter_equipment_0 = { owner = "RUS" amount = 60 }				# 66ya Istrebitel'nye Avia. Polk -- I-153 (REVISIT -- VARIANT)
+		CAS_equipment_1 =  { owner = "RUS" amount = 60 }				# 8ya Shturmovye Avia. Polk -- SB-2M-103 (REVISIT -- VARIANT)
+		tac_bomber_equipment_1 =  { owner = "RUS" amount = 216 }			# 16ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
+					# 18ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
+					# 65ya Bombardirovochnye Avia. Polk -- DB-3A
+					# 70ya Bombardirovochnye Avia. Polk -- DB-3A
+	}
+	242 = {																# Smolensk 
+		### KalVO Aviatsya Komandovaniya ###
+		fighter_equipment_1 = { owner = "RUS" amount = 60 }				# 17ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
+	}
+	202 = {																# Kiev 
+		### KOVO Aviatsya Komandovaniya ###
+		fighter_equipment_0 = { owner = "RUS" amount = 60 }				# 22ya Istrebitel'nye Avia. Polk -- I-153 (REVISIT -- VARIANT)
+		fighter_equipment_1 = { owner = "RUS" amount = 90 }				# 51ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
+						# 69ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
+		tac_bomber_equipment_1 =  { owner = "RUS" amount = 144 }			# 1ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
+					# 10ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
+					# 62ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
+	}
+	221 = {																# Kharkov 
+		### KhVO Aviatsya Komandovaniya ###
+		tac_bomber_equipment_1 =  { owner = "RUS" amount = 60 }			# 19ya Bombardirovochnye Avia. Polk -- DB-3A
+	}
+	
+	137 = {																# Sevastopol 
+		### VVS - BSF Aviatsya Komandovaniya ###
+		nav_bomber_equipment_1 = { owner = "RUS" amount = 96 }			# 4ya VMF Aviabrigada -- MBR-2
+					# 7ya VMF Aviabrigada -- MBR-2
+	}
+	231 = {																# Tblisi 
+		### ZakVO Aviatsya Komandovaniya ###
+		fighter_equipment_0 = { owner = "RUS" amount = 60 }				# 60ya Istrebitel'nye Avia. Polk -- I-153 (REVISIT -- VARIANT)
+	}
+	218 = {																# Rostov na don 
+		### 3ya Vozdushnaya Armiya ###
+		strat_bomber_equipment_1 =  { owner = "RUS" amount = 60 }		# 3ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M
+				# 7ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M
+	}
+
+	408 = {																# Vladivostock 
+		### Dal'nevostochnyi Aviatsya Komandovaniya ###
+		fighter_equipment_0 = { owner = "RUS" amount = 165 }				# 31ya Istrebitel'nye Avia. Polk -- I-15
+						# 53ya Istrebitel'nye Avia. Polk -- I-153 (REVISIT -- VARIANT)
+						# 61ya Istrebitel'nye Avia. Polk -- I-153 (REVISIT -- VARIANT)
+		fighter_equipment_1 = { owner = "RUS" amount = 135 }				# 20ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
+						# 26ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
+						# 28ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
+		CAS_equipment_1 =  { owner = "RUS" amount = 45 }				# 72ya Shturmovye Avia. Polk -- SB-2M-100
+		tac_bomber_equipment_1 =  { owner = "RUS" amount = 72 }			# 12ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
+					# 25ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
+		strat_bomber_equipment_1 =  { owner = "RUS" amount = 100 }		# 5ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M
+		### 2ya Vozdushnaya Armiya ###
+				# 30ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M
+				# 64ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M
+	}
+	563 = {																# Chita 
+		### ZbkVO Aviatsya Komandovaniya ###
+		fighter_equipment_0 = { owner = "RUS" amount = 60 }				# 100ya Istrebitel'nye Avia. Polk -- I-15
+		fighter_equipment_1 = { owner = "RUS" amount = 45 }				# 67ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
+		CAS_equipment_1 =  { owner = "RUS" amount = 60 }				# 23ya Shturmovye Avia. Polk -- SB-2M-100
+		tac_bomber_equipment_1 =  { owner = "RUS" amount = 60 }			# 63ya Bombardirovochnye Avia. Polk -- DB-3A
+	}
+	409 = {																# Khabarovsk 
+		### SibVO Aviatsya Komandovaniya ###
+		CAS_equipment_1 =  { owner = "RUS" amount = 60 }				# 52ya Shturmovye Avia. Polk -- SB-2M-103 (REVISIT -- VARIANT)
+	}
+
+}
+
+
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {
+	
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "RUS"
+		}
+		requested_factories = 15
+		progress = 0.1
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "RUS" 
+		}
+		requested_factories = 3
+		progress = 0.3
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "RUS" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_2
+			creator = "RUS" 
+		}
+		requested_factories = 5
+		progress = 0.4
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "RUS" 
+		}
+		requested_factories = 5
+		progress = 0.4
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "RUS" 
+		}
+		requested_factories = 4
+		progress = 0.15
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = strat_bomber_equipment_1
+			creator = "RUS" 
+		}
+		requested_factories = 2
+		progress = 0.2
+		efficiency = 100
+	}
+}
+	#####################

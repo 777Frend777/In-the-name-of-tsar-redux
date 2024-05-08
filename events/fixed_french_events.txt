@@ -1,0 +1,1997 @@
+﻿############## FRENCH EVENTS #################
+
+add_namespace = france
+
+#RHINE TAKES RHINE
+country_event = {
+	id = france.1015
+	title = france.1015.t
+	desc = france.1015.d
+	picture = GFX_news_event_election_vote
+	is_triggered_only = yes
+
+	option = {
+	name = france.1015.a	
+    ai_chance = { factor = 75 }	
+	transfer_state = 814
+		
+	FRA = {
+	remove_ideas = FRA_saar_crisis	
+					}
+	}
+	option = {
+		name = france.1015.b	
+    ai_chance = { factor = 25 }		
+	add_stability = -0.1
+	}
+}
+news_event = {
+        id = france.1016
+        title = france.1016.t
+        desc = france.1016.d
+        picture = GFX_news_event_038
+
+        major = yes
+
+        is_triggered_only = yes
+		immediate = {
+		set_global_flag = French_civil_war_1
+	}
+        option = {
+		name = france.1016.a
+		trigger = {
+			NOT = {
+				TAG = FRA
+			}
+			}
+	}
+			option = {
+		name = france.1016.b
+			trigger = { TAG = FRA }
+	}
+}
+#FRENCH CIVIL WAR
+country_event = {
+	id = france.1014
+	title = france.1014.t
+	desc = france.1014.d
+	picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+
+	option = {
+		name = france.1014.a	
+    ai_chance = { factor = 100 }		
+				FRA = {
+				remove_ideas = FRA_disjointed_government
+						start_civil_war = {
+							ideology = communism
+							size = 0.4
+						}
+						
+					}
+	hidden_effect = {
+	news_event = { id = france.1016 days = 1 }
+	51 = {
+		owner = {
+	country_event = { id = france.1015 days = 1 }
+	}
+	}
+	}
+	}
+}	
+#French elections 1936 #Revised
+country_event = {
+	id = france.1013
+	title = france.1013.t
+	desc = france.1013.d
+	picture = GFX_news_event_election_vote
+
+	trigger = {
+		tag = FRA
+		date > 1936.5.1
+		date < 1936.6.18
+		has_country_flag = does_not_work
+	}
+	fire_only_once = yes
+	#3 Options: 
+	#Popular Front Under Leon Blum Wins
+	#Popular Front Under Daladier Wins
+	#ARD Under Flandin Wins
+	option = {
+		name = france.1013.a	#Leon Blum elected 
+		ai_chance = { 
+		factor = 33
+		}
+		FRA = {
+		set_country_flag = FRA_socialist_pop_front
+		create_country_leader = {
+		name = "Léon Blum"
+		desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+		picture = "Leon_Blum.dds" 
+		expire = "1965.1.1"
+		ideology = socialist_subtype
+		traits = {
+		
+		}
+		}
+		add_popularity = {
+					ideology = socialist
+					popularity = 0.13
+				}
+		set_politics = { ruling_party = socialist elections_allowed = yes }		
+		}
+		hidden_effect = {
+		FRA = { country_event = { id = france.21 days = 35 } }
+		}
+	}
+	
+	option = {
+		name = france.1013.b	#Edouard Daladier elected
+		ai_chance = { 
+			factor = 34	
+		}
+		FRA = {
+		set_country_flag = FRA_democratic_pop_front
+			create_country_leader = {
+			name = "Édouard Daladier"
+			desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+			picture = "Portrait_France_Edouard_Daladier.dds"
+			expire = "1965.1.1"
+			ideology = democratic_subtype
+			traits = {
+				stout_defender
+			}
+		}
+		add_popularity = {
+					ideology = democratic
+					popularity = 0.04
+				}
+		}
+		
+		hidden_effect = {
+		FRA = { country_event = { id = france.21 days = 35 } }
+		}					
+		}
+	option = {
+		name = france.1013.c	#Flandin elected 
+		ai_chance = { 
+		factor = 33	
+		}
+		FRA = {
+		set_country_flag = FRA_conservative_pop_front
+		set_politics = { ruling_party = conservatives elections_allowed = yes }
+			add_popularity = {
+					ideology = conservatives
+					popularity = 0.14
+				}
+		}
+		hidden_effect = {
+		FRA = { country_event = { id = france.21 days = 35 } }
+		}	
+	}
+}
+
+#  Belgian Submission
+country_event = {
+	id = france.1000
+	title = france.1000.t
+	desc = france.1000.d
+	picture = GFX_report_event_generic_panzer_attack
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.1000.a	#sounds good
+    ai_chance = {
+			factor = 45 }		
+		FRA = {
+			country_event = { days = 1 id = france.1002 }
+		}
+	}
+	
+
+	option = {
+		name = france.1000.b	#no way
+		ai_chance = { factor = 55  }
+		FRA = {
+			country_event = { days = 1 id = france.1003 }
+		}
+	}
+}
+# Belgium Submits
+country_event = {
+	id = france.1002
+	title = france.1002.t
+	desc = france.1002.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.1002.a
+	FRA = {
+		annex_country = { target = BEL transfer_troops = yes }
+	}
+	FRA = {
+		annex_country = { target = LUX transfer_troops = yes }
+	}
+ }
+}
+
+# Belguim rejects
+country_event = {
+	id = france.1003
+	title = france.1003.t
+	desc = france.1003.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.1003.a
+		create_wargoal = {
+			type = annex_everything
+			target = BEL
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = LUX
+		}
+	 }
+  }
+ #  SWISS SUBMISSION
+country_event = {
+	id = france.1004
+	title = france.1004.t
+	desc = france.1004.d
+	picture = GFX_report_event_generic_panzer_attack
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.1004.a	#sounds good
+    ai_chance = {
+			factor = 30 }	
+		FRA = {
+			country_event = { days = 1 id = france.1005 }
+		}
+		}
+	
+
+	option = {
+		name = france.1004.b	#no way
+		ai_chance = { factor = 55  }
+		FRA = {
+			country_event = { days = 1 id = france.1006 }
+		}
+	}
+}
+
+# SWI Submits
+country_event = {
+	id = france.1005
+	title = france.1005.t
+	desc = france.1005.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.1005.a
+	FRA = {
+		transfer_state = 3
+	}
+ }
+}
+
+# SWI rejects
+country_event = {
+	id = france.1006
+	title = france.1006.t
+	desc = france.1006.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.1006.a
+		create_wargoal = {
+			type = annex_everything
+			target = SWI
+		}
+	 }
+  }
+ 
+#Alsace Lorraine Ultimatum
+country_event = {
+	id = france.1007
+	title = france.1007.t
+	desc = france.1007.d
+	picture = GFX_report_event_generic_panzer_attack
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.1007.a #No Way
+    ai_chance = {
+			factor = 99 }	
+		BAV = {
+			country_event = { days = 1 id = france.1009 }
+		}
+		}
+	
+
+	option = {
+		name = france.1007.b #Cede Alsace 
+		ai_chance = { 
+		factor = 1 
+		modifier = {
+		factor = 80
+		has_war_with = ENG 
+		}
+		}
+		BAV = {
+			country_event = { days = 1 id = france.1008 }
+		}
+	}
+}
+
+#France cedes Alsace
+country_event = {
+	id = france.1008
+	title = france.1008.t
+	desc = france.1008.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.1008.a
+	BAV = {
+		transfer_state = 28
+	}
+ }
+}
+
+# france rejects
+country_event = {
+	id = france.1009
+	title = france.1009.t
+	desc = france.1009.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.1009.a
+		BAV = { create_wargoal = {
+			type = annex_everything
+			target = FRA
+		}
+		}
+		}
+	}
+
+	 #  Cede SAAR
+country_event = {
+	id = france.1011
+	title = france.1011.t
+	desc = france.1011.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.1011.a	#sounds good
+    ai_chance = {
+			factor = 99 }	
+		FRA = { remove_ideas = FRA_saar_crisis }
+		GER = {
+			country_event = { days = 1 id = france.1012 }
+		}
+		GER = {
+		transfer_state = 814
+		}
+		}
+	
+
+	option = {
+		name = france.1011.b	#no way
+		ai_chance = { factor = 1  }
+		FRA = {
+			add_stability = -0.05
+			add_political_power = -50
+		}
+	}
+}
+
+#FRANCE CEDES SAAR
+country_event = {
+	id = france.1012
+	title = france.1012.t
+	desc = france.1012.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.1012.a
+ }
+}
+#PACT WITH TSAR
+country_event = {
+	id = france.1017
+	title = france.1017.t
+	desc = france.1017.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.1017.a
+		ai_chance = {
+			factor = 65 }
+				
+		#FRA = { set_country_flag = french_pact_with_tsar }
+		country_event = { days = 4 id = france.1018 }
+		
+		}
+	
+
+	option = {
+		name = france.1017.b
+		ai_chance = { factor = 35  }
+		FRA = {
+			country_event = { days = 4 id = france.1019 }
+		}
+	}
+	}
+#RUSSIA AGREES	
+country_event = {
+	id = france.1018
+	title = france.1018.t
+	desc = france.1018.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.1018.a
+		FRA = {
+		unlock_decision_category_tooltip = FRA_paris_petrograd_decisions
+		give_guarantee = RUS
+		add_opinion_modifier = { target = RUS modifier = pact_with_tsar }
+		}
+		RUS = { 
+		give_guarantee = FRA
+		}
+ }
+}
+
+country_event = {
+	id = france.1019
+	title = france.1019.t
+	desc = france.1019.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.1019.a
+		FRA = {
+		add_opinion_modifier = { target = RUS modifier = refused_pact_with_tsar }
+		}
+ }
+}	
+#BEF Arrives in Calais
+ country_event = {
+	id = france.34
+	title = france.34.t
+	desc = france.34.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = {
+		name = france.34.a
+		hidden_effect = {
+		FRA = { load_oob = FRA_BEF }
+		}
+	 }	
+}
+#Colonies break away
+country_event = {
+	id = france.1020
+	title = france.1020.t
+	desc = france.1020.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.1020.a
+ }
+}
+#Independence!
+country_event = {
+	id = france.1021
+	title = france.1021.t
+	desc = france.1021.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.1021.a
+		 ai_chance = {
+			factor = 70 }
+		FRA = {
+		end_puppet = FTU
+	}
+	}
+	option = {
+		name = france.1021.b
+		 ai_chance = {
+			factor = 30 }
+	}
+}
+country_event = {
+	id = france.1022
+	title = france.1021.t
+	desc = france.1021.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.1021.a
+		 ai_chance = {
+			factor = 99 }
+		FRA = {
+		end_puppet = FNA
+	}
+	}
+	option = {
+		name = france.1021.b
+		 ai_chance = {
+			factor = 1 }
+	}
+}
+country_event = {
+	id = france.1023
+	title = france.1021.t
+	desc = france.1021.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.1021.a
+		 ai_chance = {
+			factor = 99 }
+		FRA = {
+		end_puppet = FEA
+	}
+	}
+	option = {
+		name = france.1021.b
+		 ai_chance = {
+			factor = 1 }
+	}
+}
+country_event = {
+	id = france.1024
+	title = france.1021.t
+	desc = france.1021.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.1021.a
+		 ai_chance = {
+			factor = 99 }
+		FRA = {
+		end_puppet = FIC
+	}
+	}
+	option = {
+		name = france.1021.b
+		 ai_chance = {
+			factor = 1 }
+	}
+}
+country_event = {
+	id = france.1025
+	title = france.1021.t
+	desc = france.1021.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.1021.a
+		 ai_chance = {
+			factor = 99 }
+		FRA = {
+		end_puppet = SYR
+	}
+	}
+	option = {
+		name = france.1021.b
+		 ai_chance = {
+			factor = 1 }
+	}
+}
+
+country_event = {
+	id = france.1026
+	title = france.1021.t
+	desc = france.1021.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.1021.a
+		 ai_chance = {
+			factor = 99 }
+		FRA = {
+		end_puppet = FIC
+	}
+	}
+	option = {
+		name = france.1021.b
+		 ai_chance = {
+			factor = 1 }
+	}
+}
+#France Sends Guns
+country_event = {
+	id = france.1027
+	title = france.1027.t
+	desc = france.1027.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.1027.a
+		FRA = {
+		send_equipment = { target = ROOT type = infantry_equipment amount = 2000 }
+		}
+	}
+}
+
+###Territory Management###
+#Fate of Belgium
+country_event = {
+	id = france.1030
+	title = france.1030.t
+	desc = france.1030.d
+
+	is_triggered_only = yes
+
+	option = { #Restore Friendly Belgium
+		name = france.1030.a
+		ai_chance = {
+			factor = 50 
+			modifier = {
+				factor = 0
+				has_government = fascism 
+			}
+		}	
+		FRA = { release_puppet = BEL }
+	}
+	option = { #Split Wallonia and Flanders
+		name = france.1030.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_government = fascism 
+			}
+		}	
+		FRA = { 
+		release_puppet = WAL 
+		release_puppet = BEL
+		}
+	}
+	option = { #Occupy Belgium
+		name = france.1030.c
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 100
+				has_government = fascism 
+			}
+		}
+		add_political_power = -15
+		add_stability = -0.03
+	}
+}
+
+#Fate of Holland
+country_event = {
+	id = france.1031
+	title = france.1031.t
+	desc = france.1031.d
+
+	is_triggered_only = yes
+
+	option = { #Restore Friendly Netherlands
+		name = france.1031.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_government = fascism 
+			}
+		}	
+		FRA = { release_puppet = HOL }
+	}
+	option = { #Occupy South, Satellite the North
+		name = france.1031.b
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 50
+				has_government = fascism 
+			}
+		}	
+		HOL = { transfer_state = 7 }
+		if = {
+		limit = { controls_state = 36 }
+		HOL = { transfer_state = 36 }
+		}
+		FRA = {
+		add_political_power = -15		
+		puppet = HOL
+		}
+	}
+	option = { #Occupy Netherlands
+		name = france.1031.c
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 50
+				has_government = fascism 
+			}
+		}
+		add_political_power = -15
+		add_stability = -0.03
+	}
+}
+
+#Fate of Switzerland
+country_event = {
+	id = france.1032
+	title = france.1032.t
+	desc = france.1032.d
+
+	is_triggered_only = yes
+
+	option = { #Restore Friendly Switzerland
+		name = france.1032.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_government = fascism 
+			}
+		}	
+		FRA = { release_puppet = SWI }
+	}
+	option = { #Occupy West, Satellite the East
+		name = france.1032.b
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 100
+				has_government = fascism 
+			}
+		}	
+		SWI = { transfer_state = 151 }
+		FRA = { 
+		add_political_power = -15
+		puppet = SWI
+		}
+	}
+	option = { #Occupy Switzerland
+		name = france.1032.c
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 0
+				has_government = fascism 
+			}
+		}
+		add_political_power = -15
+		add_stability = -0.03
+	}
+}
+
+#Fate of Luxemburg
+country_event = {
+	id = france.1033
+	title = france.1033.t
+	desc = france.1033.d
+
+	is_triggered_only = yes
+
+	option = { #Restore Friendly Luxembourg
+		name = france.1033.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_government = fascism 
+			}
+		}	
+		FRA = { release_puppet = LUX }
+	}
+	option = { #Occupy Luxembourg
+		name = france.1033.b
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 100
+				has_government = fascism 
+			}
+		}	
+		add_political_power = -15
+		add_stability = -0.03
+	}
+}	
+
+#Fate of Italy
+country_event = {
+	id = france.1034
+	title = france.1034.t
+	desc = france.1034.d
+
+	is_triggered_only = yes
+
+	option = { #Restore Friendly Italy
+		name = france.1034.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = { has_government = fascism }
+			}
+		}	
+		FRA = { release_puppet = ITA }
+	}
+	option = { #Occupy Liguria-Piedmont, Satellite the Rest
+		name = france.1034.b
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 100
+				has_government = fascism 
+			}
+		}
+		ITA = {
+		transfer_state = 2
+		}	
+		if = {
+		limit = { controls_state = 159 } #Lombardy
+		ITA = { transfer_state = 159 }
+		}		
+		if = {
+		limit = { controls_state = 39 } #South Tyrol
+		ITA = { transfer_state = 39 }
+		}
+		if = {
+		limit = { controls_state = 160 } #Veneto
+		ITA = { transfer_state = 160 } 
+		}
+		if = {
+		limit = { controls_state = 736 } #Istria
+		ITA = { transfer_state = 736 }
+		}
+		if = {
+		limit = { controls_state = 161 } #Emilia Romagna
+		ITA = { transfer_state = 161 }
+		}
+		if = {
+		limit = { controls_state = 162 } #Tuscany
+		ITA = { transfer_state = 162 }
+		}	
+		if = {
+		limit = { controls_state = 157 } #Abruzzo
+		ITA = { transfer_state = 157 }
+		}
+		if = {
+		limit = { controls_state = 117 } #Campania
+		ITA = { transfer_state = 117 }
+		}
+		if = {
+		limit = { controls_state = 156 } #Calabria
+		ITA = { transfer_state = 156 }
+		}
+		if = {
+		limit = { controls_state = 115 } #Sicily
+		ITA = { transfer_state = 115 }
+		}
+		if = {
+		limit = { controls_state = 114 } #Sardinia
+		ITA = { transfer_state = 114 }
+		}		
+		FRA = {
+		puppet = ITA 
+		add_political_power = -15
+		}
+		
+	}
+	option = { #Occupy Italy
+		name = france.1034.c
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 0
+				has_government = fascism 
+			}
+		}	
+		add_political_power = -15
+		add_stability = -0.03
+	}
+}
+
+#Fate of West Germany
+country_event = {
+	id = france.1036
+	title = france.1036.t
+	desc = france.1036.d
+
+	is_triggered_only = yes
+
+	option = { #Restore Friendly West German States
+		name = france.1036.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+				has_government = fascism 
+				has_government = neutrality
+				}
+			}
+		}	
+		hidden_effect = {
+		if = { 
+		limit = { controls_state = 51 } #Ruhr
+		WGR = { 
+		add_state_core = 51
+		transfer_state = 51 
+		}
+		}
+		if = { 
+		limit = { controls_state = 55 } #Hessen
+		WGR = { 
+		add_state_core = 55
+		transfer_state = 55
+		}
+		}
+		if = { 
+		limit = { controls_state = 42 } #Moselland
+		WGR = { 
+		add_state_core = 42
+		transfer_state = 42
+		}
+		}
+		if = { 
+		limit = { controls_state = 57 } #Westfalen
+		WGR = { 
+		add_state_core = 57
+		transfer_state = 57
+		}
+		}
+		if = { 
+		limit = { controls_state = 56 } #Weser-Ems
+		WGR = { 
+		add_state_core = 56
+		transfer_state = 56
+		}
+		}
+		if = { 
+		limit = { controls_state = 59 } #Hannover
+		WGR = { 
+		add_state_core = 59
+		transfer_state = 59
+		}
+		}
+		if = { 
+		limit = { controls_state = 58 } #Schleswig-Holstein
+		WGR = { 
+		add_state_core = 58
+		transfer_state = 58
+		}
+		}
+		if = { 
+		limit = { controls_state = 838 } #Nordslesvig
+		WGR = { 
+		add_state_core = 838
+		transfer_state = 838
+		}
+		}
+		if = { 
+		limit = { controls_state = 50 } #Wurttemberg
+		WGR = { 
+		add_state_core = 50
+		transfer_state = 50
+		}
+		}
+		if = { 
+		limit = { controls_state = 54 } #Franken
+		WGR = { 
+		add_state_core = 54
+		transfer_state = 54
+		}
+		}
+		if = { 
+		limit = { controls_state = 53 } #Niederbayern
+		WGR = { 
+		add_state_core = 53
+		transfer_state = 53
+		}
+		}
+		if = { 
+		limit = { controls_state = 52 } #Oberbayern
+		WGR = { 
+		add_state_core = 52
+		transfer_state = 52
+		}
+		}
+		}
+		FRA = { 
+		puppet = WGR
+		}
+	}
+	option = { #Occupy West Rhine, Restore West German States
+		name = france.1036.b
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 100
+				OR = {
+				has_government = fascism 
+				has_government = neutrality
+				}
+			}
+		}	
+		hidden_effect = {
+		if = { 
+		limit = { controls_state = 51 } #Ruhr
+		WGR = { 
+		add_state_core = 51
+		transfer_state = 51 
+		}
+		}
+		if = { 
+		limit = { controls_state = 55 } #Hessen
+		WGR = { 
+		add_state_core = 55
+		transfer_state = 55
+		}
+		}
+		if = { 
+		limit = { controls_state = 57 } #Westfalen
+		WGR = { 
+		add_state_core = 57
+		transfer_state = 57
+		}
+		}
+		if = { 
+		limit = { controls_state = 56 } #Weser-Ems
+		WGR = { 
+		add_state_core = 56
+		transfer_state = 56
+		}
+		}
+		if = { 
+		limit = { controls_state = 59 } #Hannover
+		WGR = { 
+		add_state_core = 59
+		transfer_state = 59
+		}
+		}
+		if = { 
+		limit = { controls_state = 58 } #Schleswig-Holstein
+		WGR = { 
+		add_state_core = 58
+		transfer_state = 58
+		}
+		}
+		if = { 
+		limit = { controls_state = 838 } #Nordslesvig
+		WGR = { 
+		add_state_core = 838
+		transfer_state = 838 
+		}
+		}
+		if = { 
+		limit = { controls_state = 50 } #Wurttemberg
+		WGR = { 
+		add_state_core = 50
+		transfer_state = 50
+		}
+		}
+		if = { 
+		limit = { controls_state = 54 } #Franken
+		WGR = { 
+		add_state_core = 54
+		transfer_state = 54
+		}
+		}
+		if = { 
+		limit = { controls_state = 53 } #Niederbayern
+		WGR = { 
+		add_state_core = 53
+		transfer_state = 53
+		}
+		}
+		if = { 
+		limit = { controls_state = 52 } #Oberbayern
+		WGR = { 
+		add_state_core = 52
+		transfer_state = 52
+		}
+		}
+		}
+		FRA = { 
+		puppet = WGR
+		}
+		add_political_power = -15
+	}
+	option = { #Occupy Occupy West Germany
+		name = france.1036.c
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 0
+				has_government = fascism 
+			}
+		}	
+		add_political_power = -15
+		add_stability = -0.03
+	}
+}	
+
+#Fate of Spain
+country_event = {
+	id = france.1035
+	title = france.1035.t
+	desc = france.1035.d
+
+	is_triggered_only = yes
+
+	option = { #Establish Friendly Spain
+		name = france.1035.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+				has_government = fascism 
+				has_government = neutrality
+				}
+			}
+		}	
+		FRA = { release_puppet = SPR }
+	}
+	option = { #Annex Catalonia, puppet the rest
+		name = france.1035.b
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 100
+				OR = {
+				has_government = fascism 
+				has_government = neutrality
+				}
+			}
+		}
+		SPR = {
+		transfer_state = 41
+		}
+		if = {
+		limit = { controls_state = 794 } #Eastern Aragon
+		SPR = { transfer_state = 794 }
+		}
+		if = {
+		limit = { controls_state = 166 } # Aragon
+		SPR = { transfer_state = 166 }
+		}
+		if = {
+		limit = { controls_state = 176 } # Castille
+		SPR = { transfer_state = 176 }
+		}
+		if = {
+		limit = { controls_state = 792 } # Pais Vasco
+		SPR = { transfer_state = 792 }
+		}
+		if = {
+		limit = { controls_state = 790 } # Asturias
+		SPR = { transfer_state = 790 }
+		}
+		if = {
+		limit = { controls_state = 171 } #Galicia
+		SPR = { transfer_state = 171 }
+		}
+		if = {
+		limit = { controls_state = 174 } #Leon
+		SPR = { transfer_state = 174 }
+		}
+		if = {
+		limit = { controls_state = 788 } #Salamanca
+		SPR = { transfer_state = 788 }
+		}
+		if = {
+		limit = { controls_state = 791 } #Valladolid
+		SPR = { transfer_state = 791 }
+		}
+		if = {
+		limit = { controls_state = 793 } #Guadalajara
+		SPR = { transfer_state = 793 }
+		}
+		if = {
+		limit = { controls_state = 170 } #Extremadura
+		SPR = { transfer_state = 170 }
+		}
+		if = {
+		limit = { controls_state = 175 } #La Mancha
+		SPR = { transfer_state = 175 }
+		}
+		if = {
+		limit = { controls_state = 168 } #Murcia
+		SPR = { transfer_state = 168 }
+		}
+		if = {
+		limit = { controls_state = 167 } #Valencia
+		SPR = { transfer_state = 167 }
+		}
+		if = {
+		limit = { controls_state = 789 } #Cordoba
+		SPR = { transfer_state = 789 }
+		}
+		if = {
+		limit = { controls_state = 173 } #Granada
+		SPR = { transfer_state = 173 }
+		}
+		if = {
+		limit = { controls_state = 169 } #Andalusia
+		SPR = { transfer_state = 169 }
+		}
+		if = {
+		limit = { controls_state = 118 } #Gibraltar
+		SPR = { transfer_state = 118 }
+		}
+		if = {
+		limit = { controls_state = 177 } #Ibiza
+		SPR = { transfer_state = 177 }
+		}
+		if = {
+		limit = { controls_state = 172 } #Navarre
+		SPR = { transfer_state = 172 }
+		}
+		FRA = {
+		add_political_power = -15
+		puppet = SPR
+		}
+	}
+	option = { #Occupy Spain
+		name = france.1035.c
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 0
+				has_government = fascism 
+			}
+		}	
+		add_political_power = -15
+		add_stability = -0.03
+	}
+}	
+
+#Violence Escalates
+country_event = {
+	id = france.1037
+	title = france.1037.t
+	desc = france.1037.d
+
+	is_triggered_only = yes
+
+	option = { #
+		name = france.1037.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 100
+				has_government = fascism 
+			}
+		}	
+	FRA = {
+	remove_ideas = FRA_political_instability_idea
+	add_timed_idea = { idea = FRA_political_instability_2_idea days = 50 }
+	hidden_effect = {
+	
+	if = { limit = { 
+		AND = {
+	check_variable = { FRA.left_wing_influence > 2 }
+		OR = { has_government = neutrality
+		has_government = fascism
+		}
+	}
+	}
+	country_event = { id = france.1038 days = 48 }
+	}
+	
+	if = { limit = {
+		AND = {
+	check_variable = { FRA.right_wing_influence > 2 }
+		OR = {
+		has_government = communism
+		has_government = socialist
+		}
+	}
+	}
+	country_event = { id = france.1063 days = 48 }
+	}
+	
+	}
+	}
+	}
+}
+
+#Communist Uprising!
+country_event = {
+	id = france.1038
+	title = france.1038.t
+	desc = france.1038.d
+
+	is_triggered_only = yes
+
+	option = { #
+		name = france.1038.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 100
+				has_government = fascism 
+			}
+		}	
+	FRA = {
+	set_country_flag = FRA_civil_war_flag
+	
+	start_civil_war = {
+							ideology = communism
+							size = 0.4
+							states = { 23 19 33 25 31 26 22 20 32 } #19 33 25 31 26 22 20
+						}
+	hidden_effect = {
+	set_variable = {
+		var = FRA.left_wing_influence
+		value = 0
+	}
+	}
+	}
+	news_event = { id = france.1039 }
+	}
+}
+
+#Nationalist Uprising!
+country_event = {
+	id = france.1063
+	title = france.1063.t
+	desc = france.1063.d
+
+	is_triggered_only = yes
+
+	option = { #
+		name = france.1063.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 100
+				has_government = fascism 
+			}
+		}	
+	FRA = {
+	set_country_flag = FRA_civil_war_flag
+	
+	start_civil_war = {
+							ideology = fascism
+							size = 0.4
+							states = { 23 19 33 25 31 26 22 20 32 } #19 33 25 31 26 22 20
+						}
+	hidden_effect = {
+	set_variable = {
+		var = FRA.right_wing_influence
+		value = 0
+	}
+	}
+	}
+	news_event = { id = france.1039 }
+	}
+}
+
+#French Civil War!
+news_event = {
+        id = france.1039
+        title = france.1039.t
+        desc = france.1039.d
+        picture = GFX_report_news_event_067
+
+        major = yes
+
+        is_triggered_only = yes
+
+        fire_only_once = yes
+
+        option = {
+            name = france.1039.a
+            
+        }
+}
+
+#Civil War Ends
+country_event = {
+	id = france.1040
+	title = france.1040.t
+	desc = france.1040.d
+
+	trigger = {
+	tag = FRA
+	FRA = {
+	has_civil_war = no 
+	has_country_flag = FRA_civil_war_flag
+	}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	option = { #
+		name = france.1040.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 100
+				has_government = fascism 
+			}
+		}	
+	FRA = {
+	add_political_power = 10
+	}
+	hidden_effect = {
+	news_event = { id = france.1041 }
+	}
+	}
+}	
+
+#French Civil Ends
+news_event = {
+        id = france.1041
+        title = france.1041.t
+        desc = france.1041.d
+        picture = GFX_report_news_event_054
+
+        major = yes
+
+        is_triggered_only = yes
+
+        fire_only_once = yes
+
+        option = {
+            name = france.1041.a
+            
+        }
+}
+
+#Normandy Niemen Airwing
+country_event = {
+        id = france.1042
+        title = france.1042.t
+        desc = france.1042.d
+        picture = GFX_report_event_fighters
+
+        is_triggered_only = yes
+
+        fire_only_once = yes
+		#Accept 
+        option = {
+            name = france.1042.a
+			ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 100
+				has_government = fascism 
+			}
+			}
+			FRA = { country_event = { id = france.1043 days = 2 } }
+			hidden_effect = {
+			RUS = { load_oob = FRA_normandy_niemen }
+			}
+            
+        }
+		#Deny
+		option = {
+            name = france.1042.b
+			ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 0
+				has_government = fascism 
+			}
+		}	
+          FRA = { country_event = { id = france.1044 days = 2 } }  
+        }
+}
+
+#Russia Accepts the Airwing
+country_event = {
+        id = france.1043
+        title = france.1043.t
+        desc = france.1043.d
+
+        is_triggered_only = yes
+
+        fire_only_once = yes
+		#Nice
+        option = {
+            name = france.1043.a
+        RUS = { add_opinion_modifier = { target = FRA modifier = fra_normandy_niemen_opinion } }   
+        }
+}
+
+#Russia Declines the Airwing
+country_event = {
+        id = france.1044
+        title = france.1044.t
+        desc = france.1044.d
+
+        is_triggered_only = yes
+
+        fire_only_once = yes
+        option = {
+            name = france.1044.a
+        }
+}
+
+#King of France dies
+country_event = {
+        id = france.1045
+        title = france.1045.t
+        desc = france.1045.d
+
+        is_triggered_only = yes
+
+        fire_only_once = yes
+        option = {
+            name = france.1045.a
+			
+		create_country_leader = {
+		name = "S.M.R. Henri d'Orléans"
+		desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+		picture = "henri_count_of_paris.tga"
+		expire = "1965.1.1"
+		ideology = neutrality_subtype
+		traits = {
+		#stout_defender
+		}
+		}
+        }
+}
+
+#Fate of German Empire
+country_event = {
+	id = france.1046
+	title = france.1046.t
+	desc = france.1046.d
+
+	is_triggered_only = yes
+
+	option = { #Restore Germany
+		name = france.1046.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+				has_government = fascism 
+				has_government = neutrality
+				}
+			}
+		}	
+		FRA = { release_puppet = GER }
+	}
+	option = { #Occupy West, Satellite the East
+		name = france.1046.b
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 100
+				has_government = fascism 
+			}
+		}	
+		hidden_effect = {
+		GER = {
+		remove_state_core = 814
+		remove_state_core = 42
+		remove_state_claim = 28	
+		}
+		}
+		FRA = { 
+		add_political_power = -15
+		release_puppet = GER
+		}
+	}
+	option = { #Occupy Germany
+		name = france.1046.c
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 0
+				has_government = fascism 
+			}
+		}
+		add_political_power = -15
+		add_stability = -0.03
+	}
+}
+
+#France constructs factories in Russia
+country_event = {
+        id = france.1047
+        title = france.1047.t
+        desc = france.1047.d
+
+        is_triggered_only = yes
+
+        fire_only_once = yes
+        option = {
+            name = france.1047.a
+		RUS = {
+		random_owned_state = {
+				limit = { 
+					is_core_of = ROOT
+					infrastructure > 4
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+        }
+}
+
+#NEWS: Alsace Ultimatum
+news_event = {
+        id = france.1048
+        title = france.1048.t
+        desc = france.1048.d
+		picture = GFX_news_event_039
+        is_triggered_only = yes
+		major = yes
+        fire_only_once = yes
+        option = {
+            name = france.1048.a	
+        }
+}
+
+#NEWS: Napoleon Ascends to the Throne
+news_event = {
+        id = france.1049
+        title = france.1049.t
+        desc = france.1049.d
+		picture = GFX_news_event_generic_parliament
+        is_triggered_only = yes
+		major = yes
+        fire_only_once = yes
+        option = {
+			trigger = {
+			NOT = { TAG = FRA }
+			}
+            name = france.1049.a	
+        }
+		option = {
+			trigger = {
+			TAG = FRA
+			}
+            name = france.1049.b	
+        }
+}
+
+#NEWS: Jean de Guise Ascends to the Throne
+news_event = {
+        id = france.1050
+        title = france.1050.t
+        desc = france.1050.d
+		picture = GFX_news_event_generic_parliament
+        is_triggered_only = yes
+		major = yes
+        fire_only_once = yes
+        option = {
+			trigger = {
+			NOT = { TAG = FRA }
+			}
+            name = france.1050.a	
+        }
+		option = {
+			trigger = {
+			TAG = FRA
+			}
+            name = france.1050.b	
+        }
+}
+
+#COUNTRY: France - Protests in Marseille
+country_event = {
+	id = france.1051
+	title = france.1051.t
+	desc = france.1051.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+
+	option = { #Let them Protest
+	name = france.1051.a
+		ai_chance = {
+			factor = 60
+		}	
+		FRA = { 
+		custom_effect_tooltip = FRA_rw_increase
+		add_stability = -0.03
+		add_popularity = {
+					ideology = fascism
+					popularity = 0.02
+				}
+		}
+		hidden_effect = {
+			FRA_increase_right_wing = yes
+		}
+		21 = {
+			damage_building = { type = industrial_complex damage = 0.4 }
+			damage_building = { type = infrastructure damage = 0.4 }	
+		}
+	}
+}
+
+#COUNTRY: France - Protests in Bordeaux
+country_event = {
+	id = france.1052
+	title = france.1052.t
+	desc = france.1052.d
+	picture = GFX_report_event_generic_rally2
+
+	is_triggered_only = yes
+
+	option = { #Ignore the Protests
+	name = france.1052.a
+		ai_chance = {
+			factor = 100
+		}
+		FRA = {
+		add_political_power = 25
+		}
+		17 = {
+			damage_building = { type = industrial_complex damage = 0.6 }
+			damage_building = { type = infrastructure damage = 0.6 }	
+		}
+	}
+}
+
+#COUNTRY: France - Protests in Paris
+country_event = {
+	id = france.1053
+	title = france.1053.t
+	desc = france.1053.d
+	picture = GFX_report_event_generic_rally3
+
+	is_triggered_only = yes
+
+	option = { #Let them Protest
+	name = france.1053.a
+		ai_chance = {
+			factor = 80
+		}	
+		FRA = {
+		add_political_power = -75
+		add_stability = -0.02
+		add_popularity = {
+					ideology = democratic
+					popularity = 0.01
+				}
+		}
+		16 = {
+			damage_building = { type = industrial_complex damage = 0.8 }
+			damage_building = { type = infrastructure damage = 0.8 }	
+		}
+	}
+}
+
+#COUNTRY: France - Bavarian Exiles
+country_event = {
+	id = france.1054
+	title = france.1054.t
+	desc = france.1054.d
+	picture = GFX_report_event_german_advisors_remain
+
+	is_triggered_only = yes
+
+	option = { #Accept Exiles
+	name = france.1054.a
+		ai_chance = {
+			factor = 100
+		}	
+		FRA = {
+		add_political_power = -20
+		add_manpower = 20000
+		add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+		}
+		add_timed_idea = { idea = FRA_humanitarian_crisis_idea days = 128 }
+		hidden_effect = {
+		if = { limit = { has_government = communism } 
+			FRA = { country_event = { id = france.1055 days = 36 } }
+		}
+		}
+	}
+}
+
+#COUNTRY: France - Trotsky offers service
+country_event = {
+	id = france.1055
+	title = france.1055.t
+	desc = france.1055.d
+	picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+
+	option = { #Accept Trotsky
+	name = france.1055.a
+		ai_chance = {
+			factor = 70
+		}	
+		FRA = {
+			set_country_flag = FRA_trotsky_offered_service
+		}
+	}
+	
+	option = { #No Trotsky
+	name = france.1055.b
+		ai_chance = {
+			factor = 30
+		}	
+		FRA = {
+		add_political_power = 20
+		}
+		
+	}
+}
+
+#COUNTRY: France - Communist Party speaks against gov't policies
+country_event = {
+	id = france.1064
+	title = france.1064.t
+	desc = france.1064.d
+	picture = GFX_report_event_communist_leader
+
+	is_triggered_only = yes
+
+	option = { #
+	name = france.1064.a
+		ai_chance = {
+			factor = 100
+		}	
+		add_stability = -0.05
+		custom_effect_tooltip = FRA_lw_increase
+		add_popularity = {
+					ideology = communism
+					popularity = 0.03
+				}
+		hidden_effect = {
+			if = {
+			limit = { controls_state = 21 }
+			country_event = { id = france.1051 days = 10 }
+			}
+			FRA_increase_left_wing = yes
+		}
+	}
+}
+
+#COUNTRY: France - France offers integration to Rhineland
+country_event = {
+	id = france.1065
+	title = france.1065.t
+	desc = france.1065.d
+
+	is_triggered_only = yes
+
+	option = { #
+	name = france.1065.a
+		ai_chance = {
+			factor = 75
+		}	
+		custom_effect_tooltip = GAME_OVER_TT
+		FRA = { country_event = { id = france.1066 days = 3 } }
+	}
+	option = { #
+	name = france.1065.b
+		ai_chance = {
+			factor = 25
+		}	
+		add_political_power = 60
+		FRA = { country_event = { id = france.1067 days = 3 } }
+	}
+}
+
+#COUNTRY: France - Rhineland accepts 
+country_event = {
+	id = france.1066
+	title = france.1066.t
+	desc = france.1066.d
+
+	is_triggered_only = yes
+
+	option = { #
+	name = france.1066.a
+		ai_chance = {
+			factor = 100
+		}	
+		FRA = { annex_country = { target = RHN transfer_troops = no } }
+	}
+}
+
+#COUNTRY: France - Rhineland politely declines
+country_event = {
+	id = france.1067
+	title = france.1067.t
+	desc = france.1067.d
+
+	is_triggered_only = yes
+
+	option = { #
+	name = france.1067.a
+		ai_chance = {
+			factor = 100
+		}	
+	}
+}
+
+#NEWS: France - France annexes the Rhineland
+country_event = {
+	id = france.1068
+	title = france.1068.t
+	desc = france.1068.d
+	picture = GFX_news_event_eng_imperial_conference
+	major = yes
+	is_triggered_only = yes
+
+	option = { #
+	name = france.1068.a
+		trigger = {
+			NOT = {
+			OR = { 
+			TAG = GER 
+			TAG = BAV }
+			}
+		}
+	}
+	
+	option = { #
+	name = france.1068.b
+		trigger = {
+			OR = { 
+			TAG = GER 
+			TAG = BAV }
+			}
+	}
+}

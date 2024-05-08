@@ -1,0 +1,831 @@
+	ITA_integrate_territories_decisions = {
+	ITA_return_of_zagreb = {
+	icon = decision_generic_decision
+	targets = { AUS }
+	visible = {
+	AUS = {
+	exists = yes
+	is_in_faction_with = ITA
+	controls_state = 43
+	}
+	ITA = { 
+	NOT = { has_war_with = CRO }
+	controls_state = 109
+	}
+	}
+	fire_only_once = yes
+	available = {
+	is_puppet = no
+	}
+	cost = 15
+	days_remove = 3
+	ai_will_do = {
+			factor = 10
+		}
+	remove_effect = {
+	AUS = {
+	transfer_state = 109
+	}
+	}
+	}
+	
+	ITA_fate_of_greece = {
+	icon = decision_generic_decision
+	targets = { GRE }
+	visible = {
+	GRE = {
+	exists = no
+	}
+	ITA = { 
+	NOT = { has_war_with = GRE }
+	controls_state = 47
+	}
+	}
+	fire_only_once = yes
+	available = {
+	is_puppet = no
+	}
+	cost = 15
+	days_remove = 3
+	ai_will_do = {
+			factor = 0
+		}
+	remove_effect = {
+	AUS = {
+	transfer_state = 109
+	}
+	}
+	}
+	
+	}
+	ITA_colonialism = {
+	ITA_core_tripoli = {
+
+		icon = generic_operation
+
+		cost = 20
+
+		fire_only_once = yes
+
+		available = {
+			has_completed_focus = ITA_core_africa
+			owns_state = 448
+			num_of_civilian_factories_available_for_projects > 3
+		}
+
+		complete_effect = {
+		156 = {add_manpower = -20000}
+		117 = {add_manpower = -20000}
+		806 = {add_manpower = -20000}
+		157 = {add_manpower = -20000}
+		2 = {add_manpower = -20000}
+		803 = {add_manpower = -20000}
+		804 = {add_manpower = -20000}
+		162 = {add_manpower = -20000}
+		161 = {add_manpower = -20000}
+		805 = {add_manpower = -20000}
+		}
+
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+		448 = {
+			add_manpower = 200000
+			add_extra_state_shared_building_slots = 2 
+			add_building_construction = {
+    			type = industrial_complex
+    			level = 1
+    			instant_build = yes
+			}
+			add_building_construction = {
+    			type = dockyard
+    			level = 1
+    			instant_build = yes
+			}
+			add_building_construction = {
+    			type = infrastructure
+    			level = 1
+    			instant_build = yes
+			}
+		}
+		add_state_core = 448
+		}
+	}
+
+	ITA_core_el_agheila = {
+
+		icon = generic_operation
+
+		cost = 20
+
+		fire_only_once = yes
+
+		available = {
+			has_completed_focus = ITA_core_africa
+			owns_state = 449
+			num_of_civilian_factories_available_for_projects > 3
+		}
+
+		complete_effect = {
+		117 = {add_manpower = -10000}
+		157 = {add_manpower = -10000}
+		2 = {add_manpower = -10000}
+		806 = {add_manpower = -10000}
+		805 = {add_manpower = -10000}
+		162 = {add_manpower = -10000}
+		161 = {add_manpower = -10000}
+		804 = {add_manpower = -10000}
+		}
+
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+		449 = {
+			add_manpower = 80000
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+    			type = industrial_complex
+    			level = 1
+    			instant_build = yes
+			}
+		
+			add_building_construction = {
+    		type = dockyard
+    		level = 1
+    		instant_build = yes
+			}
+
+			add_building_construction = {
+    			type = infrastructure
+    			level = 1
+    			instant_build = yes
+			}
+
+		}
+		add_state_core = 449
+		}
+	}
+
+	ITA_core_benghasi = {
+
+		icon = generic_operation
+
+		cost = 20
+
+		fire_only_once = yes
+
+		available = {
+			has_completed_focus = ITA_core_africa
+			owns_state = 450
+			num_of_civilian_factories_available_for_projects > 3
+		}
+
+		complete_effect = {
+		117 = {add_manpower = -20000}
+		157 = {add_manpower = -20000}
+		2 = {add_manpower = -20000}
+		803 = {add_manpower = -20000}
+		804 = {add_manpower = -20000}
+		162 = {add_manpower = -20000}
+		161 = {add_manpower = -20000}
+		805 = {add_manpower = -20000}
+		}
+
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+		450 = {
+			add_manpower = 160000
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+    			type = industrial_complex
+    			level = 1
+    			instant_build = yes
+			}
+			add_building_construction = {
+    			type = arms_factory
+    			level = 1
+    			instant_build = yes
+			}
+			add_building_construction = {
+    			type = infrastructure
+    			level = 1
+    			instant_build = yes
+			}
+		}
+		add_state_core = 450
+		}
+	}
+
+	ITA_core_derna = {
+
+		icon = generic_operation
+
+		cost = 20
+
+		fire_only_once = yes
+
+		available = {
+			has_completed_focus = ITA_core_africa
+			owns_state = 451
+			num_of_civilian_factories_available_for_projects > 3
+		}
+
+		complete_effect = {
+		117 = {add_manpower = -10000}
+		157 = {add_manpower = -10000}
+		2 = {add_manpower = -10000}
+		806 = {add_manpower = -10000}
+		805 = {add_manpower = -10000}
+		162 = {add_manpower = -10000}
+		161 = {add_manpower = -10000}
+		804 = {add_manpower = -10000}
+		}
+
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+		451 = {
+			add_manpower = 80000
+			add_extra_state_shared_building_slots = 2 
+			add_building_construction = {
+    			type = industrial_complex
+    			level = 1
+    			instant_build = yes
+			}
+
+			add_building_construction = {
+    			type = arms_factory
+    			level = 1
+    			instant_build = yes
+			}
+			add_building_construction = {
+    			type = infrastructure
+    			level = 1
+    			instant_build = yes
+			}
+		}
+		add_state_core = 451
+		}
+	}
+
+	ITA_core_tripolitania = {
+
+		icon = generic_operation
+
+		cost = 20
+
+		fire_only_once = yes
+
+		available = {
+			has_completed_focus = ITA_core_africa_2
+			owns_state = 661
+			num_of_civilian_factories_available_for_projects > 3
+		}
+
+		complete_effect = {
+		158 = {add_manpower = -20000}
+		159 = {add_manpower = -20000}
+		161 = {add_manpower = -20000}
+		162 = {add_manpower = -20000}
+		}
+
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+		661 = {
+			add_manpower = 80000
+			add_extra_state_shared_building_slots = 1 
+			add_resource = 
+				{	type = oil
+    			 	amount = 15
+    		}
+    		add_resource = 
+				{	type = steel
+    			 	amount = 3
+    		}
+    		add_building_construction = {
+    			type = infrastructure
+    			level = 1
+    			instant_build = yes
+			}
+    	}	
+		add_state_core = 661
+		}
+	}
+
+	ITA_core_sirte = {
+
+		icon = generic_operation
+
+		cost = 20
+
+		fire_only_once = yes
+
+		available = {
+			has_completed_focus = ITA_core_africa_2
+			owns_state = 662
+			num_of_civilian_factories_available_for_projects > 3
+		}
+
+		complete_effect = {
+		162 = {add_manpower = -20000}
+		2 = {add_manpower = -20000}
+		157 = {add_manpower = -20000}
+		773 = {add_manpower = -20000}
+		}
+
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+		662 = {
+			add_manpower = 80000
+			add_extra_state_shared_building_slots = 1
+			add_resource = 
+				{	type = oil
+    			  	amount = 20
+    		}
+    		add_building_construction = {
+    			type = infrastructure
+    			level = 1
+    			instant_build = yes
+			} 
+    	}
+		add_state_core = 662
+		}
+	}
+
+	ITA_core_cyrenaica = {
+
+		icon = generic_operation
+
+		cost = 20
+
+		fire_only_once = yes
+
+		available = {
+			has_completed_focus = ITA_core_africa_2
+			owns_state = 663
+			num_of_civilian_factories_available_for_projects > 3
+		}
+
+		complete_effect = {
+		2 = {add_manpower = -15000}
+		157 = {add_manpower = -15000}
+		161 = {add_manpower = -15000}
+		162 = {add_manpower = -15000}
+		}
+
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+		663 = {
+			add_manpower = 60000
+			add_extra_state_shared_building_slots = 1 
+			add_resource = 
+				{	type = oil
+    			  	amount = 12
+    		}
+    		add_building_construction = {
+    			type = infrastructure
+    			level = 1
+    			instant_build = yes
+			}
+    	}
+		add_state_core = 663
+		}
+	}
+
+	ITA_core_marsa_matruh = {
+
+		icon = generic_operation
+
+		cost = 20
+
+		fire_only_once = yes
+
+		available = {
+			has_completed_focus = ITA_core_africa
+			owns_state = 452
+			num_of_civilian_factories_available_for_projects > 3
+		}
+
+		complete_effect = {
+		157 = {add_manpower = -30000}
+		2 = {add_manpower = -30000}
+		161 = {add_manpower = -30000}
+		162 = {add_manpower = -30000}
+		}
+
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+		452 = {
+			add_manpower = 120000
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+    			type = industrial_complex
+    			level = 1
+    			instant_build = yes
+			}
+			add_building_construction = {
+    			type = infrastructure
+    			level = 1
+    			instant_build = yes
+			}
+			add_resource = 
+				{	type = oil
+    			  	amount = 5
+    		}
+    	}
+		add_state_core = 452
+		}
+	}
+
+	ITA_core_gabes = {
+
+		icon = generic_operation
+
+		cost = 20
+
+		fire_only_once = yes
+
+		available = {
+			has_completed_focus = ITA_core_africa
+			owns_state = 665
+			num_of_civilian_factories_available_for_projects > 3
+		}
+
+		complete_effect = {
+		159 = {add_manpower = -100000}
+		158 = {add_manpower = -100000}
+		160 = {add_manpower = -100000}
+		162 = {add_manpower = -100000}
+		}
+
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+		665 = {
+			add_manpower = 400000
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+    			type = industrial_complex
+    			level = 1
+    			instant_build = yes
+			}
+			add_building_construction = {
+    			type = infrastructure
+    			level = 1
+    			instant_build = yes
+			}
+			add_resource = 
+				{	type = oil
+    			  	amount = 5
+    		}
+    	}
+		add_state_core = 665
+		}
+	}
+
+	ITA_core_dalmatia = {
+
+		icon = generic_operation
+
+		cost = 20
+
+		fire_only_once = yes
+
+		available = {
+			owns_state = 103
+			date > 1938.1.1
+			num_of_civilian_factories_available_for_projects > 3
+		}
+
+		complete_effect = {
+		159 = {add_manpower = -300000}
+		158 = {add_manpower = -200000}
+		115 = {add_manpower = -200000}
+		160 = {add_manpower = -300000}
+		}
+
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+		103 = {
+			add_manpower = 1000000
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+    			type = industrial_complex
+    			level = 1
+    			instant_build = yes
+			}
+			add_resource = 
+				{	type = steel
+    			  	amount = 5
+    		}
+    		add_resource = 
+				{	type = aluminium
+    			  	amount = 32
+    		}
+    	}
+		add_state_core = 103
+		}
+	}
+
+	ITA_core_dodecanese = {
+
+		icon = generic_operation
+
+		cost = 20
+
+		fire_only_once = yes
+
+		available = {
+			owns_state = 164
+			has_completed_focus = ITA_economic_boom
+			num_of_civilian_factories_available_for_projects > 3
+		}
+
+		complete_effect = {
+		159 = {add_manpower = -30000}
+		158 = {add_manpower = -20000}
+		115 = {add_manpower = -20000}
+		160 = {add_manpower = -30000}
+
+		}
+
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+		164 = {
+			add_manpower = 100000
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+    			type = industrial_complex
+    			level = 1
+    			instant_build = yes
+			}
+    	}
+		add_state_core = 164
+		}
+	}
+}
+ITA_leverage = {
+	
+	ITA_aquire_nice = {
+
+		icon = generic_operation
+
+		cost = 5
+
+		fire_only_once = yes
+
+		available = {
+			OR = {
+			has_idea = ITA_leverage_2
+			has_idea = ITA_leverage_3
+			has_idea = ITA_leverage_4
+			has_idea = ITA_leverage_5
+			has_idea = ITA_leverage_6
+			has_idea = ITA_leverage_7
+			has_idea = ITA_leverage_8
+			has_idea = ITA_leverage_9
+			}
+			FRA = {owns_state = 809}
+		}
+
+		complete_effect = { 
+
+			FRA = {country_event = italy.2010}
+			ITA = {
+				set_state_owner = 809
+				set_state_controller = 809
+			}
+
+			ITA_leverage_down = yes
+		}
+	}
+
+	ITA_aquire_malta = {
+
+		icon = generic_operation
+
+		cost = 5
+
+		fire_only_once = yes
+
+		available = {
+			OR = {
+			has_idea = ITA_leverage_2
+			has_idea = ITA_leverage_3
+			has_idea = ITA_leverage_4
+			has_idea = ITA_leverage_5
+			has_idea = ITA_leverage_6
+			has_idea = ITA_leverage_7
+			has_idea = ITA_leverage_8
+			has_idea = ITA_leverage_9
+			}
+			ENG = {owns_state = 116}
+		}
+
+		complete_effect = { 
+
+			ENG = {country_event = italy.2011}
+			ITA = {
+				set_state_owner = 116
+				set_state_controller = 116
+			}
+
+			ITA_leverage_down = yes
+		}
+	}
+
+	ITA_aquire_corsica = {
+
+		icon = generic_operation
+
+		cost = 5
+
+		fire_only_once = yes
+
+		available = {
+			OR = {
+			has_idea = ITA_leverage_2
+			has_idea = ITA_leverage_3
+			has_idea = ITA_leverage_4
+			has_idea = ITA_leverage_5
+			has_idea = ITA_leverage_6
+			has_idea = ITA_leverage_7
+			has_idea = ITA_leverage_8
+			has_idea = ITA_leverage_9
+			}
+			FRA = {owns_state = 1}
+		}
+
+		complete_effect = { 
+
+			FRA = {country_event = italy.2012}
+			ITA = {
+				set_state_owner = 1
+				set_state_controller = 1
+			}
+
+			ITA_leverage_down = yes
+		}
+	}
+
+	ITA_aquire_gabes = {
+
+		icon = generic_operation
+
+		cost = 5
+
+		fire_only_once = yes
+
+		available = {
+			OR = {
+			has_idea = ITA_leverage_1
+			has_idea = ITA_leverage_2
+			has_idea = ITA_leverage_3
+			has_idea = ITA_leverage_4
+			has_idea = ITA_leverage_5
+			has_idea = ITA_leverage_6
+			has_idea = ITA_leverage_7
+			has_idea = ITA_leverage_8
+			has_idea = ITA_leverage_9
+			}
+			OR = {
+			FRA = {owns_state = 665}
+			FNA = {owns_state = 665}
+			}
+		}
+
+		complete_effect = { 
+
+			FRA = {country_event = italy.2013}
+			ITA = {
+				set_state_owner = 665
+				set_state_controller = 665
+			}
+
+			ITA_leverage_down = yes
+		}
+	}
+
+	ITA_aquire_west_egypt = {
+
+		icon = generic_operation
+
+		cost = 5
+
+		fire_only_once = yes
+
+		available = {
+			OR = {
+			has_idea = ITA_leverage_1
+			has_idea = ITA_leverage_2
+			has_idea = ITA_leverage_3
+			has_idea = ITA_leverage_4
+			has_idea = ITA_leverage_5
+			has_idea = ITA_leverage_6
+			has_idea = ITA_leverage_7
+			has_idea = ITA_leverage_8
+			has_idea = ITA_leverage_9
+			}
+			OR = {
+				ENG = {owns_state = 452}
+				EGY = {owns_state = 452}
+			}
+		}
+
+		complete_effect = { 
+
+			ENG = {country_event = italy.2014}
+			ITA = {
+				set_state_owner = 452
+				set_state_controller = 452
+				set_state_owner = 552
+				set_state_controller = 552
+			}
+
+			ITA_leverage_down = yes
+		}
+	}
+
+	ITA_Swiss_Putche = {
+
+		icon = generic_operation
+
+		cost = 5
+
+		fire_only_once = yes
+
+		available = {
+			OR = {
+			has_idea = ITA_leverage_1
+			has_idea = ITA_leverage_2
+			has_idea = ITA_leverage_3
+			has_idea = ITA_leverage_4
+			has_idea = ITA_leverage_5
+			has_idea = ITA_leverage_6
+			has_idea = ITA_leverage_7
+			has_idea = ITA_leverage_8
+			has_idea = ITA_leverage_9
+			}
+		}
+
+		complete_effect = {
+
+		ENG = {country_event = italy.2015}
+		FRA = {country_event = italy.2015}
+		SWI = {country_event = italy.2016}
+
+		ITA_leverage_down = yes
+		}
+	}
+}

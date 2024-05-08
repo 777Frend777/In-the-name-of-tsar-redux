@@ -1,0 +1,227 @@
+##### ROM ######
+
+ideas = {
+	country = {
+		syrian_democracy_focus = {
+
+			allowed = {
+				original_tag = "SYR"
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				trade_opinion_factor = 0.2
+				political_power_gain = 0.2
+			}
+		}
+        syrian_training_workers_program = {
+
+			allowed = {
+				original_tag = "SYR"
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+	                on_add = {
+				add_stability = -0.05
+			}
+			modifier = {
+				research_speed_factor = 0.05
+				consumer_goods_factor = -0.04
+				conscription_factor = -0.05
+			}
+                        
+		}
+		syrian_three_year_plan = {
+
+			allowed = {
+				original_tag = "SYR"
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_agrarian_reform
+
+	            on_add = {
+				add_stability = -0.05
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+                        
+		}
+        french_military_training = {
+
+			allowed = {
+				original_tag = "SYR"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.05
+			}
+		}
+        mohammed_aly_bey_al_abid_of_syria = {
+			
+			allowed = {
+			    original_tag = "SYR"
+				always = yes
+
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+				war_support_factor = 0.05
+				political_power_gain = -0.4
+			}
+			
+		}
+        the_french_protectorate = {
+
+			allowed = {
+				original_tag = "SYR"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				democratic_drift = 0.02
+			}
+		}
+		the_french_protectorate_1 = {
+
+			allowed = {
+				original_tag = "SYR"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+		}
+		SYR_syrian_catastrophe = {
+			picture = idea_SYR_syrian_catastrophe
+			
+			allowed = {
+				original_tag = SYR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = -0.25
+				breakthrough_factor = -0.10
+				supply_consumption_factor = 0.15
+				recon_factor = -0.1
+				army_attack_factor = -0.08
+				army_defence_factor = -0.08
+				cas_damage_reduction = -0.25
+				army_speed_factor = -0.25
+				dig_in_speed_factor = -0.5
+			}
+		}
+                resistance_to_french_occupation = {			
+			
+			allowed = {
+				original_tag = "SYR"
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				democratic_acceptance = -50
+				conscription_factor = -0.10
+				join_faction_tension = 0.5
+			}
+		}	
+		resistance_to_french_occupation_2 = {			
+			
+			allowed = {
+				original_tag = "SYR"
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				democratic_acceptance = -25
+				conscription_factor = -0.10
+				join_faction_tension = 0.25
+			}
+		}
+		SYR_improved_syrian_army = {
+			picture = idea_SYR_improved_syrian_army
+			
+			allowed = {
+				original_tag = SYR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+				justify_war_goal_time = -0.2
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_org_factor	= 0.05
+				breakthrough_factor = 0.05
+			}
+			on_add = {
+				add_stability = 0.05
+				set_war_support = 0.1
+			}
+		}
+	}
+}

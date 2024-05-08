@@ -1,0 +1,27 @@
+﻿division_template = {
+	name = "Russkaya Volonerskaya Brigada"			# International volunteers -- poor equipment, no experience (militia)
+	#is_locked = yes
+	division_names_group = SPR_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+units = {
+	division = {
+		name = "1a Russkaya Volonerskaya Brigada"
+		location = 3938  # Madrid
+		division_template = "Russkaya Volonerskaya Brigada"
+	}
+	division = {
+		name = "2a Russkaya Volonerskaya Brigada"
+		location = 3938  # Madrid
+		division_template = "Russkaya Volonerskaya Brigada"
+	}
+	division = {
+		name = "3a Russkaya Volonerskaya Brigada"
+		location = 3938  # Madrid
+		division_template = "Russkaya Volonerskaya Brigada"
+	}
+}

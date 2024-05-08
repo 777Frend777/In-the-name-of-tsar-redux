@@ -1,0 +1,32 @@
+ideas = {
+
+	country = {
+		KRW_Ukrainian_Exiles = {
+			allowed = { always = no }
+			picture = UKR_immortal_will_of_the_ukrainian_nation_spirit
+			available = {
+				NOT = { country_exists = UKR }
+			}
+			modifier = {
+				war_support_factor = -0.05
+				recruitable_population_factor = -0.01
+				fascism_drift = 0.01
+				communism_drift = 0.01
+			}
+		}
+		KRW_Agricultural_Economy = {
+			allowed = { always = no }
+			picture = generic_agrarian_reform
+			modifier = {
+				industrial_capacity_factory = -0.3
+				production_factory_max_efficiency_factor = -0.1
+				research_speed_factor = -0.1
+				monthly_population = 0.01
+			}
+		}
+	}
+	
+}
+				
+				
+	

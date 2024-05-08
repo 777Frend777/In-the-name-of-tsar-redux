@@ -1,0 +1,165 @@
+ITA_leverage_clear_all = {
+	remove_ideas = {
+		ITA_leverage_0
+		ITA_leverage_1
+		ITA_leverage_2
+		ITA_leverage_3
+		ITA_leverage_4
+		ITA_leverage_5
+		ITA_leverage_6
+		ITA_leverage_7
+		ITA_leverage_8
+		ITA_leverage_9
+	}
+}
+
+#Important to put HIGHEST first
+ITA_leverage_up = {
+	custom_effect_tooltip = ITA_leverage_up_tt
+	if = {
+		limit = { has_idea = ITA_leverage_8 }
+		swap_ideas = {
+			remove_idea = ITA_leverage_8
+			add_idea = ITA_leverage_9
+		}
+	}
+	if = {
+		limit = { has_idea = ITA_leverage_7 }
+		swap_ideas = {
+			remove_idea = ITA_leverage_7
+			add_idea = ITA_leverage_8
+		}
+	}
+	if = {
+		limit = { has_idea = ITA_leverage_6 }
+		swap_ideas = {
+			remove_idea = ITA_leverage_6
+			add_idea = ITA_leverage_7
+		}
+	}
+	if = {
+		limit = { has_idea = ITA_leverage_5 }
+		swap_ideas = {
+			remove_idea = ITA_leverage_5
+			add_idea = ITA_leverage_6
+		}
+	}
+	if = {
+		limit = { has_idea = ITA_leverage_4 }
+		swap_ideas = {
+			remove_idea = ITA_leverage_4
+			add_idea = ITA_leverage_5
+		}
+	}
+	if = {
+		limit = { has_idea = ITA_leverage_3 }
+		swap_ideas = {
+			remove_idea = ITA_leverage_3
+			add_idea = ITA_leverage_4
+		}
+	}
+	if = {
+		limit = { has_idea = ITA_leverage_2 }
+		swap_ideas = {
+			remove_idea = ITA_leverage_2
+			add_idea = ITA_leverage_3
+		}
+	}
+	if = {
+		limit = { has_idea = ITA_leverage_1 }
+		swap_ideas = {
+			remove_idea = ITA_leverage_1
+			add_idea = ITA_leverage_2
+		}		
+	}
+	if = {
+		limit = { has_idea = ITA_leverage_0 }
+		swap_ideas = {
+			remove_idea = ITA_leverage_0
+			add_idea = ITA_leverage_1
+		}		
+	}
+	if = {
+		limit = { NOT = { has_idea = ITA_leverage_0 } 
+		 NOT = { has_idea = ITA_leverage_1 } 
+		 NOT = { has_idea = ITA_leverage_2 } 
+		 NOT = { has_idea = ITA_leverage_3 } 
+		 NOT = { has_idea = ITA_leverage_4 } 
+		 NOT = { has_idea = ITA_leverage_5 } 
+		 NOT = { has_idea = ITA_leverage_6 } 
+		 NOT = { has_idea = ITA_leverage_7 } 
+		 NOT = { has_idea = ITA_leverage_8 } 
+		 NOT = { has_idea = ITA_leverage_9 } }
+		add_ideas = ITA_leverage_1
+	}
+}
+
+#Important to put LOWEST first
+ITA_leverage_down = {
+custom_effect_tooltip = ITA_leverage_down_tt
+	if = {
+		
+		limit = { has_idea = ITA_leverage_1 }
+			swap_ideas = {
+				remove_idea = ITA_leverage_1
+				add_idea = ITA_leverage_0
+		}
+		hidden_effect = { remove_ideas = ITA_leverage_1 }
+	}
+	if = {
+		limit = { has_idea = ITA_leverage_2 }
+		swap_ideas = {
+			remove_idea = ITA_leverage_2
+			add_idea = ITA_leverage_1
+		}
+	}
+	if = {
+		limit = { has_idea = ITA_leverage_3 }
+		swap_ideas = {
+			remove_idea = ITA_leverage_3
+			add_idea = ITA_leverage_2
+		}
+	}
+	if = {
+		limit = { has_idea = ITA_leverage_4}
+		swap_ideas = {
+			remove_idea = ITA_leverage_4
+			add_idea = ITA_leverage_3
+		}
+	}
+	if = {
+		limit = { has_idea = ITA_leverage_5 }
+		swap_ideas = {
+			remove_idea = ITA_leverage_5
+			add_idea = ITA_leverage_4
+		}
+	}
+	if = {
+		limit = { has_idea = ITA_leverage_6 }
+		swap_ideas = {
+			remove_idea = ITA_leverage_6
+			add_idea = ITA_leverage_5
+		}
+	}
+	if = {
+		limit = { has_idea = ITA_leverage_7 }
+		swap_ideas = {
+			remove_idea = ITA_leverage_7
+			add_idea = ITA_leverage_6
+		}
+	}
+	if = {
+		limit = { has_idea = ITA_leverage_8 }
+		swap_ideas = {
+			remove_idea = ITA_leverage_8
+			add_idea = ITA_leverage_7
+		}
+	}
+	if = {
+		limit = { has_idea = ITA_leverage_9 }
+		swap_ideas = {
+			remove_idea = ITA_leverage_9
+			add_idea = ITA_leverage_8
+		}
+	}
+}

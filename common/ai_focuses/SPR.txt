@@ -1,0 +1,29 @@
+
+ai_historical_focus_list_SPR = {
+	ai_national_focuses = {
+		# grab as fast as you can if available
+		SPR_side_with_opposition
+		SPR_alliance_with_monarchists
+		SPR_compromise_with_monarchists
+		SPR_spanish_royal_guard
+		SPR_russian_aid
+		SPR_seize_the_spanish_gold
+		SPR_expand_conscription
+		SPR_royal_slot_1
+		SPR_emergency_factories
+		SPR_return_of_the_king 
+		SPR_one_spain
+		SPR_reestablish_diplomacy
+		SPR_rebuild_spain
+		SPR_stabilize_country
+		SPR_rapid_railway
+		SPR_colonial_investments
+		SPR_colonial_oil
+		SPR_nationalize_industry
+		SPR_stimulate_economy
+		SPR_monarchist_victory
+		SPR_king_rules 
+		SPR_join_ger_franco
+	}
+}
+

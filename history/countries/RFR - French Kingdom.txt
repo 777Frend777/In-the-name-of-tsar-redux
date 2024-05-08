@@ -1,0 +1,105 @@
+﻿capital = 16
+
+oob = "RFR_1936"
+
+set_research_slots = 4
+
+add_ideas = {
+	limited_conscription
+}
+
+set_technology = {
+		fighter1 = 1
+		fighter2 = 1
+		heavy_fighter1 = 1
+		tactical_bomber2 = 1
+		strategic_bomber1 = 1
+		cv_fighter1 = 1
+		cv_CAS1 = 1
+		improved_light_tank = 1
+		basic_medium_tank = 1
+		basic_heavy_tank = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		basic_battleship = 1
+		basic_battlecruiser = 1
+
+		#doctrines
+		#Air
+		force_rotation = 1
+		fighter_baiting = 1
+		low_echelon_support = 1
+		dispersed_fighting = 1
+		
+			grand_battle_plan = 1
+
+		trench_warfare = 1
+		prepared_defense = 1
+		battlefleet_concentration = 1
+		subsidiary_carrier_role = 1
+		convoy_sailing = 1
+		submarine_operations = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+	}
+
+set_convoys = 200
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 50
+	conservatives = 0
+	fascism = 0
+	communism = 0
+	socialist = 0
+	neutrality = 70
+}
+create_country_leader = {
+	name = "Pierre Laval"
+	desc = "POLITICS_KONSTANTIN_PATS_DESC"
+	picture = "pierre_laval.tga"
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Pierre Laval"
+	desc = "POLITICS_KONSTANTIN_PATS_DESC"
+	picture = "pierre_laval.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}

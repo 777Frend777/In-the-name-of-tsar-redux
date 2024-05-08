@@ -1,0 +1,28 @@
+﻿l_russian:
+ SER_peoples_army: "Массовый призыв" #NT!
+ SER_workers_construction: "Рабочий Конгресс" #NT!
+ SER_defensive_war: "Совет оборонительной войны" #NT!
+ SER_mobilization_speed: "Увеличение мобилизации" #NT!
+ SER_modernization: "Модернизация" #NT!
+ SER_technology_treaty: "Уроки немецкого языка" #NT!
+ SER_production_efficiency: "Производственный ремонт" #NT!
+ SER_new_generation: "Массовый призыв" #NT!
+ SER_balkan_league: "Балканская лига" #NT!
+ SER_woman_soldiers: "Женщины-солдаты" #NT!
+ SER_workers_strikes: "Забастовки рабочих" #NT!
+ SER_alexander: "Александр I" #NT!
+ SER_bosnian_rights_idea: "Боснийские права" #NT!
+ SER_slobodan_jovanovic: "Слободан Йованович" #NT!
+ SER_milan_nedic: "Милан Недич" #NT!
+ SER_ivan_ribar: "Иван Рибар" #NT!
+ SER_ljubomir_maric: "Любомир Марич" #NT!
+ SER_marijan_polic: "Мариан Полич" #NT!
+ SER_draza_mihailovic: "Дража Михайлович" #NT!
+ SER_josip_broz_tito: "Иосип Броз Тито" #NT!
+ SER_arso_jovanovic: "Арсо Йованович" #NT!
+ SER_mihajlo_lukic: "Михайло Лукич" #NT!
+ SER_danilo_kalafatovic: "Данило Калафатович" #NT!
+ SER_borivoje_mirkovic: "Боривое Миркович" #NT!
+  
+ austria_acc_flag: "Австрия приняла предложение" #NT!
+ #YUG_arsa_jovanovic: "Arsa Jovanovic"

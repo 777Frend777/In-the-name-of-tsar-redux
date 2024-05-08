@@ -1,0 +1,60 @@
+﻿l_russian:
+ HUN_call_in_sweden: "Обращение к Швеции за поддержкой" #NT!
+ HUN_call_in_hungary: "Обращение к Венгрии за поддержкой" #NT!
+ YUG_buy_planes: "Покупка самолетов" #NT!
+ YUG_instigate_in_bulgaria: "Подстрекательство крестьянских восстаний в Болгарии." #NT!
+ YUG_instigate_in_bulgaria_desc: "Почти все южнославянские рабочие освобождены нашим государством, все, кроме болгар. Только поощряя болгар восстать против своих угнетателей, мы можем по-настоящему заявить, что освободили славянских рабочих на Балканах." #NT!
+ YUG_instigate_in_albania: "Подстрекательство крестьянских восстаний в Албании." #NT!
+ YUG_instigate_in_albania_desc: "Хотя албанский народ и не идентифицирует себя как славянин, его близость к нашей границе и культурный обмен между албанцами и южными славянами делают его идеальным кандидатом для вступления в Панславянский рабочий конгресс." #NT!
+ YUG_instigate_in_greece: "Подстрекательство крестьянских восстаний в Греции" #NT!
+ YUG_instigate_in_romania: "Подстрекательство крестьянских восстаний в Румынии." #NT!
+ YUG_instigate_in_hungary: "Подстрекательство крестьянских восстаний в Венгрии." #NT!
+ YUG_instigate_in_turkey: "Подстрекательство крестьянских восстаний в Турции" #NT!
+ YUG_propaganda_in_target: "Пропагандистская кампания в [YUG_communist_coup_target.GetNameDef]" #NT!
+ YUG_propaganda_in_target_desc: "Наша цель выбрана, все, что нам нужно сделать сейчас, это снабдить наших социалистических союзников эффективной пропагандой, и достаточно скоро мы посеем семена восстания, необходимые для свержения высших классов Балкан." #NT!
+ YUG_arm_communist_militants: "Вооружить [YUG_communist_coup_target.GetAdjective] боевиков" #NT!
+ YUG_arm_communist_militants_desc: "Мы не можем принести революцию нашим товарищам за границей только на словах. Мы должны предоставить нашим союзникам оружие, необходимое им для свержения своих хозяев." #NT!
+ YUG_communist_coup: "Спровоцировать коммунистический переворот" #NT!
+ YUG_communist_coup_desc: "Они готовились достаточно долго, все, что нам нужно сделать сейчас, это дать одобрение боевикам за нашими границами, и они попытаются устроить переворот против своего коррумпированного капиталистического правительства!" #NT!
+ YUG_abandon_communist_effort: "Оставьте наши усилия в [YUG_communist_coup_target.GetNameDef]" #NT!
+ YUG_abandon_communist_effort_desc: "Ясно, что люди [YUG_communist_coup_target.GetNameDef] еще не готовы освободиться от рамок своего правительства, и мы должны отказаться от наших попыток спровоцировать коммунистический переворот в их стране." #NT!
+ YUG_uprising_strength_tt: "При их нынешней поддержке сила §YCommunists§! будет [YUG_communist_coup_target.Get_Yugo_Uprising_strength].\nЭто основано на текущем §YCommunist§! поддержка и количество раз, когда крестьяне были вооружены." #NT!
+ YUG_weak_communists: "§RWeak§!" #NT!
+ YUG_average_communists: "§HAverage§!" #NT!
+ YUG_strong_communists: "§GStrong§!" #NT!
+ YUG_very_strong_communists: "§MОчень сильный§!" #NT!
+ HUN_closer_ties_to_CZE: "Более тесная связь с [CZE.GetNameDef]" #NT!
+ ROM_change_sides: "Смена присяги" #NT!
+ ROM_dividing_yugo: "Раздел Югославии" #NT!
+ ROM_strength: "\n§Y[ROM.GetName]§! претензии: §G[?This.claim_strength_ROM]§!" #NT!
+ GER_strength: "\n§Y[GER.GetName]§! претензии: §G[?This.claim_strength_GER]§!" #NT!
+ ITA_strength: "\n§Y[ITA.GetName]§! претензии: §G[?This.claim_strength_ITA]§!" #NT!
+ HUN_strength: "\n§Y[HUN.GetName]§! претензии: §G[?This.claim_strength_HUN]§!" #NT!
+ newline_tt: "\n"
+ romania_add_claims_tt: "\n§Y[Root.GetName]§! сила претензии увеличится на §G1§!" #NT!
+ no_other_country_claimed_tt: "Ни одна другая страна, приглашенная на раскол Югославии, не претендует на §Y[This.GetName]§!" #NT!
+ romania_total_claims_tt: "[This.GetRomanianStrengthinState][This.GetGermanStrengthinState][This.GetItalianStrengthinState][This.GetHungarianStrengthinState]"
+ ROM_invite_germany: "Пригласить [GER.GetNameDef]" #NT!
+ ROM_invite_italy: "Пригласить [ITA.GetNameDef]" #NT!
+ ROM_invite_hungary: "Пригласить [HUN.GetNameDef]" #NT!
+ ROM_claim_vojvodina: "Претензия [45.GetName]" #NT!
+ ROM_claim_banat: "Претензия [764.GetName]" #NT!
+ ROM_claim_serbia: "Претензия [107.GetName]" #NT!
+ ROM_claim_morava: "Претензия [108.GetName]" #NT!
+ ROM_claim_kosovo: "Претензия [802.GetName]" #NT!
+ ROM_claim_south_serbia: "Претензия [803.GetName]" #NT!
+ ROM_claim_macedonia: "Претензия [106.GetName]" #NT!
+ ROM_claim_montenegro: "Претензия [105.GetName]" #NT!
+ ROM_claim_bosnia: "Претензия [104.GetName]" #NT!
+ ROM_claim_dalmatia: "Претензия [103.GetName]" #NT!
+ ROM_claim_croatia: "Претензия [109.GetName]" #NT!
+ ROM_claim_slovenia: "Претензия [102.GetName]" #NT!
+ ROM_claim_ljubljana: "Претензия [853.GetName]" #NT!
+ ROM_claim_herzegovina: "Претензия [804.GetName]" #NT!
+ ROM_change_sides_to_allies: "Присоединяйтесь к союзникам" #NT!
+ ROM_change_sides_to_allies_desc: "Изменения в нашем правительстве способствовали изменению нашей позиции в войне. Объединившись с союзниками, наши нынешние «товарищи» в этом глобальном конфликте запутаются, поскольку румынские пули найдут новую цель." #NT!
+ ROM_change_sides_to_commintern: "Вступай в Коминтерн" #NT!
+ ROM_change_sides_to_commintern_desc: "Изменения в нашем правительстве способствовали изменению нашей позиции в войне. Вступив в Коммунистический Интернационал, наши нынешние «товарищи» в этом глобальном конфликте запутаются, поскольку румынские пули найдут новую цель." #NT!
+ ROM_change_sides_to_axis: "Присоединяйтесь к Оси" #NT!
+ ROM_change_sides_to_axis_desc: "Изменения в нашем правительстве способствовали изменению нашей позиции в войне. Присоединившись к Оси, наши нынешние «товарищи» в этом глобальном конфликте запутаются, поскольку румынские пули найдут новую цель." #NT!
+ ROM_present_ultimatum: "Предъявите ультиматум" #NT!

@@ -1,0 +1,191 @@
+﻿l_russian:
+ SPR_military_disloyalty: "Военная нелояльность" #NT!
+ SPR_military_disloyalty_desc: "Неудачная попытка военного переворота «Санджурхада» в 1932 году до сих пор бросает тень на испанскую армию. После этого различные нелояльные военные командиры, в том числе лидер переворота Хосе Санхурхо, бежали в изгнание в Португалию и продолжают свои заговоры даже сейчас.\n\nОднако даже эта неудача не обескуражила нелояльных офицеров, поскольку даже в самой Испании многие желают увидеть возвращение к монархии или даже к сильной фашистской диктатуре. Слишком сильное вмешательство правительства во внутренние дела военных вполне может спровоцировать новое восстание; гораздо более жестокий и кровавый, чем предыдущий." #NT!
+ SPR_military_disloyalty_tt: "§RНевозможно обучать отряды, расформировывать отряды или редактировать шаблоны отрядов.§!\n" #NT!
+ SPR_disbanded_army: "Расформированная армия" #NT!
+ SPR_disbanded_army_desc: "Армия доказала свою нелояльность и была расформирована правительством. Пока мы не убедимся в лояльности наших офицеров, нам придется полагаться на народное ополчение, а не на профессиональную армию." #NT!
+ SPR_collectivized_society: "Коллективизированное общество" #NT!
+ SPR_anarchist_society: "Анархическое общество" #NT!
+ SPR_seized_the_gold_reserves: "Захватили золотой запас" #NT!
+ aeb: "AEB"
+ acl: "ACL"
+ acf: "ACF"
+ FRA_hotchkiss: "Хочкис" #NT!
+ FRA_panhard: "Панар" #NT!
+ FRA_APX: "APX"
+ FRA_full_employment: "Полная занятость" #NT!
+ FRA_full_employment_desc: "Мы находимся в завидном положении: у нас очень низкий уровень безработицы, отчасти из-за массового кровопролития Великой войны. Однако это затруднило компаниям поиск квалифицированной рабочей силы, а военным становится трудно конкурировать с рынком труда за новобранцев. Продление проекта только усугубит проблему. Мы должны попытаться найти другие источники рабочей силы, чтобы восполнить нехватку кадров, будь то в сфере набора персонала или в экономике." #NT!
+ FRA_worker_shortage: "Нехватка рабочих" #NT!
+ FRA_worker_shortage_desc: "Требованиям военных было позволено преодолеть опасения по поводу нехватки рабочей силы. Многие компании сейчас сообщают о нехватке квалифицированных рабочих, что начало влиять на объемы производства. Смягчение наших законов о воинской повинности позволит людям вернуться на заводы, но не решит коренных проблем." #NT!
+ FRA_inefficient_economy_1: "Неэффективная экономика" #NT!
+ FRA_inefficient_economy_1_desc: "Хотя Франция по-прежнему остается крупной промышленно развитой страной, она отстает с точки зрения концентрации производственных мощностей. Необходимы масштабные реформы, чтобы сделать нашу экономику более конкурентоспособной в глобальном масштабе." #NT!
+ FRA_political_violence: "Политическое насилие" #NT!
+ FRA_political_violence_desc: "Коммунисты и крайне правые экстремистские лиги всегда готовы прибегнуть к насилию для продвижения своих политических целей." #NT!
+ FRA_devalue_the_franc: "Девальвация франка" #NT!
+ FRA_colonial_investments: "Колониальные инвестиции" #NT!
+ FRA_global_investments: "Глобальные инвестиции" #NT!
+ FRA_womens_suffrage: "Право голоса для женщин" #NT!
+ FRA_agricultural_collectivization: "Сельскохозяйственная коллективизация" #NT!
+ FRA_anti_fascist_immigrants: "Антифашистские иммигранты" #NT!
+ FRA_league_of_french_bolshevist_volunteers: "Лига французских большевистских добровольцев" #NT!
+ FRA_german_exiles: "Немецкие изгнанники" #NT!
+ FRA_egalite_liberte_solidarite: "Равенство, Свобода, Солидарность" #NT!
+ FRA_revolutionary_zeal: "Революционное рвение" #NT!
+ FRA_dirigisme: "Дирижизм" #NT!
+ FRA_expanded_citizenship: "Расширенное гражданство" #NT!
+ FRA_france_undividable: "Неделимая Франция" #NT!
+ FRA_agricultural_protectionism: "Сельскохозяйственный протекционизм" #NT!
+ FRA_entrepeneurship: "Предпринимательство" #NT!
+ FRA_market_dynamism: "Рыночный динамизм" #NT!
+ FRA_anti_decandence: "Антидеканданс" #NT!
+ FRA_travail: "Труды" #NT!
+ FRA_constitutional_revision: "Конституционный пересмотр" #NT!
+ FRA_counter_action: "Противодействие" #NT!
+ FRA_reorganized_departments: "Реорганизованные отделы" #NT!
+ FRA_la_deluge: "Le Déluge"
+ FRA_firepower: "Огневая мощь" #NT!
+ FRA_air_dominance: "Господство в воздухе" #NT!
+ FRA_flying_artillery: "Летающая артиллерия" #NT!
+ FRA_down_with_marianne: "Долой Марианну" #NT!
+ FRA_up_with_jean_darc: "Вверх с Жанной д'Арк" #NT!
+ FRA_venerate_the_craftsman: "Почитай мастера" #NT!
+ FRA_occupation_costs_1: "Затраты на оккупацию" #NT!
+ FRA_mandatory_work_service: "Обязательная рабочая служба" #NT!
+ FRA_national_bureau_of_statistics: "Национальное бюро статистики" #NT!
+ FRA_legionary_service_order: "Приказ легионера" #NT!
+ FRA_milice: "Милице" #NT!
+ FRA_anti_bolshevist_volunteers: "Антибольшевистские добровольцы" #NT!
+ FRA_rebuild_the_military: "Восстановить армию" #NT!
+ FRA_hidden_materials: "Скрытые материалы" #NT!
+ FRA_buy_from_the_enemy: "Купить у врага" #NT!
+ FRA_defeatism: "пораженчество" #NT!
+ FRA_maquis: "маки" #NT!
+ FRA_connections_to_trade_unions: "Связи с профсоюзами" #NT!
+ FRA_communist_cooperation: "Коммунистическое сотрудничество" #NT!
+ FRA_industrialist_connections: "Связи с промышленниками" #NT!
+ FRA_civil_and_military_organization: "Гражданская и военная организация" #NT!
+ FRA_national_council_of_the_resistance: "Национальный совет сопротивления" #NT!
+ FRA_national_uprising: "Национальное восстание" #NT!
+ FRA_colonial_recruitment: "Колониальный набор" #NT!
+ rene_massigli: "Рене Массильи" #NT!
+ georges_bonnet: "Жорж Бонне" #NT!
+ charles_maurras: "Шарль Моррас" #NT!
+ FRA_philippe_henriot: "Филипп Анрио" #NT!
+ FRA_pierre_pucheu: "Пьер Пюше" #NT!
+ FRA_vincent_auriol: "Винсент Ориоль" #NT!
+ FRA_roger_salengro: "Роджер Саленгро" #NT!
+ VIC_produce_aircraft_parts: "Производство запчастей для самолетов" #NT!
+ VIC_aircraft_parts: "Запчасти для самолетов" #NT!
+ VIC_guest_workers: "Гастарбайтеры" #NT!
+ SPR_popular_front: "Народный фронт" #NT!
+ SPR_professional_military: "Профессиональные военные" #NT!
+ SPR_anarchist_public_transport: "Анархический общественный транспорт" #NT!
+ SPR_seized_gold_reserves: "Изъятые золотые запасы" #NT!
+ SPA_awaiting_the_rebellion: "В ожидании восстания" #NT!
+ SPA_awaiting_the_rebellion_desc: "Переворот был тщательно спланирован, и мы готовы совершить его в любой момент. Однако мы извлекли уроки из наших предыдущих неудач. Вместо того, чтобы повторить фиаско Санджурджады 1932 года, мы подождем, пока общественное мнение в достаточной степени поддержит наше дело, гарантируя, что нас не так легко свергнуть." #NT!
+ SPA_carlism: "Карлизм" #NT!
+ SPA_carlism_desc: "В 1830 году король Фердинанд VII обнародовал Прагматическую санкцию и сделал свою дочь, будущую Изабеллу II, предполагаемой наследницей. Этот акт лишил его брата инфанта Карлоса линии преемственности, и поэтому после смерти короля сторонники инфанта Карлоса разожгли серию гражданских войн, объединившись под знаменем карлизма и борясь за восстановление линии преемственности Салика. \n\nСто лет спустя карлистское движение все еще живо, и его милиты, называемые Requetés, постоянно тренируются, готовясь к тому времени, когда они снова понадобятся для защиты христианства и отстаивания возвращения законного короля." #NT!
+ SPR_government_power_struggle: "Борьба правительства за власть" #NT!
+ SPR_government_power_struggle_desc: "Несмотря на победу на недавних выборах, левые политические партии раздроблены, поскольку каждая из них борется за доминирование в новом правительстве. Особой атаке подвергается сама канцелярия президента, поскольку давние распри президента с различными частями левых политических сил достигают апогея. Нетерпеливые и амбициозные политики уже жадно следят за этой позицией." #NT!
+ SPR_death_before_surrender: "Смерть перед капитуляцией" #NT!
+ SPR_political_violence: "Политическое насилие" #NT!
+ SPR_political_violence_desc: "Политическая сцена Испании характеризуется растущей поляризацией и насилием. Прошло всего два года с момента последнего крупного восстания, Забастовки шахтеров Астурии, и нынешний политический климат, похоже, имеет все предпосылки для нового, гораздо более масштабного и гораздо менее локализованного восстания. Кажется маловероятным, что предстоящие выборы положат конец этой нисходящей спирали социальных волнений." #NT!
+ SPR_national_strikes: "Национальные забастовки" #NT!
+ SPR_national_strikes_desc: "Страна, по-видимому, находится на начальной стадии рабочей революции; Забастовка за забастовкой парализует промышленность и повседневную жизнь, поскольку рабочие требуют меньше работы и большей оплаты, а бедные фермеры-арендаторы все чаще присваивают сельскохозяйственные земли, в то время как правительство закрывает на это глаза." #NT!
+ SPA_planned_uprising: "Запланированное восстание" #NT!
+ SPA_spanish_civil_war_commitments: "Обязательства гражданской войны в Испании" #NT!
+ SPA_foreign_training_staff: "Иностранный обучающий персонал" #NT!
+ SPA_disjointed_carlist_juntas: "Разрозненные карлистские хунты" #NT!
+ SPA_crusade_against_democracy: "Крестовый поход против демократии" #NT!
+ SPA_anti_republican_offensive: "Антиреспубликанское наступление" #NT!
+ SPR_anti_nationalist_offensive: "Антинационалистическое наступление" #NT!
+ SPA_anti_anarchist_offensive: "Антианархистское наступление" #NT!
+ SPA_anti_carlist_offensive: "Антикарлистское наступление" #NT!
+ SPR_equipment_shipments: "Поставки оборудования в Испанию" #NT!
+ SPR_juan_negrin: "Хуан Негрин" #NT!
+ SPR_indalecio_prieto: "Индалесио Прието" #NT!
+ SPR_jesus_hernandez_tomas: "Хесус Эрнандес Томас" #NT!
+ SPR_federica_montseny: "Федерика Монтсени" #NT!
+ SPR_juan_lopez_sanchez: "Хуан Лопес Санчес" #NT!
+ SPR_juan_garcia_oliver: "Хуан Гарсиа Оливер" #NT!
+ SPR_domenec_batet: "Доменек Батет" #NT!
+ SPR_etelvino_vega: "Этельвино Вега" #NT!
+ SPR_mate_zalka: "Мате Залка" #NT!
+ SPR_ignacio_hidalgo_de_cisneros: "Игнасио Идальго де Сиснерос" #NT!
+ SPR_andres_garcia_la_calle: "Андрес Гарсиа Ла Калле" #NT!
+ SPR_luis_gonzalez_de_ubieta: "Луис Гонсалес де Убьета" #NT!
+ SPR_toribio_martinez_cabrera: "Торибио Мартинес Кабрера" #NT!
+ SPR_francisco_ciutat_de_miguel: "Франсиско Сиутат де Мигель" #NT!
+ SPR_janos_galicz: "Янош Галич" #NT!
+ SPR_antonio_azarola_y_gresillon: "Антонио Азарола и Гресильон" #NT!
+ SPR_antonia_adroher_i_pascual: "Антония Адроэр и Паскуаль" #NT!
+ SPR_juan_andrade: "Хуан Андраде" #NT!
+ SPR_alexander_orlov: "Александр Орлов" #NT!
+ SPR_felipe_diaz_sandino: "Фелипе Диас Сандино" #NT!
+ SPR_alberto_bayo: "Альберто Байо" #NT!
+ SPR_joakin_egia_unzueta: "Хоакин Эгиа Унсуэта" #NT!
+ SPR_jose_rovira: "Хосе Ровира" #NT!
+ SPR_carmel_rosa_baserba: "Кармель Роза Басерба" #NT!
+ SPR_wilhelm_zaisser: "Вильгельм Цайссер" #NT!
+ SPR_antonio_escobar_huerta: "Антонио Эскобар Уэрта" #NT!
+ SPR_andres_nin: "Андрес Нин" #NT!
+ SPR_antonio_ortega_gutierrez: "Антонио Ортега Гутьеррес" #NT!
+ SPA_jose_antonio_giron: "Хосе Антонио Хирон" #NT!
+ SPA_manuel_hedilla: "Мануэль Хедилья" #NT!
+ SPA_raimundo_fernandez_cuesta: "Раймундо Фернандес-Куэста" #NT!
+ SPA_tomas_dominguez_arevalo: "Томас Домингес Аревало" #NT!
+ SPA_diego_hidalgo_y_duran: "Диего Идальго и Дюран" #NT!
+ SPA_ramon_serrano_suner: "Рамон Серрано Суньер" #NT!
+ SPA_luis_hernando_de_larramendi: "Луис Эрнандо де Ларраменди" #NT!
+ SPA_jose_antonio_primo_de_rivera: "Хосе Антонио Примо де Ривера" #NT!
+ SPA_juan_yague: "Хуан Ягуэ" #NT!
+ SPA_rafael_garcia_valino: "Рафаэль Гарсиа Валиньо" #NT!
+ SPA_heli_rolando_de_tella: "Хели Роландо де Телла" #NT!
+ SPA_miguel_ponte: "Мигель Понте" #NT!
+ SPA_emilio_mola: "Эмилио Мола" #NT!
+ SPA_wilhelm_ritter_von_thoma: "Вильгельм Риттер фон Тома" #NT!
+ SPA_enrique_canovas_lacruz: "Энрике Кановас Лакрус" #NT!
+ SPA_miguel_cabanellas: "Мигель Кабанельяс" #NT!
+ SPA_martin_de_riquer: "Мартин де Рикер" #NT!
+ SPA_mauricio_de_sivatte: "Маурисио де Сиватте" #NT!
+ SPA_juan_vigon_suero_diaz: "Хуан Вигон Суэро-Диас" #NT!
+ SPR_not_nationalist_spain_tt: "Разве это не §YНационалистическая Испания§!\n" #NT!
+ SPA_not_republican_spain_tt: "Разве это не §YРеспубликанская Испания§!\n" #NT!
+ SPR_scw_not_in_progress_tt: "Гражданская война в Испании не продолжается" #NT!
+ SPR_euskalduna: "Эускальдуна" #NT!
+ SPR_hispano_aviacion: "Испано Авиасьон" #NT!
+ SPR_star_bonifacio_echeverria: "Star Bonifacio Echeverria"
+ SPR_esperanza_y_cia: "Esperanza y Cia"
+ SPR_llama_gabilondo_y_cia: "Llama-Gabilondo y Cia"
+ SPR_hispano_suiza: "Испано-Сюиза" #NT!
+ SPR_compania_telefonica_nacional: "Compañía Telefónica Nacional"
+ SPR_industria_de_guerra_de_cataluna: "Industria de Guerra en Cataluña"
+ SPR_altos_hornos_de_vizcaya: "Altos Hornos de Vizcaya"
+ SPR_campsa: "Campsa"
+ SPR_defensive_military_council: "Оборонительный военный совет" #NT!
+ SPR_offensive_military_council: "Наступательный военный совет" #NT!
+ SPR_organizational_military_council: "Организационно-военный совет" #NT!
+ SPR_air_safety_aviation_council: "Авиационный совет по безопасности полетов" #NT!
+ SPR_all_weather_aviation_council: "Совет всепогодной авиации" #NT!
+ SPR_commerce_raiding_naval_council: "Торгово-рейдерский военно-морской совет" #NT!
+ SPR_reform_naval_council: "Реформа Военно-морского совета" #NT!
+ SPR_infantry_military_council: "Пехотный военный совет" #NT!
+ SPR_army_regrouping_military_council: "Военный совет по перегруппировке армии" #NT!
+ SPR_concealment_military_council: "Военный совет по сокрытию" #NT!
+ SPR_naval_strike_aviation_council: "Совет морской ударной авиации" #NT!
+ SPR_close_air_support_aviation_council: "Авиационный совет непосредственной воздушной поддержки" #NT!
+ SPR_logistics_naval_council: "Военно-морской совет логистики" #NT!
+ SPR_anti_submarine_naval_council: "Противолодочный военно-морской совет" #NT!
+ SPR_council_of_theorists: "Совет теоретиков" #NT!
+ SPR_seized_spanish_gold_reserves: "Арестованные золотые резервы Испании" #NT!
+ PRC_luo_ruiqing: "Luo Ruiqing" #NT!
+ FRA_maurice_gauche: "Морис-Анри Гоше" #NT!
+ soviet_vsevolod_merkulov: "Всеволод Меркулов" #NT!
+ ger_wilhelm_canaris: "Вильгельм Канарис" #NT!
+ usa_william_donovan: "Уильям Дж. Донован" #NT!
+ eng_stewart_menzies: "Стюарт Мензис" #NT!
+ eng_alan_turing: "Алан Тьюринг" #NT!
+ cyptology_tooltip_tt: "Создал отдел криптологии." #NT!
+ POL_jan_kowalewski: "Ян Ковалевски" #NT!
+ head_of_intelligence: "Призрачный джентльмен" #NT!
+ mastermind_code_cracker: "Вдохновитель-взломщик кодов" #NT!

@@ -1,0 +1,44 @@
+#################
+#### Portugal ####
+#################
+
+POR_spartacist_civil_war_category = {
+	icon = generic_crisis
+
+	picture = GFX_decision_cat_picture_concessions_to_the_trade_unions
+
+	allowed = {
+		original_tag = POR
+	}
+}
+
+POR_galleons_category = {
+	icon = generic_politcal_actions
+
+	picture = GFX_decision_cat_picture_ger_case_anton
+
+	allowed = {
+		original_tag = POR
+	}
+}
+
+POR_england_colonies_category = {
+	icon = generic_politcal_actions
+
+	picture = GFX_decision_cat_generic_pink_map
+
+	allowed = {
+		original_tag = POR
+	}
+}
+
+POR_spanish_civil_war_category = {
+	icon = generic_politcal_actions
+
+	picture = GFX_decision_cat_picture_ger_case_anton
+
+	allowed = {
+		original_tag = POR
+	}
+}
+

@@ -1,0 +1,1715 @@
+﻿###########################
+# PprussiaN EVENTS #########
+###########################
+
+add_namespace = prussia
+#Germany proposes pact to split balkans 
+country_event = {
+	id = prussia.110
+	title = prussia.110.t
+	desc = prussia.110.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes 
+	fire_only_once = yes
+	option = { #Russia accepts, gains wargoals in 30 days 
+		name = prussia.110.a
+		ai_chance = { factor = 99 }		
+	news_event = { days = 7 id = prussia.111 }
+	RUS = { 
+	diplomatic_relation = { country = GER relation = non_aggression_pact }
+	add_timed_idea = { idea = konig_pact_idea days = 730 }
+	country_event = { id = prussia.113 days = 24 } }
+	GER = { 
+	add_timed_idea = { idea = konig_pact_idea days = 730 }
+	country_event = { days = 2 id = prussia.112 } }
+	}
+	option = {
+		name = prussia.110.b
+		ai_chance = { factor = 1 }	
+			GER = { 
+	country_event = { days = 2 id = prussia.114 } }
+		}
+	}
+#News event for Königspakt 
+news_event = {
+	id = prussia.111
+	title = prussia.111.t
+	desc = prussia.111.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes 
+	fire_only_once = yes
+	option = {
+		name = prussia.111.a
+		trigger = {
+			NOT = {
+				TAG = RUS
+			}
+			} }
+			option = {
+		name = prussia.111.b
+			trigger = { TAG = RUS }	}
+	}
+#Germany receives the Russian reply 
+country_event = {
+	id = prussia.112
+	title = prussia.112.t
+	desc = prussia.112.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes 
+	fire_only_once = yes
+	option = {
+		name = prussia.112.a
+		ai_chance = { factor = 100 }						
+	}
+	}
+#Germany receives the Russian reply 
+country_event = {
+	id = prussia.114
+	title = prussia.114.t
+	desc = prussia.114.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes 
+	fire_only_once = yes
+	option = {
+		name = prussia.114.a
+		ai_chance = { factor = 100 }						
+	}
+	}	
+#Russia is preparing an invasion
+country_event = {
+	id = prussia.113
+	title = prussia.113.t
+	desc = prussia.113.d
+	picture = GFX_report_event_soviet_soldiers_tank
+	is_triggered_only = yes 
+	fire_only_once = yes
+	option = { 
+		name = prussia.113.a
+		ai_chance = { factor = 100 }
+		add_threat = 7
+		create_wargoal = {
+					type = annex_everything
+					target = ROM
+				}	
+		create_wargoal = {
+					type = annex_everything
+					target = BUL
+				}		
+	}
+	}	
+#Russia proposes peace to Germany while at war with Japan, less severe, loses Poland, Lithuania and Galicia 
+country_event = {
+	id = prussia.10030
+	title = prussia.10030.t
+	desc = prussia.10030.d
+	picture = GFX_report_event_soviet_soldiers_tank
+	#is_triggered_only = yes 
+	fire_only_once = yes
+	trigger = {
+	has_country_flag = is_not_ready
+	TAG = RUS
+	RUS = { 
+	has_war_with = JAP 
+	has_war_with = AUS 
+	has_war_with = GER
+	}
+	GER = {
+	is_puppet = no
+	controls_state = 11
+	controls_state = 190
+	controls_state = 96
+	controls_state = 95
+	controls_state = 94
+	controls_state = 93
+	controls_state = 10
+	}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = prussia.10030.a
+		ai_chance = {
+			factor = 25
+			modifier = { 
+				factor = 100
+			has_war_with = JAP
+			}
+		}
+	GER = {
+			country_event = { days = 5 id = prussia.10031 }
+		}		
+	}
+	option = {
+		name = prussia.10030.b
+		ai_chance = {
+			factor = 75
+		}		
+		add_war_support = 0.05
+	}
+	}
+#Germany receives peace proposal 
+country_event = {
+	id = prussia.10031
+	title = prussia.10031.t
+	desc = prussia.10031.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+	is_triggered_only = yes 
+
+	option = {
+		name = prussia.10030.a
+		ai_chance = {
+			factor = 25
+			modifier = { 
+				factor = 100
+				OR = {
+					has_war_with = ENG
+					has_war_with = FRA
+				}
+			}
+		}
+	GER = {
+			country_event = { days = 5 id = prussia.10032 }
+		}		
+	}
+	option = {
+		name = prussia.10030.b
+		ai_chance = {
+			factor = 75
+		}		
+		add_war_support = 0.05
+	}
+	}
+#Germany receives peace proposal 
+country_event = {
+	id = prussia.10032
+	title = prussia.10032.t
+	desc = prussia.10032.d
+	picture = GFX_news_event_003
+
+	fire_only_once = yes
+	is_triggered_only = yes 
+
+	option = {
+		name = prussia.10032.a
+		ai_chance = {
+			factor = 100
+		}
+	RUS = {
+	dismantle_faction = yes
+	}
+	#news_event = { id = prussia.10038 days = 5 }
+	GER = {
+	if = {
+	limit = { BUL = { is_in_faction_with = RUS } }
+	white_peace = BUL
+	}
+	if = {
+	limit = { ROM = { is_in_faction_with = RUS } }
+	white_peace = ROM
+	}
+	if = {
+	limit = { SIK = { is_in_faction_with = RUS } }
+	white_peace = SIK
+	}
+	if = {
+	limit = { MON = { is_in_faction_with = RUS } }
+	white_peace = MON
+	}
+	white_peace = RUS 
+	hidden_effect = {
+	transfer_state = 188 
+	transfer_state = 762
+	transfer_state = 98
+	puppet = LIT 
+	puppet = POL
+	}		
+	}
+	LIT = { 
+	white_peace = RUS 
+	transfer_state = 189
+	transfer_state = 11
+	transfer_state = 96 
+	}
+	POL = {
+	white_peace = RUS
+	transfer_state = 87
+	transfer_state = 10
+	transfer_state = 90
+	transfer_state = 92
+	transfer_state = 97
+	#transfer_state = 94
+	#transfer_state = 93
+	#transfer_state = 95
+	}
+	AUS = { 
+	white_peace = RUS 
+	transfer_state = 88
+	transfer_state = 91
+	transfer_state = 89
+	transfer_state = 80
+	transfer_state = 76
+	transfer_state = 84
+	transfer_state = 82
+	transfer_state = 83 
+	transfer_state = 72
+	}
+	}
+	}
+#This time Germany proposes peace to Russia. More severe.
+country_event = {
+	id = prussia.10033
+	title = prussia.10033.t
+	desc = prussia.10033.d
+	picture = GFX_report_event_soviet_soldiers_tank
+	#is_triggered_only = yes 
+	fire_only_once = yes
+	trigger = {
+	has_country_flag = is_not_ready
+	TAG = GER
+	RUS = { 
+	has_war_with = AUS 
+	has_war_with = GER
+	}
+	GER = {
+	is_puppet = no
+	controls_state = 12 
+	controls_state = 206 #It will require more land to trigger 
+	controls_state = 11
+	controls_state = 190
+	controls_state = 96
+	controls_state = 95
+	controls_state = 94
+	controls_state = 93
+	controls_state = 10
+	}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = prussia.10033.a
+		ai_chance = {
+			factor = 99
+			modifier = { 
+				factor = 100
+				OR = {
+					has_war_with = ENG
+					has_war_with = FRA
+				}
+			}
+		}
+	RUS = {
+			country_event = { days = 5 id = prussia.10034 }
+		}		
+	}
+	option = {
+		name = prussia.10033.b
+		ai_chance = {
+			factor = 1
+		}		
+		add_war_support = 0.05
+	}
+	}
+#Russia receives the peace proposal 
+country_event = {
+	id = prussia.10034
+	title = prussia.10034.t
+	desc = prussia.10034.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+	is_triggered_only = yes 
+
+	option = {
+		name = prussia.10034.a
+		ai_chance = {
+			factor = 100
+		}
+	GER = {
+			country_event = { days = 5 id = prussia.10035 }
+		}		
+	}
+	option = {
+		name = prussia.10034.b
+		ai_chance = {
+			factor = 0
+		}	
+	GER = {
+			country_event = { days = 5 id = prussia.10036 }
+		}		
+		add_war_support = 0.05
+	}
+	}
+#Germany receives Russian response
+country_event = {
+	id = prussia.10035
+	title = prussia.10035.t
+	desc = prussia.10035.d
+	picture = GFX_news_event_003
+
+	fire_only_once = yes
+	is_triggered_only = yes 
+
+	option = {
+		name = prussia.10035.a
+		ai_chance = {
+			factor = 100
+		}
+	GER = { country_event = { id = prussia.10037 days = 5 } }
+	RUS = {
+	add_ideas = FRA_GER_truce
+	diplomatic_relation = {
+    country = FRA
+    relation = guarantee
+    active = no
+	}
+	white_peace = GER 
+	white_peace = AUS 
+	dismantle_faction = yes
+	diplomatic_relation = {
+    country = GER
+    relation = non_aggression_pact
+    active = yes
+	}
+	diplomatic_relation = {
+    country = AUS
+    relation = non_aggression_pact
+    active = yes
+	}	
+	}
+	RMN = { 
+	add_ideas = FRA_GER_truce
+	white_peace = GER
+	white_peace = AUS
+	}
+	MON = { 
+	add_ideas = FRA_GER_truce
+	white_peace = GER
+	white_peace = AUS
+	}
+	ROM = { 
+	add_ideas = FRA_GER_truce
+	white_peace = GER
+	white_peace = AUS
+	}
+	if = { 
+	limit = { BUL = { is_in_faction_with = RUS } }
+	BUL = {
+	add_ideas = FRA_GER_truce
+	white_peace = GER
+	white_peace = AUS
+	}
+	}
+	}
+	}
+#State-Setup, had to separate the events cos its messed up
+country_event = {
+	id = prussia.10037
+	title = prussia.10037.t
+	desc = prussia.10037.d
+	picture = GFX_news_event_003
+
+	fire_only_once = yes
+	is_triggered_only = yes 
+
+	option = {
+		name = prussia.10037.a
+		ai_chance = {
+			factor = 100
+		}
+	RUS = {
+	release = LAT
+	release = FIN
+	release = EST 
+	end_puppet = LAT 
+	end_puppet = FIN
+	end_puppet = EST
+	}
+	GER = {
+	hidden_effect = {
+	transfer_state = 188 
+	transfer_state = 762
+	transfer_state = 98
+	puppet = LIT 
+	puppet = POL
+	}		
+	}
+	LIT = { 
+	transfer_state = 189
+	transfer_state = 11
+	transfer_state = 96 
+	}
+	POL = {
+	transfer_state = 87
+	transfer_state = 10
+	transfer_state = 90
+	transfer_state = 92
+	transfer_state = 97
+	transfer_state = 94
+	transfer_state = 93
+	transfer_state = 95
+	}
+	AUS = { 
+	transfer_state = 88
+	transfer_state = 91
+	transfer_state = 89
+	transfer_state = 80
+	transfer_state = 76
+	transfer_state = 84
+	transfer_state = 82
+	transfer_state = 83 
+	transfer_state = 72
+	}
+	UKR = {  
+	transfer_state = 199
+	transfer_state = 201
+	transfer_state = 198
+	transfer_state = 192
+	transfer_state = 197
+	transfer_state = 203
+	transfer_state = 202
+	transfer_state = 193
+	transfer_state = 259
+	transfer_state = 226
+	transfer_state = 200
+	transfer_state = 227
+	transfer_state = 221
+	transfer_state = 225
+	transfer_state = 196
+	}
+	#LAT = {
+	#white_peace = RUS 
+	#transfer_state = 12
+	#transfer_state = 190
+	#}
+	ROM = {
+	transfer_state = 78
+	}
+	#EST = {
+	#white_peace = RUS
+	#transfer_state = 13
+	#transfer_state = 191
+	#}
+	}
+	}	
+#German-Russian war conitnues
+country_event = {
+	id = prussia.10036
+	title = prussia.10036.t
+	desc = prussia.10036.d
+	picture = GFX_news_event_003
+
+	fire_only_once = yes
+	is_triggered_only = yes 
+
+	option = {
+		name = prussia.10036.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+	}	
+#WW2
+news_event = {
+	id = prussia.10013
+	title = prussia.10013.t
+	desc = prussia.10013.d
+	picture = GFX_news_event_003
+
+	fire_only_once = yes
+	trigger = {
+	TAG = GER
+	GER = { 
+	has_war_with = FRA 
+	#has_war_with = ENG
+	is_puppet = no 
+	}
+	BAV = { exists = no }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	#	immediate = {
+	#		set_global_flag = GER_russia_is_preparing
+	#}
+	option = {
+		name = prussia.10013.a
+		trigger = {
+			NOT = {
+				TAG = GER
+			}
+			}
+	}
+			option = {
+		name = prussia.10013.b
+			trigger = { TAG = GER }
+	}
+	}
+	#RUSSIA IS PREPING TO MOBILIZE
+	country_event = {
+	id = prussia.10014
+	title = prussia.10014.t
+	desc = prussia.10014.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+	trigger = {
+	TAG = RUS
+	FRA = {
+	has_country_flag = french_pact_with_tsar
+	OR = {
+	has_defensive_war_with = GER
+	has_defensive_war_with = BAV
+	}
+	}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = prussia.10014.a
+		ai_chance = {
+			factor = 100
+		}
+	RUS = {
+			country_event = { days = 100 id = prussia.10015 }
+			add_war_support = 0.25
+			add_stability = 0.10
+		}
+	GER = {
+	country_event = { days = 1 id = prussia.10016 }
+	}		
+		
+	}
+	}
+	#RUSSIA JOINS THE WAR
+country_event = {
+	id = prussia.10015
+	title = prussia.10015.t
+	desc = prussia.10015.d
+	picture = GFX_report_event_soviet_soldiers_tank
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = prussia.10015.a
+	RUS = {
+	declare_war_on = { target = GER type = annex_everything }
+		}	
+		
+	}
+	}
+	#GERMANY RECEIVES ULTIMATUM
+country_event = {
+	id = prussia.10016
+	title = prussia.10016.t
+	desc = prussia.10016.d
+	picture = GFX_report_event_soviet_soldiers_tank
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = prussia.10015.a
+	GER = {
+		add_war_support = 0.10
+		}	
+		
+	}
+	}	
+
+#Fall of Paris
+country_event = {
+	id = prussia.10010
+	title = prussia.10010.t
+	desc = prussia.10010.d
+	picture = GFX_report_event_german_parade_paris
+
+	fire_only_once = yes
+	trigger = {
+	TAG = GER
+	GER = { 
+	has_war_with = FRA 
+	is_puppet = no 
+	}
+	OR = {
+	GER = {
+	controls_state = 16
+	}
+	FRA = {
+	surrender_progress > 0.6
+	}
+	}
+	
+	FRA = {
+	OR = {
+	has_government = democratic
+	has_government = conservatives
+	has_government = socialist 
+	}
+	is_in_faction_with = ENG
+	is_puppet = no 
+	}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = prussia.10010.a
+		ai_chance = {
+			factor = 0
+		}
+		FRA = {
+			country_event = { days = 1 id = prussia.10011 }
+		}
+		}
+	option = {
+		name = prussia.10010.b
+		ai_chance = {
+			factor = 90
+		}
+		FRA = {
+			country_event = { days = 1 id = prussia.10012 }
+		}
+		}
+	option = {
+		name = prussia.10010.c
+		ai_chance = {
+			factor = 10
+		}
+		add_political_power = -150
+		add_war_support = -0.1
+		}	
+  }	
+#Armstice at Compiege 
+country_event = {
+	id = prussia.10011
+	title = prussia.10011.t
+	desc = prussia.10011.d
+	picture = GFX_report_event_generic_read_write
+
+    is_triggered_only = yes
+
+	option = {
+		name = prussia.10011.a
+		ai_chance = {
+			factor = 90
+		}
+		ENG = {
+		remove_from_faction = FRA
+		}
+		FRA = {
+		add_timed_idea = { idea = FRA_GER_truce days = 830 }
+		white_peace = GER
+		diplomatic_relation = { country = GER relation = non_aggression_pact }
+		}
+		hidden_effect = {
+		GER = {
+		transfer_state = 28
+		transfer_state = 772
+		transfer_state = 539
+		transfer_state = 773
+		transfer_state = 660
+		transfer_state = 774
+		}
+		}
+		}
+	option = {
+		name = prussia.10011.b
+		ai_chance = {
+			factor = 10
+		}
+		add_war_support = 0.1
+    }
+	}
+#Puppet State RFR	
+country_event = {
+	id = prussia.10012
+	title = prussia.10012.t
+	desc = prussia.10012.d
+	picture = GFX_report_event_generic_read_write
+
+    is_triggered_only = yes
+
+	option = {
+		name = prussia.10012.a
+		ai_chance = {
+			factor = 50
+		}
+		RFR = { change_tag_from = FRA }
+		FRA = { declare_war_on = { target = RFR type = annex_everything } }
+		hidden_effect = {
+		#GER = { puppet = BEL }
+		GER = { country_event = { days = 15 id = prussia.10028 } }
+		#BEL = {
+		#create_country_leader = {
+		#name = "Prince Eitel Friedrich of Prussia"
+		#desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+		#picture = "eitel_friedrich.dds" 
+		#expire = "1965.1.1"
+		#ideology = neutrality_subtype
+		#traits = {
+		#}
+		#}
+		}
+		GER = {
+		transfer_state = 28
+		transfer_state = 18
+		transfer_state = 17
+		transfer_state = 785
+		transfer_state = 29
+		transfer_state = 840
+		}	
+		RFR = { transfer_state = 16 }
+		RFR = { 
+		add_state_core = 785 }
+		RFR = { 
+		add_state_core = 24 
+		transfer_state = 24 }
+		RFR = { 
+		add_state_core = 840 }
+		RFR = { 
+		add_state_core = 27
+		transfer_state = 27 }
+		RFR = { 
+		add_state_core = 29 }	
+		RFR = { 
+		add_state_core = 18 }
+		RFR = { 
+		add_state_core = 15
+		transfer_state = 15 }
+		RFR = { 
+		add_state_core = 30
+		transfer_state = 30 }
+		RFR = { 
+		add_state_core = 14
+		transfer_state = 14 }
+		RFR = { 
+		add_state_core = 23
+		transfer_state = 23 }
+		RFR = { 
+		add_state_core = 19
+		transfer_state = 19 }
+		RFR = { 
+		add_state_core = 735 }
+		RFR = { 
+		add_state_core = 25
+		transfer_state = 25 }
+		RFR = { 
+		add_state_core = 33
+		transfer_state = 33 }
+		RFR = { 
+		add_state_core = 31
+		transfer_state = 31 }
+		RFR = { 
+		add_state_core = 26 }
+		RFR = { 
+		add_state_core = 22 }
+		RFR = { 
+		add_state_core = 21 }
+		RFR = { 
+		add_state_core = 20 }
+		RFR = { 
+		add_state_core = 32 }
+		RFR = { 
+		add_state_core = 806
+		transfer_state = 806 }
+		RFR = { change_tag_from = FRA }
+				RFR = { 
+		load_oob = RFR_units
+		}
+		GER = { puppet = RFR }
+		}
+    }
+	option = {
+		name = prussia.10012.b
+		ai_chance = {
+			factor = 50
+		}
+			FRA = { declare_war_on = { target = RFR type = annex_everything } }
+			hidden_effect = {	
+				GER = { country_event = { days = 15 id = prussia.10028 } }
+		RFR = { transfer_state = 16 }
+		RFR = { 
+		add_state_core = 785 }
+		RFR = { 
+		add_state_core = 24 
+		transfer_state = 24 }
+		RFR = { 
+		add_state_core = 840 }
+		RFR = { 
+		add_state_core = 27
+		transfer_state = 27 }
+		RFR = { 
+		add_state_core = 29 }	
+		RFR = { 
+		add_state_core = 18 }
+		RFR = { 
+		add_state_core = 15
+		transfer_state = 15 }
+		RFR = { 
+		add_state_core = 30
+		transfer_state = 30 }
+		RFR = { 
+		add_state_core = 14
+		transfer_state = 14 }
+		RFR = { 
+		add_state_core = 23
+		transfer_state = 23 }
+		RFR = { 
+		add_state_core = 19
+		transfer_state = 19 }
+		RFR = { 
+		add_state_core = 735 }
+		RFR = { 
+		add_state_core = 25
+		transfer_state = 25 }
+		RFR = { 
+		add_state_core = 33
+		transfer_state = 33 }
+		RFR = { 
+		add_state_core = 31
+		transfer_state = 31 }
+		RFR = { 
+		add_state_core = 26 }
+		RFR = { 
+		add_state_core = 22 }
+		RFR = { 
+		add_state_core = 21 }
+		RFR = { 
+		add_state_core = 20 }
+		RFR = { 
+		add_state_core = 32 }
+		RFR = { 
+		add_state_core = 806
+		transfer_state = 806 }
+		GER = { puppet = RFR }
+		RFR = { 
+		load_oob = RFR_units
+		}
+		}  
+		}
+
+}		
+#Demand Alsace Lorraine
+country_event = {
+	id = prussia.3
+	title = prussia.3.t
+	desc = prussia.3.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia.3.a	#sounds good
+		ai_chance = {
+			factor = 1 }		
+		GER = {
+			country_event = { days = 1 id = prussia.4 }
+		}
+		FRA = { add_stability = -0.10}
+	}
+	
+
+	option = {
+		name = prussia.3.b
+		ai_chance = { factor = 99 }
+		GER = {
+			country_event = { days = 1 id = prussia.5 }
+		}
+		FRA = {
+		add_war_support = 0.05
+		}
+	}
+}
+# France cedes
+country_event = {
+	id = prussia.4
+	title = prussia.4.t
+	desc = prussia.4.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia.4.a
+	GER = {
+		transfer_state = 28
+	}
+ }
+}
+
+# France Rejects
+country_event = {
+	id = prussia.5
+	title = prussia.5.t
+	desc = prussia.5.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia.5.a
+		create_wargoal = { type = annex_everything target = FRA }
+	 }
+ }
+
+# RULER SELECTION
+country_event = {
+	id = prussia.17
+	title = prussia.17.t
+	desc = prussia.17.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia.17.a	# heh 65/35
+	GER = { set_cosmetic_tag = GER_confederation }
+	
+}
+
+}
+country_event = {
+	id = prussia.10002
+	title = prussia.10002.t
+	desc = prussia.10002.d
+	picture = GFX_news_event_election_vote
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia.10002.a	
+    ai_chance = {
+			factor = 60
+		}
+		GER = {
+		remove_ideas = GER_wilhelm_II
+		add_ideas = GER_wilhelm_III
+	create_country_leader = {
+	name = "Wilhelm III"
+	desc = "POLITICS_KONRAD_ADENAUER_DESC"
+	picture = "Wilhelm_III.dds"
+	expire = "1965.6.4"
+	ideology = conservatism
+	traits = {
+	INOT_kaiser_of_germany
+	}
+		}	
+			}	
+		}
+	option = {
+		name = prussia.10002.b	# heh 65/35	
+		ai_chance = {
+			factor = 40
+		}
+		GER = {
+		remove_ideas = GER_wilhelm_II
+		add_ideas = GER_wilhelm_III
+		}
+	}
+	}
+country_event = {
+	id = prussia.10006
+	title = prussia.10006.t
+	desc = prussia.10006.d
+	picture = GFX_report_event_europe_funeral
+	trigger = {
+		GER = { has_country_flag = GER_wilhelm_the_old }
+		tag = GER
+		date > 1941.7.1
+		date < 1942.1.18
+	}
+	fire_only_once = yes
+
+	option = {
+		name = prussia.10006.a
+		news_event = { hours = 6 id = prussia.10007 }
+		RUS = {
+		add_political_power = -120
+		kill_country_leader = yes
+		#remove_ideas = RUS_provisional_gov
+		set_country_flag = ger_dead
+					create_country_leader = {
+	name = "Wihelm III"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "Wilhelm_III.dds" 
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {
+	INOT_kaiser_of_germany	
+	}
+	}
+	}
+  }
+}	
+#kaiserdead
+	country_event = {
+        id = prussia.10007
+        title = prussia.10007.t
+        desc = prussia.10007.d
+        picture = GFX_news_event_generic_funeral
+        is_triggered_only = yes
+		immediate = {
+		set_global_flag = GER_II_died
+	}
+        option = {
+		name = prussia.10007.a
+		GER = {
+		kill_country_leader = yes
+		create_country_leader = {
+	name = "Kaiser Wilhelm III"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "Wilhelm_III.dds" 
+	expire = "1965.1.1"
+	ideology = neutrality_subtype
+	traits = {
+	INOT_kaiser_of_germany 
+	}
+	}
+	}
+	}
+}
+	country_event = {
+        id = prussia.10027
+        title = prussia.10027.t
+        desc = prussia.10027.d
+        picture = GFX_news_event_generic_funeral
+
+      #  major = yes
+
+        is_triggered_only = yes
+		immediate = {
+		set_global_flag = GER_II_died
+	}
+        option = {
+		name = prussia.10027.a
+GER = {
+		kill_country_leader = yes
+		create_country_leader = {
+	name = "Kaiser Wilhelm III"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "Wilhelm_III.dds" 
+	expire = "1965.1.1"
+	ideology = conservatives_subtype
+	traits = {
+	INOT_kaiser_of_germany 	
+	}
+	}
+	}
+}
+}
+country_event = { #Francewantsguns
+        id = prussia.10028
+        title = prussia.10028.t
+        desc = prussia.10028.d
+        picture = GFX_report_event_GER_french_equipment
+        is_triggered_only = yes
+
+        option = {
+		name = prussia.10028.a
+		RFR = { add_equipment_to_stockpile = { type = infantry_equipment amount = 2500 producer = GER } }
+		RFR = { add_equipment_to_stockpile = { type = support_equipment amount = 500 producer = GER } }
+		RFR = { add_equipment_to_stockpile = { type = artillery_equipment amount = 500 producer = GER } }
+		hidden_effect = { GER = { country_event = { days = 15 id = prussia.10029 } } }
+        }
+        option = {
+		name = prussia.10028.b
+		hidden_effect = { GER = { country_event = { days = 15 id = prussia.10029 } } }
+        }
+}
+country_event = { #FrancewantsFortspayments
+        id = prussia.10029
+        title = prussia.10029.t
+        desc = prussia.10029.d
+        picture = GFX_report_event_GER_french_equipment
+        is_triggered_only = yes
+
+        option = {
+		name = prussia.10029.a 
+		FRA = {
+		29 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 575
+						instant_build = yes
+					}		
+			}
+		15 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 485
+						instant_build = yes
+
+				}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 6449
+						instant_build = yes
+					}
+			}
+		14 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 3552
+						instant_build = yes
+				}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 6536
+						instant_build = yes
+				}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 9510
+						instant_build = yes
+				}
+				
+			}
+		30 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 11465
+						instant_build = yes
+				}
+				
+			}
+		23 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 6657
+						instant_build = yes
+				}
+				
+			}
+		19 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 9737
+						instant_build = yes
+					}
+				
+			}		
+			}
+		BEL = {	
+		6 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 6560
+						instant_build = yes
+					}
+				
+			}		
+			}
+		custom_effect_tooltip = GER_expand_wall
+		set_country_flag = Ger_nordwallkuere
+		}						
+        option = {
+		name = prussia.10029.b
+        }
+}
+#SAXONIAN SUBMISSION
+country_event = {
+	id = prussia.10024
+	title = prussia.10024.t
+	desc = prussia.10024.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia.10024.a	#sounds good
+    ai_chance = {
+			factor = 100 }		
+		GER = {
+			country_event = { days = 1 id = prussia.10025 }
+		}
+	}
+	
+
+	option = {
+		name = prussia.10024.b	#no way
+		ai_chance = { factor = 0  }
+		GER = {
+			country_event = { days = 1 id = prussia.10026 }
+		}
+	}
+}
+
+
+#sax Submits
+country_event = {
+	id = prussia.10025
+	title = prussia.10025.t
+	desc = prussia.10025.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia.10025.a
+	GER = {
+		annex_country = { target = SAX transfer_troops = yes }
+	}
+	#hidden_effect = { news_event = { hours = 6 id = prussia.10008 } }
+ }
+}
+
+#sax rejects
+country_event = {
+	id = prussia.10026
+	title = prussia.10026.t
+	desc = prussia.10026.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia.10026.a
+		if = { 
+		limit = {
+		SAX = { is_in_faction_with = GER }
+		}
+		GER = {
+		remove_from_faction = SAX
+		}
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = SAX
+		}
+	 }
+  }	
+#WSM Submission
+country_event = {
+	id = prussia.10021
+	title = prussia.10021.t
+	desc = prussia.10021.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia.10021.a	#sounds good
+    ai_chance = {
+			factor = 100 }		
+		GER = {
+			country_event = { days = 1 id = prussia.10022 }
+		}
+	}
+	
+
+	option = {
+		name = prussia.10021.b	#no way
+		ai_chance = { factor = 0  }
+		GER = {
+			country_event = { days = 1 id = prussia.10023 }
+		}
+	}
+}
+
+
+# wsm Submits
+country_event = {
+	id = prussia.10022
+	title = prussia.10022.t
+	desc = prussia.10022.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia.10022.a
+	GER = {
+		annex_country = { target = WSM transfer_troops = yes }
+	}
+	hidden_effect = { 
+	#RUS = { country_event = { id = russia.91 days = 5 } }
+	#news_event = { hours = 6 id = prussia.10009 } }
+ }
+}
+
+#wsm rejects
+country_event = {
+	id = prussia.10023
+	title = prussia.10023.t
+	desc = prussia.10023.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia.10023.a
+		if = { 
+		limit = {
+		WSM = { is_in_faction_with = GER }
+		}
+		GER = {
+		remove_from_faction = WSM
+		}
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = WUT
+		}
+	 }
+  }		
+#  Baden Submission
+country_event = {
+	id = prussia.10018
+	title = prussia.10018.t
+	desc = prussia.10018.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia.10018.a	#sounds good
+    ai_chance = {
+			factor = 40 }		
+		GER = {
+			country_event = { days = 1 id = prussia.10019 }
+		}
+	}
+	
+
+	option = {
+		name = prussia.10020.b	#no way
+		ai_chance = { factor = 60  }
+		GER = {
+			country_event = { days = 1 id = prussia.10020 }
+		}
+	}
+}
+
+
+# Baden Submits
+country_event = {
+	id = prussia.10019
+	title = prussia.10019.t
+	desc = prussia.10019.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia.10019.a
+	GER = {
+		annex_country = { target = WUT transfer_troops = yes }
+	}
+ }
+}
+
+#Baden rejects
+country_event = {
+	id = prussia.10020
+	title = prussia.10020.t
+	desc = prussia.10020.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia.10020.a
+		create_wargoal = {
+			type = annex_everything
+			target = WUT
+		}
+	 }
+  }		
+#  rhine Submission
+country_event = {
+	id = prussia.10003
+	title = prussia.10003.t
+	desc = prussia.10003.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia.10004.a	#sounds good
+    ai_chance = {
+			factor = 85 }		
+		GER = {
+			country_event = { days = 1 id = prussia.10004 }
+		}
+	}
+	
+
+	option = {
+		name = prussia.10004.b	#no way
+		ai_chance = { factor = 15  }
+		GER = {
+			country_event = { days = 1 id = prussia.10005 }
+		}
+	}
+}
+
+
+# rhine Submits
+country_event = {
+	id = prussia.10004
+	title = prussia.10004.t
+	desc = prussia.10004.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia.10004.a
+	GER = {
+		annex_country = { target = RHN transfer_troops = yes }
+	}
+ }
+}
+
+# rhine rejects
+country_event = {
+	id = prussia.10005
+	title = prussia.10005.t
+	desc = prussia.10005.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia.10005.a
+		create_wargoal = {
+			type = annex_everything
+			target = RHN
+		}
+	 }
+  }			
+country_event = {
+	id = prussia.10001
+	title = prussia.10001.t
+	desc = prussia.10001.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia.10001.a	# heh 65/35
+    #ai_chance = {
+	#		factor = 95
+	#	}
+		GER = {
+		dismantle_faction = yes
+		annex_country = { target = SAX transfer_troops = yes }
+		annex_country = { target = WSM transfer_troops = yes }
+		set_politics = { ruling_party = fascism elections_allowed = no }
+	create_country_leader = {
+	name = "Heinrich Himmler"
+	desc = "POLITICS_KONRAD_ADENAUER_DESC"
+	picture = "Portrait_Germany_Heinrich_Himmler.dds"
+	expire = "1965.6.4"
+	ideology = National_Socialism
+	traits = {
+	}
+		}
+						#limit = { NOT = { democratic > 0.5 } }
+						start_civil_war = {
+							ideology = neutrality
+							size = 0.3
+						}	
+	add_popularity = {
+					ideology = fascism
+					popularity = 0.25
+				}
+			set_party_name = {
+					ideology = fascism
+					long_name = "NSDAP"
+					name = "NSDAP"
+				}
+			}	
+		}
+	}
+
+
+
+###REUNIFICATION AFTER BAVARIA DECLARES WAR ####
+
+#### Reunification Trigger - DON"T LOCALIZE THIS EVENT ####
+#news_event = {
+#	id = prussia.1
+#	title = prussia.1.t
+#	desc = prussia.1.d
+#
+#	hidden = yes
+#
+#	fire_only_once = yes
+#
+#	trigger = {
+#		#country_exists = GER
+#		#country_exists = BAV
+#		GER = { has_defensive_war_with = BAV }
+#		OR = {
+#		BAV = { has_defensive_war_with = GER }
+#		}
+#	}
+#
+#	immediate = {
+#		GER = { country_event = {id = prussia.2 }}
+#	}
+#
+#	option = {
+#		name = prussia.1.a
+#	}
+#
+#}
+#
+#country_event = {
+#	id = prussia.2
+#	title = prussia.2.t
+#	desc = prussia.2.d
+#	picture = GFX_report_event_german_reichstag_gathering
+#
+#
+#	fire_only_once = yes
+#
+#	option = {
+#		name = prussia.2.a # re-unify
+#		ai_chance = {
+#			factor = 75
+#		}
+#		custom_effect_tooltip = GER_unification_tt
+#		hidden_effect = {
+#		set_cosmetic_tag = GER_confederation
+#		GER = { set_country_flag = GER_north_reunited }
+#		GER = {
+#		news_event = prussia.10000
+#		annex_country = { target = WSM transfer_troops = yes }
+#		annex_country = { target = SAX transfer_troops = yes }
+#		transfer_state = 57
+#		transfer_state = 56
+#		transfer_state = 59
+#		transfer_state = 58
+#		transfer_state = 65
+#		transfer_state = 61
+#		add_state_core = 57
+#		add_state_core = 56
+#		add_state_core = 59
+#		add_state_core = 58
+#		add_state_core = 65
+#		add_state_core = 61
+#		}
+#  }
+# }
+#
+# option = {
+#	 name = prussia.2.b # no.
+#	 }
+#}
+#
+#German Unification News
+news_event = {
+	id = prussia.10000
+	title = prussia.10000.t
+	desc = prussia.10000.d
+	picture = GFX_news_event_prussia_unification
+
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = GER_north_reunited
+	}
+
+	option = {
+		name = prussia.10000.a  # world response
+		trigger = {
+			NOT = {
+				TAG = BAV
+				TAG = GER
+			}
+			}
+		}
+			option = {
+				name = prussia.10000.b  # German Response
+				trigger = { TAG = GER }
+			}
+			option = {
+				name = prussia.10000.c # Bavarian Response
+				trigger = { TAG = BAV }
+			}
+	}
+
+#PrussiaanschlussSaxony
+news_event = {
+	id = prussia.10008
+	title = prussia.10008.t
+	desc = prussia.10008.d
+	picture = GFX_news_event_prussia_saxony
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia.10008.a  # world response
+		trigger = {
+			NOT = {
+				TAG = BAV
+				TAG = GER
+			}
+			}
+		}
+			option = {
+				name = prussia.10008.b  # German Response
+				trigger = { TAG = GER }
+			}
+			option = {
+				name = prussia.10008.c # Bavarian Response
+				trigger = { TAG = BAV }
+			}
+	}	
+
+#PrussiaanschlussHanover
+news_event = {
+	id = prussia.10009
+	title = prussia.10009.t
+	desc = prussia.10009.d
+	picture = GFX_news_event_prussia_nieder
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia.10009.a  # world response
+		trigger = {
+			NOT = {
+				TAG = BAV
+				TAG = GER
+			}
+			}
+		}
+			option = {
+				name = prussia.10009.b  # German Response
+				trigger = { TAG = GER }
+			}
+			option = {
+				name = prussia.10009.c # Bavarian Response
+				trigger = { TAG = BAV }
+			}
+}	
+
+	

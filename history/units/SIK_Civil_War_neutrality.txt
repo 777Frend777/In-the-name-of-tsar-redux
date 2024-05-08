@@ -1,0 +1,110 @@
+﻿division_template = {
+	name = "Juntuán"				
+	division_names_group = SIK_INF_01
+									# Militia-level training and equipment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Jīngyīng"				
+	division_names_group = SIK_INF_01
+									# Militia-level training and equipment
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		light_armor = { x = 3 y = 0 }
+	}
+}
+
+units = {
+	division = { # "1 Xin'jiang Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4788
+		division_template = "Juntuán"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division = { # "2 Xin'jiang Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7737
+		division_template = "Juntuán"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division = { # "3 Xin'jiang Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10674
+		division_template = "Juntuán"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division = { # "4 Xin'jiang Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1783
+		division_template = "Juntuán"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division = { # "5 Xin'jiang Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 7866
+		division_template = "Juntuán"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division = { # "Xin'jiang Jīngyīng Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10674
+		division_template = "Jīngyīng"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "SIK"
+		}
+		requested_factories = 1
+		progress = 0.52
+		efficiency = 100
+	}
+}

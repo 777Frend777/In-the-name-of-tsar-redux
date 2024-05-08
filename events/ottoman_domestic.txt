@@ -1,0 +1,255 @@
+﻿###########################
+# Ottoman Domestic Events #
+###########################
+
+add_namespace = ottodome
+
+# Force Millets To Pay Jizya?
+country_event = {
+	id = ottodome.1
+	title = ottodome.1.t
+	desc = ottodome.1.d
+	picture = GFX_report_event_TUR_jizya
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottodome.1.a	#sounds good
+    ai_chance = {
+			factor = 100
+		}
+		TUR = {
+			add_ideas = TUR_jizya
+		}
+		hidden_effect = {
+		set_country_flag = TUR_paid_jizya
+		}
+	}
+
+	option = {
+		name = ottodome.1.b	#no way
+		ai_chance = { factor = 0  }
+		hidden_effect = {
+		set_country_flag = TUR_no_jizya
+		}
+	}
+}
+
+#### Ottoman Revolt Trigger ####
+news_event = {
+	id = ottodome.200
+	title = ottodome.200.t
+	desc = ottodome.200.d
+
+	hidden = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		country_exists = RUS
+		date > 1936.3.1
+		date < 1936.3.5
+	}
+
+	immediate = {
+		RUS = { country_event = {id = ottodome.3 }}
+	}
+
+	option = {
+		name = ottodome.2.a
+	}
+
+}
+
+# Turkish Revolt
+country_event = {
+	id = ottodome.3
+	title = ottodome.3.t
+	desc = ottodome.3.d
+	picture = GFX_report_event_TUR_riot
+
+	trigger = {
+		tag = RUS
+	  }
+
+    is_triggered_only = yes
+		fire_only_once = yes
+
+	option = {
+		name = ottodome.3.a	#sounds good
+		ai_chance = {
+			factor = 99
+	}
+	TUR = {
+	transfer_state = 341
+	transfer_state = 797
+	}
+	
+	hidden_effect = {
+	RUS = {
+	diplomatic_relation = {
+	country = TUR
+	relation = military_access
+	active = no
+	}
+	}
+	TUR = {
+		country_event = { days = 2 id = ottodome.4 }
+		add_state_core = 341
+		add_state_core = 797
+	}
+	341 = { add_claim_by = RUS }
+	797 = { add_claim_by = RUS }
+	TUR = { set_country_flag = TUR_revolt }
+	news_event = ottodome.99
+	}
+	800 = { set_demilitarized_zone = no }
+	354 = { set_demilitarized_zone = no }
+	}
+	option = {
+		name = ottodome.3.b	#sounds good
+    ai_chance = {
+			factor = 1
+	}
+	
+	RUS = {
+	declare_war_on = { target = TUR type = puppet_wargoal_focus }
+	add_war_support = -0.1
+	}
+	TUR = {
+	transfer_state = 341
+	transfer_state = 797
+	}
+	custom_effect_tooltip = TUR_might_cause_majors_to_join
+	hidden_effect = {
+	RUS = {
+	diplomatic_relation = {
+	country = TUR
+	relation = military_access
+	active = no
+	}
+	}
+	FRA = {
+	country_event = { days = 1 id = russia.63 }
+	}
+	TUR = {
+		country_event = { days = 2 id = ottodome.4 }
+		add_state_core = 341
+		add_state_core = 797
+	}
+	341 = { add_claim_by = RUS }
+	797 = { add_claim_by = RUS }
+	TUR = { set_country_flag = TUR_revolt }
+	news_event = ottodome.99
+}
+	354 = { set_demilitarized_zone = no }
+	800 = { set_demilitarized_zone = no }
+}
+
+}
+
+### 341 - Istanbul/Kostantiniyye
+# TUR - rename Istanbul
+country_event = {
+	id = ottodome.4
+	title = ottodome.4.t
+	desc = ottodome.4.d
+	picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				limit = { has_country_flag = renamed_state_341 }
+				clr_country_flag = renamed_state_341
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+
+	option = {
+		name = ottodome.4.a
+			797 = { set_state_name = "Kostantiniyye" }
+			set_province_name = { id = 9833 name = "Kostantiniyye"}
+			set_capital = {state = 797 }
+			set_country_flag = renamed_state_341
+			set_global_flag = renamed_state_341
+		}
+
+		option = {
+			name = ottodome.4.b
+			797 = { set_state_name = "Istanbul" }
+			set_province_name = { id = 9833 name = "Istanbul"}
+			}
+
+			option = {
+				name = ottodome.4.c		
+				797 = { set_state_name = "Istanbul" }
+				set_province_name = { id = 9833 name = "Istanbul"}
+				set_capital = {state = 797 }
+			}
+}
+
+# Turkish Revolt News
+news_event = {
+	id = ottodome.99
+	title = ottodome.99.t
+	desc = ottodome.99.d
+	picture = GFX_news_event_TUR_revolt
+
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = TUR_revolt
+	}
+
+	option = {
+		name = ottodome.99.a
+	}
+}
+
+# Turkish Caliph News
+news_event = {
+	id = ottodome.100
+	title = ottodome.100.t
+	desc = ottodome.100.d
+	picture = GFX_news_event_TUR_caliph
+
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = TUR_caliph
+	}
+
+	option = {
+		name = ottodome.100.a
+	}
+}
+
+# Turkish Council News
+news_event = {
+	id = ottodome.101
+	title = ottodome.101.t
+	desc = ottodome.101.d
+	picture = GFX_news_event_TUR_council
+
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = TUR_council
+	}
+
+	option = {
+		name = ottodome.101.a
+	}
+}

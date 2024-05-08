@@ -1,0 +1,14 @@
+# Empty file to overwrite vanilla.
+CHI_dealing_countryside = {
+	icon = jap_intervene_in_china
+
+	picture = GFX_decision_cat_picture_chi_infiltration
+
+	allowed = {
+		original_tag = CHI
+	}
+
+	visible = {
+    has_country_flag = chi_campaign_flag
+	}
+}

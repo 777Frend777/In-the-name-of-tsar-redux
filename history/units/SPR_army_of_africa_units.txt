@@ -1,0 +1,53 @@
+﻿division_template = {
+	name = "Cuerpo de Ejército Marroquí'"		#Really good divisions	
+	#is_locked = yes
+	division_names_group = SPR_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+units = {
+	division = {
+		name = "1a Cuerpo de Ejército Marroquí'"
+		location = 9945  # Madrid
+		division_template = "Cuerpo de Ejército Marroquí'"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "2a Cuerpo de Ejército Marroquí'"
+		location = 9945  # Ceuta
+		division_template = "Cuerpo de Ejército Marroquí'"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "3a Cuerpo de Ejército Marroquí'"
+		location = 4199  # Madrid
+		division_template = "Cuerpo de Ejército Marroquí'"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "4a Cuerpo de Ejército Marroquí'"
+		location = 7215  # Madrid
+		division_template = "Cuerpo de Ejército Marroquí'"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "5a Cuerpo de Ejército Marroquí'"
+		location = 10113 # Madrid
+		division_template = "Cuerpo de Ejército Marroquí'"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+}

@@ -1,0 +1,78 @@
+ideas = {
+
+	country = {
+
+		 SIK_chaos = {
+
+			picture = SIK_chaos
+
+			allowed = {
+				original_tag = SIK
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+			stability_factor = -0.4
+			conscription_factor = -0.5
+			}
+		}
+
+		SIK_russian_pressure = {
+
+			picture = SIK_russia
+
+			allowed = {
+				original_tag = SIK
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+			}
+		}
+
+		SIK_turkic_unrest = {
+
+			picture = SIK_uyghur
+
+			allowed = {
+				original_tag = SIK
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+			stability_factor = -0.25
+			conscription_factor = -0.25
+			}
+		}
+
+		 SIK_destroyed_economy = {
+
+			picture = raj_risk_of_famine
+
+			allowed = {
+				original_tag = SIK
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+            stability_factor = -0.1
+            production_speed_buildings_factor = -0.25 
+           	industrial_capacity_factory = -0.25
+			}
+		}
+
+
+	}
+

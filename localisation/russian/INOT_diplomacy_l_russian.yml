@@ -1,0 +1,58 @@
+﻿l_russian:
+ INOT_disapproves_of_govt: "Не одобряет правительство" #NT!
+ INOT_friendly_regime: "Дружественный режим" #NT!
+ INOT_close_allies: "Близкие союзники" #NT!
+ INOT_approves_of_govt: "Одобряет правительство" #NT!
+ INOT_hostile_regime: "Враждебный режим" #NT!
+ INOT_imposed_sanctions: "Наложенные санкции" #NT!
+  
+   #Traits 
+ INOT_entrepreneur: "Предприниматель" #NT!
+ improved_good: "Улучшение отношений" #NT!
+ improved_bad: "Разорванные дипломатические отношения" #NT!
+ bulgaria-russo: "Славянское Единство" #NT!
+ czecho-russo: "Славянское Единство" #NT!
+ rus_improved_good: "Улучшение отношений" #NT!
+ yugo_russo: "Славянское Единство" #NT!
+ romania-russo: "Славянское Единство" #NT!
+ hungro-russo: "Славянское Единство" #NT!
+ franco-russo: "Франко-российские отношения" #NT!
+ germano-russo: "Русско-германские отношения" #NT!
+ badfranco-russo: "Ездил с немцами" #NT!
+ badgermano-russo: "Пошел с французским" #NT!
+ russo-japanese: "Улучшение отношений" #NT!
+ russo-communism: "Выступает против коммунизма" #NT!
+ RUS_bad_anglo_russo: "Отказ от неагрессии" #NT!
+ renewed_1920: "Обновленное Соглашение 1920 года" #NT!
+ ger_diplo_mission: "Немецкая дипломатическая миссия" #NT!
+ democratic_leanings: "Демократия в Германии" #NT!
+ Zollverein_mod: "Современный Цольферайн" #NT!
+ ger_anti_rus_policy: "Антироссийская пропаганда" #NT!
+ sided_with_allies: "На стороне Запада" #NT!
+ rus_russian_revolution: "Европейская революция!" #NT!
+ GER_accept_british_naval_dominance_opinion: "Принять британское военно-морское господство" #NT!
+ Konig_pact: "Кениг Пакт" #NT!
+ balkan_expansion: "Балканская политика" #NT!
+ bel_diplo_mission: "Бельгийская дипломатическая миссия" #NT!
+ ceased_trade_opinion: "Прекращение торговли" #NT!
+ agreed_ceased_trade_opinion: "Согласился прекратить торговлю с немцами." #NT!
+ refused_ceased_trade_opinion: "Отказался прекратить торговлю с немцами." #NT!
+   ##### Turkish Stuff ##### 
+ TUR_seize_russian_investments: "Захваченные российские предприятия и земля" #NT!
+ purged_french_presence: "Французское присутствие ограничено" #NT!
+ FTU_drills_with_ENG: "Тренировка с Англией" #NT!
+ FTU_remained_with_france: "Остался во Франции" #NT!
+ FTU_demanded_partition: "Требуемая Патриация" #NT!
+   ###MISC#### 
+ demobilization_required: "Демобилизуйте экономику!" #NT!
+   #Generic + 
+ ideology_boosting_neutrality: "Сплотите общественную поддержку" #NT!
+ ideology_boosting_conservatives: "Сплотите общественную поддержку" #NT!
+ ideology_boosting_socialist: "Сплотите общественную поддержку" #NT!
+ ideology_boosting_democratic: "Сплотите общественную поддержку" #NT!
+ ideology_boosting_fascism: "Сплотите общественную поддержку" #NT!
+ ideology_boosting_communism: "Сплотите общественную поддержку" #NT!
+ impose_sactions_on_bavaria_decision: "Эмбарго [BAV.GetNameDef]" #NT!
+ impose_sactions_on_prussia_decision: "Эмбарго [GER.GetNameDef]" #NT!
+ impose_sactions_on_russia_decision: "Эмбарго [RUS.GetNameDef]" #NT!
+ impose_sactions_on_japan_decision: "Эмбарго [JAP.GetNameDef]" #NT!

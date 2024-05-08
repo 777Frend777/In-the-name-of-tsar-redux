@@ -1,0 +1,8 @@
+﻿l_english:
+general_border_conflict_decision_category: "Border Conflict"
+general_border_conflict_initiate_incident: "Initiate Border Incident with [FROM.GetName]"
+general_escalate_incident_to_border_conflict: "[FROM.GetName] Border Incident Escalate"
+general_border_conflict_time_until_cancelled: "Try to win fast"
+general_border_conflict_escalate_conflict: "[FROM.GetName] Border Conflict Escalate"
+general_border_conflict_escalate_to_war: "WAR"
+general_border_conflict_back_out_of_conflict: "Back Out"

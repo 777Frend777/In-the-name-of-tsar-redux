@@ -1,0 +1,176 @@
+ideas = {
+
+	country = {
+
+	TUR_communal_space = {
+
+			allowed = {
+					always = yes
+			}
+
+			picture = generic_production_bonus
+			removal_cost = -1
+
+			modifier = {
+			global_building_slots_factor = 0.25
+			}
+	  }
+
+		TUR_jizya = {
+
+				allowed = {
+						always = yes
+				}
+
+				picture = generic_production_bonus
+				removal_cost = -1
+
+				modifier = {
+				consumer_goods_factor = -0.05
+				}
+		  }
+
+		TUR_disjointed_nation = {
+
+				allowed = {
+						always = yes
+				}
+
+				picture = generic_disjointed_gov
+				removal_cost = -1
+
+				modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.1
+				}
+		  }
+
+			TUR_minority_partisans = {
+
+					allowed = {
+							always = yes
+					}
+
+					picture = anti_soviet_pact
+					removal_cost = -1
+
+					modifier = {
+					conscription = -0.005
+					political_power_factor = -0.1
+					}
+			  }
+
+		TUR_expand_farming = {
+
+				allowed = {
+						always = yes
+				}
+
+				picture = generic_manpower_bonus
+				removal_cost = -1
+
+				modifier = {
+				conscription = 0.02
+				}
+		  }
+
+			TUR_live_with_land = {
+
+					allowed = {
+							always = yes
+					}
+
+					picture = generic_manpower_bonus
+					removal_cost = -1
+
+					modifier = {
+					conscription = 0.02
+					}
+			  }
+
+				TUR_eternal_state = {
+						picture = triumphant_will
+
+						allowed = {
+							always = yes
+						}
+
+						modifier = {
+								political_power_factor = 0.15
+						}
+				}
+
+			TUR_industrial_nation = {
+
+					allowed = {
+							always = yes
+					}
+
+					picture = generic_production_bonus
+					removal_cost = -1
+
+					modifier = {
+					industrial_capacity_factory = 0.05
+					production_speed_buildings_factor = 0.10
+					}
+			  }
+
+		TUR_sharia_law = {
+
+				allowed = {
+						always = yes
+				}
+
+				picture = idea_raj_marginalized_muslim_community_angry
+				removal_cost = -1
+
+				modifier = {
+				political_power_factor = 0.25
+				drift_defence_factor = 0.5
+				}
+		}
+
+		TUR_jihad = {
+
+				allowed = {
+						always = yes
+				}
+
+				picture = generic_intel_bonus
+				removal_cost = -1
+
+				modifier = {
+				army_morale_factor = 0.1
+		 	  army_defence_factor = 0.1
+				}
+		}
+
+		TUR_muslim_nationalism = {
+
+				allowed = {
+						always = yes
+				}
+
+				picture = raj_marginalized_muslim_community_angry
+				removal_cost = -1
+
+				modifier = {
+				conscription = 0.02
+				stability_factor = 0.05
+				}
+		}
+
+		TUR_janisarries = {
+
+				picture = FRA_army_of_aggression_focus
+
+				allowed = {
+					always = yes
+				}
+
+			modifier = {
+			attrition = -0.1
+			army_core_attack_factor = 0.2
+			army_core_defence_factor = 0.2
+				}
+		}

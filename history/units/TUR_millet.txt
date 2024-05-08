@@ -1,0 +1,32 @@
+
+division_template = {
+	name = "Osmanlı Milisi"			# Garrison Force
+	# For reserve and independent regiments, lower experience and equipment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+
+units = {
+division= {
+		name = "1. Osmanlı Milis"
+		location = 3653
+		division_template = "Osmanlı Milisi"
+		start_experience_factor = 0.3
+	}
+division= {
+		name = "2. Osmanlı Milis"
+		location = 12029
+		division_template = "Osmanlı Milisi"
+		start_experience_factor = 0.3
+	}
+division= {
+		name = "3. Osmanlı Milis"
+		location = 10399
+		division_template = "Osmanlı Milisi"
+		start_experience_factor = 0.3
+	}

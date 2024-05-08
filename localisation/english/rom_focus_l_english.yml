@@ -1,0 +1,310 @@
+﻿l_english: 
+
+### Focus Tree ###
+ROM_renew_bulgaria_alliance:0 "Re-new Serbian Alliance" #Yes, Serbia
+ROM_renew_bulgaria_alliance_desc:0 "After we have left the Russian sphere of influence, we must find new allies in the region. Serbia is one of the stronger powers. We should renew our relations."
+ROM_pro_russian_govt:0 "Appoint Pro-Russian Government"
+ROM_pro_russian_govt_desc:0 "Our country is in political disarray. The government is divided between the West and the East sympathizers. A new government must be formed who will favour our Russian partners."
+ROM_war_SER:0 "Claim the Rest of Banat"
+ROM_war_SER_desc:0 "Serbia is growing fast not only in its military strengh but in its size. The Serbs have already annexed the Kingdom of Montenegro, who knows what their next target will be... They must be taken down before it's too late."
+ROM_greater_bessarabia:0 "Greater Bessarabia"
+ROM_greater_bessarabia_desc:0 "Once Romanian Bessarabia is secured, we must expand in the East. A new, greater Bessarabia is to be proclaimed to reunite all Romanians in the region under one flag."
+ROM_rus_planes:0 "Russian Aircraft Designs"
+ROM_rus_planes_desc:0 "The Russian Empire has some of the greatest aircraft in the game. If we want to protect our lands in the air, we have a lot of learn from the Russians."
+ROM_infra:0 "Danubian Transport Network"
+ROM_infra_desc:0 "Our transport capabilities alongside the Danube can be drastically improved upon, both by utilizing the river itself more effectively and the way it is connected to our road and rail networks."
+ROM_electronics:0 "Electronics"
+ROM_electronics_desc:0 "Modern warfare depends a lot on electronics. New devices such as radar or encoding machines will provide us an advantage on the battlefield."
+ROM_prepare_coup:0 "On Our Own" #Independence from Russia
+ROM_prepare_coup_desc:0 "Our Russian overlords took control of us in our weakest hour. We were defeated by the Austrians, and the Russians decided to put us under new management rather than liberate us. This must be rectified"
+ROM_greater_romania:0 "Preserve Greater Romania"
+ROM_greater_romania_desc:0 "Romania is in the best state it's ever been in. Never before have Moldavia, Wallachia, and Transylvania been under control of one Romanian state. We must preserve the unity of the Romanian people."
+ROM_socialist_revolution:0 "Follow the Workers"
+ROM_socialist_revolution_desc:0 "The Communist Party of Romania may be considered radical by some, but they have the best ideas. Maybe it would be to our advantage to hear them out?"
+ROM_peasant_militia:0 "Form the Romanian Liberation Army"
+ROM_peasant_militia_desc:0 "Romania may be greater, but it is not to its greatest. There are still Romanians stranded in Bessarabia, Marmures, and West Banat. We must mobilise our people to unite all Romanian people under one banner!"
+ROM_socialist_education:0 "Teach Socialist Values"
+ROM_socialist_education_desc:0 "Our children are our future. In order to keep them in line with the party's ideals, we must teach them the socialist way from a young age."
+ROM_bavarian_voluteers:0 "Bavarian Socialism"
+ROM_bavarian_voluteers_desc:0 "Bavaria and Germany have a lot in common. For instance, Romania has a sizeable German minority, and both Bavaria and Romania have overturned their corrupt monarchs. Perhaps we should see about establishing closer diplomatic relations with them?"
+ROM_socialist_bloc:0 "Romanian Socialism" #Focus to create socialist a faction
+ROM_socialist_bloc_desc:0 "Hungary and Bavaria have seen the way of Marx, but they clearly have not gone far enough. We must forge our own future, and spread the revolution to the entire world!"
+ROM_guarantee_HUN:0 "Hungarian Socialism"
+ROM_guarantee_HUN_desc:0 "Hungary and Romania may have been bitter rivals during the Great War, but their values are extremely similar to ours. We may have more in common than we originally thought. Perhaps we should see about establishing closer diplomatic relations with them?"
+ROM_offer_HUN_transylvania:0 "Offer Transylvania to the Hungarians" #Offer land to hungarians to befriend them
+ROM_offer_HUN_transylvania_desc:0 "Despite our closer relations with Hungary, the land of Transylvania is still a hot button issue between the Magyars and ourselves. Perhaps we should negotiate the transfer of Transylvania back to the Hungarians?"
+ROM_join_comintern:0 "Join the Comintern"
+ROM_join_comintern_desc:0 "After establishing closer relations with Bavaria, the next step to Bavarian-Romanian cooperation is to join their faction, the Communist Internationale. We will be stronger together."
+ROM_red_army:0 "Expand the RLA"
+ROM_red_army_desc:0 "The Romanian Liberation Army is a good start, but in order to spread the revolution, we must expand it greatly. Our army must be able to liberate the balkans within a year!"
+ROM_red_balkans:0 "State Balkanism" #Claims for all of Balkans
+ROM_red_balkans_desc:0 "Romanian has always been the dominant force in the balkans since the end of the Great War. All of the people within the Balkan peninsula will bow down to us, and us alone!"
+ROM_workers_factories:0 "Increased Quotas"
+ROM_workers_factories_desc:0 "With our conquering of the Balkans imminent, we must increase the quotas of our factories. Even if the workers object, we must liberate the working class!"
+ROM_iron_guard_focus:0 "Follow Codreanu"
+ROM_iron_guard_focus_desc:0 "Our populace has been receptive to the rhetoric of the leader of the Iron Guard, Corneliu Codreanu. Some of his ideas are radical, but some are quite reasonable and popular. Maybe we should hear them out?"
+ROM_support_monarchy:0 "Follow Michael I"
+ROM_support_monarchy_desc:0 "Our King Carol II has betrayed us by siding with the Russians. We hope that his legitimate successor King Michael I will turn this around and make Romania great!"
+ROM_nationalize_oil:0 "Nationalise Oil Industry"
+ROM_nationalize_oil_desc:0 "The oil reserves in Ploiesti are run by private corporations that are completely inefficient and artificially increase the price of oil. We must seize the oil reserves and nationalise them, for the betterment of the Romanian people."
+ROM_ally_GER:0 "Establish Germano-Romanian Relations"
+ROM_ally_GER_desc:0 "Germany and Romania may have been opposed in the Great War, but both of our countries are autocratic regimes. Perhaps we should seek better relations with them?"
+ROM_ally_AUS:0 "Establish Austro-Romanian Relations"
+ROM_ally_AUS_desc:0 "Austria and Romania may have been opposed in the Great War, but both of our countries are autocratic regimes. Perhaps we should seek better relations with them?"
+ROM_ger_experience:0 "German Military Advisors"
+ROM_ger_experience_desc:0 "The Germans completely overrun us in the Great War. With our better relations, we should learn how they were able to overrun us and use that tactic on our enemies."
+ROM_offer_AUS_transylvania:0 "Non-Aggression Pact with Austria" #Offer land to austrians to befriend them
+ROM_offer_AUS_transylvania_desc:0 "The State of Austria is increasingly exercising its power in the Central European region. As a regional power, Romania cannot afford such rival, perhaps a treaty of friendship should be signed instead?"
+ROM_royal_foundation:0 "Ferdinand I Foundation" #Extra research slot/give money to research
+ROM_royal_foundation_desc:0 "Ferdinand I was our benevolent king during the Great War that courageously sided with the Entente. He should be honoured with his own foundation to further Romanian research."
+ROM_follow_RUS:0 "With the Bear"
+ROM_follow_RUS_desc:0 "Our Russian overlords took control of us in our weakest hour. However, with their guidance, we have become a truly great nation yet again. Without the Russians, Transylvania would still be under the control of the cursed Magyars. We should stay loyal to our masters."
+ROM_democratic_govt:0 "Follow the People"
+ROM_democratic_govt_desc:0 "The people of Romania are tired of being pushed around by an absolute monarch. They demand a democratic regime, and a democratic regime they shall get!"
+ROM_constitutional_monarchy:0 "Constitutional Monarchy"
+ROM_constitutional_monarchy_desc:0 "While our Monarch has had issues with our government in the past, his powers could easily be reigned back. Removing him would destroy our national unity."
+ROM_republic:0 "Remove Carol's Powers"
+ROM_republic_desc:0 "Our king, Carol II, has had issues with our government since day one. His powers must be stripped away, and a republic must be declared. Keeping him would destroy our national unity."
+ROM_handle_king:0 "Handle the King"
+ROM_handle_king_desc:0 "Our king is smarter than we originally thought. He has locked himself in his castle in Bucharest, and refuses to abdicate, nor leave. We must remove him: by any means necessary."
+ROM_ally_west:0 "Allied Cooperation"
+ROM_ally_west_desc:0 "We joined the allies during the Great War, and they treated us well. We should seek about eventually rejoining the Allies."
+ROM_constitution:0 "Romanian Constitution"
+ROM_constitution_desc:0 "Whether we have a king or not, we must have a constitution to prevent our current and future rulers from abusing the system and declaring themselves as absolute ruler."
+ROM_join_allies:0 "Join the Allies"
+ROM_join_allies_desc:0 "After some negotiations, we have been able to request to join the Allies at our convenience. Perhaps we should invoke that now?"
+ROM_request_independence:0 "Request Independence from Russia"
+ROM_request_independence_desc:0 "Even though we stayed loyal to Russia, our people would like to be independent from their rule. It's only right that we follow their will and send a request to the Russian government."
+ROM_authoritarian_govt:0 "Maintain Course"
+ROM_authoritarian_govt_desc:0 "Our government has been perfectly fine the way it is. Everything is perfectly balanced, as all things should be. "
+ROM_boost_industry:0 "Expand Industrial Capacity"
+ROM_boost_industry_desc:0 "Our country may be fine the way it is, but our industry is not. We should turn our attention to the expansion of the industry thoughout the country."
+ROM_conscript_minorities:0 "Conscript Minorities"
+ROM_conscript_minorities_desc:0 "Romania's army is dominantly Romanian. However, there are many within our country who are Bulgarian, Serbian, Hungarian, and German. We should conscript them, to expand our army."
+ROM_russian_army_advisors:0 "Russian Military Advisors"
+ROM_russian_army_advisors_desc:0 "The Russian army is one of the most advanced in Europe. We should ask them for some of their advisors to improve our army."
+ROM_russian_industry:0 "Invite Russian Industrialists"
+ROM_russian_industry_desc:0 "Russia has many entrepreneurs who are willing to expand their industries. We should invite them to work in Romania."
+ROM_rus_tech:0 "Russian Blueprints"
+ROM_rus_tech_desc:0 "Russia has many technological advancements over us. We should see about our masters giving us some of their blueprints to develop our own technology."
+ROM_rus_slot_1:0 "Russo-Romanian Research"
+ROM_rus_slot_1_desc:0 "With the cooperation of Russia and Romania militarily and diplomatically, it's only right that we're able to cooperate scientifically."
+ROM_parties_must_end:0 "All Parties Must End"
+ROM_parties_must_end_desc:0 "Carol II is a very... charismatic, leader, to say the least. He spends a lot of his time partying and draining his bank account. We should establish a cabinet to reign back his... antics."
+ROM_join_RUS_training:0 "Extended Russo-Romanian Drills"
+ROM_join_RUS_training_desc:0 "Romania and Russia have been cooperating militarily for over a decade, and our military leaders have proposed a joint drill in the case of a foreign invasion."
+ROM_request_control_bessarabia:0 "Request Control over Bessarabia"
+ROM_request_control_bessarabia_desc:0 "Bessarabia was annexed from Moldavia by Russia following the Crimean War. With the separate countries of Moldavia and Wallachia long gone, maybe we should request for it to be returned to us?"
+ROM_stable_regime:0 "Democracy Over Stability" 
+ROM_stable_regime_desc:0 "Our country is in a very stable state. We should ensure that no ruler, even our own monarch, gains absolute control over Romania."
+ROM_milit_dictatorship:0 "Stability Over Democracy"
+ROM_milit_dictatorship_desc:0 "Our country is somewhat stable, but it could be more stable. The military have proposed stepping in to ensure that our country is stable, and all they need is an order to do so."
+ROM_balkan_dominance:0 "Balkan Dominance"
+ROM_balkan_dominance_desc:0 "Our country is the largest in the Balkans, and it can easily get larger. We must unite the Balkans, by any means necessary."
+ROM_claim_bessarabia:0 "Claim Bessarabia"
+ROM_claim_bessarabia_desc:0 "Bessarabia was annexed from Moldavia by Russia following the Crimean War. With the land stolen from us by our former masters, it's only right that we get it back!"
+ROM_claim_BUL:0 "Claim Bulgaria"
+ROM_claim_BUL_desc:0 "We are the successors of the ancient country of Dacia, and Dacia's territory stretched into Bulgaria. It is only right that we claim our former territory."
+ROM_balkan_protector:0 "Asserting Dominance"
+ROM_balkan_protector_desc:0 "We fought the First Balkan War against the Turks. We fought the Second against the Bulgarians. We fought the Third against the Austrians. We shall fight the Fourth against everyone else!"
+ROM_war_BUL:0 "Satellite Bulgaria"
+ROM_war_BUL_desc:0 "To unite the Balkans, the Bulgarians must be destroyed."
+ROM_war_GRE:0 "Satellite Greece"
+ROM_war_GRE_desc:0 "To unite the Balkans, the Greeks must be destroyed."
+ROM_war_HUN:0 "Put the Rival Down"
+ROM_war_HUN_desc:0 "To unite the Balkans, the Hungarians must be destroyed."
+ROM_galician_claims:0 "Reassure Bucovina"
+ROM_galician_claims_desc:0 "Galicia currently has the territory of Bukovina, which has countless Romanians living with the area. They should be liberated to join their motherland!"
+ROM_war_RUS:0 "War with Russia"
+ROM_war_RUS_desc:0 "Russia has held us back every chance they get. We must put down the bear, once and for all."
+ROM_balkan_shield:0 "Balkan Protection" #Faction path (this one doesnt actually create the faction but lays the foundation)
+ROM_balkan_shield_desc:0 "Our country is the largest in the Balkans, and it is our duty to protect the Balkans. We must unite the Balkans under diplomacy."
+ROM_befriend_GRE:0 "Befriend the Greeks"
+ROM_befriend_GRE_desc:0 "Greece was our ally in both of the Balkan Wars. It's only right we see if they would like to continue our cordial relations."
+ROM_joint_GRE_industry:0 "Develop Greek Industry"
+ROM_joint_GRE_industry_desc:0 "Greece's economy is not the best, but we can help fix it. We should send some resources and industrialists to assist their economy."
+ROM_befriend_SER:0 "Befriend Serbia"
+ROM_befriend_SER_desc:0 "Serbia was our ally in both of the Balkan Wars. It's only right we see if they would like to continue our cordial relations."
+ROM_joint_SER_industry:0 "Develop Serbian Industry"
+ROM_joint_SER_industry_desc:0 "Serbia's economy is not the best, but we can help fix it. We should send some resources and industrialists to assist their economy."
+ROM_alliance_with_devil:0 "Alliance with the Devil"
+ROM_alliance_with_devil_desc:0 "Turkey may have fought against us during the Great War, but their cooperation in the Second Balkan War proves that they would like to work with us. Maybe we could establish better relations?"
+ROM_turkish_bases:0 "Turkish Bases"
+ROM_turkish_bases_desc:0 "As a gesture of friendship, our best engineers will help the Turks rebuild their military power by constructing new airbases."
+ROM_balkan_league:0 "The Second Balkan League" #Improved Balkan Shield Force + all befriended get invited to faction
+ROM_balkan_league_desc:0 "The First Balkan League was an alliance between Balkan countries during the Balkan Wars to protect each other, but fell apart after the Second Balkan War. We should bring it back, and better than ever."
+ROM_balkan_road:0 "Trans-Balkan Highway" #Infra for all of balkans
+ROM_balkan_road_desc:0 "With the cooperation between most of the Balkans, we should work together to establish a road system from Iaşi to Ioannina."
+ROM_industry:0 "MALAXA" #there is definition in vanilla files
+ROM_industry_desc:0 "We must expand our domestic automobile industry, so that it may be easily converted and appropriated for military purposes, when required. To this end, one of our business tycoons has some rather interesting ideas that we could make use of..."
+ROM_civil_effort:0 "Civil Works" #Also vanilla
+ROM_civil_effort_desc:0 "Romania will require an extensive program of industrial development if it is to support a large-scale military build-up. We will start it now."
+ROM_oil_works:0 "Expand Ploiesti Oil Production" #Vanilla
+ROM_oil_works_desc:0 "We possess some of the largest oil fields in Europe in Ploiesti, and these are of tremendous importance not only for ourselves, but also for our allies and other nations in the region. We should increase the fields' production to better meet the demands."
+ROM_steel_works:0 "Hunedoara Steel Works" #Vanilla
+ROM_steel_works_desc:0 "To feed the needs of our arms production the great steel works in Transylvania must be modernized and drastically expanded."
+ROM_milit_effort:0 "National Defence Industry" #vanilla
+ROM_milit_effort_desc:0 "We must greatly expand our national arms industry if we are to keep up with increased demands."
+ROM_forts:0 "Fortify Our Borders" #Vanilla
+ROM_forts_desc:0 "Now that the domestic situation is under control, we must look at improving the defence of our borders from outside threats."
+ROM_budapest_forts:0 "Defence of Bucharest" #I know i spelt it wrong
+ROM_budapest_forts_desc:0 "Bucharest is eerily close to the Bulgarian border. If Bulgaria were to invade us, Bucharest would be their first target. We need to fortify our capital as soon as possible."
+ROM_slot_1:0 "Expand the University of Bucharest" #Vanilla
+ROM_slot_1_desc:0 "By improving the quality and capacity of our university, we can increase the pool of best and brightest that we rely on for our technological advances."
+ROM_nuclear_pro:0 "Nuclear Bomb Project" #Vanilla
+ROM_nuclear_pro_desc:0 "We can never hope to out-bomb our likely enemies via conventional means. We must therefore focus on technological advances that will allow us to achieve more destruction with less. Much, much more."
+ROM_romanian_army:0 "Romanian Army"
+ROM_romanian_army_desc:0 "Despite the increasing possibilities of aerial and naval warfare, ground combat is still key in tomorrow's wars. With preparation, we can avoid reliving the hell of the trenches."
+ROM_army_games:0 "Army Maneuvers" #vanilla
+ROM_army_games_desc:0 "Our army must be brought back in shape for potential future armed conflicts. We will send them on maneuvers to develop new tactics and strategies."
+ROM_equipment:0 "ZB-53" #Vanilla
+ROM_equipment_desc:0 "Modern equipment is key in warfare, and we must strive to modernise our infantry weaponry."
+ROM_artillery:0 "Research New Artillery"
+ROM_artillery_desc:0 "Our Artillery will form a single powerful unit to focus fire on specific points. One volley at a time and we will weaken the enemy line and punch our way through if we have to!"
+ROM_stockage:0 "Modernise Old Equipment"
+ROM_stockage_desc:0 "The ways of war have changed since the last conflict, and we must ensure that our army keeps up with the times by modernizing its equipment and tactics."
+ROM_tanks:0 "Royal Armour Division"
+ROM_tanks_desc:0 "Mobility and protection are crucial to get infantry into and out of the field safely. Focusing on these developments will allow us to take action quickly."
+ROM_mechanized_divisions:0 "The Maresal" #Vanilla
+ROM_mechanized_divisions_desc:0 "Our engineers have come up with an idea to place a Soviet 122mm howitzer in an enclosed casemate. By further refining this design, we may well be on our way to create a highly-successful tank model."
+ROM_spec_ops:0 "Vanatori de Munte" #Vanilla
+ROM_spec_ops_desc:0 "The Vanatori De Munte - Mountain Huntsmen - are our elite mountain infantry. Their reputation precedes them, even abroad, and we would do well to bolster their numbers with the best that we can find."
+ROM_paratroopers:0 "Paratrooper Division"
+ROM_paratroopers_desc:0 "We are in need of elite forces; paratroopers should be our first priority."
+ROM_expand_air:0 "Expand the Air Force"
+ROM_expand_air_desc:0 "Nowhere is technological advances more rapid than in aerial warfare. Aviation is a field any modern nation must master."
+ROM_fighters:0 "The IAR 80" #Vanilla
+ROM_fighters_desc:0 "Our engineers have excellent ideas that they are eager to pour into a new fighter design. They merely need funding and the go-ahead."
+ROM_cas_:0 "CAS" #vanilla
+ROM_cas__desc:0 "We require dedicated airplane models, specifically designed for close air support, if we are to get the most out of our combined forces."
+ROM_bombers:0 "Bomber Effort"
+ROM_bombers_desc:0 "When people of the future speak of the horror to today's wars, fire raining from the skies will prominently feature. We will do our best to ensure those stories are told by our enemies."
+ROM_strat_bombers:0 "Strategic Bomber Initiative"
+ROM_strat_bombers_desc:0 "Military operations are secondary only to the destruction of the enemy's industry and infrastructure. Strategic bombing is the means by which we will achieve that."
+ROM_expand_airbases:0 "Expand Airbases"
+ROM_expand_airbases_desc:0 "In any war with our enemies, the Romanian Air Force will prove the key to victory. First, we must ensure that our airbases can support our rearmament plans!"
+ROM_navy_force:0 "Romanian Navy"
+ROM_navy_force_desc:0 "The expansion of our navy should be our first priority. Assign all available resources to new Dockyards and research into light surface ships."
+ROM_interior_seas:0 "Green Waters Fleet"
+ROM_interior_seas_desc:0 "Reinventing naval warfare to account for the advances in submarine technology will allow us to strike efficiently against enemy convoys."
+ROM_destroyers:0 "Torpedo Boat Effort"
+ROM_destroyers_desc:0 "Studying the design and strategic use of submarines, we have also learned how to counter those strategies. Destroyers will be crucial for this."
+ROM_subs:0 "Submarine Effort"
+ROM_subs_desc:0 "Submarine warfare is the most exciting naval development since the invention of the torpedo boat. We would do well to not just protect against submarines, but also use them against enemy shipping."
+ROM_grand_fleet:0 "Grand Fleet"
+ROM_grand_fleet_desc:0 "Adapting our naval doctrines to accommodate large ships and ensuring the safety of our trade convoys will teach us much about what sort of ships we need."
+ROM_battleships:0 "Capital Ship Effort"
+ROM_battleships_desc:0 "The nation with the most battleships will rule the oceans. Battleships and carriers represent the old and the new in naval superiority."
+ROM_naval_aviation:0 "Naval Aviation Effort"
+ROM_naval_aviation_desc:0 "Just as the new naval warfare takes place in part beneath the water's surface, part of it takes place in the air above the waters."
+ROM_cruiser_effort:0 "Modern Cruiser Effort"
+ROM_cruiser_effort_desc:0 "Modern Cruisers play a key role in defending our heavier Battleships or Carriers. If we lose our line of defense at sea we risk all ships and men. We must make sure our ships are built with the latest technology."
+ROM_expand_dockyards:0 "Expand the Galati Shipyards" #Vanilla
+ROM_expand_dockyards_desc:0 "Our already-existing shipyard facilities at Galati must be greatly expanded if we are to project our power into the Black Sea." #Vanilla
+ROM_a_new_way:0 "A New Path"
+ROM_a_new_way_desc:0 "Once we have secured an independence from Russia, we shall choose a new path for Romania. A strong, stable, military leadership will make Romania great!"
+ROM_orthodox_christianity:0 "Get Support from the Orthodox Church"
+ROM_orthodox_christianity_desc:0 "In order to secure stablity in newly formed Legionary Romania, we must receive Church's support. Once we do that, we will have support of the people."
+ROM_legions:0 "Raise the Legion"
+ROM_legions_desc:0 "Our country lacks manpower, we must recruit every man possible to protect our lands."
+
+#####Events#####
+romania_homeland.1.t:0 "Spartacist Uprising!"
+romania_homeland.1.d:0 "Bucharest has ground to a holt today after Constantin Ion Parhon's Spartacists took control of the key points of the city.\nThe existing Government has fled and now Parhon is the best candidate to lead Romania."
+romania_homeland.1.a:0 "Being the Revolution!"
+
+romania_homeland.2.t:0 "Romania is preparing a coup!" #Russia receives an event about Romanian coup preparations
+romania_homeland.2.d:0 "Our Chief Okhrana Officer in Bucharest's latest report is most concerning. It contains intel suggesting that there is a coup under way in Romania.\nHow do we proceed?"
+romania_homeland.2.a:0 "We cannot let them do that!" #Russia declares war 
+romania_homeland.2.b:0 "Let them be..."
+
+romania_homeland.3.t:0 "Romania offers Transylvania to Hungary" #Hungary receives an offer from Romania to gain Transylvania for friendship, both communist
+romania_homeland.3.d:0 "The Romanian Foreign Ministry has sent us a telegram offering to return administrative control of Transylvania in exchange for our formal support and alliance."
+romania_homeland.3.a:0 "Yes!"
+romania_homeland.3.b:0 "We don't need that anymore..."
+
+romania_homeland.4.t:0 "Non-Aggression Pact with Romania" #Austria receives an offer from Romania to gain Transylvania for friendship/alliance
+romania_homeland.4.d:0 "The Romanian Foreign Ministry has sent us a telegram offering a treaty of friendship to preserve peace in the Central European Region as well as in the Balkans. \n\nRomania suggests a non-aggression pact should be signed between the two together with an increased trade agreements.\n\nHow should we respond?"
+romania_homeland.4.a:0 "Now is not the time for conflicts"
+romania_homeland.4.b:0 "We have other plans for Romania..."
+
+romania_homeland.5.t:0 "Romania requests Autonomy" #Russia gets event about Romania demanding self-determination and russian withdrawal from romania but remain allied with russia
+romania_homeland.5.d:0 "A telegram has arrived at the Winter Palace from HM King Carol II of Romania asking for the withdrawl of our troops from Romanian sovereign territory.\n Romania has been our main ally in the past 20 years. With their request they state that Russo-Romanian relations will not undergo changes."
+romania_homeland.5.a:0 "Let them Be"
+romania_homeland.5.b:0 "We cannot allow that"
+
+romania_homeland.6.t:0 "Revolution in Romania!" #News event for that spartacist revolution earlier
+romania_homeland.6.d:0 "A telegram has been sent to Heads of State around the world from the Romanian Foreign Ministry stating that Constantin Ion Parhon and the Spartacists have taken control of the Government.\nThis is truely worrying as Romania holds a definitive position in the Balkan region. With collapse of its stable government, the whole region could follow..."
+romania_homeland.6.a:0 "This is worrying..."
+romania_homeland.6.b:0 "This is worrying..."
+
+romania_homeland.7.t:0 "Russia Accepts Romanian Autonomy" #Tied to romania_homeland.5
+romania_homeland.7.d:0 "Earlier today, the Russian Ambassador  met with His Majesty King Carol and Prime Minister Tătărescu and informed them that the Russian National Security Council had agreed to their request for the removal of Russian troops from sovereign Romanian lands."
+romania_homeland.7.a:0 "Freedom!"
+
+romania_homeland.8.t:0 "Russia Refuses to Accept Romanian Autonomy"
+romania_homeland.8.d:0 "Earlier today, the Russian Ambassador  met with His Majesty King Carol and Prime Minister Tătărescu and informed them that the Russian National Security Council had refused to their request for the removal of Russian troops from sovereign Romanian lands outright, and strongly urge them against attempting to achieve any such outcome through any other means."
+romania_homeland.8.a:0 "Bad News..."
+
+romania_homeland.9.t:0 "Romania pushes for Bessarabia"
+romania_homeland.9.d:0 "The region of Bessarabia is home to many Romanians. Over the years Romania has pushed its claims over the lands to the West of Odessa. \nRomanians have showed their loyalty to Russia, perhaps it's time they get their lands back..."
+romania_homeland.9.a:0 "Accept their Demands"
+romania_homeland.9.b:0 "No!"
+
+romania_homeland.10.t:0 "Bessarabia remains under Russian control."
+romania_homeland.10.d:0 ""
+romania_homeland.10.a:0 "Bad News..."
+
+romania_homeland.11.t:0 "Abdication of King Carol II"
+romania_homeland.11.d:0 "After days of debate and protests on the streets of Bucharest, H.M. King Carol II has abdicated and thus a Republic of Romania has been proclaimed.\n\nThe Royal Family has escaped arrest and found asylum somewhere in the Western Europe. It is estimated that Carol II himself has taken most of his wealth thus leaving Romania in a minor economic depression.\n\nA new democratic Romania has emerged after years of monarchy, only time will tell whether this change was necessary..."
+romania_homeland.11.a:0 "OK"
+romania_homeland.11.b:0 "OK"
+
+romania_homeland.12.t:0 "Austria Accepts the Treaty!"
+romania_homeland.12.d:0 "The government of Austria has expressed its desire to sign the treaty of friendship between the two countries.\n"
+romania_homeland.12.a:0 "Great News!"
+
+romania_homeland.13.t:0 "Austria Refuses!"
+romania_homeland.13.d:0 "The government of Austria has refused to sign the treaty of friendship between the two countries.\n"
+romania_homeland.13.a:0 "Looks like they have different plans..."
+
+
+
+#####Ideas#####
+ROM_authoritarian_govt_idea:0 "Authoritarian Rule"
+ROM_industry_boost_idea:0 "Boosted Industry"
+ROM_republican_govt_idea:0 "Republican Rule"
+ROM_socialist_science_idea:0 "Socialist Science"
+ROM_supported_monarchy_idea:0 "Monarchist Rule"
+ROM_legion_idea:0 "Romanian Legions"
+ROM_peasant_militia_idea:0 "Peasant Militia Recruitment"
+ROM_conscript_minorities_idea:0 "Minority Conscription"
+ROM_red_army_idea:0 "Romanian Red Army"
+ROM_king_carol_ii_consumer_penalty:0 "King Carol II's Wealth"
+ROM_king_carol_ii_consumer_penalty_desc:0 "When Carol II abdicated, he and his family left for Western Europe. With them, they took a huge amount of Romanian gold and other savings leaving the country in a state of economic instability."
+
+#####Flags#####
+ROM_remained_loyal_rus:0 "Remain Loyal to Russia"
+ROM_joined_coup_rom:0 "Supported the Coup"
+
+#####Opinions#####
+pro_russian_govt_opinion:0 "Pro-Russian Government"
+followed_russia_opinion:0 "Remained Loyal to Russia"
+romanian_diplo_mission:0 "Romanian Diplomatic Mission"
+republican_govt:0 "Democratic Leanings"
+faith_in_the_west:0 "Faith in the West"
+transfered_transylvania:0 "Non-Aggression Pact"    #Modified, kept the id name
+
+#####Tooltips#####
+ROM_invitations_tt:0 "Depending on the §YNational Focuses§! completion, §YTurkey§!, §YSerbia§! and, or §YGreece§! will receive invitations to our faction.\n"
+ROM_fortifications_tt:0 "A §YFort Complex§! will be constructed around the country.\n"
+ROM_prepare_coup_warning_tt:0 "§RIf not timed properly, this might lead to a war with Russia!§!\n\n"
+ROM_trans_balkan_tt:0 "Depending on the size of our §YFaction§!, various §YInfrastructure§! projects will be construct around the §YBalkan§! region.\n"
+
+#####Factions#####
+ROM_romanian_faction_league:0 "Third Balkan League"
+
+ROM_vasile_atanasiu:0 "Vasile Atanasiu"
+ROM_gheorghe_manoliu:0 "Gheorghe Manoliu"
+
+

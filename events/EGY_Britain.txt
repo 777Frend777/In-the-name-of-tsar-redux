@@ -1,0 +1,691 @@
+﻿##### ROM ######
+
+add_namespace = britain 
+
+#Anglo-Egyptian Treaty
+country_event = {
+    id = britain.1000
+    title = britain.1000.t
+    desc = britain.1000.d
+    picture = GFX_report_event_generic_sign_treaty3
+
+    is_triggered_only = yes
+ 	
+    fire_only_once = yes
+	
+    option = {
+	    name = britain.1000.a
+	    ai_chance = { 
+			factor = 100
+	    }
+		EGY = {
+			leave_faction = yes
+		}
+		ENG = {
+			diplomatic_relation = {
+				country = EGY
+				relation = guarantee
+				active = yes
+			}
+		}
+		hidden_effect = {
+			news_event = news.1001
+		}
+    }
+	option = {
+	    name = britain.1000.b
+	    ai_chance = { 
+			factor = 0
+	    }
+		hidden_effect = {
+			news_event = news.1002
+		}
+		EGY = {
+			add_opinion_modifier = { target = ENG modifier = large_decrease }
+			add_opinion_modifier = { target = ENG modifier = large_decrease }
+		}
+    }
+}
+#Sir Miles Lampson Assassinated
+country_event = {
+    id = britain.1001
+    title = britain.1001.t
+    desc = britain.1001.d
+    picture = GFX_report_event_french_british_officers
+
+    is_triggered_only = yes
+ 	
+	fire_only_once = yes
+	
+    option = {
+	    name = britain.1001.a
+	    ai_chance = { 
+			factor = 60
+	    }
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = ENG
+		}
+		news_event = { id = news.1005 days = 1 }
+    }
+	option = {
+	    name = britain.1001.b
+	    ai_chance = { 
+			factor = 40
+			modifier = {
+				OR = {
+					has_government = fascism
+					has_government = communism
+				}
+				factor = 100
+			}
+	    }
+    }
+}
+#Egypt Claims Suez
+country_event = {
+    id = britain.1003
+    title = britain.1003.t
+    desc = britain.1003.d
+    picture = GFX_report_event_usa_macarthur_speech
+
+    is_triggered_only = yes
+ 	
+	fire_only_once = yes
+	
+    option = {
+	    name = britain.1003.a
+		ai_chance = {
+			factor = 98
+			modifier = {
+				ROOT = {
+					has_government = democratic
+				}
+				EGY = {
+					has_government = democratic
+				}
+				factor = 100
+			}
+			modifier = {
+				ROOT = {
+					has_government = neutrality
+				}
+				EGY = {
+					has_government = neutrality
+				}
+				factor = 100
+			}
+			modifier = {
+				ROOT = {
+					has_government = communism
+				}
+				EGY = {
+					has_government = communism
+				}
+				factor = 100
+			}
+			modifier = {
+				ROOT = {
+					has_government = fascism
+				}
+				EGY = {
+					has_government = fascism
+				}
+				factor = 100
+			}
+		}
+		EGY = {
+			transfer_state = 446
+			transfer_state = 986
+
+		}
+		#EGY = {country_event = { id = egyptianempire.6 hours = 6 }}
+    }
+	option = {
+	    name = britain.1003.b
+		ai_chance = {
+			factor = 2
+		}
+		EGY = {
+			create_wargoal = {
+				type = annex_everything
+				target = ROOT
+			}
+		}
+		#EGY = {country_event = { id = egyptianempire.7 hours = 6 }}
+		add_threat = 2
+    }
+}
+#Egyptians Propose Increased Military Ties
+country_event = {
+    id = britain.1004
+    title = britain.1004.t
+    desc = britain.1004.d
+    picture = GFX_report_event_soldiers_marching
+
+    is_triggered_only = yes
+ 	
+	fire_only_once = yes
+	
+    option = {
+	    name = britain.1004.a
+	    ai_chance = { 
+			factor = 90
+			modifier = {
+				EGY = {
+					has_government = democratic
+				}
+				ENG = {
+					has_government = democratic
+				}
+				factor = 100
+			}
+	    }
+		EGY = {
+			give_military_access = ENG
+		}
+		ENG = {
+			diplomatic_relation = {
+				country = EGY
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+		ENG = { remove_resource_rights = 447 }
+		add_opinion_modifier = { target = EGY modifier = medium_increase }
+		hidden_effect = {
+			#EGY = {country_event = { id = egyptianempire.8 hours = 6 }}
+			add_threat = -0.3
+		}
+    }
+	option = {
+	    name = britain.1004.b
+	    ai_chance = { 
+			factor = 10
+			modifier = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+				factor = 70
+			}
+	    }
+		hidden_effect = {
+			#EGY = {country_event = { id = egyptianempire.9 hours = 6 }}
+			add_threat = 0.3
+		}
+    }
+}
+#Egypt Proposes Africa Front Focus
+country_event = {
+    id = britain.1005
+    title = britain.1005.t
+    desc = britain.1005.d
+    picture = GFX_report_event_south_africa_patrol
+
+    is_triggered_only = yes
+ 	
+	fire_only_once = yes
+	
+    option = {
+	    name = britain.1005.a
+	    ai_chance = { 
+			factor = 80
+			modifier = {
+				ENG = { has_war_with = ITA }
+				EGY = { has_war_with = ITA }
+				factor = 100
+			}
+	    }
+		#EGY = { country_event = { id = egyptianempire.28 hours = 6 } }
+    }
+	option = {
+	    name = britain.1005.b
+	    ai_chance = { 
+			factor = 20
+			modifier = {
+				EGY = {
+					num_of_factories < 15
+				}
+				factor = 0
+			}
+	    }
+		#EGY = { country_event = { id = egyptianempire.29 hours = 6 } }
+    }
+}
+#Egypt Demands Liberation of Our African Colonies
+country_event = {
+    id = britain.1006
+    title = britain.1006.t
+    desc = britain.1006.d
+    picture = GFX_report_event_south_africa_patrol
+
+    is_triggered_only = yes
+ 	
+	fire_only_once = yes
+	
+    option = {
+	    name = britain.1006.a
+	    ai_chance = { 
+			factor = 100
+			modifier = {
+				OR = {
+					ENG = {
+						has_government = fascism
+					}
+					ENG = {
+						has_government = communism
+					}
+					ENG = {
+						has_government = neutrality
+					}
+				}
+				factor = 0
+			}
+	    }
+		hidden_effect = {
+			if = {
+				limit = {
+					ENG = {
+						has_full_control_of_state = 558
+						NOT = {
+							has_war_with = EGY
+						}
+					}
+				}
+				NGA = {
+					transfer_state = 558
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.4
+					}
+					set_politics = {
+						ruling_party = democratic
+					}
+				}
+				EGY = {
+					give_guarantee = NGA
+				}
+			}
+			if = {
+				limit = {
+					ENG = {
+						has_full_control_of_state = 274
+						NOT = {
+							has_war_with = EGY
+						}
+					}
+				}
+				GHA = {
+					transfer_state = 274
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.4
+					}
+					set_politics = {
+						ruling_party = democratic
+					}
+				}
+				EGY = {
+					give_guarantee = GHA
+				}
+			}
+			if = {
+				limit = {
+					ENG = {
+						has_full_control_of_state = 700
+						NOT = {
+							has_war_with = EGY
+						}
+					}
+				}
+				SIE = {
+					transfer_state = 700
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.4
+					}
+					set_politics = {
+						ruling_party = democratic
+					}
+				}
+				EGY = {
+					give_guarantee = SIE
+				}
+			}
+			if = {
+				limit = {
+					ENG = {
+						has_full_control_of_state = 269
+						NOT = {
+							has_war_with = EGY
+						}
+					}
+				}
+				SOM = {
+					transfer_state = 269
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.4
+					}
+					set_politics = {
+						ruling_party = democratic
+					}
+				}
+				EGY = {
+					give_guarantee = SOM
+				}
+			}
+			if = {
+				limit = {
+					ENG = {
+						has_full_control_of_state = 548
+						NOT = {
+							has_war_with = EGY
+						}
+					}
+				}
+				UGA = {
+					transfer_state = 548
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.4
+					}
+					set_politics = {
+						ruling_party = democratic
+					}
+				}
+				EGY = {
+					give_guarantee = UGA
+				}
+			}
+			if = {
+				limit = {
+					ENG = {
+						has_full_control_of_state = 547
+						NOT = {
+							has_war_with = EGY
+						}
+					}
+				}
+				KEN = {
+					transfer_state = 547
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.6
+					}
+					set_politics = {
+						ruling_party = democratic
+					}
+				}
+				EGY = {
+					give_guarantee = KEN
+				}
+			}
+			if = {
+				limit = {
+					ENG = {
+						has_full_control_of_state = 546
+						NOT = {
+							has_war_with = EGY
+						}
+					}
+				}
+				TZN = {
+					transfer_state = 546
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.4
+					}
+					set_politics = {
+						ruling_party = democratic
+					}
+				}
+				EGY = {
+					give_guarantee = TZN
+				}
+			}
+			if = {
+				limit = {
+					ENG = {
+						has_full_control_of_state = 770
+						NOT = {
+							has_war_with = EGY
+						}
+					}
+				}
+				MLW = {
+					transfer_state = 770
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.4
+					}
+					set_politics = {
+						ruling_party = democratic
+					}
+				}
+				EGY = {
+					give_guarantee = MLW
+				}
+			}
+			if = {
+				limit = {
+					ENG = {
+						has_full_control_of_state = 771
+						NOT = {
+							has_war_with = EGY
+						}
+					}
+				}
+				ZAM = {
+					transfer_state = 771
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.4
+					}
+					set_politics = {
+						ruling_party = democratic
+					}
+				}
+				EGY = {
+					give_guarantee = ZAM
+				}
+			}
+			if = {
+				limit = {
+					ENG = {
+						has_full_control_of_state = 542
+						NOT = {
+							has_war_with = EGY
+						}
+					}
+				}
+				BOT = {
+					transfer_state = 542
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.6
+					}
+					set_politics = {
+						ruling_party = democratic
+					}
+				}
+				EGY = {
+					give_guarantee = BOT
+				}
+			}
+			if = {
+				limit = {
+					ENG = {
+						has_full_control_of_state = 545
+						NOT = {
+							has_war_with = EGY
+						}
+					}
+				}
+				ZIM = {
+					transfer_state = 545
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.6
+					}
+					set_politics = {
+						ruling_party = democratic
+					}
+				}
+				EGY = {
+					give_guarantee = ZIM
+				}
+			}
+			if = {
+				limit = {
+					ENG = {
+						has_full_control_of_state = 701
+						NOT = {
+							has_war_with = EGY
+						}
+					}
+				}
+				GAM = {
+					transfer_state = 701
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.6
+					}
+					set_politics = {
+						ruling_party = democratic
+					}
+				}
+				EGY = {
+					give_guarantee = GAM
+				}
+			}
+		}
+		custom_effect_tooltip = britain.1006_tt
+		#EGY = { country_event = { id = egyptianempire.30 hours = 6 } }
+    }
+	option = {
+	    name = britain.1006.b
+	    ai_chance = { 
+			factor = 0
+			modifier = {
+				OR = {
+					ENG = {
+						has_government = fascism
+					}
+					ENG = {
+						has_government = communism
+					}
+					ENG = {
+						has_government = neutrality
+					}
+				}
+				factor = 80
+			}
+	    }
+		add_stability = -0.08
+		#EGY = { country_event = { id = egyptianempire.31 hours = 6 } }
+		EGY = { add_opinion_modifier = { target = ENG modifier = large_decrease } }
+    }
+}
+#Egypt Demands Liberation of Our Mediterranean Colonies
+country_event = {
+    id = britain.1007
+    title = britain.1007.t
+    desc = britain.1007.d
+    picture = GFX_report_event_generic_naval_treaty
+
+    is_triggered_only = yes
+ 	
+	fire_only_once = yes
+	
+    option = {
+	    name = britain.1007.a
+	    ai_chance = { 
+			factor = 100
+			modifier = {
+				OR = {
+					ENG = {
+						has_government = fascism
+					}
+					ENG = {
+						has_government = communism
+					}
+					ENG = {
+						has_government = neutrality
+					}
+				}
+				factor = 0
+			}
+	    }
+		hidden_effect = {
+			if = {
+				limit = {
+					MLT = {
+						has_country_flag = EGY_annexed_colony
+					}
+				}
+				MLT = {
+					transfer_state = 116
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.4
+					}
+					set_politics = {
+						ruling_party = democratic
+					}
+					add_ideas = mediterranean_defense_committee_member
+				}
+				EGY = {
+					add_to_faction = MLT
+				}
+			}
+			if = {
+				limit = {
+					CYP = {
+						has_country_flag = EGY_annexed_colony
+					}
+				}
+				CYP = {
+					transfer_state = 183
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.4
+					}
+					set_politics = {
+						ruling_party = democratic
+					}
+					add_ideas = mediterranean_defense_committee_member
+				}
+				EGY = {
+					add_to_faction = CYP
+				}
+			}
+		}
+		custom_effect_tooltip = britain.1007_tt
+		#EGY = { country_event = { id = egyptianempire.39 hours = 6 } }
+    }
+	option = {
+	    name = britain.1007.b
+	    ai_chance = { 
+			factor = 0
+			modifier = {
+				OR = {
+					ENG = {
+						has_government = fascism
+					}
+					ENG = {
+						has_government = communism
+					}
+					ENG = {
+						has_government = neutrality
+					}
+				}
+				factor = 80
+			}
+	    }
+		add_stability = -0.04
+		#EGY = { country_event = { id = egyptianempire.40 hours = 6 } }
+		EGY = { add_opinion_modifier = { target = ENG modifier = large_decrease } }
+    }
+}

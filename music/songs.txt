@@ -1,0 +1,1570 @@
+music_station = "base_music"
+
+music = {
+	song = "maintheme"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+# PEACE SONGS ##################
+
+#Rus
+music = {
+	song = "rus_peace_1"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = no
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "rus_peace_2"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = no
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "rus_peace_3"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = no
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "rus_peace_4"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = no
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "rus_peace_5"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = no
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "rus_peace_6"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = no
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "rus_peace_7"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = no
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "rus_peace_8"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = no
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "rus_peace_9"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = no
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "rus_peace_10"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = no
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+#Sov
+music = {
+	song = "sov_peace_1"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = no
+			has_government = communism
+		}		
+	}	
+}
+
+music = {
+	song = "sov_peace_2"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = no
+			has_government = communism
+		}		
+	}	
+}
+
+
+music = {
+	song = "sov_peace_3"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = no
+			has_government = communism
+		}		
+	}	
+}
+
+music = {
+	song = "sov_peace_4"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = no
+			has_government = communism
+		}		
+	}	
+}
+
+music = {
+	song = "sov_peace_5"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = no
+			has_government = communism
+		}		
+	}	
+}
+
+music = {
+	song = "sov_peace_6"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = no
+			has_government = communism
+		}		
+	}	
+}
+
+music = {
+	song = "sov_peace_7"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = no
+			has_government = communism
+		}		
+	}	
+}
+
+music = {
+	song = "sov_peace_8"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = no
+			has_government = communism
+		}		
+	}	
+}
+
+music = {
+	song = "sov_peace_9"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = no
+			has_government = communism
+		}		
+	}	
+}
+
+music = {
+	song = "sov_peace_10"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = no
+			has_government = communism
+		}		
+	}	
+}
+#Ger/Aus
+music = {
+	song = "ger_peace_1"
+	
+	chance = {
+		modifier = {
+			factor = 10
+				OR = {
+				AND = {
+					TAG = GER }
+				And = {
+					TAG = AUS
+				}
+			}
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "ger_peace_2"
+	
+	chance = {
+		modifier = {
+			factor = 10
+				OR = {
+				AND = {
+					TAG = GER }
+				And = {
+					TAG = AUS
+				}
+			}
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "ger_peace_3"
+	
+	chance = {
+		modifier = {
+			factor = 10
+				OR = {
+				AND = {
+					TAG = GER }
+				And = {
+					TAG = AUS
+				}
+			}
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "ger_peace_4"
+	
+	chance = {
+		modifier = {
+			factor = 10
+				OR = {
+				AND = {
+					TAG = GER }
+				And = {
+					TAG = AUS
+				}
+			}
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "ger_peace_5"
+	
+	chance = {
+		modifier = {
+			factor = 10
+					OR = {
+				AND = {
+					TAG = GER }
+				And = {
+					TAG = AUS
+				}
+			}
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "ger_peace_6"
+	
+	chance = {
+		modifier = {
+			factor = 10
+				OR = {
+				AND = {
+					TAG = GER }
+				And = {
+					TAG = AUS
+				}
+			}
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "ger_peace_7"
+	
+	chance = {
+		modifier = {
+			factor = 10
+					OR = {
+				AND = {
+					TAG = GER }
+				And = {
+					TAG = AUS
+				}
+			}
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "ger_peace_8"
+	
+	chance = {
+		modifier = {
+			factor = 10
+				OR = {
+				AND = {
+					TAG = GER }
+				And = {
+					TAG = AUS
+				}
+			}			
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "ger_peace_9"
+	
+	chance = {
+		modifier = {
+			factor = 10
+				OR = {
+				AND = {
+					TAG = GER }
+				And = {
+					TAG = AUS
+				}
+			}
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "ger_peace_10"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			OR = {
+				AND = {
+					TAG = GER }
+				And = {
+					TAG = AUS
+				}
+			}
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "ger_peace_11"
+	
+	chance = {
+		modifier = {
+			factor = 10
+					OR = {
+				AND = {
+					TAG = GER }
+				And = {
+					TAG = AUS
+				}
+			}
+			has_war = no
+		}		
+	}	
+}
+# WAR SONGS ####################
+
+
+music = {
+	song = "rus_war_1"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "rus_war_2"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "rus_war_3"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "rus_war_4"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "rus_war_5"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "rus_war_6"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "rus_war_7"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "rus_war_8"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "rus_war_9"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "rus_war_10"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "sov_war_1"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = yes
+			has_government = communism
+		}		
+	}	
+}
+
+music = {
+	song = "sov_war_2"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = yes
+			has_government = communism
+		}		
+	}	
+}
+
+music = {
+	song = "sov_war_3"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = yes
+			has_government = communism
+		}		
+	}	
+}
+
+music = {
+	song = "sov_war_4"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = yes
+			has_government = communism
+		}		
+	}	
+}
+
+music = {
+	song = "sov_war_5"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = yes
+			has_government = communism
+		}		
+	}	
+}
+
+music = {
+	song = "sov_war_6"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = yes
+			has_government = communism
+		}		
+	}	
+}
+
+music = {
+	song = "sov_war_7"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = yes
+			has_government = communism
+		}		
+	}	
+}
+
+music = {
+	song = "sov_war_8"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = yes
+			has_government = communism
+		}		
+	}	
+}
+
+music = {
+	song = "sov_war_9"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = yes
+			has_government = communism
+		}		
+	}	
+}
+
+music = {
+	song = "sov_war_10"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = RUS
+			has_war = yes
+			has_government = communism
+		}		
+	}	
+}
+
+music = {
+	song = "ger_war_1"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = GER
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "ger_war_2"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = GER
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "ger_war_3"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = GER
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "ger_war_4"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = GER
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "ger_war_5"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = GER
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "ger_war_6"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = GER
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "ger_war_7"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = GER
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "ger_war_8"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = GER
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "ger_war_9"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = GER
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "ger_war_10"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = GER
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "aus_war_1"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = AUS
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "aus_war_2"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = AUS
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "aus_war_3"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = AUS
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "aus_war_4"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = AUS
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "aus_war_5"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = AUS
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "aus_war_6"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = AUS
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "aus_war_7"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = AUS
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "aus_war_8"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = AUS
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "aus_war_9"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = AUS
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "aus_war_10"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = AUS
+			has_war = yes
+			NOT = {
+				has_government = communism
+			}
+		}		
+	}	
+}
+
+
+
+##################################
+###No Peace/War Differentiation###
+##################################
+
+music = {
+	song = "china_1"
+	
+	chance = {
+		modifier = {
+			factor = 10
+				OR = {
+				AND = {
+					TAG = SHX }
+				And = {
+					TAG = PRC
+				}
+				And = {
+					TAG = CHI
+				}
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "china_2"
+	
+	chance = {
+		modifier = {
+			factor = 10
+				OR = {
+				AND = {
+					TAG = SHX }
+				And = {
+					TAG = PRC
+				}
+				And = {
+					TAG = CHI
+				}
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "china_3"
+	
+	chance = {
+		modifier = {
+			factor = 10
+				OR = {
+				AND = {
+					TAG = SHX }
+				And = {
+					TAG = PRC
+				}
+				And = {
+					TAG = CHI
+				}
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "china_4"
+	
+	chance = {
+		modifier = {
+			factor = 10
+				OR = {
+				AND = {
+					TAG = SHX }
+				And = {
+					TAG = PRC
+				}
+				And = {
+					TAG = CHI
+				}
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "china_5"
+	
+	chance = {
+		modifier = {
+			factor = 10
+				OR = {
+				AND = {
+					TAG = SHX }
+				And = {
+					TAG = PRC
+				}
+				And = {
+					TAG = CHI
+				}
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "china_6"
+	
+	chance = {
+		modifier = {
+			factor = 10
+				OR = {
+				AND = {
+					TAG = SHX }
+				And = {
+					TAG = PRC
+				}
+				And = {
+					TAG = CHI
+				}
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "china_7"
+	
+	chance = {
+		modifier = {
+			factor = 10
+				OR = {
+				AND = {
+					TAG = SHX }
+				And = {
+					TAG = PRC
+				}
+				And = {
+					TAG = CHI
+				}
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "china_8"
+	
+	chance = {
+		modifier = {
+			factor = 10
+				OR = {
+				AND = {
+					TAG = SHX }
+				And = {
+					TAG = PRC
+				}
+				And = {
+					TAG = CHI
+				}
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "china_9"
+	
+	chance = {
+		modifier = {
+			factor = 10
+				OR = {
+				AND = {
+					TAG = SHX }
+				And = {
+					TAG = PRC
+				}
+				And = {
+					TAG = CHI
+				}
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "qing_1"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = SHX
+			}
+		}		
+	}	
+
+music = {
+	song = "qing_2"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = SHX
+			}
+		}		
+	}	
+
+music = {
+	song = "qing_3"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = SHX
+			}
+		}		
+	}	
+
+music = {
+	song = "qing_4"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = SHX
+			}
+		}		
+	}	
+
+music = {
+	song = "qing_5"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = SHX
+			}
+		}		
+	}	
+
+music = {
+	song = "qing_6"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = SHX
+			}
+		}		
+	}	
+
+music = {
+	song = "roc_1"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = CHI
+			}
+		}		
+	}	
+
+music = {
+	song = "roc_2"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = CHI
+			}
+		}		
+	}	
+
+music = {
+	song = "roc_3"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = CHI
+			}
+		}		
+	}	
+
+music = {
+	song = "roc_4"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = CHI
+			}
+		}		
+	}	
+
+music = {
+	song = "prc_1"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = PRC
+			}
+		}		
+	}	
+
+music = {
+	song = "prc_2"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = PRC
+			}
+		}		
+	}	
+
+music = {
+	song = "prc_3"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = PRC
+			}
+		}		
+	}	
+
+music = {
+	song = "prc_4"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = PRC
+			}
+		}		
+	}	
+
+music = {
+	song = "prc_5"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = PRC
+			}
+		}		
+	}	
+
+music = {
+	song = "prc_6"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = PRC
+			}
+		}		
+	}			
+
+###bavaria###
+music = {
+	song = "bav_1"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = BAV
+			}
+		}		
+	}			
+
+music = {
+	song = "bav_2"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = BAV
+			}
+		}		
+	}			
+
+music = {
+	song = "bav_3"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = BAV
+			}
+		}		
+	}			
+
+music = {
+	song = "bav_4"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = BAV
+			}
+		}		
+	}			
+
+music = {
+	song = "bav_5"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = BAV
+			}
+		}		
+	}			
+
+music = {
+	song = "bav_6"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = BAV
+			}
+		}		
+	}			
+
+music = {
+	song = "bav_7"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = BAV
+			}
+		}		
+	}			
+
+music = {
+	song = "bav_8"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = BAV
+			}
+		}		
+	}			
+
+music = {
+	song = "bav_9"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = BAV
+			}
+		}		
+	}			
+
+music = {
+	song = "bav_10"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = BAV
+			}
+		}		
+	}			
+
+music = {
+	song = "bav_11"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = BAV
+			}
+		}		
+	}			
+
+music = {
+	song = "bav_12"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			TAG = BAV
+			}
+		}		
+	}			
+

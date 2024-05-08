@@ -1,0 +1,5366 @@
+##### ROM ######
+
+focus_tree = {
+	id = egypt_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = EGY
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+	
+	continuous_focus_position = { x = 50 y = 1500 }
+	
+	focus = {
+		id = EGY_government_reform
+		icon = GFX_focus_generic_self_management
+		x = 19
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.1
+			swap_ideas = {
+				remove_idea = resistance_to_british_occupation
+				add_idea = resistance_to_british_occupation_2
+			}
+		}
+	}
+	focus = {
+		id = EGY_anglo-egyptian_treaty
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = EGY_government_reform }
+		x = 19
+		y = 1
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		historical_ai = {
+			has_government = neutrality
+			has_government = democratic
+		}
+		
+		completion_reward = {
+			ENG = { country_event = { id = britain.1000 hours = 6 } }
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = EGY_sever_ties_with_uk
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		mutually_exclusive = { focus = EGY_support_the_status_quo }
+		mutually_exclusive = { focus = EGY_abandon_pharaonism }
+		prerequisite = { focus = EGY_anglo-egyptian_treaty }
+		x = 7
+		y = 2
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = british_military_training
+					}
+				}
+				leave_faction = yes
+			}
+			unlock_decision_category_tooltip = EGY_disestablish_british_influence
+		}
+	}
+	focus = {
+		id = EGY_draft_a_new_constitution
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = EGY_sever_ties_with_uk }
+
+		x = 7
+		y = 3
+	
+		cost = 12.9
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+		cancel_if_invalid = no
+
+		select_effect = {
+			country_event = { id = egypt.13 days = 1 }
+			set_country_flag = EGY_constitution_draft
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = EGY_draft_a_new_constitution_tt
+			add_political_power = 50
+			hidden_effect = {
+				EGY = { country_event = { id = egypt.17 days = 1 } }
+			}
+		}
+	}
+	focus = {
+		id = EGY_cave_to_nationalism
+		icon = GFX_focus_generic_fascist_propaganda
+		prerequisite = { focus = EGY_draft_a_new_constitution }
+		mutually_exclusive = { focus = EGY_begin_the_arab_socialist_movement }
+
+		available = {
+			hidden_trigger = {
+				is_puppet = no
+				is_subject = no
+			}
+			has_country_flag = EGY_declared_independence
+		}
+
+		x = 11
+		y = 4
+		
+		cost = 8.7
+		
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				has_game_rule = {
+					rule = EGY_ai_behavior
+					option = FASCIST
+				}
+				factor = 10
+			}
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = national_fascism
+			hidden_effect = {
+				add_opinion_modifier = { target = ITA modifier = medium_increase }
+				ITA = {
+					add_opinion_modifier = { target = EGY modifier = medium_increase }
+				}
+			}
+			remove_ideas = resistance_to_british_occupation_2
+			custom_effect_tooltip = EGY_parliament_dissolution_tt
+		}
+	}
+	focus = {
+		id = EGY_organise_the_greenshirts
+		icon = GFX_focus_ege_green_shirt_militias
+		prerequisite = { focus = EGY_cave_to_nationalism }
+
+		x = 11
+		y = 5
+	
+		cost = 8.7
+		
+		available = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.02
+			add_stability = -0.02
+		}
+	}
+	focus = {
+		id = EGY_youth_militia_program
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = EGY_imperial_dream }
+
+		x = 13
+		y = 8
+	
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = youth_militia_program
+		}
+	}
+	focus = {
+		id = EGY_one_man_show
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = EGY_cave_to_nationalism }
+		mutually_exclusive = { focus = EGY_imperial_dream }
+		available = {
+			has_idea = king_farouk_i
+			has_country_flag =  EGY_placate_the_churches_mbh_lead_flag
+		}
+
+		x = 9
+		y = 7
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+			factor = 3
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = king_farouk_i
+					}
+					remove_ideas = king_farouk_i
+				}
+			}
+			create_country_leader = {
+				name = "King Farouk I"
+				desc = "POLITICS_KING_FAROUK_I_DESC"
+				picture = "Portrait_Egypt_Farouk_Muhammad_Ali.dds"
+				expire = "1965.1.1"
+				ideology = nazism
+				traits = { 
+					inexperienced_imperialist
+					fascist_sympathies
+				}
+			}
+			EGY = {
+				set_politics = {
+					ruling_party = fascism
+				}
+			}
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = EGY_imperial_dream
+		icon = GFX_focus_ege_imperial_dream
+		prerequisite = { focus = EGY_cave_to_nationalism }
+		mutually_exclusive = { focus = EGY_one_man_show }
+
+		x = 13
+		y = 7
+		
+		cost = 8.7
+
+		available = {
+			fascism > 0.3
+			has_country_flag =  EGY_placate_the_churches_mbh_lead_flag
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			EGY = {
+				set_politics = {
+					ruling_party = fascism
+				}
+			}
+			if = {
+				limit = {
+					has_country_leader = {
+						name = "Ahmed Husayn"
+					}
+				}
+				add_country_leader_trait = inexperienced_imperialist
+			}
+			hidden_effect = {
+				EGY = {
+					add_state_core = 451
+					add_state_core = 663
+					add_state_core = 450
+					add_state_core = 449
+					add_state_core = 448
+					add_state_core = 662
+					add_state_core = 661
+					add_state_core = 273
+					add_state_core = 550
+					add_state_core = 268
+					add_state_core = 551
+					add_state_core = 767
+					add_state_core = 549
+					add_state_core = 269
+					add_state_core = 559
+					add_state_core = 547
+					add_state_core = 548
+					add_state_core = 546
+					add_state_core = 770
+					add_state_core = 771
+					add_state_core = 545
+					add_state_core = 542
+					add_state_core = 544
+					add_state_core = 543
+					add_state_core = 540
+					add_state_core = 295
+					add_state_core = 538
+					add_state_core = 718
+					add_state_core = 539
+					add_state_core = 772
+					add_state_core = 773
+					add_state_core = 297
+					add_state_core = 705
+					add_state_core = 773
+					add_state_core = 660
+					add_state_core = 774
+					add_state_core = 558
+					add_state_core = 776
+					add_state_core = 777
+					add_state_core = 781
+					add_state_core = 778
+					add_state_core = 556
+					add_state_core = 274
+					add_state_core = 779
+					add_state_core = 780
+					add_state_core = 700
+					add_state_core = 272
+					add_state_core = 296
+					add_state_core = 701
+					add_state_core = 557
+					add_state_core = 699
+					add_state_core = 783
+					add_state_core = 178
+					add_state_core = 702
+					add_state_core = 709
+					add_state_core = 708
+					add_state_core = 706
+					add_state_core = 707
+					add_state_core = 697
+					add_state_core = 462
+					add_state_core = 461
+					add_state_core = 513
+					add_state_core = 459
+					add_state_core = 460
+					add_state_core = 458
+					add_state_core = 665
+					add_state_core = 514
+					add_state_core = 786
+					add_state_core = 782
+					add_state_core = 515
+					add_state_core = 775
+					add_state_core = 271
+					add_state_core = 298
+					add_state_core = 541
+					add_state_core = 681
+					add_state_core = 275
+					add_state_core = 719
+				}
+			}
+			custom_effect_tooltip = EGY_imperial_dream_tt_2
+			add_political_power = 100
+			add_war_support = 0.05
+			set_rule = {
+				can_declare_war_without_wargoal_when_in_war = yes
+			}
+		}
+	}
+	focus = {
+		id = EGY_strengthen_axis_ties
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = EGY_one_man_show focus = EGY_imperial_dream }
+		
+		x = 11
+		y = 8
+
+		cost = 8.7
+
+		available = {
+			GER = {
+				is_in_faction_with = GER
+			}
+			NOT = {
+				GER = {
+					has_completed_focus = GER_oppose_hitler
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				GER = {
+					has_completed_focus = GER_oppose_hitler
+				}
+				factor = 0
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {
+				every_other_country = {
+					limit = { is_in_faction_with = GER }
+					add_opinion_modifier = { target = EGY modifier = large_increase }
+				}
+				EGY = {
+					add_opinion_modifier = { target = GER modifier = huge_increase }
+				}
+				EGY = {
+					add_opinion_modifier = { target = JAP modifier = huge_increase }
+				}
+				EGY = {
+					add_opinion_modifier = { target = ITA modifier = huge_increase }
+				}
+				EGY = {
+					add_opinion_modifier = { target = FRA modifier = large_increase }
+				}
+			}
+			custom_effect_tooltip = EGY_strengthen_axis_ties_tt
+			add_political_power = 200
+			GER = {country_event = { id = germany.1000 hours = 6 }}
+		}
+	}
+	focus = {
+		id = EGY_strike_against_the_colonizers
+		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
+		prerequisite = { focus = EGY_strengthen_axis_ties }
+		available = {
+			NOT = {
+				is_in_faction_with = FRA
+				is_in_faction_with = ENG
+				is_puppet = yes
+			}	
+			hidden_trigger = {
+				NOT = {
+					is_subject = yes
+				}
+			}
+		}
+
+		x = 11
+		y = 9
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ENG
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = FRA
+			}
+		}
+	}
+	focus = {
+		id = EGY_assassinate_lampson
+		icon = GFX_focus_hun_assassinate_horthy
+		prerequisite = { focus = EGY_strengthen_axis_ties }
+		available = {
+			has_idea = sir_miles_lampson
+		}
+
+		x = 10
+		y = 10
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			add_stability = 0.05
+			custom_effect_tooltip = EGY_assassinate_lampson_tt
+			hidden_effect = {
+				ENG = {country_event = { id = britain.1001 days = 2 }}
+				remove_ideas = sir_miles_lampson
+				add_threat = 1
+			}
+		}
+	}
+	focus = {
+		id = EGY_educational_militarism
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = EGY_one_man_show }
+
+		x = 9
+		y = 8
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			army_experience = 30
+			custom_effect_tooltip = available_chief_of_army
+			show_ideas_tooltip = aziz_ali_al-misri
+			create_field_marshal = {
+				name = "Aziz Ali al-Misri"
+				picture = "Portrait_Soviet_Kliment_Voroshilov.dds"
+				traits = { aggressive_assaulter inspirational_leader politically_connected infantry_officer desert_fox }
+				skill = 4
+				attack_skill = 6
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 3
+			}
+		}
+	}
+	focus = {
+		id = EGY_crush_the_coptic_church
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		prerequisite = { focus = EGY_organise_the_greenshirts }
+
+		x = 11
+		y = 6
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			has_country_flag =  EGY_placate_the_churches_mbh_lead_flag
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = no
+
+		completion_reward = {
+			unlock_decision_tooltip = { decision = EGY_purge_the_coptic_church }
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = EGY_restore_the_empire
+		icon = GFX_focus_generic_strike_at_democracy2
+		prerequisite = { focus = EGY_educational_militarism }
+		
+		x = 9
+		y = 9
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_leader = {
+						name = "King Farouk I"
+					}
+				}
+				hidden_effect = {
+					kill_country_leader = yes
+					create_country_leader = {
+						name = "Emperor Farouk I"
+						desc = "POLITICS_KING_FAROUK_I_DESC"
+						picture = "Portrait_Egypt_Farouk_Muhammad_Ali.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = { 
+							emperor_of_egypt
+							fascist_sympathies
+						}
+					}
+				}
+				custom_effect_tooltip = EGY_restore_the_empire_tt
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			EGY = { set_cosmetic_tag = EGY_empire }
+			446 = {
+				set_state_name = "Memphis"
+			}
+		}
+	}
+	focus = {
+		id = EGY_request_libya
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = EGY_strengthen_axis_ties }
+		available = {
+			is_puppet = no
+			NOT =  { 
+				has_war_with = ITA
+			}
+			is_in_faction_with = ITA
+			ITA = {
+				273 = { is_owned_and_controlled_by = ITA }
+				661 = { is_owned_and_controlled_by = ITA }
+				662 = { is_owned_and_controlled_by = ITA }
+				663 = { is_owned_and_controlled_by = ITA }
+				448 = { is_owned_and_controlled_by = ITA }
+				449 = { is_owned_and_controlled_by = ITA }
+				450 = { is_owned_and_controlled_by = ITA }
+				451 = { is_owned_and_controlled_by = ITA }
+			}
+		}
+		
+		x = 12
+		y = 10
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			ITA = {country_event = { id = Italy.1000 hours = 6 }}
+		}
+	}
+	focus = {
+		id = EGY_begin_the_arab_socialist_movement
+		icon = GFX_focus_ege_arab_socialist_movement
+		prerequisite = { focus = EGY_draft_a_new_constitution }
+		mutually_exclusive = { focus = EGY_cave_to_nationalism }
+		
+		available = {
+			hidden_trigger = {
+				is_puppet = no
+				is_subject = no
+			}
+			has_country_flag = EGY_declared_independence
+		}
+		
+		x = 3
+		y = 4
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				has_game_rule = {
+					rule = EGY_ai_behavior
+					option = COMMUNIST
+				}
+				factor = 10
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = arab_socialist_movement
+			unlock_decision_category_tooltip = EGY_arab_socialist_movement_category
+			set_rule = {
+				can_boost_other_ideologies = yes
+			}
+			remove_ideas = resistance_to_british_occupation_2
+		}
+	}
+	focus = {
+		id = EGY_reclaim_the_middle_east
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = EGY_restore_the_empire focus = EGY_the_second_coming_of_christ focus = EGY_the_african_comintern }
+		available = {
+			is_puppet = no
+			NOT =  { 
+				is_in_faction_with = ENG
+				is_in_faction_with = FRA
+				has_war_with = ENG
+				has_war_with = FRA
+			}
+			ENG = {
+				OR = {
+					454 = { is_owned_and_controlled_by = ENG }
+					455 = { is_owned_and_controlled_by = ENG }
+				}
+			}
+			FRA = {
+				OR = {
+					553 = { is_owned_and_controlled_by = FRA }
+					554 = { is_owned_and_controlled_by = FRA }
+					677 = { is_owned_and_controlled_by = FRA }
+					680 = { is_owned_and_controlled_by = FRA }
+				}
+			}
+		}
+		
+		x = 3
+		y = 10
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			effect_tooltip = {
+				EGY = {
+					if = {
+						limit = { ENG = { owns_state = 454 controls_state = 454 } }
+						transfer_state = 454
+						EGY = {
+							add_state_core = 454
+						}
+					}
+					if = {
+						limit = { ENG = { owns_state = 455 controls_state = 455 } }
+						transfer_state = 455
+						EGY = {
+							add_state_core = 455
+						}
+					}
+					if = {
+						limit = { FRA = { owns_state = 553 controls_state = 553 } }
+						transfer_state = 553
+						EGY = {
+							add_state_core = 553
+						}
+					}
+					if = {
+						limit = { FRA = { owns_state = 554 controls_state = 554 } }
+						transfer_state = 554
+						EGY = {
+							add_state_core = 554
+						}
+					}
+					if = {
+						limit = { FRA = { owns_state = 677 controls_state = 677 } }
+						transfer_state = 677
+						EGY = {
+							add_state_core = 677
+						}
+					}
+					if = {
+						limit = { FRA = { owns_state = 680 controls_state = 680 } }
+						transfer_state = 680
+						EGY = {
+							add_state_core = 680
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				news_event = { id = news.1004 hours = 6 }
+			}
+			EGY = {
+				if = {
+					limit = { ENG = { owns_state = 454 controls_state = 454 } }
+					transfer_state = 454
+					EGY = {
+						add_state_core = 454
+					}
+				}
+				if = {
+					limit = { ENG = { owns_state = 455 controls_state = 455 } }
+					transfer_state = 455
+					EGY = {
+						add_state_core = 455
+					}
+				}
+				if = {
+					limit = { FRA = { owns_state = 553 controls_state = 553 } }
+					transfer_state = 553
+					EGY = {
+						add_state_core = 553
+					}
+				}
+				if = {
+					limit = { FRA = { owns_state = 554 controls_state = 554 } }
+					transfer_state = 554
+					EGY = {
+						add_state_core = 554
+					}
+				}
+				if = {
+					limit = { FRA = { owns_state = 677 controls_state = 677 } }
+					transfer_state = 677
+					EGY = {
+						add_state_core = 677
+					}
+				}
+				if = {
+					limit = { FRA = { owns_state = 680 controls_state = 680 } }
+					transfer_state = 680
+					EGY = {
+						add_state_core = 680
+					}
+				}
+			}
+			add_threat = 2
+			EGY = {
+				create_wargoal = {
+					type = annex_everything
+					target = IRQ
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_seek_foreign_cooperation
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = EGY_begin_the_arab_socialist_movement }
+		mutually_exclusive = { focus = EGY_marx_of_africa }
+		mutually_exclusive = { focus = EGY_embrace_the_spirit_of_christ }
+		
+		x = 0
+		y = 5
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {
+				every_other_country = {
+					limit = { is_in_faction_with = SOV }
+					add_opinion_modifier = { target = EGY modifier = large_increase }
+				}
+				EGY = {
+					add_opinion_modifier = { target = SOV modifier = huge_increase }
+				}
+				EGY = {
+					add_opinion_modifier = { target = TAN modifier = huge_increase }
+				}
+				EGY = {
+					add_opinion_modifier = { target = MON modifier = huge_increase }
+				}
+				SOV = {
+					add_opinion_modifier = { target = EGY modifier = large_increase }
+				}
+			}
+			custom_effect_tooltip = EGY_seek_foreign_cooperation_tt
+			add_political_power = 200
+			SOV = { country_event = { id = soviet.1000 hours = 6 } }
+		}
+	}
+	focus = {
+		id = EGY_soviet_military_training
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = { focus = EGY_seek_foreign_cooperation }
+		
+		x = 0
+		y = 6
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = soviet_military_training
+		}
+	}
+	focus = {
+		id = EGY_marx_of_africa
+		icon = GFX_focus_ege_marx_of_africa
+		prerequisite = { focus = EGY_begin_the_arab_socialist_movement }
+		mutually_exclusive = { focus = EGY_seek_foreign_cooperation }
+		mutually_exclusive = { focus = EGY_embrace_the_spirit_of_christ }
+		
+		x = 6
+		y = 5
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {
+				EGY = {
+					add_state_core = 451
+					add_state_core = 663
+					add_state_core = 450
+					add_state_core = 449
+					add_state_core = 448
+					add_state_core = 662
+					add_state_core = 661
+					add_state_core = 273
+					add_state_core = 550
+					add_state_core = 268
+					add_state_core = 551
+					add_state_core = 767
+					add_state_core = 549
+					add_state_core = 269
+					add_state_core = 559
+					add_state_core = 547
+					add_state_core = 548
+					add_state_core = 546
+					add_state_core = 770
+                                        add_state_core = 901
+                                        add_state_core = 902
+                                        add_state_core = 898
+					add_state_core = 771
+					add_state_core = 545
+                                        add_state_core = 904
+					add_state_core = 542
+					add_state_core = 544
+					add_state_core = 543
+					add_state_core = 540
+					add_state_core = 295
+					add_state_core = 538
+                                        add_state_core = 893
+					add_state_core = 718
+                                        add_state_core = 890
+                                        add_state_core = 888
+                                        add_state_core = 897
+                                        add_state_core = 896
+                                        add_state_core = 889
+					add_state_core = 884
+                                        add_state_core = 892
+					add_state_core = 885
+					add_state_core = 539
+                                        add_state_core = 891
+                                        add_state_core = 844
+					add_state_core = 772
+                                        add_state_core = 839
+					add_state_core = 773
+					add_state_core = 297
+                                        add_state_core = 908
+					add_state_core = 705
+					add_state_core = 773
+					add_state_core = 660
+					add_state_core = 774
+                                        add_state_core = 835
+					add_state_core = 558
+					add_state_core = 776
+					add_state_core = 777
+					add_state_core = 781
+					add_state_core = 778
+					add_state_core = 556
+					add_state_core = 274
+					add_state_core = 779
+					add_state_core = 780
+					add_state_core = 700
+					add_state_core = 272
+                                        add_state_core = 883
+					add_state_core = 296
+                                        add_state_core = 838
+					add_state_core = 701
+					add_state_core = 557
+					add_state_core = 699
+					add_state_core = 783
+					add_state_core = 178
+					add_state_core = 702
+					add_state_core = 709
+					add_state_core = 708
+					add_state_core = 706
+					add_state_core = 707
+					add_state_core = 697
+					add_state_core = 462
+					add_state_core = 461
+					add_state_core = 513
+					add_state_core = 459
+					add_state_core = 460
+					add_state_core = 458
+					add_state_core = 665
+					add_state_core = 514
+					add_state_core = 786
+					add_state_core = 782
+					add_state_core = 515
+					add_state_core = 775
+				}
+			}
+			custom_effect_tooltip = EGY_marx_of_africa_tt
+			add_political_power = 200
+			unlock_decision_tooltip = { decision = EGY_mission_to_liberia show_effect_tooltip = yes show_modifiers = no }
+		}
+	}
+	focus = {
+		id = EGY_collaborative_construction
+		icon = GFX_goal_generic_soviet_construction
+		prerequisite = { focus = EGY_marx_of_africa }
+		
+		x = 6
+		y = 6
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = collaborative_construction
+			add_offsite_building = { type = industrial_complex level = 3 }
+		}
+	}
+	focus = {
+		id = EGY_the_african_comintern
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = EGY_the_last_party }
+		
+		x = 6
+		y = 9
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_faction = "African Comintern"
+			if = {
+				limit = {
+					SAF = {
+						communism > 40
+					}
+					is_ai = yes
+				}
+				add_to_faction = SAF
+			}
+			if = {
+				limit = {
+					SAU = {
+						communism > 40
+					}
+					is_ai = yes
+				}
+				add_to_faction = SAU
+			}
+			if = {
+				limit = {
+					IRQ = {
+						communism > 40
+					}
+					is_ai = yes
+				}
+				add_to_faction = IRQ
+			}
+			if = {
+				limit = {
+					PER = {
+						communism > 40
+					}
+					is_ai = yes
+				}
+				add_to_faction = PER
+			}
+			unlock_decision_tooltip = { decision = EGY_mission_to_south_africa show_effect_tooltip = yes show_modifiers = no }
+			unlock_decision_tooltip = { decision = EGY_cause_an_ethiopian_rebellion show_effect_tooltip = yes show_modifiers = no }
+		}
+	}
+	focus = {
+		id = EGY_embrace_the_spirit_of_christ
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { focus = EGY_begin_the_arab_socialist_movement }
+		mutually_exclusive = { focus = EGY_seek_foreign_cooperation }
+		mutually_exclusive = { focus = EGY_marx_of_africa }
+		
+		x = 3
+		y = 5
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+		
+		available = {
+			NOT = {
+				has_country_flag = EGY_coptic_church_placated
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+	focus = {
+		id = EGY_new_world_order
+		icon = GFX_focus_eng_crush_the_dream
+		prerequisite = { focus = EGY_embrace_the_spirit_of_christ }
+		mutually_exclusive = { focus = EGY_united_under_christianity }
+		
+		x = 4
+		y = 6
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = new_world_order
+		}
+	}
+	focus = {
+		id = EGY_abide_by_no_rules
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		prerequisite = { focus = EGY_new_world_order focus = EGY_collaborative_construction focus = EGY_united_under_christianity focus = EGY_soviet_military_training }
+		
+		x = 3
+		y = 7
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			unlock_decision_tooltip = { decision = EGY_purge_the_coptic_church }
+			unlock_decision_tooltip = { decision = EGY_purge_the_muslim_brotherhood }
+			custom_effect_tooltip = EGY_assassinate_lampson_tt
+			hidden_effect = {
+				ENG = {country_event = { id = britain.1001 days = 2 }}
+				remove_ideas = sir_miles_lampson
+				add_threat = 1
+			}
+		}
+	}
+	focus = {
+		id = EGY_the_last_party
+		icon = GFX_focus_rom_parties_end
+		prerequisite = { focus = EGY_abide_by_no_rules focus = EGY_collaborative_construction }
+		
+		x = 6
+		y = 8
+
+		cost = 8.7
+
+		available = {
+			has_idea = king_farouk_i
+			NOT = {
+				has_completed_focus = EGY_united_under_christianity
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = EGY_the_last_party_tt
+			hidden_effect = {
+				random_list = {
+					70 = {
+						EGY = { country_event = { id = egypt.20 days = 2 } }
+					}
+					30 = {
+						EGY = { country_event = { id = egypt.21 days = 2 } }
+					}
+				}
+			}
+			custom_effect_tooltip = EGY_parliament_dissolution_tt
+		}
+	}
+	focus = {
+		id = EGY_united_under_christianity
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		prerequisite = { focus = EGY_embrace_the_spirit_of_christ }
+		mutually_exclusive = { focus = EGY_new_world_order }
+		
+		x = 2
+		y = 6
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = united_under_christianity
+		}
+	}
+	focus = {
+		id = EGY_an_egypt_for_the_people
+		icon = GFX_focus_rom_handle_king
+		prerequisite = { focus = EGY_abide_by_no_rules focus = EGY_soviet_military_training }
+		
+		x = 0
+		y = 8
+		
+		cost = 8.7
+
+		available = {
+			has_idea = king_farouk_i
+			NOT = {
+				has_completed_focus = EGY_new_world_order
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = EGY_an_egypt_for_the_people_tt
+			hidden_effect = {
+				EGY = { country_event = { id = egypt.19 hours = 6 } }
+			}
+			custom_effect_tooltip = EGY_parliament_dissolution_tt
+		}
+	}
+	focus = {
+		id = EGY_european_intervention
+		icon = GFX_focus_ger_great_red_menace
+		prerequisite = { focus = EGY_an_egypt_for_the_people }
+		
+		x = 0
+		y = 9
+		
+		cost = 8.7
+
+		available = {
+			SOV = {
+				has_war = yes
+			}
+			is_in_faction_with = SOV
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = european_intervention
+			add_offsite_building = { type = arms_factory level = 2 }
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
+	focus = {
+		id = EGY_gardens_of_egypt
+		icon = GFX_focus_prc_agrarian_socialism
+		prerequisite = { focus = EGY_united_under_christianity focus = EGY_new_world_order }
+		
+		x = 2
+		y = 8
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = gardens_of_egypt
+			453 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			446 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_ark_of_the_red_sea
+		icon = GFX_focus_hol_legacy_of_the_de_zeven_provincien_mutiny
+		prerequisite = { focus = EGY_united_under_christianity focus = EGY_new_world_order }
+		
+		x = 4
+		y = 8
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_tech = early_heavy_cruiser
+						}
+					}
+					set_technology = {
+						early_heavy_cruiser = 1
+					}
+				}
+				load_oob = EGY_ark
+			}
+			custom_effect_tooltip = EGY_ark_of_the_red_sea_tt
+		}
+	}
+	focus = {
+		id = EGY_the_second_coming_of_christ
+		icon = GFX_focus_eng_special_air_service
+		prerequisite = { focus = EGY_gardens_of_egypt }
+		prerequisite = { focus = EGY_ark_of_the_red_sea }
+		
+		x = 3
+		y = 9
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+		
+		available = {
+			has_government = communism
+		}	
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {
+				create_country_leader = {
+					name = "Jesus Christ"
+					desc = ""
+					picture = "Portrait_Egypt_Jesus_Christ.dds"
+					expire = "1965.1.1"
+					ideology = anarchist_communism
+					traits = { 
+						symbol_of_humanity
+					}
+				}
+				if = {
+					limit = {
+						has_country_leader = {
+							name = "Jesus Christ"
+						}
+						has_completed_focus = EGY_new_world_order
+					}
+					add_country_leader_trait = new_world_revolutionary
+				}
+			}
+			custom_effect_tooltip = EGY_the_second_coming_of_christ_tt
+		}
+	}
+	focus = {
+		id = EGY_support_the_status_quo
+		icon = GFX_focus_chi_british_cooperation
+		mutually_exclusive = { focus = EGY_sever_ties_with_uk }
+		mutually_exclusive = { focus = EGY_abandon_pharaonism }
+		prerequisite = { focus = EGY_anglo-egyptian_treaty }
+		x = 19
+		y = 2
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				is_historical_focus_on = no
+				factor = 0
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		historical_ai = {
+			has_government = neutrality
+			has_government = democratic
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			remove_ideas = resistance_to_british_occupation_2
+			add_opinion_modifier = { target = ENG modifier = large_increase }
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			hidden_effect = {
+				set_rule = { 
+					can_decline_call_to_war = yes 
+				}
+			}
+			custom_effect_tooltip = EGY_maintain_colonial_ties_tt
+		}
+	}
+	focus = {
+		id = EGY_religious_override
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = EGY_adopt_the_westminster_system focus = EGY_preserve_political_neutrality focus = EGY_uphold_constitutional_liberalism }
+
+		x = 24
+		y = 4
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = EGY_muslim_brotherhood_disestablished
+			}
+			NOT = {
+				has_country_flag = EGY_coptic_church_disestablished
+			}
+			NOT = {
+				has_completed_focus = EGY_pact_of_umar
+			}
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = no
+
+		completion_reward = {
+			unlock_decision_tooltip = { decision = EGY_purge_the_coptic_church }
+			unlock_decision_tooltip = { decision = EGY_purge_the_muslim_brotherhood }
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = EGY_forced_abdication
+		icon = GFX_focus_rom_abdicate
+		prerequisite = { focus = EGY_adopt_the_westminster_system focus = EGY_preserve_political_neutrality focus = EGY_uphold_constitutional_liberalism }
+
+		x = 26
+		y = 4
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			has_idea = king_farouk_i
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = no
+
+		completion_reward = {
+			custom_effect_tooltip = EGY_an_egypt_for_the_people_tt
+			hidden_effect = {
+				EGY = { country_event = { id = egypt.19 hours = 6 } }
+			}
+			if = {
+				limit = {
+					has_completed_focus = EGY_uphold_constitutional_liberalism
+				}
+				custom_effect_tooltip = EGY_parliament_dissolution_tt
+			}
+		}
+	}
+	focus = {
+		id = EGY_pact_of_umar
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = EGY_reform_the_wafd focus = EGY_crackdown_on_extremist_bias }
+		
+		available = {
+			NOT = {
+				has_country_flag = EGY_muslim_brotherhood_placated
+			}
+			NOT = {
+				has_country_flag = EGY_coptic_church_placated
+			}
+
+			NOT = {
+				has_country_flag = EGY_muslim_brotherhood_disestablished
+			}
+			NOT = {
+				has_country_flag = EGY_coptic_church_disestablished
+			}
+			NOT = {
+				has_completed_focus = EGY_religious_override
+			}
+		}
+		
+		x = 19
+		y = 5
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			EGY = { country_event = { id = egypt.26 hours = 6 } }
+		}
+	}
+	focus = {
+		id = EGY_storm_the_palace
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = EGY_pact_of_umar }
+		
+		available = {
+			has_idea = king_farouk_i
+			has_idea = sir_miles_lampson
+		}
+		
+		x = 19
+		y = 6
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			EGY = { country_event = { id = egypt.27 hours = 12 } }
+		}
+	}
+	focus = {
+		id = EGY_adopt_the_westminster_system
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = { focus = EGY_support_the_status_quo }
+		mutually_exclusive = { focus = EGY_preserve_political_neutrality focus = EGY_uphold_constitutional_liberalism }
+		
+		x = 18
+		y = 3
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 100
+			add_opinion_modifier = { target = ENG modifier = large_increase }
+			custom_effect_tooltip = EGY_parliament_dissolution_tt
+		}
+	}
+	focus = {
+		id = EGY_reform_the_wafd
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = EGY_adopt_the_westminster_system }
+		
+		x = 17
+		y = 4
+		
+		cost = 8.7
+
+		available = {
+			democratic > 0.4
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+		}
+	}
+	focus = {
+		id = EGY_allies_til_the_end
+		icon = GFX_focus_eng_motion_of_no_confidence
+		prerequisite = { focus = EGY_reform_the_wafd }
+		
+		x = 15
+		y = 5
+		
+		cost = 8.7
+
+		available = {
+			date > 1939.1.1
+			has_government = democratic
+			ENG = {
+				has_country_leader = {
+					name = "Winston Churchill"
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			hidden_effect = {
+				ENG = {
+					end_puppet = EGY
+				}
+			}
+			ENG = {
+				set_autonomy = {
+					target = EGY
+					autonomy_state = autonomy_free
+				}
+			}
+			ENG = {
+				diplomatic_relation = {
+					country = EGY
+					relation = guarantee
+					active = yes
+				}
+			}
+			hidden_effect = {
+				set_country_flag = EGY_declared_independence
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = EGY_british_technology_sharing
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = EGY_allies_til_the_end }
+		
+		x = 15
+		y = 6
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 0.50
+				uses = 1
+				category = electronics
+			}
+			EGY = {
+				add_to_tech_sharing_group = commonwealth_research
+			}
+		}
+	}
+	focus = {
+		id = EGY_prepare_intervention
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = EGY_reform_the_wafd }
+		
+		x = 17
+		y = 6
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {
+				set_rule = { can_only_justify_war_on_threat_country = no }
+			}
+			add_war_support = 0.05
+			add_ideas = prepare_intervention
+			add_offsite_building = { type = arms_factory level = 2 }
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
+	focus = {
+		id = EGY_lead_the_africa_front
+		icon = GFX_goal_tfv_saf_secure_interests_in_africa
+		prerequisite = { focus = EGY_prepare_intervention }
+		mutually_exclusive = { focus = EGY_homeland_defense }
+		
+		x = 17
+		y = 7
+
+		cost = 8.7
+
+		available = {
+			has_army_manpower = { size > 99999 }
+			has_war_with = ITA
+			ENG = {
+				has_war_with = ITA
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				has_game_rule = {
+					rule = EGY_ai_behavior
+					option = NEUTRALITY_ITTIHAD_PARTY
+				}
+				factor = 0
+			}
+			modifier = {
+				has_game_rule = {
+					rule = EGY_ai_behavior
+					option = DEMOCRATIC_WAFD_PARTY
+				}
+				factor = 0
+			}
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			ENG = { country_event = { id = britain.1005 days = 1 } }
+		}
+	}
+	focus = {
+		id = EGY_total_mobilization
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = EGY_lead_the_africa_front }
+		
+		x = 15
+		y = 8
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = war_economy
+		}
+	}
+	focus = {
+		id = EGY_elect_lampson
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = { focus = EGY_total_mobilization }
+		available = {
+			has_idea = sir_miles_lampson
+			is_in_faction_with = ENG
+			NOT = {
+				has_war_with = ENG
+			}
+			has_government = democratic
+		}
+		
+		x = 15
+		y = 9
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			create_country_leader = {
+				name = "Sir Miles Lampson"
+				desc = "POLITICS_SIR_MILES_LAMPSON_DESC"
+				picture = "Portrait_Egypt_Sir_Miles_Lampson.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = { 
+					indomitable_perseverance
+					dislikes_germany
+				}
+			}
+			ENG = {
+				add_opinion_modifier = { target = EGY modifier = large_increase }
+			}
+		}
+	}
+	focus = {
+		id = EGY_a_rival_to_the_afrika_korps
+		icon = GFX_focus_generic_license_production
+		prerequisite = { focus = EGY_lead_the_africa_front }
+		
+		x = 19
+		y = 8
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				ahead_reduction = 1
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = EGY_saharan_roads
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = EGY_lead_the_africa_front }
+		x = 17
+		y = 9
+
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}	
+		}
+		completion_reward = {
+			452 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_operation_compass
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = EGY_saharan_roads }
+		available = {
+			has_war_with = ITA
+			is_in_faction_with = ENG
+		}
+		x = 16
+		y = 10
+
+		cost = 2.9
+
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ENG
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						OR = {
+							has_tech = 	basic_light_tank
+							has_tech = improved_light_tank
+						}
+					}
+					division_template = {
+						name = "Western Desert Corps"
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							light_armor = { x = 2 y = 0 }
+							light_armor = { x = 2 y = 1 }
+							light_armor = { x = 2 y = 2 }
+							light_armor = { x = 2 y = 3 }
+						}
+						support = {
+					        engineer = { x = 0 y = 0 }
+							artillery = { x = 0 y = 1 }
+						}
+					}
+					else = {
+						division_template = {
+							name = "Western Desert Corps"
+							regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 0 y = 4 }
+								infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }
+								infantry = { x = 1 y = 3 }
+								infantry = { x = 1 y = 4 }
+							}
+							support = {
+								engineer = { x = 0 y = 0 }
+								artillery = { x = 0 y = 1 }
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							is_in_faction_with = EGY
+							controls_state = 447
+						}	
+					}
+					load_oob = "EGY_western_desert_corps_el_alamein"				
+					else = {
+						load_oob = "EGY_western_desert_corps"
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_country = {
+						is_in_faction_with = EGY
+						controls_state = 447
+					}
+				}
+				custom_effect_tooltip = EGY_operation_compass_effect_1					
+				else = {
+					custom_effect_tooltip = EGY_operation_compass_effect_2
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_fortify_el-alamein
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = EGY_saharan_roads }
+		available = {
+			EGY = {
+				has_full_control_of_state = 447
+			}
+		}
+		x = 18
+		y = 10
+
+		cost = 2.9
+
+		completion_reward = {
+			hidden_effect = {
+				if = {
+					limit = { 
+						EGY = {
+							has_full_control_of_state = 447
+						}
+					}
+					447 = {
+						add_building_construction = {
+							type = bunker
+							level = 5
+							province = 1071
+							instant_build = yes
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = EGY_fortify_el-alamein_tt
+		}
+	}
+	focus = {
+		id = EGY_italian_defense
+		icon = GFX_focus_attack_italy
+		prerequisite = { focus = EGY_operation_compass }
+		prerequisite = { focus = EGY_fortify_el-alamein }
+		available = {
+			has_war_with = ITA
+		}
+		x = 17
+		y = 11
+
+		cost = 5
+
+		completion_reward = {
+			add_ideas = defense_of_the_motherland
+		}
+	}
+	focus = {
+		id = EGY_preserve_political_neutrality
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = EGY_support_the_status_quo }
+		mutually_exclusive = { focus = EGY_adopt_the_westminster_system focus = EGY_uphold_constitutional_liberalism }
+		
+		x = 20
+		y = 3
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				has_game_rule = {
+					rule = EGY_ai_behavior
+					option = NEUTRALITY_ITTIHAD_PARTY
+				}
+				factor = 10
+			}
+			modifier = {
+				has_game_rule = {
+					rule = EGY_ai_behavior
+					option = DEMOCRATIC_WAFD_PARTY
+				}
+				factor = 10
+			}
+			modifier = {
+				has_game_rule = {
+					rule = EGY_ai_behavior
+					option = DEFAULT
+				}
+				factor = 10
+			}
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = -0.03
+			add_political_power = 50
+			set_rule = { can_only_justify_war_on_threat_country = yes }
+			hidden_effect = {
+				set_rule = { can_not_declare_war = yes }
+			}
+		}
+	}
+	focus = {
+		id = EGY_crackdown_on_extremist_bias
+		icon = GFX_focus_usa_voter_registration_act
+		prerequisite = { focus = EGY_preserve_political_neutrality }
+		
+		x = 22
+		y = 4
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.10
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+			add_ideas = crackdown_on_extremist_bias
+		}
+	}
+	focus = {
+		id = EGY_ban_boycotts
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = EGY_crackdown_on_extremist_bias }
+		mutually_exclusive = { focus = EGY_anti-western_policies }
+		
+		x = 21
+		y = 5
+		
+		cost = 8.7
+		
+		available = {
+			has_country_flag =  EGY_placate_the_churches_cce_lead_flag
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_ideas = boycott_ban
+			custom_effect_tooltip = EGY_parliament_dissolution_tt
+		}
+	}
+	focus = {
+		id = EGY_anti-fascist_propaganda
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		prerequisite = { focus = EGY_ban_boycotts }
+		
+		x = 21
+		y = 6
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			ITA = { add_opinion_modifier = { target = EGY modifier = large_decrease } }
+			GER = { add_opinion_modifier = { target = EGY modifier = large_decrease } }
+			add_timed_idea = {
+				idea = anti-fascist_propaganda
+				days = 730
+			}
+		}
+	}
+	focus = {
+		id = EGY_anti-western_policies
+		icon = GFX_focus_AST_never_gallipoli
+		prerequisite = { focus = EGY_crackdown_on_extremist_bias }
+		mutually_exclusive = { focus = EGY_ban_boycotts }
+		
+		x = 23
+		y = 5
+		
+		cost = 8.7
+		
+		available = {
+			has_country_flag =  EGY_placate_the_churches_mbh_lead_flag
+		}
+		
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_stability = -0.05
+			add_political_power = -50
+			add_ideas = anti-western_policies
+			custom_effect_tooltip = EGY_parliament_dissolution_tt
+		}
+	}
+	focus = {
+		id = EGY_monopolize_endowments
+		icon = GFX_focus_mex_privatisation
+		prerequisite = { focus = EGY_anti-western_policies }
+		
+		x = 23
+		y = 6
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = anti-western_policies
+				add_idea = anti-western_policies_2
+			}
+		}
+	}
+	focus = {
+		id = EGY_homeland_defense
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = EGY_anti-fascist_propaganda focus = EGY_monopolize_endowments focus = EGY_prepare_intervention }
+		mutually_exclusive = { focus = EGY_lead_the_africa_front }
+		
+		x = 19
+		y = 7
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				has_completed_focus = EGY_adopt_the_westminster_system
+				factor = 0
+			}
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_ideas = homeland_defense
+		}
+	}
+	focus = {
+		id = EGY_uphold_constitutional_liberalism
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = EGY_support_the_status_quo }
+		mutually_exclusive = { focus = EGY_adopt_the_westminster_system focus = EGY_preserve_political_neutrality }
+		
+		x = 29
+		y = 3
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = -0.05
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = EGY_liberal_intervention_act
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = EGY_uphold_constitutional_liberalism }
+		
+		x = 29
+		y = 4
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			set_rule = { can_send_volunteers = yes }
+			add_ideas = limited_intervention_act
+		}
+	}
+	focus = {
+		id = EGY_lend_lease_aid
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = EGY_liberal_intervention_act }
+		
+		x = 27
+		y = 5
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			set_rule = { can_guarantee_other_ideologies = yes }
+			add_ideas = lend_lease_aid
+		}
+	}
+	focus = {
+		id = EGY_focus_on_asia
+		icon = GFX_focus_usa_focus_on_asia
+		prerequisite = { focus = EGY_lend_lease_aid }
+		
+		x = 26
+		y = 6
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_political_power = 100
+			add_opinion_modifier = { target = CHI modifier = large_increase }
+			add_opinion_modifier = { target = AST modifier = large_increase }
+			add_opinion_modifier = { target = NZL modifier = large_increase }
+		}
+	}
+	focus = {
+		id = EGY_deal_of_the_two_empires
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		prerequisite = { focus = EGY_focus_on_asia }
+		
+		x = 26
+		y = 7
+		
+		cost = 8.7
+
+		available = {
+			JAP = {
+				has_war_with = CHI
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			EGY = {
+				add_to_tech_sharing_group = empire_research_deal
+				add_ideas = deal_of_the_two_empires
+			}
+			effect_tooltip = {
+				CHI = {
+					add_to_tech_sharing_group = empire_research_deal
+					add_ideas = deal_of_the_two_empires
+				}
+			}
+			hidden_effect = {
+				CHI = { country_event = { id = egypt.32 days = 1 } }
+			}
+		}
+	}
+	focus = {
+		id = EGY_continue_the_war_against_japan
+		icon = GFX_focus_attack_japan
+		prerequisite = { focus = EGY_deal_of_the_two_empires }
+		mutually_exclusive = { focus = EGY_strengthen_polish_ties }
+		
+		x = 26
+		y = 8
+		
+		cost = 8.7
+
+		available = {
+			JAP = {
+				has_war_with = CHI
+			}
+			NOT = {
+				JAP = {
+					has_completed_focus = JAP_support_the_kodoha_faction
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				JAP = {
+					has_completed_focus = JAP_support_the_kodoha_faction
+				}
+				factor = 0
+			}
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = JAP
+			}
+		}
+	}
+	focus = {
+		id = EGY_focus_on_europe
+		icon = GFX_focus_usa_focus_on_europe
+		prerequisite = { focus = EGY_lend_lease_aid }
+		
+		x = 28
+		y = 6
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_political_power = 100
+			add_opinion_modifier = { target = BEL modifier = large_increase }
+			add_opinion_modifier = { target = HOL modifier = large_increase }
+			add_opinion_modifier = { target = POL modifier = large_increase }
+			add_opinion_modifier = { target = CZE modifier = large_increase }
+		}
+	}
+	focus = {
+		id = EGY_mediterranean_defense_committee
+		icon = GFX_focus_generic_coastal_fort
+		prerequisite = { focus = EGY_focus_on_europe focus = EGY_complete_decolonization }
+		
+		x = 30
+		y = 7
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			hidden_effect = {
+				set_rule = { can_create_factions = yes }
+				TUR = { country_event = { id = egypt.33 days = 1 } }
+				GRE = { country_event = { id = egypt.34 days = 1 } }
+			}
+			create_faction = "Mediterranean Defense Committee"
+			add_ideas = mediterranean_defense_committee_member
+			custom_effect_tooltip = EGY_mediterranean_defense_committee_tt_1
+			effect_tooltip = {
+				TUR = {
+					add_ideas = mediterranean_defense_committee_member
+				}
+			}
+			custom_effect_tooltip = EGY_mediterranean_defense_committee_tt_2
+			effect_tooltip = {
+				GRE = {
+					add_ideas = mediterranean_defense_committee_member
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_liberate_the_islands
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = EGY_mediterranean_defense_committee }
+		
+		x = 30
+		y = 8
+		
+		cost = 8.7
+
+		available = {
+			ENG = {
+				has_full_control_of_state = 116
+				has_full_control_of_state = 183
+			}
+			MLT = {
+				has_country_flag = EGY_annexed_colony
+			}
+			CYP = {
+				has_country_flag = EGY_annexed_colony
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			ENG = { country_event = { id = britain.1007 days = 1 } }
+		}
+	}
+	focus = {
+		id = EGY_strengthen_polish_ties
+		icon = GFX_focus_generic_polish_deal
+		prerequisite = { focus = EGY_focus_on_europe }
+		mutually_exclusive = { focus = EGY_continue_the_war_against_japan }
+		
+		x = 28
+		y = 8
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_political_power = 50
+			add_opinion_modifier = { target = POL modifier = large_increase }
+			give_guarantee = POL
+		}
+	}
+	focus = {
+		id = EGY_complete_decolonization
+		icon = GFX_focus_eng_decolonization
+		prerequisite = { focus = EGY_liberal_intervention_act }
+		available = {
+			has_government = democratic
+		}
+		
+		x = 31
+		y = 5
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_stability = 0.05
+			swap_ideas = {
+				remove_idea = the_british_protectorate
+				add_idea = the_british_protectorate_1
+			}
+			hidden_effect = {
+				ENG = {
+					end_puppet = EGY
+				}
+			}
+			ENG = {
+				set_autonomy = {
+					target = EGY
+					autonomy_state = autonomy_free
+				}
+			}
+			hidden_effect = {
+				set_country_flag = EGY_declared_independence
+			}
+		}
+	}
+	focus = {
+		id = EGY_libyan_liberation
+		icon = GFX_focus_attack_italy
+		prerequisite = { focus = EGY_complete_decolonization }
+		available = {
+			NOT = {
+				is_in_faction_with = ITA
+			}
+			LBA = {
+				has_country_flag = EGY_annexed_colony
+			}
+		}
+		
+		x = 31
+		y = 6
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ITA
+			}
+		}
+	}
+	focus = {
+		id = EGY_demand_african_liberations
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = EGY_complete_decolonization }
+		available = {
+			NOT = {
+				is_in_faction_with = ITA
+			}
+			OR = {
+				any_country = {
+					has_full_control_of_state = 558
+					NOT = {
+						has_war_with = EGY
+					}
+				}
+				any_country = {
+					has_full_control_of_state = 274
+					NOT = {
+						has_war_with = EGY
+					}
+				}
+				any_country = {
+					has_full_control_of_state = 700
+					NOT = {
+						has_war_with = EGY
+					}
+				}
+				any_country = {
+					has_full_control_of_state = 269
+					NOT = {
+						has_war_with = EGY
+					}
+				}
+				any_country = {
+					has_full_control_of_state = 548
+					NOT = {
+						has_war_with = EGY
+					}
+				}
+				any_country = {
+					has_full_control_of_state = 547
+					NOT = {
+						has_war_with = EGY
+					}
+				}
+				any_country = {
+					has_full_control_of_state = 546
+					NOT = {
+						has_war_with = EGY
+					}
+				}
+				any_country = {
+					has_full_control_of_state = 770
+					NOT = {
+						has_war_with = EGY
+					}
+				}
+				any_country = {
+					has_full_control_of_state = 771
+					NOT = {
+						has_war_with = EGY
+					}
+				}
+				any_country = {
+					has_full_control_of_state = 542
+					NOT = {
+						has_war_with = EGY
+					}
+				}
+				any_country = {
+					has_full_control_of_state = 545
+					NOT = {
+						has_war_with = EGY
+					}
+				}
+				any_country = {
+					has_full_control_of_state = 701
+					NOT = {
+						has_war_with = EGY
+					}
+				}
+			}
+		}
+		
+		x = 33
+		y = 6
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			558 = {
+				owner = {
+					if = {
+						limit = {
+							has_full_control_of_state = 558
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+						country_event = { id = britain.1006 hours = 6 }
+					}
+				}
+			}
+			274 = {
+				owner = {
+					if = {
+						limit = {
+							has_full_control_of_state = 274
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+						country_event = { id = britain.1006 hours = 6 }
+					}
+				}
+			}
+			700 = {
+				owner = {
+					if = {
+						limit = {
+							has_full_control_of_state = 700
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+						country_event = { id = britain.1006 hours = 6 }
+					}
+				}
+			}
+			269 = {
+				owner = {
+					if = {
+						limit = {
+							has_full_control_of_state = 269
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+						country_event = { id = britain.1006 hours = 6 }
+					}
+				}
+			}
+			548 = {
+				owner = {
+					if = {
+						limit = {
+							has_full_control_of_state = 548
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+						country_event = { id = britain.1006 hours = 6 }
+					}
+				}
+			}
+			547 = {
+				owner = {
+					if = {
+						limit = {
+							has_full_control_of_state = 547
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+						country_event = { id = britain.1006 hours = 6 }
+					}
+				}
+			}
+			546 = {
+				owner = {
+					if = {
+						limit = {
+							has_full_control_of_state = 546
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+						country_event = { id = britain.1006 hours = 6 }
+					}
+				}
+			}
+			770 = {
+				owner = {
+					if = {
+						limit = {
+							has_full_control_of_state = 770
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+						country_event = { id = britain.1006 hours = 6 }
+					}
+				}
+			}
+			771 = {
+				owner = {
+					if = {
+						limit = {
+							has_full_control_of_state = 771
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+						country_event = { id = britain.1006 hours = 6 }
+					}
+				}
+			}
+			542 = {
+				owner = {
+					if = {
+						limit = {
+							has_full_control_of_state = 542
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+						country_event = { id = britain.1006 hours = 6 }
+					}
+				}
+			}
+			545 = {
+				owner = {
+					if = {
+						limit = {
+							has_full_control_of_state = 545
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+						country_event = { id = britain.1006 hours = 6 }
+					}
+				}
+			}
+			701 = {
+				owner = {
+					if = {
+						limit = {
+							has_full_control_of_state = 701
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+						country_event = { id = britain.1006 hours = 6 }
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_form_the_african_republic
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = EGY_demand_african_liberations }
+		
+		x = 33
+		y = 7
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NGA = {
+							has_full_control_of_state = 558
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+					}
+					EGY = {
+						annex_country = {
+							target = NGA
+							transfer_troops = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						GHA = {
+							has_full_control_of_state = 274
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+					}
+					EGY = {
+						annex_country = {
+							target = GHA
+							transfer_troops = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						SIE = {
+							has_full_control_of_state = 700
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+					}
+					EGY = {
+						annex_country = {
+							target = SIE
+							transfer_troops = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						SOM = {
+							has_full_control_of_state = 269
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+					}
+					EGY = {
+						annex_country = {
+							target = SOM
+							transfer_troops = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						UGA = {
+							has_full_control_of_state = 548
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+					}
+					EGY = {
+						annex_country = {
+							target = UGA
+							transfer_troops = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						KEN = {
+							has_full_control_of_state = 547
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+					}
+					EGY = {
+						annex_country = {
+							target = KEN
+							transfer_troops = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						TZN = {
+							has_full_control_of_state = 546
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+					}
+					EGY = {
+						annex_country = {
+							target = TZN
+							transfer_troops = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						MLW = {
+							has_full_control_of_state = 770
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+					}
+					EGY = {
+						annex_country = {
+							target = MLW
+							transfer_troops = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						ZAM = {
+							has_full_control_of_state = 771
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+					}
+					EGY = {
+						annex_country = {
+							target = ZAM
+							transfer_troops = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						BOT = {
+							has_full_control_of_state = 542
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+					}
+					EGY = {
+						annex_country = {
+							target = BOT
+							transfer_troops = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						ZIM = {
+							has_full_control_of_state = 545
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+					}
+					EGY = {
+						annex_country = {
+							target = ZIM
+							transfer_troops = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						GAM = {
+							has_full_control_of_state = 701
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+					}
+					EGY = {
+						annex_country = {
+							target = GAM
+							transfer_troops = yes
+						}
+					}
+				}
+				EGY = { set_cosmetic_tag = EGY_african_republic }
+			}
+			custom_effect_tooltip = EGY_form_the_african_republic_tt
+		}
+	}
+	focus = {
+		id = EGY_promote_arab_democracies
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = EGY_uphold_constitutional_liberalism }
+		
+		x = 33
+		y = 4
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			if = {
+				limit = {
+					IRQ = {
+						NOT = {
+							has_government = democratic
+						}
+					}
+				}
+				IRQ = {
+					add_ideas = arab_democracies_act
+				}
+			}
+			if = {
+				limit = {
+					PER = {
+						NOT = {
+							has_government = democratic
+						}
+					}
+				}
+				PER = {
+					add_ideas = arab_democracies_act
+				}
+			}
+			if = {
+				limit = {
+					SAU = {
+						NOT = {
+							has_government = democratic
+						}
+					}
+				}
+				SAU = {
+					add_ideas = arab_democracies_act
+				}
+			}
+			if = {
+				limit = {
+					YEM = {
+						NOT = {
+							has_government = democratic
+						}
+					}
+				}
+				YEM = {
+					add_ideas = arab_democracies_act
+				}
+			}
+			if = {
+				limit = {
+					OMA = {
+						NOT = {
+							has_government = democratic
+						}
+					}
+				}
+				OMA = {
+					add_ideas = arab_democracies_act
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_abandon_pharaonism
+		icon = GFX_goal_generic_secret_weapon
+		mutually_exclusive = { focus = EGY_sever_ties_with_uk }
+		mutually_exclusive = { focus = EGY_support_the_status_quo }
+		prerequisite = { focus = EGY_anglo-egyptian_treaty }
+		x = 39
+		y = 2
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_stability = -0.05
+			ENG = { add_opinion_modifier = { target = EGY modifier = large_decrease } }
+			remove_ideas = divided_under_pharaonism
+		}
+	}
+	focus = {
+		id = EGY_the_purge_of_democracy
+		icon = GFX_focus_generic_strike_at_democracy3
+		prerequisite = { focus = EGY_abandon_pharaonism }
+		x = 39
+		y = 3
+
+		cost = 12.9
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		select_effect = {
+			add_ideas = purge_of_democracy_1
+		}
+		
+		completion_reward = {
+			add_war_support = 0.1
+			add_political_power = 150
+			EGY_purge_of_democracy_level_up = yes
+			hidden_effect = {
+				EGY = { country_event = { id = egypt.44 hours = 6 } }
+			}
+		}
+	}
+	focus = {
+		id = EGY_the_second_crusade
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		prerequisite = { focus = EGY_the_purge_of_democracy }
+		mutually_exclusive = { focus = EGY_search_for_a_new_king focus = EGY_in_the_name_of_islam }
+		
+		x = 36
+		y = 4
+
+		cost = 8.7
+
+		available = {
+			NOT = {
+				has_government = neutrality
+			}
+			NOT = {
+				has_country_flag = EGY_coptic_church_placated
+			}
+			has_country_flag =  EGY_placate_the_churches_cce_lead_flag
+			check_variable = { CCE.christian_church_influence > 30 }
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.1
+			add_ai_strategy = {
+				type = alliance
+				id = ITA
+				value = 200
+			}
+			set_party_name = { 
+				ideology = neutrality 
+				name = EGY_coptic_church_party
+				long_name = EGY_coptic_church_party
+			}
+			unlock_decision_tooltip = { decision = EGY_purge_the_muslim_brotherhood }
+			hidden_effect = {
+				remove_ideas = the_british_protectorate
+			}
+		}
+	}
+	focus = {
+		id = EGY_coptic_might
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = EGY_the_second_crusade }
+		
+		x = 36
+		y = 5
+
+		cost = 8.7
+
+		available = {
+			OR = {
+				has_government = neutrality
+				neutrality > 0.5
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = yes
+			}
+			hidden_effect = {
+				retire_country_leader = yes
+			}
+			create_country_leader = {
+				name = "Taha Hussein"
+				desc = ""
+				picture = "Portrait_Egypt_Taha_Hussein.dds"
+				expire = "1965.1.1"
+				ideology = centrism
+				traits = {
+				}
+			}
+			add_ideas = coptic_might
+			add_offsite_building = { type = arms_factory level = 2 }
+		}
+	}
+	focus = {
+		id = EGY_surrender_to_the_catholic_church
+		icon = GFX_focus_CZE_german_puppet
+		prerequisite = { focus = EGY_coptic_might }
+		mutually_exclusive = { focus = EGY_reclaim_the_holy_land }
+		
+		x = 35
+		y = 6
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				custom_effect_tooltip = EGY_surrender_to_the_catholic_church_tt
+			}
+			ITA = { country_event = { id = Italy.1002 hours = 1 } }
+		}
+	}
+	focus = {
+		id = EGY_reclaim_the_holy_land
+		icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = EGY_coptic_might }
+		mutually_exclusive = { focus = EGY_surrender_to_the_catholic_church }
+		
+		x = 37
+		y = 6
+
+		cost = 8.7
+
+		available = {
+			NOT = {
+				has_war_with = MAP
+				has_war_with = ENG
+				has_war_with = ISR
+				has_war_with = PAL
+			}
+			
+			937 = {
+				OR = {
+					is_owned_and_controlled_by = ISR
+					is_owned_and_controlled_by = MAP
+					is_owned_and_controlled_by = PAL
+					is_owned_and_controlled_by = ENG
+				}
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 150
+			EGY = {
+				add_state_core = 938
+				add_state_core = 937
+				add_state_core = 936
+				add_state_core = 935
+			}
+		}
+	}
+	focus = {
+		id = EGY_search_for_a_new_king
+		icon = GFX_focus_hun_elect_a_king
+		prerequisite = { focus = EGY_the_purge_of_democracy }
+		mutually_exclusive = { focus = EGY_the_second_crusade focus = EGY_in_the_name_of_islam }
+		
+		x = 39
+		y = 4
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			hidden_effect = {
+				random_list = {
+					70 = {
+						EGY = { country_event = { id = egypt.20 days = 2 } }
+					}
+					30 = {
+						EGY = { country_event = { id = egypt.21 days = 2 } }
+					}
+				}
+			}
+			custom_effect_tooltip = EGY_the_last_party_tt
+			add_ai_strategy = {
+				type = alliance
+				id = TUR
+				value = 200
+			}
+			add_political_power = 150
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+			hidden_effect = {
+				remove_ideas = the_british_protectorate
+			}
+		}
+	}
+	focus = {
+		id = EGY_restore_the_sultanate
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = EGY_search_for_a_new_king }
+		
+		x = 39
+		y = 5
+
+		cost = 8
+
+		available = {
+			OR = {
+				has_government = neutrality
+				neutrality > 0.5
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_game_rule = {
+					rule = EGY_ai_behavior
+					option = NEUTRALITY_COPTIC_CHURCH
+				}
+				factor = 0
+			}
+			modifier = {
+				has_game_rule = {
+					rule = EGY_ai_behavior
+					option = NEUTRALITY_MUSLIM_BROTHERHOOD
+				}
+				factor = 0
+			}
+			modifier = {
+				has_game_rule = {
+					rule = EGY_ai_behavior
+					option = NEUTRALITY_SULTANATE
+				}
+				factor = 10
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_war_support = 0.1
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = yes
+			}
+			hidden_effect = {
+				retire_country_leader = yes
+			}
+			create_country_leader = {
+				name = "Ömer Faruk Efendi"
+				desc = ""
+				picture = "Portrait_Egypt_Omer_Faruk_Efendi.dds"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					football_fan
+				}
+			}
+			set_cosmetic_tag = EGY_sultanate_of_egypt
+		}
+	}
+	focus = {
+		id = EGY_rekindle_the_old_alliance
+		icon = GFX_focus_ege_rekindle_the_old_alliance
+		prerequisite = { focus = EGY_restore_the_sultanate }
+		
+		x = 39
+		y = 6
+
+		cost = 8
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			TUR = { country_event = { id = egypt.45 days = 1 } }
+		}
+	}
+	focus = {
+		id = EGY_in_the_name_of_islam
+		icon = GFX_focus_hol_war_on_pacifism
+		prerequisite = { focus = EGY_the_purge_of_democracy }
+		mutually_exclusive = { focus = EGY_the_second_crusade focus = EGY_search_for_a_new_king }
+		
+		x = 42
+		y = 4
+
+		cost = 8.7
+
+		available = {
+			NOT = {
+				has_government = neutrality
+			}
+			NOT = {
+				has_country_flag = EGY_muslim_brotherhood_placated
+			}
+			has_country_flag =  EGY_placate_the_churches_mbh_lead_flag
+			custom_trigger_tooltip = {
+				tooltip = EGY_crush_the_coptic_church_tt_1
+			}
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.1
+			set_party_name = { 
+				ideology = neutrality 
+				name = EGY_muslim_brotherhood_party
+				long_name = EGY_muslim_brotherhood_party
+			}
+			unlock_decision_tooltip = { decision = EGY_purge_the_coptic_church }
+			hidden_effect = {
+				remove_ideas = the_british_protectorate
+			}
+		}
+	}
+	focus = {
+		id = EGY_spread_the_muslim_brotherhood
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = EGY_in_the_name_of_islam }
+		
+		x = 42
+		y = 5
+
+		cost = 8.7
+
+		available = {
+			OR = {
+				has_government = neutrality
+				neutrality > 0.5
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_political_power = 150
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = yes
+			}
+			hidden_effect = {
+				retire_country_leader = yes
+			}
+			create_country_leader = {
+				name = "Hassan al-Banna"
+				desc = ""
+				picture = "Portrait_Egypt_Hassan_al-Banna.dds"
+				expire = "1965.1.1"
+				ideology = centrism
+				traits = {
+				}
+			}
+			add_ideas = spread_the_muslim_brotherhood
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = IRQ
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = PER
+			}
+		}
+	}
+        focus = {
+		id = EGY_islam_propagana
+		icon = GFX_focus_generic_fascist_propaganda
+		prerequisite = { focus = EGY_spread_the_muslim_brotherhood }
+		
+		x = 42
+		y = 6
+
+		cost = 8.7
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_political_power = -40
+			add_stability = 0.08
+			add_war_support = 0.05
+
+		}
+	}
+
+
+##### #   # ####  #   #  #### ##### ####  #   #
+  #   ##  # #   # #   # #       #   #   # #   #
+  #   # # # #   # #   #  ###    #   ####   # #
+  #   #  ## #   # #   #     #   #   ###     #
+##### #   # ####   ###  ####    #   #  ##   #
+	focus = {
+		id = EGY_reform_agrarian_culture
+		icon = GFX_goal_generic_consumer_goods
+		
+		x = 50
+		y = 0
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+			EGY_national_poverty_level_down = yes
+		}
+	}
+	focus = {
+		id = EGY_found_the_gfluke
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = EGY_reform_agrarian_culture }
+		relative_position_id = EGY_reform_agrarian_culture
+		
+		x = -4
+		y = 1
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_ideas = egypt_first
+			EGY_great_depression_level_down = yes
+		}
+	}
+	focus = {
+		id = EGY_establish_gold_mining_operation
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		prerequisite = { focus = EGY_found_the_gfluke }
+		mutually_exclusive = { focus = EGY_trade_safety_concessions }
+		relative_position_id = EGY_found_the_gfluke
+		
+		x = -1
+		y = 1
+		
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+			unlock_decision_category_tooltip = EGY_a_flourishing_economy
+			USA = {
+				add_opinion_modifier = { target = EGY modifier = embargo }
+			}
+		}
+	}
+	focus = {
+		id = EGY_trade_safety_concessions
+		icon = GFX_focus_generic_concessions
+		prerequisite = { focus = EGY_found_the_gfluke }
+		mutually_exclusive = { focus = EGY_establish_gold_mining_operation }
+		relative_position_id = EGY_found_the_gfluke
+		
+		x = 1
+		y = 1
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			ENG = { remove_resource_rights = 447 }
+			ENG = { add_opinion_modifier = { target = EGY modifier = medium_increase } }
+			FRA = { add_opinion_modifier = { target = EGY modifier = medium_increase } }
+		}
+	}
+	focus = {
+		id = EGY_nationalize_the_oil_fields
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = EGY_establish_gold_mining_operation focus = EGY_trade_safety_concessions }
+		relative_position_id = EGY_establish_gold_mining_operation
+		
+		x = 1
+		y = 1
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			ENG = { remove_resource_rights = 447 }
+			add_resource = {
+				type = oil
+				amount = 16
+				state = 447
+			}
+			add_resource = {
+				type = oil
+				amount = 6
+				state = 452
+			}
+			hidden_effect = { news_event = { id = news.1010 hours = 6 } }
+		}
+	}
+	focus = {
+		id = EGY_end_british_trade_influence
+		icon = GFX_focus_eng_global_defense
+		prerequisite = { focus = EGY_establish_gold_mining_operation }
+		relative_position_id = EGY_nationalize_the_oil_fields
+		
+		x = -1
+		y = 2
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			ENG = {
+				add_opinion_modifier = { target = EGY modifier = embargo }
+			}
+			EGY_great_depression_level_down = yes
+		}
+	}
+	focus = {
+		id = EGY_nationalize_the_farmlands
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = EGY_nationalize_the_oil_fields }
+		relative_position_id = EGY_nationalize_the_oil_fields
+		
+		x = 0
+		y = 1
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			EGY_national_poverty_level_down = yes
+		}
+	}
+	focus = {
+		id = EGY_license_the_squander_bug
+		icon = GFX_focus_AST_squander_bug
+		prerequisite = { focus = EGY_trade_safety_concessions }
+		relative_position_id = EGY_nationalize_the_oil_fields
+		
+		x = 1
+		y = 2
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_war_support = -0.05
+			EGY_great_depression_level_down = yes
+		}
+	}
+	focus = {
+		id = EGY_begin_the_new_cotton_age
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = EGY_nationalize_the_farmlands }
+		relative_position_id = EGY_nationalize_the_farmlands
+		
+		x = 0
+		y = 2
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = -0.05
+			EGY_great_depression_level_down = yes
+		}
+	}
+	focus = {
+		id = EGY_blow_the_suez
+		icon = GFX_focus_ege_blow_the_suez
+		prerequisite = { focus = EGY_end_british_trade_influence }
+		relative_position_id = EGY_end_british_trade_influence
+		
+		x = -1
+		y = 1
+		
+		cost = 8.7
+		
+		available = {
+			EGY = {
+				has_full_control_of_state = 446
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			hidden_effect = {
+				446 = {
+					add_province_modifier = {
+						static_modifiers = { flooded }
+						province = {
+							id = 12049
+							id = 4073
+							id = 1155
+							id = 9947
+						}
+					}
+					damage_building = {
+						type = infrastructure
+						damage = 3
+					}
+				}
+				set_global_flag = SUEZ_CANAL_BLOCKED
+			}
+			custom_effect_tooltip = EGY_blow_the_suez_tt
+		}
+	}
+	focus = {
+		id = EGY_claim_the_suez
+		icon = GFX_focus_hol_prepare_the_inundation_lines
+		prerequisite = { focus = EGY_license_the_squander_bug }
+		relative_position_id = EGY_license_the_squander_bug
+		
+		x = 1
+		y = 1
+		
+		cost = 8.7
+		
+		available = {
+			any_country = {
+				has_full_control_of_state = 446
+				NOT = {
+					has_war_with = EGY
+				}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			446 = {
+				owner = {
+					if = {
+						limit = {
+							NOT = {
+								has_war_with = EGY
+							}
+						}
+						country_event = { id = britain.1003 hours = 6 }
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_national_estate_developments
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = EGY_reform_agrarian_culture }
+		relative_position_id = EGY_reform_agrarian_culture
+		
+		x = 4
+		y = 1
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = construction_tech
+			}
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = bahgat_group
+		}
+	}
+	focus = {
+		id = EGY_colonize_the_nile
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = EGY_national_estate_developments }
+		relative_position_id = EGY_national_estate_developments
+		
+		x = -1
+		y = 1
+
+		cost = 8.7
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = industrial_complex
+				level = 4
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			456 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_revive_the_europe-india_transit_proposal
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = EGY_colonize_the_nile }
+		relative_position_id = EGY_colonize_the_nile
+		
+		x = 0
+		y = 1
+
+		cost = 8.7
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}	
+		}
+		completion_reward = {
+			ENG = { add_opinion_modifier = { target = EGY modifier = medium_increase } }
+			RAJ = { add_opinion_modifier = { target = EGY modifier = medium_increase } }
+			446 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			453 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_ideas = egyptian_national_railways
+		}
+	}
+	focus = {
+		id = EGY_improve_the_nile_delta_network
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = EGY_revive_the_europe-india_transit_proposal }
+		relative_position_id = EGY_revive_the_europe-india_transit_proposal
+		
+		x = 0
+		y = 1
+
+		cost = 8.7
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = infrastructure
+				level = 4
+				instant_build = yes
+			}	
+		}
+		completion_reward = {
+			456 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_new_egypt_program
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = EGY_improve_the_nile_delta_network }
+		prerequisite = { focus = EGY_exploit_the_northen_resource_area }
+		relative_position_id = EGY_improve_the_nile_delta_network
+		
+		x = 1
+		y = 1
+		
+		cost = 8.7
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_stability = -0.05
+			add_ideas = a_colonized_nile
+		}
+	}
+	focus = {
+		id = EGY_expand_the_population_centres
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = EGY_national_estate_developments }
+		relative_position_id = EGY_national_estate_developments
+		
+		x = 1
+		y = 1
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}	
+		}
+		
+		completion_reward = {
+			452 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			446 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_agricultural_technology_investments
+		icon = GFX_goal_tfv_generic_tech_sharing
+		prerequisite = { focus = EGY_expand_the_population_centres }
+		relative_position_id = EGY_expand_the_population_centres
+		
+		x = 0
+		y = 1
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = excavation_tech
+			}
+			EGY_national_poverty_level_down = yes
+		}
+	}
+	focus = {
+		id = EGY_exploit_the_northen_resource_area
+		icon = GFX_focus_generic_aluminum
+		prerequisite = { focus = EGY_agricultural_technology_investments }
+		relative_position_id = EGY_agricultural_technology_investments
+		
+		x = 0
+		y = 1
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}	
+		}
+		
+		completion_reward = {
+			add_resource = {
+				type = aluminium
+				amount = 8
+				state = 446
+			}
+			add_resource = {
+				type = steel
+				amount = 8
+				state = 446
+			}
+			446 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_establish_science_facilities
+		icon = GFX_focus_research
+		prerequisite = { focus = EGY_reform_agrarian_culture }
+		relative_position_id = EGY_reform_agrarian_culture
+		
+		x = 0
+		y = 1
+		
+		cost = 8.7
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	focus = {
+		id = EGY_ufo_runway
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = EGY_establish_science_facilities }
+		relative_position_id = EGY_establish_science_facilities
+		
+		x = 1
+		y = 1
+		
+		cost = 8.7
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = EGY_ufo_runway_tt
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = EGY_support_the_status_quo
+				}
+				add_timed_idea = {
+					idea = ufo_runway_construction_1
+					days = 270
+				}
+				else = {
+					add_timed_idea = {
+						idea = ufo_runway_construction
+						days = 90
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	focus = {
+		id = EGY_international_education_standards
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = EGY_ufo_runway focus = EGY_radio_cairo }
+		relative_position_id = EGY_establish_science_facilities
+		
+		x = 0
+		y = 2
+		
+		cost = 8.7
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = modern_education
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = EGY_alien_technology
+		icon = GFX_focus_research2
+		prerequisite = { focus = EGY_ufo_runway }
+		relative_position_id = EGY_ufo_runway
+		
+		x = 0
+		y = 2
+		
+		cost = 8.7
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = EGY_ufo_runway
+				}
+				has_idea = ufo_runway_construction
+			}
+		}
+
+		completion_reward = {
+			add_research_slot = 2
+			if = {
+				limit = {
+					has_idea = ufo_runway_construction
+				}
+				remove_ideas = ufo_runway_construction
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	focus = {
+		id = EGY_radio_cairo
+		icon = GFX_goal_generic_radar
+		prerequisite = { focus = EGY_establish_science_facilities }
+		relative_position_id = EGY_establish_science_facilities
+
+		x = -1
+		y = 1
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = radar_focus
+				bonus = 1.0
+				uses = 2
+				category = radar_tech
+			}
+		}
+	}
+	focus = {
+		id = EGY_secret_services
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = EGY_radio_cairo }
+		relative_position_id = EGY_radio_cairo
+		
+		x = 0
+		y = 2
+
+		cost = 8.7
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = british_military_technology
+			add_tech_bonus = {
+				name = codebreaking_bonus
+				bonus = 1
+				uses = 2
+				category = decryption_tech
+				category = computing_tech
+			}
+		}
+	}
+	focus = {
+		id = EGY_industrialisation_effort
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = EGY_reform_agrarian_culture }
+		relative_position_id = EGY_reform_agrarian_culture
+		
+		x = 8
+		y = 1
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = EGY_restore_egyptian_militarism
+		icon = GFX_goal_rhineland
+		prerequisite = { focus = EGY_industrialisation_effort }
+		relative_position_id = EGY_industrialisation_effort
+		
+		x = -1
+		y = 1
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}	
+		
+		complete_tooltip = {
+			add_war_support = 0.1
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = arms_factory
+				level = 4
+				instant_build = yes
+			}	
+		}
+		
+		completion_reward = {
+			446 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			447 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_labor_reorganisation
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = EGY_restore_egyptian_militarism }
+		relative_position_id = EGY_restore_egyptian_militarism
+		
+		x = 0
+		y = 1
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = industrial_labor_priority
+		}
+	}
+	focus = {
+		id = EGY_begin_rearmament
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = EGY_industrialisation_effort focus = EGY_prepare_for_the_next_war }
+		relative_position_id = EGY_industrialisation_effort
+		
+		x = 1
+		y = 1
+		
+		cost = 8.7
+
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = EGY_eea_company
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = EGY_begin_rearmament }
+		relative_position_id = EGY_begin_rearmament
+		
+		x = 0
+		y = 2
+		
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = egyptian_engineering_agencies
+			add_tech_bonus = {
+				bonus = 3.0
+				uses = 1
+				category = motorized_equipment
+			}
+			add_resource = {
+				type = steel
+				amount = 8
+				state = 446
+			}
+			add_resource = {
+				type = steel
+				amount = 8
+				state = 447
+			}
+		}
+	}
+	focus = {
+		id = EGY_guns_of_the_napoleonic_wars
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = EGY_begin_rearmament }
+		relative_position_id = EGY_begin_rearmament
+		
+		x = 2
+		y = 1
+		
+		cost = 8.7
+
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = artillery
+			}
+			add_ideas = guns_of_the_napoleonic_wars
+		}
+	}
+	focus = {
+		id = EGY_anti-tank_defenses
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = EGY_guns_of_the_napoleonic_wars }
+		relative_position_id = EGY_guns_of_the_napoleonic_wars
+		
+		x = 0
+		y = 1
+		
+		cost = 8.7
+
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = cat_anti_tank
+			}
+		}
+	}
+	focus = {
+		id = EGY_prepare_for_the_next_war
+		icon = GFX_goal_generic_build_tank
+		relative_position_id = EGY_reform_agrarian_culture
+		
+		x = 13
+		y = 0
+		
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = EGY_camel_cavalry
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = EGY_prepare_for_the_next_war }
+		relative_position_id = EGY_prepare_for_the_next_war
+		
+		x = -2
+		y = 1
+		
+		cost = 8.7
+
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = camel_cavalry
+		}
+	}
+	focus = {
+		id = EGY_increase_the_military_school_budget
+		icon = GFX_focus_chi_army_reform
+		prerequisite = { focus = EGY_prepare_for_the_next_war }
+		relative_position_id = EGY_prepare_for_the_next_war
+		
+		x = 0
+		y = 1
+		
+		cost = 8.7
+
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = EGY_war_department_reform
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = EGY_increase_the_military_school_budget }
+		relative_position_id = EGY_increase_the_military_school_budget
+		
+		x = 0
+		y = 1
+		
+		cost = 8.7
+
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = EGY_war_department_reform_tt
+			hidden_effect = { EGY = { country_event = { id = egypt.49 hours = 6 } } }
+		}
+	}
+	focus = {
+		id = EGY_invite_german_advisors
+		icon = GFX_focus_ger_oppose_hitler
+		prerequisite = { focus = EGY_war_department_reform }
+		mutually_exclusive = { focus = EGY_the_proxy_nation }
+		relative_position_id = EGY_war_department_reform
+		
+		x = 2
+		y = 1
+		
+		cost = 8.7
+
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_government = fascism
+				is_in_faction_with = GER
+				factor = 5
+			}
+		}
+		
+		completion_reward = {
+			add_opinion_modifier = { target = GER modifier = large_increase }
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = EGY_scarab_tanks
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = EGY_invite_german_advisors }
+		relative_position_id = EGY_invite_german_advisors
+		
+		x = 0
+		y = 1
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+			add_ideas = scarab_tanks
+		}
+	}
+	focus = {
+		id = EGY_the_proxy_nation
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = EGY_war_department_reform }
+		mutually_exclusive = { focus = EGY_invite_german_advisors }
+		relative_position_id = EGY_war_department_reform
+		
+		x = 0
+		y = 1
+		
+		cost = 8.7
+
+		available_if_capitulated = no
+		
+		available = {
+			NOT = {
+				has_war_with = ENG
+				is_in_faction_with = ITA
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_government = fascism
+				is_in_faction_with = GER
+				factor = 0
+			}
+		}
+		
+		completion_reward = {
+			add_ideas = the_proxy_nation
+		}
+	}
+	focus = {
+		id = EGY_form_the_cairo_pact
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = EGY_the_proxy_nation }
+		relative_position_id = EGY_the_proxy_nation
+		
+		x = 0
+		y = 1
+		
+		cost = 8.7
+
+		available_if_capitulated = no
+		
+		available = {
+			NOT = {
+				has_war_with = ENG
+				is_in_faction_with = ITA
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			ENG = {
+				country_event = { id = britain.1004 days = 1 }
+			}
+		}
+	}
+	focus = {
+		id = EGY_high_aviation_school
+		icon = GFX_goal_generic_air_doctrine
+		relative_position_id = EGY_reform_agrarian_culture
+		
+		x = 18
+		y = 0
+		
+		cost = 8.7
+
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = air_doctrine
+			}
+			custom_effect_tooltip = available_chief_of_airforce
+			show_ideas_tooltip = mohamed_sedky_mahmoud
+		}
+	}
+	focus = {
+		id = EGY_fighter_modernization
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = EGY_high_aviation_school }
+		relative_position_id = EGY_high_aviation_school
+		
+		x = -1
+		y = 1
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 2
+				uses = 1
+				ahead_reduction = 2
+				category = light_fighter
+			}
+		}
+	}
+	focus = {
+		id = EGY_egyptian_eagles
+		icon = GFX_focus_chi_flying_tigers
+		prerequisite = { focus = EGY_fighter_modernization focus = EGY_battlefield_support focus = EGY_egyptian_thunder }
+		relative_position_id = EGY_fighter_modernization
+		
+		x = 1
+		y = 1
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1
+				uses = 1
+				ahead_reduction = 2
+				category = cat_heavy_fighter
+			}
+		}
+	}
+	focus = {
+		id = EGY_battlefield_support
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = EGY_high_aviation_school }
+		mutually_exclusive = { focus = EGY_egyptian_thunder }
+		relative_position_id = EGY_high_aviation_school
+		
+		x = 1
+		y = 1
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cas_bomber
+			}
+		}
+	}
+	focus = {
+		id = EGY_egyptian_thunder
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = EGY_high_aviation_school }
+		mutually_exclusive = { focus = EGY_battlefield_support }
+		relative_position_id = EGY_high_aviation_school
+		
+		x = 3
+		y = 1
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = tactical_bomber
+			}
+		}
+	}
+	focus = {
+		id = EGY_rocket_program
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = EGY_egyptian_eagles }
+		relative_position_id = EGY_egyptian_eagles
+		
+		x = 0
+		y = 1
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 1
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = EGY_naval_restoration
+		icon = GFX_goal_generic_build_navy
+		relative_position_id = EGY_reform_agrarian_culture
+
+		x = 24
+		y = 0
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+		
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}			
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 1
+				uses = 3
+				category = fleet_in_being_tree
+			}
+			447 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_submarine_effort
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = EGY_naval_restoration }
+		relative_position_id = EGY_naval_restoration
+		
+		x = 1
+		y = 2
+		
+		cost = 8.7
+
+		available_if_capitulated = no
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1
+				ahead_reduction = 2
+				uses = 2
+				technology = early_submarine
+				technology = basic_submarine
+				technology = improved_submarine
+				technology = advanced_submarine
+			}
+		}
+	}
+	focus = {
+		id = EGY_cruiser_effort
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = EGY_naval_restoration }
+		relative_position_id = EGY_naval_restoration
+		
+		x = -1
+		y = 2
+		
+		cost = 8.7
+
+		available_if_capitulated = no
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1
+				ahead_reduction = 2
+				uses = 2
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	}
+	focus = {
+		id = EGY_merge_the_new_fronts
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = EGY_cruiser_effort focus = EGY_battlefield_support focus = EGY_egyptian_thunder }
+		relative_position_id = EGY_cruiser_effort
+		
+		x = -3
+		y = 1
+		
+		cost = 8.7
+
+		available_if_capitulated = no
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				ahead_reduction = 2
+				uses = 3
+				category = cv_tech
+				category = naval_air
+			}
+		}
+	}
+	focus = {
+		id = EGY_develop_destroyer_technologies
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = EGY_submarine_effort }
+		relative_position_id = EGY_submarine_effort
+		
+		x = 0
+		y = 1
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1
+				ahead_reduction = 1
+				uses = 2
+				category = dd_tech
+			}
+		}
+	}
+	focus = {
+		id = EGY_capital_ships_effort
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = EGY_cruiser_effort }
+		relative_position_id = EGY_cruiser_effort
+		
+		x = 0
+		y = 1
+
+		cost = 8.7
+
+		available_if_capitulated = no
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1
+				ahead_reduction = 1
+				uses = 2
+				category = bc_tech
+				category = bb_tech
+			}
+		}
+	}
+	#focus = {
+	#	id = EGY_sudan_issue
+	#	icon = GFX_goal_generic_secret_weapon
+	#	x = 42
+	#	y = 9
+
+	#	cost = 8.7
+
+	#	ai_will_do = {
+	#		factor = 2
+	#		modifier = {
+	#			is_historical_focus_on = yes
+	#			factor = 0
+	#		}
+	#	}
+
+	#	cancel_if_invalid = yes
+	#	continue_if_invalid = no
+	#	available_if_capitulated = no
+	#	
+	#	completion_reward = {
+	#		add_stability = -0.05
+	#		unlock_decision_category_tooltip = EGY_arab_socialist_movement_category
+	#	}
+	#}
+}

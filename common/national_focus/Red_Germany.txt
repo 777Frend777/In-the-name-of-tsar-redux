@@ -1,0 +1,2558 @@
+focus_tree = {
+	id = Red_Germany
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BAV
+		}
+	}
+	default = no
+	#Munich Constitution
+	focus = {
+		id = BAV_munich_constituion
+		icon = GFX_focus_bav_con
+		cost = 8.00
+		x = 8
+		y = 0
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_war_support = 0.1
+		}
+	}
+	#Modernize the Red Army
+	focus = {
+		id = BAV_army_innovations
+		icon = GFX_goal_generic_communist_army
+		cost = 8.00
+		x = 15
+		y = 0
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = { 
+			army_experience = 25
+			air_experience = 25
+			add_political_power = 50
+			add_war_support = 0.1
+		}
+	}
+	#Reform the High Command
+	focus = {
+		id = BAV_reform_high_command
+		icon = GFX_focus_hun_support_bav
+		cost = 8.00
+		x = 17
+		y = 1
+		ai_will_do = {
+			factor = 9
+		}
+		prerequisite = {
+			focus = BAV_secret_police
+			
+		}
+		prerequisite = {
+			focus = BAV_army_innovations
+		}
+		available = {
+			OR = {
+				has_completed_focus = BAV_def_focus
+				has_completed_focus = BAV_off_focus
+			}
+		}
+		completion_reward = {
+			show_ideas_tooltip = wilhelm_groener
+			army_experience = 15
+			if = { limit = { OR = {
+								has_idea = BAV_red_army_idea_0
+								has_idea = BAV_red_army_idea_1_def
+								has_idea = BAV_red_army_idea_1_off
+								has_idea = BAV_red_army_idea_2_def
+								has_idea = BAV_red_army_idea_2_off
+								}
+							}
+				custom_effect_tooltip = BAV_army_upgrade_training_tt
+			}
+			if = { limit = { has_idea = BAV_red_army_idea_0_def }
+				swap_ideas = {
+					add_idea = BAV_red_army_idea_1_def
+					remove_idea = BAV_red_army_idea_0_def
+				}
+			}
+			if = { limit = { has_idea = BAV_red_army_idea_0_off }
+				swap_ideas = {
+					add_idea = BAV_red_army_idea_1_off
+					remove_idea = BAV_red_army_idea_0_off
+				}
+			}
+		}
+	}
+	#Power Debate
+	focus = {
+		id = BAV_power_debate
+		icon = GFX_focus_generic_soviet_politics
+		cost = 4.00
+		x = 2
+		y = 0
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	#Maintain the Course
+	focus = {
+		id = BAV_power_to_liebknecht
+		icon = GFX_focus_generic_self_management
+		cost = 8.00
+		x = 4
+		y = 1
+		mutually_exclusive = {
+			focus = BAV_power_party
+			focus = BAV_power_to_one_man
+		}
+		prerequisite = {
+			focus = BAV_power_debate
+		}
+		available = {
+			controls_state = 64
+		}
+		ai_will_do = {
+			factor = 9
+		}
+		completion_reward = {
+			add_stability = 0.10
+		}
+	}
+	#Reform the Government
+	focus = {
+		id = BAV_reform_gov
+		icon = GFX_focus_generic_military_academy
+		cost = 8.00
+		x = 3
+		y = 2
+		prerequisite = {
+			focus = BAV_power_to_liebknecht
+			focus = BAV_power_to_one_man
+			focus = BAV_power_party
+		}
+		ai_will_do = {
+			factor = 8
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = BAV_new_gov_idea_1
+		}
+	}
+	#Invite Prussian Ministers
+	focus = {
+		id = BAV_invite_prussian_ministers
+		icon = GFX_focus_hun_school
+		cost = 8.00
+		x = 3
+		y = 4
+		prerequisite = {
+			focus = BAV_socialist_science
+			focus = BAV_workers_culture
+		}
+		ai_will_do = {
+			factor = 8
+		}
+		available = {
+			NOT = { has_completed_focus = BAV_power_to_one_man }
+			controls_state = 64
+			NOT = { country_exists = GER }
+		}
+		completion_reward = {
+			add_popularity = {
+					ideology = neutrality
+					popularity = 0.02
+				}
+			add_popularity = {
+					ideology = democratic
+					popularity = 0.01
+				}
+			add_popularity = {
+					ideology = conservatives
+					popularity = 0.01
+				}
+			swap_ideas = {
+				remove_idea = BAV_new_gov_idea_1
+				add_idea = BAV_new_gov_idea_2
+			}
+		}
+	}
+	#Revive the Red Navy
+	focus = {
+		id = BAV_navy_effort
+		icon = GFX_focus_bav_navy
+		cost = 8.00
+		x = 22
+		y = 0
+		ai_will_do = {
+			factor = 4
+		}
+		available = {
+		GER = {
+			exists = no 
+		}
+			any_state = {
+				is_controlled_by = BAV
+				is_coastal = yes
+			}
+		}
+		complete_tooltip = {
+
+		}
+		
+		completion_reward = {
+		#load_oob = BAV_navy
+		        random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+		}
+	}
+	#Power to the Party (Moderate)
+	focus = {
+		id = BAV_power_party
+		icon = GFX_goal_generic_production2
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_power_debate
+		}
+		mutually_exclusive = {
+			focus = BAV_power_to_one_man
+			focus = BAV_power_to_liebknecht
+		}
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 9
+		}
+		available = {
+			controls_state = 64
+		}
+		completion_reward = {
+			add_stability = 0.10
+			create_country_leader = {
+				name = "Kongress der Deutschland"
+				desc = ""
+				picture = "gfx/leaders/BAV/congress_bav.dds"
+				expire = "1965.1.1"
+				ideology = communism_subtype
+				traits = {
+						#
+				}
+			}
+		}
+	}
+	#Power to One Man (Left-Marxism)
+	focus = {
+		id = BAV_power_to_one_man
+		icon = GFX_goal_generic_political_pressure
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_power_debate
+		}
+		mutually_exclusive = {
+			focus = BAV_power_party
+			focus = BAV_power_to_liebknecht
+		}
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 9
+		}
+		available = {
+			controls_state = 64
+		}
+		completion_reward = {
+		add_stability = 0.10
+			add_country_leader_role = {
+				character = BAV_ernst_thalmann
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = communism_subtype
+					traits = {
+					}
+				}
+				promote_leader = yes
+			}
+		}
+	}
+	focus = {
+		id = BAV_intergrate_BAD_WUT
+		icon = GFX_focus_generic_annex_country_2
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_power_debate
+		}
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 9
+		}
+		available = {
+			NOT={
+				controls_state = 50
+			}
+			has_subject = WUT
+		}
+		completion_reward = {
+		add_stability = 0.1
+		add_war_support = 0.1
+			annex_country = {
+				target = WUT
+			}
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = BAV
+		}
+	}
+	#World Revolution
+	focus = {
+		id = BAV_world_revolution
+		icon = GFX_goal_support_fourth_int
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_upgrade_unions
+			focus = BAV_land_of_steel_and_blood
+		}
+		x = 1
+		y = 6
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			#Add some event which pisses of other countries
+			add_ideas = BAV_wor_rev
+		}
+	}
+	#Socialism In One Country
+	focus = {
+		id = BAV_socialism_in_country
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_invest_prog
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		x = 5
+		y = 6
+		completion_reward = {
+			add_ideas = BAV_socialism_in_1_country
+		}
+	}
+	#Secret Police
+	focus = {
+		id = BAV_secret_police
+		icon = GFX_goal_generic_special_forces
+		cost = 8.00
+		x = 17
+		y = 0
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = BAV_s_police
+			add_war_support = 0.1
+		}
+	}
+	#Purge the KPD
+	focus = {
+		id = BAV_arrest_opposition
+		icon = GFX_focus_RUS_military_purge
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_deploy_sonder_troops
+		}
+		x = 1
+		y = 4
+		ai_will_do = {
+			factor = 7
+		}
+		completion_reward = {
+			add_ideas = BAV_arrested_opposition
+			add_popularity = {
+					ideology = neutrality
+					popularity = -0.10
+				}
+		}
+	}
+	#Open the Economy
+	focus = {
+		id = BAV_liberal_economy
+		icon = GFX_focus_generic_self_management
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_workers_culture
+		}
+		prerequisite = {
+			focus = BAV_normalize_relations_with_fra
+		}
+		x = 5
+		y = 4
+		ai_will_do = {
+			factor = 6
+		}
+		completion_reward = {
+			add_ideas = BAV_l_economy
+			show_ideas_tooltip = export_focus
+			show_ideas_tooltip = free_trade
+		}
+	}
+	#Western Investment Programme
+	focus = {
+		id = BAV_invest_prog
+		icon = GFX_focus_generic_industry_1
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_liberal_economy
+		}
+		x = 5
+		y = 5
+		ai_will_do = {
+			factor = 6
+		}
+		available = {
+			has_completed_focus = BAV_five_year_plan
+		}
+		completion_reward = {
+			add_political_power = 60
+			add_ideas = BAV_western_invest_prog
+			unlock_decision_tooltip = BAV_invest_in_bel
+			unlock_decision_tooltip = BAV_invest_in_hol
+			unlock_decision_tooltip = BAV_invest_in_lux
+		}
+	}
+	#Workers Congress
+	focus = {
+		id = BAV_workers_congress
+		icon = GFX_focus_YUG_pan_slavic_congress
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_power_party
+			focus = BAV_power_to_liebknecht
+			focus = BAV_power_to_one_man
+		}
+		available = { 
+			has_war = no 
+		}
+		ai_will_do = {
+			factor = 6
+		}
+		x = 1
+		y = 2
+		completion_reward = {
+		add_political_power = 120
+		FRA = { 
+		add_popularity = {
+					ideology = communism
+					popularity = 0.03
+				}
+		
+		}
+		RUS = { 
+		add_popularity = {
+					ideology = communism
+					popularity = 0.03
+				}
+		
+		}
+		GER = { 
+		add_popularity = {
+					ideology = communism
+					popularity = 0.03
+				}
+		
+		}
+		ENG = { 
+		add_popularity = {
+					ideology = communism
+					popularity = 0.03
+				}
+		
+		}
+		USA = { 
+		add_popularity = {
+					ideology = communism
+					popularity = 0.03
+				}
+		
+		}
+		hidden_effect = {
+			news_event = { id = news.1001 }
+		}
+		}
+	}
+	#New Five Year Plan
+	focus = {
+		id = BAV_five_year_plan
+		icon = GFX_focus_bav_five
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_munich_constituion
+		}
+		x = 8
+		y = 1
+		ai_will_do = {
+			factor = 9
+		}
+		completion_reward = {
+		unlock_decision_category_tooltip = BAV_generic_four_year_plan_category
+		unlock_decision_tooltip = BAV_generic_focus_on_industry
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 2
+			 instant_build = yes
+		    }
+		  }
+			random_owned_controlled_state = {
+			 add_extra_state_shared_building_slots = 2
+			 add_building_construction = {
+				 type = industrial_complex
+				 level = 2
+				 instant_build = yes
+			    }
+			  }
+	    }
+	}
+	#Bavarian Youth Army
+	focus = {
+		id = BAV_young_army
+		icon = GFX_focus_hun_youth
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_arm_the_masses
+		}
+		x = 13
+		y = 3
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		    add_ideas = military_youth_focus
+		}
+	}
+	#Bolshevik Militia
+	focus = {
+		id = BAV_bolshevik_militias
+		icon = GFX_goal_generic_soviet_immirgrants
+		cost = 8.00
+		bypass = {
+			POR = { has_completed_focus = POR_invitetrotsky }
+        }
+		prerequisite = {
+			focus = BAV_young_army
+		}
+		x = 13
+		y = 4
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+		custom_effect_tooltip = BAV_bol_generals_tt
+			#create_corps_commander = {
+			#	name = "Andrey Vlasov"
+			#	picture = "Portrait_Bavaria_Andrey_Vlasov.dds"
+			#	traits = { winter_specialist }
+			#	skill = 3
+			#}
+		custom_effect_tooltip = BAV_rus_mil_tt
+		hidden_effect = {
+			load_oob = BAV_rus_militas
+		}
+	}
+	}
+	#Arm the Masses
+	focus = {
+		id = BAV_arm_the_masses
+		icon = GFX_focus_hun_red_guard
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_reform_high_command
+		}
+		x = 16
+		y = 2
+		ai_will_do = {
+			factor = 6
+		}
+		completion_reward = {
+		random_owned_controlled_state = {
+ 			 add_manpower = 25000
+ 		 }
+		 random_owned_controlled_state = {
+	 			 add_manpower = 25000
+	 		 }
+			 random_owned_controlled_state = {
+		 			 add_manpower = 25000
+		 		 }
+	    }
+	}
+	#Deploy Sonder Troops
+	focus = {
+		id = BAV_deploy_sonder_troops
+		icon = GFX_goal_generic_army_motorized
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_power_to_one_man
+		}
+		x = 0
+		y = 3
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			controls_state = 52
+		}
+		completion_reward = {
+		custom_effect_tooltip = BAV_sonder_tt
+			hidden_effect = {
+			load_oob = BAV_sonder
+		}
+		}
+	}
+	#People's Autobahn
+	focus = {
+		id = BAV_infrastructure_effort
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_five_year_plan
+		}
+		x = 7
+		y = 2
+		ai_will_do = {
+			factor = 6
+		}
+		completion_reward = {
+		53 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		52 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		54 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	}
+	#Revive Arms Industry
+	focus = {
+		id = BAV_revive_arms
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_infrastructure_effort
+		}
+		x = 6
+		y = 3
+		ai_will_do = {
+			factor = 9
+		}
+		completion_reward = {
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = arms_factory
+			 level = 2
+			 instant_build = yes
+		    }
+		  }
+			random_owned_controlled_state = {
+			 add_extra_state_shared_building_slots = 1
+			 add_building_construction = {
+				 type = arms_factory
+				 level = 1
+				 instant_build = yes
+			    }
+			  }
+			random_owned_controlled_state = {
+			 add_extra_state_shared_building_slots = 1
+			 add_building_construction = {
+				 type = arms_factory
+				 level = 1
+				 instant_build = yes
+			    }
+			  }
+	    }
+	}
+	#Subsidise Industry
+	focus = {
+		id = BAV_subsidise
+		icon = GFX_focus_generic_industry_3
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_infrastructure_effort
+		}
+		x = 8
+		y = 3
+		ai_will_do = {
+			factor = 9
+		}
+		completion_reward = {
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 1
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 1
+			 instant_build = yes
+		    }
+		  }
+			random_owned_controlled_state = {
+			 add_extra_state_shared_building_slots = 1
+			 add_building_construction = {
+				 type = industrial_complex
+				 level = 1
+				 instant_build = yes
+			    }
+			  }
+			random_owned_controlled_state = {
+			 add_extra_state_shared_building_slots = 1
+			 add_building_construction = {
+				 type = industrial_complex
+				 level = 1
+				 instant_build = yes
+			    }
+			  }
+			random_owned_controlled_state = {
+			 add_extra_state_shared_building_slots = 1
+			 add_building_construction = {
+				 type = industrial_complex
+				 level = 1
+				 instant_build = yes
+			    }
+			  }
+	    }
+	}
+	#Land of Steel and Blood
+	focus = {
+		id = BAV_land_of_steel_and_blood
+		icon = GFX_goal_generic_soviet_construction
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_arrest_opposition
+		}
+		x = 0
+		y = 5
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		add_ideas = BAV_blood
+		53 = {
+			add_resource = {
+				type = steel
+				amount = 24
+			}
+		}
+		54 = {
+			add_resource = {
+				type = steel
+				amount = 24
+			}
+		}
+	 }
+	}
+	#New Unions Management
+	focus = {
+		id = BAV_upgrade_unions
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_arrest_opposition
+		}
+		x = 2
+		y = 5
+		ai_will_do = {
+			factor = 4
+		}
+		completion_reward = {
+			add_ideas = BAV_upgraded_unions_idea
+		}
+	}
+	#Workers Culture
+	focus = {
+		id = BAV_workers_culture
+		icon = GFX_goal_generic_construction2
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_reform_gov
+		}
+		x = 4
+		y = 3
+		ai_will_do = {
+			factor = 6
+		}
+		completion_reward = {
+			add_ideas = workers_culture
+	  }
+	}
+	#Socialist Science
+	focus = {
+		id = BAV_socialist_science
+		icon = GFX_focus_generic_socialist_science
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_reform_gov
+		}
+		x = 2
+		y = 3
+		ai_will_do = {
+			factor = 6
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	#Normalize relations with France
+	focus = {
+		id = BAV_normalize_relations_with_fra
+		icon = GFX_focus_chi_reach_out_to_france
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_power_to_liebknecht
+			focus = BAV_power_party
+		}
+		x = 5
+		y = 2
+		ai_will_do = {
+			factor = 6
+		}
+		available = {
+			country_exists = FRA
+			NOT = {
+				OR = { 
+					FRA = { has_government = fascism }
+					FRA = { has_government = neutrality }
+				}
+				has_war_with = FRA
+			}
+		}
+		completion_reward = {
+			add_political_power = 70
+			FRA = {
+					add_opinion_modifier = {
+							target = BAV
+							modifier = bav_normalized_relations_good
+						}
+				}
+		}
+	}
+	#Genossen Wall
+	focus = {
+		id = BAV_pru_wall
+		icon = GFX_goal_generic_fortify_city
+		cost = 8.00
+		x = 6
+		y = 0
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+			OR = { has_war_with = GER
+			controls_state = 64
+			}
+		}
+		completion_reward = {
+		custom_effect_tooltip = BAV_genossenwall_tt
+		hidden_effect = {
+		54 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 11404
+					instant_build = yes
+				  }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 3474
+						instant_build = yes
+					  }
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6421
+							instant_build = yes
+						  }
+							add_building_construction = {
+								type = bunker
+								level = 3
+								province = 13116
+								instant_build = yes
+							  }
+			         }
+		         }
+	         }
+         }
+	}
+	#Defense Fortifications
+	focus = {
+		id = BAV_westwall
+		icon = GFX_goal_generic_fortify_city
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_pru_wall
+		}
+		prerequisite = {
+			focus = BAV_munich_constituion
+		}
+		x = 6
+		y = 1
+		ai_will_do = {
+			factor = 8
+		}
+		available = { 
+			has_completed_focus = BAV_five_year_plan
+		}
+		completion_reward = {
+		#custom_effect_tooltip = BAV_west_wall_tt
+			add_political_power = 60
+			unlock_decision_tooltip = BAV_complete_west_wall_desc
+			unlock_decision_tooltip = BAV_complete_ost_wall_desc	
+		}	
+	}
+	#Industrialize Rhineland
+	focus = {
+		id = BAV_industrialize_rhine
+		icon = GFX_goal_generic_construct_civilian
+		cost = 4.00
+		prerequisite = {
+			focus = BAV_five_year_plan
+		}
+		x = 11
+		y = 2
+		ai_will_do = {
+			factor = 7
+		}
+		available = { 
+			OR = {
+				controls_state = 42
+				controls_state = 51
+			}
+		}
+		completion_reward = {
+			add_political_power = 50
+			unlock_decision_tooltip = BAV_invest_in_rhineland_north
+			unlock_decision_tooltip = BAV_invest_in_rhineland_south
+		}
+	}
+	#Industrialize the North
+	focus = {
+		id = BAV_industrialize_north
+		icon = GFX_goal_generic_air_production
+		cost = 4.00
+		prerequisite = {
+			focus = BAV_five_year_plan
+		}
+		x = 9
+		y = 2
+		ai_will_do = {
+			factor = 6
+		}
+		available = { 
+			OR = {
+				controls_state = 912
+				controls_state = 58
+				controls_state = 62
+			}
+		}
+		completion_reward = {
+			add_political_power = 50
+			unlock_decision_tooltip = BAV_invest_in_rhineland_vorpommern
+			unlock_decision_tooltip = BAV_invest_in_rhineland_north_schleswig
+			unlock_decision_tooltip = BAV_invest_in_rhineland_hamburg
+		}
+
+	}
+	#Complete Four Year Plan
+	focus = {
+		id = BAV_slot_1
+		icon = GFX_focus_research
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_subsidise
+		}
+		prerequisite = {
+			focus = BAV_revive_arms
+		}
+		x = 7
+		y = 4
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	#Defensive Focus
+	focus = {
+		id = BAV_def_focus
+		icon = GFX_focus_bav_def
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_army_innovations
+		}
+		mutually_exclusive = {
+			focus = BAV_off_focus
+		}
+		x = 13
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			army_experience = 5
+			swap_ideas = {
+				remove_idea = BAV_red_army_idea_0
+				add_idea = BAV_red_army_idea_0_def
+				
+			}
+		}
+	}
+	#Mass Motorization
+	focus = {
+		id = BAV_tank_effort
+		icon = GFX_goal_generic_army_tanks
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_arm_the_masses
+		}
+		x = 16
+		y = 4
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.75
+				technology = motorised_infantry
+			}
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	#New Infantry Equipment
+	focus = {
+		id = BAV_small_arms
+		icon = GFX_goal_generic_small_arms
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_arm_the_masses
+		}
+		x = 15
+		y = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 7
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				#category = artillery
+			}
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 1
+				#category = infantry_weapons
+				category = artillery
+			}
+			if = { limit = { 
+				OR = {
+					has_idea = BAV_red_army_idea_0 
+					has_idea = BAV_red_army_idea_0_def
+					has_idea = BAV_red_army_idea_0_off
+					}
+				}
+				custom_effect_tooltip = BAV_army_upgrade_equipment_tt
+			}
+			if = { limit = { has_idea = BAV_red_army_idea_1_def }
+				swap_ideas = {
+					add_idea = BAV_red_army_idea_2_def
+					remove_idea = BAV_red_army_idea_1_def
+				}
+			}
+			if = { limit = { has_idea = BAV_red_army_idea_1_off }
+				swap_ideas = {
+					add_idea = BAV_red_army_idea_2_off
+					remove_idea = BAV_red_army_idea_1_off
+				}
+			}
+		}
+	}
+	#Army Maneuvers
+	focus = {
+		id = BAV_war_games
+		icon = GFX_goal_generic_army_doctrines
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_off_focus
+			focus = BAV_def_focus
+		}
+		x = 14
+		y = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 7
+		}
+		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	#Complete Army Reform
+	focus = {
+		id = BAV_army_complete
+		icon = GFX_focus_RUS_the_glory_of_the_red_army_communism
+		cost = 8.00
+		prerequisite = {
+			
+			focus = BAV_tank_effort
+		}
+		prerequisite = {
+			focus = BAV_small_arms
+		}
+		x = 15
+		y = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 7
+		}
+		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = BAV_off_focus
+		icon = GFX_focus_bav_agg
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_army_innovations
+		}
+		mutually_exclusive = {
+			focus = BAV_def_focus
+		}
+		x = 15
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			army_experience = 5
+			swap_ideas = {
+				remove_idea = BAV_red_army_idea_0
+				add_idea = BAV_red_army_idea_0_off
+				
+			}
+		}
+	}
+	#Expand the Red AirForce
+	focus = {
+		id = BAV_air_effort
+		icon = GFX_focus_bav_air
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_reform_high_command
+		}
+		x = 19
+		y = 2
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			air_experience = 25
+			show_ideas_tooltip = BAV_hermann_kohl 
+		}
+	}
+	#Expand the Red AirForce
+	focus = {
+		id = BAV_fighter_effort
+		icon = GFX_goal_generic_air_fighter2
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_air_effort
+		}
+		mutually_exclusive = {
+			focus = BAV_bomber_effort
+		}
+		x = 20
+		y = 3
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}
+	}
+	#New Bomber Models
+	focus = {
+		id = BAV_bomber_effort
+		icon = GFX_goal_generic_air_bomber
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_air_effort
+		}
+		mutually_exclusive = {
+			focus = BAV_fighter_effort
+		}
+		x = 22
+		y = 3
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
+		}
+	}
+	#CAS Effort
+	focus = {
+		id = BAV_cas
+		icon = GFX_focus_YUG_rogozarski
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_fighter_effort
+		}
+		x = 20
+		y = 5
+		ai_will_do = {
+			factor = 4
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+	#Naval Bomber
+	focus = {
+		id = BAV_nav_bomber
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_dockyard_effort
+		}
+		x = 24
+		y = 3
+		ai_will_do = {
+			factor = 0
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+	#Blue-Sea Fleet
+	focus = {
+		id = BAV_battleship1
+		icon = GFX_goal_generic_navy_carrier
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_navy_effort
+		}
+		mutually_exclusive = {
+			focus = BAV_submarine
+		}
+		x = 21
+		y = 1
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				technology = basic_battlecruiser
+				technology = basic_battleship
+				technology = improved_battleship
+				technology = advanced_battleship
+				technology = heavy_battleship
+				technology = heavy_battleship2
+			}
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				technology = early_carrier
+				technology = basic_carrier
+				technology = improved_carrier
+				technology = advanced_carrier
+			}
+		}
+	}
+	#Green-Sea Fleet
+	focus = {
+		id = BAV_submarine
+		icon = GFX_goal_generic_navy_submarine
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_navy_effort
+		}
+		mutually_exclusive = {
+			focus = BAV_battleship1
+		}
+		x = 23
+		y = 1
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				technology = early_submarine
+				technology = basic_submarine
+				technology = improved_submarine
+				technology = advanced_submarine
+			}
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				technology = improved_light_cruiser
+				technology = advanced_light_cruiser
+				technology = improved_heavy_cruiser
+				technology = advanced_heavy_cruiser
+			}
+		}
+	}
+	#Naval Exercises
+	focus = {
+		id = BAV_navy_games
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_battleship1
+			focus = BAV_submarine
+		}
+		x = 21
+		y = 2
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+		add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 1.0
+				uses = 2
+				category = fleet_in_being_tree
+			}
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+		}
+	}
+	#Rebuild Kiel Bases
+	focus = {
+		id = BAV_dockyard_effort
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_battleship1
+			focus = BAV_submarine
+		}
+		x = 23
+		y = 2
+		ai_will_do = {
+			factor = 3
+		}
+		available = {
+			any_state = {
+				is_controlled_by = BAV
+				is_coastal = yes
+			}
+		}
+		completion_reward = {
+		navy_experience = 25
+		random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+			}
+		random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+	}
+	#Consolidate Power in Berlin
+	focus = {
+		id = BAV_purge
+		icon = GFX_focus_bav_united
+		cost = 8.00
+		x = 28
+		y = 0
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		BAV = { controls_state = 64
+				controls_state = 50 
+				controls_state = 56 
+				}
+		}
+		completion_reward = {
+			remove_ideas = { BAV_plot_against_the_commune_2 }
+			add_timed_idea = {
+				idea = BAV_consolidation_of_power
+				days = 140
+			}
+			add_stability = -0.20
+			add_political_power = -100
+		}
+	}
+	#Road to War
+	focus = {
+		id = BAV_prep_war
+		icon = GFX_goal_demand_sudetenland
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_ultimatum_CZE
+		}
+		x = 29
+		y = 3
+		ai_will_do = {
+			factor = 8
+		}
+		available = {
+		NOT = { has_idea = BAV_consolidation_of_power }
+			BAV = { controls_state = 64
+			controls_state = 58
+		}
+		
+		}
+		completion_reward = {
+		random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+		}
+		random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+		}
+		}
+	}
+	#Revanchist Propaganda
+	focus = {
+		id = BAV_revanchist_prop
+		icon = GFX_goal_generic_horn_rhine
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_ultimatum_CZE
+		}
+		x = 31
+		y = 3
+		ai_will_do = {
+			factor = 8
+		}
+		completion_reward = { 
+			add_war_support = 0.15	
+		}
+		
+	}
+	#Enemy in the West
+	focus = {
+		id = BAV_enemy_in_the_west
+		icon = GFX_focus_generic_strike_at_democracy3
+		cost = 4.00
+		prerequisite = {
+			focus = BAV_prep_war
+		}
+		prerequisite = {
+			focus = BAV_revanchist_prop
+		}
+		x = 27
+		y = 4
+		ai_will_do = {
+			factor = 8
+		}
+		completion_reward = { 
+			add_political_power = 50
+			ENG = {
+					add_opinion_modifier = {
+							target = BAV
+							modifier = revanchist_propaganda_op
+						}
+				}
+		}
+		
+	}
+	#Enemy in the East
+	focus = {
+		id = BAV_enemy_in_the_east
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 4.00
+		prerequisite = {
+			focus = BAV_prep_war
+		}
+		prerequisite = {
+			focus = BAV_revanchist_prop
+		}
+		x = 32
+		y = 4
+		ai_will_do = {
+			factor = 8
+		}
+		completion_reward = { 
+			add_political_power = 50
+			RUS = {
+					add_opinion_modifier = {
+							target = BAV
+							modifier = revanchist_propaganda_op
+						}
+				}	
+		}
+		
+	}
+	#Treaty with Hungary
+	focus = {
+		id = BAV_treaty_with_hungary
+		icon = GFX_focus_hun_friends
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_purge
+		}
+		x = 27
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			country_exists = HUN
+			is_faction_leader = yes
+			NOT = { has_war_with = HUN }
+			HUN = { OR = { 
+				has_government = socialist 
+				has_government = communism }
+			}
+		}
+		bypass = { is_in_faction_with = HUN }
+		completion_reward = { 
+			HUN = { country_event = { days = 1 id = generic.5 } }
+		}	
+	}
+	focus = {
+		id = BAV_treaty_with_finland
+		icon = GFX_focus_SWE_finnish_communists
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_purge
+		}
+		x = 25
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			country_exists = FIN
+			is_faction_leader = yes
+			NOT = { has_war_with = FIN }
+			FIN = { OR = { 
+				has_government = socialist 
+				has_government = communism }
+			}
+		}
+		bypass = { is_in_faction_with = FIN }
+		completion_reward = { 
+			FIN = { country_event = { days = 1 id = generic.5 } }
+		}	
+	}
+	#Seek new Alliances
+	focus = {
+		id = BAV_seek_new_alliances
+		icon = GFX_goal_anschluss
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_purge
+		}
+		x = 26
+		y = 3
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		available = {
+			is_subject = no
+		}
+		completion_reward = { 
+			add_political_power = 50
+			unlock_decision_category_tooltip = BAV_expand_kommintern_category
+		}	
+	}
+	#Force the Rhineland Issue
+	focus = {
+		id = BAV_demand_saar
+		icon = GFX_focus_fra_rhineland
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_enemy_in_the_west
+		}
+		x = 26
+		y = 5
+		ai_will_do = {
+			factor = 7
+		}
+		will_lead_to_war_with = RHN
+		will_lead_to_war_with = FRA
+		bypass = {
+			NOT = { country_exists = RHN }
+		}
+		available_if_capitulated = no
+		available = {
+		has_army_manpower = { size > 450000 }
+		RHN = { exists = yes }
+		}
+		completion_reward = {
+		FRA = {
+		 country_event = { days = 3 id = bavaria.17 }
+		 }
+		}
+	}
+	#Free Northern Schlesweg
+	focus = {
+		id = BAV_war_DEN
+		icon = GFX_focus_generic_attack_denmark
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_war_AUS
+		}
+		x = 28
+		y = 2
+		ai_will_do = {
+			factor = 9
+		}
+		will_lead_to_war_with = DEN
+		available = { 
+			DEN = { exists = yes }
+		}
+		bypass = {
+			OR = { 
+				is_in_faction_with = DEN
+				has_war_with = DEN
+				controls_state = 912 }
+		}
+		available_if_capitulated = no
+			
+		completion_reward = {
+			add_state_claim = 912
+			DEN = { country_event = { id = bavaria.57 days = 1 } }
+			#create_wargoal = { type = puppet_wargoal_focus target = DEN }	
+		}
+	}
+	#Sudetenland Crisis
+	focus = {
+		id = BAV_ultimatum_CZE
+		icon = GFX_focus_hun_partition
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_war_AUS
+		}
+		x = 30
+		y = 2
+		ai_will_do = {
+			factor = 9
+		}
+		will_lead_to_war_with = CZE
+		available = { 
+		has_army_manpower = { size > 350000 }
+		NOT = { has_idea = BAV_consolidation_of_power }
+		is_subject = no
+		CZE = { exists = yes }
+		}
+		bypass = {
+			OR = { 
+				is_in_faction_with = CZE
+				has_war_with = CZE
+				NOT = { country_exists = CZE }
+			}
+		}
+		completion_reward = { 
+		#create_wargoal = { type = puppet_wargoal_focus target = CZE }	
+			country_event = { id = bavaria.47 hours = 6 }
+		#make an evenet
+		}
+	}
+	#War with Russia
+	focus = {
+		id = BAV_war_RUS
+		icon = GFX_goal_generic_major_war
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_enemy_in_the_east
+		}
+		x = 34
+		y = 6
+		available = {
+		has_army_manpower = { size > 750000 }
+		NOT = {
+		RUS = {
+		has_government = communism
+		}
+		}
+		}
+		ai_will_do = {
+			factor = 6
+		}
+		will_lead_to_war_with = RUS
+		available = { 
+			RUS = { exists = yes }
+		}
+		completion_reward = { 
+			create_wargoal = { type = puppet_wargoal_focus target = RUS }	
+		}
+	}
+	#Nuclear Power
+	focus = {
+		id = BAV_spartacus
+		icon = GFX_focus_bav_nuc
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_slot_1
+		}
+		x = 7
+		y = 5
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = RAJ_the_smiling_buddha
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
+		}
+	}
+	#Increase the Defense Budget
+	focus = {
+		id = BAV_boost_milit_spending
+		icon = GFX_goal_generic_military_sphere
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_infrastructure_effort
+		}
+		x = 10
+		y = 3
+		completion_reward = {
+			add_advisor_role = {
+				character = BAV_kurt_eisner
+				advisor = {
+					slot = political_advisor
+					cost = 150
+					idea_token = eisner
+					traits = {
+						war_industrialist
+					}
+					allowed = {
+						always = yes
+					}
+				}
+				activate = no
+			}
+		}
+	}
+	#Anti-Air
+	focus = {
+		id = BAV_radar
+		icon = GFX_goal_generic_radar
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_boost_milit_spending
+		}
+		x = 9
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = radar_focus
+				bonus = 1.0
+				uses = 2
+				category = radar_tech
+			}
+		}
+	}
+	#War with France
+	focus = {
+		id = BAV_liberate_french
+		icon = GFX_goal_french_revolution
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_enemy_in_the_west
+		}
+		available = {
+		has_army_manpower = { size > 550000 }
+		NOT = {
+		FRA = {
+		has_government = communism
+		}
+		}
+		}
+		x = 28
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+		will_lead_to_war_with = FRA
+		bypass = {
+			has_war_with = FRA
+		}
+		completion_reward = { 
+			create_wargoal = { type = puppet_wargoal_focus target = FRA }	
+		}
+	}
+	#Support Spanish Revolution
+	focus = {
+		id = BAV_support_SPR
+		icon = GFX_focus_spr_no_pasaran
+		cost = 3.00
+		prerequisite = {
+			focus = BAV_munich_constituion
+		}
+		x = 10
+		y = 1
+		ai_will_do = {
+			factor = 8
+		}
+		available = { 
+			SPC = { 
+				OR = { has_government = communism
+				has_government = socialist 
+				}
+				exists = yes 
+				OR = { has_war_with = SPR 
+					has_war_with = SPA
+					has_war_with = SPC 
+				}
+			}
+		}
+		completion_reward = {
+			#expand 
+			send_equipment = { target = SPC type = infantry_equipment amount = 3500 }
+		}
+	}
+	#Benelux Intervention
+	focus = {
+		id = BAV_war_Benelux
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 4.00
+		prerequisite = {
+			focus = BAV_liberate_french
+		}
+		x = 28
+		y = 6
+		ai_will_do = {
+			factor = 10
+		}
+		will_lead_to_war_with = LUX
+		will_lead_to_war_with = HOL
+		will_lead_to_war_with = BEL
+		will_lead_to_war_with = FLN
+		will_lead_to_war_with = WAL
+		available = { 
+		OR = {
+			country_exists = BEL
+			country_exists = HOL
+			country_exists = WAL
+			country_exists = FLN
+			country_exists = LUX
+		}
+		}
+		completion_reward = {
+			#limit wargoals to when it makes sense to give them. No faction, war or non exist
+			if = { 
+				limit = {
+					country_exists = BEL
+					NOT = { BEL = { is_in_faction_with = BAV } }
+					NOT = { has_war_with = BEL }
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = BEL
+					generator = { 6 }
+				}
+			}
+			if =  {
+				limit = {
+					country_exists = HOL
+					NOT = { HOL = { is_in_faction_with = BAV } }
+					NOT = { has_war_with = HOL }
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = HOL
+					generator = { 7 }
+				}
+			}
+			if = {
+				limit = {
+					country_exists = LUX
+					NOT = { LUX = { is_in_faction_with = BAV } }
+					NOT = { has_war_with = LUX }
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = LUX
+					generator = { 8 }
+				}			
+			}
+			if = {
+				limit = {
+					country_exists = WAL
+					NOT = { WAL = { is_in_faction_with = BAV } }
+					NOT = { has_war_with = WAL }
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = WAL
+				}			
+			}
+			if = {
+				limit = {
+					country_exists = FLN
+					NOT = { FLN = { is_in_faction_with = BAV } }
+					NOT = { has_war_with = FLN }
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = FLN
+				}			
+			}
+			#hidden_effect = {
+			#	news_event = { hours = 6 id = news.234 }
+			#}
+		}
+	}
+	#Rocketry
+	focus = {
+		id = BAV_rocketry
+		icon = GFX_focus_rocketry
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_radar
+		}
+		prerequisite = {
+			focus = BAV_anti_air
+		}
+		x = 10
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 1.0
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+		}
+	}
+	#Paratroopers
+	focus = {
+		id = BAV_paratrooper
+		icon = GFX_focus_generic_paratrooper
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_fighter_effort
+			focus = BAV_bomber_effort
+		}
+		x = 21
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		#add_tech_bonus = {
+		#		name = special_forces_bonus
+		#		ahead_reduction = 1.0
+		#		uses = 1
+		#		technology = tech_mountaineers
+		#		technology = tech_mountaineers2
+		#	}
+		add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				}
+				}
+	}
+	#Marines
+	focus = {
+		id = BAV_marines
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_dockyard_effort
+		}
+		prerequisite = {
+			focus = BAV_paratrooper
+		}
+		x = 23
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = marines
+				technology = marines2
+				}
+				}
+	}
+	#Strike the Empire
+	focus = {
+		id = BAV_war_UK
+		icon = GFX_focus_AST_never_gallipoli
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_liberate_french
+		}
+		x = 26
+		y = 6
+		will_lead_to_war_with = ENG
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			has_war_with = ENG
+		}
+		available = {
+		ENG = {
+		exists = yes 
+		}
+		}
+		will_lead_to_war_with = ENG
+		completion_reward = {
+				create_wargoal = { type = puppet_wargoal_focus target = ENG }
+	}
+	}
+	#Austrian Intervention
+	focus = {
+		id = BAV_war_AUS
+		icon = GFX_focus_aus_hun
+		cost = 8.00
+		will_lead_to_war_with = AUS
+		prerequisite = {
+			focus = BAV_purge
+		}
+		x = 30
+		y = 1
+		available = {
+		has_army_manpower = { size > 300000 }
+		AUS = {
+			exists = yes 
+		}
+		NOT = { has_idea = BAV_plot_against_the_commune_2 }
+		NOT = { has_idea = BAV_consolidation_of_power }
+		}
+		bypass = {
+			OR = { 
+				has_war_with = AUS
+				NOT = { country_exists = AUS }
+			}
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 8
+		}
+		will_lead_to_war_with = AUS
+		completion_reward = {
+			AUS = { country_event = { id = bavaria.43 hours = 3 } }
+			news_event = { id = bavaria.46 days = 1 }
+			add_state_claim = 4
+			add_state_claim = 152
+			add_state_claim = 153
+			add_state_claim = 102	
+			add_state_claim = 39
+			#create_wargoal = { type = annex_everything target = AUS }
+		}
+	}
+	#South Tyrol Issue
+	focus = {
+		id = BAV_war_ITA
+		icon = GFX_focus_generic_italy_first
+		cost = 8.00
+		will_lead_to_war_with = ITA
+		prerequisite = {
+			focus = BAV_war_AUS
+		}
+		x = 32
+		y = 2
+		available = {
+		ITA = {
+		exists = yes 
+		}
+		}
+		bypass = {
+			has_war_with = ITA
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		will_lead_to_war_with = ITA
+		completion_reward = {
+				create_wargoal = { type = puppet_wargoal_focus target = ITA }
+	}
+	}
+	#Southern Flank
+	focus = {
+		id = BAV_war_balkan
+		icon = GFX_focus_hun_ser_cro
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_enemy_in_the_east
+		}
+		x = 31
+		y = 5
+		available = {
+		SER = {
+		exists = yes 
+		}
+		NOT = {
+			SER = {
+			has_government = communism
+		}
+		}
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 6
+		}
+		bypass = {
+			OR = {
+			has_war_with = SER
+			is_in_faction_with = SER
+			}
+		}
+		will_lead_to_war_with = SER
+		will_lead_to_war_with = CRO
+		will_lead_to_war_with = MNT
+		completion_reward = {
+				create_wargoal = { type = puppet_wargoal_focus target = SER }
+				if = { limit = { country_exists = CRO } 
+					create_wargoal = { type = puppet_wargoal_focus target = CRO }
+				}
+				if = { limit = { country_exists = MNT } 
+					create_wargoal = { type = puppet_wargoal_focus target = MNT }
+				}
+		}
+	}
+	#Eastern Flank
+	focus = {
+		id = BAV_war_ROM
+		icon = GFX_focus_generic_attack_romania
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_enemy_in_the_east
+		}
+		x = 33
+		y = 5
+		available = {
+		ROM = {
+		exists = yes 
+		}
+		NOT = {
+			ROM = {
+			has_government = communism
+		}
+		}
+		}
+		bypass = {
+			OR = {
+			has_war_with = ROM
+			is_in_faction_with = ROM
+			}
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 7
+		}
+		will_lead_to_war_with = ROM
+		completion_reward = {
+				create_wargoal = { type = puppet_wargoal_focus target = ROM }
+		}
+	}
+	#War with Greece
+	focus = {
+		id = BAV_war_GRE
+		icon = GFX_focus_generic_attack_greece
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_war_balkan
+		}
+		x = 30
+		y = 6
+		available = {
+		GRE = {
+		exists = yes 
+		}
+		NOT = {
+			GRE = {
+			has_government = communism
+		}
+		}
+		}
+		bypass = {
+			OR = {
+			has_war_with = GRE
+			is_in_faction_with = GRE
+			}
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 3
+		}
+		will_lead_to_war_with = GRE
+		completion_reward = {
+				create_wargoal = { type = puppet_wargoal_focus target = GRE }
+		}
+	}
+	#War with Turkey
+	focus = {
+		id = BAV_war_TUR
+		icon = GFX_focus_generic_attack_turkey
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_war_balkan
+		}
+		prerequisite = {
+			focus = BAV_war_ROM
+		}
+		x = 32
+		y = 6
+		available = {
+		TUR = {
+		exists = yes 
+		}
+		NOT = {
+			TUR = {
+			has_government = communism
+		}
+		}
+		}
+		bypass = {
+			OR = {
+			has_war_with = TUR
+			is_in_faction_with = TUR
+			}
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 3
+		}
+		will_lead_to_war_with = TUR
+		completion_reward = {
+				create_wargoal = { type = puppet_wargoal_focus target = TUR }
+		}
+	}
+	#Frauenkorps
+	focus = {
+		id = BAV_women_army
+		icon = GFX_focus_generic_women_in_military
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_secret_police
+		}
+		x = 19
+		y = 1
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			custom_effect_tooltip = BAV_margit_zinke_becomes_a_corps_commander_tt
+			add_ideas = BAV_women_corps
+		}
+	}
+	#New Air Bases
+	focus = {
+		id = BAV_new_bases
+		icon = GFX_goal_generic_air_production
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_air_effort
+		}
+		x = 18
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+			random_owned_controlled_state = {
+				limit = {
+					state_population > 500000
+					air_base < 7
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}	
+			random_owned_controlled_state = {
+				limit = {
+					state_population > 500000
+					air_base < 7
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#Air games
+	focus = {
+		id = BAV_air_games
+		icon = GFX_goal_generic_air_doctrine
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_new_bases
+		}
+		x = 19
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+			add_tech_bonus = {
+				name =  air_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = air_doctrine
+			}	
+		}
+	}
+	#Anti-Air
+	focus = {
+		id = BAV_anti_air
+		icon = GFX_focus_bav_anti_air
+		cost = 8.00
+		prerequisite = {
+			focus = BAV_boost_milit_spending
+		}
+		x = 11
+		y = 4
+		completion_reward = {
+		5 = {
+		if = {
+		limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+		}
+		}
+		}
+		52 = {
+		if = {
+		limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+		}
+		}
+		}
+		50 = {
+		if = {
+		limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+		}
+		}
+		}
+		58 = {
+		if = {
+		limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+		}
+		}
+		}
+		64 = {
+		if = {
+		limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+		}
+		}
+		}
+		65 = {
+		if = {
+		limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+		}
+		}
+		}
+		763 = {
+		if = {
+		limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+		}
+		}
+		}
+
+		add_tech_bonus = {
+				name =  air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = radar_tech
+		
+		}
+
+		}
+	}
+}

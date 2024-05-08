@@ -1,0 +1,23 @@
+﻿
+		##### NAVAL UNITS #####
+	navy = {
+		name = "Reserveflotte"
+		base = 362
+		location = 362  # Konigsberg
+		ship = { name = "RMS Grosser Kurfürst" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER version_name = "König Class" } } }
+		ship = { name = "RMS Victoria Louise" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER } } }
+		ship = { name = "RMS Hertha" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER } } }
+		ship = { name = "RMS Roon" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER } } }
+		ship = { name = "RMS Dresden" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } } 		
+		ship = { name = "RMS Cöln" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }				
+		ship = { name = "RMS Karlsruhe" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+		ship = { name = "RMS Frankfurt" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+		ship = { name = "RMS Hamburg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+		ship = { name = "RMS Danzig" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }	
+		ship = { name = "RMS Eber" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+		ship = { name = "RMS Panther" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+		ship = { name = "RMS Luchs" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+	}
+
+	
+

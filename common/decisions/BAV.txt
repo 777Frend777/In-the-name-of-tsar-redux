@@ -1,0 +1,1467 @@
+#Category allowed for BAV
+
+
+BAV_expand_kommintern_category = {
+	BAV_invite_to_DEN = {
+		icon = gre_faction_management_category
+		cost = 20
+		targets = { DEN }
+		fire_only_once = yes
+		visible = {
+			is_subject = no
+			is_faction_leader = yes
+			NOT = { is_in_faction_with = DEN }
+			country_exists = DEN
+			NOT = { has_war_with = DEN }
+			DEN = { is_in_faction = no }
+			DEN = {
+				has_opinion = {
+					target = BAV
+					value > 70
+				}
+			}
+		}
+		available = {
+			DEN = {
+				has_opinion = {
+					target = BAV
+					value > 70
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 14
+		remove_effect = {
+			DEN = { country_event = { days = 1 id = generic.5 } }
+		}
+	}
+	BAV_invite_to_HOL = {
+		icon = gre_faction_management_category
+		cost = 20
+		targets = { HOL }
+		fire_only_once = yes
+		visible = {
+			is_subject = no
+			is_faction_leader = yes
+			NOT = { is_in_faction_with = HOL }
+			country_exists = HOL
+			NOT = { has_war_with = HOL }
+			HOL = { is_in_faction = no }
+			NOT = { has_completed_focus = BAV_enemy_in_the_west }
+		}
+		available = {
+			has_completed_focus = BAV_invest_prog
+			HOL = {
+				OR = { 
+					has_government = communism
+					has_government = socialist
+					has_government = democratic
+				}
+				has_opinion = {
+					target = BAV
+					value > 54
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 14
+		remove_effect = {
+			HOL = { country_event = { days = 1 id = generic.5 } }
+		}
+	}
+	BAV_invite_to_BEL = {
+		icon = gre_faction_management_category
+		cost = 20
+		targets = { BEL }
+		fire_only_once = yes
+		visible = {
+			is_subject = no
+			is_faction_leader = yes
+			NOT = { is_in_faction_with = BEL }
+			country_exists = BEL
+			NOT = { has_war_with = BEL }
+			BEL = { is_in_faction = no }
+			NOT = { has_completed_focus = BAV_enemy_in_the_west }
+		}
+		available = {
+			BAV = { has_completed_focus = BAV_invest_prog
+			NOT = { has_completed_focus = BAV_enemy_in_the_west } }
+			BEL = {
+				has_completed_focus = BEL_election_victory_labour
+				has_opinion = {
+					target = BAV
+					value > 54
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 14
+		remove_effect = {
+			BEL = { country_event = { days = 1 id = generic.5 } }
+		}
+	}
+	BAV_invite_to_LUX = { 
+		icon = gre_faction_management_category
+		cost = 20
+		targets = { LUX }
+		fire_only_once = yes
+		visible = {
+			is_subject = no
+			is_faction_leader = yes
+			NOT = { is_in_faction_with = LUX }
+			country_exists = LUX
+			NOT = { has_war_with = LUX }
+			LUX = { is_in_faction = no }
+			NOT = { has_completed_focus = BAV_enemy_in_the_west }
+		}
+		available = {
+			BAV = { has_completed_focus = BAV_invest_prog
+			NOT = { has_completed_focus = BAV_enemy_in_the_west } }
+			LUX = {
+				OR = { 
+					has_government = communism
+					has_government = socialist
+					has_government = democratic
+				}
+				has_opinion = {
+					target = BAV
+					value > 54
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 14
+		remove_effect = {
+			LUX = { country_event = { days = 1 id = generic.5 } }
+		}
+	}
+	BAV_invite_to_FRA = {
+		icon = gre_faction_management_category
+		cost = 20
+		targets = { FRA }
+		fire_only_once = yes
+		visible = {
+			is_subject = no
+			is_faction_leader = yes
+			NOT = { is_in_faction_with = FRA }
+			country_exists = FRA
+			NOT = { has_war_with = FRA }
+			FRA = { 
+				is_in_faction = no 
+				NOT = { 
+					has_completed_focus = FR_entente 
+					has_completed_focus = FR_fascist
+					has_completed_focus = FR_ban_communism
+				}
+			}
+			NOT = { has_completed_focus = BAV_enemy_in_the_west }
+			
+		}
+		available = {		
+			BAV = { 
+					NOT = { has_completed_focus = BAV_enemy_in_the_west }
+					has_completed_focus = BAV_normalize_relations_with_fra 
+				}
+			FRA = {
+				OR = { 
+					has_government = communism
+					has_government = socialist
+				}
+				NOT = { 
+					has_completed_focus = FR_entente 
+					has_completed_focus = FR_fascist
+					has_completed_focus = FR_ban_communism
+				}
+				has_opinion = {
+					target = BAV
+					value > 54
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 14
+		remove_effect = {
+			FRA = { country_event = { days = 1 id = generic.5 } }
+		}
+	}
+	BAV_invite_to_SER = {
+		icon = gre_faction_management_category
+		cost = 20
+		targets = { SER }
+		fire_only_once = yes
+		visible = {
+			is_subject = no
+			is_faction_leader = yes
+			NOT = { is_in_faction_with = SER }
+			country_exists = SER
+			NOT = { has_war_with = SER }
+			SER = { is_in_faction = no }
+			NOT = { has_completed_focus = BAV_enemy_in_the_east }
+		}
+		available = {
+			NOT = { has_completed_focus = BAV_enemy_in_the_east }
+			SER = {
+				has_opinion = {
+					target = BAV
+					value > 54
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 14
+		remove_effect = {
+			SER = { country_event = { days = 1 id = generic.5 } }
+		}
+	}
+	BAV_invite_to_NOR = {
+		icon = gre_faction_management_category
+		cost = 20
+		targets = { NOR }
+		fire_only_once = yes
+		visible = {
+			is_subject = no
+			is_faction_leader = yes
+			NOT = { is_in_faction_with = NOR }
+			country_exists = NOR
+			NOT = { has_war_with = NOR }
+			NOR = { is_in_faction = no }
+			NOR = {
+				has_opinion = {
+					target = BAV
+					value > 70
+				}
+			}
+		}
+		available = {
+			NOR = {
+				has_opinion = {
+					target = BAV
+					value > 70
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 14
+		remove_effect = {
+			NOR = { country_event = { days = 1 id = generic.5 } }
+		}
+	}
+	BAV_invite_to_ITA = {
+		icon = gre_faction_management_category
+		cost = 20
+		targets = { ITA }
+		fire_only_once = yes
+		visible = {
+			is_subject = no
+			is_faction_leader = yes
+			NOT = { is_in_faction_with = ITA }
+			country_exists = ITA
+			NOT = { has_war_with = ITA }
+			ITA = { 
+				is_in_faction = no 
+				NOT = { has_completed_focus = ITA_remain_with_allies }
+			}
+			
+		}
+		available = {
+			ITA = { has_completed_focus = ITA_communist_party }
+			NOT = { has_completed_focus = ITA_remain_with_allies }
+			ITA = {
+				has_opinion = {
+					target = BAV
+					value > 54
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 14
+		remove_effect = {
+			ITA = { country_event = { days = 1 id = generic.5 } }
+		}
+	}
+	BAV_invite_to_SPC = {
+		icon = gre_faction_management_category
+		cost = 20
+		targets = { SPC }
+		fire_only_once = yes
+		visible = {
+			is_subject = no
+			is_faction_leader = yes
+			NOT = { is_in_faction_with = SPC }
+			country_exists = SPC
+			NOT = { has_war_with = SPC }
+			SPC = { 
+				is_in_faction = no 
+			}
+			has_completed_focus = SPR_prepare_for_war
+			
+		}
+		available = {
+			has_completed_focus = SPR_prepare_for_war
+			SPC = {
+				has_opinion = {
+					target = BAV
+					value > 54
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 14
+		remove_effect = {
+			SPC = { country_event = { days = 1 id = generic.5 } }
+		}
+	}
+
+}
+BAV_imminent_civil_war = {
+
+#Plot against the Commune
+	BAV_strike_first = {
+	
+		priority = 9
+		icon = generic_operation
+		cost = 20
+		targets = { GER }
+		fire_only_once = yes
+		visible = {
+		NOT = { has_war_with = GER }
+		country_exists = GER
+		original_tag = BAV
+		}
+		targets = { GER }
+		ai_will_do = {
+			factor = 9
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 64
+			}
+		}
+		available = {
+		has_war_support > 0.5
+		has_army_manpower = { size > 220000 }
+		NOT = { has_country_flag = BAV_war_preparations_tt }
+		}
+		war_with_on_remove = GER
+		war_with_target_on_remove = yes
+		war_with_target_on_complete = yes
+		complete_effect = {
+			set_country_flag = { flag = BAV_war_preparations_tt days = 10 value = 1 }
+		}
+		days_remove = 10
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = BAV_plot_against_the_commune
+				add_idea = BAV_plot_against_the_commune_2
+			}
+			if = { limit = { 58 = { has_state_flag = BAV_is_infiltrated } }
+				country_event = { id = bavaria.35 days = 3 }
+				GER = { country_event = { id = bavaria.34 days = 3 } }
+			}
+			declare_war_on = { 
+			target = GER type = annex_everything }
+			declare_war_on = { 
+			target = WSM type = annex_everything }
+			declare_war_on = { 
+			target = SAX type = annex_everything }
+		}	
+	}
+	
+	BAV_infiltrate_hamburg = {
+		priority = 8
+		
+		icon = generic_operation
+		cost = 20
+		fire_only_once = yes
+		visible = {
+		NOT = { has_war_with = GER }
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 58
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		NOT = { has_war_with = GER }
+		NOT = {
+		58 = {
+			OR = {
+			has_state_flag = BAV_is_being_infiltrated
+			has_state_flag = BAV_is_infiltrated
+			}
+		}
+		}
+		}
+		days_remove = 40
+		complete_effect = {
+			58 = { set_state_flag = BAV_is_being_infiltrated days = 15 value = 1}
+		}
+		remove_effect = {
+			hidden_effect = {
+				GER = { country_event = { id = bavaria.33 days = 3 } }
+			}
+			add_war_support = 0.03
+			58 = {
+			set_state_flag = BAV_is_infiltrated
+		  }
+		}
+	}
+	
+	BAV_invest_industry_i = {
+	
+		priority = 7
+		icon = generic_factory
+		cost = 20
+		fire_only_once = yes
+		visible = {
+		controls_state = 52
+		original_tag = BAV
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available = {
+		NOT = { has_country_flag = BAV_war_preparations_tt }
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		complete_effect = {
+			set_country_flag = { flag = BAV_war_preparations_tt days = 40 value = 1 }
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 52
+			}
+		}
+		days_remove = 40
+		remove_effect = {
+			52 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+		    }
+		  }
+		}
+		
+	}
+	
+	BAV_invest_industry_ii = {
+	
+		priority = 7
+		icon = generic_factory
+		cost = 20
+		fire_only_once = yes
+		visible = {
+		controls_state = 50
+		original_tag = BAV
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		NOT = { has_country_flag = BAV_war_preparations_tt }
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		complete_effect = {
+			set_country_flag = { flag = BAV_war_preparations_tt days = 40 value = 1 }
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 50
+			}
+		}
+		days_remove = 40
+		remove_effect = {
+			50 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+		    }
+		  }
+		}
+		
+	}
+	
+	BAV_invest_industry_iii = {
+	
+		priority = 7
+		icon = generic_factory
+		cost = 20
+		fire_only_once = yes
+		visible = {
+		controls_state = 55
+		original_tag = BAV
+		}
+		complete_effect = {
+			set_country_flag = { flag = BAV_war_preparations_tt days = 40 value = 1 }
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		NOT = { has_country_flag = BAV_war_preparations_tt }
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 55
+			}
+		}
+		days_remove = 40
+		remove_effect = {
+			55 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+		    }
+		  }
+		}
+		
+	}
+	
+	BAV_prep_army = {
+	
+		priority = 5
+		icon = gre_faction_management_category
+		cost = 20
+		fire_only_once = yes
+		visible = {
+		original_tag = BAV
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 53
+			}
+		}
+		complete_effect = {
+			set_country_flag = { flag = BAV_war_preparations_tt days = 40 value = 1 }
+		}
+		available = {
+		NOT = { has_country_flag = BAV_war_preparations_tt }
+		}
+		modifier = {
+		}
+		days_remove = 40
+		remove_effect = {
+			add_war_support = 0.03
+			army_experience = 15
+		}
+		
+	}
+	
+	BAV_enlist_hungarians = {
+	
+		priority = 4
+		icon = generic_military
+		cost = 20
+		fire_only_once = yes
+		targets = { HUN }
+		visible = {
+		country_exists = HUN
+		HUN = {
+			exists = yes
+			#has_government = communism
+		}
+		original_tag = BAV
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 43
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+		NOT = { has_country_flag = BAV_war_preparations_tt }
+		}
+		modifier = {
+			political_power_gain = -0.1
+		}
+		complete_effect = {
+			set_country_flag = { flag = BAV_war_preparations_tt days = 40 value = 1 }
+		}
+		days_remove = 40
+		remove_effect = {
+			add_war_support = 0.03
+			add_manpower = 2500
+		}
+		
+	}
+	
+	BAV_construct_retreat_line_ii = {
+	
+		priority = 3
+		icon = generic_construction
+		cost = 20
+		fire_only_once = yes
+		visible = {
+		controls_state = 55
+		original_tag = BAV
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		NOT = { has_country_flag = BAV_war_preparations_tt }
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		complete_effect = {
+			set_country_flag = { flag = BAV_war_preparations_tt days = 40 value = 1 }
+		}
+		days_remove = 40
+		highlight_states = {
+			highlight_state_targets = {
+				state = 55
+			}
+		}
+		remove_effect = {
+			55 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 9524
+					instant_build = yes
+				  }
+				 add_building_construction = {
+					type = bunker
+					level = 1
+					province = 564
+					instant_build = yes
+				  } 
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 11533
+					instant_build = yes
+				  }
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 3524
+					instant_build = yes
+				  }	
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 9547
+					instant_build = yes
+				  }
+		         }	
+		}
+		
+	}
+	
+	BAV_construct_retreat_line = {
+	
+		priority = 2
+		icon = generic_construction
+		cost = 20
+		fire_only_once = yes
+		visible = {
+		controls_state = 54
+		original_tag = BAV
+		}
+		
+		ai_will_do = {
+			factor = 9
+		}
+		available = {
+		NOT = { has_country_flag = BAV_war_preparations_tt }
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		complete_effect = {
+			set_country_flag = { flag = BAV_war_preparations_tt days = 40 value = 1 }
+		}
+		days_remove = 40
+		highlight_states = {
+			highlight_state_targets = {
+				state = 54
+			}
+		}
+		remove_effect = {
+			54 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 9557
+					instant_build = yes
+				  }
+				 add_building_construction = {
+					type = bunker
+					level = 1
+					province = 9572
+					instant_build = yes
+				  } 
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 9416
+					instant_build = yes
+				  }
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11544
+					instant_build = yes
+				  }		
+		         }	
+		}
+		
+	}
+	
+	
+}
+BAV_generic_four_year_plan_category = {
+	BAV_complete_west_wall_desc = {
+		icon = generic_construction
+		available = {
+			NOT = { has_country_flag = GER_war_preparations_tt }
+			controls_state = 57
+			controls_state = 56
+			controls_state = 55
+			controls_state = 50
+		}
+		
+		cost = 60
+		fire_only_once = yes
+		visible = {
+			AND = {
+				original_tag = BAV
+				has_completed_focus = BAV_westwall
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100000
+		}
+		
+		modifier = {
+			civilian_factory_use = 3
+		}
+		complete_effect = {
+			set_country_flag = { flag = GER_war_preparations_tt days = 50 value = 1 }
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 55
+			}
+		}
+		days_remove = 60
+		remove_effect = {
+			##custom_effect_tooltip = GER_westwall_tt
+			custom_effect_tooltip = GER_construct_west_wall_bunkers_tt
+			50 = {
+				add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+				}
+			}
+			55 = {
+				add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+				}
+			}
+			57 = {
+				add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+				}
+			}
+			56 = {
+				add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+				}
+			}
+			hidden_effect = {
+			50 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 11640
+					instant_build = yes
+				  }
+				  add_building_construction = {
+					type = bunker
+					level = 3
+					province = 6712
+					instant_build = yes
+				  }
+				  add_building_construction = {
+					type = bunker
+					level = 3
+					province = 6542
+					instant_build = yes
+				  }
+				  add_building_construction = {
+					type = bunker
+					level = 3
+					province = 6568
+					instant_build = yes
+				  }
+				  add_building_construction = {
+					type = bunker
+					level = 3
+					province = 3530
+					instant_build = yes
+				  }
+
+			}
+			55 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 589
+					instant_build = yes
+				  }	
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 6488
+					instant_build = yes
+				  }
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 6444
+					instant_build = yes
+				  }
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 9486
+					instant_build = yes
+				  }	
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 9547
+					instant_build = yes
+				  }	 
+				}
+				57 = {	
+				#11346
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 495
+					instant_build = yes
+				  }
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 6622
+					instant_build = yes
+				  }	
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3398
+					instant_build = yes
+				  }	   
+				}
+				56 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 9281
+					instant_build = yes
+				  }	
+				  #11264
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 11360
+					instant_build = yes
+				  }  
+				}
+			}
+				
+				
+				
+				
+		}
+	
+	}
+	
+	BAV_complete_ost_wall = {
+		icon = generic_construction
+		available = {
+			NOT = { has_country_flag = GER_war_preparations_tt }
+			OR = {
+				controls_state = 85
+				controls_state = 86
+				controls_state = 763
+				controls_state = 762
+			}
+		}
+		
+		cost = 60
+		fire_only_once = yes
+		visible = {
+				AND = {
+					original_tag = BAV
+					has_completed_focus = BAV_westwall
+				}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 86
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		
+		modifier = {
+			civilian_factory_use = 3
+		}
+		complete_effect = {
+			set_country_flag = { flag = GER_war_preparations_tt days = 60 value = 1 }
+		}
+		days_remove = 60
+		remove_effect = {
+			##custom_effect_tooltip = GER_westwall_tt
+			custom_effect_tooltip = GER_construct_ost_wall_bunkers_tt
+			86 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+				    }
+				}
+			}
+			762 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+				    }
+				}
+			}
+			85 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+				    }
+				}
+			}
+			763 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+				    }
+				}
+			}
+			hidden_effect = {
+			807 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				  add_building_construction = {
+					type = bunker
+					level = 2
+					province = 6347
+					instant_build = yes
+				  }
+				  add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3295
+					instant_build = yes
+				  }
+				  add_building_construction = {
+					type = bunker
+					level = 2
+					province = 243
+					instant_build = yes
+				  }
+				  }
+			}
+			85 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				  add_building_construction = {
+					type = bunker
+					level = 1
+					province = 362
+					instant_build = yes
+				  }
+				  }
+			}
+			5 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 6375
+					instant_build = yes
+				  }
+				  add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11386
+					instant_build = yes
+				  }
+				}
+			}
+			763 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3384
+					instant_build = yes
+				  }
+				  add_building_construction = {
+					type = bunker
+					level = 1
+					province = 6332
+					instant_build = yes
+				  }
+				}
+			}
+			86 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 17
+					instant_build = yes
+				  }
+				}
+			}
+			67 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 11467
+					instant_build = yes
+				  }
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 479
+					instant_build = yes
+				  }
+				}
+			}
+			762 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 506
+					instant_build = yes
+				  }
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 6464
+					instant_build = yes
+				  }
+				}
+			}
+		}
+		}
+	
+	}
+	BAV_generic_focus_on_industry = {
+		icon = generic_construction
+		visible = {
+				AND = {
+					original_tag = BAV
+					has_completed_focus = BAV_five_year_plan
+				}
+		}
+		available = {
+			is_subject = no
+			controls_state = 64
+		}
+		cost = 20
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect = {
+			add_tech_bonus = {
+				name = GER_four_year_plan
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	#Invest in Holland
+	BAV_invest_in_hol = {
+		icon = generic_construction
+		visible = {
+			original_tag = BAV
+			BAV = { has_completed_focus = BAV_invest_prog }
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 7
+			}
+		}
+		targets = { HOL }
+		available = {
+			is_subject = no
+			controls_state = 64
+			num_of_civilian_factories_available_for_projects > 2
+			country_exists = HOL
+			NOT = { has_war_with = HOL }
+		}
+		cost = 20
+		ai_will_do = {
+			factor = 3
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect = {
+			HOL = { country_event = { id = bavaria.42 days = 1 } }
+		}
+	}
+	#Invest in Belgium
+	BAV_invest_in_bel = {
+		icon = generic_construction
+		visible = {
+			original_tag = BAV
+			BAV = { has_completed_focus = BAV_invest_prog }
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 6
+			}
+		}
+		targets = { BEL }
+		available = {
+			is_subject = no
+			controls_state = 64
+			num_of_civilian_factories_available_for_projects > 2
+			country_exists = BEL
+			NOT = { has_war_with = BEL }
+		}
+		cost = 20
+		ai_will_do = {
+			factor = 3
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect = {
+			BEL = { country_event = { id = bavaria.42 days = 1 } }
+		}
+	}
+	#Invest in Luxembourg
+	BAV_invest_in_lux = {
+		icon = generic_construction
+		visible = {
+			original_tag = BAV
+			BAV = { has_completed_focus = BAV_invest_prog }
+		}
+		targets = { LUX }
+		highlight_states = {
+			highlight_state_targets = {
+				state = 8
+			}
+		}
+		available = {
+			is_subject = no
+			controls_state = 64
+			num_of_civilian_factories_available_for_projects > 2
+			country_exists = LUX
+			NOT = { has_war_with = LUX }
+		}
+		cost = 20
+		ai_will_do = {
+			factor = 3
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect = {
+			LUX = { country_event = { id = bavaria.42 days = 1 } }
+		}
+	}
+	BAV_invest_in_rhineland_north = {
+		icon = generic_construction
+		visible = {
+			controls_state = 64
+			BAV = { has_completed_focus = BAV_industrialize_rhine }
+		}
+		available = {
+			is_subject = no
+			controls_state = 42
+			num_of_civilian_factories_available_for_projects > 3
+		}
+		cost = 20
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 42
+			}
+		}
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect = {
+			42 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	BAV_invest_in_rhineland_south = {
+		icon = generic_construction
+		visible = {
+			controls_state = 64
+			BAV = { has_completed_focus = BAV_industrialize_rhine }
+		}
+		available = {
+			is_subject = no
+			controls_state = 51
+			num_of_civilian_factories_available_for_projects > 3
+		}
+		cost = 20
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 51
+			}
+		}
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect = {
+			51 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	BAV_invest_in_rhineland_hamburg = {
+		icon = generic_construction
+		visible = {
+			controls_state = 64
+			BAV = { has_completed_focus = BAV_industrialize_north }
+		}
+		available = {
+			is_subject = no
+			controls_state = 58
+			num_of_civilian_factories_available_for_projects > 3
+		}
+		cost = 20
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 58
+			}
+		}
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect = {
+			58 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	GER_invest_in_rhineland_north_schleswig = {
+		icon = generic_construction
+		visible = {
+			BAV = { has_completed_focus = BAV_industrialize_north }
+		}
+		available = {
+			is_subject = no
+			controls_state = 912
+			num_of_civilian_factories_available_for_projects > 3
+		}
+		cost = 20
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 912
+			}
+		}
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect = {
+			912 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	BAV_invest_in_rhineland_vorpommern = {
+		icon = generic_construction
+		visible = {
+			controls_state = 64
+			BAV = { has_completed_focus = BAV_industrialize_north }
+		}
+		available = {
+			is_subject = no
+			controls_state = 62
+			num_of_civilian_factories_available_for_projects > 3
+		}
+		cost = 20
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 62
+			}
+		}
+		days_remove = 50
+		fire_only_once = yes
+		remove_effect = {
+			62 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+

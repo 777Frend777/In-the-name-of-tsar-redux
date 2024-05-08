@@ -1,0 +1,857 @@
+﻿###########################
+# Serbia Events ###########
+###########################
+
+add_namespace = serbia
+
+
+
+# Comintern
+country_event = {
+	id = serbia.1
+	title = serbia.1.t
+	desc = serbia.1.d
+	picture = GFX_report_event_SER_bav_alliance
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.1.a
+	    BAV = { 
+		add_to_faction = SER
+		}
+    }
+}
+#########Greece
+country_event = {
+	id = serbia.2
+	title = serbia.2.t
+	desc = serbia.2.d
+	picture = GFX_report_event_SER_greece_submission
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.2.a #alright
+	ai_chance = {
+			factor = 40
+		}
+		SER = {
+			country_event = { days = 1 id = serbia.3 }
+		}
+	}
+
+	option = {
+		name = serbia.2.b #fuckoff
+	ai_chance = {
+			factor = 60
+		}
+		SER = {
+			country_event = { days = 1 id = serbia.4 }
+		}
+	}
+}
+###########Greece Accepts
+country_event = {
+	id = serbia.3
+	title = serbia.3.t
+	desc = serbia.3.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.3.a 
+	ai_chance = {
+			factor = 100
+		}
+		puppet = GRE
+    }	
+}
+#########Greece Refuses
+country_event = {
+	id = serbia.4
+	title = serbia.4.t
+	desc = serbia.4.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.4.a 
+		declare_war_on  = {
+		    type = annex_everything
+		    target = GRE
+		}
+	}	
+}
+#################Bulgaria Capitulates
+country_event = {
+	id = serbia.5
+	title = serbia.5.t
+	desc = serbia.5.d
+	picture = GFX_report_event_SER_bulgaria
+    trigger = {
+		tag = SER
+		48 = { is_owned_by = SER } 
+		212 = { is_owned_by = SER }
+		820 = { is_owned_by = SER } 
+		760 = { is_owned_by = SER } 
+		211 = { is_owned_by = SER }  
+	    SER = { has_government = communism } 
+    }
+    fire_only_once = yes
+
+	option = {
+		name = serbia.5.a
+		SER = {
+		add_war_support = 0.01
+		add_political_power = 120
+		}		
+	}	
+}
+#####################Hungary Capitulates		
+country_event = {
+	id = serbia.6
+	title = serbia.6.t
+	desc = serbia.6.d
+	picture = GFX_report_event_SER_hungary
+    trigger = {
+		tag = SER
+		155 = { is_owned_by = SER }
+		43 = { is_owned_by = SER } 
+		154 = { is_owned_by = SER } 
+	    SER = { has_government = communism } 
+    }
+    fire_only_once = yes
+
+	option = {
+		name = serbia.6.a
+		SER = {
+		add_war_support = 0.01
+		add_political_power = 120
+				}
+	}	
+}
+########################################Yugoslavia#################
+country_event = {
+	id = serbia.7
+	title = serbia.7.t
+	desc = serbia.7.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.7.a 
+	ai_chance = {
+			factor = 100
+		}
+		SER = {
+		add_stability = 0.05
+		add_political_power = 120
+		}
+	}	
+}
+#############################Croatia###############################
+country_event = {
+	id = serbia.8
+	title = serbia.8.t
+	desc = serbia.8.d
+	picture = GFX_report_event_SER_unfication_integration
+    trigger = {
+		tag = SER
+		109 = { is_owned_by = SER }
+		843 = { is_owned_by = SER }
+		104 = { is_owned_by = SER } 
+		163 = { is_owned_by = SER } 
+    }
+    fire_only_once = yes
+	mean_time_to_happen = {
+		days = 55
+	}
+	option = {
+		name = serbia.8.a
+		SER = {
+		109 = { add_core_of = SER }
+		104 = { add_core_of = SER } 
+		163 = { add_core_of = SER } 
+		843 = { add_core_of = SER } 
+				}
+	}	
+}
+#######################################Romania###########################             #yeah i want to improve that 
+#country_event = {
+#	id = serbia.10
+#	title = serbia.10.t
+#	desc = serbia.10.d
+#	picture = GFX_report_event_vienna_award_hungary
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = serbia.10.a 
+#	    start_civil_war = {
+#			ruling_party = monarchist
+#			ideology = communism
+#			size = 0.5
+#		        }
+#	}
+#}
+####################################################
+news_event = {
+	id = serbia.11
+	title = serbia.11.t
+	desc = serbia.11.d
+	picture = GFX_report_event_SER_unification_invitation
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.11.a 
+		}	
+}
+########################################################
+news_event = {
+	id = serbia.12
+	title = serbia.12.t
+	desc = serbia.12.d
+	picture = GFX_news_event_SER_unification
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.12.a 
+		}
+}
+####################################InvitationROM###############################LOT_OF_BALKAN_STUF####################
+country_event = {
+	id = serbia.13
+	title = serbia.13.t
+	desc = serbia.13.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.13.a 
+	ai_chance = {
+			factor = 65
+		}
+		SER = {
+			country_event = { days = 3 id = serbia.14 }
+		}
+	}
+
+	option = {
+		name = serbia.13.b
+	ai_chance = {
+			factor = 35
+		}
+		SER = {
+			country_event = { days = 3 id = serbia.15 }
+		}
+	}
+}
+########################################ACCEPT1ROM###########
+country_event = {
+	id = serbia.14
+	title = serbia.14.t
+	desc = serbia.14.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.14.a
+	    SER = { 
+		add_to_faction = ROM
+		}
+    }
+}
+#####################################DECLINEROM#########################
+country_event = {
+	id = serbia.15
+	title = serbia.15.t
+	desc = serbia.15.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.15.a
+		}
+}
+#############################INVGRE######################
+country_event = {
+	id = serbia.16
+	title = serbia.16.t
+	desc = serbia.16.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.16.a 
+	ai_chance = {
+			factor = 75
+		}
+		SER = {
+			country_event = { days = 3 id = serbia.17 }
+		}
+	}
+
+	option = {
+		name = serbia.16.b
+	ai_chance = {
+			factor = 25
+		}
+		SER = {
+			country_event = { days = 3 id = serbia.18 }
+		}
+	}
+}
+########################################ACCEPT1GRE###########
+country_event = {
+	id = serbia.17
+	title = serbia.17.t
+	desc = serbia.17.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.17.a
+	    SER = { 
+		add_to_faction = GRE
+		}
+    }
+}
+#####################################DECLINERGRE#########################
+country_event = {
+	id = serbia.18
+	title = serbia.18.t
+	desc = serbia.18.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.18.a
+		}
+}
+#############################INVBUL######################
+country_event = {
+	id = serbia.19
+	title = serbia.19.t
+	desc = serbia.19.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.19.a 
+	ai_chance = {
+			factor = 50
+		}
+		SER = {
+			country_event = { days = 3 id = serbia.20 }
+		}
+	}
+
+	option = {
+		name = serbia.19.b
+	ai_chance = {
+			factor = 50
+		}
+		SER = {
+			country_event = { days = 3 id = serbia.21 }
+		}
+	}
+}
+########################################ACCEPT1BUL###########
+country_event = {
+	id = serbia.20
+	title = serbia.20.t
+	desc = serbia.20.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.20.a
+	    SER = { 
+		add_to_faction = BUL
+		}
+    }
+}
+#####################################DECLINEBUL#########################
+country_event = {
+	id = serbia.21
+	title = serbia.21.t
+	desc = serbia.21.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.21.a
+		}
+}
+#############################INVHUN######################
+country_event = {
+	id = serbia.22
+	title = serbia.22.t
+	desc = serbia.22.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.22.a 
+	ai_chance = {
+			factor = 30
+		}
+		SER = {
+			country_event = { days = 3 id = serbia.23 }
+		}
+	}
+
+	option = {
+		name = serbia.22.b
+	ai_chance = {
+			factor = 70
+		}
+		SER = {
+			country_event = { days = 3 id = serbia.24 }
+		}
+	}
+}
+########################################ACCEPT1HUN###########
+country_event = {
+	id = serbia.23
+	title = serbia.23.t
+	desc = serbia.23.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.23.a
+	    SER = { 
+		add_to_faction = HUN
+		}
+    }
+}
+#####################################DECLINEHUN#########################
+country_event = {
+	id = serbia.24
+	title = serbia.24.t
+	desc = serbia.24.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.24.a
+		}
+}
+#############################INVALB######################
+country_event = {
+	id = serbia.25
+	title = serbia.25.t
+	desc = serbia.25.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.25.a 
+	ai_chance = {
+			factor = 40
+		}
+		SER = {
+			country_event = { days = 3 id = serbia.26 }
+		}
+	}
+
+	option = {
+		name = serbia.25.b
+	ai_chance = {
+			factor = 60
+		}
+		SER = {
+			country_event = { days = 3 id = serbia.27 }
+		}
+	}
+}
+########################################ACCEPT1ALB###########
+country_event = {
+	id = serbia.26
+	title = serbia.26.t
+	desc = serbia.26.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.26.a
+	    SER = { 
+		add_to_faction = ALB
+		}
+    }
+}
+#####################################DECLINEALB#########################
+country_event = {
+	id = serbia.27
+	title = serbia.27.t
+	desc = serbia.27.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.27.a
+		}
+}
+###########################################################################GuaranteeRUS#############
+country_event = {
+	id = serbia.28
+	title = serbia.28.t
+	desc = serbia.28.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.28.a 
+	ai_chance = {
+			factor = 95
+		}
+	                give_guarantee = SER
+
+	}
+
+	option = {
+		name = serbia.28.b 
+	ai_chance = {
+			factor = 5
+		}
+		SER = {
+			country_event = { days = 3 id = serbia.29 }
+		}
+	}
+}
+#############################################GuaranteeFRA#############################
+country_event = {
+	id = serbia.32
+	title = serbia.32.t
+	desc = serbia.32.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.32.a 
+	ai_chance = {
+			factor = 50
+		}
+	                give_guarantee = SER
+
+	}
+
+	option = {
+		name = serbia.32.b 
+	ai_chance = {
+			factor = 50
+		}
+		SER = {
+			country_event = { days = 3 id = serbia.30 }
+		}
+	}
+}
+###########################################GuaranteeBRitain######################
+country_event = {
+	id = serbia.33
+	title = serbia.33.t
+	desc = serbia.33.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.33.a 
+	ai_chance = {
+			factor = 50
+		}
+	                give_guarantee = SER
+
+	}
+
+	option = {
+		name = serbia.33.b 
+	ai_chance = {
+			factor = 50
+		}
+		SER = {
+			country_event = { days = 3 id = serbia.31 }
+		}
+	}
+}
+##################################ohfuckurussia#######################################
+country_event = {
+	id = serbia.29
+	title = serbia.29.t
+	desc = serbia.29.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.29.a
+		}
+}
+##################################ohfuckufrance######################################
+country_event = {
+	id = serbia.30
+	title = serbia.30.t
+	desc = serbia.30.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.30.a
+		}
+}
+########################################ohfuckuengland##################################
+country_event = {
+	id = serbia.31
+	title = serbia.31.t
+	desc = serbia.31.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.31.a
+		}
+}
+########################################Austria1##################################
+country_event = {
+	id = serbia.34
+	title = serbia.34.t
+	desc = serbia.34.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	    option = {
+		name = serbia.34.a
+
+		diplomatic_relation = {
+        country = SER
+        relation = non_aggression_pact
+        active = yes
+        } 
+        SER = {
+			country_event = { days = 1 id = serbia.35 }
+		  }
+		}
+	    option = {
+		name = serbia.34.b
+        SER = {
+			country_event = { days = 1 id = serbia.36 }
+		}
+		}	
+}
+########################################Austria2##################################
+country_event = {
+	id = serbia.35
+	title = serbia.35.t
+	desc = serbia.35.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	    option = {
+		name = serbia.35.a
+		set_global_flag = austria_acc_flag
+		}
+}
+########################################Austria3##################################
+country_event = {
+	id = serbia.36
+	title = serbia.36.t
+	desc = serbia.36.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	    option = {
+		name = serbia.36.a
+		unlock_national_focus = SER_eastern_coalition
+		}
+		option = {
+		name = serbia.36.b
+		unlock_national_focus = SER_western_coalition
+		}
+}
+########################################Austria3##################################
+country_event = {
+	id = serbia.37
+	title = serbia.37.t
+	desc = serbia.37.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	    option = {
+		name = serbia.37.a
+		give_guarantee = SER
+		SER = { give_guarantee = AUS }
+		}
+}
+########################################remember##################################
+news_event = {
+	id = serbia.50
+	title = serbia.50.t
+	desc = serbia.50.d
+	picture = GFX_news_event_ser_belgrade
+
+    trigger = {
+        tag = SER
+		controls_state = 107
+        AND = {
+		         date > 1936.09.25
+		}         
+	}
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+		name = serbia.50.a
+		add_political_power = 10
+		hidden_effect = {
+		SER = {
+				news_event = { id = serbia.50 days = 365 }
+			}
+		}	
+		}
+}
+#COUNTRY: Strikes hit a city
+country_event = {
+	id = serbia.51
+	title = serbia.51.t
+	desc = serbia.51.d
+
+	is_triggered_only = yes
+
+	    option = {
+			name = serbia.51.a
+			add_stability = -0.05
+			add_popularity = {
+					ideology = communism
+					popularity = 0.03
+				}
+			random_owned_controlled_state = {
+				damage_building = { type = infrastructure damage = 0.2 }	
+			}
+			random_owned_controlled_state = {
+				damage_building = { type = infrastructure damage = 0.4 }	
+			}
+			random_owned_controlled_state = {
+				damage_building = { type = infrastructure damage = 0.3 }	
+			}
+		}
+}
+#COUNTRY: Communists and socialists unite
+country_event = {
+	id = serbia.52
+	title = serbia.52.t
+	desc = serbia.52.d
+
+	is_triggered_only = yes
+
+	    option = {
+			name = serbia.52.a
+			add_political_power = -35
+			add_popularity = {
+					ideology = socialist
+					popularity = -0.04
+				}
+			add_popularity = {
+					ideology = communism
+					popularity = 0.04
+				}
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#######################################Treatywithgermany################notworking
+#country_event = {
+#	id = serbia.9
+#	title = serbia.9.t
+#	desc = serbia.9.d
+#	picture = GFX_report_event_vienna_award_hungary
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = serbia.9.a 
+#	ai_chance = {
+#		}
+#		BAV = {
+#		add_tech_bonus = {
+#				bonus = 1.0
+#				uses = 1
+#				category = mouintaneers_tech		
+#		SER = {
+#		add_tech_bonus = {
+#				bonus = 1.0
+#				uses = 2
+#				category = land_doctrine
+#		
+#
+#		}
+#	}	
+#}

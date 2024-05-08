@@ -1,0 +1,21 @@
+
+ai_historical_focus_list_HUN = {
+	ai_national_focuses = {
+		# grab as fast as you can if available
+	
+		hun_stabilize_the_country
+		hun_revoulution
+		hun_kill_the_old
+		hun_a_new_parlimant
+		hun_party_elections
+		hun_mobilize_militias
+		hun_execute_horthy
+		hun_increase_output
+		hun_industrial_development
+		hun_civilian_effort
+		hun_militaric_effort
+		hun_red_council
+		hun_war_propaganda
+		
+	}
+}

@@ -1,0 +1,27 @@
+
+ai_historical_focus_list_ROM = {
+	ai_national_focuses = {
+		# grab as fast as you can if available
+	
+		ROM_industry
+		ROM_romanian_army
+		ROM_infra
+		ROM_oil_works
+		ROM_expand_air
+		ROM_army_games
+		ROM_civil_effort
+		ROM_steel_works
+		ROM_milit_effort
+		ROM_greater_romania
+		ROM_iron_guard_focus
+		ROM_forts
+		ROM_slot_1
+		ROM_equipment
+		ROM_artillery
+		ROM_a_new_way
+		ROM_orthodox_christianity
+		ROM_legions
+
+		
+	}
+}

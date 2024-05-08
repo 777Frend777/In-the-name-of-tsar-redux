@@ -1,0 +1,1202 @@
+
+
+################
+#
+# Portugal MEMES/EVENTS
+#
+##################
+
+add_namespace = portu
+#nocoloniesanymore 
+news_event = {
+	id = portu.1
+	title = portu.1.t
+	desc = portu.1.d
+	picture = GFX_news_event_POR_decol
+
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = por_col_inde
+	}
+
+	option = {
+		name = portu.1.a
+	}
+}
+
+#revolution
+news_event = {
+	id = portu.2
+	title = portu.2.t
+	desc = portu.2.d
+	picture = GFX_news_event_POR_rev
+
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = por_revolution
+	}
+
+	option = {
+		name = portu.2.a
+	}
+}
+
+#monarchy
+news_event = {
+	id = portu.3
+	title = portu.3.t
+	desc = portu.3.d
+	picture = GFX_news_event_POR_mon
+
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = por_monarchy
+	}
+
+	option = {
+		name = portu.3.a
+	}
+}
+
+#jointhecomintern
+country_event = {
+	id = portu.4
+	title = portu.4.t
+	desc = portu.4.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = por_comintern
+	}
+
+	option = {
+		name = portu.4.a
+		add_to_faction = POR
+	}
+}
+
+
+#royalspeechabouthearmy
+country_event = {
+	id = portu.5
+	title = portu.5.t
+	desc = portu.5.d
+	picture = GFX_report_event_POR_royal_forces
+
+	is_triggered_only = yes
+
+	option = {
+		name = portu.5.a
+	}
+}
+
+#newconcordat
+country_event = {
+	id = portu.6
+	title = portu.6.t
+	desc = portu.6.d
+	picture = GFX_report_event_POR_vatican
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = portu.6.a
+		add_stability = 0.01
+	}
+}	
+
+
+#assinationattemptonking
+country_event = {
+	id = portu.7
+	title = portu.7.t
+	desc = portu.7.d
+	picture = GFX_report_event_POR_ass
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = portu.7.a
+	}
+}	
+
+#purchaselessersunda
+country_event = {
+	id = portu.8
+	title = portu.8.t
+	desc = portu.8.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.8.a
+	ai_chance = { factor = 100 }
+	hidden_effect = { country_event = { id = portu.9 days = 1 } }
+    7 = {
+    add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+    type = industrial_complex
+    level = 2
+    instant_build = yes
+    }
+    }
+	}
+	option = {
+	name = portu.8.b
+	ai_chance = { factor = 0 }
+    hidden_effect = { country_event = { id = portu.10 days = 1 } }		
+	}
+}
+
+#purchaselessersundaaccept
+country_event = {
+	id = portu.9
+	title = portu.9.t
+	desc = portu.9.d
+
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.9.a
+	112 = {
+    remove_building = {
+    type = industrial_complex
+    level = 2
+    }
+    }
+    POR = { transfer_state = 667 }
+	}
+}
+
+#purchaselessersundadenied
+country_event = {
+	id = portu.10
+	title = portu.10.t
+	desc = portu.10.d
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = portu.10.a
+		add_political_power = -50
+	}
+}
+
+#purchasespanishsahara
+country_event = {
+	id = portu.11
+	title = portu.11.t
+	desc = portu.11.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.11.a
+	ai_chance = { factor = 100 }
+	hidden_effect = { country_event = { id = portu.12 days = 1 } }
+    41 = {
+    add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+    type = industrial_complex
+    level = 2
+    instant_build = yes
+    }
+    }
+	}
+	option = {
+	name = portu.11.b
+	ai_chance = { factor = 0 }
+    hidden_effect = { country_event = { id = portu.13 days = 1 } }		
+	}
+}
+
+
+#purchasespanishsaharaaccept
+country_event = {
+	id = portu.12
+	title = portu.12.t
+	desc = portu.12.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.12.a
+	112 = {
+    remove_building = {
+    type = industrial_complex
+    level = 2
+    }
+    }
+    POR = { transfer_state = 297 }
+	}
+}
+
+#purchasespanishsaharadenied
+country_event = {
+	id = portu.13
+	title = portu.13.t
+	desc = portu.13.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = portu.13.a
+		add_political_power = -50
+	}
+}
+
+
+#respahekongo
+country_event = {
+	id = portu.14
+	title = portu.14.t
+	desc = portu.14.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.14.a
+	ai_chance = { factor = 100 }
+	FRA = { country_event = { id = portu.16 days = 1 } }
+	}
+	option = {
+	name = portu.14.b
+	ai_chance = { factor = 0 }
+    POR = { country_event = { id = portu.15 days = 1 } }		
+	}
+}
+
+#respahekongodenied1
+country_event = {
+	id = portu.15
+	title = portu.15.t
+	desc = portu.15.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.15.a
+	ai_chance = { factor = 100 }
+	}
+}
+
+#respahekongo_englandasksfrance
+country_event = {
+	id = portu.16
+	title = portu.16.t
+	desc = portu.16.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.16.a
+	ai_chance = { factor = 100 }
+	ENG = { country_event = { id = portu.19 days = 1 } }
+	}
+	option = {
+	name = portu.16.b
+	ai_chance = { factor = 0 }
+    ENG = { country_event = { id = portu.17 days = 1 } }		
+	}
+}
+
+#respahekongo_englandasksfrance_denies
+country_event = {
+	id = portu.17
+	title = portu.17.t
+	desc = portu.17.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.17.a
+	ai_chance = { factor = 100 }
+	POR = { country_event = { id = portu.18 days = 1 } }
+	}
+}
+
+#respahekongo_englandasksfrance_denies_decline
+country_event = {
+	id = portu.18
+	title = portu.18.t
+	desc = portu.18.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.18.a
+	ai_chance = { factor = 100 }
+	}
+}
+
+#respahekongo_englandasksfrance_accept
+country_event = {
+	id = portu.19
+	title = portu.19.t
+	desc = portu.19.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.19.a
+	ai_chance = { factor = 100 }
+	POR = { country_event = { id = portu.20 days = 1 } }
+	}
+}
+
+#respahekongo_englandasksfrance_denies_deal
+country_event = {
+	id = portu.20
+	title = portu.20.t
+	desc = portu.20.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.20.a
+	ai_chance = { factor = 100 }
+	POR = { transfer_state = 295 }
+	FEA = { transfer_state = 538 }
+	ENG = { transfer_state = 718 }
+	ENG = { transfer_state = 768 }
+	ENG = { transfer_state = 769 }
+	hidden_effect = { BEL = { country_event = { id = portu.21 days = 1 } } }
+	}
+}
+
+#belgiumthreat
+country_event = {
+	id = portu.21
+	title = portu.21.t
+	desc = portu.21.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.21.a
+	ai_chance = { factor = 1 }
+	declare_war_on = {
+    target = ENG
+    type = annex_everything
+    }
+    declare_war_on = {
+    target = FRA
+    type = annex_everything
+    }
+    declare_war_on = {
+    target = POR
+    type = annex_everything
+    }
+	}
+	option = {
+	name = portu.21.b
+	ai_chance = { factor = 99 }
+	add_stability = -0.2
+    add_political_power = -200
+	}
+}
+
+#wantstobuymalawi
+country_event = {
+	id = portu.22
+	title = portu.22.t
+	desc = portu.22.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.22.a
+	ai_chance = { factor = 100 }
+	POR = { country_event = { id = portu.23 days = 1 } }
+	add_ideas = POR_payment_1
+	}
+	option = {
+	name = portu.22.b
+	ai_chance = { factor = 0 }
+    POR = { country_event = { id = portu.24 days = 1 } }		
+	}
+}
+
+#wantstobuymalawiaccept
+country_event = {
+	id = portu.23
+	title = portu.23.t
+	desc = portu.23.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.23.a
+	ai_chance = { factor = 100 }
+	POR = { transfer_state = 770 }
+	add_ideas = POR_debt_1
+	}
+}
+
+#wantstobuymalawidenied
+country_event = {
+	id = portu.24
+	title = portu.24.t
+	desc = portu.24.d
+
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.24.a
+	ai_chance = { factor = 100 }
+	}
+}
+
+#wantstobuyzambia
+country_event = {
+	id = portu.25
+	title = portu.25.t
+	desc = portu.25.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.25.a
+	ai_chance = { factor = 25 }
+	POR = { country_event = { id = portu.26 days = 1 } }
+	add_ideas = POR_payment_2
+	}
+	option = {
+	name = portu.25.b
+	ai_chance = { factor = 75 }
+    POR = { country_event = { id = portu.27 days = 1 } }	
+	}
+    option = {
+	name = portu.25.c
+	ai_chance = { factor = 0 }
+    POR = { country_event = { id = portu.29 days = 1 } }		
+	}
+}
+
+#wantstobuyzambiaaccept
+country_event = {
+	id = portu.26
+	title = portu.26.t
+	desc = portu.26.d
+
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.26.a
+	ai_chance = { factor = 100 }
+	POR = { transfer_state = 771 }
+	add_ideas = POR_debt_2
+	}
+}
+
+#wwantstobuyzambiamore
+country_event = {
+	id = portu.27
+	title = portu.27.t
+	desc = portu.27.d
+
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.27.a
+	ai_chance = { factor = 75 }
+    ENG = { 
+    add_ideas = POR_payment_3 
+    add_political_power = 50
+    }
+    transfer_state = 771 
+	add_ideas = POR_debt_3
+	}
+	option = {
+	name = portu.27.b
+	ai_chance = { factor = 25 }
+    ENG = { country_event = { id = portu.28 days = 1 } }		
+	}
+}
+
+
+#wwantstobuyzambiamoredenied
+country_event = {
+	id = portu.28
+	title = portu.28.t
+	desc = portu.28.d
+
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.28.a
+	ai_chance = { factor = 100 }
+	}
+}
+
+#wantstobuyzambiadenied
+country_event = {
+	id = portu.29
+	title = portu.29.t
+	desc = portu.29.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.29.a
+	ai_chance = { factor = 100 }
+	}
+}
+
+#wantstobuyrhodesia
+country_event = {
+	id = portu.30
+	title = portu.30.t
+	desc = portu.30.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.30.a
+	ai_chance = { factor = 25 }
+	POR = { country_event = { id = portu.31 days = 1 } }
+	add_ideas = POR_payment_4
+	}
+	option = {
+	name = portu.30.b
+	ai_chance = { factor = 75 }
+    POR = { country_event = { id = portu.32 days = 1 } }	
+	}
+    option = {
+	name = portu.30.c
+	ai_chance = { factor = 0 }
+    POR = { country_event = { id = portu.34 days = 1 } }		
+	}
+}
+
+#wantstobuyrhodesiaaccept
+country_event = {
+	id = portu.31
+	title = portu.31.t
+	desc = portu.31.d
+
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.31.a
+	ai_chance = { factor = 100 }
+	POR = { transfer_state = 545 }
+	hidden_effect = { SAF = {  transfer_state = 542 } }
+	add_ideas = POR_debt_4
+	}
+}
+
+#wantstobuyzambiamore
+country_event = {
+	id = portu.32
+	title = portu.32.t
+	desc = portu.32.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.32.a
+	ai_chance = { factor = 75 }
+    ENG = { 
+    add_ideas = POR_payment_5 
+    add_political_power = 50
+    }
+    transfer_state = 545 
+	add_ideas = POR_debt_5
+	hidden_effect = { SAF = {  transfer_state = 542 } }
+	}
+	option = {
+	name = portu.32.b
+	ai_chance = { factor = 25 }
+    ENG = { country_event = { id = portu.33 days = 1 } }		
+	}
+}
+
+#wwantstobuyzambiamoredenied
+country_event = {
+	id = portu.33
+	title = portu.33.t
+	desc = portu.33.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.33.a
+	ai_chance = { factor = 100 }
+	}
+}
+
+#wantstobuyzambiadenied
+country_event = {
+	id = portu.34
+	title = portu.34.t
+	desc = portu.34.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.34.a
+	ai_chance = { factor = 100 }
+	}
+}
+
+#englandalliance
+country_event = {
+	id = portu.35
+	title = portu.35.t
+	desc = portu.35.d
+	desc = { 
+	text = portu.35.d
+	trigger = { POR = { has_government = neutrality } }
+	}
+	desc = { 
+	text = portu.35.d_other
+	trigger = { POR = { NOT = { has_government = neutrality } } }
+	}
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.35.a
+	ai_chance = { factor = 100 }
+	ENG = { add_to_faction = POR }
+	}
+	option = {
+	name = portu.35.b
+	ai_chance = { factor = 0 }
+    POR = { country_event = { id = portu.36 days = 1 } }
+	}
+}
+
+#englandalliancedenied
+country_event = {
+	id = portu.36
+	title = portu.36.t
+	desc = portu.36.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.36.a
+	ai_chance = { factor = 100 }
+	}
+}
+
+#austriaalliance
+country_event = {
+	id = portu.37
+	title = portu.37.t
+	desc = portu.37.d
+	desc = portu.37.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.37.a
+	ai_chance = { factor = 100 }
+	AUS = { add_to_faction = POR }
+	}
+	option = {
+	name = portu.37.b
+	ai_chance = { factor = 0 }
+    POR = { country_event = { id = portu.38 days = 1 } }
+	}
+}
+
+#austriaalliancedenied
+country_event = {
+	id = portu.38
+	title = portu.38.t
+	desc = portu.38.d
+
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.38.a
+	ai_chance = { factor = 100 }
+	}
+}
+
+#elections
+country_event = {
+	id = portu.39
+	title = portu.39.t
+	desc = portu.39.d
+	picture = GFX_report_event_POR_election
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.39.a
+	ai_chance = { factor = 100 }
+	hidden_effect = { country_event = { id = portu.40 days = 1 } }
+	complete_national_focus = POR_1937generalelection
+	}
+}
+
+#electionssalazarspromises
+country_event = {
+	id = portu.40
+	title = portu.40.t
+	desc = portu.40.d
+	picture = GFX_report_event_POR_election
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.40.a
+	ai_chance = { factor = 100 }
+	add_political_power = -25
+	add_popularity = {
+    ideology = conservatives
+    popularity = 0.1
+    }
+	hidden_effect = { country_event = { id = portu.41 days = 15 } }
+	}
+	option = {
+	name = portu.40.b
+	ai_chance = { factor = 100 }
+	add_political_power = 25
+	add_popularity = {
+    ideology = conservatives
+    popularity = -0.05
+    }
+	hidden_effect = { country_event = { id = portu.41 days = 15 } }
+	}
+}
+
+#electionsliberalpromises
+country_event = {
+	id = portu.41
+	title = portu.41.t
+	desc = portu.41.d
+	picture = GFX_report_event_POR_election
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.41.a
+	ai_chance = { factor = 100 }
+	add_political_power = -25
+	add_popularity = {
+    ideology = democratic
+    popularity = 0.05
+    }
+	hidden_effect = { country_event = { id = portu.42 days = 15 } }
+	}
+	option = {
+	name = portu.41.b
+	ai_chance = { factor = 100 }
+	add_political_power = 25
+	add_popularity = {
+    ideology = democratic
+    popularity = -0.05
+    }
+	hidden_effect = { country_event = { id = portu.42 days = 15 } }
+	}
+}
+
+#electionscommunistpromises
+country_event = {
+	id = portu.42
+	title = portu.42.t
+	desc = portu.42.d
+	picture = GFX_report_event_POR_election
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.42.a
+	ai_chance = { factor = 100 }
+	add_political_power = -25
+	add_popularity = {
+    ideology = communism
+    popularity = 0.05
+    }
+	hidden_effect = { country_event = { id = portu.43 days = 15 } }
+	}
+	option = {
+	name = portu.42.b
+	ai_chance = { factor = 100 }
+	add_political_power = 25
+	add_popularity = {
+    ideology = communism
+    popularity = -0.05
+    }
+	hidden_effect = { country_event = { id = portu.43 days = 15 } }
+	}
+}
+
+#electionsrepublicanchoice
+country_event = {
+	id = portu.43
+	title = portu.43.t
+	desc = portu.43.d
+	picture = GFX_report_event_POR_election
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.43.a
+	ai_chance = { factor = 50 }
+    set_global_flag = com_rep
+	hidden_effect = { country_event = { id = portu.44 days = 15 } }
+	}
+	option = {
+	name = portu.43.b
+	ai_chance = { factor = 50 }
+	set_global_flag = lib_rep
+	hidden_effect = { country_event = { id = portu.44 days = 15 } }
+	}
+}
+
+#election
+country_event = {
+	id = portu.44
+	title = portu.44.t
+	desc = portu.44.d
+	picture = GFX_report_event_POR_election
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.44.a
+    trigger = {
+    POR = { conservatives > 0.5  }
+    NOT = {
+    POR = { conservatives < 0.5  }
+    }
+    }
+    add_popularity= { 
+    ideology = conservatives
+    popularity = 0.3 
+    }
+    add_political_power = 200
+    complete_national_focus = POR_conservativemajority
+	}
+	option = {
+	name = portu.44.b
+	trigger = {
+    has_global_flag = lib_rep
+    NOT = {
+    POR = { conservatives > 0.5  }
+    }
+    }
+    set_politics= {
+    ruling_party = democratic
+    elections_allowed = yes
+    }
+    add_popularity= { 
+    ideology = democratic
+    popularity = 0.3 
+    }
+    add_popularity= { 
+    ideology = socialist
+    popularity = 0.1 
+    } 
+    complete_national_focus = POR_liberalmajority
+	}
+	option = {
+	name = portu.44.c
+    trigger = {
+	has_global_flag = com_rep
+	NOT = {
+    POR = { conservatives > 0.5  }
+    }
+    }
+    set_politics= {
+    ruling_party = communism 
+    elections_allowed = yes
+    }
+    add_popularity= { 
+    ideology = communism
+    popularity = 0.3 
+    }
+    add_popularity= { 
+    ideology = socialist
+    popularity = 0.1 
+    }  
+    complete_national_focus = POR_syndicalistmajority
+	}
+
+}
+
+#unificationiberia
+country_event = {
+	id = portu.45
+	title = portu.45.t
+	desc = portu.45.d
+	desc = portu.45.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.45.a
+	ai_chance = { factor = 100 }
+	POR = { country_event = { id = portu.46 days = 1 } }
+	}
+	option = {
+	name = portu.45.b
+	ai_chance = { factor = 0 }
+    POR = { country_event = { id = portu.47 days = 1 } }
+    }
+}    
+
+#unificationiberiaking
+country_event = {
+	id = portu.46
+	title = portu.46.t
+	desc = portu.46.d
+	desc = portu.46.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.46.a
+	ai_chance = { factor = 25 }
+	set_cosmetic_tag = IBE
+	annex_country = {
+    target = SPR
+    transfer_troops = yes
+    }
+    hidden_effect = {
+    add_state_core = 171
+    add_state_core = 296
+    add_state_core = 702
+    add_state_core = 174
+    add_state_core = 170
+    add_state_core = 169
+    add_state_core = 173
+    add_state_core = 175
+    add_state_core = 168
+    add_state_core = 41
+    add_state_core = 176
+    add_state_core = 172
+    add_state_core = 166
+    add_state_core = 165
+    add_state_core = 167
+    add_state_core = 177
+    add_state_core = 321
+    add_state_core = 721
+    add_state_core = 788
+    add_state_core = 789
+    add_state_core = 790
+    add_state_core = 791
+    add_state_core = 792
+    add_state_core = 793
+    add_state_core = 794
+    add_state_core = 795
+    }
+
+	}
+	option = {
+	name = portu.46.b
+	ai_chance = { factor = 25 }
+    set_cosmetic_tag = IBE
+    create_country_leader = {
+		name = "Alfonso XIII"
+		desc = "POLITICS_ALEJANDRO_LERROUX_DESC"
+		picture = "alfonsoxiii.dds"
+		expire = "1965.1.1"
+		ideology = despotism
+    }
+	annex_country = {
+    target = SPR
+    transfer_troops = yes
+    }
+    hidden_effect = {
+    add_state_core = 171
+    add_state_core = 296
+    add_state_core = 702
+    add_state_core = 174
+    add_state_core = 170
+    add_state_core = 169
+    add_state_core = 173
+    add_state_core = 175
+    add_state_core = 168
+    add_state_core = 41
+    add_state_core = 176
+    add_state_core = 172
+    add_state_core = 166
+    add_state_core = 165
+    add_state_core = 167
+    add_state_core = 177
+    add_state_core = 321
+    add_state_core = 721
+    add_state_core = 788
+    add_state_core = 789
+    add_state_core = 790
+    add_state_core = 791
+    add_state_core = 792
+    add_state_core = 793
+    add_state_core = 794
+    add_state_core = 795
+    }
+    
+    }
+    option = {
+	name = portu.46.c
+	ai_chance = { factor = 25 }
+	set_cosmetic_tag = IBE
+	create_country_leader = {
+	name = "Juan III"
+	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
+	picture = "Juan_II.dds"
+	expire = "1965.1.1"
+	ideology = neutrality_subtype
+    }  
+	annex_country = {
+    target = SPR
+    transfer_troops = yes
+    }
+    hidden_effect = {
+    add_state_core = 171
+    add_state_core = 296
+    add_state_core = 702
+    add_state_core = 174
+    add_state_core = 170
+    add_state_core = 169
+    add_state_core = 173
+    add_state_core = 175
+    add_state_core = 168
+    add_state_core = 41
+    add_state_core = 176
+    add_state_core = 172
+    add_state_core = 166
+    add_state_core = 165
+    add_state_core = 167
+    add_state_core = 177
+    add_state_core = 321
+    add_state_core = 721
+    add_state_core = 788
+    add_state_core = 789
+    add_state_core = 790
+    add_state_core = 791
+    add_state_core = 792
+    add_state_core = 793
+    add_state_core = 794
+    add_state_core = 795
+    }}
+    
+	option = {
+	name = portu.46.d
+	ai_chance = { factor = 25 }
+	set_cosmetic_tag = IBE
+	create_country_leader = {
+		name = "Amedeo Umberto"
+		desc = "POLITICS_ALEJANDRO_LERROUX_DESC"
+		picture = "duke_aosta_por.dds"
+		expire = "1965.1.1"
+		ideology = despotism
+    }
+	annex_country = {
+    target = SPR
+    transfer_troops = yes
+    }
+    hidden_effect = {
+    add_state_core = 171
+    add_state_core = 296
+    add_state_core = 702
+    add_state_core = 174
+    add_state_core = 170
+    add_state_core = 169
+    add_state_core = 173
+    add_state_core = 175
+    add_state_core = 168
+    add_state_core = 41
+    add_state_core = 176
+    add_state_core = 172
+    add_state_core = 166
+    add_state_core = 165
+    add_state_core = 167
+    add_state_core = 177
+    add_state_core = 321
+    add_state_core = 721
+    add_state_core = 788
+    add_state_core = 789
+    add_state_core = 790
+    add_state_core = 791
+    add_state_core = 792
+    add_state_core = 793
+    add_state_core = 794
+    add_state_core = 795
+    }
+    
+    }
+}    
+
+#unificationiberiadenied
+country_event = {
+	id = portu.47
+	title = portu.47.t
+	desc = portu.47.d
+	desc = portu.47.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.47.a
+	ai_chance = { factor = 100 }
+	add_political_power = -150
+	}
+}
+#king manuel dies
+country_event = {
+	id = portu.48
+	title = portu.48.t
+	desc = portu.48.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = portu.48.a
+	ai_chance = { factor = 100 }
+	create_country_leader = {
+	name = "King Duarte II"
+	desc = "POLITICS_ANTÓNIO_DE_OLIVEIRA_SALAZAR_DESC"
+	picture = "duarteii.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+
+	}
+	}
+	news_event = { id = portu.49 hours = 1 }
+	}
+}
+#king manuel dies news event
+news_event = {
+	id = portu.49
+	title = portu.49.t
+	desc = portu.49.d
+	picture = GFX_news_event_generic_funeral
+
+	major = yes
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = portu.49.a
+	}
+}

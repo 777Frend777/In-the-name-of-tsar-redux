@@ -1,0 +1,404 @@
+﻿focus_tree = {
+	id = Syrian_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SYR
+		}
+	}
+
+    continuous_focus_position = { x = 50 y = 1500 }
+
+	default = no
+	focus = {
+		id = SYR_War_of_Liberation
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		cost = 1.00
+		x = 10
+		y = 0
+		available = {
+			has_war_with = FRA
+		}
+		allow_branch = {
+			has_war_with = FRA
+		}
+		bypass = {
+			has_war_with = FRA
+		}
+		completion_reward = {
+			add_stability = 0.05
+			random_owned_controlled_state = {
+				prioritize = { 554 }
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = { building = industrial_complex size > 0 include_locked = yes }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 10000
+				producer = SYR
+			}
+		}
+
+	}
+	focus = {
+		id = SYR_Protect_Aleppo
+		icon = GFX_goal_generic_fortify_city
+		available = {
+			has_war_with = FRA		
+		}
+		prerequisite = {
+			focus = SYR_War_of_Liberation
+		}
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		x = -1
+		y = 1
+		relative_position_id = SYR_War_of_Liberation
+		completion_reward = {
+			677 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = { all_provinces = yes }
+				}
+			}
+		}
+	}
+	focus = {
+		id = SYR_War_effort_journalism
+		icon = GFX_goal_generic_propaganda
+		available = {
+			has_war_with = FRA		
+		}
+		prerequisite = {
+			focus = SYR_War_of_Liberation
+		}
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		x = -3
+		y = 1
+		relative_position_id = SYR_War_of_Liberation
+		completion_reward = {
+			add_war_support = 0.2
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = SYR_Nationalize_industry
+		icon = GFX_focus_generic_court
+		available = {
+			has_war_with = FRA		
+		}
+		prerequisite = {
+			focus = SYR_War_of_Liberation
+		}
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		x = -5
+		y = 1
+		relative_position_id = SYR_War_of_Liberation
+		completion_reward = {
+			add_war_support = -0.05
+			680 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}				
+			}	
+		}
+	}
+	focus = {
+		id = SYR_Iraqi_support
+		icon = GFX_focus_goal_generic_befriend_iraq
+		prerequisite = { focus = SYR_Nationalize_industry }
+		prerequisite = { focus = SYR_Protect_Aleppo }
+		relative_position_id = SYR_War_of_Liberation
+		
+		available = { 
+			has_war = yes 
+			has_war_with = FRA
+		}
+		
+		x = -4
+		y = 2
+		cost = 8
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 2 }
+		}
+	}
+	focus = {
+		id = SYR_Air_Support
+		icon = GFX_focus_generic_torpedo_production
+		prerequisite = { focus = SYR_Nationalize_industry }
+		prerequisite = { focus = SYR_Protect_Aleppo }
+		relative_position_id = SYR_War_of_Liberation
+		
+		available = { 
+			has_war = yes 
+			has_war_with = FRA
+		}
+		
+		x = -3
+		y = 3
+		cost = 8
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_0
+				amount = 20
+				producer = FRA
+			}	
+			add_equipment_to_stockpile = {
+				type = CAS_equipment_1
+				amount = 8
+				producer = FRA
+			}
+		}
+	}
+	focus = {
+		id = SYR_Freedom
+		icon = GFX_focus_ITA_corpo_volontari_della_liberta
+		prerequisite = { focus = SYR_allow_socialist_volunteers focus = SYR_Create_Nationalist_Militias }
+		prerequisite = { focus = SYR_Create_Nationalist_Militias focus = SYR_request_supplies }
+		prerequisite = { focus = SYR_Air_Support }
+		relative_position_id = SYR_War_of_Liberation
+		
+		available = { 
+			has_war = yes 
+			has_war_with = FRA
+		}
+		
+		x = -1
+		y = 4
+		cost = 8
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		completion_reward = {
+			set_country_flag = SYR_Peace
+		}
+	}
+	focus = {
+		id = SYR_Arab_revolt_vets
+		icon = GFX_focus_TUR_support_the_golden_square
+		prerequisite = {
+			focus = SYR_War_of_Liberation
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 10
+		}
+		x = 2
+		y = 1
+		relative_position_id = SYR_War_of_Liberation
+		completion_reward = {
+			680 = {
+				create_unit = {
+					division = "division_template = \"Alfurqat Almasha\" start_experience_factor = 0.3"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 2013
+					owner = SYR
+				}
+			}
+		}
+	}
+	focus = {
+		id = SYR_Muslim_volunteer
+		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
+		prerequisite = {
+			focus = SYR_Arab_revolt_vets
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 10
+		}
+		x = 2
+		y = 2
+		relative_position_id = SYR_War_of_Liberation
+		completion_reward = {
+			add_manpower = 10000
+		}
+	}
+	focus = {
+		id = SYR_Create_Nationalist_Militias
+		icon = GFX_goal_prussia_army
+		prerequisite = {
+			focus = SYR_Protect_Aleppo
+		}
+		mutually_exclusive = {
+			focus = SYR_allow_socialist_volunteers
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		x = -2
+		y = 2
+		relative_position_id = SYR_War_of_Liberation
+		completion_reward = {
+			554 = {
+				create_unit = {
+					division = "division_template = \"Alfurqat Almasha\" start_experience_factor = 0.3"
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 4111
+					owner = SYR
+				}
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = SYR_allow_socialist_volunteers
+		icon = GFX_goal_generic_communist_army
+		prerequisite = {
+			focus = SYR_Protect_Aleppo
+		}
+		mutually_exclusive = {
+			focus = SYR_Create_Nationalist_Militias
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		x = 0
+		y = 2
+		relative_position_id = SYR_War_of_Liberation
+		completion_reward = {
+			add_manpower = 10000
+			add_popularity = {
+				ideology = socialist
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			army_experience = 5
+		}
+	}
+	focus = {
+		id = SYR_request_supplies
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = SYR_Muslim_volunteer  }
+		prerequisite = {
+			focus = SYR_allow_socialist_volunteers
+		}
+		relative_position_id = SYR_War_of_Liberation
+		
+		available = { 
+			has_war = yes 
+			has_war_with = FRA
+		}
+		
+		x = 1
+		y = 3
+		cost = 8
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 700
+				producer = PER
+			}	
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 300
+				producer = IRQ
+			}	
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 40
+				producer = FIN
+			}		
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 30
+				producer = HUN
+			}
+		}
+	}
+	focus = {
+		id = SYR_Rebuild
+		icon = GFX_focus_NORDIC_com_capstone_civilian
+		cost = 1.00
+		x = 10
+		y = 0
+		available = {
+			NOT ={ has_war_with = FRA }
+		}
+		allow_branch = {
+			NOT ={ has_war_with = FRA }
+		}
+		bypass = {
+			NOT ={ has_war_with = FRA }
+		}
+		completion_reward = {
+			add_stability = 0.05
+			554 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}				
+			}	
+		}
+
+	}
+}
+focus = {
+	id = SYR_Revolution
+	icon = GFX_focus_SWE_organize_a_putsch
+	cost = 1.00
+	x = 12
+	y = 1
+	prerequisite = { focus = SYR_Rebuild  }
+	available = {
+		NOT ={ has_war_with = FRA }
+	}
+	allow_branch = {
+		NOT ={ has_war_with = FRA }
+	}
+	bypass = {
+		NOT ={ has_war_with = FRA }
+	}
+	completion_reward = {
+		add_stability = 0.05
+		add_ruling_to_fas	
+		upgrade_economy_law = yes
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+			last_election = "1935.10.12"
+		}
+			}				
+		}	

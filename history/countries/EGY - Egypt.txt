@@ -1,0 +1,223 @@
+﻿capital = 907
+set_cosmetic_tag = EGY_UK
+
+oob = "EGY_1936"
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "EGY_1936_air_bba"
+	else = {
+		set_air_oob = "EGY_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			CAS1 = 1
+		}
+	}
+}
+ENG = {
+	if = {
+		limit = {
+			OR = {
+				has_dlc = "Together for Victory"
+				has_dlc = "Man the Guns"
+			}
+		}
+		set_autonomy = {
+			target = EGY
+			autonomous_state = autonomy_dominion
+			freedom_level = 0.8
+		}
+		else = {
+			puppet = EGY
+		}
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "EGY_1936_naval_mtg"
+	else = {
+		set_naval_oob = "EGY_1936_naval_legacy"
+	}
+}
+# Starting tech
+set_technology = {
+	early_fighter = 1
+	fighter1 = 1
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+	gw_artillery = 1
+	formation_flying = 1
+}
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+give_military_access = ENG
+set_research_slots = 2
+set_war_support = 0.11
+set_stability = 0.45
+
+set_convoys = 20
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	add_command_power = 100
+
+	
+	set_technology = {
+		tech_support = 1
+		tech_recon = 1
+		support_weapons = 1
+		gw_artillery = 1
+		tech_trucks = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1929.12.21"
+	election_frequency = 77
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 27
+	fascism = 18
+	communism = 0
+	neutrality = 41
+        nationalism = 14
+}
+add_ideas = {
+	fuad_i_of_egypt
+	resistance_to_british_occupation
+	ege_great_depression
+	national_poverty
+	the_british_protectorate
+	divided_under_pharaonism
+	limited_exports
+}
+create_country_leader = {
+    name = "Mohamed Tawfik Naseem Pasha"
+	desc = ""
+	picture = "Portrait_Egypt_Mohamed_Tawfik_Naseem_Pasha.dds"
+	expire = "1936.1.30"
+	ideology = moderatism
+	traits = {
+		dislikes_germany
+	}
+}
+create_country_leader = {
+    name = "Mostafa El-Nahhas Pasha"
+	desc = ""
+	picture = "Portrait_Egypt_Mostafa_El-Nahas.dds"
+	expire = "1944.10.10"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Ahmed Husayn"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
+	ideology = rexism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Othman al-Hourani"
+	desc = ""
+	picture = "gfx/leaders/TUR/Portrait_Turkey_Sefik_Husnu.dds"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+create_field_marshal = {
+	name = "Mohamed Naguib"
+	id = 10000
+	picture = "Portrait_Egypt_Mohamed_Naguib_Military.dds"
+	traits = { politically_connected brilliant_strategist career_officer }
+	skill = 4 
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Abdul Munim Riad"
+	id = 10002
+	picture = "Portrait_Egypt_Abdul_Munim_Riad.dds"
+	traits = { infantry_leader trait_mountaineer commando }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Hussein Sirri Amer"
+	id = 10003
+	traits = { organizer infantry_leader }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Muhammad Anwar el-Sadat"
+	id = 10004
+	picture = "Portrait_Egypt_Anwar_Sadat.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+create_field_marshal = {
+	name = "Ahmed Ali al-Mwawi"
+	id = 10005
+	traits = { infantry_leader }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}

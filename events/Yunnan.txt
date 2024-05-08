@@ -1,0 +1,20 @@
+﻿###########################
+# Sichuan Events
+###########################
+
+add_namespace = sichuan
+country_event = {
+	id = sichuan.1
+	title = sichuan.1.t
+	desc = sichuan.1.d
+    trigger = {
+    tag = YUN
+    YUN = { controls_state = 752 }
+    }
+    fire_only_once = yes
+	option = {
+	name = sichuan.1.a
+	transfer_state = 752
+    white_peace = TIB
+    }
+}

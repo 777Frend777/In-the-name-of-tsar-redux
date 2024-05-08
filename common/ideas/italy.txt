@@ -1,0 +1,588 @@
+ideas = { #ita_demo
+	country = {
+		victor_emmanuel = {
+			picture = victor_emmanuel_1
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = ITA
+						has_government = fascism
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05				
+			}
+		}
+		ITA_church_ties_idea = {
+			picture = aus_army
+			allowed = { always = no }
+            modifier = {
+				conscription = 0.01
+				land_reinforce_rate = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		ITA_Social_welfare_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = air_support_focus
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_infrastructure_factor = 0.10
+				MONTHLY_POPULATION = 0.15
+			}
+		}
+		victor_emmanuel_1 = {
+			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = ITA
+						has_government = fascism
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1	
+				conscription_factor = 0.1		
+			}
+		}
+		vittoria_mutilata = {	
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				communism_acceptance = -10
+				democratic_acceptance = -10
+				neutrality_acceptance = 10	
+				fascism_acceptance = 10
+				ai_focus_aggressive_factor = 0.5
+				justify_war_goal_time = -0.05
+			}
+		}
+		ITA_proletarian_govt_idea = {	
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				communism_acceptance = 10
+				democratic_acceptance = -10
+				neutrality_acceptance = -10	
+				fascism_acceptance = -10
+				consumer_goods_factor = -0.03
+				stability_factor = 0.05
+				justify_war_goal_time = -0.05
+			}
+		}
+		ITA_italian_lira = {
+
+			picture = generic_goods_red_bonus
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.03
+			}		
+		}
+		
+		ITA_means = {
+
+			picture = generic_goods_red_bonus
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}		
+		}
+		
+		ITA_fixes = {
+
+			picture = generic_agrarian_society
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				trade_opinion_factor = 0.10
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.03
+				industrial_capacity_dockyard = 0.03
+			}		
+		}
+		
+		ITA_demo = {
+
+			picture = generic_political_support
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}		
+		}
+
+		ITA_mil_prop = {
+
+			picture = generic_goods_red_bonus
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.1
+			}		
+		}
+		
+		ITA_quantity = {
+
+			picture = generic_manpower_bonus
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		
+		ITA_lira = {
+
+			picture = chi_hyper_inflation
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.10
+				
+			}
+
+		}
+		ITA_increased_production_idea = {
+
+			picture = generic_political_support
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}		
+		}
+		ITA_economic_dependence_allies = {
+		
+		allowed = {
+		original_tag = ITA 
+		}
+		removal_cost = -1
+		modifier = {
+		consumer_goods_factor = 0.1
+		political_power_gain = -0.35
+		}
+		}
+		ITA_lira_2 = {
+
+			picture = chi_hyper_inflation
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+				consumer_goods_factor = 0.03
+				industrial_capacity_factory = 0.05
+			}
+
+		}
+		ITA_lost_dockyards = {
+
+			picture = generic_the_london_naval_treaty
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+			
+	             industrial_capacity_dockyard = -0.5
+			}
+		}
+		ITA_railway = {
+
+			picture = generic_local_self_management
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+			
+	             production_speed_buildings_factor = -0.1
+			}
+
+		}
+		
+		ITA_army_shortages_idea = {
+
+			#picture = chi_hyper_inflation
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+				industrial_capacity_factory = -0.15
+			}
+		}
+		ITA_economic_problems = {
+
+			#picture = chi_hyper_inflation
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+			    stability_factor = -0.1
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.10
+			}
+		}
+		ITA_ww1_trauma_idea = {
+
+			#picture = chi_hyper_inflation
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+				army_org_Factor = -0.10
+				army_morale_factor = -0.1
+				conscription = -0.01
+			}
+		}
+		ITA_improved_war_idea = {
+
+			#picture = chi_hyper_inflation
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+				#army_org_Factor = 0.03
+				army_morale_factor = 0.05
+				conscription = 0.005
+			}
+		}
+		ITA_discipline = {
+
+			picture = hun_secret_rearmament
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+
+			modifier = {	
+			training_time_army_factor = 0.15
+				minimum_training_level = 0.05	
+				army_org_Factor = 0.03
+				defence = 0.05
+				army_morale_factor = 0.03
+			}		
+		}
+		
+		ITA_quality = {
+
+			picture = generic_intel_bonus
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.05 instant = yes
+				}
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+soft_attack = 0.15
+hard_attack = 0.10
+breakthrough = 0.05
+				}
+			}	
+		}
+		
+		ITA_large = {
+
+			picture = generic_production_bonus
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			conscription = 0.025
+
+			}
+		}
+		
+		ITA_reproduction = {
+
+			picture = generic_agrarian_reform
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				MONTHLY_POPULATION = 0.10
+				production_speed_buildings_factor = 0.10
+			}		
+		}
+
+		ITA_german_millitary_cooperation_focus = {
+
+			picture = german_advisors
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				OR = {
+					AND = {
+						has_government = fascism
+						GER = {
+							has_government = fascism
+						}
+					}
+					AND = {
+						has_government = communism
+						GER = {
+							has_government = communism
+						}
+					}
+					AND = {
+						has_government = democratic
+						GER = {
+							has_government = democratic
+						}
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+				land_doctrine = 0.05
+			}
+			research_bonus = {
+				air_doctrine = 0.05
+			}				
+		}
+
+		ITA_leverage_0 = {
+
+			picture = generic_political_support
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+		}
+		ITA_leverage_1 = {
+
+			picture = generic_political_support
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+		}
+		ITA_leverage_2 = {
+
+			picture = generic_political_support
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+		}
+		ITA_leverage_3 = {
+
+			picture = generic_political_support
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+		}
+		ITA_leverage_4 = {
+
+			picture = generic_political_support
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+		}
+		ITA_leverage_5 = {
+
+			picture = generic_political_support
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+		}
+		ITA_leverage_6 = {
+
+			picture = generic_political_support
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+		}
+		ITA_leverage_7 = {
+
+			picture = generic_political_support
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+		}
+		ITA_leverage_8 = {
+
+			picture = generic_political_support
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+		}
+		ITA_leverage_9 = {
+
+			picture = generic_political_support
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			removal_cost = -1
+		}
+	}
+		
+}

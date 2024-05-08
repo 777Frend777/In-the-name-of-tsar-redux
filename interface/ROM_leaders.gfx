@@ -1,0 +1,14 @@
+spriteTypes = {	
+	SpriteType = {
+	    name = GFX_portrait_muhammad_ali_bey_al_abid
+	    texturefile = gfx/leaders/SYR/muhammad_ali_bey_al_abid.dds			
+	}
+	SpriteType = {
+	    name = GFX_portrait_Ibrahim_Hashim
+	    texturefile = gfx/leaders/JOR/Portrait_Ibrahim_Hashim.dds			
+	}
+	SpriteType = {
+		name = "GFX_SYR_portrait_Faisal_I"
+		texturefile = "gfx/leaders/SYR/portrait_Faisal_I.dds"
+	}
+}

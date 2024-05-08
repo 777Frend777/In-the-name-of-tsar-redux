@@ -1,0 +1,26 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_bop_SWI_Democrats_total_side"
+		texturefile = "gfx/interface/bop/bop_SWI_Democrats_total_side.png"
+	  }
+	  spriteType = {
+		name = "GFX_bop_SWI_Democrats_improved_side"
+		texturefile = "gfx/interface/bop/bop_SWI_Democrats_improved_side.png"
+	  }
+	  spriteType = {
+		name = "GFX_bop_SWI_Democrats_side"
+		texturefile = "gfx/interface/bop/bop_SWI_Democrats_side.png"
+	  }
+	  spriteType = {
+		name = "GFX_bop_SWI_National_Front_total_side"
+		texturefile = "gfx/interface/bop/bop_SWI_National_Front_total_side.png"
+	  }
+	  spriteType = {
+		name = "GFX_bop_SWI_National_Front_improved_side"
+		texturefile = "gfx/interface/bop/bop_SWI_National_Front_improved_side.png"
+	  }
+	  spriteType = {
+		name = "GFX_bop_SWI_National_Front_side"
+		texturefile = "gfx/interface/bop/bop_SWI_National_Front_side.png"
+	  }
+}

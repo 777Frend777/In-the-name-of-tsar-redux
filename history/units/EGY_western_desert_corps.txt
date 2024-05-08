@@ -1,0 +1,9 @@
+﻿units = {
+	##### Special forces spawned from EGY tree #####
+	division= {
+		name = "Western Desert Corps"
+		location = 4076 # El Alamein
+		division_template = "Western Desert Corps"
+		start_experience_factor = 0.5
+	}
+}

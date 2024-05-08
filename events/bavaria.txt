@@ -1,0 +1,1571 @@
+﻿###########################
+# Bavaria Events ###########
+###########################
+
+add_namespace = bavaria
+#COUNTRY: Denmark refuses
+country_event = {
+	id = bavaria.59
+	title = bavaria.59.t
+	desc = bavaria.59.d
+	
+	is_triggered_only = yes
+	option = {
+		name = bavaria.59.a
+		BAV = {
+			add_state_core = 838
+			declare_war_on = { target = DEN type = annex_everything }
+		}
+	}
+}
+
+#COUNTRY: Denmark hands over Northern-Schleswig + joins Kommintern
+country_event = {
+	id = bavaria.58
+	title = bavaria.58.t
+	desc = bavaria.58.d
+	
+	is_triggered_only = yes
+	option = {
+		name = bavaria.58.a
+		BAV = {
+			transfer_state = 838
+			add_state_core = 838
+			puppet = DEN
+		}
+	}
+}
+
+#COUNTRY: Denmark hands over Northern-Schleswig
+country_event = {
+	id = bavaria.57
+	title = bavaria.57.t
+	desc = bavaria.57.d
+	
+	is_triggered_only = yes
+	option = {
+		name = bavaria.57.a
+		BAV = {
+			transfer_state = 838
+			add_state_core = 838
+		}
+	}
+}
+
+#COUNTRY: North-Schleswig ultimatum
+country_event = {
+	id = bavaria.56
+	title = bavaria.56.t
+	desc = bavaria.56.d
+	
+	is_triggered_only = yes
+	option = { #Accept
+		name = bavaria.56.a
+		ai_chance = {
+ 			factor = 25  #Base
+			modifier = { #They have similar government to ours
+				DEN = { OR = { 
+							has_government = communism 
+							has_government = socialist } 
+					}
+				factor = 0
+			}
+			modifier = { #Denmark is in faction with a major
+				OR = { 
+					is_in_faction_with = RUS 
+					is_in_faction_with = ITA
+					is_in_faction_with = SER
+					is_in_faction_with = FRA
+					is_in_faction_with = ENG
+					}
+				factor = 0
+			}
+			modifier = { #If subject, then no
+				is_subject = yes
+				factor = 0
+			}
+ 		}
+		BAV = { country_event = { id = bavaria.57 days = 3 } }
+	}
+	option = { #Accept + join Bavaria
+		name = bavaria.56.a
+		trigger = {
+			is_subject = no
+		}
+		ai_chance = {
+ 			factor = 75  #Base
+			modifier = { #They have similar government to ours
+				DEN = { OR = { 
+							has_government = communism 
+							has_government = socialist } 
+					}
+				factor = 100
+			}
+			modifier = { #Denmark is in faction with a major
+				OR = { 
+					is_in_faction_with = RUS 
+					is_in_faction_with = ITA
+					is_in_faction_with = SER
+					is_in_faction_with = FRA
+					is_in_faction_with = ENG
+					}
+				factor = 0
+			}
+			modifier = { #If subject, then no
+				is_subject = yes
+				factor = 0
+			}
+ 		}
+		custom_effect_tooltip = DEN_BAV_BECOME_PUPPET_TT
+		BAV = { country_event = { id = bavaria.58 days = 3 } }
+	}
+	option = { #Refuse
+		name = bavaria.56.c
+		ai_chance = {
+ 			factor = 0 #Base
+			modifier = { #They have similar government to ours
+				CZE = { OR = { 
+							has_government = communism 
+							has_government = socialist } 
+					}
+				factor = 0
+			}
+			modifier = { #Czechia is in faction with a major
+				OR = { 
+					is_in_faction_with = RUS 
+					is_in_faction_with = ITA
+					is_in_faction_with = SER
+					is_in_faction_with = FRA
+					is_in_faction_with = ENG
+					}
+				factor = 100
+			}
+			modifier = { #If subject, then no
+				is_subject = yes
+				factor = 100
+			}
+ 		}
+		BAV = { country_event = { id = bavaria.59 days = 3 } }
+	}
+}
+
+#NEWS: Sudetenland crisis escalates
+news_event = {
+	id = bavaria.55
+	title = bavaria.55.t
+	desc = bavaria.55.d
+	picture = GFX_news_event_generic_panzer_attack
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = bavaria.55.a
+		trigger = {
+			original_tag = BAV
+		}
+	}
+	option = {
+		name = bavaria.55.b
+		trigger = {
+			NOT = { original_tag = BAV }
+		}
+	}
+}
+
+#NEWS: Sudetenland crisis is over
+news_event = {
+	id = bavaria.54
+	title = bavaria.54.t
+	desc = bavaria.54.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = bavaria.54.a
+	}
+}
+
+#COUNTRY: Bavaria backs down
+country_event = {
+	id = bavaria.53
+	title = bavaria.53.t
+	desc = bavaria.53.d
+	
+	is_triggered_only = yes
+	option = {
+		name = bavaria.53.a
+	}
+}
+
+#COUNTRY: Czechoslovakia surrenders Sudetenland
+country_event = {
+	id = bavaria.52
+	title = bavaria.52.t
+	desc = bavaria.52.d
+	
+	is_triggered_only = yes
+	option = {
+		name = bavaria.52.a
+		BAV = {
+			transfer_state = 69
+			transfer_state = 74
+			add_state_core = 69
+			add_state_core = 74
+			give_guarantee = CZE
+			give_military_access = CZE
+			diplomatic_relation = { country = CZE relation = non_aggression_pact }
+		}
+		news_event = { id = bavaria.54 days = 1 }
+	}
+}
+
+#COUNTRY: Bavaria demands Sudetenland
+country_event = {
+	id = bavaria.51
+	title = bavaria.51.t
+	desc = bavaria.51.d
+	
+	is_triggered_only = yes
+	option = {
+		name = bavaria.51.a
+		ai_chance = {
+ 			factor = 95  #Base
+			modifier = { #They have similar government to ours
+				CZE = { OR = { 
+							has_government = communism 
+							has_government = socialist } 
+					}
+				factor = 100
+			}
+			modifier = { #Czechia is in faction with a major
+				OR = { 
+					is_in_faction_with = RUS 
+					is_in_faction_with = ITA
+					is_in_faction_with = SER
+					is_in_faction_with = FRA
+					is_in_faction_with = ENG
+					}
+				factor = 0
+			}
+			modifier = { #If subject, then no
+				is_subject = yes
+				factor = 0
+			}
+ 		}
+		BAV = { country_event = { id = bavaria.52 days = 1 } }
+	}
+	option = {
+		name = bavaria.51.b
+		ai_chance = {
+ 			factor = 5 #Base
+			modifier = { #They have similar government to ours
+				CZE = { OR = { 
+							has_government = communism 
+							has_government = socialist } 
+					}
+				factor = 0
+			}
+			modifier = { #Czechia is in faction with a major
+				OR = { 
+					is_in_faction_with = RUS 
+					is_in_faction_with = ITA
+					is_in_faction_with = SER
+					is_in_faction_with = FRA
+					is_in_faction_with = ENG
+					}
+				factor = 100
+			}
+			modifier = { #If subject, then no
+				is_subject = yes
+				factor = 100
+			}
+ 		}
+		BAV = { country_event = { id = bavaria.50 days = 3 } }
+		news_event = { id = bavaria.54 days = 1 }
+	}
+}
+
+#COUNTRY: Czechoslovakia stands 
+country_event = {
+	id = bavaria.50
+	title = bavaria.50.t
+	desc = bavaria.50.d
+	
+	is_triggered_only = yes
+	option = { 
+		name = bavaria.50.a
+		declare_war_on = { target = CZE type = annex_everything }
+	}
+}
+
+#COUNTRY: Czechoslovakia surrenders
+country_event = {
+	id = bavaria.49
+	title = bavaria.49.t
+	desc = bavaria.49.d
+	
+	is_triggered_only = yes
+	option = { 
+		name = bavaria.49.a
+		annex_country = { target = CZE transfer_troops = no }
+	}
+}
+
+#COUNTRY: Bavaria demands full annexation
+country_event = {
+	id = bavaria.48
+	title = bavaria.48.t
+	desc = bavaria.48.d
+	
+	is_triggered_only = yes
+	option = { #We must surrender 
+		name = bavaria.48.a
+		ai_chance = {
+ 			factor = 25  #Base
+			modifier = { #They have similar government to ours
+				CZE = { OR = { 
+							has_government = communism 
+							has_government = socialist } 
+					}
+				factor = 100
+			}
+			modifier = { #Czechia is in faction with a major
+				OR = { 
+					is_in_faction_with = RUS 
+					is_in_faction_with = ITA
+					is_in_faction_with = SER
+					is_in_faction_with = FRA
+					is_in_faction_with = ENG
+					}
+				factor = 0
+			}
+			modifier = { #If subject, then no
+				is_subject = yes
+				factor = 0
+			}
+ 		}	
+		custom_effect_tooltip = GAME_OVER_TT
+		BAV = { country_event = { id = bavaria.49 days = 3 } }
+	}
+	option = { #Czechia stands
+		name = bavaria.48.b
+		ai_chance = {
+ 			factor = 75  #Base
+			modifier = { #They have similar government to ours
+				CZE = { OR = { 
+							has_government = communism 
+							has_government = socialist } 
+					}
+				factor = 100
+			}
+			modifier = { #Czechia is in faction with a major
+				OR = { 
+					is_in_faction_with = RUS 
+					is_in_faction_with = ITA
+					is_in_faction_with = SER
+					is_in_faction_with = FRA
+					is_in_faction_with = ENG
+					}
+				factor = 100
+			}
+			modifier = { #If subject, then no
+				is_subject = yes
+				factor = 100
+			}
+ 		}	
+		BAV = { country_event = { id = bavaria.50 days = 3 } }
+	}
+}
+
+#COUNTRY: Fate of Czechoslovakia
+country_event = {
+	id = bavaria.47
+	title = bavaria.47.t
+	desc = bavaria.47.d
+	
+	is_triggered_only = yes
+	option = {	#Demand full annexation
+		name = bavaria.47.a
+		ai_chance = {
+ 			factor = 35  #Base
+			modifier = { #They have similar government to ours
+				CZE = { OR = { 
+							has_government = communism 
+							has_government = socialist } 
+					}
+				factor = 0
+			}
+			modifier = { #Czechia is in faction with a major
+				OR = { 
+					is_in_faction_with = RUS 
+					is_in_faction_with = ITA
+					is_in_faction_with = SER
+					is_in_faction_with = FRA
+					is_in_faction_with = ENG
+					}
+				factor = 0
+			}
+			modifier = { #If subject, then no
+				is_subject = yes
+				factor = 0
+			}
+ 		}
+		BAV = { 
+			add_threat = 5
+			add_state_claim = 69
+			add_state_claim = 74
+			}
+		CZE = { country_event = { id = bavaria.48 days = 1 } }
+	}
+	option = {	#Demand Sudetenland + guarantees 
+		name = bavaria.47.b
+		ai_chance = {
+ 			factor = 35  #Base
+			modifier = { #They have similar government to ours
+				CZE = { OR = { 
+							has_government = communism 
+							has_government = socialist } 
+					}
+				factor = 100
+			}
+			modifier = { #Czechia is in faction with a major
+				OR = { 
+					is_in_faction_with = RUS 
+					is_in_faction_with = ITA
+					is_in_faction_with = SER
+					is_in_faction_with = FRA
+					is_in_faction_with = ENG
+					}
+				factor = 0
+			}
+			modifier = { #If subject, then no
+				is_subject = yes
+				factor = 0
+			}
+ 		}
+		trigger = {
+			CZE = { controls_state = 69
+					controls_state = 74 }
+		}
+		BAV = { 
+			add_threat = 2
+			add_state_claim = 69
+			add_state_claim = 74
+			}
+		CZE = { country_event = { id = bavaria.51 days = 1 } }
+	}
+	option = {	#Simply claim 
+		name = bavaria.47.c
+		ai_chance = {
+ 			factor = 30  #Base
+			modifier = { #They have similar government to ours
+				CZE = { OR = { 
+							has_government = communism 
+							has_government = socialist } 
+					}
+				factor = 0
+			}
+			modifier = { #Czechia is in faction with a major
+				OR = { 
+					is_in_faction_with = RUS 
+					is_in_faction_with = ITA
+					is_in_faction_with = SER
+					is_in_faction_with = FRA
+					is_in_faction_with = ENG
+					}
+				factor = 100
+			}
+			modifier = { #If subject, then no
+				is_subject = yes
+				factor = 100
+			}
+ 		}
+		BAV = { 
+			add_war_support = -0.05
+			add_political_power = -50
+			add_state_claim = 69
+			add_state_claim = 74
+			}
+		CZE = { country_event = { id = bavaria.53 days = 1 } }
+		news_event = { id = bavaria.54 days = 3 }
+	}
+}
+
+#NEWS: Red Anschluss
+news_event = {
+	id = bavaria.46
+	title = bavaria.46.t
+	desc = bavaria.46.d
+	picture = GFX_news_event_generic_strike
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {	#Austrian response 
+		name = bavaria.46.a
+		trigger = {
+			original_tag = AUS
+		}
+	}
+	option = {	#German response 
+		name = bavaria.46.b 
+		trigger = {
+			original_tag = BAV
+		}
+	}
+	option = {
+		name = bavaria.46.c
+		trigger = {
+			NOT = { original_tag = AUS original_tag = BAV }
+		}
+	}
+
+}
+
+#COUNTRY: Austria stands
+country_event = {
+	id = bavaria.45
+	title = bavaria.45.t
+	desc = bavaria.45.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = bavaria.45.a
+		BAV = { declare_war_on = { target = AUS type = annex_everything } }
+	}
+}
+
+#COUNTRY: Austria surrenders
+country_event = {
+	id = bavaria.44
+	title = bavaria.44.t
+	desc = bavaria.44.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = bavaria.44.a
+		BAV = { annex_country = { target = AUS transfer_troops = yes } }
+	}
+}
+
+#COUNTRY: Red Anschluss
+country_event = { 
+	id = bavaria.43
+	title = bavaria.43.t
+	desc = bavaria.43.d
+	
+	is_triggered_only = yes
+	
+	option = { #We must surrender
+		name = bavaria.43.a
+		ai_chance = {
+ 			factor = 25  #Base
+			modifier = { #They are too strong!
+				BAV = { has_army_manpower = { size > 449999 } } 
+				factor = 100
+			}
+			modifier = { #Austria is in faction with a major
+				OR = { 
+					is_in_faction_with = RUS 
+					is_in_faction_with = ITA
+					is_in_faction_with = SER
+					is_in_faction_with = FRA
+					is_in_faction_with = ENG
+					}
+				factor = 0
+			}
+			modifier = { #If subject, then no
+				is_subject = yes
+				factor = 0
+			}
+ 		}
+		custom_effect_tooltip = GAME_OVER_TT
+		BAV = {
+			
+			country_event = { id = bavaria.44 days = 3 }
+		}
+	}
+	option = { #Austria will resist
+		name = bavaria.43.b
+		ai_chance = {
+ 			factor = 75  #Base
+			modifier = { #They are too strong!
+				BAV = { has_army_manpower = { size > 449999 } } 
+				factor = 0
+			}
+			modifier = { #Austria is in faction with a major
+				OR = { 
+					is_in_faction_with = RUS 
+					is_in_faction_with = ITA
+					is_in_faction_with = SER
+					is_in_faction_with = FRA
+					is_in_faction_with = ENG
+					}
+				factor = 100
+			}
+			modifier = { #If subject, then no
+				is_subject = yes
+				factor = 100
+			}
+ 		}
+		
+			add_war_support = 0.10
+			add_political_power = 50
+		BAV = {
+			country_event = { id = bavaria.45 days = 3 }
+		}
+	}
+}
+
+#COUNTRY: German Investment Initiative
+country_event = { 
+	id = bavaria.42
+	title = bavaria.42.t
+	desc = bavaria.42.d
+	
+	is_triggered_only = yes
+	
+	option = { #Wonderful
+		name = bavaria.42.a
+		ROOT = {
+			add_ideas = BAV_western_invest_prog
+				add_opinion_modifier = {
+					target = BAV
+					modifier = bav_normalized_relations_good
+				}
+			random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+			 type = industrial_complex
+			 level = 1
+			 instant_build = yes
+		    }
+		  }
+		
+		}
+	}
+}
+
+#COUNTRY: Raise the National Guard
+country_event = { 
+	id = bavaria.41
+	title = bavaria.41.t
+	desc = bavaria.41.d
+	
+	is_triggered_only = yes
+	
+	option = { #Wonderful
+		name = bavaria.41.a
+		hidden_effect = {
+			load_oob = BAV_national_guard
+		}
+	}
+}
+
+#COUNTRY: Bavaria wishes to join Prussia
+country_event = { 
+	id = bavaria.40
+	title = bavaria.40.t
+	desc = bavaria.40.d
+	
+	is_triggered_only = yes
+	
+	option = { #Wonderful
+		name = bavaria.40.a
+		every_state = { 
+    		limit = { is_claimed_by = GER  is_core_of = BAV }
+			GER = { transfer_state = PREV }
+		}
+	}
+}
+
+#COUNTRY: Kingdom of Bavaria to join Prussia
+country_event = { 
+	id = bavaria.39
+	title = bavaria.39.t
+	desc = bavaria.39.d
+	
+	trigger = {
+	NOT = {
+		OR = {
+			TAG = GER
+			TAG = FRA
+			TAG = ENG
+			TAG = RUS
+		}
+	}
+	ROOT = { has_government = neutrality }
+	controls_state = 52
+	has_civil_war = no
+	NOT = { has_war_with = GER }
+	}
+	
+	mean_time_to_happen = { days = 3 }
+	
+	option = { #Join Prussia
+		name = bavaria.40.a
+		country_event = { days = 1 id = bavaria.40 }
+	}
+}
+
+#COUNTRY: Plot against the Commune
+country_event = { 
+	id = bavaria.38
+	title = bavaria.38.t
+	desc = bavaria.38.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = bavaria.38.a
+		activate_mission = BAV_imminent_civil_war_outbreak_decision
+	}
+}
+
+#NEWS: Collapse of the Southern Commune
+news_event = {
+	id = bavaria.37
+	title = bavaria.37.t
+	desc = bavaria.37.d
+	picture = GFX_news_event_generic_strike
+	major = yes
+	is_triggered_only = yes
+
+	 option = {
+		name = bavaria.37.a
+		trigger = {
+			NOT = {
+				TAG = BAV
+			}
+			}
+	}
+			option = {
+		name = bavaria.37.b
+			trigger = { TAG = BAV }
+	}
+}
+#COUNTRY: Bavaria - Trigger for bavaria.36
+	news_event = {
+		id = bavaria.42
+		title = bavaria.42.t
+		desc = bavaria.42.d
+		hidden = yes
+		trigger = {
+		BAV = { 
+			exists = yes
+			NOT = { has_war_with = GER }
+			has_idea = BAV_plot_against_the_commune
+			has_war_support < 0.5
+			}
+		}
+		fire_only_once = yes
+		immediate = {
+			BAV = { country_event = { id = bavaria.36 days = 1 } }
+		}
+		option = {
+			name = bavaria.42
+		}
+	}
+#COUNTRY: Bavaria - Collapse of the Southern Commune
+ country_event = {
+	id = bavaria.36
+	title = bavaria.36.t
+	desc = bavaria.36.d
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	option = {
+		name = bavaria.36.a #Stand by the commune
+		news_event = { id = bavaria.37 }
+		BAV = {
+		remove_unit_leader = 1000001
+		remove_unit_leader = 1000002
+		create_country_leader = {
+			name = "Hermann Göring"
+			desc = "POLITICS_KONSTANTIN_PATS_DESC"
+			picture = "Hermann_Goering.dds"
+			expire = "1965.1.1"
+			ideology = neutrality_subtype
+			traits = {
+			}
+		}
+		start_civil_war = {
+				ideology = neutrality
+				size = 0.70
+				capital = 52
+				states = { 52 53 }
+			}
+		}
+		}
+		option = {
+			name = bavaria.36.b #Stand by Bavaria
+			news_event = { id = bavaria.37 }
+			BAV = {
+			remove_unit_leader = 1000001
+			remove_unit_leader = 1000002
+			create_country_leader = {
+				name = "Hermann Göring"
+				desc = "POLITICS_KONSTANTIN_PATS_DESC"
+				picture = "Hermann_Goering.dds"
+				expire = "1965.1.1"
+				ideology = neutrality_subtype
+				traits = {
+				}
+			}
+			set_politics = {
+				ruling_party = neutrality elections_allowed = no
+			}
+			start_civil_war = {
+					ideology = communism
+					size = 0.70
+					capital = 52
+					states = { 54 }
+				}
+			}
+			}
+ }
+#North Commune Uprising
+ country_event = {
+ 	id = bavaria.35
+ 	title = bavaria.35.t
+ 	desc = bavaria.35.d
+ 	picture = GFX_report_event_generic_riot
+
+ 	is_triggered_only = yes
+
+ 	option = {
+ 		name = bavaria.35.a	#sounds good
+     ai_chance = {
+ 			factor = 100
+ 			}
+		hidden_effect = {
+		BAV = {
+			load_oob = BAV_north_commune_uprising_units
+		}
+		}
+	}
+ }
+#COUNTRY : Bavaria - Northern Commune Uprising (Prussia)
+ country_event = {
+ 	id = bavaria.34
+ 	title = bavaria.34.t
+ 	desc = bavaria.34.d
+ 	picture = GFX_report_event_generic_riot
+
+ 	is_triggered_only = yes
+
+ 	option = {
+ 		name = bavaria.34.a	#sounds good
+     ai_chance = {
+ 			factor = 100
+ 			}
+	}
+ }
+#COUNTRY : Bavaria - Communists infiltrate the North (Prussia)
+ country_event = {
+ 	id = bavaria.33
+ 	title = bavaria.33.t
+ 	desc = bavaria.33.d
+
+ 	is_triggered_only = yes
+
+ 	option = {
+ 		name = bavaria.33.a	#sounds good
+     ai_chance = {
+ 			factor = 100
+ 			}
+	}
+ }
+ #Saxonian Ultimatum
+ country_event = {
+ 	id = bavaria.30
+ 	title = bavaria.30.t
+ 	desc = bavaria.30.d
+ 	picture = GFX_report_event_generic_riot
+
+ 	is_triggered_only = yes
+
+ 	option = {
+ 		name = bavaria.30.a	#sounds good
+     ai_chance = {
+ 			factor = 100
+ 			}
+ 		BAV = {
+ 			country_event = { days = 1 id = bavaria.31 }
+ 		}
+	}
+
+ 	option = {
+ 		name = bavaria.30.b	#no way
+ 		ai_chance = { factor = 0  }
+ 		BAV = {
+ 			country_event = { days = 1 id = bavaria.32 }
+ 		}
+ 	}
+ }
+
+ # Sax Folds
+ country_event = {
+ 	id = bavaria.31
+ 	title = bavaria.31.t
+ 	desc = bavaria.31.d
+ 	#picture = GFX_report_event_generic_read_write
+
+ 	is_triggered_only = yes
+
+ 	option = {
+ 		name = bavaria.31.a
+ 		BAV = {
+ 		annex_country = { target = SAX transfer_troops = yes }
+ 	  }
+		hidden_effect ={
+		add_state_core = 65
+		}
+   }
+ }
+
+ # Sax Rejects Our Offer
+ country_event = {
+ 	id = bavaria.32
+ 	title = bavaria.32.t
+ 	desc = bavaria.32.d
+ 	#picture = GFX_report_event_generic_read_write
+
+ 	is_triggered_only = yes
+
+ 	option = {
+ 		name = bavaria.32.a
+	BAV = {
+		declare_war_on = {
+			target = SAX
+			type = annex_everything
+		}
+   }
+	 hidden_effect ={
+	add_state_core = 65
+	 }
+	}
+}
+# Rhine Conference 
+country_event = {
+	id = bavaria.17
+	title = bavaria.17.t
+	desc = bavaria.17.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = { #Leave Rhinish to their own fate
+		name = bavaria.17.a	#sounds good
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 100
+				FRA = { 
+					has_opinion = {
+						target = BAV
+						value > 35
+					}
+				}
+			}
+		}
+		FRA = {
+		diplomatic_relation = { country = RHN relation = guarantee active = no }
+		}
+		RHN = {
+			country_event = { days = 3 id = bavaria.1 } #Leaves Rhine to its fate
+		}
+		BAV = {
+			country_event = { days = 1 id = bavaria.18 } #Bavaria gets to invade Rhine
+		}
+		news_event = { days = 1 id = bavaria.20 }
+	}
+
+	option = { #Fight for their independence, which will cause civil war 
+		name = bavaria.17.b	#no way
+		ai_chance = { 
+			factor = 50  
+				modifier = {
+				factor = 0
+				FRA = { 
+					has_opinion = {
+						target = BAV
+						value > 35
+					}
+				}
+			}
+		}
+		BAV = {
+			country_event = { days = 3 id = bavaria.19 } #Event for declaration of war 
+		}
+		RHN = {
+			country_event = { days = 1 id = bavaria.22 } #Event that France backs Rhine
+		}
+		news_event = { days = 1 id = bavaria.21 }
+	}
+	}
+# Rhine conference Fails
+country_event = {
+	id = bavaria.18
+	title = bavaria.18.t
+	desc = bavaria.18.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = { 
+		name = bavaria.18.a		
+	}
+}
+# Bavarian War Goal
+country_event = {
+	id = bavaria.19
+	title = bavaria.19.t
+	desc = bavaria.19.d
+	picture = GFX_report_event_generic_panzer_attack
+
+	is_triggered_only = yes
+
+	option = { 
+		name = bavaria.19.a		
+	ROOT = {
+		declare_war_on = { target = RHN type = annex_everything }
+		declare_war_on = { target = FRA type = puppet_wargoal_focus }
+		}	
+	}
+}
+# Rhine Conference
+news_event = {
+	id = bavaria.20
+	title = bavaria.20.t
+	desc = bavaria.20.d
+	picture = GFX_news_event_009
+	major = yes
+	is_triggered_only = yes
+
+	 option = {
+		name = bavaria.20.a
+		trigger = {
+			NOT = {
+				TAG = BAV
+			}
+			}
+	}
+			option = {
+		name = bavaria.20.b
+			trigger = { TAG = BAV }
+	}
+}
+# Rhine Conference France Backs Rhine
+news_event = {
+	id = bavaria.21
+	title = bavaria.21.t
+	desc = bavaria.21.d
+	picture = GFX_news_event_009
+	major = yes
+	is_triggered_only = yes
+
+	 option = {
+		name = bavaria.21.a
+		trigger = {
+			NOT = {
+				TAG = BAV
+			}
+			}
+	}
+			option = {
+		name = bavaria.21.b
+			trigger = { TAG = BAV }
+	}
+}
+# France Backs Rhine
+country_event = {
+	id = bavaria.22
+	title = bavaria.22.t
+	desc = bavaria.22.d
+	picture = GFX_report_event_generic_panzer_attack
+
+	is_triggered_only = yes
+
+	option = { 
+		name = bavaria.22.a
+			add_war_support = 0.3
+	}
+}	
+# March Into The Rhine
+country_event = {
+	id = bavaria.1
+	title = bavaria.1.t
+	desc = bavaria.1.d
+	picture = GFX_report_event_generic_panzer_attack
+
+	is_triggered_only = yes
+
+	option = {
+		name = bavaria.1.a	#sounds good
+    ai_chance = {
+			factor = 65
+		}
+		BAV = {
+			country_event = { days = 1 id = bavaria.2 }
+		}
+	}
+
+	option = {
+		name = bavaria.1.b	#no way
+		ai_chance = { factor = 35  }
+		BAV = {
+			country_event = { days = 1 id = bavaria.3 }
+		}
+	}
+}
+
+# Rhineland Folds
+country_event = {
+	id = bavaria.2
+	title = bavaria.2.t
+	desc = bavaria.2.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = bavaria.2.a
+		BAV = {
+		annex_country = { target = RHN transfer_troops = yes }
+		hidden_effect ={
+		add_state_core = 55
+		add_state_core = 42
+		add_state_core = 808
+		add_state_core = 817
+		add_state_core = 51
+		}
+	}
+ }
+}
+
+# Rhineland Rejects Our Offer
+country_event = {
+	id = bavaria.3
+	title = bavaria.3.t
+	desc = bavaria.3.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = bavaria.3.a
+		create_wargoal = {
+			type = annex_everything
+			target = RHN
+		}
+		hidden_effect ={
+		add_state_core = 55
+		add_state_core = 42
+		add_state_core = 808
+		add_state_core = 817
+		add_state_core = 51
+		}
+	 }
+  }
+
+ # Wuttermburg Uprising
+ country_event = {
+ 	id = bavaria.4
+ 	title = bavaria.4.t
+ 	desc = bavaria.4.d
+ 	picture = GFX_report_event_generic_riot
+
+ 	is_triggered_only = yes
+
+ 	option = {
+ 		name = bavaria.4.a	#sounds good
+     ai_chance = {
+ 			factor = 100
+ 			}
+ 		BAV = {
+ 			country_event = { days = 1 id = bavaria.5 }
+ 		}
+	}
+
+ 	option = {
+ 		name = bavaria.4.b	#no way
+ 		ai_chance = { factor = 0  }
+ 		BAV = {
+ 			country_event = { days = 1 id = bavaria.6 }
+ 		}
+ 	}
+ }
+
+ # WUT Folds
+ country_event = {
+ 	id = bavaria.5
+ 	title = bavaria.5.t
+ 	desc = bavaria.5.d
+ 	picture = GFX_report_event_generic_read_write
+
+ 	is_triggered_only = yes
+
+ 	option = {
+ 		name = bavaria.5.a
+ 		BAV = {
+ 		annex_country = { target = WUT transfer_troops = yes }
+ 	  }
+		hidden_effect ={
+		add_state_core = 50
+		}
+   }
+ }
+
+ # WUT Rejects Our Offer
+ country_event = {
+ 	id = bavaria.6
+ 	title = bavaria.6.t
+ 	desc = bavaria.6.d
+ 	picture = GFX_report_event_generic_read_write
+
+ 	is_triggered_only = yes
+
+ 	option = {
+ 		name = bavaria.6.a
+	BAV = {
+		declare_war_on = {
+			target = WUT
+			type = annex_everything
+		}
+   }
+	 hidden_effect ={
+	add_state_core = 50
+	 }
+	}
+}
+
+# Bavaria Demands Submission
+country_event = {
+	id = bavaria.7
+	title = bavaria.7.t
+	desc = bavaria.7.d
+	picture = GFX_report_event_czech_soldiers_01
+
+	is_triggered_only = yes
+
+	option = {
+		name = bavaria.7.a	#sounds good
+    ai_chance = {
+			factor = 1
+			modifier = { # Don't accept if in a faction that can protect them
+				factor = 0
+				OR = {
+					is_in_faction_with = ENG
+					is_in_faction_with = FRA
+          is_in_faction_with = RUS
+					is_in_faction_with = GER
+				}
+			}
+		}
+		BAV = {
+			country_event = { days = 1 id = bavaria.8 }
+		}
+	}
+
+	option = {
+		name = bavaria.7.b	#no way
+		ai_chance = { factor = 99  }
+		BAV = {
+			country_event = { days = 1 id = bavaria.9 }
+		}
+	}
+}
+
+# Nieder Folds
+country_event = {
+	id = bavaria.8
+	title = bavaria.8.t
+	desc = bavaria.8.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = bavaria.8.a
+		BAV = {
+		set_country_flag = german_cores
+		annex_country = { target = WSM transfer_troops = yes }
+	}
+	hidden_effect ={
+		 add_state_core = 57
+		 add_state_core = 56
+		 add_state_core = 59
+		 add_state_core = 58
+		 add_state_core = 61
+		 add_state_core = 762
+		 add_state_core = 60
+		 add_state_core = 65
+		 add_state_core = 64
+		 add_state_core = 68
+		 add_state_core = 62
+		 add_state_core = 66
+		 add_state_core = 67
+		 add_state_core = 763
+		 add_state_core = 86
+		 add_state_core = 63
+		 add_state_core = 85
+		 add_state_core = 5
+		 add_state_core = 188
+		 add_state_core = 28
+		 add_state_core = 808
+		 #add_state_core = 828
+		}
+ }
+}
+
+# Nieder Rejects Our Offer
+country_event = {
+	id = bavaria.9
+	title = bavaria.9.t
+	desc = bavaria.9.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = bavaria.9.a
+		create_wargoal = {
+			type = annex_everything
+			target = WSM
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = GER
+		}
+		hidden_effect ={
+		set_country_flag = german_cores
+		 add_state_core = 57
+		 add_state_core = 56
+		 add_state_core = 59
+		 add_state_core = 58
+		 add_state_core = 61
+		 add_state_core = 762
+		 add_state_core = 60
+		 add_state_core = 65
+		 add_state_core = 64
+		 add_state_core = 68
+		 add_state_core = 62
+		 add_state_core = 66
+		 add_state_core = 67
+		 add_state_core = 763
+		 add_state_core = 86
+		 add_state_core = 63
+		 add_state_core = 85
+		 add_state_core = 5
+		 add_state_core = 188
+		 add_state_core = 28
+		 add_state_core = 808
+		 #add_state_core = 828
+		}
+	 }
+  }
+
+	# Bavaria Demands Reunification
+	country_event = {
+		id = bavaria.10
+		title = bavaria.10.t
+		desc = bavaria.10.d
+		picture = GFX_report_event_worker_protests
+
+		is_triggered_only = yes
+
+		option = {
+			name = bavaria.10.a	#sounds good
+	    ai_chance = {
+				factor = 0
+			}
+			BAV = {
+				country_event = { days = 1 id = bavaria.11 }
+			}
+		}
+
+		option = {
+			name = bavaria.10.b	#no way
+			ai_chance = { factor = 25  }
+			BAV = {
+				country_event = { days = 1 id = bavaria.12 }
+			}
+		}
+	}
+
+	# Prussia Folds
+	country_event = {
+		id = bavaria.11
+		title = bavaria.11.t
+		desc = bavaria.11.d
+		picture = GFX_report_event_generic_read_write
+
+		is_triggered_only = yes
+
+		option = {
+			name = bavaria.11.a
+			BAV = {
+			annex_country = { target = GER transfer_troops = yes }
+		}
+		hidden_effect ={
+		set_country_flag = german_cores
+		add_state_core = 60
+		 add_state_core = 65
+		 add_state_core = 64
+		 add_state_core = 68
+		 add_state_core = 62
+		 add_state_core = 66
+		 add_state_core = 67
+		 add_state_core = 763
+		 add_state_core = 86
+		 add_state_core = 63
+		 add_state_core = 85
+		 add_state_core = 5
+		 add_state_core = 188
+		 add_state_core = 28
+		 add_state_core = 808
+		 #add_state_core = 828
+		}
+	 }
+	}
+
+	# Prussia Rejects Our Offer
+	country_event = {
+		id = bavaria.12
+		title = bavaria.12.t
+		desc = bavaria.12.d
+		picture = GFX_report_event_generic_read_write
+
+		is_triggered_only = yes
+
+		option = {
+			name = bavaria.9.a
+			BAV = {
+				declare_war_on = {
+					target = GER
+					type = annex_everything
+				}
+				hidden_effect ={
+				set_country_flag = german_cores
+				add_state_core = 60
+		 add_state_core = 65
+		 add_state_core = 64
+		 add_state_core = 68
+		 add_state_core = 62
+		 add_state_core = 66
+		 add_state_core = 67
+		 add_state_core = 763
+		 add_state_core = 86
+		 add_state_core = 63
+		 add_state_core = 85
+		 add_state_core = 5
+		 add_state_core = 188
+		 add_state_core = 28
+		 add_state_core = 808
+		 #add_state_core = 828
+				}
+		   }
+	  }
+	}
+	country_event = {
+		id = bavaria.15
+		title = bavaria.15.t
+		desc = bavaria.15.d
+		picture = GFX_report_event_generic_read_write
+
+		trigger = {
+        tag = BAV
+        BAV = {
+        controls_state = 64
+        has_war = no
+        }
+        GER = { exists = no }
+       
+    }
+		 mean_time_to_happen = {
+        days = 1
+        }
+		fire_only_once = yes
+		option = {
+			name = bavaria.15.a
+			hidden_effect = {
+			BAV = {
+			load_oob = BAV_navy
+			}
+	  }
+	}
+	}
+	# BavariaAssimilatesAustria
+	country_event = {
+		id = bavaria.16
+		title = bavaria.16.t
+		desc = bavaria.16.d
+		picture = GFX_report_event_generic_read_write
+
+		trigger = {
+        tag = BAV
+
+        BAV = {
+        controls_state = 152
+        controls_state = 153
+        controls_state = 4
+        }
+
+        AUS = { exists = no }
+		}
+
+		mean_time_to_happen = {
+        days = 100
+        }
+
+		fire_only_once = yes
+
+		option = {
+		name = bavaria.16.a
+        add_state_core = 152
+        add_state_core = 153
+        add_state_core = 4
+	    }
+	}
+	# Bavaria Claims Germany
+	news_event = {
+		id = bavaria.13
+		title = bavaria.13.t
+		desc = bavaria.13.d
+		picture = GFX_news_event_bav_hegenomy
+
+		major = yes
+
+		is_triggered_only = yes
+
+		option = {
+			name = bavaria.13.a
+			trigger = {
+				BAV = {
+				has_country_flag = BAV_claim_ger
+				}
+			}
+		}
+	}
+	#Workers Congress
+	news_event = {
+	id = news.1001
+	title = news.1001.t
+	desc = news.1001.d
+	picture = GFX_news_event_024
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+			name = news.1001.a
+			}
+		}

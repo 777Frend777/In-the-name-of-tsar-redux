@@ -1,0 +1,1164 @@
+﻿###########################
+# Ottoman Events ##########
+###########################
+
+add_namespace = ottoman
+
+
+########### Middle East ############
+
+# Retake Damsacus
+country_event = {
+	id = ottoman.1
+	title = ottoman.1.t
+	desc = ottoman.1.d
+	picture = GFX_report_event_generic_panzer_attack
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.1.a	#We cannot afford a war now
+    ai_chance = {
+		base = 100
+		}
+		TUR = {
+			country_event = { days = 12 id = ottoman.2 }
+		}
+		news_event = { days = 1 id = ottoman.3 }
+	}
+}
+
+# Syria Folds
+country_event = {
+	id = ottoman.2
+	title = ottoman.2.t
+	desc = ottoman.2.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.2.a
+		TUR= {
+    transfer_state = 799
+  	transfer_state = 677
+    transfer_state = 680
+    transfer_state = 554
+    transfer_state = 553
+	}
+ }
+}
+
+#Syrian Annexation
+news_event = {
+	id = ottoman.3
+	title = ottoman.3.t
+	desc = ottoman.3.d
+	picture = GFX_news_event_016
+	major = yes
+	is_triggered_only = yes
+
+	option = { 
+	 name = ottoman.3.a
+	 trigger = {
+			NOT = {
+				TAG = RUS
+			}
+			}
+	 }
+	  option = { 
+	 name = ottoman.3.b
+	 trigger = {
+				TAG = RUS
+			}
+	 }
+  }
+
+  # Conquer Mes
+  country_event = {
+  	id = ottoman.4
+  	title = ottoman.4.t
+  	desc = ottoman.4.d
+  	picture = GFX_report_event_generic_panzer_attack
+
+  	is_triggered_only = yes
+
+  	option = {
+  		name = ottoman.4.a	#sounds good
+      ai_chance = {
+		base = 75
+  		}
+  		TUR = {
+  			country_event = { days = 1 id = ottoman.5 }
+  		}
+  	}
+
+  	option = {
+  		name = ottoman.4.b	#no way
+  		ai_chance = { base = 35  }
+  		TUR = {
+  			country_event = { days = 1 id = ottoman.6 }
+  		}
+  	}
+  }
+
+  # Iraq Folds
+  country_event = {
+  	id = ottoman.5
+  	title = ottoman.5.t
+  	desc = ottoman.5.d
+  	picture = GFX_report_event_generic_read_write
+
+  	is_triggered_only = yes
+
+  	option = {
+  		name = ottoman.5.a
+  		TUR= {
+      annex_country = { target = IRQ transfer_troops = no }
+      hidden_effect ={
+		add_state_core = 676
+		add_state_core = 675
+		add_state_core = 291
+  		}
+  	}
+   }
+  }
+
+  # IRQ Rejects Our Offer
+  country_event = {
+  	id = ottoman.6
+  	title = ottoman.6.t
+  	desc = ottoman.6.d
+  	picture = GFX_report_event_generic_read_write
+
+  	is_triggered_only = yes
+
+  	option = {
+  		name = ottoman.6.a
+  		create_wargoal = {
+  			type = annex_everything
+  			target = IRQ
+  		}
+  		hidden_effect ={
+  		add_state_claim = 676
+  		add_state_claim = 291
+		add_state_claim = 675
+		add_state_core = 676
+		add_state_core = 675
+		add_state_core = 291
+  		}
+  	 }
+    }
+
+    # Claim Holy Land
+    country_event = {
+      id = ottoman.7
+      title = ottoman.7.t
+      desc = ottoman.7.d
+      picture = GFX_report_event_generic_panzer_attack
+
+      is_triggered_only = yes
+
+      option = {
+        name = ottoman.7.a	#sounds good
+        ai_chance = {
+			base = 35
+        }
+        TUR = {
+          country_event = { days = 1 id = ottoman.8 }
+        }
+      }
+
+      option = {
+        name = ottoman.4.b	#no way
+        ai_chance = { base = 65  }
+        TUR = {
+          country_event = { days = 1 id = ottoman.9 }
+        }
+      }
+    }
+
+    # JOR Folds
+    country_event = {
+      id = ottoman.8
+      title = ottoman.8.t
+      desc = ottoman.8.d
+      picture = GFX_report_event_generic_read_write
+
+      is_triggered_only = yes
+
+      option = {
+        name = ottoman.5.a
+        TUR= {
+        annex_country = { target = JOR transfer_troops = no }
+        hidden_effect ={
+        add_state_core = 455
+        add_state_core = 454
+        }
+      }
+     }
+    }
+
+    # JOR Rejects Our Offer
+    country_event = {
+      id = ottoman.9
+      title = ottoman.9.t
+      desc = ottoman.9.d
+      picture = GFX_report_event_generic_read_write
+
+      is_triggered_only = yes
+
+      option = {
+        name = ottoman.6.a
+        create_wargoal = {
+          type = annex_everything
+          target = JOR
+        }
+        hidden_effect ={
+        add_state_claim = 455
+        add_state_claim = 454
+		add_state_core = 455
+        add_state_core = 454
+        }
+       }
+      }
+
+      # Death To Persia
+      country_event = {
+        id = ottoman.10
+        title = ottoman.10.t
+        desc = ottoman.10.d
+        picture = GFX_report_event_generic_panzer_attack
+
+        is_triggered_only = yes
+
+        option = {
+          name = ottoman.10.a	#sounds good
+          ai_chance = {
+            base = 0
+          }
+          TUR = {
+            country_event = { days = 1 id = ottoman.11 }
+          }
+        }
+
+        option = {
+          name = ottoman.10.b	#no way
+          ai_chance = { base = 100 }
+          TUR = {
+            country_event = { days = 1 id = ottoman.12 }
+          }
+        }
+      }
+
+      # PER Folds
+      country_event = {
+        id = ottoman.11
+        title = ottoman.11.t
+        desc = ottoman.11.d
+        picture = GFX_report_event_generic_read_write
+
+        is_triggered_only = yes
+
+        option = {
+          name = ottoman.11.a
+          TUR= {
+          annex_country = { target = PER transfer_troops = no }
+          hidden_effect ={
+          add_state_core = 419
+          add_state_core = 421
+          add_state_core = 413
+          }
+        }
+       }
+      }
+
+      # PER Rejects Our Offer
+      country_event = {
+        id = ottoman.12
+        title = ottoman.12.t
+        desc = ottoman.12.d
+        picture = GFX_report_event_generic_read_write
+
+        is_triggered_only = yes
+
+        option = {
+          name = ottoman.12.a
+          TUR = {
+        		declare_war_on = {
+        			target = PER
+        			type = annex_everything
+        		}
+           }
+          hidden_effect ={
+          add_state_claim = 419
+          add_state_claim = 421
+          add_state_claim = 413
+		  add_state_core = 419
+          add_state_core = 421
+          add_state_core = 413
+          }
+         }
+        }
+
+        # Sau offer
+        country_event = {
+          id = ottoman.13
+          title = ottoman.13.t
+          desc = ottoman.13.d
+          picture = GFX_report_event_generic_panzer_attack
+
+          is_triggered_only = yes
+
+          option = {
+            name = ottoman.13.a	#sounds good
+            ai_chance = {
+				base = 50
+            }
+            TUR = {
+              country_event = { days = 1 id = ottoman.14 }
+            }
+          }
+
+          option = {
+            name = ottoman.13.b	#no way
+            ai_chance = { base = 50  }
+            TUR = {
+              country_event = { days = 1 id = ottoman.15 }
+            }
+          }
+        }
+
+        # SAU Folds
+        country_event = {
+          id = ottoman.14
+          title = ottoman.14.t
+          desc = ottoman.14.d
+          picture = GFX_report_event_generic_read_write
+
+          is_triggered_only = yes
+
+          option = {
+            name = ottoman.5.a
+            TUR= {
+            annex_country = { target = SAU transfer_troops = no }
+            hidden_effect ={
+            add_state_core = 679
+            }
+          }
+         }
+        }
+
+        # SAU Rejects Our Offer
+        country_event = {
+          id = ottoman.15
+          title = ottoman.15.t
+          desc = ottoman.15.d
+          picture = GFX_report_event_generic_read_write
+
+          is_triggered_only = yes
+
+          option = {
+            name = ottoman.15.a
+            create_wargoal = {
+              type = annex_everything
+              target = SAU
+            }
+            hidden_effect ={
+            add_state_core = 679
+            }
+           }
+          }
+
+          # YEM offer
+          country_event = {
+            id = ottoman.16
+            title = ottoman.16.t
+            desc = ottoman.16.d
+            picture = GFX_report_event_generic_panzer_attack
+
+            is_triggered_only = yes
+
+            option = {
+              name = ottoman.16.a	#sounds good
+              ai_chance = {
+                base = 75
+              }
+              TUR = {
+                country_event = { days = 1 id = ottoman.17 }
+              }
+            }
+
+            option = {
+              name = ottoman.16.b	#no way
+              ai_chance = { base = 35  }
+              TUR = {
+                country_event = { days = 1 id = ottoman.18 }
+              }
+            }
+          }
+
+          # YEM Folds
+          country_event = {
+            id = ottoman.17
+            title = ottoman.17.t
+            desc = ottoman.17.d
+            picture = GFX_report_event_generic_read_write
+
+            is_triggered_only = yes
+
+            option = {
+              name = ottoman.17.a
+              TUR= {
+              annex_country = { target = YEM transfer_troops = no }
+              hidden_effect ={
+              add_state_core = 293
+              }
+            }
+           }
+          }
+
+          # YEM Rejects Our Offer
+          country_event = {
+            id = ottoman.18
+            title = ottoman.18.t
+            desc = ottoman.18.d
+            picture = GFX_report_event_generic_read_write
+
+            is_triggered_only = yes
+
+            option = {
+              name = ottoman.18.a
+              create_wargoal = {
+                type = annex_everything
+                target = YEM
+              }
+              hidden_effect ={
+              add_state_core = 293
+              }
+             }
+            }
+
+            # OMA offer
+            country_event = {
+              id = ottoman.19
+              title = ottoman.19.t
+              desc = ottoman.19.d
+              picture = GFX_report_event_generic_panzer_attack
+
+              is_triggered_only = yes
+
+              option = {
+                name = ottoman.19.a	#sounds good
+                ai_chance = {
+					base = 75
+                }
+                TUR = {
+                  country_event = { days = 1 id = ottoman.20 }
+                }
+              }
+
+              option = {
+                name = ottoman.19.b	#no way
+                ai_chance = { base = 35  }
+                TUR = {
+                  country_event = { days = 1 id = ottoman.21 }
+                }
+              }
+            }
+
+            # OMA Folds
+            country_event = {
+              id = ottoman.20
+              title = ottoman.20.t
+              desc = ottoman.20.d
+              picture = GFX_report_event_generic_read_write
+
+              is_triggered_only = yes
+
+              option = {
+                name = ottoman.20.a
+                TUR= {
+                annex_country = { target = OMA transfer_troops = no }
+              }
+             }
+            }
+
+            # OMA Rejects Our Offer
+            country_event = {
+              id = ottoman.21
+              title = ottoman.21.t
+              desc = ottoman.21.d
+              picture = GFX_report_event_generic_read_write
+
+              is_triggered_only = yes
+
+              option = {
+                name = ottoman.21.a
+                create_wargoal = {
+                  type = annex_everything
+                  target = YEM
+                }
+                hidden_effect ={
+                add_state_claim = 293
+                }
+               }
+              }
+
+              # ENG offer
+              country_event = {
+                id = ottoman.22
+                title = ottoman.22.t
+                desc = ottoman.22.d
+                picture = GFX_report_event_generic_panzer_attack
+
+                is_triggered_only = yes
+
+                option = {
+                  name = ottoman.22.a	#sounds good
+                  ai_chance = {
+                    base = 0
+                  }
+                  TUR = {
+                    country_event = { days = 1 id = ottoman.23 }
+                  }
+                }
+
+                option = {
+                  name = ottoman.22.b	#no way
+                  ai_chance = { base = 100 }
+                  TUR = {
+                    country_event = { days = 1 id = ottoman.24 }
+                  }
+                }
+              }
+
+              # ENG Folds
+              country_event = {
+                id = ottoman.23
+                title = ottoman.23.t
+                desc = ottoman.23.d
+                picture = GFX_report_event_generic_read_write
+
+                is_triggered_only = yes
+
+                option = {
+                  name = ottoman.23.a
+                  TUR= {
+                  add_state_core = 453
+                  add_state_core = 457
+                  add_state_core = 456
+                  add_state_core = 446
+                  add_state_core = 447
+                  add_state_core = 452
+				  add_state_core = 551
+					add_state_core = 552
+                  transfer_state = 453
+                  transfer_state = 457
+                  transfer_state = 456
+                  transfer_state = 446
+                  transfer_state = 447
+                  transfer_state = 452
+						transfer_state = 551
+						transfer_state = 552
+                  }
+                }
+               }
+
+
+              # ENG Rejects Our Offer
+              country_event = {
+                id = ottoman.24
+                title = ottoman.24.t
+                desc = ottoman.24.d
+                picture = GFX_report_event_generic_read_write
+
+                is_triggered_only = yes
+
+                option = {
+                  name = ottoman.24.a
+                  create_wargoal = {
+                    type = annex_everything
+                    target = ENG
+                  }
+                  hidden_effect ={
+                  add_state_core = 453
+                  add_state_core = 457
+                  add_state_core = 456
+                  add_state_core = 446
+                  add_state_core = 447
+                  add_state_core = 452
+									add_state_core = 551
+									add_state_core = 552
+                  }
+                 }
+                }
+
+      ########### EUROPE ############
+
+								# GRE offer
+		            country_event = {
+		              id = ottoman.25
+		              title = ottoman.25.t
+		              desc = ottoman.25.d
+		              picture = GFX_report_event_generic_panzer_attack
+
+		              is_triggered_only = yes
+
+		              option = {
+		                name = ottoman.25.a	#sounds good
+		                ai_chance = {
+							base = 0
+		                }
+		                TUR = {
+		                  country_event = { days = 1 id = ottoman.26 }
+		                }
+		              }
+
+		              option = {
+		                name = ottoman.25.b	#no way
+		                ai_chance = { base = 100  }
+		                TUR = {
+		                  country_event = { days = 1 id = ottoman.27 }
+		                }
+		              }
+		            }
+
+		            # GRE Folds
+		            country_event = {
+		              id = ottoman.26
+		              title = ottoman.26.t
+		              desc = ottoman.26.d
+		              picture = GFX_report_event_generic_read_write
+
+		              is_triggered_only = yes
+
+		              option = {
+		                name = ottoman.26.a
+		                TUR= {
+		                annex_country = { target = GRE transfer_troops = no }
+		              }
+		             }
+		            }
+
+		            # GRE Rejects Our Offer
+		            country_event = {
+		              id = ottoman.27
+		              title = ottoman.27.t
+		              desc = ottoman.27.d
+		              picture = GFX_report_event_generic_read_write
+
+		              is_triggered_only = yes
+
+		              option = {
+		                name = ottoman.27.a
+		                create_wargoal = {
+		                  type = annex_everything
+		                  target = GRE
+		                }
+		                hidden_effect ={
+ 							add_state_claim = 184
+							add_state_claim = 187
+							add_state_claim = 731
+							add_state_claim = 185
+							add_state_claim = 182
+		                }
+		               }
+		              }
+
+									#Secure Istanbul
+			            country_event = {
+			              id = ottoman.28
+			              title = ottoman.28.t
+			              desc = ottoman.28.d
+			              picture = GFX_report_event_generic_panzer_attack
+
+			              is_triggered_only = yes
+
+			              option = {
+			                name = ottoman.28.a	#sounds good
+			                ai_chance = {
+								base = 0
+							  modifier = {
+							  factor = 100
+							  TUR = {
+							  has_army_manpower = {
+								size > 150000
+								}
+							  }
+							  }
+			                }
+			                TUR = {
+			                  country_event = { days = 1 id = ottoman.29 }
+			                }
+			              }
+
+			              option = {
+			                name = ottoman.28.b	#no way
+			                ai_chance = {
+								base = 100
+							  modifier = {
+							  factor = 0
+							  TUR = {
+							  has_army_manpower = {
+								size > 150000
+								}
+							  }
+							  }
+			                }
+			                TUR = {
+			                  country_event = { days = 1 id = ottoman.30 }
+			                }
+			              }
+			            }
+
+			            # BUL Folds
+			            country_event = {
+			              id = ottoman.29
+			              title = ottoman.29.t
+			              desc = ottoman.29.d
+			              picture = GFX_report_event_generic_read_write
+
+			              is_triggered_only = yes
+
+			              option = {
+			                name = ottoman.29.a
+			                TUR= {
+							transfer_state = 211
+			              }
+			             }
+			            }
+
+			            # BUL Rejects Our Offer
+			            country_event = {
+			              id = ottoman.30
+			              title = ottoman.30.t
+			              desc = ottoman.30.d
+			              picture = GFX_report_event_generic_read_write
+
+			              is_triggered_only = yes
+
+			              option = {
+			                name = ottoman.30.a
+			                create_wargoal = {
+			                  type = annex_everything
+			                  target = BUL
+			                }
+			                hidden_effect ={
+								add_state_claim = 211
+			                }
+			               }
+			              }
+
+										# SER offer
+  			            country_event = {
+  			              id = ottoman.31
+  			              title = ottoman.31.t
+  			              desc = ottoman.31.d
+  			              picture = GFX_report_event_generic_panzer_attack
+
+  			              is_triggered_only = yes
+
+  			              option = {
+  			                name = ottoman.31.a	#sounds good
+  			                ai_chance = {
+  			                  base = 0
+  			                }
+  			                TUR = {
+  			                  country_event = { days = 1 id = ottoman.32 }
+  			                }
+  			              }
+
+  			              option = {
+  			                name = ottoman.28.b	#no way
+  			                ai_chance = { base = 100 }
+  			                TUR = {
+  			                  country_event = { days = 1 id = ottoman.33 }
+  			                }
+  			              }
+  			            }
+
+  			            # SER Folds
+  			            country_event = {
+  			              id = ottoman.32
+  			              title = ottoman.32.t
+  			              desc = ottoman.32.d
+  			              picture = GFX_report_event_generic_read_write
+
+  			              is_triggered_only = yes
+
+  			              option = {
+  			                name = ottoman.32.a
+  			                TUR= {
+  			                annex_country = { target = SER transfer_troops = no }
+  			              }
+  			             }
+  			            }
+
+  			            # SER Rejects Our Offer
+  			            country_event = {
+  			              id = ottoman.33
+  			              title = ottoman.33.t
+  			              desc = ottoman.33.d
+  			              picture = GFX_report_event_generic_read_write
+
+  			              is_triggered_only = yes
+
+  			              option = {
+  			                name = ottoman.33.a
+  			                create_wargoal = {
+  			                  type = annex_everything
+  			                  target = SER
+  			                }
+  			                hidden_effect ={
+									add_state_claim = 803
+									add_state_claim = 106
+									add_state_claim = 802
+									add_state_claim = 108
+									add_state_claim = 105
+  			                }
+  			               }
+  			              }
+
+											# ALB offer
+	  			            country_event = {
+	  			              id = ottoman.34
+	  			              title = ottoman.34.t
+	  			              desc = ottoman.34.d
+	  			              picture = GFX_report_event_generic_panzer_attack
+
+	  			              is_triggered_only = yes
+
+	  			              option = {
+	  			                name = ottoman.34.a	#sounds good
+	  			                ai_chance = {
+	  			                  base = 45
+	  			                }
+	  			                TUR = {
+	  			                  country_event = { days = 1 id = ottoman.35 }
+	  			                }
+	  			              }
+
+	  			              option = {
+	  			                name = ottoman.34.b	#no way
+	  			                ai_chance = { base = 65  }
+	  			                TUR = {
+	  			                  country_event = { days = 1 id = ottoman.36 }
+	  			                }
+	  			              }
+	  			            }
+
+	  			            # ALB Folds
+	  			            country_event = {
+	  			              id = ottoman.35
+	  			              title = ottoman.35.t
+	  			              desc = ottoman.35.d
+	  			              picture = GFX_report_event_generic_read_write
+
+	  			              is_triggered_only = yes
+
+	  			              option = {
+	  			                name = ottoman.35.a
+	  			                TUR= {
+	  			                annex_country = { target = ALB transfer_troops = no }
+	
+	  			              }
+	  			             }
+	  			            }
+
+	  			            # ALB Rejects Our Offer
+	  			            country_event = {
+	  			              id = ottoman.36
+	  			              title = ottoman.36.t
+	  			              desc = ottoman.36.d
+	  			              picture = GFX_report_event_generic_read_write
+
+	  			              is_triggered_only = yes
+
+	  			              option = {
+	  			                name = ottoman.30.a
+	  			                create_wargoal = {
+	  			                  type = annex_everything
+	  			                  target = ALB
+	  			                }
+	  			                hidden_effect ={
+									add_state_claim = 805
+									add_state_claim = 44
+	  			                }
+	  			               }
+	  			              }
+
+												# ROM offer
+		  			            country_event = {
+		  			              id = ottoman.37
+		  			              title = ottoman.37.t
+		  			              desc = ottoman.37.d
+		  			              picture = GFX_report_event_generic_panzer_attack
+
+		  			              is_triggered_only = yes
+
+		  			              option = {
+		  			                name = ottoman.37.a	#sounds good
+		  			                ai_chance = {
+		  			                  base = 5
+		  			                 }
+		  			                TUR = {
+		  			                  country_event = { days = 1 id = ottoman.38 }
+		  			                }
+		  			              }
+
+		  			              option = {
+		  			                name = ottoman.37.b	#no way
+		  			                ai_chance = { base = 95  }
+		  			                TUR = {
+		  			                  country_event = { days = 1 id = ottoman.39 }
+		  			                }
+		  			              }
+		  			            }
+
+		  			            # ROM Folds
+		  			            country_event = {
+		  			              id = ottoman.38
+		  			              title = ottoman.38.t
+		  			              desc = ottoman.38.d
+		  			              picture = GFX_report_event_generic_read_write
+
+		  			              is_triggered_only = yes
+
+		  			              option = {
+		  			                name = ottoman.38.a
+														ai_chance = { base = 0  }
+		  			                TUR= {
+		  			                annex_country = { target = ROM transfer_troops = no }
+		  			              }
+		  			             }
+
+												 option = {
+													 name = ottoman.38.b
+													 ai_chance = { base = 100  }
+													 TUR= {
+													 transfer_state = 77
+													 puppet = ROM
+												  }
+												 }
+		  			            }
+
+		  			            # ROM Rejects Our Offer
+		  			            country_event = {
+		  			              id = ottoman.39
+		  			              title = ottoman.39.t
+		  			              desc = ottoman.39.d
+		  			              picture = GFX_report_event_generic_read_write
+
+		  			              is_triggered_only = yes
+
+		  			              option = {
+		  			                name = ottoman.39.a
+		  			                create_wargoal = {
+		  			                  type = annex_everything
+		  			                  target = ROM
+		  			                }
+		  			                hidden_effect ={
+										add_state_claim = 77
+		  			                }
+		  			               }
+		  			              }
+
+														# MNT offer
+				  			            country_event = {
+				  			              id = ottoman.43
+				  			              title = ottoman.43.t
+				  			              desc = ottoman.43.d
+				  			              picture = GFX_report_event_generic_panzer_attack
+
+				  			              is_triggered_only = yes
+
+				  			              option = {
+				  			                name = ottoman.43.a	#sounds good
+				  			                ai_chance = {
+				  			                  base = 85
+				  			                }
+				  			                TUR = {
+				  			                  country_event = { days = 1 id = ottoman.44 }
+				  			                }
+				  			              }
+
+				  			              option = {
+				  			                name = ottoman.43.b	#no way
+				  			                ai_chance = { base = 15  }
+				  			                TUR = {
+				  			                  country_event = { days = 1 id = ottoman.45 }
+				  			                }
+				  			              }
+				  			            }
+
+				  			            # MNT Folds
+				  			            country_event = {
+				  			              id = ottoman.44
+				  			              title = ottoman.44.t
+				  			              desc = ottoman.44.d
+				  			              picture = GFX_report_event_generic_read_write
+
+				  			              is_triggered_only = yes
+
+				  			              option = {
+				  			                name = ottoman.44.a
+				  			                TUR= {
+				  			                annex_country = { target = MNT transfer_troops = no }
+				  			                hidden_effect ={
+				  	  									 add_state_core = 105
+				  			                }
+				  			              }
+				  			             }
+				  			            }
+
+				  			            # MNT Rejects Our Offer
+				  			            country_event = {
+				  			              id = ottoman.45
+				  			              title = ottoman.45.t
+				  			              desc = ottoman.45.d
+				  			              picture = GFX_report_event_generic_read_write
+
+				  			              is_triggered_only = yes
+
+				  			              option = {
+				  			                name = ottoman.45.a
+				  			                create_wargoal = {
+				  			                  type = annex_everything
+				  			                  target = MNT
+				  			                }
+				  			                hidden_effect ={
+																add_state_core = 105
+				  			                }
+				  			               }
+				  			              }
+
+															# AFG offer
+					  			            country_event = {
+					  			              id = ottoman.46
+					  			              title = ottoman.46.t
+					  			              desc = ottoman.46.d
+					  			              picture = GFX_report_event_generic_panzer_attack
+
+					  			              is_triggered_only = yes
+
+					  			              option = {
+					  			                name = ottoman.46.a	#sounds good
+					  			                ai_chance = {
+					  			                  base = 0
+					  			                }
+					  			                TUR = {
+					  			                  country_event = { days = 1 id = ottoman.47 }
+					  			                }
+					  			              }
+
+					  			              option = {
+					  			                name = ottoman.46.b	#no way
+					  			                ai_chance = { base = 100  }
+					  			                TUR = {
+					  			                  country_event = { days = 1 id = ottoman.48 }
+					  			                }
+					  			              }
+					  			            }
+
+					  			            # AFG Folds
+					  			            country_event = {
+					  			              id = ottoman.47
+					  			              title = ottoman.47.t
+					  			              desc = ottoman.47.d
+					  			              picture = GFX_report_event_generic_read_write
+
+					  			              is_triggered_only = yes
+
+					  			              option = {
+					  			                name = ottoman.47.a
+					  			                TUR= {
+					  			                annex_country = { target = AFG transfer_troops = no }
+					  			              }
+					  			             }
+					  			            }
+
+					  			            # AFG Rejects Our Offer
+					  			            country_event = {
+					  			              id = ottoman.48
+					  			              title = ottoman.48.t
+					  			              desc = ottoman.48.d
+					  			              picture = GFX_report_event_generic_read_write
+
+					  			              is_triggered_only = yes
+
+					  			              option = {
+					  			                name = ottoman.48.a
+					  			                create_wargoal = {
+					  			                  type = annex_everything
+					  			                  target = AFG
+					  			                }
+					  			               }
+					  			              }
+
+																# RUS offer
+						  			            country_event = {
+						  			              id = ottoman.49
+						  			              title = ottoman.49.t
+						  			              desc = ottoman.49.d
+						  			              picture = GFX_report_event_generic_panzer_attack
+
+						  			              is_triggered_only = yes
+
+						  			              option = {
+						  			                name = ottoman.49.a	#sounds good
+						  			                ai_chance = {
+						  			                  base = 0
+						  			                }
+						  			                TUR = {
+						  			                  country_event = { days = 1 id = ottoman.50 }
+						  			                }
+						  			              }
+
+						  			              option = {
+						  			                name = ottoman.49.b	#no way
+						  			                ai_chance = { base = 100  }
+						  			                TUR = {
+						  			                  country_event = { days = 1 id = ottoman.51 }
+						  			                }
+						  			              }
+						  			            }
+
+						  			            # RUS Folds
+						  			            country_event = {
+						  			              id = ottoman.50
+						  			              title = ottoman.50.t
+						  			              desc = ottoman.50.d
+						  			              picture = GFX_report_event_generic_read_write
+
+						  			              is_triggered_only = yes
+
+						  			              option = {
+						  			                name = ottoman.50.a
+						  			                TUR= {
+														transfer_state = 937
+														transfer_state = 230
+														transfer_state = 229
+														transfer_state = 231
+														transfer_state = 826
+						  			              }
+						  			             }
+						  			            }
+
+						  			            # RUS Rejects Our Offer
+						  			            country_event = {
+						  			              id = ottoman.51
+						  			              title = ottoman.51.t
+						  			              desc = ottoman.51.d
+						  			              picture = GFX_report_event_generic_read_write
+
+						  			              is_triggered_only = yes
+
+						  			              option = {
+						  			                name = ottoman.51.a
+						  			                create_wargoal = {
+						  			                  type = annex_everything
+						  			                  target = RUS
+						  			                }
+						  			               }
+						  			              }

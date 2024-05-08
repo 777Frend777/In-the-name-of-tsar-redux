@@ -1,0 +1,34 @@
+ai_historical_focus_list_TUR = {
+	ai_national_focuses = {
+		
+		TUR_industrial_policy
+		TUR_kemalist_policy
+		TUR_antolian_railways
+		TUR_communal_farming
+		TUR_texile_industry 			
+		TUR_will_of_the_people			#1937
+		TUR_calphate
+		TUR_turkification
+		TUR_calph
+		TUR_jihad 						
+		TUR_ottoman_military_college
+		TUR_industrial_nation			#1938
+		TUR_reform_janisarries
+		TUR_oil_reserve
+		TUR_glass_industry				
+		TUR_eastern_focus
+		TUR_expand_forming_industry
+		TUR_expand_farm_land			#1939
+		TUR_nationalize_industry
+		TUR_communal_living
+		TUR_village_insistutes	
+		TUR_western_focus	
+		TUR_bulgaria
+		TUR_retake_dam
+		TUR_reinforce_east					
+		TUR_conquer_mes				
+		TUR_damascus_steel				
+		TUR_subdue_minor
+		
+	}
+}

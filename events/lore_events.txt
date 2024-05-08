@@ -1,0 +1,411 @@
+#########################
+# Lore Events ###########
+#########################
+
+add_namespace = lore
+
+#LORE EVENTS PUT HERE############################################
+#TRIGGER FOR THE EVENT
+news_event = {
+	id = lore.41
+	title = lore.41.t
+	desc = lore.41.d
+
+	hidden = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		country_exists = RUS
+		date > 1936.1.2
+	}
+
+	immediate = {
+		RUS = { country_event = {id = lore.39 }}
+	}
+
+	option = {
+		name = lore.41.a
+	}
+
+}
+ #RUSSIAN LORE
+ country_event = {
+	id = lore.39
+	title = lore.39.t
+	desc = lore.39.d
+	picture = GFX_news_event_russia_lore
+	#trigger = {
+	#	tag = RUS
+	#	date > 1936.1.2
+	#	date < 1936.1.4
+	#}
+	is_triggered_only = yes
+	fire_only_once = yes
+	#	mean_time_to_happen = {
+	#	days = 1	
+	#}
+	option = {
+		name = lore.39.a
+		hidden_effect = {
+		RUS = { country_event = { id = russia.37 days = 100 } }
+		}
+  }
+}
+#TRIGGER FOR THE EVENT
+news_event = {
+	id = lore.42
+	title = lore.42.t
+	desc = lore.42.d
+
+	hidden = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		country_exists = GER
+		date > 1936.1.2
+	}
+
+	immediate = {
+		GER = { country_event = {id = lore.40 }}
+	}
+
+	option = {
+		name = lore.42.a
+	}
+
+}
+	 #PRUSSIAN LORE
+ country_event = {
+	id = lore.40
+	title = lore.40.t
+	desc = lore.40.d
+	picture = GFX_news_event_germany_lore
+	#trigger = {
+	#	tag = GER
+	#	date > 1936.1.2
+	#	date < 1936.1.4
+	#}
+	is_triggered_only = yes
+	fire_only_once = yes
+	#	mean_time_to_happen = {
+	#	days = 1	
+	#}
+	option = {
+		name = lore.40.a
+		#hidden_effect = {
+		#country_event = { id = prussia_homeland.8 days = 14 }
+		#}
+  }
+}
+#TRIGGER FOR THE EVENT
+news_event = {
+	id = lore.43
+	title = lore.43.t
+	desc = lore.43.d
+
+	hidden = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		country_exists = FRA
+		date > 1936.1.2
+	}
+
+	immediate = {
+		FRA = { country_event = {id = lore.44 }}
+	}
+
+	option = {
+		name = lore.43.a
+	}
+
+}
+	 #FRENCH LORE
+ country_event = {
+	id = lore.44
+	title = lore.44.t
+	desc = lore.44.d
+	picture = GFX_news_event_france_lore
+	#trigger = {
+	#	tag = GER
+	#	date > 1936.1.2
+	#	date < 1936.1.4
+	#}
+	is_triggered_only = yes
+	fire_only_once = yes
+	#	mean_time_to_happen = {
+	#	days = 1	
+	#}
+	option = {
+		name = lore.44.a
+  }
+}
+#TRIGGER FOR THE EVENT
+news_event = {
+	id = lore.45
+	title = lore.45.t
+	desc = lore.45.d
+
+	hidden = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		country_exists = BAV
+		date > 1936.1.2
+	}
+
+	immediate = {
+		BAV = { country_event = {id = lore.46 }}
+	}
+
+	option = {
+		name = lore.41.a
+	}
+
+}
+ #BAVARIAN LORE
+ country_event = {
+	id = lore.46
+	title = lore.46.t
+	desc = lore.46.d
+	picture = GFX_news_event_bavaria_lore
+	#trigger = {
+	#	tag = RUS
+	#	date > 1936.1.2
+	#	date < 1936.1.4
+	#}
+	is_triggered_only = yes
+	fire_only_once = yes
+	#	mean_time_to_happen = {
+	#	days = 1	
+	#}
+	option = {
+		name = lore.46.a
+  }
+}
+#TRIGGER FOR THE EVENT
+news_event = {
+	id = lore.47
+	title = lore.47.t
+	desc = lore.47.d
+
+	hidden = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		country_exists = ENG
+		date > 1936.1.2
+	}
+
+	immediate = {
+		ENG = { country_event = {id = lore.48 }}
+	}
+
+	option = {
+		name = lore.47.a
+	}
+
+}
+ #England LORE
+ country_event = {
+	id = lore.48
+	title = lore.48.t
+	desc = lore.48.d
+	picture = GFX_news_event_england_lore
+	#trigger = {
+	#	tag = RUS
+	#	date > 1936.1.2
+	#	date < 1936.1.4
+	#}
+	is_triggered_only = yes
+	fire_only_once = yes
+	#	mean_time_to_happen = {
+	#	days = 1	
+	#}
+	option = {
+		name = lore.48.a
+  }
+}
+#TRIGGER FOR THE EVENT
+news_event = {
+	id = lore.1
+	title = lore.1.t
+	desc = lore.1.d
+
+	hidden = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		country_exists = USA
+		date > 1936.1.2
+	}
+
+	immediate = {
+		USA = { country_event = {id = lore.2 }}
+	}
+
+	option = {
+		name = lore.1.a
+	}
+
+}
+ #USA lore
+ country_event = {
+	id = lore.2
+	title = lore.2.t
+	desc = lore.2.d
+	picture = GFX_news_event_usa_lore
+	#trigger = {
+	#	tag = RUS
+	#	date > 1936.1.2
+	#	date < 1936.1.4
+	#}
+	is_triggered_only = yes
+	fire_only_once = yes
+	#	mean_time_to_happen = {
+	#	days = 1	
+	#}
+	option = {
+		name = lore.2.a
+  }
+}
+#TRIGGER FOR THE EVENT
+news_event = {
+	id = lore.3
+	title = lore.3.t
+	desc = lore.3.d
+
+	hidden = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		country_exists = JAP
+		date > 1936.1.2
+	}
+
+	immediate = {
+		JAP = { country_event = {id = lore.4 }}
+	}
+
+	option = {
+		name = lore.3.a
+	}
+
+}
+ #JAPAN lore
+ country_event = {
+	id = lore.4
+	title = lore.4.t
+	desc = lore.4.d
+	picture = GFX_news_event_japan_lore
+	#trigger = {
+	#	tag = RUS
+	#	date > 1936.1.2
+	#	date < 1936.1.4
+	#}
+	is_triggered_only = yes
+	fire_only_once = yes
+	#	mean_time_to_happen = {
+	#	days = 1	
+	#}
+	option = {
+		name = lore.4.a
+  }
+}
+#TRIGGER FOR THE EVENT
+news_event = {
+	id = lore.9
+	title = lore.9.t
+	desc = lore.9.d
+
+	hidden = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		country_exists = AUS
+		date > 1936.1.2
+	}
+
+	immediate = {
+		AUS = { country_event = {id = lore.10 }}
+	}
+
+	option = {
+		name = lore.9.a
+	}
+
+}
+ #Austria lore
+ country_event = {
+	id = lore.10
+	title = lore.10.t
+	desc = lore.10.d
+	picture = GFX_news_event_austria_lore
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = lore.10.a
+		hidden_effect = { country_event = { id = austria.1012 days = 70 } }
+  }
+}
+#TRIGGER FOR THE EVENT
+news_event = {
+	id = lore.11
+	title = lore.11.t
+	desc = lore.11.d
+
+	hidden = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		country_exists = TUR
+		date > 1936.1.2
+	}
+
+	immediate = {
+		TUR = { country_event = {id = lore.12 }}
+	}
+
+	option = {
+		name = lore.11.a
+	}
+
+}
+ #Turkey lore
+ country_event = {
+	id = lore.12
+	title = lore.12.t
+	desc = lore.12.d
+	picture = GFX_news_event_turkey_lore
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = lore.12.a
+  }
+}
+
+#Introduction
+country_event = {
+	id = lore.13
+	title = lore.13.t
+	desc = lore.13.d
+	picture = GFX_news_event_turkey_lore
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	option = {
+		name = lore.13.a
+  }
+}
+#####################################################################################################################################################
+	

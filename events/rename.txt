@@ -1,0 +1,53 @@
+﻿###########################
+# Renaming Events #########
+###########################
+
+add_namespace = rename
+
+# ROOT - rename Istanbul had to add extra 0
+country_event = {
+	id = rename.341
+	title = rename.341.t
+	desc = rename.341.desc
+	picture = GFX_report_event_german_reichstag_gathering
+
+	trigger = {
+	  NOT = {
+		tag = TUR
+	 }
+	 ROOT = {
+		controls_state = 341
+	 }
+	 date > 1936.3.5
+	 NOT = { has_country_flag = renamed_state_341 }
+	}
+
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				limit = { has_country_flag = renamed_state_341 }
+				clr_country_flag = renamed_state_341
+			}
+		}
+	}
+
+	option = {
+		name = rename.341.a
+			341 = { reset_state_name = yes }
+			reset_province_name = 9833
+			set_country_flag = renamed_state_341
+			set_global_flag = renamed_state_341
+		}
+
+		option = {
+			name = rename.341.b
+				341 = { set_state_name = "Constantinople" }
+				set_province_name = { id = 9833 name = "Constantinople"}
+				set_country_flag = renamed_state_341
+				set_global_flag = renamed_state_341
+			}
+}

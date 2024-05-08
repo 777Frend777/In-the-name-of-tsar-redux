@@ -1,0 +1,15 @@
+#################
+#### Hungary ####
+#################
+
+HUN_greater_socialist_republic_category = {
+	icon = generic_operation
+
+	picture = GFX_decision_cat_generic_mefo_bills
+	priority = 100
+
+	allowed = {
+		original_tag = HUN
+	}
+}
+

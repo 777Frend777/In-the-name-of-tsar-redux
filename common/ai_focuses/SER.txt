@@ -1,0 +1,12 @@
+
+ai_historical_focus_list_SER = {
+	ai_national_focuses = {
+		# grab as fast as you can if available
+	
+		SER_annex_MNT
+		SER_unify_the_balkans
+		
+
+		
+	}
+}

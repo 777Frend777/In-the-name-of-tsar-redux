@@ -1,0 +1,45 @@
+﻿division_template = {
+	name = "Milícia"				# Infantry Brigade
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+
+    priority = 0
+
+	}
+}
+
+units = {
+	##### Honvédelmi Fõparancsnokság #####
+	# Gyorshadtest ('Rapid Corps', actual corps raised in 1940)
+	division= {	
+		#name = "1. Milícia Osztály"
+		location = 9660
+		division_template = "Milícia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		#name = "2. Milícia Osztály"
+		location = 9660
+		division_template = "Milícia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}
+
+	# I Hadtest
+	division= {	
+		#name = "3. Milícia Osztály"
+		location = 9660
+		division_template = "Milícia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}

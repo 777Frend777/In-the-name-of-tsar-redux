@@ -1,0 +1,24 @@
+﻿add_namespace = sanctions
+
+#Minor sanctions
+country_event = {
+	id = sanctions.1
+	title = sanctions.1.t
+	desc = sanctions.1.d
+	picture = GFX_report_event_vienna_award_hungary
+	is_triggered_only = yes
+	option = {
+		name = sanctions.1.a	
+	}
+}
+#Major sanctions
+country_event = {
+	id = sanctions.2
+	title = sanctions.2.t
+	desc = sanctions.2.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = sanctions.2.a	
+	}
+}

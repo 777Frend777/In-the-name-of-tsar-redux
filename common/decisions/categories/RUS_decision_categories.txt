@@ -1,0 +1,33 @@
+#################
+#### RUSSIA ####
+#################
+#Integrate Territories
+RUS_integrate_territories_decisions = {
+	icon = decision_generic_decision
+	priority = 10
+	picture = GFX_decision_cat_picture_government_in_exile
+	available = {
+	original_tag = RUS
+	}
+	allowed = {
+		original_tag = RUS
+	}
+}
+RUS_russian_coup = {
+	icon = generic_operation
+
+	picture = GFX_decision_cat_generic_mefo_bills
+
+	allowed = {
+		original_tag = RUS
+	}
+}
+RUS_army_actions = {
+	icon = generic_operation
+
+	picture = GFX_decision_cat_generic_mefo_bills
+
+	allowed = {
+		original_tag = RUS
+	}
+}

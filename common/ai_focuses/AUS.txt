@@ -1,0 +1,27 @@
+ai_historical_focus_list_AUS = {
+	ai_national_focuses = {
+	
+	AUS_steel
+	AUS_modernise_infra
+	AUS_army
+	AUS_hungarian_forts
+	AUS_italian_forts
+	AUS_civil_effort
+	AUS_civil_effort2
+	AUS_milit_effort
+	AUS_nazis
+	AUS_monarchy
+	AUS_seek_reuni
+	AUS_puppet_CZE
+	AUS_claim_HUN
+	AUS_intergrate_CZE 
+	AUS_nationalise_industry
+	AUS_war_preparations
+	AUS_new_constitution
+    AUS_revive_allainces
+	AUS_science1
+	AUS_friend_GER
+	AUS_german_drills
+	AUS_italian_claims
+	}
+}

@@ -1,0 +1,33 @@
+spriteTypes = {	
+    
+	# EGY
+	
+	spriteType = {
+		name = "GFX_decision_cat_picture_disestablish_british_influence"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_disestablish_british_influence.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_a_flourishing_economy"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_a_flourishing_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ege_placate_the_christian_church"
+		texturefile = "gfx/interface/decisions/decision_ege_placate_the_christian_church.dds"
+	}	
+	spriteType = {
+		name = "GFX_decision_ege_placate_the_muslim_church"
+		texturefile = "gfx/interface/decisions/decision_ege_placate_the_muslim_church.dds"
+	}	
+	spriteType = {
+		name = "GFX_decision_cat_picture_placate_the_churches"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_placate_the_churches.dds"
+	}
+
+	# IRQ
+
+	spriteType = {
+		name = "GFX_decision_category_shia_revolts"
+		texturefile = "gfx/interface/decisions/decision_category_shia_revolts.dds"
+	}
+	
+}

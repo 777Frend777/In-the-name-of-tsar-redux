@@ -1,0 +1,68 @@
+﻿l_russian:
+ EGY_fascism_party: "Нацистская египетская партия" #NT!
+ EGY_monarchist_party: "Династия Мухаммеда Али" #NT!
+ EGY_emperor_party: "Император" #NT!
+ EGY_democratic_party: "Хизб аль-Вафд" #NT!
+ EGY_fallen_wafd_party: "Падший Вафд" #NT!
+ EGY_communism_party: "Коммунистическая партия Египта" #NT!
+ EGY_neutrality_party: "Сулалат Мухамад Алиин" #NT!
+ EGY_coptic_church_party: "Коптская церковь" #NT!
+ EGY_muslim_brotherhood_party: "мусульманское братство" #NT!
+ FOM_democratic_party: "Движение свободных офицеров" #NT!
+  
+ EGY_democratic_party_long: "Хизб аль-Вафд" #NT!
+ EGY_nationalism_party: "ЛРП" #NT!
+ EGY_nationalism_party_long: "Партия митинга освобождения" #NT!
+ EGY_fascism_party_long: "Нацистская египетская партия" #NT!
+ EGY_communism_party_long: "Коммунистическая партия Египта" #NT!
+ EGY_neutrality_party_long: "Сулалат Мухамад Алиин" #NT!
+ AFG_democratic_party: "АДП" #NT!
+ AFG_democratic_party_long: "Демократическая партия Афганистана" #NT!
+ AFG_nationalism_party: "Талибан" #NT!
+ AFG_nationalism_party_long: "Исламская джихадистская партия" #NT!
+ AFG_fascism_party: "Нацистская афганская партия" #NT!
+ AFG_fascism_party_long: "Нацистская афганская партия" #NT!
+ AFG_communism_party: "Коммунистическая партия Афганистана" #NT!
+ AFG_communism_party_long: "Коммунистическая партия Афганистана" #NT!
+ AFG_neutrality_party: "Баракзай" #NT!
+ AFG_neutrality_party_long: "Баракзай" #NT!
+ IRQ_fascism_party: "Партия Баас" #NT!
+ IRQ_said: "Сказал" #NT!
+ IRQ_democratic_party: "группа аль-Ахали" #NT!
+ IRQ_party_of_national_brotherhood: "HIW" #NT!
+ IRQ_party_of_national_brotherhood_long: "Партия национального братства" #NT!
+ IRQ_covenant_party: "Партия Завета" #NT!
+ IRQ_iraqi_communist_party: "ПМС" #NT!
+ IRQ_iraqi_communist_party_long: "Коммунистическая партия Ирака" #NT!
+ IRQ_house_of_hashim_long: "Дом Хашима" #NT!
+ IRQ_house_of_hashim: "Хашимиты" #NT!
+ IRQ_golden_square: "Золотой квадрат" #NT!
+ AES_democratic_party: "БДУ" #NT!
+ AES_democratic_party_long: "Британская демократическая юнионистская партия" #NT!
+ AES_fascism_party: "Аль Нобаст" #NT!
+ AES_fascism_party_long: "Харакат Тахрир Эль-Судан" #NT!
+ AES_communism_party: "КПК" #NT!
+ AES_communism_party_long: "Коммунистическая партия Судана" #NT!
+ AES_neutrality_party: "НОМЕР" #NT!
+ AES_neutrality_party_long: "Национальная партия Умма" #NT!
+ YEM_fascism_party: "мусульманское братство" #NT!
+ YEM_fascism_allah: "Преданные Аллаха" #NT!
+ YEM_democratic_party: "Движение за свободный Йемен" #NT!
+ YEM_communism_party: "УПРФ" #NT!
+ YEM_communism_party_long: "Объединенный народно-революционный фронт" #NT!
+ SUD_democratic_party: "БДУ" #NT!
+ SUD_democratic_party_long: "Демократическая юнионистская партия" #NT!
+ SUD_fascism_party: "Аль Нобаст" #NT!
+ SUD_fascism_party_long: "Харакат Тахрир Эль-Судан" #NT!
+ SUD_communism_party: "CPS" #NT!
+ SUD_communism_party_long: "Коммунистическая партия Судана" #NT!
+ SUD_neutrality_party: "НОМЕР" #NT!
+ SUD_neutrality_party_long: "Национальная партия Умма" #NT!
+ MAP_democratic_party: "БМР" #NT!
+ MAP_democratic_party_long: "Британский обязательный представитель" #NT!
+ MAP_fascism_party: "Аль-Тахрир" #NT!
+ MAP_fascism_party_long: "Харакат Тахрир Фаластин" #NT!
+ MAP_communism_party: "КПК" #NT!
+ MAP_communism_party_long: "Коммунистическая партия Палестины" #NT!
+ MAP_neutrality_party: "МПМ" #NT!
+ MAP_neutrality_party_long: "Монархическое палестинское движение" #NT!

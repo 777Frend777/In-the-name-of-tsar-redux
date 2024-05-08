@@ -1,0 +1,67 @@
+
+units = {
+		##### NAVAL UNITS #####
+	fleet = {
+		name = "Rote Flotte"
+		naval_base = 362
+		task_force = {
+		
+		name = "Schlachtschiffflotte"
+		location = 362  # Konigsberg
+		ship = { name = "Marx" definition = battleship equipment = { battleship_1 = { amount = 1 owner = BAV } } }
+		ship = { name = "Engels" definition = battleship equipment = { battleship_1 = { amount = 1 owner = BAV } } }
+		ship = { name = "Thalmann" definition = battleship equipment = { battleship_1 = { amount = 1 owner = BAV } } }
+		ship = { name = "Nassau" definition = battleship equipment = { battleship_1 = { amount = 1 owner = BAV } } }
+		ship = { name = "Baden" definition = battleship equipment = { battleship_1 = { amount = 1 owner = BAV } } }
+		ship = { name = "Bayern" definition = battleship equipment = { battleship_1 = { amount = 1 owner = BAV } } }
+		}	
+	task_force = {
+		name = "Rote Flotte"
+		location = 362
+		ship = { name = "Derffinger" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = BAV } } }
+		ship = { name = "Lützow" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = BAV } } }
+		ship = { name = "Revolution" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = BAV } } }
+		ship = { name = "Marat" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = BAV  } } }
+		ship = { name = "La Commune de Paris" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = BAV } } }
+		ship = { name = "Weltrevolution" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = BAV } } }
+		ship = { name = "Nürnberg" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = BAV } } } 		
+		ship = { name = "Leipzig" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = BAV } } }		
+		ship = { name = "Königsberg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BAV } } }			
+		ship = { name = "Karlsruhe" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BAV } } }	
+		ship = { name = "Köln" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BAV } } }			
+		ship = { name = "Emden" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BAV } } }
+	}	
+	task_force = {
+		name = "Torpedobootflottille"
+		location = 362  # Konigsberg	
+		ship = { name = "Möwe" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAV } } }
+		ship = { name = "Albatros" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAV } } }
+		ship = { name = "Seeadler" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAV } } }
+		ship = { name = "Greif" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAV } } }
+		ship = { name = "Falke" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAV } } }
+		ship = { name = "Kondor" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAV } } }
+		ship = { name = "Wolf" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAV } } }
+		ship = { name = "Iltis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAV } } }
+	}
+	task_force = {
+		name = "Unterseeboots-Schule"
+		location = 362   # Wilhemshaven
+		# 2. Unterseebootsflottille
+		ship = { name = "U-1" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAV } } }
+		ship = { name = "U-2" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAV } } }
+		ship = { name = "U-3" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAV } } }
+		# 3. Unterseebootsflottille
+		ship = { name = "U-4" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAV } } }
+		ship = { name = "U-5" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAV } } }
+		ship = { name = "U-6" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAV } } }
+		# 4. Unterseebootsflottille
+		ship = { name = "U-7" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAV } } }
+		ship = { name = "U-8" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAV } } }
+		ship = { name = "U-9" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAV } } }
+		# 1. Unterseebootsflottille
+		ship = { name = "U-10" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAV } } }
+		ship = { name = "U-11" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAV } } }
+		ship = { name = "U-12" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAV } } }
+	}
+	}
+}	

@@ -1,0 +1,1048 @@
+﻿###########################
+#Italian Events #########
+###########################
+
+add_namespace = italy
+ #French Tank Purchase 
+ country_event = {
+	id = italy.10000
+	title = italy.10000.t
+	desc = italy.10000.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #Agree 
+		name = italy.10000.a
+		ai_chance = { factor = 99 }	
+		send_equipment = { target = ITA type = armor amount = 250 }
+		country_event = { id = italy.10001 days = 1 }
+		}	
+	option = { #Decline
+		name = italy.10000.b
+		 ai_chance = { factor = 1 }
+		country_event = { id = italy.10002 days = 1 }		
+		}
+	}
+ #France says yes 
+ country_event = {
+	id = italy.10001
+	title = italy.10001.t
+	desc = italy.10001.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = { #Agree 
+		name = italy.10001.a
+		}	
+	}	
+ #France says no
+ country_event = {
+	id = italy.10002
+	title = italy.10002.t
+	desc = italy.10002.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = { #Agree 
+		name = italy.10002.a
+		}	
+	}
+#British Naval Treaty 
+ country_event = {
+	id = italy.10003
+	title = italy.10003.t
+	desc = italy.10003.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #Agree 
+		name = italy.10003.a
+		ai_chance = { factor = 99 }	
+		hidden_effect = {
+		ITA = { 
+		load_oob = ITA_brit_ships
+		}
+		}
+		ITA = {
+		country_event = { id = italy.10004 days = 1 }
+		}
+		}	
+	option = { #Decline
+		name = italy.10003.b
+		 ai_chance = { factor = 1 }
+		ITA = {
+		country_event = { id = italy.10005 days = 1 }	
+		}	
+		}
+	}
+ #England says yes 
+ country_event = {
+	id = italy.10004
+	title = italy.10004.t
+	desc = italy.10004.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = { #Agree 
+		name = italy.10004.a
+		}	
+	}	
+ #England says no
+ country_event = {
+	id = italy.10005
+	title = italy.10005.t
+	desc = italy.10005.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = { #Agree 
+		name = italy.10005.a
+		}	
+	}
+ #Status of Monarchy
+ country_event = {
+	id = italy.10006
+	title = italy.10006.t
+	desc = italy.10006.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #Agree 
+		name = italy.10006.a
+		ai_chance = { factor = 50 }	
+		swap_ideas = {
+		add_idea = victor_emmanuel_1
+		remove_idea = victor_emmanuel
+		}
+		}	
+	option = { #Decline
+		name = italy.10006.b
+		 ai_chance = { factor = 50 }
+		news_event = { id = italy.10007 days = 1 }
+		set_politics = { ruling_party = democratic elections_allowed = yes }
+		add_popularity = {
+					ideology = democratic
+					popularity = 0.15
+				}	
+				set_cosmetic_tag = ITA_REP
+		swap_ideas = {
+		add_idea = GER_rep
+		remove_idea = victor_emmanuel
+		}
+		}
+	}
+#King of Italy Abdicates
+ news_event = {
+	id = italy.10007
+	title = italy.10007.t
+	desc = italy.10007.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	    option = {
+		name = italy.10007.a
+		trigger = {
+			NOT = {
+				TAG = ITA
+			}
+			}
+	}
+			option = {
+		name = italy.10007.b
+			trigger = { TAG = ITA }
+	}
+	}	
+#Communists Secures Majority
+ news_event = {
+	id = italy.1000
+	title = italy.1000.t
+	desc = italy.1000.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	    option = {
+		name = italy.1000.a
+		trigger = {
+			NOT = {
+				TAG = ITA
+			}
+			}
+	}
+			option = {
+		name = italy.1000.b
+			trigger = { TAG = ITA }
+	}
+	}
+#Black Shirts Secures Majority
+ news_event = {
+	id = italy.1001
+	title = italy.1001.t
+	desc = italy.1001.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	    option = {
+		name = italy.1001.a
+		trigger = {
+			NOT = {
+				TAG = ITA
+			}
+			}
+	}
+			option = {
+		name = italy.1001.b
+			trigger = { TAG = ITA }
+	}
+	}
+#Conservative Secures Majority
+ news_event = {
+	id = italy.1002
+	title = italy.1002.t
+	desc = italy.1002.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	    option = {
+		name = italy.1002.a
+		trigger = {
+			NOT = {
+				TAG = ITA
+			}
+			}
+	}
+			option = {
+		name = italy.1002.b
+			trigger = { TAG = ITA }
+	}
+	}	
+#TRIGGER FOR THE EVENT
+#news_event = {
+#	id = italy.1003
+#	title = italy.1003.t
+#	desc = italy.1003.d
+#
+#	hidden = yes
+#
+#	fire_only_once = yes
+#
+#	trigger = {
+#		country_exists = ITA
+#		date > 1936.4.2
+#		date < 1936.5.1
+#	}
+#
+#	immediate = {
+#		ITA = { country_event = { id = italy.1011 }}
+#	}
+#
+#	option = {
+#		name = italy.1003.a
+#	}
+#
+#}	
+ #Mussolini Gathers His Supporters 
+ country_event = {
+	id = italy.1014
+	title = italy.1014.t
+	desc = italy.1014.d
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = { #Do nothing 
+	name = italy.1014.a
+		hidden_effect = {
+		country_event = { days = 20 id = italy.1004 }
+		}		
+		}
+    }		
+ #Mussolini criticises the gov
+ country_event = {
+	id = italy.1011
+	title = italy.1011.t
+	desc = italy.1011.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = { #Do nothing 
+		name = italy.1011.a
+		ai_chance = { factor = 50 }
+		add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+		add_popularity = {
+				ideology = neutrality 
+				popularity = 0.03
+		}		
+		hidden_effect = {
+		country_event = { days = 30 id = italy.1014 } #Mussolini Gains Rep	
+		}		
+		}	
+	option = { #Arrest Him
+		name = italy.1011.b
+		 ai_chance = { factor = 50 }
+		add_stability = -0.02
+		create_country_leader = {
+		name = "Partito Nazionale Fascista"
+		desc = "POLITICS_FRANCISCO_FRANCO_DESC"
+		picture = "fascist_party_italy.tga"
+		expire = "1965.1.1"
+		ideology = fascism_ideology
+		traits = {
+		#
+		}
+		}
+	hidden_effect = {
+	country_event = { days = 80 id = italy.1012 }
+	news_event = { days = 1 id = italy.1013 }
+	}		
+		}
+	}
+ #Mussolini escapes the prison
+ country_event = {
+	id = italy.1012
+	title = italy.1012.t
+	desc = italy.1012.d
+	picture = GFX_report_event_china_politicians_captured
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = { #Begin the manhunt 
+		name = italy.1012.a
+		ai_chance = { factor = 50 }
+		create_country_leader = {
+	name = "Benito Mussolini"
+	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+	picture = "Portrait_Italy_Benito_Mussolini.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+	}
+	hidden_effect = {
+	country_event = { days = 30 id = italy.1014 }
+	}
+		}	
+	option = { #Let him go
+		name = italy.1012.b
+		 ai_chance = { factor = 50 }
+		create_country_leader = {
+	name = "Benito Mussolini"
+	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+	picture = "Portrait_Italy_Benito_Mussolini.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+	}
+	hidden_effect = {
+	country_event = { days = 35 id = italy.1015 } #Bribe party members 
+	}		
+	}
+	}
+ #Bribe Party Members 
+ country_event = {
+	id = italy.1015
+	title = italy.1015.t
+	desc = italy.1015.d
+	picture = GFX_report_event_vienna_award_hungary
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = { #Yes
+	name = italy.1015.a
+	add_political_power = -50
+		hidden_effect = {
+		country_event = { days = 28 id = italy.1016 } #shot to kill him
+		}		
+		}
+	option = { #No
+	name = italy.1015.b
+	add_political_power = -25
+		hidden_effect = {
+		country_event = { days = 24 id = italy.1017 } #
+		}		
+		}	
+    }
+	 #Assassination of Mussolini 
+ country_event = {
+	id = italy.1016
+	title = italy.1016.t
+	desc = italy.1016.d
+	picture = GFX_news_event_017
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = { #Kill him
+	name = italy.1016.a
+	add_political_power = -50
+	custom_effect_tooltip = ITA_mussolini_dies
+		hidden_effect = {
+		create_country_leader = {
+		name = "Partito Nazionale Fascista"
+		desc = "POLITICS_FRANCISCO_FRANCO_DESC"
+		picture = "fascist_party_italy.tga"
+		expire = "1965.1.1"
+		ideology = fascism_ideology
+		traits = {
+		#
+		}
+		}
+		country_event = { days = 15 id = italy.1018 } #shot to kill him
+		}		
+		}
+	option = { #Not worth it 
+	name = italy.1016.b
+	add_political_power = -25
+		hidden_effect = {
+		country_event = { days = 15 id = italy.1017 } #
+		}		
+		}	
+    }
+	#Fascist Party Starts a civ war 
+ country_event = {
+	id = italy.1018
+	title = italy.1018.t
+	desc = italy.1018.d
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = { #RIP
+	name = italy.1018.a
+	set_country_flag = ITA_bypass_march
+	start_civil_war = {
+	ideology = fascism
+	size = 0.5
+	states = { 115 156 117 157 2 774 }
+	}
+		hidden_effect = {
+		load_oob = ITA_civil_war_demo
+		2 = {
+		owner = {
+		load_oob = ITA_civil_war_black
+		}
+		}
+		}
+		}
+	option = { #King
+	name = italy.1018.b
+	set_country_flag = ITA_bypass_march
+	set_politics = { ruling_party = neutrality elections_allowed = no }
+	add_popularity = {
+					ideology = neutrality
+					popularity = 0.2
+				}
+	start_civil_war = {
+	ideology = fascism
+	size = 0.5
+	states = { 115 156 117 157 2 774 }
+	}
+		hidden_effect = {
+		load_oob = ITA_civil_war_demo
+		2 = {
+		owner = {
+		load_oob = ITA_civil_war_black
+		}
+		}
+		}	
+		}			
+    }
+#Mussolini killed
+ country_event = {
+	id = italy.1017
+	title = italy.1017.t
+	desc = italy.1017.d
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = { 
+	name = italy.1017.a
+	hidden_effect = {
+	set_country_flag = ITA_bypass_march
+	create_country_leader = {
+		name = "Partito Nazionale Fascista"
+		desc = "POLITICS_FRANCISCO_FRANCO_DESC"
+		picture = "fascist_party_italy.tga"
+		expire = "1965.1.1"
+		ideology = fascism_ideology
+		traits = {
+		#
+		}
+		}
+	}		
+	}	
+    }
+	#Mussolini Arrested
+news_event = { 
+    id = italy.1013
+    title = italy.1013.t
+    desc = italy.1013.d
+    picture = news_event_012
+	major = yes
+
+        is_triggered_only = yes
+        option = {
+		name = italy.1013.a
+		trigger = {
+			NOT = {
+				TAG = RUS
+			}
+			}
+	}
+			option = {
+		name = italy.1013.b
+			trigger = { TAG = RUS }
+	}
+}	
+ #March one Rome
+ country_event = {
+	id = italy.1004
+	title = italy.1004.t
+	desc = italy.1004.d
+	picture = GFX_report_event_SER_bulgaria
+	is_triggered_only = yes
+	#trigger = {
+	#	tag = ITA
+	#	date > 1936.3.1
+	#	date < 1936.3.5
+	#}
+	fire_only_once = yes
+	option = { #go conserv
+		name = italy.1004.a
+		ai_chance = { factor = 0 }
+		hidden_effect = {
+		news_event = { hours = 6 id = italy.1009 }
+		country_event = { hours = 24 id = italy.1010 }	
+		}
+		ITA = {
+		complete_national_focus = ITA_marchonrome 
+		add_stability = -0.1
+		add_political_power = -150
+			}
+		}	
+	option = { #go fascit
+		name = italy.1004.b
+		 ai_chance = { factor = 100 }
+		 hidden_effect = {
+		news_event = { hours = 6 id = italy.1009 }
+		}
+		set_politics = { ruling_party = fascism elections_allowed = no }
+		complete_national_focus = ITA_marchonrome 
+		add_popularity = {
+					ideology = fascism
+					popularity = 0.3
+				}
+		}
+	option = { #go commi
+		name = italy.1004.c
+		ai_chance = { factor = 0 }
+		hidden_effect = {
+		news_event = { hours = 6 id = italy.1009 }
+		country_event = { hours = 24 id = italy.1010 }	
+		}
+		ITA = {
+		complete_national_focus = ITA_marchonrome 
+		set_politics = { ruling_party = communism elections_allowed = no }				
+			}			
+	}
+	}
+	#Communists join the war
+	country_event = {
+	id = italy.1005
+	title = italy.1005.t
+	desc = italy.1005.d
+	picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+
+	option = { 
+	name = italy.1005.a
+	ITA = {
+						start_civil_war = {
+							ideology = communism
+							size = 0.4
+						}
+						
+					}
+	}
+	}
+	#ITALY DEMANDS KORUSO
+	country_event = {
+	id = italy.1006
+	title = italy.1006.t
+	desc = italy.1006.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = { 
+	name = italy.1006.a
+	ai_chance = {
+			factor = 80
+		}
+	ITA = { 
+	diplomatic_relation = {
+			country = SER
+			relation = non_aggression_pact
+		
+	}
+	transfer_state = 802
+	country_event = { id = italy.1007 }
+	}
+	}
+	option = { 
+	name = italy.1006.a
+	ai_chance = {
+			factor = 20
+		}
+	ITA = { 
+	add_state_claim = 802
+	country_event = { id = italy.1008 }
+	}
+	}
+	}
+	#SERBIA ACCEPTS
+	country_event = {
+	id = italy.1007
+	title = italy.1007.t
+	desc = italy.1007.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = { 
+	name = italy.1007.a
+	}
+	}
+	#SERBIA REFUSES
+	country_event = {
+	id = italy.1008
+	title = italy.1008.t
+	desc = italy.1008.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = { 
+	name = italy.1008.a
+	}
+	}
+	country_event = {
+	id = italy.1010
+	title = italy.1010.t
+	desc = italy.1010.d
+	picture = GFX_news_event_ITA_march_on_rome
+	is_triggered_only = yes
+
+	option = { 
+	name = italy.1010.a
+	start_civil_war = { ideology = fascism size = 0.45 }
+	}
+	}
+	news_event = {
+	id = italy.1009
+	title = italy.1009.t
+	desc = italy.1009.d
+	picture = GFX_news_event_ITA_march_on_rome
+	is_triggered_only = yes
+	 major = yes
+	option = { 
+	name = italy.1009.a
+	trigger = {
+			NOT = {
+				TAG = ITA
+			}
+			}
+	}
+	option = { 
+	name = italy.1009.b
+	trigger = {
+				TAG = ITA
+			}
+		}
+	}
+
+	###Nice Pusche###
+	country_event = {
+	id = italy.2010
+	title = italy.2010.t
+	desc = italy.2010.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+		option = { 
+		name = italy.2010.a
+		ITA = {ITA_leverage_down = yes}
+		}
+	}
+
+	###Malta Putsche###
+	country_event = {
+	id = italy.2011
+	title = italy.2011.t
+	desc = italy.2011.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+		option = { 
+		name = italy.2011.a
+		ITA = {ITA_leverage_down = yes}
+		}
+	}
+
+	###Corsica Putsche###
+	country_event = {
+	id = italy.2012
+	title = italy.2012.t
+	desc = italy.2012.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+		option = { 
+		name = italy.2012.a
+		ITA = {ITA_leverage_down = yes}
+		}
+	}
+
+	###Gabes Putsche###
+	country_event = {
+	id = italy.2013
+	title = italy.2013.t
+	desc = italy.2013.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+		option = { 
+		name = italy.2013.a
+		}
+	} 
+
+	###Egyptian Putsche###
+	country_event = {
+	id = italy.2014
+	title = italy.2014.t
+	desc = italy.2014.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+		option = { 
+		name = italy.2014.a
+		}
+	} 
+
+	###Swiss Putsche For Britain & France###
+	country_event = {
+	id = italy.2015
+	title = italy.2015.t
+	desc = italy.2015.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+		option = { 
+		name = italy.2015.a
+		}
+	} 
+
+	###Swiss Putsche For Switzerland###
+	country_event = {
+	id = italy.2016
+	title = italy.2016.t
+	desc = italy.2016.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+		option = { 
+		name = italy.2016.a
+		ITA = {
+				set_state_owner = 836
+				set_state_controller = 836
+			}
+		}
+
+		option = { 
+		name = italy.2016.b
+			ITA = {
+				add_state_claim = 836
+				create_wargoal = {
+					type = take_state_focus
+					target = SWI
+					generator = { 836 }
+				}
+			}
+		}
+	}
+
+	country_event = {
+	id = italy.252
+	title = italy.252.t
+	desc = italy.252.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+		option = { 
+		name = italy.252.a
+
+			ai_chance = { factor = 100 }	
+
+			
+				hidden_effect = {
+					FRA = {
+						load_oob = ITA_Mountaineers_to_FRA
+					}	
+				}
+
+			ITA = {
+				add_manpower = -13400
+				country_event = italy.3002
+				ITA_leverage_up = yes
+			}
+		}
+
+		option = { 
+		name = italy.252.b
+			ITA = {
+				country_event = italy.3001
+			}
+			ai_chance = { factor = 0 }
+		}
+	}
+
+	country_event = {
+	id = italy.3001
+	title = italy.3001.t
+	desc = italy.3001.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = { 
+	name = italy.3001.a
+	}
+	}
+		country_event = {
+	id = italy.3002
+	title = italy.3002.t
+	desc = italy.3002.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = { 
+	name = italy.3002.a
+		}
+	}
+
+	country_event = {
+	id = italy.363
+	title = italy.363.t
+	desc = italy.363.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = { 
+	name = italy.363.a
+	    hidden_effect = {
+	    	ITA = { 
+	       		ITA_leverage_up = yes
+		  		ITA_leverage_up = yes 
+		  	}
+		}   
+		   ENG = { add_ideas = ENG_italian_dockyards }
+		   ITA = { add_ideas = ITA_lost_dockyards }
+	}
+
+	option = { 
+	name = italy.363.b
+		}
+	}
+
+	country_event = {
+	id = italy.353
+	title = italy.353.t
+	desc = italy.353.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		
+		name = italy.353.a
+
+		ENG = {
+			annex_country = {
+    			target = EGY
+    			transfer_troops = yes
+			}
+		}
+
+		ITA = {
+			add_timed_idea = {
+				idea = ITA_railway
+				days = 180 }
+			country_event = italy.3002
+		}
+
+		446 = {
+	   		add_building_construction = {
+    			type = infrastructure
+    			level = 2
+    			instant_build = yes
+			}
+		}
+		456 = {
+	   		add_building_construction = {
+    			type = infrastructure
+    			level = 2
+    			instant_build = yes
+			}
+		}
+		551 = {
+	   		add_building_construction = {
+    			type = infrastructure
+    			level = 2
+    			instant_build = yes
+			}
+		}
+		547 = {
+	   		add_building_construction = {
+    			type = infrastructure
+    			level = 2
+    			instant_build = yes
+			}
+		}
+		549 = {
+	   		add_building_construction = {
+    			type = infrastructure
+    			level = 2
+    			instant_build = yes
+			}
+		}
+		546 = {
+	   		add_building_construction = {
+    			type = infrastructure
+    			level = 2
+    			instant_build = yes
+			}
+		}
+		545 = {
+	   		add_building_construction = {
+    			type = infrastructure
+    			level = 2
+    			instant_build = yes
+			}
+		}
+		542 = {
+	   		add_building_construction = {
+    			type = infrastructure
+    			level = 2
+    			instant_build = yes
+			}
+		}
+		681 = {
+	   		add_building_construction = {
+    			type = infrastructure
+    			level = 2
+    			instant_build = yes
+			}
+		}
+	}
+
+	option = { 
+	name = italy.353.b
+
+		ITA = {country_event = italy.3001}
+	}
+	}
+
+
+	country_event = {
+	id = italy.365
+	title = italy.365.t
+	desc = italy.365.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = { 
+	name = italy.365.a
+
+		ENG = {
+			set_state_owner = 559
+			set_state_controller = 559
+			set_state_owner = 550
+			set_state_controller = 550
+		}
+
+	    hidden_effect = {
+	    	ITA = { 
+	       		ITA_leverage_up = yes
+		  	}
+		}   
+	}
+
+	option = { 
+	name = italy.365.b
+
+	ITA = {country_event = italy.3001}
+
+		}
+	}
+	
+	
+	#Ppl of Italy do not want to support Allies
+	country_event = {
+	id = italy.366
+	title = italy.366.t
+	desc = italy.366.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = { 
+	name = italy.366.a
+
+	    hidden_effect = {
+	    	country_event = { id = italy.367 days = 20 }
+		}   
+	}
+
+	option = { 
+	name = italy.366.b
+
+	 hidden_effect = {
+	    	country_event = { id = italy.367 days = 20 }
+		}   
+
+		}
+	}
+	
+	#Hardcoded Civil War, will be changed later
+	country_event = {
+	id = italy.367
+	title = italy.367.t
+	desc = italy.367.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = { 
+	name = italy.367.a
+
+	    hidden_effect = {
+	    	country_event = { id = italy.367 days = 20 }
+		}   
+	}
+
+	option = { 
+	name = italy.367.b
+
+	 hidden_effect = {
+	    	country_event = { id = italy.367 days = 20 }
+		}   
+
+		}
+	}

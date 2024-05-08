@@ -1,0 +1,29 @@
+characters = {
+	KHI_nedirbay_aytakov = {
+		name = "Nedirbay Aytakov" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Nedirbay_Aytakov
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			expire = "1938.1.1.1"
+			id = -1
+		}
+	}
+	KHI_junaid_khan = {
+		name = "Junaid Khan" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KHI/Portrait_KHI_Junaid_Khan.png"
+			}
+		}
+		country_leader = {
+			ideology = neutrality_subtype
+			expire = "1938.1.1.1"
+			id = -1
+		}
+	}
+}
+	

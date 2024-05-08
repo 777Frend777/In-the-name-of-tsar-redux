@@ -1,0 +1,8 @@
+IRE_add_unionist_resistance = {
+	119 = {
+		set_state_flag = IRE_Unionist_resistance_flag
+		add_dynamic_modifier = {
+			modifier = IRE_unionist_resistance_in_north
+		}
+	}
+}

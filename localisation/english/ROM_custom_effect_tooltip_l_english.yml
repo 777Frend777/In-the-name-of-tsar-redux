@@ -1,0 +1,48 @@
+﻿l_english:
+ ### SYR ###
+
+ SYR_islam_in_europe_wargoal_tt:0 "Gains §YAnnex§! war goals against §YEvery§! country in §YEurope§!." 
+ SYR_islam_in_europe_core_tt:0 "§YEvery§! State in §YEurope§! is now a core of §YSyria§!."
+ SYR_we_are_arabs_tt:0 "§YEvery§! §YArab§! or §YMuslim§! State is now a core of §YSyria§!."
+
+ ### EGY ###
+ EGY_one_man_show_tt:0 "Muslim Brotherhood has more than §Y25 Religious Influence§! (current: [?MBH.muslim_church_influence|+0])"
+ EGY_muslim_influence_level_up_tt:0 "§RMuslim Brotherhood§! influence increases.\n"
+ EGY_christian_influence_level_up_tt:0 "§RCoptic Church§! influence increases.\n"
+ EGY_national_poverty_down_tt:0 "Reduces the effect of §YNational Poverty§!.\n"
+ EGY_remove_muslim_influence_tt:0 "§RThe Muslim Brotherhood loses all of its§! §YReligious Influence§!.\n\n"
+ EGY_remove_christian_influence_tt:0 "§RThe Coptic Church loses all of its§! §YReligious Influence§!.\n\n"
+ EGY_assassinate_lampson_tt:0 "§YSir Miles Lampson§! is §Rassassinated§!\n"
+ EGY_marx_of_africa_tt:0 "Gains cores on all §Ycolonial African states§!.\n"
+ EGY_seek_foreign_cooperation_tt:0 "Relations with all major [SOV.GetFactionName] members are §Yimproved§!\n"
+ EGY_restore_the_empire_tt:0 "§YKing Farouk I§! will become the §YEmperor of Egypt§!\n"
+ EGY_fortify_el-alamein_tt:0 "§Y5 Land Forts§! will be constructed in §YEl-Alamein§!."
+ EGY_ufo_runway_tt:0 "\n\nSupporting the Status Quo will make it §Rsignificantly harder§! to construct the runway."
+ EGY_strengthen_axis_ties_tt:0 "Relations with all major [GER.GetFactionName] members are §Yimproved§!\n"
+ EGY_imperial_dream_tt_1:0 "Muslim Brotherhood has more than §Y15 Religious Influence§! (current: [?MBH.muslim_church_influence|+0])"
+ EGY_imperial_dream_tt_2:0 "Gains cores on all §YAfrican states§!.\n"
+ EGY_crush_the_coptic_church_tt_1:0 "Muslim Brotherhood has more than §Y30 Religious Influence§! (current: [?MBH.muslim_church_influence|+0])"
+ EGY_embrace_the_spirit_of_christ_tt_1:0 "Coptic Church has more than §Y20 Religious Influence§! (current: [?CCE.christian_church_influence|+0])"
+ EGY_an_egypt_for_the_people_tt:0 "§YKing Farouk I§! is arrested."
+ EGY_ark_of_the_red_sea_tt:0 "A modern §YArk§! is constructed in §YAlexandria§!."
+ EGY_the_second_coming_of_christ_tt:0 "§YHe§! shall rise once more."
+ EGY_the_last_party_tt:0 "An §Rassassination attempt§! is launched against §YKing Farouk I§!\n"
+ EGY_draft_a_new_constitution_tt:0 "The Egyptian Constitution of 1923 will be §Rabolished§! and a new one will be drafted with revisions to the §Yparliamentary representative system§!, §Ycapitalists in the government§! and the §Yrights of the Egyptian people§!.\n\n§RCompleting this focus will allow for greater political freedom in the Egyptian government§!.\n\n"
+ EGY_maintain_colonial_ties_tt:0 "Set the rule: can decline call to war"
+ EGY_mediterranean_defense_committee_tt_1:0 "\n§RThe following will occur only if Turkey accepts our invitation§!.\n\n"
+ EGY_mediterranean_defense_committee_tt_2:0 "\n§RThe following will occur only if Greece accepts our invitation§!.\n\n"
+ EGY_demand_african_liberations_tt:0 "\n§RIf the colonizers accept our demands, all of their African colonies will be liberated and will receive guarantees from us§!."
+ EGY_form_the_african_republic_tt:0 "All previous British colonies in Africa will unite under the §YAfrican Republic§!."
+ EGY_ban_boycotts_tt:0 "Coptic Church has more than §Y15 Religious Influence§! (current: [?CCE.christian_church_influence|+0])"
+ EGY_parliament_dissolution_tt:0 "\n§RParliamentary dissolutions will no longer occur§!."
+ EGY_the_second_crusade_tt:0 "Coptic Church has more than §Y30 Religious Influence§! (current: [?CCE.christian_church_influence|+0])"
+ EGY_surrender_to_the_catholic_church_tt:0 "§RItaly will annex Egypt and the game will end.§!\n\n"
+ EGY_war_department_reform_tt:0 "Reforming the §YWar Department§! will allow for the manufacturing prioritisation of certain equipment and the political adjustment of Egyptian military academies, which will prevent future §Rcivil wars§!."
+ EGY_blow_the_suez_tt:0 "\nThe §YSuez Canal§! is §Rblown§!, flooding the area around it."
+
+ ### IRQ ###
+ 
+ IRQ_unlock_cavalry:0 "Unlocks a free §YCavalry Template§!"
+ IRQ_bakr_sidqi_unavailable_tooltip:0 "Bakr Sidqi has not been killed nor resigned"
+ IRQ_bakr_sidqi_focus_unavailable_tooltip:0 "Bakr Sidqi has been killed"
+ IRQ_does_not_support_coalition_government_tooltip:0 "Allowed Shia Muslims into the government"

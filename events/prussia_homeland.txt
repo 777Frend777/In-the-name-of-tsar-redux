@@ -1,0 +1,637 @@
+﻿###########################
+# PprussiaN EVENTS #########
+###########################
+
+add_namespace = prussia_homeland
+#Prussian leader dies 
+country_event = {
+	id = prussia_homeland.1
+	title = prussia_homeland.1.t
+	desc = prussia_homeland.1.d
+	picture = GFX_report_event_europe_funeral
+
+	trigger = {
+		tag = GER
+		date > 1936.12.1
+		date < 1936.12.30
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+	days = 2
+	}
+	option = {
+		name = prussia_homeland.1.a	
+		#unlock_national_focus = GER_1936_election
+		set_country_flag = GER_election_ready
+		kill_country_leader = yes
+		add_country_leader_role = {
+				character = GER_august_von_mackensen
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = neutrality_subtype
+					traits = {
+						INOT_ww1_general
+					}
+				}
+				promote_leader = yes
+			}
+		news_event = {
+		id = prussia_homeland.2 days = 1
+		}
+		}
+}
+
+	
+
+#Prussian dictator dies
+news_event = {
+	id = prussia_homeland.2
+	title = prussia_homeland.2.t
+	desc = prussia_homeland.2.d
+	picture = GFX_news_event_GER_funeral
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_homeland.2.a  # world response
+		trigger = {
+			NOT = {
+				TAG = BAV
+				TAG = GER
+			}
+			}
+		}
+			option = {
+				name = prussia_homeland.2.b  # German Response
+				trigger = { TAG = GER }
+			}
+			option = {
+				name = prussia_homeland.2.c # Bavarian Response
+				trigger = { TAG = BAV }
+			}
+	}	
+#General elections in Prussia
+news_event = {
+	id = prussia_homeland.3
+	title = prussia_homeland.3.t
+	desc = prussia_homeland.3.d
+	picture = GFX_news_event_election_vote
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_homeland.3.a  # world response
+		trigger = {
+			NOT = {
+				TAG = BAV
+				TAG = GER
+			}
+			}
+		}
+			option = {
+				name = prussia_homeland.3.b  # German Response
+				trigger = { TAG = GER }
+			}
+			option = {
+				name = prussia_homeland.3.c # Bavarian Response
+				trigger = { TAG = BAV }
+			}
+}
+#Prussian elections event
+country_event = {
+	id = prussia_homeland.4
+	title = prussia_homeland.4.t
+	desc = prussia_homeland.4.d
+	picture = GFX_news_event_election_vote
+
+	is_triggered_only = yes
+	option = {
+		name = prussia_homeland.4.a	#Conservatives, constitutional monarchy path
+			add_political_power = 10
+			add_stability = 0.05
+			set_politics = { ruling_party = conservatives elections_allowed = yes }
+				ai_chance = {
+					factor = 33
+				}
+			add_popularity = {
+					ideology = conservatives
+					popularity = 0.20
+				}
+		#ai_chance = { 
+		#factor = 0
+		#modifier = {
+		#factor = 0
+		#OR = {
+		#modifier = {
+		#factor = 0
+		#has_game_rule = {
+		#	rule = GER_ai_behavior
+		#	option = DEMOCRATIC
+		#}
+		#}
+		#modifier = {
+		#factor = 100
+		#has_game_rule = {
+		#	rule = GER_ai_behavior
+		#	option = CONSERVATIVES
+		#}
+		#}		
+		#has_game_rule = {
+		#	rule = GER_ai_behavior
+		#	option = FASCIST
+		#}
+		#}
+		#}
+		#modifier = {
+		#factor = 25
+		#has_game_rule = {
+		#	rule = GER_ai_behavior
+		#	option = RANDOM
+		#}
+		#}	
+		#}	
+	}
+	option = {
+		name = prussia_homeland.4.b	#Pat Aut, Kaiser path
+		ai_chance = {
+		factor = 34
+		}
+		add_political_power = -10
+		create_country_leader = {
+			name = "Friedrich Wilhelm von Hohenzollern"
+			desc = "POLITICS_HERMANN_GORING_DESC"
+			picture = "Wilhelm_II.dds"
+			expire = "1965.1.1"
+			ideology = neutrality_subtype
+			traits = {
+				INOT_kaiser_of_germany
+			}
+		}
+		add_popularity = {
+					ideology = neutrality
+					popularity = 0.07
+				}
+		#ai_chance = { 
+		#factor = 100
+		#modifier = {
+		#factor = 0
+		#OR = {
+		#modifier = {
+		#factor = 0
+		#has_game_rule = {
+		#	rule = GER_ai_behavior
+		#	option = DEMOCRATIC
+		#}
+		#}
+		#modifier = {
+		#factor = 0
+		#has_game_rule = {
+		#	rule = GER_ai_behavior
+		#	option = CONSERVATIVES
+		#}
+		#}		
+		#has_game_rule = {
+		#	rule = GER_ai_behavior
+		#	option = FASCIST
+		#}
+		#}
+		#}
+		#modifier = {
+		#factor = 25
+		#has_game_rule = {
+		#	rule = GER_ai_behavior
+		#	option = RANDOM
+		#}
+		#}	
+		#}	
+	}
+	option = {
+		name = prussia_homeland.4.c	#Nationalists, fascist path
+		set_politics = { ruling_party = fascism elections_allowed = no }	
+			ai_chance = {
+				factor = 33
+			}
+		create_country_leader = {
+			name = "Alfred Hugenberg"
+			desc = "POLITICS_HERMANN_GORING_DESC"
+			picture = "Alfred_Hugenberg.dds"
+			expire = "1965.1.1"
+			ideology = fascism_subtype
+			traits = {
+				INOT_entrepreneur
+			}
+		}
+		add_popularity = {
+					ideology = fascism
+					popularity = 0.15
+				}
+		#ai_chance = { 
+		#factor = 0
+		#modifier = {
+		#factor = 0
+		#OR = {
+		#modifier = {
+		#factor = 0
+		#has_game_rule = {
+		#	rule = GER_ai_behavior
+		#	option = DEMOCRATIC
+		#}
+		#}
+		#modifier = {
+		#factor = 0
+		#has_game_rule = {
+		#	rule = GER_ai_behavior
+		#	option = CONSERVATIVES
+		#}
+		#}		
+		#modifier = {
+		#factor = 100
+		#has_game_rule = {
+		#	rule = GER_ai_behavior
+		#	option = FASCIST
+		#}
+		#}
+		#}
+		#}
+		#modifier = {
+		#factor = 25
+		#has_game_rule = {
+		#	rule = GER_ai_behavior
+		#	option = RANDOM
+		#}
+		#}	
+		#}	
+	}
+} 	
+
+#NEWS: Prussia - Stand-off in Germany
+news_event = {
+	id = prussia_homeland.5
+	title = prussia_homeland.5.t
+	desc = prussia_homeland.5.d
+	picture = GFX_report_news_event_016
+	
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	
+	option = {
+		name = prussia_homeland.5.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = BAV
+			}
+			} 
+	}
+	
+	option = {
+	name = prussia_homeland.5.b
+	trigger = { TAG = GER }	
+	}
+	
+	option = {
+	name = prussia_homeland.5.c
+	trigger = { TAG = BAV }	
+	}
+	
+}
+#NEWS : Protests in North Germany
+news_event = {
+	id = prussia_homeland.6
+	title = prussia_homeland.6.t
+	desc = prussia_homeland.6.d
+	#picture = GFX_news_event_gathering_protest
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_homeland.6.a  # World response
+		trigger = { NOT = { TAG = BAV } }
+	}
+	option = {
+		name = prussia_homeland.6.b  # Bavarian Response
+		trigger = { TAG = BAV }
+		BAV = { activate_mission = BAV_imminent_civil_war_decision }
+	}
+}
+
+#COUNTRY : Protests in North Germany
+country_event = {
+	id = prussia_homeland.8
+	title = prussia_homeland.8.t
+	desc = prussia_homeland.8.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_homeland.8.a  # World response
+		add_political_power = -40
+		activate_mission = GER_imminent_civil_war_decision
+		add_stability = -0.10
+		#add_timed_idea = { idea = GER_workers_strike_idea }
+		news_event = { id = prussia_homeland.6 }
+		set_country_flag = GER_imminent_civil_war_flag
+	}
+}
+
+#COUNTRY : Protests in North Germany turn into violence!
+country_event = {
+	id = prussia_homeland.7
+	title = prussia_homeland.7.t
+	desc = prussia_homeland.7.d
+	picture = GFX_report_event_spr_anarchist_uprising2
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_homeland.7.a  
+		add_political_power = -50
+		news_event = { id = prussia_homeland.9 }
+	}
+}
+
+#NEWS : Protests in North Germany turn into violence!
+country_event = {
+	id = prussia_homeland.9
+	title = prussia_homeland.9.t
+	desc = prussia_homeland.9.d
+	picture = GFX_news_event_worker_protests
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_homeland.9.a 
+		trigger = {
+		TAG = GER
+		}		
+	}
+	option = {
+		name = prussia_homeland.9.b
+		trigger = {
+		TAG = BAV
+		}
+		hidden_effect = {
+		BAV = { country_event = { id = bavaria.38 days = 2 } }
+		}
+	}
+	option = {
+		name = prussia_homeland.9.c
+		trigger = {
+		NOT = { OR = { TAG = GER TAG = BAV } }
+		}
+	}
+}
+
+#COUNTRY: Rhineland Conference with Prussia
+country_event = {
+	id = prussia_homeland.10
+	title = prussia_homeland.10.t
+	desc = prussia_homeland.10.d
+	picture = GFX_report_event_gre_diplomacy
+
+	is_triggered_only = yes
+
+	option = { #Rhineland is German
+		name = prussia_homeland.10.a	
+		ai_chance = {
+			factor = 15
+		}
+		FRA = {
+			diplomatic_relation = { country = RHN relation = guarantee active = no }
+		}
+		RHN = {
+			country_event = { days = 3 id = prussia_homeland.11 } #Leaves Rhine to its fate
+		}
+		GER = {
+			country_event = { days = 1 id = prussia_homeland.12 } #Germany gets to invade Rhine
+		}
+		news_event = { days = 1 id = prussia_homeland.13 } #France abandons the Rhineland
+	}
+
+	option = { #We must fight for the Rhineland!
+		name = prussia_homeland.10.b	#no way
+		ai_chance = { factor = 85 }
+		GER = {
+			country_event = { days = 3 id = prussia_homeland.16 } #Event for declaration of war 
+		}
+		RHN = {
+			country_event = { days = 1 id = prussia_homeland.17 } #Event that France backs Rhine
+		}
+		news_event = { days = 1 id = prussia_homeland.18 }
+	}
+}
+	
+#COUNTRY: Rhineland's Choice
+country_event = {
+	id = prussia_homeland.11
+	title = prussia_homeland.11.t
+	desc = prussia_homeland.11.d
+	
+	is_triggered_only = yes
+	
+	option = { #Fight for Survival
+		name = prussia_homeland.11.a
+		ai_chance = {
+			factor = 5
+		}
+		GER = { country_event = { id = prussia_homeland.14 days = 1 } }
+	}
+	
+	option = { #We will not stand a chance against Prussia
+		name = prussia_homeland.11.b
+		ai_chance = {
+			factor = 95
+		}
+		GER = { country_event = { id = prussia_homeland.15 days = 1 } }
+	}
+}
+
+#COUNTRY: France withdraws from Rhineland
+country_event = {
+	id = prussia_homeland.12
+	title = prussia_homeland.12.t
+	desc = prussia_homeland.12.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = prussia_homeland.12.a
+		add_political_power = 5
+	}
+}
+
+#NEWS: France abandons the Rhinland
+news_event = {
+	id = prussia_homeland.13
+	title = prussia_homeland.13.t
+	desc = prussia_homeland.13.d
+	picture = GFX_news_event_003
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = prussia_homeland.13.a
+		trigger = {
+			NOT = { TAG = GER }
+		}
+	}
+	
+	option = {
+		name = prussia_homeland.13.b
+		trigger = {
+			TAG = GER 
+		}
+	}
+}
+
+#COUNTRY: Rhineland Folds
+country_event = {
+	id = prussia_homeland.14
+	title = prussia_homeland.14.t
+	desc = prussia_homeland.14.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_homeland.14.a
+		GER = { annex_country = { target = RHN transfer_troops = yes } }
+	}
+}
+
+#COUNTRY: Rhineland Stands
+country_event = {
+	id = prussia_homeland.15
+	title = prussia_homeland.15.t
+	desc = prussia_homeland.15.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_homeland.15.a
+		GER = { 
+		create_wargoal = {
+			type = annex_everything
+			target = RHN
+		}
+		}
+	}
+}
+
+#COUNTRY: Rhine conference fails
+country_event = {
+	id = prussia_homeland.16
+	title = prussia_homeland.16.t
+	desc = prussia_homeland.16.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_homeland.16.a
+		GER = { 
+		add_war_support = 0.10
+		create_wargoal = {
+			type = annex_everything
+			target = RHN
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = FRA
+		}
+		}
+	}
+}
+
+#COUNTRY: France has Rhine's back
+country_event = {
+	id = prussia_homeland.17
+	title = prussia_homeland.17.t
+	desc = prussia_homeland.17.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_homeland.17.a
+		RHN = { add_war_support = 0.20 }
+	}
+}
+
+#NEWS: France has Rhine's back
+news_event = {
+	id = prussia_homeland.18
+	title = prussia_homeland.18.t
+	desc = prussia_homeland.18.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = prussia_homeland.18.a
+		trigger = {
+			NOT = { TAG = GER }
+		}
+	}
+	
+	option = {
+		name = prussia_homeland.18.b
+		trigger = {
+			TAG = GER 
+		}
+	}
+}
+
+#COUNTRY: Germany - Raise veterans
+country_event = {
+	id = prussia_homeland.19
+	title = prussia_homeland.19.t
+	desc = prussia_homeland.19.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia_homeland.19.a
+		add_manpower = -30000
+		hidden_effect = {
+			load_oob = GER_veteran_units
+		}
+	}
+}
+
+#NEWS: Prussia - Prussia remilitarises Danzig
+news_event = {
+	id = prussia_homeland.20
+	title = prussia_homeland.20.t
+	desc = prussia_homeland.20.d
+	picture = GFX_news_event_016
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = prussia_homeland.20.a
+		trigger = {
+			tag = GER
+		}
+	}
+	
+	option = {
+		name = prussia_homeland.20.b
+		trigger = {
+			NOT = { TAG = GER } 
+		}
+	}
+}

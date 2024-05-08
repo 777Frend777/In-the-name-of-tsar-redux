@@ -1,0 +1,259 @@
+﻿
+add_namespace = romania_homeland
+
+#Romanian socialist revolution
+country_event = {
+	id = romania_homeland.1
+	title = romania_homeland.1.t
+	desc = romania_homeland.1.d
+	picture = GFX_report_event_swedish_soldier
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = {
+	name = romania_homeland.1.a	
+    ai_chance = { factor = 100 }	
+	set_politics = { ruling_party = communism elections_allowed = no }
+	news_event = { id = romania_homeland.5 days = 2 }
+	ROM = {
+						start_civil_war = {
+							ideology = neutrality
+							size = 0.4
+						}
+					}
+	}
+}
+#Bad timing Romania coup
+country_event = {
+	id = romania_homeland.2
+	title = romania_homeland.2.t
+	desc = romania_homeland.2.d
+	picture = GFX_report_event_nra_march
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = {
+	name = romania_homeland.2.a	
+    ai_chance = { factor = 99 }	
+	RUS = {
+	create_wargoal = {
+					type = annex_everything
+					target = ROM
+				}
+	}
+	}
+	option = {
+	name = romania_homeland.2.b	
+    ai_chance = { factor = 1 }	
+	RUS = {
+	add_stability = 0.05
+	}
+	}
+}
+#Romania's independence
+country_event = {
+	id = romania_homeland.5
+	title = romania_homeland.5.t
+	desc = romania_homeland.5.d
+	picture = GFX_report_event_hol_cabinet_gerbrandy
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = {
+	name = romania_homeland.3.a	
+    ai_chance = { factor = 99 }	
+	RUS = {
+		end_puppet = ROM
+	}
+	ROM = { country_event = { id = romania_homeland.7 days = 2 } }
+	}
+	option = {
+	name = romania_homeland.3.b	
+    ai_chance = { factor = 1 }	
+	}
+}
+#Russia accepts
+country_event = {
+	id = romania_homeland.7
+	title = romania_homeland.7.t
+	desc = romania_homeland.7.d
+	#picture = GFX_report_event_TUR_riot
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = {
+	name = romania_homeland.7.a	
+	}
+}
+#Russia declines
+country_event = {
+	id = romania_homeland.8
+	title = romania_homeland.8.t
+	desc = romania_homeland.8.d
+	#picture = GFX_report_event_TUR_riot
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = {
+	name = romania_homeland.8.a	
+	}
+}
+#Bessarabia Question
+country_event = {
+	id = romania_homeland.9
+	title = romania_homeland.9.t
+	desc = romania_homeland.9.d
+	picture = GFX_report_event_hol_cabinet_gerbrandy
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = {
+	name = romania_homeland.9.a
+	ai_chance = { factor = 99 }	
+	ROM = { transfer_state = 78 transfer_state = 766 }
+	}
+	option = {
+	name = romania_homeland.9.b
+	ai_chance = { factor = 1 }	
+	ROM = { country_event = { id = romania_homeland.10 days = 1 }
+	}
+	}
+}
+#Bessarabia Notification
+country_event = {
+	id = romania_homeland.10
+	title = romania_homeland.10.t
+	desc = romania_homeland.10.d
+	#picture = GFX_report_event_TUR_riot
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = {
+	name = romania_homeland.10.a	
+	}
+}
+#Transylvania Event Hungary
+country_event = {
+	id = romania_homeland.3
+	title = romania_homeland.3.t
+	desc = romania_homeland.3.d
+	picture = GFX_report_event_vienna_award_hungary
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = {
+	name = romania_homeland.3.a	
+    ai_chance = { factor = 99 }	
+	HUN = {
+	add_opinion_modifier = { target = ROM modifier = transfered_transylvania }
+	transfer_state = 76
+	transfer_state = 83
+			}
+	}
+	option = {
+	name = romania_homeland.3.b	
+    ai_chance = { factor = 1 }	
+	add_stability = 0.05
+	}
+}
+#Non-Aggresion Pact with Austria
+country_event = {
+	id = romania_homeland.4
+	title = romania_homeland.4.t
+	desc = romania_homeland.4.d
+	picture = GFX_report_event_vienna_award_hungary
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = {
+	name = romania_homeland.4.a	
+    ai_chance = { factor = 99 }	
+	AUS = {
+	add_stability = 0.03
+	add_opinion_modifier = { target = ROM modifier = transfered_transylvania }
+	diplomatic_relation = {
+			country = ROM
+			relation = non_aggression_pact
+	}
+	}
+	ROM = {
+	country_event = { id = romania_homeland.12 days = 1 }
+	}
+	}
+	option = {
+	name = romania_homeland.4.b	
+    ai_chance = { factor = 1 }	
+	add_stability = -0.05
+	ROM = {
+	country_event = { id = romania_homeland.13 days = 1 }
+	}
+	}
+}
+#Non-Aggresion Pact with Austria, Austria Accepts
+country_event = {
+	id = romania_homeland.12
+	title = romania_homeland.12.t
+	desc = romania_homeland.12.d
+	#picture = GFX_report_event_vienna_award_hungary
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	option = {
+	name = romania_homeland.12.a	
+    ai_chance = { factor = 100 }	
+	add_political_power = 50
+	add_stability = 0.03
+	}
+}
+#Non-Aggresion Pact with Austria, Austria Declines
+country_event = {
+	id = romania_homeland.13
+	title = romania_homeland.13.t
+	desc = romania_homeland.13.d
+	#picture = GFX_report_event_vienna_award_hungary
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	option = {
+	name = romania_homeland.13.a	
+    ai_chance = { factor = 100 }	
+	}
+}
+
+#News event for revolution
+news_event = {
+	id = romania_homeland.6
+	title = romania_homeland.6.t
+	desc = romania_homeland.6.d
+	picture = GFX_news_event_003
+	is_triggered_only = yes
+	fire_only_once = yes 
+	major = yes
+        is_triggered_only = yes
+        option = {
+		name = romania_homeland.6.a
+		trigger = {
+			NOT = {
+				TAG = ROM
+			}
+			}
+			}
+			option = {
+		name = romania_homeland.6.b
+			trigger = { TAG = ROM }
+	}
+}
+#Romanian King abdication event
+news_event = {
+	id = romania_homeland.11
+	title = romania_homeland.11.t
+	desc = romania_homeland.11.d
+	picture = GFX_news_event_king_speech
+	is_triggered_only = yes
+	fire_only_once = yes 
+	major = yes
+        is_triggered_only = yes
+        option = {
+		name = romania_homeland.11.a
+		trigger = {
+			NOT = {
+				TAG = ROM
+			}
+			}
+			}
+			option = {
+		name = romania_homeland.11.b
+			trigger = { TAG = ROM }
+	}
+}

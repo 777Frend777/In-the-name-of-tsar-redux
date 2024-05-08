@@ -1,0 +1,30 @@
+SWI_increase_Democracy = {
+	add_power_balance_value = {
+		id = SWI_power_balance
+		value = -0.1
+		tooltip_side = SWI_Democrats
+	}
+}
+SWI_increase_Democracy_min = {
+	add_power_balance_value = {
+		id = SWI_power_balance
+		value = -0.05
+		tooltip_side = SWI_Democrats
+	}
+}
+
+
+SWI_increase_Nationalism = {
+	add_power_balance_value = {
+		id = SWI_power_balance
+		value = 0.1
+		tooltip_side = SWI_National_Front
+	}
+}
+SWI_increase_Nationalism_min = {
+	add_power_balance_value = {
+		id = SWI_power_balance
+		value = 0.05
+		tooltip_side = SWI_National_Front
+	}
+}

@@ -1,0 +1,45 @@
+
+ai_historical_focus_list_BAV = {
+	ai_national_focuses = {
+		#
+		BAV_munich_constituion
+		BAV_pru_wall
+		BAV_five_year_plan
+		BAV_power_debate
+		BAV_army_innovations
+		BAV_secret_police
+		BAV_off_focus
+		BAV_reform_high_command
+		BAV_infrastructure_effort
+		BAV_power_to_liebknecht
+		BAV_revive_arms
+		BAV_reform_gov
+		BAV_socialist_science
+		BAV_arm_the_masses
+		BAV_young_army
+		BAV_purge
+		BAV_normalize_relations_with_fra
+		BAV_treaty_with_hungary
+		BAV_war_AUS
+		BAV_workers_congress
+		BAV_ultimatum_CZE
+		BAV_prep_war
+		BAV_revanchist_prop
+		BAV_war_DEN
+		BAV_workers_culture
+		BAV_enemy_in_the_west
+		BAV_demand_saar
+		BAV_subsidise
+		BAV_enemy_in_the_east
+		BAV_slot_1
+		BAV_war_balkan
+		BAV_navy_effort
+		BAV_war_ROM
+		BAV_war_games
+		BAV_battleship1
+		BAV_bolshevik_militias
+		BAV_women_army
+		BAV_small_arms
+		BAV_war_RUS
+	}
+}

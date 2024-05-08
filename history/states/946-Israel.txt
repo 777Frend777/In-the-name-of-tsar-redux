@@ -1,0 +1,32 @@
+
+state={
+	id=946
+	name="STATE_946"
+	manpower = 564321
+	
+	state_category = town
+	history={
+		owner = ISR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 2
+			anti_air_building = 1
+			
+		}
+		
+		victory_points = {
+			4171 10
+		}
+		add_core_of = UGA
+		add_core_of = TZN
+		add_core_of = ISR
+	}
+
+	provinces={
+		 3854 4171 2308
+	}
+
+	local_supplies=4.0 
+}

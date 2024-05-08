@@ -1,0 +1,19 @@
+
+ai_historical_focus_list_CHI = {
+	ai_national_focuses = {
+		# grab as fast as you can if available
+	    
+	    CHI_stay_on_course
+		CHI_constitution
+		CHI_rebuild
+		CHI_infrastructure
+		CHI_school_reform
+		CHI_slot1
+		CHI_infrastructure
+		CHI_stabilize_economy
+		CHI_army_path
+		CHI_industrial_effort1
+		CHI_inf_equipment
+		
+	}
+}

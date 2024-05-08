@@ -1,0 +1,431 @@
+﻿
+###########################
+
+add_namespace = russia_homeland
+
+#Bukara is not annexed
+country_event = {
+	id = russia_homeland.19
+	title = russia_homeland.19.t
+	desc = russia_homeland.19.d
+	#picture = GFX_report_event_korean_war_march
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	option = {
+	name = russia_homeland.19.a	
+	create_wargoal = {
+					type = annex_everything
+					target = KHI
+				}
+	add_state_claim = 584
+	add_state_claim = 832
+	add_state_claim = 831
+	}		
+	}
+#Kniva is Annexed
+country_event = {
+	id = russia_homeland.18
+	title = russia_homeland.18.t
+	desc = russia_homeland.18.d
+	#picture = GFX_report_event_korean_war_march
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	option = {
+	name = russia_homeland.18.a	
+	annex_country = { target = KHI transfer_troops = yes }
+	}	
+	}
+
+#Annexation of Khiva
+country_event = {
+	id = russia_homeland.17
+	title = russia_homeland.17.t
+	desc = russia_homeland.17.d
+	#picture = GFX_report_event_korean_war_march
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	option = { #Be Annexed
+	name = russia_homeland.17.a	
+	ai_chance = {
+			factor = 100
+			modifier = {
+			factor = 0
+			TUK = { 
+			NOT = { is_in_faction_with = RUS }
+			}
+			}					
+	}
+	custom_effect_tooltip = GAME_OVER_TT
+	RUS = { country_event = { days = 1 id = russia_homeland.18 } }
+	}
+	option = { #No Annexation
+	name = russia_homeland.17.b	
+	ai_chance = {
+			factor = 0
+			modifier = {
+			factor = 100
+			TUK = { 
+			NOT = { is_in_faction_with = RUS }
+			}
+			}					
+	}
+	RUS = { 
+	end_puppet = KHI
+	country_event = { days = 1 id = russia_homeland.19 } }	
+	}	
+	}
+
+#Bukara is not annexed
+country_event = {
+	id = russia_homeland.16
+	title = russia_homeland.16.t
+	desc = russia_homeland.16.d
+	#picture = GFX_report_event_korean_war_march
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	option = {
+	name = russia_homeland.16.a	
+	create_wargoal = {
+					type = annex_everything
+					target = BUK
+				}
+	add_state_claim = 830			
+	}		
+	}
+#Bukhara is annexed
+country_event = {
+	id = russia_homeland.15
+	title = russia_homeland.15.t
+	desc = russia_homeland.15.d
+	#picture = GFX_report_event_korean_war_march
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	option = {
+	name = russia_homeland.15.a	
+	annex_country = { target = BUK transfer_troops = yes }
+	}	
+	}
+
+#Annexation of Bukhara
+country_event = {
+	id = russia_homeland.14
+	title = russia_homeland.14.t
+	desc = russia_homeland.14.d
+	#picture = GFX_report_event_korean_war_march
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	option = { #Be Annexed
+	name = russia_homeland.14.a	
+	ai_chance = {
+			factor = 100
+			modifier = {
+			factor = 0
+			TUK = { 
+			NOT = { is_in_faction_with = RUS }
+			}
+			}					
+	}
+	custom_effect_tooltip = GAME_OVER_TT
+	RUS = { country_event = { days = 1 id = russia_homeland.14 } }
+	}
+	option = { #No Annexation
+	name = russia_homeland.14.b	
+	ai_chance = {
+			factor = 0
+			modifier = {
+			factor = 100
+			TUK = { 
+			NOT = { is_in_faction_with = RUS }
+			}
+			}					
+	}
+	RUS = { 
+	end_puppet = BUK
+	country_event = { days = 1 id = russia_homeland.15 } }	
+	}	
+	}
+
+#Lenin brought back
+news_event = {
+    id = russia_homeland.12
+    itle = russia_homeland.12.t
+	desc = russia_homeland.12.d
+	picture = GFX_news_event_RUS_lenin
+	major = yes
+    is_triggered_only = yes
+    option = {
+	name = russia_homeland.12.a
+	trigger = {
+	NOT = {
+		TAG = RUS
+	}
+	}
+	}
+	option = {
+	name = russia_homeland.12.b
+	trigger = { TAG = RUS }
+	}
+}
+#Generals and Public sides with Tsar
+country_event = {
+	id = russia_homeland.11
+	title = russia_homeland.11.t
+	desc = russia_homeland.11.d
+	#picture = GFX_report_event_korean_war_march
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = {
+	name = russia_homeland.11.a	
+	remove_unit_leader = 99996
+	remove_unit_leader = 99997
+	remove_unit_leader = 601
+	hidden_effect = {
+	country_event = { days = 15 id = russia.35 }
+	#country_event = { days = 45 id = russia.60 }
+	#country_event = { days = 30 id = russia.61 }
+	}
+	}
+	}
+#Tsar speaks against communism
+country_event = {
+	id = russia_homeland.10
+	title = russia_homeland.10.t
+	desc = russia_homeland.10.d
+	#picture = GFX_report_event_korean_war_march
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = {
+	name = russia_homeland.10.a	
+	hidden_effect = {
+	country_event = { id = russia_homeland.11 }
+	}
+	}
+	}
+#Faith of the Tsar
+country_event = {
+	id = russia_homeland.9
+	title = russia_homeland.9.t
+	desc = russia_homeland.9.d
+	#picture = GFX_report_event_korean_war_march
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	option = { #Allow Tsar to flee the country
+	name = russia_homeland.9.a
+	ai_chance = { factor = 50 }	
+	remove_ideas = RUS_russian_monarchy
+	add_timed_idea = { idea = RUS_tsar_leaves days = 150 } 
+	#unlock_national_focus = RUS_socialists
+	}
+	option = { #Allow them to stay
+	name = russia_homeland.9.b
+	ai_chance = { factor = 50 }	
+	remove_ideas = RUS_russian_monarchy
+	add_ideas = RUS_tsar_stays
+	#unlock_national_focus = RUS_remove_tsar
+	}	
+	}
+#Russian Government resigns
+country_event = {
+	id = russia_homeland.8
+	title = russia_homeland.8.t
+	desc = russia_homeland.8.d
+	#picture = GFX_report_event_korean_war_march
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	option = {
+	name = russia_homeland.8.a	
+	unlock_national_focus = RUS_tsar_speech
+	}		
+	}
+#Bukhara is not annexed
+country_event = {
+	id = russia_homeland.6
+	title = russia_homeland.6.t
+	desc = russia_homeland.6.d
+	#picture = GFX_report_event_korean_war_march
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	option = {
+	name = russia_homeland.6.a	
+	create_wargoal = {
+					type = annex_everything
+					target = BUK
+				}
+	add_state_core = 585
+	add_state_core = 405
+	add_state_core = 742			
+	}		
+	}
+#Bukhara is annexed
+country_event = {
+	id = russia_homeland.5
+	title = russia_homeland.5.t
+	desc = russia_homeland.5.d
+	#picture = GFX_report_event_korean_war_march
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	option = {
+	name = russia_homeland.5.a	
+	annex_country = { target = BUK transfer_troops = yes }
+	add_timed_idea = { idea = RUS_bukhara_integration days = 100 }	
+	add_state_core = 585
+	add_state_core = 405
+	add_state_core = 742
+	}	
+	}
+
+#Annexation of Bukhara
+country_event = {
+	id = russia_homeland.4
+	title = russia_homeland.4.t
+	desc = russia_homeland.4.d
+	#picture = GFX_report_event_korean_war_march
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	option = { #Be Annexed
+	name = russia_homeland.4.a	
+	ai_chance = {
+			factor = 100
+			modifier = {
+			factor = 0
+			BUK = { is_in_faction = yes }
+			}					
+	}
+	custom_effect_tooltip = GAME_OVER_TT
+	RUS = { country_event = { days = 1 id = russia_homeland.5 } }
+	}
+	option = { #No Annexation
+	name = russia_homeland.4.b	
+	ai_chance = {
+			factor = 0
+			modifier = {
+			factor = 100
+			BUK = { is_in_faction = yes }
+			}					
+	}
+	RUS = { 
+	end_puppet = BUK
+	country_event = { days = 1 id = russia_homeland.6 } }	
+	}	
+	}
+#Elect New Duma Event
+country_event = {
+	id = russia_homeland.1
+	title = russia_homeland.1.t
+	desc = russia_homeland.1.d
+	#picture = GFX_report_event_TUR_riot
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = { #Socialist Coalition
+	name = russia_homeland.1.a	
+	ai_chance = {
+			factor = 0	
+	}
+	add_popularity = {
+					ideology = socialist
+					popularity = 0.07
+				}
+	add_political_power = 15
+	set_politics = { ruling_party = socialist elections_allowed = yes }
+	}
+	option = { #Liberal Coalition
+	name = russia_homeland.1.b	
+    ai_chance = {
+			factor = 0
+	}
+	add_popularity = {
+					ideology = democratic
+					popularity = 0.05
+				}
+	add_political_power = 10
+	set_politics = { ruling_party = democratic elections_allowed = yes }
+	}
+	
+	option = { #Conservatives Coalition
+	name = russia_homeland.1.c
+    ai_chance = {
+			factor = 25
+	}
+	add_popularity = {
+					ideology = conservatives
+					popularity = 0.03
+				}
+	add_political_power = -10
+	set_politics = { ruling_party = conservatives elections_allowed = yes } 
+	}
+	option = { #Tsar's Coalition
+	name = russia_homeland.1.e
+    ai_chance = {
+			factor = 75		
+	}
+	add_popularity = {
+					ideology = neutrality
+					popularity = 0.04
+				}
+	add_political_power = -35
+	}
+}
+#Public is upset v.1
+country_event = {
+	id = russia_homeland.2
+	title = russia_homeland.2.t
+	desc = russia_homeland.2.d
+	#picture = GFX_report_event_TUR_riot
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = { #Bribe the press (nationalist path)
+	name = russia_homeland.2.a	
+	ai_chance = {
+			factor = 0
+			modifier = {
+			factor = 100
+			has_game_rule = {
+				rule = RUS_ai_behavior
+				option = FASCIST
+			}
+			}		
+	modifier = {
+	factor = 50
+	has_game_rule = {
+				rule = RUS_ai_behavior
+				option = RANDOM
+			}
+			}			
+	} 
+	}
+	option = { #Ignore (default path)
+	name = russia_homeland.2.b	
+	ai_chance = {
+			factor = 100
+			modifier = {
+			factor = 0
+			has_game_rule = {
+				rule = RUS_ai_behavior
+				option = FASCIST
+			}
+			}		
+	modifier = {
+	factor = 50
+	has_game_rule = {
+				rule = RUS_ai_behavior
+				option = RANDOM
+			}
+			}			
+	} 
+	add_timed_idea = { idea = RUS_tsars_unpopularity_idea days = 170 }
+	}	
+	}
+
+	
+#	

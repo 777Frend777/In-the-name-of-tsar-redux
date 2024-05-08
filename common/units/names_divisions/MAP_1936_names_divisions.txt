@@ -1,0 +1,8 @@
+MAP_DIV_0_0 = {	name = "British Troops"
+	for_countries = { MAP }
+	can_use = { always = yes }
+	division_types = { 
+		"camelry" }
+	}
+	fallback_name = "%d. British Troops"
+}

@@ -1,0 +1,71 @@
+﻿division_template = {
+	name = "Pekhotnaya Diviziya"			# Rifle Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+		
+	}
+}
+
+units = {
+	
+	division= {			
+		name = "1ya Pekhotnaya Diviziya"		
+		location = 1776
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+                division= {			
+		name = "2ya Pekhotnaya Diviziya"		
+		location = 13150
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+                division= {			
+		name = "3ya Pekhotnaya Diviziya"		
+		location = 1776
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+                division= {			
+		name = "4ya Pekhotnaya Diviziya"		
+		location = 13150
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+                division= {			
+		name = "5ya Pekhotnaya Diviziya"		
+		location = 1776
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+                division= {			
+		name = "6ya Pekhotnaya Diviziya"		
+		location = 13150
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}	
+}
+
+			

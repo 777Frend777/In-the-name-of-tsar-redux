@@ -1,0 +1,295 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Militia Division"  	# Standard formation for frontline divisions
+
+	division_names_group = USA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Garrison Brigade"  		# used for island defense (older equipment, lower experience)
+
+	division_names_group = USA_GAR_01		# Brigade level irregular unit, so no default names
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+	}
+	priority = 0
+}
+
+###### OOB ######
+units = {
+	
+	division = {			
+		name = "1. Militia"
+		location = 6710
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.5
+	}
+	division = {			
+		name = "2. Militia"
+		location = 6710
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+	}
+	division = {			
+		name = "3. Militia"
+		location = 6710
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.5
+	}
+	division = {			
+		name = "4. Militia"
+		location = 6710
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.6
+	}
+	division = {			
+		name = "9. Militia"
+		location = 6710
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.6
+	}
+	division = {			
+		name = "10. Militia"
+		location = 6710
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.6
+	}
+	division = {			
+		name = "5. Militia"
+		location = 9450
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.5
+	}
+	division = {			
+		name = "6. Militia"
+		location = 9450
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.5
+	}
+	division = {			
+		name = "7. Militia"
+		location = 9450
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {			
+		name = "8. Militia"
+		location = 9450
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.4
+	}
+	division = {			
+		name = "1. Garrison Brigade"
+		location = 9450
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.3
+	}
+	division = {			
+		name = "2. Garrison Brigade"
+		location = 9450
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.3
+	}
+	# 10M 2G
+	division = {			
+		name = "11. Militia"
+		location = 6890
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {			
+		name = "3. Garrison Brigade"
+		location = 6890
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.3
+	}
+	division = {			
+		name = "4. Garrison Brigade"
+		location = 6890
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.3
+	}
+	division = {			
+		name = "5. Garrison Brigade"
+		location = 6890
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.3
+	}
+	division = {			
+		name = "12. Militia"
+		location = 11800
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {			
+		name = "13. Militia"
+		location = 11800
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {			
+		name = "14. Militia"
+		location = 11800
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {			
+		name = "6. Garrison Brigade"
+		location = 11800
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.3
+	}
+	division = {			
+		name = "15. Militia"
+		location = 6845
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {			
+		name = "16. Militia"
+		location = 6845
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {			
+		name = "7. Garrison Brigade"
+		location = 6845
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.3
+	}
+	division = {			
+		name = "8. Garrison Brigade"
+		location = 6845
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.3
+	}
+	division = {			
+		name = "17. Militia"
+		location = 1595
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {			
+		name = "18. Militia"
+		location = 1595
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {			
+		name = "9. Garrison Brigade"
+		location = 1595
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.3
+	}
+	division = {			
+		name = "10. Garrison Brigade"
+		location = 1595
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.3
+	}
+	#18M 10G
+	division = {			
+		name = "19. Militia"
+		location = 1770
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {			
+		name = "20. Militia"
+		location = 1770
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {			
+		name = "21. Militia"
+		location = 1770
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {			
+		name = "11. Garrison Brigade"
+		location = 1770
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.3
+	}
+	#21M 11G
+	division = {			
+		name = "22. Militia"
+		location = 7745
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {			
+		name = "23. Militia"
+		location = 7745
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {			
+		name = "24. Militia"
+		location = 7745
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {			
+		name = "12. Garrison Brigade"
+		location = 7745
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.3
+	}
+}	

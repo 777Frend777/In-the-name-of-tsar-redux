@@ -1,0 +1,433 @@
+SWI_power_struggle_category = {
+	# Democrat Decisions
+	SWI_anti_authoriatrian_rally = {
+		icon = generic_arrest
+		cost = 20
+		days_remove = 20
+		days_re_enable = 30
+		modifier = {
+			weekly_manpower = -5
+		}
+		remove_effect = {
+			SWI_increase_Democracy_min = yes
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+		}
+	}
+	SWI_Nobility_support = {
+		icon = gre_investment_decisions
+		cost = 30
+		days_remove = 20
+		days_re_enable = 30
+		
+		complete_effect = {
+			SWI_increase_Democracy_min = yes
+		}
+		remove_effect = {
+			add_political_power = 75
+		}
+	}
+	SWI_raid_national_front_branches = {
+		icon = generic_police_action
+		custom_cost_text = PP_30_infantry_equipment_500
+		custom_cost_trigger = {
+			has_political_power > 49.99
+			has_equipment = { infantry_equipment > 49 }
+		}
+		days_remove = 20
+		days_re_enable = 30
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -50
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -500
+				}
+			}
+		}
+		remove_effect = {
+			SWI_increase_Democracy_min = yes
+			add_stability = -0.03
+		}
+	}
+	SWI_harrass_supporters = {
+		icon = oppression
+		custom_cost_text = PP_30_infantry_equipment_500
+		custom_cost_trigger = {
+			has_political_power > 49.99
+			has_equipment = { infantry_equipment > 49 }
+		}
+		days_remove = 20
+		days_re_enable = 30
+		
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -50
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -500
+				}
+			}
+		}
+		remove_effect = {
+			SWI_increase_Democracy_min = yes
+			if = {
+				limit = { fascism > 0.5 }
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.05
+				}
+			}
+			if = {
+				limit = { fascism > 0.25 }
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.025
+				}
+			}
+			else = {
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.01
+				}
+			}
+		}
+	}
+	SWI_call_for_democratic_spirit = {
+		icon = GFX_decision_SWI_swiss_democratic_tradition_campaign
+		days_remove = 20
+		days_re_enable = 30
+		ai_hint_pp_cost = 25
+		custom_cost_text = PP_25_CP_100
+		custom_cost_trigger = {
+			has_political_power > 24.99
+			command_power > 99
+		}
+		
+		complete_effect = {
+			add_command_power = -100
+			hidden_effect = { add_political_power = -25 }
+		}
+		remove_effect = {
+			SWI_increase_Democracy_min = yes
+		}
+	}
+
+	# National Front Decisions
+	SWI_infiltrate_colleges = {
+		icon = GFX_decision_generic_research
+		days_remove = 20
+		fire_only_once = no
+		days_re_enable = 30
+		ai_hint_pp_cost = 25
+		custom_cost_text = PP_25_CP_100
+		custom_cost_trigger = {
+			has_political_power > 24.99
+			command_power > 99
+		}
+		
+		complete_effect = {
+			add_command_power = -100
+			hidden_effect = { add_political_power = -25 }
+		}
+		remove_effect = {
+			SWI_increase_Nationalism_min = yes
+		}
+	}
+	SWI_newspaper_propaganda = {
+		icon = ger_mefo_bills
+		cost = 50
+		days_remove = 20
+		fire_only_once = no
+		days_re_enable = 30
+		
+		modifier = {
+			weekly_manpower = -5
+		}
+		remove_effect = {
+			SWI_increase_Nationalism_min = yes
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = -0.05
+			}
+		}
+	}
+	SWI_promise_militaristic_neutrality = {
+		icon = generic_break_treaty
+		cost = 100
+		days_remove = 20
+		fire_only_once = yes
+		
+		complete_effect = {
+			add_stability = 0.01
+		}
+		remove_effect = {
+			SWI_increase_Nationalism_min = yes
+		}
+	}
+	SWI_gather_agrarian_support = {
+		icon = eng_propaganda_campaigns
+		cost = 25
+		days_remove = 20
+		days_re_enable = 30
+		
+		remove_effect = {
+			SWI_increase_Nationalism_min = yes
+			add_stability = 0.05
+		}
+	}
+	SWI_public_speeches = {
+		icon = eng_blackshirt_speech
+		cost = 25
+		days_remove = 20
+		days_re_enable = 30
+		
+		remove_effect = {
+			SWI_increase_Nationalism_min = yes
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+		}
+	}
+}
+SWI_power_struggle_category_mission = {
+	SWI_act_quickly = {
+		icon = GFX_decision_revolt
+		is_good = no
+		days_mission_timeout = 330
+		activation = {
+			has_country_flag = SWI_start_power_struggle
+		}
+		is_good = no
+		available = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = SWI_Democrats_win_tt
+					has_country_flag = SWI_Democrats_win
+				}
+				custom_trigger_tooltip = {
+					tooltip = SWI_National_Front_win_tt
+					has_country_flag = SWI_National_Front_win
+				}
+				custom_trigger_tooltip = {
+					tooltip = SWI_Communist_revolt_tt
+					has_country_flag = SWI_Communist_revolt
+				}
+			}
+		}
+		visible = {
+			NOT={
+				OR={
+					has_government = fascism
+					has_government = communism
+					has_government = neutrality
+					has_country_flag = SWI_Democrats_win
+				}
+			}
+		}
+		timeout_effect = {
+			custom_effect_tooltip = SWI_no_win_tt
+			hidden_effect = {
+				SWI = {
+					country_event = { id = swissbop.4 days = 2 }
+				}
+			}
+		}
+	}
+	SWI_communist_influence = {
+		icon = GFX_decision_revolt
+		is_good = no
+		days_mission_timeout = 50
+		activation = {
+			has_country_flag = SWI_start_power_struggle
+		}
+		is_good = no
+		available = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = SWI_Democrats_win_tt
+					has_country_flag = SWI_Democrats_win
+				}
+				custom_trigger_tooltip = {
+					tooltip = SWI_National_Front_win_tt
+					has_country_flag = SWI_National_Front_win
+				}
+				custom_trigger_tooltip = {
+					tooltip = SWI_Communist_revolt_tt
+					has_country_flag = SWI_Communist_revolt
+				}
+			}
+		}
+		visible = {
+			NOT={
+				OR={
+					has_government = fascism
+					has_government = communism
+					has_government = neutrality
+					has_country_flag = SWI_Democrats_win
+				}
+			}
+		}
+		timeout_effect = {
+			add_timed_idea = {
+				idea = communist_influence
+				days = 50
+			}
+		}
+	}
+	SWI_crackdown_on_socialism = {
+		icon = GFX_decision_SOV_the_workers_dictatorship
+		cost = 25
+		days_remove = 30
+		days_re_enable = 40
+		visible = {
+			NOT={
+				OR={
+					has_government = fascism
+					has_government = communism
+					has_government = neutrality
+					has_country_flag = SWI_Democrats_win
+				}
+			}
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = SWI_act_quickly
+				days = 10
+			}
+			add_stability = 0.05
+		}
+	}
+	SWI_suspend_marxist_students = {
+		icon = GFX_decision_generic_civil_support
+		cost = 25
+		days_remove = 30
+		days_re_enable = 40
+		visible = {
+			NOT={
+				OR={
+					has_government = fascism
+					has_government = communism
+					has_government = neutrality
+					has_country_flag = SWI_Democrats_win
+				}
+			}
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = SWI_act_quickly
+				days = 50
+			}
+			add_stability = -0.1
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+		}
+	}
+	ask_national_front_help = {
+		icon = GFX_decision_ger_reichskommissariats
+		cost = 25
+		days_remove = 20
+		days_re_enable = 20
+		visible = {
+			NOT={
+				OR={
+					has_government = fascism
+					has_government = communism
+					has_government = neutrality
+				}
+			}
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = SWI_act_quickly
+				days = 10
+			}
+			add_stability = -0.05
+			SWI_increase_Nationalism_min = yes
+		}
+	}
+	SWI_imprison_Bavarian_socialists = {
+		icon = GFX_decision_generic_arrest
+		cost = 25
+		days_remove = 20
+		days_re_enable = 30
+		visible = {
+			NOT={
+				OR={
+					has_government = fascism
+					has_government = communism
+					has_government = neutrality
+				}
+			}
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = SWI_act_quickly
+				days = 20
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+			add_opinion_modifier = {
+				target = BAV
+				modifier = small_decrease
+			}
+		}
+	}
+}
+SWI_expansionism_category={
+	invade_piedmonte = {
+		icon = GFX_decision_sardinia_flag
+		cost = 25
+		days_remove = 20
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = SWI_pursue_greater_switzerland
+		}
+		available = {
+			NOT={
+				is_in_faction_with = ITA
+				is_subject = yes
+			}
+		}
+		remove_effect = {
+			158={
+				add_claim_by = SWI
+			}
+			create_wargoal = {
+				target = ITA
+				type = take_claimed_state
+			}
+		}
+	}
+	invade_savoy = {
+		icon = GFX_decision_hol_war_on_pacifism
+		cost = 25
+		days_remove = 20
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = SWI_pursue_greater_switzerland
+		}
+		available = {
+			NOT={
+				is_in_faction_with = FRA
+				is_subject = yes
+			}
+		}
+		remove_effect = {
+			735={
+				add_claim_by = SWI
+			}
+			create_wargoal = {
+				target = FRA
+				type = take_claimed_state
+			}
+		}
+	}
+}

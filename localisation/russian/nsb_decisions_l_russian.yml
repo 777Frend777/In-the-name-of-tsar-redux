@@ -1,0 +1,925 @@
+﻿l_russian:
+ BALTIC_entente: "Балтийская Антанта" #NT!
+ BALTIC_entente_desc: "Мы, прибалты, разделяем братство, для которого характерна долгая история страданий от иностранного империализма. Мы не можем снова подчиниться иностранным державам, это означало бы передачу ключей от нашего суверенитета еще одной империалистической державе. Только объединившись, мы можем надеяться сохранить нашу независимость." #NT!
+ formalize_the_entente: "Оформить Балтийскую Антанту" #NT!
+ formalize_the_entente_desc: "Мы не решались объявить Балтийскую Антанту собственно фракцией, но мы уверены, что приобрели достаточно членов, чтобы противостоять растущему империализму на наших границах." #NT!
+ abandon_the_entente: "Отказаться от Антанты" #NT!
+ abandon_the_entente_desc: "Это было глупое предприятие. Как бы нам ни хотелось, чтобы это было возможно, одиночество стран Балтии просто не является жизнеспособным вариантом выживания. Мы должны уступить иностранной державе, кем бы она ни была." #NT!
+ baltic_entente_leader_flag: "Является лидером Балтийской Антанты.\n" #NT!
+ baltic_entente_flag: "Согласился присоединиться к Балтийской Антанте." #NT!
+ convert_neighbours_baltic_cat: "Распространяйте революцию" #NT!
+ convert_neighbours_baltic_cat_desc: "Революция имела здесь, в [Root.GetNameDef], ошеломительный успех, теперь остается только распространить весть о революции среди наших братьев-балтийцев. Рабочие Прибалтики будут освобождены от своих буржуазных угнетателей собственными руками, но некоторая [Root.GetAdjective] помощь поможет им на этом пути." #NT!
+ BALTIC_promote_communism: "Социалистическая пропаганда в [From.Owner.GetNameDef]" #NT!
+ BALTIC_promote_communism_desc: "Многие крестьяне [From.Owner.GetNameDef] все еще считают социализм врагом своего образа жизни. Хотя мы, возможно, никогда не залечим шрамы, оставленные Красной Армией, мы можем убедить их, что наша революция не такая уж кровавая." #NT!
+ BALTIC_promote_communism_militancy: "Поддержка [From.Owner.GetAdjective] боевиков" #NT!
+ BALTIC_promote_communism_militancy_desc: "Социалистический пыл так ярко горит в сердцах многих [From.Owner.GetAdjective] рабочих, что им нужна только поддержка внешней силы, чтобы начать предпринимать шаги по свержению диктатуры." #NT!
+ BALTIC_communist_propaganda: "Балтийская коммунистическая пропаганда" #NT!
+ BALTIC_communist_militancy: "Балтийская коммунистическая воинственность" #NT!
+ infiltrate_belarus_decisions: "Проникнуть в Беларусь" #NT!
+ infiltrate_belarus_decisions_desc: "СССР утверждает, что представляет интересы белорусских низших классов, но прибалтийские социалисты утверждают, что это чистая позерство. Они утверждают, что [RUS.GetLeader] является буржуазным диктатором во всех смыслах этого слова и что только вооружив народ Беларуси, он сможет по-настоящему освободиться в социалистическом государстве." #NT!
+ BALTIC_promote_unity_BLR: "Контроль конкурса в [From.GetName]" #NT!
+ BALTIC_promote_unity_BLR_desc: "Когда в Беларуси разразится гражданская война, все государства должны индивидуально решить, какую сторону революции они поддерживают. Мы должны гарантировать, что [From.GetName] окажется на стороне победителя." #NT!
+ BALTIC_belarus_uprising: "Надвигающаяся гражданская война в Беларуси" #NT!
+ BALTIC_belarus_uprising_desc: "Белорусский народ разрывается на части: половина нации желает остаться в составе [RUS.GetNameDef], а другая половина желает перебежать в Прибалтику." #NT!
+ support_polish_falange_decisions: "Поддержите польский фалангизм" #NT!
+ support_polish_falange_decisions_desc: "Фашизм преуспел в Литве, и мы не видим причин, по которым мы должны бросать наших бывших братьев в Польше. Распространяя фалангистскую мысль среди населения, мы сможем расширить возможности [POL.GetFascistParty] и оттуда мы сможем работать над утверждением польско-литовского превосходства на всем континенте." #NT!
+ LIT_promote_fascism: "Фашистская пропаганда в Польше" #NT!
+ LIT_promote_fascism_desc: "На протяжении десятилетий фашизм был оттеснен на периферию польской политики. Хотя нам бы хотелось, чтобы поляки восстали за себя, у них вряд ли есть шанс, если мы не будем открыто пропагандировать фашизм в их стране." #NT!
+ LIT_promote_falange_militancy: "Поддержите боевиков-фалангистов" #NT!
+ LIT_promote_falange_militancy_desc: "[POL.GetFascistParty] печально известен своими буйными и жестокими методами демонстраций. Многие фашисты опасаются националистического рвения [POL.GetFascistParty], но мы знаем, что это просто выражение патриотизма, пылающего в их сердцах, который необходимо поддерживать." #NT!
+ LIT_ignite_civil_war_in_POL: "Начать восстание" #NT!
+ LIT_ignite_civil_war_in_POL_desc: "Подготовка была сделана. Польша скоро станет полем битвы не только идей, но и доблести и славы. Мы сделали все, что могли, чтобы поддержать фалангистов в Польше, все, что нам нужно сделать сейчас, это бросить жребий и надеяться, что Бог действительно на их стороне." #NT!
+ march_through_estonia: "Марш через Эстонию" #NT!
+ march_through_estonia_desc: "Слабое правительство Константина Пятса достаточно долго заглушало крик патриотов Эстонии. Нам не хватает сил, чтобы в одиночку бороться с эстонскими вооруженными силами, но, возможно, продемонстрировав наше недовольство диктатурой в серии маршей по всей стране, мы сможем напомнить молодежи Эстонии, что их отцы боролись за хорошую жизнь для них, как Пятс и его клика отрицает их." #NT!
+ EST_stomp_the_vaps: "Грядущие репрессии со стороны правительства" #NT!
+ EST_stomp_the_vaps_desc: "[EST.GetLeader] знает, что мы стремимся подорвать режим [EST.GetLeader.GetHerHis], а [EST.GetLeader.GetSheHe] готовится применить к нам суровые меры и положить конец нашим маршам. Если нам не удастся свергнуть правительство до этого времени, Эстонии грозит гражданская война!" #NT!
+ EST_march_in_state: "Март в [FROM.GetName]" #NT!
+ EST_convert_FIN_cat: "Марш через Финляндию" #NT!
+ EST_convert_FIN_cat_desc: "[FIN.GetFascistParty] уже давно имеет тесные связи с [EST.GetFascistParty], и теперь, когда мы заявили о владычестве над нашей собственной нацией, мы должны дать возможность финским ветеранам взять на себя управление их страной." #NT!
+ EST_march_in_FIN_state: "Март в [FROM.GetName]" #NT!
+ EST_march_in_FIN_capital: "Марш [FROM.GetName]" #NT!
+ EST_march_in_FIN_capital_desc: "Как только мы почувствуем, что ветераны Финляндии достаточно осмелели, нам нужно только дать сигнал идти на [FROM.GetName], и финны, наконец, обретут силу под властью фашизма." #NT!
+ promote_baltic_fascism_cat: "Продвигайте балтийский фашизм" #NT!
+ promote_baltic_fascism_cat_desc: "Для Прибалтики характерны слабые инфантильные режимы, неспособные представлять кровь прибалтов, текущую в жилах их народа. Литве, Эстонии и даже некоторым жителям Польши необходимо напомнить о славе своих предков, которые противостояли германцам и славянам, которые теперь снова стремятся угнетать нас." #NT!
+ LAT_promote_fascism: "Фашистская пропаганда в [From.Owner.GetNameDef]" #NT!
+ LAT_promote_fascism_desc: "Многие люди в [From.Owner.GetNameDef] еще не признали, что их партия [From.Owner.GetFascistParty] является единственным способом, с помощью которого люди [From.Owner.GetAdjective] могут, наконец, управлять собой. Это необходимо исправить пропагандистскими усилиями и активной поддержкой партии [From.Owner.GetFascistParty]." #NT!
+ LAT_promote_falange_militancy: "Поддержка [From.Owner.GetFascistParty] боевиков" #NT!
+ LAT_promote_falange_militancy_desc: "В [From.Owner.GetNameDef] есть те, кто хранит в своих сердцах ярость прибалтов, и наш долг — оказать им военную и политическую поддержку, которую они заслуживают." #NT!
+ LAT_ignite_civil_war_in_target: "Разожгите гражданскую войну [From.Owner.GetAdjective]" #NT!
+ LAT_ignite_civil_war_in_target_desc: "Пропаганда может достичь очень многого, иногда требуются прямые действия, чтобы придать государству силу и стабильность. Мы сделали все, что могли, теперь оставляем [From.Owner.GetFascistParty] на произвол судьбы." #NT!
+ LIT_iron_wolf_coup: "Переворот Железного Волка" #NT!
+ LIT_iron_wolf_coup_desc: "Последователи Аугустинаса Вольдемараса организуют восстание внутри нашего народа. Если ничего не будет сделано, чтобы обойти Железного Волка, мы рискуем впасть в гражданскую войну. Мы должны решить, должны ли мы пойти на уступки сторонникам «Железного Волка» и рискнуть дать им полномочия, или мы просто изгоним их лидера из нашей страны, оставив его последователей рассеянными и без сильного руководства, о котором они утверждают." #NT!
+ LIT_iron_wolf_partisans: "Партизаны Железного Волка" #NT!
+ LIT_iron_wolf_partisans_desc: "Железный Волк организуется в нашей стране. Со временем они неизбежно увеличат свою поддержку среди литовского народа и в конечном итоге могут почувствовать смелость совершить государственный переворот." #NT!
+ LIT_iron_wolf_appeasement: "Задержать восстание Железного Волка" #NT!
+ LIT_iron_wolf_appeasement_desc: "Мы должны приложить усилия, чтобы сорвать деятельность Железного Волка в нашей стране. Хотя ни одна из этих мер не искоренит их полностью, мы, возможно, сможем отложить их усилия на достаточно долгое время, чтобы найти окончательное решение." #NT!
+ LIT_relocate_iron_wolf_recruitment: "Переместить центры набора персонала «Железных волков»" #NT!
+ LIT_relocate_iron_wolf_recruitment_desc: "«Железный волк» опирается на местных рекрутеров, которые привлекают новых людей в свои ряды. Насильно переселив этих вербовщиков, мы запутаем всех потенциальных последователей и потенциально предотвратим их вход в группу «Железный волк»." #NT!
+ LIT_promote_alternative_paramilitaries: "Продвижение альтернативных военизированных формирований" #NT!
+ LIT_promote_alternative_paramilitaries_desc: "Хотя мы хотели бы, чтобы наши граждане присоединились к официальной литовской армии, неизбежно, что некоторые из них предпочтут быть преданными группе, оторванной от правительства. Возможно, продвигая другие группы, такие как Союз литовских стрелков, мы сможем отвлечь некоторых националистов от присоединения к «Железному волку»." #NT!
+ LIT_grant_concessions_to_iron_wolf: "Предложите уступки Железному Волку" #NT!
+ LIT_grant_concessions_to_iron_wolf_desc: "Возможно, предложив Железному Волку несколько символических жестов, мы сможем несколько подавить его волнение." #NT!
+ EST_vaps_revolt_category: "Вапсидское восстание" #NT!
+ EST_vaps_revolt_category_desc: "Ряд обществ ветеранов по всей Эстонии объединились в единую фашистскую организацию, известную как «Движение вапсов», которая угрожает свергнуть правительство. Мы должны принять меры по сдерживанию роста эстонского национализма, если мы хотим сохранить режим в мире." #NT!
+ EST_vaps_uprising: "Вапы маршируют на Таллинн" #NT!
+ EST_vaps_uprising_desc: "Вапсы продолжают маршировать и демонстрировать по всей Эстонии, несмотря на то, что они являются нелегальной организацией. Чем дольше мы оставляем эту группу националистов гнить, тем больше мы рискуем, что другие присоединятся к их делу." #NT!
+ EST_vaps_crackdown: "Репрессии против ваперов" #NT!
+ EST_vaps_crackdown_desc: "Мы координируем тотальное подавление всех обществ, связанных с движением вапсов. Если вапы останутся на политической периферии, репрессии будут тривиальными, но если они соберут достаточную поддержку, результатом наших репрессий может стать кровавая гражданская война с некоторыми из старейших ветеранов Эстонии." #NT!
+ EST_fight_vaps_decisions: "Борьба с вапсами" #NT!
+ EST_fight_vaps_decisions_desc: "Чтобы наше подавление было успешным, необходимо противодействовать движению вапсов. Действия, которые разрушают вапсов, резко уменьшат их влияние в нашей стране и сделают их насильственное устранение более плавным." #NT!
+ EST_divide_veterans_societies: "Разделить ветеранские общества" #NT!
+ EST_divide_veterans_societies_desc: "Вапы в основном состоят из тех, кто сражался в Освободительной войне Эстонии, и хотя грустно видеть, как наши герои попадают под влияние ультранационализма, мы должны разбить и разделить ветеранские общества, которые объединили вапы." #NT!
+ EST_disrupt_vaps_recruitment: "Прервать вербовку вапсидов" #NT!
+ EST_disrupt_vaps_recruitment_desc: "Хотя вапсы традиционно являются ветеранами, от среднего возраста до пожилых людей, у них немало молодых сочувствующих, желающих присоединиться во имя своих отцов и дедов. Мы должны найти способы пресечь эту вербовку и уберечь этих молодых людей от песни сирены фашизма." #NT!
+ EST_crackdown_on_vaps: "Рейд на вапов" #NT!
+ EST_crackdown_on_vaps_desc: "Вапы становятся слишком смелыми, и мы должны провести рейд на их членов, если хотим подавить часть их растущего влияния." #NT!
+ EST_put_vaps_leaders_on_trial: "Отдать под суд сторонников вапсидов" #NT!
+ EST_put_vaps_leaders_on_trial_desc: "Не секрет, что некоторые члены правительства симпатизируют движению вапсов. Этому нельзя позволить продолжаться; членов нашего военного штаба надо судить как предателей за их связь с вапами." #NT!
+ EST_launch_vaps_investigation: "Начать расследование Vapsid" #NT!
+ EST_launch_vaps_investigation_desc: "Мы должны посвятить часть наших секретных служб проникновению и пресечению попыток вапсов свергнуть правительство." #NT!
+ EST_anti_vaps_propaganda: "Антифашистская пропаганда" #NT!
+ EST_anti_vaps_propaganda_desc: "Мы придерживаемся линии пропаганды антифашизма в нашей стране. Многие противники фашизма являются демократами и коммунистами, но, возможно, их можно убедить поддержать диктатуру в наших совместных усилиях по сдерживанию роста фашизма." #NT!
+ EST_delay_the_crackdown: "Отложить репрессии" #NT!
+ EST_delay_the_crackdown_desc: "Хотя мы бы предпочли, чтобы с вапсами обращались оперативно, мы не можем рисковать ввергнуть страну в хаос, и репрессии должны быть отложены." #NT!
+ EST_vapsid_takeover: "Правительство вапсидов уже правит страной" #NT!
+ LAT_perkonkrust_revolt_category: "Восстание Перконкруста" #NT!
+ LAT_perkonkrust_revolt_category_desc: "Ультранационалисты, прославляющие балтийские племена и латышскую этническую принадлежность, Перконкрусты представляют собой экзистенциальную угрозу для Латвии, за создание которой мы упорно боролись. Перконкрусты являются заразой уязвленной национальной гордости и должны быть уничтожены." #NT!
+ LAT_perkonkrust_uprising: "Перконкрустское восстание" #NT!
+ LAT_perkonkrust_uprising_desc: "Со временем Перконкрусты соберут поддержку по всей стране, и, если их не остановить, они почувствуют смелость предпринять попытку государственного переворота." #NT!
+ LAT_delay_perkonkrust_decisions: "Сразитесь с Перконкрустами" #NT!
+ LAT_delay_perkonkrust_decisions_desc: "Хотя это и не окончательное решение, мы можем провести несколько кампаний по сокращению поддержки фашистов в нашей стране на время, достаточное для того, чтобы с Перконкрустами можно было так или иначе справиться." #NT!
+ LAT_equality_campaigns: "Кампании за равенство" #NT!
+ LAT_equality_campaigns_desc: "Перконкрусты выступают против миссии [Root.GetLeader] по созданию Латвии, где солнце одинаково светит над всеми латвийцами, и поэтому мы должны ясно дать понять, что поддержка их идеологии превосходства противоречит основным ценностям нашей нации." #NT!
+ LAT_empower_democrats: "Расширение возможностей демократов" #NT!
+ LAT_empower_democrats_desc: "Хотя это и нежелательно, демократы являются ярыми противниками Перконкрустов и представляют гораздо меньшую угрозу для нашего народа. Это увеличит поддержку демократической оппозиции, но мы должны сделать все возможное, чтобы обуздать деятельность Перконкрустов." #NT!
+ LAT_support_loyalists: "Интегрируйте оппозицию" #NT!
+ LAT_support_loyalists_desc: "Аннексировав сектора оппозиции, мы получим больше возможностей вытеснить Перконкрустов на политические периферии нашего общества." #NT!
+ BALTIC_forest_brother_resistance_cat: "Сопротивление лесных братьев" #NT!
+ BALTIC_forest_brother_resistance_cat_desc: "Социализм не был полностью принят всеми в нашей стране, и никто не высказывает столь громкого и активного отвращения к новому [Root.GetNonIdeologyName], как Лесные Братья. Убежденные сторонники национализма [Root.GetAdjective], Лесные братья отвергают любое иностранное влияние в [Root.GetNonIdeologyName] и стремятся отстранить коммунистическую партию от власти в пользу более националистического правительства." #NT!
+ BALTIC_forest_brothers_resistance: "Деятельность Сопротивления" #NT!
+ BALTIC_forest_brothers_resistance_desc: "Лесные братья готовятся совершить предательство внутри нашей страны. Мы еще не знаем, что они будут делать, но мы знаем, что это, конечно, будет активно подрывать нашу цель распространения социализма по всей стране." #NT!
+ POL_purchase_madagascar: "Купить [543.GetName]" #NT!
+ POL_purchase_madagascar_desc: "Мадагаскар – это инопланетный ландшафт, полный незнакомой полякам флоры и фауны. Хотя многие считают, что это делает остров негостеприимным для поляков, некоторые видят в этом возможность жить в совершенно новом месте. Размер острова и потенциальные сырьевые ресурсы делают его идеальным местом для размещения польского правительства в изгнании, если до этого когда-нибудь дойдет." #NT!
+ POL_purchase_gambia: "Купить [701.GetName]" #NT!
+ POL_purchase_gambia_desc: "Несколько столетий назад Курляндское герцогство попыталось колонизировать [701.GetName] от имени Речи Посполитой. Несмотря на хорошие отношения с местным населением, они были вытеснены иностранными державами. Пришло время это исправить." #NT!
+ POL_purchase_cheap_colony: "Купить [FROM.GetName]" #NT!
+ POL_purchase_cheap_colony_desc: "Интерес Польши к [FROM.GetName] растет. Хотя эти интересы находятся за пределами компетенции правительства, их энтузиазм может быть использован как оправдание покупки региона Польшей." #NT!
+ POL_anti_capitalist_decisions: "Антикапиталистическая революция" #NT!
+ POL_anti_capitalist_decisions_desc: "Капитализм – это болезнь на Земле. Хотя многие из этих наций называют себя «демократическими», они просто порабощают пролетариат буржуазной демократией, и долг любого социалиста — освобождать своих товарищей." #NT!
+ POL_anti_fascist_revolution_category: "Антифашистская революция" #NT!
+ POL_anti_fascist_revolution_category_desc: "Фашисты воспользовались языком борьбы пролетариата против буржуазии, чтобы создать ультранационалистические диктатуры, которые продолжают жестокое угнетение рабочего класса. Как социалистическое государство, мы должны освободить трудящихся всего мира от террора фашизма." #NT!
+ POL_support_monarchy_in_LIT_cat: "Наша претензия к [Root.GetRoyalClaim]" #NT!
+ POL_support_monarchy_in_LIT_cat_desc: "Теперь, когда [Root.GetLeader] восседает на троне [Root.GetAdjective], мы имеем божественное право претендовать на [Root.GetRoyalClaim] как на законную часть нашей нации.\n\nНаша текущая сила притязаний равна [Root.GetPolRoyalClaimStrength]." #NT!
+ POL_support_monarchy_in_LIT_tt: "Открывает §YНаше иск к Литве§! Решения." #NT!
+ POL_support_monarchy_in_ROM_tt: "Открывает §YНаше иск к Румынии§! Решения." #NT!
+ POL_support_monarchy_in_CZE_tt: "Открывает §YНаши претензии к Чехословакии§! Решения." #NT!
+ LIT_support_monarchy_in_POL_tt: "Открывает §YНаши претензии к Польше§! Решения." #NT!
+ lithuania_strength: "§Y[?LIT.monarchist_support]§!"
+ romania_strength: "§Y[?ROM.monarchist_support]§!"
+ bohemia_strength: "§Y[?CZE.monarchist_support]§!"
+ poland_strength: "§Y[?POL.monarchist_support]§!"
+ POL_banned_monarchy_flag: "Запретил монархизм." #NT!
+ POL_propagandise_monarchist_sentiment: "Пропаганда монархических настроений" #NT!
+ POL_double_propagandise_monarchist_sentiment: "Анти-[From.GetLeader] Пропаганда" #NT!
+ POL_sway_lithuanian_generals: "Влияние [From.GetAdjective] Генералы" #NT!
+ POL_invest_in_lithuania: "Инвестируйте в [From.GetNameDef]" #NT!
+ POL_ignite_monarchist_war: "Разжечь гражданскую войну" #NT!
+ POL_flip_lithuania_monarchist: "Подайте претензию" #NT!
+ POL_fight_against_monarchy_in_LIT_cat: "Борьба с иностранным истцом" #NT!
+ POL_fight_against_monarchy_in_LIT_cat_desc: "Иностранный агент пытается претендовать на трон [Root.GetAdjective], ища внутреннюю поддержку внутри нашего правительства. Если мы сможем сохранить низкую общественную и внутреннюю поддержку, мы сможем полностью опровергнуть вопрос об их претензии.\n\nТекущая сила претензии составляет [Root.GetPolRoyalClaimStrength]." #NT!
+ POL_growing_monarchist_sentiment: "Растущие монархические настроения" #NT!
+ POL_suppress_monarchist_sentiment: "Подавить монархические настроения" #NT!
+ POL_ban_monarchist_propaganda: "Запретить монархическую пропаганду" #NT!
+ POL_root_out_monarchists: "Искоренить монархистов" #NT!
+ POL_anti_monarchist_purge: "Антимонархическая военная чистка" #NT!
+ POL_ban_polish_imports: "Запретить [From.GetAdjective] импорта" #NT!
+ POL_skirmish_with_monarchist_militants: "Разоружение монархических боевиков" #NT!
+ POL_monarchist_civil_war: "Разожгите гражданскую войну" #NT!
+ POL_ban_monarchists: "Покончить с монархическим вопросом" #NT!
+ POL_cossack_republic_decisions: "Казачьи республики" #NT!
+ POL_cossack_republic_decisions_desc: "Во время Гражданской войны в России было создано несколько независимых казачьих войск, сражавшихся бок о бок с белыми. Поскольку белые изгнанники сейчас продвигаются глубоко на российскую территорию, у нас есть возможность возродить павшие республики." #NT!
+ POL_restore_don_cossacks: "Восстановить Донскую республику." #NT!
+ POL_restore_don_cossacks_desc: "Яростные противники большевизма, донские казаки сражались бок о бок с белыми в гражданской войне в России. Теперь, когда вся их территория находится в нашей собственности, мы можем пригласить донских ссыльных заселить эти земли и сражаться плечом к плечу со своими товарищами." #NT!
+ POL_restore_kuban_cossacks: "Восстановить Кубанскую республику." #NT!
+ POL_restore_kuban_cossacks_desc: "Предательство кубанского казачества стало поворотным моментом в гражданской войне в России, обеспечившим поражение белых. На этот раз мы добьемся того, чтобы кубанцами руководило лояльное правительство." #NT!
+ POL_add_state_to_strike: "Привлеките [From.GetName] к забастовке" #NT!
+ POL_expand_the_strike_name: "Расширить крестьянскую забастовку" #NT!
+ POL_anti_fascist_military: "Антифашистские военные" #NT!
+ POL_escelate_the_strike: "ОТЛАДКА: эскалация удара" #NT!
+ POL_escelate_the_strike_desc: "Отладка решения о быстром продвижении Крестьянской забастовки на один этап. Это решение не должно быть видно, если не включен режим отладки." #NT!
+ POL_expand_strikes_to_factories: "Распространение забастовок на фабрики" #NT!
+ POL_expand_strikes_to_factories_tt: "Позволяет нам вовлечь в забастовку промышленно развитые государства." #NT!
+ POL_seize_equipment: "Захватить военную технику" #NT!
+ POL_woo_military_staff: "Ву Генеральный штаб" #NT!
+ POL_crackdown_in_lviv: "Репрессии во Львове" #NT!
+ POL_pacify_zamosc: "Умиротворить Замостье" #NT!
+ POL_pacify_peasants_repeatable: "Умиротворить [?peasant_state_var.GetName]" #NT!
+ POL_sanacja_falanga_decisions: "Эндеция и Фаланга" #NT!
+ POL_sanacja_falanga_decisions_desc: "Большое влияние во Второй Польской республике приобрели национал-демократы и фалангисты. Предоставляя концессии и проводя общенациональные демонстрации, фашистское влияние может расширяться в геометрической прогрессии внутри польского правительства и среди населения." #NT!
+ POL_nationwide_fascist_displays: "Общенациональные фашистские демонстрации" #NT!
+ POL_appoint_nationalist_ministers: "Националистические политические кампании" #NT!
+ POL_completing_miedzymorze_decision: "Уже веду переговоры с другой страной" #NT!
+ form_turkestan_category: "Формируем тюркскую нацию" #NT!
+ form_turkestan_category_desc: "На протяжении всей нашей истории тюркские народы бесчисленное количество раз объединялись и разделялись. Если мы сможем взять под свой контроль весь регион Центральной Азии, мы сможем вернуть себе наследие великих тюркских ханов и объединить наш народ в одну нацию!" #NT!
+ form_turkestan: "Объедините турок" #NT!
+ form_country_kazakhstan_required_states: "Контролируйте все §YKazakh§! состояния." #NT!
+ form_country_uzbekistan_required_states: "Контролируйте все §YUzbek§! состояния." #NT!
+ form_country_kazakhstan_coring_states_tt: "Получите ядра на всех §YKazakh§! состояния." #NT!
+ form_country_uzbekistan_coring_states_tt: "Получите ядра на всех §YUzbek§! состояния." #NT!
+ form_country_sinkiang_coring_states_tt: "Получите ядра на всех §YSinkiang§! состояния." #NT!
+ POL_promote_falangism_decisions: "Пропаганда фалангизма" #NT!
+ POL_promote_falangism_decisions_desc: "Война с немцами не за горами, и хотя нас превосходит вооружение, [GER.GetLeader] не может надеяться уничтожить всех врагов [GER.GetLeader.GerHerHis] одновременно! При должной фалангистской поддержке среди людей добрые католические нации мира могут присоединиться к нам в нашей борьбе против [GER.GetNameDef]." #NT!
+ POL_promote_falangism: "Продвигайте фалангизм в [FROM.Owner.GetNameDef]" #NT!
+ POL_promote_falangism_in_major: "Продвигайте фалангизм в [FROM.Owner.GetNameDef]" #NT!
+ POL_promote_falangism_benelux: "Пропаганда фалангизма в §YБенилюксе§!" #NT!
+ POL_promote_falangism_south_america: "Пропаганда фалангизма в §YЮжной Америке§!" #NT!
+ POL_promote_falangism_central_america: "Пропаганда фалангизма в §YЦентральной Америке§!" #NT!
+ POL_promote_falangism_caribbean: "Пропаганда фалангизма в §YКарибских странах§!" #NT!
+  
+ RUS_propaganda_poster_slot_available_tt: "Имеет пустой слот для пропагандистского плаката." #NT!
+ RUS_PROPAGANDA_CAMPAIGN_TT_LEFT: "[GetPropagandaCampaignEffects_Left]" #NT!
+ RUS_PROPAGANDA_CAMPAIGN_TT_CENTER: "[GetPropagandaCampaignEffects_Center]" #NT!
+ RUS_PROPAGANDA_CAMPAIGN_TT_RIGHT: "[GetPropagandaCampaignEffects_Right]" #NT!
+ RUS_propaganda_campaign_empty_slot_tt: "Этот слот для пропагандистских плакатов в настоящее время равен §Gempty§!. Новая £RUS_propaganda_text_icon §YПропагандистская кампания§! может быть §Gactivated§_3." #NT!
+ RUS_propaganda_campaign_locked_slot_tt: "Этот слот для пропагандистских плакатов в настоящее время заблокирован. Его можно разблокировать, выполнив следующий фокус: §Y[GetCollectivistAndPossitiveFocuses] [GetKomsomolFocus]§!" #NT!
+ RUS_propaganda_campaign_locked_slot_focus_collectivist_possitive: "\n $RUS_positive_heroism$ \n $RUS_collectivist_propaganda$" #NT!
+ RUS_propaganda_campaign_locked_slot_focus_komsomol: "\n $RUS_the_komsomol$" #NT!
+ RUS_poster_left_text: "[GetDaysRemainingLeft]" #NT!
+ RUS_poster_center_text: "[GetDaysRemainingCenter]" #NT!
+ RUS_poster_right_text: "[GetDaysRemainingRight]" #NT!
+ RUS_poster_no_text: 
+ RUS_poster_left_days_remaining_text: "§Y[?RUS_propaganda_left_days_remaining_flag:days_left|Y0]§! дней осталось" #NT!
+ RUS_poster_center_days_remaining_text: "§Y[?RUS_propaganda_center_days_remaining_flag:days_left|Y0]§! дней осталось" #NT!
+ RUS_poster_right_days_remaining_text: "§Y[?RUS_propaganda_right_days_remaining_flag:days_left|Y0]§! дней осталось" #NT!
+ RUS_propaganda_campaigns: "Агитпроп" #NT!
+ RUS_propaganda_motherland_calls: "Родина зовёт!" #NT!
+ RUS_propaganda_victory_at_hand: "Победа уже близко!" #NT!
+ RUS_propaganda_defend_moscow: "Мы защитим Москву!" #NT!
+ RUS_propaganda_fight_to_the_last: "Сражайтесь до последней капли крови!" #NT!
+ RUS_propaganda_hit_of_hammer: "Каждый удар молота поражает врага!" #NT!
+ RUS_propaganda_transport: "Транспорт – брат Красной Армии" #NT!
+ RUS_propaganda_oil_for_the_motherland: "Больше нефти для Родины!" #NT!
+ RUS_propaganda_more_metal: "Больше металла – больше оружия!" #NT!
+ RUS_propaganda_high_yield: "Мы добьемся высокой доходности" #NT!
+ RUS_propaganda_for_the_motherland: "Для Родины!" #NT!
+ RUS_propaganda_heroes_forward: "Герои вперед!" #NT!
+ RUS_propaganda_anti_capitalism: "Золотой идол капитализма" #NT!
+ RUS_propaganda_anti_fascism: "Привет борцам с фашизмом." #NT!
+ RUS_propaganda_treacherous_enemy: "Враг коварен, будьте начеку!" #NT!
+ RUS_propaganda_do_not_blab: "Не болтайте!" #NT!
+ RUS_propaganda_sweep_scum_out: "Вымести нечисть!" #NT!
+ RUS_propaganda_knowledge: "Знания разрывают цепи рабства" #NT!
+ RUS_propaganda_builders_of_communism: "Юные строители коммунизма!" #NT!
+ RUS_propaganda_glory_to_partisans: "Слава Героям-партизанам!" #NT!
+ RUS_propaganda_death_to_invaders: "Смерть оккупантам!" #NT!
+ RUS_propaganda_stalin: "Под руководством Сталина!" #NT!
+ RUS_propaganda_rebuild_to_glory: "Мы восстановим славу!" #NT!
+ RUS_propaganda_peace: "Да здравствует мир!" #NT!
+ RUS_propaganda_happy_life: "Вы будете жить счастливой жизнью!" #NT!
+ RUS_propaganda_campaign_cooldown_tt: "Эта кампания снова станет доступна §Y[?ROOT.RUS_default_propaganda_campaign_cooldown] дней§! после ее удаления. Стоимость будет умножена на §R[?ROOT.RUS_propaganda_cost_increase]§_2." #NT!
+ RUS_propaganda_builders_of_communism_effect_tt: "Каждая советская марионетка получает «§Y$RUS_young_builders_of_communism$§!» что дает (Скорость исследования: §G+1.00%§!, Мастер-идеологический дрейф: §G+0.25§!) на §Y[?RUS_default_propaganda_campaign_duration]§! дни." #NT!
+ RUS_punished_for_breaking_flag: "Вступил в войну, пока эта кампания была активна. §RНарушение этого правила приведет к нестабильности и навсегда заблокирует эту пропагандистскую кампанию.§!" #NT!
+ RUS_propaganda_more_metal_tt: "Предоставление §G+1§! §Y$state_resource_aluminium$§!, §Y$state_resource_tungsten$§!, §Y$state_resource_steel$§! или §Y$state_resource_chromium$§! для каждого государства, производящего любой из этих ресурсов." #NT!
+ RUS_propaganda_death_to_invaders_no_invaders_tt: "Каждое основное состояние, контролируемое врагом: \n Добавьте модификатор: §Y$RUS_invaders_must_die$§!" #NT!
+ RUS_propaganda_anti_fascism_tt: "Получает '§Y$RUS_anti_fascist_campaign_generic$§!' против §Yсамой промышленно развитой фашистской страны в мире§!, что дает (Бонус атаки против страны: §G+10.0%§_2, Бонус защиты против страны: §G+10.0%§_2) на §Y[?RUS_default_propaganda_campaign_duration]§! дня." #NT!
+ RUS_propaganda_anti_capitalism_tt: "Получает '§Y$RUS_anti_capitalist_campaign_generic$§!' против §Yсамой промышленно развитой демократической страны в мире§!, что дает (Бонус атаки против страны: §G+10.0%§_2, Бонус защиты против страны: §G+10.0%§_2) на §Y[?RUS_default_propaganda_campaign_duration]§! дня." #NT!
+ RUS_propaganda_defend_moscow_state_modifier_tt: "\n§Y$RUS_defend_moscow$§! модификатор состояния:\n $MODIFIER_LOCAL_FACTORIES$: §R-100%§! \n $MODIFIERS_ARMY_CORE_DEFENCE_FACTOR$: §G+10.0%§! \n $MODIFIER_RECRUITABLE_POPULATION_FACTOR$: §G+25.00%§! \n $MODIFIER_SUPPLY_FACTOR$: §G+15%§!\n" #NT!
+ RUS_propaganda_victory_at_hand_available_tt: "[ROOT.GetFlag][ROOT.GetNameDefCap] находится в состоянии войны с крупной державой, сорвавшей Третью пятилетку." #NT!
+ RUS_propaganda_death_to_invaders_state_modifier_tt: "\n§Y$RUS_invaders_must_die$§! модификатор состояния:\n $MODIFIER_RESISTANCE_TARGET$: §R+15%§! \n $MODIFIER_RESISTANCE_DECAY$: §R-30%§! \n $MODIFIER_RESISTANCE_GROWTH$: §R+5%§! \n $MODIFIER_COMPLIANCE_GROWTH$: §R-5%§!\n $MODIFIER_STRATEGIC_REDEPLOYMENT_DISABLED$: $MODIFIER_RESISTANCE_TARGET$0! \n $MODIFIER_RESISTANCE_TARGET$1: $MODIFIER_RESISTANCE_TARGET$2!\n" #NT!
+ RUS_propaganda_heroes_forward_tt: "До §Y5 лидеров отрядов§! получат черту §Y$trait_RUS_determined$§! на §Y[?RUS_default_propaganda_campaign_duration]§! дней" #NT!
+ RUS_paranoia_system: "Политическая паранойя" #NT!
+ RUS_paranoia_system_desc: "Над [ROOT.GetNameDef] висит атмосфера подозрительности и недоверия. Обеспокоенность [ROOT.GetLeader] по поводу фракционности внутри партии растет по мере того, как НКВД расследует бесчисленные обвинения и предполагаемые акты саботажа, крушения и шпионажа." #NT!
+ RUS_paranoia_bg_tooltip: "Если £RUS_paranoia_text_icon §YParanoia§! значение увеличивается более чем на §Y25§!, могут произойти случайные события очистки. \nЧем выше £RUS_paranoia_text_icon §YParanoia§! и чем больше дней оно было таким высоким, тем больше вероятность того, что произойдет чистка. \nЕсли £RUS_paranoia_text_icon §YParanoia§! значение увеличивается более чем на §R75§!, могут произойти большие события очистки. \n\nВерно §Yfocus§!, §Ydecision§! и §YParanoia§0! сделаю £RUS_paranoia_text_icon §YParanoia§! немедленно увеличится/уменьшится, а некоторые черты советника и лидера страны будут постепенно увеличиваться §YParanoia§! через некоторое время. \n\nЗавершение фокуса §YParanoia§4! удалит £RUS_paranoia_text_icon §YParanoia§! система." #NT!
+ RUS_paranoia_text_tooltip: "[GetAppropriateParanoiaTooltip]" #NT!
+ RUS_paranoia_text_tooltip_default: "§YЕженедельно £RUS_paranoia_text_icon Паранойя, на которую влияет:§! \n[GetLeaderTrait] \n[GetNKVDTrait]" #NT!
+ RUS_paranoia_text_tooltip_not_active: "Политическая паранойя больше не активна." #NT!
+ RUS_paranoia_tooltip_stalin_default: "$RUS_iosif_stalin$ ($stalin_political_paranoia$): §R+1%§!" #NT!
+ RUS_paranoia_tooltip_stalin_advanced: "$RUS_iosif_stalin$ ($stalin_political_paranoia$): §R+2%§!" #NT!
+ RUS_paranoia_tooltip_stalin_undermined: "$RUS_iosif_stalin$ ($stalin_authority_undermined$): §R+2%§!" #NT!
+ #RUS_paranoia_tooltip_beriya: "$RUS_lavrenty_beriya$ ($beriya_political_paranoia$): §R+2%§!" #NT!
+ RUS_paranoia_tooltip_nkvd_yagoda: "$RUS_genrikh_yagoda$ ($head_of_the_nkvd$): §R+1%§!" #NT!
+ RUS_paranoia_tooltip_nkvd_yezhov: "$RUS_nikolay_yezhov$ ($head_of_the_nkvd$): §R+2%§!" #NT!
+ RUS_paranoia_tooltip_nkvd_beriya: "$RUS_lavrenty_beriya$ ($head_of_the_nkvd$): §R+2%§!" #NT!
+ RUS_paranoia_tooltip_null: 
+ RUS_last_purge_focus_name: "$RUS_the_bloc_of_rights_and_trotskyites$" #NT!
+ RUS_paranoia_value_text: "£RUS_paranoia_text_icon  Политическая паранойя: [GetParanoiaValueColor][?RUS_paranoia]%§! [GetParanoiaWeeklyModifier]" #NT!
+ RUS_paranoia_weekly_modifier_tt: "(Еженедельный прирост: [GetParanoiaModifierValueColor][?ROOT.RUS_paranoia_weekly_modifier_ui]%§!)" #NT!
+ RUS_color_red: "§R" #NT!
+ RUS_color_yellow: "§Y" #NT!
+ RUS_color_green: "§G" #NT!
+ RUS_paranoia_very_low_increase_effect_tt: "£RUS_paranoia_text_icon Политическая паранойя увеличивается на §R[?RUS_paranoia_very_low_increase]§!" #NT!
+ RUS_paranoia_low_increase_effect_tt: "£RUS_paranoia_text_icon Политическая паранойя увеличивается на §R[?RUS_paranoia_low_increase]§!" #NT!
+ RUS_paranoia_medium_increase_effect_tt: "£RUS_paranoia_text_icon Политическая паранойя увеличивается на §R[?RUS_paranoia_medium_increase]§!" #NT!
+ RUS_paranoia_high_increase_effect_tt: "£RUS_paranoia_text_icon Политическая паранойя увеличивается на §R[?RUS_paranoia_high_increase]§!" #NT!
+ RUS_paranoia_very_high_increase_effect_tt: "£RUS_paranoia_text_icon Политическая паранойя увеличивается на §R[?RUS_paranoia_very_high_increase]§!" #NT!
+ RUS_paranoia_low_decrease_effect_tt: "£RUS_paranoia_text_icon Политическая паранойя уменьшается на §G[?RUS_paranoia_low_decrease]§!" #NT!
+ RUS_paranoia_medium_decrease_effect_tt: "£RUS_paranoia_text_icon Политическая паранойя уменьшается на §G[?RUS_paranoia_medium_decrease]§!" #NT!
+ RUS_paranoia_high_decrease_effect_tt: "£RUS_paranoia_text_icon Политическая паранойя уменьшается на §G[?RUS_paranoia_high_decrease]§!" #NT!
+ RUS_paranoia_very_high_decrease_effect_tt: "£RUS_paranoia_text_icon Политическая паранойя уменьшается на §G[?RUS_paranoia_very_high_decrease]§!" #NT!
+ RUS_paranoia_increase_based_on_unit_leader_level_effect_tt: "£RUS_paranoia_text_icon Политическая паранойя увеличивается в зависимости от уровня неочищенного лидера/ов отряда: §R[?RUS_unit_leader_level]§!" #NT!
+ RUS_paranoia_decrease_based_on_unit_leader_level_effect_tt: "£RUS_paranoia_text_icon Политическая паранойя уменьшается в зависимости от уровня очищенного лидера/ов отряда: §G[?RUS_unit_leader_level]§!" #NT!
+ RUS_paranoia_is_low_level_tt: "£RUS_paranoia_text_icon Политическая паранойя ниже §Y[?RUS_paranoia_lower_threshold]§!" #NT!
+ RUS_paranoia_is_medium_level_tt: "£RUS_paranoia_text_icon Политическая паранойя между §Y[?RUS_paranoia_lower_threshold]§! и §Y[?RUS_paranoia_higher_threshold]§!" #NT!
+ RUS_paranoia_is_high_level_tt: "£RUS_paranoia_text_icon Политическая паранойя выше §Y[?RUS_paranoia_higher_threshold]§!" #NT!
+ RUS_daunt_generals_tt: "До 5 армейских командиров получат черту §YЗапуганные Сталиным§!:\n- Скорость восстановления дивизии: §R-10.0%§_1 \n- Скорость пополнения: §R-2.0%§_1" #NT!
+ RUS_daunt_generals_minor_tt: "До двух армейских командиров получат черту §YЗапуганные Сталиным§!:\n- Скорость восстановления дивизии: §R-10.0%§_1 \n- Скорость пополнения: §R-2.0%§_1" #NT!
+ RUS_daunt_admirals_tt: "До 5 командующих флотом получат черту §YЗапуганные Сталиным§!:\n- Шанс решения об отступлении: §R-25%§_1" #NT!
+ RUS_daunt_admirals_minor_tt: "До 5 командующих флотом получат черту §YЗапуганные Сталиным§!:\n- Шанс решения об отступлении: §R-25%§_1" #NT!
+ RUS_forge_production_reports: "Формируйте удовлетворительные производственные отчеты" #NT!
+ RUS_forge_production_reports_desc: "Наши последние производственные отчеты вызывают некоторое беспокойство. Мы не знаем, были ли ожидаемые цифры не достигнуты из-за действий диверсантов или из-за установления нереальных квот. Ясно одно: если мы хотим избежать новой кампании террора со стороны НКВД, нам лучше скорректировать производственные показатели, чтобы они были приемлемыми." #NT!
+ RUS_inspection_in_the_administration: "Проверка в администрации" #NT!
+ RUS_inspection_in_the_administration_desc: "Мы проведем проверку местной и центральной администрации на предмет выявления потенциальных диссидентов и диверсантов." #NT!
+ RUS_inspection_in_the_army: "Инспекция в армии" #NT!
+ RUS_inspection_in_the_army_desc: "Мы должны разрешить НКВД проводить проверки в армии для выявления потенциальных диссидентов и диверсантов." #NT!
+ RUS_inspection_in_the_navy: "Инспекция в ВМФ" #NT!
+ RUS_inspection_in_the_navy_desc: "Мы должны разрешить НКВД проводить проверку на Военно-Морском Флоте для выявления потенциальных диссидентов и диверсантов." #NT!
+ RUS_inspection_in_the_airforce: "Инспекция в ВВС" #NT!
+ RUS_inspection_in_the_airforce_desc: "Мы должны разрешить НКВД проводить проверку в ВВС для выявления потенциальных диссидентов и диверсантов." #NT!
+ RUS_paranoia_administration_purgeable_tt: "Подозрительные дела в администрации могут быть расследованы" #NT!
+ RUS_paranoia_army_purgeable_tt: "Подозрительные дела в армии могут расследовать" #NT!
+ RUS_paranoia_navy_purgeable_tt: "Подозрительные дела на флоте могут расследовать" #NT!
+ RUS_paranoia_airforce_purgeable_tt: "Подозрительные дела в ВВС могут расследовать" #NT!
+ RUS_paranoia_inspection_cd_tt: "\nЭто решение снова будет доступно через §Y[?RUS_paranoia_inspection_re_enable_days] дня§!." #NT!
+ RUS_paranoia_calm_down_stalin_cd_tt: "\nЭто решение снова будет доступно через §Y[?RUS_paranoia_calm_down_stalin_re_enable_days] дня§!." #NT!
+ RUS_paranoia_conducting_inspection_flag: "Уже проводит проверку" #NT!
+ RUS_loosen_prohibitions_in_military_academies_dec: "Ослабьте запреты в военных академиях" #NT!
+ RUS_loosen_prohibitions_in_military_academies_dec_desc: "Мы ослабим ограничения на исследовательскую и консультационную документацию в наших военных академиях, чтобы наши молодые офицеры имели более широкий спектр источников обучения для развития своих навыков в менее репрессивной среде." #NT!
+ RUS_reinforce_army_officer_ranks_with_veterans_dec: "Усиление армейских офицерских званий" #NT!
+ RUS_reinforce_army_officer_ranks_with_veterans_dec_desc: "Мы пополним наши опустошенные офицерские ряды в армии закаленными и талантливыми ветеранами." #NT!
+ RUS_reinforce_navy_officer_ranks_with_veterans_dec: "Усиление офицерских званий ВМФ" #NT!
+ RUS_reinforce_navy_officer_ranks_with_veterans_dec_desc: "Мы пополним наши опустевшие офицерские ряды ВМФ закаленными и талантливыми ветеранами." #NT!
+ RUS_reinstate_mig_design_bureau: "Восстановить ОКБ МиГ" #NT!
+ RUS_reinstate_mig_design_bureau_desc: "Мы восстановим в должности этого авиаконструктора и реабилитируем всех инженеров и конструкторов, не имеющих никаких доказательств диверсионного или антисоветского поведения." #NT!
+ RUS_reinstate_ilyushin_design_bureau: "Восстановить ОКБ Ильюшина" #NT!
+ RUS_reinstate_ilyushin_design_bureau_desc: "$RUS_reinstate_mig_design_bureau_desc$" #NT!
+ RUS_reinstate_tupolev_design_bureau: "Восстановить ОКБ Туполева." #NT!
+ RUS_reinstate_tupolev_design_bureau_desc: "$RUS_reinstate_mig_design_bureau_desc$" #NT!
+ RUS_reinstate_yakovlev_design_bureau: "Восстановить ОКБ Яковлева." #NT!
+ RUS_reinstate_yakovlev_design_bureau_desc: "$RUS_reinstate_mig_design_bureau_desc$" #NT!
+ decision_cost_CP_50_pp_50_ArmXP_50: "£command_power  §Y50§! £pol_power  §Y50§! £army_experience  §Y50§!" #NT!
+ decision_cost_CP_50_pp_50_ArmXP_50_blocked: "£command_power  §R50§! £pol_power  §R50§! £army_experience  §R50§!" #NT!
+ decision_cost_CP_50_pp_50_ArmXP_50_tooltip: "Это стоит £command_power  §Y50§! £pol_power  §Y50§! £army_experience  §Y50§! принять решение" #NT!
+ decision_cost_CP_50_pp_50_NavXP_50: "£command_power  §Y50§! £pol_power  §Y50§! £navy_experience  §Y50§!" #NT!
+ decision_cost_CP_50_pp_50_NavXP_50_blocked: "£command_power  §R50§! £pol_power  §R50§! £navy_experience  §R50§!" #NT!
+ decision_cost_CP_50_pp_50_NavXP_50_tooltip: "Это стоит £command_power  §Y50§! £pol_power  §Y50§! £navy_experience  §Y50§! принять решение" #NT!
+ RUS_gosproyektstroy_decision_category: "Госпроектстрой" #NT!
+ RUS_gosproyektstroy_bring_foreign_experts: "Привлеките экспертов [FROM.GetAdjective]" #NT!
+ RUS_gosproyektstroy_bring_foreign_experts_desc: "Мы подпишем соглашение с крупными промышленными предприятиями [FROM.GetAdjective] о привлечении опытных инженеров и архитекторов из [FROM.GetNameDef] в качестве консультантов для наших промышленных проектов." #NT!
+ RUS_gosproyektstroy_focus_civ: "Специализация в гражданской промышленности" #NT!
+ RUS_gosproyektstroy_focus_civ_desc: "В ходе масштабной промышленной модернизации мы будем уделять приоритетное внимание обновлению нашей гражданской тяжелой и легкой промышленности." #NT!
+ RUS_gosproyektstroy_focus_mil: "Специализация в военной промышленности" #NT!
+ RUS_gosproyektstroy_focus_mil_desc: "В ходе масштабной модернизации промышленности мы сосредоточим внимание на повышении эффективности военного производства." #NT!
+ RUS_gosproyektstroy_focus_dock: "Специализация в судостроительной отрасли" #NT!
+ RUS_gosproyektstroy_focus_dock_desc: "В ходе масштабной промышленной модернизации мы сосредоточимся на достижении большей эффективности военно-морского производства." #NT!
+ RUS_gosproyektstroy_upgrade_in_progress_flag: "В настоящее время работает над модернизацией для Госпроектстроя." #NT!
+ RUS_generic_industry_relocation: "Переместить промышленность из [FROM.GetName]" #NT!
+ RUS_generic_industry_relocation_desc: "Эвакуация тяжелой техники наших [FROM.GetName] заводов на Урал — это огромная задача, но она необходима для обеспечения нашего военного производства." #NT!
+ RUS_industry_relocation_complete_effect_tt: "До §Y4 военных или гражданских заводов§! будет удалено из §Y[FROM.GetName]§!.\n" #NT!
+ RUS_industry_relocation_remove_effect_tt: "Снятые заводы будут перебазированы в штат на Урале." #NT!
+ RUS_relocate_industry_repair_tt: "§RНекоторые заводы придется перестроить.§!" #NT!
+ RUS_relocate_industry_lose_control_tt: "§RПотеря контроля над [FROM.GetName] приведет к тому, что фабрики понесут больший ущерб при переезде.§!" #NT!
+ RUS_industry_relocation_trains_tt: "§R[?RUS_industrial_relocation_trains_decision_negative] $train_equipment$s§! будет использоваться на протяжении всего срока действия этого решения." #NT!
+ RUS_industry_relocation_aluminium_plant_trains_tt: "§R[?RUS_industrial_relocation_trains_decision_aluminium_negative] $train_equipment$s§! будет использоваться на протяжении всего срока действия этого решения.\n" #NT!
+ RUS_soviet_aid_to_poum_decision_category: "Тайная помощь ПОУМ" #NT!
+ RUS_soviet_aid_to_poum_decision_category_desc: "$RUS_covert_support_for_spanish_poum_desc$" #NT!
+ RUS_organize_covert_depots_poum: "Подготовьте тайные склады" #NT!
+ RUS_organize_covert_depots_poum_desc: "Наши антисталинистские контакты в Испании подготовят тайные склады для хранения оружия и военной техники, которые наши агенты приобретут различными способами." #NT!
+ RUS_organize_covert_depots_poum_tt: "Последствия восстания ПОУМ:\n" #NT!
+ RUS_send_infantry_equipment_poum: "Предоставить винтовки и боеприпасы" #NT!
+ RUS_send_infantry_equipment_poum_desc: "Поставка новых винтовок и боеприпасов позволит нашим испанским товарищам продолжить войну против фашизма и контрреволюционной буржуазии." #NT!
+ RUS_organize_popular_brigades_poum: "Организуйте народные бригады" #NT!
+ RUS_organize_popular_brigades_poum_desc: "Мы установим контакты с членами различных политических организаций антисталинистских левых, как местных, так и иностранных, чтобы сформировать интернациональные бригады для поддержки наших испанских товарищей на войне." #NT!
+ RUS_send_elite_commandos_poum: "Отправить элитных коммандос" #NT!
+ RUS_send_elite_commandos_poum_desc: "У нас есть высококвалифицированные и квалифицированные люди, способные успешно проводить специальные операции, а также несталинские участники гражданской войны и ветераны армии, которые знают, как вести войну. \nМы должны предоставить эти активы правительству ПОУМ в его борьбе против фашизма и сталинизма." #NT!
+ RUS_send_elite_commandos_poum_flag: "Отправил элитных коммандос в Испанию." #NT!
+ RUS_organize_popular_speeches_poum: "Организуйте популярные выступления" #NT!
+ RUS_organize_popular_speeches_poum_desc: "Нашим испанским товарищам необходимо полное сотрудничество народа для продолжения военных действий. Мы должны провести в сотрудничестве с влиятельными членами местных организаций информационную и агитационную кампанию, чтобы вновь зажечь пламя революции среди испанских масс." #NT!
+ RUS_infiltrate_stalinist_plans_in_spain_poum: "Проникнуть в сталинское командование в Испании." #NT!
+ RUS_infiltrate_stalinist_plans_in_spain_poum_desc: "Вскоре в Испанию будет отправлена ​​новая партия советских военных советников для оказания помощи буржуазному республиканскому правительству, и у нас есть шанс внедрить среди них несколько антисталинских агентов. \nЭти агенты будут связываться и вербовать солдат, бригадистов и ополченцев, симпатизирующих ПОУМ на буржуазно-республиканской стороне, чтобы создать сеть информаторов, которая позволит нам узнать о планах врага до того, как они будут реализованы." #NT!
+ RUS_default_poum_cd_tt: "\nЭто решение снова станет доступным в §Y[?RUS_default_poum_cd]§! дней.\n" #NT!
+ RUS_long_poum_cd_tt: "\nЭто решение снова станет доступным в §Y[?RUS_long_poum_cd]§! дней.\n" #NT!
+ decision_only_once_tt: "\nЭто решение можно активировать только один раз." #NT!
+ decision_cost_CP_50_pp_15: "£command_power  §Y50§! £pol_power  §Y15§!" #NT!
+ decision_cost_CP_50_pp_15_blocked: "£command_power  §R50§! £pol_power  §RY15§!" #NT!
+ decision_cost_CP_50_pp_15_tooltip: "Это стоит £command_power  §Y50§! £pol_power  §Y15§! принять решение" #NT!
+ RUS_diplomacy_baltic_decision_category: "Балтийская дипломатия" #NT!
+ RUS_diplomacy_nordic_decision_category: "Северная дипломатия" #NT!
+ RUS_diplomacy_balkan_decision_category: "Балканская дипломатия" #NT!
+ RUS_diplomacy_middle_east_decision_category: "Ближневосточная дипломатия" #NT!
+ RUS_diplomacy_asia_decision_category: "Азиатская дипломатия" #NT!
+ RUS_pressure_country_government_baltic: "Давление [FROM.GetAdjective] Правительство" #NT!
+ RUS_pressure_country_government_baltic_desc: "Мы будем оказывать давление на правительство [FROM.GetAdjective], чтобы оно приняло политику, более соответствующую нашим интересам." #NT!
+ RUS_promote_ideology_rallies_baltic: "Продвигайте идеологические митинги в [FROM.GetNameDef]" #NT!
+ RUS_promote_ideology_rallies_baltic_desc: "Агенты [ROOT.GetAdjective] будут проводить политические митинги по всему [FROM.GetNameDef] для продвижения [ROOT.GetIdeologyNameWithCaps] среди масс [FROM.GetAdjective]." #NT!
+ RUS_send_ultimatum_to_country_baltic: "Отправьте ультиматум [FROM.GetNameDef]" #NT!
+ RUS_send_ultimatum_to_country_baltic_desc: "Ультиматумом мы окажем давление на правительство [FROM.GetAdjective], чтобы оно уступило нашим требованиям." #NT!
+ RUS_fight_alongside_country_comrades_baltic: "Сражайтесь бок о бок с нашими [FROM.GetAdjective] товарищами" #NT!
+ RUS_fight_alongside_country_comrades_baltic_desc: "$BUL_fight_alongside_country_comrades_desc$" #NT!
+ RUS_pressure_country_government_nordic: "$RUS_pressure_country_government_baltic$" #NT!
+ RUS_pressure_country_government_nordic_desc: "$RUS_pressure_country_government_baltic_desc$" #NT!
+ RUS_promote_ideology_rallies_nordic: "$RUS_promote_ideology_rallies_baltic$" #NT!
+ RUS_promote_ideology_rallies_nordic_desc: "$RUS_promote_ideology_rallies_baltic_desc$" #NT!
+ RUS_send_ultimatum_to_country_nordic: "$RUS_send_ultimatum_to_country_baltic$" #NT!
+ RUS_send_ultimatum_to_country_nordic_desc: "$RUS_send_ultimatum_to_country_baltic_desc$" #NT!
+ RUS_fight_alongside_country_comrades_nordic: "$RUS_fight_alongside_country_comrades_baltic$" #NT!
+ RUS_fight_alongside_country_comrades_nordic_desc: "$RUS_fight_alongside_country_comrades_baltic_desc$" #NT!
+ RUS_pressure_country_government_balkan: "$RUS_pressure_country_government_baltic$" #NT!
+ RUS_pressure_country_government_balkan_desc: "$RUS_pressure_country_government_baltic_desc$" #NT!
+ RUS_promote_ideology_rallies_balkan: "$RUS_promote_ideology_rallies_baltic$" #NT!
+ RUS_promote_ideology_rallies_balkan_desc: "$RUS_promote_ideology_rallies_baltic_desc$" #NT!
+ RUS_send_ultimatum_to_country_balkan: "$RUS_send_ultimatum_to_country_baltic$" #NT!
+ RUS_send_ultimatum_to_country_balkan_desc: "$RUS_send_ultimatum_to_country_baltic_desc$" #NT!
+ RUS_fight_alongside_country_comrades_balkan: "$RUS_fight_alongside_country_comrades_baltic$" #NT!
+ RUS_fight_alongside_country_comrades_balkan_desc: "$RUS_fight_alongside_country_comrades_baltic_desc$" #NT!
+ RUS_pressure_country_government_middle_east: "$RUS_pressure_country_government_baltic$" #NT!
+ RUS_pressure_country_government_middle_east_desc: "$RUS_pressure_country_government_baltic_desc$" #NT!
+ RUS_promote_ideology_rallies_middle_east: "$RUS_promote_ideology_rallies_baltic$" #NT!
+ RUS_promote_ideology_rallies_middle_east_desc: "$RUS_promote_ideology_rallies_baltic_desc$" #NT!
+ RUS_send_ultimatum_to_country_middle_east: "$RUS_send_ultimatum_to_country_baltic$" #NT!
+ RUS_send_ultimatum_to_country_middle_east_desc: "$RUS_send_ultimatum_to_country_baltic_desc$" #NT!
+ RUS_fight_alongside_country_comrades_middle_east: "$RUS_fight_alongside_country_comrades_baltic$" #NT!
+ RUS_fight_alongside_country_comrades_middle_east_desc: "$RUS_fight_alongside_country_comrades_baltic_desc$" #NT!
+ RUS_ultimatum_baltic_effects_tt: "Это событие окажет давление на §Y[FROM.GetFlag][FROM.GetNameDefCap]§! быть интегрировано в §Y[ROOT.GetNameDef]§!. ([FROM.GetNameDefCap] все еще может отказаться)" #NT!
+ RUS_ultimatum_generic_effects_tt: "Это событие окажет давление на §Y[FROM.GetFlag][FROM.GetNameDefCap]§! стать марионеткой §Y[ROOT.GetNameDef]§! или присоединиться к §Y[ROOT.GetFactionName]§!. ([FROM.GetNameDefCap] все еще может отказаться)" #NT!
+ RUS_pressure_government_effects_tt: "Это событие окажет давление на §Y[FROM.GetFlag][FROM.GetNameDefCap]§! присоединиться к §Y[ROOT.GetFactionName]§! или заменить их нынешнее правительство §Y[ROOT.GetRulingIdeology]§! один. ([FROM.GetNameDefCap] все еще может отказаться)" #NT!
+ RUS_promote_rallies_effects_tt: "Это мероприятие будет продвигать §Y[GetIdeologyNameWithCaps]§! на протяжении §Y[FROM.GetFlag][FROM.GetNameDefCap]§! и будет ли §Yдестабилизировать страну§!, если правительство [FROM.GetAdjective] будет выступать против митингов." #NT!
+ RUS_preparations_for_operation_countenance: "Подготовка к операции «Поддержание»" #NT!
+ RUS_operation_countenance: "Операция «Лицо»" #NT!
+ RUS_preparations_for_operation_countenance_tt: "У нас будет §Y[?RUS.RUS_operation_countenance_preparation_days] дней§! на подготовку до начала $RUS_operation_countenance$ и объявления войны [PER.GetNameDef]. \n$RUS_preparations_for_operation_countenance_mission_tt$\n" #NT!
+ RUS_preparations_for_operation_countenance_mission_tt: "Однажды §Y$RUS_operation_countenance$§! Миссия активна, у войск [GetOperationCountenanceTooltip] будет §Y[?RUS.RUS_operation_countenance_mission_days] дня§!, чтобы капитулировать [PER.GetNameDef], прежде чем они попытаются присоединиться к другой фракции, и наше население начнет беспокоиться о наших военных возможностях." #NT!
+ RUS_operation_countenance_tt_alone: "[ROOT.GetAdjective]" #NT!
+ RUS_operation_countenance_tt_anglo_soviet: "[ROOT.GetAdjective] и [ENG.GetAdjective]" #NT!
+ RUS_operation_countenance_successful_tt: "Эффекты, когда мы капитулируем [PER.GetNameDef]:" #NT!
+ RUS_agreed_anglo_soviet_invasion_of_iran_flag: "Согласованное совместное англо-советское вторжение в Иран." #NT!
+ RUS_send_infantry_equipment_asia: "Отправить пехотное снаряжение" #NT!
+ RUS_send_infantry_equipment_asia_desc: "Мы должны отправить военную технику нашим китайским союзникам, чтобы они могли одержать победу как над окружающими их империалистическими странами, так и над амбициозными китайскими полевыми командирами." #NT!
+ RUS_send_equipment_cd_tt: "\nЭто решение снова станет доступным в §Y[?RUS_send_infantry_equipment_cd]§! дней.\n" #NT!
+ RUS_peace_deal_for_south_sakhalin_and_kuril_islands: "Предложите мир за [537.GetName] и [555.GetName]" #NT!
+ RUS_peace_deal_for_south_sakhalin_and_kuril_islands_desc: "Мы предложим правительству [JAP.GetAdjective] прекращение всех военных действий, если оно согласится вернуть наши бывшие территории [537.GetName] и [555.GetName]." #NT!
+ RUS_peace_deal_for_hokkaido: "Предложите мир Сахалину, Курилам и Хоккайдо" #NT!
+ RUS_peace_deal_for_hokkaido_desc: "Мы предложим правительству [JAP.GetAdjective] прекращение всех военных действий, если оно согласится вернуть наши бывшие территории [537.GetName] и [555.GetName], а также передачу [536.GetName] под контроль [ROOT.GetAdjective]." #NT!
+ RUS_sinkiang_investment_ongoing_flag: "В Синьцзяне уже реализуется еще одна программа помощи." #NT!
+ RUS_sinkiang_mineral_prospection_sik: "Предложить разведку полезных ископаемых на юге [SIK.GetNameDef]" #NT!
+ RUS_sinkiang_mineral_prospection_sik_desc: "[ROOT.GetAdjective] у чиновников появился интерес к добытому на Алтае золоту и редким минералам, [SIK.GetNameDef]. Чтобы получить доступ к рынку Синьцзяна, мы предложим искать новые месторождения и улучшать инфраструктуру в [619.GetName], регионе, богатом полезными ископаемыми, но с очень архаичными способами эксплуатации со стороны нашего соседа." #NT!
+ RUS_sinkiang_mineral_prospection: "Разведка полезных ископаемых в Южном Синьцзяне" #NT!
+ RUS_sinkiang_mineral_prospection_desc: "Район [619.GetName], в юго-западной части бывшего Синьцзяна, богат полезными ископаемыми, но в настоящее время разрабатываются лишь немногие месторождения, причем весьма архаичным и неэффективным способом. Мы должны искать ресурсы и улучшать инфраструктуру региона, чтобы облегчить их эксплуатацию." #NT!
+ RUS_sinkiang_mineral_prospection_mission_dummy: "[RUS.GetAdjective] Разведка полезных ископаемых" #NT!
+ RUS_sinkiang_prospection_rejected_flag: "Наше предложение отклонено" #NT!
+ RUS_sinkiang_oil_prospection_sik: "Предложить разведку полезных ископаемых на севере [SIK.GetNameDef]" #NT!
+ RUS_sinkiang_oil_prospection_sik_desc: "[618.GetName], в северной части [SIK.GetNameDef], богат нефтью и полезными ископаемыми, но ни один из них не эксплуатируется нашим соседом. Мы попросим разрешения на разведку ресурсов в регионе и разработку любых месторождений, которые найдем." #NT!
+ RUS_sinkiang_oil_prospection: "Разведка полезных ископаемых в Северном Синьцзяне" #NT!
+ RUS_sinkiang_oil_prospection_desc: "[618.GetName], расположенный в северной части бывшего Синьцзяна, богат нефтью и полезными ископаемыми, но ни один из них в настоящее время не разрабатывается. Мы должны искать ресурсы и развивать инфраструктуру в регионе, чтобы облегчить эксплуатацию любых месторождений, которые мы найдем." #NT!
+ RUS_sinkiang_oil_prospection_mission_dummy: "[RUS.GetAdjective] Разведка полезных ископаемых и нефти" #NT!
+ RUS_sinkiang_oil_prospection_rejected_flag: "$RUS_sinkiang_prospection_rejected_flag$" #NT!
+ RUS_sinkiang_military_aid_sik: "Военная помощь для [SIK.GetNameDef]" #NT!
+ RUS_sinkiang_military_aid_sik_desc: "Мы предложим военную помощь [SIK.GetNameDef] в обмен на увеличение экспорта их местных товаров, необходимых в нашей стране." #NT!
+ RUS_sinkiang_military_aid_mission_dummy: "[RUS.GetAdjective] Военная помощь" #NT!
+ RUS_sinkiang_military_aid_rejected_flag: "$RUS_sinkiang_prospection_rejected_flag$" #NT!
+ RUS_sinkiang_support_expansion_mission_dummy: "[RUS.GetAdjective] Поддержка территориального расширения" #NT!
+ RUS_sinkiang_support_expansion_sik: "Поддержка расширения [SIK.GetNameDef]" #NT!
+ RUS_sinkiang_support_expansion_sik_desc: "Наши торговые агенты в [SIK.GetNameDef] требуют более активной политики по увеличению экспорта до [ROOT.GetNameDef], теперь, когда территориальная экспансия Синьцзяна предоставила им больше товаров для торговли." #NT!
+ RUS_sinkiang_support_expansion_rejected_flag: "$RUS_sinkiang_prospection_rejected_flag$" #NT!
+ RUS_formalize_of_the_soviet_republic_of_sinkiang: "Оформить Советскую Республику Синьцзян" #NT!
+ RUS_formalize_of_the_soviet_republic_of_sinkiang_desc: "Настало время потребовать объединения [SIK.GetNameDef] в Независимую Советскую Социалистическую Республику, подчиненную правительству [FROM.GetNameDef]." #NT!
+ RUS_formalize_of_the_soviet_republic_of_sinkiang_only_once_tt: "Это решение можно активировать только один раз.\n§gИИ всегда примет.§!" #NT!
+ RUS_sinkiang_prospection_flag: "Провел разведку полезных ископаемых в Южном Синьцзяне." #NT!
+ RUS_sinkiang_oil_prospection_flag: "Провел разведку полезных ископаемых в Северном Синьцзяне." #NT!
+ RUS_sinkiang_military_aid_flag: "Оказывал военную помощь Синьцзяну." #NT!
+ RUS_sinkiang_support_expansion_flag: "Поддержал расширение Синьцзяна путем развития инфраструктуры на вновь приобретенных территориях." #NT!
+ RUS_sinkiang_joined_comintern_counter_flag: "Вступил в Коминтерн" #NT!
+ RUS_sinkiang_joined_comintern_days_tt: "Текущие дни: [?RUS_sinkiang_joined_comintern_counter_flag:days|Y0]" #NT!
+ RUS_soviet_aid_decision_category: "[RUS.GetAdjective] Программа помощи и инвестиций" #NT!
+ RUS_soviet_aid_decision_category_desc: "[RUS.GetNameDefCap] развил интерес к нашей стране, точнее, к ее природным ресурсам, экономическому рынку и международным отношениям. Как было согласовано ранее, правительство [RUS.GetAdjective] в настоящее время осуществляет инвестиционную программу в нашей стране, которая, по их утверждению, будет стимулировать развитие нашей страны." #NT!
+ RUS_pressure_government_active_flag: "В настоящее время оказывает давление на другое правительство" #NT!
+ RUS_pressure_government_cd_tt: "\nМы можем оказывать давление на правительство страны только один раз в §Y[?RUS_pressure_government_cd]§! дни." #NT!
+ RUS_promote_ideological_rallies_cd_tt: "\nМы можем проводить идеологические митинги в стране только один раз." #NT!
+ RUS_is_free_chinese_tag_tt: "Все следующие условия должны быть верными:\n Является §Yкитайской страной§!.\n Полностью независима." #NT!
+ RUS_national_academy_of_sciences_dec_cat: "Национальные академии наук" #NT!
+ RUS_national_academy_of_sciences_dec_cat_desc: "$RUS_national_academies_of_sciences_desc$" #NT!
+ RUS_build_national_academy_of_sciences_independent_republic: "Построить [FROM.GetAdjective] Национальную академию наук" #NT!
+ RUS_build_national_academy_of_sciences_independent_republic_desc: "В [FROM.GetNameDef] мы построим Национальную академию наук, что, несомненно, будет способствовать развитию как наших, так и их исследований." #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_default: "Национальная академия наук" #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_BLR: "Сборка [BLR.GetAdjective] $RUS_build_national_academy_of_sciences_integrated_republic_default$" #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_BLR_desc: "В [BLR.GetNameDef] мы построим Национальную академию наук, что, несомненно, будет способствовать нашим исследованиям." #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_UKR: "Сборка [UKR.GetAdjective] $RUS_build_national_academy_of_sciences_integrated_republic_default$" #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_UKR_desc: "В [UKR.GetNameDef] мы построим Национальную академию наук, что, несомненно, будет способствовать нашим исследованиям." #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_KAZ: "Сборка [KAZ.GetAdjective] $RUS_build_national_academy_of_sciences_integrated_republic_default$" #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_KAZ_desc: "В [KAZ.GetNameDef] мы построим Национальную академию наук, что, несомненно, будет способствовать нашим исследованиям." #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_GEO: "Сборка [GEO.GetAdjective] $RUS_build_national_academy_of_sciences_integrated_republic_default$" #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_GEO_desc: "В [GEO.GetNameDef] мы построим Национальную академию наук, что, несомненно, будет способствовать нашим исследованиям." #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_ARM: "Сборка [ARM.GetAdjective] $RUS_build_national_academy_of_sciences_integrated_republic_default$" #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_ARM_desc: "В [ARM.GetNameDef] мы построим Национальную академию наук, что, несомненно, будет способствовать нашим исследованиям." #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_AZR: "Сборка [AZR.GetAdjective] $RUS_build_national_academy_of_sciences_integrated_republic_default$" #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_AZR_desc: "В [AZR.GetNameDef] мы построим Национальную академию наук, что, несомненно, будет способствовать нашим исследованиям." #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_UZB: "Сборка [UZB.GetAdjective] $RUS_build_national_academy_of_sciences_integrated_republic_default$" #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_UZB_desc: "В [UZB.GetNameDef] мы построим Национальную академию наук, что, несомненно, будет способствовать нашим исследованиям." #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_TMS: "Сборка [TMS.GetAdjective] $RUS_build_national_academy_of_sciences_integrated_republic_default$" #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_TMS_desc: "В [TMS.GetNameDef] мы построим Национальную академию наук, что, несомненно, будет способствовать нашим исследованиям." #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_KYR: "Сборка [KYR.GetAdjective] $RUS_build_national_academy_of_sciences_integrated_republic_default$" #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_KYR_desc: "В [KYR.GetNameDef] мы построим Национальную академию наук, что, несомненно, будет способствовать нашим исследованиям." #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_TAJ: "Сборка [TAJ.GetAdjective] $RUS_build_national_academy_of_sciences_integrated_republic_default$" #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_TAJ_desc: "В [TAJ.GetNameDef] мы построим Национальную академию наук, что, несомненно, будет способствовать нашим исследованиям." #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_DON: "Сборка [DON.GetAdjective] $RUS_build_national_academy_of_sciences_integrated_republic_default$" #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_DON_desc: "В [DON.GetNameDef] мы построим Национальную академию наук, что, несомненно, будет способствовать нашим исследованиям." #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_KUB: "Сборка [KUB.GetAdjective] $RUS_build_national_academy_of_sciences_integrated_republic_default$" #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_KUB_desc: "В [KUB.GetNameDef] мы построим Национальную академию наук, что, несомненно, будет способствовать нашим исследованиям." #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_EST: "Сборка [EST.GetAdjective] $RUS_build_national_academy_of_sciences_integrated_republic_default$" #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_EST_desc: "В [EST.GetNameDef] мы построим Национальную академию наук, что, несомненно, будет способствовать нашим исследованиям." #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_LAT: "Сборка [LAT.GetAdjective] $RUS_build_national_academy_of_sciences_integrated_republic_default$" #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_LAT_desc: "В [LAT.GetNameDef] мы построим Национальную академию наук, что, несомненно, будет способствовать нашим исследованиям." #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_LIT: "Сборка [LIT.GetAdjective] $RUS_build_national_academy_of_sciences_integrated_republic_default$" #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_LIT_desc: "В [LIT.GetNameDef] мы построим Национальную академию наук, что, несомненно, будет способствовать нашим исследованиям." #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_POL: "Сборка [POL.GetAdjective] $RUS_build_national_academy_of_sciences_integrated_republic_default$" #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_POL_desc: "В [POL.GetNameDef] мы построим Национальную академию наук, что, несомненно, будет способствовать нашим исследованиям." #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_FIN: "Сборка [FIN.GetAdjective] $RUS_build_national_academy_of_sciences_integrated_republic_default$" #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_FIN_desc: "В [FIN.GetNameDef] мы построим Национальную академию наук, что, несомненно, будет способствовать нашим исследованиям." #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_TAN: "Сборка [TAN.GetAdjective] $RUS_build_national_academy_of_sciences_integrated_republic_default$" #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_TAN_desc: "В [TAN.GetNameDef] мы построим Национальную академию наук, что, несомненно, будет способствовать нашим исследованиям." #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_MON: "Сборка [MON.GetAdjective] $RUS_build_national_academy_of_sciences_integrated_republic_default$" #NT!
+ RUS_build_national_academy_of_sciences_integrated_republic_MON_desc: "В [MON.GetNameDef] мы построим Национальную академию наук, что, несомненно, будет способствовать нашим исследованиям." #NT!
+ RUS_national_academy_of_sciences_construction_independent_tt: "В [FROM.GetFlag]§Y[FROM.GetNameDef]§ построена новая Академия наук!." #NT!
+ RUS_national_academy_of_sciences_construction_integrated_tt: "В нашем интегрированном [FROM.GetName] построена новая Академия наук." #NT!
+ RUS_national_academy_of_sciences_research_tt: "Изменяет национальный дух §Y$RUS_ussr_academy_of_sciences_dynamic_modifier$§! по\nСкорость исследования: §G+1%§!" #NT!
+ RUS_merge_designers_dec_cat: "Реорганизация завода" #NT!
+ RUS_merge_tank_plant: "Объединение завода № 174" #NT!
+ RUS_merge_tank_plant_2: "Объединение завода № 112" #NT!
+ RUS_merge_tank_plant_3: "Объединить Уральский завод тяжелого машиностроения" #NT!
+ RUS_merge_tank_plant_intro_tt: "Изменить текущий §YКонструктор танков§! на\n" #NT!
+ RUS_merge_tank_plant_tt: "$RUS_merge_tank_plant_intro_tt$§YArmor§!: Максимальная скорость: §G+3.00%§!\n" #NT!
+ RUS_merge_tank_plant_2_tt: "$RUS_merge_tank_plant_intro_tt$§YArmor§!: £GFX_production_cost Стоимость производства: §G-5.00%§!\n" #NT!
+ RUS_merge_tank_plant_3_tt: "$RUS_merge_tank_plant_intro_tt$§YArmor§!: Мягкая атака: §G+3.00%§!\n" #NT!
+ RUS_has_active_tank_designer_any_tt: "Имеет активный §YКонструктор танков§!." #NT!
+ RUS_has_active_tank_designer_any_tt_NOT: "Не имеет активного §YКонструктора танков§!." #NT!
+ RUS_merge_tank_decision_ongoing_flag: "Еще один завод сейчас объединяется в «Конструктор танков»." #NT!
+ RUS_merge_ship_plant_1_baltic: "Объединение завода №5" #NT!
+ RUS_merge_ship_plant_2_baltic: "Объединить завод №363" #NT!
+ RUS_merge_ship_plant_3_baltic: "Объединить завод № 190" #NT!
+ RUS_merge_ship_plant_4_baltic: "Объединить завод №370" #NT!
+ RUS_merge_ship_plant_1_black_sea: "Объединить завод № 200" #NT!
+ RUS_merge_ship_plant_2_black_sea: "Объединить завод «Ленинская Кузница»" #NT!
+ RUS_merge_ship_plant_3_black_sea: "Объединить завод №340" #NT!
+ RUS_merge_ship_plant_4_black_sea: "Объединить Мариупольский завод" #NT!
+ RUS_merge_ship_plant_intro_tt: "Изменить текущий §YКонструктор кораблей§! на\n" #NT!
+ RUS_merge_ship_plant_1_tt: "$RUS_merge_ship_plant_intro_tt$§YКорабль береговой обороны§!: £GFX_production_cost Стоимость производства: §G-10.00%§_2\n" #NT!
+ RUS_merge_ship_plant_2_tt: "$RUS_merge_ship_plant_intro_tt$§YDestroyer§!: £GFX_production_cost Стоимость производства: §G-10.00%§!\n" #NT!
+ RUS_merge_ship_plant_3_tt: "$RUS_merge_ship_plant_intro_tt$§YSubmarine§!: £GFX_production_cost Стоимость производства: §G-10.00%§!\n" #NT!
+ RUS_merge_ship_plant_4_tt: "$RUS_merge_ship_plant_intro_tt$Скорость исследования технологий минной войны:§G+15%§! \nСкорость ремонта корабля: §G+5%§!\n" #NT!
+ RUS_has_active_ship_designer_any_baltic_tt: "Имеет активный балтийский §YКонструктор кораблей§!." #NT!
+ RUS_has_active_ship_designer_any_baltic_tt_NOT: "Не имеет активного Балтийского §YКонструктора кораблей§!." #NT!
+ RUS_has_active_ship_designer_any_black_sea_tt: "Имеет действующего Черноморского §YКонструктора кораблей§!." #NT!
+ RUS_has_active_ship_designer_any_black_sea_tt_NOT: "Не имеет действующего Черноморского §YКонструктора кораблей§!." #NT!
+ RUS_merge_ship_decision_ongoing_flag: "Еще один завод сейчас объединяется с «Морским конструктором»." #NT!
+ RUS_merge_aircraft_plant_1: "Объединение завода № 28" #NT!
+ RUS_merge_aircraft_plant_2: "Объединить завод № 150" #NT!
+ RUS_merge_aircraft_plant_3: "Объединить завод ВЭФ" #NT!
+ RUS_merge_aircraft_plant_intro_tt: "Изменить текущий §YAircraft Designer§! на\n" #NT!
+ RUS_merge_aircraft_plant_1_tt: "$RUS_merge_aircraft_plant_intro_tt$§YCAS§!: £GFX_production_cost Стоимость производства: §G-5.00%§!\n" #NT!
+ RUS_merge_aircraft_plant_2_tt: "$RUS_merge_aircraft_plant_intro_tt$Ловкость: §G+5%§!\n" #NT!
+ RUS_merge_aircraft_plant_3_tt: "$RUS_merge_aircraft_plant_intro_tt$Эффективность воздушных миссий: §G+5%§!\nСкорость исследования технологий РАДАР: §G+10%§!\n" #NT!
+ RUS_has_active_aircraft_designer_any_tt: "Имеет активный §YАвиаконструктор§!." #NT!
+ RUS_has_active_aircraft_designer_any_tt_NOT: "Не имеет активного §YАвиаконструктора§!." #NT!
+ RUS_merge_aircraft_decision_ongoing_flag: "Еще один завод сейчас объединяется с «Авиаконструктором»." #NT!
+ RUS_merge_materiel_plant_1_artillery: "Объединение завода № 172" #NT!
+ RUS_merge_materiel_plant_1_infantry: "Объединить завод №622" #NT!
+ RUS_merge_materiel_plant_1_motorized: "Объединение завода автомобильного инструмента" #NT!
+ RUS_merge_materiel_plant_2: "Объединить завод НКМЗ" #NT!
+ RUS_merge_materiel_plant_3: "Объединение Магнитогорского металлургического комбината" #NT!
+ RUS_merge_materiel_plant_intro_tt: "Изменить текущий §YMaterial Designer§! на\n" #NT!
+ RUS_merge_materiel_plant_1_artillery_tt: "$RUS_merge_materiel_plant_intro_tt$§YАртиллерийское оборудование§!: £GFX_production_cost Себестоимость производства: §G-5.00%§_2\n" #NT!
+ RUS_merge_materiel_plant_1_infantry_tt: "$RUS_merge_materiel_plant_intro_tt$§YПехотное снаряжение§!: £GFX_production_cost Стоимость производства: §G-5.00%§_2\n" #NT!
+ RUS_merge_materiel_plant_1_motorized_tt: "$RUS_merge_materiel_plant_intro_tt$§YМоторизованное оборудование§!: £GFX_production_cost Себестоимость производства: §G-5.00%§_2\n" #NT!
+ RUS_merge_materiel_plant_2_tt: "$RUS_merge_materiel_plant_intro_tt$£GFX_prod_eff_cap Ограничение эффективности производства: §G+5%§!\n" #NT!
+ RUS_merge_materiel_plant_3_tt: "$RUS_merge_materiel_plant_intro_tt$Заводской вывод: §G+5%§!\n" #NT!
+ RUS_has_active_materiel_designer_any_tt: "Имеет активный §YКонструктор материалов§!." #NT!
+ RUS_has_active_materiel_designer_any_tt_NOT: "Не имеет активного §YКонструктора материалов§!." #NT!
+ RUS_has_active_materiel_designer_grabin_tt: "Имеет активный §YАртиллерийский конструктор§!." #NT!
+ RUS_has_active_materiel_designer_grabin_tt_NOT: "Не имеет активного §YАртиллерийского конструктора§!." #NT!
+ RUS_has_active_materiel_designer_tula_tt: "Имеет активный §YКонструктор пехотного снаряжения§!." #NT!
+ RUS_has_active_materiel_designer_tula_tt_NOT: "Не имеет активного §YКонструктора пехотного снаряжения§!." #NT!
+ RUS_has_active_materiel_designer_gaz_tt: "Имеет активный §YКонструктор моторизованного оборудования§!." #NT!
+ RUS_has_active_materiel_designer_gaz_tt_NOT: "Не имеет активного §YКонструктора моторизованного оборудования§!." #NT!
+ RUS_merge_materiel_decision_ongoing_flag: "Еще один завод сейчас объединяется с Конструктором материальной части." #NT!
+ RUS_kill_trotsky_dec_cat: "Убить Троцкого" #NT!
+ RUS_raid_trotskys_villa: "Рейд на виллу Троцкого" #NT!
+ RUS_raid_trotskys_villa_desc: "Агент НКВД Иосиф Григулевич возглавит группу вооруженных убийц для рейда на виллу Троцкого." #NT!
+ RUS_raid_trotskys_villa_tt: "Группа вооруженных убийц попытается убить Троцкого, совершив набег на его виллу.\n\nШансы на убийство Троцкого возрастут, если §Y[FROM.GetFlag][FROM.GetNameDefCap]§!: \n-Имеет высокую поддержку коммунистов \n-Находится во фракции с [ROOT.GetFlag][ROOT.GetNameDefCap] \n-является предметом [ROOT.GetFlag][ROOT.GetNameDefCap]\n" #NT!
+ RUS_carefully_planned_assassination: "Проникновение и убийство" #NT!
+ RUS_carefully_planned_assassination_desc: "Агент НКВД испанского происхождения Рамон Меркадер подружится с доверенными лицами Троцкого, затем он переедет в Мексику, где агент будет изображать из себя сторонника Троцкого, ожидая подходящего момента для совершения убийства." #NT!
+ RUS_carefully_planned_assassination_tt: "Агент НКВД попытается проникнуть в ближайшее окружение Троцкого и убить его. \n\nШансы на убийство Троцкого возрастут, если §Y[FROM.GetFlag][FROM.GetNameDefCap]§!: \n-Имеет высокую поддержку коммунистов \n-Имеет хорошие отношения с [ROOT.GetFlag][ROOT.GetNameDefCap] \n-Находится во фракции с [ROOT.GetFlag][ROOT.GetNameDefCap] \n-Подчиняется из [ROOT.GetFlag][ROOT.GetNameDefCap] \n-Уже провел обыск на вилле Троцкого \n" #NT!
+ RUS_attempting_to_kill_trotsky_flag: "Очередная операция по убийству Троцкого уже продолжается." #NT!
+ RUS_nuclear_espionage_ongoing_flag: "Очередная операция по проникновению в зарубежную атомную программу уже продолжается." #NT!
+ RUS_infiltrate_foreign_atomic_programs_dec_cat: "Проникнуть в зарубежные атомные программы" #NT!
+ RUS_infiltrate_atomic_program: "Проникнуть [GetAtomicProgramNameCaps]" #NT!
+ RUS_infiltrate_atomic_program_desc: "Мы попытаемся завербовать в [FROM.GetNameDef] агентов, которые верят в дело коммунизма и смогут получить доступ к секретной информации из атомной программы [FROM.GetAdjective]." #NT!
+ RUS_infiltrate_atomic_program_tt: "Мы попытаемся собрать жизненно важную информацию, связанную с [GetAtomicProgramName], чтобы поддержать нашу собственную национальную атомную программу.\n\nШансы на успех в этой операции возрастут, если §Y[FROM.GetFlag][FROM.GetNameDef]§! имеет высокую поддержку коммунистов.\n" #NT!
+ RUS_atomic_program_usa: "Манхэттенский проект" #NT!
+ RUS_atomic_program_others: "атомная программа [FROM.GetAdjective]" #NT!
+ RUS_atomic_program_others_caps: "[FROM.GetAdjective] Атомная программа" #NT!
+ RUS_comecon_dec_cat: "[GetComeconName]" #NT!
+ RUS_comecon_dec_cat_name_default: "СЭВ" #NT!
+ RUS_comecon_dec_cat_name_alt: "Единое экономическое пространство" #NT!
+ RUS_comecon_dec_cat_desc: "[GetComeconDesc]" #NT!
+ RUS_comecon_dec_cat_desc_default: "$RUS_found_the_comecon_desc$" #NT!
+ RUS_comecon_dec_cat_desc_alt: "$RUS_the_common_economic_space_initiative$" #NT!
+ RUS_comecon_industrialization_program: "Программа индустриализации в [FROM.GetNameDef]" #NT!
+ RUS_comecon_industrialization_program_desc: "В [FROM.GetNameDef] мы осуществим программу индустриализации, чтобы стимулировать строительство новой отечественной промышленности и инфраструктуры." #NT!
+ RUS_comecon_joint_military_program: "Совместная военная программа" #NT!
+ RUS_comecon_joint_military_program_desc: "Мы разработаем совместную военную программу с нашими странами-партнерами для улучшения их учебных возможностей." #NT!
+ RUS_comecon_industrialization_program_ongoing_flag: "§YПрограмма индустриализации§! уже реализуется." #NT!
+ RUS_comecon_joint_military_program_ongoing_flag: "Решение §Y$RUS_comecon_joint_military_program$§! в настоящее время активен" #NT!
+ RUS_comecon_industrialization_program_modifier_tt: "Измените §Y$RUS_comecon_sov_default$§! автор \n Фабрики потребительских товаров: §Y+8.0%§!\n§YЦелевая страна§!: \nИзменить §Y$RUS_comecon_sov_default$§! \n Фабриками потребительских товаров: §Y-5.0%§!\n Скорость строительства: §G+20.00%§_3" #NT!
+ RUS_comecon_joint_military_program_modifier_tt: "Измените §Y$RUS_comecon_sov_default$§! автор \n Фабрики потребительских товаров: §Y+3.0%§! \n Множитель ежедневного прироста мощности командования: §R-15%§!\n§YКаждый субъект§!: \nИзмените §Y$RUS_comecon_sov_default$§! на \n Армейский опыт: §G0.50§_4 в день \n Военно-морской опыт: §G0.50§_4 в день \n Воздушный опыт: §G0.50§_4 в день \n Время обучения: §R+10.00%§_4 \n Ежедневный прирост командной силы: §Y+3.0%§0_4" #NT!
+ RUS_order_227_flag: "Активировал решение §Y$RUS_order_227$§!." #NT!
+ RUS_factory_worker_militias: "Поднимите ополчение фабричных рабочих" #NT!
+ RUS_factory_worker_militias_desc: "Мы должны собрать фабричных рабочих в [FROM.GetName], чтобы усилить дивизии, дислоцированные в настоящее время в этом районе, иначе у них скоро не будет фабрик, на которых они могли бы работать." #NT!
+ RUS_factory_worker_militias_state_modifier_tt: "\n§Y$RUS_factory_worker_militias_raised$§! модификатор состояния:\n $MODIFIER_LOCAL_RESOURCES_FACTOR$: §R-50.00%§! \n $MODIFIER_LOCAL_FACTORIES$: §R-100%§! \n $MODIFIER_LOCAL_ORG_REGAIN$: §G+10.00%§! \n $MODIFIERS_ARMY_CORE_DEFENCE_FACTOR$: §G+5.0%§! \n" #NT!
+ RUS_civilian_labor_in_defense: "Гражданский труд в обороне" #NT!
+ RUS_civilian_labor_in_defense_desc: "Мы отправим гражданское население района [FROM.GetName] на строительство укреплений для защиты своего города." #NT!
+ RUS_civilian_labor_in_defense_mod: "$RUS_civilian_labor_in_defense$" #NT!
+ RUS_civilian_labor_in_defense_state_modifier_tt: "\n§Y$RUS_civilian_labor_in_defense$§! модификатор состояния:\n $MODIFIER_LOCAL_RESOURCES_FACTOR$: §R-50.00%§! \n $MODIFIER_LOCAL_MANPOWER$: §R-25%§! \n $MODIFIER_LOCAL_FACTORIES$: §R-50%§! \n $MODIFIERS_ARMY_CORE_DEFENCE_FACTOR$$ §G+5.0%§! \n $modifier_state_production_speed_bunker_factor$: $MODIFIER_LOCAL_RESOURCES_FACTOR$0! \n $MODIFIER_LOCAL_RESOURCES_FACTOR$1: $MODIFIER_LOCAL_RESOURCES_FACTOR$0! \n" #NT!
+ RUS_nothing_is_left_behind: "Ничего не осталось позади" #NT!
+ RUS_nothing_is_left_behind_desc: "Если наши войска будут вынуждены отступить, мы позаботимся о том, чтобы они не оставили после себя абсолютно ничего, что могло бы быть использовано противником." #NT!
+ RUS_staggered_retreat: "Поэтапное отступление" #NT!
+ RUS_staggered_retreat_desc: "Если нам придется дать отпор натиску врага, то мы должны делать это организованно, не оставляя за собой отдельных частей и не допуская попадания наших войск в окружение противником." #NT!
+ RUS_order_227_decisions_tt: "Разблокируйте решения для подготовки и проведения §YВоенных наступлений§!. \n\nСледующие решения больше не будут доступны: §Y$RUS_nothing_is_left_behind$§! \n§Y$RUS_staggered_retreat$§! \n§Y$RUS_factory_worker_militias$§! \n§Y$RUS_civilian_labor_in_defense$§! \n" #NT!
+ RUS_order_227_scorched_earth_decisions_tt: "§YВыжженная земля§! решения больше не будут доступны." #NT!
+ RUS_military_offensive_in_progress_flag: "Очередное военное наступление уже продолжается." #NT!
+ RUS_military_offensive_ongoing: "Военное наступление[GetOngoingOffensiveMainObjective] Продолжается" #NT!
+ RUS_military_offensive_ongoing_trigger_tt: "[GetOffensiveMissionTriggerText]." #NT!
+ RUS_military_offensive_ongoing_trigger_default: "Имеет контроль над §Y[?RUS_military_offensive_states^0.GetName]§! и §Yвсе соседние государства§!, имеющие модификатор состояния §Y$RUS_soviet_military_offensive$§!.\n Контролирующий §Y[?RUS_military_offensive_states^0.GetName]§! избавит нас от каких-либо наказаний, если мы не сможем контролировать какое-либо из соседних государств." #NT!
+ RUS_military_offensive_ongoing_trigger_completed: "Наступление завершилось" #NT!
+ RUS_military_offensive_ongoing_failing_main_objective_tt: "Если мы не сможем контролировать главную цель §Y[?RUS_military_offensive_states^0.GetName]§!, когда время выполнения этой миссии истечет, мы понесем следующие штрафы:" #NT!
+ RUS_military_offensive_scope_tt: "§Y[FROM.GetName]§! и §Yвсе соседние государства, в настоящее время контролируемые противником§!:\nДобавить модификатор: §Y$RUS_soviet_military_offensive$§! (Атака дивизии: §G+10.0%§_2, Прорыв: §G+10.00%§_2 для [ROOT.GetFlag]§Y[ROOT.GetNameDef]§! в штате )." #NT!
+ RUS_military_offensive_current_scope_main_objective_tt: "\nОсновная цель:" #NT!
+ RUS_military_offensive_current_scope_negihbors_tt: "\nВторичные цели (соседи):" #NT!
+ RUS_military_offensive_activate_decision_tt: "\nАктивирует миссию: §YВоенное наступление в [FROM.GetName], продолжается§! (Чтобы добиться успеха в этой миссии, нам нужно будет контролировать главную цель, §Y[FROM.GetName]§!, и все соседние с ней государства, которые в настоящее время контролируются противником. Контроль только основной цели избавит нас от каких-либо штрафов за провал миссии)" #NT!
+ RUS_military_offensive_generic_name: 
+ RUS_military_offensive_specific_name: "в [?ROOT.RUS_military_offensive_states^0.GetName]" #NT!
+ RUS_military_offensive_ongoing_holding_main_objective_tt: "§GВ настоящее время мы контролируем основную цель.§!" #NT!
+ RUS_military_offensive_ongoing_not_holding_main_objective_tt: "§RНа данный момент мы не контролируем основную цель.§!" #NT!
+ RUS_military_offensive: "[GetMilitaryOffensiveName]" #NT!
+ RUS_military_offensive_desc: "Начнем подготовку к военному наступлению для захвата [FROM.GetName]." #NT!
+ RUS_military_offensive_name_generic: "[FROM.GetName] Наступление" #NT!
+ RUS_military_offensive_name_mars: "Операция Марс" #NT!
+ RUS_military_offensive_name_saturn: "Операция Сатурн" #NT!
+ RUS_military_offensive_name_uranus: "Операция Уран" #NT!
+ RUS_military_offensive_name_kutuzov: "Операция Кутузов" #NT!
+ RUS_military_offensive_name_bagration: "Операция Багратион" #NT!
+ RUS_military_offensive_name_samland: "Операция Самланд" #NT!
+ RUS_military_offensive_name_bratislava_brno: "Братиславско-Брненское наступление" #NT!
+ RUS_military_offensive_name_vistula_oder: "Висло-Одерское наступление" #NT!
+ RUS_military_offensive_name_warsaw: "Варшавское наступление" #NT!
+ RUS_military_offensive_name_tallin: "Таллинское наступление" #NT!
+ RUS_military_offensive_name_riga: "Рижское наступление" #NT!
+ RUS_military_offensive_name_budapest: "Будапештское наступление" #NT!
+ RUS_military_offensive_name_bucharest: "Бухарестское наступление" #NT!
+ RUS_military_offensive_name_tirana: "Тиранское наступление" #NT!
+ RUS_military_offensive_name_prague: "Пражское наступление" #NT!
+ RUS_military_offensive_name_rome: "Римское наступление" #NT!
+ RUS_military_offensive_name_berne: "Бернское наступление" #NT!
+ RUS_military_offensive_name_berlin: "Берлинское наступление" #NT!
+ RUS_military_offensive_name_frankfurt: "Франкфуртское наступление" #NT!
+ RUS_military_offensive_name_hamburg: "Гамбургское наступление" #NT!
+ RUS_military_offensive_name_helsinki: "Хельсинкское наступление" #NT!
+ RUS_military_offensive_name_stockholm: "Стокгольмское наступление" #NT!
+ RUS_military_offensive_name_oslo: "Осло наступление" #NT!
+ RUS_military_offensive_name_copenhagen: "Копенгагенское наступление" #NT!
+ RUS_military_offensive_name_amsterdam: "Амстердамское наступление" #NT!
+ RUS_military_offensive_name_paris: "Парижское наступление" #NT!
+ RUS_military_offensive_name_london: "Лондонское наступление" #NT!
+ RUS_military_offensive_name_dublin: "Дублинское наступление" #NT!
+ RUS_operation_iskra_ongoing: "Операция «Искра» продолжается." #NT!
+ RUS_operation_iskra: "Операция Искра" #NT!
+ RUS_operation_iskra_desc: "Мы начнем подготовку к военной операции по прорыву осады [195.GetName]." #NT!
+ RUS_operation_iskra_ongoing_objective_tt: "Цель этого наступления — прорвать осаду §Y[195.GetName]§!, восстановив связь государства с нашей столицей к моменту окончания миссии." #NT!
+ RUS_operation_iskra_ongoing_success_effects_tt: "Если нам удастся:" #NT!
+ RUS_operation_iskra_ongoing_failure_effects_tt: "\nЕсли мы потерпим неудачу:" #NT!
+ RUS_operation_iskra_ongoing_success_tt: "\n§GМы прорвали осаду §YLeningrad§! и в настоящее время город связан с нашей столицей.§!" #NT!
+ RUS_operation_iskra_ongoing_failure_tt: "\n§RНам еще предстоит прорвать осаду §YLeningrad§!. Город по-прежнему изолирован и окружен врагами.§!" #NT!
+ RUS_operation_iskra_tt: "§Y[195.GetName]§!, §Y[208.GetName]§! и §Y[244.GetName]§!:\nДобавить модификатор: §Y$RUS_soviet_military_offensive$§! (Атака дивизии: §G+10.0%§!, Прорыв: §G+10.00%§! за [ROOT.GetFlag]§Y[ROOT.GetNameDef]§! в штате)." #NT!
+ RUS_operation_iskra_activate_decision_tt: "\nАктивирует миссию: §YОперация «Искра» продолжается§! (Чтобы добиться успеха в этой миссии, нам нужно прорвать блокаду §YЛенинграда§! и восстановить сухопутные пути между городом и нашей столицей к моменту истечения срока действия миссии)." #NT!
+ RUS_the_rush_for_berlin: "Спешка за Берлином" #NT!
+ RUS_the_rush_for_berlin_desc: "Очевидно, что наши нынешние союзники в борьбе с [GER.GetAdjective] после войны станут нашими главными соперниками. Мы не можем позволить им победить нас в борьбе за Берлин." #NT!
+ RUS_raise_penal_units: "Увеличение штрафных единиц" #NT!
+ RUS_raise_penal_units_desc: "Еще мясо для мясорубки." #NT!
+ RUS_raise_penal_units_days_tt: "Текущие дни: [?RUS_penal_units_raised_flag:days|Y0]" #NT!
+ RUS_great_patriotic_war_flag: "Сражается в §YВеликой Отечественной войне§!" #NT!
+ RUS_add_borderline_state_to_plot: "заполнитель: добавить политически пограничное государство к фашистскому заговору" #NT!
+ RUS_add_borderline_state_to_plot_desc: "заполнитель: получает государство, которое может отделиться и присоединиться к вам на вашей территории, когда начнется война" #NT!
+ RUS_woo_army_officers: "заполнитель: завербовать офицера в фашизм" #NT!
+ RUS_woo_army_officers_desc: "заполнитель: Когда вы начнете гражданскую войну, этот офицер может присоединиться к вам и привести часть своих войск." #NT!
+ RUS_woo_navy_officers: "заполнитель: завербовать офицера в фашизм" #NT!
+ RUS_woo_navy_officers_desc: "заполнитель: Когда вы начнете гражданскую войну, этот офицер может присоединиться к вам, но они не приведут войска" #NT!
+ RUS_noisy_meeting_in_paris: "заполнитель: провести шумную встречу в Париже" #NT!
+ RUS_noisy_meeting_in_paris_desc: "заполнитель: «Еще не завершено», заставляет Стальна с подозрением относиться к одному из его верных политических советников." #NT!
+ RUS_soviet_civil_war_dec_cat: "[GetSovietCivilWarName]" #NT!
+ RUS_soviet_civil_war_dec_cat_desc: "На нас нависла угроза очередной гражданской войны. Мы должны подготовиться к худшему и обеспечить контроль над как можно большей частью страны и вооруженными силами. Но мы также должны быть осторожны и избегать привлечения слишком большого внимания, иначе [ROOT.getLeader] может заставить нас действовать раньше, чем мы будем готовы." #NT!
+ RUS_SOS_civil_war_divisions_tt_long: "§YПоддержка гражданской войны§!\n§LIЧрезвычайно важно обеспечить в случае начала гражданской войны как можно большую поддержку среди вооруженных сил и среди населения в целом.\n\n§![GetArmedForcesText]\n \n----\nЕсть ежедневный §Y20%§! риск того, что Сталин начнет войну, когда паранойя пройдет §R90%§_2\n----\n[GetCategoryStateText]" #NT!
+ RUS_opposition_civil_war_divisions_value: "[GetArmedForcesData]" #NT!
+ RUS_SOS_civil_war_divisions_value: "[?RUS.RUS_centre_army_support|%Y0]" #NT!
+ RUS_SOT_civil_war_divisions_value: "[?RUS.RUS_left_opposition_army_support|%Y0]" #NT!
+ RUS_SOB_civil_war_divisions_value: "[?RUS.RUS_right_opposition_army_support|%Y0]" #NT!
+ RUS_SOP_civil_war_divisions_value: "[?RUS.RUS_exiles_army_support|%Y0]" #NT!
+ RUS_SOS_civil_war_divisions_tt: "Если бы Гражданская война началась прямо сейчас, [?RUS.RUS_centre_army_support|%Y0] армии, [?RUS.RUS_centre_navy_support|%Y0] флота и [?RUS.RUS_centre_air_support|%Y0] ВВС остались бы верны [RUS.GetLeader].\n----\nЕжедневно §Y20%§! риск того, что Сталин начнет войну, когда паранойя пройдет §R90%§!\n" #NT!
+ RUS_SOT_civil_war_divisions_tt: "Поддержка армии: [?RUS.RUS_left_opposition_army_support|%Y0] \nПоддержка флота: [?RUS.RUS_left_opposition_navy_support|%Y0] \nПоддержка авиации: [?RUS.RUS_left_opposition_air_support|%Y0] \n\nПопулярная поддержка: [?RUS_opposition_popular_support|Y1]§Y%§!\n (Популярная поддержка влияет на уровень капитуляции [FROM.GetLeader] и добавляет партизанские отряды во время войны)" #NT!
+ RUS_SOB_civil_war_divisions_tt: "Поддержка армии: [?RUS.RUS_right_opposition_army_support|%Y0] \nПоддержка флота: [?RUS.RUS_right_opposition_navy_support|%Y0] \nПоддержка авиации: [?RUS.RUS_right_opposition_air_support|%Y0] \n\nПопулярная поддержка: [?RUS_opposition_popular_support|Y1]§Y%§!\n (Популярная поддержка влияет на уровень капитуляции [FROM.GetLeader] и добавляет партизанские отряды во время войны)" #NT!
+ RUS_SOP_civil_war_divisions_tt: "Поддержка армии: [?RUS.RUS_exiles_army_support|%Y0] \nПоддержка флота: [?RUS.RUS_exiles_navy_support|%Y0] \nПоддержка авиации: [?RUS.RUS_exiles_air_support|%Y0] \n\nПопулярная поддержка: [?RUS_opposition_popular_support|Y1]§Y%§!\n (Популярная поддержка влияет на уровень капитуляции [FROM.GetLeader] и добавляет партизанские отряды во время войны)" #NT!
+ RUS_select_headquarters_text: "Выберите базу для вашего восстания, нажав на значок штаба на карте: \n\n£select_headquarters_texticon" #NT!
+ RUS_select_state_text: "Для расширения влияния создайте новые ячейки на карте:\n\n £infiltrate_state_texticon\n\n" #NT!
+ RUS_opposition_army_support_non_existant: "§RПочти отсутствует§!" #NT!
+ RUS_opposition_army_support_very_low: "§RОчень низкий§!" #NT!
+ RUS_opposition_army_support_low: "§YLow§!" #NT!
+ RUS_opposition_army_support_medium: "§YMedium§!" #NT!
+ RUS_opposition_army_support_high: "§GHigh§!" #NT!
+ RUS_expand_nkvd_opposition: "Расширить военный отдел НКВД." #NT!
+ RUS_expand_nkvd_opposition_desc: "Мы должны воспользоваться возможностью для расширения Военного управления НКВД. Эти войска могут оказаться очень полезными в обеспечении нашей будущей победы." #NT!
+ RUS_expand_nkvd_opposition_tt: "Добавляет 5 дивизий НКВД, которые останутся верными к началу [GetSovietCivilWarName]." #NT!
+ RUS_nkvd_cd_tt: "\nЭто решение будет снова доступно через §Y120 дней§!." #NT!
+ RUS_influence_army_opposition: "Увеличение поддержки армии" #NT!
+ RUS_influence_army_opposition_desc: "Проникнув в армию, мы теперь можем начать находить младших офицеров и рядовых, симпатизирующих нашему делу, и следить за тем, чтобы они присоединились к нашей стороне, если начнется война." #NT!
+ RUS_influence_army_opposition_tt: "Поддержка армии увеличивается" #NT!
+ RUS_influence_cd_tt: "\nЭто решение будет доступно снова через §Y60 дней§!." #NT!
+ RUS_influence_army_opposition_level_tt: "Поддержка в армии меньше §Y70%§!" #NT!
+ RUS_influence_navy_opposition: "Увеличение поддержки ВМФ" #NT!
+ RUS_influence_navy_opposition_desc: "Военно-морской флот, возможно, и не очень полезен в гражданской войне, но он все равно может помочь нам захватить ключевые позиции и обеспечить снабжение. Так что стоило бы обеспечить лояльность ряда капитанов. Кроме того, наличие флота после войны открывает для нас новые двери на международной арене." #NT!
+ RUS_influence_navy_opposition_tt: "Поддержка ВМФ увеличивается" #NT!
+ RUS_influence_navy_opposition_level_tt: "Поддержка на флоте меньше §Y70%§!" #NT!
+ RUS_influence_airforce_opposition: "Увеличение поддержки ВВС" #NT!
+ RUS_influence_airforce_opposition_desc: "Используя наши связи в вооруженных силах, мы сможем найти пилотов и командиров авиации, сочувствующих нашему делу. Наличие на нашей стороне военно-воздушных сил, несомненно, значительно облегчит войну." #NT!
+ RUS_influence_airforce_opposition_tt: "Поддержка ВВС увеличивается" #NT!
+ RUS_influence_air_opposition_level_tt: "Поддержка в ВВС меньше §Y70%§!" #NT!
+ RUS_recruit_general_opposition: "Наймите генерала для своего дела" #NT!
+ RUS_recruit_general_opposition_desc: "Мы должны использовать наши связи внутри Красной Армии, чтобы попытаться убедить высокопоставленных офицеров перейти на нашу сторону в случае гражданской войны." #NT!
+ RUS_recruit_general_opposition_tt: "Один генерал или фельдмаршал становится верным нашему делу." #NT!
+ RUS_recruit_admiral_opposition: "Пригласите адмирала на свою сторону" #NT!
+ RUS_recruit_admiral_opposition_desc: "Мы должны использовать наши связи внутри Красного флота, чтобы попытаться убедить высокопоставленных офицеров присоединиться к нам в случае гражданской войны." #NT!
+ RUS_recruit_admiral_opposition_tt: "Один адмирал становится верным нашему делу" #NT!
+ RUS_recruit_cd_tt: "\nЭто решение будет доступно снова через §Y30 дней§!." #NT!
+ RUS_army_framejob: "Подставить армейского офицера" #NT!
+ RUS_army_framejob_desc: "Распуская слухи о лояльных [ROOT.GetLeader] генералах и передавая в руки НКВД некоторые поддельные «улики», мы сможем на время отвлечь внимание от себя. В качестве бонусного эффекта, если нам повезет, репрессивные действия могут разочаровать других военнослужащих." #NT!
+ RUS_army_framejob_tt: "Один генерал или фельдмаршал будет обвинен в предательской деятельности." #NT!
+ RUS_army_framejob_cd_tt: "\nЭто решение снова будет доступно через §Y[?RUS_army_framejob_decision_re_enable_days_display] дня§!." #NT!
+ RUS_navy_framejob: "Подставить адмирала" #NT!
+ RUS_navy_framejob_desc: "Распуская слухи о лояльных [ROOT.GetLeader] адмиралах и передавая в руки НКВД некоторые поддельные «доказательства», мы сможем на время отвлечь внимание от себя. В качестве бонусного эффекта, если нам повезет, другие военно-морские силы могут разочароваться в репрессивных действиях." #NT!
+ RUS_navy_framejob_tt: "Одного адмирала осудят за предательскую деятельность." #NT!
+ RUS_navy_framejob_cd_tt: "\nЭто решение снова будет доступно через §Y[?RUS_navy_framejob_decision_re_enable_days_display] дня§!." #NT!
+ RUS_plan_start_of_uprising_archangelsk: "Создайте секретный штаб в [FROM.GetName]." #NT!
+ RUS_plan_start_of_uprising_archangelsk_desc: "Северный регион имеет доступ к портам и находится относительно близко к Москве, что делает его хорошей базой. Однако у него плохая внутренняя инфраструктура и низкий уровень развития, поэтому вести войну отсюда будет довольно сложно, если не будет сделано что-то, чтобы облегчить это." #NT!
+ RUS_plan_start_of_uprising_odessa: "Создайте секретный штаб в [FROM.GetName]." #NT!
+ RUS_plan_start_of_uprising_odessa_desc: "Украина – хорошая база для восстания. Это богатый регион с большими городами, хорошими портами и инфраструктурой. Однако это также означает, что обратить государства на нашу сторону будет труднее, чем в менее развитых регионах [RUS.GetNameDef]." #NT!
+ RUS_plan_start_of_uprising_chita: "Создайте секретный штаб в [FROM.GetName]." #NT!
+ RUS_plan_start_of_uprising_chita_desc: "Сибирь традиционно является антисталинистским и антибольшевистским оплотом. Возможно, регион недостаточно развит, но его относительно легко привлечь на свою сторону." #NT!
+ RUS_plan_start_of_uprising_omsk: "Создайте секретный штаб в [FROM.GetName]." #NT!
+ RUS_plan_start_of_uprising_omsk_desc: "Омск удачно расположен в Западной Сибири, а также граничит с Уральским регионом и Великой степью. Несмотря на то, что он немного недостаточно развит, здесь относительно легко построить хорошую прочную базу для восстания, а затем начать поход на Москву." #NT!
+ RUS_plan_start_of_uprising_tashkent: "Создайте секретный штаб в [FROM.GetName]." #NT!
+ RUS_plan_start_of_uprising_tashkent_desc: "Создание нашей базы в районе Великой Степи означает безопасность наших спин. Чтобы добраться до Москвы, потребуется долгий марш, но большая часть боевых действий будет на нашем фронте. Кроме того, заручиться поддержкой в ​​этом регионе должно быть относительно легко." #NT!
+ RUS_plan_start_of_uprising_ufa: "Создайте секретный штаб в [FROM.GetName]." #NT!
+ RUS_plan_start_of_uprising_ufa_desc: "У Урала есть то преимущество, что его легко защитить, и размещение здесь нашей базы также позволяет нам распространить наше влияние как на Сибирь, так и на Северный регион, а также на юг, в район Великой Степи, что дает нам множество различных вариантов." #NT!
+ RUS_align_state_in_process: "В настоящее время проникает в штат" #NT!
+ RUS_planning_uprising_in_state: "Проникнуть [FROM.GetName]" #NT!
+ RUS_planning_uprising_in_siberia: "§WInfiltrate§! [FROM.GetName] §Win§! Сибирь" #NT!
+ RUS_planning_uprising_in_far_east: "§WInfiltrate§! [FROM.GetName] §Win§! Дальний Восток России" #NT!
+ #RUS_planning_uprising_in_siberia_desc: "Распространив наше влияние на [FROM.GetName], мы можем увеличить площадь территории, которую мы" #NT!
+ RUS_planning_uprising_in_urals: "§WInfiltrate§! [FROM.GetName] §Win§! Урал" #NT!
+ RUS_planning_uprising_in_northern: "§WInfiltrate§! [FROM.GetName] §Win§! Северные области" #NT!
+ RUS_planning_uprising_in_ukraine: "§WInfiltrate§! [FROM.GetName] §Win§! Украина" #NT!
+ RUS_align_states_steppe: "§WInfiltrate§! [FROM.GetName] §Win§! Степной край" #NT!
+ RUS_set_civil_war_state_tt: "Оппозиционная ячейка, созданная в [FROM.GetName], обеспечивающая лояльность государства в случае гражданской войны." #NT!
+ RUS_start_infiltrating_state_tt: "Начинается работа по созданию ячейки в [FROM.GetName]." #NT!
+ RUS_sabotage_behind_enemy_lines_decision: "Диверсии в тылу врага" #NT!
+ RUS_sabotage_behind_enemy_lines_decision_desc: "Верные партизаны, действующие в тылу врага, могут быть использованы для нарушения коммуникаций противника в [FROM.Getname]. Удары по командным пунктам, перерезание телеграфных проводов или сход поездов с рельсов делают противника менее подготовленным к отражению атак наших частей и повышают шансы на успешное освобождение России." #NT!
+ RUS_sabotage_behind_enemy_lines_decision_tt: "§YВражеские отряды§! получают урон §Yорганизации§!" #NT!
+ sabotage_behind_enemy_lines_flag: "Подготовка диверсионной акции" #NT!
+ RUS_dismiss_the_counter_revolution: "Отвергнуть контрреволюцию" #NT!
+ RUS_dismiss_the_counter_revolution_desc: "Публично осуждая любые разговоры о контрреволюции, мы сможем отвлечь внимание НКВД от наших агентов. Однако это также может означать, что мы потеряем некоторых сторонников, которые верят в ложное увольнение." #NT!
+ RUS_dismiss_the_counter_revolution_tt: "Уменьшает политическую паранойю за счет будущей стабильности и сокращения военной поддержки." #NT!
+ RUS_dismiss_cd_tt: "\nЭто решение будет доступно снова через §Y60 дней§!." #NT!
+ # RUS_state_alignment_timer: "WIP: Настройка ячеек в [?RUS_aligning_state.GetName]" #NT!
+ RUS_is_opposition_state_tt: "Оппозиционная ячейка существует в штате" #NT!
+ RUS_is_unaligned_state_tt: "Государство не присоединилось" #NT!
+ RUS_is_opposition_tt: "Оппозиция" #NT!
+ RUS_has_crackdown_tt: "Репрессии продолжаются" #NT!
+ RUS_soviet_civil_war_not_started_tt: "Гражданская война в СССР не началась" #NT!
+ RUS_has_selected_hq_tt: "Создал секретный штаб" #NT!
+ RUS_concessions_japan_vladivostok_SCW: "Предложить Владивосток Японии" #NT!
+ RUS_concessions_japan_vladivostok_SCW_desc: "Японские военные всегда жаждали Владивостока. Таким образом, они должны быть склонны помочь нам с экспедиционным корпусом, если мы будем использовать будущее владение этой территорией в качестве разменной монеты." #NT!
+ RUS_concessions_japan_vladivostok_SCW_accept: "В случае принятия [JAP.GetNameDef] будет поставлять подразделения, которые сражаются вместе с [GetSovietOppositionName] во время войны. [JAP.GetNameDefCap] по окончании войны получит контроль над Владивостоком." #NT!
+ RUS_not_has_conflict_with_japan: "§Y[ROOT.GetNameWithFlag]§!: Постоянного конфликта с §Y[JAP.GetNameWithFlag]§ нет!" #NT!
+ RUS_CSW_transfer_vladivostok_flag: "§YVladivostok§! концессия" #NT!
+ RUS_concessions_japan_sakhalin_SCW: "Сахалин за оружие" #NT!
+ RUS_concessions_japan_sakhalin_SCW_desc: "Восстанию нужно оружие. Возможно, японцы будут готовы дать нам немного, если мы покажем, что готовы отдать им остальную часть Сахалина." #NT!
+ RUS_concessions_japan_sakhalin_SCW_accept: "В случае принятия [GetSovietOppositionName] получит [JAP.GetAdjective] ружья и винтовки и, возможно, истребители, когда начнется война. [JAP.GetNameDefCap] по окончании войны получит контроль над Северным Сахалином." #NT!
+ RUS_CSW_transfer_sakhalin_flag: "§YСеверный Сахалин§! Концессия" #NT!
+ RUS_concessions_germany_baku_SCW: "Права Баку на нефть для наращивания военной мощи" #NT!
+ RUS_concessions_germany_baku_SCW_desc: "[GER.GetNameDefCap] отчаянно нуждаются в нефти для наращивания собственной военной мощи. Пообещав им эксклюзивные права на наши нефтяные месторождения после войны, они должны быть более чем готовы нам помочь." #NT!
+ RUS_concessions_germany_baku_SCW_accept: "В случае принятия [GER.GetNameDef] начнет строительство военных заводов в [?RUS.RUS_civil_war_start_state.GetName]. [GetSovietOppositionName] получает [GER.GetAdjective] танка и винтовки. [GER.GetNameDefCAP] получает права на ресурсы [229.GetName] в конце войны." #NT!
+ RUS_CSW_baku_oil_flag: "Концессия на Бакинские нефтяные месторождения" #NT!
+ RUS_CSW_german_generals_flag: "Немецкие военные советники" #NT!
+ RUS_concessions_germany_ukraininan_oil_SCW: "Украинское восстание, спонсируемое Германией" #NT!
+ RUS_concessions_germany_ukraininan_oil_SCW_desc: "Хотя было бы плохо потерять Украину, они могли бы стать ценным союзником в войне против сталинистов. Германия может тайно обучать украинскую милицию, а затем украинские повстанцы могут начать внезапную атаку, когда будут готовы." #NT!
+ RUS_concessions_germany_ukraininan_oil_SCW_accept: "В случае принятия [GER.GetNameDef] будет обучать украинские подразделения, которые поднимут восстание, когда будут готовы. [GER.GetNameDefCAP] получает права на ресурсы на территории Украины в конце войны." #NT!
+ RUS_concessions_uk_belarus_SCW: "Независимая BLR в обмен на британскую поддержку" #NT!
+ RUS_concessions_uk_belarus_SCW_desc: "Правительство [ENG.GetAdjective] симпатизирует правительству [BLR.GetAdjective] в изгнании, призывающему к независимости. Если мы пообещаем им выпустить [BLR.GetNameDef] после войны, они наверняка захотят снабдить нас оружием." #NT!
+ RUS_concessions_uk_belarus_SCW_accept: "В случае принятия [ENG.GetNameDef] начнет строительство военных заводов в [?RUS.RUS_civil_war_start_state.GetName]. [BLR.GetNameDefCAP] становится независимым в конце войны." #NT!
+ RUS_recruit_manchurian_cavalry_exiles: "Наймите маньчжурскую кавалерию в [FROM.GetName]." #NT!
+ RUS_recruit_manchurian_cavalry_exiles_desc: "Добавляет одну маньчжурскую кавалерийскую бригаду в [?RUS.RUS_civil_war_start_state.GetName], когда начинается война." #NT!
+ RUS_recruit_cavalry_exiles: "Наймите сибирскую кавалерию в [FROM.GetName]." #NT!
+ RUS_recruit_cavalry_exiles_desc: "Добавляет одну кавалерийскую бригаду в [FROM.GetName], когда начинается война." #NT!
+ recruiting_cavalry_flag: "Набор кавалерии" #NT!
+ RUS_recruit_cavalry_exiles_cost: "£command_power  §Y10§!" #NT!
+ RUS_recruit_cavalry_exiles_cost_blocked: "£command_power  §R10§!" #NT!
+ RUS_sabotage_behind_enemy_lines_cost: "£command_power  §Y15§!" #NT!
+ RUS_sabotage_behind_enemy_lines_cost_blocked: "£command_power  §R15§!" #NT!
+ RUS_wreckers_sabotage_contruction: "Саботажное строительство" #NT!
+ RUS_wreckers_sabotage_contruction_desc: "Активисты ждут приказа о забастовке на стройках по всей стране." #NT!
+ RUS_wreckers_sabotage_contruction_tt: "§Y$industrial_complex$§! зданиям нанесен ущерб" #NT!
+ RUS_wreckers_sabotage_military_production: "Саботаж военного производства" #NT!
+ RUS_wreckers_sabotage_military_production_desc: "Без вооружения армия [SOS.GetLeader] не может сражаться." #NT!
+ RUS_wreckers_sabotage_military_production_tt: "§Y$arms_factory$§! зданиям нанесен ущерб" #NT!
+ RUS_wreckers_sabotage_dockyards: "Диверсии на верфях противника" #NT!
+ RUS_wreckers_sabotage_dockyards_desc: "Нанеся ущерб военно-морскому производству [SOS.GetLeader], [SOS.GetAdjective] будет перенаправлен в другое место." #NT!
+ RUS_wreckers_sabotage_dockyards_tt: "§Y$dockyard$§! зданиям нанесен ущерб" #NT!
+ RUS_wreckers_sabotage_railways: "Диверсия железнодорожной сети противника" #NT!
+ RUS_wreckers_sabotage_railways_desc: "Без припасов армии не могут ни двигаться, ни сражаться." #NT!
+ RUS_wreckers_sabotage_railways_tt: "Враг контролирует §Y$rail_way$§! понести ущерб" #NT!
+ RUS_secure_moscow_opposition: "Безопасная Москва" #NT!
+ RUS_secure_moscow_opposition_desc: "Используйте наши связи в Москве, чтобы обеспечить восстание партизан в этом районе, стремящихся захватить столицу." #NT!
+ RUS_secure_moscow_opposition_tt: "Партизанские отряды поднимутся в Москве, когда начнется гражданская война" #NT!
+ RUS_secure_leningrad_opposition: "Безопасный Ленинград" #NT!
+ RUS_secure_leningrad_opposition_desc: "Используйте наши связи в Москве, чтобы обеспечить восстание партизан в этом районе, стремящихся отобрать город у центристов." #NT!
+ RUS_secure_leningrad_opposition_tt: "С началом гражданской войны в Ленинграде поднимутся партизанские отряды" #NT!
+ RUS_opposition_support_very_low_increase_effect_tt: "Народная поддержка восстания увеличивается на §G+0.5%§!" #NT!
+ RUS_opposition_support_low_increase_effect_tt: "Народная поддержка восстания увеличивается на §G+1%§!" #NT!
+ RUS_opposition_support_medium_increase_effect_tt: "Народная поддержка восстания увеличивается на §G+1.5%§!" #NT!
+ RUS_opposition_support_high_increase_effect_tt: "Народная поддержка восстания увеличивается на §G+2%§!" #NT!
+ RUS_opposition_support_low_decrease_effect_tt: "Народная поддержка восстания уменьшилась на §R1%§!" #NT!
+ RUS_the_head_of_the_nkvd_yezhov: "Глава НКВД - Ежов." #NT!
+ RUS_the_head_of_the_nkvd_yezhov_desc: "$RUS_genrikh_yagoda$, нынешний глава НКВД, дружит со многими представителями правой оппозиции. не должно быть невозможным убедить его в том, что путь, который мы выбрали, является правильным для этой страны." #NT!
+ RUS_the_head_of_the_nkvd_yagoda: "Глава НКВД - Ягода." #NT!
+ RUS_the_head_of_the_nkvd_yagoda_desc: "$RUS_genrikh_yagoda$ может и не дружит с лидерами правой оппозиции, но его, по крайней мере, можно урезонить. Надо по возможности заставить Ягоду увидеть ценность нашего предложения и убедить его, что наша сторона — победительница." #NT!
+ RUS_aligned_right_opposition_flag: "Сочувствующий правой оппозиции" #NT!
+ RUS_the_head_of_the_nkvd_yagoda_tt: "§Y$RUS_genrikh_yagoda$§! становится сторонником правой оппозиции." #NT!
+ RUS_the_head_of_the_nkvd_yezhov_tt: "§Y$RUS_nikolay_yezhov$§! становится сторонником правой оппозиции." #NT!
+ RUS_assassinate_stalin: "Устранить Сталина" #NT!
+ RUS_assassinate_stalin_desc: "Единственный способ мирно свергнуть тиранию – это свергнуть тирана. Это акт отчаяния, но массы будут избавлены от ужасов еще одной гражданской войны. Мы должны свергнуть его, а затем приступить к реализации планов переворота, прежде чем его преемник успеет заручиться поддержкой." #NT!
+ RUS_assassinate_stalin_good_tt: "На Сталина совершается покушение\nШанс на успех = §G80%§!\n £trigger_yes база: 50 %\n £trigger_yes $RUS_infiltrate_the_nkvd$: +30%" #NT!
+ RUS_assassinate_stalin_bad_tt: "На Сталина совершается покушение\nШанс на успех: §Y50%§!\n £trigger_yes база: 50 %\n £trigger_no $RUS_infiltrate_the_nkvd$: +30%" #NT!
+ RUS_assassinate_stalin_outcome_tt: "---\nЕсли попытка успешна, §Y$RUS_lavrenty_beriya$§! возьмет на себя временный контроль, создав возможность для успешного переворота.\nЕсли попытка не удалась, $RUS_paranoia_very_high_increase_effect_tt$." #NT!
+ RUS_send_supporters_abroad: "Отправить сторонников за границу" #NT!
+ RUS_send_supporters_abroad_desc: "Самое безопасное место — как можно дальше от соратников Сталина. Нам необходимо вывести ключевых людей из страны в безопасное место, пока не придет время вернуться и завершить работу, которую мы начали." #NT!
+ RUS_send_supporters_abroad_exile_tt: "Следующие персонажи будут отправлены в изгнание (§Gперсонажи в изгнании не могут быть удалены§!):" #NT!
+ RUS_send_supporters_abroad_back_tt: "\nЭти персонажи будут возвращены в страну, чтобы поддержать нас в случае гражданской войны.\n" #NT!
+ RUS_character_purged_flag: "Был очищен" #NT!
+ RUS_align_general_stalin: "[ROOT.GetLeader] обеспечивает лояльность генерала" #NT!
+ RUS_align_general_stalin_desc: "Используя все имеющиеся в его распоряжении средства, [ROOT.GetLeader] пытается обеспечить лояльность командующего армией в качестве подготовки к будущему конфликту." #NT!
+ RUS_align_general_stalin_tt: "§Y[?RUS.RUS_selected_general_stalin.GetName]§! становится верным [ROOT.GetLeader]" #NT!
+ RUS_permanent_revolution_dec_cat: "Перманентная революция" #NT!
+ RUS_permanent_revolution_dec_cat_desc: "[GetAppropriatePermanentRevolutionDecCatDesc]" #NT!
+ RUS_permanent_revolution_dec_cat_desc_soviet: "$RUS_the_permanent_revolution_desc$" #NT!
+ RUS_permanent_revolution_dec_cat_desc_targets: "Марксистская теория учит, что революция неизбежна, если обстоятельства благоприятны, и многочисленные вражеские агенты [RUS.GetAdjective], действующие в пределах наших границ, гарантируют, что обстоятельства среди рабочего класса являются подходящими для успешного вооруженного восстания в [ROOT.GetName]." #NT!
+ RUS_organize_fifth_columnists_in_enemy_neighbor: "Организовать [FROM.GetAdjective] Пятой колонны" #NT!
+ RUS_organize_fifth_columnists_in_enemy_neighbor_desc: "Рабочие и крестьяне, симпатизирующие большевистской партии, на протяжении всего [FROM.GetNameDef] подготовились к вооруженному восстанию и готовы нанести удар там, где противник меньше всего этого ожидает." #NT!
+ RUS_ignite_uprising_timer_mission: "Надвигающееся революционное восстание" #NT!
+ RUS_ignite_uprising_timer_mission_desc: "[ROOT.GetAdjective] рабочие и крестьяне, симпатизирующие [RUS.GetAdjective] большевистской партии, готовятся к вооруженному восстанию в стране." #NT!
+ RUS_ignite_uprising_timer_mission_tt: "§RТроцкистские революционные ополчения поднимутся во многих контролируемых государствах.§!\n" #NT!
+ RUS_ignite_revolutionary_uprisings_effect_tt: "Уменьшите £stability_texticon §YStability§! и увеличить §Yпопулярность коммунизма§! в [FROM.GetNameDef] на основе текущей §Yпопулярности коммунизма§! в стране. Текущие эффекты:" #NT!
+ RUS_ignite_revolutionary_uprisings: "Перемешайте массы в [FROM.GetNameDef]" #NT!
+ RUS_ignite_revolutionary_uprisings_desc: "Рабочие [FROM.GetNameDef] уже начали выражать свое недовольство [FROM.GetRulingParty] и его буржуазной политикой. Настало время пропагандировать коммунистическую идеологию среди [FROM.GetAdjective] рабочего класса." #NT!
+ RUS_align_admiral_stalin: "[ROOT.GetLeader] обеспечивает лояльность адмирала" #NT!
+ RUS_align_admiral_stalin_desc: "Используя угрозы, взятки и личные связи, [ROOT.GetLeader] пытается обеспечить лояльность лидера флота в качестве подготовки к будущему конфликту." #NT!
+ RUS_align_admiral_stalin_tt: "§Y[?RUS.RUS_selected_admiral_stalin.GetName]§! становится верным [ROOT.GetLeader]" #NT!
+ RUS_ukraine_crackdown_timer: "Репрессии на Украине" #NT!
+ RUS_ukraine_crackdown_timer_desc: "НКВД решило атаковать Украину, проводя массовые аресты и допросы, чтобы обеспечить лояльность людей в регионе." #NT!
+ RUS_ukraine_crackdown_timer_tt: "Одно государство в регионе Украины присоединится к центристам." #NT!
+ RUS_steppe_crackdown_timer: "Репрессии в районе Великой Степи" #NT!
+ RUS_steppe_crackdown_timer_desc: "НКВД решило атаковать регион Великой Степи, проводя массовые аресты и допросы, чтобы обеспечить лояльность жителей региона." #NT!
+ RUS_steppe_crackdown_timer_tt: "Одно государство в регионе Великой Степи присоединится к центристам." #NT!
+ RUS_northern_crackdown_timer: "Репрессии в Северном регионе" #NT!
+ RUS_northern_crackdown_timer_desc: "НКВД решило атаковать Северный регион, проводя массовые аресты и допросы, чтобы обеспечить лояльность жителей региона." #NT!
+ RUS_northern_crackdown_timer_tt: "Один штат в Северном регионе присоединится к центристам." #NT!
+ RUS_siberian_crackdown_timer: "Репрессии в Сибири" #NT!
+ RUS_siberian_crackdown_timer_desc: "НКВД решило атаковать Сибирский регион, проводя массовые аресты и допросы, чтобы обеспечить лояльность жителей региона." #NT!
+ RUS_siberian_crackdown_timer_tt: "Одно государство в Сибири присоединится к центристам." #NT!
+ RUS_urals_crackdown_timer: "Репрессии на Урале" #NT!
+ RUS_urals_crackdown_timer_desc: "НКВД решило атаковать Урал и Зауралье, проводя массовые аресты и допросы, чтобы обеспечить лояльность населения региона." #NT!
+ RUS_urals_crackdown_timer_tt: "Одно государство Уральского региона присоединится к центристам." #NT!
+ RUS_the_stalin_constitution_mission: "$RUS_the_stalin_constitution$" #NT!
+ RUS_the_stalin_constitution_mission_desc: "[FROM.GetLeader] работает над завершением фокуса $RUS_the_stalin_constitution$." #NT!
+ RUS_the_stalin_constitution_mission_tt: "---\nКогда начнется гражданская война, центристы получат модификаторы §Y$RUS_the_stalin_constitution$§! фокус." #NT!
+ RUS_the_zinovyevite_terrorist_center_mission: "$RUS_the_zinovyevite_terrorist_center$" #NT!
+ RUS_the_zinovyevite_terrorist_center_mission_desc: "[FROM.GetLeader] работает над завершением фокуса $RUS_the_zinovyevite_terrorist_center$." #NT!
+ RUS_the_zinovyevite_terrorist_center_mission_avoided_tt: "Великой чистки удастся избежать. На данный момент..." #NT!
+ RUS_the_zinovyevite_terrorist_center_mission_tt: 
+ RUS_the_anti_soviet_trotskyist_center_mission: "$RUS_the_anti_soviet_trotskyist_center$" #NT!
+ RUS_the_anti_soviet_trotskyist_center_mission_desc: "[FROM.GetLeader] работает над завершением фокуса $RUS_the_anti_soviet_trotskyist_center$." #NT!
+ RUS_the_workers_dictatorship_mission: "$RUS_the_workers_dictatorship$" #NT!
+ RUS_the_workers_dictatorship_mission_desc: "[FROM.GetLeader] работает над завершением фокуса $RUS_the_workers_dictatorship$." #NT!
+ RUS_the_workers_dictatorship_mission_tt: "---\nКогда начнется гражданская война, центристы получат модификаторы §Y$RUS_the_workers_dictatorship$§! фокус." #NT!
+ RUS_the_military_conspiracy_mission: "$RUS_the_military_conspiracy$" #NT!
+ RUS_the_military_conspiracy_mission_desc: "[FROM.GetLeader] работает над завершением фокуса $RUS_the_military_conspiracy$." #NT!
+ RUS_increase_opposition_army_support_tt: "Поддержка оппозиции в армии увеличится на §G+10%§!." #NT!
+ RUS_increase_opposition_army_support_small_tt: "Поддержка оппозиции в армии увеличится до §G+5%§!." #NT!
+ RUS_add_armed_forces_support_state_tt: "Поддержка оппозиции в вооруженных силах увеличится до §G+2%§!." #NT!
+ RUS_increase_opposition_navy_support_small_tt: "Поддержка оппозиции на флоте увеличится до §G+5%§!." #NT!
+ RUS_decrease_all_opposition_army_tt: "Поддержки оппозиции в армии будет §Rdecrease§!." #NT!
+ RUS_decrease_all_opposition_navy_tt: "Поддержки оппозиции на флоте будет §Rdecrease§!." #NT!
+ RUS_decrease_all_opposition_air_tt: "Поддержка оппозиции в ВВС составит §Rdecrease§!." #NT!
+ RUS_socialism_in_one_country_mission: "$RUS_socialism_in_one_country$" #NT!
+ RUS_socialism_in_one_country_mission_desc: "[FROM.GetLeader] работает над завершением фокуса $RUS_socialism_in_one_country$." #NT!
+ RUS_socialism_in_one_country_mission_tt: "---\nКогда начнется гражданская война, центристы получат модификаторы §Y$RUS_socialism_in_one_country$§! фокус." #NT!
+ RUS_secure_the_administration_mission: "$RUS_secure_the_administration$" #NT!
+ RUS_secure_the_administration_mission_desc: "[FROM.GetLeader] работает над завершением фокуса $RUS_secure_the_administration$." #NT!
+ RUS_secure_the_administration_mission_tt: "---\nКогда начнется гражданская война, центристы получат модификаторы §Y$RUS_secure_the_administration$§! фокус." #NT!
+ RUS_the_bloc_of_rights_and_trotskyites_mission: "$RUS_the_bloc_of_rights_and_trotskyites$" #NT!
+ RUS_the_bloc_of_rights_and_trotskyites_mission_desc: "[FROM.GetLeader] работает над завершением фокуса $RUS_the_bloc_of_rights_and_trotskyites$." #NT!
+ RUS_behead_the_snake_mission: "$RUS_behead_the_snake$" #NT!
+ RUS_behead_the_snake_mission_desc: "[FROM.GetLeader] работает над завершением фокуса $RUS_behead_the_snake$." #NT!
+ RUS_polish_territory: "Польская территория" #NT!
+ RUS_polish_territory_desc: "В настоящее время мы контролируем большую часть территории, которая когда-то была частью так называемой Польской Республики. Если бы нам пришлось вернуть часть этого, руководство, которое мы установили в [POL.capital.GetCapitalVictoryPointName], смогло бы использовать это как доказательство преимуществ сотрудничества с [ROOT.GetNameDef]." #NT!
+ RUS_return_states_to_poland: "Вернуть состояния в [POL.getname]" #NT!
+ RUS_return_states_to_poland_desc: "В качестве жеста доброй воли и чтобы продемонстрировать, кто здесь главный, мы должны вернуть всю территорию к западу от [95.GetCapitalVictoryPointName], на которую претендует [POL.getNameDef], марионеточному режиму [POL.GetAdjective]." #NT!
+ fought_vaps_flag: "Расправа с вапсами" #NT!
+ RUS_integrate_czechoslovakia: "Интегрировать Чехословакию" #NT!
+ RUS_integrate_bulgaria: "Интегрировать Болгарию" #NT!
+ RUS_integrate_poland: "Интегрировать Польшу" #NT!
+ RUS_integrate_yugoslavia: "Интегрировать Югославию" #NT!
+ RUS_declare_the_pan_slavic_union: "Провозгласить Панславянский союз." #NT!
+ RUS_integrated_czechoslovakia_flag: "[RUS.GetNameDefCAP] интегрировал [CZE.GetName]" #NT!
+ RUS_integrated_bulgaria_flag: "[RUS.GetNameDefCAP] интегрировал [BUL.GetName]" #NT!
+ RUS_integrated_poland_flag: "[RUS.GetNameDefCAP] интегрировал [POL.GetName]" #NT!
+ RUS_integrated_yugoslavia_flag: "[RUS.GetNameDefCAP] интегрировал [YUG.GetName]" #NT!
+ form_mountainous_republic_category: "Образовать Горскую Республику Северного Кавказа." #NT!
+ form_mountainous_republic_category_desc: "Во время Гражданской войны в России великий Тапа Чермоев попытался объединить республики, расположенные на Северном Кавказе, под общим знаменем, чтобы дать отпор русским захватчикам. Теперь народы Северного Кавказа снова объединятся, чтобы изгнать иностранные державы и восстановить свою славу!" #NT!
+ form_mountainous_republic: "Объединение горных республик" #NT!
+ form_transcaucasus_category: "Закавказская Республика" #NT!
+ form_transcaucasus_category_desc: "Закавказская республика, которая была недавно распущена после принятия Советской Конституции 1936 года, до сих пор остается идеей, запечатлевшейся в умах людей. Если стране удастся объединить эти территории, есть шанс, что Федерация государств будет восстановлена ​​и Закавказье снова станет единым и сильным." #NT!
+ form_transcaucasian_republic: "Воссоздать Закавказскую Федерацию" #NT!
+ unite_azeris: "Воссоединить азербайджанскую диаспору" #NT!
+ claim_northern_caucasus: "Интегрировать Северный Кавказ" #NT!
+ liberate_anatolian_peoples: "Иски в Анатолии" #NT!
+ restore_kalmyks: "Восстановить Калмыцкое ханство." #NT!
+ release_kalmyk_khanate_tt: "Релизы §YKalmykia§! как предмет" #NT!
+ release_turkish_kurdistan: "Подчинить анатолийских курдов" #NT!
+ release_anatolian_kurdistan_tt: "Выпускает анатолийский §YKurdistan§! как предмет" #NT!
+ restore_crimean_khanate: "Восстановить Крымское ханство." #NT!
+ restore_crimean_khanate_tt: "Релизы §YCrimea§! как предмет" #NT!
+ form_siberia_category: "Сибирское объединение" #NT!
+ form_siberia_category_desc: "Сибирь никогда не имела единой идентичности ни в культурном, ни в этническом, ни в политическом отношении, кроме нынешней русской. Однако, благодаря тому, что сибирский народ оказался в одном царстве руками русских, он никогда не был более сплоченным. Если бы государство объединило Сибирь и вытеснило русских империалистов, многие люди наверняка согласились бы на объединение в рамках этого нового государства, и многие просят, чтобы это стало реальностью." #NT!
+ form_siberian_republic: "Образовать Сибирское государство" #NT!
+ form_siberia_russian_siberia_coring_states_tt: "Получите ядра на всех §YRussian§! Штаты в Сибири" #NT!
+ form_siberia_yakutia_coring_states_tt: "Получите ядра на всех §YYakut§! состояния" #NT!
+ form_siberia_altai_coring_states_tt: "Получите ядра на всех §YAltaian§! состояния" #NT!
+ form_siberia_ostyak_coring_states_tt: "Получите ядра на всех §YOstyak-Vogulian§! состояния" #NT!
+ form_siberia_yamalia_coring_states_tt: "Получите ядра на всех §YYamalo-Nenets§! состояния" #NT!
+ conquer_the_fareast: "Интегрируйте Дальний Восток" #NT!
+ far_eastern_states_coring_states_tt: "Получите ядра во всех государствах §YДальнего Востока§!." #NT!
+ push_to_the_urals: "Натиск на Урал" #NT!
+ liberate_the_ainu: "Освободить айнов" #NT!
+ form_idel_ural_category: "Идель-Уральское воссоединение" #NT!
+ form_idel_ural_category_desc: "1 марта 1918 года Милли Меджлис, также известный как Национальный совет, попытался объявить о создании Идель-Уральской республики, но ему помешали обе стороны Гражданской войны. Сегодня концепция единой нации в регионе все еще широко не исследована, но если бы ее можно было объявить, чтобы защитить людей от российского империализма, общественная поддержка была бы огромной." #NT!
+ form_idel_uralic_republic: "Осуществите мечту Милли Меджлиса" #NT!
+ form_baltic_federation_flag: "Создана §YБалтийская Федерация§!." #NT!
+ banned_fascism_flag: "Запретил фашизм" #NT!
+ already_targeted_flag: "уже стал мишенью" #NT!
+ restructure_supply_system: "Реорганизация железнодорожной системы" #NT!
+ restructure_supply_system_desc: "Перенаправив строительные материалы и железнодорожных рабочих, мы можем быстро создать небольшое количество временных складов снабжения вдоль некоторых наших железных дорог. Однако это не является устойчивым способом управления системой. \n\n§RЭто решение может быть принято только один раз. Бонус исчезнет, ​​если вы построите более 3 дополнительных центров снабжения.§!" #NT!

@@ -1,0 +1,442 @@
+ideas = {
+
+	country = {
+	SER_peoples_army = {
+			allowed = {
+				original_tag = SER
+			}
+
+            picture = nkvd_2
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.035
+			}
+		}
+    SER_workers_construction = {
+
+            allowed = {
+				original_tag = SER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+            
+			picture = generic_production_bonus
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				stability_factor = -0.05
+			}
+		}	
+	SER_defensive_war = {
+
+            allowed = {
+				original_tag = SER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_fortify_the_borders
+			removal_cost = -1
+			
+			modifier = {
+				enemy_justify_war_goal_time = 0.15
+				army_core_defence_factor = 0.1
+			}	
+		}	
+	SER_mobilization_speed = {
+
+            allowed = {
+				original_tag = SER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_motorized_focus
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.03
+			}		
+		}	
+	SER_modernization = {
+
+            allowed = {
+				original_tag = SER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_flexible_foreign_policy2
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.1
+			}	
+		}			
+	SER_technology_treaty = {
+
+			allowed = {
+				original_tag = SER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = FRA_scw_intervention_nationalists_focus
+			removal_cost = -1
+			
+			modifier = {
+			    army_attack_factor = 0.10
+			    army_defence_factor = 0.10
+
+			}	
+		}	
+	SER_production_efficiency = {
+
+			allowed = {
+				original_tag = SER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = ast_all_in
+			removal_cost = -1
+			
+			modifier = {
+			    production_factory_efficiency_gain_factor = 0.1 
+			    production_factory_start_efficiency_factor = 0.1 
+
+			}	
+		}	
+	SER_new_generation = {
+
+			allowed = {
+				original_tag = SER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = YUG_all_yugoslavian_regiments
+			removal_cost = -1
+			
+			modifier = {
+			    conscription = 0.035
+			}	
+		}			
+	SER_balkan_league = {
+
+			allowed = {
+				original_tag = SER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = YUG_federal_defense_council
+			removal_cost = -1
+			
+			modifier = {
+			    army_attack_factor = 0.10
+			}	
+		}	
+	SER_bosnian_rights_idea = {
+
+			allowed = {
+				original_tag = SER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = FRA_scw_intervention_republicans_focus
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = -0.05
+				conscription = -0.0025
+				political_power_gain = 0.15
+			}	
+		}
+	SER_woman_soldiers = {
+
+			allowed = {
+				original_tag = SER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			} 
+
+			picture = YUG_local_militias
+			removal_cost = -1
+			
+			modifier = {
+			    war_support_factor = 0.05
+			    conscription = 0.015
+			}	
+		}		
+	SER_workers_strikes = {
+
+			allowed = {
+				original_tag = SER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = FRA_factory_strikes
+			removal_cost = -1
+			
+			modifier = {
+			    production_speed_buildings_factor  = -0.3
+				communism_drift = 0.15
+			}	
+		}
+	SER_alexander = {
+
+			allowed = {
+				original_tag = SER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = ser_alexander
+			removal_cost = -1
+			
+			modifier = {
+			     	stability_factor = 0.05 
+			}	
+		}	
+	}	
+
+	# TECHNOLOGY
+	
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		jadransko_brodogradiliste = {
+			
+			picture = generic_naval_manufacturer_2
+
+			
+			allowed = {
+				original_tag = SER
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			equipment_bonus = {
+				# generic shipyard?
+			}
+			
+			traits = { naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	aircraft_manufacturer = { 
+		
+		designer = yes
+		
+		ikarus = {
+			
+			picture = generic_air_manufacturer_3
+
+			allowed = {
+				original_tag = SER
+				NOT = { has_dlc = "Death or Dishonor" }		
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# produced under licence: Hawker Fury, Potez 25, Avia BH-33, own flying boats and recon aircrafts
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		YUG_ikarus = {
+		
+			picture = generic_air_manufacturer_3
+			
+
+			allowed = {
+				original_tag = SER
+				has_dlc = "Death or Dishonor"
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# produced under licence: Hawker Fury, Potez 25, Avia BH-33, own flying boats and recon aircrafts
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		rogozarski = {
+			
+			picture = generic_air_manufacturer_2
+
+			allowed = {
+				original_tag = SER
+				NOT = { has_dlc = "Death or Dishonor" }
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# trainers and fighter airplanes Rogozarski PVT
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		YUG_rogozarski = {
+
+			picture = generic_air_manufacturer_2
+			
+
+			allowed = {
+				original_tag = SER
+				has_dlc = "Death or Dishonor"
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# trainers and fighter airplanes Rogozarski PVT
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		zmaj = {
+			
+			picture = generic_air_manufacturer_1
+
+			allowed = {
+				original_tag = SER
+				NOT = { has_dlc = "Death or Dishonor" }
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# trainers and bombers
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		YUG_zmaj = {
+
+			picture = generic_air_manufacturer_1
+					
+
+			allowed = {
+				original_tag = SER
+				has_dlc = "Death or Dishonor"
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# trainers and bombers
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		zastava_arms = {
+			
+			picture = generic_infantry_equipment_manufacturer_3
+
+			
+			allowed = {
+				original_tag = SER
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			equipment_bonus = {
+				# trainers and bombers
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}	
+	

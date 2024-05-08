@@ -1,0 +1,20 @@
+﻿units = {
+
+	##### Naval OOB #####
+	fleet = {
+		name = "Royal Egyptian Navy"
+		naval_base = 4076 # Halifax
+		task_force = {				
+			name = "Alexandia Squadron"			
+			location = 4076 # Halifax
+			# Scrap Iron Flotilla
+			ship = { name = "HMS Ibrahim el Awal" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = EGY creator = ENG version_name = "Town Class" } } }
+			ship = { name = "HMS Mohamed Ali el Kebir" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = EGY creator = ENG version_name = "Town Class" } } }
+                        ship = { name = "HMS Farouk" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = EGY creator = ENG version_name = "O/P/R Class" } } }
+			ship = { name = "HMS Sultan Ghazi" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = EGY creator = ENG version_name = "O/P/R Class" } } }	
+
+		}				
+	}
+}
+
+

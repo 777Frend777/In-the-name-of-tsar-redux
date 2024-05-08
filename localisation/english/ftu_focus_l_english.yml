@@ -1,0 +1,147 @@
+﻿l_english:
+  FTU_partition:0 "Demand Patriation!" #Leave France
+  FTU_partition_desc:0 "Enough of the French rule! We shall seek patriation and eventual independence, even if it means by force..."
+  FTU_fascist:0 "Ethnic Supremacy" #Nationalism
+  FTU_fascist_desc:0 "The French have oppressed our native people for decades. It's time that we break free from their rule and establish a government that puts us, the native people, above the French invaders."
+  FTU_ethinic_boudaries:0 "Ethnic Boundaries" #Racial divisions
+  FTU_ethinic_boudaries_desc:0 "The French have established arbitrary straight lines based on convenience, rather than boundaries based on our ethnic divisions. This must be rectified."
+  FTU_forced_labour:0 "Forced Labour" #Slavery beasically 
+  FTU_forced_labour_desc:0 "The French have oppressed our people, and it is time to give them justice. We shall put the French invaders that remain in our rightful land to work, even if it kills them!"
+  FTU_purge_french:0 "Purge French Influence" 
+  FTU_purge_french_desc:0 "When the French invaded our rightful land, they changed our ethnic names to Frenchified and corrupted versions of our towns, cities, and regions. In order to purge French influence, this must be adjusted."
+  FTU_independence:0 "Colonial Independence" #fight for independence 
+  FTU_independence_desc:0 "The time of French rule is over. With their central government in disarray, it's time for us to gain independence."
+  FTU_obedience:0  "Colonial Obedience"
+  FTU_obedience_desc:0 "The French have been benevolent to our people. It is only right if we stick to our colonial masters and ensure cooperation between our people and the French."
+  FTU_african_axis:0 "Form the African Axis" #African Alliance
+  FTU_african_axis_desc:0 "We are not the only ones who gained independence from France. Our fellow African brothers have also joined us in the fight against France. We must stand together as one force."
+  FTU_one_africa:0 "Unite the African Axis" #One-nation africa 
+  FTU_one_africa_desc:0 ""
+  FTU_offer_support_jap:0 "Seek Japanese Support"
+  FTU_offer_support_jap_desc:0 "Japan is one of the few nations within Asia that remained untouched by the colonial powers. In order to advance our navy, we should align ourselves with them."
+  FTU_jap_ships:0 "One Man's Trash..." #Buy some WW1 ships from Japan
+  FTU_jap_ships_desc:0 "Japan has been seeking to get rid of their old ships from the Great War. We need to bolster our navy, and this is the perfect opportunity to improve it."
+  FTU_infra_effort:0 "Infrastructure Projects"
+  FTU_infra_effort_desc:0 "A country without proper infrastructure cannot pursue advanced projects or constructions."
+  FTU_civil_effort:0 "Industrial Expansion I"
+  FTU_civil_effort_desc:0 "Focus all our political efforts on building up the civilian industry in a great leap forward."
+  FTU_port_effort:0 "Build New Ports"
+  FTU_port_effort_desc:0 "The expansion of our navy should be our first priority. Assign all available resources to construct new Naval Bases."
+  FTU_refinery:0 "Refineries" #adds one refinery plant
+  FTU_refinery_desc:0 "Our own oil production is very limited and importing oil puts us at the mercy of foreign interests. The safest solution would be to perfect our synthetic oil technology."
+  FTU_dockyard:0 "Fund New Dry Docks"
+  FTU_dockyard_desc:0 "The expansion of our navy should be our first priority. Assign all available resources to construct new Dockyards."
+  FTU_war_situation:0 "Develop the Military"
+  FTU_war_situation_desc:0 "Our military is severely lacking. In order to defend and protect ourselves from foreign invaders, we must develop our military."
+  FTU_forts:0 "Fortification Effort" #Gives fortification bonus
+  FTU_forts_desc:0 "Our current defenses are utterly inadequate. We must focus our efforts on beefing up our fortifications!"
+  FTU_army:0 "Supply the French Army" #Provide troops for french army
+  FTU_army_desc:0 "The French Army needs all the help it can get. As loyal subjects to the French, it is our duty to supply them with our men."
+  FTU_separate_army:0 "Supply Our Own Army" #Dont provide forces to the overlord
+  FTU_separate_army_desc:0 "The French have enough men as it is. Protection of ourselves is of much more importance."
+  FTU_slot_1:0 "Extra Research Slot I"
+  FTU_slot_1_desc:0 "Our industrial expansion and other recent advances might allow us to conduct more R&D in parallel."
+  FTU_equipment:0 "Equipment Modernisation"
+  FTU_equipment_desc:0 "The limits for what equipment can be carried by infantry are constantly being pushed. We will focus on giving our troops the best tools available."
+  FTU_artillery:0 "Artillery Effort"
+  FTU_artillery_desc:0 "Artillery is crucial for the support of any forward movement by our infantry. Expand research into ballistics and larger barrel guns."
+  FTU_motorized:0 "Motorised Army"
+  FTU_motorized_desc:0 "Mobility and protection are crucial to get infantry into and out of the field safely. Focusing on these developments will allow us to take action quickly."
+  FTU_tank:0 "Armoured Effort"
+  FTU_tank_desc:0 "Applying what we have learned from motorising our infantry, we can improve our armored vehicles as well."
+  FTU_slot_2:0 "Research Slot II"
+  FTU_slot_2_desc:0 "The rapid industrialization of our nation has opened up new opportunities in R&D that we should pursue."
+  FTU_nukes:0 "Nuclear Research"
+  FTU_nukes_desc:0 "Standing on the edge of a world-changing discovery, we cannot let others light the fire that may one day consume the Earth."
+  FTU_rocketry:0 "Rocketry Advancements"
+  FTU_rocketry_desc:0 "Rocket and jet engines allow for unprecedented speeds for unmanned and manned vessels alike. Pioneering these technologies will allow us to take the enemy by surprise."
+  FTU_navy:0 "Expand the Navy"
+  FTU_navy_desc:0 "The expansion of our navy should be our first priority. Assign all available resources to new Dockyards and research into light surface ships."
+  FTU_copy_designs:0 "French Designs"
+  FTU_copy_designs_desc:0 "The French have clearly mastered the design of their naval fleet. We should seek their designs for the advancement of our own navy."
+  FTU_designs_our_own:0 "Our Own Designs"
+  FTU_designs_our_own_desc:0 "Our people are smart enough to come up with their own naval designs. It's even possible we could come up with even better designs than the French."
+  FTU_capital_ships:0 "An Oceangoing Navy"
+  FTU_capital_ships_desc:0 "The nation with the most battleships will rule the oceans. Battleships and carriers represent the old and the new in naval superiority."
+  FTU_small_ships:0 "A Flexible Navy"
+  FTU_small_ships_desc:0 "Before making forays into advanced battleship research, the smaller cruisers are in need of replacement."
+  FTU_purchase_old_ships:0 "Purchase French Ships" #buy american ww1 ships
+  FTU_purchase_old_ships_desc:0 "The French have been looking to get rid of their old ships from the Great War. Perhaps we should invest in these feats of French engineering?"
+  FTU_air_force:0 "Fund the Air Force"
+  FTU_air_force_desc:0 "Nowhere is technological advances more rapid than in aerial warfare. Aviation is a field any modern nation must master."
+  FTU_french_planes:0 "Western Planes" #Gives a bonus for fighters, copy french tactics
+  FTU_french_planes_desc:0 "The French have clearly mastered the art of aviation. Our air force should take as much influence from them as possible."
+  FTU_russian_aces:0 "Eastern Planes" #Learn airforce from Russians
+  FTU_russian_aces_desc:0 "The Russians have clearly mastered the art of aviation. Our air force should take as much influence from them as possible."
+  FTU_light_aircraft:0 "Light Aircraft Effort"
+  FTU_light_aircraft_desc:0 "We have not seen that last of dogfights in the Great War. Keeping ahead in the development of fighter planes will give us an edge in the future."
+  FTU_heavy_aircraft:0 "Heavy Aircraft Effort"
+  FTU_heavy_aircraft_desc:0 "When people of the future speak of the horror to today's wars, fire raining from the skies will prominently feature. We will do our best to ensure those stories are told by our enemies."
+  FTU_air_experience:0 "Air Superiority" #gives doctrine bonus
+  FTU_air_experience_desc:0 "With our aviation massively improved, we can easily dominate the skies of our enemies."
+  FTU_commi:0 "Ethnic Equality" #communism
+  FTU_commi_desc:0 "With our independence from France coming ever closer, there are those who want to get revenge against the French. That is simply unreasonable. The French and Ethnic people of our nation should be treated as one and the same."
+  FTU_world_revolution:0 "A World Revolution"
+  FTU_world_revolution_desc:0 "The only solution to gain independence from the French is to join our Bavarian comrades in the fight against the Capitalist bourgeoisie. Workers of the world, unite!"
+  FTU_peace_revolution:0 "A Peaceful Revolution" #A path to achieve independence wihtout war
+  FTU_peace_revolution_desc:0 "The only solution to gain independence from the French is to peacefully transition from the French colonial government to a government of the proletariat. The French will understand our decision."
+  FTU_equal_rights:0 "Equality Under the Law"
+  FTU_equal_rights_desc:0 "It does not matter if you are black, white, asian, indian, or any other race. Every worker, no matter what race, nor gender, shall be treated equally under the law of our nation."
+  FTU_socialist_science:0 "Scientific Advancement" #spend more money on science
+  FTU_socialist_science_desc:0 "With religious influences removed from our society, science is free to flourish and grow under our government."
+  FTU_peoples_army:0 "Establish a Liberation Army" #Manpower bonus
+  FTU_peoples_army_desc:0 "With our country under a proletarian dictatorship, we must turn our focus to the development of an army to help liberate our fellow workers from the tyranny of the bourgeoisie."
+  FTU_anti_imperialism:0 "Anti-Imperialist Crusade"
+  FTU_anti_imperialism_desc:0 "As unfortunate as it is, we are one of the few countries to have gained independence from our colonial masters. It is our job to destroy these colonial enslavers, for the glory of the world revolution!"
+  FTU_means_of_production:0 "Seize the Means of Production"
+  FTU_means_of_production_desc:0 "In order to achieve maximum capacity of production, we must seize all the means available!" #I don't know what this does
+  FTU_influence_others:0 "Comintern Influence"
+  FTU_influence_others_desc:0 "Now that we have turned to Marxism, the world we see and follow us towards achieving Karl Marx's dream!" #I don't know what this does
+  FTU_milit_effort:0 "Industrial Expansion II"
+  FTU_milit_effort_desc:0 "We are in despirate need of industrialization, in order to compete with the others we must work harder!"
+  FTU_democratic:0 "Native Government"
+  FTU_democratic_desc:0 "Our nation has been ruled by people, whom of which have not been born here. It is time that we elect one of our own people to represent our government."
+  FTU_free_elections:0 "Establish Free Elections"
+  FTU_free_elections_desc:0 "Our colonial governor has been consistenly picked by our French overlords. Our government should be led by one of our own people, which would require us to establish free and democratic elections."
+  FTU_free_referendum:0 "Request an Independence Referendum"
+  FTU_free_referendum_desc:0 "The age of colonialism is over. We must plead to the French government to allow us to hold a referendum regarding our future as a French dominion."
+  FTU_adress_eng:0 "Establish British Relations"
+  FTU_adress_eng_desc:0 "Now that we have independence, we can freely choose who we align ourselves with. We should send a few diplomats to Britain, in order to establish official relations."
+  FTU_mission_USA:0 "Establish American Relations"
+  FTU_mission_USA_desc:0 "Now that we have independence, we can freely choose who we align ourselves with. We should send a few diplomats to America, in order to establish official relations."
+  FTU_british_joint:0 "Joint Drills with Britain"
+  FTU_british_joint_desc:0 "The British have one of the largest armies in the world. We should conduct military drills with them, to assist in the development of our own military."
+  FTU_grip_over_colony:0 "Native Oppression"
+  FTU_grip_over_colony_desc:0 "The French have been the best thing to happen to our nation, and the native people within our nation want to break free from them. That's simply not going to happen."
+  FTU_authoritarism:0 "Ensure French Loyalty"
+  FTU_authoritarism_desc:0 "There are many elements within our government and army that are not truly loyal to our overlords. This must been ensured and rectified."
+  FTU_economic_programmes:0 "Economic Intervention" #Stabilize economy, make money
+  FTU_economic_programmes_desc:0 "Our economy is stalling, and that will soon lead to our economy spiraling into a free-fall. Industrial expansion is the only way to expand our economic output."
+  FTU_education_reform:0 "Education Reform"
+  FTU_education_reform_desc:0 "The education system within our nation is lackluster, and needs improvement. We must focus all effort into modernising and expanding our educational programmes."
+  FTU_purge_criminals:0 "Crack Down on Crime" #High crime rate, eliminate 
+  FTU_purge_criminals_desc:0 "The crime rate within our nation is extremely high. We need to crack down on crime within our country and establish order."
+  FTU_criminal_workforce:0 "Establish Criminal Workforce" #Labour done by the criminals
+  FTU_criminal_workforce_desc:0 "We have many projects to complete, and our prisons are filled with people just sitting around. We should solve both problems by putting our criminals to work."
+  FTU_economic_stability:0 "Economic Prosperity" #Gives economic boom spirit, economic boom
+  FTU_economic_stability_desc:0 "Our economy has rebounded from its slump. We are officially in a state of economic prosperity."
+  FTU_conscript_natives:0 "Native Conscription"
+  FTU_conscript_natives_desc:0 "The natives within our nation don't want to participate in our military. That's going to be a problem. They shall participate in our army, even if they're forced to!"
+  FTU_inv_investors:0 "Invite Foreign Investors"
+  FTU_inv_investors_desc:0 "Many countries are interested in investing in our nation. We should let them in and allow them to influence our economy."
+  FTU_inv_FRA_dev:0 "Invite French Specialists" #Builds infrastructure and factories
+  FTU_inv_FRA_dev_desc:0 "France has many aristocrats who would like to build factories within our nation. We should invite them down here in order to help our country industrialise."
+  FTU_french_workforce:0 "Assist Our Master"
+  FTU_french_workforce_desc:0 "France has many projects that require workers, and we have many people looking for a job. We can easily kill two birds with one stone by simply sending our unemployed to work in France." 
+  FTU_french_experience:0 "French Experience" #gets building bonus from learning from the french
+  FTU_french_experience_desc:0 "Our workers in France have learned many valuable building and production techniques. We should take advantage of this new knowledge."
+  FTU_french_language:0 "Adopt French as Our Official Language" #1 language policy
+  FTU_french_language_desc:0 "Even though the French have ruled us for decades, our people prefer to speak their own native language. We should ensure that French is the sole language used within government, business, and education."
+  FTU_sncf:0 "Railway Projects" #SNCF wasn't founded until '38
+  FTU_sncf_desc:0 "The French have thousands of miles of railways throughout their metropolitan area. We barely have any. We should develop a railway system to be as good, if not better, than the French." 
+  FTU_french_units:0 "Adopt French Units" #unlocked french templates
+  FTU_french_units_desc:0 "The French have very distinct and special unit designs for their military. We should adopt them, and take note of their military tactics."
+  FTU_arab_country:0 "The Arab Dream"
+  FTU_arab_country_desc:0 "Since the fall of the Ottoman Empire, it has been a dream for the arabs to form its own united country. Once we are independent, we shall do so!"
+
+  african_axis:0 "African Axis"

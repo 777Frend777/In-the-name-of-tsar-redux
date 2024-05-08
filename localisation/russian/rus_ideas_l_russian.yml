@@ -1,0 +1,183 @@
+﻿l_russian:
+ RUS_GER_pact: "Кенигспакт" #NT!
+ RUS_GER_pact_desc: "Подписанный между Россией и Германией Кенигспакт определил веру Центральной Европы и региона Балкан." #NT!
+ RUS_imperial_navy: "Российский Императорский Флот" #NT!
+ RUS_poor_infrastructure: "Плохая инфраструктура" #NT!
+ RUS_victorious_ww1: "Победители Великой войны" #NT!
+ RUS_fortification_focus: "Усилия по укреплению" #NT!
+ Grand_Duke_Kirill_Vladimirovich: "Великий князь Кирилл Владимирович" #NT!
+ RUS_national_unrest: "Национальные беспорядки" #NT!
+ RUS_peasant_unrest: "Разнообразная нация" #NT!
+ RUS_sleeping_giant: "Спящий великан" #NT!
+ RUS_path_of_order: "Русский национализм" #NT!
+ RUS_towards_democracy: "Российская демократия" #NT!
+ RUS_colonial_power: "Колониальная власть" #NT!
+ RUS_tsar_nicolas: "Царь Николай II Победоносец" #NT!
+ RUS_great_patriotic_war: "Социализм в одной стране" #NT!
+ RUS_tsar_kirill: "Царь Кирилл Владимирович" #NT!
+ RUS_tsar_boris: "Царь Борис Владимирович" #NT!
+ RUS_tsar_alexander: "Царь Александр Михайлович" #NT!
+ RUS_republic: "Российская Республика" #NT!
+ RUS_church: "Русская Православная Церковь" #NT!
+ RUS_russian_monarchy: "Дом Романовых" #NT!
+ RUS_provisional_government: "Временное правительство" #NT!
+ RUS_stolypin_reform: "Столыпинская реформа" #NT!
+ RUS_okhranka: "Охранка тайной полиции" #NT!
+ RUS_agricole_power: "Сельскохозяйственная энергия" #NT!
+ RUS_private: "Приватизация" #NT!
+ RUS_state_run: "Государственная экономика" #NT!
+ RUS_expanded_navy: "Адмиралтейская Верфь" #NT!
+ RUS_aeroflot_idea: "Аэрофлот" #NT!
+ RUS_front_line: "Передовые офицеры" #NT!
+ RUS_elite_idea: "Русская Элита" #NT!
+ RUS_everyone_edu: "Образованное общество" #NT!
+ RUS_mass_pro: "Массовое производство" #NT!
+ RUS_russification: "русификация" #NT!
+ RUS_multinational_society: "Разнообразное общество" #NT!
+ RUS_cinema: "Государственный кинотеатр" #NT!
+ RUS_general_staff: "Старая Гвардия" #NT!
+ RUS_general_staff_desc: "Несмотря на то, что Великая война уже давно позади, российская армия сохраняет аналогичную военную систему, которая разгромила немецкую и австрийскую армии в 1917 году. Однако она устарела, имеет свои недостатки и использует устаревшие доктрины." #NT!
+ RUS_general_staff_1: "Ранняя стадия модернизации" #NT!
+ RUS_general_staff_2: "Второй этап модернизации" #NT!
+ RUS_general_staff_3: "Завершающий этап модернизации" #NT!
+ RUS_general_staff_4: "Новая Гвардия" #NT!
+ RUS_general_staff_political_intermediate: "Политически связанный Генеральный штаб" #NT!
+ RUS_general_staff_political: "Политически связанный Генеральный штаб" #NT!
+ RUS_cult_of_sci: "Культ науки" #NT!
+ RUS_restored_empire: "Для Родины!" #NT!
+ RUS_polish_nationalism: "Польский национализм" #NT!
+ RUS_july_strikes: "Крупные забастовки" #NT!
+ RUS_negociated_strikes: "Московские соглашения" #NT!
+ RUS_alaska_purchase_rus: "Покупка Аляски" #NT!
+ RUS_alaska_purchase_usa: "Продажа Аляски" #NT!
+ RUS_tank_equipment_bonus: "Расширенное производство брони" #NT!
+ RUS_inf_equipment_bonus: "Расширение производства винтовок" #NT!
+ RUS_militarism_focus: "Программа российского милитаризма" #NT!
+ russian_sanctions_idea: "Российские экономические санкции" #NT!
+ RUS_wargoal_sphere_idea: "Российская сфера влияния" #NT!
+ RUS_bukhara_integration: "Интеграция Бухарской области" #NT!
+ RUS_tsar_stays: "Царь остается в России" #NT!
+ RUS_tsar_leaves: "Царь в изгнании" #NT!
+  
+  ####country stuff#### 
+ RUS_vladimir_nabokov: "Владимир Набоков" #NT!
+ RUS_alexander_guchkov: "Александр Гучков" #NT!
+ RUS_alexander_kolchak: "Александр Колчак" #NT!
+ RUS_lavr_kornilov: "Лавр Корнилов" #NT!
+ RUS_anton_denikin: "Anton Denikin" #NT!
+ RUS_paul_von_rennenkampf: "Пауль фон Ренненкампф" #NT!
+ RUS_pyotr_wrangel: "Петр Врангель" #NT!
+ alexander_kolchak: "Александр Колчак" #NT!
+ RUS_pavel_argeyev: "Павел Аргеев" #NT!
+ RUS_boris_savinkov: "Борис Савинков" #NT!
+ RUS_konovalov: "Александр Коновалов" #NT!
+ RUS_yusupov: "Феликс Юсупов" #NT!
+ RUS_nabokov_jr_idea: "Владимир Набоков-младший" #NT!
+ RUS_kornilov_idea: "Лавр Корнилов" #NT!
+ RUS_krasnov: "Петр Краснов" #NT!
+ RUS_konev_idea: "Иван Конев" #NT!
+ RUS_isakov_idea: "Иван Исаков" #NT!
+ RUS_vasilevsky_idea: "Александр Василевский" #NT!
+ RUS_zhukov_idea: "Георгий Жуков" #NT!
+ RUS_rokossovsky_idea: "Константин Рокоссовский" #NT!
+ RUS_monarstyrev_idea: "Нестор Монастырев" #NT!
+ RUS_altfater_idea: "Василий Альтфатер" #NT!
+ RUS_shaposhnikov_idea: "Борис Шапошников" #NT!
+ RUS_kerensky: "Александр Керенский" #NT!
+ RUS_tkachov: "Вячеслав Ткачев" #NT!
+ RUS_baranov: "Петр Баранов" #NT!
+ RUS_smirnov: "Илья Смирнов" #NT!
+ RUS_Pyotr_Struve: "Петр Струве" #NT!
+ RUS_tsar_nikolai_ii: "Е.И.В Николай II" #NT!
+  #### New Additions#### 
+ sikorsky_design_bureaus: "Конструкторское бюро Сикорского" #NT!
+ yakovlev_design_bureaus: "ОКБ Яковлева" #NT!
+ dux_design_bureaus: "Конструкторское бюро Дукс" #NT!
+ blacksea_verf_design_bureaus: "Черноморский судостроительный завод" #NT!
+ severnaya_verf_design_bureaus: "Северная Верфь" #NT!
+ admiralty_verf_design_bureaus: "Адмиралтейский завод" #NT!
+ obukhov_state_plants: "Обуховский государственный завод" #NT!
+  ####COUNTRY STUFF#### 
+ ilyushin_design_bureaus: "ОКБ Ильюшина" #NT!
+ tupolev_design_bureaus: "ОКБ Туполева" #NT!
+ grabin_design_bureaus: "Конструкторское бюро Грабина" #NT!
+ morozov_design_bureaus: "Морозовское конструкторское бюро" #NT!
+ astrov_design_bureaus: "Конструкторское бюро Астрова" #NT!
+ okmos: "ОКМО" #NT!
+ stalingrad_tractor_factorys: "Царицынский тракторный завод" #NT!
+ leningrad_polytechnical_institutes: "Петроградский индустриальный институт" #NT!
+ tula_arms_plants: "Тульский оружейный завод" #NT!
+ gazs: "ГАЗ" #NT!
+ nevskoye_design_bureaus: "Невское ПКБ" #NT!
+ mikhail_kalinins: "Михаил Калинин" #NT!
+ nikita_khrushchevs: "Никита Хрущев" #NT!
+ alexander_kerenskys: "Александр Керенский" #NT!
+ konstantin_rodzaevskys: "Константин Родзаевский" #NT!
+ grand_duke_kirill_vladimirovich: "Великий князь Кирилл Владимирович" #NT!
+ RUS_vyacheslav_molotovs: "Вячеслав Молотов" #NT!
+ RUS_nikolai_voznesenskys: "Николай Вознесенский" #NT!
+ semyon_timoshenkos: "Semyon Timoshenko" #NT!
+ kliment_voroshilovs: "Климент Ворошилов" #NT!
+ vasily_bluchers: "Василий Блюхерс" #NT!
+ pyotr_smirnovs: "Петр Смирнов" #NT!
+ mikhail_frinovskys: "Михаил Фриновский" #NT!
+ nikolay_kuznetsovs: "Николай Кузенцов" #NT!
+ ivan_yumashevs: "Иван Юмашев" #NT!
+ alexander_novikovs: "Александр Новиков" #NT!
+ konstantin_vershinins: "Константин Вершинин" #NT!
+ yakov_smushkevichs: "Яков Смушкевич" #NT!
+ pavel_rychagovs: "Павел Рычагов" #NT!
+ ivan_konevs: "Иван Конев" #NT!
+ aleksandr_vasilevskys: "Александр Василевский" #NT!
+ konstantin_rokossovskys: "Константин Рокоссовский" #NT!
+ pavel_zhigarevs: "Павел Жигарев" #NT!
+ sergei_khudyakovs: "Сергей Худяков" #NT!
+ stepan_krasovskys: "Степан Красовский" #NT!
+ vladimir_kasatonovs: "Владимир Касатонов" #NT!
+ gordey_levchenkos: "Гордей Левченко" #NT!
+ arseniy_golovkos: "Арсений Головко" #NT!
+ mig_design_bureaus: "Конструкторское бюро МИГ" #NT!
+ georgy_zhukovs: "Георгий Жуков" #NT!
+ boris_shaposhnikovs: "Борис Шапошников" #NT!
+ sergey_gorshkovs: "Сергей Горшков" #NT!
+ vladimir_tributss: "Владимир Трибуц" #NT!
+ sergei_rudenkos: "Sergei Rudenko" #NT!
+ alexander_golovanovs: "Александр Голованов" #NT!
+ igor_kurchatovs: "Игорь Курчатовс" #NT!
+ sergei_korolevs: "Сергей Королев" #NT!
+  ######################## 
+ RUS_provisional_government_flag: "Временное правительство у власти" #NT!
+ Mikhail_inagurated: "Царь Михаил принимает власть" #NT!
+ RUS_russian_coup: "Российское лидерство" #NT!
+ RUS_no_step_back: "Ни шагу назад!" #NT!
+ RUS_kornilovs_affair: "Дело Корнилова" #NT!
+ RUS_kornilovs_affair_desc: "Временное правительство России оказалось хрупким режимом. Генерал Корнилов планирует воспользоваться этой ситуацией и захватить контроль над Российской Империей!" #NT!
+ RUS_nationalization_industry: "Национализированная промышленность" #NT!
+ rus_kornilov_dead: "Корнилов убит." #NT!
+ rus_general: "Создано новое правительство России" #NT!
+ rus_gov_is_set_up: "Создано новое российское правительство" #NT!
+ RUS_begin_modernization: "Российской армии предстоит пройти ряд различных модернизаций, которые займут около 600 дней..." #NT!
+ RUS_keeps_the_old_guard: "Старая гвардия не уйдет в отставку, это усилит наш политический контроль, но пожертвует некоторой огневой мощью." #NT!
+ RUS_iranian_terrain: "Иранская местность" #NT!
+ RUS_iranian_terrain_desc: "Территория Ирана чрезвычайно сложна и труднодоступна. Иранцы будут использовать это в своих целях, чтобы победить любого захватчика извне." #NT!
+  #Decisions 
+ RUS_army_actions: "Армейские действия" #NT!
+ RUS_no_step_back_decision: "Национальный мобилизационный приказ" #NT!
+ RUS_lenin_from_exile: "Верните Ленина из ссылки." #NT!
+ RUS_lenin_from_exile_desc: "Чтобы совершить настоящую революцию, мы должны вернуть из ссылки нашего величайшего философа-коммуниста Владимира Ильича Ленина." #NT!
+ RUS_integrate_territories_decisions: "Управление профессиями" #NT!
+ RUS_integrate_territories_decisions_desc: "У России есть оккупированные территории, что нам с ними делать?" #NT!
+ RUS_integrate_estonia: "Интегрировать Эстонию" #NT!
+ RUS_integrate_latvia: "Интегрировать Курляндию и Ливонию" #NT!
+ RUS_integrate_lithuania: "Интегрировать Литву" #NT!
+ RUS_integrate_karelia: "Интегрировать Карелию" #NT!
+ RUS_integrate_poland: "Интегрировать Польшу" #NT!
+ RUS_integrate_bessarabia: "Интегрировать Бессарабию" #NT!
+ RUS_integrate_turkestan: "Интегрировать Туркестан" #NT!
+ RUS_fate_east_germany: "Судьба Восточной Германии" #NT!
+ RUS_fate_romania: "Судьба Румынии" #NT!
+ RUS_fate_turkey: "Судьба Турции" #NT!
+ RUS_fate_holland: "Спутник Нидерланды" #NT!
+ RUS_fate_belgium: "Спутник Бельгия" #NT!
+ RUS_fate_luxembourg: "Спутник Люксембург" #NT!
+ RUS_integrate_caucasus: "Интегрировать Кавказ" #NT!

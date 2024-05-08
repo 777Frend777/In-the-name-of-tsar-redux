@@ -1,0 +1,12 @@
+﻿l_russian:
+ PAY_CIV_FACTORY_TITLE: "Отправить экономическую помощь" #NT!
+ PAY_CIV_FACTORY_ACTION_DESC: "ОТПРАВИТЬ ОДИН ГРАЖДАНСКИЙ ЗАВОД В ЦЕЛЕВУЮ СТРАНУ" #NT!
+ pay_civ_factory_send_text: "Вы уверены, что хотите отправить в эту страну одну гражданскую фабрику?" #NT!
+ pay_civ_get_message: "[FROM.GetNameDEF] прислал к нам один гражданский завод" #NT!
+ pay_civ_get_title: "Получен гражданский завод." #NT!
+ PAY_MIL_FACTORY_TITLE: "Отправить военную помощь" #NT!
+ PAY_MIL_FACTORY_ACTION_DESC: "ОТПРАВИТЬ ОДИН ВОЕННЫЙ ЗАВОД В ЦЕЛЕВУЮ СТРАНУ" #NT!
+ pay_mil_factory_send_text: "Вы уверены, что хотите отправить в эту страну один военный завод?" #NT!
+ pay_mil_get_message: "[FROM.GetNameDEF] прислал к нам один военный завод" #NT!
+ pay_mil_get_title: "Получен Военный Завод" #NT!
+ a: "а" #NT!

@@ -1,0 +1,145 @@
+﻿capital = 4
+
+oob = "AUS_1936"
+
+set_research_slots = 3
+set_fuel_ratio = 0.8
+starting_train_buffer = 2
+
+country_event = { id = austria.99 days = 5 }
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_support = 1		
+	tech_mountaineers = 1
+	early_fighter = 1
+	gw_artillery = 1
+	basic_train = 1
+	motorised_infantry = 1
+	early_bomber = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		mtg_transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
+
+add_ideas = { 
+	AUS_otto_king
+	AUS_broke_eco
+	AUS_army_rad
+	AUS_quest_ger
+	AUS_army_mount
+	limited_conscription
+}
+
+recruit_character = AUS_arthur_seyss-inquart
+recruit_character = AUS_karl_renner
+recruit_character = AUS_kurt_schuschnigg
+recruit_character = AUS_alfred_klahr
+
+recruit_character = AUS_odilo_globocnik
+recruit_character = AUS_paul_von_hegedus
+recruit_character = AUS_julius_yllam
+recruit_character = AUS_wilhelm_zehner
+recruit_character = AUS_josef_teufl
+recruit_character = AUS_otto_schobel
+recruit_character = AUS_viktor_seebauer
+recruit_character = AUS_lothar_rendulic
+recruit_character = AUS_ernst_kaltenbrunner
+recruit_character = AUS_eduard_freiherr
+recruit_character = AUS_franz_bohme
+recruit_character = AUS_julius_raab
+recruit_character = AUS_leopold_figl
+recruit_character = AUS_jos_bru
+recruit_character = AUS_rud_schaff
+
+recruit_character = AUS_alfred_jansa
+recruit_character = AUS_eduard_von_bohm_ermolli
+recruit_character = AUS_sigismund_bahnbruck
+recruit_character = AUS_friedrich_materna
+recruit_character = AUS_eduard_barger
+recruit_character = AUS_emil_hickmann
+recruit_character = AUS_erhard_raus
+recruit_character = AUS_kornel_oszlanyi
+
+recruit_character = AUS_karl_eglseer
+recruit_character = AUS_idea_a_hitler
+recruit_character = AUS_eduard_heinl_idea
+recruit_character = AUS_ernst_kolb_idea
+recruit_character = AUS_fritz_bock_idea
+recruit_character = AUS_sigismund_schil
+
+
+set_politics = {
+	ruling_party = conservatives
+	last_election = "1933.7.1"
+	election_frequency = 36
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 10
+	conservatives = 41
+	fascism = 3
+	communism = 1
+	socialist = 35
+	neutrality = 10
+}
+	
+set_stability = 0.65
+set_war_support = 0.13
+
+create_country_leader = {
+	name = "Engelbert Dollfuss"
+	desc = "POLITICS_ENGELBERT_DOLLFUSS_DESC"
+	picture = "engelbert_dollfuss_general.dds" 
+	expire = "1953.3.1"
+	ideology = conservatives_subtype
+	traits = {
+		
+	}
+}
+
+#create_corps_commander = {
+#	name = "Julius Ringel"
+#	picture = "Julius_Ringel.dds"
+#	traits = { trait_mountaineer trickster }
+#	skill = 3
+#	attack_skill = 2
+#	defense_skill = 4
+#	planning_skill = 2
+#	logistics_skill = 2
+#}

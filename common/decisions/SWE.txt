@@ -1,0 +1,765 @@
+#Category allowed for SWEDEN
+
+SWE_five_years_plan_category = {
+
+	SWE_five_years_plan_mission = {
+
+		icon = generic_construction
+		
+		allowed = {
+			original_tag = SWE
+		}
+		available = {
+			has_country_flag = SWE_finishing_touches_flag
+		}
+		activation = {
+			has_country_flag = SWE_swedish_five_year_plan_flag
+		}
+		is_good = no
+		fire_only_once = yes
+		days_mission_timeout = 1830
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		timeout_effect = {
+			add_political_power = -150
+			add_stability = -0.10
+			add_popularity = { ideology = socialist popularity = -0.10 }
+		}
+		
+		complete_effect = {
+			add_political_power = 75
+			add_stability = 0.10
+			add_popularity = { ideology = socialist popularity = 0.05 }
+		}
+	}
+}
+
+SWE_five_years_plan_category = {
+	
+	SWE_finishing_touches = {
+
+		icon = generic_construction
+		
+		available = {
+			original_tag = SWE
+			has_country_flag = SWE_swedish_five_year_plan_flag
+			date > 1940.01.01
+		}
+
+		cost = 150
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SWE
+			controls_state = 141
+			has_country_flag = SWE_swedish_five_year_plan_flag
+			has_country_flag = SWE_stockholm_housing2_flag
+			has_country_flag = SWE_southern_roads_flag
+			has_country_flag = SWE_steel_industry_flag
+			has_country_flag = SWE_heavy_industry_flag
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		complete_effect = {
+			add_manpower = -200
+		}
+		
+		modifier = {
+			political_power_gain = -0.10
+		}
+		
+		days_remove = 30
+		
+		remove_effect = {
+			add_stability = 0.03
+			add_political_power = 25
+			add_manpower = 100
+			set_country_flag = SWE_finishing_touches_flag
+		}
+	}
+	
+	SWE_stockholm_housing = {
+
+		icon = generic_construction
+		
+		available = {
+			original_tag = SWE
+			has_country_flag = SWE_swedish_five_year_plan_flag
+			has_tech = construction1
+		}
+
+		cost = 150
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SWE
+			controls_state = 141
+			has_country_flag = SWE_swedish_five_year_plan_flag
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			add_manpower = -1000
+		}
+		
+		modifier = {
+			civilian_factory_use = 2
+			stability_weekly = -0.001
+		}
+		
+		days_remove = 75
+		
+		remove_effect = {
+			141 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = 0.05
+			add_manpower = 500
+			set_country_flag = SWE_stockholm_housing_flag
+		}
+	}
+	
+	SWE_stockholm_housing2 = {
+
+		icon = generic_construction
+		
+		available = {
+			original_tag = SWE
+			has_country_flag = SWE_swedish_five_year_plan_flag
+			has_tech = construction3
+		}
+
+		cost = 150
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SWE
+			controls_state = 141
+			has_country_flag = SWE_swedish_five_year_plan_flag
+			has_country_flag = SWE_stockholm_housing_flag
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			add_manpower = -1200
+		}
+		
+		modifier = {
+			civilian_factory_use = 3
+			political_power_gain = -0.25
+		}
+		
+		days_remove = 75
+		
+		remove_effect = {
+			141 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 20
+			add_manpower = 600
+			set_country_flag = SWE_stockholm_housing2_flag
+		}
+	}
+	
+	SWE_invest_bromma_airport = {
+
+		icon = generic_construction
+		
+		available = {
+			original_tag = SWE
+			has_country_flag = SWE_swedish_five_year_plan_flag
+			OR = {
+				has_tech = concentrated_industry2
+				has_tech = dispersed_industry2
+			}
+		}
+
+		cost = 150
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SWE
+			controls_state = 141
+			has_country_flag = SWE_swedish_five_year_plan_flag
+			has_country_flag = SWE_stockholm_housing2_flag
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			add_manpower = -1000
+		}
+		
+		modifier = {
+			civilian_factory_use = 2
+			political_power_gain = -0.15
+		}
+		
+		days_remove = 75
+		
+		remove_effect = {
+			141 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			air_experience = 5
+			add_political_power = 20
+			add_manpower = 500
+			set_country_flag = SWE_bromma_airport_flag
+		}
+	}
+	
+	SWE_southern_roads = {
+
+		icon = generic_construction
+		
+		available = {
+			original_tag = SWE
+			has_country_flag = SWE_swedish_five_year_plan_flag
+			has_tech = construction2
+		}
+
+		cost = 150
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SWE
+			controls_state = 139
+			has_country_flag = SWE_swedish_five_year_plan_flag
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			add_manpower = -1000
+		}
+		
+		modifier = {
+			civilian_factory_use = 2
+			political_power_gain = -0.20
+		}
+		
+		days_remove = 75
+		
+		remove_effect = {
+			139 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 20
+			add_manpower = 500
+			set_country_flag = SWE_southern_roads_flag
+		}
+	}
+	
+	SWE_centralized_industry = {
+
+		icon = generic_construction
+		
+		available = {
+			original_tag = SWE
+			has_country_flag = SWE_swedish_five_year_plan_flag
+			has_tech = concentrated_industry2
+		}
+
+		cost = 150
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SWE
+			controls_state = 140
+			has_country_flag = SWE_swedish_five_year_plan_flag
+			NOT = {
+				has_country_flag = SWE_decentralized_industry_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			add_manpower = -1000
+		}
+		
+		modifier = {
+			civilian_factory_use = 2
+			political_power_gain = -0.20
+		}
+		
+		days_remove = 75
+		
+		remove_effect = {
+			140 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 15
+			add_manpower = 500
+			set_country_flag = SWE_centralized_industry_flag
+		}
+	}
+	
+	SWE_decentralized_industry = {
+
+		icon = generic_construction
+		
+		available = {
+			original_tag = SWE
+			has_country_flag = SWE_swedish_five_year_plan_flag
+			has_tech = dispersed_industry2
+			has_completed_focus = SWE_northern_national_industries
+		}
+
+		cost = 150
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SWE
+			controls_state = 666
+			has_country_flag = SWE_swedish_five_year_plan_flag
+			NOT = {
+				has_country_flag = SWE_centralized_industry_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			add_manpower = -1200
+		}
+		
+		modifier = {
+			civilian_factory_use = 2
+			political_power_gain = -0.20
+		}
+		
+		days_remove = 75
+		
+		remove_effect = {
+			666 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 25
+			add_manpower = 600
+			set_country_flag = SWE_decentralized_industry_flag
+		}
+	}
+	
+	SWE_heavy_industry = {
+
+		icon = generic_construction
+		
+		available = {
+			original_tag = SWE
+			has_country_flag = SWE_swedish_five_year_plan_flag
+			OR = {
+				has_tech = concentrated_industry3
+				has_tech = dispersed_industry3
+			}
+		}
+
+		cost = 150
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SWE
+			controls_state = 140
+			has_country_flag = SWE_swedish_five_year_plan_flag
+			OR = {
+				has_country_flag = SWE_centralized_industry_flag
+				has_country_flag = SWE_decentralized_industry_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			add_manpower = -1000
+		}
+		
+		modifier = {
+			civilian_factory_use = 2
+			political_power_gain = -0.25
+		}
+		
+		days_remove = 80
+		
+		remove_effect = {
+			140 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 20
+			add_manpower = 500
+			set_country_flag = SWE_heavy_industry_flag
+		}
+	}
+	
+	SWE_steel_industry = {
+
+		icon = generic_construction
+		
+		available = {
+			original_tag = SWE
+			has_country_flag = SWE_swedish_five_year_plan_flag
+			has_tech = excavation2
+		}
+
+		cost = 150
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SWE
+			controls_state = 666
+			has_country_flag = SWE_swedish_five_year_plan_flag
+			NOT = {
+				has_country_flag = SWE_centralized_industry_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			add_manpower = -1000
+		}
+		
+		modifier = {
+			civilian_factory_use = 2
+			political_power_gain = -0.20
+		}
+		
+		days_remove = 75
+		
+		remove_effect = {
+			add_resource = {
+				type = steel
+				amount = 5
+				state = 666
+			}
+			add_political_power = 25
+			add_manpower = 500
+			set_country_flag = SWE_steel_industry_flag
+		}
+	}
+}
+
+SWE_swedish_lion_diplomacy_category = {
+	
+	SWE_fund_rebellion_norway = {
+
+		icon = generic_nationalism
+		
+		available = {
+			original_tag = SWE
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SWE
+			has_completed_focus = SWE_wake_swedish_lion
+			country_exists = NOR
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			add_manpower = -700
+		}
+		
+		modifier = {
+			political_power_gain = -0.20
+		}
+		
+		days_remove = 40
+		
+		remove_effect = {
+			NOR = {
+				country_event = {
+					id = sweden.70 days = 1
+				}
+			}
+		}
+	}
+	
+	SWE_fund_rebellion_denmark = {
+
+		icon = generic_nationalism
+		
+		available = {
+			original_tag = SWE
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SWE
+			has_completed_focus = SWE_wake_swedish_lion
+			country_exists = DEN
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			add_manpower = -700
+		}
+		
+		modifier = {
+			political_power_gain = -0.20
+		}
+		
+		days_remove = 40
+		
+		remove_effect = {
+			DEN = {
+				country_event = {
+					id = sweden.71 days = 1
+				}
+			}
+		}
+	}
+	
+	SWE_core_norway = {
+
+		icon = generic_nationalism
+		
+		available = {
+			original_tag = SWE
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SWE
+			has_completed_focus = SWE_wake_swedish_lion
+			has_country_flag = SWE_new_scandinavianism_flag
+			controls_state = 110
+			controls_state = 142
+			controls_state = 143
+			controls_state = 144
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			add_manpower = -1000
+		}
+		
+		modifier = {
+			political_power_gain = -0.25
+		}
+		
+		days_remove = 50
+		
+		remove_effect = {
+			add_state_core = 110
+			add_state_core = 142
+			add_state_core = 143
+			add_state_core = 144
+		}
+	}
+	
+	SWE_core_denmark = {
+
+		icon = generic_nationalism
+		
+		available = {
+			original_tag = SWE
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SWE
+			has_completed_focus = SWE_wake_swedish_lion
+			has_country_flag = SWE_new_scandinavianism_flag
+			controls_state = 37
+			controls_state = 99
+			controls_state = 100
+			controls_state = 101
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			add_manpower = -1000
+		}
+		
+		modifier = {
+			political_power_gain = -0.25
+		}
+		
+		days_remove = 50
+		
+		remove_effect = {
+			add_state_core = 37
+			add_state_core = 99
+			add_state_core = 100
+			add_state_core = 101
+		}
+	}
+	
+	SWE_core_norway_nat = {
+
+		icon = generic_nationalism
+		
+		available = {
+			original_tag = SWE
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SWE
+			has_completed_focus = SWE_wake_swedish_lion
+			has_country_flag = SWE_new_four_houndred_year_night_flag
+			controls_state = 110
+			controls_state = 142
+			controls_state = 143
+			controls_state = 144
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			add_manpower = -1000
+		}
+		
+		modifier = {
+			political_power_gain = -0.30
+		}
+		
+		days_remove = 100
+		
+		remove_effect = {
+			add_state_core = 110
+			add_state_core = 142
+			add_state_core = 143
+			add_state_core = 144
+		}
+	}
+	
+	SWE_core_denmark_nat = {
+
+		icon = generic_nationalism
+		
+		available = {
+			original_tag = SWE
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SWE
+			has_completed_focus = SWE_wake_swedish_lion
+			has_country_flag = SWE_sole_scandinavian_power_flag
+			controls_state = 37
+			controls_state = 99
+			controls_state = 100
+			controls_state = 101
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			add_manpower = -1000
+		}
+		
+		modifier = {
+			political_power_gain = -0.30
+		}
+		
+		days_remove = 100
+		
+		remove_effect = {
+			add_state_core = 37
+			add_state_core = 99
+			add_state_core = 100
+			add_state_core = 101
+		}
+	}
+}

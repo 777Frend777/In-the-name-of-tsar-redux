@@ -1,0 +1,68 @@
+﻿capital = 48
+
+#TROOPS
+oob = "BUL_1936" #VANILLA & DLC
+set_convoys = 5 #VANILLA & DLC
+
+add_ideas = { #VANILLA
+			limited_conscription
+		}
+
+		#POLITICS
+		set_popularities = { #VANILLA
+			democratic = 5
+			fascism = 35
+			neutrality = 60
+		}
+		set_politics = { #VANILLA
+			ruling_party = neutrality
+			last_election = "1931.6.21"
+			election_frequency = 48
+			elections_allowed = no
+		}
+
+		recruit_character = BUL_boris_iii
+		recruit_character = BUL_georgi_dimitrov
+		recruit_character = BUL_nikola_petkov
+		recruit_character = BUL_hristo_lukov
+		recruit_character = BUL_georgi_popov
+		recruit_character = BUL_vasil_boydev
+		recruit_character = BUL_asen_nikolov
+		recruit_character = BUL_georgi_petsov
+		recruit_character = BUL_atanas_zhilkov
+		recruit_character = BUL_bonyu_stoev_pironkov
+		recruit_character = BUL_ivan_gaidimitriv
+		recruit_character = BUL_kiril_stanchev
+		recruit_character = BUL_blagoi_ivanov
+		recruit_character = BUL_stoyan_stoyanov
+		recruit_character = BUL_nikola_hadzipetkov
+		recruit_character = BUL_kiril_dimitrov_yanchulev
+		recruit_character = BUL_nikola_totev_markov
+		recruit_character = BUL_georgi_ivanov_kyoseivanov
+		recruit_character = BUL_dobri_bozhilov
+		recruit_character = BUL_konstantin_muraviev
+set_technology = { #VANILLA & DLC
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	motorised_infantry = 1
+	early_fighter = 1
+	fuel_silos = 1
+	basic_train = 1
+}
+
+if = {
+		limit = {
+			has_dlc = "La Resistance"
+		}
+		create_operative_leader = { #DLC
+			name = "Vladimir Zaimov"
+			GFX = GFX_portrait_bul_vladimir_zaimov
+			traits = { operative_infiltrator operative_commando }
+			bypass_recruitment = no
+			available_to_spy_master = yes
+			nationalities = { BUL }
+		}
+		recruit_character = BUL_stefan_nedev
+	}

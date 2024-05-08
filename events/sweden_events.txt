@@ -1,0 +1,1457 @@
+﻿##########################
+##### Swedish Events #####
+##########################
+
+add_namespace = sweden
+
+#Sweden Introduction
+country_event = {
+	id = sweden.0
+	title = sweden.0.t
+	desc = sweden.0.d
+	#picture = GFX_report_event_generic_read_write
+
+	trigger = {
+		tag = SWE
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.0.a
+	}
+}
+
+country_event = {
+	id = sweden.1
+	title = sweden.1.t
+	desc = sweden.1.d
+	#picture = GFX_report_event_generic_read_write
+
+	trigger = {
+		tag = SWE
+		date > 1936.1.15
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.1.a
+		add_political_power = -20
+	}
+}
+
+country_event = {
+	id = sweden.2
+	title = sweden.2.t
+	desc = sweden.2.d
+	#picture = GFX_report_event_generic_read_write
+
+	trigger = {
+		tag = SWE
+		date > 1936.3.20
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.2.a
+		add_political_power = 5
+	}
+}
+
+country_event = {
+	id = sweden.3
+	title = sweden.3.t
+	desc = sweden.3.d
+	#picture = GFX_report_event_generic_read_write
+
+	trigger = {
+		tag = SWE
+		date > 1936.4.1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.3.a
+		add_political_power = 5
+	}
+}
+
+country_event = {
+	id = sweden.4
+	title = sweden.4.t
+	desc = sweden.4.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.4.a
+		ai_chance = { base = 30 }
+		add_political_power = -120
+		add_stability = -0.05
+		add_war_support = 0.03
+		add_popularity = { ideology = conservatives popularity = 0.03 }
+		add_popularity = { ideology = fascism popularity = 0.02 }
+		set_country_flag = SWE_expand_military_flag
+	}
+	
+	option = {
+		name = sweden.4.b
+		ai_chance = { base = 65 }
+		add_political_power = -40
+		add_stability = -0.02
+		add_war_support = 0.01
+		add_popularity = { ideology = democratic popularity = 0.03 }
+		add_popularity = { ideology = conservatives popularity = 0.02 }
+		set_country_flag = SWE_status_quo_military_flag
+	}
+	
+	option = {
+		name = sweden.4.c
+		ai_chance = { base = 5 }
+		add_political_power = -10
+		add_stability = 0.02
+		add_war_support = -0.02
+		add_popularity = { ideology = socialist popularity = 0.03 }
+		add_popularity = { ideology = communism popularity = 0.02 }
+		set_country_flag = SWE_decrease_military_flag
+	}
+}
+
+country_event = {
+	id = sweden.5
+	title = sweden.5.t
+	desc = sweden.5.d
+	#picture = GFX_report_event_generic_read_write
+
+	trigger = {
+		tag = SWE
+		date > 1936.4.27
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.5.a
+		add_political_power = -40
+		add_stability = -0.07
+		add_popularity = { ideology = socialist popularity = 0.03 }
+		add_popularity = { ideology = fascism popularity = 0.02 }
+		add_popularity = { ideology = communism popularity = 0.02 }
+	}
+}
+
+country_event = {
+	id = sweden.6
+	title = sweden.6.t
+	desc = sweden.6.d
+	#picture = GFX_report_event_generic_read_write
+
+	trigger = {
+		tag = SWE
+		date > 1936.6.10
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.6.a
+		add_political_power = -20
+		add_stability = -0.03
+		add_popularity = { ideology = democratic popularity = 0.03 }
+		add_popularity = { ideology = socialist popularity = 0.02 }
+	}
+}
+
+country_event = {
+	id = sweden.7
+	title = sweden.7.t
+	desc = sweden.7.d
+	#picture = GFX_report_event_generic_read_write
+
+	trigger = {
+		tag = SWE
+		date > 1936.9.15
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.7.a
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		add_popularity = { ideology = conservatives popularity = 0.04 }
+		set_country_flag = SWE_1936_election_flag
+		hidden_effect = {
+			country_event = {
+				id = sweden.8 days = 10
+			}
+		}
+	}
+	
+	option = {
+		name = sweden.7.b
+		ai_chance = {
+			base = 20
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		add_popularity = { ideology = democratic popularity = 0.07 }
+		set_country_flag = SWE_1936_election_flag
+		hidden_effect = {
+			country_event = {
+				id = sweden.9 days = 3
+			}
+		}
+	}
+	
+	option = {
+		name = sweden.7.c
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		add_popularity = { ideology = socialist popularity = 0.07 }
+		set_country_flag = SWE_1936_election_flag
+		hidden_effect = {
+			country_event = {
+				id = sweden.11 days = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sweden.19
+	title = sweden.19.t
+	desc = sweden.19.d
+	#picture = GFX_report_event_generic_read_write
+
+	trigger = {
+		tag = SWE
+		date > 1940.9.10
+		OR = {
+			has_government = conservatives
+			has_government = democratic
+			has_government = socialist
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.19.a
+		ai_chance = { base = 40 }
+		set_politics = { ruling_party = conservatives elections_allowed = yes }
+		if = {
+			limit = {
+				has_government = conservatives
+			}
+			add_political_power = 5
+		}
+		else = {
+			add_popularity = { ideology = conservatives popularity = 0.10 }
+		}
+	}
+	
+	option = {
+		name = sweden.19.b
+		ai_chance = { base = 20 }
+		set_politics = { ruling_party = democratic elections_allowed = yes }
+		if = {
+			limit = {
+				has_government = democratic
+			}
+			add_political_power = 5
+		}
+		else = {
+			add_popularity = { ideology = democratic popularity = 0.10 }
+		}
+	}
+	
+	option = {
+		name = sweden.19.c
+		ai_chance = { base = 40 }
+		set_politics = { ruling_party = socialist elections_allowed = yes }
+		if = {
+			limit = {
+				has_government = socialist
+			}
+			add_political_power = 5
+		}
+		else = {
+			add_popularity = { ideology = socialist popularity = 0.10 }
+		}
+	}
+}
+
+country_event = {
+	id = sweden.20
+	title = sweden.20.t
+	desc = sweden.20.d
+	#picture = GFX_report_event_generic_read_write
+
+	trigger = {
+		tag = SWE
+		date > 1944.9.12
+		OR = {
+			has_government = conservatives
+			has_government = democratic
+			has_government = socialist
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.20.a
+		ai_chance = { base = 40 }
+		set_politics = { ruling_party = conservatives elections_allowed = yes }
+		if = {
+			limit = {
+				has_government = conservatives
+			}
+			add_political_power = 5
+		}
+		else = {
+			add_popularity = { ideology = conservatives popularity = 0.10 }
+		}
+	}
+	
+	option = {
+		name = sweden.20.b
+		ai_chance = { base = 20 }
+		set_politics = { ruling_party = democratic elections_allowed = yes }
+		if = {
+			limit = {
+				has_government = democratic
+			}
+			add_political_power = 5
+		}
+		else = {
+			add_popularity = { ideology = democratic popularity = 0.10 }
+		}
+	}
+	
+	option = {
+		name = sweden.20.c
+		ai_chance = { base = 40 }
+		set_politics = { ruling_party = socialist elections_allowed = yes }
+		if = {
+			limit = {
+				has_government = socialist
+			}
+			add_political_power = 5
+		}
+		else = {
+			add_popularity = { ideology = socialist popularity = 0.10 }
+		}
+	}
+}
+
+country_event = {
+	id = sweden.8
+	title = sweden.8.t
+	desc = sweden.8.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.8.a
+		add_political_power = -25
+		add_stability = 0.01
+		set_country_flag = SWE_conservative_government_flag
+	}
+}
+
+country_event = {
+	id = sweden.9
+	title = sweden.9.t
+	desc = sweden.9.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.9.a
+		ai_chance = { base = 80 }
+		hidden_effect = {
+			country_event = {
+				id = sweden.10 days = 3
+			}
+		}
+	}
+	
+	option = {
+		name = sweden.9.b
+		ai_chance = { base = 20 }
+		hidden_effect = {
+			country_event = {
+				id = sweden.13 days = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sweden.10
+	title = sweden.10.t
+	desc = sweden.10.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.10.a
+		add_political_power = -25
+		add_stability = 0.01
+		set_country_flag = SWE_liberal_government_flag
+		set_politics = { ruling_party = democratic elections_allowed = yes }
+	}
+}
+
+country_event = {
+	id = sweden.11
+	title = sweden.11.t
+	desc = sweden.11.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.11.a
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = sweden.12 days = 3
+			}
+		}
+	}
+	
+	option = {
+		name = sweden.11.b
+		ai_chance = {
+			base = 35
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = sweden.13 days = 5
+			}
+		}
+	}
+	
+	option = {
+		name = sweden.11.c
+		ai_chance = {
+			base = 25
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = sweden.10 days = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sweden.12
+	title = sweden.12.t
+	desc = sweden.12.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.12.a
+		add_political_power = -25
+		add_stability = 0.01
+		set_country_flag = SWE_socialist_government_flag
+		set_politics = { ruling_party = socialist elections_allowed = yes }
+	}
+}
+
+country_event = {
+	id = sweden.13
+	title = sweden.13.t
+	desc = sweden.13.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.13.a
+		add_stability = -0.04
+		hidden_effect = {
+			country_event = {
+				id = sweden.14 days = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sweden.14
+	title = sweden.14.t
+	desc = sweden.14.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.14.a
+		add_stability = -0.04
+		hidden_effect = {
+			country_event = {
+				id = sweden.15 days = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sweden.15
+	title = sweden.15.t
+	desc = sweden.15.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.15.a
+		add_stability = -0.04
+		hidden_effect = {
+			country_event = {
+				id = sweden.16 days = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sweden.16
+	title = sweden.16.t
+	desc = sweden.16.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.16.a
+		ai_chance = { base = 40 }
+		add_stability = 0.10
+		add_popularity = { ideology = conservatives popularity = -0.03 }
+		add_popularity = { ideology = socialist popularity = 0.03 }
+		hidden_effect = {
+			remove_ideas = SWE_king_gustaf_v
+			country_event = {
+				id = sweden.12 days = 3
+			}
+		}
+	}
+	
+	option = {
+		name = sweden.16.b
+		ai_chance = { base = 30 }
+		add_stability = 0.10
+		add_popularity = { ideology = conservatives popularity = -0.07 }
+		add_popularity = { ideology = neutrality popularity = 0.07 }
+		hidden_effect = {
+			country_event = {
+				id = sweden.17 days = 3
+			}
+		}
+	}
+	
+	option = {
+		name = sweden.16.c
+		ai_chance = { base = 30 }
+		add_stability = 0.10
+		add_popularity = { ideology = conservatives popularity = -0.05 }
+		add_popularity = { ideology = fascism popularity = 0.05 }
+		hidden_effect = {
+			country_event = {
+				id = sweden.18 days = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sweden.17
+	title = sweden.17.t
+	desc = sweden.17.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.17.a
+		add_political_power = -25
+		add_stability = 0.01
+		set_country_flag = SWE_kings_party_government_flag
+		set_politics = { ruling_party = neutrality elections_allowed = yes }
+	}
+}
+
+country_event = {
+	id = sweden.18
+	title = sweden.18.t
+	desc = sweden.18.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.18.a
+		add_political_power = -25
+		add_stability = 0.01
+		set_country_flag = SWE_nationalist_government_flag
+		set_politics = { ruling_party = fascism elections_allowed = yes }
+	}
+}
+
+country_event = {
+	id = sweden.50
+	title = sweden.50.t
+	desc = sweden.50.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.50.a
+		ai_chance = { base = 80 }
+		add_political_power = 50
+		add_stability = -0.08
+		country_event = {
+			id = sweden.51 days = 15
+		}
+	}
+	
+	option = {
+		name = sweden.50.b
+		ai_chance = { base = 20 }
+		add_political_power = -20
+		add_stability = -0.02
+		country_event = {
+			id = sweden.52 days = 15
+		}
+	}
+}
+
+country_event = {
+	id = sweden.51
+	title = sweden.51.t
+	desc = sweden.51.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.51.a
+		set_cosmetic_tag = SWE_REP
+		remove_ideas = SWE_king_gustaf_v
+	}
+}
+
+country_event = {
+	id = sweden.52
+	title = sweden.52.t
+	desc = sweden.52.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.52.a
+		swap_ideas = {
+			remove_idea = SWE_king_gustaf_v
+			add_idea = SWE_king_gustaf_v_socialist
+		}
+	}
+}
+
+country_event = {
+	id = sweden.53
+	title = sweden.53.t
+	desc = sweden.53.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.53.a
+		swap_ideas = {
+			remove_idea = SWE_king_gustaf_v
+			add_idea = SWE_king_gustaf_v_liberal
+		}
+	}
+}
+
+country_event = {
+	id = sweden.54
+	title = sweden.54.t
+	desc = sweden.54.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.54.a
+		swap_ideas = {
+			remove_idea = SWE_king_gustaf_v
+			add_idea = SWE_king_gustaf_v_conservative
+		}
+	}
+}
+
+country_event = {
+	id = sweden.55
+	title = sweden.55.t
+	desc = sweden.55.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.55.a
+		add_stability = -0.10
+		hidden_effect = {
+			country_event = {
+				id = sweden.56 days = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sweden.56
+	title = sweden.56.t
+	desc = sweden.56.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.56.a
+		ai_chance = { base = 80 }
+		hidden_effect = {
+			set_country_flag = SWE_civil_war_non_socialist
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				SWE = {
+					start_civil_war = {
+						ruling_party = neutrality
+						ideology = socialist
+						size = 0.3
+						states = { 140 138 }
+					}
+				}
+			}
+			else = {
+				SWE = {
+					start_civil_war = {
+						ruling_party = fascism
+						ideology = socialist
+						size = 0.3
+						states = { 140 138 }
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = sweden.56.b
+		ai_chance = { base = 20 }
+		hidden_effect = {
+			set_country_flag = SWE_socialist_government_flag
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				SWE = {
+					start_civil_war = {
+						ruling_party = socialist
+						ideology = neutrality
+						size = 0.3
+						states = { 38 139 }
+					}
+				}
+			}
+			else = {
+				SWE = {
+					start_civil_war = {
+						ruling_party = socialist
+						ideology = fascism
+						size = 0.3
+						states = { 38 139 }
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sweden.57
+	title = sweden.57.t
+	desc = sweden.57.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.57.a
+		ai_chance = { base = 80 }
+		add_political_power = -20
+		add_ideas = SWE_scandinavian_neutrality_idea
+		diplomatic_relation = {
+			country = SWE
+			relation = guarantee
+			active = yes
+		}
+		SWE = {
+			country_event = {
+				id = sweden.58 days = 1
+			}
+		}
+	}
+	
+	option = {
+		name = sweden.57.b
+		ai_chance = { base = 20 }
+		SWE = {
+			country_event = {
+				id = sweden.59 days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sweden.58
+	title = sweden.58.t
+	desc = sweden.58.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.58.a
+		diplomatic_relation = {
+			country = DEN
+			relation = guarantee
+			active = yes
+		}
+	}
+}
+
+country_event = {
+	id = sweden.59
+	title = sweden.59.t
+	desc = sweden.59.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.59.a
+		add_political_power = -25
+	}
+}
+
+country_event = {
+	id = sweden.60
+	title = sweden.60.t
+	desc = sweden.60.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.60.a
+		ai_chance = { base = 80 }
+		add_political_power = -20
+		add_ideas = SWE_scandinavian_neutrality_idea
+		diplomatic_relation = {
+			country = SWE
+			relation = guarantee
+			active = yes
+		}
+		SWE = {
+			country_event = {
+				id = sweden.61 days = 1
+			}
+		}
+	}
+	
+	option = {
+		name = sweden.60.b
+		ai_chance = { base = 20 }
+		SWE = {
+			country_event = {
+				id = sweden.62 days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sweden.61
+	title = sweden.61.t
+	desc = sweden.61.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.61.a
+		diplomatic_relation = {
+			country = NOR
+			relation = guarantee
+			active = yes
+		}
+	}
+}
+
+country_event = {
+	id = sweden.62
+	title = sweden.62.t
+	desc = sweden.62.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.62.a
+		add_political_power = -25
+	}
+}
+
+country_event = {
+	id = sweden.63
+	title = sweden.63.t
+	desc = sweden.63.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.63.a
+		ai_chance = { base = 90 }
+		add_to_faction = SWE
+		SWE = {
+			country_event = {
+				id = sweden.64 days = 1
+			}
+		}
+	}
+	
+	option = {
+		name = sweden.63.b
+		ai_chance = { base = 10 }
+		SWE = {
+			country_event = {
+				id = sweden.65 days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sweden.64
+	title = sweden.64.t
+	desc = sweden.64.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.64.a
+		add_political_power = 10
+	}
+}
+
+country_event = {
+	id = sweden.65
+	title = sweden.65.t
+	desc = sweden.65.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.65.a
+		add_political_power = -15
+	}
+}
+
+country_event = {
+	id = sweden.66
+	title = sweden.66.t
+	desc = sweden.66.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.66.a
+		ai_chance = { base = 90 }
+		add_to_faction = SWE
+		SWE = {
+			country_event = {
+				id = sweden.67 days = 1
+			}
+		}
+	}
+	
+	option = {
+		name = sweden.66.b
+		ai_chance = { base = 10 }
+		SWE = {
+			country_event = {
+				id = sweden.68 days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sweden.67
+	title = sweden.67.t
+	desc = sweden.67.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.67.a
+		add_political_power = 10
+	}
+}
+
+country_event = {
+	id = sweden.68
+	title = sweden.68.t
+	desc = sweden.68.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.68.a
+		add_political_power = -15
+	}
+}
+
+country_event = {
+	id = sweden.70
+	title = sweden.70.t
+	desc = sweden.70.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.70.a
+		add_political_power = -50
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = sweden.71
+	title = sweden.71.t
+	desc = sweden.71.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.71.a
+		add_political_power = -50
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = sweden.72
+	title = sweden.72.t
+	desc = sweden.72.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.72.a
+		add_political_power = -20
+		add_stability = -0.03
+	}
+}
+
+country_event = {
+	id = sweden.73
+	title = sweden.73.t
+	desc = sweden.73.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.73.a
+		ai_chance = { base = 90 }
+		SWE = {
+			country_event = {
+				id = sweden.75 days = 1
+			}
+		}
+	}
+	
+	option = {
+		name = sweden.73.b
+		ai_chance = { base = 10 }
+		SWE = {
+			country_event = {
+				id = sweden.74 days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sweden.74
+	title = sweden.74.t
+	desc = sweden.74.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.74.a
+		add_political_power = 10
+		annex_country = {
+			target = NOR
+			transfer_troops = yes
+		}
+	}
+}
+
+country_event = {
+	id = sweden.75
+	title = sweden.75.t
+	desc = sweden.75.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.75.a
+		add_political_power = -15
+		declare_war_on = {
+			target = NOR
+			type = annex_everything
+		}
+	}
+}
+
+country_event = {
+	id = sweden.76
+	title = sweden.76.t
+	desc = sweden.76.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.76.a
+		ai_chance = { base = 90 }
+		set_country_flag = SWE_GER_division_plan_denmark_flag
+		SWE = {
+			country_event = {
+				id = sweden.77 days = 1
+			}
+		}
+	}
+	
+	option = {
+		name = sweden.76.b
+		ai_chance = { base = 10 }
+		SWE = {
+			country_event = {
+				id = sweden.78 days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sweden.77
+	title = sweden.77.t
+	desc = sweden.77.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.77.a
+		add_political_power = 15
+	}
+}
+
+country_event = {
+	id = sweden.78
+	title = sweden.78.t
+	desc = sweden.78.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.78.a
+		add_political_power = -15
+	}
+}
+
+country_event = {
+	id = sweden.79
+	title = sweden.79.t
+	desc = sweden.79.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.79.a
+		declare_war_on = {
+			target = DEN
+			type = annex_everything
+		}
+		if = {
+			limit = {
+				GER = { has_country_flag = SWE_GER_division_plan_denmark_flag }
+			}
+			GER = {
+				country_event = {
+					id = sweden.80 days = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sweden.80
+	title = sweden.80.t
+	desc = sweden.80.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.80.a
+		declare_war_on = {
+			target = DEN
+			type = annex_everything
+		}
+	}
+}
+
+country_event = {
+	id = sweden.83
+	title = sweden.83.t
+	desc = sweden.83.d
+	#picture = GFX_report_event_generic_read_write
+
+	trigger = {
+		tag = SWE
+		GER = {
+			has_country_flag = SWE_GER_division_plan_denmark_flag
+		}
+		NOT = {
+			country_exists = DEN
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.83.a
+		add_political_power = 50
+		hidden_effect = {
+			transfer_state = 37
+			transfer_state = 99
+			transfer_state = 100
+			transfer_state = 101
+			GER = {
+				transfer_state = 819
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sweden.81
+	title = sweden.81.t
+	desc = sweden.81.d
+	#picture = GFX_report_event_generic_read_write
+
+	trigger = {
+		tag = SWE
+		has_country_flag = SWE_revenge_for_karl_xii_flag
+		NOT = {
+			country_exists = NOR
+		}
+		controls_state = 37
+		controls_state = 99
+		controls_state = 100
+		controls_state = 101
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.81.a
+		add_ideas = SWE_revenge_for_karl_xii_idea
+	}
+}
+
+country_event = {
+	id = sweden.82
+	title = sweden.82.t
+	desc = sweden.82.d
+	#picture = GFX_report_event_generic_read_write
+
+	trigger = {
+		tag = SWE
+		has_country_flag = SWE_last_dano_swedish_war_flag
+		NOT = {
+			country_exists = DEN
+		}
+		controls_state = 37
+		controls_state = 99
+		controls_state = 100
+		controls_state = 101
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = sweden.82.a
+		add_ideas = SWE_last_dano_swedish_war_idea
+	}
+}

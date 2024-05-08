@@ -1,0 +1,89 @@
+﻿capital = 65
+
+oob = "SAX_1936"
+
+set_research_slots = 3
+set_cosmetic_tag = SAX
+add_ideas = {
+	limited_conscription
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	early_fighter = 1
+}
+
+set_convoys = 5
+
+
+set_politics = {
+	
+	ruling_party = neutrality
+	last_election = "1932.5.21"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 5
+    neutrality = 80
+    fascism = 0 
+    communism = 5
+    socialist = 0
+    conservatives = 10
+}
+
+
+create_country_leader = {
+	name = "Friedrich-Christian of Saxony"
+	desc = "POLITICS_KONSTANTIN_PATS_DESC"
+	picture = "gfx/leaders/SAX/kingsax.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}	
+	create_country_leader = {
+	name = "Max Seydewitz"
+	desc = "POLITICS_KONSTANTIN_PATS_DESC"
+	picture = "max_seydewitz.tga"
+	expire = "1965.1.1"
+	ideology = socialist_subtype
+	traits = {
+		#
+	}
+}	
+	create_country_leader = {
+	name = "Mandfred Freiherr von Killinger"
+	desc = "POLITICS_KONSTANTIN_PATS_DESC"
+	picture = "Manfred_Killinger"
+	expire = "1965.1.1"
+	ideology = National_Socialism
+	traits = {
+		#
+	}
+}
+	
+	create_country_leader = {
+	name = "Rudolf Friedrichs"
+	desc = "POLITICS_KONSTANTIN_PATS_DESC"
+	picture = "rudolf_friedrichs.tga"
+	expire = "1965.1.1"
+	ideology = communism_subtype
+	traits = {
+		#
+	}
+}	
+create_corps_commander = { #Saxony
+	name = "Georg-Hans Reinhardt"
+	picture = "Portrait_Germany_Georg_von_Reinhardt.dds"
+	traits = { trait_cautious armor_officer }
+	skill = 3
+	#id = 14
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}

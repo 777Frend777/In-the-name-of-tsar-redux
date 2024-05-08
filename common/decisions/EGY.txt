@@ -1,0 +1,1218 @@
+##### ROM ######
+
+EGY_disestablish_british_influence = {
+    EGY_execute_the_servants = {
+        visible = {
+			NOT = {
+				has_country_flag = EGY_servants_executed
+				has_country_flag = EGY_politicians_deported
+			}
+        }
+		fire_only_once = yes
+		icon = GFX_decision_generic_prepare_civil_war
+        cost = 25
+        available = {
+            has_manpower > 500
+			has_idea = king_farouk_i
+        }
+		ai_will_do = {
+			factor = 500
+		}
+        complete_effect = {
+            add_manpower = -500
+			ENG = {
+				add_opinion_modifier = { target = EGY modifier = small_decrease }
+			}
+        }
+		days_remove = 30
+        remove_effect = {
+            add_manpower = 500
+			swap_ideas = {
+				remove_idea = the_british_protectorate
+				add_idea = the_british_protectorate_1
+			}
+			set_country_flag = { flag = EGY_servants_executed value = 1 }
+        }
+    }
+	EGY_deport_the_politicians = {
+        visible = {
+			has_country_flag = EGY_servants_executed
+        }
+		fire_only_once = yes
+		icon = GFX_decision_eng_blackshirt_march
+        cost = 25
+        available = {
+            has_stability > 0.1
+        }
+		ai_will_do = {
+			factor = 500
+		}
+        complete_effect = {
+			add_war_support = 0.05
+			ENG = {
+				add_opinion_modifier = { target = EGY modifier = small_decrease }
+			}
+        }
+		days_remove = 30
+        remove_effect = {
+			remove_ideas = the_british_protectorate_1
+			clr_country_flag = EGY_servants_executed
+			set_country_flag = { flag = EGY_politicians_deported value = 1 }
+        }
+    }
+	EGY_declare_independence = {
+        visible = {
+			has_completed_focus = EGY_sever_ties_with_uk
+        }
+		fire_only_once = yes
+		icon = GFX_decision_generic_form_nation
+        cost = 50
+        available = {
+            has_stability > 0.2
+			has_country_flag = EGY_politicians_deported
+			has_country_flag = EGY_makram_ebeid_assassinated
+			has_country_flag = EGY_military_reinstated
+        }
+		ai_will_do = {
+			factor = 1000
+		}
+        complete_effect = {
+			add_war_support = 0.1
+			ENG = {
+				add_opinion_modifier = { target = EGY modifier = small_decrease }
+			}
+        }
+		days_remove = 50
+        remove_effect = {
+			remove_ideas = resistance_to_british_occupation
+			hidden_effect = {
+				ENG = {
+					end_puppet = EGY
+				}
+			}
+			ENG = {
+				diplomatic_relation = {
+					country = EGY
+					relation = guarantee
+					active = no
+				}
+			}
+			ENG = {
+				set_autonomy = {
+					target = EGY
+					autonomy_state = autonomy_free
+				}
+			}
+			hidden_effect = {
+				set_country_flag = EGY_declared_independence
+			}
+        }
+    }
+	EGY_reinstate_traditional_military_trainers = {
+        visible = {
+			NOT = {
+				has_country_flag = EGY_military_reinstated
+			}
+        }
+		fire_only_once = yes
+		icon = GFX_decision_generic_army_support
+        cost = 25
+        available = {
+            has_manpower > 1000
+        }
+		ai_will_do = {
+			factor = 500
+		}
+        complete_effect = {
+            add_manpower = -1000
+			ENG = {
+				add_opinion_modifier = { target = EGY modifier = small_decrease }
+			}
+        }
+		days_remove = 30
+        remove_effect = {
+            add_manpower = 1000
+			if = {
+				limit = {
+					has_idea = british_military_training
+				}
+				remove_ideas = british_military_training
+			}
+			add_war_support = 0.05
+			set_country_flag = { flag = EGY_military_reinstated value = 1 }
+        }
+    }
+	EGY_destabilise_the_wafd = {
+        visible = {
+			NOT = {
+				has_country_flag = EGY_wafd_destabilised
+				has_country_flag = EGY_makram_ebeid_assassinated
+			}
+        }
+		fire_only_once = yes
+		icon = GFX_decision_generic_break_treaty
+        cost = 25
+        available = {
+            democratic < 0.6
+        }
+		days_remove = 30
+        remove_effect = {
+            if = {
+				limit = {
+					has_government = democratic
+				}
+				kill_country_leader = yes
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.20
+			}
+			create_country_leader = {
+				name = "Aly Maher Pasha"
+				desc = "POLITICS_ALY_MAHER_PASHA_DESC"
+				picture = "Portrait_Egypt_Aly_Maher_Pasha.dds"
+				expire = "1960.1.1"
+				ideology = conservatism
+				traits = {
+					#
+				}
+			}
+			add_ideas = wafd_internal_collapse
+			set_country_flag = { flag = EGY_wafd_destabilised value = 1 }
+			set_country_flag = EGY_wafd_collapse
+			hidden_effect = {
+				set_party_name = { 
+					ideology = democratic
+					name = EGY_fallen_wafd_party
+				}
+			}
+        }
+    }
+	EGY_assassinate_makram_ebeid = {
+        visible = {
+			has_country_flag = EGY_wafd_destabilised
+        }
+		fire_only_once = yes
+		icon = GFX_decision_eng_support_imperialist_coup
+        cost = 25
+        available = {
+            has_manpower > 500
+        }
+		days_remove = 10
+		complete_effect = {
+			add_manpower = -500
+		}
+        remove_effect = {
+			add_manpower = 500
+            random_list = {
+				90 = { country_event = { id = egyptianempire.4 days = 2 } }
+				10 = { country_event = { id = egyptianempire.5 days = 2 } }
+			}
+			clr_country_flag = EGY_wafd_destabilised
+			set_country_flag = { flag = EGY_makram_ebeid_assassinated value = 1 }
+			set_country_flag = EGY_assassinated_makram_ebeid
+			custom_effect_tooltip = remove_political_advisor
+			show_ideas_tooltip = makram_ebeid
+        }
+    }
+}
+EGY_a_flourishing_economy = {
+	EGY_attract_foreign_investors = {
+		icon = hol_attract_foreign_investors
+		visible = {
+			NOT = {
+				has_country_flag = EGY_foreign_investors_attracted
+			}
+		}
+		available = {
+			OR = {
+				has_idea = export_focus
+				has_idea = free_trade
+				is_in_faction_with = ITA
+				is_in_faction_with = ENG
+				is_in_faction_with = GER
+			}
+			NOT = {
+				has_war_with = ENG
+			}
+			has_capitulated = no
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 90
+		modifier = {
+			consumer_goods_factor = -0.05
+		}
+		remove_effect = {
+			set_country_flag = EGY_foreign_investors_attracted
+			add_ideas = a_flourishing_economy
+		}
+	}
+	EGY_expand_the_mines = {
+		icon = GFX_decision_generic_ignite_civil_war
+		visible = {
+			has_country_flag = EGY_foreign_investors_attracted
+			NOT = {
+				has_country_flag = EGY_mines_expanded
+			}
+		}
+		available = {
+			has_tech = construction2
+			has_tech = excavation1
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 90
+		modifier = {
+			consumer_goods_factor = 0.05
+			production_factory_efficiency_gain_factor = -0.05
+		}
+		remove_effect = {
+			set_country_flag = EGY_mines_expanded
+			swap_ideas = {
+				remove_idea = a_flourishing_economy
+				add_idea = a_flourishing_economy_2
+			}
+		}
+	}
+	EGY_legalise_slaves = {
+		icon = GFX_decision_eng_blackshirt_march
+		visible = {
+			has_country_flag = EGY_foreign_investors_attracted
+			has_country_flag = EGY_mines_expanded
+			NOT = {
+				has_country_flag = EGY_slaves_legalised
+			}
+		}
+		available = {
+			552 = {
+				state_population > 10000
+			}
+			456 = {
+				state_population > 100000
+			}
+			457 = {
+				state_population > 500
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 90
+		complete_effect = {
+			add_stability = -0.05
+			add_manpower = -5000
+		}
+		remove_effect = {
+			hidden_effect = {
+				ENG = {
+					add_opinion_modifier = { target = EGY modifier = medium_decrease }
+				}
+			}
+			set_country_flag = EGY_slaves_legalised
+			swap_ideas = {
+				remove_idea = a_flourishing_economy_2
+				add_idea = a_flourishing_economy_3
+			}
+		}
+	}
+	EGY_repurchase_the_suez = {
+		icon = GFX_decision_eng_trade_unions_demand
+		visible = {
+			NOT = {
+				has_country_flag = EGY_suez_purchased
+			}
+		}
+		available = {
+			ENG = {
+				797 = { is_owned_and_controlled_by = ENG }
+			}
+			has_country_flag = EGY_slaves_legalised
+			has_country_flag = EGY_mines_expanded
+			has_country_flag = EGY_foreign_investors_attracted
+		}
+		cost = 200
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				country_event = { id = britain.1003 hours = 6 }
+			}
+			set_country_flag = EGY_suez_purchased
+		}
+	}
+}
+EGY_placate_the_churches_category = {
+
+	EGY_placate_the_christian_church = {
+
+		icon = GFX_decision_ege_placate_the_christian_church
+
+		allowed = {
+			tag = EGY
+		}
+
+		available = {
+			EGY = {
+				exists = yes
+			}
+			check_variable = { MBH.muslim_church_influence < 50 }
+			NOT = {
+				has_country_flag = EGY_muslim_brotherhood_disestablished
+			}
+		}
+
+		days_remove = 30
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				is_historical_focus_on = yes
+				date > 1937.01.01
+			}
+			modifier = {
+				factor = 100
+				has_completed_focus = EGY_cave_to_nationalism
+			}
+			modifier = {
+				factor = 10
+				has_completed_focus = EGY_the_purge_of_democracy
+			}
+			modifier = {
+				factor = 10
+				has_country_flag = EGY_riot_recovery
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = EGY_church_placation_ai_timer_flag
+			}
+		}
+
+		visible = {
+			original_tag = EGY
+			check_variable = { MBH.muslim_church_influence < 50 }
+			NOT = {
+				has_country_flag = EGY_muslim_brotherhood_disestablished
+			}
+			NOT = {
+				has_completed_focus = EGY_pact_of_umar
+			}
+		}
+
+		complete_effect = {
+		}
+
+		fixed_random_seed = no
+
+		remove_effect = {
+			MBH = { add_to_variable = { var = muslim_church_influence value = 1 } }
+			set_variable = { var = mbh_temp_influence value = MBH.muslim_church_influence }
+			subtract_from_variable = { var = mbh_temp_influence value = CCE.christian_church_influence }
+			set_variable = { var = cce_temp_influence value = CCE.christian_church_influence }
+			subtract_from_variable = { var = cce_temp_influence value = MBH.muslim_church_influence }
+			hidden_effect = {
+				random_list = {
+					10 = {
+						set_country_flag = { flag = EGY_church_placation_ai_timer_flag value = 1 days = 20 }
+					}
+					10 = {
+						set_country_flag = { flag = EGY_church_placation_ai_timer_flag value = 1 days = 25 }
+					}
+					10 = {
+						set_country_flag = { flag = EGY_church_placation_ai_timer_flag value = 1 days = 30 }
+					}
+					10 = {
+						set_country_flag = { flag = EGY_church_placation_ai_timer_flag value = 1 days = 35 }
+					}
+					10 = {
+						set_country_flag = { flag = EGY_church_placation_ai_timer_flag value = 1 days = 40 }
+					}
+					10 = {
+						set_country_flag = { flag = EGY_church_placation_ai_timer_flag value = 1 days = 45 }
+					}
+					10 = {
+						set_country_flag = { flag = EGY_church_placation_ai_timer_flag value = 1 days = 50 }
+					}
+				}
+				if = {
+					limit = {
+						EGY = {
+							check_variable = { var = cce_temp_influence value = 0 compare = greater_than }
+							OR = {
+								NOT = { has_country_flag = EGY_placate_the_churches_cce_lead_flag }
+								has_country_flag = EGY_placate_the_churches_mbh_lead_flag
+							}
+						}
+					}
+					clr_country_flag = EGY_placate_the_churches_mbh_lead_flag
+					set_country_flag = EGY_placate_the_churches_cce_lead_flag
+				}
+				if = {
+					limit = {
+						EGY = {
+							check_variable = { var = mbh_temp_influence value = 0 compare = greater_than }
+							OR = {
+								NOT = { has_country_flag = EGY_placate_the_churches_mbh_lead_flag }
+								has_country_flag = EGY_placate_the_churches_cce_lead_flag
+							}
+						}
+					}
+					clr_country_flag = EGY_placate_the_churches_cce_lead_flag
+					set_country_flag = EGY_placate_the_churches_mbh_lead_flag
+				}
+				if = {
+					limit = {
+						has_country_flag = EGY_coptic_church_placated
+					}
+					clr_country_flag = EGY_coptic_church_placated
+					set_country_flag = { flag = EGY_coptic_church_placated value = 1 days = 30 }
+					else = {
+						set_country_flag = { flag = EGY_coptic_church_placated value = 1 days = 30 }
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = EGY_coptic_church_placated_timer
+					}
+					clr_country_flag = EGY_coptic_church_placated_timer
+					set_country_flag = { flag = EGY_coptic_church_placated_timer value = 1 days = 90 }
+					else = {
+						set_country_flag = { flag = EGY_coptic_church_placated_timer value = 1 days = 90 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = muslim_influence_1
+						has_idea = muslim_influence_2
+						has_idea = muslim_influence_3
+						has_idea = muslim_influence_4
+						has_idea = muslim_influence_5
+						has_idea = muslim_influence_6
+						has_idea = muslim_influence_7
+						has_idea = muslim_influence_8
+						has_idea = muslim_influence_9
+						has_idea = muslim_influence_10
+					}
+					check_variable = { MBH.muslim_church_influence = 1 }
+				}
+				add_ideas = muslim_influence_1
+			}
+			else_if = {
+				limit = {
+					check_variable = { MBH.muslim_church_influence = 5 }
+				}
+				EGY_muslim_influence_level_up = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { MBH.muslim_church_influence = 10 }
+				}
+				EGY_muslim_influence_level_up = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { MBH.muslim_church_influence = 15 }
+				}
+				EGY_muslim_influence_level_up = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { MBH.muslim_church_influence = 20 }
+				}
+				EGY_muslim_influence_level_up = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { MBH.muslim_church_influence = 25 }
+				}
+				EGY_muslim_influence_level_up = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { MBH.muslim_church_influence = 30 }
+				}
+				EGY_muslim_influence_level_up = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { MBH.muslim_church_influence = 35 }
+				}
+				EGY_muslim_influence_level_up = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { MBH.muslim_church_influence = 40 }
+				}
+				EGY_muslim_influence_level_up = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { MBH.muslim_church_influence = 45 }
+				}
+				EGY_muslim_influence_level_up = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { MBH.muslim_church_influence = 50 }
+				}
+				EGY_muslim_influence_level_up = yes
+			}
+		}
+	}
+
+	EGY_placate_the_muslim_church = {
+
+		icon = GFX_decision_ege_placate_the_muslim_church
+
+		allowed = {
+			tag = EGY
+		}
+
+		available = {
+			EGY = { 
+				exists = yes
+			}
+			check_variable = { CCE.christian_church_influence < 50 }
+			NOT = {
+				has_country_flag = EGY_coptic_church_disestablished
+			}	
+		}
+
+		days_remove = 30
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 0.1
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+				date > 1938.01.01
+			}
+			modifier = {
+				factor = 100
+				has_completed_focus = EGY_preserve_political_neutrality
+			}
+			modifier = {
+				factor = 10
+				has_completed_focus = EGY_the_purge_of_democracy
+			}
+			modifier = {
+				factor = 10
+				has_country_flag = EGY_riot_recovery
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = EGY_church_placation_ai_timer_flag
+			}
+		}
+
+		visible = {
+			original_tag = EGY
+			check_variable = { CCE.christian_church_influence < 50 }
+			NOT = {
+				has_country_flag = EGY_coptic_church_disestablished
+			}
+			NOT = {
+				has_completed_focus = EGY_pact_of_umar
+			}			
+		}
+
+		complete_effect = {
+		}
+		
+		fixed_random_seed = no
+		
+		remove_effect = {
+			if = {
+				limit = {
+					has_country_flag = EGY_1936_aly_maher_pasha_appointed
+				}
+				CCE = { add_to_variable = { var = christian_church_influence value = 0.5 } }
+				set_variable = { var = cce_temp_influence value = CCE.christian_church_influence }
+				subtract_from_variable = { var = cce_temp_influence value = MBH.muslim_church_influence }
+				set_variable = { var = mbh_temp_influence value = MBH.muslim_church_influence }
+				subtract_from_variable = { var = mbh_temp_influence value = CCE.christian_church_influence }
+			}
+			else = {
+				CCE = { add_to_variable = { var = christian_church_influence value = 1 } }
+				set_variable = { var = cce_temp_influence value = CCE.christian_church_influence }
+				subtract_from_variable = { var = cce_temp_influence value = MBH.muslim_church_influence }
+				set_variable = { var = mbh_temp_influence value = MBH.muslim_church_influence }
+				subtract_from_variable = { var = mbh_temp_influence value = CCE.christian_church_influence }
+			}
+			hidden_effect = {
+				random_list = {
+					10 = {
+						set_country_flag = { flag = EGY_church_placation_ai_timer_flag value = 1 days = 20 }
+					}
+					10 = {
+						set_country_flag = { flag = EGY_church_placation_ai_timer_flag value = 1 days = 25 }
+					}
+					10 = {
+						set_country_flag = { flag = EGY_church_placation_ai_timer_flag value = 1 days = 30 }
+					}
+					10 = {
+						set_country_flag = { flag = EGY_church_placation_ai_timer_flag value = 1 days = 35 }
+					}
+					10 = {
+						set_country_flag = { flag = EGY_church_placation_ai_timer_flag value = 1 days = 40 }
+					}
+					10 = {
+						set_country_flag = { flag = EGY_church_placation_ai_timer_flag value = 1 days = 45 }
+					}
+					10 = {
+						set_country_flag = { flag = EGY_church_placation_ai_timer_flag value = 1 days = 50 }
+					}
+				}
+				if = {
+					limit = {
+						EGY = {
+							check_variable = { var = cce_temp_influence value = 0 compare = greater_than }
+							OR = {
+								NOT = { has_country_flag = EGY_placate_the_churches_cce_lead_flag }
+								has_country_flag = EGY_placate_the_churches_mbh_lead_flag
+							}
+						}
+					}
+					clr_country_flag = EGY_placate_the_churches_mbh_lead_flag
+					set_country_flag = EGY_placate_the_churches_cce_lead_flag
+				}
+				if = {
+					limit = {
+						EGY = {
+							check_variable = { var = mbh_temp_influence value = 0 compare = greater_than }
+							OR = {
+								NOT = { has_country_flag = EGY_placate_the_churches_mbh_lead_flag }
+								has_country_flag = EGY_placate_the_churches_cce_lead_flag
+							}
+						}
+					}
+					clr_country_flag = EGY_placate_the_churches_cce_lead_flag
+					set_country_flag = EGY_placate_the_churches_mbh_lead_flag
+				}
+				if = {
+					limit = {
+						has_country_flag = EGY_muslim_brotherhood_placated
+					}
+					clr_country_flag = EGY_muslim_brotherhood_placated
+					set_country_flag = { flag = EGY_muslim_brotherhood_placated value = 1 days = 150 }
+					else = {
+						set_country_flag = { flag = EGY_muslim_brotherhood_placated value = 1 days = 90 }
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = EGY_muslim_brotherhood_placated_timer
+					}
+					clr_country_flag = EGY_muslim_brotherhood_placated_timer
+					set_country_flag = { flag = EGY_muslim_brotherhood_placated_timer value = 1 days = 150 }
+					else = {
+						set_country_flag = { flag = EGY_muslim_brotherhood_placated_timer value = 1 days = 90 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = christian_influence_1
+						has_idea = christian_influence_2
+						has_idea = christian_influence_3
+						has_idea = christian_influence_4
+						has_idea = christian_influence_5
+						has_idea = christian_influence_6
+						has_idea = christian_influence_7
+						has_idea = christian_influence_8
+						has_idea = christian_influence_9
+						has_idea = christian_influence_10
+					}
+					check_variable = { CCE.christian_church_influence = 1 }
+				}
+				add_ideas = christian_influence_1
+			}
+			else_if = {
+				limit = {
+					check_variable = { CCE.christian_church_influence = 5 }
+				}
+				EGY_christian_influence_level_up = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { CCE.christian_church_influence = 10 }
+				}
+				EGY_christian_influence_level_up = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { CCE.christian_church_influence = 15 }
+				}
+				EGY_christian_influence_level_up = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { CCE.christian_church_influence = 20 }
+				}
+				EGY_christian_influence_level_up = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { CCE.christian_church_influence = 25 }
+				}
+				EGY_christian_influence_level_up = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { CCE.christian_church_influence = 30 }
+				}
+				EGY_christian_influence_level_up = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { CCE.christian_church_influence = 35 }
+				}
+				EGY_christian_influence_level_up = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { CCE.christian_church_influence = 40 }
+				}
+				EGY_christian_influence_level_up = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { CCE.christian_church_influence = 45 }
+				}
+				EGY_christian_influence_level_up = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = { CCE.christian_church_influence = 50 }
+				}
+				EGY_christian_influence_level_up = yes
+			}
+		}
+	}
+	
+	EGY_purge_the_coptic_church = {
+		icon = GFX_decision_generic_prepare_civil_war
+		visible = {
+			NOT = {
+				has_country_flag =  EGY_coptic_church_disestablished
+			}
+			NOT = {
+				has_completed_focus = EGY_pact_of_umar
+			}
+		}
+		available = {
+			OR = {
+				has_completed_focus = EGY_abide_by_no_rules
+				has_completed_focus = EGY_crush_the_coptic_church
+				has_completed_focus = EGY_religious_override
+				has_completed_focus = EGY_in_the_name_of_islam
+			}
+			OR = {
+				NOT = {
+					has_completed_focus = EGY_new_world_order
+				}
+				NOT = {
+					has_completed_focus = EGY_united_under_christianity
+				}
+				NOT = {
+					has_completed_focus = EGY_pact_of_umar
+				}
+			}
+		}
+		days_remove = 90
+		fire_only_once = yes
+		modifier = {
+			stability_weekly = -0.001
+		}
+		remove_effect = {
+			hidden_effect = {
+				set_temp_variable = { var = influence_remove value = CCE.christian_church_influence }
+				CCE = { subtract_from_variable = { var = christian_church_influence value = influence_remove } }
+				set_country_flag = EGY_coptic_church_disestablished
+			}
+			EGY_remove_christian_influence = yes
+			remove_ideas = divided_under_pharaonism
+                      
+		}
+	}
+	
+	EGY_purge_the_muslim_brotherhood = {
+		icon = GFX_decision_generic_prepare_civil_war
+		visible = {
+			NOT = {
+				has_country_flag = EGY_muslim_brotherhood_disestablished
+			}
+			NOT = {
+				has_completed_focus = EGY_pact_of_umar
+			}
+		}
+		available = {
+			OR = {
+				has_completed_focus = EGY_abide_by_no_rules
+				has_completed_focus = EGY_religious_override
+				has_completed_focus = EGY_the_second_crusade
+			}
+			NOT = {
+				has_completed_focus = EGY_cave_to_nationalism
+			}
+			NOT = {
+				has_completed_focus = EGY_pact_of_umar
+			}
+		}
+		days_remove = 90
+		fire_only_once = yes
+		modifier = {
+			stability_weekly = -0.001
+		}
+		remove_effect = {
+			hidden_effect = {
+				set_temp_variable = { var = influence_remove value = MBH.muslim_church_influence }
+				MBH = { subtract_from_variable = { var = muslim_church_influence value = influence_remove } }
+				set_country_flag = EGY_muslim_brotherhood_disestablished
+			}
+			EGY_remove_muslim_influence = yes
+			remove_ideas = divided_under_pharaonism
+                    
+		}
+	}
+}
+EGY_arab_socialist_movement_category = {
+	
+	EGY_mission_to_iraq = {
+		icon = GFX_decision_category_generic_propaganda
+		
+		visible = {
+			original_tag = EGY
+			NOT = {
+				has_country_flag = EGY_iraq_communist
+			}
+		}
+		
+		available = {
+			NOT = {
+				IRQ = {
+					has_government = communism
+				}
+			}
+			has_capitulated = no
+		}
+		
+		cost = 20
+		
+		highlight_states = { 
+			state = 291 
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 90
+		
+		modifier = {
+			political_power_gain = -0.1
+		}
+		
+		remove_effect = {
+			IRQ = {
+				add_ideas = arab_socialist_movementIRQ
+			}
+			hidden_effect = {
+				set_country_flag = EGY_iraq_communist
+			}
+		}
+	}
+	
+	EGY_mission_to_saudi_arabia = {
+		icon = GFX_decision_category_generic_propaganda
+		
+		visible = {
+			original_tag = EGY
+			NOT = {
+				has_country_flag = EGY_saudi_arabia_communist
+			}
+		}
+		
+		available = {
+			NOT = {
+				SAU = {
+					has_government = communism
+				}
+			}
+			has_capitulated = no
+		}
+		
+		cost = 20
+		
+		highlight_states = { 
+			state = 292
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 90
+		
+		modifier = {
+			political_power_gain = -0.1
+		}
+		
+		remove_effect = {
+			SAU = {
+				add_ideas = arab_socialist_movementSAU
+			}
+			hidden_effect = {
+				set_country_flag = EGY_saudi_arabia_communist
+			}
+		}
+	}
+	
+	EGY_mission_to_iran = {
+		icon = GFX_decision_category_generic_propaganda
+		
+		visible = {
+			original_tag = EGY
+			NOT = {
+				has_country_flag = EGY_iran_communist
+			}
+		}
+		
+		available = {
+			NOT = {
+				PER = {
+					has_government = communism
+				}
+			}
+			has_capitulated = no
+		}
+		
+		cost = 20
+		
+		highlight_states = { 
+			state = 266
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 90
+		
+		modifier = {
+			political_power_gain = -0.1
+		}
+		
+		remove_effect = {
+			PER = {
+				add_ideas = arab_socialist_movementPER
+			}
+			hidden_effect = {
+				set_country_flag = EGY_iran_communist
+			}
+		}
+	}
+	
+	EGY_mission_to_liberia = {
+		icon = GFX_decision_category_generic_propaganda
+		
+		visible = {
+			original_tag = EGY
+			NOT = {
+				has_country_flag = EGY_liberia_communist
+			}
+		}
+		
+		available = {
+			NOT = {
+				LIB = {
+					has_government = communism
+				}
+			}
+			has_capitulated = no
+		}
+		
+		cost = 20
+		
+		highlight_states = { 
+			state = 298
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 90
+		
+		modifier = {
+			political_power_gain = -0.1
+		}
+		
+		remove_effect = {
+			LIB = {
+				add_ideas = arab_socialist_movement
+			}
+			hidden_effect = {
+				set_country_flag = EGY_liberia_communist
+			}
+		}
+	}
+	
+	EGY_mission_to_south_africa = {
+		icon = GFX_decision_category_generic_propaganda
+		
+		visible = {
+			original_tag = EGY
+			NOT = {
+				has_country_flag = EGY_south_africa_communist
+			}
+			has_completed_focus = EGY_marx_of_africa
+		}
+		
+		available = {
+			NOT = {
+				SAF = {
+					has_government = communism
+				}
+			}
+			has_capitulated = no
+		}
+		
+		cost = 20
+		
+		highlight_states = { 
+			state = 275
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 90
+		
+		modifier = {
+			political_power_gain = -0.1
+		}
+		
+		remove_effect = {
+			SAF = {
+				add_ideas = arab_socialist_movement
+			}
+			hidden_effect = {
+				set_country_flag = EGY_south_africa_communist
+			}
+		}
+	}
+	
+	EGY_cause_an_ethiopian_rebellion = {
+		icon = GFX_decision_category_infiltration
+		
+		visible = {
+			original_tag = EGY
+			NOT = {
+				ETH = {
+					has_government = communism
+				}
+			}
+			has_completed_focus = EGY_marx_of_africa
+		}
+		
+		available = {
+			NOT = {
+				ETH = {
+					has_government = communism
+				}
+			}
+			OR = {
+				hidden_trigger = {
+					ETH = { is_subject = yes }
+				}
+				ETH = { is_puppet = yes }
+				ITA = {
+					has_full_control_of_state = 271
+				}
+			}
+			has_capitulated = no
+		}
+		
+		highlight_states = { 
+			state = 271
+		}
+		
+		is_good = yes
+		
+		fire_only_once = yes
+		
+		days_remove = 180
+		
+		complete_effect = {
+			add_manpower = -10000
+		}
+		
+		modifier = {
+			experience_gain_army = 0.25
+		}
+		
+		remove_effect = {
+			ITA = { country_event = { id = italy.1001 hours = 6 } }
+		}
+	}
+}
+EGY_sudanese_independence = {
+	
+	EGY_propose_fresh_elections = {
+		icon = GFX_decision_oppression
+		visible = {
+			NOT = {
+				has_country_flag = EGY_ministers_purged
+			}
+			has_country_flag = EGY_acted_on_new_constitution_protests
+			original_tag = EGY
+		}
+		available = {
+		}
+		allowed = {
+			original_tag = EGY
+		}
+		ai_will_do = {
+			factor = 500
+		}
+		cost = 25
+		fire_only_once = yes
+		days_remove = 90
+		modifier = {
+			political_power_gain = -0.05
+		}
+		remove_effect = {
+			add_stability = -0.05
+			set_country_flag = EGY_ministers_purged
+		}
+	}
+}
+political_actions = {
+	
+	EGY_purge_the_ministers = {
+		icon = GFX_decision_oppression
+		visible = {
+			NOT = {
+				has_country_flag = EGY_ministers_purged
+			}
+			has_country_flag = EGY_acted_on_new_constitution_protests
+			original_tag = EGY
+		}
+		available = {
+		}
+		allowed = {
+			original_tag = EGY
+		}
+		ai_will_do = {
+			factor = 500
+		}
+		cost = 25
+		fire_only_once = yes
+		days_remove = 90
+		modifier = {
+			political_power_gain = -0.05
+		}
+		remove_effect = {
+			add_stability = -0.05
+			set_country_flag = EGY_ministers_purged
+		}
+	}
+}

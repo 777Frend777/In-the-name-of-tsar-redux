@@ -1,0 +1,115 @@
+﻿l_russian:
+ HUN_treaty_of_triannon: "Трианонский договор" #NT!
+ HUN_treaty_of_triannon_desc: "Трианонский договор во многом похож на Версальский договор, нанося вред нашим вооруженным силам и препятствуя перевооружению. Нашей главной целью должно быть его изменение или упразднение. Мы можем сделать это, добиваясь сближения с Малой Антантой, предлагая Бледское соглашение или вообще отказываясь от него. Последний вариант будет широко рассматриваться как очень агрессивный и может спровоцировать решительную реакцию." #NT!
+ HUN_treaty_of_triannon_2: "Пересмотренный Трианонский договор" #NT!
+ HUN_treaty_of_triannon_3: "Бледское соглашение" #NT!
+ HUN_war_preparation: "Подготовка к войне" #NT!
+ HUN_hungarian_monarchy: "Венгерская монархия" #NT!
+ HUN_hungarian_monarchy_2: "Венгерская монархия" #NT!
+ HUN_hungarian_monarchy_democratic: "Венгерская монархия" #NT!
+ HUN_hungarian_monarchy_fascism: "Венгерская монархия" #NT!
+ HUN_his_majestys_government: "Правительство Его Величества" #NT!
+ HUN_charles_v: "Карл V Вильгельм" #NT!
+ HUN_dynastic_ties: "Династические связи" #NT!
+ HUN_dynastic_ties_desc: "Шведский король на венгерском троне означает более тесные связи между двумя странами. Они могут прийти друг другу на помощь во время войны, и шведское правительство может с большей готовностью предоставить Венгрии лицензии на добычу." #NT!
+ HUN_habsburg_restored: "Габсбург восстановлен" #NT!
+ HUN_interventionism: "Интервенционизм" #NT!
+ HUN_interventionism_2: "Интервенционизм" #NT!
+ HUN_interventionism_communism: "Интервенционизм" #NT!
+ HUN_license_foreign: "Фокус на иностранную лицензию" #NT!
+ HUN_joint_tank_development_group: "Совместная разработка танков" #NT!
+ HUN_joint_air_development_group: "Совместная разработка самолетов" #NT!
+ HUN_gusztav_gratz: "Густав Грац" #NT!
+ ROM_coastal_defense_navy_designer: "Галацская верфь" #NT!
+ ROM_black_sea_dominance_designer: "Верфи Брэила" #NT!
+ ROM_leonidas_works: "Леонидас работает" #NT!
+ ROM_flexible_foreign_policy_2: "Гибкая внешняя политика" #NT!
+ ROM_coastal_defense_ships_2: "Корабли береговой обороны" #NT!
+ ROM_war_preparation: "Подготовка к войне" #NT!
+ ROM_a_deal_with_the_devil_2: "Сделка с дьяволом" #NT!
+ ROM_figurehead_king_michael: "Подставное лицо короля Михаила" #NT!
+ ROM_king_carol_ii_hedonist: "Образ жизни короля Карола II" #NT!
+ ROM_king_carol_ii_hedonist_desc: "Король Карол II хорошо известен своим дорогим вкусом и готовностью потворствовать еще более щедрым вкусам своей любовницы. В прошлом он вызывал серьезные скандалы и, вероятно, будет продолжать это делать, если его не заменят или не покажут ошибочность его действий." #NT!
+ ROM_king_carol_ii_consumer_penalty: "Дополнительный бюджет" #NT!
+ ROM_king_carol_ii_factory_penalty: "Скандал с хищениями" #NT!
+ ROM_king_carol_ii_paid_with_pp: "Счета королевской семьи" #NT!
+ ROM_king_carol_ii_factory_paid_with_pp: "Реформа закупок" #NT!
+ ROM_king_carol_ii_handled: "Король Карол II" #NT!
+ ROM_hedonist_king: "Гедонист Кинг" #NT!
+ ROM_iar: "IAR"
+ ROM_ICAR: "ICAR"
+ ROM_SET: "SET"
+ ROM_ROMLOC: "ROMLOC"
+ ROM_acquire_tanks: "Румынская комиссия по закупкам танков" #NT!
+ ROM_cugir: "Кугир стрелковое оружие" #NT!
+ ROM_resita: "Ресита работает" #NT!
+ ROM_vauxhall: "Vauxhall Romania"
+ ROM_ford: "Atelierele Ford Bucuresti"
+ ROM_opel: "Opel Abt. Rumänien"
+ ENG_mot_chosen: "Приглашенная Британская автомобильная компания" #NT!
+ GER_mot_chosen: "Приглашенная немецкая автомобильная компания" #NT!
+ USA_mot_chosen: "Приглашенная американская автомобильная компания" #NT!
+ ROM_king_carol_emptied_accounts: "Король Кэрол опустошил счета" #NT!
+ ROM_the_sentinel_of_the_motherland: "Страж Родины" #NT!
+ ROM_the_sentinel_of_the_motherland_2: "Страж Родины" #NT!
+ ROM_nicolae_malaxa: "Николае Малакса" #NT!
+ CZE_german_millitary_cooperation_focus: "Военное сотрудничество Германии" #NT!
+ CZE_war_college_idea: "Военный колледж" #NT!
+ CZE_air_focus: "Воздух – наше море" #NT!
+ CZE_naval_focus: "Наследие судостроения" #NT!
+ CZE_export_focus1: "Ограниченный экспорт оружия" #NT!
+ CZE_export_focus2: "Экспорт оружия" #NT!
+ CZE_export_focus3: "Обширный экспорт вооружений" #NT!
+ CZE_fortification_focus: "Фортификационный фокус" #NT!
+ CZE_fortification_focus2: "Фортификационный фокус" #NT!
+ CZE_fortification_focus3: "Фортификационный фокус" #NT!
+ CZE_fortification_focus4: "Фортификационный фокус" #NT!
+ CZE_skoda_works: "Шкода работает" #NT!
+ CZE_divided_nation: "Разделенная нация" #NT!
+ CZE_czech_fascism_idea: "Чешский фашизм" #NT!
+ CZE_national_fascism_idea: "Национальный фашизм" #NT!
+ CZE_industrial_legacy_idea: "Промышленное наследие" #NT!
+ CZE_planning_bonus: "Совместное планирование Антанты" #NT!
+ little_entente_research_group_name: "Пакт организации" #NT!
+ YUG_RUS_research_group: "Юго-советская исследовательская группа" #NT!
+ YUG_air_research_group: "Югославская авиационная группа" #NT!
+ YUG_naval_research_group: "Югославская военно-морская группа" #NT!
+ YUG_idea_serbian_general_staff: "Сербский генеральный штаб" #NT!
+ YUG_idea_yugoslavian_general_staff: "Югославский генеральный штаб" #NT!
+ YUG_idea_federal_defense_council: "Федеральный совет обороны" #NT!
+ YUG_idea_local_self_management: "Местное самоуправление" #NT!
+ YUG_idea_central_management: "Центральное управление" #NT!
+ YUG_idea_peasant_councils: "Крестьянские советы" #NT!
+ YUG_idea_empowered_peasant_councils: "Наделенные полномочиями крестьянские советы" #NT!
+ YUG_idea_very_empowered_peasant_councils: "Высшие крестьянские советы" #NT!
+ YUG_idea_economic_aid: "Югославская экономическая помощь" #NT!
+ YUG_idea_foreign_capital: "Иностранный капитал" #NT!
+ YUG_idea_orthodox_church_support: "Поддержка Православной Церкви" #NT!
+ YUG_idea_all_yugoslavian_regiments: "Общеюгославские полки" #NT!
+ YUG_idea_croatian_opposition: "Хорватская оппозиция" #NT!
+ YUG_idea_croatian_opposition_desc: "Политические представители Хорватии настаивают на федеральной организации Королевства. Если их требования не будут выполнены, они будут продолжать противостоять каждому шагу центрального правительства. Они могут даже поднять восстание, если посчитают, что время пришло." #NT!
+ YUG_idea_slovene_nationalism: "Словенский национализм" #NT!
+ YUG_idea_slovene_nationalism_desc: "Словенцы давно хотели иметь собственное государство. Хотя они и приняли наше правление, они не испытывают особого энтузиазма по этому поводу. Словенские промышленники редко инвестируют в местный бизнес и, похоже, предпочитают тратить свои деньги за границей." #NT!
+ YUG_idea_slovene_nationalism_2: "Словенское самоуправление" #NT!
+ YUG_idea_slovene_nationalism_2_desc: "Делегированное правительство Словении гораздо охотнее работает с нами над восстановлением нашей армии, но сделанные им уступки означают, что у нас меньше контроля над тем, как управляются их заводы." #NT!
+ YUG_idea_croats_suppressed: "Хорватский национализм подавлен" #NT!
+ YUG_idea_religious_freedoms_guaranteed: "Свобода религии гарантирована" #NT!
+ YUG_idea_macedonian_opposition: "Македонская оппозиция" #NT!
+ YUG_idea_macedonian_opposition_desc: "Македонцы не совсем признали свою идентичность сербов и продолжают требовать особых прав. Политическая поддержка со стороны Болгарии, несомненно, играет свою роль." #NT!
+ YUG_idea_macedonian_opposition_1: "Умеренная македонская оппозиция" #NT!
+ YUG_idea_macedonian_opposition_1_desc: "Благодаря предоставлению некоторых умеренных политических уступок македонцам и прекращению наших усилий по навязыванию им сербской идентичности, напряженность в Македонии на время несколько ослабла." #NT!
+ YUG_idea_local_militias: "Местные ополченцы" #NT!
+ YUG_air_payment: "Покупка югославских самолетов" #NT!
+ YUG_fighter_production_diverted: "Перенаправленное производство истребителей" #NT!
+ YUG_bomber_production_diverted: "Перенаправленное производство бомбардировщиков" #NT!
+ YUG_idea_expanded_mining_industry: "Расширение горнодобывающей промышленности" #NT!
+ YUG_idea_tank_conversions: "Конверсии танков" #NT!
+ YUG_western_license: "Югославская закупочная комиссия" #NT!
+ agitated_peasants: "Крестьянская агитация" #NT!
+ pan_slavic_propaganda: "Панславянская пропаганда" #NT!
+ armed_communist_militants: "Вооруженные коммунистические боевики" #NT!
+ YUG_neutral_foreign_policy: "Вооруженный нейтралитет" #NT!
+ YUG_idea_axis_capital: "Осевые Инвестиции" #NT!
+ king_peter_1: "Король Питер" #NT!
+ YUG_brigadistas_idea: "Бригадисты" #NT!
+ will_be_removed_once_scw_is_over_tt: "\nЭтот дух будет §Rremoved§! как только закончится гражданская война в Испании." #NT!

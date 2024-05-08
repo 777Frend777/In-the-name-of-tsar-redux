@@ -1,0 +1,1272 @@
+focus_tree = {
+	id = GER_shared
+		country = {
+		factor = 0
+		modifier = {
+			add = 10
+			OR = {
+				tag = SAX
+				tag = WSM
+				tag = WUT
+				tag = RHN
+			}
+		}
+	}
+	default = no
+	focus = {
+		id = GRK_industry
+		icon = GFX_goal_generic_construction
+		cost = 10.00
+		x = 5
+		y = 0
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.00
+				uses = 2
+				category = industry
+			}
+		}
+
+	}
+	focus = {
+		id = GRK_recover_civil_war
+		icon = GFX_goal_generic_defence
+		cost = 10.00
+		x = 30
+		y = 0
+		completion_reward = {
+		add_political_power = 120
+		add_stability = 0.05
+		}
+	}
+	focus = {
+		id = GRK_world_recognition
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		x = 12
+		y = 0
+		available = {
+		has_country_flag = new_ger_united
+		}
+		completion_reward = {
+		add_political_power = 120
+		}
+	}
+	focus = {
+		id = GRK_army_studies
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10.00
+		x = 19
+		y = 0
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}	
+	}
+	focus = {
+		id = GRK_infra
+		icon = GFX_focus_ITA_grande_rivolta_rurale
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_industry
+		}
+		x = 2
+		y = 1
+		completion_reward = {
+			random_owned_controlled_state = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+	}
+	focus = {
+		id = GRK_dockyard
+		icon = GFX_focus_generic_refit_civilian_ships
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_infra
+		}
+		x = 0
+		y = 2
+		available = {
+			any_state = {
+				OR = {
+				is_controlled_by = WSM
+				is_controlled_by = WUT
+				is_controlled_by = RHN
+				is_controlled_by = SAX
+				}
+				is_coastal = yes
+			}
+		}
+		completion_reward = {
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}						
+		}
+	}
+	focus = {
+		id = GRK_fort_effort
+		icon = GFX_goal_generic_fortify_city
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_infra
+		}
+		x = 2
+		y = 2
+		completion_reward = {
+		add_ideas = RUS_fortification_focus
+		}
+	}
+	focus = {
+		id = GRK_new_trains
+		icon = GFX_focus_generic_railroad
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_infra
+		}
+		x = 4
+		y = 2
+		completion_reward = {
+			random_owned_controlled_state = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+	}
+	focus = {
+		id = GRK_civil_effort
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_new_trains
+		}
+		x = 4
+		y = 3
+		completion_reward = {
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 2
+			 instant_build = yes
+		    }
+		  }
+		}
+	}
+	focus = {
+		id = GRK_milit_effort
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_civil_effort
+		}
+		x = 4
+		y = 4
+		completion_reward = {
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = arms_factory
+			 level = 2
+			 instant_build = yes
+		    }
+		  }
+		}
+	}
+	focus = {
+		id = GRK_economic_policies
+		icon = GFX_goal_state_economy
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_industry
+		}
+		x = 7
+		y = 1
+		completion_reward = {
+		add_political_power = 120
+		}
+	}
+	focus = {
+		id = GRK_free_trade
+		icon = GFX_goal_generic_positive_trade_relations_gold
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_economic_policies
+		}
+		mutually_exclusive = {
+			focus = GRK_nationalize_industry
+		}
+		x = 6
+		y = 2
+		completion_reward = {
+		add_ideas = BAV_l_economy
+		}
+	}
+	focus = {
+		id = GRK_open_economy
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_free_trade
+		}
+		x = 6
+		y = 3
+		completion_reward = {
+		add_ideas = GER_r_trade
+		}
+	}
+	focus = {
+		id = GRK_fascist
+		icon = GFX_goal_ideology_national_populist
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_world_recognition
+		}
+		mutually_exclusive = {
+			focus = GRK_commi
+			focus = GRK_demo
+		}
+		x = 10
+		y = 1
+		completion_reward = {
+		set_politics = { ruling_party = fascism elections_allowed = no }
+		add_popularity = {
+					ideology = fascism
+					popularity = 0.45
+				}
+		}		
+	}
+	focus = {
+		id = GRK_commi
+		icon = GFX_goal_support_communism
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_world_recognition
+		}
+		mutually_exclusive = {
+			focus = GRK_fascist
+			focus = GRK_demo
+		}
+		x = 12
+		y = 1
+		completion_reward = {
+		if = {
+		limit = { has_government = communism }
+		add_political_power = 120
+		add_popularity = {
+					ideology = communism 
+					popularity = 0.2
+				}
+		}
+			if = {
+		limit = { NOT = { has_government = communism  } }
+		set_politics = { ruling_party = communism  elections_allowed = no }
+		add_popularity = {
+					ideology = communism 
+					popularity = 0.45
+				}
+		}
+	}
+	}
+	focus = {
+		id = GRK_nationalize_industry
+		icon = GFX_goal_generic_seize_money
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_economic_policies
+		}
+		prerequisite = {
+			focus = GRK_fascist
+			focus = GRK_commi
+		}
+		mutually_exclusive = {
+			focus = GRK_free_trade
+		}
+		x = 8
+		y = 2
+		available = {
+		NOT = { has_government = democratic }
+		}
+		completion_reward = { 
+		add_ideas = RUS_state_run
+		}
+	}
+	focus = {
+		id = GRK_closed_economy
+		icon = GFX_focus_ger_autarky
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_nationalize_industry
+		}
+		x = 8
+		y = 3
+		completion_reward = {
+		add_ideas = BAV_c_economy
+		}
+	}
+	focus = {
+		id = GRK_economic_boom
+		icon = GFX_focus_generic_industry_2
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_open_economy
+			focus = GRK_closed_economy
+		}
+		x = 7
+		y = 4
+		completion_reward = {
+		add_ideas = GER_economic_boom
+		}
+	}
+	focus = {
+		id = GRK_freicorps
+		icon = GFX_focus_ger_freikorps
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_fascist
+		}
+		x = 10
+		y = 2
+		completion_reward = {
+		add_ideas = ger_veteran_army
+		}
+	}
+	focus = {
+		id = GRK_the_sr
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_freicorps
+		}
+		x = 10
+		y = 3
+		completion_reward = {
+		add_ideas = GER_german_paramilitarism
+		}
+	}
+	focus = {
+		id = GRK_purge_opposition
+		icon = GFX_goal_purge_opposition
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_commi
+		}
+		x = 12
+		y = 2
+		completion_reward = {
+		add_ideas = BAV_arrested_opposition
+		}
+	}
+	focus = {
+		id = GRK_world_revolution
+		icon = GFX_goal_support_fourth_int
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_purge_opposition
+		}
+		x = 12
+		y = 3
+		completion_reward = {
+		add_ideas = BAV_wor_rev
+		}
+	}
+	focus = {
+		id = GRK_demo
+		icon = GFX_focus_generic_bastion_of_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_world_recognition
+		}
+		mutually_exclusive = {
+			focus = GRK_commi
+			focus = GRK_fascist
+		}
+		x = 14
+		y = 1
+		completion_reward = {
+		if = {
+		limit = { has_government = democratic }
+		add_political_power = 120
+		add_popularity = {
+					ideology = democratic
+					popularity = 0.2
+				}
+		}
+			if = {
+		limit = { NOT = { has_government = democratic } }
+		set_politics = { ruling_party = democratic elections_allowed = yes }
+		add_popularity = {
+					ideology = democratic
+					popularity = 0.45
+				}
+		}
+	}
+	}
+	focus = {
+		id = GRK_republicanism
+		icon = GFX_focus_rom_abdicate
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_demo
+		}
+		x = 14
+		y = 2
+		completion_reward = {
+		add_ideas = GER_rep
+		}
+	}
+	focus = {
+		id = GRK_support_privatization
+		icon = GFX_goal_generic_privatization
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_republicanism
+		}
+		x = 14
+		y = 3
+		completion_reward = {
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 2
+			 instant_build = yes
+		    }
+		  }
+		}
+	}
+	focus = {
+		id = GRK_consolidate_power
+		icon = GFX_goal_generic_political_pressure
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_the_sr
+			focus = GRK_world_revolution
+			focus = GRK_support_privatization
+		}
+		x = 12
+		y = 4
+		completion_reward = {
+		add_stability = 0.1
+		}
+	}
+	focus = {
+		id = GRK_equipment
+		icon = GFX_focus_secret_rearmament
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_army_studies
+		}
+		x = 16
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = GRK_tank_studies
+		icon = GFX_goal_generic_army_tanks
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_equipment
+		}
+		x = 16
+		y = 2
+		completion_reward = {
+		add_tech_bonus = {
+				name = heavyarmor_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_heavy_armor
+			}
+		add_tech_bonus = {
+			name = med_armor_bonus
+			bonus = 1.0
+			uses = 2
+			category = cat_medium_armor
+		}
+		
+		}
+	}
+	focus = {
+		id = GRK_militarism
+		icon = GFX_focus_jap_militarism
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_tank_studies
+		}
+		x = 16
+		y = 3
+		completion_reward = {	
+			add_ideas = militarism_focus
+			
+		}
+	}
+	focus = {
+		id = GRK_fighter_effort
+		icon = GFX_goal_generic_air_fighter
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_army_studies
+		}
+		mutually_exclusive = {
+			focus = GRK_cas
+		}
+		x = 18
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}
+	}
+	focus = {
+		id = GRK_cas
+		icon = GFX_focus_generic_cas_aircraft
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_army_studies
+		}
+		mutually_exclusive = {
+			focus = GRK_fighter_effort
+		}
+		x = 20
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+	focus = {
+		id = GRK_air_doctrines
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_fighter_effort
+			focus = GRK_cas
+		}
+		x = 19
+		y = 2
+		completion_reward = {
+		add_tech_bonus = {
+				name = airdoctrine_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = GRK_ships
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_army_studies
+		}
+		x = 22
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				technology = improved_light_cruiser
+				technology = advanced_light_cruiser
+				technology = improved_heavy_cruiser
+				technology = advanced_heavy_cruiser
+			}
+		}
+	}
+	focus = {
+		id = GRK_trade_with_GER
+		icon = GFX_goal_GER_Prussia_Empire
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_recover_civil_war
+		}
+		mutually_exclusive = {
+			focus = GRK_trade_BAV
+			focus = GRK_international_trade
+		}
+		x = 25
+		y = 1
+		available = {
+		NOT = {
+		has_war_with = GER
+		}
+		}
+		ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			tag = WUT
+		}
+		}
+		completion_reward = {
+			GER = {
+					add_opinion_modifier = { target = ROOT modifier = improved_good }
+					}
+				}
+	}
+	focus = {
+		id = GRK_german_investors
+		icon = GFX_goal_rhineland
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_trade_with_GER
+		}
+		x = 24
+		y = 2
+		available = {
+		NOT = {
+		has_war_with = GER
+		}
+		}
+		completion_reward = {
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 2
+			 instant_build = yes
+		    }
+				
+		  }
+
+		}
+	}
+	focus = {
+		id = GER_autobahn
+		icon = GFX_goal_generic_construction
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_trade_with_GER
+		}
+		x = 26
+		y = 2
+		available = {
+		NOT = {
+		has_war_with = GER
+		}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+	}
+	focus = {
+		id = GRK_ger_advisors
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_german_investors
+			focus = GER_autobahn
+		}
+		x = 25
+		y = 3
+		available = {
+		NOT = {
+		has_war_with = GER
+		}
+		}
+		completion_reward = {
+		add_ideas = german_advisors
+		}
+	}
+	focus = {
+		id = GRK_zollverein
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_ger_advisors
+		}
+		x = 24
+		y = 4
+		completion_reward = {
+		add_stability = 0.05
+		add_political_power = 120
+		}
+	}
+	focus = {
+		id = GRK_join_berlin
+		icon = GFX_goal_anschluss
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_ger_advisors
+		}
+		x = 26
+		y = 4
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+		is_puppet = no 
+		GER = { exists = yes }
+		NOT = {
+		has_war_with = GER
+		}
+		}
+		bypass = {
+		is_in_faction_with = GER
+		}
+		completion_reward = {
+			GER = {
+		country_event = { days = 1 id = generic.2 }
+		}
+	}
+	}
+	focus = {
+		id = GRK_trade_BAV
+		icon = GFX_focus_hun_support_bav
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_recover_civil_war
+		}
+		mutually_exclusive = {
+			focus = GRK_international_trade
+			focus = GRK_trade_with_GER
+		}
+		x = 29
+		y = 1
+		available = {
+		NOT = {
+		has_war_with = BAV
+		}
+		}
+		ai_will_do = {
+		factor = 0
+		modifier = {
+			factor = 5
+			tag = WUT
+		}
+		}
+		completion_reward = {
+			BAV = {
+					add_opinion_modifier = { target = ROOT modifier = improved_good }
+					}
+				}
+	}
+	focus = {
+		id = GRK_bavarian_investors
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_trade_BAV
+		}
+		x = 28
+		y = 2
+		available = {
+		BAV = { exists = yes }
+		NOT =  { 
+		has_war_with = BAV }
+		}
+		completion_reward = {
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = arms_factory
+			 level = 2
+			 instant_build = yes
+		    }
+		  }
+		 }
+	}
+	focus = {
+		id = GRK_bavarian_advisors
+		icon = GFX_focus_focus_hun_investment
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_bavarian_investors
+		}
+		x = 28
+		y = 3
+		available = {
+		BAV = { exists = yes }
+		NOT =  { 
+		has_war_with = BAV }
+		}
+		completion_reward = {
+		add_ideas = bavarian_advisors
+		}	
+	}
+	focus = {
+		id = GRK_steel_exports
+		icon = GFX_focus_generic_steel
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_trade_BAV
+		}
+		x = 30
+		y = 2
+		available = {
+		BAV = { exists = yes }
+		NOT =  { 
+		has_war_with = BAV }
+		}
+		completion_reward = {
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 2
+			 instant_build = yes
+		    }
+		  }
+		}	
+	}
+	focus = {
+		id = GRK_attend_workers_union
+		icon = GFX_focus_YUG_pan_slavic_congress
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_steel_exports
+		}
+		x = 30
+		y = 3
+		completion_reward = {
+		add_ideas = communist_influence
+		add_political_power = 120
+		}
+	}
+	focus = {
+		id = GRK_join_comintern
+		icon = GFX_focus_generic_join_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_bavarian_advisors
+		}
+		prerequisite = {
+			focus = GRK_attend_workers_union
+		}
+		x = 29
+		y = 4
+		available = {
+		is_puppet = no
+		NOT = { 
+		has_war_with = BAV
+		}
+		BAV = { exists = yes }
+		}
+		bypass = {
+		is_in_faction_with = BAV
+		}
+		completion_reward = {
+	BAV = {
+		country_event = { days = 1 id = generic.2 }
+		}
+	}
+	}
+	focus = {
+		id = GRK_international_trade
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_recover_civil_war
+		}
+		mutually_exclusive = {
+			focus = GRK_trade_BAV
+			focus = GRK_trade_with_GER
+		}
+		x = 35
+		y = 1
+		ai_will_do = {
+		factor = 0
+		}
+		completion_reward = {
+		add_political_power = 120
+		}
+	}
+	focus = {
+		id = GRK_side_allies
+		icon = GFX_focus_allies
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_international_trade
+		}
+		mutually_exclusive = {
+			focus = GRK_one_germany
+		}
+		x = 33
+		y = 2
+		available = {
+		NOT = { 
+		has_war_with = ENG 
+		has_war_with = FRA
+		}
+		
+		}
+		completion_reward = {
+			GER = {
+					add_opinion_modifier = { target = ROOT modifier = sided_with_allies }
+				}
+			BAV = {
+					add_opinion_modifier = { target = ROOT modifier = sided_with_allies }
+				}	
+			}
+	}
+	focus = {
+		id = GRK_befriend_FRA
+		icon = GFX_focus_chi_reach_out_to_france
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_side_allies
+		}
+		x = 32
+		y = 3
+		available = {
+		FRA = { exists = yes }
+		NOT = {
+		has_war_with = FRA
+		}
+		}
+		completion_reward = {
+		FRA = {
+					add_opinion_modifier = { target = ROOT modifier = improved_good }
+				}
+		}
+	}
+	focus = {
+		id = GRK_befriend_ENG
+		icon = GFX_focus_chi_british_cooperation
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_side_allies
+		}
+		x = 34
+		y = 3
+		available = {
+		ENG = { exists = yes }
+		NOT = {
+		has_war_with = ENG
+		}
+		}
+		completion_reward = {
+		ENG = {
+					add_opinion_modifier = { target = ROOT modifier = improved_good }
+				}
+		}
+	}
+	focus = {
+		id = GRK_english_advisors
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_befriend_ENG
+		}
+		x = 34
+		y = 4
+		available = {
+		ENG = { exists = yes }
+		NOT = {
+		has_war_with = ENG
+		}
+		}
+		completion_reward = {
+		add_ideas = english_advisors
+		}
+	}
+	focus = {
+		id = GRK_one_germany
+		icon = GFX_BAT_germanisation
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_international_trade
+		}
+		mutually_exclusive = {
+			focus = GRK_side_allies
+		}
+		x = 36
+		y = 2
+		completion_reward = {
+		add_stability = 0.10
+		}
+	}
+	focus = {
+		id = GRK_towards_reunification
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_one_germany
+		}
+		x = 36
+		y = 3
+		completion_reward = {
+		add_state_claim = 54
+		 add_state_claim = 53
+		 add_state_claim = 52
+		 add_state_claim = 50
+		 add_state_claim = 42
+		 add_state_claim = 817
+		 add_state_claim = 55
+		 add_state_claim = 51
+		 add_state_claim = 814
+		 add_state_claim = 57
+		 add_state_claim = 56
+		 add_state_claim = 59
+		 add_state_claim = 58
+		 add_state_claim = 61
+		 add_state_claim = 819
+		 add_state_claim = 60
+		 add_state_claim = 65
+		 add_state_claim = 64
+		 add_state_claim = 68
+		 add_state_claim = 62
+		 add_state_claim = 66
+		 add_state_claim = 67
+		 add_state_claim = 762
+		 add_state_claim = 763
+		 add_state_claim = 86
+		 add_state_claim = 63
+		 add_state_claim = 85
+		 add_state_claim = 5
+		 add_state_claim = 188
+		 add_state_claim = 28
+		}
+	}
+	focus = {
+		id = GRK_prepare_war
+		icon = GFX_focus_generic_combined_arms
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_towards_reunification
+		}
+		x = 36
+		y = 4
+		completion_reward = {
+		add_manpower = 100000
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 3
+		 add_building_construction = {
+			 type = arms_factory
+			 level = 3
+			 instant_build = yes
+		    }
+		  }
+		}
+	}	
+	focus = {
+		id = GRK_extra_slot
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_economic_boom
+		}
+		x = 7
+		y = 5
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+	focus = {
+		id = GRK_french_advisors
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_befriend_FRA
+		}
+		x = 32
+		y = 4
+		available = {
+		FRA = { 
+		exists = yes 
+		}
+		NOT = {
+		has_war_with = FRA
+		}
+		}
+		completion_reward = {
+		add_ideas = french_advisors
+		}
+	}
+	focus = {
+		id = GRK_proclaim_germany
+		icon = GFX_focus_ger_revive_kaiserreich
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_prepare_war
+		}
+		mutually_exclusive = {
+			focus = GRK_proclaim_commi
+		}
+		x = 35
+		y = 5
+		available = {
+		controls_state = 64
+		GER = { exists = no }
+		}
+		completion_reward = {
+		set_capital = 64
+		set_cosmetic_tag = GER_confederation
+		hidden_effect = {
+		set_country_flag = new_ger_united
+		 add_state_core = 54
+		 add_state_core = 53
+		 add_state_core = 52
+		 add_state_core = 50
+		 add_state_core = 42
+		 add_state_core = 814
+		 add_state_core = 55
+		 add_state_core = 51
+		 add_state_core = 817
+		 add_state_core = 57
+		 add_state_core = 56
+		 add_state_core = 59
+		 add_state_core = 58
+		 add_state_core = 61
+		 add_state_core = 819
+		 add_state_core = 60
+		 add_state_core = 65
+		 add_state_core = 64
+		 add_state_core = 68
+		 add_state_core = 62
+		 add_state_core = 66
+		 add_state_core = 67
+		 add_state_core = 762
+		 add_state_core = 763
+		 add_state_core = 86
+		 add_state_core = 63
+		 add_state_core = 85
+		 add_state_core = 5
+		 add_state_core = 188
+		 add_state_core = 28
+		}
+		}
+	}
+	focus = {
+		id = GRK_proclaim_commi
+		icon = GFX_focus_ger_great_red_menace
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_prepare_war
+		}
+		mutually_exclusive = {
+			focus = GRK_proclaim_germany
+		}
+		x = 37
+		y = 5
+		available = {
+		controls_state = 53
+		BAV = { exists = no }
+		}
+		completion_reward = {
+		set_politics = { ruling_party = communism elections_allowed = yes }
+		add_popularity = {
+					ideology = communism
+					popularity = 0.45
+				}
+		set_capital = 64
+		set_cosmetic_tag = GER_confederation
+		hidden_effect = {
+		set_country_flag = new_ger_united
+		add_state_core = 54
+		 add_state_core = 53
+		 add_state_core = 52
+		 add_state_core = 50
+		 add_state_core = 42
+		 add_state_core = 814
+		 add_state_core = 55
+		 add_state_core = 51
+		 add_state_core = 817
+		 add_state_core = 57
+		 add_state_core = 56
+		 add_state_core = 59
+		 add_state_core = 58
+		 add_state_core = 61
+		 add_state_core = 819
+		 add_state_core = 60
+		 add_state_core = 65
+		 add_state_core = 64
+		 add_state_core = 68
+		 add_state_core = 62
+		 add_state_core = 66
+		 add_state_core = 67
+		 add_state_core = 762
+		 add_state_core = 763
+		 add_state_core = 86
+		 add_state_core = 63
+		 add_state_core = 85
+		 add_state_core = 5
+		 add_state_core = 188
+		 add_state_core = 28
+		}
+		}
+	}
+	focus = {
+		id = GRK_request_guarantee
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		prerequisite = {
+			focus = GRK_french_advisors
+			focus = GRK_english_advisors
+		}
+		x = 33
+		y = 5
+		available = {
+		NOT = {
+		has_country_flag = new_ger_united
+		has_war_with = FRA
+		}
+		}
+		completion_reward = {
+		FRA = {
+		give_guarantee = ROOT
+		}
+		}
+	}
+}

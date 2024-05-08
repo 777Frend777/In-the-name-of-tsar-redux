@@ -1,0 +1,670 @@
+﻿
+add_namespace = usa_homeland
+
+#Curtis' Heart Attack 
+ country_event = {
+	id = usa_homeland.5
+	title = usa_homeland.5.t
+	desc = usa_homeland.5.d
+	picture = GFX_report_event_communist_leader
+	trigger = {
+	tag = USA 
+	date > 1936.2.1 #YYYY.MM.DD
+	}
+	mean_time_to_happen = {
+        days = 7
+        }
+	fire_only_once = yes 
+	option = {
+		name = usa_homeland.5.a
+		add_stability = -0.01	
+	}
+}
+#Republic National Convention
+ country_event = {
+	id = usa_homeland.6
+	title = usa_homeland.6.t
+	desc = usa_homeland.6.d
+	picture = GFX_report_event_generic_communist_congress
+	trigger = {
+	tag = USA 
+	date > 1936.6.8 #YYYY.MM.DD
+	}
+	mean_time_to_happen = {
+        days = 7
+        }
+	fire_only_once = yes 
+	option = {
+		name = usa_homeland.6.a
+		add_political_power = 10	
+	}
+}
+#Democratic National Convention
+ country_event = {
+	id = usa_homeland.7
+	title = usa_homeland.7.t
+	desc = usa_homeland.7.d
+	picture = GFX_report_event_generic_conference
+	trigger = {
+	tag = USA 
+	date > 1936.6.16 #YYYY.MM.DD
+	}
+	mean_time_to_happen = {
+        days = 7
+        }
+	fire_only_once = yes 
+	option = {
+		name = usa_homeland.7.a
+		add_political_power = 10	
+	}
+}
+#Congressional Election Results
+ country_event = {
+	id = usa_homeland.8
+	title = usa_homeland.8.t
+	desc = usa_homeland.8.d
+	picture = GFX_report_event_generic_rally2
+	trigger = {
+	has_civil_war = no
+	NOT = {
+	OR = {
+	has_government = communism
+	has_government = fascism
+	}
+	}
+	tag = USA 
+	date > 1936.12.1
+	}
+	mean_time_to_happen = {
+        days = 7
+        }
+	fire_only_once = yes 
+	option = { #democrats
+		name = usa_homeland.8.a	
+		add_popularity = {
+					ideology = democratic
+					popularity = 0.02
+				}
+	}
+	option = { #republicans
+		name = usa_homeland.8.b	
+		add_popularity = {
+					ideology = conservatives
+					popularity = 0.02
+				}
+	}
+	option = { #split
+		name = usa_homeland.8.c
+		add_political_power = -10
+	}
+}
+#Ohio rive floods!
+ country_event = {
+	id = usa_homeland.9
+	title = usa_homeland.9.t
+	desc = usa_homeland.9.d
+	picture = GFX_report_event_ohio_floods
+	trigger = {
+	tag = USA 
+	date > 1937.2.1 #YYYY.MM.DD
+	}
+	mean_time_to_happen = {
+        days = 7
+        }
+	fire_only_once = yes 
+	option = {
+		name = usa_homeland.9.a
+		add_stability = -0.05
+			395 = {
+			damage_building = { type = industrial_complex damage = 0.8 }
+			damage_building = { type = arms_factory damage = 0.8 }
+			damage_building = { type = infrastructure damage = 0.8 }	
+			}
+			396 = {
+			damage_building = { type = industrial_complex damage = 0.8 }
+			damage_building = { type = arms_factory damage = 0.8 }
+			damage_building = { type = infrastructure damage = 0.8 }	
+			}
+			261 = {
+			damage_building = { type = industrial_complex damage = 0.8 }
+			damage_building = { type = arms_factory damage = 0.8 }
+			damage_building = { type = infrastructure damage = 0.8 }	
+			}
+			360 = {
+			damage_building = { type = industrial_complex damage = 0.8 }
+			damage_building = { type = arms_factory damage = 0.8 }
+			damage_building = { type = infrastructure damage = 0.8 }	
+			}
+			362 = {
+			damage_building = { type = industrial_complex damage = 0.8 }
+			damage_building = { type = arms_factory damage = 0.8 }
+			damage_building = { type = infrastructure damage = 0.8 }	
+			}
+	}
+}
+#Opening of the Golden Gate Bridge
+ country_event = {
+	id = usa_homeland.10
+	title = usa_homeland.10.t
+	desc = usa_homeland.10.d
+	picture = GFX_report_event_golden_gate
+	trigger = {
+	tag = USA 
+	date > 1937.5.1 #YYYY.MM.DD
+	}
+	mean_time_to_happen = {
+        days = 7
+        }
+	fire_only_once = yes 
+	option = {
+		name = usa_homeland.10.a
+		add_political_power = 10	
+	}
+}
+#New England Hurricane
+ country_event = {
+	id = usa_homeland.12
+	title = usa_homeland.12.t
+	desc = usa_homeland.12.d
+	picture = GFX_report_event_usa_ne_hurricane
+	trigger = {
+	tag = USA 
+	date > 1938.9.20 #YYYY.MM.DD
+	}
+	mean_time_to_happen = {
+        days = 7
+        }
+	fire_only_once = yes 
+	option = {
+		name = usa_homeland.9.a
+		add_stability = -0.05
+			357 = {
+			damage_building = { type = industrial_complex damage = 0.7 }
+			damage_building = { type = arms_factory damage = 0.7 }
+			damage_building = { type = infrastructure damage = 0.7 }	
+			}
+			358 = {
+			damage_building = { type = industrial_complex damage = 0.7 }
+			damage_building = { type = arms_factory damage = 0.7 }
+			damage_building = { type = infrastructure damage = 0.7 }	
+			}
+	}
+}
+#Midterm elections
+ country_event = {
+	id = usa_homeland.11
+	title = usa_homeland.11.t
+	desc = usa_homeland.11.d
+	picture = GFX_report_event_usa_election_generic
+	trigger = {
+	has_civil_war = no
+	NOT = {
+	OR = {
+	has_government = communism
+	has_government = fascism
+	}
+	}
+	tag = USA 
+	date > 1938.12.1
+	}
+	mean_time_to_happen = {
+        days = 7
+        }
+	fire_only_once = yes 
+	option = { #democrats
+		name = usa_homeland.11.a	
+		add_popularity = {
+					ideology = democratic
+					popularity = 0.02
+				}
+	}
+	option = { #republicans
+		name = usa_homeland.11.b	
+		add_popularity = {
+					ideology = conservatives
+					popularity = 0.02
+				}
+	}
+	option = { #republicans
+		name = usa_homeland.11.c	
+		add_political_power = -10
+	}
+}
+#NY Fair event
+news_event = {
+    id = usa_homeland.13
+    title = usa_homeland.13.t
+    desc = usa_homeland.13.d
+    picture = GFX_news_event_usa_ny_fair
+	trigger = {
+	country_exists = USA
+	USA = {
+	has_war = no
+	}
+	has_civil_war = no
+	date > 1939.5.1
+	}
+    major = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+        days = 7
+        }
+	immediate = {
+	set_global_flag = USA_ny_fair
+	}
+    option = {
+	name = usa_homeland.13.a
+	trigger = {
+	NOT = {
+	TAG = USA
+	}
+	}
+	}
+	option = {
+	name = usa_homeland.13.b
+	trigger = { TAG = USA }
+	}
+}
+#Food Shortages Worsen, key event that decides what each ideology event will pop
+ country_event = {
+	id = usa_homeland.2
+	title = usa_homeland.2.t
+	desc = usa_homeland.2.d
+	picture = GFX_report_event_generic_read_write
+	trigger = {
+	tag = USA 
+	has_idea = US_famine_stage_1_idea
+	date > 1938.1.1
+	}
+	mean_time_to_happen = { days = 30 }
+	fire_only_once = yes 
+	option = {
+		name = usa_homeland.2.a
+		add_stability = -0.05
+		hidden_effect = {
+		USA = {
+		country_event = { id = usa_homeland.14 days = 56 }
+		}
+		if = { #Socialists in power
+		limit = { has_government = socialist }
+		USA = {
+		country_event = { id = usa_homeland.3 days = 112 }
+		}
+		}
+		if = { #Democrats in power
+		limit = { has_government = democratic }
+		USA = {
+		country_event = { id = usa_homeland.16 days = 79 }
+		country_event = { id = usa_homeland.15 days = 112 }
+		}
+		}
+		if = { #Republicans in power
+		limit = { has_government = conservatives }
+		USA = {
+		country_event = { id = usa_homeland.17 days = 79 }
+		country_event = { id = usa_homeland.18 days = 112 }
+		}
+		}
+		if = { #Nationalists in power
+		limit = { has_government = neutrality }
+		USA = {
+		country_event = { id = usa_homeland.4 days = 112 }
+		}
+		}
+		}
+		}	
+	}
+#March on Washington
+ country_event = {
+	id = usa_homeland.14
+	title = usa_homeland.14.t
+	desc = usa_homeland.14.d
+	picture = GFX_report_event_soviet_in_riga
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = {
+		name = usa_homeland.14.a
+		add_stability = -0.15
+	 }	
+}
+#Civil war breaks out, socialists vs nationalists
+ country_event = {
+	id = usa_homeland.3
+	title = usa_homeland.3.t
+	desc = usa_homeland.3.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = {		
+		name = usa_homeland.3.a
+		remove_ideas = US_famine_stage_1_idea
+		start_civil_war = {
+							#ruling_party = neutrality
+							ideology = neutrality
+							size = 0.4
+							states = { 362 363 364 365 366 367 368 370 371 372 }
+						}
+		hidden_effect = {
+		news_event = { id = usa_homeland.19 days = 1 }
+		set_country_flag = US_civil_war_tag
+		363 = {
+		owner = {
+		set_cosmetic_tag = USA_civil_war_name
+		load_oob = USA_neutrality_reinforcement
+		}
+		}
+		load_oob = USA_socialist_reinforcement
+		ENG = { country_event = { id = usa_homeland.20 days = 35 } }
+		}				
+	 }	
+}
+#Civil war breaks out, democrats vs nationalists
+ country_event = {
+	id = usa_homeland.15
+	title = usa_homeland.15.t
+	desc = usa_homeland.15.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = {		
+		name = usa_homeland.15.a
+		remove_ideas = US_famine_stage_1_idea
+		start_civil_war = {
+							#ruling_party = neutrality
+							ideology = neutrality
+							size = 0.4
+							states = { 362 363 364 365 366 367 368 370 371 372 }
+						}
+		hidden_effect = {
+		news_event = { id = usa_homeland.19 days = 1 }
+		set_country_flag = US_civil_war_tag
+		363 = {
+		owner = {
+		set_cosmetic_tag = USA_civil_war_name
+		load_oob = USA_neutrality_reinforcement
+		}
+		}
+		USA = {
+		load_oob = USA_socialist_reinforcement
+		}
+		ENG = { country_event = { id = usa_homeland.20 days = 35 } }
+		}				
+	 }	
+}
+#Attack on White House/ Democrats are in power, Perkins becomes leader
+ country_event = {
+	id = usa_homeland.16
+	title = usa_homeland.16.t
+	desc = usa_homeland.16.d
+	picture = GFX_report_event_usa_election_generic
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = {
+		name = usa_homeland.16.a
+		add_political_power = -75
+		set_country_flag = perkins_president_1
+		create_country_leader = {
+		name = "Frances Perkins"
+		desc = "POLITICS_ALF_LANDON_DESC"
+		picture = "francis_perkings.dds"
+		expire = "1965.1.1"
+		ideology = democratic_subtype
+		traits = {
+		}
+		}
+	 }	
+}
+#Attack on White House/ Republicans are in power, Stimson becomes leader
+ country_event = {
+	id = usa_homeland.17
+	title = usa_homeland.17.t
+	desc = usa_homeland.17.d
+	picture = GFX_report_event_usa_election_generic
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = {
+		name = usa_homeland.17.a
+		add_political_power = -75
+		set_country_flag = stimson_president_1
+		create_country_leader = {
+		name = "Henry Stimson"
+		desc = "POLITICS_ALF_LANDON_DESC"
+		picture = "henry_stimson.dds"
+		expire = "1965.1.1"
+		ideology = conservatives_subtype
+		traits = {
+		conservative_grandee
+		rearmer	
+		}
+		}
+	 }	
+}
+#Civil war breaks out, republicans vs socialists
+ country_event = {
+	id = usa_homeland.18
+	title = usa_homeland.18.t
+	desc = usa_homeland.18.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = {		
+		name = usa_homeland.18.a
+		remove_ideas = US_famine_stage_1_idea
+		start_civil_war = {
+							#ruling_party = neutrality
+							ideology = socialist
+							size = 0.4
+							states = { 261 360 388 389 390 391 392 393 394 395 396 }
+						}
+		hidden_effect = {
+		news_event = { id = usa_homeland.19 days = 1 }
+		set_country_flag = US_civil_war_tag
+		360 = {
+		owner = {
+		set_cosmetic_tag = USA_civil_war_name
+		load_oob = USA_socialist_reinforcement
+		create_country_leader = {
+		name = "Earl Browder"
+		desc = "POLITICS_EARL_BROWDER_DESC"
+		picture = "portrait_USA_earl_browder.dds"
+		expire = "1965.1.1"
+		ideology = socialist_subtype
+		traits = {
+		
+		}
+		}
+		}
+		}
+		load_oob = USA_neutrality_reinforcement
+		ENG = { country_event = { id = usa_homeland.20 days = 35 } }
+		}				
+	 }	
+}
+#Civil war breaks out nationalists vs socialists
+ country_event = {
+	id = usa_homeland.4
+	title = usa_homeland.4.t
+	desc = usa_homeland.4.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = {
+		name = usa_homeland.4.a
+		remove_ideas = US_famine_stage_1_idea
+		start_civil_war = {
+							#ruling_party = neutrality
+							ideology = socialist
+							size = 0.4
+							states = { 261 360 388 389 390 391 392 393 394 395 396 }
+						}
+		hidden_effect = {
+		news_event = { id = usa_homeland.19 days = 1 }
+		set_country_flag = US_civil_war_tag
+		360 = {
+		owner = {
+		set_cosmetic_tag = USA_civil_war_name
+		load_oob = USA_socialist_reinforcement
+		create_country_leader = {
+		name = "Earl Browder"
+		desc = "POLITICS_EARL_BROWDER_DESC"
+		picture = "portrait_USA_earl_browder.dds"
+		expire = "1965.1.1"
+		ideology = marxism
+		traits = {
+		
+		}
+		}
+		}
+		}
+		load_oob = USA_neutrality_reinforcement
+		ENG = { country_event = { id = usa_homeland.20 days = 35 } }
+		}				
+	 }	
+}
+#Crisis in America 
+news_event = {
+    id = usa_homeland.19
+    title = usa_homeland.19.t
+    desc = usa_homeland.19.d
+    picture = GFX_news_event_038
+	is_triggered_only = yes 
+    major = yes
+	fire_only_once = yes
+    option = {
+	name = usa_homeland.13.a
+	trigger = {
+	NOT = {
+	TAG = USA
+	}
+	}
+	}
+	option = {
+	name = usa_homeland.19.b
+	trigger = { TAG = USA }
+	}
+}
+#English occupation of New England
+ country_event = {
+	id = usa_homeland.20
+	title = usa_homeland.20.t
+	desc = usa_homeland.20.d
+	picture = GFX_report_event_eng_royal_family
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = {
+		name = usa_homeland.20.a
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 75
+				OR = {
+				has_government = fascism
+				has_government = neutrality
+				}
+			}
+		}
+		CAN = {
+		transfer_state = 357
+		}
+		USA = { country_event = { id = usa_homeland.21 } }			
+	}	
+	option = {
+		name = usa_homeland.20.b
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 25
+				OR = {
+				has_government = fascism
+				has_government = neutrality
+				}
+			}
+		}		
+	 }	 
+}
+#USA receive news of occupation
+ country_event = {
+	id = usa_homeland.21
+	title = usa_homeland.21.t
+	desc = usa_homeland.21.d
+	picture = GFX_report_event_eng_royal_family
+	is_triggered_only = yes
+	fire_only_once = yes 
+	option = {
+		name = usa_homeland.21.a
+		ai_chance = {
+			factor = 35
+		}
+	create_wargoal = {
+					type = annex_everything
+					target = ENG
+				}
+	create_wargoal = {
+					type = take_state_focus
+					target = CAN
+					generator = { 371 }
+				}			
+	}	
+	option = {
+		name = usa_homeland.21.b
+		ai_chance = {
+			factor = 65
+		}		
+	 }	 
+}
+#End of the civil war event
+ country_event = {
+	id = usa_homeland.22
+	title = usa_homeland.22.t
+	desc = usa_homeland.22.d
+	picture = GFX_report_event_usa_macarthur_speech
+	trigger = {
+	has_civil_war = no
+	has_country_flag = US_civil_war_tag
+	}
+	mean_time_to_happen = { days = 10 }
+	fire_only_once = yes 
+	option = {
+		name = usa_homeland.22.a
+		add_stability = 0.05
+		news_event = { id = usa_homeland.23 }
+		if = {
+		limit = { has_government = democratic }
+		set_country_flag = perkins_president_1
+		}
+		if = {
+		limit = { has_government = conservatives }
+		set_country_flag = stimson_president_1
+		}
+		if = {
+		limit = { has_government = socialist }
+		set_country_flag = wheeler_president_1
+		}
+		if = {
+		limit = { has_government = neutrality }
+		set_country_flag = long_president_1
+		}
+	}		 
+}
+#US end of the civil war
+news_event = {
+    id = usa_homeland.23
+    title = usa_homeland.23.t
+    desc = usa_homeland.23.d
+    picture = GFX_news_event_canadian_tank
+	is_triggered_only = yes
+    major = yes
+	fire_only_once = yes
+    option = {
+	name = usa_homeland.23.a
+	trigger = {
+	NOT = {
+	TAG = USA
+	}
+	}
+	}
+	option = {
+	name = usa_homeland.23.b
+	trigger = { TAG = USA }
+	}
+}

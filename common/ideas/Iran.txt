@@ -1,0 +1,24 @@
+ideas = {
+
+	country = { 
+		PER_Ahmed_Shah_idea = {
+				
+			allowed = {
+				original_tag = PER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = PER_Ahmed_Shah
+				
+			removal_cost = -1
+				
+			modifier = {	
+				stability_weekly = 0.01
+				political_power_gain = 0.01
+			}
+		}
+	}
+}

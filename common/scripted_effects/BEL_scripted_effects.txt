@@ -1,0 +1,19 @@
+BEL_increase_rex = {
+	set_temp_variable = { BEL_rex_influence_temp = BEL.rex_influence }
+	set_temp_variable = { BEL_vnv_influence_temp = BEL.vnv_influence }
+	add_to_temp_variable = { var = BEL_vnv_influence_temp value = -1 }
+	add_to_temp_variable = { var = BEL_rex_influence_temp value = 1 }
+
+	add_to_variable = { var = BEL.vnv_influence value = -1 }
+	add_to_variable = { var = BEL.rex_influence value = 1 }
+}
+
+BEL_increase_vnv = {
+	set_temp_variable = { BEL_rex_influence_temp = BEL.rex_influence }
+	set_temp_variable = { BEL_vnv_influence_temp = BEL.vnv_influence }
+	add_to_temp_variable = { var = BEL_vnv_influence_temp value = 1 }
+	add_to_temp_variable = { var = BEL_rex_influence_temp value = -1 }
+	
+	add_to_variable = { var = BEL.vnv_influence value = 1 }
+	add_to_variable = { var = BEL.rex_influence value = -1 }
+}

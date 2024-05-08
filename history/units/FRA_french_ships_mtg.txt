@@ -1,0 +1,26 @@
+﻿##### Division Templates #####
+
+##### OOB #####
+units = {
+	### METRPOLITAN FRANCE ###				
+	fleet = {				
+		name = "French Colonial Fleet"			
+		naval_base = 3552 
+		task_force = {
+		location = 3552 # Brest			
+		ship = { name = "Tunis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class"} } }	
+		ship = { name = "Hanoi" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class"} } }	
+		ship = { name = "Dakar" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }	
+		ship = { name = "Gabon" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
+		ship = { name = "Nouvelle-Caledonie" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }	
+		ship = { name = "Senegal" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class"} } }	
+	}
+	}
+	}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+###################

@@ -1,0 +1,33 @@
+ideas = {
+		country = {
+		economic_sanctions_minor = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+		
+			modifier = {
+			production_factory_max_efficiency_factor = -0.05
+			}
+
+			
+			cancel_if_invalid = no
+		}
+		economic_sanctions_major = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+		
+			modifier = {
+			production_factory_max_efficiency_factor = -0.1
+			consumer_goods_factor = 0.03
+			}
+
+			
+			cancel_if_invalid = no
+		}
+		
+		}
+		
+}		

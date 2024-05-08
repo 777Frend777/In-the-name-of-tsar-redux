@@ -1,0 +1,153 @@
+#Category allowed for AUS
+
+AUS_integrate_territories_decisions = {
+	#Fate of Czechoslovakia
+	AUS_fate_of_czechoslovakia = {
+		icon = decision_generic_decision
+		targets = { CZE }
+		visible = {
+			original_tag = AUS
+			has_completed_focus = AUS_puppet_CZE
+		}
+		available = {
+			NOT = { has_idea = AUS_pact_with_hungary }
+			is_subject = no 
+			country_exists = CZE
+		}
+		fire_only_once = yes
+		cost = 15
+		days_remove = 10
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = {
+			CZE = {country_event = { id = austria.1000 }
+		}
+		}
+	
+	}
+	
+	#Fate of Czechoslovakia feat. Hungary
+	AUS_fate_of_czechoslovakia_feat_hung = {
+		icon = decision_generic_decision
+		targets = { HUN }
+		visible = {
+			original_tag = AUS
+			has_completed_focus = AUS_puppet_CZE
+		}
+		available = {
+			NOT = { has_war_with = CZE }
+			is_subject = no 
+			country_exists = CZE
+			country_exists = HUN
+			HUN = { has_war = no }
+			NOT = { has_war_with = HUN }
+		}
+		fire_only_once = yes
+		cost = 15
+		days_remove = 10
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = {
+			HUN = { country_event = { id = austria.1048 days = 1 } }
+		}
+	
+	}
+	
+	
+	#Fate of Yugoslavia
+	AUS_fate_yugo = {
+	
+	icon = decision_generic_decision
+	targets = { SER }
+	visible = {
+	SER = {
+	exists = no
+	}
+	AUS = { 
+	NOT = { has_war_with = SER }
+	controls_state = 107
+	controls_state = 104
+	}
+	}
+	fire_only_once = yes
+	available = {
+	is_puppet = no
+	}
+	cost = 15
+	days_remove = 3
+	ai_will_do = {
+			factor = 10
+		}
+	remove_effect = {
+	AUS = {
+	country_event = { id = austria.1045 }
+	}
+	}
+	}
+	
+	AUS_satellite_bulgaria = {
+	
+	icon = decision_generic_decision
+	targets = { BUL }
+	visible = {
+	BUL = {
+	exists = no
+	}
+	AUS = { 
+	NOT = { has_war_with = BUL }
+	controls_state = 48
+	}
+	}
+	fire_only_once = yes
+	available = {
+	is_puppet = no
+	}
+	cost = 15
+	days_remove = 3
+	ai_will_do = {
+			factor = 10
+		}
+	remove_effect = {
+	BUL = { transfer_state = 48 }
+	if = { limit = { controls_state = 843 } #Varna
+	BUL = {transfer_state = 843 } }
+	if = { limit = { controls_state = 211 } #Burgas
+	BUL = {transfer_state = 211 } }
+	if = { limit = { controls_state = 212 } #Plovdiv
+	BUL = {transfer_state = 212 } }
+	AUS = { puppet = BUL }
+	}
+	}
+	
+	#Fate of Galicia
+	AUS_fate_galicia = {
+	
+	icon = decision_generic_decision
+	targets = { KRW }
+	visible = {
+	KRW = {
+	exists = no
+	}
+	AUS = { 
+	NOT = { has_war_with = KRW }
+	controls_state = 88
+	}
+	}
+	fire_only_once = yes
+	available = {
+	is_puppet = no
+	}
+	cost = 15
+	days_remove = 3
+	ai_will_do = {
+			factor = 10
+		}
+	remove_effect = {
+	AUS = {
+	country_event = { id = austria.1046 }
+	}
+	}
+	}
+}

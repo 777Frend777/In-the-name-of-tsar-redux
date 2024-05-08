@@ -1,0 +1,467 @@
+##### ROM ######
+
+ideas = {
+        mobilization_laws = {
+
+        }
+	economy = {
+        
+        }
+
+	political_advisor = {
+
+        }
+
+	tank_manufacturer = {
+
+        }
+	naval_manufacturer = {
+
+        }
+	aircraft_manufacturer = {
+
+        }
+	materiel_manufacturer = {
+
+        }
+	industrial_concern = {
+
+        }
+	theorist = {
+
+        }
+	army_chief = {
+
+        }
+	navy_chief = {
+
+        }
+	air_chief = {
+
+        }
+	high_command = {
+
+        }
+	country = {
+
+                palestinians_resistance = {
+			
+			allowed = {
+				original_tag = "MAP"
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.001
+				research_speed_factor = -0.05
+                                production_factory_efficiency_gain_factor = -0.0 
+			}
+		}
+		MAP_jewish_militias1 = {
+			
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				conscription = 0.02
+				war_support_factor = 0.05
+			}
+		}
+
+		MAP_fortify_the_mandate = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+	
+			modifier = {
+				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.2
+				production_speed_anti_air_building_factor = 0.2
+			}
+		}
+		
+		MAP_jewish_immigration = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				monthly_population = 0.30
+				stability_factor = -0.05
+			}
+		}
+
+		MAP_limited_jewish_immigration = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				monthly_population = 0.1
+			}
+		}
+		
+		MAP_arab_revolt = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+
+			modifier = {
+				stability_factor = -0.15
+			}
+		}
+
+		MAP_encourage_refugee_smuggling = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				monthly_population = 0.15
+			}
+		}
+
+		MAP_transitional_government = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = transitional_government
+
+			modifier = {
+				autonomy_gain = 1
+			}
+		}
+
+		MAP_transitional_government_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = transitional_government
+
+			modifier = {
+				autonomy_gain = 2
+				autonomy_gain_global_factor = 0.25
+				experience_gain_army = 0.25
+				stability_factor = 0.20
+			}
+		}
+
+		MAP_jewish_schools = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_research_bonus
+
+			modifier = {
+				autonomy_gain = 1
+				research_speed_factor = 0.10
+			}
+		}
+
+
+##########
+	MAP_death_of_izz_ad-din_al-qassam = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+
+			modifier = {
+				stability_factor = -0.05
+			}
+	}
+
+	MAP_arab_general_strikes = {
+			picture = generic_production_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				industrial_capacity_factory =  -0.4
+				stability_factor = -0.1
+			}
+		}
+		
+	MAP_peel_commission = {
+			picture = generic_disjointed_gov
+			
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+
+##########
+}
+
+	political_advisor = {
+
+		MAP_amin_al-husseini = {
+			
+			picture = generic_army_arab_2
+			
+			allowed = {
+				original_tag = MAP
+			}
+			
+			traits = { popular_figurehead }
+		}
+
+
+		MAP_pinhas_rutenberg = {
+			
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = MAP
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+	
+
+		MAP_walter_guinness = {
+			
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = MAP
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+
+		MAP_ernest_bevin = {
+			
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = MAP
+			}
+			
+			traits = { compassionate_gentleman }
+		}
+	}
+
+	army_chief = {
+
+		MAP_orde_wingate = {
+			
+			picture = generic_army_arab_1
+			
+			allowed = {
+				original_tag = MAP
+			}
+			
+
+			
+			traits = { army_chief_drill_3 }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+	navy_chief = {
+
+
+	}
+
+	high_command = {
+
+		MAP_evelyn_barker = {
+			
+			picture = generic_army_europe_2
+
+			allowed = {
+				original_tag = MAP
+			}
+			
+
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		MAP_charles_tegart = {
+			
+			picture = generic_army_europe_3
+
+			allowed = {
+				original_tag = MAP
+			}
+			
+
+			
+			traits = { army_entrenchment_2 }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		MAP_John_Rymer-Jones = {
+			
+			picture = generic_army_europe_1
+
+			allowed = {
+				original_tag = MAP
+			}
+			
+
+			
+			traits = { army_artillery_1 }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	
+	naval_manufacturer = {
+		
+		designer = yes
+
+
+			MAP_coastal_defence_manufacturer = {
+			
+				picture = generic_naval_manufacturer_1
+				
+				allowed = {
+					original_tag = MAP
+				}
+			
+				research_bonus = {
+					naval_equipment = 0.10
+				}
+			
+				traits = { coastal_defence_naval_manufacturer }
+			
+				equipment_bonus = {
+				
+			}
+		}
+
+	}
+
+	industrial_concern = {
+					
+		MAP_palestine_railways = {
+			
+			picture = generic_industrial_concern_1
+			
+			allowed = {
+				original_tag = MAP
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+			}
+		}
+		
+		MAP_palestine_electric_company = {
+			
+			picture = generic_electronics_concern_1
+			
+			allowed = {
+				original_tag = MAP
+			}
+			
+
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
+	}
+	theorist = {
+		MAP_orde_wingate1 = {
+			
+			picture = generic_army_arab_1
+
+			allowed = {
+				original_tag = MAP
+			}
+			
+			cost = 150
+			
+			traits = { military_theorist }
+		}
+	}
+}

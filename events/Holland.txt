@@ -1,0 +1,190 @@
+﻿add_namespace = holland
+
+# England questions Dutch neutrality  
+country_event = {
+	id = holland.1000
+	title = holland.1000.t
+	desc = holland.1000.d
+	picture = GFX_report_event_generic_read_write
+
+	trigger = {
+	ENG = { 
+	is_puppet = no 
+	has_war_with = GER
+	}
+	BAV = {
+	exists = no 
+	}
+	HOL = {
+	exists = yes 
+	is_puppet = no
+	}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	fire_only_once = yes
+	option = { #Demands to end trade with Germany
+	ai_chance = { factor = 99 }
+		name = holland.1000.a
+		HOL = { country_event = { id = holland.1001 days = 5 } }
+	 }
+	option = { #Dont bother
+	ai_chance = { factor = 1 }
+		name = holland.1000.b
+		add_stability = 0.01
+	 } 
+  }
+# Holland receives the ultimatum
+country_event = {
+	id = holland.1001
+	title = holland.1001.t
+	desc = holland.1001.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = { #No way
+	ai_chance = { factor = 99 }
+		name = holland.1001.a
+		ENG = { country_event = { id = holland.1002 days = 5 } }
+	 }
+	option = { #agree to the demands 
+	ai_chance = { factor = 1 }
+		name = holland.1001.b
+		reverse_add_opinion_modifier = { target = GER modifier = embargo }
+		GER = { country_event = { id = holland.1004 days = 3 } }
+	 } 
+  } 
+ # England declares war on Holland 
+country_event = {
+	id = holland.1002
+	title = holland.1002.t
+	desc = holland.1002.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = { 
+		name = holland.1002.a
+		ai_chance = { factor = 99 }
+		HOL = { add_to_war = { 
+		targeted_alliance = GER
+		enemy = ENG
+		hostility_reason = asked_to_join
+		} }
+		news_event = { id = holland.1003 days = 1 }
+	 }
+	option = { 
+		ai_chance = { factor = 1 }
+		name = holland.1002.b
+		add_political_power = -10
+	 } 	
+  }
+ # News event England declares war on Holland
+news_event = {
+	id = holland.1003
+	title = holland.1003.t
+	desc = holland.1003.d
+	picture = GFX_news_event_034
+	major = yes
+	is_triggered_only = yes
+	    option = {
+		name = holland.1003.a
+		trigger = {
+			NOT = {
+				TAG = RUS
+			}
+			}
+	}
+			option = {
+		name = holland.1003.b
+			trigger = { TAG = RUS }
+	}
+	} 
+ # Germany declares war on Holland 
+country_event = {
+	id = holland.1004
+	title = holland.1004.t
+	desc = holland.1004.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = { 
+		name = holland.1004.a
+		HOL = { add_to_war = { 
+		targeted_alliance = ENG
+		enemy = GER
+		hostility_reason = asked_to_join
+		} }
+	 } 
+  }
+ # Germany requests acess  
+country_event = {
+	id = holland.1005
+	title = holland.1005.t
+	desc = holland.1005.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = { 
+		name = holland.1005.a
+		ai_chance = { factor = 99 }
+		HOL = {
+		give_military_access = GER
+		}
+	 } 
+	option = { 
+		name = holland.1005.b
+		ai_chance = { factor = 1 }
+		GER = {
+		create_wargoal = {
+					type = annex_everything
+					target = HOL
+				}
+		}
+	 } 
+  }
+#Transfer of Paris to Germans 
+country_event = {
+	id = holland.1006
+	title = holland.1006.t
+	desc = holland.1006.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	trigger = {
+	TAG = HOL
+	HOL = { 
+	has_war_with = FRA 
+	is_puppet = no 
+	is_in_faction_with = GER 
+	}
+	GER = {
+	is_faction_leader = yes
+	}
+	HOL = {
+	controls_state = 16
+	}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = { 
+		name = holland.1006.a
+		ai_chance = { factor = 100 }
+		GER = { set_state_controller = 16 }
+		hidden_effect = {
+		GER = { country_event = { id = prussia.10010 days = 1 } }
+		}
+	 } 
+	option = { 
+		name = holland.1006.b
+		ai_chance = { factor = 0 }
+	 } 
+  }   

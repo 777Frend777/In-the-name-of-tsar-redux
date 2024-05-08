@@ -1,0 +1,43 @@
+Major_Transport_category = {
+Transport = {
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			
+		}
+
+		available = {
+			is_major = yes
+                                                date > 1940.4.1
+                                                is_ai = yes
+		}
+
+
+		visible = {
+			OR = {
+			          tag = GER
+                                                          tag = ITA
+                                                          tag = JAP
+                                                          tag = USA
+                                                          tag = SOV
+                                                          tag = ENG
+                                                          tag = BAV
+                                                          tag = RUS
+			}
+		}
+
+		cost = 0
+		
+		fire_only_once = yes	
+
+		days_remove = 3
+
+		remove_effect = {
+			add_equipment_to_stockpile = { type = transport_plane_equipment_1 amount = 200 }
+		}
+
+                                ai_will_do = {
+			factor = 200
+		}
+	}
+}

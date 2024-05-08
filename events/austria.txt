@@ -1,0 +1,1497 @@
+﻿
+
+################
+#
+# AUSTRIAN MEMES/EVENTS
+#
+##################
+
+add_namespace = austria
+#Karl Funeral
+country_event = {
+	id = austria.99
+	title = austria.99.t
+	desc = austria.99.d
+	picture = GFX_report_event_AUS_karl_gone
+
+	major = yes
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = austria.99.a
+	}
+}
+
+
+# BOHEMIAN WAR
+country_event = {
+	id = austria.1000
+	title = austria.1000.t
+	desc = austria.1000.d
+	picture = GFX_report_event_generic_panzer_attack
+
+	is_triggered_only = yes
+
+	option = {
+	name = austria.1000.a	#sounds good
+    ai_chance = {
+			factor = 99
+			modifier = { # Don't accept if in a faction that can protect them
+				factor = 0
+				OR = {
+					is_in_faction_with = ENG
+					is_in_faction_with = FRA
+                    is_in_faction_with = RUS
+					is_in_faction_with = GER
+					is_in_faction_with = BAV
+				}
+			}
+		}
+		AUS = {
+			country_event = { days = 1 id = austria.1001 }
+		}
+	}
+
+	option = {
+		name = austria.1000.b	#no way
+		ai_chance = { factor = 1  }
+		AUS = {
+			country_event = { days = 1 id = austria.1002 }
+		}
+	}
+}
+
+# Invadesouthslovakia
+country_event = {
+	id = austria.1034
+	title = austria.1034.t
+	desc = austria.1034.d
+	picture = GFX_report_event_hungarian_soldiers
+
+	trigger = {
+    tag = HUN
+    AUS = {
+     focus_progress = {
+     focus = AUS_puppet_CZE
+     progress > 0.7
+     }
+    }
+    NOT = {
+    HUN = {
+    has_full_control_of_state = 664
+    has_full_control_of_state = 73
+    }
+    }
+	}
+	fire_only_once = yes
+	option = {
+	name = austria.1034.a
+	ai_chance = {
+	factor = 95
+	}
+    transfer_state = 664
+    transfer_state = 73
+    add_state_core = 73	
+    complete_national_focus = hun_demand_hungarian_slovakian_lands
+
+   }
+   option = {
+	name = austria.1034.b
+	ai_chance = {
+	factor = 5
+	}
+    add_political_power = -75
+   }
+}
+
+# BOHEMIA ACCEPTS
+country_event = {
+	id = austria.1001
+	title = austria.1001.t
+	desc = austria.1001.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+	name = austria.1001.a
+    AUS = {
+		annex_country = { target = CZE transfer_troops = yes }	#yes
+		puppet = SLO
+	}
+	hidden_effect = {
+	AUS = { country_event = { id = austria.1035 days = 70 } }
+	}
+	news_event = { id = austria.1047 days = 1 }
+    #add_state_core = 793
+    #add_state_core = 69
+    #add_state_core = 74	
+ }
+}
+
+# BOHEMIA REJECTS
+country_event = {
+	id = austria.1002
+	title = austria.1002.t
+	desc = austria.1002.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = austria.1002.a
+		news_event = { id = austria.1047 days = 1 }
+		declare_war_on = { 
+			target = CZE type = annex_everything }
+	 }
+  }
+ # HUNGARY WAR
+country_event = {
+	id = austria.1003
+	title = austria.1003.t
+	desc = austria.1003.d
+	picture = GFX_report_event_generic_panzer_attack
+
+	is_triggered_only = yes
+
+	option = {
+		name = austria.1003.a	#sounds good
+    ai_chance = {
+			factor = 90
+			modifier = { # Don't accept if in a faction that can protect them
+				factor = 0
+				OR = {
+				has_government = communism
+				is_in_faction = yes
+				}
+			}
+		}
+		AUS = {
+			country_event = { days = 1 id = austria.1004 }
+		}
+	}
+
+	option = {
+		name = austria.1003.b	#no way
+		ai_chance = { factor = 10 }
+		AUS = {
+			country_event = { days = 1 id = austria.1005 }
+		}
+	}
+}
+
+# HUNGARY ACCEPTS
+country_event = {
+	id = austria.1004
+	title = austria.1004.t
+	desc = austria.1004.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = austria.1004.a
+	AUS = {
+		annex_country = { target = HUN transfer_troops = yes }
+	add_state_core = 155
+	add_state_core = 777
+	add_state_core = 43
+	add_state_core = 154
+	}
+ }
+}
+
+# HUNGARY REJECTS
+country_event = {
+	id = austria.1005
+	title = austria.1005.t
+	desc = austria.1005.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = austria.1005.a
+		AUS = {
+		add_state_core = 155
+		add_state_core = 43
+		add_state_core = 154
+		add_state_core = 777
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = HUN
+		}
+	 }
+  } 
+#ROMANIA WAR
+country_event = {
+	id = austria.1006
+	title = austria.1006.t
+	desc = austria.1006.d
+	picture = GFX_report_event_generic_panzer_attack
+
+	is_triggered_only = yes
+
+	option = {
+		name = austria.1006.a	#sounds good
+    ai_chance = {
+			factor = 20
+			modifier = { # Don't accept if in a faction that can protect them
+				factor = 0
+				OR = {
+					is_in_faction_with = ENG
+					is_in_faction_with = FRA
+          is_in_faction_with = RUS
+					is_in_faction_with = GER
+				}
+			}
+		}
+		AUS = {
+			country_event = { days = 1 id = austria.1007 }
+		}
+	}
+
+	option = {
+		name = austria.1006.b	#no way
+		ai_chance = { factor = 80  }
+		AUS = {
+			country_event = { days = 1 id = austria.1007 }
+		}
+	}
+}
+#SERBIAN RESPONSE
+country_event = {
+	id = austria.1009
+	title = austria.1009.t
+	desc = austria.1009.d
+	picture = GFX_report_event_generic_read_write
+	trigger = {
+	tag = AUS
+	AUS = {
+	is_puppet = no
+	has_war_with = SER 
+	has_government = neutrality
+	controls_state = 109
+	controls_state = 163
+	controls_state = 104
+	controls_state = 45
+	}
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = austria.1009.a
+		AUS = {
+			country_event = { hours = 2 id = austria.1010 }
+		}
+		}
+	option = {
+		name = austria.1009.b
+		add_political_power = -25
+		}
+}	
+#SERBIA SUES FOR PEACE	
+country_event = {
+	id = austria.1010
+	title = austria.1010.t
+	desc = austria.1010.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = austria.1009.a
+		white_peace = SER
+		transfer_state = 109
+		transfer_state = 163
+		transfer_state = 104
+		transfer_state = 45 
+		transfer_state = 783
+		add_state_core = 109
+		add_state_core = 163
+		add_state_core = 104
+		add_state_core = 45
+		add_state_core = 783
+		}
+	option = {
+		name = austria.1009.b
+		add_political_power = -50
+		add_war_support = -0.05
+		}
+}		
+# ROMANIA ACCEPTS
+country_event = {
+	id = austria.1007
+	title = austria.1007.t
+	desc = austria.1007.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = austria.1007.a
+	AUS = {
+		transfer_state = 76
+		transfer_state = 84
+		transfer_state = 82
+		transfer_state = 83
+	}
+ }
+}
+
+# ROMANIA REJECTS
+country_event = {
+	id = austria.1008
+	title = austria.1008.t
+	desc = austria.1008.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = austria.1008.a
+		create_wargoal = {
+			type = annex_everything
+			target = ROM
+		}
+	 }
+  } 
+# the Question
+country_event = {
+	id = austria.1011
+	title = austria.1011.t
+	desc = austria.1011.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+	name = austria.1011.a
+	trigger = { AUS = { has_idea = AUS_otto_king } }	
+	add_stability = 0.1
+    set_cosmetic_tag = AUS_empire
+    swap_ideas = {
+    remove_idea = AUS_otto_king
+    add_idea = AUS_otto_king_1
+    }
+	}
+	option = {
+	name = austria.1011.b
+	trigger = { AUS = { has_idea = AUS_otto_king } }	
+	add_stability = -0.15
+	add_state_core = 9
+	add_state_core = 75
+	add_state_core = 155
+	add_state_core = 43
+	add_state_core = 154
+	add_state_core = 664
+	add_state_core = 73
+	add_state_core = 71
+	add_state_core = 70
+	set_cosmetic_tag = AUS_austria_hungary
+	swap_ideas = {
+    remove_idea = AUS_otto_king
+    add_idea = AUS_otto_king_2
+    }	
+	} 
+	option = {
+		name = austria.1011.c
+		add_stability = -0.25
+		add_war_support = 0.25
+		set_cosmetic_tag = AUS_vater
+		remove_ideas = AUS_otto_king
+	} 
+  } 
+
+# election
+country_event = {
+	id = austria.1012
+	title = austria.1012.t
+	desc = austria.1012.d
+	picture = GFX_report_event_aus_election
+
+	is_triggered_only = yes
+
+	option = {
+		name = austria.1012.a
+		hidden_effect = { country_event = { id = austria.1013 days = 30 } complete_national_focus = AUS_elections }
+
+    } 
+} 
+
+country_event = {
+	id = austria.1013
+	title = austria.1013.t
+	desc = austria.1013.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = austria.1013.a
+		hidden_effect = { country_event = { id = austria.1014 days = 30 } }
+    } 
+
+    option = {
+		name = austria.1013.b
+		hidden_effect = { country_event = { id = austria.1014 days = 30 } }
+    }
+}    
+
+country_event = {
+	id = austria.1014
+	title = austria.1014.t
+	desc = austria.1014.d
+	picture = GFX_report_event_aus_otto
+
+	is_triggered_only = yes
+
+	option = {
+		name = austria.1014.a
+			hidden_effect = { country_event = { id = austria.1017 days = 30 } }
+
+    } 
+	option = {
+		name = austria.1014.b
+			hidden_effect = { country_event = { id = austria.1017 days = 30 } }
+
+    }    
+}  
+
+country_event = {
+	id = austria.1017
+	title = austria.1017.t
+	desc = austria.1017.d
+	picture = GFX_report_event_aus_reds
+
+	is_triggered_only = yes
+
+	option = {
+		name = austria.1017.a
+		hidden_effect = { country_event = { id = austria.1015 days = 30 } }
+
+    } 
+	option = {
+		name = austria.1017.b
+		hidden_effect = { country_event = { id = austria.1015 days = 30 } }
+
+    }    
+} 
+
+country_event = {
+	id = austria.1015
+	title = austria.1015.t
+	desc = austria.1015.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = austria.1015.a
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = { country_event = { id = austria.1016 days = 3 } }
+
+    } 
+    option = {
+		name = austria.1015.b
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = { complete_national_focus = AUS_strong_gov set_country_flag = cs_won }
+    }
+}    
+
+country_event = {
+	id = austria.1016
+	title = austria.1016.t
+	desc = austria.1016.d
+	picture = GFX_report_event_aus_coup
+
+	is_triggered_only = yes
+
+	option = {
+		name = austria.1016.a
+		hidden_effect = { complete_national_focus = AUS_nazis set_country_flag = parliament_dissolved }
+		set_party_name = { 
+        ideology = fascism
+        name = AUS_fascism_party_coup
+        long_name = AUS_fascism_party_coup
+        }
+		set_politics = {
+	    ruling_party = fascism
+        }
+		set_popularities = {
+	    democratic = 5
+	    neutrality = 5
+	    fascism = 40
+	    communism = 5
+	    conservatives = 0
+	    socialist = 45
+        }
+		create_country_leader = {
+			name = "Engelbert Dollfuss"
+			desc = "POLITICS_ENGELBERT_DOLLFUSS_DESC"
+			picture = "engelbert_dollfuss_general.dds"
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = { }
+        }
+        swap_ideas = {
+			remove_idea = AUS_army_rad
+			add_idea = AUS_army_rad_good
+        }
+    } 
+}
+country_event = {
+	id = austria.1020
+	title = austria.1020.t
+	desc = austria.1020.d
+	picture = GFX_report_event_aus_otto
+
+	is_triggered_only = yes
+
+	option = {
+		name = austria.1020.a
+		remove_ideas = AUS_otto_king
+		set_cosmetic_tag = AUS_REP
+    } 
+	option = {
+		name = austria.1020.b
+		add_political_power = 100
+    }    
+}
+#Pressure Romania to Release Transylvania
+country_event = {
+	id = austria.1021
+	title = austria.1021.t
+	desc = austria.1021.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = { #Accept 
+		name = austria.1021.a
+		ai_chance = {
+			factor = 65
+		}
+		AUS = {
+		country_event = { id = austria.1022 days = 2 }
+		}
+    } 
+	option = { #War
+		name = austria.1021.b
+		ai_chance = {
+			factor = 35
+		}
+		AUS = {
+		country_event = { id = austria.1023 days = 2 }
+		}
+    }    
+}
+#Romania accepts
+country_event = {
+	id = austria.1022
+	title = austria.1022.t
+	desc = austria.1022.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {  
+		name = austria.1022.a
+		news_event = { id = austria.1024 days = 1 }
+		ROM = {
+		release = TRN
+		}
+		AUS = {
+		puppet = TRN
+		add_to_faction = TRN
+		}
+		TRN = {
+		create_country_leader = {
+		name = "Österreichische Verwaltung von Siebenbürgen"
+		desc = ""
+		picture = "aus_administration.dds"
+		expire = "1965.1.1"
+		ideology = conservatives_subtype
+		traits = {
+		
+		}
+		}
+		create_country_leader = {
+		name = "Österreichische Verwaltung von Siebenbürgen"
+		desc = ""
+		picture = "aus_administration.dds"
+		expire = "1965.1.1"
+		ideology = democratic_subtype
+		traits = {
+		
+		}
+		}
+		create_country_leader = {
+		name = "Österreichische Verwaltung von Siebenbürgen"
+		desc = ""
+		picture = "aus_administration.dds"
+		expire = "1965.1.1"
+		ideology = socialist_subtype
+		traits = {
+		
+		}
+		}
+		create_country_leader = {
+		name = "Österreichische Verwaltung von Siebenbürgen"
+		desc = ""
+		picture = "aus_administration.dds"
+		expire = "1965.1.1"
+		ideology = neutrality_subtype
+		traits = {
+		
+		}
+		}
+		create_country_leader = {
+		name = "Österreichische Verwaltung von Siebenbürgen"
+		desc = ""
+		picture = "aus_administration.dds"
+		expire = "1965.1.1"
+		ideology = fascism_subtype
+		traits = {
+		
+		}
+		}
+		}
+		}     
+}
+#Birth of Transylvania
+news_event = {
+	id = austria.1024
+	title = austria.1024.t
+	desc = austria.1024.d
+	picture = GFX_news_event_017
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = austria.1024.a
+		trigger = {
+			NOT = {
+				TAG = AUS
+			}
+			}
+    } 
+	option = {
+		name = austria.1024.b
+		trigger = {
+				TAG = AUS
+			}
+    }
+}
+#Romania declines
+country_event = {
+	id = austria.1023
+	title = austria.1023.t
+	desc = austria.1023.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {  
+		name = austria.1023.a
+		ai_chance = {
+			factor = 65
+		}
+		AUS = {
+		add_state_claim = 84
+		add_state_claim = 83
+		add_state_claim = 82
+		add_state_claim = 76
+		create_wargoal = {
+					type = take_state_focus
+					target = ROM
+					generator = { 84 83 82 76 }
+				}
+		}
+    } 
+	option = { #It ain't worth it 
+		name = austria.1023.b
+		ai_chance = {
+			factor = 35
+		}
+		AUS = {
+		add_political_power = 10
+		}
+		ROM = {
+		country_event = { id = austria.1025 days = 1 }
+		}
+    }    
+}
+#Austria backs down
+country_event = {
+	id = austria.1025
+	title = austria.1025.t
+	desc = austria.1025.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {  
+		name = austria.1025.a
+    }    
+}
+#Pressure Russia to release KRW
+country_event = {
+	id = austria.1026
+	title = austria.1026.t
+	desc = austria.1026.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = { #Accept 
+		name = austria.1026.a
+		ai_chance = {
+			factor = 28
+		}
+		AUS = {
+		country_event = { id = austria.1027 days = 2 }
+		}
+    } 
+	option = { 
+		name = austria.1026.b
+		ai_chance = {
+			factor = 72
+		}
+		AUS = {
+		country_event = { id = austria.1028 days = 2 }
+		}
+    }    
+}
+#Russia releases
+country_event = {
+	id = austria.1027
+	title = austria.1027.t
+	desc = austria.1027.d
+	picture = GFX_report_event_german_advisors_remain
+
+	is_triggered_only = yes
+
+	option = { #Accept 
+		name = austria.1027.a
+		RUS = {
+		end_puppet = KRW
+		}
+		AUS = {
+		add_to_faction = KRW
+		}
+    }
+	}
+#Russia declines
+country_event = {
+	id = austria.1028
+	title = austria.1028.t
+	desc = austria.1028.d
+	picture = GFX_report_event_german_advisors_remain
+
+	is_triggered_only = yes
+
+	option = { # 
+		name = austria.1028.a
+		AUS = {
+		add_state_claim = 88
+		add_state_claim = 91
+		add_state_claim = 89
+		add_state_claim = 72
+		}
+    }
+	}
+#Protector of Europe
+news_event = {
+	id = austria.1029
+	title = austria.1029.t
+	desc = austria.1029.d
+	picture = GFX_news_event_017
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = austria.1029.a
+		trigger = {
+			NOT = {
+				TAG = AUS
+			}
+			}
+    } 
+	option = {
+		name = austria.1029.b
+		trigger = {
+				TAG = AUS
+			}
+    }
+}	
+#Option for Austria to join Prussia in a war against communism 
+country_event = {
+	id = austria.1030
+	title = austria.1030.t
+	desc = austria.1030.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	trigger = {
+		tag = AUS
+		has_country_flag = NOT_READY
+		AUS = { is_puppet = no }
+		HUN = { exists = yes 
+		OR = { 
+		has_government = communism
+		has_government = socialist 
+		}
+		}
+		BAV = { 
+		OR = { has_government = communism 
+		has_government = socialist }
+		exists = yes }
+		GER = { has_war_with = BAV }
+	}
+	mean_time_to_happen = {
+	days = 3
+	}
+	option = {
+		name = austria.1030.a	#Send ultimatum
+		ai_chance = { 
+		factor = 90
+		}
+		HUN = { country_event = { id = austria.1031 days = 1 } }
+		}
+	option = {
+		name = austria.1030.b	#Nah
+		ai_chance = { 
+		factor = 10
+		}
+		add_stability = 0.05
+		}	
+	}
+#Hungarian ultimatum received
+country_event = {
+	id = austria.1031
+	title = austria.1031.t
+	desc = austria.1031d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	option = {
+		name = austria.1031.a	#Be annexed
+		ai_chance = { 
+		factor = 5
+		}
+		AUS = { country_event = { id = austria.1032 days = 3 } }
+		}
+	option = {
+		name = austria.1030.b	#Nah
+		ai_chance = { 
+		factor = 95
+		}
+		add_stability = 0.05
+		AUS = { country_event = { id = austria.1033 days = 3 } }
+		}	
+	}
+#Austria receives ultimatum accepted 
+country_event = {
+	id = austria.1032
+	title = austria.1032.t
+	desc = austria.1032.d
+	picture = GFX_report_event_german_advisors_remain
+
+	is_triggered_only = yes
+	option = {
+		name = austria.1032.a	
+		AUS = {
+		annex_country = { target = HUN transfer_troops = yes }
+		complete_national_focus = AUS_claim_HUN
+		}
+		}	
+}
+#Austria receives ultimatum denied
+country_event = {
+	id = austria.1033
+	title = austria.1033.t
+	desc = austria.1033.d
+	picture = GFX_report_event_german_advisors_remain
+
+	is_triggered_only = yes
+	option = {
+		name = austria.1033.a	
+		AUS = {
+		create_wargoal = {
+					type = annex_everything
+					target = HUN
+				}
+		complete_national_focus = AUS_claim_HUN
+		}
+		}	
+}
+
+# IntergratingSlovakiaandHungary
+country_event = {
+	id = austria.1035
+	title = austria.1035.t
+	desc = austria.1035.d
+	picture = GFX_report_event_generic_read_write
+
+	#trigger = {
+     #   tag = AUS
+      #  AUS = {
+       # owns_state = 788
+        #owns_state = 43
+        #}
+        #HUN = { exists = no }
+        #SLO = { is_puppet_of = AUS }
+    #}
+    fire_only_once = yes
+	#mean_time_to_happen = {
+	#	days = 70
+	#}
+	is_triggered_only = yes
+	option = {
+	name = austria.1035.a
+	add_stability = -0.05
+    annex_country = { target = SLO transfer_troops = yes }
+    hidden_effect = { 
+        set_province_name = {
+        id = 3700
+        name = "Eisenberg"
+    }
+    }
+    add_state_core = 70
+    add_state_core = 71
+    add_state_core = 664
+    add_state_core = 73	
+    add_state_core = 155
+    add_state_core = 154
+    add_state_core = 43
+   }
+}
+
+# INstabilityslovenia
+country_event = {
+	id = austria.1036
+	title = austria.1036.t
+	desc = austria.1036.d
+	picture = GFX_report_event_yugoslavia_partisans
+
+	trigger = {
+    tag = AUS
+    AUS = {
+    controls_state = 792
+    }
+    has_completed_focus = AUS_nazis
+    }
+	mean_time_to_happen = {
+    days = 35
+    }
+    fire_only_once = yes
+
+	option = {
+	name = austria.1036.a
+	add_stability = -0.01
+	792 = {
+	damage_building = {
+    type = infrastructure
+    damage = 1
+    }
+    }
+    hidden_effect = {
+	country_event = { id = austria.1037 days = 10 } 
+	}
+   }
+}
+
+# HuntingdowntheSlovenePartisans
+country_event = {
+	id = austria.1037
+	title = austria.1037.t
+	desc = austria.1037.d
+	picture = GFX_report_event_lithuania_army
+     
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+	option = {
+	name = austria.1037.a
+	add_manpower = -500
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = -500
+    producer = AUS
+    }
+	hidden_effect = {
+        random_list = {
+			50 = { country_event = { id = austria.1038 days = 50 } }#success
+			50 = { country_event = { id = austria.1039 days = 50 } } 
+		}
+	}
+
+    }
+}    
+
+# HuntingdowntheSlovenePartisansSuccess
+country_event = {
+	id = austria.1038
+	title = austria.1038.t
+	desc = austria.1038.d
+	picture = GFX_report_event_german_troops
+     
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+	option = {
+	name = austria.1038.a
+	add_stability = 0.01
+	add_manpower = 450
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 542
+    producer = AUS
+    }
+
+    }
+}  
+
+# HuntingdowntheSlovenePartisansFailure
+country_event = {
+	id = austria.1039
+	title = austria.1039.t
+	desc = austria.1039.d
+	picture = GFX_report_event_dead_soldiers
+     
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+	option = {
+	name = austria.1039.a
+	add_manpower = 321
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = -250
+    producer = AUS
+    }
+    add_political_power = -50
+	add_stability = -0.01
+	792 = {
+	damage_building = {
+    type = infrastructure
+    damage = 2
+    }
+    }
+    hidden_effect = { country_event = { id = austria.1040 days = 25 } }
+    }
+} 
+
+# HuntingdowntheSlovenePartisansAgain
+country_event = {
+	id = austria.1040
+	title = austria.1040.t
+	desc = austria.1040.d
+	picture = GFX_report_event_lithuania_army
+     
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+	option = {
+	name = austria.1040.a
+	add_manpower = -1500
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = -1500
+    producer = AUS
+    }
+	hidden_effect = {
+        random_list = {
+			90 = { country_event = { id = austria.1041 days = 30 } }#success
+			10 = { country_event = { id = austria.1039 days = 30 } } 
+		}
+	}
+
+    }
+} 
+
+# HuntingdowntheSlovenePartisansSuccessfinally
+country_event = {
+	id = austria.1041
+	title = austria.1041.t
+	desc = austria.1041.d
+	picture = GFX_report_event_german_troops
+     
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+	option = {
+	name = austria.1041.a
+	add_stability = 0.025
+	add_manpower = 322
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 324
+    producer = AUS
+    }
+
+    }
+}
+
+# joiningcentralpowers
+country_event = {
+	id = austria.1042
+	title = austria.1042.t
+	desc = austria.1042.d
+	picture = GFX_report_event_german_troops
+     
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+	option = {
+	name = austria.1042.a
+	ai_chance = {
+			factor = 100
+			modifier = { # Don't accept if they are nationalist
+				factor = 0
+				OR = {
+					has_government = fascism
+				}
+			}
+	}
+	
+	GER = { add_to_faction = AUS }
+	add_war_support = 0.05
+    }
+
+    option = {
+	name = austria.1042.b
+	ai_chance = { factor = 0 }
+	country_event = { id = austria.1043 days = 1 }
+    }
+}
+
+# joiningcentralpowersdec
+country_event = {
+	id = austria.1043
+	title = austria.1043.t
+	desc = austria.1043.d
+	picture = GFX_report_event_german_troops
+     
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+	option = {
+	name = austria.1043.a
+    }
+}
+#Fate of Yugoslavia
+country_event = {
+	id = austria.1045
+	title = austria.1045.t
+	desc = austria.1045.d
+     
+    is_triggered_only = yes
+
+    fire_only_once = yes
+	#Friendly Yugo & Croatia
+	option = {
+	name = austria.1045.a
+    ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 50
+				has_government = conservatives
+			}
+		}
+	release_puppet = CRO
+	release_puppet = SER
+	}
+	#Restore 1914 Borders
+	option = {
+	name = austria.1045.b
+    ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 50
+				has_government = conservatives
+			}
+		}
+	SER = {
+	transfer_state = 107
+	}
+	if = { limit = { controls_state = 835 } #Nis
+	SER = { transfer_state = 835 }
+	}
+	if = { limit = { controls_state = 108 } #Morava
+	SER = { transfer_state = 108 }
+	}
+	if = { limit = { controls_state = 831 } #Pirot
+	SER = { transfer_state = 831 }
+	}
+	if = { limit = { controls_state = 106 } #Macedonia
+	SER = { transfer_state = 106 }
+	}
+	if = { limit = { controls_state = 834 } #Kosovo
+	SER = { transfer_state = 834 }
+	}
+	if = { limit = { controls_state = 833 } #Polog
+	SER = { transfer_state = 833 }
+	}
+	puppet = SER
+	}
+	
+	#Military Occupation
+	option = {
+	name = austria.1045.c
+    ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 0
+				has_government = conservatives
+			}
+		}
+	add_political_power = -15
+	add_stability = -0.03
+	}
+}
+
+#Fate of Galicia
+country_event = {
+	id = austria.1046
+	title = austria.1046.t
+	desc = austria.1046.d
+     
+    is_triggered_only = yes
+
+    fire_only_once = yes
+	#Friendly Galicia
+	option = {
+	name = austria.1046.a
+    ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 50
+				has_government = conservatives
+			}
+		}
+	release_puppet = KRW
+	}
+	#Integrate Galicia
+	option = {
+	name = austria.1046.b
+    ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 50
+				has_government = conservatives
+			}
+		}
+	AUS = { add_state_core = 88 }	
+	if = { limit = { controls_state = 91 }
+	AUS = { add_state_core = 91 } }
+	if = { limit = { controls_state = 89 }
+	AUS = { add_state_core = 89 } }
+	if = { limit = { controls_state = 80 }
+	AUS = { add_state_core = 80 } }
+	if = { limit = { controls_state = 762 }
+	AUS = { add_state_core = 762 } }
+	}
+}
+
+#NEWS: Czechoslovakian Crisis
+news_event = {
+	id = austria.1047
+	title = austria.1047.t
+	desc = austria.1047.d
+	picture = GFX_news_event_prussia_saxony
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+	name = austria.1047.a
+    trigger = {
+	tag = AUS
+	}
+	}
+	
+	option = {
+	name = austria.1047.b
+    trigger = {
+	NOT = { tag = AUS }
+	}
+	}
+}	
+
+#COUNTRY: Austria - Czechoslovak Ultimatum
+country_event = {
+	id = austria.1048
+	title = austria.1048.t
+	desc = austria.1048.d
+     
+    is_triggered_only = yes
+
+    fire_only_once = yes
+	
+	#Surrender
+	option = {
+	name = austria.1048.a
+    ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				OR = {
+					CZE = { is_in_faction = yes }
+					CZE = { is_subject = yes }
+				}
+			}
+	}
+	custom_effect_tooltip = GAME_OVER_TT
+	AUS = {
+		annex_country = { target = CZE transfer_troops = yes }	#yes
+		release_puppet = SLO
+	}
+	hidden_effect = {
+	AUS = { country_event = { id = austria.1035 days = 70 } }
+	}
+	news_event = { id = austria.1047 days = 1 }
+	}
+	
+	#Fight-on
+	option = {
+	name = austria.1048.b
+    ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 100
+				OR = {
+					CZE = { is_in_faction = yes }
+					CZE = { is_subject = yes }
+				}
+			}
+		}
+		AUS = { country_event = { id = austria.1002 days = 2 } }
+		CZE = { country_event = { id = austria.1049 days = 4 } }
+		
+	}
+}
+
+#COUNTRY: Austria - Sudetenland uprising in Czechoslovakia
+country_event = {
+	id = austria.1049
+	title = austria.1049.t
+	desc = austria.1049.d
+     
+    is_triggered_only = yes
+
+    fire_only_once = yes
+	
+	#Fight for the Germans
+	
+	#Fight for the Czechs
+	option = {
+	name = austria.1049.a
+    ai_chance = {
+			factor = 100
+		}
+		CZE = {
+			start_civil_war = {
+				ideology = neutrality
+				size = 0.6
+				states = { 69 74 72 } 
+			}
+						
+		}
+		69 = {
+			owner = {
+				set_country_flag = ready_for_anschluss
+				set_cosmetic_tag = CZE_austrian_puppet
+			}
+		}
+	
+	}
+}
+
+#COUNTRY: Austrian Bohemia - Annex Austrian Bohemia
+news_event = {
+	id = austria.1050
+	title = austria.1050.t
+	desc = austria.1050.d
+     
+    trigger = {
+		69 = {
+			owner = {
+				has_country_flag = ready_for_anschluss
+			}
+		}
+		controls_state = 9
+		ROOT = { has_government = neutrality }
+		controls_state = 9
+		has_civil_war = no
+		NOT = { has_war_with = AUS }
+	}
+	hidden = yes
+	mean_time_to_happen = { days = 2 }
+    fire_only_once = yes
+	immediate = {
+		ROOT = { country_event = { id = austria.1051 days = 5 } }
+	}
+	#Join Austria
+	option = {
+		name = austria.1050.a	
+	}
+}
+
+#COUNTRY: Austria - Annex Austrian Bohemia
+country_event = {
+	id = austria.1051
+	title = austria.1051.t
+	desc = austria.1051.d
+     
+    is_triggered_only = yes
+
+    fire_only_once = yes
+	
+	#Join Austria
+	option = {
+		name = austria.1051.a
+		ai_chance = {
+			factor = 100
+		}
+		every_state = { 
+    		limit = { is_claimed_by = AUS  is_core_of = CZE is_owned_by = ROOT }
+			AUS = { transfer_state = PREV }
+		}
+		AUS = { country_event = { id = austria.1052 days = 0 } }
+	}
+}
+
+#COUNTRY: Austria - Austrian Bohemia Joins Austria
+country_event = {
+	id = austria.1052
+	title = austria.1052.t
+	desc = austria.1052.d
+     
+    is_triggered_only = yes
+
+    fire_only_once = yes
+	
+	#Join Austria
+	option = {
+		name = austria.1052.a
+		ai_chance = {
+			factor = 100
+		}
+		add_stability = -0.05
+		add_political_power = -50
+		AUS = { release_puppet = SLO }
+	}
+}

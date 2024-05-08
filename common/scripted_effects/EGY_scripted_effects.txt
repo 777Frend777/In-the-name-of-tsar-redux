@@ -1,0 +1,334 @@
+EGY_great_depression_level_down = {
+	if = {
+		limit = { has_idea = ege_great_depression_3 }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		remove_ideas = ege_great_depression_3
+	}
+	if = {
+		limit = { has_idea = ege_great_depression_2 }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		swap_ideas = {
+			remove_idea = ege_great_depression_2
+			add_idea = ege_great_depression_3
+		}
+	}
+	if = {
+		limit = { has_idea = ege_great_depression }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		swap_ideas = {
+			remove_idea = ege_great_depression
+			add_idea = ege_great_depression_2
+		}
+	}
+}
+EGY_national_poverty_level_down = {
+	if = {
+		limit = { has_idea = national_poverty_3 }
+		custom_effect_tooltip = EGY_national_poverty_down_tt
+		remove_ideas = national_poverty_3
+	}
+	if = {
+		limit = { has_idea = national_poverty_2 }
+		custom_effect_tooltip = EGY_national_poverty_down_tt
+		swap_ideas = {
+			remove_idea = national_poverty_2
+			add_idea = national_poverty_3
+		}
+	}
+	if = {
+		limit = { has_idea = national_poverty }
+		custom_effect_tooltip = EGY_national_poverty_down_tt
+		swap_ideas = {
+			remove_idea = national_poverty
+			add_idea = national_poverty_2
+		}
+	}
+}
+EGY_purge_of_democracy_level_up = {
+	if = {
+		limit = { has_idea = purge_of_democracy_1 }
+		swap_ideas = {
+			remove_idea = purge_of_democracy_1
+			add_idea = purge_of_democracy_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = purge_of_democracy_2 }
+		swap_ideas = {
+			remove_idea = purge_of_democracy_2
+			add_idea = purge_of_democracy_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = purge_of_democracy_3 }
+		swap_ideas = {
+			remove_idea = purge_of_democracy_3
+			add_idea = purge_of_democracy_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = purge_of_democracy_4 }
+		swap_ideas = {
+			remove_idea = purge_of_democracy_4
+			add_idea = purge_of_democracy_5
+		}
+	}
+}
+EGY_muslim_influence_level_up = {
+	custom_effect_tooltip = EGY_muslim_influence_up_tt
+	if = {
+		limit = { has_idea = muslim_influence_1 }
+		swap_ideas = {
+			remove_idea = muslim_influence_1
+			add_idea = muslim_influence_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = muslim_influence_2 }
+		swap_ideas = {
+			remove_idea = muslim_influence_2
+			add_idea = muslim_influence_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = muslim_influence_3 }
+		swap_ideas = {
+			remove_idea = muslim_influence_3
+			add_idea = muslim_influence_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = muslim_influence_4 }
+		swap_ideas = {
+			remove_idea = muslim_influence_4
+			add_idea = muslim_influence_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = muslim_influence_5 }
+		swap_ideas = {
+			remove_idea = muslim_influence_5
+			add_idea = muslim_influence_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = muslim_influence_6 }
+		swap_ideas = {
+			remove_idea = muslim_influence_6
+			add_idea = muslim_influence_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = muslim_influence_7 }
+		swap_ideas = {
+			remove_idea = muslim_influence_7
+			add_idea = muslim_influence_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = muslim_influence_8 }
+		swap_ideas = {
+			remove_idea = muslim_influence_8
+			add_idea = muslim_influence_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = muslim_influence_9 }
+		swap_ideas = {
+			remove_idea = muslim_influence_9
+			add_idea = muslim_influence_10
+		}
+	}
+}
+EGY_christian_influence_level_up = {
+	custom_effect_tooltip = EGY_christian_influence_up_tt
+	if = {
+		limit = { has_idea = christian_influence_1 }
+		swap_ideas = {
+			remove_idea = christian_influence_1
+			add_idea = christian_influence_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = christian_influence_2 }
+		swap_ideas = {
+			remove_idea = christian_influence_2
+			add_idea = christian_influence_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = christian_influence_3 }
+		swap_ideas = {
+			remove_idea = christian_influence_3
+			add_idea = christian_influence_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = christian_influence_4 }
+		swap_ideas = {
+			remove_idea = christian_influence_4
+			add_idea = christian_influence_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = christian_influence_5 }
+		swap_ideas = {
+			remove_idea = christian_influence_5
+			add_idea = christian_influence_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = christian_influence_6 }
+		swap_ideas = {
+			remove_idea = christian_influence_6
+			add_idea = christian_influence_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = christian_influence_7 }
+		swap_ideas = {
+			remove_idea = christian_influence_7
+			add_idea = christian_influence_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = christian_influence_8 }
+		swap_ideas = {
+			remove_idea = christian_influence_8
+			add_idea = christian_influence_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = christian_influence_9 }
+		swap_ideas = {
+			remove_idea = christian_influence_9
+			add_idea = christian_influence_10
+		}
+	}
+}
+EGY_remove_muslim_influence = {
+	custom_effect_tooltip = EGY_remove_muslim_influence_tt
+	if = {
+		limit = { has_idea = muslim_influence_1 }
+		remove_ideas = {
+			remove_idea = muslim_influence_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = muslim_influence_2 }
+		remove_ideas = {
+			remove_idea = muslim_influence_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = muslim_influence_3 }
+		remove_ideas = {
+			remove_idea = muslim_influence_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = muslim_influence_4 }
+		remove_ideas = {
+			remove_idea = muslim_influence_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = muslim_influence_5 }
+		remove_ideas = {
+			remove_idea = muslim_influence_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = muslim_influence_6 }
+		remove_ideas = {
+			remove_idea = muslim_influence_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = muslim_influence_7 }
+		remove_ideas = {
+			remove_idea = muslim_influence_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = muslim_influence_8 }
+		remove_ideas = {
+			remove_idea = muslim_influence_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = muslim_influence_9 }
+		remove_ideas = {
+			remove_idea = muslim_influence_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = muslim_influence_10 }
+		remove_ideas = {
+			remove_idea = muslim_influence_10
+		}
+	}
+}
+EGY_remove_christian_influence = {
+	custom_effect_tooltip = EGY_remove_christian_influence_tt
+	if = {
+		limit = { has_idea = christian_influence_1 }
+		remove_ideas = {
+			remove_idea = christian_influence_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = christian_influence_2 }
+		remove_ideas = {
+			remove_idea = christian_influence_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = christian_influence_3 }
+		remove_ideas = {
+			remove_idea = christian_influence_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = christian_influence_4 }
+		remove_ideas = {
+			remove_idea = christian_influence_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = christian_influence_5 }
+		remove_ideas = {
+			remove_idea = christian_influence_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = christian_influence_6 }
+		remove_ideas = {
+			remove_idea = christian_influence_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = christian_influence_7 }
+		remove_ideas = {
+			remove_idea = christian_influence_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = christian_influence_8 }
+		remove_ideas = {
+			remove_idea = christian_influence_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = christian_influence_9 }
+		remove_ideas = {
+			remove_idea = christian_influence_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = christian_influence_10 }
+		remove_ideas = {
+			remove_idea = christian_influence_10
+		}
+	}
+}

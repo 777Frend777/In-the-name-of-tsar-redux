@@ -1,0 +1,1157 @@
+﻿###########################
+#HuNgArYEVENTS#########
+###########################
+
+add_namespace = hung
+add_namespace = HUNcountercoup
+
+country_event = {
+	id = HUNcountercoup.1
+	title = "Horthy supporters protets"
+	desc = HUNcountercoup.1.d
+	picture = GFX_report_event_hungary_horthy
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Shot them"
+		country_event = {
+			id = HUNcountercoup.4
+			days = 20
+		}
+	}
+	option = {
+		name = "Democrats Negotiations"
+		country_event = {
+			id = HUNcountercoup.3
+			days = 20
+		}
+	}
+    option = {
+		name = "Order to Arrest Horthy"
+		country_event = {
+			id = HUNcountercoup.2
+			days = 20
+		}
+	}
+}
+country_event = {
+	id = HUNcountercoup.2
+	title = "Horthy coups the Government"
+	desc = HUNcountercoup.2.d
+	picture = GFX_report_event_hungary_horthy
+
+	is_triggered_only = yes
+
+	option = {
+		name = "a White Hungary"
+		set_country_flag = HUN_White_Revolt
+	}
+
+}
+country_event = {
+	id = HUNcountercoup.3
+	title = "The Political sphere is opened"
+	desc = HUNcountercoup.3.d
+	picture = GFX_report_event_hungary_horthy
+
+	is_triggered_only = yes
+
+	option = {
+		name = "a Democratic Hungary"
+		set_country_flag = HUN_compromise_deal
+	}
+
+}
+country_event = {
+	id = HUNcountercoup.4
+	title = "The Whites are defeated"
+	desc = HUNcountercoup.4.d
+	picture = GFX_report_event_hungary_horthy
+
+	is_triggered_only = yes
+
+	option = {
+		name = "a People's Hungary"
+		set_country_flag = HUN_crushed_Revolt
+	}
+
+}
+###################################################eventforjusttestingstuffnow
+country_event = {
+	id = hung.1000
+	title = hung.1000.t
+	desc = hung.1000.d
+	picture = GFX_report_event_hungary_horthy
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1000.a	
+		add_ideas = AUS_republic_protection	
+	}
+
+}
+
+###################################################ExecutionofHorthy
+#KillingHorhty
+country_event = {
+	id = hung.1001
+	title = hung.1001.t
+	desc = hung.1001.d
+	picture = GFX_report_event_hungary_horthy
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1001.a	
+        custom_effect_tooltip = HUN_horthy
+        hidden_effect = { create_country_leader = { name = "Gyula Gömbös" picture = "" expire = "1965.1.1" ideology = fascism_ideology traits = { } }  } 
+	}
+
+}
+###########################################################################################################CZECHIAEVENTS
+#DemandingHungarianLands
+country_event = {
+	id = hung.1010
+	title = hung.1010.t
+	desc = hung.1010.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = { # Accept
+		name = hung.1010.a	
+		ai_chance = {
+			factor = 65
+			modifier = { # Decrease chance CZE resists if GER still exists
+				GER = { exists = yes }
+				factor = 0.2
+			}
+			modifier = { # If they stand a chance they maybe will fight
+				factor = 10
+				strength_ratio = {
+					tag = HUN
+					ratio > 0.75
+				}	
+				NOT = {
+					any_neighbor_country = {
+						NOT = { tag = HUN }
+						is_in_faction_with = HUN
+					}
+				}
+			}	
+            modifier = {
+				factor = 0.05 #if you are in a faction, maybe fight
+				is_faction_leader = no
+				is_in_faction = yes
+	          }
+			}
+            HUN = { country_event = hung.1011 }
+	}
+
+	option = {
+		name = hung.1010.b	
+		ai_chance = { factor = 35 }
+
+        HUN = { country_event = hung.1012 }
+	}
+}
+#Czechaccept
+country_event = {
+	id = hung.1011
+	title = hung.1011.t
+	desc = hung.1011.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1011.a	
+		HUN = { transfer_state = 664 } 
+		664 = { add_core_of = HUN } 
+	}
+
+}
+#Czechirejects
+country_event = {
+	id = hung.1012
+	title = hung.1012.t
+	desc = hung.1012.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1012.a	
+		ai_chance = { factor = 99 }
+		create_wargoal = {
+					type = take_state_focus
+					target = CZE
+					generator = { 73 }
+				}
+		73 = { add_core_of = HUN } 
+	}
+	option = {
+		name = hung.1012.b	
+		ai_chance = { factor = 1 }
+		add_political_power = -200
+	}
+}
+#########################################################################################################PARTITIONCZECHI###
+#proposepartitionofczechiatobavaria
+country_event = {
+	id = hung.1013
+	title = hung.1013.t
+	desc = hung.1013.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1013.a	
+        HUN = { country_event = { id = hung.1014 } }
+	}
+}
+#Bavariaacceptssentheultimatum
+country_event = {
+	id = hung.1014
+	title = hung.1014.t
+	desc = hung.1014.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1014.a	
+		ai_chance = { factor = 95 }
+		CZE = { country_event = { id = hung.1016 } }
+
+	}
+}
+#Cominterndemandoursubjogation
+country_event = {
+	id = hung.1016
+	title = hung.1016.t
+	desc = hung.1016.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1016.a	
+		ai_chance = { factor = 60 }
+        BAV = { country_event = { id = hung.1018 } }
+        HUN = { country_event = { id = hung.1017 } }
+        hidden_effect = { country_event = { id = hung.1021 } }
+	}
+	option = {
+		name = hung.1016.b	
+		ai_chance = { factor = 40 }
+		HUN = { country_event = { id = hung.1019 } }
+        BAV = { country_event = { id = hung.1020 } }
+	}
+}
+#CzechiaacceptsHUN
+country_event = {
+	id = hung.1017
+	title = hung.1017.t
+	desc = hung.1017.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1017.a	
+		ai_chance = { factor = 85 }
+		add_stability = 0.05
+        HUN = { transfer_state = 70 }
+        HUN = { transfer_state = 71 } 
+		HUN = { transfer_state = 664 }
+		HUN = { transfer_state = 73 }
+		70 = { add_core_of = HUN } 
+		73 = { add_core_of = HUN } 
+		664 = { add_core_of = HUN } 
+		71 = { add_core_of = HUN } 
+	}
+}
+#CzechiaacceptsBAV
+country_event = {
+	id = hung.1018
+	title = hung.1018.t
+	desc = hung.1018.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1018.a	
+		ai_chance = { factor = 85 }
+		add_political_power = -50
+        BAV = { transfer_state = 69 } 
+        BAV = { transfer_state = 9 } 
+        BAV = { transfer_state = 75 } 
+        BAV = { transfer_state = 74 }
+        BAV = { transfer_state = 72 }
+        69 = { add_core_of = BAV } 
+		74 = { add_core_of = BAV } 
+	}
+	option = {
+		name = hung.1018.b	
+		ai_chance = { factor = 10 }
+		add_political_power = -25
+        BAV = { transfer_state = 74 } 
+        BAV = { transfer_state = 72 }  
+        BAV = { transfer_state = 69 } 
+        69 = { add_core_of = BAV } 
+		74 = { add_core_of = BAV } 
+        puppet = CZE
+	}
+}
+#CzechiadeclinesHUN
+country_event = {
+	id = hung.1019
+	title = hung.1019.t
+	desc = hung.1019.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1019.a	
+		create_wargoal = { type = annex_everything target = CZE }
+		HUN = { add_state_claim = 70 }
+		HUN = { add_state_claim = 71 }
+	}
+}
+#CzechiadeclinesBAV
+country_event = {
+	id = hung.1020
+	title = hung.1020.t
+	desc = hung.1020.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1020.a	
+		create_wargoal = {
+					type = take_state_focus
+					target = CZE
+					generator = { 69 74 72 }
+	 		}
+		69 = { add_core_of = BAV } 
+		74 = { add_core_of = BAV } 
+		72 = { add_core_of = BAV }
+		802 = { add_core_of = BAV }
+	}
+}
+#NewsEventDresden
+news_event = {
+	id = hung.1021
+	title = hung.1021.t
+	desc = hung.1021.d
+	picture = GFX_news_event_hitler_handshake
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = hung.1021.a	
+	}
+}
+#Transylvania
+country_event = {
+	id = hung.1022
+	title = hung.1022.t
+	desc = hung.1022.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+	name = hung.1022.a	
+		ai_chance = { factor = 25 }
+        HUN = { transfer_state = 84 } 
+        HUN = { transfer_state = 83 } 
+        HUN = { transfer_state = 82 } 
+        HUN = { transfer_state = 76 } 
+		76 = { add_core_of = HUN } 
+		82 = { add_core_of = HUN } 
+		83 = { add_core_of = HUN }
+		84 = { add_core_of = HUN }
+	}
+	option = {
+		name = hung.1022.b	
+		ai_chance = { factor = 75 }
+		HUN = {
+		create_wargoal = {
+					type = take_state_focus
+					target = ROM
+					generator = { 76 84 83 82 }
+	 		}
+	 	}	
+		76 = { add_core_of = HUN } 
+		82 = { add_core_of = HUN } 
+		83 = { add_core_of = HUN }
+		84 = { add_core_of = HUN }
+	}
+}
+#Vojovodina
+country_event = {
+	id = hung.1023
+	title = hung.1023.t
+	desc = hung.1023.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+	   name = hung.1023.a	
+       HUN = { country_event = { id = hung.1024 } }
+	}
+	option = {
+	   name = hung.1023.b	
+	   HUN = { country_event = { id = hung.1029 } }
+	}
+}
+#Serbiagivevojo
+country_event = {
+	id = hung.1024
+	title = hung.1024.t
+	desc = hung.1024.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1024.a	
+        HUN = { transfer_state = 45 }
+        HUN = { add_state_core = 45 }
+        add_stability = 0.05
+        add_political_power = 50
+        }
+}
+#Serbiagivevojodeal
+country_event = {
+	id = hung.1025
+	title = hung.1025.t
+	desc = hung.1025.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1025.a	
+        HUN = { transfer_state = 45 }
+        HUN = { add_state_core = 45 }
+        45 = { set_demilitarized_zone = yes }
+        add_political_power = -75
+        }
+}
+# Hungarian-German Treaty (Germans)
+country_event = {
+	id = hung.1026
+	title = hung.1026.t
+	desc = hung.1026.d
+	picture = GFX_report_event_german_italian_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hung.1026.a	#sounds good
+		HUN = {
+			country_event = { days = 1 id = hung.1027 }
+		}
+		# REVISIT Balance research bonus, also in event below
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			technology = cas_bomber
+		}
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 2
+			category = air_doctrine
+		}
+	}
+}
+# Hungarian-German Treaty
+country_event = {
+	id = hung.1027
+	title = hung.1027.t
+	desc = hung.1027.d
+	picture = GFX_report_event_german_italian_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hung.1027.a	#sounds good
+		HUN = {
+			country_event = { days = 1 id = hung.1027 }
+		}
+		# REVISIT Balance research bonus, also in event below
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			technology = excavation_tech
+		}
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 2
+			category = armor
+		}
+	}
+}
+country_event = {
+	id = hung.1028
+	title = hung.1028.t
+	desc = hung.1028.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = hung.1028.a	
+	transfer_state = 936
+	add_political_power = 50
+	add_stability = 0.05
+	}
+}
+country_event = {
+	id = hung.1029
+	title = hung.1029.t
+	desc = hung.1029.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = hung.1029.a	
+	declare_war_on = {
+    target = SER
+    type = annex_everything
+    }
+    HUN = { add_state_core = 45 }
+    hidden_effect = { complete_national_focus = hun_our_sea }
+    add_war_support = 0.1
+	}
+}
+#Join Bavaria
+country_event = {
+	id = hung.1050
+	title = hung.1050.t
+	desc = hung.1050.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1050.a
+	    BAV = { add_to_faction = HUN }
+    }    
+}
+country_event = {
+	id = hung.1030
+	title = hung.1030.t
+	desc = hung.1030.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1030.a	
+		add_to_faction = HUN	
+	}
+}
+country_event = {
+	id = hung.1031
+	title = hung.1031.t
+	desc = hung.1031.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1031.a	
+		add_to_faction = HUN	
+	}
+}
+country_event = {
+	id = hung.1032
+	title = hung.1032.t
+	desc = hung.1032.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1032.a	
+		add_to_faction = HUN	
+		
+	}
+}
+country_event = {
+	id = hung.1033
+	title = hung.1033.t
+	desc = hung.1033.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1032.a	
+		ai_chance = {
+			factor = 50
+			modifier = { 
+				factor = 10
+				OR = {
+					AUS = { is_in_faction_with = GER }
+				}
+			}
+		}
+		add_to_faction = HUN	
+	}
+	option = {
+	   name = hung.1032.b	
+	   ai_chance = {
+			factor = 50
+			modifier = { 
+				factor = 90
+				OR = {
+					AUS = { is_in_faction_with = GER }
+				}
+			}
+		}
+	country_event = { days = 5 id = hung.1032 }			
+	}
+}
+
+#PartitionRomania
+country_event = {
+	id = hung.1034
+	title = hung.1034.t
+	desc = hung.1034.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1034.a	
+		ROM = {
+		country_event = { days = 5 id = hung.1035 }
+		}	
+	}
+	option = {
+		name = hung.1034.b	
+		HUN = {
+		country_event = { days = 1 id = hung.1038 }
+		}	
+	}
+}
+#RussiademandSubjugation
+country_event = {
+	id = hung.1035
+	title = hung.1035.t
+	desc = hung.1035.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1035.a	
+		RUS = {
+		country_event = { days = 5 id = hung.1036 }
+		}	
+	}
+	option = {
+		name = hung.1035.b		
+		RUS = {
+		country_event = { days = 1 id = hung.1037 }
+		}
+	}
+}
+#Romaniaaccepts
+country_event = {
+	id = hung.1036
+	title = hung.1036.t
+	desc = hung.1036.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1036.a	
+    RUS = {
+    #transfer_state = 812
+    transfer_state = 79
+    puppet = ROM
+	}
+	HUN = {
+    transfer_state = 84
+    transfer_state = 83
+    transfer_state = 76
+    transfer_state = 82
+	}
+	BUL = {
+	transfer_state = 77
+	}
+	}
+}
+#Romaniadenies
+country_event = {
+	id = hung.1037
+	title = hung.1037.t
+	desc = hung.1037.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1037.a	
+    declare_war_on = {
+    target = ROM
+    type = annex_everything
+    }
+    HUN = {
+    create_wargoal = {
+    type = annex_everything
+    target = ROM
+    }    
+  }
+ }
+}
+#Russiadenies
+country_event = {
+	id = hung.1038
+	title = hung.1038.t
+	desc = hung.1038.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1038.a	
+    HUN = {
+    create_wargoal = {
+    type = annex_everything
+    target = ROM
+    }    
+  }
+ }
+}
+#CarpaHungaryControll?
+country_event = {
+	id = hung.1039
+	title = hung.1039.t
+	desc = hung.1039.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1039.a	
+		ai_chance = { factor = 95 }
+    HUN = {
+		country_event = { days = 1 id = hung.1040 }
+		}
+    }    
+    option = {
+		name = hung.1039.b	
+		ai_chance = { factor = 5 }
+    HUN = {
+		country_event = { days = 1 id = hung.1041 }
+		}
+ }
+}
+#KrakowHungaryControllyEs
+country_event = {
+	id = hung.1040
+	title = hung.1040.t
+	desc = hung.1040.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1040.a	
+    HUN = {
+	transfer_state = 73
+	add_state_core = 73
+	}
+    }    
+}
+#KrakowHungaryControllyEs
+country_event = {
+	id = hung.1041
+	title = hung.1041.t
+	desc = hung.1041.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1041.a	
+    add_political_power = -50
+    }    
+}
+#partitionaustria
+country_event = {
+	id = hung.1042
+	title = hung.1042.t
+	desc = hung.1042.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1042.a
+		AUS = {
+		country_event = { days = 1 id = hung.1043 }
+		}
+    }    
+}
+#ultimatumaustria
+country_event = {
+	id = hung.1043
+	title = hung.1043.t
+	desc = hung.1043.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1043.a
+		GER = {
+	     transfer_state = 152
+	     add_state_core = 152
+	     transfer_state = 4
+	     add_state_core = 4
+	     transfer_state = 153
+	     add_state_core = 153
+		}
+
+		 HUN = {
+	     transfer_state = 102
+	     add_state_core = 102
+		 transfer_state = 853
+	     add_state_core = 853 
+		}
+    } 
+    option = {
+		name = hung.1043.b
+		GER = {
+		country_event = { days = 1 id = hung.1044 }
+		}
+    }   
+}
+#ultimatumaustria
+country_event = {
+	id = hung.1044
+	title = hung.1044.t
+	desc = hung.1044.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = hung.1044.a
+		GER = {
+	    declare_war_on = {
+    target = AUS
+    type = annex_everything
+    }
+    } 
+ }
+}
+#austriagiventobavaria
+country_event = {
+	id = hung.1046
+	title = hung.1046.t
+	desc = hung.1046.d
+     
+    trigger = {
+    tag = HUN
+    BAV = { exists = yes }
+    OR = {
+    HUN = {
+    owns_state = 152
+    owns_state = 153
+    owns_state = 4
+    owns_state = 102
+    }
+    AUS = { is_puppet_of = HUN }
+	} 
+	} 
+
+	mean_time_to_happen = {
+        days = 10
+    }
+
+	option = {
+	name = hung.1046.a
+	BAV = {
+	transfer_state = 152
+    transfer_state = 153
+    transfer_state = 4
+    transfer_state = 102
+    }
+	}
+}
+##############################################Whowillbeking
+country_event = {
+	id = hung.1045
+	title = hung.1045.t
+	desc = hung.1045.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = hung.1045.a
+	ai_chance = {
+			factor = 33
+	}
+	AUS = {
+	annex_country = {
+    target = HUN
+    transfer_troops = yes
+    }
+    add_state_core = 155
+    add_state_core = 43
+    add_state_core = 154
+    } 
+    AUS = { set_cosmetic_tag = AUS_austria_hungary }
+    }
+
+    option = {
+    name = hung.1045.b
+    ai_chance = {
+			factor = 33
+	}
+	create_country_leader = {
+	name = "Adalbert von Preussen"
+	desc = "POLITICS_Adalbert_von_Preussen_DESC"
+	picture = "adalbert_von_preussen.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+    }
+    }
+
+    option = {
+    name = hung.1045.c
+    ai_chance = {
+			factor = 35
+	}
+	create_country_leader = {
+	name = "Paul von Rennenkampff"
+	desc = "POLITICS_Paul_von_Rennenkampff_DESC"
+	picture = "Paul_Rennenkampf.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+
+    }
+    }
+ 
+}
+country_event = {
+	id = hung.1085
+	title = "Choosing our King"
+	desc = hung.1085.d
+
+	is_triggered_only = yes
+
+    option = {
+    name = "Adalbert von Preußen"
+    ai_chance = {
+			factor = 33
+	}
+	create_country_leader = {
+	name = "Prince Adalbert von Preußen"
+	desc = "POLITICS_Adalbert_von_Preussen_DESC"
+	picture = "adalbert_von_preussen.dds"
+	expire = "1965.1.1"
+	ideology = conservatives_subtype
+    }
+	add_popularity = { ideology = conservatives popularity = 0.5 } 
+    }
+
+    option = {
+    name = "Prince Wilhelm, Duke of Södermanland"
+    ai_chance = {
+			factor = 35
+	}
+	create_country_leader = {
+	name = "Carl V Wilhelm"
+	desc = "POLITICS_CARL_V_WILHELM_DESC"
+	picture = "gfx/leaders/HUN/Portrait_HUN_Carl_Wilhelm.png"
+	expire = "1965.1.1"
+	ideology = conservatives_subtype
+
+    }
+	add_popularity = { ideology = conservatives popularity = 0.5 } 
+    }
+ 
+}
+
+################################################################################HungarianSuccessionEventChain
+#country_event = {
+#	id = hung.1047
+#	title = hung.1047.t
+#	desc = hung.1047.d
+#	picture = GFX_report_event_HUN_wine
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = hung.1047.a	
+#	}
+#
+#}
+#country_event = {
+#	id = hung.1048
+#	title = hung.1048.t
+#	desc = hung.1048.d
+#	picture = GFX_report_event_HUN_wine
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = hung.1048.a	
+#	}
+#
+#}
+
+#################################################################################BreakingUpCountries
+
+#BreakUpofRomania
+country_event = {
+	id = hung.1081
+	title = hung.1081.t
+	desc = hung.1081.d
+	picture = GFX_report_event_HUN_wine
+
+	trigger = {
+    tag = HUN
+    BAV = { exists = yes }
+    OR = {
+    HUN = {
+	owns_state = 79
+    owns_state = 76
+    owns_state = 83
+    owns_state = 82
+    owns_state = 84
+    }
+    ROM = { is_puppet_of = HUN }
+	}
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+        days = 5
+    }
+
+	option = {
+		name = hung.1081.a	
+		add_political_power = 50
+		MOL = { transfer_state = 79 }
+		puppet = MOL
+        puppet = ROM
+        if = {
+        limit = {
+            NOT = {
+                HUN = {
+                owns_state = 76
+                }
+            }
+        }
+        transfer_state = 76
+        }
+        if = {
+        limit = {
+            NOT = {
+                HUN = {
+                owns_state = 83
+                }
+            }
+        }
+        transfer_state = 83
+        }
+        if = {
+        limit = {
+            NOT = {
+                HUN = {
+                owns_state = 82
+                }
+            }
+        }
+        transfer_state = 82
+        }
+        if = {
+        limit = {
+            NOT = {
+                HUN = {
+                owns_state = 84
+                }
+            }
+        }
+        transfer_state = 84
+        }
+        hidden_effect = { BUL = { transfer_state = 77 } }
+	}
+
+}
+#####NewsEvent
+#AttackingRomania
+news_event = {
+	id = hung.1082
+	title = hung.1082.t
+	desc = hung.1082.d
+	picture = GFX_news_event_transylvania
+
+	fire_only_once = yes
+
+	trigger = {
+	AND = {
+    HUN = { 
+    has_completed_focus = hun_demand_trans
+    }
+	HUN = { has_war_with = ROM }
+	}
+	}
+
+	option = {
+		name = hung.1082.a	
+	}
+}
+#AttackingYugoslavia
+news_event = {
+	id = hung.1083
+	title = hung.1083.t
+	desc = hung.1083.d
+	picture = GFX_news_event_vojvodina
+
+	fire_only_once = yes
+
+	trigger = {
+	AND = {
+    HUN = { 
+    has_completed_focus = hun_address_vojovodina
+    }
+	HUN = { has_war_with = SER }
+	}
+	}
+
+	option = {
+		name = hung.1083.a	
+	}
+}
+country_event = {
+	id = hung.1084
+	title = "Hungarian Elections"
+	desc = hung.1084.d
+	picture = GFX_report_event_HUN_wine
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Nemzeti Egység Pártja"
+		set_politics = {
+			ruling_party = conservatives
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		add_popularity = { ideology = conservatives popularity = 0.5 } 
+		complete_national_focus = hun_NEP
+	}
+	option = {
+		name = "Függetlenségi és 48-as Párt"
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		complete_national_focus = hun_F48P
+		add_popularity = { ideology = democratic popularity = 0.5 } 
+	}
+}

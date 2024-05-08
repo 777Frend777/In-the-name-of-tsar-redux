@@ -1,0 +1,188 @@
+#Category allowed for CHI
+CHI_dealing_countryside = {
+	
+	CHI_hunt_down_rebels_1 = {
+
+		icon = generic_operation
+
+		available = {
+		}
+		highlight_states = {
+			state = 602
+		}
+		cost = 50
+		days_remove = 75
+		fire_only_once = yes
+		visible = {
+			original_tag = CHI
+			is_puppet = no 
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {  
+		swap_ideas = {
+        remove_idea = CHI_risk_of_famine
+        add_idea = CHI_risk_of_famine_1
+        }
+        set_country_flag = huhan_secured
+		}
+	}
+	CHI_hunt_down_rebels_2 = {
+
+		icon = generic_operation
+
+		available = {
+		has_country_flag = huhan_secured
+		}
+		highlight_states = {
+			state = 748
+		}
+		cost = 50
+		days_remove = 75
+		fire_only_once = yes
+		visible = {
+			original_tag = CHI
+			is_puppet = no 
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+		swap_ideas = {
+        remove_idea = CHI_risk_of_famine_1
+        add_idea = CHI_risk_of_famine_2
+        }
+        set_country_flag = zunji_secured
+		}
+	}
+	CHI_hunt_down_rebels_3 = {
+
+		icon = generic_operation
+
+		available = {
+		has_country_flag = zunji_secured
+		}
+		highlight_states = {
+			state = 599
+		}
+		cost = 50
+		days_remove = 75
+		fire_only_once = yes
+		visible = {
+			original_tag = CHI
+			is_puppet = no 
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+		swap_ideas = {
+        remove_idea = CHI_risk_of_famine_2
+        add_idea = CHI_risk_of_famine_3
+        }
+        set_country_flag = guanxi_secured
+		}
+	}
+	CHI_hunt_down_rebels_5 = {
+
+		icon = generic_operation
+
+		available = {
+		has_country_flag = guanxi_secured
+		}
+		highlight_states = {
+			state = 325
+		}
+		cost = 50
+		days_remove = 75
+		fire_only_once = yes
+		visible = {
+			original_tag = CHI
+			is_puppet = no 
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+		swap_ideas = {
+        remove_idea = CHI_risk_of_famine_3
+        add_idea = CHI_risk_of_famine_4
+        }
+        set_country_flag = yunnan_secured
+		}
+	}
+	
+	CHI_hunt_down_rebels_6 = {
+
+		icon = generic_operation
+
+		available = {
+		has_country_flag = yunnan_secured
+		}
+		highlight_states = {
+			state = 591
+		}
+		cost = 50
+		days_remove = 75
+		fire_only_once = yes
+		visible = {
+			original_tag = CHI
+			is_puppet = no 
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+		swap_ideas = {
+        remove_idea = CHI_risk_of_famine_4
+        add_idea = CHI_risk_of_famine_5
+        }
+        set_country_flag = hainan_secured
+		}
+	    }
+
+		CHI_hunt_down_rebels_7 = {
+
+		icon = generic_operation
+
+		available = {
+		has_country_flag = hainan_secured
+		}
+		highlight_states = {
+			state = 595
+		}
+		cost = 50
+		days_remove = 75
+		fire_only_once = yes
+		visible = {
+			original_tag = CHI
+			is_puppet = no 
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+        remove_ideas = CHI_risk_of_famine_5
+		}
+	}
+
+}

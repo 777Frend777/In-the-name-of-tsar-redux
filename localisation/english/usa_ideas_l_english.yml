@@ -1,0 +1,64 @@
+﻿l_english:
+  US_power_struggle:0 "Power Struggle"
+ 
+  US_forced_labour:0 "Forced Labour"
+
+  US_pwa:0 "Public Works Administration"
+  US_pwa_1:0 "Civil Works Administration"
+
+  US_fbi_idea:0 "Department of Justice I"
+  US_fbi_idea_1:0 "Department of Justice II"
+  US_fbi_idea_2:0 "Department of Justice III"
+  US_fbi_idea_3:0 "Department of Justice IV"
+
+  US_department_labour_idea:0 "Department of Labour I"
+  US_department_labour_idea_1:0 "Department of Labour II"
+  US_department_labour_idea_2:0 "Department of Labour III"
+  US_department_labour_idea_3:0 "Department of Labour IV"
+
+  US_CIA_idea:0 "Foreign Security Agency"
+
+  US_famine_stage_1_idea:0 "Nationwide Food Shortages"
+
+  US_executive_order:0 "Executive Orders"
+
+  USA_department_of_defense:0 "Department of Defense"
+
+  USA_us_air_force:0 "American Aces"
+
+  air_war_plans_division_focus:0 "Increased Fighter Production"
+
+  US_department_agriculture_idea:0 "Department of Agriculture I"
+  US_department_agriculture_idea_1:0 "Department of Agriculture II"
+  US_department_agriculture_idea_2:0 "Department of Agriculture III"
+
+  us_presidential_crisis_resolved:0 "Presidential Crisis Resolved"
+
+  US_oppressed_minorities:0 "New Segregation Laws"
+
+  US_edu_reform:0 "Education Reform"
+
+  US_gov_internvention:0 "Government Intervention"
+
+  US_factory_strikes:0 "Factory Strikes"
+
+  us_isolationism_policy:0 "Harding Doctrine"
+
+  us_bastion_democracy:0 "Bastion of Democracy"
+  us_idea_red_army:0 "Red Army"
+  US_conscription_idea:0 "Conscription Act"
+  US_idea_army_funds:0 "Army Funds"
+  us_new_deal_idea:0 "Towards Globalization"
+  US_wpa_idea:0 "Workers Association"
+  US_women_workers_idea:0 "Women Rights"
+  us_anti_imperialism_idea:0 "Anti-Imperialist Sentiment"
+  us_elite_troops:0 "Elite Soldier Training"
+  us_mass_conscription_idea:0 "Mass Conscription"
+  us_standardartization:0 "Standardartization of Equipment"
+
+  US_unemployment_rate:0 "High Unemployment Rate"
+
+  recognized_bav_good:0 "Bavarian Recognition"
+  recognized_bav_bad:0 "Bavarian Recognition"
+  recognized_ger_good:0 "Prussian Recognition"
+  recognized_ger_bad:0 "Prussian Recognition"

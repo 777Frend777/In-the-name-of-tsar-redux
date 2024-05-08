@@ -1,0 +1,43 @@
+﻿division_template = {
+	name = "Divisione Alpina"				# Divisione Alpina (high experience, best equipment)
+	division_names_group = ITA_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }		# Elite Alpina Regiments
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		} # "1a Gruppa d'Alpina"
+		location = 3768
+		division_template = "Divisione Alpina"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		} # "1a Gruppa d'Alpina "
+		location = 3768
+		division_template = "Divisione Alpina"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+
+}

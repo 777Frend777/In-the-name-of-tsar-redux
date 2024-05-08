@@ -1,0 +1,15 @@
+characters={
+	HEJ_Abdulilah={
+		name="Abdulilah"
+		portraits={
+			civilian={
+				large="gfx/leaders/HEJ/portrait_HEJ_Abdulilah.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,42 @@
+Remake_Austro_Hungary_category = {
+New_Hun= {
+		icon = generic_construction
+
+		allowed = {
+			tag = HUN
+		}
+
+		available = {
+			has_full_control_of_state = 4
+			has_full_control_of_state = 152
+			has_full_control_of_state = 153
+		}
+
+		cost = 40
+
+		fire_only_once = yes
+
+		days_remove = 30
+
+		modifier = {
+
+		}
+
+		visible = {
+			tag = HUN
+			
+		}
+
+		remove_effect = {
+                                                 every_state = {
+                                                                limit = {  
+                                                                               is_core_of = AUS
+                                                                }
+                                                                add_core_of = ROOT
+                                                           }
+		}
+                                ai_will_do = {
+			base = 200
+                                }
+	}
+}

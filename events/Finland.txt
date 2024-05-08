@@ -1,0 +1,214 @@
+﻿###########################
+# Finland Events
+###########################
+
+add_namespace = finland
+
+# Russian Ultimatum - Event for FIN
+country_event = {
+	id = finland.0
+	title = "Finnish revolution"
+	desc = finland.0.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ay, Ay Mikhail"
+		FIN={
+			transfer_state = 148
+			transfer_state = 111
+			transfer_state = 149
+			transfer_state = 926
+			transfer_state = 927
+			transfer_state = 928
+			transfer_state = 929
+			transfer_state = 930
+			transfer_state = 145
+			transfer_state = 150
+		}	
+	}
+}
+country_event = {
+	id = finland.1
+	title = "Russia Demands change of Government"
+	desc = finland.1.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	option = { # Accept demands
+		name = "Fine"
+		RUS={
+			puppet = FIN
+		}
+		FIN={
+			set_country_flag = FIN_Submit
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+			long_name = FIN_regency
+			name = FIN_regency
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.3
+		}
+		
+		country_event = { hours = 5 id = finland.2 }
+		}
+	}
+	option = { # Refuse
+		name = "No?"
+		RUS = {
+			country_event = { days = 5 id = WINTERWAR.1 }
+			effect_tooltip = {
+				create_wargoal = {
+					type = annex_everything
+					target = FIN
+					generator = { 146 }
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = WINTERWAR.1
+	title = "Finland Refuses"
+	desc = WINTERWAR.1.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Die commie scum"
+		create_wargoal = {
+			type = annex_country
+			target = FIN
+			generator = { 146 }
+		}	
+	}
+}
+country_event = {
+	id = WINTERWAR.2
+	title = "Finnish Red Army is defeated"
+	desc = WINTERWAR.2.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	trigger ={
+		tag = RUS
+		RUS={
+			controls_state = 111
+		}
+	}
+	
+	option = {
+		name = "Slava Mother Rossyia"
+		RUS={
+			puppet = FIN
+		}
+		FIN={
+			set_country_flag = FIN_Submit
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+				long_name = FIN_regency
+				name = FIN_regency
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.3
+			}
+			country_event = { days = 1 id = finland.2 }
+		}
+		
+	}
+}
+country_event = {
+	id = WINTERWAR.3
+	title = "Finnish Forces enter Saint Petersberg"
+	desc = WINTERWAR.3.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	trigger ={
+		tag = FIN
+		FIN={
+			controls_state = 195
+		}
+	}
+	
+	option = {
+		name = "Ay Ay Mikhail"
+		RUS={
+			add_stability = -0.3
+			add_popularity = {
+				ideology = communism
+				popularity = 0.3
+			}
+		}
+		FIN={
+			transfer_state = 146
+			white_peace = RUS
+		}
+		set_country_flag = FIN_Victory
+		
+	}
+}
+country_event = {
+	id = finland.2
+	title = "King of Finland"
+	desc = finland.2.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = { # 
+		name = "Grand Duke Dimitri"
+		set_cosmetic_tag = FIN_ROMANOV
+		set_party_name = {
+			ideology = neutrality
+			long_name = FIN_romanov
+			name = FIN_romanov
+		}
+		set_country_flag = FIN_Russian_house
+		add_ideas = RUS_russian_monarchy
+		create_country_leader = {
+			name = "Dimitri I Romanov"
+			desc = "POLITICS_FIN_FRED_DESC"
+			picture = "gfx/leaders/FIN/Portrait_RUS_Dmitri_Romanov_Tsar.png"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+			}
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+	}
+	option = { #
+		name = "Friedrich Charles of Hesse"
+		set_cosmetic_tag = FIN_MON
+		set_party_name = {
+			ideology = neutrality
+			long_name = FIN_hesse
+			name = FIN_hesse
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.2
+		}
+		create_country_leader = {
+			name = "Fredrik Kaarle I"
+			desc = "POLITICS_FIN_FRED_DESC"
+			picture = "gfx/leaders/FIN/finnish_german_monarch.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+			}
+		}
+	}
+}

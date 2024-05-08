@@ -1,0 +1,16 @@
+general_border_conflict_decision_category = {
+	icon = border_war
+	picture = generic_border_conflicts
+	priority = 1
+
+	visible = {
+		always = yes
+	}
+	allowed = {
+		always = yes
+	}
+	available = {
+		
+	}
+
+}

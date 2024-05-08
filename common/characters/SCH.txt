@@ -1,0 +1,111 @@
+characters = {
+	
+	SCH_liu_wenhui = {
+		name = "Liu Wenhui"
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/SCH/SCH_liu_wenhui.png"
+				large = "gfx/leaders/SCH/Portrait_SCH_Liu_Wenhui.png"
+			}
+		}
+		country_leader = {
+			desc = "SCH_liu_wenhui_desc"
+			ideology = socialist_subtype
+		}
+		corps_commander = {
+			traits = {
+				old_guard
+				politically_connected
+				substance_abuser
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	SCH_chen_jiongming = {
+		name = "Chen Jiongming"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/advisors/SCH/SCH_chen_jiongming.png"
+				large = "gfx/leaders/SCH/Portrait_SCH_Chen_Jiongming.png"
+			}
+			army = {
+				small = "gfx/interface/advisors/SCH/SCH_chen_jiongming_army.png"
+				large = "gfx/leaders/SCH/Portrait_SCH_Chen_Jiongming_Army.png"
+			}
+		}
+		country_leader = {
+			desc = "SCH_chen_jiongming_desc"
+			ideology = liberalism
+		}
+		field_marshal = {
+			traits = { old_guard trait_cautious war_hero organizer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	SCH_deng_xihou = {
+		name = "Deng Xihou"
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/SCH/SCH_deng_xihou.png"
+				large = "gfx/leaders/SCH/Portrait_SCH_Deng_Xihou.png"
+			}
+		}
+		country_leader = {
+			ideology = conservatives_subtype
+		}
+		corps_commander = {
+			traits = { career_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	SCH_yang_sen = {
+		name = "Yang Sen"
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/SCH/SCH_yang_sen.png"
+			}
+			civilian = {
+				large = "gfx/leaders/SCH/Portrait_SCH_Yang_Sen.png"
+			}
+		}
+		country_leader = {
+			desc = "SCH_yang_sen_desc"
+			ideology = neutrality_subtype
+		}
+		field_marshal = {
+			traits = {
+				inflexible_strategist
+				politically_connected
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	SCH_zhang_lan = {
+		name = "Zhang Lan"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SCH/Portrait_SCH_Zhang_Lan.png"
+				small = "gfx/interface/advisors/SCH/SCH_Zhang_Lan.png"
+			}
+		}
+		country_leader = {
+			ideology = communism_subtype
+		}
+	}
+}

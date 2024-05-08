@@ -1,0 +1,18 @@
+
+ai_historical_focus_list_SPA = {
+	ai_national_focuses = {
+		# grab as fast as you can if available
+		SPR_side_with_popular_front
+		SPR_defend_democracy
+		SPR_democratic_slot_1
+		SPR_republican_spain
+		SPR_oppose_communists
+		SPR_popular_army
+		SPR_new_government
+		SPR_one_spain
+		SPR_reestablish_diplomacy
+		SPR_rebuild_spain
+		SPR_stabilize_country
+	}
+}
+

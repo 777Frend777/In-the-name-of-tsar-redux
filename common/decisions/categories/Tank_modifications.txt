@@ -1,0 +1,3 @@
+Tank_Variant_category = {
+	icon = generic_civil_support
+}

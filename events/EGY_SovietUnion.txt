@@ -1,0 +1,39 @@
+﻿##### ROM ######
+
+add_namespace = soviet
+
+# Egypt national focus -  Join Comintern
+country_event = {
+	id = soviet.1000
+	title = soviet.1000.t
+	desc = soviet.1000.d
+	picture = GFX_report_event_stalin_01
+
+	is_triggered_only = yes
+		
+	option = {
+		name = soviet.1000.a
+		SOV = { add_to_faction = EGY }
+		EGY = {
+			add_ai_strategy = {
+				type = alliance
+				id = "SOV"
+				value = 200
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = news.1003 }
+		}
+	}
+	option = {
+		name = soviet.1000.b
+		ai_chance = { factor = 0 }
+		EGY = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = SOV_FRA_join_comintern_reject
+			}
+		}
+	}
+}
+

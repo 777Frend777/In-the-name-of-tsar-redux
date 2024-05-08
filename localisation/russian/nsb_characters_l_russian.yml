@@ -1,0 +1,907 @@
+﻿l_russian:
+  #RUSIET UNION 
+ RUS_iosif_stalin: "Иосиф Сталин" #NT!
+ RUS_konstantin_rodzayevsky: "Константин Родзаевский" #NT!
+ RUS_aleksandr_kerensky: "Александр Керенский" #NT!
+ RUS_supreme_soviet: "Верховный Совет" #NT!
+ RUS_provisional_government: "Временное правительство" #NT!
+  
+ RUS_georgy_zhukov: "Георгий Жуков" #NT!
+ RUS_konstantin_rokossovsky: "Константин Рокоссовский" #NT!
+ RUS_aleksandr_vasilevsky: "Александр Василевский" #NT!
+ RUS_boris_shaposhnikov: "Борис Шапошников" #NT!
+ RUS_nikolay_vatutin: "Николай Ватутин" #NT!
+ RUS_ivan_konev: "Иван Конев" #NT!
+ RUS_semyon_timoshenko: "Semyon Timoshenko" #NT!
+ RUS_kliment_voroshilov: "Климент Ворошилов" #NT!
+ RUS_mikhail_tukhachevsky: "Михаил Тухачевский" #NT!
+ RUS_semyon_budyonny: "Семен Буденный" #NT!
+ RUS_ivan_chernyakhovsky: "Иван Черняховский" #NT!
+ RUS_issa_pliyev: "Исса Плиев" #NT!
+ RUS_leonid_govorov: "Леонид Говоров" #NT!
+ RUS_grigory_kulik: "Григорий Кулик" #NT!
+ RUS_kirill_meretskov: "Кирилл Мерецков" #NT!
+ RUS_filipp_golikov: "Филипп Голиков" #NT!
+ RUS_andrey_yeryomenko: "Андрей Ерёменко" #NT!
+ RUS_georgy_zakharov: "Георгий Захаров" #NT!
+ RUS_yakov_cherevichenko: "Яков Черевиченко" #NT!
+ RUS_maks_reyter: "Макс Рейтер" #NT!
+ RUS_nikandr_chibisov: "Никандр Чибисов" #NT!
+ RUS_vasily_kuznetsov: "Василий Кузнецов" #NT!
+ RUS_andrey_vlasov: "Андрей Власов" #NT!
+ RUS_ivan_fedyuninsky: "Иван Федюнинский" #NT!
+ RUS_maksim_purkayev: "Максим Пуркаев" #NT!
+ RUS_kuzma_galitsky: "Кузьма Галицкий" #NT!
+ RUS_markian_popov: "Маркиан Попов" #NT!
+ RUS_nikolay_berzarin: "Николай Берзарин" #NT!
+ RUS_aleksandr_gorbatov: "Александр Горбатов" #NT!
+ RUS_kirill_moskalenko: "Кирилл Москаленко" #NT!
+ RUS_dmitry_lelyushenko: "Дмитрий Лелюшенко" #NT!
+ RUS_andrey_grechko: "Андрей Гречко" #NT!
+ RUS_rodion_malinovsky: "Родион Малиновский" #NT!
+ RUS_vasily_chuykov: "Василий Чуйков" #NT!
+ RUS_filipp_oktyabrsky: "Филипп Октябрьский" #NT!
+ RUS_sergey_gorshkov: "Сергей Горшков" #NT!
+ RUS_gordey_levchenko: "Гордей Левченко" #NT!
+ RUS_arseny_golovko: "Арсений Головко" #NT!
+ RUS_vladimir_kasatonov: "Владимир Касатонов" #NT!
+ RUS_stepan_krasovsky: "Степан Красовский" #NT!
+ RUS_vladimir_tributs: "Владимир Трибуц" #NT!
+ RUS_sergey_khudyakov: "Сергей Худяков" #NT!
+ RUS_konstantin_vershinin: "Константин Вершинин" #NT!
+ RUS_sergey_rudenko: "Сергей Руденко" #NT!
+ RUS_ivan_yumashev: "Иван Юмашев" #NT!
+ RUS_nikolay_kuznetsov: "Николай Кузнецов" #NT!
+ RUS_yakov_smushkevich: "Яков Смушкевич" #NT!
+ RUS_pavel_rychagov: "Павел Рычагов" #NT!
+ RUS_aleksandr_golovanov: "Александр Голованов" #NT!
+ RUS_mikhail_frinovsky: "Михаил Фриновский" #NT!
+ RUS_igor_kurchatov: "Игорь Курчатов" #NT!
+ RUS_sergey_korolyov: "Сергей Королев" #NT!
+ RUS_pavel_zhigarev: "Павел Жигарев" #NT!
+ RUS_pyotr_smirnov: "Петр Смирнов" #NT!
+ RUS_aleksandr_yegorov: "Александр Егоров" #NT!
+ RUS_vasily_blyukher: "Василий Блюхер" #NT!
+ RUS_aleksandr_novikov: "Александр Новиков" #NT!
+ RUS_vitaly_primakov: "Виталий Примаков" #NT!
+ RUS_vasily_korzh: "Василий Корж" #NT!
+ RUS_sidor_kovpak: "Сидор Ковпак" #NT!
+ RUS_lev_dovator: "Лев Доватор" #NT!
+ RUS_pavel_rybalko: "Павел Рыбалко" #NT!
+ RUS_mikhail_kalinin: "Михаил Калинин" #NT!
+ RUS_nikita_khrushchyov: "Никита Хрущев" #NT!
+ RUS_nikolay_voznesensky: "Николай Вознесенский" #NT!
+ RUS_lazar_kaganovich: "Лазарь Каганович" #NT!
+ RUS_genrikh_yagoda: "Генрих Ягода" #NT!
+ RUS_nikolay_yezhov: "Николай Ежов" #NT!
+ RUS_lavrenty_beriya: "Лаврентий Берия" #NT!
+ RUS_vsevolod_merkulov: "Всеволод Меркулов" #NT!
+ RUS_maksim_litvinov: "Максим Литвинов" #NT!
+ RUS_ivan_smirnov: "Иван Смирнов" #NT!
+ RUS_ivar_smilga: "Ивар Смилга" #NT!
+ RUS_karl_radek: "Карл Радек" #NT!
+ RUS_yevgeny_preobrazhensky: "Евгений Преображенский" #NT!
+ RUS_aleksandr_shlyapnikov: "Александр Шляпников" #NT!
+ RUS_lev_trotsky: "Лев Троцкий" #NT!
+ RUS_nikolay_bukharin: "Николай Бухарин" #NT!
+ RUS_aleksey_rykov: "Алексей Рыков" #NT!
+ RUS_mikhail_tomsky: "Михаил Томский" #NT!
+ RUS_grigory_zinovyev: "Григорий Зиновьев" #NT!
+ RUS_lev_kamenev: "Лев Каменев" #NT!
+ RUS_martemyan_ryutin: "Мартемян Рютин" #NT!
+ RUS_grigory_sokolnikov: "Григорий Сокольников" #NT!
+ RUS_patriarch_sergy: "Патриарх Сергий" #NT!
+ RUS_metropolitan_anastasy: "Митрополит Анастасий" #NT!
+ RUS_metropolitan_nikolay: "Митрополит Николай" #NT!
+ RUS_metropolitan_aleksy: "Митрополит Алексий" #NT!
+ RUS_grigory_semyonov: "Григорий Семенов" #NT!
+ RUS_nikolay_ustryalov: "Николай Устрялов" #NT!
+ RUS_aleksandr_kazembek: "Александр Казембек" #NT!
+ RUS_anastasy_vonsyatsky: "Анастасий Вонсяцкий" #NT!
+ RUS_aleksandr_prokofyev_seversky: "Александр Прокофьев-Северский" #NT!
+ RUS_vyacheslav_tkachyov: "Вячеслав Ткачев" #NT!
+ RUS_yan_nagursky: "Ян Нагурский" #NT!
+ RUS_vasily_yanchenko: "Василий Янченко" #NT!
+ RUS_anton_denikin: "Anton Denikin" #NT!
+ RUS_pyotr_krasnov: "Петр Краснов" #NT!
+ RUS_konstantin_nechayev: "Константин Нечаев" #NT!
+ RUS_vladimir_kosmin: "Владимир Косьмин" #NT!
+ RUS_aleksandr_rodzyanko: "Александр Родзянко" #NT!
+ RUS_andrey_shkuro: "Андрей Шкуро" #NT!
+ RUS_tsar_vladimir_kirillovich: "Владимир III" #NT!
+ RUS_tsar_vsevolod_ivanovich: "Царь Всеволод I" #NT!
+ RUS_metropolitan_meletius: "Митрополит Мелетий" #NT!
+ RUS_patriarch_meletius: "Патриарх Мелетий" #NT!
+  #ARGENTINA 
+ ARG_senor_hitler: "Сеньор Хильтер" #NT!
+  #AUSTRIA 
+ AUS_kurt_schuschnigg: "Курт Шушниг" #NT!
+ AUS_karl_renner: "Карл Реннер" #NT!
+ AUS_alfred_klahr: "Альфред Клар" #NT!
+ AUS_karl_eglseer: "Карл Эглсир" #NT!
+  #BULGARIA 
+ BUL_boris_iii: "Борис III" #NT!
+ BUL_boris_iii_desc: "Царь Борис III" #NT!
+ BUL_ferdinand_i: "Фердинанд I" #NT!
+ BUL_regency_council: "Регентский совет" #NT!
+ BUL_georgi_dimitrov: "Георгий Димитров" #NT!
+ BUL_georgi_dimitrov_desc: "Георгий Димитров Михайлов" #NT!
+ BUL_nikola_mushanov: "Никола Мушанов" #NT!
+ BUL_nikola_mushanov_desc: "Никола Стойков Мушанов" #NT!
+ BUL_atanas_shalapatov: "Атанас Шалапатов" #NT!
+ BUL_atanas_shalapatov_desc: "Атанас Н. Шалапатов" #NT!
+ BUL_nikola_mihov: "Никола Михов" #NT!
+ BUL_nikola_mihov_desc: "Никола Михайлов Михов" #NT!
+ BUL_georgi_popov: "Георгий Попов" #NT!
+ BUL_georgi_popov_desc: "Георгий Николов Попов" #NT!
+ BUL_ivan_markov: "Иван Марков" #NT!
+ BUL_ivan_markov_desc: "Иван Христов Марков" #NT!
+ BUL_georgi_markov: "Георгий Марков" #NT!
+ BUL_georgi_markov_desc: "Георгий Марков Марков" #NT!
+ BUL_asen_nikolov: "Асен Николов" #NT!
+ BUL_asen_nikolov_desc: "Асен Добрев Николов" #NT!
+ BUL_nikola_stoychev: "Никола Стойчев" #NT!
+ BUL_nikola_stoychev_desc: "Никола Георгиев Стойчев" #NT!
+ BUL_damian_velchev: "Дамиан Велчев" #NT!
+ BUL_damian_velchev_desc: "Дамиан Велчев Дамианов" #NT!
+ BUL_angel_dotsev: "Ангел Доцев" #NT!
+ BUL_angel_dotsev_desc: "Ангел Георгиев Доцев" #NT!
+ BUL_georgi_ivanov_kyoseivanov_bftb: "Georgi Kyoseivanov" #NT!
+ BUL_georgi_ivanov_kyoseivanov_bftb_desc: "Георгий Иванов Кёсейванов" #NT!
+ BUL_stefan_nedev: "Стефан Недев" #NT!
+ BUL_stefan_nedev_desc: "Стефан Савов Недев" #NT!
+ BUL_stoycho_mushanov: "Стойчо Мушанов" #NT!
+ BUL_stoycho_mushanov_desc: "Стойчо Стефанов Мушанов" #NT!
+ BUL_nikola_petkov: "Никола Петков" #NT!
+ BUL_nikola_petkov_desc: "Никола Димитров Петков" #NT!
+ BUL_konstantin_muraviev_bftb: "Константин Муравьев" #NT!
+ BUL_konstantin_muraviev_bftb_desc: "Константин Владов Муравьев" #NT!
+ BUL_stefan_stefanov: "Стефан Стефанов" #NT!
+ BUL_stefan_stefanov_desc: "Стефан Георгиев Стефанов" #NT!
+ BUL_dimitrana_ivanova: "Димитрана Иванова" #NT!
+ BUL_dimitrana_ivanova_desc: "$BUL_dimitrana_ivanova$"
+ BUL_vasil_kolarov: "Василь Коларов" #NT!
+ BUL_vasil_kolarov_desc: "Василь Петров Коларов" #NT!
+ BUL_valko_chervenkov: "Валко Червенков" #NT!
+ BUL_valko_chervenkov_desc: "Валко Велёв Червенков" #NT!
+ BUL_todor_pavlov: "Тодор Павлов" #NT!
+ BUL_todor_pavlov_desc: "Тодор Димитров Павлов" #NT!
+ BUL_ivan_dochev: "Иван Дочев" #NT!
+ BUL_ivan_dochev_desc: "Иван Димитров Дочев" #NT!
+ BUL_aleksandar_tsankov: "Александр Цанков" #NT!
+ BUL_aleksandar_tsankov_desc: "Александр Цолов Цанков" #NT!
+ BUL_nikola_zhekov: "Никола Жеков" #NT!
+ BUL_nikola_zhekov_desc: "Никола Тодоров Жеков" #NT!
+ BUL_dobri_bozhilov_bftb: "Добри Божилов" #NT!
+ BUL_dobri_bozhilov_bftb_desc: "Добри Божилов Хаджиянакев" #NT!
+ BUL_bogdan_filov: "Богдан Филов" #NT!
+ BUL_bogdan_filov_fascism: "Богдан Филов" #NT!
+ BUL_bogdan_filov_desc: "Богдан Димитров Филов" #NT!
+ BUL_kimon_georgiev: "Кимон Георгиев" #NT!
+ BUL_kimon_georgiev_desc: "Кимон Георгиев Стоянов" #NT!
+ BUL_theodosi_daskalov: "Теодоси Даскалов" #NT!
+ BUL_theodosi_daskalov_desc: "Теодоси Петров Даскалов" #NT!
+ BUL_georgi_petsov_bftb: "Георгий Пецов" #NT!
+ BUL_georgi_petsov_bftb_desc: "$BUL_georgi_petsov_bftb$"
+ BUL_sava_ivanov: "Сава Иванов" #NT!
+ BUL_sava_ivanov_desc: "Сава Николов Иванов" #NT!
+ BUL_georgi_drenikov: "Георгий Дреников" #NT!
+ BUL_georgi_drenikov_desc: "Георгий Стойменов Дреников" #NT!
+ BUL_konstantin_lukash: "Константин Лукаш" #NT!
+ BUL_konstantin_lukash_desc: "Константин Людвиг Лукаш" #NT!
+ BUL_nikola_hadzipetkov_bftb: "Никола Хаджипетков" #NT!
+ BUL_nikola_hadzipetkov_bftb_desc: "Никола Петков Хаджипетков" #NT!
+ BUL_kiril_dimitrov_yanchulev: "Кирил Янчулев" #NT!
+ BUL_kiril_dimitrov_yanchulev_desc: "Кирилл Димитров Янчулев" #NT!
+ BUL_vasil_boydev_bftb: "Василь Бойдев" #NT!
+ BUL_vasil_boydev_bftb_desc: "Василь Тенев Бойдев" #NT!
+ BUL_kiril_stanchev_bftb: "Кирил Станчев" #NT!
+ BUL_kiril_stanchev_bftb_desc: "Кирил Николов Станчев" #NT!
+ BUL_dimitr_ayryanov: "Димитр Айрьянов" #NT!
+ BUL_dimitr_ayryanov_desc: "Димитар Васильев Айрьянов" #NT!
+ BUL_gancho_manchev: "Ганчо Манчев" #NT!
+ BUL_gancho_manchev_desc: "Ганчо Иванов Манчев" #NT!
+ BUL_zachari_zachariev: "Захари Захариев" #NT!
+ BUL_zachari_zachariev_desc: "Захари Симеонов Захариев" #NT!
+ BUL_asen_toshev: "Асен Тошев" #NT!
+ BUL_asen_toshev_desc: "Асен Константинов Тошев" #NT!
+ BUL_ivan_variklechkov: "Иван Вариклечков" #NT!
+ BUL_ivan_variklechkov_desc: "Иван Петров Вариклечков" #NT!
+ BUL_stoyan_stoyanov_bftb: "Стоян Стоянов" #NT!
+ BUL_stoyan_stoyanov_bftb_desc: "Стоян Илиев Стоянов" #NT!
+ BUL_stefan_tsanev: "Стефан Цанев" #NT!
+ BUL_stefan_tsanev_desc: "Стефан Тошев Цанев" #NT!
+ BUL_ivan_sapundzhiev: "Иван Сапунджиев" #NT!
+ BUL_ivan_sapundzhiev_desc: "Иван Христов Сапунджиев" #NT!
+ BUL_atanas_pavlov_zhilkov_bftb: "Атанас Жилков" #NT!
+ BUL_atanas_pavlov_zhilkov_bftb_desc: "Атанас Павлов Жилков" #NT!
+ BUL_stoyan_trendafilov: "Стоян Трендафилов" #NT!
+ BUL_stoyan_trendafilov_desc: "Стоян Константинов Трендафилов" #NT!
+ BUL_trifon_trifonov: "Трифон Трифонов" #NT!
+ BUL_trifon_trifonov_desc: "Трифон Йорданов Трифонов" #NT!
+ BUL_vladimir_stoychev: "Владимир Стойчев" #NT!
+ BUL_vladimir_stoychev_desc: "Владимир Димитров Стойчев" #NT!
+ BUL_ferdinand_kozovski: "Фердинанд Козовски" #NT!
+ BUL_ferdinand_kozovski_desc: "Фердинанд Тодоров Козовски" #NT!
+ BUL_ivan_gaidimitriv_desc: "$BUL_ivan_gaidimitriv$"
+ BUL_bonyu_stoev_pironkov_desc: "Боню Стоев Пиронков" #NT!
+ BUL_nikola_totev_markov_desc: "Никола Тотев Марков" #NT!
+ BUL_blagoi_ivanov_desc: "Благой Евтимов Иванов" #NT!
+ BUL_nikola_nakov: "Никола Наков" #NT!
+  #SPAIN 
+ SPR_enrique_lister: "Энрике Листер" #NT!
+ SPR_enrique_lister_desc: "Энрике Листер Форхан" #NT!
+ SPR_valentin_gonzalez: "Валентин Гонсалес" #NT!
+ SPR_niceto_alcala_zamora: "Ницето Алькала-Самора" #NT!
+ SPR_jose_diaz: "Хосе Диас" #NT!
+ SPR_alejandro_lerroux: "Алехандро Лерру" #NT!
+ SPA_francisco_franco: "Франсиско Франко" #NT!
+ SPR_manuel_fal_conde: "Мануэль Фаль Конде" #NT!
+ SPR_vicente_rojo_lluch: "Висенте Рохо Ллуч" #NT!
+ SPR_jose_asensio_torrado: "Хосе Асенсио Торрадо" #NT!
+ SPR_juan_modesto: "Хуан Модесто" #NT!
+ SPR_antonio_cordon_garcia: "Антонио Кордон Гарсия" #NT!
+ SPR_mohamed_meziane: "Мохамед Мезиан" #NT!
+ SPR_gonzalo_queipo_de_llano: "Гонсало Кейпо де Льяно" #NT!
+ SPR_jose_millan_astray: "Хосе Миллан заблудился" #NT!
+ SPR_miguel_buiza_fernandez_palacios: "Мигель Буиса Фернандес-Паласиос" #NT!
+  #PORTUGAL 
+ POR_antonio_de_oliveira_salazar: "Антониу де Оливейра Саласар" #NT!
+ POR_bento_goncalves: "Бенто Гонсалвес" #NT!
+ POR_jose_vicente_de_freitas: "Хосе Висенте де Фрейтас" #NT!
+ POR_luis_augusto_ferreira_martins: "Луис Аугусто Феррейра Мартинс" #NT!
+ POR_raul_augusto_esteves: "Рауль Аугусто Эстевес" #NT!
+ POR_jose_mendes_cabecadas: "Хосе Мендес Кабесадас" #NT!
+ POR_raul_brandao: "Рауль Брандао" #NT!
+  #NATIONALIST CHINA 
+ CHI_chiang_kaishek: "Chiang Kai-Shek" #NT!
+ CHI_zhang_guotao: "Zhang Guotao" #NT!
+ CHI_wang_jingwei: "Wang Jingwei" #NT!
+ CHI_weng_wenhao: "Weng Wenhao" #NT!
+ CHI_tu_yuming: "Tu Yu-ming" #NT!
+ CHI_hsueh_yueh: "Hsueh Yueh" #NT!
+ CHI_tai_anlan: "Тай Ан-лан" #NT!
+ CHI_wang_yaowu: "Wang Yao-wu" #NT!
+ CHI_sun_li_jen: "Sun Li Jen" #NT!
+ CHI_hu_zongnan: "Hu Zongnan" #NT!
+ CHI_gu_zhutong: "Gu Zhutong" #NT!
+ CHI_wei_lihuang: "Wei Lihuang" #NT!
+ CHI_fu_zuoyi: "Fu Zuoyi" #NT!
+ CHI_zhang_xueliang: "Zhang Xueliang" #NT!
+  #PEOPLE'S REPUBLIC OF CHINA 
+ PRC_mao_zedong: "Mao Zedong" #NT!
+ PRC_peng_dehuai: "Peng Dehuai" #NT!
+ PRC_lin_biao: "Lin Biao" #NT!
+ PRC_kwong_hu: "Квонг Ху" #NT!
+ PRC_luo_zhao: "Luo Zhao" #NT!
+ PRC_liang_ma: "Liang Ma" #NT!
+  #SINKIANG 
+ SIK_sheng_shicai: "Sheng Shicai" #NT!
+ SIK_chiang_yufen: "Chiang Yu-fen" #NT!
+ SIK_kwong_jin: "Kwong Jin" #NT!
+ SIK_luo_wei: "Luo Wei" #NT!
+ SIK_liang_jiang: "Liang Jiang" #NT!
+  #XIBEI SAN MA 
+ XSM_ma_bufang: "Ma Bufang" #NT!
+ XSM_mao_sun: "Mao Sun" #NT!
+ XSM_hsia_sun: "Ся Сунь" #NT!
+ XSM_hsia_jin: "Ся Цзинь" #NT!
+  #SHANXI 
+ SHX_wang_jingguo: "Wang Jingguo" #NT!
+ SHX_luo_zhao: "Luo Zhao" #NT!
+ SHX_liao_ting: "Liao Ting" #NT!
+  #GUANXI CLIQUE 
+ GXC_liu_peng: "Liu Peng" #NT!
+ GXC_zhang_lu: "Zhang Lü" #NT!
+ GXC_li_ting: "Li Ting" #NT!
+  #YUNNAN 
+ YUN_long_yun: "Long Yun" #NT!
+ YUN_mao_dong: "Mao Dong" #NT!
+ YUN_cheng_peng: "Cheng Peng" #NT!
+ YUN_hsia_wu: "Ся Ву" #NT!
+  #MANCHUKUO 
+ MAN_aisin_gioro_puyi: "Aisin Gioro Puyi" #NT!
+ MAN_zhang_haipeng: "Zhang Haipeng" #NT!
+ MAN_zhang_jinghui: "Zhang Jinghui" #NT!
+ MAN_aisin_gioro_xiqia: "Aisin Gioro Xiqia" #NT!
+ MAN_yoshiko_kawashima: "Yoshiko Kawashima" #NT!
+ MAN_zhao_shangzhi: "Zhao Shangzhi" #NT!
+ MAN_changlin_linge: "Changlin Linge" #NT!
+  #USA 
+ USA_franklin_delano_roosevelt: "Франклин Делано Рузвельт" #NT!
+ USA_william_dudley_pelley: "Уильям Дадли Пелли" #NT!
+ USA_earl_browder: "$earl_browder$"
+ USA_george_s_patton: "$george_patton$"
+ USA_omar_bradley: "$omar_bradley$"
+ USA_dwight_d_eisenhower: "$dwight_eisenhower$"
+ USA_geoffrey_keyes: "Джеффри Киз" #NT!
+ USA_lucian_truscott: "Люциан Траскотт" #NT!
+ USA_mark_clark: "$mark_clark$"
+ USA_douglas_macarthur: "$douglas_macarthur$"
+ USA_walter_krueger: "$walter_krueger$"
+ USA_lloyd_fredendall: "Ллойд Фредендалл" #NT!
+ USA_leslie_mcnair: "Лесли Макнейр" #NT!
+ USA_jonathan_wainwright: "Джонатан Уэйнрайт" #NT!
+ USA_russell_hartle: "Рассел Хартл" #NT!
+ USA_leonard_gerow: "Леонард Героу" #NT!
+ USA_edward_brooks: "Эдвард Брукс" #NT!
+ USA_clarence_huebner: "Кларенс Хюбнер" #NT!
+ USA_alexander_patch: "Александр Патч" #NT!
+ USA_william_simpson: "Уильям Симпсон" #NT!
+ USA_j_lawton_collins: "Дж. Лоутон Коллинз" #NT!
+ USA_courtney_hodges: "$courtney_hodges$"
+ USA_joseph_stilwell: "$joseph_stilwell$"
+ USA_oscar_griswold: "Оскар Грисволд" #NT!
+ USA_maurice_rose: "Морис Роуз" #NT!
+ USA_alexander_vandegrift: "Александр Вандегрифт" #NT!
+ USA_ernest_king: "$ernest_king$"
+ USA_chester_w_nimitz: "$chester_nimitz$"
+ USA_william_halsey_jr: "Уильям Хэлси-младший" #NT!
+ USA_frank_jack_fletcher: "$frank_jack_fletcher$"
+ USA_raymond_a_spruance: "Раймонд А. Спруэнс" #NT!
+ USA_harold_rainsford_stark: "Гарольд Рейнсфорд Старк" #NT!
+ USA_arleigh_burke: "Арли Берк" #NT!
+ USA_charles_m_cooke_jr: "Чарльз М. Кук-младший." #NT!
+ USA_carnot_wheeler: "Карно Уиллер" #NT!
+ USA_robert_goddard: "$robert_goddard$"
+ USA_robert_oppenheimer: "$robert_oppenheimer$"
+ USA_curtis_lemay: "$curtis_lemay$"
+ USA_dewitt_clinton_ramsey: "$dewitt_clinton_ramsey$"
+ USA_harold_mcclelland: "$harold_mcclelland$"
+ USA_marc_mitscher: "$marc_mitscher$"
+ USA_george_marshall: "$george_marshall$"
+ USA_william_halsey: "$william_halsey$"
+ USA_henry_arnold: "$henry_arnold$"
+ USA_carl_spaatz: "$carl_spaatz$"
+ USA_george_kenney: "$george_kenney$"
+ USA_jimmy_doolittle: "$jimmy_doolittle$"
+ USA_john_cannon: "$john_cannon$"
+ USA_claire_lee_chennault: "$claire_lee_chennault$"
+ USA_raymond_spruance: "$raymond_spruance$"
+ USA_thomas_kinkaid: "$thomas_kinkaid$"
+ USA_harry_white: "$harry_white$"
+ USA_victor_perlo: "$victor_perlo$"
+ USA_whittaker_chambers: "$whittaker_chambers$"
+ USA_harold_ickes: "$harold_ickes$"
+ USA_charles_coughlin: "$charles_coughlin$"
+ USA_william_donovan: "$usa_william_donovan$"
+  #ITALY 
+ ITA_benito_mussolini: "Бенито Муссолини" #NT!
+ ITA_ferruccio_parri: "Ферруччо Парри" #NT!
+ ITA_vittorio_emanuele_iii: "Витторио Эмануэле III" #NT!
+ ITA_palmiro_togliatti: "Пальмиро Тольятти" #NT!
+ ITA_pietro_badoglio: "$pietro_badoglio$"
+ ITA_emilio_de_bono: "$emilio_de_bono$"
+ ITA_ugo_cavallero: "$ugo_cavallero$"
+ ITA_giovanni_messe: "$giovanni_messe$"
+ ITA_sebastiano_visconti_prasca: "Себастьяно Висконти Праска" #NT!
+ ITA_ubaldo_soddu: "Убальдо Содду" #NT!
+ ITA_italo_balbo: "$italo_balbo$"
+ ITA_rodolfo_graziani: "$rodolfo_graziani$"
+ ITA_inigo_campioni: "$inigo_campioni$"
+ ITA_alberto_da_zara: "$alberto_da_zara$"
+ ITA_giuseppe_fioravanzo: "Джузеппе Фьораванцо" #NT!
+ ITA_carlo_bergamini: "$carlo_bergamini$"
+ ITA_angelo_iachino: "$angelo_iachino$"
+ ITA_alfredo_guzzoni: "$alfredo_guzzoni$"
+ ITA_guiseppe_fioravanzo: "$guiseppe_fioravanzo$"
+ ITA_amedeo_mecozzi: "$amedeo_mecozzi$"
+ ITA_renato_sandalli: "$renato_sandalli$"
+ ITA_gaetano_crocco: "$gaetano_crocco$"
+ ITA_domenico_cavagnari: "$domenico_cavagnari$"
+ ITA_arturo_riccardi: "$arturo_riccardi$"
+ ITA_rino_corso_fougier: "$rino_corso_fougier$"
+ ITA_francesco_pricolo: "$francesco_pricolo$"
+ ITA_mario_roatta: "$mario_roatta$"
+ ITA_vittorio_ambrosio: "$vittorio_ambrosio$"
+ ITA_ettore_muti: "$ettore_muti$"
+ ITA_marziale_cerutti: "$marziale_cerutti$"
+ ITA_silvio_scaroni: "$silvio_scaroni$"
+ ITA_luigi_mascherpa: "$luigi_mascherpa$"
+ ITA_amadeo_bordiga: "$amadeo_bordiga$"
+ ITA_ivanoe_bonomi: "$ivanoe_bonomi$"
+ ITA_carlo_scorza: "$carlo_scorza$"
+  #FRANCE 
+ FRA_pierre_laval: "Пьер Лаваль" #NT!
+ FRA_edouard_daladier: "Эдуард Даладье" #NT!
+ FRA_denis_guillaumat: "Дени Гийома" #NT!
+ FRA_maurice_thorez: "$maurice_thorez$"
+ FRA_rene_nicod: "Рене Никод" #NT!
+ FRA_philippe_petain: "Филипп Петен" #NT!
+ FRA_jean_de_lattre_de_tassigny: "Жан де Латтр де Тассиньи" #NT!
+ FRA_alphonse_juin: "Альфонс Джуин" #NT!
+ FRA_maurice_gamelin: "$maurice_gamelin$"
+ FRA_maxime_weygand: "$maxime_weygand$"
+ FRA_alphonse_georges: "$alphonse_georges$"
+ FRA_antoinemariebenoit_besson: "Антуан-Мари-Бенуа Бессон" #NT!
+ FRA_charles_de_gaulle: "$charles_de_gaulle$"
+ FRA_philippe_leclerc: "$philippe_leclerc$"
+ FRA_henri_giraud: "$henri_giraud$"
+ FRA_charles_huntziger: "$charles_huntziger$"
+ FRA_gastonhenri_billotte: "Гастон-Анри Бийотт" #NT!
+ FRA_henry_freydenberg: "Генри Фрейденберг" #NT!
+ FRA_rene_olry: "Рене Олри" #NT!
+ FRA_francois_darlan: "$francois_darlan$"
+ FRA_jeanmarie_charles_abrial: "Жан-Мари Шарль Абриаль" #NT!
+ FRA_jeanpierre_esteva: "Жан-Пьер Эстева" #NT!
+ FRA_rene_emile_godfroy: "$rene_emile_godfroy$"
+ FRA_jean_de_laborde: "$jean_de_laborde$"
+ FRA_victor_denain: "$victor_denain$"
+ FRA_jean_decoux: "$jean_decoux$"
+ FRA_jean_marie_bergeret: "$jean_marie_bergeret$"
+ FRA_louis_kahn: "$louis_kahn$"
+ FRA_frederic_irene_joliot_curie: "$frederic_irene_joliot_curie$"
+ FRA_jean_marie_abrial: "$jean_marie_abrial$"
+ FRA_marcel_gensoul: "$marcel_gensoul$"
+ FRA_joseph_vuillemin: "$joseph_vuillemin$"
+ FRA_robert_odic: "$robert_odic$"
+ FRA_philippe_fequant: "$philippe_fequant$"
+ FRA_martial_valin: "$martial_valin$"
+ FRA_jean_francois_jannekeyn: "$jean_francois_jannekeyn$"
+ FRA_emile_muselier: "$emile_muselier$"
+ FRA_alfred_heurtaux: "$alfred_heurtaux$"
+ FRA_rene_prioux: "$rene_prioux$"
+ FRA_leon_blum: "$leon_blum$"
+ FRA_marcel_bucard: "$marcel_bucard$"
+ FRA_rene_massigli: "$rene_massigli$"
+ FRA_georges_bonnet: "$georges_bonnet$"
+ FRA_charles_maurras: "$charles_maurras$"
+  #UNITED KINGDOM 
+ ENG_stanley_baldwin: "Стэнли Болдуин" #NT!
+ ENG_harry_pollitt: "$harry_pollitt$"
+ ENG_neville_chamberlain: "Невилл Чемберлен" #NT!
+ ENG_horatio_dundas: "Горацио Дандас" #NT!
+ ENG_alan_brooke: "$alan_brooke$"
+ ENG_bernard_montgomery: "$bernard_montgomery$"
+ ENG_claude_auchinleck: "$claude_auchinleck$"
+ ENG_neil_ritchie: "Нил Ричи" #NT!
+ ENG_alan_cunningham: "Алан Каннингем" #NT!
+ ENG_william_slim: "Уильям Слим" #NT!
+ ENG_richard_oconnor: "Ричард О'Коннор" #NT!
+ ENG_william_platt: "Уильям Платт" #NT!
+ ENG_george_giffard: "Джордж Гиффард" #NT!
+ ENG_harold_alexander: "$harold_alexander$"
+ ENG_jackie_smyth: "Джеки Смит" #NT!
+ ENG_thomas_jacomb_hutton: "Томас Джейкомб Хаттон" #NT!
+ ENG_arthur_percival: "Артур Персиваль" #NT!
+ ENG_merton_beckwithsmith: "Мертон Беквит-Смит" #NT!
+ ENG_henry_pownall: "Генри Паунолл" #NT!
+ ENG_john_vereker: "$john_vereker$"
+ ENG_henry_wilson: "Генри Уилсон" #NT!
+ ENG_william_gott: "Уильям Готт" #NT!
+ ENG_jock_campbell: "Джок Кэмпбелл" #NT!
+ ENG_oliver_leese: "Оливер Лиз" #NT!
+ ENG_miles_dempsey: "Майлз Демпси" #NT!
+ ENG_brian_horrocks: "Брайан Хоррокс" #NT!
+ ENG_archibald_wavell: "$archibald_wavell$"
+ ENG_thomas_moore: "Том Мур" #NT!
+ ENG_james_fownes_somerville: "Джеймс Фаунс Сомервилл" #NT!
+ ENG_henry_harwood: "$henry_harwood$"
+ ENG_andrew_cunningham: "$andrew_cunningham$"
+ ENG_bruce_fraser: "Брюс Фрейзер" #NT!
+ ENG_john_tovey: "Джон Тови" #NT!
+ ENG_bernard_rawlings: "Бернард Роулингс" #NT!
+ ENG_john_cunningham: "Джон Каннингем" #NT!
+ ENG_charles_forbes: "Чарльз Форбс" #NT!
+ ENG_algernon_willis: "Алджернон Уиллис" #NT!
+ ENG_arthur_power: "Артур Пауэр" #NT!
+ ENG_james_somerville: "$james_somerville$"
+ ENG_tom_phillips: "$tom_phillips$"
+ ENG_hugh_dowding: "$hugh_dowding$"
+ ENG_arthur_harris: "$arthur_harris$"
+ ENG_james_chadwick: "$james_chadwick$"
+ ENG_frank_whittle: "$frank_whittle$"
+ ENG_edmund_ironside: "$edmund_ironside$"
+ ENG_ernle_chatfield: "$ernle_chatfield$"
+ ENG_dudley_pound: "$dudley_pound$"
+ ENG_cyril_newall: "$cyril_newall$"
+ ENG_charles_portal: "$charles_portal$"
+ ENG_edward_ellington: "$edward_ellington$"
+ ENG_kenneth_anderson: "$kenneth_anderson$"
+ ENG_sholto_douglas: "$sholto_douglas$"
+ ENG_trafford_leigh_mallory: "$trafford_leigh_mallory$"
+ ENG_frederick_bowhill: "$frederick_bowhill$"
+ ENG_louis_mountbatten: "$louis_mountbatten$"
+ ENG_max_horton: "$max_horton$"
+ ENG_clement_attlee: "$clement_attlee$"
+ ENG_john_beckett: "$john_beckett$"
+ ENG_stewart_menzies: "$eng_stewart_menzies$"
+ ENG_alan_turing: "$eng_alan_turing$"
+  #GERMANY 
+ GER_adolf_hitler: "Адольф Гитлер" #NT!
+ GER_konrad_adenauer: "Конрад Аденауэр" #NT!
+ GER_wilhelm_pieck: "Вильгельм Пик" #NT!
+ GER_gerd_von_rundstedt: "$gerd_von_rundstedt$"
+ GER_gunther_von_kluge: "Гюнтер фон Клюге" #NT!
+ GER_friedrich_paulus: "Фридрих Паулюс" #NT!
+ GER_erwin_rommel: "$erwin_rommel$"
+ GER_erich_von_manstein: "$manstein$"
+ GER_heinz_guderian: "$heinz_guderian$"
+ GER_wilhelm_list: "Вильгельм Лист" #NT!
+ GER_ewald_von_kleist: "Эвальд фон Клейст" #NT!
+ GER_fedor_von_bock: "Федор фон Бок" #NT!
+ GER_walter_model: "Уолтер Модель" #NT!
+ GER_maximilian_von_weichs: "Максимилиан фон Вейхс" #NT!
+ GER_wilhelm_ritter_von_leeb: "Вильгельм Риттер фон Лееб" #NT!
+ GER_georghans_reinhardt: "Георг-Ханс Рейнхардт" #NT!
+ GER_walter_kruger: "Вальтер Крюгер" #NT!
+ GER_kurt_student: "$kurt_student$"
+ GER_erwin_von_witzleben: "Эрвин фон Витцлебен" #NT!
+ GER_hermann_hoth: "Герман Гот" #NT!
+ GER_johannes_blaskowitz: "Йоханнес Бласковиц" #NT!
+ GER_paul_hausser: "Пол Хауссер" #NT!
+ GER_friedrich_schulz: "Фридрих Шульц" #NT!
+ GER_georg_von_kuchler: "Георг фон Кюхлер" #NT!
+ GER_alfred_jodl: "Альфред Йодль" #NT!
+ GER_sepp_dietrich: "Зепп Дитрих" #NT!
+ GER_hasso_von_manteuffel: "Хассо фон Мантейфель" #NT!
+ GER_albert_kesselring: "$albert_kesselring$"
+ GER_gotthard_heinrici: "Готард Хейнрици" #NT!
+ GER_ernsteberhard_hell: "Эрнст-Эберхард Ад" #NT!
+ GER_felix_steiner: "Феликс Штайнер" #NT!
+ GER_karl_donitz: "$donitz$"
+ GER_erich_raeder: "$raeder$"
+ GER_alfred_saalwachter: "$alfred_saalwachter$"
+ GER_hermann_boehm: "Герман Бём" #NT!
+ GER_wilhelm_marschall: "Вильгельм Маршалл" #NT!
+ GER_gunther_lutjens: "$gunther_lutjens$"
+ GER_von_braun: "$von_braun$"
+ GER_heisenberg: "$heisenberg$"
+ GER_wolfram_von_richthofen: "$wolfram_von_richthofen$"
+ GER_walther_wever: "$walther_wever$"
+ GER_ernst_udet: "$ernst_udet$"
+ GER_otto_ciliax: "$otto_ciliax$"
+ GER_ludwig_beck: "$ludwig_beck$"
+ GER_wilhelm_keitel: "$wilhelm_keitel$"
+ GER_franz_halder: "$franz_halder$"
+ GER_walther_von_brauchitsch: "$walther_von_brauchitsch$"
+ GER_ritter_von_greim: "$ritter_von_greim$"
+ GER_hermann_goring: "$goering$"
+ GER_ferdinand_schorner: "$ferdinand_schorner$"
+ GER_werner_von_fritsch: "$werner_von_fritsch$"
+ GER_hugo_sperrle: "$hugo_sperrle$"
+ GER_erhard_milch: "$erhard_milch$"
+ GER_erich_bey: "$erich_bey$"
+ GER_viktor_schutze: "$viktor_schutze$"
+ GER_fritz_todt: "$todt$"
+ GER_albert_speer: "$speer$"
+ GER_hjalmar_schacht: "$hjalmar_schacht$"
+ GER_walther_funk: "$walther_funk$"
+ GER_ernst_thalmann: "$ernst_thalmann$"
+ GER_kurt_schumacher: "$kurt_schumacher$"
+ GER_joseph_goebbels: "$joseph_goebbels$"
+ GER_rudolf_hess: "$rudolf_hess$"
+ GER_heinrich_himmler: "$heinrich_himmler$"
+ GER_martin_bormann: "$martin_bormann$"
+ GER_joachim_von_ribbentrop: "$joachim_von_ribbentrop$"
+ GER_konstantin_von_neurath: "$konstantin_von_neurath$"
+ GER_wilhelm_canaris: "$ger_wilhelm_canaris$"
+ GER_wilhelm_ii: "Вильгельм II" #NT!
+ GER_victoria: "Виктория" #NT!
+ GER_august_von_mackensen: "Август фон Макензен" #NT!
+  #ROMANIA 
+ ROM_gheorghe_tatarescu: "Георге Татареску" #NT!
+ ROM_constantin_ion_parhon: "Константин Ион Паргон" #NT!
+ ROM_king_michael: "Майкл I" #NT!
+ ROM_octavian_goga: "Октавиан Гога" #NT!
+ ROM_corneliu_codreanu: "Корнелиу Кодряну" #NT!
+ ROM_petre_dumitrescu: "Петре Думитреску" #NT!
+ ROM_ioan_mihail_racovita: "Иоан Михаил Раковита" #NT!
+  #TURKEY 
+ TUR_mustafa_kemal_ataturk: "Мустафа Кемаль Ататюрк" #NT!
+ TUR_mehmet_recep_peker: "Мехмет Реджеп Пекер" #NT!
+ TUR_izzettin_chalishlar: "Иззеттин Чалышлар" #NT!
+ TUR_mustafa_muglali: "Мустафа Муглалы" #NT!
+ TUR_hayrullah_fisek: "Хайрулла Фисек" #NT!
+ TUR_mehmet_nuri_yamut: "Мехмет Нури Ямут" #NT!
+ TUR_ahmet_fevzi_pasha: "Ахмет Февзи Паша" #NT!
+ TUR_refet_pasha: "Рефет Паша" #NT!
+ TUR_mehmet_esat_pasha: "Мехмет Эсат Паша" #NT!
+ TUR_halife_abdulmecid_efendi: "Халифе Абдулмеджид Эфенди" #NT!
+ TUR_nazmi_solok: "Назми Солок" #NT!
+ GER_hans_von_luck: "Ганс фон Лак" #NT!
+ GER_wilhelm_ritter_von_thoma: "Вильгельм Риттер фон Тома" #NT!
+ ITA_ferdinando_umberto_filippo_adalberto: "Фердинандо Умберто Филиппо Адальберто" #NT!
+ TUR_durrushehvar_i: "Дюррушехвар I" #NT!
+ TUR_abdulmejid_ii: "Абдулмеджид II" #NT!
+ TUR_hazi_aslanov: "Ази Асланов" #NT!
+  #JAPAN 
+ JAP_emperor_hirohito: "$JAP_hirohito$"
+ JAP_kyuichi_tokuda: "Kyuichi Tokuda" #NT!
+ JAP_tetsu_katayama: "Tetsu Katayama" #NT!
+ JAP_tomoyuki_yamashita: "$tomoyuki_yamashita$"
+ JAP_hisaichi_terauchi: "$hisaichi_terauchi$"
+ JAP_shunroku_hata: "$shunroku_hata$"
+ JAP_akira_muto: "Akira Muto" #NT!
+ JAP_kanji_ishiwara: "Kanji Ishiwara" #NT!
+ JAP_shizuichi_tanaka: "Shizuichi Tanaka" #NT!
+ JAP_yasuji_okamura: "$yasuji_okamura$"
+ JAP_toshizo_nishio: "Toshizo Nishio" #NT!
+ JAP_rikichi_ando: "Rikichi Ando" #NT!
+ JAP_naruhiko_higashikuni: "Naruhiko Higashikuni" #NT!
+ JAP_seishiro_itagaki: "Seishiro Itagaki" #NT!
+ JAP_takashi_sakai: "Takashi Sakai" #NT!
+ JAP_kenji_doihara: "$kenji_doihara$"
+ JAP_kenkichi_ueda: "Kenkichi Ueda" #NT!
+ JAP_shigeru_honjo: "Shigeru Honjo" #NT!
+ JAP_yoshijiro_umezu: "Yoshijiro Umezu" #NT!
+ JAP_otozo_yamada: "Otozo Yamada" #NT!
+ JAP_hatazo_adachi: "Hatazo Adachi" #NT!
+ JAP_iwane_matsui: "Iwane Matsui" #NT!
+ JAP_sadao_araki: "Sadao Araki" #NT!
+ JAP_keisuke_fujie: "Keisuke Fujie" #NT!
+ JAP_kiichiro_higuchi: "Kiichiro Higuchi" #NT!
+ JAP_masaharu_homma: "Масахару Хомма" #NT!
+ JAP_harukichi_hyakutake: "Harukichi Hyakutake" #NT!
+ JAP_jo_iimura: "Джо Иимура" #NT!
+ JAP_hitoshi_imamura: "$hitoshi_imamura$"
+ JAP_masatane_kanda: "Масатане Канда" #NT!
+ JAP_kuniaki_koiso: "Kuniaki Koiso" #NT!
+ JAP_isoroku_yamamoto: "$isoroku_yamamoto$"
+ JAP_mineichi_koga: "Mineichi Koga" #NT!
+ JAP_kiyoshi_hasegawa: "Kiyoshi Hasegawa" #NT!
+ JAP_shigeyoshi_inoue: "Shigeyoshi Inoue" #NT!
+ JAP_nobutake_kondo: "Nobutake Kondō" #NT!
+ JAP_takeo_takagi: "Takeo Takagi" #NT!
+ JAP_soemu_toyoda: "Soemu Toyoda" #NT!
+ JAP_jisaburo_ozawa: "Jisaburo Ozawa" #NT!
+ JAP_zengo_yoshida: "Zengo Yoshida" #NT!
+ JAP_hiroaki_abe: "Хироаки Абэ" #NT!
+ JAP_tadashige_daigo: "Tadashige Daigo" #NT!
+ JAP_gengo_hyakutake: "Gengo Hyakutake" #NT!
+ JAP_minoru_genda: "$minoru_genda$"
+ JAP_yoshitoshi_tokugawa: "$yoshitoshi_tokugawa$"
+ JAP_hino_kumazo: "$hino_kumazo$"
+ JAP_yoshio_nishina: "$yoshio_nishina$"
+ JAP_hideo_itokawa: "$hideo_itokawa$"
+ JAP_kanin_kotohito: "$kanin_kotohito$"
+ JAP_hajime_sugiyama: "$hajime_sugiyama$"
+ JAP_hideki_tojo: "$hideki_tojo$"
+ JAP_fushimi_hiroyasu: "$fushimi_hiroyasu$"
+ JAP_osami_nagano: "$osami_nagano$"
+ JAP_shigetaro_shimada: "$shigetaro_shimada$"
+ JAP_torashiro_kawabe: "$torashiro_kawabe$"
+ JAP_korechika_anami: "$korechika_anami$"
+ JAP_mitsuo_fuchida: "$mitsuo_fuchida$"
+ JAP_nishizo_tsukahara: "$nishizo_tsukahara$"
+ JAP_tateo_kato: "$tateo_kato$"
+ JAP_matome_ugaki: "$matome_ugaki$"
+ JAP_chuichi_nagumo: "$chuichi_nagumo$"
+ JAP_sanzo_nosaka: "$sanzo_nosaka$"
+ JAP_kijuro_shidehara: "$kijuro_shidehara$"
+ JAP_kingoro_hashimoto: "$kingoro_hashimoto$"
+ JAP_takuo_godo: "$takuo_godo$"
+  #HUNGARY 
+ HUN_miklos_horthy: "Миклош Хорти" #NT!
+ HUN_otto_von_habsburg: "Отто фон Габсбург" #NT!
+ HUN_matyas_rakosi: "Матьяш Ракоши" #NT!
+ HUN_arpad_szakasits: "Арпад Сакасиц" #NT!
+ HUN_franz_friedrich: "Фридрих Франц Мекленбург-Шверинский" #NT!
+ HUN_geza_lakatos: "Геза Лакатос" #NT!
+ HUN_ivan_hindy: "Иван Хинди" #NT!
+ HUN_karoly_beregfy: "Карой Берегфи" #NT!
+ HUN_lajos_veress: "Лайош Вересс" #NT!
+ HUN_ferenc_feketehalmyczeydner: "Ференц Фекетехалми-Чейднер" #NT!
+ HUN_istvan_szechenyi: "Иштван Сечени" #NT!
+  #POLAND 
+ POL_anna_andersson: "Анастасия Романова" #NT!
+ POL_karl_albrecht: "Карл Альбрехт I" #NT!
+ POL_friedrich_christian: "Фридрих Кристиан" #NT!
+ POL_sejmik_regency: "Сеймик Ридженси" #NT!
+ POL_boleslaw_wieniawa_glugoszowski: "Болеслав Венява-Длугошовский" #NT!
+ POL_witold_pilecki: "Витольд Пилецкий" #NT!
+ POL_wladyslaw_sikorski: "Владислав Сикорский" #NT!
+ POL_vladislav_korchits: "Владислав Корчиц" #NT!
+ POL_maria_koszutska: "Мария Кошуцкая" #NT!
+ POL_wladyslaw_gomulka: "Владислав Гомулка" #NT!
+ POL_wladyslaw_raczkiewicz: "Владислав Рачкевич" #NT!
+ POL_wincenty_witos: "Винсенти Витос" #NT!
+ POL_stanislaw_mikolajczyk: "Станислав Миколайчик" #NT!
+ POL_pavel_bermondt_avalov: "Павел Бермондт-Авалов" #NT!
+ POL_boleslaw_piasecki: "Болеслав Пясецкий" #NT!
+ POL_wojtek: "Войтек" #NT!
+ POL_rudinger_von_der_goltz: "Рюдигер фон дер Гольц" #NT!
+ POL_wladyslaw_bortnowski: "Владислав Бортновский" #NT!
+ POL_stanislaw_kopanski: "Станислав Копаньский" #NT!
+ POL_marian_kukiel: "Мариан Кукиэль" #NT!
+ POL_stanislaw_sosabowski: "Станислав Сосабовский" #NT!
+ POL_lucjan_zeligowski: "Люциан Желиговский" #NT!
+ POL_tadeusz_kutrzeba: "Тадеуш Кутжеба" #NT!
+ POL_roman_abraham: "Роман Авраам" #NT!
+ POL_wincenty_kowalski: "Винсенти Ковальски" #NT!
+ POL_stefan_frankowski: "Стефан Франковски" #NT!
+ POL_karol_korytowski: "Кароль Коритовски" #NT!
+ POL_boleslaw_bierut: "Болеслав Берут" #NT!
+ POL_edward_osobka_morawski: "Эдвард Осубка-Моравски" #NT!
+  #CZECHOSLOVAKIA 
+ CZE_edvard_benesh: "Эдвард Бенеш" #NT!
+ CZE_jaroslav_krejchi: "Ярослав Крейчи" #NT!
+ CZE_vojtyech_luzha: "Войтех Лужа" #NT!
+ CZE_josef_shnejdarek: "Йозеф Шнейдарек" #NT!
+ CZE_richard_tesarzhik: "Ричард Тесаржик" #NT!
+ CZE_sergej_vojcechovsky: "Сергей Войчеховский" #NT!
+ CZE_frantishek_havlik: "Франтишек Гавлик" #NT!
+  #ESTONIA 
+ EST_konstantin_pats: "Константин Пятс" #NT!
+ EST_artur_sirk: "Артур Сирк" #NT!
+ EST_jaan_anvelt: "Яан Анвельт" #NT!
+ EST_herbert_brede: "Герберт Бреде" #NT!
+ EST_otto_heinze: "Отто Хайнце" #NT!
+  #LATVIA 
+ LAT_karlis_ulmanis: "Карлис Улманис" #NT!
+ LAT_gustavs_celminsh: "Густавс Целминьш" #NT!
+ LAT_alberts_kvesis: "Альбертс Квиесис" #NT!
+ LAT_janis_balodis: "Янис Балодис" #NT!
+ LAT_martinsh_penikis: "Мартиньш Пеникис" #NT!
+ LAT_hermanis_buks: "Херманис Букс" #NT!
+ LAT_fricis_virsaitis: "Фрицис Вирсайтис" #NT!
+ LAT_andrejs_krustinsh: "Андрей Крустиньш" #NT!
+ LAT_zhanis_bahs: "Жанис Бахс" #NT!
+  #LITHUANIA 
+ LIT_antanas_smetona: "Антанас Сметона" #NT!
+ LIT_wilhelm_karl: "Миндаугас II" #NT!
+ LIT_karl_gero: "Миндаугас III" #NT!
+ LIT_zigmas_angarietis: "Зигмас Ангариетис" #NT!
+ LIT_augustinas_voldemaras: "Аугустинас Вольдемарас" #NT!
+ LIT_edvardas_adamkavicius: "Эдвардас Адамкавичюс" #NT!
+ LIT_kazys_skuchas: "Казис Скучас" #NT!
+ LIT_stasys_pundzevichius: "Стасис Пундзявичюс" #NT!
+ LIT_petras_schatz: "Пятрас Шац" #NT!
+  #SWEDEN 
+ SWE_per_albin_hansson: "Пер Альбин Ханссон" #NT!
+ SWE_sven_olov_lindholm: "Свен Олов Линдхольм" #NT!
+ SWE_sven_linderot: "Свен Линдерот" #NT!
+ SWE_axel_pehrssonbramstorp: "Аксель Перссон-Брамсторп" #NT!
+ SWE_folke_hogberg: "Фольке Хёгберг" #NT!
+ SWE_erik_af_edholm: "Эрик аф Эдхольм" #NT!
+ SWE_claes_lindstrom: "Клаас Линдстрем" #NT!
+  #YUGOSLAVIA 
+ YUG_prince_paul: "Принц Пол" #NT!
+ YUG_paul_i: "Павел I" #NT!
+ YUG_milan_stojadinovic: "Милан Стоядинович" #NT!
+ YUG_milan_grol: "Милан Грол" #NT!
+ YUG_peter_ii: "Петр II" #NT!
+ YUG_vladimir_Cukavac: "Владимир Чукавац" #NT!
+ YUG_ivan_gosnjak: "Иван Гошняк" #NT!
+ YUG_josef_depre: "Йозеф Депре" #NT!
+ CRO_nikola_mandic: "Никола Мандич" #NT!
+  #GREECE 
+ GRE_konstantinos_demertzis: "Константинос Демерцис" #NT!
+ GRE_nikos_zachariadis: "Никос Захариадис" #NT!
+ GRE_george_mercouris: "Джордж Меркурис" #NT!
+ GRE_georgios_kosmidis: "Георгиос Космидис" #NT!
+ GRE_charalambos_katsimitros: "Хараламбос Кацимитрос" #NT!
+ GRE_markos_drakos: "Маркос Дракос" #NT!
+ GRE_theodoros_pangalos: "Теодорос Пангалос" #NT!
+ GRE_dimitrios_psarros: "Димитриос Псаррос" #NT!
+ GRE_panagiotis_demestichas: "Панайотис Деместихас" #NT!
+  #CANADA 
+ CAN_mackenzie_king: "Маккензи Кинг" #NT!
+ CAN_adrien_arcand: "Адриан Арканд" #NT!
+ CAN_tim_buck: "Тим Бак" #NT!
+ CAN_j_s_woodsworth: "Дж. С. Вудсворт" #NT!
+ CAN_thomas_victor_anderson: "Томас Виктор Андерсон" #NT!
+ CAN_charles_foulkes: "Чарльз Фоулкс" #NT!
+ CAN_percival_john_montague: "Персиваль Джон Монтегю" #NT!
+ CAN_bert_hoffmeister: "Берт Хоффмайстер" #NT!
+ CAN_leonard_w_murray: "Леонард В. Мюррей" #NT!
+ CAN_ht_bailliegrohman: "Х.Т. Бэйли-Громан" #NT!
+ CAN_james_d_prentice: "Джеймс Д. Прентис" #NT!
+ CAN_harry_dewolf: "Гарри ДеВольф" #NT!
+  #MEXICO 
+ MEX_salvador_abascal: "Сальвадор Абаскаль" #NT!
+ MEX_adolfo_de_la_huerta: "Адольфо де ла Уэрта" #NT!
+ MEX_dionisio_encina: "Дионисио Энчина" #NT!
+ MEX_hernan_laborde: "Эрнан Лаборде" #NT!
+ MEX_valentin_campa: "Валентин Кампа" #NT!
+ MEX_lazaro_cardenas: "Ласаро Карденас" #NT!
+ MEX_juan_andreu: "Хуан Андреу" #NT!
+ MEX_heliodoro_charis: "Хелиодоро Харис" #NT!
+ MEX_gildardo_magana: "Хильдардо Маганья" #NT!
+ MEX_manuel_sanchez: "Мануэль Санчес" #NT!
+ MEX_francisco_mugica: "Франсиско Мухика" #NT!
+ MEX_jesus_degollado_guizar: "Хесус Дегольядо Гисар" #NT!
+ MEX_alberto_gorostieta_vega: "Альберто Горостиета Вега" #NT!
+ MEX_dionisio_navarro_anguiano: "Дионисио Наварро Ангиано" #NT!
+ MEX_luis_maria_martinez: "Луис Мария Мартинес" #NT!
+  #NETHERLANDS (HOL) 
+ HOL_hendrikus_colijn: "Хендрикус Колейн" #NT!
+ HOL_anton_mussert: "Антон Мюссерт" #NT!
+ HOL_lou_de_visser: "Лу де Виссер" #NT!
+ HOL_dirk_jan_de_geer: "Дирк Ян де Гир" #NT!
+ HOL_pieter_sjoerds_gerbrandy: "Питер Сьердс Гербранди" #NT!
+ HOL_johannes_theodorus_furstner: "Йоханнес Теодор Фюрстнер" #NT!
+  #DUTCH EAST INDIES 
+ INS_sukarno: "Сукарно" #NT!
+ INS_a_t_van_starkenborgh_stachouwer: "А. Т. ван Старкенборг Стахаувер" #NT!
+ INS_amir_sjarifuddin_harahap: "Амир Шарифуддин Харахап" #NT!
+ INS_suharto: "Сухарто" #NT!
+ INS_sutan_sjahrir: "Сутан Шарир" #NT!
+  #BRITISH RAJ 
+ RAJ_lord_linlithgow: "Лорд Линлитгоу" #NT!
+ RAJ_p_krishna_pillai: "П. Кришна Пиллаи" #NT!
+ RAJ_b_p_sitaramayya: "Б. П. Ситарамайя" #NT!
+ RAJ_noel_beresfordpeirse: "Ноэль Бересфорд-Пирс" #NT!
+ RAJ_frank_messervy: "Фрэнк Мессерви" #NT!
+ RAJ_douglas_gracey: "Дуглас Грейси" #NT!
+ RAJ_herbert_fitzherbert: "Герберт Фицгерберт" #NT!
+ RAJ_lakshmi_sahgal: "Лакшми Сахгал" #NT!
+ RAJ_orde_wingate: "Орд Вингейт" #NT!
+ RAJ_kodandera_madappa_cariappa: "Kodandera Madappa Cariappa" #NT!
+ RAJ_kodandera_subayya_thimayya: "Кодандера Субайя Тимайя" #NT!
+ RAJ_jayanto_nath_chaudhuri: "Джаянто Натх Чаудхури" #NT!
+  #AUSTRALIA 
+ AST_john_curtin: "Джон Кертин" #NT!
+ AST_eric_campbell: "Эрик Кэмпбелл" #NT!
+ AST_richard_dixon: "Ричард Диксон" #NT!
+ AST_earle_page: "Эрл Пейдж" #NT!
+ AST_rod_hull: "Род Халл" #NT!
+ AST_leslie_morshead: "Лесли Морсхед" #NT!
+ AST_thomas_blamey: "Томас Блейми" #NT!
+ AST_henry_wynter: "Генри Винтер" #NT!
+ AST_alan_vasey: "Алан Васи" #NT!
+ AST_horace_robertson: "Гораций Робертсон" #NT!
+ AST_john_northcott: "Джон Норткотт" #NT!
+ AST_harold_farncomb: "Гарольд Фарнкомб" #NT!
+ AST_victor_crutchley: "Виктор Кратчли" #NT!
+ AST_iven_mackay: "Ивен Маккей" #NT!
+  #SOUTH AFRICA 
+ SAF_j_b_m_hertzog: "Дж. Б. М. Герцог" #NT!
+ SAF_moses_kotane: "Моисей Котане" #NT!
+ SAF_pixley_ka_isaka_seme: "Пиксли Ка Исака Сэме" #NT!
+ SAF_jan_smuts: "Ян Смэтс" #NT!
+ SAF_george_edwin_brink: "Джордж Эдвин Бринк" #NT!
+ SAF_guy_hallifax: "Гай Халлифакс" #NT!
+  #NEW ZEALAND 
+ NZL_michael_joseph_savage: "Майкл Джозеф Сэвидж" #NT!
+ NZL_sidney_holland: "Сидни Холланд" #NT!
+ NZL_john_ormond: "Джон Ормонд" #NT!
+ NZL_elsie_farrelly: "Элси Фаррелли" #NT!
+ NZL_peter_fraser: "Питер Фрейзер" #NT!
+ NZL_bernard_freyberg: "Бернард Фрейберг" #NT!
+ NZL_robert_row: "Роберт Роу" #NT!
+ NZL_william_stevens: "Уильям Стивенс" #NT!
+ NZL_edmund_rupert_drummond: "Эдмунд Руперт Драммонд" #NT!
+ NZL_peter_phipps: "Питер Фиппс" #NT!
+  #FINLAND 
+ FIN_risto_ryti: "Ристо Рюти" #NT!
+ FIN_aimo_aaltonen: "Аймо Аалтонен" #NT!
+ FIN_vilho_annala: "Вильо Аннала" #NT!
+ FIN_kyosti_kallio: "Кёсти Каллио" #NT!
+ FIN_carl_gustaf_emil_mannerheim: "Карл Густав Эмиль Маннергейм" #NT!
+ FIN_erik_heinrichs: "Эрик Генрихс" #NT!
+ FIN_vilho_petter_nenonen: "Вилхо Петтер Ненонен" #NT!
+  #BRAZIL 
+ BRA_getulio_vargas: "Жетулио Варгас" #NT!
+ BRA_arlindo_veiga_dos_santos: "Арлиндо Вейга душ Сантуш" #NT!
+ BRA_plinio_salgado: "Плинио Сальгадо" #NT!
+ BRA_luis_carlos_prestes: "Луис Карлос Престес" #NT!
+ BRA_armando_sales: "Армандо Сейлз" #NT!
+ BRA_eurico_gaspar_dutra: "Эурико Гаспар Дутра" #NT!
+ BRA_mascarenhas_de_morais: "Маскареньяш-де-Морайш" #NT!
+ BRA_augusto_rademaker: "Аугусто Радемакер" #NT!
+  #BELGIUM 
+ BEL_hubert_pierlot: "Юбер Пьерло" #NT!
+ BEL_joseph_jacquemotte: "Жозеф Жакмотт" #NT!
+ BEL_mcl_keyaerts: "М.КЛ.Л. Кейартс" #NT!
+ BEL_georges_timmermans: "Жорж Тиммерманс" #NT!
+ BEL_gilles_wyvekens: "Жиль Вивекенс" #NT!
+  #PERSIA - IRAN 
+ PER_reza_khan_pahlavi: "Реза Хан" #NT!
+ PER_soleyman_mirza_eskandari: "Солейман Мирза Эскандари" #NT!
+ PER_hasan_arfa: "Хасан Арфа" #NT!
+ PER_dalir_pesyan: "Далир Песян" #NT!
+ PER_sohrab_tahmasebi: "Сохраб Тахмасеби" #NT!
+  #SWITZERLAND 
+ SWI_federal_council: "Федеральный совет" #NT!
+ SWI_federal_assembly: "Федеральное Собрание" #NT!
+ SWI_ernest_beuin: "Эрнест Бён" #NT!
+ SWI_max_leo_keller: "Макс Лео Келлер" #NT!
+ SWI_fritz_platten: "Фриц Платтен" #NT!
+ SWI_henri_guisan: "Henri Guisan" #NT!
+  #ETHIOPIA 
+ ETH_haile_selassie: "Хайле Селассие" #NT!
+ ETH_fitawrari_yeebio_woldai: "Фитаврари Йебио Волдай" #NT!
+ ETH_seyoum_mengesha: "Seyoum Mengesha" #NT!
+ ETH_amare_makonnen: "Амаре Маконнен" #NT!
+ ETH_haile_mariam: "Хайле Мариам" #NT!

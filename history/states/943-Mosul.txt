@@ -1,0 +1,28 @@
+
+state={
+	id=943
+	name="STATE_943"
+	manpower = 627412
+	
+	state_category = city
+	history={
+		owner = IRQ
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+		}
+		
+		victory_points = {
+			10106 10 
+		}
+		add_core_of = IRQ
+	}
+
+	provinces={
+		10106 10804
+	}
+
+	local_supplies=4.0 
+}

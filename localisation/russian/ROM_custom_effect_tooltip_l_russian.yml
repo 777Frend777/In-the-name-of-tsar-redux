@@ -1,0 +1,45 @@
+﻿l_russian:
+  ### SYR ### 
+  
+ SYR_islam_in_europe_wargoal_tt: "Выигрыш §YAnnex§! цели войны против §YEvery§! страна в §YEurope§!." #NT!
+ SYR_islam_in_europe_core_tt: "§YEvery§! Состояние в §YEurope§! теперь является ядром §YSyria§!." #NT!
+ SYR_we_are_arabs_tt: "§YEvery§! §YArab§! или §YMuslim§! Состояние теперь является ядром §YSyria§!." #NT!
+  ### EGY ### 
+ EGY_one_man_show_tt: "Братья-мусульмане имеют более §Y25 религиозного влияния§! (текущий: [?MBH.muslim_church_influence|+0])" #NT!
+ EGY_muslim_influence_level_up_tt: "§RВлияние «Братьев-мусульман»§! возрастает.\n" #NT!
+ EGY_christian_influence_level_up_tt: "§RВлияние Коптской церкви§! увеличивается.\n" #NT!
+ EGY_national_poverty_down_tt: "Уменьшает эффект §YНациональной бедности§!.\n" #NT!
+ EGY_remove_muslim_influence_tt: "§RБратья-мусульмане теряют все свое§! §Yрелигиозное влияние§!.\n\n" #NT!
+ EGY_remove_christian_influence_tt: "§RКоптская церковь теряет всё своё§! §Yрелигиозное влияние§!.\n\n" #NT!
+ EGY_assassinate_lampson_tt: "§YСэр Майлз Лэмпсон§! — §Rassassinated§_1\n" #NT!
+ EGY_marx_of_africa_tt: "Получает ядра во всех §Yколониальных африканских государствах§!.\n" #NT!
+ EGY_seek_foreign_cooperation_tt: "Отношения со всеми основными участниками [SOV.GetFactionName] равны §Yimproved§!\n" #NT!
+ EGY_restore_the_empire_tt: "§YКороль Фарук I§! станет §YИмператором Египта§!\n" #NT!
+ EGY_fortify_el-alamein_tt: "§Y5 Сухопутные форты§! будут построены в §YЭль-Аламейне§!." #NT!
+ EGY_ufo_runway_tt: "\n\nПоддержка статус-кво §Rзначительно усложнит§! строительство взлетно-посадочной полосы." #NT!
+ EGY_strengthen_axis_ties_tt: "Отношения со всеми основными участниками [GER.GetFactionName] равны §Yimproved§!\n" #NT!
+ EGY_imperial_dream_tt_1: "Братья-мусульмане имеют более §Y15 религиозного влияния§! (текущий: [?MBH.muslim_church_influence|+0])" #NT!
+ EGY_imperial_dream_tt_2: "Получает ядра во всех §Yафриканских государствах§!.\n" #NT!
+ EGY_crush_the_coptic_church_tt_1: "Братья-мусульмане имеют более §Y30 религиозного влияния§! (текущий: [?MBH.muslim_church_influence|+0])" #NT!
+ EGY_embrace_the_spirit_of_christ_tt_1: "Коптская церковь имеет более §Y20 религиозного влияния§! (текущий: [?CCE.christian_church_influence|+0])" #NT!
+ EGY_an_egypt_for_the_people_tt: "§YКороль Фарук I§! арестован." #NT!
+ EGY_ark_of_the_red_sea_tt: "Современный §YArk§! построен в §YAlexandria§!." #NT!
+ EGY_the_second_coming_of_christ_tt: "§YHe§! поднимется еще раз." #NT!
+ EGY_the_last_party_tt: "§RПопытка убийства§! предпринята против §Yкороля Фарука I§!\n" #NT!
+ EGY_draft_a_new_constitution_tt: "Конституция Египта 1923 года будет §Rabolished§! и будет разработан новый проект с поправками к §Yпарламентской представительной системе§!, §Yкапиталистам в правительстве§! и §Yправам египетского народа§!.\n\n§RЗавершение этого фокуса позволит добиться большей политической свободы в египетском правительстве§!.\n\n" #NT!
+ EGY_maintain_colonial_ties_tt: "Установите правило: можно отклонить призыв к войне" #NT!
+ EGY_mediterranean_defense_committee_tt_1: "\n§RСледующее произойдет только в том случае, если Турция примет наше приглашение§!.\n\n" #NT!
+ EGY_mediterranean_defense_committee_tt_2: "\n§RСледующее произойдет только в том случае, если Греция примет наше приглашение§!.\n\n" #NT!
+ EGY_demand_african_liberations_tt: "\n§RЕсли колонизаторы примут наши требования, все их африканские колонии будут освобождены и получат от нас гарантии§!." #NT!
+ EGY_form_the_african_republic_tt: "Все предыдущие британские колонии в Африке объединятся в рамках §YАфриканской Республики§!." #NT!
+ EGY_ban_boycotts_tt: "Коптская церковь имеет более §Y15 религиозного влияния§! (текущий: [?CCE.christian_church_influence|+0])" #NT!
+ EGY_parliament_dissolution_tt: "\n§RРоспуска парламента больше не будет§!." #NT!
+ EGY_the_second_crusade_tt: "Коптская церковь имеет более §Y30 религиозного влияния§! (текущий: [?CCE.christian_church_influence|+0])" #NT!
+ EGY_surrender_to_the_catholic_church_tt: "§RИталия аннексирует Египет, и игра закончится.§!\n\n" #NT!
+ EGY_war_department_reform_tt: "Реформирование §YВоенного ведомства§! позволит расставить приоритеты в производстве определенного оборудования и провести политическую корректировку египетских военных академий, что предотвратит будущие §Rгражданские войны§!." #NT!
+ EGY_blow_the_suez_tt: "\n§YСуэцкий канал§! — это §Rblown§_1, затопляющий территорию вокруг него." #NT!
+  ### IRQ ### 
+ IRQ_unlock_cavalry: "Открывает бесплатный §YШаблон кавалерии§!." #NT!
+ IRQ_bakr_sidqi_unavailable_tooltip: "Бакр Сидки не был убит и не подал в отставку" #NT!
+ IRQ_bakr_sidqi_focus_unavailable_tooltip: "Бакр Сидки убит." #NT!
+ IRQ_does_not_support_coalition_government_tooltip: "Допустили мусульман-шиитов в правительство" #NT!

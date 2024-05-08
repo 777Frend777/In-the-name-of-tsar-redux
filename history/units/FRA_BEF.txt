@@ -1,0 +1,77 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "BEF Division"			# 1st - 5th divisions = fully equipped, others = reserve divisions
+	is_locked = no
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	artillery = { x = 0 y = 1 }
+	}
+}
+	division_template = {
+	name = "Expeditionary Tank Brigade"	
+	is_locked = no	# Represents (light) Army Tank Brigades (LT Mk VIs, some Matilda Is)
+	division_names_group = ENG_ARM_02
+	regiments = {
+		light_armor = { x = 0 y = 0 }		# Light Tanks Mk VI, or Matilda I's
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+	}
+}
+
+##### OOB #####
+units = {
+	division= {	
+		name = "1st Expeditionary Infantry Division"
+		location = 11548
+		division_template = "BEF Division"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "2nd Expeditionary Infantry Division"
+		location = 11548
+		division_template = "BEF Division"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "3rd Expeditionary Infantry Division"
+		location = 11548
+		division_template = "BEF Division"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "4th Expeditionary Infantry Division"
+		location = 11548
+		division_template = "BEF Division"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "5th Expeditionary Infantry Division"
+		location = 11548
+		division_template = "BEF Division"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "6th Expeditionary Infantry Division"
+		location = 11548
+		division_template = "BEF Division"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "1st Expeditionary Tank Brigade"
+		location = 11548
+		division_template = "Expeditionary Tank Brigade"
+		start_experience_factor = 0.7
+	}
+	}
+###################

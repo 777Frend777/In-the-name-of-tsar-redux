@@ -1,0 +1,116 @@
+##### ROM ######
+
+EGY_disestablish_british_influence = {
+	icon = GFX_decision_category_generic_independence
+	
+	picture = GFX_decision_cat_picture_disestablish_british_influence
+	
+	priority = {
+		base = 90
+	}
+	allowed = {
+		original_tag = EGY
+	}
+	visible = {
+		has_completed_focus = EGY_sever_ties_with_uk
+	}
+	
+	visible_when_empty = no
+}
+EGY_sudanese_independence = {
+	icon = GFX_decision_category_generic_independence
+	
+	picture = GFX_decision_cat_picture_disestablish_british_influence
+	
+	priority = {
+		base = 100
+	}
+	allowed = {
+		original_tag = EGY
+	}
+	visible = {
+		#has_completed_focus = { EGY_sudan_issue }
+	}
+	
+	visible_when_empty = no
+}
+EGY_a_flourishing_economy = {
+	icon = GFX_decision_category_generic_economy
+	
+	picture = GFX_decision_cat_picture_a_flourishing_economy
+	
+	priority = {
+		base = 80
+	}
+	allowed = {
+		original_tag = EGY
+	}
+	visible = {
+		has_completed_focus = EGY_establish_gold_mining_operation
+	}
+	
+	visible_when_empty = no
+}
+EGY_placate_the_churches_category = {
+	
+	icon = GFX_decision_category_usa_congress
+
+	allowed = {
+		original_tag = EGY
+	}
+
+	picture = GFX_decision_cat_picture_placate_the_churches
+	priority = {
+		base = 100
+	}
+	custom_icon = {
+		tag = CCE
+		value = christian_church_icon_value
+		desc = christian_church_full_influence_breakdown
+	}
+	
+	custom_icon = {
+		tag = MBH
+		value = muslim_church_icon_value
+		desc = muslim_church_full_influence_breakdown
+	}
+
+	visible_when_empty = yes
+
+	visible = {
+		EGY = {
+			exists = yes
+                        if = {
+                            has_idea = divided_under_pharaonism                                         
+                        }
+		}
+		NOT = {
+			OR = {
+				EGY = {
+					has_war_with = CCE
+				}
+				EGY = {
+					has_war_with = MBH
+				}
+			}
+		}
+		NOT = {
+			has_completed_focus = EGY_pact_of_umar
+		}
+	}
+}
+EGY_arab_socialist_movement_category = {
+	icon = GFX_decision_category_generic_communism
+	
+	priority = {
+		base = 70
+	}
+	allowed = {
+		original_tag = EGY
+	}
+	visible = {
+		has_completed_focus = EGY_begin_the_arab_socialist_movement
+		original_tag = EGY
+	}
+	visible_when_empty = no
+}

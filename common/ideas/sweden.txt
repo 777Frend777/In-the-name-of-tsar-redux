@@ -1,0 +1,927 @@
+ideas = {
+	country = {
+		SWE_swedish_neutrality = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = neutrality_idea
+			
+			modifier = {
+				join_faction_tension = 1.00
+				guarantee_tension = 0.75
+				ai_get_ally_desire_factor = -100
+			}
+		}
+		
+		SWE_unstable_government = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_power_gain = -0.20
+				political_advisor_cost_factor = 0.25
+			}
+		}
+		
+		SWE_king_gustaf_v = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			cancel = {
+				has_government = communism
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = gustav_sweden
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = -0.05
+			}
+		}
+		
+		SWE_king_gustaf_v_socialist = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = gustav_sweden
+			
+			modifier = {
+				stability_factor = -0.02
+				political_power_gain = 0.02
+			}
+		}
+		
+		SWE_king_gustaf_v_liberal = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = gustav_sweden
+			
+			modifier = {
+				stability_factor = 0.02
+			}
+		}
+		
+		SWE_king_gustaf_v_conservative = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = gustav_sweden
+			
+			modifier = {
+				stability_factor = 0.07
+				political_power_gain = -0.07
+				socialist_drift = -0.01
+			}
+		}
+		
+		SWE_king_gustaf_v_kingsparty = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = gustav_sweden
+			
+			modifier = {
+				stability_factor = 0.02
+				drift_defence_factor = 0.15
+				political_power_gain = 0.05
+			}
+		}
+		
+		# Focus Tree #
+		
+		SWE_introduce_funktionssocialism_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.04
+				production_factory_efficiency_gain_factor = 0.04
+				political_power_gain = 0.05
+			}
+		}
+		
+		SWE_liberal_economic_theories_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.02
+				global_building_slots_factor = 0.05
+				political_power_gain = -0.03
+			}
+		}
+		
+		SWE_protectionist_theory_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+				local_resources_factor = 0.04
+				min_export = -0.05
+			}
+		}
+		
+		SWE_agrarian_self_sufficiency_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				local_resources_factor = 0.04
+				MONTHLY_POPULATION = 0.20
+				min_export = -0.05
+			}
+		}
+		
+		SWE_lower_taxes_swedish_corp_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = RUS_scientist_defect
+			
+			modifier = {
+				political_power_gain = -0.10
+				production_factory_max_efficiency_factor = 0.05
+				trade_opinion_factor = 0.10
+			}
+		}
+		
+		SWE_establish_forsvarsstaben_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = german_advisors
+			
+			modifier = {
+				planning_speed = 0.10
+				army_org_factor = 0.05
+			}
+		}
+		
+		SWE_folkhemmet_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = air_support_focus
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_infrastructure_factor = 0.10
+				MONTHLY_POPULATION = 0.15
+			}
+		}
+		
+		SWE_folkhemmet_school_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = air_support_focus
+			
+			modifier = {
+				consumer_goods_factor = 0.07
+				production_speed_infrastructure_factor = 0.10
+				MONTHLY_POPULATION = 0.15
+				research_speed_factor = 0.05
+			}
+		}
+		
+		SWE_folkhemmet_pention_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = air_support_focus
+			
+			modifier = {
+				consumer_goods_factor = 0.08
+				production_speed_infrastructure_factor = 0.10
+				MONTHLY_POPULATION = 0.20
+			}
+		}
+		
+		SWE_folkhemmet_all_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = air_support_focus
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+				production_speed_infrastructure_factor = 0.10
+				MONTHLY_POPULATION = 0.20
+				research_speed_factor = 0.05
+			}
+		}
+		
+		SWE_workplace_democracy_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = FRA_factory_strikes
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+				production_factory_efficiency_gain_factor = 0.05
+				political_power_gain = -0.10
+			}
+		}
+		
+		SWE_ensure_worker_rights_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = FRA_factory_strikes
+			
+			modifier = {
+				consumer_goods_factor = 0.04
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = 0.05
+				political_power_gain = -0.15
+			}
+		}
+		
+		SWE_ohlins_liberalism_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = generic_victors_of_ww1
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+				MONTHLY_POPULATION = 0.05
+			}
+		}
+		
+		SWE_take_care_for_weak_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = generic_victors_of_ww1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				MONTHLY_POPULATION = 0.10
+				research_speed_factor = 0.03
+			}
+		}
+		
+		SWE_uphold_church_influence_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = YUG_federal_defense_council
+			
+			modifier = {
+				political_power_gain = -0.05
+				drift_defence_factor = 0.10
+				MONTHLY_POPULATION = 0.05
+			}
+		}
+		
+		SWE_swedish_temperance_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = YUG_federal_defense_council
+			
+			modifier = {
+				consumer_goods_factor = -0.03
+				political_power_gain = -0.05
+				drift_defence_factor = 0.10
+				MONTHLY_POPULATION = 0.07
+			}
+		}
+		
+		SWE_swedish_militarism_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription = 0.025
+				army_morale_factor = 0.05
+			}
+		}
+		
+		SWE_reassure_military_loyalty_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription = 0.03
+				army_morale_factor = 0.05
+				drift_defence_factor = 0.15
+			}
+		}
+		
+		SWE_swedify_nation_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription = 0.025
+				army_morale_factor = 0.05
+				drift_defence_factor = 0.10
+				surrender_limit = 0.10
+			}
+		}
+		
+		SWE_new_swedishness_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = vittoria_mutilata
+			
+			modifier = {
+				political_power_gain = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.10
+			}
+		}
+		
+		# Diplomacy #
+		
+		SWE_reaffirm_swedish_neutrality_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = neutrality_idea
+			
+			modifier = {
+				political_power_gain = 0.10
+				army_core_defence_factor = 0.05
+				join_faction_tension = 1.00
+				guarantee_tension = 0.75
+				ai_get_ally_desire_factor = -100
+			}
+		}
+		
+		SWE_armed_neutrality_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = neutrality_idea
+			
+			modifier = {
+				political_power_gain = 0.15
+				conscription_factor = 0.10
+				army_core_defence_factor = 0.15
+				join_faction_tension = 1.00
+				guarantee_tension = 0.75
+				ai_get_ally_desire_factor = -100
+			}
+		}
+		
+		SWE_scandinavian_neutrality_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = neutrality_idea
+			
+			modifier = {
+				political_power_gain = 0.05
+				join_faction_tension = 1.00
+				guarantee_tension = 0.75
+				ai_get_ally_desire_factor = -100
+			}
+		}
+		
+		SWE_wake_swedish_lion_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = generic_morale_bonus
+			
+			modifier = {
+				conscription_factor = 0.05
+				mobilization_speed = 0.10
+				army_morale_factor = 0.05
+			}
+		}
+		
+		SWE_pragmatic_expantion_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = generic_morale_bonus
+			
+			modifier = {
+				conscription_factor = 0.05
+				political_power_gain = 0.05
+				mobilization_speed = 0.10
+				army_morale_factor = 0.05
+				army_core_defence_factor = 0.10
+			}
+		}
+		
+		SWE_aggressive_expantion_idea = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = generic_morale_bonus
+			
+			modifier = {
+				conscription_factor = 0.05
+				political_power_gain = -0.05
+				mobilization_speed = 0.10
+				army_morale_factor = 0.05
+				justify_war_goal_time = -0.15
+			}
+		}
+		
+		SWE_promote_unionism_norway_idea = {
+			
+			allowed = {
+				original_tag = NOR
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = chi_war_of_resistance2
+			
+			modifier = {
+				stability_weekly = -0.001
+				political_power_gain = -0.15
+			}
+		}
+		
+		SWE_revenge_for_karl_xii_idea = {
+			
+			allowed = {
+				original_tag = NOR
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = chi_war_of_resistance2
+			
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.25
+			}
+		}
+		
+		SWE_last_dano_swedish_war_idea = {
+			
+			allowed = {
+				original_tag = NOR
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = chi_war_of_resistance2
+			
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.25
+			}
+		}
+		en_svensk_tiger = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_spy_intel
+			
+			modifier = {
+				drift_defence_factor = 0.1
+				enemy_justify_war_goal_time = 0.1
+			}
+		}
+	
+	}
+
+	tank_manufacturer = { 
+		
+		designer = yes
+		
+		landsverk = {
+			
+			picture = generic_tank_manufacturer_2
+
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { tank_manufacturer }
+			
+			modifier = {
+				# notable tanks L-120 and L-60, lighter tanks as well as the medium tank Stridsvagn m/42, that was mobile and well protected.
+			}
+		}
+
+	}
+	
+	naval_manufacturer = { 
+			
+		designer = yes
+		
+		marinvarkstaderna = { #Karlskrona
+			
+			picture = generic_naval_manufacturer_1
+
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				# mer research
+			}
+			
+			traits = { coastal_defence_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		gotaverken = {
+			
+			picture = generic_naval_manufacturer_2
+
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				# worlds biggest shipyard by launched gross tonnes
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		kockums = {
+			
+			picture = generic_naval_manufacturer_3
+
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			 
+			equipment_bonus = {
+				# submarines and battleships
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+
+
+	materiel_manufacturer = {
+		
+		designer = yes
+	
+		bofors = {
+			
+			picture = generic_artillery_manufacturer_1
+
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			equipment_bonus = {
+				artillery = {
+					reliability = 0.20
+				}
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+	
+		husqvarna = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			equipment_bonus = {
+				# rifles and pistols
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		scania = {
+			
+
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+				# more info
+			}
+		}
+		
+	}
+}

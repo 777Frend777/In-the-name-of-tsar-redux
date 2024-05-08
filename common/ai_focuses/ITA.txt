@@ -1,0 +1,29 @@
+ai_historical_focus_list_ITA = {
+	ai_national_focuses = {
+		ITA_industry
+		ITA_infrastructure 
+		ITA_kingdom_of_italy
+		ITA_civil_effort 
+		ITA_libyan_highways #350d - 1937
+		ITA_defense_forts 
+		ITA_fra_forts
+		ITA_serbian_forts 
+		ITA_state_of_italy
+		ITA_economic_stability #700d - 1938
+		ITA_increase_production
+		ITA_economic_boom
+		ITA_leave_allies
+		ITA_abandon_democracy 
+		ITA_nationalist_party #1120d #1939
+		ITA_extend_army_budget
+		ITA_lessons_from_ww1 
+		ITA_annex_ALB 
+		ITA_african_campaign 
+		ITA_ser_claims
+		ITA_ties_with_GER  #1470d - 1940
+		ITA_tank_effort
+		ITA_war_science
+		ITA_german_alliance
+		ITA_war_SER
+	}
+}

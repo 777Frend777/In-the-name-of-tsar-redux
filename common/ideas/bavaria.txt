@@ -1,0 +1,568 @@
+ideas = {
+
+	country = {
+	BAV_plot_against_the_commune = {
+
+		allowed = {
+				always = yes
+		}
+
+		picture = FRA_political_instability_2_idea
+		removal_cost = -1
+
+		modifier = {
+			stability_factor = -0.20
+			war_support_weekly = -0.0075
+		}
+   }
+   BAV_plot_against_the_commune_2 = {
+
+		allowed = {
+				always = yes
+		}
+
+		picture = FRA_political_instability_2_idea
+		removal_cost = -1
+
+		modifier = {
+			stability_factor = -0.20
+		}
+   }
+   BAV_consolidation_of_power = {
+
+		allowed = {
+				always = yes
+		}
+
+		picture = FRA_political_instability_2_idea
+		removal_cost = -1
+
+		modifier = {
+			stability_weekly = 0.001
+		}
+   }
+	workers_culture = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+		}
+	#New Bavarian Government I
+	BAV_new_gov_idea_1 = {
+			
+			#picture = GFX_idea_FRA_expanded_citizenship_idea
+			allowed = {
+				original_tag = BAV
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = -0.25
+				drift_defence_factor = 0.1
+				industrial_capacity_factory  = 0.025
+			}
+		}
+	#New Bavarian Government II
+	BAV_new_gov_idea_2 = {
+			
+			#picture = GFX_idea_FRA_expanded_citizenship_idea
+			allowed = {
+				original_tag = BAV
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = -0.25
+				drift_defence_factor = 0.1
+				industrial_capacity_factory  = 0.05
+				stability_factor = 0.1
+			}
+		}
+	BAV_indus_society = {
+
+			allowed = {
+					always = yes
+			}
+
+			picture = generic_production_bonus
+			removal_cost = -1
+
+			modifier = {
+			consumer_goods_factor = -0.05
+			production_speed_Infrastructure_factor = 0.1
+			}
+	  }
+	  comintern_influence = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				communism_drift = 0.05
+			}
+		}
+		BAV_western_invest_prog = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				production_speed_buildings_factor = 0.03
+				communism_acceptance = 50
+			}
+		}
+		BAV_upgraded_unions_idea = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				production_speed_buildings_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.10
+			}
+		}
+		BAV_socialism_in_1_country = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			modifier = {
+				drift_defence_factor = 0.5
+				stability_factor = 0.05
+			}
+			#rule = {
+			#	can_create_factions = yes
+			#}
+		}
+		withdrawal_from_politics = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			modifier = {
+				political_power_gain = 0.25
+				drift_defence_factor = 0.5
+				consumer_goods_factor = -0.05
+				justify_war_goal_time = 0.5
+			}
+			#rule = {
+			#	can_create_factions = yes
+			#}
+		}
+		BAV_home_of_revolution = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			picture = generic_communism_drift_bonus
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			#modifier = {
+			#	drift_defence_factor = 0.5
+			#}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		BAV_arrested_opposition = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			modifier = {
+				political_power_gain = 0.25
+			}
+			#rule = {
+			#	can_create_factions = yes
+			#}
+		}
+		BAV_l_economy = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			modifier = {
+				trade_opinion_factor = 0.35
+			}
+			#rule = {
+			#	can_create_factions = yes
+			#}
+		}
+		BAV_c_economy = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+			#rule = {
+			#	can_create_factions = yes
+			#}
+		}
+		BAV_elite = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			modifier = {
+				supply_consumption_factor = -0.05
+				experience_gain_army = 0.05
+				army_armor_attack_factor = 0.05
+				army_armor_defence_factor = 0.05
+				army_org_Factor = 0.02
+			}
+			#rule = {
+			#	can_create_factions = yes
+			#}
+		}
+		BAV_women_corps = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			modifier = {
+				conscription = 0.003
+			}
+			#rule = {
+			#	can_create_factions = yes
+			#}
+		}
+		BAV_everyone_army = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			modifier = {
+				military_leader_cost_factor = -0.50
+				training_time_factor = -0.2
+				conscription = 0.005
+				send_volunteer_size = 2
+				mobilization_laws_cost_factor = -0.25
+			}
+			#rule = {
+			#	can_create_factions = yes
+			#}
+		}
+		BAV_s_police = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			modifier = {
+				subversive_activites_upkeep = -0.5
+				operative_slot = 1
+				#land_reinforce_rate = 0.3
+			}
+			#rule = {
+			#	can_create_factions = yes
+			#}
+		}
+		BAV_wor_rev = {
+
+				allowed = {
+						always = yes
+				}
+
+				picture = fourth_international
+				removal_cost = -1
+
+				modifier = {
+				justify_war_goal_time = -0.25
+				generate_wargoal_tension = -0.4
+				}
+		}
+
+		BAV_national = {
+
+				allowed = {
+						always = yes
+				}
+
+				picture = generic_morale_bonus
+				removal_cost = -1
+
+				modifier = {
+				army_core_defence_factor = 0.15
+				army_core_attack_factor = 0.15
+				conscription = 0.01
+				}
+		}
+
+		BAV_blood = {
+
+				allowed = {
+						always = yes
+				}
+
+				picture = trotskyite_plot_purged
+				removal_cost = -1
+
+				modifier = {
+				conscription = 0.005
+				industrial_capacity_factory = 0.1
+				}
+		}
+
+		BAV_advisors = {
+				picture = idea_saf_soviet_advisers
+
+				allowed = {
+					always = yes
+				}
+
+			research_bonus = {
+			   land_doctrine = 0.07
+			   air_doctrine = 0.07
+				}
+		}
+		BAV_red_army_idea_0 = {
+			picture = idea_chi_army_corruption3
+
+				allowed = {
+					always = yes
+				}
+
+			modifier = {
+			   army_org_Factor = -0.10
+			}
+		
+		}
+		BAV_red_army_idea_0_def = {
+			picture = idea_chi_army_corruption3
+
+				allowed = {
+					always = yes
+				}
+
+			modifier = {
+				army_org_Factor = -0.05
+			    army_core_defence_factor = 0.05
+			}
+		
+		}
+		BAV_red_army_idea_0_off = {
+			picture = idea_chi_army_corruption3
+
+				allowed = {
+					always = yes
+				}
+
+			modifier = {
+			   army_org_Factor = -0.05
+			   army_core_attack_factor = 0.05
+			}
+		
+		}
+		BAV_red_army_idea_1_def = {
+			picture = idea_chi_army_corruption3
+
+				allowed = {
+					always = yes
+				}
+			modifier = {
+			   army_core_defence_factor = 0.05
+			   training_time_factor = -0.25
+			}
+		
+		}
+		BAV_red_army_idea_1_off = {
+			picture = idea_chi_army_corruption3
+
+				allowed = {
+					always = yes
+				}
+			modifier = {
+			   army_org_Factor = 0.05
+			   army_core_attack_factor = 0.05
+			   training_time_factor = -0.25
+			}
+		
+		}
+		BAV_red_army_idea_2_def = {
+			picture = idea_chi_army_corruption3
+
+				allowed = {
+					always = yes
+				}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+			modifier = {
+			   army_org_Factor = 0.05
+			   army_core_defence_factor = 0.05
+			   training_time_factor = -0.25
+			}
+		
+		}
+		BAV_red_army_idea_2_off = {
+			picture = idea_chi_army_corruption3
+
+				allowed = {
+					always = yes
+				}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+			modifier = {
+			   army_org_Factor = 0.05
+			   army_core_attack_factor = 0.05
+			   training_time_factor = -0.25
+			}
+		
+		}
+
+BAV_revolts = {
+
+		allowed = {
+				always = yes
+		}
+
+		picture = FRA_matignon_agreements
+		removal_cost = -1
+
+		modifier = {
+    stability_factor = -0.05
+    political_power_cost = 0.1
+		conscription_factor = -0.05
+		}
+   }
+  }
+	tank_manufacturer = { 
+
+		designer = yes
+		
+		rotstahl = {
+
+			
+			allowed = {
+				original_tag = BAV
+			}
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { fast_tank_manufacturer }
+
+		}
+	}
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+	}	
+
+}	

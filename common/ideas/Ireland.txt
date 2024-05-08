@@ -1,0 +1,43 @@
+ideas = {
+
+	country = { 
+		IRE_Brit_blockade = {
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = eng_guided_by_britain
+				
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.5
+				production_speed_industrial_complex_factor = -0.5
+			}
+		}
+		IRE_For_ourselves = {
+				allowed_civil_war = {
+					always = yes
+				}
+				picture = IRE_flag
+					
+				removal_cost = -1
+				modifier = {
+					add_war_support = 0.1
+				    army_core_defence_factor = 0.1
+				    join_faction_tension = 0.1
+			}
+		}
+		IRE_Unionist_Riot={
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = hol_liberation
+				
+			removal_cost = -1
+			modifier = {
+				stability_weekly = -0.01
+				political_power_gain = -0.01
+			}
+		}
+			
+	}
+}

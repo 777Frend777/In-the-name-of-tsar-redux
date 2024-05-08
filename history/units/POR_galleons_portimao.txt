@@ -1,0 +1,13 @@
+﻿units = {
+	######## NAVAL OOB ########
+	fleet = {
+		name = "NRP Portimao"
+		naval_base = 11805
+		task_force = {				
+			name = "The Third Galleon"
+			base = 11805
+			location = 11805
+			ship = { name = "NRP Portimao" definition = battleship equipment = {  ship_hull_heavy_2   = { amount = 1 owner = POR version_name = "Lisbon Class" } } }
+		}		
+	}
+}

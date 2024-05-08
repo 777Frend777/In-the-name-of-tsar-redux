@@ -1,0 +1,413 @@
+﻿##### ROM ######
+
+add_namespace = news
+
+#King Fuad I Dies
+news_event = {
+	id = news.1000
+	title = news.1000.t
+	desc = news.1000.d
+	picture = GFX_news_event_generic_funeral
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1000.a
+		trigger = {
+			tag = ITA
+		}
+	}
+	option = {
+		name = news.1000.b
+		trigger = {
+			tag = ENG
+			NOT = {
+				has_government = communism
+				has_government = fascism
+			}
+		}
+		EGY = {
+			add_ideas = sir_miles_lampson
+		}
+	}
+	option = {
+		name = news.1000.c
+		trigger = {
+			NOT = {
+				tag = ITA
+				tag = ENG
+			}
+		}
+	}
+}
+#Anglo-Egyptian Treaty Passes
+news_event = {
+    id = news.1001
+    title = news.1001.t
+    desc = news.1001.d
+    picture = GFX_news_event_009
+
+	major = yes
+
+    is_triggered_only = yes
+ 	
+    option = {
+	    name = news.1001.a
+		trigger = {
+			tag = EGY
+		}
+		EGY = {
+			add_ideas = british_military_training
+		}
+	}
+	option = {
+	    name = news.1001.b
+		trigger = {
+			NOT = { 
+				tag = EGY
+			}
+		}
+	}
+ }
+#Anglo-Egyptian Treaty Fails
+news_event = {
+    id = news.1002
+    title = news.1002.t
+    desc = news.1002.d
+    picture = GFX_news_event_eng_churchill_sign_treaty
+
+	major = yes
+	
+    is_triggered_only = yes
+	
+    option = {
+	    name = news.1002.a
+		trigger = {
+			tag = EGY
+		}
+		EGY = {
+			leave_faction = yes
+		}
+	}
+	option = {
+	    name = news.1002.b
+		trigger = {
+			NOT = { 
+				tag = EGY
+			}
+		}
+	}
+ }
+#Egypt Is Welcomed by the Comintern
+news_event = {
+	id = news.1003
+	title = news.1003.t
+	desc = news.1003.d
+	picture = GFX_news_event_french_parade
+
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		EGY = {
+			save_event_target_as = Egypt
+		}
+	}
+	option = {
+		name = news.1003.a
+		trigger = {
+			OR = {
+				has_government = communism
+				tag = EGY
+			}
+		}
+	}
+	option = {
+		name = news.1003.b
+		trigger = {
+			has_government = fascism
+			NOT = {
+				tag = EGY
+			}
+		}
+	}
+	option = {
+		name = news.1003.c
+		trigger = {
+			has_government = democratic
+			NOT = {
+				tag = EGY
+			}
+		}
+	}
+	option = {
+		name = news.1003.e
+		trigger = {
+			has_government = neutrality
+			NOT = {
+				tag = EGY
+			}
+		}
+	}
+}
+#Egypt Secretly Takes Control of Middle Eastern Protectorates
+news_event = {
+    id = news.1004
+    title = news.1004.t
+    desc = news.1004.d
+    picture = GFX_news_event_soldiers_marching
+
+	major = yes
+
+    is_triggered_only = yes
+ 	
+    option = {
+	    name = news.1004.a
+		trigger = {
+			tag = ENG
+			tag = FRA
+		}
+		if = {
+			limit = {
+				tag = ENG
+			}
+			ENG = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = EGY
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = FRA
+			}
+			FRA = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = EGY
+				}
+			}
+		}
+	}
+	option = {
+	    name = news.1004.b
+	}
+}
+#Egyptians Assassinate British Diplomat Miles Lampson
+news_event = {
+    id = news.1005
+    title = news.1005.t
+    desc = news.1005.d
+    picture = GFX_news_event_saf_civil_war
+	
+	major = yes
+	
+    is_triggered_only = yes
+ 	
+    option = {
+	    name = news.1005.a
+		trigger = {
+			tag = ENG
+		}
+	}
+	option = {
+	    name = news.1005.b
+		trigger = {
+			NOT = {
+				tag = ENG
+			}
+		}
+	}
+}
+#Egypt Is Welcomed by the Axis
+news_event = {
+	id = news.1006
+	title = news.1006.t
+	desc = news.1006.d
+	picture = GFX_news_event_romania_parliament
+
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		EGY = {
+			save_event_target_as = Egypt
+		}
+	}
+
+	#United towards the World Revolution!
+	option = {
+		name = news.1006.a
+		trigger = {
+			OR = {
+				has_government = fascism
+				tag = EGY
+			}
+		}
+	}
+
+	#Their alliance will crumble soon enough.
+	option = {
+		name = news.1006.b
+		trigger = {
+			has_government = fascism
+			NOT = {
+				tag = EGY
+			}
+		}
+	}
+
+	#The enemies of democracy must not be allowed to grow stronger.
+	option = {
+		name = news.1006.c
+		trigger = {
+			has_government = democratic
+			NOT = {
+				tag = EGY
+			}
+		}
+	}
+
+	#France has picked her side.
+	option = {
+		name = news.1006.e
+		trigger = {
+			has_government = neutrality
+			NOT = {
+				tag = EGY
+			}
+		}
+	}
+}
+#Egypt gains Libyan Control
+news_event = {
+    id = news.1007
+    title = news.1007.t
+    desc = news.1007.d
+    picture = GFX_news_event_yugoslav_coup
+
+	major = yes
+
+    is_triggered_only = yes
+ 	
+    option = {
+	    name = news.1007.a
+		trigger = {
+			tag = EGY
+		}
+	}
+	option = {
+	    name = news.1007.b
+		trigger = {
+			NOT = { 
+				tag = EGY
+			}
+		}
+	}
+}
+#Rebels Re-occupy Ethiopia
+news_event = {
+    id = news.1008
+    title = news.1008.t
+    desc = news.1008.d
+    picture = GFX_news_event_fascist_militia
+
+	major = yes
+
+    is_triggered_only = yes
+ 	
+    option = {
+	    name = news.1008.a
+		trigger = {
+			NOT = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+		add_stability = 0.02
+	}
+	option = {
+	    name = news.1008.b
+		trigger = {
+			has_government = fascism
+		}
+		add_stability = -0.02
+	}
+	option = {
+	    name = news.1008.c
+		trigger = {
+			has_government = communism
+		}
+		add_stability = 0.02
+	}
+}
+#Egyptian Coup d'etat
+news_event = {
+    id = news.1009
+    title = news.1009.t
+    desc = news.1009.d
+    picture = GFX_news_event_gathering_protest
+
+	major = yes
+	
+    is_triggered_only = yes
+ 	
+    option = {
+	    name = news.1009.a
+		trigger = {
+			NOT = {
+				tag = EGY
+			}
+		}
+	}
+	option = {
+	    name = news.1009.b
+		trigger = {
+			tag = EGY
+		}
+	}
+}
+#Egypt Nationalizes Oil Field
+news_event = {
+    id = news.1010
+    title = news.1010.t
+    desc = news.1010.d
+    picture = GFX_news_event_033
+
+	major = yes
+
+    is_triggered_only = yes
+ 	
+    option = {
+	    name = news.1010.a
+		trigger = {
+			NOT = {
+				tag = ENG
+			}
+		}
+	}
+	option = {
+	    name = news.1010.b
+		ai_chance = {
+			factor = 0
+		}
+		trigger = {
+			tag = ENG
+		}
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = EGY
+		}
+	}
+	option = {
+	    name = news.1010.c
+		trigger = {
+			tag = ENG
+		}
+	}
+}

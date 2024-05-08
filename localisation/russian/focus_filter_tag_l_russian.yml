@@ -1,0 +1,35 @@
+﻿l_russian:
+ FOCUS_FILTER_POLITICAL: "Политический" #NT!
+ FOCUS_FILTER_RESEARCH: "Исследовать" #NT!
+ FOCUS_FILTER_INDUSTRY: "Промышленность" #NT!
+ FOCUS_FILTER_STABILITY: "Стабильность" #NT!
+ FOCUS_FILTER_WAR_SUPPORT: "Военная поддержка" #NT!
+ FOCUS_FILTER_MANPOWER: "Рабочая сила" #NT!
+ FOCUS_FILTER_FRA_POLITICAL_VIOLENCE: "Политическое насилие" #NT!
+ FOCUS_FILTER_FRA_OCCUPATION_COST: "Затраты на оккупацию" #NT!
+ FOCUS_FILTER_ANNEXATION: "Территориальное расширение" #NT!
+ FOCUS_FILTER_CHI_INFLATION: "Инфляция" #NT!
+ FOCUS_FILTER_USA_CONGRESS: "Конгресс" #NT!
+ FOCUS_FILTER_TFV_AUTONOMY: "Автономия" #NT!
+ FOCUS_FILTER_MEX_CHURCH_AUTHORITY: "Церковная власть" #NT!
+ FOCUS_FILTER_MEX_CAUDILLO_REBELLION: "Восстание Каудильо" #NT!
+ FOCUS_FILTER_SPA_CIVIL_WAR: "гражданская война в Испании" #NT!
+ FOCUS_FILTER_SPA_CARLIST_UPRISING: "Карлистское восстание" #NT!
+ FOCUS_FILTER_INTERNAL_AFFAIRS: "Внутренние дела" #NT!
+ FOCUS_FILTER_GRE_DEBT_TO_IFC: "Долг перед I.F.C." #NT!
+ FOCUS_FILTER_TUR_KURDISTAN: "Курдистан" #NT!
+ FOCUS_FILTER_TUR_KEMALISM: "кемализм" #NT!
+ FOCUS_FILTER_TUR_TRADITIONALISM: "Традиционализм" #NT!
+ FOCUS_FILTER_RUS_POLITICAL_PARANOIA: "Политическая паранойя" #NT!
+ FOCUS_FILTER_PROPAGANDA: "Пропаганда" #NT!
+ FOCUS_FILTER_ARMY_XP: "Армейский опыт" #NT!
+ FOCUS_FILTER_NAVY_XP: "Опыт военно-морского флота" #NT!
+ FOCUS_FILTER_AIR_XP: "Воздушный опыт" #NT!
+ FOCUS_FILTER_ITA_MISSIOLINI: "Миссии Муссолини" #NT!
+ FOCUS_FILTER_BALANCE_OF_POWER: "Баланс сил" #NT!
+ FOCUS_FILTER_SWI_MILITARY_READINESS: "Военная готовность" #NT!
+ FOCUS_FILTER_POLITICAL_CHARACTER: "Политический характер" #NT!
+ FOCUS_FILTER_MILITARY_CHARACTER: "Военный характер" #NT!
+ FOCUS_FILTER_INTERNATIONAL_TRADE: "Международная торговля" #NT!
+ FOCUS_FILTER_FOLKHEMMET: "Фолькхеммет" #NT!
+ FOCUS_FILTER_HISTORICAL: "Исторический" #NT!

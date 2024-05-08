@@ -1,0 +1,2087 @@
+#Generic States Decisions
+
+territorial_restorations_decisions = {
+
+	###BENELUX###
+	#Free Netherlands ex. France
+	GEN_release_HOL = {
+	
+	icon = decision_generic_decision
+	targets = { HOL }
+	
+	visible = {
+	NOT = { 
+		TAG = HOL 
+		TAG = FRA 
+	}
+	HOL = {
+		exists = no
+	}
+	NOT = { has_war_with = HOL }
+	controls_state = 7
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = HOL }
+	is_puppet = no
+	}
+	
+	cost = 0
+	days_remove = 3
+	
+	ai_will_do = {
+			factor = 10
+		}
+		
+	remove_effect = {
+	ROOT = {
+	country_event = { id = gen_states.1 }
+	}
+	}
+	}
+	
+	#Free Belgium ex. France
+	GEN_release_BEL = {
+	
+	icon = decision_generic_decision
+	#targets = { BEL }
+	
+	visible = {
+	NOT = { 
+	OR = {
+	TAG = BEL 
+	TAG = FRA 
+	}
+	}
+	BEL = {
+	exists = no
+	}
+	NOT = { has_war_with = BEL }
+	controls_state = 6
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = BEL }
+	is_puppet = no
+	}
+	
+	cost = 0
+	days_remove = 3
+	
+	ai_will_do = {
+			factor = 10
+		}
+		
+	remove_effect = {
+	ROOT = {
+	country_event = { id = gen_states.2 }
+	}
+	}
+	}
+	
+	#Free Luxembourg ex. France
+	GEN_release_LUX = {
+	
+	icon = decision_generic_decision
+	#targets = { LUX }
+	
+	visible = {
+		OR = {
+			NOT = { TAG = LUX }
+			NOT = { TAG = FRA }
+			NOT = { TAG = GER }
+		}
+		LUX = {
+			exists = no
+		}
+	
+	
+		NOT = { has_war_with = LUX }
+		controls_state = 8
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+		NOT = { TAG = LUX }
+		is_puppet = no
+	}
+	
+	cost = 0
+	days_remove = 3
+	
+	ai_will_do = {
+			factor = 10
+		}
+		
+	remove_effect = {
+	ROOT = {
+	country_event = { id = gen_states.3 }
+	}
+	}
+	}
+	
+	###RUSSIA###
+	#Free Lithuania ex. Russia
+	GEN_release_LIT = {
+	
+	icon = decision_generic_decision
+	#targets = { LIT }
+	
+	visible = {
+	NOT = { 
+	OR = {
+		TAG = LIT
+		TAG = RUS 
+	}
+	}
+	LIT = {
+		exists = no
+	}
+	NOT = { has_war_with = LIT }
+	NOT = { has_war_with = RUS }
+	controls_state = 11
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	OR = {
+		POL = { 
+		NOT = { controls_state = 11 }
+		exists = yes }
+		POL = { has_country_flag = LIT_can_be_released }
+	}
+	NOT = { TAG = LIT }
+	is_puppet = no
+	}
+	
+	cost = 0
+	days_remove = 3
+	
+	ai_will_do = {
+			factor = 10
+		}
+		
+	remove_effect = {
+				ROOT = {
+					country_event = { id = gen_states.6 }
+				}
+	}
+
+	}
+	
+	#Free Belorus ex. RUS
+	GEN_release_BLR = {
+	
+	icon = decision_generic_decision
+	#targets = { BLR }
+	
+	visible = {
+	NOT = { 
+	OR = {
+		TAG = BLR
+		TAG = RUS 
+	}
+	}
+	BLR = {
+		exists = no
+	}
+	NOT = { has_war_with = BLR }
+	NOT = { has_war_with = RUS }
+	controls_state = 206
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = BLR }
+	is_puppet = no
+	}
+	
+	cost = 0
+	days_remove = 3
+	
+	ai_will_do = {
+			factor = 10
+		}
+		
+	remove_effect = {
+				ROOT = {
+					country_event = { id = gen_states.7 }
+				}
+	}
+
+	}
+	
+	#Free Latvia ex. RUS
+	GEN_release_LAT = {
+	
+	icon = decision_generic_decision
+	#targets = { LAT }
+	
+	visible = {
+	NOT = { 
+	OR = {
+		TAG = LAT
+		TAG = RUS 
+	}
+	}
+	LAT = {
+		exists = no
+	}
+	NOT = { has_war_with = LAT }
+	NOT = { has_war_with = RUS }
+	controls_state = 12
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = LAT }
+	is_puppet = no
+	}
+	
+	cost = 0
+	days_remove = 3
+	
+	ai_will_do = {
+			factor = 10
+		}
+		
+	remove_effect = {
+				ROOT = {
+					country_event = { id = gen_states.8 }
+				}
+	}
+
+	}
+	
+	#Free Estonia ex. RUS
+	GEN_release_EST = {
+	
+	icon = decision_generic_decision
+	#targets = { EST }
+	
+	visible = {
+	NOT = { 
+	OR = {
+		TAG = EST
+		TAG = RUS 
+	}
+	}
+	EST = {
+		exists = no
+	}
+	NOT = { has_war_with = EST }
+	NOT = { has_war_with = RUS }
+	controls_state = 13
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = EST }
+	is_puppet = no
+	}
+	
+	cost = 0
+	days_remove = 3
+	
+	ai_will_do = {
+			factor = 10
+		}
+		
+	remove_effect = {
+				ROOT = {
+					country_event = { id = gen_states.9 }
+				}
+	}
+
+	}
+	
+	#Free Moldova ex. RUS
+	GEN_release_MOL = {
+	
+	icon = decision_generic_decision
+	#targets = { MOL }
+	
+	visible = {
+	NOT = { 
+	OR = {
+		TAG = MOL
+		TAG = RUS 
+	}
+	}
+	NOT = { has_war_with = MOL }
+	NOT = { has_war_with = RUS }
+	controls_state = 78
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = MOL }
+	is_puppet = no
+	}
+	
+	cost = 0
+	days_remove = 3
+	
+	ai_will_do = {
+			factor = 10
+		}
+		
+	remove_effect = {
+				if = { limit = { country_exists = ROM } 
+					ROOT = {
+						country_event = { id = gen_states.21 }
+					}
+				}
+				if = { limit = { ROM = { exists = no } }
+				ROOT = {
+					country_event = { id = gen_states.10 }
+				}
+				}
+	}
+
+	}
+	
+	#Free Finland ex. RUS
+	GEN_release_FIN = {
+	
+	icon = decision_generic_decision
+	#targets = { FIN }
+	
+	visible = {
+	NOT = { 
+	OR = {
+		TAG = FIN
+		TAG = RUS 
+	}
+	}
+	FIN = {
+		exists = no
+	}
+	NOT = { has_war_with = FIN }
+	NOT = { has_war_with = RUS }
+	controls_state = 111
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = FIN }
+	is_puppet = no
+	}
+	
+	cost = 0
+	days_remove = 3
+	
+	ai_will_do = {
+			factor = 10
+		}
+		
+	remove_effect = {
+				ROOT = {
+					country_event = { id = gen_states.11 }
+				}
+	}
+
+	}
+	
+	#Free Ukraine ex. RUS
+	GEN_release_UKR = {
+	
+	icon = decision_generic_decision
+	#targets = { UKR }
+	
+	visible = {
+	NOT = { 
+	OR = {
+		TAG = UKR
+		TAG = RUS 
+	}
+	}
+	UKR = {
+		exists = no
+	}
+	NOT = { has_war_with = UKR }
+	NOT = { has_war_with = RUS }
+	controls_state = 202
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = UKR }
+	is_puppet = no
+	}
+	
+	cost = 0
+	days_remove = 3
+	
+	ai_will_do = {
+			factor = 10
+		}
+		
+	remove_effect = {
+				ROOT = {
+					country_event = { id = gen_states.12 }
+				}
+	}
+
+	}
+	###Russia###
+	#Free Poland ex. Russia
+	GEN_release_POL = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	
+	visible = {
+	NOT = { 
+	OR = {
+		TAG = POL
+		TAG = RUS 
+	}
+	}
+	POL = {
+		exists = no
+	}
+	NOT = { has_war_with = POL }
+	NOT = { has_war_with = RUS }
+	controls_state = 10
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = POL }
+	is_puppet = no
+	}
+	
+	cost = 0
+	days_remove = 3
+	
+	ai_will_do = {
+			factor = 10
+		}
+		
+	remove_effect = {
+		if = {
+			limit = { NOT = { country_exists = LIT } }
+				ROOT = {
+					country_event = { id = gen_states.4 }
+				}
+		}
+		if = {
+			limit = { country_exists = LIT  }
+				ROOT = {
+					country_event = { id = gen_states.5 }
+				}
+		}
+	}
+	}
+	
+	#Free Russia || Probably do in another way
+	GEN_release_RUS = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	activation = {
+	NOT = { 
+	OR = {
+		TAG = RUS 
+		TAG = SOV
+	}
+	}
+	RUS = {
+		exists = no
+	}
+	NOT = { has_war_with = RUS }
+	controls_state = 195
+	controls_state = 219
+	}
+	cancel_trigger = {
+	NOT = { 
+	controls_state = 195
+	controls_state = 219 }
+	
+	}
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = RUS }
+	is_puppet = no
+	}
+	
+	cost = 0
+	
+	ai_will_do = {
+			factor = 10
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.13 }
+		}
+	}	
+	timeout_effect = {
+		ROOT = {
+			country_event = { id = gen_states.13 }
+		}
+	}
+	}
+	#Fate of Kuban
+	GEN_release_KBN = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	activation = {
+	NOT = { 
+	OR = {
+		TAG = RUS 
+		TAG = SOV
+	}
+	}
+	RUS = {
+		exists = yes
+	}
+	NOT = { has_war_with = RUS }
+	controls_state = 218
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = RUS }
+	is_puppet = no
+	}
+	
+	cost = 0
+	cancel_trigger = {
+	NOT = { controls_state = 218 }
+	}
+	ai_will_do = {
+			factor = 10
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.28 }
+		}
+	}	
+	timeout_effect = {
+		ROOT = {
+			country_event = { id = gen_states.28 }
+		}
+	}
+	}
+	
+	#Fate of Georgia
+	GEN_release_GEO = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	activation = {
+	NOT = { 
+	OR = {
+		TAG = GEO
+		TAG = RUS
+	}
+	}
+	RUS = {
+		exists = yes
+	}
+	GEO = {
+		exists = no
+	}
+	NOT = { has_war_with = RUS }
+	NOT = { has_war_with = GEO }
+	controls_state = 231
+	}
+	
+	fire_only_once = yes
+	cancel_trigger = {
+	NOT = { controls_state = 231 }
+	}
+	available = {
+	NOT = { OR = {
+	TAG = GEO }
+	TAG = RUS }
+	is_puppet = no
+	}
+	
+	cost = 0
+	
+	ai_will_do = {
+			factor = 10
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.29 }
+		}
+	}	
+	timeout_effect = {
+		ROOT = {
+			country_event = { id = gen_states.29 }
+		}
+	}
+	}
+	
+	#Fate of Azer
+	GEN_release_AZR = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	activation = {
+	NOT = { 
+	OR = {
+		TAG = AZR
+		TAG = RUS
+	}
+	}
+	RUS = {
+		exists = yes
+	}
+	AZR = {
+		exists = no
+	}
+	NOT = { has_war_with = RUS }
+	NOT = { has_war_with = AZR }
+	controls_state = 229
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { OR = {
+	TAG = AZR }
+	TAG = RUS }
+	is_puppet = no
+	}
+	cancel_trigger = {
+	NOT = { controls_state = 229 }
+	}
+	cost = 0
+	
+	ai_will_do = {
+			factor = 10
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.30 }
+		}
+	}	
+	timeout_effect = {
+		ROOT = {
+			country_event = { id = gen_states.30 }
+		}
+	}
+	}
+	
+	
+	#Fate of Armenia
+	GEN_release_ARM = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	activation = {
+	NOT = { 
+	OR = {
+		TAG = ARM
+		TAG = RUS
+	}
+	}
+	RUS = {
+		exists = yes
+	}
+	ARM = {
+		exists = no
+	}
+	NOT = { has_war_with = RUS }
+	NOT = { has_war_with = ARM }
+	controls_state = 230
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { OR = {
+	TAG = ARM }
+	TAG = RUS }
+	is_puppet = no
+	}
+	cancel_trigger = {
+	NOT = { controls_state = 230 }
+	}
+	cost = 0
+	
+	ai_will_do = {
+			factor = 10
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.31 }
+		}
+	}	
+	timeout_effect = {
+		ROOT = {
+			country_event = { id = gen_states.31 }
+		}
+	}
+	}
+	#Fate of Karelia
+	GEN_release_KRL = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	activation = {
+	NOT = { 
+	OR = {
+		TAG = RUS 
+	}
+	}
+	OR = {
+	RUS = {
+		exists = yes
+	}
+	FIN = {
+		exists = yes 
+	}
+	}
+	NOT = { has_war_with = RUS }
+	NOT = { has_war_with = FIN }
+	controls_state = 146
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = RUS }
+	is_puppet = no
+	}
+	
+	cost = 0
+	cancel_trigger = {
+	NOT = { controls_state = 146 }
+	}
+	ai_will_do = {
+			factor = 10
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.32 }
+		}
+	}	
+	timeout_effect = {
+		ROOT = {
+			country_event = { id = gen_states.32 }
+		}
+	}
+	}
+	
+	#Fate of Crimea
+	GEN_release_KRYM = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	activation = {
+	NOT = { 
+		TAG = RUS 
+	}
+	OR = {
+	RUS = {
+		exists = yes
+	}
+	UKR = {
+		exists = yes 
+	}
+	}
+	NOT = { has_war_with = RUS }
+	NOT = { has_war_with = UKR }
+	controls_state = 137
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = RUS }
+	is_puppet = no
+	}
+	
+	cost = 0
+	cancel_trigger = {
+	NOT = { controls_state = 137 }
+	}
+	ai_will_do = {
+			factor = 10
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.33 }
+		}
+	}	
+	timeout_effect = {
+		ROOT = {
+			country_event = { id = gen_states.33 }
+		}
+	}
+	}
+	
+	#Fate of Far East
+	GEN_release_FAT = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	activation = {
+	country_exists = RUS
+	NOT = { 
+		TAG = RUS 
+	}
+	NOT = { has_war_with = RUS }
+	controls_state = 653
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = RUS }
+	is_puppet = no
+	}
+	
+	cost = 0
+	cancel_trigger = {
+	NOT = { controls_state = 653 }
+	}
+	ai_will_do = {
+			factor = 10
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.34 }
+		}
+	}	
+	timeout_effect = {
+		ROOT = {
+			country_event = { id = gen_states.34 }
+		}
+	}
+	}
+	###Northern Europe###
+	#Free Denmark
+	GEN_release_DEN = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	
+	visible = {
+	NOT = { 
+		TAG = DEN
+	}
+	DEN = {
+		exists = no
+	}
+	NOT = { has_war_with = DEN }
+	controls_state = 37
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = DEN }
+	is_puppet = no
+	}
+	
+	cost = 0
+	days_remove = 3
+	
+	ai_will_do = {
+			factor = 10
+		}
+		
+	remove_effect = {
+		ROOT = {
+			country_event = { id = gen_states.14 }
+		}
+	}
+	}
+	
+	###Western Europe###
+	#Free France
+	GEN_release_FRA = {
+	selectable_mission = yes
+	icon = decision_generic_decision
+	#targets = { POL }
+	days_mission_timeout = 45
+	is_good = no
+	cost = 0
+	activation = {
+	NOT = { 
+		TAG = FRA
+	}
+	FRA = {
+		exists = no
+	}
+	NOT = { has_war_with = FRA }
+	controls_state = 16
+	}
+	
+	fire_only_once = yes
+	
+	cancel_trigger = {
+	NOT = { controls_state = 16 }
+	}
+	
+	available = {
+	#NOT = { TAG = FRA }
+	is_puppet = no
+	}
+	
+	
+	
+	ai_will_do = {
+			factor = 100
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.15 }
+		}
+	}
+	timeout_effect = {
+		ROOT = {
+			country_event = { id = gen_states.15 }
+		}
+	}
+	}
+	
+	#Fate of Alsace
+	GEN_release_NAN = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	
+	visible = {
+	OR = { 
+		NOT = { 
+			TAG = FRA
+		}
+		NOT = { 
+			TAG = GER
+		}
+	}
+	FRA = {
+		exists = yes
+	}
+	NOT = { has_war_with = FRA }
+		controls_state = 28
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+		NOT = { TAG = FRA }
+		is_puppet = no
+		OR = { 
+		NOT = { 
+			TAG = FRA
+		}
+		NOT = { 
+			TAG = GER
+		}
+		}
+	}
+	
+	cost = 0
+	days_remove = 3
+	
+	ai_will_do = {
+			factor = 10
+		}
+		
+	remove_effect = {
+		ROOT = {
+			country_event = { id = gen_states.16 }
+		}
+		}
+	}
+	
+	#Fate of Savoy
+	GEN_release_SAV = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	
+	visible = {
+	NOT = { 
+		TAG = FRA
+		}
+	FRA = {
+		exists = yes
+		}
+	NOT = { has_war_with = FRA }
+		controls_state = 735
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = FRA }
+		is_puppet = no
+	}
+	
+	cost = 0
+	days_remove = 3
+	
+	ai_will_do = {
+			factor = 10
+		}
+		
+	remove_effect = {
+		ROOT = {
+			country_event = { id = gen_states.17 }
+			}
+		}
+	}
+	
+	#Free Italy
+	GEN_release_ITA = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	
+	visible = {
+	NOT = { 
+		OR = { 
+		TAG = ITA
+		TAG = FRA 
+		}
+	}
+	ITA = {
+		exists = no
+	}
+	NOT = { has_war_with = ITA }
+	controls_state = 2
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = ITA }
+	is_puppet = no
+	}
+	
+	cost = 0
+	days_remove = 3
+	
+	ai_will_do = {
+			factor = 1000
+		}
+		
+	remove_effect = {
+		ROOT = {
+			country_event = { id = gen_states.18 }
+		}
+	}
+	}
+	
+	#Free Tyrol
+	GEN_release_TYR = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	
+	visible = {
+	NOT = { 
+		OR = {
+			TAG = AUS
+			TAG = ITA
+		}
+	}
+	OR = {
+	AND = {
+	country_exists = AUS
+	NOT = { has_war_with = AUS }
+	}
+	AND = {
+	country_exists = ITA
+	NOT = { has_war_with = ITA }
+	}
+	}
+	controls_state = 39
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = ITA }
+	is_puppet = no
+	}
+	
+	cost = 0
+	days_remove = 3
+	
+	ai_will_do = {
+			factor = 1000
+		}
+		
+	remove_effect = {
+		ROOT = {
+			country_event = { id = gen_states.20 }
+		}
+	}
+	}
+	
+	#Free Austria
+	GEN_release_AUS = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	
+	visible = {
+	NOT = { 
+		TAG = AUS
+	}
+	AUS = {
+		exists = no
+	}
+	NOT = { has_war_with = AUS }
+	controls_state = 4
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = AUS }
+	is_puppet = no
+	}
+	
+	cost = 0
+	days_remove = 3
+	
+	ai_will_do = {
+			factor = 1000
+		}
+		
+	remove_effect = {
+		ROOT = {
+			country_event = { id = gen_states.19 }
+		}
+	}
+	}
+	
+	#Free Czechoslovakia
+	GEN_release_CZE = {
+	
+	icon = decision_generic_decision
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	cost = 0
+	activation = { 
+	#OR 9 is state core of Austria, No war with Austria
+	OR = {
+	AND = { 9 = { is_core_of = AUS }
+	NOT = { has_war_with = AUS }
+	}
+	AND = {
+	NOT = { 9 = { is_core_of = AUS } }
+	}
+	}
+	
+	NOT = { 
+		OR = { 
+		TAG = CZE
+		TAG = SLO 
+		TAG = AUS
+		}
+	}
+	SLO = {
+		exists = no
+	}
+	CZE = {
+		exists = no
+	}
+	NOT = { 
+	has_war_with = SLO 
+	has_war_with = CZE }
+	controls_state = 9
+	controls_state = 70
+	}
+	cancel_trigger = {
+	NOT = { controls_state = 9 
+	controls_state = 70 }
+	}
+	
+	#targets = { POL }
+	
+	fire_only_once = yes
+	
+	available = {
+	#hidden_trigger = { always = no }
+	is_puppet = no
+	}
+	
+	ai_will_do = {
+			factor = 100
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.22 }
+		}
+	}	
+	timeout_effect = {
+		ROOT = {
+			country_event = { id = gen_states.22 }
+		}
+	}
+	}
+	
+	#Free Germany
+	GEN_release_GRM = {
+	
+	icon = decision_generic_decision
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	cost = 0
+	
+	activation = { 
+	NOT = { 
+		OR = { 
+		TAG = GER
+		TAG = RHN
+		TAG = BAV
+		TAG = WSM
+		TAG = WUT
+		TAG = SAX
+		}
+	}
+	NOT = {
+	country_exists = GER
+	country_exists = BAV
+	country_exists = RHN
+	country_exists = WUT
+	country_exists = WSM
+	country_exists = SAX
+	}
+	
+	controls_state = 64		#Berlin
+	controls_state = 58 	#Hamburg
+	#controls_state = 763 	#Koenigsberg
+	controls_state = 52 	#Munich
+	controls_state = 55		#Frankfurt
+	controls_state = 50		#Stuttgart
+	controls_state = 65		#Dresden
+	}
+	
+	
+	cancel_trigger = {
+	NOT = { 
+	controls_state = 64		#Berlin
+	controls_state = 58 	#Hamburg
+	#controls_state = 763 	#Koenigsberg
+	controls_state = 52 	#Munich
+	controls_state = 55		#Frankfurt
+	controls_state = 50		#Stuttgart
+	controls_state = 65		#Dresden
+	}
+	}
+	
+	#targets = { POL }
+	
+	fire_only_once = yes
+	
+	available = {
+	#hidden_trigger = { always = no }
+	is_puppet = no
+	}
+	
+	ai_will_do = {
+			factor = 100
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.23 }
+		}
+	}	
+	timeout_effect = {
+		ROOT = {
+			country_event = { id = gen_states.23 }
+		}
+	}
+	}
+	
+	#Free East Germany
+	GEN_release_EGE = {
+	
+	icon = decision_generic_decision
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	cost = 0
+	
+	activation = { 
+	NOT = { 
+		OR = { 
+		TAG = GER
+		TAG = RHN
+		TAG = BAV
+		TAG = WSM
+		TAG = WUT
+		TAG = SAX
+		}
+	}
+	NOT = {
+	country_exists = GER
+	country_exists = BAV
+	country_exists = RHN
+	country_exists = WUT
+	country_exists = WSM
+	country_exists = SAX
+	}
+	
+	controls_state = 64		#Berlin
+	NOT = {
+	controls_state = 58 	#Hamburg
+	controls_state = 763 	#Koenigsberg
+	controls_state = 52 	#Munich
+	controls_state = 55		#Frankfurt
+	controls_state = 50		#Stuttgart	
+	}
+	
+	controls_state = 65		#Dresden
+	}
+	
+	
+	cancel_trigger = {
+	NOT = { 
+	controls_state = 64		#Berlin
+	#controls_state = 58 	#Hamburg
+	#controls_state = 763 	#Koenigsberg
+	#controls_state = 52 	#Munich
+	#controls_state = 55		#Frankfurt
+	#controls_state = 50		#Stuttgart
+	controls_state = 65		#Dresden
+	}
+	}
+	
+	#targets = { POL }
+	
+	fire_only_once = yes
+	
+	available = {
+	#hidden_trigger = { always = no }
+	is_puppet = no
+	}
+	
+	ai_will_do = {
+			factor = 100
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.27 }
+		}
+	}	
+	timeout_effect = {
+		ROOT = {
+			country_event = { id = gen_states.27 }
+		}
+	}
+	}
+	
+	#Free West Prussia + Poland
+	GEN_release_WPU = {
+	
+	icon = decision_generic_decision
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	cost = 0
+	
+	activation = { 
+	country_exists = GER
+	NOT = { has_war_with = GER }
+	NOT = { 
+		OR = { 
+		TAG = GER
+		TAG = RHN
+		TAG = BAV
+		TAG = WSM
+		TAG = WUT
+		TAG = SAX
+		}
+	}
+	
+	controls_state = 763 	#Koenigsberg
+	controls_state = 5		#Allenstein
+	controls_state = 63		#Stettin
+	controls_state = 10		#Warsaw
+	controls_state = 807    #Gdynia
+	}
+	
+	
+	cancel_trigger = {
+	NOT = { 
+	controls_state = 763 	#Koenigsberg
+	controls_state = 5		#Allenstein
+	controls_state = 63		#Stettin
+	controls_state = 10		#Warsaw
+	}
+	}
+	
+	#targets = { POL }
+	
+	fire_only_once = yes
+	
+	available = {
+	#hidden_trigger = { always = no }
+	is_puppet = no
+	}
+	
+	ai_will_do = {
+			factor = 100
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.24 }
+		}
+	}	
+	timeout_effect = {
+		ROOT = {
+			country_event = { id = gen_states.24 }
+		}
+	}
+	}
+	
+	#Free West Prussia - Poland
+	GEN_release_KNG = {
+	
+	icon = decision_generic_decision
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	cost = 0
+	
+	activation = { 
+	country_exists = GER
+	
+	NOT = {
+	country_exists = POL 
+		OR = { 
+		TAG = RUS 
+		TAG = GER
+		TAG = RHN
+		TAG = BAV
+		TAG = WSM
+		TAG = WUT
+		TAG = SAX
+		}
+	}
+	
+	controls_state = 763 	#Koenigsberg
+	controls_state = 5		#Allenstein
+	controls_state = 63		#Stettin
+	controls_state = 818	#Danzig
+	}
+	
+	
+	cancel_trigger = {
+	NOT = { 
+	controls_state = 763 	#Koenigsberg
+	controls_state = 5		#Allenstein
+	controls_state = 63		#Stettin
+	}
+	}
+	
+	#targets = { POL }
+	
+	fire_only_once = yes
+	
+	available = {
+	#hidden_trigger = { always = no }
+	is_puppet = no
+	}
+	
+	ai_will_do = {
+			factor = 100
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.26 }
+		}
+	}	
+	timeout_effect = {
+		ROOT = {
+			country_event = { id = gen_states.26 }
+		}
+	}
+	}
+	
+	#Free West Prussia
+	GEN_release_KOE = {
+	
+	icon = decision_generic_decision
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	cost = 0
+	
+	activation = { 
+	country_exists = GER
+	country_exists = POL
+	NOT = {
+	OR = {
+	TAG = GER
+	TAG = BAV 
+	TAG = SAX
+	TAG = WSM
+	TAG = RHN
+	TAG = WUT
+	}
+	}
+	controls_state = 763 	#Koenigsberg
+	}
+	
+	
+	cancel_trigger = {
+	NOT = { 
+	controls_state = 763 	#Koenigsberg
+	}
+	}
+	
+	#targets = { POL }
+	
+	fire_only_once = yes
+	
+	available = {
+	#hidden_trigger = { always = no }
+	is_puppet = no
+	}
+	
+	ai_will_do = {
+			factor = 100
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.25 }
+		}
+	}	
+	timeout_effect = {
+		ROOT = {
+			country_event = { id = gen_states.25 }
+		}
+	}
+	}
+	
+	#Free Spain
+	GEN_release_SPR = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	cost = 0
+	activation = {
+	NOT = { 
+		OR = {
+		TAG = FRA
+		TAG = SPR
+		TAG = SPA
+		TAG = SPC
+		TAG = SPB
+		}
+	country_exists = SPR
+	country_exists = SPA
+	country_exists = SPB
+	country_exists = SPC
+	}
+	controls_state = 41
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = SPR }
+	is_puppet = no
+	}
+	cancel_trigger = {
+	NOT = { controls_state = 41 }
+	}
+	ai_will_do = {
+			factor = 1000
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.35 }
+		}
+	}	
+	remove_effect = {
+		ROOT = {
+			country_event = { id = gen_states.35 }
+		}
+	}
+	}
+	
+	#Free Khiva
+	GEN_release_BUK = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	cost = 0
+	activation = {
+	NOT = { 
+		OR = {
+		TAG = RUS
+		TAG = BUK
+		TAG = TUK
+		}
+	country_exists = BUK
+	}
+	controls_state = 830
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = RUS }
+	is_puppet = no
+	}
+	cancel_trigger = {
+	NOT = { controls_state = 830 }
+	}
+	ai_will_do = {
+			factor = 1000
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.36 }
+		}
+	}	
+	remove_effect = {
+		ROOT = {
+			country_event = { id = gen_states.36 }
+		}
+	}
+	}
+	
+	#Fate of Hungary
+	GEN_release_HUN = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	cost = 0
+	activation = {
+	NOT = { 
+		OR = {
+		TAG = AUS
+		TAG = HUN
+		}
+	}
+	OR = {
+	AND = {
+	AUS = { has_completed_focus = AUS_claim_HUN }
+	NOT = { country_exists = AUS }
+	}
+	NOT = { country_exists = HUN }
+	}
+	controls_state = 43
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = AUS }
+	is_puppet = no
+	}
+	cancel_trigger = {
+	NOT = { controls_state = 43 }
+	}
+	ai_will_do = {
+			factor = 1000
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.37 }
+		}
+	}	
+	remove_effect = {
+		ROOT = {
+			country_event = { id = gen_states.37 }
+		}
+	}
+	}
+	
+	#Fate of Bulgaria
+	GEN_release_BUL = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	cost = 0
+	activation = {
+	NOT = { 
+		TAG = BUL
+		
+	country_exists = BUL
+	}
+	controls_state = 48
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = BUL }
+	is_puppet = no
+	}
+	cancel_trigger = {
+	NOT = { controls_state = 48 }
+	}
+	ai_will_do = {
+			factor = 1000
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.38 }
+		}
+	}	
+	remove_effect = {
+		ROOT = {
+			country_event = { id = gen_states.38 }
+		}
+	}
+	}
+	
+	#Fate of Albania
+	GEN_release_ALB = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	cost = 0
+	
+	activation = {
+	NOT = { 
+	tag = ALB
+	country_exists = ALB
+	}
+	controls_state = 44
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = ALB }
+	is_puppet = no
+	}
+	cancel_trigger = {
+	NOT = { controls_state = 44 }
+	}
+	ai_will_do = {
+			factor = 1000
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.39 }
+		}
+	}	
+	remove_effect = {
+		ROOT = {
+			country_event = { id = gen_states.39 }
+		}
+	}
+	}
+	
+	#Fate of Turkey
+	GEN_release_TUR = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	cost = 0
+	
+	activation = {
+	NOT = { 
+	tag = TUR
+	country_exists = TUR
+	}
+	controls_state = 49
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = TUR }
+	is_puppet = no
+	}
+	cancel_trigger = {
+	NOT = { controls_state = 49 }
+	}
+	ai_will_do = {
+			factor = 1000
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.40 }
+		}
+	}	
+	remove_effect = {
+		ROOT = {
+			country_event = { id = gen_states.40 }
+		}
+	}
+	}
+	
+	#Fate of Istanbul
+	GEN_release_IST = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	cost = 0
+	
+	activation = {
+	has_global_flag = TUR_revolt
+	NOT = { 
+	tag = TUR
+	}
+	controls_state = 797
+	country_exists = TUR
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = TUR }
+	is_puppet = no
+	}
+	cancel_trigger = {
+	NOT = { controls_state = 797 }
+	}
+	ai_will_do = {
+			factor = 1000
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.41 }
+		}
+	}	
+	remove_effect = {
+		ROOT = {
+			country_event = { id = gen_states.41 }
+		}
+	}
+	}
+	
+	#Fate of Great Britain
+	GEN_release_GBR = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	cost = 0
+	
+	activation = {
+	NOT = { 
+	tag = ENG
+	country_exists = ENG
+	}
+	controls_state = 126
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = ENG }
+	is_puppet = no
+	}
+	cancel_trigger = {
+	NOT = { controls_state = 126 }
+	}
+	ai_will_do = {
+			factor = 1000
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.42 }
+		}
+	}	
+	remove_effect = {
+		ROOT = {
+			country_event = { id = gen_states.42 }
+		}
+	}
+	}
+	
+	#Fate of Ireland
+	GEN_release_IRE = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	cost = 0
+	
+	activation = {
+	NOT = { 
+	tag = IRE
+	country_exists = IRE
+	}
+	controls_state = 113
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = IRE }
+	is_puppet = no
+	}
+	cancel_trigger = {
+	NOT = { controls_state = 113 }
+	}
+	ai_will_do = {
+			factor = 1000
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.43 }
+		}
+	}	
+	remove_effect = {
+		ROOT = {
+			country_event = { id = gen_states.43 }
+		}
+	}
+	}
+	
+	#Fate of Japan
+	GEN_release_JAP = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	cost = 0
+	
+	activation = {
+	NOT = { 
+	tag = JAP
+	country_exists = JAP
+	}
+	controls_state = 282
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = JAP }
+	is_subject = no
+	}
+	cancel_trigger = {
+	NOT = { controls_state = 282 }
+	}
+	ai_will_do = {
+			factor = 1000
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.44 }
+		}
+	}	
+	remove_effect = {
+		ROOT = {
+			country_event = { id = gen_states.44 }
+		}
+	}
+	}
+	#Fate of Romania (ex Russia)
+	GEN_release_ROM = {
+	
+	icon = decision_generic_decision
+	#targets = { POL }
+	selectable_mission = yes
+	days_mission_timeout = 45
+	is_good = no
+	cost = 0
+	
+	activation = {
+	NOT = { 
+	tag = ROM
+	tag = RUS
+	country_exists = ROM
+	}
+	controls_state = 46
+	}
+	
+	fire_only_once = yes
+	
+	available = {
+	NOT = { TAG = ROM }
+	is_subject = no
+	}
+	cancel_trigger = {
+	NOT = { controls_state = 46 }
+	}
+	ai_will_do = {
+			factor = 1000
+		}
+	complete_effect = {
+		ROOT = {
+			country_event = { id = gen_states.45 }
+		}
+	}	
+	remove_effect = {
+		ROOT = {
+			country_event = { id = gen_states.45 }
+		}
+	}
+	}
+	
+
+}

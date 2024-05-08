@@ -1,0 +1,263 @@
+﻿division_template = {
+	name = "Belaya Gvardiya"
+	#is_locked = yes
+	division_names_group = RUS_POL_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "1ya Belaya Gvardiya"
+		location = 9452  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "2ya Belaya Gvardiya"
+		location = 11466 
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "3ya Belaya Gvardiya"
+		location = 9544
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "4ya Belaya Gvardiya"
+		location = 290 
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "5ya Belaya Gvardiya"
+		location = 11247 
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "6ya Belaya Gvardiya"
+		location = 318 
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "7ya Belaya Gvardiya"
+		location = 6359  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "8ya Belaya Gvardiya"
+		location = 9304  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "9ya Belaya Gvardiya"
+		location = 11341  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "10ya Belaya Gvardiya"
+		location = 3759   
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "11ya Belaya Gvardiya"
+		location = 11313  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "12ya Belaya Gvardiya"
+		location = 215  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "13ya Belaya Gvardiya"
+		location = 9554  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "14ya Belaya Gvardiya"
+		location = 6556  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "15ya Belaya Gvardiya"
+		location = 11453  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "16ya Belaya Gvardiya"
+		location = 3507 
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "17ya Belaya Gvardiya"
+		location = 9249  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "18ya Belaya Gvardiya"
+		location = 9288  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "19ya Belaya Gvardiya"
+		location = 9342  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "20ya Belaya Gvardiya"
+		location = 11229  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "21ya Belaya Gvardiya"
+		location = 315  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "22ya Belaya Gvardiya"
+		location = 343  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "23ya Belaya Gvardiya"
+		location = 288  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "24ya Belaya Gvardiya"
+		location = 6330 
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "25ya Belaya Gvardiya"
+		location = 6386  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "26ya Belaya Gvardiya"
+		location = 6355 
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "27ya Belaya Gvardiya"
+		location = 9328  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "28ya Belaya Gvardiya"
+		location = 11310  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "29ya Belaya Gvardiya"
+		location = 11283  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "30ya Belaya Gvardiya"
+		location = 302 
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "31ya Belaya Gvardiya"
+		location = 3921  
+		division_template = "Belaya Gvardiya"
+	} #To fill the gaps 
+	division = {
+		name = "32ya Belaya Gvardiya"
+		location = 9273  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "33ya Belaya Gvardiya"
+		location = 314 
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "34ya Belaya Gvardiya"
+		location = 11258  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "35ya Belaya Gvardiya"
+		location = 3302
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "36ya Belaya Gvardiya"
+		location = 11363  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "37ya Belaya Gvardiya"
+		location = 6284 
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "38ya Belaya Gvardiya"
+		location = 3322 
+		division_template = "Belaya Gvardiya"
+	} #To fill the gaps 
+	division = {
+		name = "39ya Belaya Gvardiya"
+		location = 345  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "40ya Belaya Gvardiya"
+		location = 3269  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "41ya Belaya Gvardiya"
+		location = 11373  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "42ya Belaya Gvardiya"
+		location = 286  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "43ya Belaya Gvardiya"
+		location = 3196  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "44ya Belaya Gvardiya"
+		location = 3372  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "45ya Belaya Gvardiya"
+		location = 6394  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "46ya Belaya Gvardiya"
+		location = 9365 
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "47ya Belaya Gvardiya"
+		location = 9391  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "48ya Belaya Gvardiya"
+		location = 365  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "49ya Belaya Gvardiya"
+		location = 497  
+		division_template = "Belaya Gvardiya"
+	}
+	division = {
+		name = "50ya Belaya Gvardiya"
+		location = 9445  
+		division_template = "Belaya Gvardiya"
+	}
+}

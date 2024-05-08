@@ -1,0 +1,26 @@
+ai_historical_focus_list_JAP = {
+	ai_national_focuses = {
+		# grab as fast as you can if available
+		#GER_around_maginot
+		JAP_new_rework
+		JAP_industry1
+		JAP_industry2
+		JAP_economic_policy
+		JAP_rising_sun
+		JAP_imperial_glory
+		JAP_war_support
+		JAP_gain_political_support
+		JAP_military
+		JAP_expansionism
+		JAP_eastern_asia
+		JAP_annex_korea
+		JAP_CHI_infra
+		JAP_war_CHI
+		JAP_infrastructure1
+		JAP_students
+		JAP_dockyard1
+		JAP_infrastructure3
+		JAP_industry3
+		JAP_slot1
+	}
+}

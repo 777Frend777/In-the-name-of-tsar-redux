@@ -1,0 +1,104 @@
+bookmarks = {
+	bookmark = {
+		name = "ORIENT_NAME"
+		desc = "ORIENT_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1939"
+		default_country = "JAP"
+		default = yes
+		
+		"JAP"={
+			history = "JAP_Occident_DESC"
+			ideology = fascism
+			ideas = {
+			JAP_army_planning
+			JAP_democratic_popularity
+			JAP_slaves
+			}	
+			focuses = {
+				JAP_liberalization_of_regime
+				JAP_rising_sun
+				JAP_military
+			}			
+		}
+		
+		"SHX"={
+			history = "SHX_ORIENT_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+			}
+		}
+		
+		"CHI"={
+			history = "CHI_ORIENT_DESC"
+			ideology = conservatives
+			ideas = {
+			BAV_home_of_revolution
+			BAV_national	
+			BAV_plot_against_the_commune
+			}
+			focuses = {
+				BAV_purge
+				BAV_liberate_french
+				BAV_world_revolution
+			}
+		}
+		
+
+		"RAJ"= {
+			history = "RAJ_ORIENT_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+				
+			}
+		}
+		
+
+		"AST"={
+			history = "AST_ORIENT_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+			
+		"EGY"={
+			history = "EGY_ORIENT_DESC"
+			ideology = neutrality
+			ideas = {
+			
+				
+			}
+			focuses = {
+				
+			}	
+		}
+		"IRQ"={
+			history = "IRQ_ORIENT_DESC"
+			ideology = conservatives
+			ideas = {
+			}	
+			focuses = {
+			}			
+		}
+		
+		
+		
+
+		"---"={
+			history = "OTHER_Occident_DESC"
+		}
+		
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

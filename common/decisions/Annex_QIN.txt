@@ -1,0 +1,37 @@
+Annex_SHX_category = {
+Annex_QIN= {
+		icon = generic_construction
+
+		allowed = {
+			tag = CHI
+		}
+
+		available = {
+			surrender_progress < 0.5
+                                                SHX = { surrender_progress > 0.94 }
+                                                is_in_faction_with = QIN
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 2
+
+		modifier = {
+
+		}
+
+		visible = {
+			tag = CHI
+			
+		}
+
+		remove_effect = {                                                
+                                                 annex_country = { target = SHX transfer_troops = yes }
+		}
+                                ai_will_do = {
+			base = 200
+                                }
+	}
+}

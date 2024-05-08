@@ -1,0 +1,263 @@
+spriteTypes = {	
+	SpriteType = { 
+		name = "GFX_focus_ege_cave_to_the_italians"
+		texturefile = "gfx/interface/goals/focus_ege_cave_to_the_italians.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ege_blow_the_suez"
+		texturefile = "gfx/interface/goals/focus_ege_blow_the_suez_NEW.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ege_imperial_dream"
+		texturefile = "gfx/interface/goals/focus_ege_imperial_dream.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ege_green_shirt_militias"
+		texturefile = "gfx/interface/goals/focus_ege_green_shirt_militias.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ege_rekindle_the_old_alliance"
+		texturefile = "gfx/interface/goals/focus_ege_rekindle_the_old_alliance.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ege_marx_of_africa"
+		texturefile = "gfx/interface/goals/focus_ege_marx_of_africa.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ege_arab_socialist_movement"
+		texturefile = "gfx/interface/goals/focus_ege_arab_socialist_movement.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ege_ra"
+		texturefile = "gfx/interface/goals/focus_ege_ra.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ege_amen"
+		texturefile = "gfx/interface/goals/focus_ege_amen.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ege_ptah"
+		texturefile = "gfx/interface/goals/focus_ege_ptah.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ege_sutekh"
+		texturefile = "gfx/interface/goals/focus_ege_sutekh.dds"
+	}
+	#afg
+
+	SpriteType = {
+	name = "GFX_focus_style_jihad"
+	texturefile = "gfx/interface/goals/focus_style_jihad.dds"			
+	}
+    SpriteType = {
+	name = "GFX_focus_israel_protection"
+	texturefile = "gfx/interface/goals/focus_israel_protection.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_sharia_law"
+	texturefile = "gfx/interface/goals/sharia_law.tga"			
+	}
+	SpriteType = {
+	name = "GFX_warriors_of_allah"
+	texturefile = "gfx/interface/goals/warriors_of_allah.tga"			
+	}
+	SpriteType = {
+	name = "GFX_islam_tradition"
+	texturefile = "gfx/interface/goals/islam_tradition.tga"			
+	}
+	SpriteType = {
+	name = "GFX_allah_peace"
+	texturefile = "gfx/interface/goals/allah_peace.tga"			
+	}
+	SpriteType = {
+	name = "GFX_no_islam"
+	texturefile = "gfx/interface/goals/no_islam.tga"			
+	}
+	SpriteType = {
+	name = "GFX_annex_kashmir"
+	texturefile = "gfx/interface/goals/annex_kashmir.tga"			
+	}
+	SpriteType = {
+	name = "GFX_annex_delhi"
+	texturefile = "gfx/interface/goals/annex_delhi.tga"			
+	}
+	SpriteType = {
+	name = "GFX_claim_mughal_empire"
+	texturefile = "gfx/interface/goals/claim_mughal_empire.tga"			
+	}
+	SpriteType = {
+	name = "GFX_peace_time"
+	texturefile = "gfx/interface/goals/peace_time.tga"			
+	}
+	SpriteType = {
+	name = "GFX_persian_restoration"
+	texturefile = "gfx/interface/goals/persian_restoration.tga"			
+	}
+	SpriteType = {
+	name = "GFX_azerbaijan"
+	texturefile = "gfx/interface/goals/azerbaijan.tga"			
+	}
+	SpriteType = {
+	name = "GFX_armenia"
+	texturefile = "gfx/interface/goals/armenia.tga"			
+	}
+	SpriteType = {
+	name = "GFX_palestina"
+	texturefile = "gfx/interface/goals/palestina.tga"			
+	}
+	SpriteType = {
+	name = "GFX_take_cairo"
+	texturefile = "gfx/interface/goals/take_cairo.tga"			
+	}
+	SpriteType = {
+	name = "GFX_aswan"
+	texturefile = "gfx/interface/goals/aswan.tga"			
+	}
+	SpriteType = {
+	name = "GFX_britsh_ask_for_peace"
+	texturefile = "gfx/interface/goals/britsh_ask_for_peace.tga"			
+	}
+	SpriteType = {
+	name = "GFX_war_with_tur"
+	texturefile = "gfx/interface/goals/war_with_tur.tga"			
+	}
+	SpriteType = {
+	name = "GFX_pahlavi_kingdom"
+	texturefile = "gfx/interface/goals/pahlavi_kingdom.tga"			
+	}
+	SpriteType = {
+	name = "GFX_iraq_idis"
+	texturefile = "gfx/interface/goals/iraq_idis.tga"			
+	}
+	SpriteType = {
+	name = "GFX_core_arabia"
+	texturefile = "gfx/interface/goals/core_arabia.tga"			
+	}
+	SpriteType = {
+	name = "GFX_caliph"
+	texturefile = "gfx/interface/goals/caliph.tga"			
+	}
+	SpriteType = {
+	name = "GFX_yemen_red"
+	texturefile = "gfx/interface/goals/yemen_red.tga"			
+	}
+	SpriteType = {
+	name = "GFX_oman_red"
+	texturefile = "gfx/interface/goals/oman_red.tga"			
+	}
+	SpriteType = {
+	name = "GFX_unite_arabia"
+	texturefile = "gfx/interface/goals/unite_arabia.tga"			
+	}
+	SpriteType = {
+	name = "GFX_south_tribes"
+	texturefile = "gfx/interface/goals/south_tribes.tga"			
+	}
+	SpriteType = {
+	name = "GFX_camels_sexy"
+	texturefile = "gfx/interface/goals/camels_sexy.tga"			
+	}
+	SpriteType = {
+	name = "GFX_somalia"
+	texturefile = "gfx/interface/goals/somalia.tga"			
+	}
+	SpriteType = {
+	name = "GFX_ethiopia"
+	texturefile = "gfx/interface/goals/ethiopia.tga"			
+	}
+	
+	### Other
+	
+	SpriteType = {
+		name = "GFX_SYR_arab_unification"
+		texturefile = "gfx/event_pictures/SYR_arab_unification.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SYR_circo_armenia"
+		texturefile = "gfx/event_pictures/SYR_circo_armenia.png"
+	}
+	
+	#### SYR ####
+		
+	SpriteType = {
+	name = "GFX_SYR_reunify_the_empire"
+	texturefile = "gfx/interface/goals/focus_SYR_reunify_the_empire.png"			
+	}
+	SpriteType = {
+	name = "GFX_focus_syrian_armed_forces"
+	texturefile = "gfx/interface/goals/focus_SYR_syrian_armed_forces.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_syrian_nation"
+	texturefile = "gfx/interface/goals/focus_SYR_syrian_nation.dds"			
+	}
+	SpriteType = {
+	name = "GFX_SYR_hashemite_brotherhood"
+	texturefile = "gfx/interface/goals/focus_SYR_hashemite_brotherhood.png"			
+	}
+	SpriteType = {
+	name = "GFX_SYR_we_are_arabs"
+	texturefile = "gfx/interface/goals/focus_SYR_we_are_arabs.png"			
+	}
+	SpriteType = {
+	name = "GFX_SYR_crush_israel"
+	texturefile = "gfx/interface/goals/focus_SYR_crush_israel.png"			
+	}
+	SpriteType = {
+	name = "GFX_SYR_backstab_egypt"
+	texturefile = "gfx/interface/goals/focus_SYR_backstab_egypt.png"			
+	}
+	SpriteType = {
+	name = "GFX_SYR_turkish_problem"
+	texturefile = "gfx/interface/goals/focus_SYR_turkish_problem.png"			
+	}
+	SpriteType = {
+	name = "GFX_SYR_secure_the_horn_of_africa"
+	texturefile = "gfx/interface/goals/focus_SYR_secure_the_horn_of_africa.png"			
+	}
+	SpriteType = {
+	name = "GFX_SYR_secure_west_africa"
+	texturefile = "gfx/interface/goals/focus_SYR_secure_west_africa.png"			
+	}
+	SpriteType = {
+	name = "GFX_SYR_islam_in_europe"
+	texturefile = "gfx/interface/goals/focus_SYR_islam_in_europe.png"			
+	}
+	SpriteType = {
+	name = "GFX_SYR_reclaim_al_andalus"
+	texturefile = "gfx/interface/goals/focus_SYR_reclaim_al_andalus.png"			
+	}
+	SpriteType = {
+	name = "GFX_SYR_balkan_expansion"
+	texturefile = "gfx/interface/goals/focus_SYR_balkan_expansion.png"			
+	}
+
+	#### IRQ ####
+
+	SpriteType = {
+		name = "GFX_focus_irq_defy_bakr_sidqi"
+		texturefile = "gfx/interface/goals/focus_irq_defy_bakr_sidqi.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_irq_support_bakr_sidqi_coup"
+		texturefile = "gfx/interface/goals/focus_irq_support_bakr_sidqi_coup.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_irq_look_to_fascist_europe"
+		texturefile = "gfx/interface/goals/focus_irq_look_to_fascist_europe.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_irq_italian_cooperation"
+		texturefile = "gfx/interface/goals/focus_irq_italian_cooperation.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_irq_embrace_golden_square"
+		texturefile = "gfx/interface/goals/focus_irq_embrace_golden_square.dds"
+	}
+}

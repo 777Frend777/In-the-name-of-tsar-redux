@@ -1,0 +1,360 @@
+egypt_historical = {
+	name = "Kingdom of Egypt"
+	desc = "A shift towards alliance with Britain, but a juggle between Ittihad and Wafd"
+
+	enable = {
+		original_tag = EGY
+		OR = {
+			is_historical_focus_on = yes
+			has_game_rule = {
+				rule = EGY_ai_behavior
+				option = DEFAULT
+			}
+		}
+	}
+	abort = {
+		has_government = fascism
+		has_government = communism
+	}
+	
+	ai_national_focuses = {
+		EGY_government_reform
+		EGY_anglo-egyptian_treaty
+		EGY_support_the_status_quo
+		EGY_preserve_political_neutrality
+		EGY_crackdown_on_extremist_bias
+		EGY_ban_boycotts
+	}
+	
+	focus_factors = {
+		EGY_government_reform = 10
+		EGY_anglo-egyptian_treaty = 10
+		EGY_support_the_status_quo = 10
+		EGY_sever_ties_with_uk = 0
+		EGY_abandon_pharaonism = 0
+		EGY_adopt_the_westminster_system = 0
+		EGY_preserve_political_neutrality = 4
+		EGY_uphold_constitutional_liberalism = 0
+	}
+	
+	ideas = {
+		mostafa_el-nahhas_pasha = 10
+		ahmed_hussein = 0
+		akram_al-hourani = 0
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "ENG"			
+		value = 100
+	}
+}
+egypt_historical_split = {
+	name = "Kingdom of Egypt"
+	desc = "A democratic shift towards alliance with Britain"
+
+	enable = {
+		original_tag = EGY
+		has_game_rule = {
+			rule = EGY_ai_behavior
+			option = DEMOCRATIC_WAFD_PARTY
+		}
+	}
+	abort = {
+		has_government = fascism
+		has_government = communism
+	}
+	
+	ai_national_focuses = {
+		EGY_government_reform
+		EGY_anglo-egyptian_treaty
+		EGY_support_the_status_quo
+	}
+	
+	focus_factors = {
+		EGY_government_reform = 100
+		EGY_anglo-egyptian_treaty = 100
+		EGY_support_the_status_quo = 100
+		EGY_sever_ties_with_uk = 0
+		EGY_abandon_pharaonism = 0
+		EGY_adopt_the_westminster_system = 0
+		EGY_anti-western_policies = 0
+		EGY_uphold_constitutional_liberalism = 2
+	}
+	
+	ideas = {
+		mostafa_el-nahhas_pasha = 10
+		ahmed_hussein = 0
+		akram_al-hourani = 0
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "ENG"			
+		value = 200
+	}
+}
+egypt_historical_split_2 = {
+	name = "Kingdom of Egypt"
+	desc = "A maintnenance of the Ittihad Party rule"
+
+	enable = {
+		original_tag = EGY
+		has_game_rule = {
+			rule = EGY_ai_behavior
+			option = NEUTRALITY_ITTIHAD_PARTY
+		}
+	}
+	abort = {
+		has_government = fascism
+		has_government = communism
+	}
+	
+	ai_national_focuses = {
+		EGY_government_reform
+		EGY_anglo-egyptian_treaty
+		EGY_support_the_status_quo
+	}
+	
+	focus_factors = {
+		EGY_government_reform = 100
+		EGY_anglo-egyptian_treaty = 100
+		EGY_support_the_status_quo = 100
+		EGY_sever_ties_with_uk = 0
+		EGY_abandon_pharaonism = 0
+		EGY_adopt_the_westminster_system = 0
+		EGY_ban_boycotts = 0
+		EGY_uphold_constitutional_liberalism = 0
+	}
+	
+	ideas = {
+		mostafa_el-nahhas_pasha = 0
+		ahmed_hussein = 0
+		akram_al-hourani = 0
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "ENG"			
+		value = -500
+	}
+}
+egypt_fascist = {
+	name = "Fascist Egypt"
+	desc = "Biasing a fascist path, putting emphasis on getting Farouk in power"
+
+	enable = {
+		original_tag = EGY
+		has_game_rule = {
+			rule = EGY_ai_behavior
+			option = FASCIST
+		}
+	}
+	abort = {
+		has_government = communism
+	}
+	
+	ai_national_focuses = {
+		EGY_government_reform
+		EGY_anglo-egyptian_treaty
+		EGY_sever_ties_with_uk
+		EGY_draft_a_new_constitution
+		EGY_cave_to_nationalism
+	}
+	
+	focus_factors = {
+		EGY_government_reform = 100
+		EGY_anglo-egyptian_treaty = 100
+		EGY_support_the_status_quo = 0
+		EGY_sever_ties_with_uk = 100
+		EGY_abandon_pharaonism = 0
+		EGY_draft_a_new_constitution = 100
+		EGY_cave_to_nationalism = 100
+		EGY_one_man_show = 10
+		EGY_imperial_dream = 2
+	}
+	
+	ideas = {
+		mostafa_el-nahhas_pasha = 0
+		ahmed_hussein = 10
+		akram_al-hourani = 0
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "ITA"			
+		value = 200
+	}
+}
+egypt_communist = {
+	name = "Communist Egypt"
+	desc = "Biasing a communist path, without emphasis"
+
+	enable = {
+		original_tag = EGY
+		has_game_rule = {
+			rule = EGY_ai_behavior
+			option = FASCIST
+		}
+	}
+	abort = {
+		has_government = communism
+	}
+	
+	ai_national_focuses = {
+		EGY_government_reform
+		EGY_anglo-egyptian_treaty
+		EGY_sever_ties_with_uk
+		EGY_draft_a_new_constitution
+		EGY_begin_the_arab_socialist_movement
+	}
+	
+	focus_factors = {
+		EGY_government_reform = 100
+		EGY_anglo-egyptian_treaty = 100
+		EGY_support_the_status_quo = 0
+		EGY_sever_ties_with_uk = 100
+		EGY_abandon_pharaonism = 0
+		EGY_draft_a_new_constitution = 100
+		EGY_begin_the_arab_socialist_movement = 100
+	}
+	
+	ideas = {
+		mostafa_el-nahhas_pasha = 0
+		ahmed_hussein = 0
+		akram_al-hourani = 10
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "SOV"			
+		value = 100
+	}
+}
+egypt_sultanate = {
+	name = "Sultanate of Egypt"
+	desc = "Light emphasis on restoring the Sultanate"
+
+	enable = {
+		original_tag = EGY
+		has_game_rule = {
+			rule = EGY_ai_behavior
+			option = NEUTRALITY_SULTANATE
+		}
+	}
+	abort = {
+		has_government = fascism
+		has_government = communism
+	}
+	
+	ai_national_focuses = {
+		EGY_government_reform
+		EGY_anglo-egyptian_treaty
+		EGY_abandon_pharaonism
+		EGY_search_for_a_new_king
+		EGY_restore_the_sultanate
+	}
+	
+	focus_factors = {
+		EGY_government_reform = 10
+		EGY_anglo-egyptian_treaty = 10
+		EGY_support_the_status_quo = 0
+		EGY_sever_ties_with_uk = 0
+		EGY_abandon_pharaonism = 10
+		EGY_the_second_crusade = 0
+		EGY_in_the_name_of_islam = 0
+		EGY_search_for_a_new_king = 10
+	}
+	
+	ideas = {
+		mostafa_el-nahhas_pasha = 0
+		ahmed_hussein = 0
+		akram_al-hourani = 0
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "TUR"			
+		value = 100
+	}
+}
+egypt_christian = {
+	name = "Coptic Egypt"
+	desc = "Light emphasis on empowering the Coptic Church"
+
+	enable = {
+		original_tag = EGY
+		has_game_rule = {
+			rule = EGY_ai_behavior
+			option = NEUTRALITY_COPTIC_CHURCH
+		}
+	}
+	abort = {
+		has_government = fascism
+		has_government = communism
+	}
+	
+	ai_national_focuses = {
+		EGY_government_reform
+		EGY_anglo-egyptian_treaty
+		EGY_abandon_pharaonism
+		EGY_the_second_crusade
+	}
+	
+	focus_factors = {
+		EGY_government_reform = 10
+		EGY_anglo-egyptian_treaty = 10
+		EGY_support_the_status_quo = 0
+		EGY_sever_ties_with_uk = 0
+		EGY_abandon_pharaonism = 10
+		EGY_the_second_crusade = 100
+		EGY_in_the_name_of_islam = 0
+		EGY_search_for_a_new_king = 0
+	}
+	
+	ideas = {
+		mostafa_el-nahhas_pasha = 0
+		ahmed_hussein = 0
+		akram_al-hourani = 0
+	}
+}
+egypt_muslim = {
+	name = "Muslim Egypt"
+	desc = "Light emphasis on empowering the Muslim Brotherhood"
+
+	enable = {
+		original_tag = EGY
+		has_game_rule = {
+			rule = EGY_ai_behavior
+			option = NEUTRALITY_MUSLIM_BROTHERHOOD
+		}
+	}
+	abort = {
+		has_government = fascism
+		has_government = communism
+	}
+	
+	ai_national_focuses = {
+		EGY_government_reform
+		EGY_anglo-egyptian_treaty
+		EGY_abandon_pharaonism
+		EGY_in_the_name_of_islam
+	}
+	
+	focus_factors = {
+		EGY_government_reform = 10
+		EGY_anglo-egyptian_treaty = 10
+		EGY_support_the_status_quo = 0
+		EGY_sever_ties_with_uk = 0
+		EGY_abandon_pharaonism = 10
+		EGY_the_second_crusade = 0
+		EGY_in_the_name_of_islam = 100
+		EGY_search_for_a_new_king = 0
+	}
+	
+	ideas = {
+		mostafa_el-nahhas_pasha = 0
+		ahmed_hussein = 0
+		akram_al-hourani = 0
+	}
+}

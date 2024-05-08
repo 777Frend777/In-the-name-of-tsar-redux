@@ -1,0 +1,549 @@
+﻿
+add_namespace = usa_elections
+# Election of 1936: Garner vs Alf Landon vs Long vs Other Guy
+# Before ; Democrats : Garner, Republicans : Curtis
+country_event = {
+	id = usa_elections.1
+	title = usa_elections.1.t
+	desc = usa_elections.1.d
+	picture = GFX_report_event_usa_election_generic
+	fire_only_once = yes 
+	trigger = {
+		tag = USA
+		date > 1936.11.1
+		date < 1936.12.1
+	}
+	
+	option = { 	#Democrats
+		name = usa_elections.1.a
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 50
+				is_historical_focus_on = yes
+			}
+		}	
+		USA = {
+		set_politics = { ruling_party = democratic elections_allowed = yes }	
+		set_country_flag = garner_president_1
+		}
+		hidden_effect = {
+		news_event = { days = 1 id = usa.10002 }
+		}
+	}
+
+	option = { #Republicans
+		name = usa_elections.1.b
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 50
+				is_historical_focus_on = yes
+			}
+		}	
+		USA = {
+		set_country_flag = landon_president_1
+		create_country_leader = {
+	name = "Alf Landon"
+	desc = "POLITICS_ALF_LANDON_DESC"
+	picture = "alf_landon.dds"
+	expire = "1965.1.1"
+	ideology = conservatives_subtype
+	traits = {
+	staunch_constitutionalist
+	}
+	}	
+		
+		}
+		hidden_effect = {
+		news_event = { days = 1 id = usa.10002 }
+		}
+		}
+	option = { #American First
+		name = usa_elections.1.c
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}		
+		USA = {
+		set_country_flag = long_president_1
+		set_politics = { ruling_party = neutrality elections_allowed = yes }
+		}
+		hidden_effect = {
+		news_event = { days = 1 id = usa.10002 }
+		#country_event = { days = 7 id = usa.200 }
+		}
+		}
+	option = { #Socialist
+		name = usa_elections.1.e
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}		
+		USA = {
+		set_country_flag = wheeler_president_1
+		set_politics = { ruling_party = socialist elections_allowed = yes }
+		}
+		hidden_effect = {
+		news_event = { days = 1 id = usa.10002 }
+		#country_event = { days = 7 id = usa.10000 }
+		}
+		}		
+}
+# Election of 1940: Garner vs Stimson
+# Before ; Democrats : Garner, Republicans : Landon
+country_event = {
+	id = usa_elections.2
+	title = usa_elections.2.t
+	desc = usa_elections.2.d
+	picture = GFX_report_event_usa_election_generic
+	fire_only_once = yes 
+
+	trigger = {
+		tag = USA
+		#democratic > 0.5
+		date > 1940.11.1
+		date < 1940.12.1
+		has_government = democratic
+		has_country_flag = garner_president_1
+	}
+	
+	option = { 	#Democrats
+		name = usa_elections.2.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 75
+				is_historical_focus_on = yes
+			}
+		}	
+		USA = {	
+		set_country_flag = garner_president_2
+		add_political_power = 10
+		}
+	}
+
+	option = { #Republicans
+		name = usa_elections.2.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 25
+				is_historical_focus_on = yes
+			}
+		}
+		USA = {
+		set_politics = { ruling_party = conservatives elections_allowed = yes }
+		set_country_flag = stimson_president_1
+		create_country_leader = {
+		name = "Henry Stimson"
+		desc = "POLITICS_WENDELL_WILKIE_DESC"
+		picture = "henry_stimson.dds"
+		expire = "1965.1.1"
+		ideology = conservatives_subtype
+		traits = {	
+		conservative_grandee
+		rearmer	
+		}
+		}
+		}
+		}		
+}
+# Election of 1940: Landon vs Alben Barkley
+# Before ; Democrats : Garner, Republicans : Landon
+country_event = {
+	id = usa_elections.3
+	title = usa_elections.3.t
+	desc = usa_elections.3.d
+	picture = GFX_report_event_usa_election_generic
+	fire_only_once = yes 
+
+	trigger = {
+		tag = USA
+		date > 1940.11.1
+		date < 1940.12.1
+		has_government = conservatives
+		has_country_flag = landon_president_1
+	}
+	
+	option = { 	#Democrats
+		name = usa_elections.3.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 75
+				is_historical_focus_on = yes
+			}
+		}	
+		USA = {	
+		set_politics = { ruling_party = democratic elections_allowed = yes }
+		set_country_flag = barkley_president_1
+		create_country_leader = {
+	name = "Alben W. Barkley"
+	desc = "POLITICS_CHARLES_CURTIS_DESC"
+	picture = "alben_barkley.dds"
+	expire = "1965.1.1"
+	ideology = democratic_subtype
+	traits = {
+	dealbroker political_dancer	
+	}
+	}
+		}
+	}
+
+	option = { #Republicans
+		name = usa_elections.3.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 25
+				is_historical_focus_on = yes
+			}
+		}	
+		USA = {
+		set_country_flag = landon_president_2
+		add_political_power = 10
+		}
+		}		
+}
+# Election of 1944 : Sam Rayburn vs Thomas E. Dewey
+# Before ; Democrats : Garner, Republicans : Landon
+country_event = {
+	id = usa_elections.4
+	title = usa_elections.4.t
+	desc = usa_elections.4.d
+	picture = GFX_report_event_usa_election_generic
+	fire_only_once = yes 
+
+	trigger = {
+		tag = USA
+		date > 1944.11.1
+		date < 1944.12.1
+		has_government = democratic
+		has_country_flag = garner_president_2
+	}
+	
+	option = { 	#Democrats
+		name = usa_elections.4.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 75
+				is_historical_focus_on = yes
+			}
+		}	
+		USA = {	
+		set_country_flag = rayburn_president_1
+		create_country_leader = {
+		name = "Sam Rayburn"
+		desc = "POLITICS_CHARLES_CURTIS_DESC"
+		picture = "Sam_Rayburn.dds"
+		expire = "1965.1.1"
+		ideology = democratic_subtype
+		traits = {
+		}
+		}
+		}
+	}
+
+	option = { #Republicans
+		name = usa_elections.4.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 25
+				is_historical_focus_on = yes
+			}
+		}	
+		USA = {
+		set_politics = { ruling_party = conservatives elections_allowed = yes }
+		set_country_flag = dewey_president_1
+		create_country_leader = {
+		name = "Thomas E. Dewey"
+		desc = "POLITICS_WENDELL_WILKIE_DESC"
+		picture = "Thomas_E._Dewey.dds"
+		expire = "1965.1.1"
+		ideology = conservatives_subtype
+		traits = {
+		political_dancer		
+		}
+		}
+		}
+		}		
+}
+# Election of 1944 : Rayburn vs Stimson
+# Before ; Democrats : Garner, Republicans : Stimson
+country_event = {
+	id = usa_elections.5
+	title = usa_elections.5.t
+	desc = usa_elections.5.d
+	picture = GFX_report_event_usa_election_generic
+	fire_only_once = yes 
+
+	trigger = {
+		tag = USA
+		date > 1944.11.1
+		date < 1944.12.1
+		has_government = conservatives
+		has_country_flag = stimson_president_1
+	}
+	
+	option = { 	#Democrats
+		name = usa_elections.5.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 75
+				is_historical_focus_on = yes
+			}
+		}	
+		USA = {	
+		set_politics = { ruling_party = democratic elections_allowed = yes }
+		set_country_flag = rayburn_president_1
+		create_country_leader = {
+		name = "Sam Rayburn"
+		desc = "POLITICS_CHARLES_CURTIS_DESC"
+		picture = "Sam_Rayburn.dds"
+		expire = "1965.1.1"
+		ideology = democratic_subtype
+		traits = {
+		}
+		}
+		}
+	}
+
+	option = { #Republicans
+		name = usa_elections.5.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 25
+				is_historical_focus_on = yes
+			}
+		}	
+		USA = {
+		set_country_flag = stimson_president_2
+		add_political_power = 10
+		}
+		}		
+}
+# Election of 1944 : Barkley vs Dewey
+# Before ; Democrats : Garner, Republicans : Landon
+country_event = {
+	id = usa_elections.6
+	title = usa_elections.6.t
+	desc = usa_elections.6.d
+	picture = GFX_report_event_usa_election_generic
+	fire_only_once = yes 
+
+	trigger = {
+		tag = USA
+		date > 1944.11.1
+		date < 1944.12.1
+		has_government = democratic
+		has_country_flag = landon_president_2
+	}
+	
+	option = { 	#Democrats
+		name = usa_elections.6.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 75
+				is_historical_focus_on = yes
+			}
+		}	
+		USA = {
+		set_country_flag = barkley_president_1		
+		create_country_leader = {
+		name = "Alben W. Barkley"
+		desc = "POLITICS_CHARLES_CURTIS_DESC"
+		picture = "alben_barkley.dds"
+		expire = "1965.1.1"
+		ideology = democratic_subtype
+		traits = {
+		dealbroker political_dancer	
+		}
+		}
+		}
+	}
+
+	option = { #Republicans
+		name = usa_elections.6.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 25
+				is_historical_focus_on = yes
+			}
+		}	
+		USA = {
+		set_politics = { ruling_party = conservatives elections_allowed = yes }
+		set_country_flag = dewey_president_1
+		create_country_leader = {
+		name = "Thomas E. Dewey"
+		desc = "POLITICS_WENDELL_WILKIE_DESC"
+		picture = "Thomas_E._Dewey.dds"
+		expire = "1965.1.1"
+		ideology = conservatives_subtype
+		traits = {
+		political_dancer		
+		}
+		}
+		}
+		}		
+}
+# Election of 1944 : Barkley vs Dewey
+# Before ; Democrats : Garner, Republicans : Landon
+country_event = {
+	id = usa_elections.7
+	title = usa_elections.7.t
+	desc = usa_elections.7.d
+	picture = GFX_report_event_usa_election_generic
+	fire_only_once = yes 
+
+	trigger = {
+		tag = USA
+		date > 1944.11.1
+		date < 1944.12.1
+		has_government = democratic
+		has_country_flag = dewey_president_1
+	}
+	
+	option = { 	#Democrats
+		name = usa_elections.7.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 75
+				is_historical_focus_on = yes
+			}
+		}	
+		USA = {	
+		set_country_flag = rayburn_president_1
+		create_country_leader = {
+		name = "Sam Rayburn"
+		desc = "POLITICS_CHARLES_CURTIS_DESC"
+		picture = "Sam_Rayburn.dds"
+		expire = "1965.1.1"
+		ideology = democratic_subtype
+		traits = {
+		}
+		}
+		}
+	}
+
+	option = { #Republicans
+		name = usa_elections.7.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 25
+				is_historical_focus_on = yes
+			}
+		}	
+		USA = {
+		set_politics = { ruling_party = conservatives elections_allowed = yes }
+		set_country_flag = dewey_president_1
+		create_country_leader = {
+		name = "Thomas E. Dewey"
+		desc = "POLITICS_WENDELL_WILKIE_DESC"
+		picture = "Thomas_E._Dewey.dds"
+		expire = "1965.1.1"
+		ideology = conservatives_subtype
+		traits = {
+		political_dancer		
+		}
+		}
+		}
+		}		
+}
+# Election of 1940: Barkley vs Stimson (Civil war Election)
+# Before ; Democrats : Perkins, Republicans : Stimson
+country_event = {
+	id = usa_elections.8
+	title = usa_elections.8.t
+	desc = usa_elections.8.d
+	picture = GFX_report_event_usa_election_generic
+	fire_only_once = yes 
+
+	trigger = {
+		tag = USA
+		#democratic > 0.5
+		date > 1940.11.1
+		date < 1940.12.1
+		OR = { 
+		has_government = democratic
+		has_government = conservatives
+		}
+		OR = {
+		has_country_flag = perkins_president_1
+		has_country_flag = US_civil_war_tag
+		#has_country_flag = stimson_president_1
+		}
+		
+	}
+	
+	option = { 	#Democrats
+		name = usa_elections.8.a
+		ai_chance = {
+			factor = 50
+		}
+		modifier = {
+				factor = 75
+				is_historical_focus_on = yes
+			}	
+		USA = {	
+		if = {
+		limit = { has_government = conservatives }
+		set_politics = { ruling_party = democratic elections_allowed = yes }
+		}
+		set_country_flag = barkley_president_1
+			create_country_leader = {
+			name = "Alben W. Barkley"
+			desc = "POLITICS_CHARLES_CURTIS_DESC"
+			picture = "alben_barkley.dds"
+			expire = "1965.1.1"
+			ideology = democratic_subtype
+			traits = {
+			dealbroker political_dancer	
+			}
+			}
+		}
+	}
+
+	option = { #Republicans
+		name = usa_elections.8.b
+		ai_chance = {
+			factor = 50
+		}
+		modifier = {
+				factor = 25
+				is_historical_focus_on = yes
+			}	
+		USA = {
+		if = {
+		limit = { has_government = democratic }
+		set_politics = { ruling_party = conservatives elections_allowed = yes }
+		}
+		set_country_flag = stimson_president_1
+		create_country_leader = {
+		name = "Henry Stimson"
+		desc = "POLITICS_WENDELL_WILKIE_DESC"
+		picture = "henry_stimson.dds"
+		expire = "1965.1.1"
+		ideology = conservatives_subtype
+		traits = {	
+		conservative_grandee
+		rearmer		
+		}
+		}
+		}
+		}		
+}

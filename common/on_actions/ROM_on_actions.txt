@@ -1,0 +1,60 @@
+##### ROM ######
+
+on_actions = {
+	on_startup = {
+		effect = {
+			EGY = {
+				give_resource_rights = { receiver = ENG state = 447 }
+
+			}
+                        SYR = {
+				give_resource_rights = { receiver = FRA state = 554 }
+			}
+			LBA = {
+				set_country_flag = EGY_annexed_colony
+			}
+			NGA = {
+				set_country_flag = EGY_annexed_colony
+			}
+			GHA = {
+				set_country_flag = EGY_annexed_colony
+			}
+			SIE = {
+				set_country_flag = EGY_annexed_colony
+			}
+			SOM = {
+				set_country_flag = EGY_annexed_colony
+			}
+			UGA = {
+				set_country_flag = EGY_annexed_colony
+			}
+			KEN = {
+				set_country_flag = EGY_annexed_colony
+			}
+			TZN = {
+				set_country_flag = EGY_annexed_colony
+			}
+			MLW = {
+				set_country_flag = EGY_annexed_colony
+			}
+			ZAM = {
+				set_country_flag = EGY_annexed_colony
+			}
+			BOT = {
+				set_country_flag = EGY_annexed_colony
+			}
+			ZIM = {
+				set_country_flag = EGY_annexed_colony
+			}
+			GAM = {
+				set_country_flag = EGY_annexed_colony
+			}
+			MLT = {
+				set_country_flag = EGY_annexed_colony
+			}
+			CYP = {
+				set_country_flag = EGY_annexed_colony
+			}
+		}
+	}
+}

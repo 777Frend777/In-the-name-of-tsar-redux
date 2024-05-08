@@ -1,0 +1,15 @@
+characters={
+	WST_Keith_Watson={
+		name="Keith Watson"
+		portraits={
+			civilian={
+				large="gfx/leaders/WST/portrait_WST_Keith_Watson.dds"
+			}
+		}
+		country_leader={
+			ideology= conservatives_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

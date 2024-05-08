@@ -1,0 +1,402 @@
+﻿l_english: 
+ territorial_restorations_decisions:0 "Occupation Management"
+ territorial_restorations_decisions_desc:0 "[Root.GetName] has territories under its occupation, what should we do with them?"
+ #Benelux
+ GEN_release_HOL:0 "Fate of the Netherlands" #DONE
+ GEN_release_BEL:0 "Fate of Belgium"         #DONE
+ GEN_release_LUX:0 "Fate of Luxembourg"      #DONE
+ 
+ #Russia
+ GEN_release_POL:0 "Fate of Poland"          #DONE
+ GEN_release_LIT:0 "Fate of Lithuania"       #DONE
+ GEN_release_LAT:0 "Fate of Latvia"          #DONE
+ GEN_release_EST:0 "Fate of Estonia"         #DONE
+ GEN_release_UKR:0 "Fate of Ukraine"         #DONE
+ GEN_release_BLR:0 "Fate of White Russia"    #DONE
+ GEN_release_MOL:0 "Fate of Moldova"         #DONE
+ GEN_release_FIN:0 "Fate of Finland"         #DONE 
+ GEN_release_RUS:0 "Fate of Russia"          #KINDA DONE
+ GEN_release_KBN:0 "Fate of Kuban"           #Done
+ GEN_release_FAT:0 "Fate of Far East"        #Done
+ GEN_release_KRYM:0 "Fate of Crimea"         #Done
+ GEN_release_KRL:0 "Fate of Karelia"         #Done
+ GEN_release_ALA:0 "Fate of Aland"
+ GEN_release_GEO:0 "Fate of Georgia"         #Done
+ GEN_release_AZR:0 "Fate of Azerbajan"       #Done
+ GEN_release_ARM:0 "Fate of Armenia"         #Done
+ 
+ #Central Europe
+ GEN_release_AUS:0 "Fate of Austria"        #Done
+ GEN_release_SLV:0 "Fate of Slovenia"
+ GEN_release_CZE:0 "Fate of Czechoslovakia" #Done
+ GEN_release_KRW:0 "Fate of Galicia"        #Done
+ 
+ #Scandinavia
+ GEN_release_SWE:0 "Fate of Sweden"
+ GEN_release_NOR:0 "Fate of Norway"
+ GEN_release_DEN:0 "Fate of Denmark"         #DONE
+ 
+ #Balkans
+ GEN_release_ROM:0 "Fate of Romania"
+ GEN_release_TRN:0 "Fate of Transylvania"
+ GEN_release_RDO:0 "Fate of Upper Dobruja"
+ 
+ GEN_release_BUL:0 "Fate of Bulgaria"       #Done
+ GEN_release_BDO:0 "Fate of Lower Dobruja"
+ 
+ GEN_release_SER:0 "Fate of Serbia"
+ GEN_release_CRO:0 "Fate of Croatia"
+ GEN_release_MNT:0 "Fate of Montenegro"
+ GEN_release_GRE:0 "Fate of Greece"
+ GEN_release_ALB:0 "Fate of Albania"        #Done
+ GEN_release_HUN:0 "Fate of Hungary"        #Done
+ 
+ #West Europe
+ GEN_release_FRA:0 "Fate of France"         #Done
+ GEN_release_NAN:0 "Fate of Alsace"         #Done
+ GEN_release_SAV:0 "Fate of Savoy"          #Done
+ 
+ GEN_release_GER:0 "Fate of Prussia"
+ GEN_release_GRM:0 "Fate of Germany"        #Full Germany
+ GEN_release_WSM:0 "Fate of Northern Germany"
+ GEN_release_WUT:0 "Fate of Baden"
+ GEN_release_RHN:0 "Fate of Rhineland"
+ GEN_release_BAV:0 "Fate of Bavaria"
+ GEN_release_WPU:0 "Fate of Prussia and Danzig" #Done
+ GEN_release_KOE:0 "Fate of Königsberg"     #Done
+ GEN_release_KNG:0 "Fate of Prussia"        #Done
+ 
+ GEN_release_ITA:0 "Fate of Italy"          #Done
+ GEN_release_TYR:0 "Fate of Tyrol"          #Done
+ 
+ GEN_release_SWI:0 "Fate of Switzerland"
+ GEN_release_SPR:0 "Fate of Spain"          #Done
+ GEN_release_POR:0 "Fate of Portugal"
+ GEN_release_GBR:0 "Fate of Britain"        #Done
+ GEN_release_IRE:0 "Fate of Ireland"        #Done
+ 
+ GEN_release_EGE:0 "Fate of Eastern Germany"
+ 
+ #Asia
+ GEN_release_TUR:0 "Fate of Turkey"         #Done
+ GEN_release_IST:0 "Fate of Instanbul"      #Done
+ 
+ GEN_release_JAP:0 "Fate of Japan"
+ GEN_release_SAKH:0 "Fate of the Sakhalin Island"
+ GEN_release_CHI:0 "Fate of China"
+ GEN_release_SIK:0 "Fate of Xinjiang"
+ GEN_release_MAN:0 "Fate of Manchukuo"
+ GEN_release_TAI:0 "Fate of Taiwan"
+ GEN_release_RAJ:0 "Fate of India"
+ GEN_release_PAK:0 "Fate of Pakistan"
+ GEN_release_INS:0 "Fate of Indonesia"
+ 
+ #Oceania
+ GEN_release_AST:0 "Fate of Australia"
+
+ #Americas
+ GEN_release_CAN:0 "Fate of Canada"
+ GEN_release_USA:0 "Fate of the USA"
+ GEN_release_MEX:0 "Fate of Mexico" 
+ 
+ 
+ #Ideas 
+ 
+ 
+ #Events
+ gen_states.1.t:0 "Fate of the Netherlands"
+ gen_states.1.d:0 "The country of the Netherlands is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.1.a:0 "Restore Friendly Netherlands"
+ gen_states.1.b:0 "Occupy the Netherlands"
+ 
+ gen_states.2.t:0 "Fate of Belgium"
+ gen_states.2.d:0 "The country of Belgium is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.2.a:0 "Restore Friendly Belgium"
+ gen_states.2.b:0 "Occupy the Belgium"
+ 
+ gen_states.3.t:0 "Fate of Luxembourg"
+ gen_states.3.d:0 "The country of Luxembourg is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.3.a:0 "Restore Friendly Luxembourg"
+ gen_states.3.b:0 "Occupy Luxembourg"
+ 
+ gen_states.4.t:0 "Fate of Poland"
+ gen_states.4.d:0 "The country of Poland is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.4.a:0 "Restore Friendly Poland"
+ gen_states.4.b:0 "Restore Poland-Lithuania"
+ gen_states.4.c:0 "Occupy Poland"
+ 
+ gen_states.5.t:0 "Fate of Poland"
+ gen_states.5.d:0 "The country of Poland is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.5.a:0 "Restore Friendly Poland"
+ gen_states.5.b:0 "Occupy Poland"
+ 
+ gen_states.6.t:0 "Fate of Lithuania"
+ gen_states.6.d:0 "The country of Lithuania is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.6.a:0 "Restore Friendly Lithuania"
+ gen_states.6.b:0 "Occupy Lithuania"
+ 
+ gen_states.7.t:0 "Fate of White Russia"
+ gen_states.7.d:0 "The country of White Russia is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.7.a:0 "Restore Friendly White Russia"
+ gen_states.7.b:0 "Occupy White Russia"
+ gen_states.7.e:0 "Belorus is Russian"
+ 
+ gen_states.8.t:0 "Fate of Latvia"
+ gen_states.8.d:0 "The country of Latvia is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.8.a:0 "Restore Friendly Latvia"
+ gen_states.8.b:0 "Occupy Latvia"
+ 
+ gen_states.9.t:0 "Fate of Estonia"
+ gen_states.9.d:0 "The country of Estonia is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.9.a:0 "Restore Friendly Estonia"
+ gen_states.9.b:0 "Occupy Estonia"
+ 
+ gen_states.10.t:0 "Fate of Moldova"
+ gen_states.10.d:0 "The country of Moldova is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.10.a:0 "Restore Friendly Moldova"
+ gen_states.10.b:0 "Occupy Moldova"
+ 
+ gen_states.11.t:0 "Fate of Finland"
+ gen_states.11.d:0 "The country of Finland is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.11.a:0 "Restore Friendly Finland"
+ gen_states.11.b:0 "Restore Greater-Finland"
+ gen_states.11.c:0 "Occupy Finland"
+ 
+ gen_states.12.t:0 "Fate of Ukraine"
+ gen_states.12.d:0 "The country of Ukraine is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.12.a:0 "Restore Friendly Ukraine"
+ gen_states.12.e:0 "Split Ukraine with Russia"
+ gen_states.12.b:0 "Occupy Ukraine"
+ 
+ gen_states.13.t:0 "Fate of Russia"
+ gen_states.13.d:0 "The country of Russia is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.13.a:0 "Restore Friendly Russia"
+ gen_states.13.b:0 "Occupy Russia"
+ 
+ #Northern Europe
+ gen_states.14.t:0 "Fate of Denmark"
+ gen_states.14.d:0 "The country of Denmark is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.14.a:0 "Restore Friendly Denmark"
+ gen_states.14.b:0 "Occupy Denmark"
+ 
+ #Western Europe
+ gen_states.15.t:0 "Fate of France"
+ gen_states.15.d:0 "The country of France is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.15.a:0 "Restore Friendly France"
+ gen_states.15.b:0 "Occupy France"
+ 
+ gen_states.16.t:0 "Fate of Alsace"
+ gen_states.16.d:0 "The French region of Grand-Est is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.16.a:0 "Return Alsace to France"
+ gen_states.16.b:0 "Return only Nancy to France"
+ gen_states.16.c:0 "Occupy Alsace"
+ 
+ gen_states.17.t:0 "Fate of Savoy"
+ gen_states.17.d:0 "The French region of Savoy is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.17.a:0 "Return Savoy to France"
+ gen_states.17.b:0 "Return Savoy to Italy"
+ gen_states.17.c:0 "Occupy Savoy"
+ 
+ gen_states.18.t:0 "Fate of Italy"
+ gen_states.18.d:0 "The country of Italy is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.18.a:0 "Restore Friendly Italy"
+ gen_states.18.b:0 "Occupy Italy"
+ 
+ gen_states.19.t:0 "Fate of Austria"
+ gen_states.19.d:0 "The country of Austria is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.19.a:0 "Restore Friendly 1936 Austria"
+ gen_states.19.b:0 "Occupy Austria"
+ gen_states.19.c:0 "Integrate Austria"
+ 
+ gen_states.20.t:0 "Fate of Tyrol"
+ gen_states.20.d:0 "The Italo-Austrian region of Tyrol is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.20.a:0 "Return Tyrol to Italy"
+ gen_states.20.b:0 "Return Tyrol to Austria"
+ gen_states.20.c:0 "Occupy Tyrol"
+ 
+ gen_states.21.t:0 "Fate of Bessarabia"
+ gen_states.21.d:0 "The region of Bessarabia is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.21.a:0 "Return Bessarabia to Romania"
+ gen_states.21.b:0 "Occupy Bessarabia"
+ gen_states.21.e:0 "Establish friendly Moldavia"
+ 
+ gen_states.22.t:0 "Fate of Czechoslovakia"
+ gen_states.22.d:0 "The country of Czechoslovakia is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.22.a:0 "Restore friendly Czechoslovakia"
+ gen_states.22.b:0 "Establish Czechia and Slovakia"
+ gen_states.22.c:0 "Continue military occupation"
+ gen_states.22.e:0 "Integrate German Sudetenland"
+ 
+ gen_states.23.t:0 "Fate of Germany"
+ gen_states.23.d:0 "The country of Germany is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.23.a:0 "Restore friendly Germany"
+ gen_states.23.b:0 "Balkanise Germany into smaller states"
+ gen_states.23.c:0 "Continue military occupation"
+ gen_states.23.e:0 "Occupy West Rhine"
+ 
+ gen_states.24.t:0 "Fate of East Prussia and Poland"
+ gen_states.24.d:0 "The region of Prussia is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.24.a:0 "Restore 1936 Prussian borders"
+ gen_states.24.b:0 "Establish Polish state with Gdansk"
+ gen_states.24.c:0 "Establish Greater Polish state"
+ gen_states.24.e:0 "Continue military occupation"
+ 
+ gen_states.25.t:0 "Fate of Königsberg"
+ gen_states.25.d:0 "The city of Königsberg is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.25.a:0 "Give it to Poland"
+ gen_states.25.b:0 "Occupy Königsberg"
+ 
+ gen_states.26.t:0 "Fate of Prussia"
+ gen_states.26.d:0 "The region of Prussia is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.26.a:0 "Prussia is German"
+ gen_states.26.b:0 "Occupy Prussia"
+  
+ gen_states.27.t:0 "Fate of East Germany"
+ gen_states.27.d:0 "The region of East Germany is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.27.a:0 "Release friendly East Germany"
+ gen_states.27.b:0 "Balkanise East Germany"
+ gen_states.27.c:0 "Occupy East Germany"
+ 
+ gen_states.28.t:0 "Fate of Kuban"
+ gen_states.28.d:0 "The region of Kuban is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.28.a:0 "Kuban is Russian"
+ gen_states.28.e:0 "Occupy Southern Kuban"
+ gen_states.28.b:0 "Split between Ukraine and Russia"
+ gen_states.28.c:0 "Occupy Kuban"
+ 
+ gen_states.29.t:0 "Fate of Georgia"
+ gen_states.29.d:0 "The country of Georgia is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.29.a:0 "Establish friendly Georgia"
+ gen_states.29.b:0 "Seize Batumi, establish Georgia"
+ gen_states.29.c:0 "Occupy Georgia"
+ 
+ gen_states.30.t:0 "Fate of Azerbajan"
+ gen_states.30.d:0 "The country of Azerbajan is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.30.a:0 "Establish friendly Azerbajan"
+ gen_states.30.b:0 "Continue occupation"
+ 
+ gen_states.31.t:0 "Fate of Armenia"
+ gen_states.31.d:0 "The country of Armenia is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.31.a:0 "Establish friendly Armenia"
+ gen_states.31.b:0 "Establish Greater Armenia"
+ gen_states.31.e:0 "Kars is Turkish"
+ gen_states.31.c:0 "Continue occupation"
+ 
+ gen_states.32.t:0 "Fate of Karelia"
+ gen_states.32.d:0 "The region of Karelia is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.32.a:0 "Split between Russia and Finland"
+ gen_states.32.b:0 "Karelia is Russian"
+ gen_states.32.c:0 "Karjala is Finnish"
+ gen_states.32.e:0 "Occupy Karelia"
+ 
+ gen_states.33.t:0 "Fate of Crimea"
+ gen_states.33.d:0 "The region of Crimea is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.33.a:0 "Crimea is Russian"
+ gen_states.33.b:0 "Crimea is Ukrainian"
+ gen_states.33.c:0 "Continue occupation"
+ 
+ gen_states.34.t:0 "Status of the Far East"
+ gen_states.34.d:0 "The region of Russian Far East is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.34.a:0 "Far East is Russian"
+ gen_states.34.b:0 "Give Vladivostok to Japan"
+ gen_states.34.c:0 "Occupy the Far East"
+ 
+ gen_states.35.t:0 "Status of Spain"
+ gen_states.35.d:0 "The country of Spain is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.35.a:0 "Establish friendly Spain"
+ gen_states.35.b:0 "Seize Galicia"
+ gen_states.35.c:0 "Occupy Spain"
+ 
+ gen_states.36.t:0 "Status of Central Asia"
+ gen_states.36.d:0 "The region of Central Asia is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.36.a:0 "Establish friendly Bukhara"
+ gen_states.36.b:0 "Central Asia is Russian"
+ gen_states.36.c:0 "Occupy Central Asia"
+ 
+ gen_states.37.t:0 "Status of Hungary"
+ gen_states.37.d:0 "The country of Hungary is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.37.a:0 "Restore the Hungarian State"
+ gen_states.37.b:0 "Restore Hungary but Burgenland is Austrian"
+ gen_states.37.c:0 "Occupy Hungary"
+ 
+ gen_states.38.t:0 "Status of Bulgaria"
+ gen_states.38.d:0 "The country of Bulgaria is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.38.a:0 "Restore friendly Bulgaria"
+ gen_states.38.b:0 "Seize Thrace and Edirne"
+ gen_states.38.e:0 "Thrace is Greek, Edirne is Turkish"
+ gen_states.38.c:0 "Occupy Bulgaria"
+ 
+ gen_states.39.t:0 "Status of Albania"
+ gen_states.39.d:0 "The country of Albania is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.39.a:0 "Restore friendly Albania"
+ gen_states.39.b:0 "Seize Southern Albania"
+ gen_states.39.c:0 "Occupy Albania"
+ 
+ gen_states.40.t:0 "Status of Turkey"
+ gen_states.40.d:0 "The country of Turkey is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.40.a:0 "Restore friendly Turkey"
+ gen_states.40.b:0 "Seize Southern Turkey"
+ gen_states.40.c:0 "Seize Kurdish lands"
+ gen_states.40.e:0 "Restore Turkey and Armenia"
+ gen_states.40.f:0 "Occupy Turkey"
+ 
+ gen_states.41.t:0 "Status of Turkish West Coast"
+ gen_states.41.d:0 "The region of Turkish West Coast is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.41.a:0 "Give it to Turks"
+ gen_states.41.b:0 "Give it to Greeks"
+ gen_states.41.c:0 "Continue military occupation"
+ 
+ gen_states.42.t:0 "Status of the United Kingdom"
+ gen_states.42.d:0 "The country of the United Kingdom is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.42.a:0 "Restore friendly United Kingdom"
+ gen_states.42.b:0 "Balkanise United Kingdom"
+ gen_states.42.e:0 "Seize Dover and restore United Kingdom"
+ gen_states.42.f:0 "Give Northern Ireland to the Irish"
+ gen_states.42.c:0 "Occupy the United Kingdom"
+ 
+ gen_states.43.t:0 "Status of Ireland"
+ gen_states.43.d:0 "The country of the Ireland is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.43.a:0 "Restore friendly Ireland"
+ gen_states.43.b:0 "Integrate Ireland"
+ gen_states.43.c:0 "Occupy Ireland"
+ 
+ gen_states.44.t:0 "Status of Japan"
+ gen_states.44.d:0 "The Japanese Homelands are under [Root.GetAdjective] control, how should we procede?"
+ gen_states.44.a:0 "Restore friendly Japan"
+ gen_states.44.c:0 "Occupy Japan"
+ 
+ gen_states.45.t:0 "Status of Romania"
+ gen_states.45.d:0 "The country of Romania is under [Root.GetAdjective] control, how should we procede?"
+ gen_states.45.a:0 "Restore 1936 Romania"
+ gen_states.45.b:0 "Seize Transylvania"
+ gen_states.45.c:0 "Occupy Romania"
+ 
+ #Cosmetic Tags
+ POL_LIT:0 "Polish-Lithuanian State"
+ POL_LIT_DEF:0 "The Polish-Lithuanian State"
+ POL_LIT_ADJ:0 "Polish-Lithuanian"
+ 
+ RUS_puppet:0 "Russian State"
+ RUS_puppet_DEF:0 "The Russian State"
+ RUS_puppet_ADJ:0 "Russian"
+ 
+ UKR_puppet:0 "Ukraine"
+ UKR_puppet_DEF:0 "Ukraine"
+ UKR_puppet_ADJ:0 "Ukrainian"
+ 
+ BLR_puppet:0 "White Russia"
+ BLR_puppet_DEF:0 "The White Russia"
+ BLR_puppet_ADJ:0 "White Russian"
+ 
+ FIN_puppet:0 "Greater Finland"
+ FIN_puppet_DEF:0 "The Greater Finland"
+ FIN_puppet_ADJ:0 "Finnish"
+ 
+ GER_puppet:0 "German Provisional Government"
+ GER_puppet_DEF:0 "The German Provisional Government"
+ GER_puppet_ADJ:0 "German"
+ 
+ #Cosmetic Flags
+ LIT_can_be_released:0 "Lithuania Exists"
+ RUS_can_be_released:0 "Russia Can Be Released"
+

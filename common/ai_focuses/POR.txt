@@ -1,0 +1,19 @@
+
+ai_historical_focus_list_POR = {
+	ai_national_focuses = {
+		# grab as fast as you can if available
+		POR_domesticinvestments
+		POR_usemilitaryforce
+		POR_militaryexpansion
+		POR_removesalazar
+		POR_armydevelopment
+		POR_restorationofthemonarchy
+		POR_developfactories
+		POR_improveciviliansector
+		POR_purgethearmedforces
+		POR_asforasarmadasreais
+		POR_suppresspoliticalopponents
+
+	}
+}
+

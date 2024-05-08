@@ -1,0 +1,18 @@
+﻿l_english:
+  inot_news.2.t:0 "European revolutions"
+  inot_news.2.d:0 "The workers of Europe have come together to protest against the authoritarian regimes once more. Unlike the revolutions of 1919 which were limited to specific regions of Europe, the new revolution is armed, supported and coordinated by [BAV.GetAdjective], [HUN.GetAdjective] and [SPA.GetAdjective] regimes. The leader of [BAV.GetNameDef] [BAV.GetLeader] has called the workers of the world to unite in struggle against the tyranny. \n\nOther European nations such as Russia and the United Kingdom have expressed concerns about the ongoing conflict despite being adversaries in the geopolitical game. France is yet to announce its position but is likely to offer diplomatic support to the socialist regimes because of previous conflicts with the Prussian monarchy.\n\nPro-revolution volunteers from around the world are flooding the European continent to help defeat what they consider oppressive regimes or monarchies.\n\nAlthough it is unclear which side will prevail, this revolution will shape the future Europe."
+  inot_news.2.a:0 "Workers of the world, unite!"
+  inot_news.2.b:0 "The revolution will be defeated!"
+  inot_news.2.c:0 "This is worrying..."
+ 
+  inot_news.4.t:0 "Revolution fails!"
+  inot_news.4.d:0 "Earlier today, in a telegram from Berlin, the German leader [GER.GetLeader] has announced that the revolution has been successfully suppressed. Most communist uprisings in Europe have been eliminated and those responsible for the revolution will be brought to trial.\n\nCountless lives have been lost on both sides and millions have fled their homes. Some estimates suggest it will take from two to ten years to rebuild the European countries that faced the revolution. However, this does not seem to be the priority for the victors. Already, there are reports of militarisation and increased spendings by the Germans who are eager to fill the power vacuum that appeared in Central Europe to establish themselves as the dominant power in Europe. More countries are interested in joining the new German Reich."
+  inot_news.4.a:0 "We will rise again!"
+  inot_news.4.b:0 "Glory to our nation!"
+  inot_news.4.c:0 "From one problem to another"
+ 
+  inot_news.6.t:0 "Revolution succeeds"
+  inot_news.6.d:0 "Earlier today, in a telegram from Berlin, the German leader [BAV.GetLeader] has announced that the counter-revolution has been successfully defeated. Most junta holdouts in Europe have been eliminated and those responsible for the counter-revolution will be brought to trial.\n\nCountless lives have been lost on both sides and millions have fled their homes. Some estimates suggest it will take from two to ten years to rebuild the European countries that faced the revolution. However, this does not seem to be the priority for the victors. Already, there are reports of militarisation and increased spendings by the Germans who are eager to fill the power vacuum that appeared in Central Europe to establish themselves as the dominant power in Europe. More countries are interested in joining the new German Republic."
+  inot_news.6.a:0 "Enemies are defeated!"
+  inot_news.6.b:0 "This is worrying..."
+  inot_news.6.c:0 "From one problem to another"

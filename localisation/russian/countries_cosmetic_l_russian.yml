@@ -1,0 +1,1319 @@
+﻿l_russian:
+ INS_HOL_democratic: "Голландская Ост-Индия" #NT!
+ INS_HOL_democratic_DEF: "Голландская Ост-Индия" #NT!
+ INS_subject: "$OVERLORDADJ$ Ост-Индия" #NT!
+ INS_subject_DEF: "$OVERLORDADJ$ Ост-Индия" #NT!
+ COG_subject: "$OVERLORDADJ$ Конго" #NT!
+ MAL_subject: "$OVERLORDADJ$ Малайя" #NT!
+ LBA_subject: "$OVERLORDADJ$ Северная Африка" #NT!
+ SAU_subject: "$OVERLORDADJ$ Центральная Аравия" #NT!
+ MAL_UK_democratic: "Британская Малайя" #NT!
+ MAL_UK_democratic_DEF: "Британская Малайя" #NT!
+ RAJ_UK_democratic: "Британский Радж" #NT!
+ RAJ_UK_democratic_DEF: "Британский Радж" #NT!
+ RAJ_UK_neutrality: "Британский Радж" #NT!
+ RAJ_UK_neutrality_DEF: "Британский Радж" #NT!
+ RAJ_UK_subject: "$OVERLORDADJ$ Радж" #NT!
+ RAJ_UK_autonomy_dominion: "Доминион Индии" #NT!
+ RAJ_UK_autonomy_dominion_DEF: "Доминион Индии" #NT!
+ SAF_COM_communist: "Мыс Коммуна" #NT!
+ SAF_COM_communist_DEF: "Капская коммуна" #NT!
+ CAN_UK_autonomy_dominion: "Доминион Канады" #NT!
+ CAN_UK_autonomy_colony: "Канадская Конфедерация" #NT!
+ CAN_UK_autonomy_puppet: "Доминион Канады" #NT!
+ CAN_UK_autonomy_integrated_puppet: "Британская Северная Америка" #NT!
+ CAN_UK_autonomy_dominion_DEF: "Доминион Канада" #NT!
+ CAN_UK_autonomy_colony_DEF: "Канадская Конфедерация" #NT!
+ CAN_UK_autonomy_puppet_DEF: "Доминион Канада" #NT!
+ CAN_UK_autonomy_integrated_puppet_DEF: "Британская Северная Америка" #NT!
+ USA_UK_autonomy_dominion: "Доминион Северной Америки" #NT!
+ USA_UK_autonomy_colony: "48 колоний" #NT!
+ USA_UK_autonomy_puppet: "Британские североамериканские территории" #NT!
+ USA_UK_autonomy_integrated_puppet: "Земля короля Георга" #NT!
+ USA_UK_autonomy_dominion_DEF: "Доминион Северной Америки" #NT!
+ USA_UK_autonomy_colony_DEF: "48 колоний" #NT!
+ USA_UK_autonomy_puppet_DEF: "Британские североамериканские территории" #NT!
+ USA_UK_autonomy_integrated_puppet_DEF: "Земля короля Георга" #NT!
+ USA_SAF_EDW_autonomy_dominion: "Доминион Северной Америки" #NT!
+ USA_SAF_EDW_autonomy_colony: "48 колоний" #NT!
+ USA_SAF_EDW_autonomy_puppet: "Африканские североамериканские территории" #NT!
+ USA_SAF_EDW_autonomy_integrated_puppet: "Земля королевы Уоллис" #NT!
+ USA_SAF_EDW_autonomy_dominion_DEF: "Доминион Северной Америки" #NT!
+ USA_SAF_EDW_autonomy_colony_DEF: "48 колоний" #NT!
+ USA_SAF_EDW_autonomy_puppet_DEF: "Африканские Северо-Американские территории" #NT!
+ USA_SAF_EDW_autonomy_integrated_puppet_DEF: "Земля королевы Уоллис" #NT!
+ UKR_GER_autonomy_satellite: "Рейхсланд Украина" #NT!
+ UKR_GER_autonomy_reichsprotectorate: "Рейхспротекторат Украины" #NT!
+ UKR_GER_autonomy_reichskommissariat: "Рейхскомиссариат Украина" #NT!
+ UKR_GER_autonomy_satellite_DEF: "Рейхсланд Украина" #NT!
+ UKR_GER_autonomy_reichsprotectorate_DEF: "Рейхспротекторат Украины" #NT!
+ UKR_GER_autonomy_reichskommissariat_DEF: "Рейхскомиссариат Украины" #NT!
+ UKR_GER_autonomy_dominion: "Великий Украинский Рейх" #NT!
+ UKR_GER_autonomy_colony: "Рейхсланд Украина" #NT!
+ UKR_GER_autonomy_puppet: "Рейхспротекторат Украины" #NT!
+ UKR_GER_autonomy_integrated_puppet: "Рейхскомиссариат Украина" #NT!
+ UKR_GER_autonomy_dominion_DEF: "Великий Украинский Рейх" #NT!
+ UKR_GER_autonomy_colony_DEF: "Рейхсланд Украина" #NT!
+ UKR_GER_autonomy_puppet_DEF: "Рейхспротекторат Украины" #NT!
+ UKR_GER_autonomy_integrated_puppet_DEF: "Рейхскомиссариат Украины" #NT!
+ UKR_RUS_communism_autonomy_dominion: "Украинская Народная Республика" #NT!
+ UKR_RUS_communism_autonomy_colony: "Украинская Социалистическая Республика" #NT!
+ UKR_RUS_communism_autonomy_puppet: "Украинская Независимая ССР" #NT!
+ UKR_RUS_communism_autonomy_integrated_puppet: "Украинская ССР" #NT!
+ UKR_RUS_communism_autonomy_dominion_DEF: "Украинская Народная Республика" #NT!
+ UKR_RUS_communism_autonomy_colony_DEF: "Украинская Социалистическая Республика" #NT!
+ UKR_RUS_communism_autonomy_puppet_DEF: "Украинская Независимая ССР" #NT!
+ UKR_RUS_communism_autonomy_integrated_puppet_DEF: "Украинская ССР" #NT!
+ BLR_GER_autonomy_satellite: "Остланд" #NT!
+ BLR_GER_autonomy_reichsprotectorate: "Рейхспротекторат Остланд" #NT!
+ BLR_GER_autonomy_reichskommissariat: "Рейхскомиссариат Остланд" #NT!
+ BLR_GER_autonomy_satellite_DEF: "Остланд" #NT!
+ BLR_GER_autonomy_reichsprotectorate_DEF: "Рейхспротекторат Остланд" #NT!
+ BLR_GER_autonomy_reichskommissariat_DEF: "Рейхскомиссариат Остланд" #NT!
+ BLR_GER_autonomy_dominion: "Вайсрёйсен" #NT!
+ BLR_GER_autonomy_colony: "Остланд" #NT!
+ BLR_GER_autonomy_puppet: "Рейхспротекторат Остланд" #NT!
+ BLR_GER_autonomy_integrated_puppet: "Рейхскомиссариат Остланд" #NT!
+ BLR_GER_autonomy_dominion_DEF: "Вайсрёйсен" #NT!
+ BLR_GER_autonomy_colony_DEF: "Остланд" #NT!
+ BLR_GER_autonomy_puppet_DEF: "Рейхспротекторат Остланд" #NT!
+ BLR_GER_autonomy_integrated_puppet_DEF: "Рейхскомиссариат Остланд" #NT!
+ BLR_RUS_communism_autonomy_dominion: "Белорусская Народная Республика" #NT!
+ BLR_RUS_communism_autonomy_colony: "Социалистическая Республика Белоруссия" #NT!
+ BLR_RUS_communism_autonomy_puppet: "Белорусская Независимая ССР" #NT!
+ BLR_RUS_communism_autonomy_integrated_puppet: "Белорусская ССР" #NT!
+ BLR_RUS_communism_autonomy_dominion_DEF: "Белорусская Народная Республика" #NT!
+ BLR_RUS_communism_autonomy_colony_DEF: "Социалистическая Республика Белоруссия" #NT!
+ BLR_RUS_communism_autonomy_puppet_DEF: "Белорусская Независимая ССР" #NT!
+ BLR_RUS_communism_autonomy_integrated_puppet_DEF: "Белорусская ССР" #NT!
+ EST_RUS_communism_autonomy_dominion: "Эстонская Народная Республика" #NT!
+ EST_RUS_communism_autonomy_colony: "Социалистическая Эстонская Республика" #NT!
+ EST_RUS_communism_autonomy_puppet: "Эстонская Независимая ССР" #NT!
+ EST_RUS_communism_autonomy_integrated_puppet: "Эстонская ССР" #NT!
+ LIT_RUS_communism_autonomy_dominion: "Литовская Народная Республика" #NT!
+ LIT_RUS_communism_autonomy_colony: "Социалистическая Литовская Республика" #NT!
+ LIT_RUS_communism_autonomy_puppet: "Литовская Независимая ССР" #NT!
+ LIT_RUS_communism_autonomy_integrated_puppet: "Литовская ССР" #NT!
+ LAT_RUS_communism_autonomy_dominion: "Латвийская Народная Республика" #NT!
+ LAT_RUS_communism_autonomy_colony: "Социалистическая Латвийская Республика" #NT!
+ LAT_RUS_communism_autonomy_puppet: "Латвийская Независимая ССР" #NT!
+ LAT_RUS_communism_autonomy_integrated_puppet: "Латвийская ССР" #NT!
+ EST_RUS_communism_autonomy_dominion_DEF: "Эстонская Народная Республика" #NT!
+ EST_RUS_communism_autonomy_colony_DEF: "Социалистическая Эстонская Республика" #NT!
+ EST_RUS_communism_autonomy_puppet_DEF: "Эстонская Независимая ССР" #NT!
+ EST_RUS_communism_autonomy_integrated_puppet_DEF: "Эстонская ССР" #NT!
+ LIT_RUS_communism_autonomy_dominion_DEF: "Литовская Народная Республика" #NT!
+ LIT_RUS_communism_autonomy_colony_DEF: "Социалистическая Литовская Республика" #NT!
+ LIT_RUS_communism_autonomy_puppet_DEF: "Литовская Независимая ССР" #NT!
+ LIT_RUS_communism_autonomy_integrated_puppet_DEF: "Литовская ССР" #NT!
+ LAT_RUS_communism_autonomy_dominion_DEF: "Латвийская Народная Республика" #NT!
+ LAT_RUS_communism_autonomy_colony_DEF: "Социалистическая Латвийская Республика" #NT!
+ LAT_RUS_communism_autonomy_puppet_DEF: "Латвийская Независимая ССР" #NT!
+ LAT_RUS_communism_autonomy_integrated_puppet_DEF: "Латвийская ССР" #NT!
+ FIN_RUS_communism_autonomy_dominion: "Финская Народная Республика" #NT!
+ FIN_RUS_communism_autonomy_colony: "Социалистическая Республика Финляндия" #NT!
+ FIN_RUS_communism_autonomy_puppet: "Финская Демократическая Республика" #NT!
+ FIN_RUS_communism_autonomy_integrated_puppet: "Финская ССР" #NT!
+ FIN_RUS_communism_autonomy_dominion_DEF: "Финская Народная Республика" #NT!
+ FIN_RUS_communism_autonomy_colony_DEF: "Социалистическая Республика Финляндия" #NT!
+ FIN_RUS_communism_autonomy_puppet_DEF: "Финская Демократическая Республика" #NT!
+ FIN_RUS_communism_autonomy_integrated_puppet_DEF: "Финская ССР" #NT!
+ KEN_GER_autonomy_dominion: "Остафрика" #NT!
+ KEN_GER_autonomy_colony: "Рейхсланд Остафрика" #NT!
+ KEN_GER_autonomy_puppet: "Рейхспротекторат Остафрика" #NT!
+ KEN_GER_autonomy_integrated_puppet: "Дойч-Остафрика" #NT!
+ ZIM_GER_autonomy_dominion: "Миттелафрика" #NT!
+ ZIM_GER_autonomy_colony: "Рейхсланд Миттельафрика" #NT!
+ ZIM_GER_autonomy_puppet: "Рейхспротекторат Миттельафрика" #NT!
+ ZIM_GER_autonomy_integrated_puppet: "Дойч-Миттельафрика" #NT!
+ LBA_GER_autonomy_dominion: "Северная Африка" #NT!
+ LBA_GER_autonomy_colony: "Рейхсланд Нордафрика" #NT!
+ LBA_GER_autonomy_puppet: "Рейхспротекторат Северной Африки" #NT!
+ LBA_GER_autonomy_integrated_puppet: "Германия-Северная Африка" #NT!
+ KEN_GER_autonomy_dominion_DEF: "Остафрика" #NT!
+ KEN_GER_autonomy_colony_DEF: "Рейхсланд Остафрика" #NT!
+ KEN_GER_autonomy_puppet_DEF: "Рейхспротекторат Остафрика" #NT!
+ KEN_GER_autonomy_integrated_puppet_DEF: "Дойч-Остафрика" #NT!
+ ZIM_GER_autonomy_dominion_DEF: "Миттелафрика" #NT!
+ ZIM_GER_autonomy_colony_DEF: "Рейхсланд Миттельафрика" #NT!
+ ZIM_GER_autonomy_puppet_DEF: "Рейхспротекторат Миттельафрика" #NT!
+ ZIM_GER_autonomy_integrated_puppet_DEF: "Дойч-Миттельафрика" #NT!
+ LBA_GER_autonomy_dominion_DEF: "Северная Африка" #NT!
+ LBA_GER_autonomy_colony_DEF: "Рейхсланд Нордафрика" #NT!
+ LBA_GER_autonomy_puppet_DEF: "Рейхспротекторат Северной Африки" #NT!
+ LBA_GER_autonomy_integrated_puppet_DEF: "Германия-Северная Африка" #NT!
+ KEN_GER_autonomy_satellite: "Остафрика" #NT!
+ KEN_GER_autonomy_protectorate: "Рейхспротекторат Остафрика" #NT!
+ KEN_GER_autonomy_reichskommissariat: "Дойч-Остафрика" #NT!
+ ZIM_GER_autonomy_satellite: "Миттелафрика" #NT!
+ ZIM_GER_autonomy_reichsprotectorate: "Рейхспротекторат Миттельафрика" #NT!
+ ZIM_GER_autonomy_reichskommissariat: "Дойч-Миттельафрика" #NT!
+ LBA_GER_autonomy_satellite: "Северная Африка" #NT!
+ LBA_GER_autonomy_reichsprotectorate: "Рейхспротекторат Северной Африки" #NT!
+ LBA_GER_autonomy_reichskommissariat: "Германия-Северная Африка" #NT!
+ KEN_GER_autonomy_satellite_DEF: "Остафрика" #NT!
+ KEN_GER_autonomy_reichsprotectorate_DEF: "Рейхспротекторат Остафрика" #NT!
+ KEN_GER_autonomy_reichskommissariat_DEF: "Дойч-Остафрика" #NT!
+ ZIM_GER_autonomy_satellite_DEF: "Миттелафрика" #NT!
+ ZIM_GER_autonomy_reichsprotectorate_DEF: "Рейхспротекторат Миттельафрика" #NT!
+ ZIM_GER_autonomy_reichskommissariat_DEF: "Дойч-Миттельафрика" #NT!
+ LBA_GER_autonomy_satellite_DEF: "Северная Африка" #NT!
+ LBA_GER_autonomy_reichsprotectorate_DEF: "Рейхспротекторат Северной Африки" #NT!
+ LBA_GER_autonomy_reichskommissariat_DEF: "Германия-Северная Африка" #NT!
+ LBA_ITA_fascism_autonomy_satellite: "Королевство Ливия" #NT!
+ LBA_ITA_fascism_autonomy_reichsprotectorate: "Киреница" #NT!
+ LBA_ITA_fascism_autonomy_reichskommissariat: "Итальянская Северная Африка" #NT!
+ ETH_ITA_fascism_autonomy_satellite: "Королевство Эфиопия" #NT!
+ ETH_ITA_fascism_autonomy_reichsprotectorate: "Правительство Эфиопии" #NT!
+ ETH_ITA_fascism_autonomy_reichskommissariat: "Итальянская Восточная Африка" #NT!
+ LBA_ITA_fascism_autonomy_satellite_DEF: "Королевство Ливия" #NT!
+ LBA_ITA_fascism_autonomy_reichsprotectorate_DEF: "Киреница" #NT!
+ LBA_ITA_fascism_autonomy_reichskommissariat_DEF: "Итальянская Северная Африка" #NT!
+ ETH_ITA_fascism_autonomy_satellite_DEF: "Королевство Эфиопия" #NT!
+ ETH_ITA_fascism_autonomy_reichsprotectorate_DEF: "Правительство Эфиопии" #NT!
+ ETH_ITA_fascism_autonomy_reichskommissariat_DEF: "Итальянская Восточная Африка" #NT!
+ KEN_ENG_autonomy_dominion: "Доминион Кении" #NT!
+ KEN_ENG_autonomy_colony: "Колония Кения" #NT!
+ KEN_ENG_autonomy_puppet: "Британская Кения" #NT!
+ KEN_ENG_autonomy_integrated_puppet: "Британская Восточная Африка" #NT!
+ ZIM_ENG_autonomy_dominion: "Доминион Родезии" #NT!
+ ZIM_ENG_autonomy_colony: "Колония Родезия" #NT!
+ ZIM_ENG_autonomy_puppet: "Британская Родезия" #NT!
+ ZIM_ENG_autonomy_integrated_puppet: "Британская территория SAC" #NT!
+ BOT_ENG_autonomy_dominion: "Доминион Ботсвана" #NT!
+ BOT_ENG_autonomy_colony: "Колония Бечуаналенд" #NT!
+ BOT_ENG_autonomy_puppet: "Протекторат Бечуаналенд" #NT!
+ BOT_ENG_autonomy_integrated_puppet: "Британский Бечуаналенд" #NT!
+ KEN_ENG_autonomy_dominion_DEF: "Доминион Кения" #NT!
+ KEN_ENG_autonomy_colony_DEF: "Колония Кения" #NT!
+ KEN_ENG_autonomy_puppet_DEF: "Британская Кения" #NT!
+ KEN_ENG_autonomy_integrated_puppet_DEF: "Британская Восточная Африка" #NT!
+ ZIM_ENG_autonomy_dominion_DEF: "Доминион Родезия" #NT!
+ ZIM_ENG_autonomy_colony_DEF: "Колония Родезия" #NT!
+ ZIM_ENG_autonomy_puppet_DEF: "Британская Родезия" #NT!
+ ZIM_ENG_autonomy_integrated_puppet_DEF: "Британская территория SAC" #NT!
+ BOT_ENG_autonomy_dominion_DEF: "Доминион Ботсвана" #NT!
+ BOT_ENG_autonomy_colony_DEF: "Колония Бечуаналенд" #NT!
+ BOT_ENG_autonomy_puppet_DEF: "Протекторат Бечуаналенд" #NT!
+ BOT_ENG_autonomy_integrated_puppet_DEF: "Британский Бечуаналенд" #NT!
+ HOL_GER_fascism_autonomy_reichskommissariat: "Рейхскомиссариат Нидерланде" #NT!
+ HOL_GER_fascism_autonomy_reichsprotectorate: "Рейхспротекторат Нидерланде" #NT!
+ HOL_GER_fascism_autonomy_satellite: "Дитсланд" #NT!
+ BEL_GER_fascism_autonomy_reichskommissariat: "Рейхскомиссариат Бельгии" #NT!
+ BEL_GER_fascism_autonomy_reichsprotectorate: "Рейхспротекторат Бельгии" #NT!
+ BEL_GER_fascism_autonomy_satellite: "Фландрия-Валлония" #NT!
+ EST_GER_fascism_autonomy_reichskommissariat: "Рейхскомиссариат Эстланд" #NT!
+ EST_GER_fascism_autonomy_reichsprotectorate: "Рейхспротекторат Эстландии" #NT!
+ EST_GER_fascism_autonomy_satellite: "Эстония" #NT!
+ LIT_GER_fascism_autonomy_reichskommissariat: "Рейхскомиссариат Литауэн" #NT!
+ LIT_GER_fascism_autonomy_reichsprotectorate: "Рейхспротекторат Литвы" #NT!
+ LIT_GER_fascism_autonomy_satellite: "Литва" #NT!
+ LAT_GER_fascism_autonomy_reichskommissariat: "Рейхскомиссариат Леттланд" #NT!
+ LAT_GER_fascism_autonomy_reichsprotectorate: "Рейхспротекторат Летландии" #NT!
+ LAT_GER_fascism_autonomy_satellite: "Латвия" #NT!
+ NOR_GER_fascism_autonomy_reichskommissariat: "Рейхскомиссариат Норвегии" #NT!
+ NOR_GER_fascism_autonomy_reichsprotectorate: "Рейхспротекторат Норвегии" #NT!
+ CZE_GER_fascism_autonomy_reichsprotectorate: "Рейхспротекторат Бёмен-Мэрен" #NT!
+ HOL_GER_fascism_autonomy_reichskommissariat_DEF: "Рейхскомиссариат Нидерланде" #NT!
+ HOL_GER_fascism_autonomy_reichsprotectorate_DEF: "Рейхспротекторат Нидерланде" #NT!
+ HOL_GER_fascism_autonomy_satellite_DEF: "Дитсланд" #NT!
+ BEL_GER_fascism_autonomy_reichskommissariat_DEF: "Рейхскомиссариат Бельгии" #NT!
+ BEL_GER_fascism_autonomy_reichsprotectorate_DEF: "Рейхспротекторат Бельгии" #NT!
+ BEL_GER_fascism_autonomy_satellite_DEF: "Фландрия-Валлония" #NT!
+ EST_GER_fascism_autonomy_reichskommissariat_DEF: "Рейхскомиссариат Эстляндия" #NT!
+ EST_GER_fascism_autonomy_reichsprotectorate_DEF: "Рейхспротекторат Эстляндия" #NT!
+ EST_GER_fascism_autonomy_satellite_DEF: "Эстония" #NT!
+ LIT_GER_fascism_autonomy_reichskommissariat_DEF: "Рейхскомиссариат Литауэн" #NT!
+ LIT_GER_fascism_autonomy_reichsprotectorate_DEF: "Рейхспротекторат Литауэн" #NT!
+ LIT_GER_fascism_autonomy_satellite_DEF: "Литва" #NT!
+ LAT_GER_fascism_autonomy_reichskommissariat_DEF: "Рейхскомиссариат Леттланд" #NT!
+ LAT_GER_fascism_autonomy_reichsprotectorate_DEF: "Рейхспротекторат Летландии" #NT!
+ LAT_GER_fascism_autonomy_satellite_DEF: "Латвия" #NT!
+ NOR_GER_fascism_autonomy_reichskommissariat_DEF: "Рейхскомиссариат Норвегии" #NT!
+ NOR_GER_fascism_autonomy_reichsprotectorate_DEF: "Рейхспротекторат Норвегии" #NT!
+ CZE_GER_fascism_autonomy_reichsprotectorate_DEF: "Рейхспротекторат Бёмен-Мэрен" #NT!
+ POL_GER_fascism_autonomy_reichsprotectorate_DEF: "Генерал-губернаторство" #NT!
+ POL_GER_fascism_autonomy_reichsprotectorate: "Генерал-губернаторство" #NT!
+ MNT_ITA_fascism_autonomy_reichskommissariat: "Провинция Черногория" #NT!
+ MNT_ITA_fascism_autonomy_reichskommissariat_DEF: "Провинция Черногория" #NT!
+ MNT_ITA_fascism_autonomy_reichsprotectorate: "Правительство Черногории" #NT!
+ MNT_ITA_fascism_autonomy_reichsprotectorate_DEF: "Правительство Черногории" #NT!
+ MNT_ITA_fascism_autonomy_satellite: "Королевство Черногория" #NT!
+ MNT_ITA_fascism_autonomy_satellite_DEF: "Королевство Черногория" #NT!
+ FRA_FREE_democratic: "Свободная Франция" #NT!
+ FRA_FREE_democratic_DEF: "Свободная Франция" #NT!
+ FRA_VICHY_fascism: "Виши Франция" #NT!
+ FRA_VICHY_fascism_DEF: "Виши Франция" #NT!
+ FRA_VICHY_neutrality: "Виши Франция" #NT!
+ FRA_VICHY_neutrality_DEF: "Виши Франция" #NT!
+ FRA_GER_fascism_autonomy_reichsprotectorate: "Виши Франция" #NT!
+ FRA_GER_fascism_autonomy_reichsprotectorate_DEF: "Виши Франция" #NT!
+ FRA_GER_fascism_autonomy_puppet: "Виши Франция" #NT!
+ FRA_GER_fascism_autonomy_puppet_DEF: "Виши Франция" #NT!
+ FRA_UK_democratic: "Франко-британский союз" #NT!
+ FRA_UK_democratic_DEF: "Франко-британский союз" #NT!
+ FRA_UK_fascism: "Восстановленная Нормандская империя" #NT!
+ FRA_UK_fascism_DEF: "Восстановленная Норманнская империя" #NT!
+ FRA_UK_communism: "Европейский народный союз" #NT!
+ FRA_UK_communism_DEF: "Европейский народный союз" #NT!
+ CZE_ONLY_democratic: "Чешская Республика" #NT!
+ CZE_ONLY_democratic_DEF: "Чешская республика" #NT!
+ CZE_ONLY_fascism: "Богемская империя" #NT!
+ CZE_ONLY_fascism_DEF: "Чешская империя" #NT!
+ CZE_ONLY_communism: "Чешская Народная Республика" #NT!
+ CZE_ONLY_communism_DEF: "Чешская Народная Республика" #NT!
+ HUN_Monarchy_bern: "Королевство Венгрия" #NT!
+ HUN_Monarchy_bern_neutrality: "Королевство Венгрия" #NT!
+ HUN_Monarchy_bern_conservatives: "Королевство Венгрия" #NT!
+ HUN_Monarchy_con: "Королевство Венгрия" #NT!
+ HUN_Monarchy_con_neutrality: "Королевство Венгрия" #NT!
+ HUN_Monarchy_con_conservatives: "Королевство Венгрия" #NT!
+ HUN_Republic: "Венгерская Республика" #NT!
+ HUN_Republic_neutrality: "Венгерская Республика" #NT!
+ HUN_Republic_conservatives: "Венгерская Республика" #NT!
+ HUN_EMPIRE_neutrality: "Австро-Венгрия" #NT!
+ HUN_EMPIRE_fascism: "Австро-Венгерская империя" #NT!
+ HUN_EMPIRE_democratic: "Дунайская Конфедерация" #NT!
+ HUN_EMPIRE_communism: "Ассоциация автономных государств" #NT!
+ HUN_GREATER_neutrality: "Великая Венгрия" #NT!
+ HUN_GREATER_fascism: "Великая Венгрия" #NT!
+ HUN_GREATER_democratic: "Венгерская Федеративная Республика" #NT!
+ HUN_GREATER_communism: "Балканский социалистический союз" #NT!
+ HUN_EMPIRE_neutrality_DEF: "Австро-Венгрия" #NT!
+ HUN_EMPIRE_fascism_DEF: "Австро-Венгерская империя" #NT!
+ HUN_EMPIRE_democratic_DEF: "Дунайская Конфедерация" #NT!
+ HUN_EMPIRE_communism_DEF: "Ассоциация автономных государств" #NT!
+ HUN_GREATER_neutrality_DEF: "Великая Венгрия" #NT!
+ HUN_GREATER_fascism_DEF: "Великая Венгрия" #NT!
+ HUN_GREATER_democratic_DEF: "Венгерская Федеративная Республика" #NT!
+ HUN_GREATER_communism_DEF: "Балканский социалистический союз" #NT!
+ HUN_MONARCHY_democratic: "Королевство Венгрия" #NT!
+ HUN_MONARCHY_fascism: "Королевство Венгрия" #NT!
+ HUN_Monarchy_fas: "Мадьяр Киралисаг" #NT!
+ HUN_Monarchy_fas_fascism: "Мадьяр Киралисаг" #NT!
+ LBA_ITA_fascism_autonomy_dominion: "Королевство Ливия" #NT!
+ LBA_ITA_fascism_autonomy_colony: "Ливия" #NT!
+ LBA_ITA_fascism_autonomy_puppet: "Киреница" #NT!
+ LBA_ITA_fascism_autonomy_integrated_puppet: "Итальянская Северная Африка" #NT!
+ ETH_ITA_fascism_autonomy_dominion: "Королевство Эфиопия" #NT!
+ ETH_ITA_fascism_autonomy_colony: "Великое Герцогство Эфиопия" #NT!
+ ETH_ITA_fascism_autonomy_puppet: "Правительство Эфиопии" #NT!
+ ETH_ITA_fascism_autonomy_integrated_puppet: "Итальянская Восточная Африка" #NT!
+ LBA_ITA_fascism_autonomy_dominion_DEF: "Королевство Ливия" #NT!
+ LBA_ITA_fascism_autonomy_colony_DEF: "Ливия" #NT!
+ LBA_ITA_fascism_autonomy_puppet_DEF: "Киреница" #NT!
+ LBA_ITA_fascism_autonomy_integrated_puppet_DEF: "Итальянская Северная Африка" #NT!
+ ETH_ITA_fascism_autonomy_dominion_DEF: "Королевство Эфиопия" #NT!
+ ETH_ITA_fascism_autonomy_colony_DEF: "Великое Герцогство Эфиопия" #NT!
+ ETH_ITA_fascism_autonomy_puppet_DEF: "Правительство Эфиопии" #NT!
+ ETH_ITA_fascism_autonomy_integrated_puppet_DEF: "Итальянская Восточная Африка" #NT!
+ HOL_GER_fascism_autonomy_integrated_puppet: "Рейхскомиссариат Нидерланде" #NT!
+ HOL_GER_fascism_autonomy_puppet: "Рейхспротекторат Нидерланде" #NT!
+ HOL_GER_fascism_autonomy_colony: "Рейхсланд Нидерланде" #NT!
+ HOL_GER_fascism_autonomy_dominion: "Дитсланд" #NT!
+ BEL_GER_fascism_autonomy_integrated_puppet: "Рейхскомиссариат Бельгии" #NT!
+ BEL_GER_fascism_autonomy_puppet: "Рейхспротекторат Бельгии" #NT!
+ BEL_GER_fascism_autonomy_colony: "Рейхсланд Бельгия" #NT!
+ BEL_GER_fascism_autonomy_dominion: "Фландрия-Валлония" #NT!
+ EST_GER_fascism_autonomy_integrated_puppet: "Рейхскомиссариат Эстланд" #NT!
+ EST_GER_fascism_autonomy_puppet: "Рейхспротекторат Эстландии" #NT!
+ EST_GER_fascism_autonomy_colony: "Рейхсланд Эстланд" #NT!
+ EST_GER_fascism_autonomy_dominion: "Эстония" #NT!
+ LIT_GER_fascism_autonomy_integrated_puppet: "Рейхскомиссариат Литауэн" #NT!
+ LIT_GER_fascism_autonomy_puppet: "Рейхспротекторат Литвы" #NT!
+ LIT_GER_fascism_autonomy_colony: "Рейхсланд Литауэн" #NT!
+ LIT_GER_fascism_autonomy_dominion: "Литва" #NT!
+ LAT_GER_fascism_autonomy_integrated_puppet: "Рейхскомиссариат Леттланд" #NT!
+ LAT_GER_fascism_autonomy_puppet: "Рейхспротекторат Летландии" #NT!
+ LAT_GER_fascism_autonomy_colony: "Рейхсланд Летланд" #NT!
+ LAT_GER_fascism_autonomy_dominion: "Латвия" #NT!
+ NOR_GER_fascism_autonomy_integrated_puppet: "Рейхскомиссариат Норвегии" #NT!
+ NOR_GER_fascism_autonomy_puppet: "Рейхспротекторат Норвегии" #NT!
+ NOR_GER_fascism_autonomy_colony: "Рейхсланд Норвеген" #NT!
+ CZE_GER_fascism_autonomy_puppet: "Рейхспротекторат Бёмен-Мэрен" #NT!
+ POL_GER_fascism_autonomy_puppet: "Генерал-губернаторство" #NT!
+ HOL_GER_fascism_autonomy_integrated_puppet_DEF: "Рейхскомиссариат Нидерланде" #NT!
+ HOL_GER_fascism_autonomy_puppet_DEF: "Рейхспротекторат Нидерланде" #NT!
+ HOL_GER_fascism_autonomy_colony_DEF: "Рейхсланд Нидерланде" #NT!
+ HOL_GER_fascism_autonomy_dominion_DEF: "Дитсланд" #NT!
+ BEL_GER_fascism_autonomy_integrated_puppet_DEF: "Рейхскомиссариат Бельгии" #NT!
+ BEL_GER_fascism_autonomy_puppet_DEF: "Рейхспротекторат Бельгии" #NT!
+ BEL_GER_fascism_autonomy_colony_DEF: "Рейхсланд Бельгия" #NT!
+ BEL_GER_fascism_autonomy_dominion_DEF: "Фландрия-Валлония" #NT!
+ EST_GER_fascism_autonomy_integrated_puppet_DEF: "Рейхскомиссариат Эстляндия" #NT!
+ EST_GER_fascism_autonomy_puppet_DEF: "Рейхспротекторат Эстляндия" #NT!
+ EST_GER_fascism_autonomy_colony_DEF: "Рейхсланд Эстланд" #NT!
+ EST_GER_fascism_autonomy_dominion_DEF: "Эстония" #NT!
+ LIT_GER_fascism_autonomy_integrated_puppet_DEF: "Рейхскомиссариат Литауэн" #NT!
+ LIT_GER_fascism_autonomy_puppet_DEF: "Рейхспротекторат Литауэн" #NT!
+ LIT_GER_fascism_autonomy_colony_DEF: "Рейхсланд Литауэн" #NT!
+ LIT_GER_fascism_autonomy_dominion_DEF: "Литва" #NT!
+ LAT_GER_fascism_autonomy_integrated_puppet_DEF: "Рейхскомиссариат Леттланд" #NT!
+ LAT_GER_fascism_autonomy_puppet_DEF: "Рейхспротекторат Летландии" #NT!
+ LAT_GER_fascism_autonomy_colony_DEF: "Рейхсланд Летланд" #NT!
+ LAT_GER_fascism_autonomy_dominion_DEF: "Латвия" #NT!
+ NOR_GER_fascism_autonomy_integrated_puppet_DEF: "Рейхскомиссариат Норвегии" #NT!
+ NOR_GER_fascism_autonomy_puppet_DEF: "Рейхспротекторат Норвегии" #NT!
+ NOR_GER_fascism_autonomy_colony_DEF: "Рейхсланд Норвеген" #NT!
+ CZE_GER_fascism_autonomy_puppet_DEF: "Рейхспротекторат Бёмен-Мэрен" #NT!
+ POL_GER_fascism_autonomy_puppet_DEF: "Генерал-губернаторство" #NT!
+ SCA_UNIFIED_neutrality: "Королевство Скандинавия" #NT!
+ SCA_UNIFIED_fascism: "Скандинавская империя" #NT!
+ SCA_UNIFIED_democratic: "Скандинавия" #NT!
+ SCA_UNIFIED_communism: "Скандинавское социалистическое государство" #NT!
+ SCA_UNIFIED_neutrality_DEF: "Королевство Скандинавия" #NT!
+ SCA_UNIFIED_fascism_DEF: "Скандинавская империя" #NT!
+ SCA_UNIFIED_democratic_DEF: "Скандинавия" #NT!
+ SCA_UNIFIED_communism_DEF: "Скандинавское социалистическое государство" #NT!
+ NDC_UNIFIED_neutrality: "Северная лига" #NT!
+ NDC_UNIFIED_fascism: "Северная Империя" #NT!
+ NDC_UNIFIED_democratic: "Северный Совет" #NT!
+ NDC_UNIFIED_communism: "Северные социалистические государства" #NT!
+ NDC_UNIFIED_neutrality_DEF: "Северная лига" #NT!
+ NDC_UNIFIED_fascism_DEF: "Северная империя" #NT!
+ NDC_UNIFIED_democratic_DEF: "Северный Совет" #NT!
+ NDC_UNIFIED_communism_DEF: "Северные социалистические государства" #NT!
+ GCO_UNIFIED_neutrality: "Новая Гранада" #NT!
+ GCO_UNIFIED_fascism: "Империя Боливар" #NT!
+ GCO_UNIFIED_democratic: "Гран Колумбия" #NT!
+ GCO_UNIFIED_communism: "Красная Колумбия" #NT!
+ GCO_UNIFIED_neutrality_DEF: "Новая Гранада" #NT!
+ GCO_UNIFIED_fascism_DEF: "Империя Боливар" #NT!
+ GCO_UNIFIED_democratic_DEF: "Гран Колумбия" #NT!
+ GCO_UNIFIED_communism_DEF: "Красная Колумбия" #NT!
+ PLC_UNIFIED_neutrality: "речь Посполитая" #NT!
+ PLC_UNIFIED_fascism: "Польско-Литовская империя" #NT!
+ PLC_UNIFIED_democratic: "Польско-Литовская Федерация" #NT!
+ PLC_UNIFIED_communism: "Содружество Социалистических Республик" #NT!
+ PLC_UNIFIED_neutrality_DEF: "Речь Посполитая" #NT!
+ PLC_UNIFIED_fascism_DEF: "Польско-Литовская империя" #NT!
+ PLC_UNIFIED_democratic_DEF: "Польско-Литовская Федерация" #NT!
+ PLC_UNIFIED_communism_DEF: "Содружество Социалистических Республик" #NT!
+ PLC_UNIFIED_ADJ: "Польско-литовский" #NT!
+ UNL_UNIFIED_neutrality: "Соединенные провинции" #NT!
+ UNL_UNIFIED_fascism: "Лео Бельгикус" #NT!
+ UNL_UNIFIED_democratic: "Соединенное Королевство Нидерландов" #NT!
+ UNL_UNIFIED_communism: "Социалистическое государство Бенилюкса" #NT!
+ UNL_UNIFIED_neutrality_DEF: "Соединенные провинции" #NT!
+ UNL_UNIFIED_fascism_DEF: "Лео Бельгикус" #NT!
+ UNL_UNIFIED_democratic_DEF: "Соединенное Королевство Нидерландов" #NT!
+ UNL_UNIFIED_communism_DEF: "Социалистическое государство Бенилюкс" #NT!
+ USC_UNIFIED_neutrality: "Федеративная Республика Центральной Америки" #NT!
+ USC_UNIFIED_fascism: "Центральноамериканская империя" #NT!
+ USC_UNIFIED_democratic: "Соединенные Штаты Центральной Америки" #NT!
+ USC_UNIFIED_communism: "Центральноамериканское социалистическое государство" #NT!
+ USC_UNIFIED_neutrality_DEF: "Федеративная Республика Центральной Америки" #NT!
+ USC_UNIFIED_fascism_DEF: "Центральноамериканская империя" #NT!
+ USC_UNIFIED_democratic_DEF: "Соединенные Штаты Центральной Америки" #NT!
+ USC_UNIFIED_communism_DEF: "Центральноамериканское социалистическое государство" #NT!
+ BAL_UNIFIED_neutrality: "Балтийская Ассамблея" #NT!
+ BAL_UNIFIED_fascism: "Балтийское унитарное государство" #NT!
+ BAL_UNIFIED_democratic: "Балтийская Федерация" #NT!
+ BAL_UNIFIED_communism: "Балтийская Социалистическая Республика" #NT!
+ BAL_UNIFIED_neutrality_DEF: "Балтийская Ассамблея" #NT!
+ BAL_UNIFIED_fascism_DEF: "Балтийское унитарное государство" #NT!
+ BAL_UNIFIED_democratic_DEF: "Балтийская Федерация" #NT!
+ BAL_UNIFIED_communism_DEF: "Балтийская Социалистическая Республика" #NT!
+ OTT_UNIFIED_neutrality: "Османская империя" #NT!
+ OTT_UNIFIED_fascism: "Великий Османский суверенитет" #NT!
+ OTT_UNIFIED_democratic: "Османская Федерация" #NT!
+ OTT_UNIFIED_communism: "Османская Социалистическая Республика" #NT!
+ OTT_UNIFIED_neutrality_DEF: "Османская Империя" #NT!
+ OTT_UNIFIED_fascism_DEF: "Великий Османский суверенитет" #NT!
+ OTT_UNIFIED_democratic_DEF: "Османская Федерация" #NT!
+ OTT_UNIFIED_communism_DEF: "Османская Социалистическая Республика" #NT!
+ TUR_PROVISIONARY: "Временное государство Анатолия" #NT!
+ OTT_SULTANATE_neutrality: "Османский султанат" #NT!
+ OTT_SULTANATE_fascism: "Верховное Османское государство" #NT!
+ OTT_SULTANATE_democratic: "Османская Федерация" #NT!
+ OTT_SULTANATE_communism: "Османская Социалистическая Республика" #NT!
+ OTT_SULTANATE_neutrality_DEF: "Османский султанат" #NT!
+ OTT_SULTANATE_fascism_DEF: "Верховное Османское государство" #NT!
+ OTT_SULTANATE_democratic_DEF: "Османская Федерация" #NT!
+ OTT_SULTANATE_communism_DEF: "Османская Социалистическая Республика" #NT!
+ EUR_UNIFIED_neutrality: "Единое Королевство Европы" #NT!
+ EUR_UNIFIED_fascism: "Европейская глобальная гегемония" #NT!
+ EUR_UNIFIED_democratic: "Евросоюз" #NT!
+ EUR_UNIFIED_communism: "Европейская Коммуна" #NT!
+ EUR_UNIFIED_neutrality_DEF: "Единое Королевство Европы" #NT!
+ EUR_UNIFIED_fascism_DEF: "Европейская глобальная гегемония" #NT!
+ EUR_UNIFIED_democratic_DEF: "Европейский Союз" #NT!
+ EUR_UNIFIED_communism_DEF: "Европейская Коммуна" #NT!
+ MUT_UNIFIED_neutrality: "Королевство Мутапа" #NT!
+ MUT_UNIFIED_fascism: "Великий Зимбабве" #NT!
+ MUT_UNIFIED_democratic: "Мутапа" #NT!
+ MUT_UNIFIED_communism: "Социалистическое государство Мутапа" #NT!
+ MUT_UNIFIED_neutrality_DEF: "Королевство Мутапа" #NT!
+ MUT_UNIFIED_fascism_DEF: "Великий Зимбабве" #NT!
+ MUT_UNIFIED_democratic_DEF: "Мутапа" #NT!
+ MUT_UNIFIED_communism_DEF: "Социалистическое государство Мутапа" #NT!
+ SPQR_UNIFIED_neutrality: "Регнум Романум" #NT!
+ SPQR_UNIFIED_fascism: "Imperium Romanum"
+ SPQR_UNIFIED_democratic: "Res Publica Romana"
+ SPQR_UNIFIED_communism: "Коммунитас Пролетаритаск Романа" #NT!
+ SPQR_UNIFIED_neutrality_DEF: "Регнум Романум" #NT!
+ SPQR_UNIFIED_fascism_DEF: "Imperium Romanum"
+ SPQR_UNIFIED_democratic_DEF: "Res Publica Romana"
+ SPQR_UNIFIED_communism_DEF: "Коммунитас Пролетаритаск Романа" #NT!
+ PER_UNIFIED_neutrality: "Персия" #NT!
+ PER_UNIFIED_fascism: "Персидская империя" #NT!
+ PER_UNIFIED_democratic: "Цирический Союз" #NT!
+ PER_UNIFIED_communism: "Ближневосточная Социалистическая Республика" #NT!
+ PER_UNIFIED_neutrality_DEF: "Персия" #NT!
+ PER_UNIFIED_fascism_DEF: "Персидская империя" #NT!
+ PER_UNIFIED_democratic_DEF: "Союз Цириков" #NT!
+ PER_UNIFIED_communism_DEF: "Ближневосточная Социалистическая Республика" #NT!
+ BYZ_UNIFIED_neutrality: "Византия" #NT!
+ BYZ_UNIFIED_fascism: "Византийская империя" #NT!
+ BYZ_UNIFIED_democratic: "Восточно-Римская Демократическая Республика" #NT!
+ BYZ_UNIFIED_communism: "Византийская коммуна" #NT!
+ BYZ_UNIFIED_neutrality_DEF: "Византия" #NT!
+ BYZ_UNIFIED_fascism_DEF: "Византийская империя" #NT!
+ BYZ_UNIFIED_democratic_DEF: "Восточно-Римская республика" #NT!
+ BYZ_UNIFIED_communism_DEF: "Византийская коммуна" #NT!
+ ARA_UNIFIED_neutrality: "Аравия" #NT!
+ ARA_UNIFIED_fascism: "Арабская империя" #NT!
+ ARA_UNIFIED_democratic: "Арабская Федерация" #NT!
+ ARA_UNIFIED_communism: "Объединенные Арабские Социалистические Республики" #NT!
+ ARA_UNIFIED_neutrality_DEF: "Аравия" #NT!
+ ARA_UNIFIED_fascism_DEF: "Арабская империя" #NT!
+ ARA_UNIFIED_democratic_DEF: "Арабская Федерация" #NT!
+ ARA_UNIFIED_communism_DEF: "Объединенные Арабские Социалистические Республики" #NT!
+ MAJ_UNIFIED_neutrality: "Маджапахит Талассократия" #NT!
+ MAJ_UNIFIED_fascism: "Империя Маджапахит" #NT!
+ MAJ_UNIFIED_democratic: "Великая Индонезийская Конфедерация" #NT!
+ MAJ_UNIFIED_communism: "Демократическая Социалистическая Республика Маджафит" #NT!
+ MAJ_UNIFIED_neutrality_DEF: "Маджапахит-талассократия" #NT!
+ MAJ_UNIFIED_fascism_DEF: "Империя Маджапахит" #NT!
+ MAJ_UNIFIED_democratic_DEF: "Великая Индонезийская Конфедерация" #NT!
+ MAJ_UNIFIED_communism_DEF: "Демократическая Социалистическая Республика Маджафит" #NT!
+ RAT_UNIFIED_neutrality: "Королевство Раттанакосин" #NT!
+ RAT_UNIFIED_fascism: "Империя Раттанакосин" #NT!
+ RAT_UNIFIED_democratic: "Федерация Раттанакосин" #NT!
+ RAT_UNIFIED_communism: "Социалистическое государство Раттанакосин" #NT!
+ RAT_UNIFIED_neutrality_DEF: "Королевство Раттанакосин" #NT!
+ RAT_UNIFIED_fascism_DEF: "Империя Раттанакосин" #NT!
+ RAT_UNIFIED_democratic_DEF: "Федерация Раттанакосин" #NT!
+ RAT_UNIFIED_communism_DEF: "Социалистическое государство Раттанакосин" #NT!
+ HRE_UNIFIED_neutrality: "Святая Римская Империя" #NT!
+ HRE_UNIFIED_fascism: "Националистическое римское государство" #NT!
+ HRE_UNIFIED_democratic: "Светская Римская Федерация" #NT!
+ HRE_UNIFIED_communism: "Социалистическая Римская Республика" #NT!
+ HRE_UNIFIED_neutrality_DEF: "Священная Римская империя" #NT!
+ HRE_UNIFIED_fascism_DEF: "националистическое римское государство" #NT!
+ HRE_UNIFIED_democratic_DEF: "Светская Римская Федерация" #NT!
+ HRE_UNIFIED_communism_DEF: "Социалистическая Римская Республика" #NT!
+ CHI_JAP_fascism_autonomy_puppet: "Реорганизованное правительство Китая" #NT!
+ CHI_JAP_fascism_autonomy_reichsprotectorate: "Реорганизованное правительство Китая" #NT!
+ CHI_JAP_fascism_autonomy_integrated_puppet: "Временная администрация Китая" #NT!
+ CHI_JAP_fascism_autonomy_reichskommissariat: "Временная администрация Китая" #NT!
+ MAN_JAP_fascism_autonomy_puppet: "Маньчжоу-Го" #NT!
+ MAN_JAP_fascism_autonomy_reichsprotectorate: "Маньчжоу-Го" #NT!
+ MAN_JAP_fascism_autonomy_colony: "Императорское королевство Маньчжоу-Го" #NT!
+ MAN_JAP_fascism_autonomy_dominion: "Империя Маньчжоу-Го" #NT!
+ MAN_JAP_fascism_autonomy_satellite: "Империя Маньчжоу-Го" #NT!
+ MAN_JAP_fascism_autonomy_integrated_puppet: "Маньчжоу-Го" #NT!
+ MAN_JAP_fascism_autonomy_reichskommissariat: "Маньчжоу-Го" #NT!
+ MAN_JAP_fascism_autonomy_wtt_imperial_protectorate: "Маньчжоу-Го" #NT!
+ MAN_JAP_fascism_autonomy_wtt_imperial_subject: "Маньчжоу-Го" #NT!
+ MAN_JAP_fascism_autonomy_wtt_imperial_associate: "Империя Маньчжоу-Го" #NT!
+ CHI_JAP_fascism_autonomy_wtt_imperial_protectorate: "Реорганизованное правительство Китая" #NT!
+ CHI_JAP_fascism_autonomy_wtt_imperial_associate: "Китайская конституционная республика" #NT!
+ CHI_JAP_fascism_autonomy_puppet_DEF: "Реорганизованное правительство Китая" #NT!
+ CHI_JAP_fascism_autonomy_reichsprotectorate_DEF: "Реорганизованное правительство Китая" #NT!
+ CHI_JAP_fascism_autonomy_integrated_puppet_DEF: "Временная администрация Китая" #NT!
+ CHI_JAP_fascism_autonomy_reichskommissariat_DEF: "Временная администрация Китая" #NT!
+ MAN_JAP_fascism_autonomy_puppet_DEF: "Маньчжоу-Го" #NT!
+ MAN_JAP_fascism_autonomy_reichsprotectorate_DEF: "Маньчжоу-Го" #NT!
+ MAN_JAP_fascism_autonomy_colony_DEF: "Императорское королевство Маньчжоу-Го" #NT!
+ MAN_JAP_fascism_autonomy_dominion_DEF: "Империя Маньчжоу-Го" #NT!
+ MAN_JAP_fascism_autonomy_satellite_DEF: "Империя Маньчжоу-Го" #NT!
+ MAN_JAP_fascism_autonomy_integrated_puppet_DEF: "Manchukuo" #NT!
+ MAN_JAP_fascism_autonomy_reichskommissariat_DEF: "Manchukuo" #NT!
+ MAN_JAP_fascism_autonomy_wtt_imperial_protectorate_DEF: "Маньчжоу-Го" #NT!
+ MAN_JAP_fascism_autonomy_wtt_imperial_subject_DEF: "Маньчжоу-Го" #NT!
+ MAN_JAP_fascism_autonomy_wtt_imperial_associate_DEF: "Империя Маньчжоу-Го" #NT!
+ CHI_JAP_fascism_autonomy_wtt_imperial_protectorate_DEF: "Реорганизованное правительство Китая" #NT!
+ CHI_JAP_fascism_autonomy_wtt_imperial_associate_DEF: "Китайская конституционная республика" #NT!
+ GER_provisional_gvt_neutrality: "Немецкая военная хунта" #NT!
+ GER_provisional_gvt_democratic: "Переходное правительство Германии" #NT!
+ GER_german_empire_neutrality: "Германская империя" #NT!
+ GER_german_empire_neutrality_DEF: "Германская империя" #NT!
+ GER_german_monarchy_democratic: "Германия" #NT!
+ GER_german_monarchy_democratic_DEF: "Германия" #NT!
+ PRC_proclaimed_communism: "Китайская Народная Республика" #NT!
+ PRC_proclaimed_communism_DEF: "Китайская Народная Республика" #NT!
+ PRC_proclaimed_democratic: "Китайская Республика" #NT!
+ PRC_proclaimed_neutrality: "Китай" #NT!
+ CHI_warlord_leader_neutrality: "Китай" #NT!
+ CHI_warlord_leader_neutrality_DEF: "Китай" #NT!
+ CHI_warlord_leader_democratic: "Китайская Республика" #NT!
+ CHI_warlord_leader_democratic_DEF: "Китайская Республика" #NT!
+ MAN_kwantung_army_fascism: "Императорские Квантунские территории" #NT!
+ MAN_kwantung_army_communism: "Маньчжурская Народная Республика" #NT!
+ MAN_kwantung_army_democratic: "Маньчжурские федеративные провинции" #NT!
+ MAN_kwantung_army_fascism_DEF: "Императорские Квантунские территории" #NT!
+ MAN_kwantung_army_communism_DEF: "Маньчжурская Народная Республика" #NT!
+ MAN_kwantung_army_democratic_DEF: "Маньчжурские федеративные провинции" #NT!
+ MAN_restored_fascism: "Китайская империя" #NT!
+ MAN_restored_neutrality: "Китайская империя" #NT!
+ MAN_restored_democratic: "Китайская конституционная монархия" #NT!
+ MAN_restored_communism: "Объединенные Китайские Народные Республики" #NT!
+ MAN_restored_fascism_DEF: "Китайская империя" #NT!
+ MAN_restored_neutrality_DEF: "Китайская империя" #NT!
+ MAN_restored_democratic_DEF: "Конституционная монархия Китая" #NT!
+ MAN_restored_communism_DEF: "Объединенные Китайские Народные Республики" #NT!
+ JAP_showa_restoration_fascism: "Япония" #NT!
+ JAP_showa_restoration_neutrality: "Японская империя" #NT!
+ JAP_showa_restoration_democratic: "Государство Япония" #NT!
+ JAP_showa_restoration_communism: "Японская Народная Республика" #NT!
+ JAP_showa_restoration_fascism_DEF: "Япония" #NT!
+ JAP_showa_restoration_neutrality_DEF: "Японская империя" #NT!
+ JAP_showa_restoration_democratic_DEF: "Государство Япония" #NT!
+ JAP_showa_restoration_communism_DEF: "Японская Народная Республика" #NT!
+ GER_greater_german_reich_fascism: "Великий Германский Рейх" #NT!
+ CHI_warlord_PRC_fascism: "Китайская империя" #NT!
+ CHI_warlord_PRC_fascism_DEF: "Китайская империя" #NT!
+ CHI_warlord_PRC_democratic: "Китайская Республика" #NT!
+ CHI_warlord_PRC_democratic_DEF: "Китайская Республика" #NT!
+ CHI_warlord_PRC_neutrality: "Китай" #NT!
+ CHI_warlord_PRC_neutrality_DEF: "Китай" #NT!
+ CHI_warlord_PRC_communism: "Коммунистический Китай" #NT!
+ CHI_warlord_PRC_communism_DEF: "Коммунистический Китай" #NT!
+ CHI_warlord_PRC_fascism_ADJ: "Китайский" #NT!
+ CHI_warlord_PRC_democratic_ADJ: "Китайский" #NT!
+ CHI_warlord_PRC_neutrality_ADJ: "Китайский" #NT!
+ CHI_warlord_PRC_communism_ADJ: "Китайский" #NT!
+ CHI_warlord_leader_neutrality_ADJ: "Китайский" #NT!
+ CHI_warlord_leader_democratic_ADJ: "Китайский" #NT!
+ MAN_restored_fascism_ADJ: "Китайский" #NT!
+ MAN_restored_neutrality_ADJ: "Китайский" #NT!
+ MAN_restored_democratic_ADJ: "Китайский" #NT!
+ MAN_restored_communism_ADJ: "Китайский" #NT!
+ CHI_power_struggle_defeated_neutrality: "CC клика" #NT!
+ CHI_power_struggle_defeated_neutrality_DEF: "клика ЦК" #NT!
+ CHI_power_struggle_defeated_democratic: "Республиканское правительство Китая" #NT!
+ CHI_power_struggle_defeated_democratic_DEF: "республиканское правительство Китая" #NT!
+ CHI_power_struggle_defeated_neutrality_ADJ: "Китайский" #NT!
+ CHI_power_struggle_defeated_democratic_ADJ: "Китайский" #NT!
+ USA_CSA_fascism: "Конфедеративные Штаты Америки" #NT!
+ USA_CSA_fascism_DEF: "Конфедеративные Штаты Америки" #NT!
+ USA_CSA_democratic: "Конфедерация американских государств" #NT!
+ USA_CSA_democratic_DEF: "Конфедерация американских государств" #NT!
+ USA_CSA_communism: "Конфедерация американских рабочих" #NT!
+ USA_CSA_communism_DEF: "Конфедерация американских рабочих" #NT!
+ USA_CSA_neutrality: "Американская хунта" #NT!
+ USA_CSA_neutrality_DEF: "Американская хунта" #NT!
+ USA_CSA_fascism_ADJ: "Конфедерация" #NT!
+ USA_CSA_communism_ADJ: "Конфедерация" #NT!
+ USA_CSA_democratic_ADJ: "Конфедерация" #NT!
+ USA_CSA_neutrality_ADJ: "Американский" #NT!
+ USA_REBEL_fascism: "Американская Империя" #NT!
+ USA_REBEL_fascism_DEF: "Американская Империя" #NT!
+ USA_REBEL_democratic: "Конституционные Штаты Америки" #NT!
+ USA_REBEL_democratic_DEF: "конституционные штаты Америки" #NT!
+ USA_REBEL_communism: "Соединенные Социалистические Штаты" #NT!
+ USA_REBEL_communism_DEF: "Соединенные Социалистические Штаты" #NT!
+ USA_REBEL_neutrality: "Свободные Штаты Америки" #NT!
+ USA_REBEL_neutrality_DEF: "Свободные Штаты Америки" #NT!
+ USA_REBEL_fascism_ADJ: "Американский" #NT!
+ USA_REBEL_communism_ADJ: "Американский" #NT!
+ USA_REBEL_democratic_ADJ: "Constitutionalist" #NT!
+ USA_REBEL_neutrality_ADJ: "Свободный американец" #NT!
+ MEX_cristero_fascism: "Католическая Мексика" #NT!
+ MEX_cristero_fascism_DEF: "Католическая Мексика" #NT!
+ MEX_cristero_fascism_ADJ: "Мексиканский" #NT!
+ MEX_cristero_neutrality: "Третья Мексиканская империя" #NT!
+ MEX_cristero_neutrality_DEF: "Третья Мексиканская империя" #NT!
+ MEX_cristero_neutrality_ADJ: "Мексиканский" #NT!
+ MEX_cristero_democratic: "Мексиканская Республика" #NT!
+ MEX_cristero_democratic_DEF: "Мексиканская Республика" #NT!
+ MEX_cristero_democratic_ADJ: "Мексиканский" #NT!
+ MEX_cristero_communism: "Мексиканская Социалистическая Республика" #NT!
+ MEX_cristero_communism_DEF: "Мексиканская Социалистическая Республика" #NT!
+ MEX_cristero_communism_ADJ: "Мексиканский" #NT!
+ MEX_SPR_fascism_subject: "Новая Испания" #NT!
+ MEX_SPR_fascism_subject_DEF: "Новая Испания" #NT!
+ MEX_SPR_fascism_subject_ADJ: "Новый испанский" #NT!
+ MEX_SPR_neutrality_subject: "Новая Испания" #NT!
+ MEX_SPR_neutrality_subject_DEF: "Новая Испания" #NT!
+ MEX_SPR_neutrality_subject_ADJ: "Новый испанский" #NT!
+ MEX_cristero_SPR_fascism_subject: "Новая Испания" #NT!
+ MEX_cristero_SPR_fascism_subject_DEF: "Новая Испания" #NT!
+ MEX_cristero_SPR_fascism_subject_ADJ: "Новый испанский" #NT!
+ MEX_cristero_SPR_neutrality_subject: "Новая Испания" #NT!
+ MEX_cristero_SPR_neutrality_subject_DEF: "Новая Испания" #NT!
+ MEX_cristero_SPR_neutrality_subject_ADJ: "Новый испанский" #NT!
+ MEX_SPA_fascism_subject: "Новая Испания" #NT!
+ MEX_SPA_fascism_subject_DEF: "Новая Испания" #NT!
+ MEX_SPA_fascism_subject_ADJ: "Новый испанский" #NT!
+ MEX_SPA_neutrality_subject: "Новая Испания" #NT!
+ MEX_SPA_neutrality_subject_DEF: "Новая Испания" #NT!
+ MEX_SPA_neutrality_subject_ADJ: "Новый испанский" #NT!
+ MEX_cristero_SPA_fascism_subject: "Новая Испания" #NT!
+ MEX_cristero_SPA_fascism_subject_DEF: "Новая Испания" #NT!
+ MEX_cristero_SPA_fascism_subject_ADJ: "Новый испанский" #NT!
+ MEX_cristero_SPA_neutrality_subject: "Новая Испания" #NT!
+ MEX_cristero_SPA_neutrality_subject_DEF: "Новая Испания" #NT!
+ MEX_cristero_SPA_neutrality_subject_ADJ: "Новый испанский" #NT!
+ ENG_imperial_federation_unified_fascism: "Империя" #NT!
+ ENG_imperial_federation_unified_communism: "Содружество народов" #NT!
+ ENG_imperial_federation_unified_democratic: "Содружество Наций" #NT!
+ ENG_imperial_federation_unified_neutrality: "Имперская Федерация" #NT!
+ ENG_imperial_federation_unified_fascism_DEF: "империя" #NT!
+ ENG_imperial_federation_unified_communism_DEF: "Содружество народов" #NT!
+ ENG_imperial_federation_unified_democratic_DEF: "Содружество Наций" #NT!
+ ENG_imperial_federation_unified_neutrality_DEF: "Имперская Федерация" #NT!
+ ENG_imperial_federation_unified_fascism_ADJ: "Империал" #NT!
+ ENG_imperial_federation_unified_communism_ADJ: "Содружество" #NT!
+ ENG_imperial_federation_unified_democratic_ADJ: "Содружество" #NT!
+ ENG_imperial_federation_unified_neutrality_ADJ: "Империал" #NT!
+ ENG_imperial_federation_india_unified_fascism: "Империя" #NT!
+ ENG_imperial_federation_india_unified_communism: "Содружество народов" #NT!
+ ENG_imperial_federation_india_unified_democratic: "Содружество Наций" #NT!
+ ENG_imperial_federation_india_unified_neutrality: "Имперская Федерация" #NT!
+ ENG_imperial_federation_india_unified_fascism_DEF: "империя" #NT!
+ ENG_imperial_federation_india_unified_communism_DEF: "Содружество народов" #NT!
+ ENG_imperial_federation_india_unified_democratic_DEF: "Содружество Наций" #NT!
+ ENG_imperial_federation_india_unified_neutrality_DEF: "Имперская Федерация" #NT!
+ ENG_imperial_federation_india_unified_fascism_ADJ: "Империал" #NT!
+ ENG_imperial_federation_india_unified_communism_ADJ: "Содружество" #NT!
+ ENG_imperial_federation_india_unified_democratic_ADJ: "Содружество" #NT!
+ ENG_imperial_federation_india_unified_neutrality_ADJ: "Империал" #NT!
+ ENG_imperialist_canada_fascism: "Империалистическая Канада" #NT!
+ ENG_imperialist_canada_fascism_DEF: "Империалистическая Канада" #NT!
+ ENG_imperialist_canada_fascism_ADJ: "Империалистический канадский" #NT!
+ ENG_imperialist_canada_neutrality: "Империалистическая Канада" #NT!
+ ENG_imperialist_canada_neutrality_DEF: "Империалистическая Канада" #NT!
+ ENG_imperialist_canada_neutrality_ADJ: "Империалистический канадский" #NT!
+ ENG_imperialist_south_africa_fascism: "Империалистическая Южная Африка" #NT!
+ ENG_imperialist_south_africa_fascism_DEF: "Империалистическая Южная Африка" #NT!
+ ENG_imperialist_south_africa_fascism_ADJ: "Империалистическая южноафриканская" #NT!
+ ENG_imperialist_south_africa_neutrality: "Империалистическая Южная Африка" #NT!
+ ENG_imperialist_south_africa_neutrality_DEF: "Империалистическая Южная Африка" #NT!
+ ENG_imperialist_south_africa_neutrality_ADJ: "Империалистическая южноафриканская" #NT!
+ ENG_imperialist_australia_fascism: "Империалистическая Австралия" #NT!
+ ENG_imperialist_australia_fascism_DEF: "Империалистическая Австралия" #NT!
+ ENG_imperialist_australia_fascism_ADJ: "Империалистический австралийский" #NT!
+ ENG_imperialist_australia_neutrality: "Империалистическая Австралия" #NT!
+ ENG_imperialist_australia_neutrality_DEF: "Империалистическая Австралия" #NT!
+ ENG_imperialist_australia_neutrality_ADJ: "Империалистический австралийский" #NT!
+ ENG_imperialist_new_zealand_fascism: "Империалистическая Новая Зеландия" #NT!
+ ENG_imperialist_new_zealand_fascism_DEF: "Империалистическая Новая Зеландия" #NT!
+ ENG_imperialist_new_zealand_fascism_ADJ: "Империалистическая Новая Зеландия" #NT!
+ ENG_imperialist_new_zealand_neutrality: "Империалистическая Новая Зеландия" #NT!
+ ENG_imperialist_new_zealand_neutrality_DEF: "Империалистическая Новая Зеландия" #NT!
+ ENG_imperialist_new_zealand_neutrality_ADJ: "Империалистическая Новая Зеландия" #NT!
+ USA_wallis_simpson_neutrality: "Соединенное Королевство Америки" #NT!
+ USA_wallis_simpson_neutrality_def: "Соединенное Королевство Америки" #NT!
+ CAN_north_america_dominion_neutrality: "Доминион Северной Америки" #NT!
+ CAN_north_america_dominion_neutrality_def: "Доминион Северной Америки" #NT!
+ CAN_north_america_dominion_fascism: "Доминион Северной Америки" #NT!
+ CAN_north_america_dominion_fascism_def: "Доминион Северной Америки" #NT!
+ ENG_MEX_dominion_democratic: "Доминион Мексики" #NT!
+ ENG_MEX_dominion_democratic_def: "Доминион Мексики" #NT!
+ ENG_MEX_dominion_neutrality: "Доминион Мексики" #NT!
+ ENG_MEX_dominion_neutrality_def: "Доминион Мексики" #NT!
+ ENG_MEX_dominion_fascism: "Доминион Мексики" #NT!
+ ENG_MEX_dominion_fascism_def: "Доминион Мексики" #NT!
+ ENG_MEX_dominion_communism: "Доминион Мексики" #NT!
+ ENG_MEX_dominion_communism_def: "Доминион Мексики" #NT!
+ ENG_england_democratic: "Англия" #NT!
+ ENG_england_democratic_DEF: "Англия" #NT!
+ ENG_england_democratic_ADJ: "Английский" #NT!
+ ENG_england_neutrality: "Королевство Англии" #NT!
+ ENG_england_neutrality_DEF: "Королевство Англии" #NT!
+ ENG_england_neutrality_ADJ: "Английский" #NT!
+ ENG_england_fascism: "Альбион" #NT!
+ ENG_england_fascism_DEF: "Альбион" #NT!
+ ENG_england_fascism_ADJ: "Английский" #NT!
+ ENG_england_communism: "Коммуна Англии" #NT!
+ ENG_england_communism_DEF: "Коммуна Англии" #NT!
+ ENG_england_communism_ADJ: "английский" #NT!
+ ENG_communist_civil_war_communism: "Истинный Союз Британии" #NT!
+ ENG_communist_civil_war_communism_def: "Истинный Союз Британии" #NT!
+ RUS_russia_communism: "Российская Советская Социалистическая Республика" #NT!
+ RUS_russia_communism_DEF: "Российская Советская Социалистическая Республика" #NT!
+ RUS_russia_communism_ADJ: "Русский" #NT!
+ HOL_benelux_unified_democratic: "Федерация Бенилюкса" #NT!
+ HOL_benelux_unified_democratic_DEF: "Федерация Бенилюкса" #NT!
+ HOL_benelux_unified_democratic_ADJ: "Бенилюкс" #NT!
+ SPA_directory_fascism: "Испанский справочник" #NT!
+ SPA_directory_fascism_DEF: "Испанский справочник" #NT!
+ SPA_directory_fascism_ADJ: "испанский" #NT!
+ SPA_directory_neutrality: "Испанский справочник" #NT!
+ SPA_directory_neutrality_DEF: "Испанский справочник" #NT!
+ SPA_directory_neutrality_ADJ: "испанский" #NT!
+ SPR_anarchist_aragon_neutrality: "Региональный совет обороны Арагона" #NT!
+ SPR_anarchist_aragon_neutrality_DEF: "Региональный совет обороны Арагона" #NT!
+ SPR_anarchist_aragon_neutrality_ADJ: "Арагонский" #NT!
+ SPR_anarchist_iberia_neutrality: "Региональный совет обороны Иберии" #NT!
+ SPR_anarchist_iberia_neutrality_DEF: "Региональный совет обороны Иберии" #NT!
+ SPR_anarchist_iberia_neutrality_ADJ: "иберийский" #NT!
+ SPR_anarchist_global_neutrality: "Глобальный совет обороны" #NT!
+ SPR_anarchist_global_neutrality_DEF: "Глобальный совет обороны" #NT!
+ SPR_anarchist_global_neutrality_ADJ: "Анархисты" #NT!
+ SPR_nationalist_spain_neutrality: "Националистическая Испания" #NT!
+ SPR_nationalist_spain_neutrality_def: "Националистическая Испания" #NT!
+ SPR_nationalist_spain_neutrality_adj: "испанский" #NT!
+ SPR_nationalist_spain_fascism: "Националистическая Испания" #NT!
+ SPR_nationalist_spain_fascism_def: "Националистическая Испания" #NT!
+ SPR_nationalist_spain_fascism_adj: "Имперский испанский" #NT!
+ SPR_carlist_spain_neutrality: "Карлист Испания" #NT!
+ SPR_carlist_spain_neutrality_def: "Карлист Испания" #NT!
+ SPR_carlist_spain_neutrality_adj: "испанский" #NT!
+ SPR_anarchist_spain_neutrality: "Региональный совет обороны Арагона" #NT!
+ SPR_anarchist_spain_neutrality_def: "Региональный совет обороны Арагона" #NT!
+ SPR_anarchist_spain_neutrality_adj: "Арагонский анархист" #NT!
+ SPR_anarchist_spain_communism: "Испанская коммуна" #NT!
+ SPR_anarchist_spain_communism_def: "Испанская Коммуна" #NT!
+ SPR_anarchist_spain_communism_adj: "испанский" #NT!
+ SPR_republican_spain_democratic: "Испания" #NT!
+ SPR_republican_spain_democratic_def: "Испания" #NT!
+ SPR_republican_spain_democratic_adj: "испанский" #NT!
+ SPR_republican_spain_communism: "Народная Республика Испания" #NT!
+ SPR_republican_spain_communism_def: "Народная Республика Испания" #NT!
+ SPR_republican_spain_communism_adj: "испанский" #NT!
+ SPB_kingdom_neutrality: "Королевство Испания" #NT!
+ SPB_kingdom_neutrality_def: "Королевство Испания" #NT!
+ SPB_kingdom_neutrality_adj: "испанский" #NT!
+ SPA_spanish_empire_fascism: "Испанская империя" #NT!
+ SPA_spanish_empire_fascism_def: "Испанская империя" #NT!
+ SPA_spanish_empire_fascism_adj: "Имперский испанский" #NT!
+ SPC_regional_defense_council_of_iberia_neutrality: "Региональный совет обороны Иберии" #NT!
+ SPC_regional_defense_council_of_iberia_neutrality_def: "Региональный совет обороны Иберии" #NT!
+ SPC_regional_defense_council_of_iberia_neutrality_adj: "Иберийский анархист" #NT!
+ SPC_global_defense_council_neutrality: "Глобальный совет обороны" #NT!
+ SPC_global_defense_council_neutrality_def: "Глобальный совет обороны" #NT!
+ SPC_global_defense_council_neutrality_adj: "Глобальный анархист" #NT!
+ SPC_poum_communism: "Испанская коммуна" #NT!
+ SPC_poum_communism_def: "Испанская Коммуна" #NT!
+ SPC_poum_communism_adj: "испанский" #NT!
+ SPR_anarchist_castille_neutrality: "Региональный совет обороны Кастилии" #NT!
+ SPR_anarchist_castille_neutrality_DEF: "Региональный совет обороны Кастилии" #NT!
+ SPR_anarchist_castille_neutrality_ADJ: "кастильский" #NT!
+ SPR_anarchist_castille_communism: "Кастильская коммуна" #NT!
+ SPR_anarchist_castille_communism_def: "Кастильская коммуна" #NT!
+ SPR_anarchist_castille_communism_adj: "кастильский" #NT!
+ SPR_republican_castille_democratic: "Кастильская Республика" #NT!
+ SPR_republican_castille_democratic_def: "Кастилия" #NT!
+ SPR_republican_castille_democratic_adj: "кастильский" #NT!
+ SPR_republican_castille_communism: "Народная Республика Кастилия" #NT!
+ SPR_republican_castille_communism_def: "Народная Республика Кастилия" #NT!
+ SPR_republican_castille_communism_adj: "кастильский" #NT!
+ SPR_nationalist_castille_neutrality: "Корона Кастилии" #NT!
+ SPR_nationalist_castille_neutrality_def: "Корона Кастилии" #NT!
+ SPR_nationalist_castille_neutrality_adj: "кастильский" #NT!
+ SPR_nationalist_castille_fascism: "Националистическая Кастилия" #NT!
+ SPR_nationalist_castille_fascism_def: "Националистическая Кастилия" #NT!
+ SPR_nationalist_castille_fascism_adj: "Имперский кастильский" #NT!
+ SPR_carlist_castille_neutrality: "Карлист Кастилия" #NT!
+ SPR_carlist_castille_neutrality_def: "Карлист Кастилия" #NT!
+ SPR_carlist_castille_neutrality_adj: "кастильский" #NT!
+ SPR_POR_anarchism_neutrality: "Анархическая коммуна Португалии" #NT!
+ SPR_POR_anarchism_neutrality_def: "Анархическая коммуна Португалии" #NT!
+ SPR_POR_anarchism_neutrality_adj: "Португальский анархист" #NT!
+ FRA_THIRD_EMPIRE_neutrality: "Французская империя" #NT!
+ FRA_THIRD_EMPIRE_neutrality_def: "Французская империя" #NT!
+ FRA_THIRD_EMPIRE_neutrality_adj: "Французский" #NT!
+ FRA_ORLEANS_neutrality: "Орлеанистская Франция" #NT!
+ FRA_ORLEANS_neutrality_def: "Орлеанистская Франция" #NT!
+ FRA_ORLEANS_neutrality_adj: "Французский" #NT!
+ KOP_kingdom_portugal_neutrality: "Королевство Португалия" #NT!
+ KOP_kingdom_portugal_neutrality_def: "Королевство Португалия" #NT!
+ KOP_kingdom_portugal_neutrality_adj: "португальский" #NT!
+ EOB_empire_brazil_neutrality: "Империя Бразилии" #NT!
+ EOB_empire_brazil_neutrality_def: "Бразильская империя" #NT!
+ EOB_empire_brazil_neutrality_adj: "Бразильский" #NT!
+ KPB_kingdom_portugal_and_brazil_neutrality: "Соединенное Королевство Португалии и Бразилии" #NT!
+ KPB_kingdom_portugal_and_brazil_neutrality_def: "Соединенное Королевство Португалии и Бразилии" #NT!
+ KPB_kingdom_portugal_and_brazil_neutrality_adj: "Порто-бразильский" #NT!
+ KPB_kingdom_portugal_and_brazil_fascism: "Королевство Португалия и Бразилия" #NT!
+ KPB_kingdom_portugal_and_brazil_fascism_def: "Королевство Португалия и Бразилия" #NT!
+ KPB_kingdom_portugal_and_brazil_fascism_adj: "Порто-бразильский" #NT!
+ KPB_kingdom_portugal_and_brazil_communism: "Порто-Бразильский народный союз" #NT!
+ KPB_kingdom_portugal_and_brazil_communism_def: "Порто-Бразильский народный союз" #NT!
+ KPB_kingdom_portugal_and_brazil_communism_adj: "Порто-бразильский" #NT!
+ KPB_kingdom_portugal_and_brazil_democratic: "Объединенные Республики Португалия и Бразилия" #NT!
+ KPB_kingdom_portugal_and_brazil_democratic_def: "Республика Португалия и Бразилия" #NT!
+ KPB_kingdom_portugal_and_brazil_democratic_adj: "Порто-бразильский" #NT!
+ KPB_kingdom_portugal_and_brazil: "Порту-Бразилия" #NT!
+ KPB_kingdom_portugal_and_brazil_def: "Порту-Бразилия" #NT!
+ KPB_kingdom_portugal_and_brazil_adj: "Порто-бразильский" #NT!
+ ESU_POR_unified_fascism: "Иберийская империя" #NT!
+ ESU_POR_unified_fascism_def: "Иберийская империя" #NT!
+ ESU_POR_unified_fascism_adj: "иберийский" #NT!
+ ESU_POR_unified_communism: "Иберийский социалистический союз" #NT!
+ ESU_POR_unified_communism_def: "Иберийский социалистический союз" #NT!
+ ESU_POR_unified_communism_adj: "иберийский" #NT!
+ ESU_POR_unified_democratic: "Объединенные Республики Иберия" #NT!
+ ESU_POR_unified_democratic_def: "Объединенные Республики Иберия" #NT!
+ ESU_POR_unified_democratic_adj: "иберийский" #NT!
+ ESU_POR_unified: "Иберия" #NT!
+ ESU_POR_unified_def: "Иберия" #NT!
+ ESU_POR_unified_adj: "иберийский" #NT!
+ POR_empire_neutrality: "Пятая Португальская империя" #NT!
+ POR_empire_neutrality_def: "Пятая Португальская империя" #NT!
+ POR_empire_neutrality_adj: "португальский" #NT!
+ POR_empire_fascism: "Пятая Португальская империя" #NT!
+ POR_empire_fascism_def: "Пятая Португальская империя" #NT!
+ POR_empire_fascism_adj: "португальский" #NT!
+ HOL_autonomy_collaboration_government_DEF: "$OVERLORDADJ$ $NONIDEOLOGY$" #NT!
+ PHI_autonomy_collaboration_government_DEF: "$OVERLORDADJ$ $NONIDEOLOGY$" #NT!
+ BAH_autonomy_collaboration_government_DEF: "$OVERLORDADJ$ $NONIDEOLOGY$" #NT!
+ CRC_autonomy_collaboration_government_DEF: "$OVERLORDADJ$ $NONIDEOLOGY$" #NT!
+ UAE_autonomy_collaboration_government_DEF: "$OVERLORDADJ$ $NONIDEOLOGY$" #NT!
+ CSA_autonomy_collaboration_government_DEF: "$OVERLORDADJ$ $NONIDEOLOGY$" #NT!
+ USB_autonomy_collaboration_government_DEF: "$OVERLORDADJ$ $NONIDEOLOGY$" #NT!
+ RCG_autonomy_collaboration_government_DEF: "$OVERLORDADJ$ $NONIDEOLOGY$" #NT!
+ CAR_autonomy_collaboration_government_DEF: "$OVERLORDADJ$ $NONIDEOLOGY$" #NT!
+ WES_autonomy_collaboration_government_DEF: "$OVERLORDADJ$ $NONIDEOLOGY$" #NT!
+ BAS_autonomy_collaboration_government_DEF: "$OVERLORDADJ$ $NONIDEOLOGY$" #NT!
+ GUM_autonomy_collaboration_government_DEF: "$OVERLORDADJ$ $NONIDEOLOGY$" #NT!
+ SOL_autonomy_collaboration_government_DEF: "$OVERLORDADJ$ $NONIDEOLOGY$" #NT!
+ NAV_autonomy_collaboration_government_DEF: "$OVERLORDADJ$ $NONIDEOLOGY$" #NT!
+ COUNTRY_autonomy_collaboration_government: "$OVERLORDADJ$ $NONIDEOLOGY$"
+ COUNTRY_autonomy_collaboration_government_DEF: "$OVERLORDADJ$ $NONIDEOLOGYDEF$"
+ COUNTRY_autonomy_collaboration_government_ADJ: "$OVERLORDADJ$ $NONIDEOLOGYADJ$"
+ united_polynesia_democratic: "Тихоокеанская Федерация" #NT!
+ united_polynesia_democratic_DEF: "Тихоокеанская Федерация" #NT!
+ united_polynesia_democratic_ADJ: "Тихий океан" #NT!
+ united_polynesia_communism: "Социалистический союз народов Океании" #NT!
+ united_polynesia_communism_DEF: "Социалистический Союз народов Океании" #NT!
+ united_polynesia_communism_ADJ: "Океанский" #NT!
+ united_polynesia_neutrality: "Соединенное Королевство Полинезии" #NT!
+ united_polynesia_neutrality_DEF: "Соединенное Королевство Полинезии" #NT!
+ united_polynesia_neutrality_ADJ: "полинезийский" #NT!
+ united_polynesia_fascism: "Полинезийская империя" #NT!
+ united_polynesia_fascism_DEF: "Полинезийская империя" #NT!
+ united_polynesia_fascism_ADJ: "полинезийский" #NT!
+ united_polynesia_autonomy_dominion: "Доминион Полинезии" #NT!
+ united_polynesia_autonomy_dominion_DEF: "Доминион Полинезии" #NT!
+ united_polynesia: "Полинезия" #NT!
+ united_polynesia_DEF: "Полинезия" #NT!
+ united_polynesia_ADJ: "полинезийский" #NT!
+ CAT_aragon_fascism: "Штат Арагон" #NT!
+ CAT_aragon_fascism_DEF: "штат Арагон" #NT!
+ CAT_aragon_democratic: "Арагонская Республика" #NT!
+ CAT_aragon_democratic_DEF: "Арагонская Республика" #NT!
+ CAT_aragon_neutrality: "Корона Арагона" #NT!
+ CAT_aragon_neutrality_DEF: "Корона Арагона" #NT!
+ CAT_aragon_communism: "Народная Республика Арагон" #NT!
+ CAT_aragon_communism_DEF: "Арагонская Народная Республика" #NT!
+ CAT_aragon_fascism_ADJ: "Арагонский" #NT!
+ CAT_aragon_democratic_ADJ: "Арагонский" #NT!
+ CAT_aragon_neutrality_ADJ: "Арагонский" #NT!
+ CAT_aragon_communism_ADJ: "Арагонский" #NT!
+ CAT_aragon: "Арагон" #NT!
+ CAT_aragon_DEF: "Арагон" #NT!
+ CAT_aragon_ADJ: "Арагонский" #NT!
+ SPR_castille_communism: "Республиканская Кастилия" #NT!
+ SPR_castille_communism_DEF: "Республиканская Кастилия" #NT!
+ SPR_castille_communism_ADJ: "кастильский" #NT!
+ SPR_castille_fascism: "Националистическая Кастилия" #NT!
+ SPR_castille_fascism_DEF: "Националистическая Кастилия" #NT!
+ SPR_castille_fascism_ADJ: "кастильский" #NT!
+ SPR_castille_neutrality: "Корона Кастилии" #NT!
+ SPR_castille_neutrality_DEF: "Корона Кастилии" #NT!
+ SPR_castille_neutrality_ADJ: "кастильский" #NT!
+ SPR_castille: "Кастилия" #NT!
+ SPR_castille_DEF: "Кастилия" #NT!
+ SPR_castille_ADJ: "кастильский" #NT!
+ FRANCO_SPAIN_neutrality: "Королевство Франко-Испания" #NT!
+ FRANCO_SPAIN_neutrality_DEF: "Королевство Франко-Испания" #NT!
+ FRANCO_SPAIN_neutrality_ADJ: "Франко-испанский" #NT!
+ FRANCO_SPAIN_democratic: "Федеративная Республика Франко-Испания" #NT!
+ FRANCO_SPAIN_democratic_DEF: "Федеративная Республика Франко-Испания" #NT!
+ FRANCO_SPAIN_democratic_ADJ: "Франко-испанский" #NT!
+ FRANCO_SPAIN_fascism: "Франко-Испанская империя" #NT!
+ FRANCO_SPAIN_fascism_DEF: "Франко-Испанская империя" #NT!
+ FRANCO_SPAIN_fascism_ADJ: "Франко-испанский" #NT!
+ FRANCO_SPAIN_communism: "Франко-Испанская Народная Республика" #NT!
+ FRANCO_SPAIN_communism_DEF: "Франко-Испанская Народная Республика" #NT!
+ FRANCO_SPAIN_communism_ADJ: "Франко-испанский" #NT!
+ GRE_byz_republic_fascism: "Национальный союз Греции" #NT!
+ GRE_byz_republic_fascism_DEF: "Национальный союз Греции" #NT!
+ GRE_byz_republic_fascism_ADJ: "Греческий" #NT!
+ GRE_dem_monarchy_democratic: "Греция" #NT!
+ GRE_dem_monarchy_democratic_DEF: "Греция" #NT!
+ GRE_dem_monarchy_democratic_ADJ: "Греческий" #NT!
+ GRE_com_independent_communism: "Народная Республика Эллада" #NT!
+ GRE_com_independent_communism_DEF: "Народная Республика Эллада" #NT!
+ GRE_com_independent_communism_ADJ: "эллинский" #NT!
+ GRE_stalinist_communism: "Союз Греческих Советских Республик" #NT!
+ GRE_stalinist_communism_DEF: "Союз Греческих Советских Республик" #NT!
+ GRE_stalinist_communism_ADJ: "Греческий" #NT!
+ GRE_GREATER_GREECE_neutrality: "Королевство Великой Греции" #NT!
+ GRE_GREATER_GREECE_fascism: "Эллинистическая империя" #NT!
+ GRE_GREATER_GREECE_democratic: "Эллада" #NT!
+ GRE_GREATER_GREECE_communism: "Эгейская коммуна" #NT!
+ GRE_GREATER_GREECE_neutrality_DEF: "Королевство Великой Греции" #NT!
+ GRE_GREATER_GREECE_fascism_DEF: "Эллинистическая империя" #NT!
+ GRE_GREATER_GREECE_democratic_DEF: "Эллада" #NT!
+ GRE_GREATER_GREECE_communism_DEF: "Эгейская коммуна" #NT!
+ GRE_GREATER_GREECE_fascism_ADJ: "эллинский" #NT!
+ GRE_GREATER_GREECE_democratic_ADJ: "эллинский" #NT!
+ GRE_GREATER_GREECE_communism_ADJ: "Эгейское море" #NT!
+ MAE_neutrality: "Македонское государство" #NT!
+ MAE_fascism: "Македонская империя" #NT!
+ MAE_democratic: "Великая Республика Великая Македония" #NT!
+ MAE_communism: "Коллектив Аргоса" #NT!
+ MAE_neutrality_DEF: "Македонское государство" #NT!
+ MAE_fascism_DEF: "Македонская империя" #NT!
+ MAE_democratic_DEF: "Великая Республика Великая Македония" #NT!
+ MAE_communism_DEF: "Коллектив Аргоса" #NT!
+ MAE_fascism_ADJ: "эллинистический" #NT!
+ MAE_neutrality_ADJ: "македонский" #NT!
+ MAE_democratic_ADJ: "македонский" #NT!
+ MAE_communism_ADJ: "эллинистический" #NT!
+ ARM_UK_autonomy_dominion: "Доминион Армении" #NT!
+ ARM_UK_autonomy_colony: "Правительство Армении" #NT!
+ ARM_UK_autonomy_puppet: "Протекторат Армении" #NT!
+ ARM_UK_autonomy_integrated_puppet: "$OVERLORDADJ$ Армения" #NT!
+ ARM_UK_autonomy_dominion_DEF: "Доминион Армении" #NT!
+ ARM_UK_autonomy_colony_DEF: "Правительство Армении" #NT!
+ ARM_UK_autonomy_puppet_DEF: "Протекторат Армении" #NT!
+ ARM_UK_autonomy_integrated_puppet_DEF: "$OVERLORDADJ$ Армения" #NT!
+ CYP_UK_autonomy_dominion: "Доминион Кипра" #NT!
+ CYP_UK_autonomy_colony: "Правительство Кипра" #NT!
+ CYP_UK_autonomy_puppet: "Протекторат Кипра" #NT!
+ CYP_UK_autonomy_integrated_puppet: "$OVERLORDADJ$ Кипр" #NT!
+ CYP_UK_autonomy_dominion_DEF: "Доминион Кипра" #NT!
+ CYP_UK_autonomy_colony_DEF: "Правительство Кипра" #NT!
+ CYP_UK_autonomy_puppet_DEF: "Протекторат Кипра" #NT!
+ CYP_UK_autonomy_integrated_puppet_DEF: "$OVERLORDADJ$ Кипр" #NT!
+ BUL_zveno_bulgaria: "Республика Болгария" #NT!
+ BUL_zveno_bulgaria_DEF: "Республика Болгария" #NT!
+ BUL_constitutional_monarchy: "$BUL_neutrality$"
+ BUL_constitutional_monarchy_DEF: "$BUL_neutrality_DEF$"
+ BUL_constitutional_monarchy_ADJ: "$BUL_neutrality_ADJ$"
+ UBF_united_balkan_federation: "Объединенная Балканская Федерация" #NT!
+ UBF_united_balkan_federation_DEF: "Объединенная Балканская Федерация" #NT!
+ UBF_united_balkan_federation_ADJ: "Балканский" #NT!
+  
+ TBE_third_bulgarian_empire_neutrality: "Третья Болгарская империя" #NT!
+ TBE_third_bulgarian_empire_neutrality_DEF: "Третья Болгарская империя" #NT!
+ TBE_third_bulgarian_empire_neutrality_ADJ: "болгарский" #NT!
+ TBE_third_bulgarian_empire_fascism: "Третья Болгарская империя" #NT!
+ TBE_third_bulgarian_empire_fascism_DEF: "Третья Болгарская империя" #NT!
+ TBE_third_bulgarian_empire_fascism_ADJ: "болгарский" #NT!
+ TBE_third_bulgarian_empire_communism: "Народная Республика Болгария" #NT!
+ TBE_third_bulgarian_empire_communism_DEF: "Народная Республика Болгария" #NT!
+ TBE_third_bulgarian_empire_communism_ADJ: "болгарский" #NT!
+ TBE_third_bulgarian_empire_democratic: "Болгарская Федерация" #NT!
+ TBE_third_bulgarian_empire_democratic_DEF: "Болгарская Федерация" #NT!
+ TBE_third_bulgarian_empire_democratic_ADJ: "болгарский" #NT!
+ KUR_FRA_autonomy_dominion: "$OVERLORDADJ$ Государство Курдистан" #NT!
+ KUR_FRA_autonomy_colony: "Правительство Курдистана" #NT!
+ KUR_FRA_autonomy_puppet: "$OVERLORDADJ$ Мандат Курдистана" #NT!
+ KUR_FRA_autonomy_integrated_puppet: "$OVERLORDADJ$ Курдистан" #NT!
+ KUR_FRA_autonomy_dominion_DEF: "$OVERLORDADJ$ Государство Курдистан" #NT!
+ KUR_FRA_autonomy_colony_DEF: "Правительство Курдистана" #NT!
+ KUR_FRA_autonomy_puppet_DEF: "$OVERLORDADJ$ Мандат Курдистана" #NT!
+ KUR_FRA_autonomy_integrated_puppet_DEF: "$OVERLORDADJ$ Курдистан" #NT!
+ TRN_neutrality: "Туран" #NT!
+ TRN_fascism: "Каганат Туран" #NT!
+ TRN_democratic: "Федерация Туран" #NT!
+ TRN_communism: "Союз Тюркских Социалистических Республик" #NT!
+ TRN_fascism_DEF: "Каганат Туран" #NT!
+ TRN_democratic_DEF: "Федерация Туран" #NT!
+ TRN_communism_DEF: "Союз Тюркских Социалистических Республик" #NT!
+ TRN_fascism_ADJ: "тюркский" #NT!
+ TRN_neutrality_ADJ: "тюркский" #NT!
+ TRN_democratic_ADJ: "Туранский" #NT!
+ TRN_communism_ADJ: "тюркский" #NT!
+ KOS_YUG_subject: "Автономный регион Косово" #NT!
+ KOS_YUG_subject_DEF: "Автономный регион Косово" #NT!
+ CRO_YUG_subject: "Бановина Хорватии" #NT!
+ CRO_YUG_subject_DEF: "Бановина Хорватии" #NT!
+ SLV_YUG_subject: "Драва Бановина" #NT!
+ SLV_YUG_subject_DEF: "Драва Бановина" #NT!
+ SLV_YUG_subject_ADJ: "Драва" #NT!
+ BOS_YUG_subject: "Бановина Боснии" #NT!
+ BOS_YUG_subject_DEF: "Бановина Боснии" #NT!
+ HRZ_YUG_subject: "Бановина Герцеговины" #NT!
+ HRZ_YUG_subject_DEF: "Бановина Герцеговины" #NT!
+ MAC_YUG_subject: "Вардар Бановина" #NT!
+ MAC_YUG_subject_DEF: "Вардар Бановина" #NT!
+ MAC_YUG_subject_ADJ: "Вардар" #NT!
+ MNT_YUG_subject: "Зета Бановина" #NT!
+ MNT_YUG_subject_DEF: "Зета Бановина" #NT!
+ MNT_YUG_subject_ADJ: "Зета" #NT!
+ dalmatia_YUG_subject: "Бановина Далмации" #NT!
+ dalmatia_YUG_subject_DEF: "Бановина Далмации" #NT!
+ TRA_YUG_subject: "Автономный регион Трансильвания" #NT!
+ TRA_YUG_subject_DEF: "Автономный регион Трансильвания" #NT!
+ vojvodina_YUG_subject: "Автономный регион Воеводина" #NT!
+ vojvodina_YUG_subject_DEF: "Автономный регион Воеводина" #NT!
+ UBF_united_balkan_federation_communism: "Объединенная Балканская Федерация" #NT!
+ UBF_united_balkan_federation_communism_DEF: "Объединенная Балканская Федерация" #NT!
+ UBF_united_balkan_federation_communism_ADJ: "Балканский" #NT!
+ UBF_united_balkan_federation_democratic: "Объединенная Балканская Федерация" #NT!
+ UBF_united_balkan_federation_democratic_DEF: "Объединенная Балканская Федерация" #NT!
+ UBF_united_balkan_federation_democratic_ADJ: "Балканский" #NT!
+ UBF_united_balkan_federation_fascism: "Объединенная Балканская Федерация" #NT!
+ UBF_united_balkan_federation_fascism_DEF: "Объединенная Балканская Федерация" #NT!
+ UBF_united_balkan_federation_fascism_ADJ: "Балканский" #NT!
+ UBF_united_balkan_federation_neutrality: "Объединенная Балканская Федерация" #NT!
+ UBF_united_balkan_federation_neutrality_DEF: "Объединенная Балканская Федерация" #NT!
+ UBF_united_balkan_federation_neutrality_ADJ: "Балканский" #NT!
+ BUL_ff_bulgaria: "$BUL_communism$"
+ BUL_ff_bulgaria_DEF: "$BUL_communism_DEF$"
+ BUL_ff_bulgaria_ADJ: "$BUL_communism_ADJ$"
+ GRE_dem_monarchy_fascism: "Национальный союз Греции" #NT!
+ GRE_dem_monarchy_fascism_DEF: "Национальный союз Греции" #NT!
+ GRE_dem_monarchy_fascism_ADJ: "Греческий" #NT!
+ TUR_PROVISIONARY_communism: "Временное государство Анатолия" #NT!
+ TUR_PROVISIONARY_democratic: "Временное государство Анатолия" #NT!
+ TUR_PROVISIONARY_fascism: "Временное государство Анатолия" #NT!
+ TUR_PROVISIONARY_neutrality: "Временное государство Анатолия" #NT!
+ TRN_neutrality_DEF: "Туран" #NT!
+ POL_SANATION_neutrality: "Санационистская Польша" #NT!
+ POL_SANATION_neutrality_DEF: "Польское санационное правительство" #NT!
+ POL_SANATION_democratic: "Санационистская Республика Польша" #NT!
+ POL_SANATION_democratic_DEF: "Санационистская Республика Польша" #NT!
+ POL_SANATION_fascism: "Польская санационная хунта" #NT!
+ POL_SANATION_fascism_DEF: "Польская санационная хунта" #NT!
+ POL_KINGDOM: "Королевство Польское" #NT!
+ POL_KINGDOM_DEF: "Королевство Польское" #NT!
+ POL_KINGDOM_fascism: "Королевство Польское" #NT!
+ POL_KINGDOM_fascism_DEF: "Королевство Польское" #NT!
+ POL_KINGDOM_RUS: "Конгресс Королевства Польши" #NT!
+ POL_KINGDOM_RUS_DEF: "Конгресс Королевства Польши" #NT!
+ POL_KINGDOM_RUS_fascism: "Бермонтское королевство Польское" #NT!
+ POL_KINGDOM_RUS_fascism_DEF: "Бермонтское королевство Польское" #NT!
+ PLC_UNIFIED_RUS: "Конгресс Содружества" #NT!
+ PLC_UNIFIED_RUS_DEF: "Содружество Конгресса" #NT!
+ PLC_UNIFIED_RUS_fascism: "Бермонтское Содружество" #NT!
+ PLC_UNIFIED_RUS_fascism_DEF: "Бермонтское Содружество" #NT!
+ POL_PEASANT_democratic: "Польский Крестьянский Союз" #NT!
+ POL_PEASANT_democratic_DEF: "Польский крестьянский союз" #NT!
+ POL_PEASANT_communism: "Польская Крестьянская Республика" #NT!
+ POL_PEASANT_communism_DEF: "Польская Крестьянская Республика" #NT!
+ GREATER_LIT_neutrality_subject: "Великое Княжество Литовское" #NT!
+ GREATER_LIT_neutrality_subject_DEF: "Великое Княжество Литовское" #NT!
+ GREATER_LIT_neutrality: "Королевство Литва" #NT!
+ GREATER_LIT_neutrality_DEF: "Королевство Литва" #NT!
+ GREATER_LIT_communism: "Великая Литовская Народная Республика" #NT!
+ GREATER_LIT_communism_DEF: "Великая Литовская Народная Республика" #NT!
+ GREATER_LIT_democratic: "Литва-Малороссия" #NT!
+ GREATER_LIT_democratic_DEF: "Литва-Малороссия" #NT!
+ GREATER_LIT_fascism: "Великая Литва" #NT!
+ GREATER_LIT_fascism_DEF: "Великая Литва" #NT!
+ GREATER_LIT: "Великая Литва" #NT!
+ GREATER_LIT_DEF: "Великая Литва" #NT!
+ BLR_baltic: "Балтийская Беларусь" #NT!
+ BLR_baltic_DEF: "Балтийское государство Беларусь" #NT!
+ LIT_belarus_communism: "Литва-Белорусская ССР" #NT!
+ LIT_belarus_communism_DEF: "Литовско-Белорусская ССР" #NT!
+ LIT_belarus_fascism: "Литовско-Белорусское националистическое собрание" #NT!
+ LIT_belarus_fascism_DEF: "Литовско-Белорусское националистическое собрание" #NT!
+ LIT_belarus_democratic: "Литва-Беларусь" #NT!
+ LIT_belarus_democratic_DEF: "Литовско-Белорусская Республика" #NT!
+ LIT_belarus: "Литва-Беларусь" #NT!
+ LIT_belarus_DEF: "Литва-Беларусь" #NT!
+ LAT_belarus_communism: "Латвия-Белорусская ССР" #NT!
+ LAT_belarus_communism_DEF: "Латвийско-Белорусская ССР" #NT!
+ LAT_belarus_fascism: "Латвийско-Белорусское националистическое собрание" #NT!
+ LAT_belarus_fascism_DEF: "Латвийско-Белорусское националистическое собрание" #NT!
+ LAT_belarus_democratic: "Латвия-Беларусь" #NT!
+ LAT_belarus_democratic_DEF: "Латвийско-Белорусская Республика" #NT!
+ LAT_belarus: "Латвия-Беларусь" #NT!
+ LAT_belarus_DEF: "Латвия-Беларусь" #NT!
+ EST_belarus_communism: "Эстония-Белорусская ССР" #NT!
+ EST_belarus_communism_DEF: "Эстонско-Белорусская ССР" #NT!
+ EST_belarus_fascism: "Эстонско-белорусское националистическое собрание" #NT!
+ EST_belarus_fascism_DEF: "Эстонско-Белорусское националистическое собрание" #NT!
+ EST_belarus_democratic: "Эстония-Беларусь" #NT!
+ EST_belarus_democratic_DEF: "Эстонско-Белорусская Республика" #NT!
+ EST_belarus: "Эстония-Беларусь" #NT!
+ EST_belarus_DEF: "Эстония-Беларусь" #NT!
+ OSTLAND_fascism: "Остланд" #NT!
+ OSTLAND_fascism_DEF: "Остланд" #NT!
+ OSTLAND_fascism_ADJ: "Остландец" #NT!
+ OSTLAND_democratic: "Балтийско-Белорусская Республика" #NT!
+ OSTLAND_democratic_DEF: "Балтийско-Белорусская Республика" #NT!
+ OSTLAND_democratic_ADJ: "Балтийско-Белорусский" #NT!
+ OSTLAND_communism: "Балтийско-Белорусская Социалистическая Республика" #NT!
+ OSTLAND_communism_DEF: "Балтийско-Белорусская Социалистическая Республика" #NT!
+ OSTLAND_communism_ADJ: "Балтийско-Белорусский" #NT!
+ OSTLAND: "Остланд" #NT!
+ OSTLAND_DEF: "Остланд" #NT!
+ OSTLAND_ADJ: "Остландец" #NT!
+ LAT_MIL_neutrality: "Латвийское военное управление" #NT!
+ LAT_MIL_neutrality_DEF: "Латвийское военное управление" #NT!
+ LIT_MONARCHY_democratic: "Конституционное Королевство Литовское" #NT!
+ LIT_MONARCHY_democratic_DEF: "Конституционное Королевство Литовское" #NT!
+ LIT_MONARCHY: "Королевство Литва" #NT!
+ LIT_MONARCHY_DEF: "Королевство Литва" #NT!
+ LIT_MONARCHY_POL_subject: "Великое Княжество Литовское" #NT!
+ LIT_MONARCHY_POL_subject_DEF: "Великое Княжество Литовское" #NT!
+ DON_RUS_subject_communism: "Донская Советская Республика" #NT!
+ DON_RUS_subject_communism_DEF: "Донская Советская Республика" #NT!
+ KUB_RUS_subject_communism: "Кубанская Советская Республика" #NT!
+ KUB_RUS_subject_communism_DEF: "Кубанская Советская Республика" #NT!
+ ROM_polish_loyalists_neutrality: "Временное королевство Польша-Румыния" #NT!
+ ROM_polish_loyalists_neutrality_DEF: "Временное королевство Польша-Румыния" #NT!
+ POL_ROM_UNION_communism: "Польско-Румынская Народная Республика" #NT!
+ POL_ROM_UNION_communism_DEF: "Польско-Румынская Народная Республика" #NT!
+ POL_ROM_UNION_democratic: "Польско-румынская федерация" #NT!
+ POL_ROM_UNION_democratic_DEF: "Польско-румынская федерация" #NT!
+ POL_ROM_UNION_neutrality: "Королевство Польша-Румыния" #NT!
+ POL_ROM_UNION_neutrality_DEF: "Королевство Польша-Румыния" #NT!
+ POL_ROM_UNION: "Польша-Румыния" #NT!
+ POL_ROM_UNION_DEF: "Польша-Румыния" #NT!
+ POL_EMPIRE_fascism: "Польская империя" #NT!
+ POL_EMPIRE_fascism_DEF: "Польская империя" #NT!
+ POL_NATDEM_fascism: "Польская Народная Республика" #NT!
+ POL_NATDEM_fascism_DEF: "Польская Народная Республика" #NT!
+ SLAVIC_UNIFIED_neutrality: "Славянский Союз" #NT!
+ SLAVIC_UNIFIED_neutrality_DEF: "Славянский союз" #NT!
+ SLAVIC_UNIFIED_fascism: "Славянская империя" #NT!
+ SLAVIC_UNIFIED_fascism_DEF: "Славянская империя" #NT!
+ SLAVIC_UNIFIED_democratic: "Славянская Республика" #NT!
+ SLAVIC_UNIFIED_democratic_DEF: "Славянская Республика" #NT!
+ SLAVIC_UNIFIED_communism: "Объединенная Славянская Советская Республика" #NT!
+ SLAVIC_UNIFIED_communism_DEF: "Объединенная Славянская Советская Республика" #NT!
+ SLAVIC_UNIFIED: "Славянский Союз" #NT!
+ SLAVIC_UNIFIED_DEF: "Славянский союз" #NT!
+ turkestan_united_RUS_communism_subject: "Туркестанская АССР" #NT!
+ turkestan_united_RUS_communism_subject_DEF: "Туркестанская АССР" #NT!
+ turkestan_united_neutrality: "Тюркское ханство" #NT!
+ turkestan_united_neutrality_DEF: "Тюркское ханство" #NT!
+ turkestan_united_democratic: "Тюркская Федеративная Республика" #NT!
+ turkestan_united_democratic_DEF: "Тюркская Федеративная Республика" #NT!
+ turkestan_united_fascism: "Тюркская империя" #NT!
+ turkestan_united_fascism_DEF: "Тюркская империя" #NT!
+ turkestan_united_communism: "Республика Тюркских Народов" #NT!
+ turkestan_united_communism_DEF: "Республика тюркских народов" #NT!
+ turkestan_united: "Туркестан" #NT!
+ turkestan_united_DEF: "Туркестан" #NT!
+ turkestan_united_ADJ: "тюркский" #NT!
+ EST_FIN_neutrality: "Эстония-Финляндия" #NT!
+ EST_FIN_neutrality_DEF: "Эстония-Финляндия" #NT!
+ EST_FIN_democratic: "Эстонская Республика-Финляндия" #NT!
+ EST_FIN_democratic_DEF: "Эстонская Республика-Финляндия" #NT!
+ EST_FIN_fascism: "Эстония-Финляндия Лига" #NT!
+ EST_FIN_fascism_DEF: "Лига Эстония-Финляндия" #NT!
+ EST_FIN_communism: "Эстонская Народная Республика-Финляндия" #NT!
+ EST_FIN_communism_DEF: "Эстонская Народная Республика-Финляндия" #NT!
+ EST_FIN: "Эстония-Финляндия" #NT!
+ EST_FIN_DEF: "Эстония-Финляндия" #NT!
+ EST_FIN_ADJ: "Эсто-финский" #NT!
+ EST_UGRA_neutrality: "Финно-Угрия" #NT!
+ EST_UGRA_neutrality_DEF: "Финно-Угрия" #NT!
+ EST_UGRA_democratic: "Финская Республика" #NT!
+ EST_UGRA_democratic_DEF: "Финская Республика" #NT!
+ EST_UGRA_fascism: "Империя Финно-Угрии" #NT!
+ EST_UGRA_fascism_DEF: "Империя Финно-Угрии" #NT!
+ EST_UGRA_communism: "Финская Народная Республика" #NT!
+ EST_UGRA_communism_DEF: "Финская Народная Республика" #NT!
+ EST_UGRA: "Финно-Угрия" #NT!
+ EST_UGRA_DEF: "Финно-Угрия" #NT!
+ EST_UGRA_ADJ: "Финно-угорский" #NT!
+ LIT_MIL_neutrality: "Литовская хунта" #NT!
+ LIT_MIL_neutrality_DEF: "литовская хунта" #NT!
+ RUS_ROME: "Третий Рим" #NT!
+ RUS_ROME_DEF: "Третий Рим" #NT!
+ RUS_PANSLAVIC: "Панславянский союз" #NT!
+ RUS_PANSLAVIC_DEF: "Панславянский союз" #NT!
+ LIVONIA_democratic: "Объединенная Республика Ливония" #NT!
+ LIVONIA_democratic_DEF: "Объединенные Республики Ливонии" #NT!
+ LIVONIA_communism: "Социалистическая Республика Ливония" #NT!
+ LIVONIA_communism_DEF: "Социалистическая Республика Ливония" #NT!
+ LIVONIA_fascism: "Терра Мариана" #NT!
+ LIVONIA_fascism_DEF: "Терра Мариана" #NT!
+ LIVONIA_neutrality: "Королевство Ливония" #NT!
+ LIVONIA_neutrality_DEF: "Королевство Ливония" #NT!
+ LIVONIA: "Ливония" #NT!
+ LIVONIA_DEF: "Ливония" #NT!
+ LIVONIA_ADJ: "Ливонский" #NT!
+ RUS_left_opposition_communism: "Союз Советских Республик" #NT!
+ RUS_left_opposition_communism_def: "Союз Советских Республик Европы и Азии" #NT!
+ RUS_right_opposition_communism: "СССР" #NT!
+ RUS_right_opposition_communism_def: "Советская Социалистическая Республика" #NT!
+ RUS_PROVISIONAL_neutrality: "Временное правительство России" #NT!
+ RUS_PROVISIONAL_neutrality_def: "Временное российское правительство" #NT!
+ RUS_PROVISIONAL_ADJ: "Русский" #NT!
+ russian_empire_communism: "Российская Социалистическая Республика" #NT!
+ russian_empire_communism_DEF: "Российская Социалистическая Республика" #NT!
+ russian_empire_communism_ADJ: "Русский" #NT!
+ mountainous_republics_unified_RUS_communism_subject: "Горная Автономная Советская Социалистическая Республика" #NT!
+ mountainous_republics_unified_RUS_communism_subject_DEF: "Горская Автономная Советская Социалистическая Республика" #NT!
+ mountainous_republics_unified_neutrality: "Северо-Кавказский Эмират" #NT!
+ mountainous_republics_unified_neutrality_DEF: "Северо-Кавказский Эмират" #NT!
+ mountainous_republics_unified_democratic: "Горная республика Северного Кавказа" #NT!
+ mountainous_republics_unified_democratic_DEF: "Горная Республика Северного Кавказа" #NT!
+ mountainous_republics_unified_fascism: "Северо-Кавказский национальный союз" #NT!
+ mountainous_republics_unified_fascism_DEF: "Северо-Кавказский национальный союз" #NT!
+ mountainous_republics_unified_communism: "Горская Народная Республика Северного Кавказа" #NT!
+ mountainous_republics_unified_communism_DEF: "Горская Народная Республика Северного Кавказа" #NT!
+ mountainous_republics_unified: "Северный Кавказ" #NT!
+ mountainous_republics_unified_DEF: "Северный Кавказ" #NT!
+ mountainous_republics_unified_ADJ: "Северо-Кавказский" #NT!
+ transcaucasia_unified_RUS_communism_subject: "Закавказская Социалистическая Федеративная Советская Республика" #NT!
+ transcaucasia_unified_RUS_communism_subject_DEF: "Закавказская Социалистическая Федеративная Советская Республика" #NT!
+ transcaucasia_unified_neutrality: "Закавказская Федерация" #NT!
+ transcaucasia_unified_neutrality_DEF: "Закавказская Федерация" #NT!
+ transcaucasia_unified_democratic: "Закавказская Республика" #NT!
+ transcaucasia_unified_democratic_DEF: "Закавказская Республика" #NT!
+ transcaucasia_unified_fascism: "Закавказское ультранационалистическое государство" #NT!
+ transcaucasia_unified_fascism_DEF: "Закавказское ультранационалистическое государство" #NT!
+ transcaucasia_unified_communism: "Закавказская Федеративная Социалистическая Республика" #NT!
+ transcaucasia_unified_communism_DEF: "Закавказская Федеративная Социалистическая Республика" #NT!
+ transcaucasia_unified: "Закавказье" #NT!
+ transcaucasia_unified_DEF: "Закавказье" #NT!
+ transcaucasia_unified_ADJ: "Закавказский" #NT!
+ siberia_unified_RUS_communism_subject: "Сибирская Федеративная Советская Социалистическая Республика" #NT!
+ siberia_unified_RUS_communism_subject_DEF: "Сибирская Социалистическая Федеративная Советская Республика" #NT!
+ siberia_unified_neutrality: "Многонациональное государство Сибирь" #NT!
+ siberia_unified_neutrality_DEF: "Многонациональное государство Сибирь" #NT!
+ siberia_unified_democratic: "Республика Сибирь" #NT!
+ siberia_unified_democratic_DEF: "Республика Сибирь" #NT!
+ siberia_unified_fascism: "Великое Сибирское Царство" #NT!
+ siberia_unified_fascism_DEF: "Великое Сибирское Царство" #NT!
+ siberia_unified_communism: "Сибирский Союз Независимых Республик" #NT!
+ siberia_unified_communism_DEF: "Сибирский Союз Независимых Республик" #NT!
+ siberia_unified: "Сибирь" #NT!
+ siberia_unified_DEF: "Сибирь" #NT!
+ siberia_unified_ADJ: "Сибирский" #NT!
+ SWE_REP: "Республика Швеция" #NT!
+ SWE_REP_democratic: "Республика Швеция" #NT!
+ SWE_REP_socialist: "Республика Швеция" #NT!
+ SWE_REP_DEF: "Республика Швеция" #NT!
+ SWE_REP_democratic_DEF: "Республика Швеция" #NT!
+ SWE_REP_socialist_DEF: "Республика Швеция" #NT!
+ idel_ural_RUS_communism_subject: "Идель Уральская Федеративная Советская Социалистическая Республика" #NT!
+ idel_ural_RUS_communism_subject_DEF: "Идель Уральская Федеративная Советская Социалистическая Республика" #NT!
+ idel_ural_neutrality: "Идель-Урал" #NT!
+ idel_ural_neutrality_DEF: "Государство Идель-Урал" #NT!
+ idel_ural_democratic: "Идель-Уральская Республика" #NT!
+ idel_ural_democratic_DEF: "Республика Идель-Урал" #NT!
+ idel_ural_fascism: "Южно-Уральская империя" #NT!
+ idel_ural_fascism_DEF: "Южно-Уральская империя" #NT!
+ idel_ural_communism: "Федеральная коммуна Урала" #NT!
+ idel_ural_communism_DEF: "Федеральная Коммуна Урала" #NT!
+ idel_ural: "Идель Урал" #NT!
+ idel_ural_DEF: "Идель Уральского государства" #NT!
+ idel_ural_ADJ: "Идель Уральский" #NT!
+ FIN_MON_DEF: "Королевство Финляндия" #NT!
+ FIN_MON: "Королевство Финляндия" #NT!
+ FIN_ROMANOV: "Великое Княжество Финляндское" #NT!
+ FIN_ROMANOV_DEF: "Великое Княжество Финляндское" #NT!
+ FIN_MON_neutrality: "Королевство Финляндия" #NT!
+ FIN_MON_conservatives: "Королевство Финляндия" #NT!
+ FIN_ROMANOV_conservatives: "Великое Княжество Финляндское" #NT!
+ FIN_ROMANOV_neutrality: "Великое Княжество Финляндское" #NT!
+ FIN_MON_democratic: "Королевство Финляндия" #NT!
+ FIN_ROMANOV_democratic: "Великое Княжество Финляндское" #NT!
+ HEJ_King: "Хашимитское королевство Хиджаз" #NT!
+ HEJ_King_DEF: "Хашимитское королевство Хиджаз" #NT!
+ HEJ_King_ADJ: "Хиджази" #NT!
+ KUR_King: "Королевство Курдистан" #NT!
+ KUR_King_DEF: "Королевство Курдистан" #NT!
+ KUR_King_ADJ: "курдский" #NT!
+ AUS_REP: "Австрийская Республика" #NT!
+ AUS_REP_DEF: "Австрийская Республика" #NT!
+ POL_RUS: "Великое Княжество Польское" #NT!
+ POL_RUS_DEF: "Великое Княжество Польское" #NT!
+ POL_RUS_ADJ: "Польский" #NT!

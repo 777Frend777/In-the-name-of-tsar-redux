@@ -1,0 +1,63 @@
+﻿##### ROM ######
+
+add_namespace = news
+
+#Birth of Israel and Palestine refuses
+news_event = {
+	id = news.5002
+	title = news.5002.t
+	desc = news.5002.d
+	picture = GFX_news_event_israeli_soldiers
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.5002.a
+		trigger = {
+			NOT = {
+			TAG = ENG
+			TAG = MAP
+			}
+		}
+	}
+	option = {
+		name = news.5002.b
+		trigger = {TAG = ENG}
+	}
+	option = {
+		name = news.5002.c
+		trigger = {TAG = MAP}
+	}
+}
+
+#Palestine get it's Freedom from negotiations
+news_event = {
+	id = news.5003
+	title = news.5003.t
+	desc = news.5003.d
+	picture = GFX_news_event_israeli_soldiers
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.5003.a
+		trigger = {
+			NOT = {
+			TAG = ENG
+			TAG = MAP
+			}
+		}
+	}
+	option = {
+		name = news.5003.b
+		trigger = {TAG = ENG}
+	}
+	option = {
+		name = news.5003.c
+		trigger = {TAG = MAP}
+	}
+}

@@ -1,0 +1,490 @@
+﻿
+###########################
+
+add_namespace = russia_states
+
+#Russia's Afghanistan Event
+country_event = {
+	id = russia_states.1
+	title = russia_states.1.t
+	desc = russia_states.1.d
+	#picture = GFX_report_event_TUR_riot
+	trigger = {
+	TAG = RUS 
+	RUS = {
+	controls_state = 415 
+	controls_state = 267
+	is_puppet = no
+	NOT = { has_war_with = AFG }
+	}
+	}
+	fire_only_once = yes 
+	mean_time_to_happen = { days = 7 } 
+	option = {
+	name = russia_states.1.a	
+    ai_chance = { base = 100 }	
+	RUS = { 
+	add_political_power = -30 
+	release_puppet = AFG 
+	transfer_state = 267
+	} 
+	}
+	option = {
+	name = russia_states.1.b	
+    ai_chance = { base = 0 }
+	add_stability = -0.05
+	}
+}
+
+#Russia's Iran event
+country_event = {
+	id = russia_states.2
+	title = russia_states.2.t
+	desc = russia_states.2.d
+	#picture = GFX_report_event_TUR_riot
+	trigger = {
+	tag = RUS 
+	RUS = {
+	controls_state = 419
+	controls_state = 420
+	controls_state = 421
+	controls_state = 266
+	controls_state = 416
+	controls_state = 417
+	controls_state = 418
+	controls_state = 414
+	controls_state = 411
+	controls_state = 413
+	controls_state = 412
+	controls_state = 410
+	is_puppet = no
+	}
+	PER = { 
+	NOT = { has_war_with = RUS } }
+	}
+	fire_only_once = yes 
+	mean_time_to_happen = { days = 7 } 
+	option = {
+	name = russia_states.2.a	
+    ai_chance = { base = 100 }	
+	add_political_power = -60
+	RUS = {
+	release_puppet = PER 
+	transfer_state = 266
+	transfer_state = 420
+	}
+	}
+	option = {
+		name = russia_states.2.b	
+    ai_chance = { base = 0 }
+	add_stability = -0.05
+	}
+}
+#Russia's Romania event
+country_event = {
+	id = russia_states.3
+	title = russia_states.3.t
+	desc = russia_states.3.d
+	#picture = GFX_report_event_TUR_riot
+	trigger = {
+	tag = RUS 
+	RUS = {
+	controls_state = 803
+	controls_state = 77
+	controls_state = 46
+	controls_state = 81
+	controls_state = 84
+	controls_state = 76
+	controls_state = 79
+	controls_state = 83
+	controls_state = 82
+	is_puppet = no
+	}
+	ROM = { 
+	NOT = { has_war_with = RUS } }
+	}
+	fire_only_once = yes 
+	mean_time_to_happen = { days = 7 } 
+	option = {
+	name = russia_states.3.a	
+    ai_chance = { base = 100 }	
+	add_political_power = -60
+	ROM = {
+	remove_state_core = 78
+	remove_state_core = 766
+	}
+	RUS = { release_puppet = ROM }
+	}
+	option = {
+		name = russia_states.3.b	
+    ai_chance = { base = 0 }
+	add_stability = -0.05
+	}
+}
+#Russia's Romania event but Moldova takes over
+country_event = {
+	id = russia_states.4
+	title = russia_states.4.t
+	desc = russia_states.4.d
+	#picture = GFX_report_event_TUR_riot
+	trigger = {
+	tag = RUS 
+	MOL = {
+	controls_state = 803
+	controls_state = 77
+	controls_state = 46
+	controls_state = 81
+	controls_state = 84
+	controls_state = 76
+	controls_state = 79
+	controls_state = 83
+	controls_state = 82
+	is_puppet_of = RUS 
+	}
+	ROM = { 
+	NOT = { has_war_with = RUS } }
+	}
+	fire_only_once = yes 
+	mean_time_to_happen = { days = 7 } 
+	option = {
+	name = russia_states.4.a	
+    ai_chance = { base = 100 }	
+	add_political_power = -60
+	ROM = {
+	transfer_state = 803
+	transfer_state = 77
+	transfer_state = 46
+	transfer_state = 81
+	transfer_state = 84
+	transfer_state = 76
+	transfer_state = 79
+	transfer_state = 83
+	transfer_state = 82
+	}
+	RUS = {
+	puppet = ROM
+	}
+	}
+	option = {
+		name = russia_states.4.b	
+    ai_chance = { base = 0 }
+	add_stability = -0.05
+	}
+}
+#Russia's Iran event, Iran sues for peace
+country_event = {
+	id = russia_states.7
+	title = russia_states.7.t
+	desc = russia_states.7.d
+	#picture = GFX_report_event_TUR_riot
+	trigger = {
+	tag = PER
+	RUS = { is_puppet = no }
+	PER = {
+	surrender_progress > 0.2		
+	has_war_with = RUS
+	}
+	}
+	
+	fire_only_once = yes 
+	mean_time_to_happen = { days = 2 } 
+	option = {
+	name = russia_states.7.a #Peace	
+    ai_chance = { base = 100 }
+	RUS = {country_event = { id = russia_states.8 days = 1 }
+	}
+	}
+	option = {
+		name = russia_states.7.b #Continue war
+		ai_chance = { base = 0 }
+	}
+}	
+#Russia peace event with Iran
+country_event = {
+	id = russia_states.8
+	title = russia_states.8.t
+	desc = russia_states.8.d
+	#picture = GFX_report_event_TUR_riot
+	is_triggered_only = yes
+	
+	fire_only_once = yes 
+	option = {
+	name = russia_states.8.a #Peace	
+    ai_chance = { base = 100 }
+	transfer_state = 266
+	transfer_state = 420
+	white_peace = PER
+	}
+	option = {
+		name = russia_states.8.b #Continue war
+		ai_chance = { base = 0 }
+	}
+}
+
+#Fate of Poland
+country_event = {
+	id = russia_states.11
+	title = russia_states.11.t
+	desc = russia_states.11.d
+
+	is_triggered_only = yes
+
+	option = { #Return Polish Lands
+		name = russia_states.11.a
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 100
+				has_government = communism
+			}
+		}
+		POL = {
+		transfer_state = 10
+		}
+		if = {
+		limit = { controls_state = 90 } #Kielce
+		POL = { transfer_state = 90 }
+		}
+		if = {
+		limit = { controls_state = 87 } #Lodz
+		POL = { transfer_state = 87 }
+		}
+		if = {
+		limit = { controls_state = 98 } #Plock
+		POL = { transfer_state = 98 }
+		}
+		if = {
+		limit = { controls_state = 92 } #Lublin
+		POL = { transfer_state = 92 }
+		}
+		if = {
+		limit = { controls_state = 97 } #Belostok
+		POL = { transfer_state = 97 }
+		}
+		if = {
+		limit = { controls_state = 762 } #Northern Kattowiz
+		POL = { transfer_state = 762 }
+		}
+	}
+	
+	option = { #Warsaw remains under Russian control
+		name = russia_states.11.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 0
+				has_government = communism
+			}
+		}
+		add_political_power = -15
+		add_stability = -0.03
+	}
+}
+
+#Fate of East Germany
+country_event = {
+	id = russia_states.10
+	title = russia_states.10.t
+	desc = russia_states.10.d
+
+	is_triggered_only = yes
+
+	option = { #Restore Friendly East Germany
+		name = russia_states.10.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 0
+				has_government = communism
+			}
+		}	
+		GER = {
+		transfer_state = 64
+		}
+		if = {
+		limit = { controls_state = 60 } #Thuringen
+ 		GER = { transfer_state = 60 }
+		}
+		if = {
+		limit = { controls_state = 61 } #Mecklenburg
+ 		GER = { transfer_state = 61 }
+		}
+		if = {
+		limit = { controls_state = 62 } #Pommern
+ 		GER = { transfer_state = 62 }
+		}
+		if = {
+		limit = { controls_state = 63 } #Hinterpommern
+ 		GER = { transfer_state = 63 }
+		}
+		if = {
+		limit = { controls_state = 86 } #Posen
+ 		GER = { transfer_state = 86 }
+		}
+		if = {
+		limit = { controls_state = 66 } #Niederschlesien
+ 		GER = { transfer_state = 66 }
+		}
+		if = {
+		limit = { controls_state = 68 } #Ostmark
+ 		GER = { transfer_state = 68 }
+		}
+		if = {
+		limit = { controls_state = 64 } #Brandenburg
+ 		GER = { transfer_state = 64 }
+		}
+		if = {
+		limit = { controls_state = 67 } #Oberschlesien
+ 		GER = { transfer_state = 67 }
+		}
+		if = {
+		limit = { controls_state = 85 } #Danzig
+ 		GER = { transfer_state = 85 }
+		}
+		if = {
+		limit = { controls_state = 818 } #Danzigstadt
+ 		GER = { transfer_state = 818 }
+		}
+		if = {
+		limit = { controls_state = 5 } #Ostpreussen
+ 		GER = { transfer_state = 5 }
+		}
+		if = {
+		limit = { controls_state = 763 } #Konigsberg
+ 		GER = { transfer_state = 763 }
+		}
+		RUS = {
+		puppet = GER
+		if = {
+		limit = { controls_state = 65 }
+		release_puppet = SAX
+		}
+		}
+	}
+	
+	option = { #Occupy East Germany
+		name = russia_states.10.c
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 0
+				has_government = communism
+			}
+		}
+		add_political_power = -15
+		add_stability = -0.03
+	}
+}
+
+#Fate of Romania
+country_event = {
+	id = russia_states.12
+	title = russia_states.12.t
+	desc = russia_states.12.d
+
+	is_triggered_only = yes
+
+	option = { #Restore Friendly Romania
+		name = russia_states.12.a
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 100
+				has_government = communism
+			}
+		}
+		RUS = {
+		release_puppet = ROM
+		}
+	}
+	
+	option = { #Occupy Romania
+		name = russia_states.12.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 0
+				has_government = communism
+			}
+		}
+		add_political_power = -15
+		add_stability = -0.03
+	}
+}
+#Fate of Turkey
+country_event = {
+	id = russia_states.13
+	title = russia_states.13.t
+	desc = russia_states.13.d
+
+	is_triggered_only = yes
+
+	option = { #Restore Friendly Turkey
+		name = russia_states.13.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 100
+				has_government = communism
+			}
+		}
+		RUS = {
+		release_puppet = TUR
+		}
+	}
+	
+	option = { #Take Istanbul, Puppet the Rest
+		name = russia_states.13.b
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_government = communism
+			}
+		}
+		TUR = { transfer_state = 49 }
+		if = { limit = { controls_state = 826 } #Gaziantep
+		TUR = { transfer_state = 826 } }
+		if = { limit = { controls_state = 342 } #Antalya
+		TUR = { transfer_state = 342 } }
+		if = { limit = { controls_state = 343 } #Afyon 
+		TUR = { transfer_state = 343 } }
+		if = { limit = { controls_state = 346 } #Konya
+		TUR = { transfer_state = 346 } }
+		if = { limit = { controls_state = 348 } #Kayseri
+		TUR = { transfer_state = 348 } }
+		if = { limit = { controls_state = 355 } #Samsun
+		TUR = { transfer_state = 355 } }
+		if = { limit = { controls_state = 349 } #Sivas
+		TUR = { transfer_state = 349 } }
+		if = { limit = { controls_state = 345 } #Mersin
+		TUR = { transfer_state = 345 } }
+		if = { limit = { controls_state = 350 } #Malatya
+		TUR = { transfer_state = 350 } }
+		if = { limit = { controls_state = 353 } #Erzurum
+		TUR = { transfer_state = 353 } }
+		if = { limit = { controls_state = 352 } #Batman
+		TUR = { transfer_state = 352 } }
+		if = { limit = { controls_state = 356 } #Kastamonu
+		TUR = { transfer_state = 356 } }
+		if = { limit = { controls_state = 344 } #Adana
+		TUR = { transfer_state = 344 } }
+		RUS = {
+		puppet = TUR
+		}
+	}
+	option = { #Occupy
+		name = russia_states.13.c
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 0
+				has_government = communism
+			}
+		}
+		add_political_power = -15
+		add_stability = -0.03
+	}
+}
+
+	

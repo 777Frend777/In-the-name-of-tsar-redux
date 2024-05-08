@@ -1,0 +1,104 @@
+#################
+#### France ####
+#################
+#Integrate Territories
+FRA_integrate_territories_decisions = {
+	icon = decision_generic_decision
+	priority = 80
+	picture = GFX_decision_cat_picture_government_in_exile
+	
+	allowed = {
+		original_tag = FRA
+	}
+}
+#Political Actions
+FRA_political_actions_decisions = {
+	icon = generic_operation
+	priority = 100
+	picture = GFX_decision_cat_picture_chi_political_support
+	visible = {
+	has_completed_focus = FR_gov_reform
+	}
+	allowed = {
+		original_tag = FRA
+		is_subject = no
+	}
+}
+FRA_industrial_projects_decisions = {
+	icon = generic_operation
+	priority = 90
+	picture = GFX_decision_cat_generic_mefo_bills
+	visible = {
+	has_completed_focus = FR_adress_industry
+	}
+	allowed = {
+		original_tag = FRA
+		is_subject = no
+	}
+}
+#France's Natural Borders
+FRA_natural_borders_decisions = {
+	icon = decision_generic_decision
+	priority = 70
+	picture = GFX_decision_cat_picture_chi_political_support
+	available = {
+	original_tag = FRA
+	}
+	allowed = {
+		original_tag = FRA
+	}
+}
+#Seek New Alliances
+FRA_seek_new_alliances_decisions = {
+	icon = decision_generic_decision
+
+	picture = GFX_decision_cat_picture_government_in_exile
+	priority = 60
+	available = {
+	original_tag = FRA
+	has_war = no 
+	has_completed_focus = FR_inv_CZE
+	}
+	allowed = {
+		original_tag = FRA
+	}
+}
+#Alliance with Russia
+FRA_paris_petrograd_decisions = {
+	icon = decision_generic_decision
+	priority = 55
+	picture = GFX_decision_cat_picture_government_in_exile
+	available = {
+	original_tag = FRA
+	NOT = {
+	has_war_with = RUS 
+	}
+	is_guaranteed_by = RUS
+	has_guaranteed = RUS
+	}
+	allowed = {
+		original_tag = FRA
+	}
+}
+#Spanish Civil War
+FRA_spanish_civil_war_decisions = {
+	icon = decision_generic_decision
+
+	picture = GFX_decision_cat_picture_spr_civil_war_offensives
+	available = {
+	original_tag = FRA
+	#has_completed_focus = FR_intervene_spanish_civil_war
+	}
+	allowed = {
+		original_tag = FRA
+	}
+}
+FRA_expansion_decisions = {
+	icon = generic_operation
+	picture = GFX_decision_cat_generic_mefo_bills
+
+	allowed = {
+		original_tag = FRA
+	}
+}
+

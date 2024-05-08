@@ -1,0 +1,1019 @@
+﻿l_russian:
+  ### Ideologies ### 
+  # Spartacists 
+ communism: "Спартаковцы" #NT!
+ communism_noun: "Спартакизм" #NT!
+ communism_subtype: "Спартакизм" #NT!
+ communism_subtype_desc: "Охватывая широкий спектр экономических и исторических взглядов, марксистская политика стремится применить теории Карла Маркса к политической практике. Классовая борьба и необходимость перехода к обществу, основанному на общей собственности на средства производства, характеризуют эти идеологии." #NT!
+ communism_desc: "Революционный режим" #NT!
+  # Socialists 
+ socialist: "Социалисты" #NT!
+ socialist_noun: "Социализм" #NT!
+ socialist_subtype: "Социализм" #NT!
+ socialist_subtype_desc: "Социализм — это политическая и экономическая теория социальной организации, которая утверждает, что средства производства, распределения и обмена должны принадлежать или регулироваться сообществом в целом." #NT!
+ socialist_desc: "Демократический режим" #NT!
+  # Liberals 
+ democratic: "Либералы" #NT!
+ democratic_noun: "Либеральная демократия" #NT!
+ democratic_subtype_desc: "Либерализм — это политическая философия или мировоззрение, основанное на идеях свободы и равенства. Либералы придерживаются самых разных взглядов в зависимости от понимания этих принципов, но в целом они поддерживают такие идеи и программы, как свобода слова, свобода печати, свобода религии, свободные рынки, гражданские права, демократические общества, светское правительство, гендерные вопросы. равенство и международное сотрудничество." #NT!
+ democratic_subtype: "Либерализм" #NT!
+ democratic_desc: "Демократический режим" #NT!
+  # Conservatives 
+ conservatives: "Консерваторы" #NT!
+ conservatives_noun: "Консервативная демократия" #NT!
+ conservatives_subtype: "Консерватизм" #NT!
+ conservatives_subtype_desc: "Консерватизм — это политическая и социальная философия, продвигающая традиционные социальные институты в контексте культуры и цивилизации. Центральные принципы консерватизма включают традиции, человеческое несовершенство, органическое общество, иерархию и власть, а также права собственности." #NT!
+ conservatives_desc: "Демократический режим" #NT!
+  # Paternal Autocrats 
+ neutrality: "Автократы по отцовской линии" #NT!
+ neutrality_noun: "Отцовское самодержавие" #NT!
+ neutrality_subtype: "Самодержавие" #NT!
+ neutrality_subtype_desc: "Автократия — это система правления, при которой абсолютная власть над государством сосредоточена в руках одного человека, решения которого не подлежат ни внешним правовым ограничениям, ни регуляризованным механизмам народного контроля." #NT!
+ neutrality_desc: "Авторитарный режим" #NT!
+  # Nationalists 
+ fascism: "Националисты" #NT!
+ fascism_noun: "Национализм" #NT!
+ fascism_desc: "Реакционный режим" #NT!
+ fascism_subtype: "Национализм" #NT!
+ fascism_subtype_desc: "Фашизм, охватывающий множество ультранационалистических движений, обычно почитает преданность государству и объединение людей под сильным лидером." #NT!
+  # The Rest 
+ agrarianism: "Аграрность" #NT!
+ agrarianism_desc: "Аграризм — это социально-политическая и экономическая философия, которая уделяет большое внимание сельскому хозяйству как основе процветающего и справедливого общества. Обычно он выступает за преимущественно сельскую, аграрную экономику и образ жизни, где сельское хозяйство является основным источником средств к существованию для населения. Аграризм часто продвигает идею о том, что мелкие семейные фермы необходимы для стабильности сообщества, самодостаточности и устойчивой окружающей среды." #NT!
+ conservatism: "Консерватизм" #NT!
+ conservatism_desc: "Считая быстрые изменения в обществе потенциально вредными, консерватизм поддерживает традиции и умеренные реформы, иногда выступая за возврат к старым моральным ценностям." #NT!
+ liberalism: "Либерализм" #NT!
+ liberalism_desc: "Имея давнюю философскую традицию ценности личной свободы, либерализм рассматривает защиту этих прав как основную функцию государства." #NT!
+ socialism: "Социализм" #NT!
+ socialism_desc: "Стремясь к равенству и социалистическому государству реформистскими средствами, демократический социализм стремится отменить или смягчить последствия капитализма с помощью общественного мандата." #NT!
+ marxism: "марксизм" #NT!
+ marxism_desc: "Охватывая широкий спектр экономических и исторических взглядов, марксистская политика стремится применить теории Карла Маркса к политической практике. Классовая борьба и необходимость перехода к обществу, основанному на общей собственности на средства производства, характеризуют эти идеологии." #NT!
+ leninism: "ленинизм" #NT!
+ leninism_desc: "Политическая идеология, основанная на марксистской мысли, ленинизм стремится создать социалистическое государство с помощью авангардной партии, возглавляющей революцию, свергающую капиталистическое общество. Придя к власти, партия управляет посредством системы, в которой политика открыта для внутренних дебатов до тех пор, пока не будет принято решение." #NT!
+ stalinism: "сталинизм" #NT!
+ stalinism_desc: "Сталинизм, идентифицируя себя как форму правительства, применяющего и развивающего марксистско-ленинскую политику, подчеркивает быструю индустриализацию и коллективизацию, а также необходимость сильного, авторитарного социалистического государства для чистки любых контрреволюционных элементов." #NT!
+ anti_revisionism: "Антиревизионизм" #NT!
+ anti_revisionism_desc: "Антиревизионизм, являющийся реакцией на многие идеологии, претендующие на роль преемников марксизма, выступает за сохранение ключевых элементов оригинальной революционной теории. В основном выступая против включения капиталистических экономических элементов в социалистические государства, идеология определяется как тем, чем она не является, так и тем, чем она является." #NT!
+ anarchist_communism: "Анархический коммунизм" #NT!
+ anarchist_communism_desc: "Идеология, охватывающая идею коммунизма как общества без государства, анархический коммунизм избегает идеи переходного социалистического государства и отдает предпочтение обществу, основанному на добровольных объединениях и взаимопомощи." #NT!
+ National_Socialism: "Национал-социализм" #NT!
+ National_Socialism_desc: "Укорененный в крайностях, национал-социализм движим идеями ультранационализма с некоторой социалистической популистской политикой. Он продвигает агрессивный экспансионизм и тоталитарное государство, где люди объединены под одним лидером, обладающим абсолютной властью." #NT!
+ fascism_ideology: "Фашизм" #NT!
+ fascism_ideology_desc: "Фашизм, охватывающий множество ультранационалистических движений, обычно почитает преданность государству и объединение людей под сильным лидером или лидерами." #NT!
+ falangism: "фалангизм" #NT!
+ falangism_desc: "Авторитарная идеология с чертами фашизма и консерватизма. Фалангизм ценит национальную и католическую идентичность." #NT!
+ rexism: "рексизм" #NT!
+ rexism_desc: "Рексизм, категорически противостоящий как либеральным, так и коммунистическим идеалам, представляет собой стойкое консервативное националистическое движение, выступающее за корпоративистскую экономическую политику. Используя все более популистскую и авторитарную риторику, их идеалы смещаются ближе к другим фашистским движениям." #NT!
+ despotism: "Деспотический" #NT!
+ despotism_desc: "Деспотизм – это форма правления, при которой один человек правит с абсолютной властью." #NT!
+ oligarchism: "Олигархический" #NT!
+ oligarchism_desc: "Олигархия – это форма правления, при которой группа людей правит с абсолютной властью." #NT!
+ moderatism: "Модератизм" #NT!
+ moderatism_desc: "Модератизм — это форма правления, которая избегает крайностей левых и правых, занимая умеренную позицию или образ действий." #NT!
+ centrism: "Центризм" #NT!
+ centrism_desc: "Центризм – это форма правления, которая стремится достичь решений, основанных на здравом смысле, которые должным образом удовлетворяют текущие и будущие потребности, которые поддерживают общественное доверие и служат общему благу с учетом риска и возможностей в контексте этих потребностей." #NT!
+  ### Party Names ### 
+  # Russia 
+ RUS_conservatives_party: "Кадеты" #NT!
+ RUS_neutrality_party: "Союз 17 октября" #NT!
+ RUS_democratic_party: "Трудовики" #NT!
+ RUS_fascism_party: "запрос предложений" #NT!
+ RUS_socialist_party: "СДЛП" #NT!
+ RUS_socialist_party_long: "Социал-демократическая рабочая партия" #NT!
+ RUS_communism_party: "Всесоюзная Коммунистическая партия" #NT!
+  # Bukhara 
+ BUK_communism_party: "БКК" #NT!
+ BUK_communism_party_long: "Бухарский народный совет" #NT!
+ BUK_fascism_party: "БСО" #NT!
+ BUK_fascism_party_long: "Бухарская суфийская организация" #NT!
+ BUK_democratic_party: "ЮБУ" #NT!
+ BUK_democratic_party_long: "Молодые бухарцы" #NT!
+ BUK_neutrality_party: "Русско-Бухарский Союз" #NT!
+  # Zheltorossiya 
+ RMN_neutrality_party: "Национальный Союз" #NT!
+  # Southern Commune & German Republic 
+ BAV_communism_party: "КПД" #NT!
+ BAV_communism_party_long: "Коммунистическая партия Германии" #NT!
+ BAV_democratic_party: "Христианско-Немецкий Союз" #NT!
+ BAV_fascism_party: "НСПБ" #NT!
+ BAV_fascism_party_long: "Национал-социалистическая партия Баварии" #NT!
+ BAV_neutrality_party: "Лоялисты Виттельсбаха" #NT!
+ BAV_conservatives_party: "Баварская консервативная партия" #NT!
+ BAV_socialist_party: "Баварская социалистическая партия" #NT!
+  # Prussia & German Empire 
+ GER_neutrality_party_long: "Немецкоконсервативная партия" #NT!
+ GER_neutrality_party: "ДКП" #NT!
+ GER_socialist_party_long: "Социал-демократическая партия Германии" #NT!
+ GER_socialist_party: "СПД" #NT!
+ GER_conservatives_party_long: "Центр Партей" #NT!
+ GER_conservatives_party: "ЗП" #NT!
+ GER_fascism_party: "ДНВП" #NT!
+ GER_fascism_party_long: "Немецкая народная партия" #NT!
+ GER_communism_party: "КПД" #NT!
+ GER_democratic_party_long: "Немецкая демократическая партия" #NT!
+ GER_democratic_party: "ДДП" #NT!
+ FRA_conservatives_party_long: "Демократический республиканский альянс" #NT!
+ FRA_conservatives_party: "ОРД" #NT!
+ FRA_socialist_party_long: "Раздел Française de l'Internationale Ouvrière" #NT!
+ FRA_socialist_party: "СФИО" #NT!
+ RFR_neutrality_party: "Партия лоялистов аллеманд" #NT!
+ POL_fascism_party: "ОНР-Фаланга" #NT!
+ POL_fascism_party_long: "Обоз Народово Радыкальный-Фаланга" #NT!
+ POL_communism_party: "Польская социалистическая партия" #NT!
+ POL_democratic_party: "ПСЛ" #NT!
+ POL_democratic_party_long: "Польское Стронниктво Людове" #NT!
+ POL_neutrality_party: "Романов" #NT!
+ ENG_communism_party: "КПГБ" #NT!
+ ENG_democratic_party: "Либеральная партия" #NT!
+ ENG_fascism_party: "Британский союз фашистов" #NT!
+ ENG_conservatives_party: "Консервативная партия" #NT!
+ ENG_neutrality_party: "Виндзорские лоялисты" #NT!
+ ENG_socialist_party: "Лейбористская партия" #NT!
+ ITA_communism_party: "Итальянская коммунистическая партия" #NT!
+ ITA_democratic_party: "Итальянская народная партия" #NT!
+ ITA_conservatives_party: "Блокки Национали" #NT!
+ ITA_fascism_party: "Национальная фашистская партия" #NT!
+ ITA_neutrality_party: "Национальная монархическая партия" #NT!
+ JAP_communism_party: "Nihon Kyosan-to" #NT!
+ JAP_democratic_party: "Rikken Minseito" #NT!
+ JAP_conservatives_party: "Rikken Seiyūkai" #NT!
+ JAP_socialist_party: "Shakai Taishūtō" #NT!
+ JAP_neutrality_party: "Кодоха" #NT!
+ JAP_fascism_party: "Реакционные милитаристы" #NT!
+ USA_communism_party: "Коммунистическая партия США" #NT!
+ USA_democratic_party: "демократическая партия" #NT!
+ USA_conservatives_party: "Республиканская партия" #NT!
+ #USA_republican_party: "Республиканская партия" #NT!
+ USA_socialist_party: "Социалистическая партия Америки" #NT!
+ USA_fascism_party: "Серебряный Легион Америки" #NT!
+ USA_neutrality_party: "Первая вечеринка Америки" #NT!
+ FRA_communism_party: "Французская коммунистическая партия" #NT!
+ FRA_democratic_party: "Радикальная партия" #NT!
+ FRA_fascism_party: "Империалисты" #NT!
+ FRA_neutrality_party: "Монархисты" #NT!
+ AUS_communism_party: "КПЭ" #NT!
+ AUS_communism_party_long: "Коммунистическая партия Австрии" #NT!
+ AUS_democratic_party: "ГРВП" #NT!
+ AUS_democratic_party_long: "Великая немецкая народная партия" #NT!
+ AUS_fascism_party: "полупансион" #NT!
+ AUS_fascism_party_long: "Хейматблок" #NT!
+ AUS_neutrality_party: "ФУНТ" #NT!
+ AUS_neutrality_party_long: "Ландбунд" #NT!
+ AUS_conservatives_party: "CS" #NT!
+ AUS_conservatives_party_long: "Христианская социальная партия" #NT!
+ AUS_socialist_party: "Социал-демократическая партия Австрии" #NT!
+ CHI_communism_party: "Коммунистические повстанцы" #NT!
+ CHI_communism_party_long: "Коммунистическое подполье\n§g После Шанхайской резни, в результате которой были убиты тысячи сторонников КПК, коммунистическая партия была подавлена ​​по всей республике. Республиканские силы будут преследовать до смерти каждого члена партии или ее сторонника. Главные силы КПК предприняли дальний марш и вылетели к западным горам Китая. Последние сторонники коммунистов в республике скрываются и состоят всего из горстки людей." #NT!
+ CHI_communism_party_reborn: "КТК" #NT!
+ CHI_communism_party_reborn_long: "Коммунистическая партия Китая" #NT!
+ CHI_democratic_party: "Левое крыло Гоминьдана" #NT!
+ CHI_democratic_party_long: "Левое крыло Гоминьдана\n§g Пока Гоминьдан правит республикой, он сам по себе не един. Левое крыло Гоминьдана борется за выживание и пытается сохранить идеалы Сунь Ятсена. Однако постоянные столкновения с нынешним правящим правым крылом по поводу стратегической политики в Китае и частые обвинения со стороны военных, обвиняющих их в сотрудничестве с коммунистами, ставят их в невыгодное положение. Но на данный момент они единственная партия, осознающая угрозу со стороны японцев." #NT!
+ CHI_fascism_party: "НГРОК" #NT!
+ CHI_fascism_party_long: "Национальное правительство Китайской Республики\n§g" #NT!
+ CHI_neutrality_party: "Гоминьдан Военные" #NT!
+ CHI_neutrality_party_long: "Военное крыло Гоминьдана\n§g Чан Кайши — один из самых влиятельных членов Гоминьдана. Когда Северная экспедиция продолжалась, казалось, что Чан станет ее председателем. Но после провала кампании новым председателем был избран Ху Хамнин. Эти два унижения все же не остановили Чан Кайши, и он продолжал оставаться членом Гоминьдана и командующим армией. Понятно, что если Ханьмин потеряет свой пост, большинство консервативных членов проголосуют за него как за нового председателя." #NT!
+ CHI_socialist_party: "Чжунго Шехудан" #NT!
+ CHI_socialist_party_long: "Чжунго Шехудан\n§g" #NT!
+ CHI_conservatives_party: "Гоминьдан Правое крыло" #NT!
+ CHI_conservatives_party_long: "Правое крыло Гоминьдана\n§g Правое крыло составляют консерваторы, реакционеры и националисты. Правое крыло в настоящее время возглавляет Ху Ханьминь. Ханмин проделал хорошую работу по сохранению правого крыла у власти и объединению различных взглядов самого крыла. Но неясно, что будет с правым флангом, если он потеряет эту позицию. Националисты и реакционеры, вероятно, присоединятся к Чан Кайши, в то время как остальные могут присоединиться к более либеральным позициям, чтобы противостоять агрессивной позиции Чан Кайши." #NT!
+ XSM_neutrality_party: "Ма Клика" #NT!
+ SPR_fascism_party_long: "Испанская националистическая партия" #NT!
+ SPR_fascism_party: "ПНЕ" #NT!
+ SPR_democratic_party: "ИК" #NT!
+ SPR_democratic_party_long: "Республиканская республикана" #NT!
+ SPR_conservatives_party_long: "Испанская конфедерация автономных прав" #NT!
+ SPR_conservatives_party: "CEDA" #NT!
+ SPR_socialist_party_long: "Социалистическая партия Испании" #NT!
+ SPR_socialist_party: "ИСОЭ" #NT!
+ SPR_communism_party: "PCE" #NT!
+ SPR_communism_party_long: "Коммунистическая партия Испании" #NT!
+ SPR_neutrality_party: "РЭ" #NT!
+ SPR_neutrality_party_long: "Реновация Испании" #NT!
+ POR_neutrality_party: "Эстадо Ново" #NT!
+ POR_communism_party: "PCP" #NT!
+ POR_communism_party_long: "Коммунистическая партия Португалии" #NT!
+ POR_democratic_party: "ПД" #NT!
+ POR_democratic_party_long: "Демократическая партия" #NT!
+ POR_fascism_party: "МНС" #NT!
+ POR_fascism_party_long: "Национально-синдикалистское движение" #NT!
+ POR_conservatives_party: "PCP" #NT!
+ POR_conservatives_party_long: "Партия консерваторов Португалии" #NT!
+ POR_socialist_party: "ПРЕД" #NT!
+ POR_socialist_party_long: "Республиканская партия демократических сил" #NT!
+ GRE_neutrality_party: "Метакса" #NT!
+ GRE_neutrality_party_long: "Катестос Метакса" #NT!
+ GRE_communism_party: "КПГ" #NT!
+ GRE_communism_party_long: "Коммунистик Комма Элладас" #NT!
+ GRE_democratic_party: "Лайкон Комма" #NT!
+ GRE_fascism_party: "ЭЭЭ" #NT!
+ GRE_fascism_party_long: "Этники Эносис Элладос" #NT!
+ LIT_neutrality_party: "LTS" #NT!
+ LIT_neutrality_party_long: "Литувиу Таутининку Саюнга" #NT!
+ LIT_fascism_party: "Гележанис Вилкас" #NT!
+ LAT_neutrality_party: "Таутас Падоме" #NT!
+ LAT_fascism_party: "Перконкрустс" #NT!
+ LAT_communism_party: "ЛКП" #NT!
+ LAT_communism_party_long: "Латвийская коммунистическая партия" #NT!
+ EST_neutrality_party: "Исамаалиит" #NT!
+ EST_ndemocratic_party: "РКЭ" #NT!
+ EST_democratic_party_long: "Рахвуслик Кескераконд" #NT!
+ IRQ_neutrality_party: "Монархисты" #NT!
+ IRQ_fascism_party: "Золотой квадрат" #NT!
+ IRQ_communism_party: "Аль-Хизб аль-Шиуий" #NT!
+ SWE_communism_party: "СКП" #NT!
+ SWE_communism_party_long: "Шведская коммунистическая партия" #NT!
+ SWE_socialist_party: "Социал-демократическая" #NT!
+ SWE_socialist_party_long: "Шведская социал-демократическая партия" #NT!
+ SWE_democratic_party: "Фолкпартиет" #NT!
+ SWE_democratic_party_long: "Фолкпартиет" #NT!
+ SWE_conservatives_party: "Вальмансфербундет" #NT!
+ SWE_conservatives_party_long: "Allmänna Valmansförbundet" #NT!
+ SWE_neutrality_party: "Кунгенс Парти" #NT!
+ SWE_neutrality_party_long: "Кунгенс Парти" #NT!
+ SWE_fascism_party: "СЯС" #NT!
+ SWE_fascism_party_long: "Сверигес Национелла Фёрбунд" #NT!
+ FIN_conservatives_party: "СП" #NT!
+ FIN_conservatives_party_long: "Суомалайнен Пуолуэ" #NT!
+ FIN_socialist_party: "СКДЛ" #NT!
+ FIN_socialist_party_long: "Suomen Kansan Demokraattinen Liitto" #NT!
+ FIN_neutrality_party: "Кеск" #NT!
+ FIN_neutrality_party_long: "Суомен Кескуста" #NT!
+ FIN_democratic_party: "КЕ" #NT!
+ FIN_democratic_party_long: "Кансаллинен Эдистиспуолуэ" #NT!
+ FIN_fascism_party: "ИКЛ" #NT!
+ FIN_fascism_party_long: "Исэнмааллинен Кансанлиике" #NT!
+ FIN_communism_party: "СКП" #NT!
+ FIN_communism_party_long: "Суомен Коммунистинен Пуолуэ" #NT!
+ FIN_regency: "Регентский совет" #NT!
+ FIN_romanov: "Дом Романовых" #NT!
+ FIN_hesse: "Дом Гессен-Кассель" #NT!
+ FIN_hesse_Finn: "Дом Финляндии" #NT!
+ DEN_socialist_party: "Социал-демократия" #NT!
+ DEN_socialist_party_long: "Социал-демократия" #NT!
+ DEN_fascism_party: "DNSAP" #NT!
+ DEN_fascism_party_long: "Датская национал-социалистическая арбейдерпартия" #NT!
+ DEN_communism_party: "ДКП" #NT!
+ DEN_communism_party_long: "Коммунистическая партия Дании" #NT!
+ DEN_neutrality_party: "Глюксборг" #NT!
+ DEN_neutrality_party_long: "Дом Глюксборга" #NT!
+ DEN_democratic_party: "Венстре" #NT!
+ DEN_democratic_party_long: "Венстре" #NT!
+ DEN_conservatives_party: "Консервативный" #NT!
+ DEN_conservatives_party_long: "Консервативная народная партия" #NT!
+ CAN_democratic_party: "Либеральная партия" #NT!
+ CAN_democratic_party_long: "Либеральная партия Канады" #NT!
+ CAN_fascism_party: "Партия национального единства" #NT!
+ CAN_fascism_party_long: "Партия национального единства" #NT!
+ CAN_communism_party: "КТК" #NT!
+ CAN_communism_party_long: "Коммунистическая партия Канады" #NT!
+ CAN_neutrality_party: "CCF" #NT!
+ CAN_neutrality_party_long: "Федерация кооперативного содружества" #NT!
+ AST_neutrality_party: "АШП" #NT!
+ AST_neutrality_party_long: "Австралийская деревенская вечеринка" #NT!
+ AST_democratic_party: "Труд" #NT!
+ AST_democratic_party_long: "Австралийская Лейбористская партия" #NT!
+ AST_fascism_party: "Центристская партия" #NT!
+ AST_fascism_party_long: "Центристская партия" #NT!
+ AST_communism_party: "цена за конверсию" #NT!
+ AST_communism_party_long: "Коммунистическая партия Австралии" #NT!
+ MEX_democratic_party: "КАСТРЮЛЯ" #NT!
+ MEX_democratic_party_long: "Национальная партия действий" #NT!
+ MEX_fascism_party: "УНС" #NT!
+ MEX_fascism_party_long: "Национальный союз синархистов" #NT!
+ MEX_communism_party: "ПКМ" #NT!
+ MEX_communism_party_long: "Мексиканская Коммунистическая партия" #NT!
+ MEX_neutrality_party: "ФРМ" #NT!
+ MEX_neutrality_party_long: "Партия Мексиканской революции" #NT!
+ ARG_democratic_party: "УЦР" #NT!
+ ARG_democratic_party_long: "Гражданский радикальный союз" #NT!
+ ARG_fascism_party: "ФНФ" #NT!
+ ARG_fascism_party_long: "Национальный фашистский союз" #NT!
+ ARG_communism_party: "ПК" #NT!
+ ARG_communism_party_long: "Коммунистическая партия Аргентины" #NT!
+ ARG_neutrality_party: "Конкордансия" #NT!
+ ARG_neutrality_party_long: "Конкордансия" #NT!
+ BRA_fascism_party: "АИБ" #NT!
+ BRA_fascism_party_long: "Асан Интегралиста Бразилиа" #NT!
+ BRA_communism_party: "печатная плата" #NT!
+ BRA_communism_party_long: "Коммунистическая партия Бразилии" #NT!
+ BRA_democratic_party: "УДБ" #NT!
+ BRA_democratic_party_long: "Демократический союз Бразилии" #NT!
+ BRA_neutrality_party: "Эстадо Ново" #NT!
+ BRA_neutrality_party_long: "Эстадо Ново" #NT!
+ TUR_fascism_party: "Милле Партизи" #NT!
+ TUR_fascism_party_long: "Милле Партизи" #NT!
+ TUR_communism_party: "ТКП" #NT!
+ TUR_communism_party_long: "Турецкая Коммунистическая Партия" #NT!
+ TUR_democratic_party: "ДП" #NT!
+ TUR_democratic_party_long: "Демократическая партия" #NT!
+ TUR_conservatives_party: "Тюрк Мухафазакар Парти" #NT!
+ TUR_socialist_party: "Тюрк Сосялист Партизи" #NT!
+ TUR_neutrality_party: "ТЭЦ" #NT!
+ TUR_neutrality_party_long: "Джумхуриет Халк Партизи" #NT!
+ SAX_neutrality_party: "СКП" #NT!
+ SAX_neutrality_party_long: "Sächsische Konservative Partei" #NT!
+ WSM_neutrality_party: "НДКП" #NT!
+ WSM_neutrality_party_long: "Северогерманская консервативная партия" #NT!
+ WUT_neutrality_party: "ПРБО" #NT!
+ WUT_neutrality_party_long: "Баден-Вюртембергская федеральная партия" #NT!
+ RHN_democratic_party: "ЗП" #NT!
+ RHN_democratic_party_long: "Центр Партей" #NT!
+ HUN_fascism_party: "Хорти Сопротивление" #NT!
+ HUN_fascism_party_cw: "Правительство Хорти" #NT!
+ HUN_communism_party: "МКП" #NT!
+ HUN_communism_party_long: "Magyar Kommunista Part — Венгерская коммунистическая партия." #NT!
+ HUN_democratic_party: "F48P" #NT!
+ HUN_democratic_party_long: "Függetlenségi és 48-as Part" #NT!
+ HUN_socialist_party: "МСЖДП" #NT!
+ HUN_socialist_party_long: "Венгерская социальная демократия Часть" #NT!
+ HUN_conservatives_party: "Немецкая Египетская Партия" #NT!
+ HUN_conservatives_party_long: "Партия национального единства" #NT!
+ HUN_neutrality_party: "НЛН" #NT!
+ HUN_neutrality_party_long: "Nemzeti Legitimista Néppárt - Национальная легитимистская партия" #NT!
+ HUN_neutrality_council: "Временное правительство" #NT!
+ HUN_Arrow_party_long: "Ньиласкерестес Парт – Хунгариста Мозгалом" #NT!
+ HUN_Arrow_party: "NYКП" #NT!
+ ROM_neutrality_party: "ФРН" #NT!
+ ROM_neutrality_party_long: "Фронтул Ренастерии Национальный" #NT!
+ ROM_communism_party: "ПЦР" #NT!
+ ROM_communism_party_long: "Партидул Коммунистический Роман" #NT!
+ ROM_democratic_party: "ПНЛ" #NT!
+ ROM_democratic_party_long: "Партия национал-либералов" #NT!
+ ROM_fascism_party: "Гарда де Фьер" #NT!
+ ROM_fascism_party_long: "Гарда де Фьер" #NT!
+ ROM_socialist_party: "ПС" #NT!
+ ROM_socialist_party_long: "Партидул Социалист" #NT!
+ ROM_conservatives_party: "ПК" #NT!
+ ROM_conservatives_party_long: "Частный консерватор" #NT!
+ MOL_neutrality_party: "Гогенцоллерн-Зигмаринген" #NT!
+ MOL_neutrality_party_long: "Дом Гогенцоллернов-Зигмарингенов" #NT!
+ MOL_communism_party: "ПКМ" #NT!
+ MOL_communism_party_long: "Коммунистическая партия Молдовы" #NT!
+ MOL_democratic_party: "ПНДМ" #NT!
+ MOL_democratic_party_long: "Партия Национал-Демократическая Молдовеск" #NT!
+ MOL_fascism_party: "ЛАМ" #NT!
+ MOL_fascism_party_long: "Легюня Архангелулуй Михаил" #NT!
+ MOL_socialist_party: "ПСР" #NT!
+ MOL_socialist_party_long: "Партия Социалистической Революции" #NT!
+ MOL_conservatives_party: "ПНК" #NT!
+ MOL_conservatives_party_long: "Частный национальный консерватор" #NT!
+ YUG_communism_party: "КПЖ" #NT!
+ YUG_communism_party_long: "Коммунистическая партия Югославии" #NT!
+ YUG_democratic_party: "Демократская страна" #NT!
+ YUG_democratic_party_long: "Югослованская демократическая страна" #NT!
+ YUG_neutrality_party: "Регентский совет" #NT!
+ YUG_fascism_party: "JRZ" #NT!
+ YUG_fascism_party_long: "Югослованская радикальная скупость" #NT!
+ SER_communism_party: "Лига коммунистов" #NT!
+ SER_communism_party_long: "Лига коммунистов" #NT!
+ SER_socialist_party: "Сербские социалисты" #NT!
+ SER_democratic_party: "НРС" #NT!
+ SER_democratic_party_long: "Демократская страна" #NT!
+ SER_conservatives_party_long: "Сербская национальная страна" #NT!
+ SER_fascism_party: "СРС" #NT!
+ SER_fascism_party_long: "Сербская Радикальная Заедница" #NT!
+ SER_conservatives_party: "социальные сети" #NT!
+ SER_neutrality_party: "Регентский совет" #NT!
+ SER_neutrality_party_long: "Регентский совет" #NT!
+ BUL_neutrality_party: "Сторонники царя Бориса" #NT!
+ BUL_communism_party: "ППГ" #NT!
+ BUL_communism_party_long: "Болгарская коммунистическая партия" #NT!
+ BUL_democratic_party: "УППП" #NT!
+ BUL_democratic_party_long: "Объединенная народная прогрессивная партия" #NT!
+ BUL_fascism_party: "УБНЛ" #NT!
+ BUL_fascism_party_long: "Союз болгарских национальных легионов" #NT!
+ SAF_neutrality_party: "АНК" #NT!
+ SAF_neutrality_party_long: "Африканский национальный конгресс" #NT!
+ SAF_communism_party: "SACP" #NT!
+ SAF_communism_party_long: "Коммунистическая партия Южной Африки" #NT!
+ SAF_democratic_party: "Юнайтед" #NT!
+ SAF_democratic_party_long: "Объединенная национальная южноафриканская партия" #NT!
+ SAF_fascism_party: "ВНП" #NT!
+ SAF_fascism_party_long: "Партия Gesuiwerde Nasionale" #NT!
+ NZL_neutrality_party: "Национальный" #NT!
+ NZL_neutrality_party_long: "Национальная партия Новой Зеландии" #NT!
+ NZL_democratic_party: "Труд" #NT!
+ NZL_democratic_party_long: "Лейбористская партия Новой Зеландии" #NT!
+ NZL_fascism_party: "Легион" #NT!
+ NZL_fascism_party_long: "Новозеландский легион" #NT!
+ NZL_communism_party: "КПНЗ" #NT!
+ NZL_communism_party_long: "Коммунистическая партия Новой Зеландии" #NT!
+ NOR_neutrality_party: "Венстре" #NT!
+ NOR_neutrality_party_long: "Венстре" #NT!
+ NOR_communism_party: "НКП" #NT!
+ NOR_communism_party_long: "Коммунистическая партия Норвегии" #NT!
+ NOR_democratic_party: "АП" #NT!
+ NOR_democratic_party_long: "Арбейдерпартиет" #NT!
+ NOR_fascism_party: "НС" #NT!
+ NOR_fascism_party_long: "Насьонал Самлинг" #NT!
+ HOL_neutrality_party: "АРП" #NT!
+ HOL_neutrality_party_long: "Антиреволюционная партия" #NT!
+ HOL_communism_party: "КПН" #NT!
+ HOL_communism_party_long: "Коммунистическая партия Нидерландов" #NT!
+ HOL_democratic_party: "ЧУ" #NT!
+ HOL_democratic_party_long: "Кристелик-Исторический Союз" #NT!
+ HOL_fascism_party: "НСБ" #NT!
+ HOL_fascism_party_long: "Национально-социалистическое пивоварение в Нидерландах" #NT!
+ BEL_communism_party: "КПБ" #NT!
+ BEL_communism_party_long: "Коммунистическая партия Бельгии" #NT!
+ BEL_socialist_party: "ПОБ" #NT!
+ BEL_socialist_party_long: "Бельгийская партия" #NT!
+ BEL_democratic_party: "Либеральная партия" #NT!
+ BEL_conservatives_party: "Католическая партия" #NT!
+ BEL_conservatives_party_long: "Католическая партия" #NT!
+ BEL_neutrality_party: "ВНВ" #NT!
+ BEL_neutrality_party_long: "Фламандский национальный вербонд" #NT!
+ BEL_fascism_party: "Рекс" #NT!
+ BEL_fascism_party_long: "Рексистская партия" #NT!
+ SWI_communism_party: "КПС" #NT!
+ SWI_communism_party_long: "Коммунистическая партия Швейцарии" #NT!
+ SWI_democratic_party: "Свободная демократическая партия" #NT!
+ SWI_democratic_party_long: "Свободная демократическая партия" #NT!
+ SWI_conservatives_party: "ПФТИ" #NT!
+ SWI_conservatives_party_long: "Партия фермеров, торговцев и независимых" #NT!
+ SWI_socialist_party: "СДПС" #NT!
+ SWI_socialist_party_long: "Социал-демократическая партия Швейцарии" #NT!
+ SWI_neutrality_party: "Военная хунта" #NT!
+ SWI_neutrality_party_long: "Военная хунта" #NT!
+ SWI_fascism_party: "НБС" #NT!
+ SWI_fascism_party_long: "Национальное развитие Швейцарии" #NT!
+ RAJ_neutrality_party: "ИНК" #NT!
+ RAJ_neutrality_party_long: "Индийский национальный конгресс" #NT!
+ RAJ_communism_party: "ИПЦ" #NT!
+ RAJ_communism_party_long: "Коммунистическая партия Индии" #NT!
+ RAJ_democratic_party: "МИМ" #NT!
+ RAJ_democratic_party_long: "Движение за независимость Индии" #NT!
+ RAJ_fascism_party: "АМСЗ" #NT!
+ RAJ_fascism_party_long: "Всеиндийская индуистская ассамблея" #NT!
+ PER_communism_party: "Вечеринка Туде" #NT!
+ PER_communism_party_long: "Вечеринка Туде" #NT!
+ PER_neutrality_party: "Династия Каджаров" #NT!
+ PER_fascism_party: "Хезб Мли Растахиз" #NT!
+ COL_communism_party: "ПКК" #NT!
+ COL_communism_party_long: "Коммунистическая партия Колумбии" #NT!
+ COL_democratic_party: "ПЛК" #NT!
+ COL_democratic_party_long: "Либеральная колумбийская партия" #NT!
+ COL_neutrality_party: "консерватор" #NT!
+ COL_neutrality_party_long: "Колумбийская партия консерваторов" #NT!
+ CZE_democratic_party: "ЧСНС" #NT!
+ CZE_democratic_party_long: "Чешская национально-социальная партия" #NT!
+ CZE_conservatives_party: "РСЗМЛ" #NT!
+ CZE_conservatives_party_long: "Республиканская партия фермеров и крестьян" #NT!
+ CZE_communism_party: "КСК" #NT!
+ CZE_communism_party_long: "Коммунистическая страна Чешскословенская" #NT!
+ CZE_socialist_party: "ЧССД" #NT!
+ CZE_socialist_party_long: "Чешская социал-демократическая партия" #NT!
+ CZE_neutrality_party: "Лоялисты Габсбургов" #NT!
+ CZE_neutrality_party_long: "Лоялисты Габсбургов" #NT!
+ CZE_fascism_party: "NSj" #NT!
+ CZE_fascism_party_long: "Национальное объединение" #NT!
+ CRO_neutrality_party: "Иллирийская национальная партия" #NT!
+ CRO_fascism_party: "усташи" #NT!
+ CRO_fascism_party_long: "Иллирийское революционное движение" #NT!
+ CRO_communism_party: "КПЭ" #NT!
+ CRO_communism_party_long: "Союз коммунистов Иллирии" #NT!
+ CRO_democratic_party: "МКС" #NT!
+ CRO_democratic_party_long: "Иллирийская крестьянская партия" #NT!
+ CHL_fascism_party: "VPS" #NT!
+ CHL_fascism_party_long: "Авангардия Народная Социалистическая" #NT!
+ CHL_democratic_party: "Либеральная партия" #NT!
+ CHL_communism_party: "ПКЧ" #NT!
+ CHL_communism_party_long: "Коммунистическая партия Чили" #NT!
+ ETH_neutrality_party: "Соломонова династия" #NT!
+ ETH_democratic_party: "Войанское восстание" #NT!
+ ALB_neutrality_party: "Дом Зогу" #NT!
+ ALB_neutrality_party_long: "Дом Зогу" #NT!
+ BOL_democratic_party: "ПЛ" #NT!
+ BOL_democratic_party_long: "Либеральная партия" #NT!
+ BOL_fascism_party: "ФСБ" #NT!
+ BOL_fascism_party_long: "Социалистическая Фаланга Боливии" #NT!
+ BOL_neutrality_party: "КГ" #NT!
+ BOL_neutrality_party_long: "Правительство Кинтанильи" #NT!
+ NIC_democratic_party: "злотых" #NT!
+ NIC_democratic_party_long: "Либерально-националистическая партия" #NT!
+ COS_democratic_party: "пиар" #NT!
+ COS_democratic_party_long: "Республиканская партия" #NT!
+ COS_communistm_party: "ПВП" #NT!
+ COS_communistm_party_long: "Партия Авангардия Популярная" #NT!
+ ELS_fascism_party: "Про-Патрия" #NT!
+ ELS_fascism_party_long: "Национальная партия «Пропатрия»" #NT!
+ GUA_democratic_party: "ПЛП" #NT!
+ GUA_democratic_party_long: "Прогрессивная либеральная партия" #NT!
+ SIA_neutrality_party: "Хана Ратсадон" #NT!
+ SIA_neutrality_party_long: "Хана Ратсадон" #NT!
+ URG_democratic_party: "Колорадо" #NT!
+ URG_democratic_party_long: "Партия Колорадо" #NT!
+ URG_communism_party: "ПКП" #NT!
+ URG_communism_party_long: "Коммунистическая партия Уругвая" #NT!
+ VEN_fascism_party: "Совет министров" #NT!
+ VEN_fascism_party_long: "Совет министров" #NT!
+ VEN_neutral_party: "ОБЪЯВЛЕНИЕ" #NT!
+ VEN_neutral_party_long: "Демократическое действие" #NT!
+ VEN_democratic_party: "Copei"
+ VEN_democratic_party_long: "Копей" #NT!
+ VEN_communism_party: "ПКВ" #NT!
+ VEN_communism_party_long: "Коммунистическая партия Венесуэлы" #NT!
+ PRU_fascism_party: "Учредительное собрание" #NT!
+ PRU_fascism_party_long: "Учредительное собрание" #NT!
+ PRU_communism_party: "PCP" #NT!
+ PRU_communism_party_long: "Коммунистическая партия Перу" #NT!
+ IRE_democratic_party: "НФРЛ" #NT!
+ IRE_democratic_party_long: "Национальная лига фермеров и налогоплательщиков" #NT!
+ IRE_conservatives_party: "Шинн Фейн" #NT!
+ IRE_conservatives_party_long: "Шинн Фейн" #NT!
+ IRE_socialist_party: "Шинн Фейн" #NT!
+ IRE_socialist_party_long: "Шинн Фейн" #NT!
+ IRE_fascism_party: "Шинн Фейн" #NT!
+ IRE_fascism_party_long: "Шинн Фейн" #NT!
+ IRE_communism_party: "ИПЦ" #NT!
+ IRE_communism_party_long: "Коммунистическая партия Ирландии" #NT!
+ IRE_neutrality_party: "Шинн Фейн" #NT!
+ IRE_neutrality_party_long: "Шинн Фейн" #NT!
+ AFG_neutrality_party: "Баракзай" #NT!
+ AFG_neutrality_party_long: "Королевская семья Баракзай" #NT!
+ LUX_democratic_party: "Риетпартей" #NT!
+ LUX_communism_party: "КПЛ" #NT!
+ LUX_communism_party_long: "Коммунистическая партия Летцебурга" #NT!
+ BHU_neutrality_party: "Династия Вангчуков" #NT!
+ SLO_fascism_party: "ХСЛС" #NT!
+ SLO_fascism_party_long: "Глинкова Словенская Людова Страна" #NT!
+ SLO_communism_party: "КСС" #NT!
+ SLO_communism_party_long: "Коммунистическая страна Словенска" #NT!
+ ECU_democratic_party: "Эквадор" #NT!
+ ECU_democratic_party_long: "Республика Эквадор" #NT!
+ ECU_communism_party: "PCE" #NT!
+ ECU_communism_party_long: "Коммунистическая партия Эквадора" #NT!
+ HON_democratic_party: "ЛЖВ" #NT!
+ HON_communism_party: "ПЧ" #NT!
+ HON_communism_party_long: "Коммунистическая партия Гондураса" #NT!
+ NEP_neutrality_party: "Династия Рана" #NT!
+ PAN_democratic_party: "ПЛД" #NT!
+ PAN_democratic_party_long: "Партия либеральной доктрины" #NT!
+ PAN_communism_party: "ГЧП" #NT!
+ PAN_communism_party_long: "Партия панамского народа" #NT!
+ PHI_fascism_party: "Ганап" #NT!
+ PHI_fascism_party_long: "Ганапская вечеринка" #NT!
+ PHI_democratic_party: "НП" #NT!
+ PHI_democratic_party_long: "Националистическая партия" #NT!
+ PHI_communism_party: "ПКП" #NT!
+ PHI_communism_party_long: "Коммунистическая партия Филиппин" #NT!
+ SAU_neutrality_party: "Дом Сауда" #NT!
+ YEM_neutrality_party: "Дом Рассида" #NT!
+ OMA_neutrality_party: "Династия Аль-Саида" #NT!
+ SIK_communism_party: "КПК" #NT!
+ SIK_communism_party_long: "Коммунистическая партия Китая" #NT!
+ SIK_neutrality_party: "Оппозиционная клика Шэна" #NT!
+ SIK_conservatives_party: "БС" #NT!
+ SIK_conservatives_party_desc: "Сторонники Пекина" #NT!
+ SIK_democratic_party: "Гоминьдан" #NT!
+ SIK_democratic_party_desc: "Сторонники Гоминьдана" #NT!
+ SIK_socialist_party: "Гоминьдан" #NT!
+ SIK_socialist_party_desc: "Сторонники Гоминьдана" #NT!
+ SIK_fascism_party: "Xinjiang Clique" #NT!
+ TIB_neutrality_party: "Реттинг Ринпоче" #NT!
+ YUN_neutrality_party: "Гоминьдан" #NT!
+ MON_communism_party: "МУЖЧИНА" #NT!
+ MON_communism_party_long: "Монгол Ардиин Нам" #NT!
+ TAN_communism_party: "КПСС" #NT!
+ TAN_communism_party_long: "Коммунистическая партия Советского Союза" #NT!
+ PAR_communism_party: "ПРФ" #NT!
+ PAR_communism_party_long: "Февральская революционная партия" #NT!
+ CUB_democratic_party: "Союз" #NT!
+ CUB_democratic_party_long: "Национальный союз" #NT!
+ CUB_communism_party: "ПКК" #NT!
+ CUB_communism_party_long: "Кубинская Коммунистическая партия" #NT!
+ DOM_fascism_party: "ПД" #NT!
+ DOM_fascism_party_long: "Доминиканская партия" #NT!
+ HAI_democratic_party: "Винсент" #NT!
+ HAI_democratic_party_long: "Президент Стенио Винсент" #NT!
+ HAI_communism_party: "ПКА" #NT!
+ HAI_communism_party_long: "Пати Коминис Айсиен" #NT!
+ KOR_communism_party: "ТПК" #NT!
+ KOR_communism_party_long: "Трудовая партия Кореи" #NT!
+ KOR_democratic_party: "Либеральная партия" #NT!
+ KOR_neutrality_party: "Династия И" #NT!
+ KOR_fascism_party: "НДПК" #NT!
+ KOR_fascism_party_long: "Комитет национальной оборонной политики" #NT!
+ ICE_democratic_party: "Партия Прогресса" #NT!
+ ICE_communism_party: "Партия народного единства" #NT!
+ ICE_fascism_party: "Националистическая партия" #NT!
+ ICE_neutrality_party: "Партия независимости" #NT!
+ SYR_fascism_party: "ССНП" #NT!
+ SYR_fascism_party_long: "Сирийская социал-националистическая партия" #NT!
+ SYR_communism_party: "Сирийская коммунистическая партия" #NT!
+ SYR_democratic_party: "Национальный блок" #NT!
+ SYR_neutrality_party: "Национальная коалиция" #NT!
+ LEB_fascism_party: "Катаеб" #NT!
+ LEB_neutrality_party: "Яради" #NT!
+ LEB_communism_party: "Лига коммунистов" #NT!
+ LEB_democratic_party: "Конституционный блок" #NT!
+ JOR_fascism_party: "Иорданская фаланга" #NT!
+ JOR_neutrality_party: "Хашимитский" #NT!
+ JOR_democratic_party: "Национал-либеральная партия" #NT!
+ JOR_communism_party: "Иорданское рабочее общество" #NT!
+ EGY_communism_party: "Коммунистическая партия Египта" #NT!
+ EGY_fascism_party: "Миср Эль-Фатх" #NT!
+ EGY_democratic_party: "Освободительный митинг" #NT!
+ EGY_neutrality_party: "Роялисты" #NT!
+ PAL_fascism_party: "Аль-Мукаддас" #NT!
+ PAL_communism_party: "НЛЛ" #NT!
+ PAL_communism_party_long: "Лига национального освобождения" #NT!
+ PAL_democratic_party: "СМК" #NT!
+ PAL_democratic_party_long: "Высший мусульманский совет" #NT!
+ PAL_neutrality_party: "Лоялисты" #NT!
+ ISR_communism_party: "Маки" #NT!
+ ISR_democratic_party: "Мапай" #NT!
+ ISR_fascism_party: "Хелпам" #NT!
+ ISR_neutrality_party: "Центральный совет" #NT!
+ VIN_fascism_party: "Вьетнамская лига восстановления" #NT!
+ VIN_democratic_party: "Кан Лаосская вечеринка" #NT!
+ VIN_communism_party: "Коммунистическая партия Вьетнама" #NT!
+ VIN_neutrality_party: "Вьетнам Куок Дан Данг" #NT!
+ CAM_fascism_party: "Кхмеритская партия" #NT!
+ CAM_democratic_party: "демократическая партия" #NT!
+ CAM_communism_party: "Коммунистическая партия Кампучии" #NT!
+ CAM_neutrality_party: "Сангкум Реастр Ниюм" #NT!
+ INS_fascism_party: "Новый заказ" #NT!
+ INS_socialist_party: "ПНИ" #NT!
+ INS_socialist_party_long: "Индонезийская национальная партия" #NT!
+ INS_communism_party: "ИПК" #NT!
+ INS_neutrality_party: "Традиционные правители" #NT!
+ INS_democratic_party: "ПНИ" #NT!
+ INS_conservatives_party: "Фольксрад" #NT!
+ INS_conservatives_party_long: "Народный совет" #NT!
+ MAL_fascism_party: "Панокеанические юнионисты" #NT!
+ MAL_democratic_party: "Объединенная малайская национальная организация" #NT!
+ MAL_communism_party: "Коммунистическая партия Малайзии" #NT!
+ MAL_neutrality_party: "Кесатуан Мелайу Муда" #NT!
+ LAO_fascism_party: "Партия племенной централизации" #NT!
+ LAO_democratic_party: "демократическая партия" #NT!
+ LAO_communism_party: "Pathet Lao" #NT!
+ LAO_neutrality_party: "Роялисты" #NT!
+ MNT_fascism_party: "Зелень" #NT!
+ MNT_democratic_party: "Лига Демократии" #NT!
+ MNT_communism_party: "Коммунистическая партия Черногории" #NT!
+ MNT_neutrality_party: "Федералистская партия" #NT!
+ UKR_fascism_party: "ОУН" #NT!
+ UKR_democratic_party: "Украинский национально-демократический альянс" #NT!
+ UKR_communism_party: "Коммунистическая партия Украины" #NT!
+ UKR_neutrality_party: "Украинская партия прогресса" #NT!
+ GEO_fascism_party: "Тбилисский совет" #NT!
+ GEO_democratic_party: "Социал-демократическая партия Грузии" #NT!
+ GEO_communism_party: "Коммунистическая партия Грузии" #NT!
+ GEO_neutrality_party: "Горийская конвенция" #NT!
+ KAZ_fascism_party: "Жузе Ултшильдик" #NT!
+ KAZ_democratic_party: "Алаш Партия" #NT!
+ KAZ_communism_party: "Коммунистическая партия Казахстана" #NT!
+ KAZ_neutrality_party: "Роялисты" #NT!
+ AZR_fascism_party: "Клика Огненной Лошади" #NT!
+ AZR_democratic_party: "Мусават" #NT!
+ AZR_communism_party: "Коммунистическая партия Азербайджана" #NT!
+ AZR_neutrality_party: "Иттихад" #NT!
+ ARM_fascism_party: "Армянский легион" #NT!
+ ARM_democratic_party: "Армянская Революционная Федерация" #NT!
+ ARM_communism_party: "Коммунистическая партия Армении" #NT!
+ ARM_neutrality_party: "Центральный орган" #NT!
+ BLR_fascism_party: "Белорусский Центральный Совет" #NT!
+ BLR_democratic_party: "Белорусская христианская демократия" #NT!
+ BLR_communism_party: "Коммунистическая партия Беларуси" #NT!
+ BLR_neutrality_party: "Белорусская Социалистическая Ассамблея" #NT!
+ PAK_democratic_party: "Ганатантри Дал" #NT!
+ PAK_communism_party: "Социалистическая партия Пакистана" #NT!
+ PAK_neutrality_party: "Мусульманская лига" #NT!
+ PRC_democratic_party: "КМТ-RC" #NT!
+ PRC_democratic_party_long: "Гоминьдановский революционный комитет" #NT!
+ PRC_communism_party: "КТК" #NT!
+ PRC_communism_party_long: "Коммунистическая партия Китая" #NT!
+ GXC_neutrality_party: "New Guangxi Clique" #NT!
+ GXC_communism_party: "КТК" #NT!
+ GXC_communism_party_long: "Коммунистическая партия Китая" #NT!
+ YUN_communism_party: "КТК" #NT!
+ YUN_communism_party_long: "Коммунистическая партия Китая" #NT!
+ MAN_fascism_party: "МХ" #NT!
+ MAN_fascism_party_long: "Маньчжоугуо Сихэхуэй" #NT!
+ TAH_fascism_party: "PaO"
+ TAH_fascism_party_long: "Pouvanaa a Oopa"
+ TAH_neutrality_party: "Майрау" #NT!
+ TAH_neutrality_party_long: "Дом Майрау" #NT!
+ TAH_democratic_party: "УФО" #NT!
+ TAH_democratic_party_long: "Союз за демократию" #NT!
+ TAH_communism_party: "СРП" #NT!
+ TAH_communism_party_long: "Полинезийская социальная ассамблея" #NT!
+ FSM_fascism_party: "рекомендуемая розничная цена" #NT!
+ FSM_fascism_party_long: "Вечеринка восстановления Соделёра" #NT!
+ FSM_democratic_party: "ФСМДА" #NT!
+ FSM_democratic_party_long: "Демократический альянс ФШМ" #NT!
+ FSM_communism_party: "ПКП" #NT!
+ FSM_communism_party_long: "Коммунистический союз Понпеи" #NT!
+ GUM_fascism_party: "МИГ" #NT!
+ GUM_fascism_party_long: "Марианская группа независимости" #NT!
+ GUM_democratic_party: "ППМ" #NT!
+ GUM_democratic_party_long: "Марианская республиканская партия" #NT!
+ GUM_communism_party: "МЛП" #NT!
+ GUM_communism_party_long: "Марианская леннинская партия" #NT!
+ SOL_fascism_party: "SCP" #NT!
+ SOL_fascism_party_long: "Христианская партия Соломона" #NT!
+ SOL_neutrality_party: "СНП" #NT!
+ SOL_neutrality_party_long: "Партия Соломона Нейтралитета" #NT!
+ SOL_democratic_party: "СИЛП" #NT!
+ SOL_democratic_party_long: "Либеральная партия Соломоновых Островов" #NT!
+ SOL_communism_party: "ПАП" #NT!
+ SOL_communism_party_long: "Партия Народного Альянса" #NT!
+ HAW_fascism_party: "ХИЛ" #NT!
+ HAW_fascism_party_long: "Гавайская Имперская лига" #NT!
+ HAW_neutrality_party: "Королевский Орден" #NT!
+ HAW_neutrality_party_long: "Королевский орден Камехамеха" #NT!
+ HAW_democratic_party: "Демократы" #NT!
+ HAW_democratic_party_long: "Демократическая партия Гавайев" #NT!
+ HAW_communism_party: "CPH" #NT!
+ HAW_communism_party_long: "Коммунистическая партия Гавайев" #NT!
+ FRA_orleanist_party_long: "Орлеанская партия" #NT!
+ FRA_orleanist_party: "Орлеанская партия" #NT!
+ FRA_legitimist_party_long: "Легитимистская партия" #NT!
+ FRA_legitimist_party: "Легитимистская партия" #NT!
+ FRA_bonepartist_party_long: "Бонапартистская партия" #NT!
+ FRA_bonepartist_party: "Бонапартистская партия" #NT!
+ FRA_union_populaire_long: "Union populaire française"
+ FRA_union_populaire: "UPF"
+ BRI_fascism_party: "НПБ" #NT!
+ BRI_fascism_party_long: "Бретонская национальная партия" #NT!
+ BRI_neutrality_party: "УРБ" #NT!
+ BRI_neutrality_party_long: "Бретонский региональный союз" #NT!
+ BRI_democratic_party: "ФЛБ" #NT!
+ BRI_democratic_party_long: "Бретонская лига федералистов" #NT!
+ BRI_communism_party: "печатная плата" #NT!
+ BRI_communism_party_long: "Бретонская коммунистическая партия" #NT!
+ GLC_fascism_party: "DG"
+ GLC_fascism_party_long: "Dereita Geleguista"
+ GLC_neutrality_party: "ORGA"
+ GLC_neutrality_party_long: "Organización Republicana Galega Autónoma"
+ GLC_democratic_party: "PG"
+ GLC_democratic_party_long: "Partido Galeguista"
+ GLC_communism_party: "CRAG"
+ GLC_communism_party_long: "Comité Revoluzonareo Arredista"
+ CAT_fascism_party: "НС" #NT!
+ CAT_fascism_party_long: "Nosaltres Sols!"
+ CAT_neutrality_party: "ЛК" #NT!
+ CAT_neutrality_party_long: "Lliga Catalana"
+ CAT_democratic_party: "ERC"
+ CAT_democratic_party_long: "Esquerra Republicana de Catalunya"
+ CAT_communism_party: "POUM"
+ CAT_communism_party_long: "Partit Obrer d'Unificació Marxista"
+ NAV_fascism_party: "AN"
+ NAV_fascism_party_long: "Alderdi Nazional"
+ NAV_neutrality_party: "EAJ-PNV"
+ NAV_neutrality_party_long: "Euzko Alderdi Jeltzalea"
+ NAV_democratic_party: "EAE-ANV"
+ NAV_democratic_party_long: "Eusko Abertzale Ekintza"
+ NAV_communism_party: "EPK-PCV"
+ NAV_communism_party_long: "Euskadiko Partidu Komunista"
+ KUR_democratic_party: "Дерсим" #NT!
+ KUR_democratic_party_long: "Дерсимское движение" #NT!
+ KUR_communism_party: "ДПК" #NT!
+ KUR_communism_party_long: "Демократическая партия Курдистана" #NT!
+ KUR_neutrality_party: "Барзанджи" #NT!
+ KUR_neutrality_party_long: "Семья Барзанджи" #NT!
+ KUR_fascism_party: "Сойбун" #NT!
+ KUR_fascism_party_long: "Центральный комитет Сойбуна" #NT!
+ TRA_fascism_party: "ПД" #NT!
+ TRA_fascism_party_long: "Partidul Lui Dracula"
+ DNZ_fascism_party: "НСДАП" #NT!
+ DNZ_fascism_party_long: "Партегруппа НСДАП в Данциге" #NT!
+ DNZ_democratic_party: "СПД" #NT!
+ DNZ_democratic_party_long: "Социал-демократическая партия свободного города Данциг" #NT!
+ DNZ_communism_party: "КПД" #NT!
+ DNZ_communism_party_long: "Коммунистическая партия Данцига" #NT!
+ DNZ_neutrality_party: "ДНВП" #NT!
+ DNZ_neutrality_party_long: "Немецкая народная партия Свободного города Данциг" #NT!
+ ALT_communism_party: "АРБ" #NT!
+ ALT_communism_party_long: "Горно-Алтайская областная большевистская партия" #NT!
+ ALT_fascism_party: "ANR" #NT!
+ ALT_fascism_party_long: "Алтайские национал-ревизионисты" #NT!
+ ALT_democratic_party: "ЛОСЬ" #NT!
+ ALT_democratic_party_long: "Эль Курултай" #NT!
+ ALT_neutrality_party: "КГМ" #NT!
+ ALT_neutrality_party_long: "Правительство Каракорума" #NT!
+ KAL_communism_party: "КПБ" #NT!
+ KAL_communism_party_long: "Калмыцкий народно-большевистский союз" #NT!
+ KAL_fascism_party: "КЛГ" #NT!
+ KAL_fascism_party_long: "Калмыцкий легион" #NT!
+ KAL_democratic_party: "Народный Хурал" #NT!
+ KAL_democratic_party_long: "ПКХ" #NT!
+ KAL_neutrality_party: "Каганисты" #NT!
+ KAR_communism_party: "КФБ" #NT!
+ KAR_communism_party_long: "Карело-Финская большевистская партия" #NT!
+ KAR_fascism_party: "ПФА" #NT!
+ KAR_fascism_party_long: "Панфинская ассамблея" #NT!
+ KAR_democratic_party: "Сторонники Вяйнямёйнен" #NT!
+ KAR_neutrality_party: "КНЖ" #NT!
+ KAR_neutrality_party_long: "Карельская национальная хунта" #NT!
+ CRI_communism_party: "ЦКБ" #NT!
+ CRI_communism_party_long: "Крымский отдел большевизма" #NT!
+ CRI_fascism_party: "CUC" #NT!
+ CRI_fascism_party_long: "Крымская ультранационалистическая коалиция" #NT!
+ CRI_democratic_party: "СЛР" #NT!
+ CRI_democratic_party_long: "Крымский политический представитель" #NT!
+ CRI_neutrality_party: "CRM" #NT!
+ CRI_neutrality_party_long: "Крымские военные" #NT!
+ TAT_communism_party: "ТВП" #NT!
+ TAT_communism_party_long: "Татарско-большевистская партия" #NT!
+ TAT_fascism_party: "ТУУ" #NT!
+ TAT_fascism_party_long: "Татарский ультранационалистический союз" #NT!
+ TAT_democratic_party: "ЕНТ" #NT!
+ TAT_democratic_party_long: "Единый Татарстан" #NT!
+ TAT_neutrality_party: "ТФС" #NT!
+ TAT_neutrality_party_long: "Казанско-Татарский фронт спасения" #NT!
+ CIN_communism_party: "ССК" #NT!
+ CIN_communism_party_long: "Верховный Совет Чечено-Ингушской АССР." #NT!
+ CIN_fascism_party: "РГК" #NT!
+ CIN_fascism_party_long: "Временное народно-революционное правительство Чечено-Ингушетии" #NT!
+ CIN_democratic_party: "КПК" #NT!
+ CIN_democratic_party_long: "Всенациональный конгресс чеченского народа" #NT!
+ CIN_neutrality_party: "СНГ" #NT!
+ CIN_neutrality_party_long: "Единый фронт спасения Чечено-Ингушетии" #NT!
+ DAG_communism_party: "ДАД" #NT!
+ DAG_communism_party_long: "Дагестанская большевистская партия" #NT!
+ DAG_fascism_party: "DNS" #NT!
+ DAG_fascism_party_long: "Дагестанский Фронт национального спасения" #NT!
+ DAG_democratic_party: "ПАД" #NT!
+ DAG_democratic_party_long: "Народное Собрание Дагестана" #NT!
+ DAG_neutrality_party: "Сторонники Северо-Кавказского эмирата" #NT!
+ BYA_communism_party: "Би-би-си" #NT!
+ BYA_communism_party_long: "Бурятский большевистский обком" #NT!
+ BYA_fascism_party: "БУП" #NT!
+ BYA_fascism_party_long: "Бурятская ультранационалистическая партия" #NT!
+ BYA_democratic_party: "ТПК" #NT!
+ BYA_democratic_party_long: "Народный Хурал" #NT!
+ BYA_neutrality_party: "Чакравартин Реставраторы" #NT!
+ FER_communism_party: "ЕБА" #NT!
+ FER_communism_party_long: "Дальневосточное большевистское собрание" #NT!
+ FER_fascism_party: "ВЭД" #NT!
+ FER_fascism_party_long: "Дальневосточная альтернатива" #NT!
+ FER_democratic_party: "CDA" #NT!
+ FER_democratic_party_long: "Читинское Демократическое Национальное Собрание" #NT!
+ FER_neutrality_party: "ЭИП" #NT!
+ FER_neutrality_party_long: "Дальневосточная независимая партия" #NT!
+ CKK_communism_party: "ЦБУ" #NT!
+ CKK_communism_party_long: "Чукотский большевистский союз" #NT!
+ CKK_fascism_party: "CCF" #NT!
+ CKK_fascism_party_long: "Чукотский фронт" #NT!
+ CKK_democratic_party: "АДУ" #NT!
+ CKK_democratic_party_long: "Анадырская дума" #NT!
+ CKK_neutrality_party: "СИП" #NT!
+ CKK_neutrality_party_long: "Чукотская независимая партия" #NT!
+ YAK_communism_party: "YBA" #NT!
+ YAK_communism_party_long: "Якутское областное большевистское собрание" #NT!
+ YAK_fascism_party: "УСМ" #NT!
+ YAK_fascism_party_long: "Движение «Единая Сибирь»" #NT!
+ YAK_democratic_party: "СИДЕТЬ" #NT!
+ YAK_democratic_party_long: "Саха Иль Тюмень" #NT!
+ YAK_neutrality_party: "Белая русская армия" #NT!
+ VLA_communism_party: "СВУ" #NT!
+ VLA_communism_party_long: "Владивостокское Всекоммунистическое собрание." #NT!
+ VLA_fascism_party: "РЮ" #NT!
+ VLA_fascism_party_long: "Русско-японская объединительная партия." #NT!
+ VLA_democratic_party: "ВВД" #NT!
+ VLA_democratic_party_long: "Владивостокская Дума" #NT!
+ VLA_neutrality_party: "WAR"
+ VLA_neutrality_party_long: "Остатки Белой Армии" #NT!
+ KKP_communism_party: "ККБ" #NT!
+ KKP_communism_party_long: "Каракалпакская большевистская партия" #NT!
+ KKP_fascism_party: "КНС" #NT!
+ KKP_fascism_party_long: "Каракалпакские сторонники национального превосходства" #NT!
+ KKP_democratic_party: "ККЛ" #NT!
+ KKP_democratic_party_long: "Каракалпакские конституционалисты" #NT!
+ KKP_neutrality_party: "КУФ" #NT!
+ KKP_neutrality_party_long: "Каракалпакстанский единый фронт" #NT!
+ YAM_communism_party: "НБП" #NT!
+ YAM_communism_party_long: "Восточно-Ненецкая большевистская партия" #NT!
+ YAM_fascism_party: "КАК ДЕЛА" #NT!
+ YAM_fascism_party_long: "Самодийская партия объединения" #NT!
+ YAM_democratic_party: "ЯНД" #NT!
+ YAM_democratic_party_long: "Ямало-Ненецкая Национальная Дума" #NT!
+ YAM_neutrality_party: "ЭНИ" #NT!
+ YAM_neutrality_party_long: "Восточно-Ненецкая партия независимости" #NT!
+ TAY_communism_party: "ТБУ" #NT!
+ TAY_communism_party_long: "Таймырский большевистский союз" #NT!
+ TAY_fascism_party: "СУММА" #NT!
+ TAY_fascism_party_long: "Северо-Сибирское объединительное движение" #NT!
+ TAY_democratic_party: "ТНД" #NT!
+ TAY_democratic_party_long: "Таймырская Национальная Дума" #NT!
+ TAY_neutrality_party: "НРК" #NT!
+ TAY_neutrality_party_long: "Долгано-Ненецкий обком" #NT!
+ OVO_communism_party: "ОБГ" #NT!
+ OVO_communism_party_long: "Остяк-вогулская большевистская группа" #NT!
+ OVO_fascism_party: "СРЕ" #NT!
+ OVO_fascism_party_long: "Сибирь Реставраторы" #NT!
+ OVO_democratic_party: "ОВД" #NT!
+ OVO_democratic_party_long: "Остяк-вогулская дума" #NT!
+ OVO_neutrality_party: "ЕСУЛ" #NT!
+ OVO_neutrality_party_long: "Партия освобождения Восточной Угори" #NT!
+ NEN_communism_party: "НБП" #NT!
+ NEN_communism_party_long: "Ненецкая большевистская партия" #NT!
+ NEN_fascism_party: "НОМЕР" #NT!
+ NEN_fascism_party_long: "Ненецкое объединительное движение" #NT!
+ NEN_democratic_party: "ВОПОГ" #NT!
+ NEN_democratic_party_long: "Ассамблея депутатов Ненецкого государства" #NT!
+ NEN_neutrality_party: "НРК" #NT!
+ NEN_neutrality_party_long: "Ненецкий крайком" #NT!
+ KOM_communism_party: "KFC" #NT!
+ KOM_communism_party_long: "Коми федеральная коммуна" #NT!
+ KOM_fascism_party: "ПЭУ" #NT!
+ KOM_fascism_party_long: "Пермские ультранационалисты" #NT!
+ KOM_democratic_party: "ЦКР" #NT!
+ KOM_democratic_party_long: "Государственный Совет Республики Коми" #NT!
+ KOM_neutrality_party: "КПК" #NT!
+ KOM_neutrality_party_long: "Коми Народный Совет" #NT!
+ ABK_communism_party: "цена за конверсию" #NT!
+ ABK_communism_party_long: "Коммунистическая партия Абхазии" #NT!
+ ABK_fascism_party: "АУО" #NT!
+ ABK_fascism_party_long: "Абхазский ультраортодоксальный союз" #NT!
+ ABK_democratic_party: "ПАА" #NT!
+ ABK_democratic_party_long: "Народное Собрание Абхазии" #NT!
+ ABK_neutrality_party: "Абхазские военные" #NT!
+ KBK_communism_party: "КББ" #NT!
+ KBK_communism_party_long: "Кабардино-Балкарский областной большевистский комитет" #NT!
+ KBK_fascism_party: "АШП" #NT!
+ KBK_fascism_party_long: "Всечеркесская партия" #NT!
+ KBK_democratic_party: "КНП" #NT!
+ KBK_democratic_party_long: "Кабардинский национальный парламент" #NT!
+ KBK_neutrality_party: "НАА" #NT!
+ KBK_neutrality_party_long: "Нальчикское Автономное Собрание" #NT!
+ NOA_communism_party: "CNO" #NT!
+ NOA_communism_party_long: "Коммунистическая партия Северной Осетии" #NT!
+ NOA_fascism_party: "АЛР" #NT!
+ NOA_fascism_party_long: "Аланские реставраторы" #NT!
+ NOA_democratic_party: "ОВП" #NT!
+ NOA_democratic_party_long: "Парламент Орджоникидзе" #NT!
+ NOA_neutrality_party: "ООС" #NT!
+ NOA_neutrality_party_long: "Северо-Осетинская Православная Церковь" #NT!
+ VGE_communism_party: "WDA"
+ VGE_communism_party_long: "Die Wolgadaitsche Arbeitergewerkschaft"
+ VGE_fascism_party: "WDB"
+ VGE_fascism_party_long: "Die Wolgadaitsche Bruderschaft"
+ VGE_democratic_party: "WDU"
+ VGE_democratic_party_long: "Die Wolgadaitsche Demokratische Union"
+ VGE_neutrality_party: "WDM"
+ VGE_neutrality_party_long: "Wolgadaitscher Militärjunta"
+ BSK_communism_party: "ББП" #NT!
+ BSK_communism_party_long: "Башкирская большевистская партия" #NT!
+ BSK_fascism_party: "БНУ" #NT!
+ BSK_fascism_party_long: "Башкирская партия национального объединения" #NT!
+ BSK_democratic_party: "БФЛ" #NT!
+ BSK_democratic_party_long: "Башкортостанская Федеральная Лига" #NT!
+ BSK_neutrality_party: "БУА" #NT!
+ BSK_neutrality_party_long: "Башкирское Уфимское объединение" #NT!
+ KHI_communism_party: "КПС" #NT!
+ KHI_communism_party_long: "Хорезмский Народный Совет" #NT!
+ KHI_fascism_party: "КБМ" #NT!
+ KHI_fascism_party_long: "Хивинское басмаческое движение" #NT!
+ KHI_democratic_party: "КДК" #NT!
+ KHI_democratic_party_long: "Хивинские народные джадидские советы" #NT!
+ KHI_neutrality_party: "Русско-Хивинский союз" #NT!
+ UDM_communism_party: "УРК" #NT!
+ UDM_communism_party_long: "Удмуртский обком коммунистической партии" #NT!
+ UDM_fascism_party: "ВПЧ" #NT!
+ UDM_fascism_party_long: "Радикальные первосвященники удмуртского воса" #NT!
+ UDM_democratic_party: "СКУ" #NT!
+ UDM_democratic_party_long: "Государственный совет Удмуртии" #NT!
+ UDM_neutrality_party: "УНА" #NT!
+ UDM_neutrality_party_long: "Удмуртское Национальное Собрание" #NT!
+ MEL_communism_party: "МКП" #NT!
+ MEL_communism_party_long: "Марийская Коммунистическая Партия" #NT!
+ MEL_fascism_party: "КЮ" #NT!
+ MEL_fascism_party_long: "Кугу Джумо (Великий Бог)" #NT!
+ MEL_democratic_party: "ММА" #NT!
+ MEL_democratic_party_long: "Лугово-Марийское Государственное Собрание" #NT!
+ MEL_neutrality_party: "МНУ" #NT!
+ MEL_neutrality_party_long: "Партия национального освобождения и объединения Марий Эл" #NT!
+ CHU_communism_party: "таможенно-пограничная служба" #NT!
+ CHU_communism_party_long: "Чувашская большевистская партия" #NT!
+ CHU_fascism_party: "ЦНС" #NT!
+ CHU_fascism_party_long: "Чувашское национальное превосходство" #NT!
+ CHU_democratic_party: "КСК" #NT!
+ CHU_democratic_party_long: "Чувашско-Тюркский государственный совет" #NT!
+ CHU_neutrality_party: "КОУ" #NT!
+ CHU_neutrality_party_long: "Чувашский Православный Союз" #NT!
+ TUK_democratic_party: "Алаш Партия" #NT!
+ TAG_Purged: "§RОчищено!" #NT!
+  # Galicia 
+ KRW_conservatives_party: "СПН" #NT!
+ KRW_conservatives_party_long: "Стронництво Правицы Народовей" #NT!
+ KRW_neutrality_party: "Герцогская диета" #NT!
+ KRW_democratic_party: "СЛД" #NT!
+ KRW_democratic_party_long: "Stronnictwo Либерально-Демократические" #NT!
+ KRW_fascism_party: "ОУН" #NT!
+ KRW_fascism_party_long: "Организация украинских националистов" #NT!
+ KRW_socialist_party: "ППСР" #NT!
+ KRW_socialist_party_long: "Польская партия Социально-демократическая" #NT!
+ KRW_communism_party: "УРП" #NT!
+ KRW_communism_party_long: "Украинская Радикальная Партия" #NT!
+  #Sichuan 
+ SCH_conservatives_party: "Гоминьдан" #NT!
+ SCH_neutrality_party: "Гоминьдан" #NT!
+ SCH_democratic_party: "Zhi Gong Party" #NT!
+ SCH_democratic_party_long: "Чжунгуо Чжигундунг" #NT!
+ SCH_fascism_party: "Гоминьдан" #NT!
+ SCH_socialist_party: "Левый Гоминьдан" #NT!
+ SCH_communism_party: "ЗМТ" #NT!
+ SCH_communism_party_long: "Чжунго Миньчжу Тонгмэн" #NT!
+ ################################ 

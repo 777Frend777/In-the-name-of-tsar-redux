@@ -1,0 +1,22 @@
+﻿
+
+
+air_wings = {
+	### Royal Iraqi Air Force (RIrAF)
+	907 = {
+		# 1st Squadron -- Hawker Audax
+		CAS_equipment_1 =  {
+			owner = "EGY" 
+			amount = 25
+		}
+                nav_bomber_equipment_1 = {
+			owner = "EGY" 
+			amount = 10
+		}
+                fighter_equipment_0 = {
+			owner = "ENG" 
+			amount = 15
+		}
+	}
+}
+

@@ -1,0 +1,784 @@
+﻿l_russian:
+ independent_air_force_spirit: "Независимые ВВС" #NT!
+ independent_air_force_spirit_desc: "Военно-воздушные силы — это независимая отрасль, столь же важная, как армия или флот." #NT!
+ industrial_destruction_spirit: "Промышленное разрушение" #NT!
+ industrial_destruction_spirit_desc: "1000 бомбардировщиков могут изменить ход войны одним ударом.\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ dive_bombing_spirit: "Пикирующая бомбардировка" #NT!
+ dive_bombing_spirit_desc: "Поцарапайте одну плоскую вершину.\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ material_destruction_spirit: "Разрушение материала" #NT!
+ material_destruction_spirit_desc: "Уничтожение техники и нарушение линий связи противника закрепят победу быстрее, чем любое количество нанесенных потерь.\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ air_modernizers_spirit: "Модернизаторы воздуха" #NT!
+ air_modernizers_spirit_desc: "Совсем недавно Fokker E.III был лучшим истребителем в мире. Все меняется быстро." #NT!
+ industry_liasons_spirit: "Связи с промышленностью" #NT!
+ industry_liasons_spirit_desc: "Только беспрепятственное сотрудничество между авиационной промышленностью, военными и правительством обеспечит высочайшее качество." #NT!
+ air_crew_surveys_spirit: "Опросы летных экипажей" #NT!
+ air_crew_surveys_spirit_desc: "В конце концов, именно они используют оборудование, так почему бы не спросить их?" #NT!
+ maritime_patrol_spirit: "Морской патруль" #NT!
+ maritime_patrol_spirit_desc: "Если оно уплывет, мы сможем его найти." #NT!
+ long_range_patrol_spirit: "Дальний патруль" #NT!
+ long_range_patrol_spirit_desc: "Доминирование в воздушном пространстве вдали от дома." #NT!
+ efficient_ground_crews_spirit: "Дух эффективной наземной бригады" #NT!
+ efficient_ground_crews_spirit_desc: "Пилоты и все такое, но что действительно важно, так это поднять самолеты в воздух как можно быстрее." #NT!
+ effective_training_programs_spirit: "Эффективные программы обучения" #NT!
+ effective_training_programs_spirit_desc: "Ничто не сравнится с хорошим образованием." #NT!
+ branch_independence_spirit: "Дух независимости филиала" #NT!
+ branch_independence_spirit_desc: "Ни один армейский или флотский парень не может нам приказывать. Мы делаем все по-своему." #NT!
+ air_theory_spirit: "Теория Воздуха Дух" #NT!
+ air_theory_spirit_desc: "Воздушный бой — это наука." #NT!
+ subservience_to_army_spirit: "Подчинение армии" #NT!
+ subservience_to_army_spirit_desc: "На самом деле это простая должностная инструкция: бомбить там, где генералы велят бомбить." #NT!
+ subservience_to_navy_spirit: "Подчинение флоту" #NT!
+ subservience_to_navy_spirit_desc: "Самолеты действительно полезны только в качестве оружия поддержки и разведки военно-морского флота." #NT!
+ no_focus_on_training_spirit: "Никакого внимания к тренировкам" #NT!
+ no_focus_on_training_spirit_desc: "Упражняться? Почему мы должны это делать? Это легко! Также; экономит топливо." #NT!
+ disorganized_ground_crews_spirit: "Дезорганизованные наземные бригады" #NT!
+ disorganized_ground_crews_spirit_desc: "Наземная команда? Кто они? Почему они должны иметь значение?" #NT!
+ conflicting_branches_spirit: "Конфликтующие ветки" #NT!
+ conflicting_branches_spirit_desc: "Но они сказали..." #NT!
+ elite_fighter_pilots_spirit: "Элитные пилоты-истребители" #NT!
+ elite_fighter_pilots_spirit_desc: "Помните, ребята, за второе место очков нет." #NT!
+ long_range_navigation_spirit: "Дальняя навигация" #NT!
+ long_range_navigation_spirit_desc: "Они могут бежать, но не могут спрятаться." #NT!
+ dogfighting_training_spirit: "Обучение воздушному бою" #NT!
+ dogfighting_training_spirit_desc: "Это не поворот Иммельмана, это полупетля." #NT!
+ expert_marksmen_spirit: "Экспертные стрелки" #NT!
+ expert_marksmen_spirit_desc: "Все дело в том, чтобы знать, куда целиться и когда нажимать на спусковой крючок." #NT!
+ battlefield_air_interdiction_spirit: "Воздушный запрет на поле боя" #NT!
+ battlefield_air_interdiction_spirit_desc: "Тесное взаимодействие авиации и сухопутных войск." #NT!
+ cag_night_fighting_spirit: "CAG Ночные бои" #NT!
+ cag_night_fighting_spirit_desc: "Думаете, просто летать в темноте сложно? Попробуйте приземлиться на авианосец посреди ночи!" #NT!
+ veteran_air_instructors_spirit: "Ветераны авиации-инструкторы" #NT!
+ veteran_air_instructors_spirit_desc: "Позвольте лучшим обучать остальных." #NT!
+ steel_wings_steel_hearts_spirit: "Стальные крылья, стальные сердца" #NT!
+ steel_wings_steel_hearts_spirit_desc: "Чтобы вести войну на высоте 10 000 футов, требуется определенная смелость.\n\n§GЭтот дух доступен благодаря нашей идеологии.§!" #NT!
+ home_defence_spirit: "Воздушно-десантные герои" #NT!
+ home_defence_spirit_desc: "Огромные просторы неба таят в себе невыразимые надежды для тех, кто ищет наследие." #NT!
+ centralized_control_spirit: "Централизованное управление" #NT!
+ centralized_control_spirit_desc: "Эффективное управление ресурсами гарантирует, что самолеты доберутся до тех мест, где они больше всего нужны." #NT!
+ air_power_projection_spirit: "Проекция воздушной мощи" #NT!
+ air_power_projection_spirit_desc: "Особая смелость необходима в бою вдали от дома." #NT!
+ massed_strike_spirit: "Массированный удар" #NT!
+ massed_strike_spirit_desc: "Разрушение наземных сил противника – лучший способ победить их.\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ continuous_strike_spirit: "Непрерывный удар" #NT!
+ continuous_strike_spirit_desc: "Уничтожение ключевого оборудования противника жизненно важно.\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ strategic_strike_spirit: "Полное опустошение" #NT!
+ strategic_strike_spirit_desc: "Массивные стратегические удары в самое сердце врага лишат его боеспособности.\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ duelling_obsession_spirit: "Дуэль одержимости" #NT!
+ duelling_obsession_spirit_desc: "Выход один на один – единственный благородный и джентльменский способ боя в воздухе." #NT!
+ lax_safety_regulations_spirit: "Слабые правила безопасности" #NT!
+ lax_safety_regulations_spirit_desc: "Я имею в виду, что все равно никто на самом деле не следует инструкциям, так какой в ​​этом смысл?" #NT!
+ officers_clique_spirit: "Офицерская клика" #NT!
+ officers_clique_spirit_desc: "Пусть они и пилоты, но они ведь всего лишь рядовые, верно?" #NT!
+ not_worth_the_risk_spirit: "Не стоит риска" #NT!
+ not_worth_the_risk_spirit_desc: "Самолеты, знаете ли, очень дорогие." #NT!
+  
+ merchant_mariners_spirit: "Торговые моряки" #NT!
+ merchant_mariners_spirit_desc: "Морское дело для нас – вторая натура." #NT!
+ naval_wargames_spirit: "Военно-морские военные игры" #NT!
+ naval_wargames_spirit_desc: "Теоретическая тактическая подготовка спасает жизни и топливо." #NT!
+ instilled_aggression_spirit: "Внушенная агрессия" #NT!
+ instilled_aggression_spirit_desc: "Атакуйте, атакуйте, атакуйте!" #NT!
+ instilled_aggression_spirit_tt: "Адмиралы: §G20% шанс§! получить §Y+1 Атака§! при повышении уровня." #NT!
+ calculated_restraint_spirit: "Расчётная сдержанность" #NT!
+ calculated_restraint_spirit_desc: "После тщательного рассмотрения..." #NT!
+ calculated_restraint_spirit_tt: "Адмиралы: §G20% шанс§! получить §Y+1 Защиту§! при повышении уровня." #NT!
+ signals_training_spirit: "Обучение сигналам" #NT!
+ signals_training_spirit_desc: "Чтобы каждый человек выполнял свой долг, он должен знать, в чем состоит его долг." #NT!
+ signals_training_spirit_tt: "Адмиралы: §G20% шанс§! получить §Y+1 Маневрирование и координация§! при повышении уровня." #NT!
+ fleet_in_being_academy_spirit: "Гранд Флит" #NT!
+ fleet_in_being_academy_spirit_desc: "Масштабная тактическая подготовка.\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ fleet_in_being_academy_spirit_tt: "Новые адмиралы: §G50% шанс§! начать с черты §Y «Артиллерийский эксперт»§!." #NT!
+ merchant_mariners_spirit_tt: "Новые адмиралы: §G50% шанс§! начать с черты §Y «Морское происхождение»§!." #NT!
+ trade_interdiction_academy_spirit: "Конвойная война" #NT!
+ trade_interdiction_academy_spirit_desc: "Торговые конвои требуют особой тактики и подготовки.\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ trade_interdiction_academy_spirit_tt: "Новые адмиралы: §G50% шанс§! начать с черт §Y"Seawolf"§_1 или §Y «Бегущая через блокаду»§!." #NT!
+ base_strike_academy_spirit: "Интегрированная воздушная рука" #NT!
+ base_strike_academy_spirit_desc: "Тесное сотрудничество между воздушными и морскими подразделениями жизненно важно!\n\n§GЭтот дух возможен благодаря нашим доктринам.§!" #NT!
+ base_strike_academy_spirit_tt: "Новые адмиралы: §G50% шанс§! начать с черты §Y «Любитель авиации»§!." #NT!
+ damage_control_training_spirit: "Ремонтно-восстановительные работы" #NT!
+ damage_control_training_spirit_desc: "Хорошо обученные экипажи означают меньшие потери с нашей стороны." #NT!
+ damage_control_training_spirit_tt: "Новые адмиралы: §G50% шанс§! начать с черты §Y «Главный инженер»§!." #NT!
+ best_of_the_best_naval_academy_spirit: "Лучший из лучших" #NT!
+ best_of_the_best_naval_academy_spirit_desc: "Жесткая конкуренция и строгий отбор порождают нужных нам капитанов.\n\n§GТакой дух возможен благодаря нашей идеологии.§!" #NT!
+ best_of_the_best_naval_academy_spirit_tt: "Новые адмиралы: начинаются без каких-либо особенностей личности." #NT!
+ naval_academy_scholarships_spirit: "Стипендии Академии" #NT!
+ naval_academy_scholarships_spirit_desc: "Все дело в том, чтобы дать нужным людям шанс проявить себя." #NT!
+ naval_academy_scholarships_spirit_tt: "Новые адмиралы: начинаются без каких-либо особенностей личности." #NT!
+ underfunded_naval_academy_spirit: "Недостаточно финансируемая Военно-морская академия" #NT!
+ underfunded_naval_academy_spirit_desc: "По крайней мере, у нас есть один..." #NT!
+ traditionalism_naval_academy_spirit: "Традиционализм" #NT!
+ traditionalism_naval_academy_spirit_desc: "Мы всегда так делали. Зачем менять сейчас?" #NT!
+ traditionalism_naval_academy_spirit_tt: "Увеличена вероятность того, что новые адмиралы будут обладать чертой §Y «Старая гвардия» §!.\n§G50% шанс§!, что новые адмиралы получат дополнительное очко навыков в двух категориях." #NT!
+ political_appointments_naval_academy_spirit: "Политические назначения" #NT!
+ political_appointments_naval_academy_spirit_desc: "Важно, чтобы в нашей академии преподавали только преподаватели с правильным настроем." #NT!
+ nepotism_naval_academy_spirit: "кумовство" #NT!
+ nepotism_naval_academy_spirit_desc: "Мой отец был преподавателем в академии, как и его отец до него, и его старший брат..." #NT!
+ nepotism_naval_academy_spirit_tt: "Уменьшен шанс получения новых адмиралов благоприятных качеств личности." #NT!
+ jeune_ecole_spirit: "Женская школа" #NT!
+ jeune_ecole_spirit_desc: "Разрушители – это будущее!" #NT!
+ big_gun_club_spirit: "Большой стрелковый клуб" #NT!
+ big_gun_club_spirit_desc: "Линкоры доминируют не только на морях, но и в политике." #NT!
+ aviation_enthusiasts_spirit: "Любители авиации" #NT!
+ aviation_enthusiasts_spirit_desc: "Будущие морские бои будут вестись в воздухе." #NT!
+ cruiser_warfare_spirit: "Крейсерская война" #NT!
+ cruiser_warfare_spirit_desc: "Крейсеры — лучший тип кораблей, они могут выполнять любую работу." #NT!
+ wolfpacks_spirit: "Волчьи стаи" #NT!
+ wolfpacks_spirit_desc: "Тихие охотники моря." #NT!
+ flexible_contracts_spirit: "Гибкие контракты" #NT!
+ flexible_contracts_spirit_desc: "Лучший контракт — тот, который можно расторгнуть." #NT!
+ integrated_designers_spirit: "Интегрированные дизайнеры" #NT!
+ integrated_designers_spirit_desc: "Постоянная адаптация наших проектов является главным приоритетом." #NT!
+ naval_reform_spirit: "Военно-морская реформа" #NT!
+ naval_reform_spirit_desc: "Война всегда меняется." #NT!
+ naval_refit_yards_spirit: "Верфи военно-морского ремонта" #NT!
+ naval_refit_yards_spirit_desc: "Минимизируя время нахождения в доке, максимально увеличиваем время, в течение которого корабль может находиться в море." #NT!
+ naval_modernism_spirit: "Модернизм" #NT!
+ naval_modernism_spirit_desc: "Будущее за нами." #NT!
+ fleet_in_being_navy_spirit: "Глобальное присутствие" #NT!
+ fleet_in_being_navy_spirit_desc: "Наши корабли будут патрулировать океаны по всему миру.\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ trade_interdiction_navy_spirit: "Подводное превосходство" #NT!
+ trade_interdiction_navy_spirit_desc: "Без припасов страна не может вести войну.\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ base_strike_navy_spirit: "Мобильные силы" #NT!
+ base_strike_navy_spirit_desc: "Возможность нанести удар где угодно и когда угодно.\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ landlocked_spirit: "Не имеющий выхода к морю" #NT!
+ landlocked_spirit_desc: "Без выхода к морю трудно построить военно-морскую традицию." #NT!
+ political_connections_navy_spirit: "Политические связи" #NT!
+ political_connections_navy_spirit_desc: "Мое командование не имеет ничего общего с тем, что мой отец является министром финансов!" #NT!
+ overbearing_army_spirit: "Властная армия" #NT!
+ overbearing_army_spirit_desc: "Военно-морской флот — это всего лишь поддержка армии." #NT!
+ bureau_of_ordnance_spirit: "Бюро боеприпасов" #NT!
+ bureau_of_ordnance_spirit_desc: "Управление артиллерийского вооружения влияет на любые конструкции кораблей.\n\n§GЭтот дух доступен благодаря нашим удивительным торпедам.§!" #NT!
+ only_big_guns_spirit: "Только большие пушки" #NT!
+ only_big_guns_spirit_desc: "Линкоры — бесспорные королевы открытого моря." #NT!
+ close_combat_navy_spirit: "Ближний бой" #NT!
+ close_combat_navy_spirit_desc: "Близость – ключ к победе." #NT!
+ night_fighting_spirit: "Ночные бои" #NT!
+ night_fighting_spirit_desc: "Привычка сражаться в темноте дает явные преимущества." #NT!
+ surprise_attacks_spirit: "Неожиданные атаки" #NT!
+ surprise_attacks_spirit_desc: "Ударить врага до того, как он осознает угрозу.\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ efficient_communications_spirit: "Эффективные коммуникации" #NT!
+ efficient_communications_spirit_desc: "Общение, общение и общение." #NT!
+ discrete_valor_spirit: "Дискретная доблесть" #NT!
+ discrete_valor_spirit_desc: "Выжить, чтобы сражаться в следующий день." #NT!
+ surface_raiders_spirit: "Поверхностные рейдеры" #NT!
+ surface_raiders_spirit_desc: "Зачем просто позволять субмаринам совершать все рейды?\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ decisive_battle_spirit: "Решающая битва" #NT!
+ decisive_battle_spirit_desc: "Если вы пойдете ва-банк в битву, вы всегда получите инициативу.\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ inclimate_weather_experience_spirit: "Опыт ненастной погоды" #NT!
+ inclimate_weather_experience_spirit_desc: "Плохой погоды не бывает..." #NT!
+ brave_commanders_spirit: "Отважные командиры" #NT!
+ brave_commanders_spirit_desc: "К черту торпеды, полный вперед!" #NT!
+ brown_water_spirit: "Литоральный файтинг" #NT!
+ brown_water_spirit_desc: "Навигация и сражения на архипелаге требуют особого набора навыков." #NT!
+ green_water_spirit: "Зеленая вода" #NT!
+ green_water_spirit_desc: "Самый безопасный вариант – держаться ближе к берегу." #NT!
+ blue_water_spirit: "Голубая вода" #NT!
+ blue_water_spirit_desc: "Глубокий океан – настоящий дом моряка." #NT!
+ poor_damage_control_training_spirit: "Плохая подготовка по контролю повреждений" #NT!
+ poor_damage_control_training_spirit_desc: "Кого вообще нужно этому тренировать? Мы должны поражать врага, а не наоборот." #NT!
+ limited_sea_time_spirit: "Ограниченное время в море" #NT!
+ limited_sea_time_spirit_desc: "Содержание флота в море делает его содержание более дорогим." #NT!
+ cult_of_the_signal_flag_spirit: "Культ Сигнального Флага" #NT!
+ cult_of_the_signal_flag_spirit_desc: "Пока все следуют приказам, никто не может быть обвинен." #NT!
+ overbearing_admirality_spirit: "Властное Адмиралитет" #NT!
+ overbearing_admirality_spirit_desc: "Всегда уточняйте в Адмиралтействе." #NT!
+ bold_attack_spirit: "Смелая атака" #NT!
+ bold_attack_spirit_desc: "Как говорится: сильное нападение – лучшая защита." #NT!
+ tenacious_defense_spirit: "Настойчивая защита" #NT!
+ tenacious_defense_spirit_desc: "Они не пройдут!" #NT!
+ meticulous_preparation_spirit: "Тщательная подготовка" #NT!
+ meticulous_preparation_spirit_desc: "Война — это хаос, но к хаосу можно быть готовым." #NT!
+ best_of_the_best_spirit: "Лучший из лучших" #NT!
+ best_of_the_best_spirit_desc: "Лишь немногие люди обладают необходимыми качествами, чтобы вести солдат в бой. Еще меньше тех, кто имеет все необходимое, чтобы выиграть эту битву." #NT!
+ academy_scholarships_spirit: "Стипендии Академии" #NT!
+ academy_scholarships_spirit_desc: "Никому не должно быть запрещено служить своему народу из-за простой нехватки денег.\n\n§GЭтот дух доступен благодаря нашей идеологии.§!" #NT!
+ political_loyalty_spirit: "Политическая лояльность" #NT!
+ political_loyalty_spirit_desc: "Ненадежная армия представляет собой угрозу государству, которое она призвана защищать.\n\n§GЭтот дух обусловлен нашей идеологией.§!" #NT!
+ political_loyalty_spirit_tt: "Новые офицеры: начните с черт §Y «Политические связи» §! или §Y «Среди СМИ» §!." #NT!
+ inventive_leadership_spirit: "Изобретательное лидерство" #NT!
+ inventive_leadership_spirit_desc: "Предсказуемый генерал – это побеждённый генерал." #NT!
+ inventive_leadership_spirit_tt: "Новые офицеры: §G50% шанс§! начать с черт §Y"Commando"§_1, §Y"Trickster"§_1 или §Y"Invader"§_1." #NT!
+ mobile_warfare_academy_spirit: "Примите будущее" #NT!
+ mobile_warfare_academy_spirit_desc: "Где бы ни происходили будущие сражения, бронетанковые войска будут играть решающую роль.\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ mobile_warfare_academy_spirit_tt: "Новые офицеры: получите шанс начать с черты §Y «Офицер танковой армии» §!." #NT!
+ superior_firepower_academy_spirit: "Инженерные школы" #NT!
+ superior_firepower_academy_spirit_desc: "Чтобы вырыть правильную канаву, нужно много науки.\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ superior_firepower_academy_spirit_tt: "Новые офицеры: получите шанс начать с черты §Y «Офицер-инженер» §!." #NT!
+ theatre_training_spirit: "Театральное обучение" #NT!
+ theatre_training_spirit_desc: "Некоторые офицеры могут «перейти к туземцам», но туземцы очень хорошо сражаются на выбранной ими местности.\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ theatre_training_academy_spirit_tt: "§G50% шанс§!, что новые офицеры будут созданы с чертой §Y «Блестящий стратег» §! или §Y «Негибкий стратег» §!." #NT!
+ mass_assault_academy_spirit: "Королева битвы" #NT!
+ mass_assault_academy_spirit_desc: "Пехота — Королева битвы, и Королева идет, куда пожелает.\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ underfunded_academy_spirit: "Недофинансированная Академия" #NT!
+ underfunded_academy_spirit_desc: "Есть вещи поважнее, на что можно потратить деньги, чем учить людей, как эффективнее убивать друг друга." #NT!
+ nepotism_academy_spirit: "кумовство" #NT!
+ nepotism_academy_spirit_desc: "Мой дядя руководит армией и говорит, что я могу получить командование своей дивизией, когда захочу!" #NT!
+ professional_officer_corps_spirit: "Профессиональный офицерский корпус" #NT!
+ professional_officer_corps_spirit_desc: "Мы профессионалы, и война – наша профессия." #NT!
+ elevated_engineering_corps_spirit: "Возвышенный инженерный корпус" #NT!
+ elevated_engineering_corps_spirit_desc: "Лучший способ оценить способности и характер человека — дать ему лопату и день, чтобы сделать с ней что-нибудь полезное." #NT!
+ proper_heritage_spirit: "Надлежащее наследие" #NT!
+ proper_heritage_spirit_desc: "Хорошего генерала можно воспитать, но великого генерала нужно воспитать. В некотором смысле, как лошади." #NT!
+ quick_improvisation_spirit: "Быстрая импровизация" #NT!
+ quick_improvisation_spirit_desc: "Понимайте быстрее, думайте быстрее, действуйте быстрее – вот ключ к победе." #NT!
+ adaptable_modernizers_spirit: "Адаптируемые модернизаторы" #NT!
+ adaptable_modernizers_spirit_desc: "Доктрину, которую нельзя изменить, можно с таким же успехом назвать догмой." #NT!
+ relief_of_command_spirit: "Снятие командования" #NT!
+ relief_of_command_spirit_desc: "Армия существует не для того, чтобы кормить эго своих генералов.\n\n§GЭтот дух доступен благодаря нашей идеологии.§!" #NT!
+ ideological_loyalty_spirit: "Идеологическая лояльность" #NT!
+ ideological_loyalty_spirit_desc: "От того, у кого нет правильной идеологии, нельзя ожидать достижения правильного результата в бою.\n\n§GЭтот дух доступен благодаря нашей идеологии.§!" #NT!
+ state_serves_the_military_spirit: "Государство служит военным" #NT!
+ state_serves_the_military_spirit_desc: "Целью государства является ведение войны против других государств. Все остальное либо поддерживает это, либо бесполезно отвлекает.\n\n§GЭтот дух доступен благодаря нашей идеологии.§!" #NT!
+ mobile_warfare_army_spirit: "Моторизация Привод" #NT!
+ mobile_warfare_army_spirit_desc: "Бей быстрее, иди дальше, побеждай сильнее!\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ superior_firepower_army_spirit: "Подавляющая огневая мощь" #NT!
+ superior_firepower_army_spirit_desc: "Если артиллерия не приносит вам победы в битвах, значит, вы используете ее недостаточно.\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ grand_battleplan_army_spirit: "Наконечник копья" #NT!
+ grand_battleplan_army_spirit_desc: "Кинжал ночью зачастую более эффективен, чем длинный меч днем.\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ mass_assault_army_spirit: "Штыковая сила" #NT!
+ mass_assault_army_spirit_desc: "В конце концов, танк или самолет не смогут удержать клочок земли.\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ political_connections_spirit: "Политические связи" #NT!
+ political_connections_spirit_desc: "Что ж, посмотрим, что на это скажет министр!" #NT!
+ entrenched_old_guard_spirit: "Укоренившаяся старая гвардия" #NT!
+ entrenched_old_guard_spirit_desc: "Кто этот идиот и почему он снова говорит об этой «самолетной» чепухе?" #NT!
+ doctrinal_orthodoxy_spirit: "Доктринальное православие" #NT!
+ doctrinal_orthodoxy_spirit_desc: "В мое время мы это делали не так." #NT!
+ excessive_parade_drill_spirit: "Чрезмерное парадное упражнение" #NT!
+ excessive_parade_drill_spirit_desc: "Основная цель солдата – хорошо выглядеть на параде." #NT!
+ static_warfare_spirit: "Статическая война" #NT!
+ static_warfare_spirit_desc: "Не бывает слишком много траншейных работ. Есть только «недостаточное» и «едва адекватное»." #NT!
+ flexible_organization_spirit: "Гибкая организация" #NT!
+ flexible_organization_spirit_desc: "Главное — выполнять работу, а не следовать приказам буквально." #NT!
+ aggressive_reconnaisance_spirit: "Агрессивная разведка" #NT!
+ aggressive_reconnaisance_spirit_desc: "Если вы хотите знать, что задумала другая сторона, подойдите туда и спросите их напрямую!" #NT!
+ reserve_officers_spirit: "Офицеры запаса" #NT!
+ reserve_officers_spirit_desc: "Не всем нужно делать армию своей профессией. Но во время войны они еще могут послужить." #NT!
+ upbeat_command_spirit: "Оптимистичная команда" #NT!
+ upbeat_command_spirit_desc: "Доброе слово или общая шутка с рядовым солдатом зачастую больше способствуют общему успеху подразделения, чем дополнительная артиллерийская батарея." #NT!
+ victory_or_death_spirit: "Победа или смерть" #NT!
+ victory_or_death_spirit_desc: "Лучше умереть со славой, чем жить в позоре поражения." #NT!
+ maneuver_warfare_spirit: "Маневренная война" #NT!
+ maneuver_warfare_spirit_desc: "Настоящая, цивилизованная война больше похожа на шахматную партию, чем на драку. Зачем сражаться с врагом, вокруг которого можно маневрировать?\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ smoke_and_fire_spirit: "Дым и огонь" #NT!
+ smoke_and_fire_spirit_desc: "Катящийся шквал снарядов удивительно эффективно удерживает врага от ответного огня.\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ logistical_focus_spirit: "Логистический фокус" #NT!
+ logistical_focus_spirit_desc: "Войска могут съесть свои пояса, но танкам нужен бензин.\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ operational_reserve_spirit: "Оперативные резервы" #NT!
+ operational_reserve_spirit_desc: "Всегда имейте что-нибудь в рукаве. Всегда.\n\n§GЭтот дух доступен благодаря нашим доктринам.§!" #NT!
+ intercommand_rivalries_spirit: "Межкомандное соперничество" #NT!
+ intercommand_rivalries_spirit_desc: "Наиболее важные битвы ведутся в комитетах по ассигнованиям, и именно здесь рождаются самые отвратительные обиды." #NT!
+ disregard_for_the_common_soldier_spirit: "Пренебрежение к простому солдату" #NT!
+ disregard_for_the_common_soldier_spirit_desc: "Среднестатистический солдат — самое тупое, самое уродливое и самое ленивое существо, какое только может поместиться в униформе." #NT!
+ constraining_hierarchy_spirit: "Ограничивающая иерархия" #NT!
+ constraining_hierarchy_spirit_desc: "Если вы не будете постоянно обращать пристальное внимание на то, где находятся ваши подчиненные, кто-то может в конечном итоге их украсть." #NT!
+ disdain_for_the_digging_spirit: "Презрение к копанию" #NT!
+ disdain_for_the_digging_spirit_desc: "Вся эта грязь попадает на форму, и тогда солдатам придется тратить много времени на ее чистку." #NT!
+ traditionalism_academy_spirit: "Традиционализм" #NT!
+ traditionalism_academy_spirit_desc: "Война. Война никогда не меняется." #NT!
+ expeditionary_spirit: "Экспедиционная война" #NT!
+ expeditionary_spirit_desc: "Выиграть войну — значит отправиться в страну другого парня и сломать много вещей." #NT!
+ penny_pinching_spirit: "Пенни-щипание" #NT!
+ penny_pinching_spirit_desc: "Вы хоть представляете, сколько денег стоит выстрелить этой пулей? И вы хотите сделать это для «тренировки»?" #NT!
+ bold_attack_spirit_tt: "Офицеры: §G50% шанс§! §Y+1 Атака§! при повышении уровня." #NT!
+ tenacious_defense_spirit_tt: "Офицеры: §G50% шанс§! §Y+1 Защита§! при повышении уровня." #NT!
+ meticulous_preparation_spirit_tt: "Офицеры: §G50% шанс§! из §Y+1 Планирование и логистика§! при повышении уровня." #NT!
+ best_of_the_best_spirit_tt: "Новые офицеры: при найме не приобретаются личностные качества." #NT!
+ academy_scholarships_spirit_tt: "Новые офицеры: при найме не приобретаются личностные качества." #NT!
+ mass_assault_academy_spirit_tt: "Новые офицеры: получите шанс начать с черты §Y «Пехотный офицер» §!." #NT!
+ nepotism_academy_spirit_tt: "§R-50% шанс§!, что новые офицеры будут созданы с положительными чертами." #NT!
+ traditionalism_academy_spirit_tt: "§R-20% шанс§!, что будет принят на работу новый офицер с чертой §YОфицер бронетехники§!. §R20% шанс§!, что новый офицер будет принят на работу с более низким навыком §YАтака§! или §YЗащита§!." #NT!
+ academy_spirit: "Дух Академии" #NT!
+ army_spirit: "Дух армии" #NT!
+ division_command_spirit: "Дух командования дивизией" #NT!
+ naval_academy_spirit: "Дух Военно-морской академии" #NT!
+ navy_spirit: "Дух военно-морского флота" #NT!
+ naval_command_spirit: "Дух военно-морского командования" #NT!
+ air_force_academy_spirit: "Дух Военно-воздушной академии" #NT!
+ air_force_spirit: "Дух ВВС" #NT!
+ air_force_command_spirit: "Дух командования ВВС" #NT!
+ unity_propaganda: "Пропаганда единства" #NT!
+ international_city: "Международный город" #NT!
+ international_city_2: "Международный город" #NT!
+ international_city_3: "Международный город" #NT!
+ international_city_4: "Международный город" #NT!
+ POL_peasant_communities: "Крестьянские общины" #NT!
+ military_appeasement: "Военное умиротворение" #NT!
+ POL_plan_modifier: "Военные планы" #NT!
+ BALTIC_soviet_settlers: "Советское поселение" #NT!
+ BALTIC_allied_investments_idea: "Союзные инвестиции" #NT!
+ BALTIC_axis_investments_idea: "Осевые Инвестиции" #NT!
+ BALTIC_axis_investments_idea_1: "Осевые Инвестиции" #NT!
+ BALTIC_defending_the_nation: "Совет национальной обороны" #NT!
+ BALTIC_recent_skirmish: "Недавняя стычка" #NT!
+ BALTIC_recent_skirmish_desc: "Эта страна недавно пережила стычку с местным военизированным сопротивлением." #NT!
+ BALTIC_equipment_siphon: "Оборудование Сифон" #NT!
+ BALTIC_equipment_siphon_desc: "Недавняя подпольная преступная деятельность привела к тому, что эта страна потеряла значительную часть своей производственной базы." #NT!
+ BALTIC_international_brigades: "Интернациональные бригады" #NT!
+ LIT_agrarian_society: "Аграрное общество" #NT!
+ LIT_agrarian_society_desc: "Экономика Литвы в основном вращается вокруг сельскохозяйственной отрасли. Экспорт продуктов питания в соседние страны составляет большую часть дохода Литвы." #NT!
+ LIT_invested_in_farms: "Аграрное общество" #NT!
+ LIT_invested_in_farms_desc: "При правильном инвестировании преимущественно аграрная экономика Литвы превратилась в пользу государства: литовские культуры питают военную экономику, а надлежащая инфраструктура способствует быстрой мобилизации разрозненных фермерских сообществ по всей стране." #NT!
+ LIT_invested_in_farms_1: "Аграрное общество" #NT!
+ LIT_invested_in_farms_1_desc: "При правильном инвестировании преимущественно аграрная экономика Литвы превратилась в пользу государства: литовские культуры питают военную экономику, а надлежащая инфраструктура способствует быстрой мобилизации разрозненных фермерских сообществ по всей стране." #NT!
+ LIT_purge_resistance_idea: "Очистка народного сопротивления" #NT!
+ LIT_purge_resistance_idea_desc: "Посредством серии рейдов и пропаганды эта страна уничтожает все народное идеологическое сопротивление режиму." #NT!
+ LIT_purge_resistance_communism_idea: "Очистка народного сопротивления" #NT!
+ LIT_purge_resistance_communism_idea_desc: "Посредством серии рейдов и пропаганды эта страна уничтожает все народное идеологическое сопротивление режиму." #NT!
+ LIT_iron_wolf_idea_bad_1: "Низкая угроза железного волка" #NT!
+ LIT_iron_wolf_idea_bad_2: "Умеренная угроза Железного Волка" #NT!
+ LIT_iron_wolf_idea_bad_3: "Высокая угроза Железного Волка" #NT!
+ LIT_iron_wolf_idea_bad_4: "Надвигающееся восстание Железных Волков" #NT!
+ LIT_iron_wolf_idea_good_1: "Добровольцы Железного Волка" #NT!
+ LIT_iron_wolf_idea_good_2: "Железный Волк Военный" #NT!
+ LIT_patriotic_education_idea: "Патриотическое воспитание" #NT!
+ democratic_opposition: "Демократическая оппозиция" #NT!
+ democratic_opposition_idea_1: "Низкая демократическая оппозиция" #NT!
+ democratic_opposition_idea_2: "Очень низкий уровень демократической оппозиции" #NT!
+ LIT_victory_in_trust_idea: "Победа в доверии" #NT!
+ LIT_patriotic_socialism_idea: "Патриотический социализм" #NT!
+ LAT_democratic_opposition_crushed: "Демократическая оппозиция разгромлена" #NT!
+ LIT_paramilitarists_idea: "Литовские военизированные формирования" #NT!
+ LIT_fascist_propaganda: "Фашистская пропаганда" #NT!
+ LIT_falange_militancy: "Боевики-фалангисты" #NT!
+ new_iron_wolf_idea: "Новый Железный Волк" #NT!
+ BALTIC_forest_brothers_idea: "Лесные братья" #NT!
+ LAT_saeima_idea: "Саэйма" #NT!
+ LAT_saeima_idea_dem_1: "Демократическая Саэйма" #NT!
+ LAT_saeima_idea_dem_2: "Демократическая Саэйма" #NT!
+ LAT_saeima_idea_neutral_1: "Авторитарный Сейм" #NT!
+ LAT_farmers_party_idea: "Фермерская вечеринка" #NT!
+ LAT_saeima_idea_military_1: "Военный Сейм" #NT!
+ LAT_saeima_idea_military_2: "Военный Сейм" #NT!
+ LAT_saeima_idea_military_3: "Военный Сейм" #NT!
+ LAT_chamber_of_professions: "Палата профессий" #NT!
+ LAT_state_capitalism_idea: "Государственный капитализм" #NT!
+ LAT_nationalised_industry_idea: "Национализированная промышленность" #NT!
+ LAT_paramilitary_idea: "Латвийские военизированные формирования" #NT!
+ LAT_paramilitary_fasc_idea: "Фашистские военизированные формирования" #NT!
+ LAT_paramilitary_idea_1: "Патриотические военизированные формирования" #NT!
+ LAT_paramilitary_idea_2: "Патриотические военизированные формирования" #NT!
+ LAT_perkonkrust_idea_neu_1: "Перконкрустс" #NT!
+ LAT_neopaganism_idea: "Диевтуриба" #NT!
+ LAT_neopaganism_idea_desc: "Диевтуриба — это возрождение древней балтийской веры, ставшее популярным в латвийских фашистских учреждениях. Фашистские военизированные формирования в Латвии установили, что все, кто хочет вступить в армию, должны сначала присягнуть Диевсу, сделав Диевтурибу официальной религией военных." #NT!
+ LAT_perkonkrust_idea: "Перконкрустс" #NT!
+ perkonkrust_fas_idea_1: "Перконкрустс" #NT!
+ LAT_anti_german_idea: "Антигерманская пропаганда" #NT!
+ LAT_the_sun_shines_equally_idea: "Солнце светит одинаково" #NT!
+ LAT_militarisation_idea: "Латвийский милитаризм" #NT!
+ LAT_multicultural_latvia_idea: "Мультикультурная Латвия" #NT!
+ LAT_state_romuva_idea_1: "Диевтуриба" #NT!
+ LAT_state_romuva_idea_1_desc: "Диевтуриба — это возрождение древней балтийской веры, ставшее популярным в латвийских фашистских учреждениях. Фашистские военизированные формирования в Латвии установили, что все, кто хочет вступить в армию, должны сначала присягнуть Диевсу, сделав Диевтурибу официальной религией военных." #NT!
+ LAT_state_romuva_idea_2: "Диевтуриба" #NT!
+ LAT_state_romuva_idea_2_desc: "Диевтуриба — это возрождение древней балтийской веры, ставшее популярным в латвийских фашистских учреждениях. Фашистские военизированные формирования в Латвии установили, что все, кто хочет вступить в армию, должны сначала присягнуть Диевсу, сделав Диевтурибу официальной религией военных." #NT!
+ LAT_state_romuva_idea_3: "Диевтуриба" #NT!
+ LAT_state_romuva_idea_3_desc: "Диевтуриба — это возрождение древней балтийской веры, ставшее популярным в латвийских фашистских учреждениях. Фашистские военизированные формирования в Латвии установили, что все, кто хочет вступить в армию, должны сначала присягнуть Диевсу, сделав Диевтурибу официальной религией военных." #NT!
+ BALTIC_forest_brothers_reorganized_idea: "Реорганизованные Лесные Братья" #NT!
+ BALTIC_forest_brothers_reorganized_idea_desc: "Латвийское отделение «Лесных братьев», когда-то защищавшее независимость Балтии, было реорганизовано в военизированное крыло «Перконкруста»." #NT!
+ EST_ismaaliit_idea: "Исамаалиит" #NT!
+ EST_exploit_the_banks_idea: "Эксплуатируемый банковский сектор" #NT!
+ EST_national_council_idea: "Национальный совет Эстонии" #NT!
+ EST_corporate_chambers_idea: "Корпоративные палаты" #NT!
+ EST_vaps_idea_1: "Низкое напряжение паров" #NT!
+ EST_vaps_idea_2: "Умеренное напряжение вапов" #NT!
+ EST_vaps_idea_3: "Высокое напряжение вапа" #NT!
+ EST_vaps_idea_4: "Надвигающееся восстание ваперов" #NT!
+ EST_republican_defence_league_idea: "Республиканская лига защиты" #NT!
+ EST_republican_defence_league_idea_1: "Республиканская лига защиты" #NT!
+ EST_johan_pitka: "Йохан Питка" #NT!
+ EST_hjalmar_mae: "Ялмар Мяэ" #NT!
+ EST_viktor_puskar: "Виктор Пушкарь" #NT!
+ EST_august_jakobson: "Август Якобсон" #NT!
+ EST_voldemar_voolman: "Вольдемар Фёльманн" #NT!
+ EST_henrik_allik: "Хендрик Аллик" #NT!
+ EST_volunteer_corps: "Вапсидский добровольческий корпус" #NT!
+ EST_veteran_training: "Обучение ветеранов" #NT!
+ EST_veteran_training_1: "Обучение ветеранов" #NT!
+ EST_vapsid_youth_idea: "Вапсидская молодежь" #NT!
+ EST_vaps_organizing_in_FIN: "Фашистская организация" #NT!
+ EST_jaan_tonisson: "Яан Тыниссон" #NT!
+ EST_andres_larka: "Андрес Ларка" #NT!
+ EST_johannes_kabin: "Йоханнес Кабин" #NT!
+ anti_soviet_army_idea: "Антисоветские военные" #NT!
+ anti_german_army_idea: "Антинемецкая армия" #NT!
+ EST_motors_idea: "Долгий толчок на Восток" #NT!
+ LIT_stasys_rastikis_government: "Стасис Раштикис" #NT!
+ LIT_aleksandras_stulginskis: "Александрас Стульгинскис" #NT!
+ LIT_jonas_staugaitis: "Йонас Стаугайтис" #NT!
+ LIT_kazys_grinius: "Казис Гриниус" #NT!
+ LIT_vytautas_petrulis: "Витаутас Петрулис" #NT!
+ LIT_ernestas_galvanauskas: "Эрнестас Гальванаускас" #NT!
+ LIT_mecislovas_gedvilas: "Мечисловас Гедвилас" #NT!
+ LIT_antanas_venclova: "Антанас Венцлова" #NT!
+ LIT_vincas_mickevicius_kapsukas: "Винцас Мицкявичюс-Капсукас" #NT!
+ LIT_vytautas_alantas: "Витаутас Алантас" #NT!
+ LAT_kviesis_idea: "Альбертс Квиесис" #NT!
+ LAT_kviesis_democratic_idea: "Альбертс Квиесис" #NT!
+ subservient_democrat: "Подчиненный демократ" #NT!
+ subservient_democrat_democratic: "Подчиненный демократ" #NT!
+ LAT_fricis_menders: "Фрицис Мендерс" #NT!
+ LIT_vladas_mironas: "Владас Миронас" #NT!
+ LIT_military_idea_1: "Недофинансированные военные" #NT!
+ LIT_military_idea_2: "Компетентные военные" #NT!
+ LIT_military_idea_3: "Расширенная армия" #NT!
+ LIT_military_idea_4: "Тоталитарная армия" #NT!
+ LIT_presidential_powers_1: "[GetLithuanianPowerIdeaAdj] Полномочия" #NT!
+ LIT_presidential_powers_2: "[GetLithuanianPowerIdeaAdj] Полномочия" #NT!
+ LIT_Nation_Powers_Royal: "Королевский" #NT!
+ LIT_Nation_Powers_Presidential: "Президентский" #NT!
+ LIT_seimas_idea_1: "Сейм" #NT!
+ LIT_seimas_idea_2: "Сейм" #NT!
+ LIT_seimas_idea_3: "Сейм" #NT!
+ LIT_seimas_idea_royal: "Благородный Сейм" #NT!
+ LIT_karl_gero_idea: "Миндаугас III" #NT!
+ LIT_peasant_militia: "Крестьянское ополчение" #NT!
+ LIT_antanas_snieckus: "Антанас Сниекус" #NT!
+ LAT_janis_sudrabkalns: "Янис Судрабкалнс" #NT!
+ LAT_emilija_veinberga: "Эмилия Вейнберга" #NT!
+ LAT_janis_rudzutaks: "Янис Рудзутакс" #NT!
+ LAT_karlis_baumanis: "Карлис Бауманис" #NT!
+ LAT_augusts_kirhensteins: "Аугустс Кирхенштейнс" #NT!
+ POL_walery_slawek: "Валерий Славек" #NT!
+ POL_stanislaw_wojciechowski: "Станислав Войцеховский" #NT!
+ POL_joachim_stefan_bartoszewicz: "Йоахим Стефан Бартошевич" #NT!
+ POL_henryk_floyar_rajchman: "Хенрик Флояр-Райхман" #NT!
+ POL_ignacy_moscicki: "Игнаций Мосцицкий" #NT!
+ POL_marian_rejewski: "Мариан Реевски" #NT!
+ POL_wanda_wasilewska: "Ванда Василевска" #NT!
+ POL_jerzy_rutkowski: "Ежи Рутковский" #NT!
+ POL_jan_mosdorf: "Ян Мосдорф" #NT!
+ POL_aleksander_kakowski: "Александр Каковский" #NT!
+ POL_zdzislaw_lubomirski: "Здзислав Любомирский" #NT!
+ revolutionary_poet: "Революционный поэт" #NT!
+ socialist_justice: "Социалистическая справедливость" #NT!
+ marxist_fundamentalist: "Марксистский фундаменталист" #NT!
+ patriotic_socialist: "Патриотический Социалистический" #NT!
+ vapsid_economist: "Странный экономист" #NT!
+ subservient_ultranationalist: "Подчиненный ультранационалист" #NT!
+ veteran_anti_bolshevik: "Ветеран антибольшевистской борьбы" #NT!
+ resistance_artist: "Художник Сопротивления" #NT!
+ socdem_reformist: "Демократический реформист" #NT!
+ socialist_autocrat: "Социалистический автократ" #NT!
+ autocratic_archbishop: "Самодержавный архиепископ" #NT!
+ staunch_aristocrat: "Стойкий аристократ" #NT!
+ national_propagandist: "Национальный пропагандист" #NT!
+ nationalist_journalist: "Националистический журналист" #NT!
+ father_of_polish_nationalism: "Отец польского национализма" #NT!
+ unruly_falangist: "Неуправляемый фалангист" #NT!
+ LIT_king_of_lithuania: "Король Литвы" #NT!
+ POL_irena_anders: "Ирена Андерс" #NT!
+ POL_kazimierz_switalski: "Казимеж Свитальский" #NT!
+ POL_empowered_sejm_idea: "Уполномоченный сейм" #NT!
+ POL_nationalist_constitution_1: "Националистическая конституция" #NT!
+ POL_privatized_education: "Национализированная промышленность" #NT!
+ POL_royal_sejm_idea: "Королевский сейм" #NT!
+ POL_committee_of_national_liberation_idea: "Комитет национального освобождения" #NT!
+ POL_committee_of_international_liberation: "Комитет международного освобождения" #NT!
+ POL_balachowicz_brigades: "Балаховичские бригады" #NT!
+ POL_tadeusz_bielecki: "Тадеуш Белецкий" #NT!
+ RUS_soviet_railways: "Советские железные дороги" #NT!
+ POL_democratic_sejm_idea: "Восстановленный Сейм" #NT!
+ POL_leftist_sejm_idea: "Левый сейм" #NT!
+ POL_non_discriminatory_recruitment_idea: "Недискриминационный набор на работу" #NT!
+ POL_lower_class_education_idea: "Крестьянское классовое образование" #NT!
+ anti_fascist_army_idea: "Антифашистская армия" #NT!
+ POL_polish_socialism: "Польский социализм" #NT!
+ POL_anti_imperialism_idea: "Антиимпериализм" #NT!
+ POL_influx_of_exiles: "Приток изгнанников" #NT!
+ POL_royal_hussars_idea: "Королевские кавалерийские дивизии" #NT!
+ POL_royal_guard: "Королевская гвардия" #NT!
+ royal_dictator: "Королевский диктатор" #NT!
+ BALTIC_restore_workers_republic_idea: "Рабочая Республика" #NT!
+ BALTIC_restore_workers_republic_idea_1: "Рабочая Республика" #NT!
+ BALTIC_restore_workers_republic_idea_2: "Рабочая Республика" #NT!
+ BALTIC_restore_workers_republic_idea_sov_1: "Восстановленная Советская Республика" #NT!
+ BALTIC_carrying_the_western_revolution: "Западная революция" #NT!
+ BALTIC_christian_communism: "Христианский социализм" #NT!
+ BALTIC_catholic_opposition_idea: "Католическая оппозиция" #NT!
+ BALTIC_catholic_opposition_idea_1: "Католическая оппозиция" #NT!
+ BALTIC_popular_resistance: "Народное сопротивление" #NT!
+ BALTIC_disloyal_parliament: "Правительственная оппозиция" #NT!
+ baltic_siezed_means_of_production_idea: "Захватили средства производства" #NT!
+ BALTIC_ford: "Форд Мотор Компани" #NT!
+ BALTIC_RSAF_enfield: "RSAF Энфилд" #NT!
+ BALTIC_royal_arsenal: "Королевский Арсенал" #NT!
+ BALTIC_RAF: "Королевские воздушные силы" #NT!
+ BALTIC_paramilitaries_aligning: "Перестройка военизированных формирований" #NT!
+ BALTIC_new_red_riflemen: "Новые красные стрелки" #NT!
+ BALTIC_anti_german_plans: "Немецкие военные планы" #NT!
+ BALTIC_economic_union_1: "Балтийский экономический пакт" #NT!
+ BALTIC_economic_union_2: "Балтийский экономический пакт" #NT!
+ BALTIC_union_idea: "Балтийский Союз" #NT!
+ BALTIC_union_idea_1: "Балтийский Союз" #NT!
+ POL_ford: "Форд Мотор Компани" #NT!
+ POL_vauxhall: "Оксхолл Польша" #NT!
+ POL_somua: "СОМУА" #NT!
+ POL_ford_free: "Форд Мотор Компани" #NT!
+ POL_vauxhall_free: "Оксхолл Польша" #NT!
+ POL_somua_free: "СОМУА" #NT!
+ resistance_purged: "Сопротивление уничтожено" #NT!
+ democratic_crusader: "Демократический крестоносец" #NT!
+ agricultural_capitalist: "Сельскохозяйственный капиталист" #NT!
+ anti_german_personality: "Убежденный антинемецкий" #NT!
+ veteran_minister: "Министр-ветеран" #NT!
+ militant_minister: "Воинственный министр" #NT!
+ agricultural_nationalist: "Сельскохозяйственный националист" #NT!
+ priestly_prime_minister: "Жреческий премьер-министр" #NT!
+ baltic_soviet_settlers: "Советские поселенцы" #NT!
+ the_last_romanov_maybe: "Последний Романов?" #NT!
+ the_last_romanov_probably: "Последний Романов" #NT!
+ the_last_romanov_definitely: "Последний Романов!" #NT!
+ soldiers_of_the_steppe: "Солдаты Степи" #NT!
+ POL_falangist_propaganda: "Фалангистская пропаганда" #NT!
+ POL_radicalized_anti_germans: "Радикальное польское меньшинство" #NT!
+ POL_polish_upper_class: "Общепольский высший класс" #NT!
+ patriot_king: "Патриот Кинг" #NT!
+ king_of_galicia_and_lodomeria: "Король Галиции и Лодомерии" #NT!
+ exile_king: "Король изгнанников" #NT!
+ anti_bolshevik_leftist: "Антибольшевистский левый" #NT!
+ baltic_revolutionary: "Революционный" #NT!
+ latvian_militant: "Латвийский боевик" #NT!
+ married_to_latvia: "Женат на Латвии" #NT!
+ hardline_latvian_nationalist: "Жесткий латвийский националист" #NT!
+ POL_sold_colony_cheap: "Продажа колонии" #NT!
+ POL_sold_colony_expensive: "Продажа колонии" #NT!
+ RUS_understaffed_bureaucracy: "Неукомплектованная бюрократия" #NT!
+ RUS_understaffed_bureaucracy_desc: "НКВД обнаружил доказательства крупномасштабного заговора внутри гражданской администрации, и несколько бюрократов были сняты с постов." #NT!
+ RUS_anti_soviet_military_thinking_banned_army: "Антисоветская военная мысль запрещена" #NT!
+ RUS_anti_soviet_military_thinking_banned_army_desc: "Изучение и обсуждение документов и идей опальных и реакционных теоретиков теперь запрещено нашим армейским офицерам в Академии, а новые выпускники проходят тщательную проверку, чтобы ни один враг народа не проник в ряды Красной Армии." #NT!
+ RUS_training_activities_curtailed: "Учебная деятельность сокращена" #NT!
+ RUS_training_activities_curtailed_desc: "У значительного процента транспортных средств возникли механические неисправности, а несколько новобранцев получили ранения во время недавних военных учений. Пока мы не выясним истинную причину этих механических дефектов, мы сократили масштабные учения по подготовке, чтобы избежать дальнейшего ущерба как нашим новобранцам, так и нашим военным средствам." #NT!
+ RUS_purged_junior_army_officers_1: "Младшие армейские офицеры подвергнуты чистке" #NT!
+ RUS_purged_junior_army_officers_1_desc: "Значительное количество младших офицеров армии было арестовано НКВД по обвинению в подстрекательстве к мятежу, саботаже и антисоветских взглядах. Потеря такого большого количества опытных офицеров и ветеранов прошлых войн привела Красную Армию в опасное замешательство." #NT!
+ RUS_anti_soviet_military_thinking_banned_navy: "Антисоветская военная мысль запрещена" #NT!
+ RUS_anti_soviet_military_thinking_banned_navy_desc: "Изучение и обсуждение документов и идей опальных и реакционных теоретиков теперь запрещено нашим морским офицерам в Академии, а новые выпускники проходят тщательную проверку, чтобы ни один враг народа не проник в ряды Красного Флота." #NT!
+ RUS_shipyard_staff_purged: "Персонал верфи подвергся чистке" #NT!
+ RUS_shipyard_staff_purged_desc: "После широкомасштабного расследования многочисленных обвинений в диверсиях и других подозрительных действиях на Военно-Морском Флоте НКВД произвело многочисленные аресты, в результате чего некоторые из наших верфей и военно-морских баз серьезно недоукомплектованы кадрами." #NT!
+ RUS_purged_junior_navy_officers_1: "Младшие офицеры ВМФ подвергнуты чистке" #NT!
+ RUS_purged_junior_navy_officers_1_desc: "Значительное количество младших офицеров ВМФ было арестовано НКВД по обвинению в подстрекательстве к мятежу, саботаже и антисоветских взглядах. Потеря такого большого количества опытных офицеров и ветеранов прошлых войн привела Красный Флот в опасное замешательство." #NT!
+ RUS_anti_soviet_military_thinking_banned_airforce: "Антисоветская военная мысль запрещена" #NT!
+ RUS_anti_soviet_military_thinking_banned_airforce_desc: "Изучение и обсуждение документов и идей опальных и реакционных теоретиков теперь запрещено нашим офицерам ВВС в Академии, а новые выпускники проходят тщательную проверку, чтобы ни один враг народа не проник в ряды советских ВВС." #NT!
+ RUS_ground_based_training: "Наземное обучение" #NT!
+ RUS_ground_based_training_desc: "После того как во время учений была зафиксирована серия авиакатастроф и происшествий, НКВД инициировало проверку в ВВС и, следуя указаниям прикомандированных к делу агентов, на время расследования летные учения проводиться не будут. ." #NT!
+ RUS_purged_junior_army_officers_1_tt: "§YВся наземная техника§!: Бонус надежности: §R-10%§_1" #NT!
+ RUS_purged_junior_army_officers_2_tt: "§YВся наземная техника§!: Бонус надежности: §R-20%§_1" #NT!
+ RUS_purged_junior_army_officers_3_tt: "§YВся наземная техника§!: Бонус надежности: §R-30%§_1\n§Y$politicly_connected$§! будет единственной чертой, доступной для новых генералов." #NT!
+ RUS_purged_junior_navy_officers_3_tt: "§Y$politically_connected$§! будет единственной чертой, доступной для новых адмиралов." #NT!
+ RUS_mig_design_bureau_dissolved_flag: "Конструкторское бюро расформировано." #NT!
+ RUS_ilyushin_design_bureau_dissolved_flag: "$RUS_mig_design_bureau_dissolved_flag$" #NT!
+ RUS_tupolev_design_bureau_dissolved_flag: "$RUS_mig_design_bureau_dissolved_flag$" #NT!
+ RUS_yakovlev_design_bureau_dissolved_flag: "$RUS_mig_design_bureau_dissolved_flag$" #NT!
+ RUS_anti_capitalist_campaign_generic: "Антикапиталистическая кампания" #NT!
+ RUS_anti_capitalist_campaign_generic_desc: "Капиталистам нельзя доверять. Имея выбор, буржуазия всегда предпочтет угнетать пролетариат. Мы должны быть готовы дать им бой." #NT!
+ RUS_anti_fascist_campaign_generic: "Антифашистская кампания" #NT!
+ RUS_anti_fascist_campaign_generic_desc: "Мирного сосуществования с фашистами быть не может. Мы должны подготовиться к неизбежному противостоянию." #NT!
+ RUS_young_builders_of_communism: "Молодые строители коммунизма" #NT!
+ RUS_young_builders_of_communism_desc: "Мы не строим социализм для сегодняшних взрослых, мы строим его для детей и еще не родившихся поколений. Их необходимо научить тому, как совершенствоваться и развивать наши достижения, чтобы они могли завершить работу, которую мы начали." #NT!
+ RUS_broken_peace_dreams_attacker: "Нарушенные мечты о мире" #NT!
+ RUS_broken_peace_dreams_attacker_desc: "Эта новая война, в которой мы оказались вскоре после того, как мы публично пообещали проводить политику мира, вызывает нестабильность и недоверие среди населения." #NT!
+ RUS_broken_peace_dreams_defender: "$RUS_broken_peace_dreams_attacker$" #NT!
+ RUS_broken_peace_dreams_defender_desc: "$RUS_broken_peace_dreams_attacker_desc$" #NT!
+ RUS_restoration_and_development_idea: "Реставрация и развитие" #NT!
+ RUS_restoration_and_development_idea_desc: "$RUS_restoration_and_development_desc$" #NT!
+ RUS_no_time_for_peace_idea: "Нет времени для мира" #NT!
+ RUS_no_time_for_peace_idea_desc: "$RUS_no_time_for_peace_desc$" #NT!
+ RUS_support_in_china_generic: "[SOU.GetAdjective] Поддержка в Китае" #NT!
+ RUS_support_in_china_generic_desc: "Правительство [SOU.GetAdjective] поддерживает [ROOT.GetNameDef] в нашей войне против [JAP.GetAdjective], надеясь на установление более тесных связей с нами, а также влияя на нашу политику." #NT!
+ RUS_preparations_for_soviet_japanese_war: "Подготовка к советско-японской войне" #NT!
+ RUS_preparations_for_soviet_japanese_war_desc: "$RUS_prepare_a_war_with_japan_desc$" #NT!
+ RUS_soviet_japanese_reckoning: "Советско-японский расчет" #NT!
+ RUS_soviet_japanese_reckoning_desc: "Пришло время довести войну до [JAP.GetAdjective] и отомстить за многие обиды, которые они нам причинили." #NT!
+ RUS_soviet_japanese_anti_usa_pact: "Советско-японский антиамериканский пакт" #NT!
+ RUS_soviet_japanese_anti_usa_pact_desc: "Вместе мы удалим [USA.GetNameDef] с мировой арены!" #NT!
+ RUS_stakhanovite_movement: "Стахановское движение" #NT!
+ RUS_stakhanovite_movement_desc: "$RUS_revive_the_stakhanovite_movement_desc$" #NT!
+ RUS_military_advisors_in_spain: "Военные советники в Испании" #NT!
+ RUS_military_advisors_in_spain_desc: "$RUS_send_military_advisors_to_spain_desc$" #NT!
+ RUS_soviet_advisors_spr: "Советские военные советники" #NT!
+ RUS_soviet_advisors_spr_desc: "Из [RUS.GetNameDef] прибыли военные советники и другие квалифицированные военные кадры, чтобы поддержать нас в борьбе с фашизмом и реакционной контрреволюцией." #NT!
+ RUS_face_western_fascism_ns: "Столкнитесь с западным фашизмом" #NT!
+ RUS_face_western_fascism_ns_desc: "$RUS_eradicate_western_fascism_desc$" #NT!
+ RUS_liberation_of_the_european_proletariat_ns: "Освобождение европейского пролетариата" #NT!
+ RUS_liberation_of_the_european_proletariat_ns_desc: "$RUS_liberation_of_the_european_proletariat$" #NT!
+ RUS_soviet_atomic_bomb_project_ns: "Советский проект атомной бомбы" #NT!
+ RUS_soviet_atomic_bomb_project_ns_desc: "$RUS_soviet_atomic_bomb_project_desc$" #NT!
+ RUS_stolen_vital_nuclear_information: "Украдена жизненно важная ядерная информация" #NT!
+ RUS_stolen_vital_nuclear_information_desc: "$NSB_soviet_atomic_bomb_project.1.desc$" #NT!
+ RUS_central_headquarters_of_the_partisan_movement: "Центральный штаб партизанского движения" #NT!
+ RUS_central_headquarters_of_the_partisan_movement_desc: "$RUS_organization_of_the_partisans_desc$" #NT!
+ RUS_national_academy_of_sciences_puppet: "Национальная академия наук" #NT!
+ RUS_national_academy_of_sciences_puppet_desc: "Созданный по образцу [GetTheUssrAcademyOfSciencesName], [RUS.GetNameDef] создал в нашей стране новый исследовательский институт для стимулирования как нашего, так и их научного развития." #NT!
+ RUS_rehabilitated_military_ns: "$RUS_rehabilitated_military$" #NT!
+ RUS_rehabilitated_military_ns_desc: "Пришло время немного обуздать политических офицеров и дать командирам больше свободы в управлении делами." #NT!
+ RUS_military_reorganization_ns: "Военная реорганизация" #NT!
+ RUS_military_reorganization_ns_desc: "Армия [GetSovietArmyAdjectiveBasedOnIdeology] переживает масштабную реорганизацию, которая требует в некоторой степени дезорганизовать существующие формирования на, надеюсь, короткий период времени." #NT!
+ RUS_expanded_exploitation_of_gold_mines: "Расширенная эксплуатация золотых рудников" #NT!
+ RUS_expanded_exploitation_of_gold_mines_desc: "Инвестиции [RUS.GetAdjective] в инфраструктуру и промышленную помощь на северных территориях [ROOT.GetNameDef] позволили нам повысить эффективность эксплуатации наших золотых приисков в регионе." #NT!
+ RUS_ambassador_karim_khakimov: "Советский посол Карим Хакимов" #NT!
+ RUS_ambassador_karim_khakimov_desc: "$NSB_soviet_foreign_politics_events.211.desc$" #NT!
+ RUS_shocked_by_surprise_attack: "В шоке от внезапного нападения" #NT!
+ RUS_shocked_by_surprise_attack_desc: "Военная операция противника против нашей страны под кодовым названием «Операция «Контенанс»» застала наше правительство и армию врасплох. Наши силы разбиты, наши коммуникации отрезаны, а вызов вражеских дипломатов с требованием объяснений оказался бесполезным. Пока мы пытаемся разобраться в этом хаосе, наши международные отношения фактически нейтрализуются." #NT!
+ RUS_shocked_by_surprise_attack_cant_join_factions_tt: "Установите правило: £trigger_no Может присоединяться к фракциям." #NT!
+ RUS_soviet_commandos_poum: "Советские коммандос" #NT!
+ RUS_soviet_commandos_poum_desc: "Правая оппозиция сталинизму в [RUS.GetNameDef] направила в нашу страну высококвалифицированных агентов для проведения специальных операций и обучения нашего народа ведению войны." #NT!
+ RUS_popular_speeches_poum: "Популярные выступления" #NT!
+ RUS_popular_speeches_poum_desc: "С помощью местных организаций и влиятельных членов антисталинской оппозиции за рубежом мы проводим на подконтрольных нам территориях большую информационно-агитационную кампанию с целью разжечь пламя революции в массах." #NT!
+ RUS_agents_in_the_stalinist_command_poum: "Агенты сталинского командования" #NT!
+ RUS_agents_in_the_stalinist_command_poum_desc: "Советской правой оппозиции удалось внедрить несколько агентов среди последней партии военных советников, отправленных [SOU.GetLeader] в Испанскую республику. Эти агенты создали сеть информаторов, которые позволяют нам узнавать о планах врага до того, как они будут реализованы." #NT!
+ RUS_organized_wreckers_idea: "Вредители" #NT!
+ RUS_organized_wreckers_idea_desc: "Враги государства завербовали вредителей среди рабочего класса, которые подрывают важнейшую промышленность и затрудняют удовлетворение производственных потребностей." #NT!
+ RUS_organized_wreckers_idea_tt: "Враги могут выполнять диверсионные миссии" #NT!
+ RUS_arms_purchases_idea: "Закупки оружия" #NT!
+ RUS_arms_purchases_idea_desc: "Вооружение советской оппозиции обойдется нам немного, но в долгосрочной перспективе выгоды с лихвой компенсируют временные затраты." #NT!
+ RUS_covert_military_buildup_idea: "Тайное наращивание военной мощи" #NT!
+ RUS_covert_military_buildup_idea_desc: "В настоящее время мы тайно помогаем советской оппозиции, создавая секретные предприятия по производству оружия и боеприпасов." #NT!
+ RUS_covert_ukrainian_military_buildup_idea: "Тайная подготовка украинской милиции" #NT!
+ RUS_covert_ukrainian_military_buildup_idea_desc: "Используя секретные тренировочные лагеря, мы готовим украинскую милицию для того, чтобы поднять восстание против сталинистов." #NT!
+ RUS_the_fourth_international_idea: "Четвертый Интернационал" #NT!
+ RUS_the_fourth_international_idea_desc: "Как истинные лидеры Интернационала, мы теперь можем руководить коммунистическим делом в мире." #NT!
+ RUS_foreign_funds_idea: "Иностранное финансирование" #NT!
+ RUS_foreign_funds_idea_desc: "Щедрые пожертвования иностранных граждан и организаций помогают финансировать нашу революцию." #NT!
+ RUS_support_from_farmers: "Поддержка со стороны фермеров-собственников" #NT!
+ RUS_support_from_farmers_desc: "Заручившись поддержкой фермеров, мы сможем лучше поддерживать наши армии." #NT!
+ RUS_system_decentralization_idea: "Децентрализация системы" #NT!
+ RUS_system_decentralization_idea_desc: "Власть была передана от Политбюро в целом и секретаря в частности и вернулась к самой партии." #NT!
+ RUS_the_local_soviets_idea: "Местные Советы" #NT!
+ RUS_the_local_soviets_idea_desc: "Областным и местным Советам частично восстановлена ​​власть. Это означает, что им легче принимать решения по вопросам, которые для них неотложны, ценой некоторого политического контроля со стороны Политбюро." #NT!
+ RUS_strong_trade_unions_idea: "Сильные профсоюзы" #NT!
+ RUS_strong_trade_unions_idea_desc: "Сильные профсоюзы означают, что рабочие могут лучше влиять на производство." #NT!
+ RUS_the_peoples_revolution_idea: "Народная революция" #NT!
+ RUS_the_peoples_revolution_idea_desc: "Чтобы революция была по-настоящему успешной, ее должен нести народ." #NT!
+ RUS_puppet_international_of_soviet_republics_idea: "Международные советские республики" #NT!
+ RUS_puppet_international_of_soviet_republics_idea_desc: "Быть частью большего целого приносит нашей стране огромную пользу." #NT!
+ RUS_support_of_the_peasants_idea: "Поддержка крестьянского класса" #NT!
+ RUS_support_of_the_peasants_idea_desc: "Сильная поддержка фермеров по всей стране позволяет набирать и содержать более крупные армии." #NT!
+ RUS_curtailment_collective_farms_idea: "Сокращение колхозов" #NT!
+ RUS_curtailment_collective_farms_idea_desc: "Малые и средние фермы гораздо более эффективны с точки зрения производства, чем крупные фермы." #NT!
+ RUS_administrative_reforms_idea: "Административные реформы" #NT!
+ RUS_administrative_reforms_idea_desc: "Старой советской администрации мешала неэффективность, отчасти из-за ее размера, но главным образом из-за слишком строгого аппарата контроля. Немного уменьшив его, можно добиться многого." #NT!
+ RUS_local_organizations_idea: "Местные организации" #NT!
+ RUS_local_organizations_idea_desc: "Путем лучшего включения местных организаций в правительство страны мы получаем доступ ко всем талантам, доступным в этой стране." #NT!
+ RUS_enemies_of_the_people_idea: "Враги народа" #NT!
+ RUS_enemies_of_the_people_idea_desc: "Всегда найдутся желающие свергнуть народное правительство. Мы должны сохранять бдительность в отношении угроз, как внутренних, так и внешних." #NT!
+ RUS_soviet_hegemony_idea: "Советская гегемония" #NT!
+ RUS_soviet_hegemony_idea_desc: "Наша система правления доказала свое превосходство над всеми остальными. Мы должны использовать эту возможность для распространения наших идей, просвещая тех, кто угнетен другими системами, а также тех, кому посчастливилось попасть в союз." #NT!
+ RUS_fascist_womens_movement_idea: "Фашистское женское движение" #NT!
+ RUS_fascist_womens_movement_idea_desc: "В центре националистического движения стоит женщина [ROOT.GetAdjective]. Матери, жены и дочери наших храбрых солдат, организованных и готовых поддержать борьбу за величие." #NT!
+ RUS_the_true_tsars_idea: "Настоящие цари" #NT!
+ RUS_the_true_tsars_idea_desc: "Царь является законным лидером [ROOT.GetNameDef]. Объединение вокруг царя, а не другого человека или идеологии, позволяет нам привлечь больше сторонников нашего дела." #NT!
+  #Dynamic Modifiers 
+ RUS_defend_moscow: "Защитить Москву" #NT!
+ RUS_increased_metals_production: "Увеличение производства металлов" #NT!
+ RUS_invaders_must_die: "Завоеватели должны умереть" #NT!
+ RUS_seraya_loshad_battery: "Серая лошадская батарея" #NT!
+ RUS_krasnaya_gorka_battery: "Красная Горка Батарея" #NT!
+ RUS_armored_battery_35: "Бронебатарея 35" #NT!
+ RUS_factory_worker_militias_raised: "Подняты ополчения фабричных рабочих" #NT!
+ RUS_soviet_military_offensive: "Советское военное наступление" #NT!
+ RUS_second_five_year_plan_dynamic_modifier: "Пятилетний план" #NT!
+ RUS_third_five_year_plan_dynamic_modifier: "$RUS_second_five_year_plan_dynamic_modifier$" #NT!
+ RUS_third_five_year_plan_civilian_dynamic_modifier: "$RUS_second_five_year_plan_dynamic_modifier$" #NT!
+ RUS_third_five_year_plan_military_dynamic_modifier: "$RUS_second_five_year_plan_dynamic_modifier$" #NT!
+ RUS_fourth_five_year_plan_dynamic_modifier: "$RUS_second_five_year_plan_dynamic_modifier$" #NT!
+ RUS_third_five_year_plan_dynamic_modifier_alt: "Новый проект национальной индустриализации" #NT!
+ RUS_third_five_year_plan_civilian_dynamic_modifier_alt: "$RUS_third_five_year_plan_dynamic_modifier_alt$" #NT!
+ RUS_third_five_year_plan_military_dynamic_modifier_alt: "$RUS_third_five_year_plan_dynamic_modifier_alt$" #NT!
+ RUS_fourth_five_year_plan_dynamic_modifier_alt: "$RUS_third_five_year_plan_dynamic_modifier_alt$" #NT!
+ RUS_second_five_year_plan_fake_1936_ns_desc: "$RUS_finish_the_five_year_plan_desc_default$" #NT!
+ RUS_second_five_year_plan_fake_1939_ns_desc: "$RUS_third_five_year_plan_desc_default$" #NT!
+ RUS_ussr_academy_of_sciences_dynamic_modifier: "Академия наук СССР" #NT!
+ RUS_ussr_academy_of_sciences_dynamic_modifier_alt: "Императорская Академия Наук" #NT!
+ RUS_soviet_airforce_dynamic_modifier: "Советские ВВС" #NT!
+ RUS_soviet_airforce_aircraft_production_focus_dynamic_modifier: "$RUS_soviet_airforce_dynamic_modifier$" #NT!
+ RUS_increased_aircraft_production_ns_bonus: "Увеличение производства самолетов" #NT!
+ RUS_soviet_airforce_aircraft_production_focus_tt: "§YВсе типы самолетов§!: £production_cost Себестоимость производства: §G-5.00%§_1" #NT!
+ RUS_soviet_airforce_dynamic_modifier_alt: "ВВС России" #NT!
+ RUS_soviet_airforce_aircraft_production_focus_dynamic_modifier_alt: "$RUS_soviet_airforce_dynamic_modifier_alt$" #NT!
+ RUS_the_red_fleet_dynamic_modifier: "Красный Флот" #NT!
+ RUS_the_red_fleet_surface_1_dynamic_modifier: "$RUS_the_red_fleet_dynamic_modifier$" #NT!
+ RUS_the_red_fleet_surface_2_dynamic_modifier: "$RUS_the_red_fleet_dynamic_modifier$" #NT!
+ RUS_the_red_fleet_submarine_1_dynamic_modifier: "$RUS_the_red_fleet_dynamic_modifier$" #NT!
+ RUS_the_red_fleet_submarine_2_dynamic_modifier: "$RUS_the_red_fleet_dynamic_modifier$" #NT!
+ RUS_the_red_fleet_dynamic_modifier_alt: "Российский флот" #NT!
+ RUS_the_red_fleet_surface_1_dynamic_modifier_alt: "$RUS_the_red_fleet_dynamic_modifier_alt$" #NT!
+ RUS_the_red_fleet_surface_2_dynamic_modifier_alt: "$RUS_the_red_fleet_dynamic_modifier_alt$" #NT!
+ RUS_the_red_fleet_submarine_1_dynamic_modifier_alt: "$RUS_the_red_fleet_dynamic_modifier_alt$" #NT!
+ RUS_the_red_fleet_submarine_2_dynamic_modifier_alt: "$RUS_the_red_fleet_dynamic_modifier_alt$" #NT!
+ RUS_the_red_fleet_surface_1_bonus_tt: "§YScreen§!: £GFX_production_cost Стоимость производства: §G-10%§!" #NT!
+ RUS_the_red_fleet_surface_2_bonus_tt: "§YКапитальный корабль§!: £GFX_production_cost Стоимость производства: §G-10%§_1" #NT!
+ RUS_the_red_fleet_surface_1_tt: "$RUS_the_red_fleet_surface_1_bonus_tt$" #NT!
+ RUS_the_red_fleet_surface_2_tt: "$RUS_the_red_fleet_surface_1_bonus_tt$\n$RUS_the_red_fleet_surface_2_bonus_tt$" #NT!
+ RUS_the_red_fleet_submarine_1_bonus_tt: "§YSubmarine§!: £GFX_production_cost Стоимость производства: §G-10%§!" #NT!
+ RUS_the_red_fleet_submarine_2_bonus_tt: "§YSubmarine§!: £GFX_production_cost Стоимость производства: §G-20%§!" #NT!
+ RUS_the_red_fleet_submarine_1_tt: "$RUS_the_red_fleet_submarine_1_bonus_tt$" #NT!
+ RUS_the_red_fleet_submarine_2_tt: "$RUS_the_red_fleet_submarine_2_bonus_tt$" #NT!
+ RUS_defense_industry_dynamic_modifier: "Оборонная промышленность" #NT!
+ RUS_the_red_army_dynamic_modifier: "Красная Армия" #NT!
+ RUS_the_red_army_dynamic_modifier_alt: "Российская Армия" #NT!
+ RUS_the_politburo_good_dynamic_modifier: "Политбюро" #NT!
+ RUS_comecon_sov_default: "СЭВ" #NT!
+ RUS_comecon_sov_default_desc: "Принимаются меры, принятые [GetComeconName]." #NT!
+ RUS_common_economic_space_sov_default: "Единое экономическое пространство" #NT!
+ RUS_common_economic_space_sov_default_desc: "$RUS_comecon_sov_default_desc$" #NT!
+ RUS_soviet_german_trade_agreement: "Советско-германское торговое соглашение" #NT!
+ RUS_soviet_german_trade_agreement_desc: "Согласно нашему торговому соглашению с [SOU.GetNameDef], они посылают нам сырье, такое как зерно, хлопок, нефть, металлические руды и каучук." #NT!
+ RUS_soviet_imports: "Советский импорт" #NT!
+ RUS_development_of_eastern_allies_tt: "Этот национальный дух будет удален после завершения фокуса «§YПомощь в целях развития восточным союзникам§!»." #NT!
+ RUS_face_western_fascism_ns_tt: "Бонус атаки против §Yосновных фашистских стран Европы§!: §G+10.0%§_1, Бонус защиты против §Yосновных фашистских стран Европы§!: §G10.0%§_1." #NT!
+ RUS_liberation_of_the_european_proletariat_ns_tt: "Бонус атаки против §Yкрупных демократий Европы§!: §G+10.0%§_1, Бонус защиты против §Yкрупных демократий Европы§!: §G10.0%§_1." #NT!
+ RUS_military_reorganization_ns_removal_tt: "Этот национальный дух будет удален после завершения фокуса «§Y$RUS_military_reorganization$§!»" #NT!
+ RUS_the_politburo_ns_good_tt: "Возможна ручная смена Главы НКВД §O(Скоро)§!" #NT!
+ RUS_industrial_concern_upgrade_tt: "\nЗавершение фокуса «§Y$RUS_national_specialists$§!» буду улучшать этот конструктор." #NT!
+ RUS_gosproyektstroy_1: "Госпроектстрой" #NT!
+ RUS_gosproyektstroy_1_tt: "Этот Конструктор можно модернизировать, добавляя новые бонусы и улучшая существующие." #NT!
+ RUS_mytishchy_machine_building_plant: "Мытищинский машиностроительный завод" #NT!
+ RUS_kirov: "Киров" #NT!
+ RUS_sevastopol_marine_plant: "Севастопольский морской завод" #NT!
+ RUS_black_sea_shipyard: "Черноморский судостроительный завод" #NT!
+ RUS_rubin_design_bureau: "КБ Рубин" #NT!
+ RUS_factionalism_modifier: "Фракционность" #NT!
+ RUS_factionalism_modifier_tt: "§LФракционность внутри партии всегда была проблемой, и, поскольку оппозиция становится более громкой, различия во мнениях делают партию менее эффективной. Однако при правильном управлении разногласия в долгосрочной перспективе могут превратиться в силу, а не в слабость.§!\n\n" #NT!
+ RUS_opposition_popular_support: "Народная поддержка оппозиции" #NT!
+ RUS_opposition_popular_support_tt: "§LПри наличии значительной части членов партии и общественного мнения на стороне оппозиции вести проигрышную войну гораздо сложнее.§!\n\n" #NT!
+ RUS_workers_government_idea: "Рабочее правительство" #NT!
+ RUS_workers_government_idea_desc: "Да здравствует рабочее правительство. Правящая элита была отстранена от власти. Рабочие снова управляют страной." #NT!
+ RUS_revolutionary_spirit_idea: "Революционный дух" #NT!
+ RUS_revolutionary_spirit_idea_desc: "Революционный пыл вновь разгорелся после победы над Сталиным. Пришло время нести революционное пламя рабочим всего мира." #NT!
+ RUS_trotskyist_revolutionary_agitation: "Троцкистская революционная агитация" #NT!
+ RUS_trotskyist_revolutionary_agitation_desc: "Сторонники троцкизма и другие коммунистические элементы, связанные с [RUS.GetAdjective] большевистской партией, возбуждают [ROOT.GetAdjective] массы, пропагандируя марксистскую идеологию среди рабочего класса и призывая к вооруженной борьбе против нашего правительства." #NT!
+ RUS_trotskyist_revolutionary_agitation_tt: "Активация решения §Y$ban_communist_party$§! уменьшит последствия этого национального духа." #NT!
+ RUS_politicized_military: "Политизированные военные" #NT!
+ RUS_politicized_military_desc: "Военные комиссары часто выступают с горячими идеологическими речами и политическими дискуссиями среди рядовых, но во многих случаях они занимаются также чрезмерным администрированием, чрезмерным присмотром к офицерам и даже воспрепятствованием приказам командиров частей." #NT!
+ RUS_politicized_military_swap: "Военно-политические советники" #NT!
+ RUS_politicized_military_swap_desc: "Хотя мы не должны позволять политическим соображениям диктовать военные решения, нам все равно необходимо обеспечить, чтобы эти политические соображения были учтены при принятии решения." #NT!
+ RUS_politicized_military_battle_priests: "Боевые священники в армии" #NT!
+ RUS_politicized_military_battle_priests_desc: "Взяв на себя роль боевых священников в наших воинских частях, духовенство теперь отвечает за поддержание высокого морального духа в рядах и за то, чтобы солдаты знали, что Церковь и Бог на нашей стороне." #NT!
+ RUS_for_the_common_good_allies: "Для общего блага" #NT!
+ RUS_for_the_common_good_allies_desc: "Каждое решение, принимаемое нами или нашими союзниками, должно быть направлено на шаг вперед к общему благу." #NT!
+ RUS_for_the_common_good_subjects: "$RUS_for_the_common_good_allies$" #NT!
+ RUS_for_the_common_good_subjects_desc: "Каждое решение, принимаемое нашими союзниками, направлено на шаг вперед к общему благу. Таким образом, мы должны поддержать эти решения и обязательно следовать представленным нам рекомендациям, даже если наши жертвы не окупятся немедленным улучшением." #NT!
+ RUS_planned_economy_dynamic_modifier: "Плановая экономика" #NT!
+ RUS_grigory_semyonov_man_tt: "§Y[RUS.GetName]§! не завершил фокус §Y$RUS_approach_semyonov$§!\nФокус §Y[GetSovietCivilWarName]§! не запустился.\n§Y$RUS_grigory_semyonov$§! также становится доступным как §YGeneral§! при приеме на работу в качестве советника." #NT!
+ RUS_exiled_flag: "В настоящее время находится в изгнании (§Gперсонажи не могут быть удалены, пока они находятся в изгнании§!)" #NT!
+ RUS_imprisoned_flag: "В настоящее время находится в тюрьме (§Rперсонажей можно очистить, пока они находятся в тюрьме§!)" #NT!
+ RUS_church_power_1: "Опиат масс" #NT!
+ RUS_church_power_2: "Катакомбная церковь" #NT!
+ RUS_church_power_3: "Новая Старая Церковь" #NT!
+ RUS_church_power_4: "Венценосная жемчужина России." #NT!
+ RUS_tsar_vladimir_i: "Царь Владимир I" #NT!
+ RUS_aristocratic_investments_idea: "Аристократические инвестиции" #NT!
+ RUS_uncertain_counter_revolution_idea: "Неуверенная контрреволюция" #NT!
+ RUS_multi_religious_empire: "Многоконфессиональная империя" #NT!
+ RUS_romanov_spirit_idea: "Романов Дух" #NT!
+ RUS_honest_serfdom_idea: "Честное крепостное право" #NT!
+ RUS_memories_of_1905_idea: "Воспоминания о 1905 году" #NT!
+ RUS_an_empire_in_the_pacific_idea: "Империя в Тихом океане" #NT!
+ RUS_national_brotherhood_idea: "Национальное Братство" #NT!
+ RUS_russian_political_influence: "Российское политическое влияние" #NT!
+ RUS_legacy_of_rome: "Наследие Рима" #NT!
+ RUS_siberian_lessons: "Сибирские уроки" #NT!
+ trait_RUS_foreign_military_advisor: "Иностранный военный советник" #NT!
+ trait_RUS_foreign_military_advisor_desc: "Время, проведенное за границей, — это возможность изучить тактику, с которой мы однажды можем столкнуться." #NT!
+ trait_RUS_monarchist_sympathizer_desc: "Симпатии к старым обычаям могут лежать глубоко. Часто вместе с обидой." #NT!
+ trait_RUS_determined_desc: "Упорство некоторых людей выходит за рамки того, что другие считают разумным." #NT!
+ heritage_of_accomplishment: "Совершенное наследие" #NT!
+ heritage_of_accomplishment_desc: "История и достижения наших полков являются свидетельством героизма наших солдат. Привычно признавая великие дела, каждый человек мог бы стремиться к такому же величию." #NT!

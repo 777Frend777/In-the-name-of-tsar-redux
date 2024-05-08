@@ -1,0 +1,88 @@
+
+division_template = {
+	name = "Rote Miliz"			# Garrison Force
+	is_locked = yes
+	# For reserve and independent regiments, lower experience and equipment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+	}
+	priority = 0
+}
+
+units = {
+division= {
+		name = "I. Rote Miliz"
+		location = 9347
+		division_template = "Rote Miliz"
+		start_experience_factor = 0.1
+	}
+division= {
+		name = "II. Rote Miliz"
+		location = 9347
+		division_template = "Rote Miliz"
+		start_experience_factor = 0.1
+	}
+division= {
+		name = "III. Rote Miliz"
+		location = 9347
+		division_template = "Rote Miliz"
+		start_experience_factor = 0.2
+	}
+division= {
+		name = "IV. Rote Miliz"
+		location = 6389
+		division_template = "Rote Miliz"
+		start_experience_factor = 0.1
+	}
+division= {
+		name = "V. Rote Miliz"
+		location = 6257
+		division_template = "Rote Miliz"
+		start_experience_factor = 0.1
+	}
+division= {
+		name = "VI. Rote Miliz"
+		location = 11331
+		division_template = "Rote Miliz"
+		start_experience_factor = 0.1
+	}
+division= {
+		name = "VII. Rote Miliz"
+		location = 6325
+		division_template = "Rote Miliz"
+		start_experience_factor = 0.1
+	}
+division= {
+		name = "VIII. Rote Miliz"
+		location = 6377
+		division_template = "Rote Miliz"
+		start_experience_factor = 0.1
+	}
+division= {
+		name = "IX. Rote Miliz"
+		location = 6377
+		division_template = "Rote Miliz"
+		start_experience_factor = 0.1
+	}
+division= {
+		name = "X. Rote Miliz"
+		location = 11360
+		division_template = "Rote Miliz"
+		start_experience_factor = 0.1
+	}
+division= {
+		name = "XI. Rote Miliz"
+		location = 3326
+		division_template = "Rote Miliz"
+		start_experience_factor = 0.1
+	}
+division= {
+		name = "XII. Rote Miliz"
+		location = 6325
+		division_template = "Rote Miliz"
+		start_experience_factor = 0.1
+	}
+
+}

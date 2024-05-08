@@ -1,0 +1,863 @@
+# Aleksandra Kollontay has an unsed portrait
+# Viktor Baydalakov has an unused portrait
+
+characters = {
+
+
+  ####    ####   #    #  #    #  #####  #####   #   #      #       ######    ##    #####   ######  #####    ####  
+ #    #  #    #  #    #  ##   #    #    #    #   # #       #       #        #  #   #    #  #       #    #  #      
+ #       #    #  #    #  # #  #    #    #    #    #        #       #####   #    #  #    #  #####   #    #   ####  
+ #       #    #  #    #  #  # #    #    #####     #        #       #       ######  #    #  #       #####        # 
+ #    #  #    #  #    #  #   ##    #    #   #     #        #       #       #    #  #    #  #       #   #   #    # 
+  ####    ####    ####   #    #    #    #    #    #        ######  ######  #    #  #####   ######  #    #   ####  
+                                                                                                                  
+
+	RUS_tsar_nikolai_ii = {
+		name = RUS_tsar_nikolai_ii
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RUS/NikcholausIIq.dds"
+			}
+			army = {
+				large = "gfx/leaders/RUS/nicolas_tsar_general.dds"
+				small = "gfx/interface/ideas/rus_tsar_nicolas.dds"
+			}
+		}
+		
+		country_leader = {
+			ideology = neutrality_subtype
+			traits = { INOT_tsar_of_all_russians }
+			expire = "1953.3.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = socialist_subtype
+			traits = { INOT_tsar_of_all_russians }
+			expire = "1953.3.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = conservatives_subtype
+			traits = { INOT_tsar_of_all_russians }
+			expire = "1953.3.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = democratic_subtype
+			traits = { INOT_tsar_of_all_russians }
+			expire = "1953.3.1.1"
+			id = -1
+		}
+		
+		field_marshal = {
+			traits = { old_guard war_hero }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 99999
+			visible = { NOT = { has_government = communism } }
+		}
+	}
+	
+	RUS_nabokov_jr_idea = {
+		name = RUS_nabokov_jr_idea
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/RUS_nabokov_jr.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RUS_nabokov_jr_idea
+			allowed  = {
+				original_tag  = RUS
+			}
+			traits  = {
+				smooth_talking_charmer
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			cost = 100
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+	RUS_boris_savinkov = {
+		name = RUS_boris_savinkov
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/rus_idea_savinkov.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RUS_boris_savinkov
+			allowed  = {
+				original_tag  = RUS
+			}
+			available = {
+				has_completed_focus = RUS_establish_russia
+			}
+			traits  = {
+				propaganda_expert
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			cost = 50
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+	RUS_konovalov = {
+		name = RUS_konovalov
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/RUS_konovalov.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RUS_konovalov
+			allowed  = {
+				original_tag  = RUS
+			}
+			traits  = {
+				captain_of_industry
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			cost = 100
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+	RUS_kerensky = {
+		name = RUS_kerensky
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/RUS_kerensky.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RUS_kerensky
+			allowed  = {
+				original_tag  = RUS
+			}
+			traits  = {
+				silent_workhorse
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			cost = 100
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+	RUS_yusupov = {
+		name = RUS_yusupov
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/RUS_yusupov.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RUS_yusupov
+			allowed  = {
+				original_tag  = RUS
+			}
+			available = {
+			AND = { has_completed_focus = RUS_civil_effort_1
+			NOT = { has_government = communism }
+			}
+			}
+			traits  = {
+				war_industrialist
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			cost = 50
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+	RUS_Pyotr_Struve = {
+		name = RUS_Pyotr_Struve
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/RUS_idea_Pyotr_Struve.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RUS_Pyotr_Struve
+			allowed  = {
+				original_tag  = RUS
+			}
+			available = {
+			NOT = { has_government = communism }
+			}
+			traits  = {
+				financial_expert
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			cost = 100
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+	RUS_pyotr_wrangel ={
+		advisor={
+			slot = army_chief
+			idea_token = RUS_pyotr_wrangel
+			allowed = {
+					original_tag = RUS
+					NOT = { has_government = communism }
+				}
+				traits = {
+					army_chief_offensive_2
+				}
+				cost = 150
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=RUS_pyotr_wrangel
+		portraits={
+			civilian = {
+				large="gfx/leaders/RUS/wrangel.dds"
+			}
+			army={
+				large="gfx/leaders/RUS/wrangel.dds"
+				small="gfx/interface/ideas/rus_idea_wrangel.dds"
+			}
+		}
+		field_marshal = {
+			traits = { expert_delegator inspirational_leader }
+			id = 99997
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3	
+		}
+	}
+	
+	RUS_krasnov ={
+		advisor={
+			slot = army_chief
+			idea_token = RUS_krasnov
+			allowed = {
+					original_tag = RUS
+					NOT = { has_government = communism }
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 150
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=RUS_krasnov
+		portraits={
+			army={
+				large="gfx/leaders/RUS/Piotr_Krasnov.dds"
+				small="gfx/interface/ideas/RUS_krasnov.dds"
+			}
+		}
+		field_marshal = {
+			traits = { defensive_doctrine bearer_of_artillery old_guard }
+			id = 99996
+			skill = 4
+			attack_skill = 2
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 2	
+		}
+	}
+	
+	RUS_anton_denikin ={
+		advisor={
+			slot = army_chief
+			idea_token = RUS_anton_denikin
+			allowed = {
+					original_tag = RUS
+					NOT = { has_government = communism }
+				}
+				traits = {
+					army_chief_drill_1
+				}
+				cost = 150
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=RUS_anton_denikin
+		portraits={
+			civilian = {
+				large="gfx/leaders/RUS/Anton_Ivanovich_Denikin.dds"
+			}
+			army={
+				large="gfx/leaders/RUS/Anton_Ivanovich_Denikin.dds"
+				small="gfx/interface/ideas/rus_idea_denikin.dds"
+			}
+		}
+		field_marshal = {
+			traits = { defensive_doctrine war_hero politically_connected }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2	
+		}
+	}
+	
+	RUS_kornilov_idea ={
+		advisor={
+			slot = army_chief
+			idea_token = RUS_kornilov_idea
+			allowed = {
+					original_tag = RUS
+					NOT = { has_government = communism }
+				}
+				traits = {
+					army_chief_maneuver_2
+				}
+				cost = 150
+				ai_will_do = {
+					factor = 1.000
+				}
+				available = {
+					NOT = { has_country_flag = rus_kornilov_dead }
+				}
+		}
+		name=RUS_kornilov_idea
+		portraits={
+			army={
+				large="gfx/leaders/RUS/Lavr_Kornilov.dds"
+				small="gfx/interface/ideas/RUS_kornilov.dds"
+			}
+		}
+		corps_commander = {
+			traits = { old_guard war_hero media_personality politically_connected }
+			skill = 4
+			id = 99998
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 3	
+		}
+	}
+	
+	nikolay_kuznetsovs={
+		name=nikolay_kuznetsovs
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_nikolay_kuznetsov.dds"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = nikolay_kuznetsovs
+			allowed = {
+				original_tag = RUS
+			}
+			traits = { navy_chief_reform_2 }
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	RUS_alexander_kolchak={
+		name=RUS_alexander_kolchak
+		portraits={
+			army={
+				large="gfx/leaders/RUS/Alexandr_Kolchak.dds"
+				small="gfx/interface/ideas/RUS_kolchak.dds"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = RUS_alexander_kolchak
+			allowed = {
+				original_tag = RUS
+			}
+			traits = { navy_chief_decisive_battle_2 }
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		navy_leader = {
+			traits = { ironside }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			maneuvering_skill = 4
+			coordination_skill = 2
+		}
+	}
+	RUS_pavel_argeyev={
+		name=RUS_pavel_argeyev
+		portraits={
+			army={
+				small="gfx/interface/ideas/rus_idea_pavel_argeyev.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = RUS_pavel_argeyev
+			allowed = {
+				original_tag = RUS
+			}
+			available = {
+			}
+			traits = {
+				air_chief_all_weather_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	RUS_tkachov={
+		name=RUS_tkachov
+		portraits={
+			army={
+				small="gfx/interface/ideas/RUS_tkachov.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = RUS_tkachov
+			allowed = {
+				original_tag = RUS
+			}
+			available = {
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	RUS_konev_idea={
+		name=RUS_konev_idea
+		portraits={
+			army={
+				small="gfx/interface/ideas/RUS_konev.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RUS_konev_idea
+			ledger = army
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				army_concealment_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	RUS_vasilevsky_idea={
+		name=RUS_vasilevsky_idea
+		portraits={
+			army={
+				small="gfx/interface/ideas/RUS_vasilevsky.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RUS_vasilevsky_idea
+			ledger = army
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	RUS_rokossovsky_idea={
+		name=RUS_rokossovsky_idea
+		portraits={
+			army={
+				small="gfx/interface/ideas/RUS_rokossovsky.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RUS_rokossovsky_idea
+			ledger = army
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				army_armored_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	RUS_baranov={
+		name=RUS_baranov
+		portraits={
+			army={
+				small="gfx/interface/ideas/RUS_baranov.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RUS_baranov
+			ledger = air
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				air_close_air_support_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	RUS_smirnov={
+		name=RUS_baranov
+		portraits={
+			army={
+				small="gfx/interface/ideas/RUS_smirnov.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RUS_smirnov
+			ledger = air
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				air_air_combat_training_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	RUS_monarstyrev_idea={
+		name=RUS_monarstyrev_idea
+		portraits={
+			army={
+				large="gfx/leaders/RUS/Nestor_Monastyrev.dds"
+				small="gfx/interface/ideas/RUS_monarstyrev.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RUS_smirnov
+			ledger = navy
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				navy_submarine_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader = {
+			traits = { seawolf }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
+	RUS_isakov_idea={
+		name=RUS_isakov_idea
+		portraits={
+			army={
+				small="gfx/interface/ideas/RUS_isakov.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RUS_isakov_idea
+			ledger = navy
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				navy_capital_ship_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	RUS_altfater_idea={
+		name=RUS_altfater_idea
+		portraits={
+			army={
+				small="gfx/interface/ideas/RUS_altfater.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RUS_altfater_idea
+			ledger = navy
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				navy_amphibious_assault_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	RUS_shaposhnikov_idea={
+		name=RUS_shaposhnikov_idea
+		portraits={
+			army={
+				large="gfx/leaders/RUS/Portrait_Soviet_Boris_Shaposhnikov.dds"
+				small="gfx/interface/ideas/RUS_shaposhnikov.dds"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = RUS_shaposhnikov_idea
+			ledger = army
+			allowed = {
+				original_tag = RUS
+			}
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			traits = {
+				military_theorist
+			}
+		}
+		corps_commander = {
+			traits = { panzer_leader career_officer career_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	RUS_zhukov_idea={
+		name=RUS_zhukov_idea
+		portraits={
+			army={
+				large="gfx/leaders/RUS/georgiy_zhukov.dds"
+				small="gfx/interface/ideas/RUS_zhukov.dds"
+			}
+		}
+		advisor={
+			cost = 250
+			slot = theorist
+			idea_token = RUS_zhukov_idea
+			ledger = army
+			allowed = {
+				original_tag = RUS
+			}
+			research_bonus = {
+				cat_mass_assault = 0.10
+			}
+			traits = { mass_assault_expert }
+		}
+		corps_commander = {
+			traits = { panzer_leader career_officer career_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	sergey_gorshkovs={
+		name=sergey_gorshkovs
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_sergey_gorshkov.dds"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = sergey_gorshkovs
+			ledger = navy
+			allowed = {
+				original_tag = RUS
+			}
+			research_bonus = {
+				cat_mass_assault = 0.10
+			}
+			traits = { naval_theorist }
+		}
+	}
+	
+	vladimir_tributss={
+		name=vladimir_tributss
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_vladimir_tributs.dds"
+			}
+		}
+		advisor={
+			cost = 250
+			slot = theorist
+			idea_token = vladimir_tributss
+			ledger = navy
+			allowed = {
+				original_tag = RUS
+			}
+			research_bonus = {
+				cat_fleet_in_being = 0.10
+			}
+			traits = { grand_fleet_proponent }
+		}
+	}
+	
+	sergei_rudenkos={
+		name=sergei_rudenkos
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_sergei_rudenko.dds"
+			}
+		}
+		advisor={
+			cost = 250
+			slot = theorist
+			idea_token = sergei_rudenkos
+			ledger = air
+			allowed = {
+				original_tag = RUS
+			}
+			research_bonus = {
+				cat_battlefield_support = 0.10
+			}
+			traits = { close_air_support_proponent }
+		}
+	}
+	alexander_golovanovs={
+		name=alexander_golovanovs
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_alexander_golovanov.dds"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = alexander_golovanovs
+			ledger = air
+			allowed = {
+				original_tag = RUS
+			}
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			traits = { air_warfare_theorist }
+		}
+	}
+	igor_kurchatovs={
+		name=igor_kurchatovs
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_igor_kurchatov.dds"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = igor_kurchatovs
+			ledger = army
+			allowed = {
+				original_tag = RUS
+			}
+			research_bonus = {
+				nuclear = 0.100
+			}
+			traits = { nuclear_scientist }
+		}
+	}
+	sergei_korolevs={
+		name=sergei_korolevs
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_sergei_korolevs.dds"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = sergei_korolevs
+			ledger = army
+			allowed = {
+				original_tag = RUS
+			}
+			research_bonus = {
+				rocketry = 0.10
+			}
+			traits = { rocket_scientist }
+		}
+	}
+	
+	
+}

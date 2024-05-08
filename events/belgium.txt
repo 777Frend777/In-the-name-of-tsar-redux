@@ -1,0 +1,1072 @@
+#---------------------------------------> Belgium Events <---------------------------------------#
+
+add_namespace = belgium
+
+news_event = {
+        id = belgium.1
+        title = belgium.1.t
+        desc = belgium.1.d
+        picture = GFX_news_event_017
+
+        major = yes
+
+        is_triggered_only = yes
+        option = {
+		name = belgium.1.a
+		trigger = {
+			NOT = {
+				TAG = BEL
+			}
+			}
+			}
+			option = {
+		name = belgium.1.b
+			trigger = { TAG = BEL }
+	}
+}
+news_event = {
+        id = belgium.1005
+        title = belgium.1005.t
+        desc = belgium.1005.d
+        picture = GFX_news_event_017 #To replace maybe
+
+        major = yes
+
+        is_triggered_only = yes
+        option = {
+		name = belgium.1005.a
+		trigger = {
+			NOT = {
+				TAG = BEL
+			}
+			}
+			}
+			option = {
+		name = belgium.1005.b
+			trigger = { TAG = BEL }
+	}
+}
+#country_event = {	#Flanders Declares Independence
+#	id = belgium.1
+#	title = belgium.1.t
+#	desc = belgium.1.d
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+#	option = { #play as flanders
+#		name = belgium.1.a
+#		hidden_effect = {
+#			goto_province = 3516
+#			WAL = {
+#				transfer_state  = 34
+#				transfer_state  = 765
+#				transfer_state  = 791
+#			}
+#			BEL = {
+#				set_cosmetic_tag = FLA
+#				set_politics = {
+#					ruling_party = fascism
+#				}
+#				add_popularity = {
+#				   ideology = fascism
+#				   popularity = 0.15
+#				}
+#				set_party_name = { 
+#   					ideology = fascism
+#   					long_name = BEL_verdinaso_long
+#					name = BEL_verdinaso 
+#				}
+#				set_party_name = { 
+#					ideology = neutrality
+# 					long_name = BEL_vnv_long
+#					name = BEL_vnv
+#				}
+#			}
+#		}
+#	}
+#}
+
+country_event = { #The Fate of the King
+	id = belgium.2
+	title = belgium.2.t
+	desc = belgium.2.d
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Execute the King
+		name = belgium.2.a #somehow make him die 
+		add_popularity = {
+    		ideology = communism
+    		popularity = 0.1
+		}
+		add_ideas = GER_rep
+	}
+
+	option = { #Expell the King
+		name = belgium.2.b
+		add_stability = 0.05
+		add_ideas = GER_rep
+	}
+}
+
+country_event = { #Invite Netherlands to Benelux Faction
+	id = belgium.3
+	title = belgium.3.t #Belgium invites us to join the Benelux
+	desc = belgium.3.d #Earlier today the belgian ambassador to the Netherlands has submitted an offer from the belgian embacy to join a military alliance with Belgium known as the "Benelux".
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = belgium.3.a #This could greatly benefit both of us
+		ai_chance = {
+        factor = 100
+        }
+		BEL = { add_to_faction = HOL }
+	}
+
+	option = {
+		name = belgium.3.b #Politely Decline
+		ai_chance = {
+        factor = 0
+        }
+		BEL = { country_event = { id = belgium.4 days = 1 } }
+	}
+}
+
+country_event = { #Netherlands decline
+	id = belgium.4
+	title = belgium.4.t #Netherlands Decline
+	desc = belgium.4.d #After our offer to the Netherlands to join a military alliance our ambassador to the Netherlands has now received a polite decline from the Dutch Office of Foreign Affairs.
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = belgium.4.a #Screw them
+	}
+}
+
+country_event = { #Invite Luxemburg to Benelux Faction
+	id = belgium.5
+	title = belgium.5.t #Belgium invites us to theit Faction
+	desc = belgium.5.d #Earlier today the belgian ambassador to Luxemburg has submitted an offer from the belgian embacy to join a military alliance with Belgium known as the "Benelux".
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = belgium.5.a #This seems like a good idea
+		ai_chance = {
+        factor = 100
+        }
+		BEL = { add_to_faction = LUX }
+	}
+
+	option = {
+		name = belgium.5.b #Luxemburg can defend itself
+		ai_chance = {
+        factor = 0
+        }
+		BEL = { country_event = { id = belgium.6 days = 1 } }
+	}
+}
+
+country_event = { #Luxemburg Declines
+	id = belgium.6
+	title = belgium.6.t #Luxemburg Declines our Offer
+	desc = belgium.6.d #Today the government of Luxemburg has told our Ambassador that they will not embrace our offer to form a military alliance between our two nations.
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = belgium.6.a #They'll see how good they can defend themselves
+	}
+
+}
+
+country_event = { #Invite Germany
+	id = belgium.7
+	title = belgium.7.t #Belgium wants to join the Berlin Pact
+	desc = belgium.7.d #Today the Belgian ambassador to Berlin has submitte a proposal of the Belgian governement to form an military alliance between our two nations. This could greatly benefit us and open the way directly into Paris, making us nearly invincible to an attack from the West. However accepting this request could cause an intervention from either France or Britain who could see their hegemony challenged by this move.
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Accept
+		name = belgium.7.a #We must not hesitate to seize this chance
+		GER = { add_to_faction = BEL }
+	}
+
+	option = { #Only in Exchange for Eupen
+		name = belgium.7.b #We will only accept if we get back Eupen-Malmedy
+		BEL = { country_event = { id = belgium.8 days = 1 } }
+	}
+
+	option = { #Decline
+		name = belgium.7.c #This is to risky
+		BEL = { country_event = { id = belgium.9 days = 1 } }
+	}
+}
+
+country_event = { #Demand French Guarantee
+	id = belgium.9
+	title = belgium.9.t #Belgium demands a guarantee of independence
+	desc = belgium.9.d #After a great focus on neutrality, following the great war, the belgian government now seems to have changed it's mind and has demanded a guarantee of independence from us. This greatly plays into our strategic inerests in the region and could put a greater distance between the germans and Paris, which has always been endangered due to it's close proximity to the belgian border.
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = belgium.9.a #Of course
+		ai_chance = {
+		factor = 99
+		}
+		FRA = { give_guarantee = BEL }
+	}
+
+	option = { #Why risk another war for tiny Belgium?
+		name = belgium.9.b
+		ai_chance = {
+		factor = 1
+		}
+	}
+}
+country_event = { #formation of the benlux union (HOL)
+	id = belgium.1003
+	title = belgium.1003.t #
+	desc = belgium.1003.d #
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = belgium.1003.a #Of course
+		ai_chance = {
+		factor = 90
+		}
+		BEL = {
+		set_cosmetic_tag = BEL_union
+		annex_country = { target = HOL transfer_troops = yes }
+		add_ideas = BEL_union_idea
+		add_state_core = 35
+		add_state_core = 7
+		add_state_core = 36
+		puppet = INS
+		}
+	}
+
+	option = { 
+		name = belgium.1003.b
+		ai_chance = {
+		factor = 10
+		}
+	}
+}
+country_event = { #formation of the benlux union (LUX)
+	id = belgium.1004
+	title = belgium.1004.t #
+	desc = belgium.1004.d #
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = belgium.1003.a #Of course
+		ai_chance = {
+		factor = 100
+		}
+		BEL = {
+		annex_country = { target = LUX transfer_troops = yes }
+		add_state_core = 8
+		}
+	}
+
+	option = { 
+		name = belgium.1003.b
+		ai_chance = {
+		factor = 0
+		}
+	}
+}
+country_event = { #Eupen for Flanders
+	id = belgium.10
+	title = belgium.10.t #
+	desc = belgium.10.d #
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = belgium.10.a #Of course
+		ai_chance = {
+		factor = 100
+		}
+		GER = {
+		transfer_state = 816
+		give_guarantee = BEL
+		}
+		BEL = {
+		add_state_claim = 29
+		}
+		
+	}
+
+	option = { 
+		name = belgium.10.b
+		ai_chance = {
+		factor = 0
+		}
+	}
+}
+country_event = { #Belgium requests weapons
+	id = belgium.11
+	title = belgium.11.t #
+	desc = belgium.11.d #
+	#picture = 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = belgium.11.a #Of course
+		ai_chance = {
+		factor = 100
+		}
+		send_equipment = { target = BEL type = infantry_equipment amount = 2000 }
+			
+	}
+
+	option = { 
+		name = belgium.11.b
+		ai_chance = {
+		factor = 0
+		}
+	}
+}
+country_event = { #Belgian elections
+	id = belgium.12
+	title = belgium.12.t #
+	desc = belgium.12.d #
+	picture = GFX_report_event_election_vote
+
+	fire_only_once = yes
+	trigger = {
+	tag = BEL
+	date > 1936.5.1
+	date < 1936.6.1
+	}
+	
+	option = {
+		name = belgium.12.a #Left
+		set_popularities = {
+	    democratic = 13
+	    neutrality = 7
+	    fascism = 14
+	    communism = 6
+	    socialist = 32
+	    conservatives = 28
+        }
+		BEL = { country_event = { id = belgium.13 days = 3 }}
+	}		
+}
+country_event = { #settingupgovernment
+	id = belgium.13
+	title = belgium.13.t 
+	desc = belgium.13.d 
+	picture = GFX_report_event_usa_election_generic
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = belgium.13.a 
+		BEL = { country_event = { id = belgium.14 days = 2 }}
+        }
+}
+country_event = { #LabourDemandPrimeMinister?
+	id = belgium.14
+	title = belgium.14.t #
+	desc = belgium.14.d #
+	picture = GFX_report_event_usa_election_generic
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = belgium.14.a 
+        ai_chance = {
+        factor = 50	
+        }
+        BEL = { country_event = { id = belgium.15 days = 3 }}
+    }
+	option = {
+		name = belgium.14.b 
+        ai_chance = {
+        factor = 50
+        }
+        BEL = { country_event = { id = belgium.16 days = 3 }}
+    }
+}			
+country_event = { #ContinueConservatives
+	id = belgium.15
+	title = belgium.15.t #
+	desc = belgium.15.d #
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = belgium.15.a #
+        set_country_flag = bel_elections_stability
+        set_country_flag = bel_elections_begone
+        complete_national_focus = BEL_1936_general_elections
+        complete_national_focus = BEL_election_victory_catholic
+    }
+}
+country_event = { #EmilebecomesPrimeMinister
+	id = belgium.16
+	title = belgium.16.t #
+	desc = belgium.16.d #
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = belgium.16.a #
+		hidden_effect = { country_event = { id = belgium.17 days = 9 }}
+		set_politics = {
+	    ruling_party = socialist
+        }
+    }
+}
+country_event = { #Emilegetsfuckingshot
+	id = belgium.17
+	title = belgium.17.t #
+	desc = belgium.17.d #
+	picture = GFX_report_event_bel_gun
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = belgium.17.a #ohgodohfuck
+		add_stability = -0.1
+        hidden_effect = { country_event = { id = belgium.19 days = 1 }}
+        hidden_effect = { country_event = { id = belgium.28 days = 2 }}
+        kill_country_leader = yes
+
+        create_country_leader = {
+	    name = "Paul-Henri Spaak"
+	    desc = "POLITICS_HUBERT_PIERLOT_DESC"
+	    picture = "gfx/leaders/BEL/bel_socialist_leader.dds"
+	    expire = "1965.1.1"
+	    ideology = socialist_subtype
+        }
+    }
+}
+news_event = { #Emilegetsfuckingshotnewsevent
+	id = belgium.28
+	title = belgium.28.t #
+	desc = belgium.28.d #
+	picture = GFX_news_event_assasination
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+	name = belgium.28.a 
+    }
+}
+#country_event = { #nextprimeminister
+#	id = belgium.18
+#	title = belgium.18.t #
+#	desc = belgium.18.d #
+#	picture = GFX_report_event_usa_election_generic
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#	
+#	option = {
+#		name = belgium.18.a #Pierlotbased
+#       hidden_effect = { country_event = { id = belgium.19 days = 2 }}
+#    }
+#   option = {
+#		name = belgium.18.b #Spaackbased
+#        hidden_effect = { country_event = { id = belgium.19 days = 2 }}
+#    }
+#}
+country_event = { #marhallaw
+	id = belgium.19
+	title = belgium.19.t #
+	desc = belgium.19.d #
+	picture = GFX_report_event_saf_soldiers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = belgium.19.a #LETSFUCKINGGOOOO
+		add_stability = -0.01
+        hidden_effect = { country_event = { id = belgium.24 days = 3 }}
+    }
+}
+country_event = { #newelectionsplannedkekwtf
+	id = belgium.24
+	title = belgium.24.t #
+	desc = belgium.24.d #
+	picture = GFX_report_event_hol_cabinet_gerbrandy
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = belgium.24.a #YEAHBOIAGAINVOTING
+        hidden_effect = { country_event = { id = belgium.21 days = 7 }}
+        retire_ideology_leader = conservatives
+        create_country_leader = {
+	    name = "Hubert Pierlot"
+      	desc = "POLITICS_HUBERT_PIERLOT_DESC"
+	    picture = "Portrait_Belgium_Hubert_Pierlot.dds"
+	    expire = "1965.1.1"
+	    ideology = conservatives_subtype
+        }
+
+        add_stability = -0.05
+    }
+}
+country_event = { #thegreatpurge
+	id = belgium.25
+	title = belgium.25.t #
+	desc = belgium.25.d #
+	picture = GFX_report_event_bel_gun
+
+	trigger = {
+	focus_progress = {
+    focus = BEL_great_purge
+    progress > 0.05
+    }
+    }
+	fire_only_once = yes
+	
+	option = {
+		name = belgium.25.a #warningblood
+        add_timed_idea = { idea = BEL_terror_idea days = 100 }
+    }
+}
+country_event = { #thegreatpurgecontunes
+	id = belgium.26
+	title = belgium.26.t #
+	desc = belgium.26.d #
+	picture = GFX_report_event_spr_civil_war_faction_defeated
+
+	
+	trigger = {
+	focus_progress = {
+    focus = BEL_great_purge
+    progress > 0.5
+    }
+    }
+	fire_only_once = yes
+	
+	option = {
+		name = belgium.26.a #warningblood
+        add_stability = -0.02
+    }
+}
+country_event = { #thegreatpurgeends-greatgameends
+	id = belgium.27
+	title = belgium.27.t #
+	desc = belgium.27.d #
+	picture = GFX_report_event_generic_read_write
+
+	trigger = {
+	focus_progress = {
+    focus = BEL_great_purge
+    progress > 0.91
+    }
+    }
+	fire_only_once = yes
+	
+	option = {
+		name = belgium.27.a 
+        custom_effect_tooltip = BEL_verdi_tt
+        set_country_flag = rex_game
+        hidden_effect = {
+        set_popularities = {
+	    democratic = 5
+        conservatives = 5
+        socialist = 5
+	    neutrality = 40
+	    fascism = 40
+	    communism = 5
+        }
+        }
+    }
+    #option = {
+	#	name = belgium.27.b
+    #    custom_effect_tooltip = BEL_vnv_tt
+    #    hidden_effect = {
+    #    set_popularities = {
+	#    democratic = 5
+    #    conservatives = 5
+    #    socialist = 5
+	#    neutrality = 40
+	#    fascism = 40
+	#    communism = 5
+    #    }
+    #    }
+    #}
+}
+country_event = { #Belgian elections v2
+	id = belgium.20
+	title = belgium.20.t #
+	desc = belgium.20.d #
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = belgium.20.a #Go left
+		ai_chance = {
+		factor = 33
+		}	
+		complete_national_focus = BEL_1936_general_elections
+        complete_national_focus = BEL_election_victory_catholic
+        set_country_flag = bel_elections_begone
+		}
+	option = {
+		name = belgium.20.b #Remain centre
+		ai_chance = {
+		factor = 33
+		}
+		complete_national_focus = BEL_1936_general_elections
+        complete_national_focus = BEL_election_victory_labour
+        set_country_flag = bel_elections_begone
+		}
+	option = {
+		name = belgium.20.c #Go right wing
+		ai_chance = {
+		factor = 34
+		}
+        complete_national_focus = BEL_1936_general_elections
+        complete_national_focus = BEL_election_victory_rex
+        set_country_flag = bel_elections_begone
+		}		
+}
+country_event = { #flanderohoh
+	id = belgium.21
+	title = belgium.21.t #
+	desc = belgium.21.d #
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = belgium.21.a #fuckflanders
+        hidden_effect = { country_event = { id = belgium.22 days = 8 }}
+        add_stability = -0.01
+        add_popularity = {				   
+        ideology = socialist			  
+        popularity = 0.025
+		}
+		add_popularity = {				   
+        ideology = conservatives			  
+        popularity = 0.025
+		}
+    }
+    option = {
+		name = belgium.21.b #middeleground
+        hidden_effect = { country_event = { id = belgium.22 days = 8 }}
+        add_popularity = {				   
+        ideology = democratic			  
+        popularity = 0.01
+		}
+		add_popularity = {				   
+        ideology = socialist			  
+        popularity = 0.01
+		}
+		add_popularity = {				   
+        ideology = conservatives			  
+        popularity = 0.01
+		}
+    }
+    option = {
+		name = belgium.21.c #flanders
+        hidden_effect = { country_event = { id = belgium.22 days = 8 }}
+        add_stability = -0.01
+        add_popularity = {				   
+        ideology = neutrality			  
+        popularity = 0.025
+		}
+    }
+}
+country_event = { #catholicchurch
+	id = belgium.22
+	title = belgium.22.t #
+	desc = belgium.22.d #
+	picture = GFX_report_event_generic_rally_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = belgium.22.a #conservatives
+        hidden_effect = { country_event = { id = belgium.23 days = 8 }}
+        add_popularity = {				   
+        ideology = conservatives		  
+        popularity = 0.05
+		}
+    }
+    option = {
+		name = belgium.22.b #fuckrex
+        hidden_effect = { country_event = { id = belgium.23 days = 8 }}
+        add_popularity = {				   
+        ideology = fascism		  
+        popularity = -0.05
+		}
+    }
+    option = {
+		name = belgium.22.c #fascist
+        hidden_effect = { country_event = { id = belgium.23 days = 8 }}
+        add_popularity = {				   
+        ideology = conservatives		  
+        popularity = 0.025
+		}
+        add_popularity = {				   
+        ideology = fascism			  
+        popularity = 0.03
+		}
+    }
+}
+country_event = { #dejemanplan
+	id = belgium.23
+	title = belgium.23.t #
+	desc = belgium.23.d #
+	picture = GFX_report_event_generic_rally2
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = belgium.23.a #based
+        hidden_effect = { country_event = { id = belgium.20 days = 8 }}
+        add_popularity = {				   
+        ideology = socialist			  
+        popularity = 0.05
+		}
+    }
+    option = {
+		name = belgium.23.b #notbased
+        hidden_effect = { country_event = { id = belgium.20 days = 8 }}
+        add_popularity = {				   
+        ideology = communism			  
+        popularity = 0.05
+		}
+    }
+}
+country_event = { #Congo for Calais
+    id = belgium.50
+    title = belgium.50.t
+    desc = belgium.50.d 
+    picture = GFX_news_event_generic_sign_treaty1
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = belgium.50.a #Of course
+        ai_chance = {
+        factor = 75
+        }
+        BEL = { 
+            transfer_state  = 29
+            add_state_core = 29
+        FEA = {
+            set_state_owner = 538
+            set_state_owner = 718
+            set_state_owner = 295
+            set_state_owner = 768
+            set_state_owner = 769
+            }
+        }
+    }
+
+    option = {
+        name = belgium.17.b
+        ai_chance = {
+        factor = 25
+        }
+    }
+}	
+country_event = { #vnvfucked
+	id = belgium.29
+	title = belgium.29.t #
+	desc = belgium.29.d #
+	picture = GFX_report_event_czech_soldiers_01
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = belgium.29.a #thevnvguygetsarrested
+        hidden_effect = { country_event = { id = belgium.30 days = 21 }}
+    }
+}		
+country_event = { #degrellegetsfuckingshot
+	id = belgium.30
+	title = belgium.30.t #
+	desc = belgium.30.d #
+	picture = GFX_report_event_bel_gun
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = belgium.30.a #degrelledead
+        hidden_effect = { country_event = { id = belgium.31 days = 1 }}
+        add_stability = -0.15
+        kill_ideology_leader = fascism
+
+    }
+}	
+country_event = { #severentakescontroll
+	id = belgium.31
+	title = belgium.31.t #
+	desc = belgium.31.d #
+	picture = GFX_report_event_bel_severen
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = belgium.31.a #SEVERENLETSDIETS
+		add_stability = 0.05
+        create_country_leader = {
+	    name = "Joris Van Severen"
+	    desc = "POLITICS_JORIS_SEVEREN_DESC"
+	    picture = "severen.dds"
+	    expire = "1965.1.1"
+	    ideology = fascism_subtype
+        }
+
+    }
+}
+
+country_event = { #THEBREAKUP
+	id = belgium.32
+	title = belgium.32.t #
+	desc = belgium.32.d #
+	picture = GFX_report_event_generic_riot
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = belgium.32.a #rip
+        hidden_effect = { country_event = { id = belgium.33 days = 2 }}  
+        hidden_effect = { ENG = { country_event = { id = belgium.34 days = 2 }} }  
+        hidden_effect = { FRA = { country_event = { id = belgium.35 days = 2 }} } 
+        custom_effect_tooltip = bel_break_tt
+    }
+}
+
+country_event = { #THEBREAKUP2
+	id = belgium.33
+	title = belgium.33.t #
+	desc = belgium.33.d #
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = belgium.33.a #rip
+		FLN = {
+        transfer_state = 6
+
+        set_politics = {
+	    ruling_party = neutrality
+        }
+
+        hidden_effect = {
+        set_popularities = {
+	    democratic = 10
+	    neutrality = 75
+	    fascism = 5
+	    communism = 10
+        }
+        }
+
+        }
+
+        WAL = { change_tag_from = BEL }
+        WAL = {
+        transfer_state = 34
+        set_politics = {
+	    ruling_party = neutrality
+        }
+        }
+        hidden_effect = { FRA = { country_event = { id = belgium.36 days = 2 }} }  
+        hidden_effect = { HOL = { country_event = { id = belgium.37 days = 2 }} }
+    }
+}
+country_event = { #CollapseoftheCongoUK
+	id = belgium.34
+	title = belgium.34.t #
+	desc = belgium.34.d #
+	picture = GFX_report_event_severen
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = belgium.34.a #rip
+        transfer_state = 718
+        transfer_state = 768
+        transfer_state = 769
+        transfer_state = 295
+        
+    }
+}
+country_event = { #CollapseoftheCongoFRA
+	id = belgium.35
+	title = belgium.35.t #
+	desc = belgium.35.d #
+	picture = GFX_report_event_severen
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = belgium.35.a #rip
+        transfer_state = 538
+    }
+}
+country_event = { #GuarenteeFRA
+	id = belgium.36
+	title = belgium.36.t #
+	desc = belgium.36.d #
+	picture = GFX_report_event_severen
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = belgium.36.a #yes
+		add_political_power = -25
+        give_guarantee = WAL
+    }
+    option = {
+		name = belgium.36.b #no
+        add_political_power = 25
+    }
+}
+country_event = { #GuarenteeHOL
+	id = belgium.37
+	title = belgium.37.t #
+	desc = belgium.37.d #
+	picture = GFX_report_event_severen
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = belgium.37.a #yes
+		add_political_power = -25
+        give_guarantee = FLN
+    }
+    option = {
+		name = belgium.37.b #no
+        add_political_power = 25
+    }
+}
+country_event = { #Communistleaderdies
+	id = belgium.40
+	title = belgium.40.t 
+	desc = belgium.40.d 
+	picture = GFX_report_event_communist_leader
+
+    trigger = {
+		date > 1936.10.11
+		NOT = { has_country_flag = commubel_dead }
+		tag = BEL
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_global_flag = commubel_dead
+	}
+	
+	fire_only_once = yes
+	
+	option = {            
+	name = belgium.40.a #hellojonn
+    kill_ideology_leader = communism
+    create_country_leader = {
+	name = "Julien Lahaut"
+	desc = "POLITICS_JULIEN_LAHAUT_DESC"
+	picture = "julien.dds"
+	expire = "1965.1.1"
+	ideology = communism_subtype
+	}
+    }
+}
+country_event = { #zeelandretires
+	id = belgium.41
+	title = belgium.41.t 
+	desc = belgium.41.d 
+	picture = GFX_report_event_generic_sign_treaty1
+
+    trigger = {
+		date > 1937.11.22
+		NOT = { has_country_flag = zeeland_retired }
+		tag = BEL
+		has_government = conservatives
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+		set_global_flag = zeeland_retired
+	}
+	
+	fire_only_once = yes
+	
+	option = {            
+	name = belgium.41.a #hellopierlot
+    retire_ideology_leader = conservatives
+        create_country_leader = {
+	    name = "Hubert Pierlot"
+      	desc = "POLITICS_HUBERT_PIERLOT_DESC"
+	    picture = "Hurbert_Pierlot.dds"
+	    expire = "1965.1.1"
+	    ideology = conservatives_subtype
+        }
+    add_popularity = {
+    ideology = conservatives
+	popularity = -0.02
+	} 
+    }    
+}

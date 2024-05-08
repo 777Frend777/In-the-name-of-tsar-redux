@@ -1,0 +1,1504 @@
+﻿#!gfx:interface/inot_focus_tree_goals.gfx
+#!gfx:interface/inot_goals_shine.gfx
+#!gfx:interface/KR_goals.gfx
+#!gfx:interface/KR_goals_shine.gfx
+focus_tree = {
+	id = swiss_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SWI
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 100 y = 2000 }
+	initial_show_position = {
+		x = 36
+		y = 0
+	}
+	focus = {
+		id = SWI_End_of_the_crisis
+		icon = GFX_focus_SWI_swiss_guiding_principles
+		x = 15
+		y = 0
+		cost = 5
+	
+		ai_will_do = {
+			factor = 10
+		}
+		#allow_branch = {
+		#	NOT={
+		#       has_government = communism
+		#   }
+		#}
+		available = {
+			NOT={
+				has_power_balance = {
+					id = SWI_power_balance
+				}
+			}
+		}
+	
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER} 
+
+		completion_reward = {
+			
+		}
+	
+	}
+	focus = {
+		id = SWI_break_neutrality
+		icon = GFX_focus_SWI_abandon_neutrality
+		cost = 1.00
+		prerequisite = {
+			focus = SWI_End_of_the_crisis
+		}
+		mutually_exclusive = {
+			focus = SWI_armed_neutrality
+			focus = SWI_neutrality
+		}
+		relative_position_id = SWI_End_of_the_crisis
+		x = 0
+		y = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_romandy_crisis"
+			remove_ideas = SWI_swiss_neutrality
+		}
+	}
+	focus = {
+		id = SWI_armed_neutrality
+		icon = GFX_focus_SWI_helvetic_junta
+		cost = 1.00
+		prerequisite = {
+			focus = SWI_End_of_the_crisis
+		}
+		mutually_exclusive = {
+			focus = SWI_neutrality
+			focus = SWI_break_neutrality
+		}
+		relative_position_id = SWI_End_of_the_crisis
+		x = 2
+		y = 2
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_romandy_crisis"
+			swap_ideas = {
+				remove_idea = SWI_swiss_neutrality
+				add_idea = SWI_armed_neutrality_idea
+			}
+		}
+	}
+	focus = {
+		id = SWI_Vorarlberg
+		icon = GFX_goal_Vorarlberg
+		x = -4
+		y = 2
+		relative_position_id = SWI_End_of_the_crisis
+		prerequisite = { focus = SWI_End_of_the_crisis }
+		cost = 5
+		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
+
+		completion_reward = {
+			country_event = {
+				id = swiss.1
+				days = 7
+			}
+		}
+	}
+	focus = {
+		id = SWI_national_protection_coup
+		icon = GFX_goal_generic_council
+		x = -4
+		y = 3
+		relative_position_id = SWI_End_of_the_crisis
+		prerequisite = { focus = SWI_End_of_the_crisis }
+		cost = 5
+		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
+		available = {
+			hidden_trigger={
+				OR={
+					AND = {
+						NOT={
+							owns_state = 848
+						}
+						communism > 0.2
+					}
+					has_war = yes
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = swiss_trouble
+			}
+		}
+		completion_reward = {
+			news_event = {
+				id = swiss.2
+				days = 7
+			}
+		}
+	}
+	focus = {
+		id = SWI_neutrality
+		icon = GFX_focus_SWI_neutrality_on_the_move
+		cost = 1.00
+		prerequisite = {
+			focus = SWI_End_of_the_crisis
+		}
+		mutually_exclusive = {
+			focus = SWI_armed_neutrality
+			focus = SWI_break_neutrality
+		}
+		relative_position_id = SWI_End_of_the_crisis
+		x = -2
+		y = 2
+
+		available = {
+
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_romandy_crisis"
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = SWI_Gusian_Plan
+		icon = GFX_Goal_SWI_guisan
+		cost = 1.00
+		prerequisite = {
+			focus = SWI_neutrality focus = SWI_armed_neutrality focus = SWI_break_neutrality
+		} 
+		mutually_exclusive = {
+			focus = SWI_Ulrich_Plan
+		}
+		relative_position_id = SWI_End_of_the_crisis
+		x = -2
+		y = 3
+
+		available = {
+			has_completed_focus = SWI_Vorarlberg
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_romandy_crisis"
+			add_tech_bonus = {
+				name = SWI_guisan_plan
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_grand_battle_plan
+				category = cat_superior_firepower
+			}
+		}
+	}
+	focus = {
+		id = SWI_population_training
+		icon = GFX_focus_SWI_patriotic_shooting_clubs
+		x = 2
+		y = 2
+		relative_position_id = SWI_Gusian_Plan
+		prerequisite = { focus = SWI_Gusian_Plan focus = SWI_Ulrich_Plan }
+		cost = 5
+		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
+
+		completion_reward = {
+			add_ideas = SWI_citizen_militia
+		}
+	}
+	focus = {
+		id = SWI_luftwaffe
+		icon = GFX_goal_generic_air_command
+		cost = 7.00
+		x = 2
+		y = 3
+		relative_position_id = SWI_Gusian_Plan
+		prerequisite = { focus = SWI_defend_the_skies focus = SWI_promote_expansionism }
+		prerequisite = { focus = SWI_population_training }
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_luftwaffe"
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+			add_tech_bonus = {
+				name = SWI_new_fighters
+				bonus = 1
+				uses = 1
+				category = light_fighter
+			}
+			air_experience = 50
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SWI_mobilization
+		icon = GFX_focus_generic_full_social_mobilization
+		x = -1
+		y = 1
+		relative_position_id = SWI_Gusian_Plan
+		prerequisite = { focus = SWI_Gusian_Plan }
+		cost = 5
+		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
+
+		completion_reward = {
+			add_manpower = 10000
+			add_ideas = us_mass_conscription_idea
+		}
+	}
+	focus = {
+		id = SWI_defend_the_skies
+		icon = GFX_goal_SWI_air_force
+		x = 0
+		y = 2
+		relative_position_id = SWI_Gusian_Plan
+		prerequisite = { focus = SWI_mobilization  }
+		prerequisite = {
+			focus = SWI_alpine_defence
+		}
+		cost = 10
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+
+		completion_reward = {
+
+			add_tech_bonus = {
+				name = SWI_defend_the_skies
+				bonus = 1  
+				uses = 2 
+				category = cat_anti_air
+			}
+			every_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = anti_air_building 
+						size > 1 
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}					
+				
+			}
+			if = {
+				limit = {
+					NOT = { has_tech = interwar_antiair }
+				}
+				effect_tooltip = {
+					every_owned_state = {
+						add_building_construction = {
+							type = anti_air_building 
+							level = 2 
+							instant_build = yes 
+						}
+					}
+				}
+			}	 
+		}
+	}
+	focus = {
+		id = SWI_alpine_defence
+		icon = GFX_focus_SWI_the_national_redoubt
+		x = 1
+		y = 1
+		relative_position_id = SWI_Gusian_Plan
+		prerequisite = { focus = SWI_Gusian_Plan }
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+
+		completion_reward = {
+			add_victory_points = {
+				province = 636
+				value = 10
+			}
+			847 = { #Western Swiss Alps
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			
+			151 = { #Eastern Swiss Alps
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			846 = { #Ticino
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+					}
+				}
+				if = {
+					limit = { 
+						free_building_slots = {
+							building = arms_factory 
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory 
+						level = 2 
+						instant_build = yes
+					} 
+				}
+			}
+		}
+	}
+	focus = {
+		id = SWI_Ulrich_Plan
+		icon = GFX_Goal_SWI_wille_jr
+		cost = 1.00
+		prerequisite = {
+			focus = SWI_neutrality focus = SWI_armed_neutrality focus = SWI_break_neutrality
+		} 
+		relative_position_id = SWI_End_of_the_crisis
+		x = 2
+		y = 3
+		mutually_exclusive = {
+			focus = SWI_Gusian_Plan
+		}
+		available = {
+			OR={
+				has_government = fascism
+				has_government = neutrality
+			}
+			has_completed_focus = SWI_Vorarlberg
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SWI_romandy_crisis"
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_grand_battle_plan
+			}
+			
+			add_tech_bonus = {
+				name = SWI_wille_plan
+				bonus = 1
+				uses = 1
+				category = motorized_equipment
+			}
+			
+			add_tech_bonus = {
+				name = SWI_wille_plan
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
+			
+			add_command_power = 100
+		}
+	}
+	focus = {
+		id = SWI_prussian_model
+		icon = GFX_focus_ger_return_of_the_kaiser
+		x = 1
+		y = 1
+		relative_position_id = SWI_Ulrich_Plan
+		prerequisite = { focus = SWI_Ulrich_Plan }
+		cost = 5
+		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
+
+		completion_reward = {
+			add_ideas = SWI_prussian_model
+		}
+	}
+	focus = {
+		id = SWI_promote_expansionism
+		icon = GFX_focus_SWI_federal_police
+		x = 0
+		y = 2
+		relative_position_id = SWI_Ulrich_Plan
+		prerequisite = { focus = SWI_prussian_model }
+		prerequisite = { focus = SWI_fortify_border }
+		cost = 5
+		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
+
+		completion_reward = {
+			add_ideas = SWI_prussian_model
+		}
+	}
+	focus = {
+		id = SWI_fortify_border
+		icon = GFX_focus_SWI_connect_to_the_maginot_line
+		x = -1
+		y = 1
+		relative_position_id = SWI_Ulrich_Plan
+		prerequisite = { focus = SWI_Ulrich_Plan }
+		cost = 5
+		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
+
+		completion_reward = {
+			761 = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					custom_effect_tooltip = SWI_forts_tooltip
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 3662
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 658
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 9600
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 3641
+							instant_build = yes
+						}
+					}
+				}
+			}
+			151 = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					custom_effect_tooltip = SWI_forts_tooltip
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 3660
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 11623
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 661
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 663
+							instant_build = yes
+						}
+					}
+				}
+			}
+			760 = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					custom_effect_tooltip = SWI_forts_tooltip
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 6683
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 9622
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 6666
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 3612
+							instant_build = yes
+						}
+					}
+				}
+			}
+			3 = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					custom_effect_tooltip = SWI_forts_tooltip
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 9638
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 636
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 9587
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = SWI_Council_Supreme
+		icon = GFX_focus_SWI_council
+		x = -12
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = SWI_End_of_the_crisis
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = SWI_End_of_the_crisis
+		available = {
+			has_country_flag = SWI_Democrats_win
+		}
+
+		mutually_exclusive = {
+			focus = SWI_National_Movement #NBS
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER} 
+
+		completion_reward = {
+			
+		}
+	
+	}
+	focus = {
+		id = SWI_Free_Democrats
+		icon = GFX_goal_ideology_social_liberal
+		x = 6
+		y = 1
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = { focus = SWI_Council_Supreme }
+		available = {
+			has_government = democratic
+		}
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		mutually_exclusive = {
+			focus = SWI_Conservatives_agrarians
+			focus = SWI_Conservatives_christians
+			focus = SWI_SocDems
+		}
+		completion_reward = {
+			activate_advisor = SWI_ernst_wetter
+		}
+	}
+	focus = {
+		id = SWI_economic_liberalism
+		icon = GFX_goal_SWI_economic_liberalism
+		x = 6
+		y = 2
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = {focus = SWI_Free_Democrats }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+
+		completion_reward = {
+			add_ideas = SWI_economic_liberalism_idea
+		}
+	}
+	focus = {
+		id = SWI_anti_authoritarianism_law
+		icon = GFX_focus_generic_bastion_of_democracy
+		x = 6
+		y = 3
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = {focus = SWI_economic_liberalism }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			add_war_support = -0.1
+		}
+	}
+	focus = {
+		id = SWI_minority_rights
+		icon = GFX_goal_UKR_minority_rights
+		x = 6
+		y = 4
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = {focus = SWI_anti_authoritarianism_law }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+
+		completion_reward = {
+			add_ideas = SWI_Minority_rights_idea
+		}
+	}
+	focus = {
+		id = SWI_social_welfare
+		icon = GFX_focus_FIN_socialist_wellfare
+		x = 4
+		y = 2
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = { focus = SWI_Free_Democrats focus = SWI_SocDems }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+
+		completion_reward = {
+			add_ideas = SWI_welfare
+			if = {
+				limit = { 
+					NOT={
+						has_completed_focus = SWI_rural_education
+					}
+				}
+				add_research_slot = 1
+			}
+		}
+	}
+	focus = {
+		id = SWI_promote_neutrality
+		icon = GFX_goal_HOL_sustain_neutrality
+		x = 4
+		y = 3
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = { focus = SWI_social_welfare }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+
+		completion_reward = {
+			if = {
+				limit = {
+					NOT={
+						has_idea = SWI_swiss_neutrality
+					}
+				 }
+				 add_ideas = SWI_swiss_neutrality
+			}
+			if = {
+				limit = {
+						has_idea = SWI_armed_neutrality_idea
+				 }
+				 swap_ideas = {
+					remove_idea = SWI_armed_neutrality_idea
+					add_idea = SWI_swiss_neutrality
+				 }
+			}
+		}
+	}
+	focus = {
+		id = SWI_commit_to_federalism
+		icon = GFX_focus_SWI_new_eidgenossenschaft
+		x = 4
+		y = 4
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = { focus = SWI_promote_neutrality }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = SWI_Conservatives_agrarians
+		icon = GFX_goal_CZE_agrarians
+		x = -2
+		y = 1
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = { focus = SWI_Council_Supreme }
+		cost = 5
+		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
+		available = {
+			has_government = conservatives
+		
+		}
+		mutually_exclusive = {
+			focus = SWI_Free_Democrats
+			focus = SWI_SocDems
+			focus = SWI_Conservatives_christians
+		}
+		completion_reward = {
+			activate_advisor = SWI_eduard_von_steiger
+		}
+	}
+	focus = {
+		id = SWI_rural_education
+		icon = GFX_goal_KTG_Educate_natives
+		x = 0
+		y = 2
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = {focus = SWI_Conservatives_agrarians focus = SWI_SocDems }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		bypass = {
+			has_completed_focus = SWI_christian_education
+		}
+		bypass = {
+			has_completed_focus = SWI_social_welfare
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = SWI_modernize_agriculture
+		icon = GFX_goal_generic_agriculture2
+		x = 0
+		y = 3
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = {focus = SWI_rural_education }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			add_tech_bonus = {
+				name = SWI_modernize_agriculture
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+			add_ideas = SWI_mechanization_idea
+		}
+	}
+	focus = {
+		id = SWI_expand_farms
+		icon = GFX_goal_agricultural_policies
+		x = 0
+		y = 4
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = {focus = SWI_modernize_agriculture }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			add_stability = 0.05
+			add_popularity = {
+				ideology = conservatives
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = SWI_economic_protectionism
+		icon = GFX_goal_state_economy
+		x = -2
+		y = 2
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = {focus = SWI_Conservatives_agrarians }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+
+		completion_reward = {
+			add_ideas = limited_exports
+			add_ideas = SWI_protectionism
+		}
+	}
+	focus = {
+		id = SWI_anti_marxism_law
+		icon = GFX_focus_eng_liberate_the_home_of_marx
+		x = -2
+		y = 3
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = {focus = SWI_economic_protectionism }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+		}
+	}
+	focus = {
+		id = SWI_basic_women_rights
+		icon = GFX_focus_generic_female_rights
+		x = -2
+		y = 4
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = {focus = SWI_anti_marxism_law }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+
+		completion_reward = {
+			add_popularity = {
+				ideology = conservatives
+				popularity = 0.05
+			}
+			add_ideas = SWI_womens_rights_idea
+			
+		}
+	}
+	focus = {
+		id = SWI_Conservatives_christians
+		icon = GFX_goal_SHX_Christian_Influence
+		x = -6
+		y = 1
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = { focus = SWI_Council_Supreme }
+		cost = 5
+		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
+		available = {
+			has_government = conservatives
+		
+		}
+		mutually_exclusive = {
+			focus = SWI_Free_Democrats
+			focus = SWI_SocDems
+			focus = SWI_Conservatives_agrarians
+		}
+		completion_reward = {
+			activate_advisor = SWI_giuseppe_motta
+		}
+	}
+	focus = {
+		id = SWI_christian_vaules
+		icon = GFX_focus_por_nat_church
+		x = -6
+		y = 2
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = { focus = SWI_Conservatives_christians }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		bypass = {
+			has_completed_focus = SWI_rural_education
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_ideas = BEL_state_christianity
+		}
+	}
+	focus = {
+		id = SWI_anti_socialism_law
+		icon = GFX_goal_purge_opposition
+		x = -6
+		y = 3
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = {focus = SWI_christian_vaules }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = socialist
+				popularity = -0.1
+			}
+		}
+	}
+	focus = {
+		id = SWI_traditional_roles
+		icon = GFX_goal_agency
+		x = -6
+		y = 4
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = {focus = SWI_anti_socialism_law }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+
+		completion_reward = {
+			add_popularity = {
+				ideology = conservatives
+				popularity = 0.05
+			}
+			add_stability = -0.05
+			add_political_power = -100
+			
+		}
+	}
+	focus = {
+		id = SWI_christian_education
+		icon = GFX_goal_BRA_catholic_education
+		x = -4
+		y = 2
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = {focus = SWI_Conservatives_agrarians focus = SWI_Conservatives_christians }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		bypass = {
+			has_completed_focus = SWI_rural_education
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = SWI_safety_net
+		icon = GFX_focus_SWE_rations
+		x = -4
+		y = 3
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = {focus = SWI_christian_education }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		bypass = {
+			has_completed_focus = SWI_rural_education
+		}
+		completion_reward = {
+			add_ideas = SWI_welfare
+		}
+	}
+	focus = {
+		id = SWI_promote_neutrality2
+		icon = GFX_goal_SWI_peace_and_stability
+		x = -4
+		y = 4
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = { focus = SWI_safety_net }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+
+		completion_reward = {
+			if = {
+				limit = {
+					NOT={
+						has_idea = SWI_armed_neutrality_idea
+					}
+				 }
+				 add_ideas = SWI_armed_neutrality_idea
+			}
+			if = {
+				limit = {
+						has_idea = SWI_swiss_neutrality
+				 }
+				 swap_ideas = {
+					remove_idea = SWI_swiss_neutrality
+					add_idea = SWI_armed_neutrality_idea
+				 }
+			}
+		}
+	}
+	focus = {
+		id = SWI_SocDems
+		icon = GFX_goal_ideology_social_democrat
+		x = 2
+		y = 1
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = { focus = SWI_Council_Supreme }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		available = {
+			has_government = conservatives
+		}
+		mutually_exclusive = {
+			focus = SWI_Free_Democrats
+			focus = SWI_Conservatives_agrarians
+			focus = SWI_Conservatives_christians
+		}
+		completion_reward = {
+			activate_advisor = SWI_ernst_nobs
+		}
+	}
+	focus = {
+		id = SWI_labour_rights
+		icon = GFX_goal_generic_labour_legislation
+		x = 2
+		y = 2
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = {focus = SWI_SocDems }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+
+		completion_reward = {
+			add_ideas = SWI_labour
+		}
+	}
+	focus = {
+		id = SWI_anti_fascism_law
+		icon = GFX_focus_focus_fra_fascist_threat
+		x = 2
+		y = 3
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = {focus = SWI_labour_rights }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+		}
+	}
+	focus = {
+		id = SWI_support_women_sufferage
+		icon = GFX_focus_generic_female_voting
+		x = 2
+		y = 4
+		relative_position_id = SWI_Council_Supreme
+		prerequisite = {focus = SWI_anti_fascism_law }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+
+		completion_reward = {
+			add_popularity = {
+				ideology = socialist
+				popularity = 0.1
+			}
+			add_ideas = MEX_womens_suffrage
+		}
+	}
+	focus = {
+		id = SWI_National_Movement #NBS
+		icon = GFX_focus_SWI_embrace_panoramaheim
+		x = 12
+		y = 1
+		cost = 5
+	    relative_position_id = SWI_End_of_the_crisis
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = SWI_End_of_the_crisis
+		}
+		available = {
+			has_country_flag = SWI_Democrats_win
+		}
+
+		mutually_exclusive = {
+			focus = SWI_Council_Supreme
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER} 
+
+		completion_reward = {
+			news_event = {
+				id = swiss.3
+				days = 7
+			}
+		}
+	
+	}
+	focus = {
+		id = SWI_Oltramare 
+		icon = GFX_focus_SWI_Oltramare
+		x = -3
+		y = 1
+		relative_position_id = SWI_National_Movement
+		prerequisite = { focus = SWI_National_Movement }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		available = {
+			always = no
+		}
+		mutually_exclusive = {
+			focus = SWI_Tobler
+		}
+		completion_reward = {
+			set_cosmetic_tag = SWI_Helveticia
+		}
+	}
+	focus = {
+		id = SWI_social_nationalism
+		icon = GFX_focus_SWI_welfare
+		x = -4
+		y = 2
+		relative_position_id = SWI_National_Movement
+		prerequisite = { focus = SWI_Oltramare }
+		cost = 5
+		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
+
+		completion_reward = {
+			add_ideas = SWI_welfare
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = SWI_friends_in_paris
+		icon = GFX_goal_FRA_paris
+		x = -2
+		y = 4
+		relative_position_id = SWI_National_Movement
+		prerequisite = { focus = SWI_prescute_minorities }
+		cost = 5
+		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
+
+		completion_reward = {
+			FRA={
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+				add_opinion_modifier = {
+					target = SWI
+					modifier = fascism_leanings_good
+				}
+			}
+		}
+	}
+	focus = {
+		id = SWI_prescute_minorities
+		icon = GFX_goal_generic_imprison_people
+		x = -2
+		y = 2
+		relative_position_id = SWI_National_Movement
+		prerequisite = { focus = SWI_Oltramare }
+		cost = 5
+		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
+
+		completion_reward = {
+			add_stability = -0.1
+			add_manpower = -1000
+			add_war_support = 0.1
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = SWI_state_propaganda
+		icon = GFX_goal_generic_propaganda_film
+		x = -6
+		y = 2
+		relative_position_id = SWI_National_Movement
+		prerequisite = { focus = SWI_Oltramare }
+		cost = 5
+		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
+
+		completion_reward = {
+			FRA={
+				add_timed_idea = {
+					idea = fascist_influence_weak
+					days = 600
+				}
+			}
+			ITA={
+				add_timed_idea = {
+					idea = fascist_influence_weak
+					days = 600
+				}
+			}
+			BAV={
+				add_timed_idea = {
+					idea = fascist_influence_weak
+					days = 600
+				}
+			}
+			GER={
+				add_timed_idea = {
+					idea = fascist_influence_weak
+					days = 600
+				}
+			}
+			AUS={
+				add_timed_idea = {
+					idea = fascist_influence_weak
+					days = 600
+				}
+			}
+		}
+	}
+	focus = {
+		id = SWI_state_corporatism
+		icon = GFX_focus_ICE_state_corporatism
+		x = -3
+		y = 3
+		relative_position_id = SWI_National_Movement
+		prerequisite = { focus = SWI_Oltramare }
+		cost = 5
+		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
+
+		completion_reward = {
+			add_ideas = SWI_state_corporatism_1
+		}
+	}
+	focus = {
+		id = SWI_economic_mobilization
+		icon = GFX_Goal_YUN_The_Mountain_Economy
+		x = -5
+		y = 3
+		relative_position_id = SWI_National_Movement
+		prerequisite = { focus = SWI_state_propaganda }
+		prerequisite = { focus = SWI_social_nationalism }
+		cost = 5
+		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
+
+		completion_reward = {
+			add_ideas = closed_economy
+		}
+	}
+	focus = {
+		id = SWI_regulate_free_trade
+		icon = GFX_goal_generic_corporatism
+		x = -4
+		y = 4
+		relative_position_id = SWI_National_Movement
+		prerequisite = { focus = SWI_economic_mobilization }
+		prerequisite = { focus = SWI_state_corporatism }
+		cost = 5
+		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SWI_state_corporatism_1
+				add_idea = SWI_state_corporatism_2
+			}
+		}
+	}
+	focus = {
+		id = SWI_pursue_greater_switzerland
+		icon = GFX_focus_SWI_greater_switzerland
+		x = 0
+		y = 2
+		relative_position_id = SWI_National_Movement
+		prerequisite = { focus = SWI_National_Movement }
+		cost = 5
+		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
+
+		completion_reward = {
+			unlock_decision_category_tooltip = SWI_expansionism_category
+		}
+	}
+	focus = {
+		id = SWI_Tobler
+		icon = GFX_focus_SWI_recall_robert_tobler
+		x = 3
+		y = 1
+		relative_position_id = SWI_National_Movement
+		prerequisite = { focus = SWI_National_Movement }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		available = {
+			always = no
+		}
+		mutually_exclusive = {
+			focus = SWI_Oltramare
+		}
+		completion_reward = {
+			add_ideas = SWI_prussian_model
+		}
+	}
+	focus = {
+		id = SWI_restore_the_council
+		icon = GFX_focus_SWI_dissolve_the_federal_council
+		x = 2
+		y = 2
+		relative_position_id = SWI_National_Movement
+		prerequisite = { focus = SWI_Tobler }
+		cost = 5
+		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
+		mutually_exclusive = {
+			focus = SWI_maintain_the_course
+		}
+		completion_reward = {
+			set_politics = { ruling_party = neutrality elections_allowed = yes }
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.5
+			}
+			activate_advisor = SWI_robert_tobler
+			add_country_leader_role = {
+				character = SWI_federal_council
+				country_leader = {
+					ideology = neutrality_subtype
+					traits = { popular_figurehead }
+					expire = "1965.1.1"
+				}
+				promote_leader = yes 
+			}
+		}
+	}
+	focus = {
+		id = SWI_maintain_the_course
+		icon = GFX_goal_support_fascism
+		x = 6
+		y = 2
+		relative_position_id = SWI_National_Movement
+		prerequisite = { focus = SWI_Tobler }
+		cost = 5
+		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
+		mutually_exclusive = {
+			focus = SWI_restore_the_council
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SWI_unite_the_swiss
+		icon = GFX_goal_generic_national_unity
+		x = 3
+		y = 3
+		relative_position_id = SWI_National_Movement
+		prerequisite = { focus = SWI_maintain_the_course focus = SWI_restore_the_council }
+		cost = 5
+		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
+
+		completion_reward = {
+			add_stability = 0.1
+			add_manpower = 10000
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			add_opinion_modifier = {
+				target = FRA
+				modifier = small_increase
+			}
+			add_opinion_modifier = {
+				target = ITA
+				modifier = small_increase
+			}
+		}
+	}
+	focus = {
+		id = SWI_Crackdown_on_democracy
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 7
+		y = 3
+		relative_position_id = SWI_National_Movement
+		prerequisite = { focus = SWI_maintain_the_course }
+		cost = 5
+		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
+
+		completion_reward = {
+			add_popularity = {
+				ideology = conservatives
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = socialist
+				popularity = -0.1
+			}
+		}
+	}
+	focus = {
+		id = SWI_Toblerone_donations
+		icon = GFX_goal_Toblerone
+		x = 5
+		y = 3
+		relative_position_id = SWI_National_Movement
+		prerequisite = { focus = SWI_maintain_the_course }
+		cost = 5
+		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
+
+		completion_reward = {
+			add_ideas = SWI_Toblerone_help
+		}
+	}
+	focus = {
+		id = SWI_Prussian_Military_Alliance
+		icon = GFX_focus_ger_ruling
+		x = 6
+		y = 4
+		relative_position_id = SWI_National_Movement
+		prerequisite = { focus = SWI_maintain_the_course }
+		cost = 5
+		search_filters = { FOCUS_FILTER_SWI_MILITARY_READINESS } 
+
+		completion_reward = {
+			army_experience = 50
+			air_experience = 50 
+			navy_experience = 25
+			add_opinion_modifier = {
+				target = GER
+				modifier = unholy_alliance
+			}
+		}
+	}
+}

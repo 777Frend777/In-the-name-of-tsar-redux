@@ -1,0 +1,767 @@
+ideas = {
+
+	country = {
+		HUN_social_welfare_idea = {
+			allowed = { 
+				always = no 
+			}
+			picture = HUN_social_welfare_idea
+			modifier = {
+				political_power_gain = 0.15
+				consumer_goods_factor = 0.02
+			}
+		}
+        HUN_reformed_banks_idea = {
+			allowed = { 
+				always = no 
+			}
+			picture = eastern_switzerland_idea
+			modifier = {
+				trade_opinion_factor = 0.50
+				political_power_gain = 0.05
+			}
+		}
+		HUN_improve_laws = {
+			allowed = {
+				always = no
+			}
+
+            picture = generic_constitutional_guarantees
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05 
+				 	stability_factor = 0.05
+			}
+		}
+		HUN_new_government = {
+			allowed = {
+				always = no
+			}
+
+            picture = hun_disorganized
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.4
+				stability_factor = -0.05 
+				political_advisor_cost_factor = 0.25 
+				economy_cost_factor = 0.25 
+				mobilization_laws_cost_factor = 0.25
+			}
+		}
+		HUN_purged_government = {
+			allowed = {
+				always = no
+			}
+
+            picture = trotskyite_plot
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.5
+				stability_factor = -0.1
+			}
+		}
+		HUN_red_guard = {
+			allowed = {
+				always = no
+			}
+
+            picture = hun_red_guard
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				drift_defence_factor = 0.25 
+				communism_drift = 0.05
+				stability_factor = -0.1
+			}
+		}
+		HUN_goverment_council = {
+			allowed = {
+				always = no
+			}
+
+            picture = hun_parliament
+			removal_cost = -1
+			
+			modifier = {
+				 	stability_factor = 0.10 
+				 	political_power_gain = 0.25 
+			}
+		}
+		HUN_agrarianism_idea = {
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				global_building_slots_factor = 0.1
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		HUN_coup_danger = {
+			allowed = {
+				always = no
+			}
+
+            picture = hun_counterrevolution
+			removal_cost = -1
+			
+			modifier = {
+				 	stability_factor = -0.10 
+				 	fascism_drift = 0.10 
+			}
+		}
+		HUN_horthy_hand = {
+			allowed = {
+				always = no
+			}
+
+            picture = hun_horthy
+			removal_cost = -1
+			
+			modifier = {
+				 	political_power_gain = 0.15
+				 	stability_factor = 0.10   
+			}
+		}
+		HUN_horthy_king = {
+			allowed = {
+				always = no
+			}
+
+            picture = hun_horthy
+			removal_cost = -1
+			
+			modifier = {
+				 	political_power_gain = 0.05
+				 	stability_factor = 0.05   
+			}
+		}
+		HUN_horthy_king2 = {
+			allowed = {
+				always = no
+			}
+
+            picture = hun_horthy
+			removal_cost = -1
+			
+			modifier = {
+				 	political_power_gain = 0.1
+				 	stability_factor = 0.1  
+			}
+		}
+		HUN_improve_construction = {
+			allowed = {
+				always = no
+			}
+
+            picture = generic_production_bonus
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05 
+				industry_repair_factor = 0.1 
+			}
+		}
+		HUN_autarky = {
+			allowed = {
+				always = no
+			}
+
+            picture = generic_neutrality_drift_bonus
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		HUN_reperations = {
+		allowed = {
+				always = no
+			}
+
+            picture = ger_mefo_bills_payment
+			removal_cost = -1
+			
+			modifier = {
+            production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		HUN_invite_investors = {
+			allowed = {
+				always = no
+			}
+
+            picture = ger_mefo_bills_payment
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.1 
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		HUN_boost_weapon = {
+			allowed = {
+				always = no
+			}
+
+            picture = MEX_politicised_army_2
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				equipment_conversion_speed = 0.05 
+			}
+		}
+		HUN_tactics = {
+			allowed = {
+				always = no
+			}
+
+            picture = SPA_la_division_azul
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_org_Factor = 0.05 
+			}
+		}
+		HUN_air_production = {
+			allowed = {
+				always = no
+			}
+
+            picture = generic_air_bonus
+			removal_cost = -1
+			
+			equipment_bonus = {
+				fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				CAS_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				tac_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}	
+		}
+		}
+		HUN_spirit = {
+			allowed = {
+				always = no
+			}
+
+            picture = FRA_national_mobilization_focus
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.10
+				stability_factor = 0.10 
+			}
+		}
+		HUN_youth_legions_red = {
+			allowed = {
+				always = no
+			}
+
+            picture = generic_manpower_bonus
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.05
+				conscription_factor = 0.05
+			}
+		}
+		HUN_higher_conscription = {
+			allowed = {
+				always = no
+			}
+
+            picture = generic_manpower_bonus
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = -0.05
+				conscription_factor = 0.07
+			}
+		}
+		HUN_efficent_army = {
+			allowed = {
+				always = no
+			}
+
+            picture = generic_communist_army
+			removal_cost = -1
+			
+			modifier = {
+			army_attack_factor = 0.05
+		    army_defence_factor = 0.05 
+		    army_core_defence_factor = 0.05
+			}
+		}
+		HUN_propaganda_land = {
+			allowed = {
+				always = no
+			}
+
+            picture = generic_communism_drift_bonus
+			removal_cost = -1
+			
+			modifier = {
+			    war_support_factor = 0.20
+			    stability_factor = -0.05 
+			 	political_power_factor = -0.1
+			}
+		}
+		HUN_ger_support = {
+			allowed = {
+				always = no
+			}
+            cancel = { GER = { exists = no } }
+
+            picture = hun_bav
+			removal_cost = -1
+			
+			modifier = {
+			send_volunteer_divisions_required = -0.45
+			send_volunteers_tension = -0.50
+			send_volunteer_size = 1  
+			}
+		}
+		HUN_schools = {
+			allowed = {
+				always = no
+			}
+
+            picture = hol_the_foundations_of_defense
+			removal_cost = -1
+			
+			modifier = {
+			    research_speed_factor = 0.02
+			    stability_factor = 0.05 
+			}
+		}
+		HUN_output = {
+			allowed = {
+				always = no
+			}
+
+            picture = generic_production_bonus
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.03
+				line_change_production_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		HUN_construction = {
+			allowed = {
+				always = no
+			}
+
+            picture = eng_spirit_of_the_industrial_revolution
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		HUN_freedom_worker = {
+			allowed = {
+				always = no
+			}
+
+            picture = generic_goods_red_bonus
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		HUN_farming = {
+			allowed = {
+				always = no
+			}
+
+            picture = generic_agrarian_reform
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		HUN_officer_staff = {
+			allowed = {
+				always = no
+			}
+
+            picture = general_staff
+			removal_cost = -1
+			
+			modifier = {
+				training_time_army_factor = -0.1 
+				planning_speed = 0.10 
+			}
+		}
+		HUN_equal = {
+			allowed = {
+				always = no
+			}
+
+            picture = air_support_focus
+			removal_cost = -1
+			
+			modifier = {
+            stability_factor = 0.05
+            political_power_gain = 0.05
+			}
+		}
+		HUN_inte = {
+			allowed = {
+				always = no
+			}
+
+            picture = generic_deal_with_the_devil2
+			removal_cost = -1
+			
+			modifier = {
+            production_speed_buildings_factor = 0.05
+            political_power_gain = 0.10
+			}
+		}
+		HUN_manga = {
+			allowed = {
+				always = no
+			}
+
+            picture = generic_purge
+			removal_cost = -1
+			
+			modifier = {
+			conscription_factor = 0.05
+			stability_factor = -0.02
+			}
+		}
+		HUN_city_gov = {
+			allowed = {
+				always = no
+			}
+
+            picture = FRA_matignon_agreements
+			removal_cost = -1
+			
+			modifier = {
+		    stability_factor = 0.05
+			political_power_gain = -0.05
+			}
+		}
+		HUN_city_aut = {
+			allowed = {
+				always = no
+			}
+
+            picture = generic_agrarian_reform
+			removal_cost = -1
+			
+			modifier = {
+		    stability_factor = -0.02
+			monthly_population = 0.1
+            production_factory_start_efficiency_factor = 0.075
+			}
+		}
+		HUN_help = {
+			allowed = {
+				always = no
+			}
+
+            picture = MEX_church_power_3
+			removal_cost = -1
+			
+			modifier = {
+		    stability_factor = 0.1
+		    political_power_gain = -0.2
+			}
+		}
+		HUN_build = {
+			allowed = {
+				always = no
+			}
+
+            picture = MEX_church_power_1
+			removal_cost = -1
+			
+			modifier = {
+		    stability_factor = -0.1
+		    political_power_gain = 0.2
+			}
+		}
+		HUN_health_ca = {
+			allowed = {
+				always = no
+			}
+
+            picture = hol_haven_of_tolerance
+			removal_cost = -1
+			
+			modifier = {
+		    stability_factor = 0.01
+		    production_factory_efficiency_gain_factor = 0.05 
+		    MONTHLY_POPULATION = 0.05 
+			}
+		}
+		HUN_society = {
+			allowed = {
+				always = no
+			}
+
+            picture = generic_morale_bonus
+			removal_cost = -1
+			
+			modifier = {
+		    stability_factor = 0.01
+		    drift_defence_factor = 0.5
+			}
+		}
+		HUN_dis = {
+			allowed = {
+				always = no
+			}
+
+            picture = generic_pp_unity_bonus
+			removal_cost = -1
+            
+            modifier = {
+		    political_power_gain = 0.1 
+			}
+			research_bonus = {
+				industry = -0.05
+			}
+			
+		}
+		HUN_infaltration_spies = {
+			allowed = {
+				always = no
+			}
+
+            picture = generic_secret_police
+			removal_cost = -1
+			
+			modifier = {
+				intel_network_gain = 0.1 
+				decryption_factor = 0.1
+				operative_slot = 1 
+			}
+		}
+	HUN_police_rule = {
+			allowed = {
+				always = no
+			}
+
+            picture = generic_reserve_divisions
+			removal_cost = -1
+			
+			modifier = {
+				resistance_damage_to_garrison_on_our_occupied_states = -0.25 
+				decryption_factor = 0.1 
+			}
+		}
+	HUN_more_stability = {
+			allowed = {
+				always = no
+			}
+
+            picture = generic_local_self_management
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = -0.05 
+			}
+		}	
+	HUN_more_army = {
+			allowed = {
+				always = no
+			}
+
+            picture = generic_manpower_bonus
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				conscription_factor = 0.05 
+			}
+		}
+	HUN_long_live_nation = {
+			allowed = {
+				always = no
+			}
+
+            picture = generic_morale_bonus
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.1
+			}
+		}		
+	HUN_vadasz = {
+			allowed = {
+				always = no
+			}
+
+            picture = generic_spy_coup
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.1
+				operative_slot = 1 
+			}
+		}		
+	HUN_monarch_spirit = {
+			allowed = {
+				always = no
+			}
+
+            picture = HUN_hungarian_monarchy_habsburg
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.15
+				army_core_attack_factor = 0.1 
+             	army_core_defence_factor = 0.1 
+			}
+		}		
+	HUN_council = {
+			allowed = {
+				always = no
+			}
+
+            picture = HUN_hungarian_monarchy_fascism
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+                political_power_gain = -0.05
+			}
+		}	
+	HUN_investors = {
+			allowed = {
+				always = no
+			}
+
+            picture = generic_foreign_capital
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05 
+                production_speed_buildings_factor = 0.1 
+			}
+		}
+	}
+	
+	aircraft_manufacturer = {
+			
+		designer = yes
+		
+		mw_aircraft = {
+			
+			picture = generic_air_manufacturer_2
+
+			
+			allowed = {
+				original_tag = HUN
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			# made light bombers Weiss WM-21
+						
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	naval_manufacturer = {
+	
+		designer = yes
+	
+		HUN_ganz_danubius = {
+			
+			picture = generic_naval_manufacturer_1
+
+			allowed = {
+				original_tag = HUN
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { naval_manufacturer }
+		}
+	}
+
+	industrial_concern = {
+	
+		HUN_mavag = {
+			
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				original_tag = HUN
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+		}
+	}
+
+	materiel_manufacturer = {
+	
+		designer = yes
+	
+		HUN_femaru_fegyver_es_gepgyar = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+				original_tag = HUN
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+	}
+}

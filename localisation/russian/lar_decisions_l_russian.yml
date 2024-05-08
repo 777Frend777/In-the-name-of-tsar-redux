@@ -1,0 +1,438 @@
+﻿l_russian:
+ SPR_the_inevitable_civil_war: "Неизбежная гражданская война" #NT!
+ SPR_the_inevitable_civil_war_desc: "После выборов гражданская война стала практически неизбежной. [Root.GetSCWsideloc] Мы должны перехватить инициативу и обеспечить контроль над гарнизонами страны." #NT!
+ SPR_NATIONALISTS_INSTRUCTIONS: "Крайне важно, чтобы мы не медлили слишком долго, иначе мы дадим республиканцам время подготовить свою оборону." #NT!
+ SPR_REPUBLICANS_INSTRUCTIONS: "Мы должны отсрочить гражданскую войну, насколько это возможно, давая нам время подготовиться к националистическому восстанию." #NT!
+ spa_civil_war_divisions_counter_full_breakdown: "[SPA.GetNameDefCap] в настоящее время начинался бы с [?SPR.spa_civil_war_divisions_counter_var|+0] §HDivisions§!, если бы Гражданская война началась сейчас.\n" #NT!
+ spa_civil_war_divisions_counter_icon_value: "[?SPR.spa_civil_war_divisions_counter_var|0H]"
+ spr_civil_war_divisions_counter_full_breakdown: "Республиканская Испания в настоящее время начиналась бы с [?SPR.spr_civil_war_divisions_counter_var|+0] §HDivisions§!, если бы Гражданская война началась сейчас.\n" #NT!
+ spr_civil_war_divisions_counter_icon_value: "[?SPR.spr_civil_war_divisions_counter_var|0H]"
+ SPR_the_inevitable_civil_war_map_category_name: "Выберите, где управлять влиянием своего гарнизона." #NT!
+ SPR_opposition_civil_war_preparations: "Подготовка оппозиции к гражданской войне" #NT!
+ SPR_opposition_civil_war_preparations_desc: "Пока мы стараемся помешать каждому их шагу, наши враги не бездействуют. Нам следует помнить об их действиях, готовясь к предстоящему конфликту." #NT!
+ SPR_civil_war_offensives: "Наступления гражданской войны" #NT!
+ SPR_civil_war_offensives_desc: "Проблемы с нашей способностью снабжать наши передовые войска затрудняют эффективные наступления на опорные пункты противника. Мы должны планировать заранее и адекватно расширять склады оборудования на передовой задолго до подготовки каких-либо крупных наступлений." #NT!
+ SPR_civil_war_offensives_map_category_name: "Выберите, где подготовить наступление." #NT!
+ SPA_military_plot_nationalists: "Военный заговор" #NT!
+ SPA_military_plot_nationalists_desc: "Наша подготовка к свержению правительства уже идет, но чтобы избежать повторения неудавшейся попытки государственного переворота 1932 года, мы должны обеспечить себе достаточную поддержку среди народа, прежде чем начать наш переворот. Время должно быть выбрано идеально!" #NT!
+ SPR_military_plot_republicans: "Военный заговор" #NT!
+ SPR_military_plot_republicans_desc: "До нас дошли слухи о зловещем заговоре с целью свержения правительства, и, несмотря на наш недавний опыт подобных попыток государственного переворота, мы совершенно не готовы справиться с еще одним. Мы должны помешать их планам везде, где только можем, и задержать их, чтобы дать себе время подготовиться." #NT!
+ SPA_primo_de_rivera_speech: "Речь Примо де Риверы" #NT!
+ SPA_primo_de_rivera_speech_desc: "Хосе Антонио Примо де Ривера — один из основателей Испанской фаланги. Будучи оратором, критикующим демократию, возможно, его следует поощрять к дальнейшим выступлениям, чтобы увеличить нашу народную поддержку и еще больше дестабилизировать нацию." #NT!
+ SPA_primo_de_rivera_imprisoned: "Примо де Ривера был заключен в тюрьму" #NT!
+ SPR_inevitable_civil_war_in_progress_flag: "В настоящее время находится решение о неизбежной гражданской войне." #NT!
+ SPR_imprison_primo_de_rivera: "Тюрьма Примо де Ривера" #NT!
+ SPR_imprison_primo_de_rivera_desc: "Хосе Антонио Примо де Ривера достаточно обеспокоил страну своими непрекращающимися подстрекательскими речами. Мы арестуем его и будем держать там, где сможем за ним присматривать. Голос Фаланги должен замолчать." #NT!
+ SPR_imprison_primo_de_rivera_tt: "Предотвращает дальнейшие подстрекательские речи Примо де Риверы.\n" #NT!
+ SPR_primo_de_rivera_first_speech: "Примо де Ривера произнес свою первую речь" #NT!
+ SPA_political_assassination: "Политическое убийство" #NT!
+ SPA_political_assassination_desc: "Наши политические противники оказываются занозой на нашем глазу, склоняя людей, которые в противном случае могли бы склониться на нашу сторону. Тактически устранив одного из наших ключевых оппонентов, мы можем ослабить давление на нас и дать нашему сообщению больше шансов дойти до нас." #NT!
+ SPR_political_arrest: "Политический арест" #NT!
+ SPR_political_arrest_desc: "Наши политические враги прибегли к убийствам, чтобы донести свою идею до цели. Мы не можем этого терпеть – виновные должны быть привлечены к ответственности!" #NT!
+ SPA_political_assassination_flag: "Произошло политическое убийство" #NT!
+ SPA_sway_leader_loyalty: "Влияние лидера на лояльность" #NT!
+ SPA_sway_leader_loyalty_desc: "При наличии правильных средств преследования мы вполне можем расширить нашу поддержку среди ведущих офицеров испанской армии. Их поддержка, когда придет время, может оказаться неоценимой." #NT!
+ SPA_swayed_leader_loyalty_flag: "Лояльность пошатнулась." #NT!
+ SPR_secure_leader_loyalty: "Обеспечьте лояльность лидера" #NT!
+ SPR_secure_leader_loyalty_desc: "До нас дошли слухи, что под вопросом лояльность одного из наших ранее лояльных военачальников. Мы должны гарантировать, что вернем их лояльность, даже если пряник, которым мы должны им махать, может оказаться довольно дорогим..." #NT!
+ SPR_reassign_disloyal_leader: "Переназначить нелояльного лидера" #NT!
+ SPR_reassign_disloyal_leader_desc: "До нас дошли слухи, что лояльность некоторых наших военачальников находится под вопросом. Нам было бы полезно перевести их на удаленные должности, чтобы они не могли легко продолжать работу над заговорами." #NT!
+ SPR_reassign_disloyal_leader_tt: "Не будет доступен националистам в течение двух месяцев после начала Гражданской войны.\n" #NT!
+ SPA_suppress_the_strikes: "Подавление забастовок" #NT!
+ SPA_suppress_the_strikes_desc: "Забастовки вызывают массовые беспорядки и наносят экономический ущерб нашей стране. Мы отправим наших ополченцев, чтобы разогнать их и обеспечить, чтобы люди вернулись к работе." #NT!
+ SPA_suppress_the_strikes_tt: "Полностью подавил национальные забастовки." #NT!
+ SPR_concessions_to_the_left: "Уступки левым" #NT!
+ SPR_concessions_to_the_left_desc: "У бастующих есть веские причины для беспокойства. Мы пообещаем разобраться с ними, а тем временем пойти на уступки в виде прекращения преследования незаконного захвата земель, мелких социальных преступлений и воровства. Это должно послужить некоторому снижению социальных волнений." #NT!
+ SPA_concessions_to_the_left_tt: "Полностью уступил левым" #NT!
+ SPR_primo_de_rivera_speech_mission: "Речь Примо де Риверы" #NT!
+ SPR_primo_de_rivera_speech_mission_desc: "Хосе Антонио Примо де Ривера, один из основателей Испанской фаланги, планирует произнести подстрекательскую речь, привлекая людей к знамени националистов и спровоцируя гражданские беспорядки." #NT!
+ SPA_imprison_primo_de_rivera_mission: "Тюрьма Примо де Ривера" #NT!
+ SPA_imprison_primo_de_rivera_mission_desc: "Похоже, правительство решило, что Примо де Ривера вызвал достаточно беспорядков, и выдало ордер на его арест!" #NT!
+ SPR_political_assassination_mission: "Политическое убийство" #NT!
+ SPR_political_assassination_mission_desc: "Кровожадная риторика наших политических врагов призвала к устранению ведущего сторонника нашего дела... Нам не следует удивляться, если кто-то решит действовать в соответствии с этими словами." #NT!
+ SPA_political_arrest_mission: "Политический арест" #NT!
+ SPA_political_arrest_mission_desc: "Правительство добивается возмездия за устранение одного из своих сторонников и пытается арестовать кого-то, чтобы подать ему пример." #NT!
+ SPR_sway_leader_loyalty_mission: "Влияние лидера на лояльность" #NT!
+ SPR_sway_leader_loyalty_mission_desc: "Националистические заговорщики стремятся расширить свою поддержку среди нашего военного руководства, и мы узнали, что к различным людям обращались с заманчивыми предложениями... Мы можем только молиться, чтобы им не удалось склонить кого-либо из них." #NT!
+ SPA_reassign_disloyal_leader_mission: "Переназначить нелояльного лидера" #NT!
+ SPA_reassign_disloyal_leader_mission_desc: "Правительство становится все более подозрительным к некоторым из наших сторонников в армии и теперь планирует перевести одного из наших ключевых сообщников на удаленную должность, что значительно усложнит нам планирование и сотрудничество." #NT!
+ SPR_suppress_the_strikes_mission: "Подавление забастовок" #NT!
+ SPR_suppress_the_strikes_mission_desc: "Правые ополченцы и штрейкбрехеры расправляются с нашими недовольными рабочими, заставляя их вернуться на работу и усиливая социальные волнения и разочарование в способности правительства защитить своих граждан." #NT!
+ SPA_concessions_to_the_left_mission: "Уступки левым" #NT!
+ SPA_concessions_to_the_left_mission_desc: "Правительство идет на широкие уступки бастующим рабочим, позволяя им сходить с рук за то, за что сажают в тюрьму наших правых братьев и сестер. Несмотря на презрение, эти меры, похоже, пользуются популярностью среди бастующих." #NT!
+ SPA_expand_influence_nationalists_trigger_tt: "У националистов меньше §YTotal§! контроль над гарнизоном." #NT!
+ SPR_expand_influence_republicans_trigger_tt: "У националистов минимум §YWeak§! контроль над гарнизоном." #NT!
+ SPA_expand_influence_nationalists_tt: "Увеличьте контроль националистов над гарнизоном на один шаг.\n\n" #NT!
+ SPR_expand_influence_republicans_tt: "Уменьшите контроль националистов над гарнизоном на один шаг.\n\n" #NT!
+ SPA_garrison_control_nationalists_none_tt: "§LТекущий контроль националистов над гарнизоном:§! §RNone§_1\n§LТекущие дивизии, созданные после начала Гражданской войны: §Y0§_1 Националистическая - §Y3§_1 Республиканская§!\n" #NT!
+ SPA_garrison_control_nationalists_weak_tt: "§LТекущий контроль националистов над гарнизоном:§! §OWeak§_1\n§LТекущие дивизии, созданные после начала Гражданской войны: §Y1§_1 Националистическая - §Y2§_1 Республиканская§!\n" #NT!
+ SPA_garrison_control_nationalists_strong_tt: "§LТекущий контроль националистов над гарнизоном:§! §YStrong§_1\n§LТекущие дивизии, созданные после начала Гражданской войны: §Y2§_1 Националистическая - §Y1§_1 Республиканская§!\n" #NT!
+ SPA_garrison_control_nationalists_total_tt: "§LТекущий контроль националистов над гарнизоном:§! §GTotal§_1\n§LТекущие дивизии, созданные после начала Гражданской войны: §Y3§_1 Националистическая - §Y0§_1 Республиканская§!\n" #NT!
+ SPA_garrison_control_republicans_none_tt: "§LТекущий контроль националистов над гарнизоном:§! §GNone§_1\n§LТекущие дивизии, созданные после начала Гражданской войны: §Y0§_1 Националистическая - §Y3§_1 Республиканская§!\n" #NT!
+ SPA_garrison_control_republicans_weak_tt: "§LТекущий контроль националистов над гарнизоном:§! §YWeak§_1\n§LТекущие дивизии, созданные после начала Гражданской войны: §Y1§_1 Националистическая - §Y2§_1 Республиканская§!\n" #NT!
+ SPA_garrison_control_republicans_strong_tt: "§LТекущий контроль националистов над гарнизоном:§! §OStrong§_1\n§LТекущие дивизии, созданные после начала Гражданской войны: §Y2§_1 Националистическая - §Y1§_1 Республиканская§!\n" #NT!
+ SPA_garrison_control_republicans_total_tt: "§LТекущий контроль националистов над гарнизоном:§! §RTotal§_1\n§LТекущие дивизии, созданные после начала Гражданской войны: §Y3§_1 Националистическая - §Y0§_1 Республиканская§!\n" #NT!
+ SPA_already_expanding_influence_flag: "Уже расширяется влияние гарнизона" #NT!
+ SPA_expand_influence_in_the_galicia_garrison: "Расширение влияния в гарнизоне Галиции" #NT!
+ SPA_expand_influence_in_the_asturias_garrison: "Расширение влияния в гарнизоне Астурии" #NT!
+ SPA_expand_influence_in_the_leon_garrison: "Расширение влияния в гарнизоне Леона" #NT!
+ SPA_expand_influence_in_the_valladolid_garrison: "Расширение влияния в гарнизоне Вальядолида" #NT!
+ SPA_expand_influence_in_the_burgos_garrison: "Расширение влияния в гарнизоне Бургоса" #NT!
+ SPA_expand_influence_in_the_pais_vasco_garrison: "Расширение влияния в гарнизоне Паис-Васко" #NT!
+ SPA_expand_influence_in_the_navarra_garrison: "Расширение влияния в гарнизоне Наварры" #NT!
+ SPA_expand_influence_in_the_western_aragon_garrison: "Расширение влияния в гарнизоне Западного Арагона" #NT!
+ SPA_expand_influence_in_the_eastern_aragon_garrison: "Расширение влияния в гарнизоне Восточного Арагона" #NT!
+ SPA_expand_influence_in_the_catalunya_garrison: "Расширение влияния в гарнизоне Каталонии" #NT!
+ SPA_expand_influence_in_the_salamanca_garrison: "Расширение влияния в гарнизоне Саламанки" #NT!
+ SPA_expand_influence_in_the_madrid_garrison: "Расширение влияния в мадридском гарнизоне" #NT!
+ SPA_expand_influence_in_the_guadalajara_garrison: "Расширение влияния в гарнизоне Гвадалахары" #NT!
+ SPA_expand_influence_in_the_valencia_garrison: "Расширение влияния в гарнизоне Валенсии" #NT!
+ SPA_expand_influence_in_the_extremadura_garrison: "Расширение влияния в гарнизоне Эстремадуры" #NT!
+ SPA_expand_influence_in_the_ciudad_real_garrison: "Расширение влияния в гарнизоне Сьюдад-Реаля" #NT!
+ SPA_expand_influence_in_the_murcia_garrison: "Расширение влияния в гарнизоне Мурсии" #NT!
+ SPA_expand_influence_in_the_sevilla_garrison: "Расширение влияния в гарнизоне Севильи" #NT!
+ SPA_expand_influence_in_the_cordoba_garrison: "Расширение влияния в гарнизоне Кордовы" #NT!
+ SPA_expand_influence_in_the_granada_garrison: "Расширение влияния в гарнизоне Гранады" #NT!
+ SPA_expand_influence_in_the_canarias_garrison: "Расширение влияния в Канарском гарнизоне" #NT!
+ SPA_expand_influence_in_the_baleares_garrison: "Расширение влияния в гарнизоне Балеарских островов" #NT!
+ SPA_expand_influence_in_the_galicia_garrison_mission: "Влиянию, брошенному вызову в гарнизоне Галиции" #NT!
+ SPA_expand_influence_in_the_asturias_garrison_mission: "Влиянию бросают вызов в гарнизоне Астурии" #NT!
+ SPA_expand_influence_in_the_leon_garrison_mission: "Влиянию бросают вызов в гарнизоне Леона" #NT!
+ SPA_expand_influence_in_the_valladolid_garrison_mission: "Влиянию брошен вызов в гарнизоне Вальядолида" #NT!
+ SPA_expand_influence_in_the_burgos_garrison_mission: "Влиянию брошен вызов в гарнизоне Бургоса" #NT!
+ SPA_expand_influence_in_the_pais_vasco_garrison_mission: "Влиянию бросают вызов в гарнизоне Паис-Васко" #NT!
+ SPA_expand_influence_in_the_navarra_garrison_mission: "Влиянию бросают вызов в гарнизоне Наварры" #NT!
+ SPA_expand_influence_in_the_western_aragon_garrison_mission: "Влиянию бросают вызов в гарнизоне Западного Арагона" #NT!
+ SPA_expand_influence_in_the_eastern_aragon_garrison_mission: "Влияние в гарнизоне Восточного Арагона оспаривается" #NT!
+ SPA_expand_influence_in_the_catalunya_garrison_mission: "Влиянию бросают вызов в гарнизоне Каталонии" #NT!
+ SPA_expand_influence_in_the_salamanca_garrison_mission: "Влиянию бросают вызов в гарнизоне Саламанки" #NT!
+ SPA_expand_influence_in_the_madrid_garrison_mission: "Влиянию бросают вызов в мадридском гарнизоне" #NT!
+ SPA_expand_influence_in_the_guadalajara_garrison_mission: "Влиянию бросают вызов в гарнизоне Гвадалахары" #NT!
+ SPA_expand_influence_in_the_valencia_garrison_mission: "Влиянию брошен вызов в гарнизоне Валенсии" #NT!
+ SPA_expand_influence_in_the_extremadura_garrison_mission: "Влиянию бросают вызов в гарнизоне Эстремадуры" #NT!
+ SPA_expand_influence_in_the_ciudad_real_garrison_mission: "Влиянию бросают вызов в гарнизоне Сьюдад-Реаля" #NT!
+ SPA_expand_influence_in_the_murcia_garrison_mission: "Влиянию бросают вызов в гарнизоне Мурсии" #NT!
+ SPA_expand_influence_in_the_sevilla_garrison_mission: "Влиянию бросают вызов в гарнизоне Севильи" #NT!
+ SPA_expand_influence_in_the_cordoba_garrison_mission: "Влиянию бросают вызов в гарнизоне Кордовы" #NT!
+ SPA_expand_influence_in_the_granada_garrison_mission: "Влиянию бросают вызов в гарнизоне Гранады" #NT!
+ SPA_expand_influence_in_the_canarias_garrison_mission: "Влиянию, брошенному вызову в гарнизоне Канарских островов" #NT!
+ SPA_expand_influence_in_the_baleares_garrison_mission: "Влиянию бросают вызов в гарнизоне Балеарских островов" #NT!
+ SPR_preparing_offensive_in_progress_flag: "Уже готовимся к наступлению" #NT!
+ SPR_unplanned_offensive_flag: "Совершил незапланированное наступление" #NT!
+ SPA_galicia_offensive: "Галицианское наступление" #NT!
+ SPA_asturias_offensive: "Астурийское наступление" #NT!
+ SPA_leon_offensive: "Леон Наступление" #NT!
+ SPA_valladolid_offensive: "Вальядолидское наступление" #NT!
+ SPA_burgos_offensive: "Бургосское наступление" #NT!
+ SPA_pais_vasco_offensive: "Наступление Паиса Васко" #NT!
+ SPA_navarra_offensive: "Наваррское наступление" #NT!
+ SPA_western_aragon_offensive: "Наступление на Западный Арагон" #NT!
+ SPA_eastern_aragon_offensive: "Восточное наступление на Арагон" #NT!
+ SPA_catalunya_offensive: "Каталонское наступление" #NT!
+ SPA_salamanca_offensive: "Саламанкское наступление" #NT!
+ SPA_madrid_offensive: "Мадридское наступление" #NT!
+ SPA_guadalajara_offensive: "Гвадалахарское наступление" #NT!
+ SPA_valencia_offensive: "Валенсийское наступление" #NT!
+ SPA_extremadura_offensive: "Эстремадура наступление" #NT!
+ SPA_ciudad_real_offensive: "Сьюдад-Реаль Наступление" #NT!
+ SPA_murcia_offensive: "Наступление Мурсии" #NT!
+ SPA_sevilla_offensive: "Севилья Наступление" #NT!
+ SPA_cordoba_offensive: "Кордовское наступление" #NT!
+ SPA_granada_offensive: "Гранадское наступление" #NT!
+ SPR_preparing_offensive: "Подготовка наступления" #NT!
+ SPA_galicia_offensive_mission: "Надвигающееся наступление в Галиции" #NT!
+ SPA_asturias_offensive_mission: "Надвигающееся наступление на Астурию" #NT!
+ SPA_leon_offensive_mission: "Надвигающееся наступление на Леон" #NT!
+ SPA_valladolid_offensive_mission: "Надвигающееся наступление на Вальядолид" #NT!
+ SPA_burgos_offensive_mission: "Надвигающееся наступление на Бургос" #NT!
+ SPA_pais_vasco_offensive_mission: "Надвигающееся наступление Паиса Васко" #NT!
+ SPA_navarra_offensive_mission: "Надвигающееся наступление на Наварру" #NT!
+ SPA_western_aragon_offensive_mission: "Надвигающееся наступление на Западный Арагон" #NT!
+ SPA_eastern_aragon_offensive_mission: "Надвигающееся наступление на Восточный Арагон" #NT!
+ SPA_catalunya_offensive_mission: "Надвигающееся наступление в Каталонии" #NT!
+ SPA_salamanca_offensive_mission: "Надвигающееся наступление на Саламанку" #NT!
+ SPA_madrid_offensive_mission: "Надвигающееся наступление на Мадрид" #NT!
+ SPA_guadalajara_offensive_mission: "Надвигающееся наступление в Гвадалахаре" #NT!
+ SPA_valencia_offensive_mission: "Надвигающееся наступление на Валенсию" #NT!
+ SPA_extremadura_offensive_mission: "Надвигающееся наступление на Эстремадуру" #NT!
+ SPA_ciudad_real_offensive_mission: "Надвигающееся наступление на Сьюдад-Реаль" #NT!
+ SPA_murcia_offensive_mission: "Надвигающееся наступление на Мурсию" #NT!
+ SPA_sevilla_offensive_mission: "Предстоящее наступление «Севильи»" #NT!
+ SPA_cordoba_offensive_mission: "Надвигающееся наступление на Кордову" #NT!
+ SPA_granada_offensive_mission: "Надвигающееся наступление на Гранаду" #NT!
+ SPA_activate_galicia_fifth_columnists: "Активировать Галицию Пятую Колонну" #NT!
+ SPA_activate_asturias_fifth_columnists: "Активировать Астурийскую Пятую Колонну" #NT!
+ SPA_activate_leon_fifth_columnists: "Активировать Леонских Пятых Колоннистов" #NT!
+ SPA_activate_valladolid_fifth_columnists: "Активировать «Пятую колонну Вальядолида»" #NT!
+ SPA_activate_burgos_fifth_columnists: "Активировать «Пятую колонну» Бургоса" #NT!
+ SPA_activate_pais_vasco_fifth_columnists: "Активировать Паиса Васко Пятую колонну" #NT!
+ SPA_activate_navarra_fifth_columnists: "Активируйте «Пятую колонну Наварры»" #NT!
+ SPA_activate_western_aragon_fifth_columnists: "Активировать «Пятую колонну» Западного Арагона" #NT!
+ SPA_activate_eastern_aragon_fifth_columnists: "Активировать Пятую колонну Восточной Арагона" #NT!
+ SPA_activate_catalunya_fifth_columnists: "Активируйте Каталонию «Пятая колонна»" #NT!
+ SPA_activate_salamanca_fifth_columnists: "Активировать «Пятую колонну Саламанки»" #NT!
+ SPA_activate_madrid_fifth_columnists: "Активируйте «пятую колонну Мадрида»" #NT!
+ SPA_activate_guadalajara_fifth_columnists: "Активируйте «пятую колонну» Гвадалахары" #NT!
+ SPA_activate_valencia_fifth_columnists: "Активировать Валенсийскую пятую колонну" #NT!
+ SPA_activate_extremadura_fifth_columnists: "Активировать Пятую колонну Эстремадуры" #NT!
+ SPA_activate_ciudad_real_fifth_columnists: "Активируйте «Пятую колонну» Сьюдад-Реаля" #NT!
+ SPA_activate_murcia_fifth_columnists: "Активировать Мурсийскую пятую колонну" #NT!
+ SPA_activate_sevilla_fifth_columnists: "Активируйте «Севильскую пятую колонну»" #NT!
+ SPA_activate_cordoba_fifth_columnists: "Активируйте Кордовскую пятую колонну" #NT!
+ SPA_activate_granada_fifth_columnists: "Активировать Гранаду Пятую колонну" #NT!
+ SPA_carlist_uprising_mission: "Надвигающееся восстание карлистов" #NT!
+ SPA_carlist_uprising_mission_desc: "Карлистские элементы в нашей фракции были возмущены нашим руководством и нашим растущим влиянием. Вместо того, чтобы подчиниться, недовольство распространяется по Requetés, и распространяются слухи о восстании. Мы должны быть готовы справиться с восстанием карлистов так же, как мы имеем дело с нашими врагами-республиканцами." #NT!
+ SPR_anarchist_uprising_mission: "Надвигающееся восстание анархистов" #NT!
+ SPR_anarchist_uprising_mission_desc: "Наши анархические «союзники» продолжают вести себя с неоправданными ожиданиями независимости и автономии. Чем больше мы пытаемся организовать контролируемые анархистами регионы для военных действий, тем больше они настраивают свой народ против законного испанского правительства. Мы должны быть готовы иметь дело с полномасштабным анархистским восстанием, если оно будет обостряться дальше." #NT!
+ SPA_fascist_crackdown_mission: "Надвигающееся фашистское подавление" #NT!
+ SPA_fascist_crackdown_mission_desc: "С самого начала гражданской войны мы были отодвинуты на второй план нашими «союзниками»-фалангистами. Они совершенно ясно дали понять, что их видение будущего Испании несовместимо с видением законного Карлистского королевства, и они, несомненно, планируют полностью задушить наше влияние любыми возможными средствами. Мы должны быть готовы защищать наши идеалы силой, если они не оставляют нам выбора." #NT!
+ SPR_government_crackdown_mission: "Надвигающиеся репрессии со стороны правительства" #NT!
+ SPR_government_crackdown_mission_desc: "С началом гражданской войны сталинские и республиканские репрессии против нашего движения неуклонно возрастали. Мы пролили кровь, чтобы остановить начальный фашистский переворот, но наша сохраняющаяся автономия — это заноза в глазу правительства, и ясно, что они скорее избавятся от нас, чем продолжат пользоваться нашей помощью. Мы должны быть готовы защитить нашу свободу силой, если они не оставят нам выбора." #NT!
+ SPA_negotiate_carlist_support_mission_tt: "С началом гражданской войны националисты получают 5 хорошо обученных подразделений с §Y3 пехотными§! батальонами.\n" #NT!
+ SPA_negotiate_carlist_support_mission_tt_2: "С началом гражданской войны националисты получают 10 хорошо обученных подразделений с §Y3 пехотными§! батальонами.\n" #NT!
+ SPA_the_army_of_africa_mission_tt: "С началом гражданской войны националисты получают 5 хорошо обученных подразделений с §Y7 пехотным§! и §Y2 артиллерийским §! батальонами и §YРазведывательной§! и §YИнженерной §! поддержкой, а также гарантированный контроль над §Y[ 290.GetName]§!.\n" #NT!
+ SPA_secure_the_northern_garrisons_mission_tt: "Националисты увеличивают §YГарнизонный контроль§! до §RTotal§_1 в §Y[171.GetName]§!, §Y[174.GetName]§!, §Y[788.GetName]§!, §Y[791.GetName]§ _1, §Y[176.GetName]§!, §Y[166.GetName]§! и §Y[172.GetName]§!.\n\nНационалисты начнут гражданскую войну, контролируя эти провинции, пока поскольку их §YГарнизонный контроль§! в них как минимум §YСлабый§!.\n" #NT!
+ SPR_secure_the_guardia_de_asalto_mission_tt: "С началом гражданской войны наберите 6 плохо обученных отрядов с §Y3 пехотными§! батальонами. Республиканцы получают 3 обученных отряда с пехотными §Y6§! батальонами.\n" #NT!
+ SPR_secure_the_guardia_de_asalto_mission_tt_2: "С началом гражданской войны наберите 10 плохо обученных отрядов с §Y3 пехотными§! батальонами. Республиканцы получают 5 обученных подразделений с пехотными §Y6§! батальонами.\n" #NT!
+ SPR_secure_the_guardia_civil_mission_tt: "С началом гражданской войны получите 3 обученных отряда с §Y6 пехотными§! батальонами. Республиканцы получают 6 плохо обученных подразделений с §Y3 пехотными§! батальонами.\n" #NT!
+ SPR_secure_the_guardia_civil_mission_tt_2: "С началом гражданской войны получите 5 обученных отрядов с §Y6 пехотными§! батальонами. Республиканцы получают 10 плохо обученных подразделений с §Y3 пехотными§! батальонами.\n" #NT!
+ SPR_train_the_union_youth_mission_tt: "С началом гражданской войны республиканцы получают 5 хорошо обученных подразделений с §Y3 пехотными§! батальонами.\n" #NT!
+ SPR_train_the_union_youth_mission_tt_2: "С началом гражданской войны республиканцы получают 10 хорошо обученных подразделений с §Y3 пехотными§! батальонами.\n" #NT!
+ SPR_enlarge_the_weapon_caches_mission_tt: "С началом гражданской войны наша доля техники уменьшится до §Y20%§! вместо §Y50%§!.\n" #NT!
+ SPR_distribute_arms_to_the_people_mission_tt: "С началом гражданской войны республиканцы получают 10 необученных подразделений с §Y3 пехотными§! батальонами.\n" #NT!
+ SPR_disband_the_army_mission_tt: "§GУменьшает долю армии, которая встанет на сторону республиканской фракции в начале гражданской войны с §Y50%§! до §Y80%§!, а количество дивизий Африканской армии сокращается с §Y5§! до §Y3§!.§!\nЭто §Y80%§! часть — §Rdisbanded§_5.\n\n§RЭто приведет к немедленному началу гражданской войны!§!\n" #NT!
+ SPA_preparing_the_carlist_insurrection: "Подготовка карлистского восстания" #NT!
+ SPA_carlist_cell_flag: "Карлистская ячейка создана" #NT!
+ SPA_union_militar_flag: "С Юнион Милитар связались" #NT!
+ SPA_already_establishing_carlist_cell_flag: "Я уже создаю ячейку Carlist" #NT!
+ SPA_establish_galicia_carlist_cell: "Создать ячейку Карлистов Галиции" #NT!
+ SPA_establish_asturias_carlist_cell: "Создание ячейки Карлиста в Астурии" #NT!
+ SPA_establish_leon_carlist_cell: "Создать ячейку Леона Карлиста" #NT!
+ SPA_establish_valladolid_carlist_cell: "Создание ячейки Карлиста в Вальядолиде" #NT!
+ SPA_establish_burgos_carlist_cell: "Создание ячейки Карлиста в Бургосе" #NT!
+ SPA_establish_pais_vasco_carlist_cell: "Создание ячейки Паиса Васко Карлиста" #NT!
+ SPA_establish_navarra_carlist_cell: "Создание ячейки Карлистов в Наварре" #NT!
+ SPA_establish_western_aragon_carlist_cell: "Создание ячейки карлистов в Западном Арагоне" #NT!
+ SPA_establish_eastern_aragon_carlist_cell: "Создание ячейки карлистов Восточной Арагона" #NT!
+ SPA_establish_catalunya_carlist_cell: "Создание ячейки Carlist в Каталонии" #NT!
+ SPA_establish_salamanca_carlist_cell: "Создание ячейки Карлистов в Саламанке" #NT!
+ SPA_establish_madrid_carlist_cell: "Создание Мадридской ячейки Карлистов" #NT!
+ SPA_establish_guadalajara_carlist_cell: "Создание ячейки Carlist в Гвадалахаре" #NT!
+ SPA_establish_valencia_carlist_cell: "Создание ячейки Карлистов в Валенсии" #NT!
+ SPA_establish_extremadura_carlist_cell: "Создание ячейки Карлистов в Эстремадуре" #NT!
+ SPA_establish_ciudad_real_carlist_cell: "Создание ячейки Carlist в Сьюдад-Реале" #NT!
+ SPA_establish_murcia_carlist_cell: "Создание ячейки Карлиста в Мурсии" #NT!
+ SPA_establish_sevilla_carlist_cell: "Создание ячейки Карлиста в Севилье" #NT!
+ SPA_establish_cordoba_carlist_cell: "Создание ячейки Карлистов в Кордове" #NT!
+ SPA_establish_granada_carlist_cell: "Создание ячейки Carlist в Гранаде" #NT!
+ SPR_the_seeds_of_revolution: "Семена революции" #NT!
+ SPR_concessions_to_the_anarchists: "Уступки анархистам" #NT!
+ SPR_ignite_uprising: "Разожгите восстание анархистов" #NT!
+ SPR_ignite_uprising_timer_mission: "Надвигающееся восстание анархистов" #NT!
+ SPR_ignite_uprising_timer_mission_tt: "§RАнархистские подразделения поднимутся во многих контролируемых государствах.§!\n" #NT!
+ SPR_integrate_commune: "Интегрировать [From.GetName] Коммуну" #NT!
+ SPR_recovering_from_civil_war: "Восстановление после гражданской войны" #NT!
+ SPR_eliminate_guerrillas: "Уничтожить [From.GetName] партизан" #NT!
+ SPR_purchase_infantry_equipment: "Приобретение пехотного снаряжения" #NT!
+ SPR_purchase_support_equipment: "Оборудование для поддержки закупок" #NT!
+ SPR_purchase_artillery_equipment: "Приобретение артиллерийского оборудования" #NT!
+ SPR_purchase_aircraft: "Покупка самолетов" #NT!
+ SPR_purchase_trucks: "Покупка грузовиков" #NT!
+ SPR_purchase_tanks: "Покупка танков" #NT!
+ SPR_expand_resource_extraction: "Расширить добычу ресурсов" #NT!
+ SPA_reassert_dominance: "Подтвердите доминирование над [From.GetNameDef]" #NT!
+ expand_basque_steel_works: "Расширить Баскский металлургический завод" #NT!
+ expand_western_aragon_steel_works: "Расширение сталелитейного завода Западного Арагона" #NT!
+ expand_granada_steel_works: "Расширить сталелитейный завод Гранады" #NT!
+ develop_salamanca_tungsten_deposits: "Разработка месторождений вольфрама в Саламанке" #NT!
+ develop_valladolid_tungsten_deposits: "Разработка месторождений вольфрама в Вальядолиде" #NT!
+ develop_galicia_tungsten_deposits: "Разработка месторождений вольфрама в Галиции" #NT!
+ expand_extremadura_tungsten_mines: "Развернуть Вольфрамовые рудники Эстремадуры" #NT!
+ expand_madrid_bauxite_mines: "Расширить Мадридские бокситовые рудники" #NT!
+ FRA_weapons_purchases_category: "Купить оружие в [USA.GetNameDef]" #NT!
+ FRA_weapons_purchases_category_desc: "Поскольку наша промышленность все еще догоняет, поиск современного оружия за рубежом может быть единственным способом привести наши вооруженные силы в соответствие с современными стандартами." #NT!
+ FRA_order_weapons_in_USA: "Заказать стрелковое оружие" #NT!
+ FRA_order_artillery_in_USA: "Заказать артиллерию" #NT!
+ FRA_order_tanks_in_USA: "Заказать танки" #NT!
+ FRA_order_fighters_in_USA: "Бойцы Ордена" #NT!
+ FRA_order_bombers_in_USA: "Заказать бомбардировщики" #NT!
+ FRA_spanish_intervention_category: "Вмешательство в гражданскую войну в Испании" #NT!
+ FRA_spanish_intervention_category_desc: "Группы всего политического спектра хотят тем или иным образом вмешаться в гражданскую войну в Испании. Однако существуют серьезные опасения, что война может распространиться на нашу страну, если мы займем слишком открытую позицию в поддержку одной стороны. Мы должны быть осторожны и не идти узким путем, если хотим гарантировать, что дружественное правительство останется под контролем Испании." #NT!
+ FRA_invite_FROM_to_non_intervention: "Пригласить [From.GetNameDef] в Комитет по невмешательству" #NT!
+ FRA_non_intervention: "Страна привержена принципу невмешательства" #NT!
+ FRA_allow_non_military_aid: "Разрешить невоенную помощь" #NT!
+ FRA_ban_non_military_aid: "Запретить невоенную помощь" #NT!
+ FRA_send_non_military_aid_to_FROM: "Отправьте невоенную помощь [From.GetNameDef]" #NT!
+ FRA_allow_arms_purchases: "Разрешить закупку оружия" #NT!
+ FRA_ban_arms_purchases: "Запретить закупки оружия" #NT!
+ FRA_allow_sending_weapons: "Разрешить отправку оружия" #NT!
+ FRA_ban_sending_weapons: "Запретить отправку оружия" #NT!
+ FRA_allow_volunteer_work: "Разрешить волонтерскую работу" #NT!
+ FRA_ban_volunteer_work: "Запретить волонтерскую работу" #NT!
+ FRA_allow_covert_intervention: "Разрешить скрытое вмешательство" #NT!
+ FRA_ban_covert_intervention: "Запретить скрытое вмешательство" #NT!
+ FRA_intervene_on_side_of_FROM: "Вмешайтесь на стороне [From.GetNameDef]" #NT!
+ FRA_reorganize_aviation_industry_north: "Реорганизация авиационной промышленности на Севере" #NT!
+ FRA_reorganize_aviation_industry_west: "Реорганизация авиационной промышленности на Западе" #NT!
+ FRA_reorganize_aviation_industry_center: "Реорганизация авиационной промышленности в Центре" #NT!
+ FRA_reorganize_aviation_industry_south_east: "Реорганизация авиационной промышленности Юго-Востока" #NT!
+ FRA_reorganize_aviation_industry_south_west: "Реорганизация авиационной промышленности на Юго-Западе" #NT!
+ FRA_rally_the_leagues: "Сплотите лиги" #NT!
+ FRA_unleash_la_cagoule: "Дайте волю «Ла Кагулю»" #NT!
+ VIC_basing_rights: "Предложить базовые права" #NT!
+ VIC_send_guest_workers: "Отправить гастарбайтеров" #NT!
+ FRA_intervention_in_overseas_territories: "Интервенция на заморских территориях" #NT!
+ FRA_intervention_in_overseas_territories_desc: "Те наши заморские территории, которые остались у правительства Виши, еще могут быть переданы на нашу сторону. У нас есть разные варианты, в зависимости от местоположения, но некоторые из них могут иметь последствия в будущем." #NT!
+ FRA_promise_independence_to_north_africa: "Обещайте независимость Северной Африке" #NT!
+ FRA_promise_independence_tt: "§RПосле войны территория ожидает независимости§!" #NT!
+ FRA_prepare_coup_in_north_africa: "Подготовьте переворот в Северной Африке" #NT!
+ FRA_promise_independence_to_syria: "Обещание независимости Сирии" #NT!
+ FRA_prepare_coup_in_syria: "Готовить переворот в Сирии" #NT!
+ FRA_invasion_in_syria: "Вторжение в Сирию" #NT!
+ FRA_promise_independence_to_indochina: "Обещание независимости Индокитаю" #NT!
+ FRA_prepare_coup_in_indochina: "Готовить переворот в Индокитае" #NT!
+ FRA_invasion_in_indochina: "Вторжение в Индокитай" #NT!
+ FRA_promise_independence_to_central_africa: "Обещайте независимость Центральной Африке" #NT!
+ FRA_prepare_coup_in_central_africa: "Подготовьте переворот в Центральной Африке" #NT!
+ FRA_invasion_in_central_africa: "Вторжение в Центральную Африку" #NT!
+ FRA_promise_independence_to_west_africa: "Обещайте независимость Западной Африке" #NT!
+ FRA_invasion_in_west_africa: "Вторжение в Западную Африку" #NT!
+ FRA_prepare_coup_in_west_africa: "Подготовьте переворот в Западной Африке" #NT!
+ FRA_promise_independence_to_madagascar: "Обещание независимости Мадагаскару" #NT!
+ FRA_prepare_coup_in_madagascar: "Готовят переворот на Мадагаскаре" #NT!
+ FRA_decolonization: "Деколонизация" #NT!
+ FRA_independence_for_syria_mission: "Движение за независимость в Сирии" #NT!
+ FRA_independence_for_indochina_mission: "Движение за независимость в Индокитае" #NT!
+ FRA_independence_for_madagascar_mission: "Движение за независимость на Мадагаскаре" #NT!
+ FRA_independence_for_north_africa_mission: "Движение за независимость в Северной Африке" #NT!
+ FRA_independence_for_west_africa_mission: "Движение за независимость в Западной Африке" #NT!
+ FRA_independence_for_central_africa_mission: "Движение за независимость в Центральной Африке" #NT!
+ FRA_revoke_the_matignon_agreements: "Отменить Матиньонские соглашения" #NT!
+ FRA_demand_unification_with_vichy: "Требуйте объединения с Виши" #NT!
+ VIC_recall_guest_workers: "Отзовите гастарбайтеров" #NT!
+ GER_begin_heavy_water_production: "Начало производства тяжелой воды" #NT!
+ FRA_prepare_coup_tt: "Открывает §YРазведывательную операцию§!, позволяющую совершить местный переворот, который может передать вам эти территории." #NT!
+ instantiate_collaboration: "Создайте коллаборационистское правительство в [From.GetNameDef]" #NT!
+ compliance_80_effect_tooltip: "Создайте коллаборационистское правительство в [?country_to_initiate.GetName]" #NT!
+ recruit_in_europe: "Создать европейский раздел" #NT!
+ recruit_in_europe_state: "Нанять в [From.Owner.GetNameDef]" #NT!
+ recruit_in_north_america: "Создайте североамериканский раздел" #NT!
+ recruit_in_south_america: "Создайте южноамериканский раздел" #NT!
+ recruit_in_africa: "Создать африканскую секцию" #NT!
+ recruit_in_middle_east: "Создать Ближневосточный раздел" #NT!
+ recruit_in_asia: "Создайте азиатский раздел" #NT!
+ recruit_in_australia: "Создайте раздел Океании" #NT!
+ recruit_in_india: "Создайте индийский раздел" #NT!
+ LAR_recruitment_europe: "Набор персонала в Европе" #NT!
+ LAR_recruitment_north_america: "Набор персонала в Северной Америке" #NT!
+ LAR_recruitment_south_america: "Набор персонала в Южной Америке" #NT!
+ LAR_recruitment_africa: "Набор персонала в Африке" #NT!
+ LAR_recruitment_asia: "Набор персонала в Азии" #NT!
+ LAR_recruitment_oceania: "Набор персонала в Океании" #NT!
+ LAR_recruitment_india: "Набор персонала в Индии" #NT!
+ LAR_recruitment_middle_east: "Набор персонала на Ближнем Востоке" #NT!
+ lar_local_recruitment: "Набор местных агентов" #NT!
+ lar_local_recruitment_desc: "Нам нужны агенты, которые смогут сливаться с местным сообществом. Некоторых из них можно найти в нашей стране, но нам придется приложить согласованные усилия для их выявления, набора и обучения." #NT!
+ recruit_in_state_tt: "Мы получим местного агента от §Y[From.Owner.GetNameDef]§!. Этого агента будет труднее обнаружить при проникновении и работе в §Y[From.Owner.GetNameDef]§!." #NT!
+ recruit_in_state_to_pool_tt: "Местный агент из §Y[From.Owner.GetNameDef]§! становится доступным для найма, если у нас есть открытый §YОперативный слот§!. Этого агента будет труднее обнаружить при проникновении и работе в §Y[From.Owner.GetNameDef]§!." #NT!
+ POR_naval_blockade: "Морская блокада" #NT!
+ POR_naval_blockade_desc: "Португальское правительство предложило обойти британскую военно-морскую блокаду и обеспечить транспортировку наших войск. Эта помощь нашим военным усилиям может сыграть ключевую роль в конфликте." #NT!
+ POR_evade_blockade_flag: "Обход блокады с помощью португальских конвоев активен." #NT!
+ POR_cancel_evade_blockade_flag: "Отмена. Активирован договор об уклонении Португалии от блокады." #NT!
+ POR_evade_blockade_with_portuguese_convoys: "Обойти блокаду с помощью португальских конвоев" #NT!
+ POR_evade_blockade_with_portuguese_convoys_desc: "Мы примем предложение использовать португальские конвои для перевозки грузов туда, куда не могут добраться наши собственные корабли. Боевой дух наших солдат повысится, когда они, наконец, увидят, что их основные проблемы со снабжением решены." #NT!
+ POR_major_cancel_portuguese_blockade_evasion: "Отменить договор об уклонении Португалии от блокады" #NT!
+ POR_major_cancel_portuguese_blockade_evasion_desc: "Нам не нужно продолжать использовать португальские конвои, чтобы обойти британскую блокаду. Мы немедленно расторгнем договор." #NT!
+ POR_portugal_cancel_blockade_evasion_for_country: "Отмените договор об уклонении от блокады с помощью [From.GetNameDef]" #NT!
+ POR_portugal_cancel_blockade_evasion_for_country_desc: "Соглашение, согласно которому мы используем ряд наших конвоев для обхода британской блокады правительства [From.GetAdjective], нам больше не выгодно, поэтому мы немедленно его отменим." #NT!
+ POR_monarchist_cause: "Монархическое дело" #NT!
+ POR_stir_monarchist_sentiment_in_brazil: "Разожгите монархические настроения в Бразилии" #NT!
+ POR_stir_monarchist_sentiment_in_brazil_desc: "Мы будем призывать монархические элементы в Бразилии принять меры и распространить роялистские настроения среди бразильского населения." #NT!
+ POR_portugal_promoting_monarchist_cause_in_brazil: "Португалия призывает монархистов" #NT!
+ POR_portugal_promoting_monarchist_cause_in_brazil_desc: "Правительство Португалии призывает наше население принять монархизм и признать принца Педро Энрике законным правителем Бразилии." #NT!
+ POR_stir_monarchist_sentiment_in_brazil_tt: "§Y[BRA.GetFlag][BRA.GetNameDefCap]§! получит ежедневную поддержку для неприсоединившихся: §G+0.10§!§Y в течение 180 дней§!." #NT!
+ POR_promote_communism_in_latin_america_tt: "§Y[From.GetFlag][From.GetNameDefCap]§! получит ежедневную поддержку для §YCommunism§!: §G+0.10§!§Y в течение 180 дней§!." #NT!
+ POR_portugal_stirring_brazilian_monarchists_flag: "Португалия в настоящее время будоражит бразильских монархистов" #NT!
+ POR_repress_brazilian_monarchists: "Подавить монархистов" #NT!
+ POR_repress_brazilian_monarchists_desc: "Мы должны противостоять монархическому движению, набирающему силу среди нашего населения. Мы должны найти виновных в распространении роялистских настроений и публично наказать их." #NT!
+ POR_stir_monarchist_sentiment_in_portugal: "Разожгите монархические настроения в Португалии" #NT!
+ POR_stir_monarchist_sentiment_in_portugal_desc: "Мы должны убедить народ признать Дона Дуарте законным королем Португалии." #NT!
+ POR_Iberian_Summit_Receiver_Portugal: "Португалия" #NT!
+ POR_Iberian_Summit_Receiver_Spain: "Испания" #NT!
+ POR_iberian_summit: "Иберийский саммит" #NT!
+ POR_iberian_summit_desc: "Иберийским странам необходимо работать вместе, если мы хотим победить вопреки всему. Мы должны призвать [GetIberianSummitReceiverName] обсудить, какую сторону конфликта нам следует поддержать в это нестабильное время." #NT!
+ POR_iberian_summit_pro_axis: "Предложение присоединиться к [GER.GetFactionName]" #NT!
+ POR_iberian_summit_pro_axis_desc: "[GER.GetFactionName] станет доминирующей силой в Европе. Мы должны объединиться с ними, прежде чем они решат взять под прямой контроль нашу территорию и ресурсы. \nМы отправим письмо [GetIberianSummitReceiverName], призывая их обсудить совместное предложение с просьбой к [GER.GetNameDef] принять нас в [GER.GetFactionName]." #NT!
+ POR_iberian_summit_pro_allies: "Предложение присоединиться к [ENG.GetFactionName]" #NT!
+ POR_iberian_summit_pro_allies_desc: "Мы должны встать на сторону [ENG.GetAdjective] и противостоять всем тем, кто угрожает нашей свободе и стремится доминировать над нами. \nМы отправим письмо [GetIberianSummitReceiverName], призывая их обсудить совместное предложение с просьбой к [ENG.GetNameDef] принять нас в [ENG.GetFactionName]." #NT!
+ POR_iberian_summit_proposal_delayed: "Работаем над предложением присоединиться к [?global.POR_iberian_summit_target.GetFactionName]" #NT!
+ POR_iberian_summit_proposal_delayed_desc: "Иберийские дипломаты в настоящее время обращаются к министрам [?global.POR_iberian_summit_target.GetAdjective] и разрабатывают привлекательное соглашение, которое проложит путь к нашему приему в [?global.POR_iberian_summit_target.GetFactionName]." #NT!
+ POR_iberian_summit_in_progress_flag: "Иберийский саммит в разгаре" #NT!
+ POR_arms_purchases: "Закупки оружия" #NT!
+ POR_arms_purchases_desc: "Военная промышленность и военно-морские мощности [Root.GetNameDef] в настоящее время не способны производить необходимое нашим войскам оборудование. Поэтому мы должны стремиться заключить сделки с иностранными державами, которые могут предоставить нам современное оружие и корабли." #NT!
+ POR_buy_artillery_in_britain: "Приобретите артиллерийские орудия в [ENG.GetNameDef]." #NT!
+ POR_buy_artillery_in_britain_desc: "Мы заключим сделку с [ENG.GetAdjective] на приобретение современных артиллерийских орудий." #NT!
+ POR_buy_aa_in_britain: "Купите зенитные орудия в [ENG.GetNameDef]." #NT!
+ POR_buy_aa_in_britain_desc: "Мы заключим сделку с [ENG.GetAdjective] на приобретение современных зенитных орудий." #NT!
+ POR_buy_at_in_britain: "Купите противотанковые пушки в [ENG.GetNameDef]." #NT!
+ POR_buy_at_in_britain_desc: "Мы заключим сделку с [ENG.GetAdjective] на закупку современных противотанковых орудий." #NT!
+ POR_buy_ships_britain: "Отправить предложение о покупке кораблей [ENG.GetAdjective]" #NT!
+ POR_buy_ships_britain_desc: "Мы направим предложение правительству [ENG.GetAdjective] о покупке кораблей." #NT!
+ POR_buy_ships_italy: "Отправить предложение о покупке кораблей [ITA.GetAdjective]" #NT!
+ POR_buy_ships_italy_desc: "Мы направим предложение правительству [ITA.GetAdjective] о покупке кораблей." #NT!
+ POR_british_submarines_construction_progress: "[ENG.GetAdjective] Ход строительства подводных лодок" #NT!
+ POR_italian_submarines_construction_progress: "[ITA.GetAdjective] Ход строительства подводных лодок" #NT!
+ POR_british_destroyers_construction_progress: "[ENG.GetAdjective] Ход строительства эсминцев" #NT!
+ POR_italian_destroyers_construction_progress: "[ITA.GetAdjective] Ход строительства эсминцев" #NT!
+ POR_british_light_cruiser_construction_progress: "[ENG.GetAdjective] Ход строительства лёгкого крейсера" #NT!
+ POR_italian_light_cruiser_construction_progress: "[ITA.GetAdjective] Ход строительства лёгкого крейсера" #NT!
+ POR_prospect_for_resources: "Разведка ресурсов в Португалии" #NT!
+ POR_prospect_for_resources_desc: "Мы можем инвестировать в развитие добывающей промышленности в Португалии, чтобы улучшить эксплуатацию найденных там ресурсов." #NT!
+ POR_develop_lisbon_tungsten_deposits: "Разработка месторождений вольфрама в Лиссабоне" #NT!
+ POR_develop_santarem_chromium_deposits: "Разработка месторождений хрома в Сантарене" #NT!
+ POR_overseas_provinces: "Заморские провинции" #NT!
+ POR_overseas_provinces_desc: "Мы должны рассмотреть возможность интеграции наших заморских территорий в Африке в нашу общую администрацию." #NT!
+ POR_angola_overseas_province: "Интегрировать Анголу" #NT!
+ POR_mozambique_overseas_territory: "Интегрировать Мозамбик" #NT!
+ POR_the_spanish_civil_war: "Присоединяйтесь к гражданской войне в Испании" #NT!
+ POR_fight_alongside_the_republic: "Сражайтесь вместе с Республикой" #NT!
+ POR_fight_alongside_the_republic_desc: "Мы присоединимся к Республике в гражданской войне в Испании." #NT!
+ POR_fight_alongside_the_nationalists: "Сражайтесь вместе с националистами" #NT!
+ POR_fight_alongside_the_nationalists_desc: "Мы присоединимся к националистам в гражданской войне в Испании." #NT!
+ POR_fight_alongside_the_carlists: "Сражайтесь вместе с карлистами" #NT!
+ POR_fight_alongside_the_carlists_desc: "Мы присоединимся к карлистам в гражданской войне в Испании." #NT!
+ form_andalusia_category: "Мавританская реставрация" #NT!
+ form_andalusia_category_desc: "Слишком долго мавры были порабощены и унижены латинскими державами. Теперь у нас есть возможность восстановить Аль-Андалус и все бывшие территории Кордовского халифата." #NT!
+ form_andalusia: "Восстановить Аль-Андалус" #NT!
+ form_andalusia_desc: "Поскольку Кордова, Гранадский эмират и большая часть Южной Иберии находятся под нашим контролем, у нас есть уникальная возможность восстановить старый Султанат Аль-Андалус и провозгласить все его бывшие территории законными частями нашего государства." #NT!
+ adu_restore_sultanate_of_africa: "Восстановить Африканский Султанат." #NT!
+ adu_restore_sultanate_of_africa_desc: "Давным-давно мавры Северной Африки были объединены в единый султанат; Султанат Африки, важная ветвь халифата Омейядов. Теперь, когда Андалусия восстановлена ​​и все мавританские народы теперь сосуществуют в пределах нашего государства, мы можем объединить мавританскую идентичность." #NT!
+ north_africa_needed_tooltip: "Контролирует все §Yмарокканские, тунисские, алжирские и ливийские§! государства." #NT!
+ coring_north_africa_tt: "Получите ядра во всех §YМарокканских, Тунисских, Алжирских, Западно-Сахарских и Ливийских государствах§!." #NT!
+ adu_mediterrenean_emirates: "Восстановить Сицилийский эмират." #NT!
+ adu_mediterrenean_emirates_desc: "В разгар мавританского влияния в Средиземноморье на островах располагались многие исламские эмираты. Теперь, когда Сицилия, Крит и Кипр находятся в руках Андалузии, мы можем снова вернуть эти территории их законным мавританским повелителям." #NT!
+ adu_restore_umayyad_caliphate: "Воссоздать Халифат Омейядов" #NT!
+ adu_restore_umayyad_caliphate_desc: "Наконец священные города Багдад, Мекка и Иерусалим объединены в единое государство. Теперь, когда сердце Аравии находится в наших руках, мы можем провозгласить себя чем-то большим, чем просто союзом мавров, но восстановленным Халифатом; Родина для всех исламских народов и культур." #NT!
+ adu_recreate_rashid_expansion: "Расширение Рашиди" #NT!
+ adu_recreate_rashid_expansion_desc: "До правления Омейядов в Аравии Рашиды правили арабским миром, и именно под их правлением Халифат распространился на Персию и Индостан. Воссоздав это древнее завоевание, мы сможем воссоединить Персию и мифическую землю Индостан с нашим государством." #NT!
+ form_country_pakistani_required_states_tt: "Управляет всеми §YPakistani§! состояния, кроме §Y[430.GetName]§!." #NT!
+ form_country_pakistan_coring_states_tt: "Получите ядра на всех §YPakistani§! состояния, кроме §Y[430.GetName]§!." #NT!
+ form_country_egypt_required_states_tt: "Управляет всеми §YEgyptian§! состояния." #NT!
+ middle_east_coring_states_tt: "Получите ядра во всех государствах §YБлижнего Востока§!." #NT!
+ adu_northern_expansion: "Северная экспансия" #NT!
+ adu_northern_expansion_desc: "Халифат был обширным и распространял свою администрацию далеко за пределы Ближнего Востока и Иберии. Давным-давно Грузия, Азербайджан и Трансоксиана назвали Халифат своим домом, и пришло время восстановить то, что было потеряно." #NT!
+ form_polynesia: "Объедините Полинезию" #NT!
+ form_polynesia_desc: "Имея под своим контролем острова Гавайи, Аотеароа, Таити и Самоа, мы, возможно, сможем объединить все тихоокеанские народы." #NT!
+ NZL_demand_islands: "Запросить контроль над островами Тихого океана" #NT!
+ form_polynesia_category: "Объедините Полинезию" #NT!
+ form_polynesia_category_desc: "Имея под своим контролем острова Гавайи, Аотеароа, Таити и Самоа, мы, возможно, сможем объединить все тихоокеанские народы." #NT!
+ FRA_non_military_aid_allowed: "Невоенная помощь разрешена" #NT!
+ FRA_arms_purchases_allowed: "Закупки оружия разрешены" #NT!
+ FRA_sending_weapons_allowed: "Перевозка оружия разрешена" #NT!
+ FRA_volunteer_work_allowed: "Волонтерская работа разрешена" #NT!
+ FRA_covert_intervention_allowed: "Скрытое вмешательство разрешено" #NT!
+ FRA_allow_volunteer_work_tt: "Все стороны гражданской войны в Испании получат рабочую силу в зависимости от относительной силы их соответствующей идеологии во Франции." #NT!
+ FRA_allow_arms_purchases_tt: "Позволяет испанским фракциям покупать у нас оружие." #NT!
+ FRA_promised_independence_tt: "Обещанная независимость" #NT!
+ anarchist_uprising: "Началось анархическое восстание." #NT!
+ FRA_non_military_aid_tt: "Позволяет отправлять §YВспомогательное оборудование§! фракциям, участвующим в гражданской войне в Испании." #NT!

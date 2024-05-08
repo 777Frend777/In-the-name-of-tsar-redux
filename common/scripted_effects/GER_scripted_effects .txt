@@ -1,0 +1,81 @@
+GRK_influence_clear_all = {
+	remove_ideas = {
+		GRK_influence_-3
+		GRK_influence_-2
+		GRK_influence_-1
+		GRK_influence_0
+		GRK_influence_1
+		GRK_influence_2
+		GRK_influence_3
+	}
+}
+
+#Important to put HIGHEST first
+GER_influence_up = {
+	custom_effect_tooltip = GRK_influence_up_tt
+	if = { limit = { has_idea = GRK_influence_2 } 
+		swap_ideas = { 
+		remove_idea = GRK_influence_2
+		add_idea = GRK_influence_3 }
+	}
+	if = { limit = { has_idea = GRK_influence_1 } 
+		swap_ideas = { 
+		remove_idea = GRK_influence_1
+		add_idea = GRK_influence_2 }
+	}
+	if = { limit = { has_idea = GRK_influence_0 } 
+		swap_ideas = { 
+		remove_idea = GRK_influence_0
+		add_idea = GRK_influence_1 }
+	}
+	if = { limit = { has_idea = GRK_influence_-1 } 
+		swap_ideas = { 
+		remove_idea = GRK_influence_-1
+		add_idea = GRK_influence_0 }
+	}
+	if = { limit = { has_idea = GRK_influence_-2 } 
+		swap_ideas = { 
+		remove_idea = GRK_influence_-2
+		add_idea = GRK_influence_-1 }
+	}
+	if = { limit = { has_idea = GRK_influence_-3 } 
+		swap_ideas = { 
+		remove_idea = GRK_influence_-3
+		add_idea = GRK_influence_-2 }
+	}	
+}
+
+#Important to put LOWEST first
+GER_influence_down = {
+custom_effect_tooltip = GER_influence_down_tt
+	if = { limit = { has_idea = GRK_influence_-2 } 
+		swap_ideas = { 
+		remove_idea = GRK_influence_-2
+		add_idea = GRK_influence_-3 }
+	}
+	if = { limit = { has_idea = GRK_influence_-1 } 
+		swap_ideas = { 
+		remove_idea = GRK_influence_-1
+		add_idea = GRK_influence_-2 }
+	}
+	if = { limit = { has_idea = GRK_influence_0 } 
+		swap_ideas = { 
+		remove_idea = GRK_influence_0
+		add_idea = GRK_influence_-1 }
+	}
+	if = { limit = { has_idea = GRK_influence_1 } 
+		swap_ideas = { 
+		remove_idea = GRK_influence_1
+		add_idea = GRK_influence_0 }
+	}
+	if = { limit = { has_idea = GRK_influence_2 } 
+		swap_ideas = { 
+		remove_idea = GRK_influence_2
+		add_idea = GRK_influence_1 }
+	}
+	if = { limit = { has_idea = GRK_influence_3 } 
+		swap_ideas = { 
+		remove_idea = GRK_influence_3
+		add_idea = GRK_influence_2 }
+	}	
+}

@@ -1,0 +1,73 @@
+﻿division_template = {
+	name = "Brigada Real"
+	#is_locked = yes
+	division_names_group = SPAN_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "1a Brigada Real"
+		location = 9979  # Malaga
+		division_template = "Brigada Real"
+	}
+	division = {
+		name = "2a Brigada Real"
+		location = 9979 # Malaga
+		division_template = "Brigada Real"
+	}
+	division = {
+		name = "3a Brigada Real"
+		location = 9979  # Malaga
+		division_template = "Brigada Real"
+	}
+	division = {
+		name = "4a Brigada Real"
+		location = 9979  # Malaga
+		division_template = "Brigada Real"
+	}
+	division = {
+		name = "5a Brigada Real"
+		location = 9979  # Malaga
+		division_template = "Brigada Real"
+	}
+	division = {
+		name = "6a Brigada Real"
+		location = 9979  # Malaga
+		division_template = "Brigada Real"
+	}
+	division = {
+		name = "7a Brigada Real"
+		location = 7183  # Seville
+		division_template = "Brigada Real"
+	}
+	division = {
+		name = "8a Brigada Real"
+		location = 7183  # Seville
+		division_template = "Brigada Real"
+	}
+	division = {
+		name = "9a Brigada Real"
+		location = 7183  # Seville
+		division_template = "Brigada Real"
+	}
+	division = {
+		name = "10a Brigada Real"
+		location = 7183  # Seville
+		division_template = "Brigada Real"
+	}
+	division = {
+		name = "11a Brigada Real"
+		location = 7183  # Seville
+		division_template = "Brigada Real"
+	}
+	division = {
+		name = "12a Brigada Real"
+		location = 7183  # Seville
+		division_template = "Brigada Real"
+	}
+}

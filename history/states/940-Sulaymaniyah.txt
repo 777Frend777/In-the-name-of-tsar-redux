@@ -1,0 +1,24 @@
+state={
+	id=940
+	name="STATE_940"
+	manpower = 1000
+	
+	state_category = town
+
+	history={
+		owner = IRQ
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			6826 1
+		}
+		add_core_of = IRQ
+	}
+	
+	provinces={
+		6826 8123 10793 
+	}
+
+	local_supplies=0.0 
+}

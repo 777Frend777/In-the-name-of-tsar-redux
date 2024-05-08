@@ -1,0 +1,22 @@
+
+state={
+	id=945
+	name="STATE_945"
+	manpower = 10000
+	
+	state_category = pastoral
+	history={
+		owner = JBS
+		buildings = {
+			infrastructure = 1
+		}
+		
+		add_core_of = JBS
+	}
+
+	provinces={
+		4440 1544
+	}
+
+	local_supplies=4.0 
+}

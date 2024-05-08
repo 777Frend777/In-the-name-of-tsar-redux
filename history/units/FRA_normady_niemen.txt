@@ -1,0 +1,18 @@
+﻿air_wings = {
+	
+	195 = {
+		fighter_equipment_1 =  {		
+				owner = "RUS" 
+				amount = 65
+			}
+			name = "Groupe de Chasse Normandie n III"
+		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
+			modifier="support_unique"
+			name="Albert"
+			surname="Marcel"
+			callsign="Aigle"
+			is_female = no
+			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
+		}
+	}
+}

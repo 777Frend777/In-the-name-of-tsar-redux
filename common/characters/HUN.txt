@@ -1,0 +1,866 @@
+characters={
+	HUN_miklos_horthy={
+		instance = {
+			name=HUN_miklos_horthy
+			portraits={
+				navy = { #Can become Navy leader and therefore navy advisor
+					large = "GFX_Portrait_hungary_miklos_horthy_admiral"
+					small = "GFX_idea_HUN_miklos_horthy_admiral"
+				}
+				civilian={
+					large="GFX_Portrait_hungary_miklos_horthy"
+				}
+			}
+			country_leader={
+				ideology=oligarchism
+				traits={ fascist_sympathies anti_communist }
+				expire="1965.1.1.1"
+				id=500
+			}
+			country_leader={
+				ideology=fascism_ideology
+				traits={ anti_communist }
+				expire="1965.1.1.1"
+				id=503
+			}
+		}
+		instance = {
+			allowed = {
+				NOT = { has_dlc = "Death or Dishonor" }
+			}
+			name=HUN_miklos_horthy
+			portraits={
+				civilian={
+					large="GFX_Portrait_hungary_miklos_horthy"
+				}
+			}
+			country_leader={
+				ideology=oligarchism
+				expire="1965.1.1.1"
+				id=500
+			}
+			country_leader={
+				ideology=fascism_ideology
+				expire="1965.1.1.1"
+				id=500
+			}
+		}
+	}
+
+	HUN_otto_von_habsburg={
+		name=HUN_otto_von_habsburg
+		portraits={
+			civilian={
+				large="GFX_Portrait_hungary_otto_von_hapsburg"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	HUN_Mihaly_Karolyi={
+		name="Mihaly Karolyi"
+		portraits={
+			civilian={
+				large="gfx/leaders/HUN/Portrait_HUN_Mihaly_Karolyi.png"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	HUN_Laszlo_Bardossy={
+		name="Laszlo Bardossy"
+		portraits={
+			civilian={
+				large="gfx/leaders/HUN/Portrait_HUN_Laszlo_Bardossy.png"
+			}
+		}
+		country_leader={
+			ideology=conservatives_subtype
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	HUN_bela_kun={
+		name=HUN_bela_kun
+		portraits={
+			civilian={
+				large="gfx/leaders/HUN/Bela_Kun.dds"
+			}
+		}
+		country_leader={
+			ideology=communism_subtype
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	HUN_matyas_rakosi={
+		name=HUN_matyas_rakosi
+		portraits={
+			civilian={
+				large="GFX_Portrait_hungary_matyas_rakosi"
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	HUN_arpad_szakasits={
+		name=HUN_arpad_szakasits
+		portraits={
+			civilian={
+				large="GFX_Portrait_hungary_arpad_szakasits"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	HUN_franz_friedrich = { #Can be given country leader roles later
+		name = HUN_franz_friedrich
+		portraits = {
+			#army = {
+			#	large = "GFX_Portrait_hungary_friedrich_franz"
+			#}
+			civilian = {
+				large = "GFX_Portrait_hungary_friedrich_franz"
+			}
+		}
+	}
+
+	HUN_istvan_szechenyi={
+		name=HUN_istvan_szechenyi
+		portraits={
+			civilian={
+				large="GFX_Portrait_hungary_istvan_szechenyi"
+			}
+		}
+		country_leader={
+			ideology=falangism
+			expire="1948.1.1.12"
+			id=-1
+		}
+	}
+
+	HUN_kocsard_janky_de_bulcs = {
+		name = "Koscard Janky de Bulcs"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HUN/Portrait_HUN_Kocsard_Janky.png"
+				small = "gfx/interface/ideas/HUN_kocsard_janky_de_bulcs.png"
+			}
+		}
+		field_marshal = {
+			desc = HUN_kocsard_janky_de_bulcs_commander_desc
+			traits = {
+				old_guard
+				war_hero
+				cavalry_leader
+				inflexible_strategist
+				unyielding_defender
+				trickster
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+	}
+	HUN_hugo_sonyi = {
+		name = "Hugo Sonyi"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HUN/Portrait_HUN_Hugo_Sonyi.png"
+				small = "gfx/interface/ideas/HUN_hugo_sonyi.png"
+			}
+		}
+		corps_commander = {
+			desc = HUN_hugo_sonyi_commander_desc
+			traits = {
+				brilliant_strategist
+				infantry_leader
+				organizer
+				hill_fighter
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = HUN_hugo_sonyi_army_chief
+			traits = { army_chief_offensive_2 }
+			cost = 100
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+	}
+	HUN_vilmos_nagy_de_nagybaczon = {
+		name = "Vilmos Nagy de Nagybaczon"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HUN/Portrait_HUN_Vilmos_Nagy_de_Nagybaczon.png"
+				small = "gfx/interface/ideas/HUN_vilmos_nagy_de_nagybaczon.png"
+			}
+		}
+		corps_commander = {
+			desc = HUN_vilmos_nagy_de_nagybaczon_commander_desc
+			traits = {
+				armor_officer
+				skilled_staffer
+				organizer
+				trickster
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = HUN_vilmos_nagy_de_nagybaczon_army_chief
+			available = {
+				not_already_hired_except_as = army_chief
+			}
+			traits = { army_chief_manoeuvre_2 }
+			cost = 100
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = HUN_vilmos_nagy_de_nagybaczon_high_command
+			ledger = army
+			available = {
+				not_already_hired_except_as = high_command
+			}
+			traits = { MHC_cavalry_3 }
+			cost = 200
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+	}
+	HUN_Pal_Pronay = {
+		name = "Pal Pronay"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HUN/Portrait_HUN_Pal_Pronay2.png"
+				small = "gfx/interface/ideas/HUN_Pal_Pronay2.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				armor_officer
+				cavalry_leader
+				organizer
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = HUN_Pal_Pronay_high_command
+			ledger = army
+			traits = { MHC_armoured_1 }
+			cost = 50
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+	}
+	HUN_bela_miklos_de_dalnok = {
+		name = "Bela Miklos de Dalnok"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HUN/Portrait_HUN_Bela_Miklos.png"
+				small = "gfx/interface/ideas/HUN_bela_miklos_de_dalnok.png"
+			}
+		}
+		corps_commander = {
+			desc = HUN_bela_miklos_de_dalnok_commander_desc
+			traits = {
+				armor_officer
+				cavalry_leader
+				organizer
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = HUN_bela_miklos_high_command
+			ledger = army
+			traits = { MHC_armoured_1 }
+			cost = 50
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+	}
+	HUN_dezso_laszlo = {
+		name = "Dezso Laszlo"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HUN/Portrait_HUN_Dezso_Laszlo.png"
+				small = "gfx/interface/ideas/HUN_dezso_laszlo.png"
+			}
+		}
+		corps_commander = {
+			desc = HUN_dezso_laszlo_commander_desc
+			traits = {
+				infantry_officer
+				skilled_staffer
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+	}
+	HUN_gusztav_jany = {
+		name = "Gusztav Jany"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HUN/Portrait_HUN_Gusztav_Jany.png"
+				small = "gfx/interface/ideas/HUN_gusztav_jany.png"
+			}
+		}
+		corps_commander = {
+			desc = HUN_gusztav_jany_commander_desc
+			traits = {
+				trait_reckless
+				infantry_leader
+				skilled_staffer
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+	}
+	HUN_lajos_veress_de_dalnok = {
+		name = "Lajos Veress de Dalnok"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HUN/Portrait_HUN_Lajos_Veress.png"
+				small = "gfx/interface/ideas/HUN_lajos_veress_de_dalnok.png"
+			}
+		}
+		corps_commander = {
+			desc = HUN_lajos_veress_de_dalnok_commander_desc
+			traits = {
+				trait_reckless
+				armor_officer
+				cavalry_leader
+				trickster
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+	}
+	HUN_gusztav_denk_de_kistorony = {
+		name = "Gusztav Denk de Kistorony"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HUN/Portrait_HUN_Gusztav_Denk.png"
+				small = "gfx/interface/ideas/HUN_gusztav_denk_de_kistorony.png"
+			}
+		}
+		corps_commander = {
+			desc = HUN_gusztav_denk_de_kistorony_commander_desc
+			traits = {
+				politically_connected
+				cavalry_leader
+				organizer
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+	}
+	HUN_dome_sztojay = {
+		name = "Dome Sztojay"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HUN/Portrait_HUN_Dome_Sztojay.png"
+				small = "gfx/interface/ideas/HUN_dome_sztojay.png"
+			}
+		}
+		corps_commander = {
+			desc = HUN_dome_sztojay_commander_desc
+			traits = {
+				trickster
+				commando
+				trait_mountaineer
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = HUN_dome_sztojay
+			allowed = {
+				has_dlc_lar = yes
+			}
+			available = {
+				has_intelligence_agency = yes
+			}
+			traits = { head_of_intelligence }
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+	}
+	HUN_szilard_bakay = {
+		name = "Szilard Bakay"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HUN/Portrait_HUN_Szilard_Bakay.png"
+				small = "gfx/interface/ideas/HUN_szilard_bakay.png"
+			}
+		}
+		corps_commander = {
+			desc = HUN_szilard_bakay_commander_desc
+			traits = {
+				brilliant_strategist
+				infantry_leader
+				commando
+			}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+	}
+	HUN_karoly_bartha_de_dalnokfalva = {
+		name = "Karoly Bartha de Dalnokfalva"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HUN/Portrait_HUN_Karoly_Bartha.png"
+				small = "gfx/interface/ideas/HUN_karoly_bartha_de_dalnokfalva.png"
+			}
+		}
+		corps_commander = {
+			desc = HUN_karoly_bartha_de_dalnokfalva_commander_desc
+			traits = {
+				trait_engineer
+				artillery_specialist
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+	}
+	HUN_jeno_ratz = {
+		name = "Jeno Ratz"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HUN/Portrait_HUN_Jeno_Ratz.png"
+				small = "gfx/interface/ideas/HUN_jeno_ratz.png"
+			}
+		}
+		corps_commander = {
+			desc = HUN_jeno_ratz_commander_desc
+			traits = {
+				politically_connected
+				organizer
+				skilled_staffer
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = HUN_jeno_ratz_army_chief
+			traits = { army_chief_organisational_2 }
+			cost = 100
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+	}
+	
+	
+	HUN_Aurel_Stromfeld = {
+		name = "Aurel Stromfeld"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HUN/Portrait_HUN_Aurel_Stromfeld.png"
+				small = "gfx/interface/ideas/HUN_Aurel_Stromfeld.png"
+			}
+		}
+		field_marshal = {
+			traits = {
+				old_guard
+				war_hero
+				inflexible_strategist
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			available = {
+					has_government = communism
+			}
+		}
+	}
+	HUN_Dezso_Jasz = {
+		name = "Dezso Jasz"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HUN/Portrait_HUN_Dezso_Jasz.png"
+				small = "gfx/interface/ideas/HUN_Dezso_Jasz.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				brilliant_strategist
+				infantry_leader
+				organizer
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			available = {
+					has_government = communism
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = HUN_Dezso_Jasz_army_chief
+			traits = { army_chief_offensive_2 }
+			cost = 100
+			available = {
+				
+					has_government = communism
+				
+			}
+		}
+	}
+	HUN_Mate_Zalka = {
+		name = "Mate Zalka"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HUN/Portrait_HUN_Mate_Zalka.png"
+				small = "gfx/interface/ideas/HUN_Mate_Zalka.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				armor_officer
+				skilled_staffer
+				organizer
+				trickster
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			available = {
+					has_government = communism
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = HUN_Mate_Zalka_army_chief
+			available = {
+				not_already_hired_except_as = army_chief
+			}
+			traits = { army_chief_manoeuvre_2 }
+			cost = 100
+			available = {
+					has_government = communism
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = HUN_Mate_Zalka_high_command
+			ledger = army
+			available = {
+				not_already_hired_except_as = high_command
+			}
+			traits = { MHC_cavalry_3 }
+			cost = 200
+			available = {
+				has_government = communism
+			}
+		}
+	}
+	HUN_Andras_Tompe = {
+		name = "Andras Tompe"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HUN/Portrait_HUN_Andras_Tompe.png"
+				small = "gfx/interface/ideas/HUN_Andras_Tompe.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				armor_officer
+				cavalry_leader
+				organizer
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			available = {
+					has_government = communism
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = HUN_Andras_Tompe_high_command
+			ledger = army
+			traits = { MHC_armoured_1 }
+			cost = 50
+			available = {
+					has_government = communism
+			}
+		}
+	}
+	################
+	### Advisors ###
+	################
+
+	HUN_sandor_karacsony = {
+		name = HUN_sandor_karacsony
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/HUN_sandor_karacsony.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = HUN_sandor_karacsony
+			traits = { education_reformer }
+		}
+	}
+	HUN_bela_bangha = {
+		name = HUN_bela_bangha
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/HUN_bela_bangha.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = HUN_bela_bangha
+			traits = { compassionate_gentleman }
+		}
+	}
+	HUN_janos_kabay = {
+		name = HUN_janos_kabay
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/HUN_janos_kabay.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = HUN_janos_kabay
+			traits = { ICE_minister_of_healthcare_and_finance }
+		}
+	}
+	HUN_gedeon_richter = {
+		name = HUN_gedeon_richter
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/HUN_gedeon_richter.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = HUN_gedeon_richter
+			traits = { captain_of_industry }
+		}
+	}
+	HUN_farkas_heller = {
+		name = HUN_farkas_heller
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/HUN_farkas_heller.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = HUN_farkas_heller
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			traits = { economic_reformer }
+		}
+	}
+	HUN_rusztem_vambery = {
+		name = HUN_rusztem_vambery
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/HUN_rusztem_vambery.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = HUN_rusztem_vambery
+			traits = { sharp_tongued_lawyer }
+		}
+	}
+	HUN_ferenc_chorin = {
+		name = HUN_ferenc_chorin
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/HUN_ferenc_chorin.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = HUN_ferenc_chorin
+			traits = { war_industrialist }
+		}
+	}
+	HUN_mihaly_polanyi = {
+		name = HUN_mihaly_polanyi
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/HUN_mihaly_polanyi.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = HUN_mihaly_polanyi
+			traits = { technocrat }
+		}
+	}
+
+}

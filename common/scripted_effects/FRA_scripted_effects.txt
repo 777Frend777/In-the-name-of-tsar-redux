@@ -1,0 +1,41 @@
+FRA_increase_right_wing = {
+	set_temp_variable = { FRA_right_wing_influence_temp = FRA.right_wing_influence }
+	add_to_temp_variable = { var = FRA_right_wing_influence_temp value = 1 }
+
+	add_to_variable = { var = FRA.right_wing_influence value = 1 }
+}
+
+FRA_decrease_right_wing = {
+	set_temp_variable = { FRA_right_wing_influence_temp = FRA.right_wing_influence }
+	add_to_temp_variable = { var = FRA_right_wing_influence_temp value = -1 }
+
+	add_to_variable = { var = FRA.right_wing_influence value = -1 }
+}
+
+FRA_increase_centre_wing = {
+	set_temp_variable = { FRA_centre_wing_influence_temp = FRA.centre_wing_influence }
+	add_to_temp_variable = { var = FRA_centre_wing_influence_temp value = 1 }
+
+	add_to_variable = { var = FRA.centre_wing_influence value = 1 }
+}
+
+FRA_decrease_centre_wing = {
+	set_temp_variable = { FRA_centre_wing_influence_temp = FRA.centre_wing_influence }
+	add_to_temp_variable = { var = FRA_centre_wing_influence_temp value = -1 }
+
+	add_to_variable = { var = FRA.centre_wing_influence value = -1 }
+}
+
+FRA_increase_left_wing = {
+	set_temp_variable = { FRA_left_wing_influence_temp = FRA.left_wing_influence }
+	add_to_temp_variable = { var = FRA_left_wing_influence_temp value = 1 }
+
+	add_to_variable = { var = FRA.left_wing_influence value = 1 }
+}
+
+FRA_decrease_left_wing = {
+	set_temp_variable = { FRA_left_wing_influence_temp = FRA.left_wing_influence }
+	add_to_temp_variable = { var = FRA_left_wing_influence_temp value = -1 }
+
+	add_to_variable = { var = FRA.left_wing_influence value = -1 }
+}

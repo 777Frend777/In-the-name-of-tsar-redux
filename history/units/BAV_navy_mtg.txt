@@ -1,0 +1,66 @@
+
+units = {
+		##### NAVAL UNITS #####
+	fleet = {
+		name = "Rote Flotte"
+		naval_base = 362 
+		task_force  = {
+		name = "Schlachtschiffflotte"
+		location = 362  # Konigsberg
+		ship = { name = "Marx" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = BAV version_name "Kaiser Class" } } }
+		ship = { name = "Engels" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = BAV version_name "Kaiser Class" } } }
+		ship = { name = "Thalmann" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = BAV version_name "Kaiser Class" } } }
+		ship = { name = "Hannover" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = BAV version_name = "Deutschland Class" } } }
+		ship = { name = "Schleswig-Holstein" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = BAV version_name = "Deutschland Class" } } }
+		ship = { name = "Schlesien" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = BAV version_name = "Deutschland Class" } } }
+		}	
+		task_force = {
+		name = "Rote Flotte"
+		location = 362
+		ship = { name = "Derffinger" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = BAV version_name = "Derffinger Class" } } }
+		ship = { name = "Lützow" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = BAV version_name = "Derffinger Class" } } }
+		ship = { name = "Revolution" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = BAV version_name = "Derffinger Class" } } }
+		ship = { name = "Marat" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = BAV version_name = "Deutschland Class" } } }
+		ship = { name = "La Commune de Paris" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = BAV version_name = "Deutschland Class" } } }
+		ship = { name = "Weltrevolution" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = BAV version_name = "Deutschland Class"} } }
+		ship = { name = "Nürnberg" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = BAV version_name = "Leipzig Class" } } } 		
+		ship = { name = "Leipzig" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = BAV version_name = "Leipzig Class" } } }		
+		ship = { name = "Königsberg" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = BAV version_name = "Königsberg Class } } }			
+		ship = { name = "Karlsruhe" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = BAV version_name = "Königsberg Class } } }	
+		ship = { name = "Köln" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = BAV version_name = "Königsberg Class } } }			
+		ship = { name = "Emden" definition = light_cruiser equipment = {  ship_hull_cruiser_1 = { amount = 1 owner = BAV version_name = "Königsberg Class } } }
+		}	
+		task_force = {
+		name = "Torpedobootflottille"
+		location = 362  # Konigsberg	
+		ship = { name = "Möwe" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BAV version_name = "Type 24 Class" } } }
+		ship = { name = "Albatros" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BAV version_name = "Type 24 Class" } } }
+		ship = { name = "Seeadler" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BAV version_name = "Type 24 Class" } } }
+		ship = { name = "Greif" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BAV version_name = "Type 24 Class"} } }
+		ship = { name = "Falke" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BAV version_name = "Type 24 Class" } } }
+		ship = { name = "Kondor" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BAV version_name = "Type 24 Class"} } }
+		ship = { name = "Wolf" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BAV version_name = "Type 24 Class" } } }
+		ship = { name = "Iltis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BAV version_name = "Type 24 Class" } } }
+		}
+		task_force = {
+		name = "Unterseeboots-Schule"
+		location = 362   # Wilhemshaven
+		# 2. Unterseebootsflottille
+		ship = { name = "U-1" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BAV version_name = "Type VII Class" } } }
+		ship = { name = "U-2" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BAV version_name = "Type VII Class" } } }
+		ship = { name = "U-3" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BAV version_name = "Type VII Class" } } }
+		# 3. Unterseebootsflottille
+		ship = { name = "U-4" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BAV version_name = "Type VII Class"} } }
+		ship = { name = "U-5" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BAV version_name = "Type VII Class" } } }
+		ship = { name = "U-6" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BAV version_name = "Type VII Class" } } }
+		# 4. Unterseebootsflottille
+		ship = { name = "U-7" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BAV version_name = "Type VII Class" } } }
+		ship = { name = "U-8" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BAV version_name = "Type VII Class" } } }
+		ship = { name = "U-9" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BAV version_name = "Type VII Class" } } }
+		# 1. Unterseebootsflottille
+		ship = { name = "U-10" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BAV version_name = "Type VII Class" } } }
+		ship = { name = "U-11" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BAV version_name = "Type VII Class" } } }
+		ship = { name = "U-12" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BAV version_name = "Type VII Class" } } }
+	}
+	}
+}	

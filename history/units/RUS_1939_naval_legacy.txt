@@ -1,0 +1,277 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	### Northern Fleet -- Murmansk
+	fleet = {
+		name = "Severnyy Flot"
+		naval_base = 3134 # Murmansk
+		task_force = {				
+			name = "Severnyy Flot"
+			location = 3134 # Murmansk
+			# 1ya Flotiliya Esmintsev
+			ship = { name = "Pyotr Velikiy" definition = battleship equipment = { battleship_2 = { amount = 1 owner = RUS } } }
+			ship = { name = "Rurik" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = RUS version_name = "Rurik Class" } } }
+			ship = { name = "Fidonisi" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Gadzhibey" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Kaliakria" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Kerch" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+			# 2ya Flotiliya Esmintsev
+			ship = { name = "Izyaslav" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Tserigo" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Korfu" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }		
+			ship = { name = "Levkas" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }		
+			ship = { name = "Zante" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+		}	
+		task_force = {	
+			name = "Severniy Podvodniy Flot"
+			location = 3134 # Murmansk
+			# 5iy Podvodniy Flot
+			ship = { name = "D-1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS } } }			
+			ship = { name = "D-2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS } } }			
+			ship = { name = "D-3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS } } }			
+			ship = { name = "D-4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS } } }			
+			ship = { name = "D-5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS } } }			
+			ship = { name = "D-6" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS } } }			
+			# 13iy Podvodniy Flot
+			ship = { name = "Shch-401" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-402" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-403" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-404" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			# 15iy Podvodniy Flot
+			ship = { name = "Shch-421" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-422" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-423" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-424" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+		}
+	}
+	
+	### Baltic Fleet -- Petrograd
+	fleet = {
+		name = "Baltiyskiy Flot"
+		naval_base = 3151 # Petrograd
+		task_force = {	
+			name = "Baltiyskiy Flot"
+			location = 3151 # Petrograd
+			ship = { name = "Gangut" definition = battleship equipment = { battleship_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Petropavlovsk" definition = battleship equipment = { battleship_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Sevastopol" definition = battleship equipment = { battleship_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Poltava" definition = battleship equipment = { battleship_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Izmail" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Borodino" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Kinburn" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Navarin" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Andrei Pervozvanny" definition = battleship equipment = { battleship_1 = { amount = 1 owner = RUS version_name = "Andrei Pervozvanny Class"} } }	
+			ship = { name = "Imperator Pavel I" definition = battleship equipment = { battleship_1 = { amount = 1 owner = RUS version_name = "Andrei Pervozvanny Class"} } }	
+			ship = { name = "Varyag" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = RUS version_name = "Varyag Class" } } }
+			ship = { name = "Svetlana" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = RUS  } } }
+			ship = { name = "Admiral Greig" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Admiral Butakov" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = RUS  } } }
+			ship = { name = "Admiral Spiridov" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = RUS  } } }
+			# 2ya Flotiliya Esmintsev
+			ship = { name = "Orfey" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Azard" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Desna" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Pobiditel" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+			# 3ya Flotiliya Esmintsev
+			ship = { name = "Leiutenant Dubasov" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Leiutenant Ilin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Kapitan I Ranga Miklucha Maklai" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Kapitan Kroun" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Kapitan Konon-Zotov" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+			# 4ya Flotiliya Esmintsev
+			ship = { name = "Kapitan Zonov" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }		
+			ship = { name = "Kapitan Kern" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }		
+			ship = { name = "Kapitan Izylmetev" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }		
+			ship = { name = "Kapitan Belli" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }	
+			# 3ya Flotiliya Esmintsev
+			ship = { name = "Petrograd" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS version_name = "Petrograd & Minsk Class" } } }
+			ship = { name = "Gremyashchiy" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = RUS } } }
+			ship = { name = "Groznyy" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = RUS } } }
+			ship = { name = "Gnevnyy" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = RUS } } }
+			ship = { name = "Gordyy" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = RUS } } }
+			# 4ya Flotiliya Esmintsev
+			ship = { name = "Minsk" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS version_name = "Petrograd & Minsk Class" } } }
+			ship = { name = "Gromkiy" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = RUS } } }
+			ship = { name = "Smetlivyy" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = RUS } } }
+			ship = { name = "Stremitelnyy" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = RUS } } }
+			ship = { name = "Sokrushitelnyy" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = RUS } } }
+		}	
+		task_force = {	
+			name = "Baltiyskiy Podvodniy Flot"
+			location = 3151 # Leningrad
+			# 1iy Podvodniy Flot
+			ship = { name = "Shch-301" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-302" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-303" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-304" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-305" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-306" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			# 2iy Podvodniy Flot
+			ship = { name = "Shch-307" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-308" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-309" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-310" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-311" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			# 6iy Podvodniy Flot
+			ship = { name = "Shch-317" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-318" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-319" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-320" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-322" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-323" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-324" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			# 7iy Podvodniy Flot
+			ship = { name = "P-1" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "P-2" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "P-3" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "S-1" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series IX Srednyaya" } } }
+			ship = { name = "S-2" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series IX Srednyaya" } } }
+			ship = { name = "S-3" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series IX Srednyaya" } } }
+		}
+	}
+
+	### Black Sea Fleet -- Sevastopol
+	fleet = {
+		name = "Chernomorskiy Flot"
+		naval_base = 3686 # Sevastopopl
+		task_force = {	
+			name = "Chernomorskiy Flot"
+			location = 3686 # Sevastopopl
+			ship = { name = "Imperatritsa Mariya" definition = battleship equipment = { battleship_1 = { amount = 1 owner = RUS version_name = "Imperatritsa Mariya Class"} } }
+			ship = { name = "Imperator Alexsander III" definition = battleship equipment = { battleship_1 = { amount = 1 owner = RUS version_name = "Imperatritsa Mariya Class"} } }
+			ship = { name = "Imperator Nikolai I" definition = battleship equipment = { battleship_1 = { amount = 1 owner = RUS version_name = "Imperatritsa Mariya Class"} } }
+			ship = { name = "Imperatritsa Ekaterina Velikaya" definition = battleship equipment = { battleship_1 = { amount = 1 owner = RUS version_name = "Imperatritsa Mariya Class"} } }
+			ship = { name = "Admiral Lazarev" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = RUS version_name = "Admiral Nakhimov Class" } } }
+			ship = { name = "Admiral Istomin" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = RUS version_name = "Admiral Nakhimov Class" } } }
+			ship = { name = "Admiral Kornilov" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = RUS version_name = "Admiral Nakhimov Class" } } }
+			ship = { name = "Admiral Lazarev" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = RUS version_name = "Admiral Nakhimov Class" } } }
+			# 5ya Flotiliya Esmintsev
+			ship = { name = "Moskva" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS version_name = "Petrograd & Minsk Class" } } }
+			ship = { name = "Bodryy" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = RUS } } }
+			ship = { name = "Bystryy" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = RUS } } }
+			ship = { name = "Boykiy" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = RUS } } }
+			# 6ya Flotiliya Esmintsev
+			ship = { name = "Kharkov" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS version_name = "Petrograd & Minsk Class" } } }
+			ship = { name = "Mikhail" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Vladimir" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Konstantin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Gavril" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+		}	
+		task_force = {	
+			name = "Chernomorskiy Podvodniy Flot"
+			location = 3686 # Sevastopopl
+			# 9iy Podvodniy Flot
+			ship = { name = "Shch-201" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-202" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-203" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-204" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-205" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-206" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-207" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			# 12iy Podvodniy Flot
+			ship = { name = "Shch-208" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-209" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-210" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-211" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			# 14iy Podvodniy Flot
+			ship = { name = "Shch-212" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-213" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-214" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-215" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+		}
+		task_force = {
+		name = "Turetskaya Flotiliya"
+		location = 719 # 
+		# Turetskiy Flot
+		ship = { name = "Almaz" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = RUS version_name = "Almaz Class" } } }
+		ship = { name = "D-13" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS } } }			
+		ship = { name = "D-14" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS } } }			
+		ship = { name = "D-15" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS } } }			
+		ship = { name = "D-16" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS } } }			
+		ship = { name = "D-17" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS } } }	
+		}	
+	}
+
+	### Pacific Fleet -- Vladivostok
+	fleet = {
+		name = "Tikhookeanskiy Flot"
+		naval_base = 957 # Vladivostok
+		task_force = {	
+			name = "Tikhookeanskiy Flot"
+			location = 957 # Vladivostok
+			# 8ya Flotiliya Esmintsev
+			ship = { name = "Vladivostok" definition = battleship equipment = { battleship_2 = { amount = 1 owner = RUS version_name = "Vladivostok Class" } } }
+			ship = { name = "Rossiya" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = RUS  } } }
+			ship = { name = "Zabiyaka" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Samson" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Letun" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Grom" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+		}	
+		task_force = {	
+			name = "Tihookyeanskiy Podvodniy Flot"
+			location = 957 # Vladivostok
+			# 3iy Podvodniy Flot
+			ship = { name = "Shch-101" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-102" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-103" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-104" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-105" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-106" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			# 4iy Podvodniy Flot
+			ship = { name = "Shch-107" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-108" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-109" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-110" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-111" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-112" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			# 10iy Podvodniy Flot
+			ship = { name = "Shch-113" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-114" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-115" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-116" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-117" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-118" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			# 11iy Podvodniy Flot
+			ship = { name = "Shch-119" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-120" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-121" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-122" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-123" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			ship = { name = "Shch-124" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS } } }			
+			# 16iy Podvodniy Flot
+			ship = { name = "Shch-126" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-127" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-128" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-129" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-130" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			# 17iy Podvodniy Flot
+			ship = { name = "Shch-131" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-132" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-133" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-134" definition = submarine equipment = { submarine_2 = { amount = 1 owner = RUS version_name = "Series X Shchuka" } } }
+		}	
+	}
+} 
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+
+	### Under Construction Notes ###
+	
+	add_equipment_production = {
+		equipment = {
+			type = heavy_cruiser_2
+			creator = "RUS"
+		}
+		requested_factories = 1
+		progress = 0.90
+		amount = 4
+	}
+}
+
+#####################

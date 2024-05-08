@@ -1,0 +1,23 @@
+
+state={
+	id=948
+	name="STATE_948"
+	manpower = 42633
+	
+	state_category = wasteland
+	impassable = yes
+
+	history={
+		owner = WST
+		buildings = {
+			infrastructure = 0
+		}
+		add_core_of = AST
+		add_core_of = WST
+	}
+	provinces={
+		2177 2186 2133 8134 8155 10473 12904 12912 12926
+	}
+
+	local_supplies=4.0 
+}

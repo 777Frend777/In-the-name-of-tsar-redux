@@ -1,0 +1,42 @@
+state={
+	id=85
+	name="STATE_85"
+	manpower = 366730
+	
+	state_category = city
+	history={
+		owner = DNZ
+		victory_points = {
+			362 10
+		}
+		
+		victory_points = {
+			9263 5
+		}
+		
+		set_demilitarized_zone = yes
+		
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 1
+			dockyard = 3
+			362 = {
+				naval_base = 5
+			}
+			
+			9263 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = POL
+		add_core_of = DNZ
+		add_core_of = GER
+	}
+
+	provinces={
+		362 9263
+	}
+
+	local_supplies=0.0 
+}

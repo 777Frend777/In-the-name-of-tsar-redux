@@ -1,0 +1,12 @@
+﻿units = {
+		##### NAVAL UNITS #####
+	fleet = {
+		name = "Gneisenau"
+		naval_base = 362 
+		task_force = {
+		base = 362
+		location = 362  # Konigsberg
+		ship = { name = "Gneisenau" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = GER version_name "Scharnhorst Class" } } }
+	}
+	}
+}

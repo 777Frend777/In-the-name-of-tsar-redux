@@ -1,0 +1,16 @@
+﻿units = {
+	fleet = {
+		name = "Nordseeflotte"
+		naval_base = 241
+		task_force = {
+		name "Nordseeflotte"
+		location = 241
+		ship = { name = "König Albert" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = WSM version_name = "Kaiser Class" } } }
+		ship = { name = "Möwe" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = WSM version_name = "Type 24 Class" } } }
+		ship = { name = "Albatros" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = WSM version_name = "Type 24 Class" } } }
+		ship = { name = "Seeadler" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = WSM version_name = "Type 24 Class" } } }
+		ship = { name = "Greif" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = WSM version_name = "Type 24 Class" } } }
+		ship = { name = "Falke" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = WSM version_name = "Type 24 Class" } } }
+	}
+	}
+}		

@@ -1,0 +1,2607 @@
+focus_tree = {
+	id = romania
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ROM
+		}
+	}
+	default = no
+	focus = {
+		id = ROM_follow_RUS
+		icon = GFX_focus_secret_rearmament
+		cost = 10.00
+		mutually_exclusive = {
+			focus = ROM_prepare_coup
+		}
+		x = 16
+		y = 0
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+		RUS = { exists = yes }
+		OR = {
+			is_subject_of = RUS
+			is_in_faction_with = RUS
+		}
+		}
+		completion_reward = {
+		
+		ROM = {
+				if = {
+					limit = { is_in_faction_with = RUS }
+					add_opinion_modifier = { target = RUS modifier = followed_russia_opinion }
+				}
+			}
+		}
+		}
+	focus = {
+		id = ROM_balkan_shield
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
+		mutually_exclusive = {
+			focus = ROM_balkan_dominance
+		}
+		x = 30
+		y = 0
+		available = {
+			NOT = { is_in_faction_with = RUS }
+			is_subject = no
+		}
+		completion_reward = {
+		add_political_power = 120
+		}
+	}
+	focus = {
+		id = ROM_prepare_coup
+		icon = GFX_goal_demand_sudetenland
+		cost = 10.00
+		mutually_exclusive = {
+			focus = ROM_follow_RUS
+		}
+		x = 7
+		y = 0
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+		NOT = {
+		has_country_flag = ROM_remained_loyal_rus
+		}
+		}
+		bypass = {
+			NOT = { is_in_faction_with = RUS }
+		}
+		completion_reward = {
+		
+		custom_effect_tooltip = ROM_prepare_coup_warning_tt
+		RUS = {
+			remove_from_faction = ROM
+			end_puppet = ROM
+		}
+		add_political_power = 10
+		add_stability = -0.03
+		create_country_leader = {
+		name = "Gheorghe Tatarescu"
+		desc = "POLITICS_GHEORGHE_TATARESCU_DESC"
+		picture = "gfx/leaders/ROM/Portrait_Romania_Gheorghe_Tatarescu.dds"
+		expire = "1965.1.1"
+		ideology = neutrality_subtype
+		traits = {
+		}
+		}
+		if = {
+		limit = { NOT = { ROM = { has_country_flag = ROM_joined_coup_rom } } }
+		RUS = {
+		country_event = { id = romania_homeland.2 days = 1 } 
+		}
+		}
+		}
+	}
+	focus = {
+		id = ROM_balkan_dominance
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		cost = 10.00
+		mutually_exclusive = {
+			focus = ROM_balkan_shield
+		}
+		x = 26
+		y = 0
+		available = {
+		is_subject = no
+		}
+		completion_reward = {
+		add_war_support = 0.1
+		}
+		
+		
+	}
+	focus = {
+		id = ROM_romanian_army
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
+		x = 44
+		y = 0
+		completion_reward = {
+		army_experience = 15
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = ROM_industry
+		icon = GFX_goal_generic_construction
+		cost = 10.00
+		x = 35
+		y = 0
+		completion_reward = {
+		add_tech_bonus = {
+				name = GER_four_year_plan
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = ROM_navy_force
+		icon = GFX_goal_generic_build_navy
+		cost = 10.00
+		x = 54
+		y = 0
+		completion_reward = {
+		navy_experience = 5
+		random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+		}
+	}
+	focus = {
+		id = ROM_greater_romania
+		icon = GFX_focus_rom_preserve_romania
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_prepare_coup
+		}
+		x = 7
+		y = 1
+		completion_reward = {
+		add_political_power = 120
+		}
+	}
+	focus = {
+		id = ROM_socialist_revolution
+		icon = GFX_goal_support_fourth_int
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_greater_romania
+		}
+		x = 2
+		y = 2
+		available = {
+		NOT = {
+		OR = {
+		has_completed_focus = ROM_iron_guard_focus 
+		has_completed_focus = ROM_democratic_govt
+		has_completed_focus = ROM_support_monarchy
+		}
+		}
+		}
+		completion_reward = {
+		remove_ideas = ROM_king_carol_ii_hedonist
+		add_timed_idea = { idea = comintern_influence days = 1095 }
+		hidden_effect = {
+		country_event = { id = romania_homeland.1 days = 40 } 
+		}
+		}
+	}
+	focus = {
+		id = ROM_peasant_militia
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_socialist_revolution
+		}
+		x = 1
+		y = 3
+		available = {
+		has_government = communism
+		}
+		completion_reward = {
+		add_ideas = ROM_peasant_militia_idea
+		}
+	}
+	focus = {
+		id = ROM_socialist_education
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_socialist_revolution
+		}
+		x = 3
+		y = 3
+		available = {
+		has_government = communism
+		}
+		completion_reward = {
+		add_ideas = ROM_socialist_science_idea
+		}
+	}
+	focus = {
+		id = ROM_socialist_bloc
+		icon = GFX_goal_support_communism
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_peasant_militia
+		}
+		prerequisite = {
+			focus = ROM_socialist_education
+		}
+		x = 2
+		y = 4
+		completion_reward = {
+		set_rule = {
+				can_create_factions = yes
+			}
+		}
+	}
+	focus = {
+		id = ROM_bavarian_voluteers
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_peasant_militia
+		}
+		prerequisite = {
+			focus = ROM_socialist_education
+		}
+		x = 0
+		y = 4
+		available = {
+		BAV = { exists = yes }
+		NOT = { has_war_with = BAV }
+		}
+		completion_reward = {
+		add_political_power = 60
+		add_manpower = 12500
+		}
+	}
+	focus = {
+		id = ROM_red_army
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_socialist_bloc
+		}
+		x = 2
+		y = 5
+		completion_reward = {
+		add_ideas = ROM_red_army_idea
+		}
+	}
+	focus = {
+		id = ROM_guarantee_HUN
+		icon = GFX_focus_generic_concessions
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_peasant_militia
+		}
+		prerequisite = {
+			focus = ROM_socialist_education
+		}
+		x = 4
+		y = 4
+		available = {
+		has_war = no 
+		is_puppet = no
+		HUN = {
+		has_war = no
+		NOT = {
+		is_in_faction_with = ROM
+		}
+		OR = {
+		has_government = communism
+		has_government = socialist
+		}
+		is_puppet = no
+		exists = yes }
+		}
+		completion_reward = {
+		give_guarantee = HUN
+		}
+	}
+	focus = {
+		id = ROM_offer_HUN_transylvania
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_guarantee_HUN
+		}
+		x = 4
+		y = 5
+		available = {
+		controls_state = 76
+		controls_state = 83
+		controls_state = 84
+		controls_state = 82
+		has_war = no 
+		is_puppet = no
+		HUN = {
+		has_war = no
+		OR = {
+		has_government = communism
+		has_government = socialist
+		}
+		NOT = {
+		is_in_faction_with = ROM
+		}
+		OR = {
+		has_government = communism
+		has_government = socialist
+		}
+		is_puppet = no
+		exists = yes }
+		}
+		completion_reward = {
+		HUN = {
+		country_event = { id = romania_homeland.3 days = 1 } #not ready
+		}
+		}
+	}
+	focus = {
+		id = ROM_iron_guard_focus
+		icon = GFX_focus_codreanu
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_greater_romania
+		}
+		available = {
+		NOT = {
+		OR = {
+		has_completed_focus = ROM_support_monarchy
+		has_completed_focus = ROM_democratic_govt
+		has_completed_focus = ROM_socialist_revolution
+		}
+		}
+		}
+		x = 6
+		y = 2
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		add_popularity = {
+					ideology = fascism
+					popularity = 0.13
+				}
+		add_political_power = 60
+		set_politics = { ruling_party = fascism elections_allowed = no }
+		}
+	}
+	focus = {
+		id = ROM_a_new_way
+		icon = GFX_goal_ironguard
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_iron_guard_focus
+		}
+		x = 6
+		y = 3
+		completion_reward = {
+		add_ideas = ROM_iron_guard
+		}
+	}
+	focus = {
+		id = ROM_orthodox_christianity
+		icon = GFX_focus_orthodox
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_a_new_way
+		}
+		x = 6
+		y = 4
+		completion_reward = {
+		add_stability = 0.1
+		}
+	}
+	focus = {
+		id = ROM_legions
+		icon = GFX_focus_legion
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_orthodox_christianity
+		}
+		x = 6
+		y = 6
+		completion_reward = {
+		add_ideas = ROM_legion_idea
+		}
+	}
+	focus = {
+		id = ROM_support_monarchy #Follow Michael
+		icon = GFX_focus_rom_coup
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_greater_romania
+		}
+		x = 8
+		y = 2
+		available = {
+		NOT = {
+		OR = {
+		has_completed_focus = ROM_iron_guard_focus #ROM_support_monarchy
+		has_completed_focus = ROM_democratic_govt
+		has_completed_focus = ROM_socialist_revolution
+		}
+		}
+		has_government = neutrality
+		}
+		completion_reward = {
+		add_ideas = ROM_figurehead_king_michael
+		create_country_leader = {
+				name = "Michael I"
+				desc = "POLITICS_MICHAEL_I_DESC"
+				picture = GFX_Portrait_romania_michael_i				
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+				}
+			}
+		#add_ideas = ROM_supported_monarchy_idea
+		remove_ideas = ROM_king_carol_ii_hedonist
+		add_ideas = ROM_figurehead_king_michael
+		}
+	}
+	focus = {
+		id = ROM_renew_bulgaria_alliance #Actually Serbia
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_support_monarchy
+			focus = ROM_iron_guard_focus
+		}
+		x = 8
+		y = 3
+		available = {
+		NOT = { has_war_with = SER }
+		SER = { exists = yes }
+		}
+		completion_reward = {
+		SER = {
+					add_opinion_modifier = { target = ROM modifier = romanian_diplo_mission }
+				}
+			}
+	}
+	focus = {
+		id = ROM_nationalize_oil
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_iron_guard_focus
+			focus = ROM_support_monarchy
+		}
+		x = 9
+		y = 4
+		completion_reward = {
+		modify_building_resources = {
+        	   building = synthetic_refinery
+        	   resource = rubber
+        	   amount = 2
+        	}
+		add_tech_bonus = {
+				name = GER_coal_liquidization
+				bonus = 1.0
+				uses = 1
+				category = synth_resources
+			}
+		random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+		}
+		}
+	}
+	focus = {
+		id = ROM_ally_GER
+		icon = GFX_focus_chi_mission_to_germany
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_nationalize_oil
+		}
+		x = 8
+		y = 5
+		available = {
+		NOT = { has_war_with = GER }
+		GER = { exists = yes }
+		}
+		completion_reward = {
+		GER = {
+					add_opinion_modifier = { target = ROM modifier = romanian_diplo_mission }
+				}
+			}
+	}
+	focus = {
+		id = ROM_ally_AUS
+		icon = GFX_ser_ally_austria
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_nationalize_oil
+		}
+		x = 10
+		y = 5
+		available = {
+		NOT = { has_war_with = AUS }
+		AUS = { exists = yes }
+		}
+		completion_reward = {
+		AUS = {
+					add_opinion_modifier = { target = ROM modifier = romanian_diplo_mission }
+				}
+			}
+	}
+	focus = {
+		id = ROM_royal_foundation
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_support_monarchy
+		}
+		x = 11
+		y = 3
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+	focus = {
+		id = ROM_democratic_govt
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_greater_romania
+			focus = ROM_follow_RUS
+		}
+		mutually_exclusive = {
+			focus = ROM_authoritarian_govt
+		}
+		available = {
+		NOT = {
+		OR = {
+		has_completed_focus = ROM_iron_guard_focus 
+		has_completed_focus = ROM_support_monarchy
+		has_completed_focus = ROM_socialist_revolution
+		}
+		}
+		}
+		x = 14
+		y = 2
+		completion_reward = {
+		add_popularity = {
+					ideology = conservatives
+					popularity = 0.13
+				}
+		add_popularity = {
+					ideology = democratic
+					popularity = 0.13
+				}
+		
+		}
+	}
+	focus = {
+		id = ROM_constitutional_monarchy
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_support_monarchy
+			focus = ROM_democratic_govt
+		}
+		mutually_exclusive = {
+			focus = ROM_republic
+		}
+		x = 13
+		y = 3
+		completion_reward = {
+		add_popularity = {
+					ideology = conservatives
+					popularity = 0.14
+				}
+		set_politics = { ruling_party = conservatives elections_allowed = yes }
+		}
+	}
+	focus = {
+		id = ROM_ally_west
+		icon = GFX_goal_anschluss
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_constitutional_monarchy
+		}
+		x = 13
+		y = 4
+		available = {
+		NOT = { has_war_with = FRA }
+		FRA = { exists = yes }
+		NOT = { has_war_with = ENG }
+		ENG = { exists = yes }
+		}
+		completion_reward = {
+		FRA = {
+					add_opinion_modifier = { target = ROM modifier = faith_in_the_west }
+			}
+		ENG = {
+					add_opinion_modifier = { target = ROM modifier = faith_in_the_west }
+			}	
+		}
+	}
+	focus = {
+		id = ROM_republic
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_democratic_govt
+		}
+		mutually_exclusive = {
+			focus = ROM_constitutional_monarchy
+		}
+		x = 15
+		y = 3
+		completion_reward = {
+		if = {
+		limit = { FRA = { OR = {
+		has_government = democratic 
+		has_government = conservatives
+		has_government = socialist
+		} } }
+		FRA = {
+					add_opinion_modifier = {
+							target = ROM
+							modifier = republican_govt
+						}
+				}
+		}
+		if = {
+		limit = { ENG = { OR = {
+		has_government = democratic 
+		has_government = conservatives
+		} } }
+		ENG = {
+					add_opinion_modifier = {
+							target = ROM
+							modifier = republican_govt
+						}
+				}
+		}
+		set_politics = { ruling_party = democratic elections_allowed = yes }
+		add_ideas = ROM_republican_govt_idea
+		}
+	}
+	focus = {
+		id = ROM_handle_king
+		icon = GFX_focus_rom_handle_king
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_republic
+		}
+		x = 15
+		y = 4
+		completion_reward = {
+			set_cosmetic_tag = ROM_REP
+		news_event = { id = romania_homeland.11 }
+		if = {
+		limit = { has_idea = ROM_king_carol_ii_hedonist	}
+		remove_ideas = ROM_king_carol_ii_hedonist
+		}
+		set_politics = { ruling_party = democratic elections_allowed = yes }
+		add_timed_idea = { idea = ROM_king_carol_ii_consumer_penalty days = 270 }
+		}
+
+	}
+	focus = {
+		id = ROM_constitution
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_ally_west
+			focus = ROM_handle_king
+		}
+		x = 14
+		y = 5
+		completion_reward = {
+		add_political_power = 120
+		}
+	}
+	#Maintain the course
+	focus = {
+		id = ROM_authoritarian_govt
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_follow_RUS
+		}
+		mutually_exclusive = {
+			focus = ROM_democratic_govt
+		}
+		x = 17
+		y = 2
+		completion_reward = {
+		add_ideas = ROM_authoritarian_govt_idea
+		}
+	}
+	focus = {
+		id = ROM_boost_industry
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_authoritarian_govt
+		}
+		x = 17
+		y = 3
+		completion_reward = {
+		add_ideas = ROM_industry_boost_idea
+		}
+	}
+	focus = {
+		id = ROM_pro_russian_govt
+		icon = GFX_focus_rus_preserve_russia
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_follow_RUS
+		}
+		x = 19
+		y = 3
+		available = {
+		RUS = { exists = yes }
+		OR = {
+		is_subject_of = RUS
+		is_in_faction_with = RUS
+		}
+		}
+		completion_reward = {
+		ROM = {
+					add_opinion_modifier = { target = RUS modifier = pro_russian_govt_opinion }
+				}
+			}
+	}
+	focus = {
+		id = ROM_conscript_minorities
+		icon = GFX_goal_rhineland
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_pro_russian_govt
+		}
+		prerequisite = {
+			focus = ROM_boost_industry
+		}
+		x = 18
+		y = 4
+		completion_reward = {
+		add_ideas = ROM_conscript_minorities_idea
+		}
+	}
+	focus = { 
+		id = ROM_parties_must_end
+		icon = GFX_focus_rom_parties_end
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_pro_russian_govt
+		}
+		x = 19
+		y = 5
+		completion_reward = {
+		add_stability = 0.03
+		remove_ideas = ROM_king_carol_ii_hedonist
+		}
+	}
+	focus = {
+		id = ROM_russian_industry
+		icon = GFX_goal_generic_army_artillery
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_follow_RUS
+		}
+		x = 21
+		y = 1
+		available = {
+			NOT = { has_war_with = RUS }
+			is_in_faction_with = RUS 
+		}
+		completion_reward = {
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 2
+			 instant_build = yes
+		    }
+		  }
+		RUS = {
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 1
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 1
+			 instant_build = yes
+		    }
+		  }
+		}
+		
+		}
+	}
+	focus = {
+		id = ROM_russian_army_advisors
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_russian_industry
+		}
+		x = 22
+		y = 2
+		available = {
+			NOT = { has_war_with = RUS }
+			is_in_faction_with = RUS 
+		}
+		completion_reward = {
+		RUS = {
+		add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.25
+				uses = 1
+				category = land_doctrine
+			}
+		}
+		add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = ROM_rus_tech
+		icon = GFX_goal_generic_special_forces
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_russian_industry
+		}
+		x = 20
+		y = 2
+		available = {
+			NOT = { has_war_with = RUS }
+			is_in_faction_with = RUS 
+		}
+		completion_reward = {
+		RUS = {
+		army_experience = 5
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.25
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+		ROM = {
+		army_experience = 5
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+		}
+		}
+	focus = {
+		id = ROM_rus_slot_1
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_russian_army_advisors
+		}
+		prerequisite = {
+			focus = ROM_rus_tech
+		}
+		x = 21
+		y = 3
+		available = {
+			NOT = { has_war_with = RUS }
+			is_in_faction_with = RUS 
+		}
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+	focus = {
+		id = ROM_join_RUS_training
+		icon = GFX_focus_generic_license_production
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_pro_russian_govt
+		}
+		prerequisite = {
+			focus = ROM_russian_army_advisors
+		}
+		prerequisite = {
+			focus = ROM_rus_tech
+		}
+		x = 21
+		y = 4
+		available = {
+			NOT = { has_war_with = RUS }
+			is_in_faction_with = RUS 
+		}
+		completion_reward = {
+		RUS = {
+		army_experience = 15
+		}
+		ROM = {
+		army_experience = 35
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 1
+		 add_building_construction = {
+			 type = arms_factory
+			 level = 1
+			 instant_build = yes
+		    }
+		  }
+		}
+		}
+	}
+	focus = {
+		id = ROM_request_control_bessarabia
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_join_RUS_training
+		}
+		x = 21
+		y = 5
+		
+		completion_reward = {
+		78 = {
+		owner = {
+		country_event = { id = romania_homeland.9 days = 1 }
+		}
+		}
+		}
+
+	}
+	focus = {
+		id = ROM_claim_bessarabia
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5.00
+		prerequisite = {
+			focus = ROM_balkan_dominance
+		}
+		x = 25
+		y = 1
+		completion_reward = {
+		add_political_power = 35
+		#add_state_claim = 78
+		add_state_claim = 766
+		#add_state_claim = 80
+		}
+	}
+	focus = {
+		id = ROM_greater_bessarabia
+		icon = GFX_goal_demand_sudetenland
+		cost = 5.00
+		prerequisite = {
+			focus = ROM_claim_bessarabia
+		}
+		x = 24
+		y = 2
+		completion_reward = {
+		add_political_power = 35
+		add_state_claim = 192
+		add_state_claim = 198
+		add_state_claim = 197
+		}
+	}
+	focus = {
+		id = ROM_balkan_protector
+		icon = GFX_focus_rus_inv_rom
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_balkan_dominance
+		}
+		x = 26
+		y = 2
+		completion_reward = {
+        add_war_support = 0.15
+		}
+	}
+	focus = {
+		id = ROM_war_GRE
+		icon = GFX_ser_greece
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_balkan_protector
+		}
+		x = 23
+		y = 4
+		available = {
+		is_puppet = no
+		country_exists = GRE 
+		}
+		completion_reward = {
+		create_wargoal = {
+					type = puppet_wargoal_focus
+					target = GRE
+				}
+			}	
+	}
+	focus = {
+		id = ROM_galician_claims
+		icon = GFX_focus_hun_krw
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_greater_bessarabia
+		}
+		x = 24
+		y = 3
+		completion_reward = {
+		add_political_power = 35
+		add_state_claim = 80
+		add_state_core = 80
+		}
+	}
+	focus = {
+		id = ROM_war_SER
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_balkan_protector
+		}
+		x = 25
+		y = 4
+		available = {
+		is_puppet = no
+		country_exists = SER
+		}
+		completion_reward = {
+		add_state_claim = 764
+		create_wargoal = {
+					type = puppet_wargoal_focus
+					target = SER
+				}
+		}		
+	}
+	focus = {
+		id = ROM_war_BUL
+		icon = GFX_ser_bulgaria
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_balkan_protector
+		}
+		x = 26
+		y = 3
+		available = {
+		is_puppet = no
+		country_exists = BUL
+		}
+		completion_reward = {
+		add_state_claim = 829
+		create_wargoal = {
+					type = puppet_wargoal_focus
+					target = BUL
+				}
+		}		
+	}
+	focus = {
+		id = ROM_war_HUN
+		icon = GFX_focus_jap_internal_state
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_balkan_protector
+		}
+		x = 27
+		y = 4
+		available = {
+		is_puppet = no
+		country_exists = HUN
+		}
+		completion_reward = {
+		add_state_claim = 154
+		create_wargoal = {
+					type = puppet_wargoal_focus
+					target = HUN
+				}
+		}		
+	}
+	focus = {
+		id = ROM_befriend_GRE
+		icon = GFX_goal_generic_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_balkan_shield
+		}
+		x = 28
+		y = 1
+		available = {
+		country_exists = GRE
+		NOT = {
+		has_war_with = GRE
+		}
+		}
+		completion_reward = {
+			GRE = {
+					add_opinion_modifier = { target = ROOT modifier = romanian_diplo_mission }
+					}
+				}
+	}
+	focus = {
+		id = ROM_joint_GRE_industry
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_befriend_GRE
+		}
+		x = 28
+		y = 2
+		available = {
+		country_exists = GRE
+		NOT = {
+		has_war_with = GRE
+		}
+		}
+		completion_reward = {
+		GRE = {
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 1
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 1
+			 instant_build = yes
+		    }
+				
+		  }
+		 }
+		random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			 type = industrial_complex
+			 level = 1
+			 instant_build = yes
+		    }
+				
+		 }
+		} 
+	}
+	focus = {
+		id = ROM_befriend_SER
+		icon = GFX_goal_anschluss
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_balkan_shield
+		}
+		x = 30
+		y = 1
+		available = {
+		country_exists = SER
+		NOT = {
+		has_war_with = SER
+		}
+		}
+		completion_reward = {
+			SER = {
+					add_opinion_modifier = { target = ROOT modifier = romanian_diplo_mission }
+					}
+				}
+	}
+	focus = {
+		id = ROM_joint_SER_industry
+		icon = GFX_goal_generic_production2
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_befriend_SER
+		}
+		x = 30
+		y = 2
+		available = {
+		country_exists = SER
+		NOT = {
+		has_war_with = SER
+		}
+		}
+		completion_reward = {
+		SER = {
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 1
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 1
+			 instant_build = yes
+		    }
+				
+		  }
+		 }
+		random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			 type = industrial_complex
+			 level = 1
+			 instant_build = yes
+		    }
+				
+		 }
+		}
+	}
+	focus = {
+		id = ROM_alliance_with_devil
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_balkan_shield
+		}
+		x = 32
+		y = 1
+		available = {
+		country_exists = TUR
+		NOT = {
+		has_war_with = TUR
+		}
+		}
+		completion_reward = {
+			TUR = {
+					add_opinion_modifier = { target = ROOT modifier = romanian_diplo_mission }
+					}
+				}
+	}
+	focus = {
+		id = ROM_turkish_bases
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_alliance_with_devil
+		}
+		x = 32
+		y = 2
+		available = {
+		country_exists = TUR
+		NOT = {
+		has_war_with = TUR
+		}
+		}
+		completion_reward = {
+		TUR = {
+		random_owned_controlled_state = {
+		add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+		}
+		}
+		random_owned_controlled_state = {
+		add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+		}
+		}
+	}
+	focus = {
+		id = ROM_balkan_league
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_joint_GRE_industry
+			focus = ROM_joint_SER_industry
+			focus = ROM_turkish_bases
+		}
+		x = 30
+		y = 3
+		available = {
+		is_in_faction = no
+		is_subject = no
+		}
+		completion_reward = {
+		set_rule = {
+			can_create_factions = yes
+		}
+		custom_effect_tooltip = ROM_invitations_tt
+		create_faction = ROM_romanian_faction_league
+		if = {
+		limit = { AND = {
+		has_completed_focus = ROM_befriend_GRE
+		NOT = { has_war_with = GRE } } }
+		GRE = { country_event = { id = generic.2 days = 1 } }
+		}
+		if = {
+		limit = { AND = {
+		has_completed_focus = ROM_befriend_SER
+		NOT = { has_war_with = SER } } }
+		SER = { country_event = { id = generic.2 days = 1 } }
+		}
+		if = {
+		limit = { AND = {
+		has_completed_focus = ROM_alliance_with_devil
+		NOT = { has_war_with = TUR } } }
+		TUR = { country_event = { id = generic.2 days = 1 } }
+		}
+		}
+		}
+	focus = {
+		id = ROM_infra
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_industry
+		}
+		prerequisite = {
+			focus = ROM_romanian_army
+		}
+		x = 34
+		y = 1
+		completion_reward = {
+        81 = {
+			if = { 
+				limit = { is_controlled_by = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		46 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		79 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		803 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	}
+	focus = {
+		id = ROM_civil_effort
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_infra
+		}
+		x = 34
+		y = 2
+		available = {
+		controls_state = 76
+		controls_state = 84
+		}
+		completion_reward = {
+        76 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		84 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	}
+	focus = {
+		id = ROM_forts
+		icon = GFX_goal_generic_construct_military
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_civil_effort
+		}
+		x = 33
+		y = 3
+        completion_reward = {
+		custom_effect_tooltip = ROM_fortifications_tt
+		hidden_effect = {
+		76 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 9704
+					instant_build = yes
+				  }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 727
+						instant_build = yes
+					  }
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6421
+							instant_build = yes
+						  }
+							add_building_construction = {
+								type = bunker
+								level = 3
+								province = 9685
+								instant_build = yes
+							  }
+			         }
+		         }
+	    79 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 3728
+					instant_build = yes
+				  }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 744
+						instant_build = yes
+					  }
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6584
+							instant_build = yes
+						  }
+						add_building_construction = {
+								type = bunker
+								level = 3
+								province = 9685
+								instant_build = yes
+							  }
+						add_building_construction = {
+					    type = bunker
+					    level = 2
+					    province = 11534
+					    instant_build = yes
+				         }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 9716
+						instant_build = yes
+					  }
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 723
+							instant_build = yes
+						  }
+						add_building_construction = {
+								type = bunker
+								level = 2
+								province = 6729
+								instant_build = yes
+							  }	 
+						add_building_construction = {
+								type = bunker
+								level = 2
+								province = 6706
+								instant_build = yes
+							  }	   
+			         }
+		         }
+		803 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3076
+					instant_build = yes
+				  }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 687
+						instant_build = yes
+					  }
+			         }
+		         }         
+	         }
+			}	
+	}
+	focus = {
+		id = ROM_oil_works
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+        prerequisite = {
+			focus = ROM_steel_works
+		}
+		x = 36
+		y = 2
+        completion_reward = {
+		add_resource = {
+        type = oil
+        amount = 24
+        state = 46
+        }
+		}
+	}
+	focus = {
+		id = ROM_steel_works
+		icon = GFX_focus_generic_steel
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_industry
+		}
+		prerequisite = {
+			focus = ROM_romanian_army
+		}
+		x = 36
+		y = 1
+		completion_reward = {
+		add_resource = {
+        type = steel
+        amount = 20
+        state = 84
+        }
+		}
+	}
+	focus = {
+		id = ROM_slot_1
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_civil_effort
+		}
+		prerequisite = {
+			focus = ROM_oil_works
+		}
+		x = 35
+		y = 3
+        completion_reward = {
+		add_research_slot = 1
+       }
+	}
+	focus = {
+		id = ROM_electronics
+		icon = GFX_focus_research2
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_slot_1
+		}
+		x = 35
+		y = 4
+        completion_reward = {
+        add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 1.0
+				uses = 2
+				category = electronics
+			}
+       }
+	}
+	focus = {
+		id = ROM_milit_effort
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_oil_works
+		}
+		prerequisite = {
+			focus = ROM_civil_effort
+		}
+		x = 37
+		y = 3
+		available = {
+		controls_state = 81
+		controls_state = 79
+		}
+		completion_reward = {
+		army_experience = 5
+		81 = {
+		add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+		}
+		79 = {
+		add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+		}
+    }
+	}
+	focus = {
+		id = ROM_army_games
+		icon = GFX_goal_generic_cavalry
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_romanian_army
+		}
+		x = 41
+		y = 1
+        completion_reward = {
+		army_experience = 30
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = ROM_equipment
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_army_games
+		}
+		x = 39
+		y = 2
+        completion_reward = {
+		add_tech_bonus = {
+				name = inf_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+		}
+		add_tech_bonus = {
+				name = sup_bonus
+				bonus = 1.0
+				uses = 1
+				category = support_tech
+			}
+		}
+	}
+	focus = {
+		id = ROM_artillery
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_equipment
+		}
+		x = 39
+		y = 3
+        completion_reward = {
+			add_tech_bonus = {
+				name = inf_bonus
+				bonus = 1.0
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = ROM_stockage
+		icon = GFX_goal_generic_build_tank
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_artillery
+		}
+		x = 39
+		y = 4
+     completion_reward = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1500
+			producer = ROM
+			}
+		}
+	}
+	focus = {
+		id = ROM_tanks
+		icon = GFX_goal_generic_army_tanks
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_army_games
+		}
+		x = 41
+		y = 2
+        completion_reward = {
+        army_experience = 10
+			add_tech_bonus = {
+				name = arm_bonus
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+			add_tech_bonus = {
+				name = arm_bonus
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = ROM_mechanized_divisions
+		icon = GFX_focus_generic_army_tanks2
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_tanks
+		}
+		x = 41
+		y = 3
+		completion_reward = {
+        army_experience = 10
+			add_tech_bonus = {
+				name = arm_bonus
+				bonus = 2.0
+				uses = 1
+				category = cat_heavy_armor
+			}
+		}
+	}
+	focus = {
+		id = ROM_spec_ops
+		icon = GFX_goal_generic_special_forces
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_army_games
+		}
+		x = 43
+		y = 2
+		completion_reward = {
+		add_tech_bonus = {
+				name = arm_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+		}
+		add_tech_bonus = {
+				name = arm_bonus
+				bonus = 2.0
+				uses = 1
+				category = mountaineers_tech
+		}	
+    }
+	}
+	focus = {
+		id = ROM_expand_air
+		icon = GFX_goal_generic_build_airforce
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_expand_airbases
+		}
+		x = 47
+		y = 2
+		completion_reward = {
+		add_equipment_to_stockpile = {
+        type = fighter_equipment
+        amount = 100
+        producer = ROM
+        }
+        add_equipment_to_stockpile = {
+        type = tac_bomber_equipment
+        amount = 50
+        producer = ROM
+        }
+      }
+	}
+	focus = {
+		id = ROM_fighters
+		icon = GFX_goal_generic_air_fighter
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_expand_air
+		}
+		mutually_exclusive = {
+			focus = ROM_cas_
+		}
+		x = 45
+		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 1
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+
+			}
+		}
+	}
+	focus = {
+		id = ROM_cas_
+		icon = GFX_goal_generic_CAS
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_expand_air
+		}
+		mutually_exclusive = {
+			focus = ROM_fighters
+		}
+		x = 47
+		y = 3
+		completion_reward = {
+		set_technology = {
+        CAS1 = 1
+        }
+        add_equipment_to_stockpile = {
+        type = CAS_equipment
+        amount = 50
+        producer = ROM
+        }
+     }
+	}
+	focus = {
+		id = ROM_bombers
+		icon = GFX_goal_generic_air_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_fighters
+			focus = ROM_cas_
+		}
+		mutually_exclusive = {
+			focus = ROM_strat_bombers
+		}
+		x = 45
+		y = 4
+		completion_reward = {
+		add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				category = tactical_bomber
+			}
+       }
+
+	}
+	focus = {
+		id = ROM_strat_bombers
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_fighters
+			focus = ROM_cas_
+		}
+		mutually_exclusive = {
+			focus = ROM_bombers
+		}
+		x = 47
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 1
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				#category = tactical_bomber
+			}
+		}
+	}
+	focus = {
+		id = ROM_expand_airbases
+		icon = GFX_goal_generic_production
+		cost = 5.00
+		prerequisite = {
+			focus = ROM_romanian_army
+		}
+		x = 47
+		y = 1
+		completion_reward = {
+		 83 = {
+			if = { 
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		46 = {
+			if = { 
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+		79 = {
+			if = { 
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		803 = {
+			if = { 
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		76 = {
+			if = { 
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
+	}
+	focus = {
+		id = ROM_rus_planes
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_expand_air
+		}
+		x = 49
+		y = 3
+		available = {
+		RUS = { 
+		is_in_faction_with = ROM
+		}
+		}
+		completion_reward = {
+		RUS = {
+		add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.25
+				uses = 1
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+
+			}
+		}
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 1
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+
+			}
+		}
+	}
+	focus = {
+		id = ROM_interior_seas
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_navy_force
+		}
+		mutually_exclusive = {
+			focus = ROM_grand_fleet
+		}
+		x = 52
+		y = 1
+		completion_reward = {
+		add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+		        category = cat_fleet_in_being
+		        category = cat_trade_interdiction
+		}
+    }
+	}
+	focus = {
+		id = ROM_destroyers
+		icon = GFX_focus_generic_destroyer
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_interior_seas
+		}
+		x = 51
+		y = 2
+		completion_reward = {
+		navy_experience = 10
+		add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				technology = basic_ship_hull_light
+				technology = improved_ship_hull_light
+				technology = early_ship_hull_cruiser
+		}
+    }
+	}
+	focus = {
+		id = ROM_subs
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_interior_seas
+		}
+		x = 53
+		y = 2
+		completion_reward = {
+		navy_experience = 10
+        add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
+		}
+		add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 1
+				technology = improved_ship_torpedo_launcher
+				technology = advanced_ship_torpedo_launcher
+		}
+    }
+	}
+	focus = {
+		id = ROM_grand_fleet
+		icon = GFX_goal_generic_navy_carrier
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_navy_force
+		}
+		mutually_exclusive = {
+			focus = ROM_interior_seas
+		}
+		x = 56
+		y = 1
+		completion_reward = {
+		add_tech_bonus = {
+				name = navy_bonus
+				bonus = 1.0
+				uses = 2
+		        category = cat_fleet_in_being
+		        category = cat_base_strike
+		}
+    }
+	}
+	focus = {
+		id = ROM_battleships
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_grand_fleet
+		}
+		x = 55
+		y = 2
+		completion_reward = {
+		navy_experience = 10
+		add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				technology = early_ship_hull_heavy
+				technology = early_ship_hull_cruiser
+		}
+    }
+	}
+	#Request Non-Aggresion with Austria
+	focus = {
+		id = ROM_offer_AUS_transylvania
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_ally_AUS
+		}
+		x = 10
+		y = 6
+		bypass = {
+		is_in_faction_with = AUS	
+		}
+		available = {
+		NOT = { 
+		has_war_with = AUS 
+		}
+		}
+		completion_reward = {
+		AUS = {
+		country_event = { id = romania_homeland.4 days = 1 } #not ready
+		}
+		}
+
+	}
+	focus = {
+		id = ROM_join_allies
+		icon = GFX_goal_generic_attack_allies
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_ally_west
+		}
+		x = 13
+		y = 6
+		available = { 
+		is_puppet = no 
+		NOT = { 
+		has_war_with = ENG } }
+		completion_reward = {
+		ENG = {
+		country_event = { days = 1 id = generic.2 }
+		}
+		}
+	}
+	focus = {
+		id = ROM_request_independence
+		icon = GFX_focus_hun_rom
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_handle_king
+		}
+		x = 15
+		y = 6
+		available = {
+			NOT = { has_war_with = RUS }
+			is_in_faction_with = RUS 
+		}
+		will_lead_to_war_with = RUS
+		completion_reward = {
+		RUS  = {
+		country_event = { id = romania_homeland.5 days = 1 } #not ready
+		}
+		}
+	}
+	focus = {
+		id = ROM_workers_factories
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_red_army
+		}
+		x = 3
+		y = 6
+		completion_reward = {
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 1
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 1
+			 instant_build = yes
+		    }
+				
+		  }
+		 random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 1
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 1
+			 instant_build = yes
+		    }
+				
+		  }
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 1
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 1
+			 instant_build = yes
+		    }
+				
+		  }	
+		}
+
+	}
+	focus = {
+		id = ROM_red_balkans
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_red_army
+		}
+		x = 1
+		y = 6
+		completion_reward = {
+		add_political_power = 60
+		add_state_claim = 829
+		add_state_claim = 830
+		add_state_claim = 48
+		add_state_claim = 212
+		add_state_claim = 211
+		add_state_claim = 184
+		add_state_claim = 106
+		add_state_claim = 833
+		add_state_claim = 831
+		add_state_claim = 834
+		add_state_claim = 835
+		add_state_claim = 108
+		add_state_claim = 107
+		add_state_claim = 764
+		add_state_claim = 45
+		add_state_claim = 154
+		add_state_claim = 43
+		add_state_claim = 155
+		}
+	}
+	focus = {
+		id = ROM_join_comintern
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_bavarian_voluteers
+		}
+		x = 0
+		y = 5
+		available = { 
+		is_in_faction = no
+		country_exists = BAV
+		BAV = {
+		is_faction_leader = yes
+		}
+		is_puppet = no 
+		NOT = { 
+		has_war_with = BAV } }
+		completion_reward = {
+		BAV = {
+		country_event = { days = 1 id = generic.2 }
+		}
+		}
+	}
+	focus = {
+		id = ROM_milit_dictatorship
+		icon = GFX_focus_generic_home_defense
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_parties_must_end
+			focus = ROM_join_RUS_training
+		}
+		mutually_exclusive = {
+			focus = ROM_stable_regime
+		}
+		x = 20
+		y = 6
+		completion_reward = {
+		add_war_support = 0.10
+		}
+	}
+	focus = {
+		id = ROM_stable_regime
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_parties_must_end
+		}
+		mutually_exclusive = {
+			focus = ROM_milit_dictatorship
+		}
+		x = 18
+		y = 6
+		completion_reward = {
+		add_stability = 0.10
+		}
+	}
+	focus = {
+		id = ROM_war_RUS
+		icon = GFX_focus_ger_strike_at_the_source
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_galician_claims
+		}
+		x = 24
+		y = 5
+		will_lead_to_war_with = RUS
+		bypass = {
+	   has_war_with = RUS
+	   }
+	available = {
+	has_army_manpower = { size > 550000 }
+	RUS = { 
+	exists = yes 
+	}
+	} 
+	completion_reward = {
+	add_threat = 2
+	create_wargoal = {
+					type = take_state_focus
+					target = RUS
+					generator = { 192 198 78 }
+				}				
+	}
+	}
+	focus = {
+		id = ROM_balkan_road
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_balkan_league
+		}
+		x = 30
+		y = 4
+		completion_reward = {
+		46 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		if = {
+		limit = {
+		BUL = { is_in_faction_with = ROM} 
+		}	
+		211 = {
+				
+		add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+				}
+			}
+			}
+		if = {
+		limit = {
+		TUR = { is_in_faction_with = ROM} 
+		}	
+		341 = {
+				
+		add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+				}
+			}
+			}
+		if = {
+		limit = {
+		SER = { is_in_faction_with = ROM} 
+		}	
+		108 = {
+				
+		add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+				}
+			}
+			}
+		if = {
+		limit = {
+		GRE = { is_in_faction_with = ROM} 
+		}	
+		184 = {
+				
+		add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+				}
+			}
+			}		
+				
+		}
+	}
+	focus = {
+		id = ROM_ger_experience
+		icon = GFX_focus_chi_army_reform
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_ally_GER
+		}
+		x = 8
+		y = 6
+		available = {
+		GER = { 
+		is_in_faction_with = ROM
+		}
+		}
+		completion_reward = {
+		army_experience = 5
+		GER = {
+		add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.25
+				uses = 1
+				category = land_doctrine
+			}
+		}
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}	
+	focus = {
+		id = ROM_nuclear_pro
+		icon = GFX_focus_wonderweapons
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_electronics
+		}
+		x = 35
+		y = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 1.0
+				category = nuclear
+			}
+		}
+	}
+	focus = {
+		id = ROM_naval_aviation
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_grand_fleet
+		}
+		x = 57
+		y = 2
+		completion_reward = {
+		navy_experience = 5
+		air_experience = 5
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+	focus = {
+		id = ROM_expand_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_destroyers
+			focus = ROM_subs
+			focus = ROM_battleships
+			focus = ROM_naval_aviation
+		}
+		x = 54
+		y = 3
+		completion_reward = {
+		random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+		}
+	}
+	focus = {
+		id = ROM_budapest_forts
+		icon = GFX_goal_generic_construct_military
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_forts
+		}
+		x = 33
+		y = 4
+		completion_reward = {
+		46 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 9617
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 3663
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3636
+					instant_build = yes
+				} 
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 674
+					instant_build = yes
+				} 
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11603
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 6658
+					instant_build = yes
+				}
+             }
+        }     
+    }
+	}
+	focus = {
+		id = ROM_cruiser_effort
+		icon = GFX_focus_generic_cruiser2
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_expand_dockyards
+		}
+		x = 54
+		y = 4
+		completion_reward = {
+		navy_experience = 5
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 2
+				technology = improved_light_cruiser
+				technology = advanced_light_cruiser
+				technology = improved_heavy_cruiser
+				technology = advanced_heavy_cruiser
+			}
+		}
+	}
+}

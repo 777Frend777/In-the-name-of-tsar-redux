@@ -1,0 +1,26 @@
+on_actions = {
+on_startup = {
+		effect = {
+			#Egypt oil concessions
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				EGY = {
+					give_resource_rights = { receiver = ENG state = 447 }
+				}
+			}
+        }
+		effect = {
+			#Irag oil concessions
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				IRQ = {
+					give_resource_rights = { receiver = ENG state = 291 }
+				}
+			}
+        }        
+}
+}

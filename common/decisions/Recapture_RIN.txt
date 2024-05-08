@@ -1,0 +1,36 @@
+Recapture_RIN_category = {
+Revenge_category = {
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			NOT = { has_war_with = RUS }
+                                                BAV = { exists = no }
+                                                has_army_manpower = { size > 600000 }
+		}
+
+
+		visible = {
+                                                tag = GER
+		}
+
+		cost = 0
+		
+		fire_only_once = no	
+
+		days_remove = 30
+
+		remove_effect = {
+			create_wargoal = { type = annex_everything target = RHN }
+		}
+
+                                ai_will_do = {
+			factor = 200
+		}
+	}
+}
+
+}

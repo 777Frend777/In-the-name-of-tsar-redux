@@ -1,0 +1,16 @@
+characters = {
+	TUK_Shokay = {
+		name = "Mustafa Shokay" 
+		portraits = {
+			civilian = {
+				large="gfx/leaders/TUK/Portrait_TUK_Mustafa_Shokay.png"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+}
+	

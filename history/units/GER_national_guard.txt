@@ -1,0 +1,106 @@
+
+division_template = {
+	name = "Landsturm-Kompanie"			# Garrison Force
+	is_locked = yes
+	# For reserve and independent regiments, lower experience and equipment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+	}
+	priority = 0
+}
+
+units = {
+division= {
+		name = "1. Landsturm-Kompanie"
+		location = 6582
+		division_template = "Landsturm-Kompanie"
+		start_experience_factor = 0.1
+	}
+division= {
+		name = "2. Landsturm-Kompanie"
+		location = 526
+		division_template = "Landsturm-Kompanie"
+		start_experience_factor = 0.1
+	}
+division= {
+		name = "3. Landsturm-Kompanie"
+		location = 11346
+		division_template = "Landsturm-Kompanie"
+		start_experience_factor = 0.2
+	}
+division= {
+		name = "4. Landsturm-Kompanie"
+		location = 375
+		division_template = "Landsturm-Kompanie"
+		start_experience_factor = 0.1
+	}
+division= {
+		name = "5. Landsturm-Kompanie"
+		location = 11276
+		division_template = "Landsturm-Kompanie"
+		start_experience_factor = 0.1
+	}
+division= {
+		name = "6. Landsturm-Kompanie"
+		location = 9428
+		division_template = "Landsturm-Kompanie"
+		start_experience_factor = 0.1
+	}
+division= {
+		name = "7. Landsturm-Kompanie"
+		location = 3258
+		division_template = "Landsturm-Kompanie"
+		start_experience_factor = 0.1
+	}
+division= {
+		name = "8. Landsturm-Kompanie"
+		location = 9361
+		division_template = "Landsturm-Kompanie"
+		start_experience_factor = 0.1
+	}
+division= {
+		name = "9. Landsturm-Kompanie"
+		location = 6595
+		division_template = "Landsturm-Kompanie"
+		start_experience_factor = 0.1
+	}
+division= {
+		name = "10. Landsturm-Kompanie"
+		location = 3295
+		division_template = "Landsturm-Kompanie"
+		start_experience_factor = 0.1
+	}
+division= {
+		name = "11. Landsturm-Kompanie"
+		location = 3510
+		division_template = "Landsturm-Kompanie"
+		start_experience_factor = 0.1
+	}
+division= {
+		name = "12. Landsturm-Kompanie"
+		location = 6332
+		division_template = "Landsturm-Kompanie"
+		start_experience_factor = 0.1
+	}
+division= {
+		name = "13. Landsturm-Kompanie"
+		location = 9535
+		division_template = "Landsturm-Kompanie"
+		start_experience_factor = 0.1
+	}
+division= {
+		name = "14. Landsturm-Kompanie"
+		location = 17
+		division_template = "Landsturm-Kompanie"
+		start_experience_factor = 0.1
+	}
+division= {
+		name = "15. Landsturm-Kompanie"
+		location = 6309
+		division_template = "Landsturm-Kompanie"
+		start_experience_factor = 0.1
+	}
+
+}

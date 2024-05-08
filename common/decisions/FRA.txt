@@ -1,0 +1,1761 @@
+#Category allowed for FRA
+
+FRA_political_actions_decisions = {
+	
+	#Decisions to pressure, arrest, purge, ban commies or fascists
+	#1.Devalue Franc
+	#2.Blum-Viollette Proposal
+	#3.Expand Citizenship
+	#4.Repeal the Exiles Law
+	#5.Restrict Freedom of Press
+	#6.Centralize the Power
+	#7.Suppress Communist Newspapers
+	#8.Arrest Communist Politicians
+	#9.Suppress Fascist Newspapers
+	#10.Arrest Fascist Politicians
+	#11.Ban Communism
+	#12.Ban the Leagues
+	
+	
+	#Devalue Franc
+	FRA_devalue_franc_decision = {
+	icon = decision_generic_decision
+	visible = {
+	has_completed_focus = FR_gov_reform
+	}
+	
+	available = {
+	has_civil_war = no
+	is_subject = no
+	num_of_civilian_factories_available_for_projects > 2
+	}
+	fire_only_once = yes
+	modifier = {
+			political_power_gain = -0.10
+	}
+	cost = 50
+	days_remove = 50
+	ai_will_do = {
+		factor = 7
+	}
+	remove_effect = {
+	FRA = {
+		add_timed_idea = { idea = FRA_devalued_franc_idea days = 295 }
+	}
+	}
+	}
+	
+	#Blum-Viollette Proposal
+	FRA_core_algiers = {
+	icon = decision_generic_decision
+	visible = {
+	has_completed_focus = FR_demo
+	}
+	modifier = {
+		political_power_gain = -0.10
+	}
+	available = {
+	has_civil_war = no
+	OR = {
+	has_government = socialist
+	has_government = democratic
+	has_government = conservatives
+	}
+	controls_state = 16
+	controls_state = 459
+	controls_state = 460
+	is_subject = no
+	}
+	fire_only_once = yes
+	
+	cost = 50
+	days_remove = 175
+	ai_will_do = {
+		factor = 7
+	}
+	remove_effect = {
+	FRA = {
+		add_stability = -0.03
+		add_state_core = 459
+		add_state_core = 460
+	}
+	}
+	}
+	
+	#Expand Citizenship
+	FRA_expand_citizen_ship = {
+	icon = decision_generic_decision
+	visible = {
+	has_completed_focus = FR_gov_reform
+	}
+	modifier = {
+		political_power_gain = -0.10
+	}
+	available = {
+	has_civil_war = no
+	
+	is_subject = no
+	}
+	fire_only_once = yes
+	
+	cost = 50
+	days_remove = 175
+	ai_will_do = {
+		factor = 7
+	}
+	remove_effect = {
+	FRA = {
+		add_stability = -0.05
+		add_ideas = FRA_expanded_citizenship_idea
+	}
+	}
+	}
+	
+	#Parties popularities are located here
+	
+	#Repeal the Exiles Law
+	FRA_exiles_law_decision = {
+	icon = decision_generic_decision
+	fire_only_once = yes
+	visible = {
+		has_completed_focus = FR_demand_SWI
+	}
+	available = {
+	is_subject = no
+	}
+	cost = 25
+	days_remove = 35
+	ai_will_do = {
+		factor = 10
+	}
+	remove_effect = {
+		set_country_flag = FRA_napoleon_can_return
+	}
+	
+	}
+	
+	#Restrict Freedom of Press
+	FRA_restrict_freedom_of_press = {
+	icon = decision_generic_decision
+	fire_only_once = yes
+	visible = {
+		OR = {
+		has_completed_focus = FR_fascist
+		has_completed_focus = FR_commi
+		}
+	}
+	available = {
+	OR = {
+		socialist > 0.01
+		democratic > 0.03
+		conservatives > 0.02
+	}
+	NOT = { has_country_flag = FRA_dealing_with_opposition }
+	}
+	cost = 50
+	days_remove = 50
+	ai_will_do = {
+		factor = 9
+	}
+	complete_effect = {
+		set_country_flag = { flag = FRA_dealing_with_opposition days = 50 value = 1 }
+	}
+	remove_effect = {
+	add_political_power = -25
+			add_popularity = {
+					ideology = democratic
+					popularity = -0.03
+			}
+			add_popularity = {
+					ideology = socialist
+					popularity = -0.01
+			}
+			add_popularity = {
+					ideology = conservatives
+					popularity = -0.02
+			}
+	}
+	
+	}
+	
+	#Centralize the Power
+	FRA_centralize_the_power = {
+	icon = decision_generic_decision
+	fire_only_once = yes
+	visible = {
+		OR = {
+		has_completed_focus = FR_fascist
+		has_completed_focus = FR_commi
+		}
+	NOT = {
+		OR = { 
+			has_government = socialist
+			has_government = democratic
+			has_government = conservatives
+		}
+	}
+	}
+	available = {
+	NOT = { has_country_flag = FRA_dealing_with_opposition }
+	}
+	cost = 50
+	days_remove = 50
+	ai_will_do = {
+		factor = 9
+	}
+	complete_effect = {
+		set_country_flag = { flag = FRA_dealing_with_opposition days = 50 value = 1 }
+	}
+	remove_effect = {
+	add_ideas = FRA_centralized_power_idea
+	}
+	
+	}
+	
+	
+	#Communism Actions
+	
+	#Suppress Communist Newspapers
+	FRA_supress_communists_decision = {
+	icon = decision_generic_decision
+	fire_only_once = no
+	visible = {
+		communism > 0.10
+	NOT = {
+	has_government = communism
+	}
+	}
+	available = {
+	
+	NOT = { 
+	has_government = communism
+	}
+	NOT = { has_country_flag = FRA_dealing_with_opposition }
+	}
+	cost = 50
+	days_remove = 50
+	ai_will_do = {
+		factor = 3
+	}
+	complete_effect = {
+		set_country_flag = { flag = FRA_dealing_with_opposition days = 50 value = 1 }
+	}
+	remove_effect = {
+	
+	add_political_power = -25
+			add_popularity = {
+					ideology = communism
+					popularity = -0.02
+			}
+	custom_effect_tooltip = FRA_lw_decrease
+		hidden_effect = {
+		FRA_decrease_left_wing = yes
+		}
+	}
+	
+	}
+	
+	#Arrest Communist Politicians
+	FRA_arrest_communists_decision = {
+	icon = decision_generic_decision
+	fire_only_once = yes
+	visible = {
+		communism > 0.10
+	NOT = {
+	has_government = communism
+	}
+	}
+	available = {
+	NOT = { 
+	has_government = communism
+	}
+	NOT = { has_country_flag = FRA_dealing_with_opposition }
+	}
+	cost = 50
+	days_remove = 50
+	ai_will_do = {
+		factor = 3
+	}
+	complete_effect = {
+		set_country_flag = { flag = FRA_dealing_with_opposition days = 50 value = 1 }
+	}
+	remove_effect = {
+	hidden_effect = {
+	country_event = { id = france.1052 days = 36 }
+	}
+	add_political_power = -25
+			add_popularity = {
+					ideology = communism
+					popularity = -0.05
+			}
+			custom_effect_tooltip = FRA_lw_decrease
+		hidden_effect = {
+		FRA_decrease_left_wing = yes
+		}
+	}
+	
+	}
+	
+	#Suppress Fascist Newspapers
+	FRA_supress_fascists_decision = {
+	icon = decision_generic_decision
+	fire_only_once = yes
+	visible = {
+	NOT = { has_completed_focus = FR_fascist }
+	NOT = {
+	has_government = fascism
+	}
+	}
+	available = {
+	fascism > 0.10
+	NOT = { 
+	has_government = fascism
+	}
+	NOT = { has_country_flag = FRA_dealing_with_opposition }
+	}
+	cost = 50
+	days_remove = 50
+	ai_will_do = {
+		factor = 3
+	}
+	complete_effect = {
+		set_country_flag = { flag = FRA_dealing_with_opposition days = 50 value = 1 }
+	}
+	remove_effect = {
+	hidden_effect = {
+	FRA_decrease_right_wing = yes
+	}
+	add_political_power = -25
+			add_popularity = {
+					ideology = fascism
+					popularity = -0.02
+			}
+			custom_effect_tooltip = FRA_rw_decrease
+	}
+	
+	}
+	
+	#Arrest Fascist Politicians
+	FRA_arrest_fascists_decision = {
+	icon = decision_generic_decision
+	fire_only_once = yes
+	visible = {
+	NOT = { has_completed_focus = FR_fascist }	
+	NOT = {
+	has_government = fascism
+	}
+	}
+	available = {
+	fascism > 0.10
+	NOT = { 
+	has_government = fascism
+	}
+	NOT = { has_country_flag = FRA_dealing_with_opposition }
+	}
+	cost = 50
+	days_remove = 50
+	ai_will_do = {
+		factor = 3
+	}
+	complete_effect = {
+		set_country_flag = { flag = FRA_dealing_with_opposition days = 50 value = 1 }
+	}
+	remove_effect = {
+	hidden_effect = {
+	FRA_decrease_right_wing = yes
+	country_event = { id = france.1051 days = 36 }
+	}
+	add_political_power = -25
+			add_popularity = {
+					ideology = fascism
+					popularity = -0.05
+			}
+			custom_effect_tooltip = FRA_rw_decrease
+	}
+	
+	}
+	
+	#Ban Communism
+	FRA_ban_communism_decision = {
+	icon = decision_generic_decision
+	fire_only_once = yes
+	visible = {
+	has_completed_focus = FR_ban_communism
+	}
+	available = {
+	communism < 0.10
+	NOT = { 
+	OR = {
+	has_government = communism
+	has_government = socialist
+	}
+	}
+	NOT = { has_country_flag = FRA_dealing_with_opposition }
+	}
+	cost = 50
+	days_remove = 50
+	ai_will_do = {
+		factor = 3
+	}
+	complete_effect = {
+		set_country_flag = { flag = FRA_dealing_with_opposition days = 50 value = 1 }
+	}
+	remove_effect = {
+	add_stability = -0.05
+	add_ideas = FRA_communism_banned
+	}
+	
+	}
+	
+	#Ban The Leagues
+	FRA_ban_fascism_decision = {
+	icon = decision_generic_decision
+	fire_only_once = yes
+	visible = {
+	has_completed_focus = FR_ban_communism
+	}
+	available = {
+	fascism < 0.15
+	NOT = { 
+	OR = {
+	has_government = fascism
+	has_government = neutrality
+	}
+	}
+	}
+	cost = 50
+	days_remove = 50
+	ai_will_do = {
+		factor = 3
+	}
+	remove_effect = {
+	add_stability = -0.05
+	add_ideas = FRA_fascism_banned
+	}
+	
+	}
+}
+
+FRA_industrial_projects_decisions = {
+	#North Alsace Forts
+	FRA_north_alsace_forts_decision = {
+	icon = generic_construction
+	visible = { has_completed_focus = FR_maginot }
+	modifier = {
+			civilian_factory_use = 3
+	}
+	available = {
+		num_of_available_civilian_factories > 3
+		controls_state = 28
+	}
+	highlight_states = {
+			highlight_state_targets = {
+				state = 28
+			}
+		}
+	cost = 20
+	days_remove = 50
+	ai_will_do = {
+		factor = 1000
+	}
+	remove_effect = {
+		28 = {
+			if = { limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+					type = bunker
+					level = 7
+					province = 549
+					instant_build = yes
+				  }	
+				   add_building_construction = {
+					type = bunker
+					level = 7
+					province = 3629
+					instant_build = yes
+				  }
+				   add_building_construction = {
+					type = bunker
+					level = 7
+					province = 11502
+					instant_build = yes
+				  }
+				   add_building_construction = {
+					type = bunker
+					level = 7
+					province = 9559
+					instant_build = yes
+				  }
+		}
+		}
+	
+	}
+	}
+	#South Alsace Forts
+	FRA_south_alsace_forts_decision = {
+	icon = generic_construction
+	visible = { has_completed_focus = FR_maginot }
+	modifier = {
+			civilian_factory_use = 3
+	}
+	available = {
+		num_of_available_civilian_factories > 3
+		controls_state = 28
+	}
+	highlight_states = {
+			highlight_state_targets = {
+				state = 28
+			}
+		}
+	cost = 20
+	days_remove = 50
+	ai_will_do = {
+		factor = 1000
+	}
+	remove_effect = {
+		28 = {
+			if = { limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+					type = bunker
+					level = 7
+					province = 678
+					instant_build = yes
+				  }
+				 add_building_construction = {
+					type = bunker
+					level = 7
+					province = 6529
+					instant_build = yes
+				  }
+				 add_building_construction = {
+					type = bunker
+					level = 7
+					province = 9503
+					instant_build = yes
+				  }
+		}
+		}
+	
+	}
+	}
+	#Alpine Line
+	FRA_alpine_forts_decision = {
+	icon = generic_construction
+	visible = { has_completed_focus = FR_fort_ITA }
+	modifier = {
+			civilian_factory_use = 3
+	}
+	available = {
+		num_of_available_civilian_factories > 3
+		controls_state = 735
+	}
+	highlight_states = {
+			highlight_state_targets = {
+				state = 735
+			}
+		}
+	cost = 20
+	days_remove = 50
+	ai_will_do = {
+		factor = 3
+	}
+	remove_effect = {
+		ROOT = { country_event = { id = france.3 } }
+			ITA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = FRA_alpine_forts
+				}
+			}
+	
+	}
+	}
+	#Extend the Line
+	FRA_extend_maginot_forts_decision = {
+	icon = generic_construction
+	visible = { has_completed_focus = FR_improve_maginot }
+	modifier = {
+			civilian_factory_use = 3
+	}
+	available = {
+		num_of_available_civilian_factories > 3
+		controls_state = 29
+		controls_state = 785
+		controls_state = 18
+	}
+	cost = 20
+	days_remove = 50
+	ai_will_do = {
+		factor = 1000
+	}
+	remove_effect = {
+		29 = {
+			add_building_construction = {
+				type = bunker
+				province = 11606
+				level = 2
+				instant_build = yes
+			}
+		}
+		785 = {
+			add_building_construction = {
+				type = bunker
+				province = 3447
+				level = 2
+				instant_build = yes
+			}
+		}
+		18 = {	
+			add_building_construction = {
+				type = bunker
+				province = 9472
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 3560
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 5291
+				level = 2
+				instant_build = yes
+			}
+		}	
+	
+		}
+	}
+	#Retreat Line
+	FRA_retreat_line_forts_decision = {
+	icon = generic_construction
+	visible = { has_completed_focus = FR_retreat_line }
+	modifier = {
+			civilian_factory_use = 3
+	}
+	available = {
+		num_of_available_civilian_factories > 3
+		controls_state = 785
+		controls_state = 18
+	}
+	highlight_states = {
+			highlight_state_targets = {
+				state = 18
+			}
+		}
+	cost = 20
+	days_remove = 50
+	ai_will_do = {
+		factor = 10
+	}
+	remove_effect = {
+		785 = {
+			add_building_construction = {
+				type = bunker
+				province = 11420
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 454
+				level = 2
+				instant_build = yes
+			}
+		}
+		18 = {	
+			add_building_construction = {
+				type = bunker
+				province = 551
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 11732
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 3533
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 6531
+				level = 2
+				instant_build = yes
+			}
+		}	
+		}
+	}
+	
+	#Develop Centre-Sud
+	FRA_develop_centre_sud_decision = {
+	icon = generic_construction
+	fire_only_once = yes
+	visible = { has_completed_focus = FR_adress_industry }
+	modifier = {
+			civilian_factory_use = 3
+	}
+	available = {
+		num_of_available_civilian_factories > 3
+		controls_state = 33
+	}
+	highlight_states = {
+			highlight_state_targets = {
+				state = 33
+			}
+		}
+	cost = 20
+	days_remove = 25
+	ai_will_do = {
+		factor = 2
+	}
+	remove_effect = {
+		33 = {
+		 add_extra_state_shared_building_slots = 1
+		 }
+		}
+	}
+	#Develop Limosine
+	FRA_develop_limosine_decision = {
+	icon = generic_construction
+	fire_only_once = yes
+	visible = { has_completed_focus = FR_adress_industry }
+	modifier = {
+			civilian_factory_use = 3
+	}
+	available = {
+		num_of_available_civilian_factories > 3
+		controls_state = 25
+	}
+	highlight_states = {
+			highlight_state_targets = {
+				state = 25
+			}
+		}
+	cost = 20
+	days_remove = 25
+	ai_will_do = {
+		factor = 2
+	}
+	remove_effect = {
+		25 = {
+		 add_extra_state_shared_building_slots = 1
+		 }
+		}
+	}
+	#Develop Picardy
+	FRA_develop_picardy_decision = {
+	icon = generic_construction
+	fire_only_once = yes
+	visible = { has_completed_focus = FR_adress_industry }
+	modifier = {
+			civilian_factory_use = 3
+	}
+	available = {
+		num_of_available_civilian_factories > 3
+		controls_state = 785
+	}
+	highlight_states = {
+			highlight_state_targets = {
+				state = 785
+			}
+		}
+	cost = 20
+	days_remove = 25
+	ai_will_do = {
+		factor = 2
+	}
+	remove_effect = {
+		785 = {
+		 add_extra_state_shared_building_slots = 1
+		 }
+		}
+	}
+	
+	#Bordeaux Railway
+	FRA_bordeaux_rail_decision = {
+	icon = generic_construction
+	fire_only_once = yes
+	visible = { has_completed_focus = FR_home_infra }
+	modifier = {
+			civilian_factory_use = 3
+	}
+	available = {
+		num_of_available_civilian_factories > 3
+		controls_state = 19
+		controls_state = 806
+	}
+	highlight_states = {
+			highlight_state_targets = {
+				state = 19
+			}
+		}
+	cost = 25
+	days_remove = 25
+	ai_will_do = {
+		factor = 5
+	}
+	remove_effect = {
+		#Bordeaux
+		build_railway = {
+				path = { 9737 6777 9710 743 }
+			}
+		}
+	}
+	#Hydroelectricity in Savoy
+	FRA_hydro_in_savoy_decision = {
+	icon = generic_factory
+	fire_only_once = yes
+	visible = { has_completed_focus = FR_home_civil }
+	modifier = {
+			civilian_factory_use = 3
+	}
+	available = {
+		num_of_available_civilian_factories > 3
+		controls_state = 735
+	}
+	highlight_states = {
+			highlight_state_targets = {
+				state = 735
+			}
+		}
+	cost = 25
+	days_remove = 25
+	ai_will_do = {
+		factor = 7
+	}
+	remove_effect = {
+		#Savoy
+		735 = {
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		}
+		}
+	}
+	
+	#Hydroelectricity in Provence
+	FRA_hydro_in_provence_decision = {
+	icon = generic_factory
+	fire_only_once = yes
+	visible = { has_completed_focus = FR_home_civil }
+	modifier = {
+			civilian_factory_use = 3
+	}
+	available = {
+		num_of_available_civilian_factories > 3
+		controls_state = 21
+	}
+	highlight_states = { state = 21 } 
+	cost = 25
+	days_remove = 25
+	ai_will_do = {
+		factor = 7
+	}
+	remove_effect = {
+		#Provence
+		21 = {
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		}
+		}
+	}
+	
+	#Mutitions plant in Midi Pyrenees
+	FRA_mutitions_in_midi_decision = {
+	icon = generic_factory
+	fire_only_once = yes
+	visible = { has_completed_focus = FR_home_milit }
+	modifier = {
+			civilian_factory_use = 3
+	}
+	available = {
+		num_of_available_civilian_factories > 3
+		controls_state = 31
+	}
+	highlight_states = {
+			highlight_state_targets = {
+				state = 31
+			}
+		}
+	cost = 25
+	days_remove = 25
+	ai_will_do = {
+		factor = 7
+	}
+	remove_effect = {
+		#Midi Pyrenees
+		31 = {
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+		}
+		}
+	}
+	#Mutitions plant in Ile-de-France
+	FRA_mutitions_in_paris_decision = {
+	icon = generic_factory
+	fire_only_once = yes
+	visible = { has_completed_focus = FR_home_milit }
+	modifier = {
+			civilian_factory_use = 3
+	}
+	available = {
+		num_of_available_civilian_factories > 3
+		controls_state = 16
+	}
+	highlight_states = {
+			highlight_state_targets = {
+				state = 16
+			}
+		}
+	cost = 25
+	days_remove = 25
+	ai_will_do = {
+		factor = 7
+	}
+	remove_effect = {
+		#Ile-de-France
+		16 = {
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+		}
+		}
+	}
+}
+
+FRA_integrate_territories_decisions = {
+	
+	#Fate of Belgium
+	FRA_fate_belgium = {
+	
+	icon = decision_generic_decision
+	targets = { BEL }
+	visible = {
+	BEL = {
+	exists = no
+	}
+	FRA = { 
+	NOT = { has_war_with = BEL }
+	controls_state = 34
+	controls_state = 6
+	}
+	}
+	fire_only_once = yes
+	available = {
+	is_puppet = no
+	}
+	cost = 15
+	days_remove = 3
+	ai_will_do = {
+			factor = 10
+		}
+	remove_effect = {
+	FRA = {
+	country_event = { id = france.1030 }
+	}
+	}
+	}
+	
+	#Fate of Holland
+	FRA_fate_holland = {
+	
+	icon = decision_generic_decision
+	targets = { HOL }
+	visible = {
+	HOL = {
+	exists = no
+	}
+	FRA = { 
+	NOT = { has_war_with = HOL }
+	controls_state = 7
+	controls_state = 35
+	}
+	}
+	fire_only_once = yes
+	available = {
+	is_puppet = no
+	}
+	cost = 15
+	days_remove = 3
+	ai_will_do = {
+			factor = 10
+		}
+	remove_effect = {
+	FRA = {
+	country_event = { id = france.1031 }
+	}
+	}
+	}
+	
+	#Fate of Switzerland
+	FRA_fate_swiss = {
+	
+	icon = decision_generic_decision
+	targets = { SWI }
+	visible = {
+	SWI = {
+	exists = no
+	}
+	FRA = { 
+	NOT = { has_war_with = SWI }
+	controls_state = 3
+	controls_state = 151
+	}
+	}
+	fire_only_once = yes
+	available = {
+	is_puppet = no
+	}
+	cost = 15
+	days_remove = 3
+	ai_will_do = {
+			factor = 10
+		}
+	remove_effect = {
+	FRA = {
+	country_event = { id = france.1032 }
+	}
+	}
+	}
+	
+	#Fate of Luxembourg
+	FRA_fate_luxembourg = {
+	icon = decision_generic_decision
+	targets = { LUX }
+	visible = {
+	LUX = {
+	exists = no
+	}
+	FRA = { 
+	NOT = { has_war_with = LUX }
+	controls_state = 8
+	}
+	}
+	fire_only_once = yes
+	available = {
+	is_puppet = no
+	}
+	cost = 15
+	days_remove = 3
+	ai_will_do = {
+			factor = 10
+		}
+	remove_effect = {
+	FRA = {
+	country_event = { id = france.1033 }
+	}
+	}
+	}
+	
+	#Fate of Italy
+	FRA_fate_italy = {
+	icon = decision_generic_decision
+	targets = { ITA }
+	visible = {
+	ITA = {
+	exists = no
+	}
+	FRA = { 
+	NOT = { has_war_with = ITA }
+	controls_state = 2
+	controls_state = 805
+	controls_state = 158
+	}
+	}
+	
+	available = {
+	is_puppet = no
+	}
+	cost = 15
+	fire_only_once = yes
+	days_remove = 3
+	ai_will_do = {
+			factor = 10
+		}
+	remove_effect = {
+	FRA = {
+	country_event = { id = france.1034 }
+	}
+	}
+	}
+	
+	#Fate of Spain
+	FRA_fate_spain = {
+	icon = decision_generic_decision
+	targets = { SPR }
+	visible = {
+	SPR = {
+	exists = no
+	}
+	NOT = {
+	country_exists = SPA 
+	country_exists = SPC
+	country_exists = SPB
+	}
+	FRA = { 
+	NOT = { has_war_with = SPR }
+	controls_state = 41
+	controls_state = 165
+	}
+	}
+	
+	available = {
+	is_puppet = no
+	}
+	cost = 15
+	fire_only_once = yes
+	days_remove = 3
+	ai_will_do = {
+			factor = 10
+		}
+	remove_effect = {
+	FRA = {
+	country_event = { id = france.1035 }
+	}
+	}
+	}
+	
+	#Fate of Germany // aka Western Germany
+	FRA_fate_germany = {
+	icon = decision_generic_decision
+	targets = { RHN }
+	visible = {
+	BAV = {
+	exists = no
+	}
+	WUT = {
+	exists = no
+	}
+	WSM = {
+	exists = no
+	}
+	RHN = {
+	exists = no
+	}
+	FRA = { 
+	NOT = { 
+	controls_state = 64
+	controls_state = 65
+	OR = {
+	has_war_with = GER
+	has_war_with = BAV
+	}
+	}
+	controls_state = 42
+	controls_state = 817
+	controls_state = 814
+	OR = {
+	controls_state = 52
+	controls_state = 58
+	}
+	}
+	}
+	available = {
+	is_puppet = no
+	}
+	cost = 15
+	fire_only_once = yes
+	days_remove = 3
+	ai_will_do = {
+			factor = 10
+		}
+	remove_effect = {
+	FRA = {
+	country_event = { id = france.1036 }
+	}
+	}
+	}
+	
+	#Fate of Germany // All of Germany
+	FRA_fate_germany_all_germany = {
+	icon = decision_generic_decision
+	targets = { GER }
+	visible = {
+	GER = { exists = no }
+	BAV = { exists = no }
+	WUT = { exists = no }
+	WSM = { exists = no }
+	RHN = { exists = no }
+	FRA = { 
+	NOT = { 
+	OR = {
+	has_war_with = GER
+	has_war_with = BAV
+	}
+	}
+	controls_state = 64
+	controls_state = 65
+	controls_state = 42
+	controls_state = 817
+	controls_state = 814
+	OR = {
+	controls_state = 52
+	controls_state = 58
+	}
+	}
+	}
+	available = {
+	is_puppet = no
+	}
+	cost = 15
+	fire_only_once = yes
+	days_remove = 3
+	ai_will_do = {
+			factor = 10
+		}
+	remove_effect = {
+	FRA = {
+	country_event = { id = france.1046 }
+	}
+	}
+	}
+}
+FRA_seek_new_alliances_decisions = {
+
+	#Invite Czechia & Slovakia
+	FRA_invite_Czechia = {
+	
+		icon = decision_generic_decision
+		fire_only_once = yes
+		targets = { CZE }
+		visible = {
+		has_completed_focus = FR_inv_CZE
+		}
+		available = {
+		is_faction_leader = yes
+		country_exists = CZE
+		CZE = {
+		has_war = no
+		is_puppet = no
+		is_in_faction = no 
+		OR = {
+		democratic > 0.15	
+		conservatives > 0.15
+		socialist > 0.15
+		}
+		}
+		}
+		cost = 50
+		days_remove = 14
+		remove_effect = {
+		CZE = {
+		country_event = { days = 1 id = generic.5 }
+		}
+		}
+	}
+	#Invite Romania
+	FRA_invite_Romania = {
+	
+		icon = decision_generic_decision
+		fire_only_once = yes
+		targets = { ROM }
+		visible = {
+		has_completed_focus = FR_inv_CZE
+		}
+		available = {
+		is_faction_leader = yes
+		country_exists = ROM
+		ROM = {
+		has_war = no
+		is_puppet = no
+		is_in_faction = no 
+		OR = {
+		democratic > 0.15	
+		conservatives > 0.15
+		socialist > 0.15
+		}
+		}
+		}
+		cost = 50
+		days_remove = 14
+		remove_effect = {
+		ROM = {
+		country_event = { days = 1 id = generic.5 }
+		}
+		}
+	}
+	#Invite Italy
+	FRA_invite_Italy = {
+	
+		icon = decision_generic_decision
+		fire_only_once = yes
+		targets = { ITA }
+		visible = {
+		has_completed_focus = FR_inv_CZE
+		}
+		ai_will_do = {
+			factor = 9
+		}
+		available = {
+		is_faction_leader = yes
+		country_exists = ITA
+		ITA = {
+		has_war = no
+		is_puppet = no
+		is_in_faction = no 
+		OR = {
+		democratic > 0.15	
+		conservatives > 0.15
+		socialist > 0.15
+		}
+		}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_remove = 14
+		remove_effect = {
+		ITA = {
+		country_event = { days = 1 id = generic.5 }
+		}
+		}
+	}
+	
+	#Invite Greece
+	FRA_invite_Greece = {
+	
+		icon = decision_generic_decision
+		fire_only_once = yes
+		targets = { GRE }
+		visible = {
+		has_completed_focus = FR_inv_CZE
+		}
+		available = {
+		is_faction_leader = yes
+		country_exists = GRE
+		GRE = {
+		has_war = no
+		is_puppet = no
+		is_in_faction = no 
+		OR = {
+		democratic > 0.15	
+		conservatives > 0.15
+		socialist > 0.15
+		}
+		}
+		}
+		cost = 50
+		days_remove = 14
+		remove_effect = {
+		GRE = {
+		country_event = { days = 1 id = generic.5 }
+		}
+		}
+	}
+	
+	#Invite Serbia
+	FRA_invite_Serbia = {
+	
+		icon = decision_generic_decision
+		fire_only_once = yes
+		targets = { SER }
+		visible = {
+		has_completed_focus = FR_inv_CZE
+		}
+		available = {
+		is_faction_leader = yes
+		country_exists = SER
+		SER = {
+		has_war = no
+		is_puppet = no
+		is_in_faction = no 
+		OR = {
+		democratic > 0.15	
+		conservatives > 0.15
+		socialist > 0.15
+		}
+		}
+		}
+		cost = 50
+		days_remove = 14
+		remove_effect = {
+		SER = {
+		country_event = { days = 1 id = generic.5 }
+		}
+		}
+	}
+	
+	#Invite Rhineland
+	FRA_invite_Rhineland = {
+	
+		icon = decision_generic_decision
+		fire_only_once = yes
+		targets = { RHN }
+		visible = {
+		has_completed_focus = FR_inv_CZE
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		is_faction_leader = yes
+		country_exists = RHN
+		RHN = {
+		has_war = no
+		is_puppet = no
+		is_in_faction = no 
+		OR = {
+		democratic > 0.15	
+		conservatives > 0.15
+		socialist > 0.15
+		}
+		}
+		}
+		cost = 50
+		days_remove = 14
+		remove_effect = {
+		RHN = {
+		country_event = { days = 1 id = generic.5 }
+		}
+		}
+	}
+	
+	#Annex Rhineland
+	FRA_annex_Rhineland = {
+	
+		icon = decision_generic_decision
+		fire_only_once = yes
+		targets = { RHN }
+		visible = {
+		has_completed_focus = FR_inv_CZE
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		is_faction_leader = yes
+		country_exists = RHN
+		RHN = {
+		has_war = no
+		is_puppet = no
+		is_in_faction_with = FRA
+		OR = {
+		democratic > 0.15	
+		conservatives > 0.15
+		socialist > 0.15
+		}
+		}
+		}
+		cost = 150
+		days_remove = 100
+		remove_effect = {
+		RHN = {
+		country_event = { days = 1 id = france.1065 }
+		}
+		}
+	}
+}	
+FRA_paris_petrograd_decisions = {
+	FRA_construction_russia = {
+	
+		icon = decision_generic_decision
+		fire_only_once = yes
+		targets = { RUS }
+		visible = {
+		is_guaranteed_by = RUS 
+		has_guaranteed = RUS
+		}
+		available = {
+		is_faction_leader = yes
+		country_exists = RUS
+		RUS = {
+		has_war = no
+		is_puppet = no
+		}
+		}
+		cost = 50
+		days_remove = 40
+		modifier = {
+			civilian_factory_use = 3
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		remove_effect = {
+		RUS = {
+		country_event = { id = france.1047 }
+		}
+		FRA = {
+		random_owned_state = {
+				limit = { 
+					is_core_of = ROOT
+					infrastructure > 5
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+	}
+	FRA_invite_Russia = {
+	
+		icon = decision_generic_decision
+		fire_only_once = yes
+		targets = { RUS }
+		visible = {
+		is_guaranteed_by = RUS 
+		has_guaranteed = RUS
+		}
+		available = {
+		is_faction_leader = yes
+		country_exists = RUS
+		RUS = {
+		has_war = no
+		is_puppet = no
+		}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		cost = 100
+		days_remove = 70
+		remove_effect = {
+		RUS = {
+		country_event = { days = 1 id = generic.5 }
+		}
+		}
+	}
+}
+#Spanish Civil War
+FRA_spanish_civil_war_decisions = {
+#Support SPR
+	FRA_volunteers_to_spain_r = {
+	
+		icon = generic_operation
+		fire_only_once = yes
+		targets = { SPR }
+		visible = {
+		FRA = {
+		has_completed_focus = FR_intervene_spanish_civil_war
+		}
+		}
+		available = {
+		country_exists = SPR 
+		}
+		cost = 50
+		days_remove = 7
+		remove_effect = {
+		set_rule = {
+		can_send_volunteers = yes
+		}
+		}
+	}
+#Guns
+	FRA_guns_to_spain_r = {
+	
+		icon = generic_operation
+		targets = { SPR }
+		visible = {
+		SPR = {
+		exists = yes
+		OR = {
+		has_war_with = SPB
+		has_war_with = SPC
+		has_war_with = SPA
+		}
+		OR = {
+		has_government = democratic
+		has_government = conservatives
+		}
+		}
+		}
+		available = {
+		country_exists = SPR 
+		has_equipment = {
+		infantry_equipment > 2000
+		}
+		}
+		cost = 50
+		days_remove = 7
+		remove_effect = {
+		SPR = { 
+		country_event = { id = france.1027 }
+		}
+		}
+	}
+#Support SPA	
+	FRA_volunteers_to_spain_a = {
+	
+		icon = generic_operation
+		fire_only_once = yes
+		targets = { SPA }
+		visible = {
+		FRA = {
+		has_completed_focus = FR_intervene_spanish_civil_war
+		}
+		}
+		available = {
+		country_exists = SPR 
+		SPR = {
+		OR = {
+		has_war_with = SPB
+		has_war_with = SPC
+		has_war_with = SPA
+		}
+		}
+		}
+		cost = 50
+		days_remove = 7
+		remove_effect = {
+		set_rule = {
+		can_send_volunteers = yes
+		}
+		}
+	}
+#Guns	
+	FRA_guns_to_spain_a = {
+	
+		icon = generic_operation
+
+		targets = { SPA }
+		visible = {
+		FRA = {
+		has_completed_focus = FR_intervene_spanish_civil_war
+		}
+		}
+		available = {
+		country_exists = SPA
+		SPA = {
+		OR = {
+		has_war_with = SPB
+		has_war_with = SPC
+		has_war_with = SPR
+		}
+		}
+		#has_equipment = {
+		#infantry_equipment > 2000
+		#}
+		}
+		cost = 50
+		days_remove = 7
+		remove_effect = {
+		SPA = { 
+		country_event = { id = france.1027 }
+		}
+		}
+	}
+}
+FRA_expansion_decisions = {
+
+    FRA_reform_turkey = {
+
+		icon = generic_operation
+
+		available = {
+			owns_state = 49
+			original_tag = FRA
+		}
+
+		cost = 5
+
+		fire_only_once = yes
+
+		visible = {
+			owns_state = 49
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+
+	    if = {
+        limit = { is_in_faction = no }
+        create_faction = new_entente
+        }
+
+		SYR = {
+		       if = {
+               limit = { is_puppet_of = FRA } 
+		       transfer_state = 817 
+            }
+        } 
+
+        ITA = {
+		       if = {
+               limit = { is_in_faction_with = FRA } 
+		       transfer_state = 342
+            }
+        } 
+        
+        GRE = {
+		       if = {
+               limit = { NOT = { has_war_with = FRA } } 
+		       transfer_state = 339
+		       transfer_state = 340
+		       transfer_state = 341
+		       transfer_state = 814
+		       FRA = { add_to_faction = GRE }
+            }
+        } 
+
+        ARM = {
+		       if = {
+               limit = { exists = no } 
+		       transfer_state = 354
+		       transfer_state = 353
+		       add_state_core = 354
+		       add_state_core = 353
+		       FRA = { puppet = ARM }
+            }
+        }
+
+        KUR = {
+		       if = {
+               limit = { exists = no } 
+		       transfer_state = 350
+		       transfer_state = 352
+		       add_state_core = 350
+		       add_state_core = 352
+		       FRA = { puppet = KUR }
+            }
+        }
+        
+        TUR = {
+		       transfer_state = 49
+		       transfer_state = 343
+		       transfer_state = 346
+		       transfer_state = 345
+               transfer_state = 345
+               transfer_state = 348
+               transfer_state = 356
+               transfer_state = 355
+               transfer_state = 349
+               transfer_state = 347
+               if = {
+               limit = { NOT = { ITA = { is_in_faction_with = FRA } } }
+               transfer_state = 342
+		       FRA = { puppet = TUR }
+            }
+        }
+
+		}
+	}
+}

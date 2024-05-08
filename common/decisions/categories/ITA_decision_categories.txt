@@ -1,0 +1,40 @@
+#################
+####  ITALY  ####
+#################
+#Integrate Territories
+ITA_integrate_territories_decisions = {
+	icon = decision_generic_decision
+	priority = 10
+	picture = GFX_decision_cat_picture_government_in_exile
+	available = {
+	original_tag = ITA
+	}
+	allowed = {
+		original_tag = ITA
+	}
+}
+ITA_colonialism = {
+	icon = generic_operation
+
+	picture = GFX_decision_cat_generic_mefo_bills
+
+	allowed = {
+		original_tag = ITA
+	}
+}
+ITA_leverage = {
+	icon = generic_operation
+
+	picture = GFX_decision_cat_generic_mefo_bills
+	visible = {
+		ITA = { NOT = { has_completed_focus = ITA_leave_allies } }
+	}
+	allowed = {
+		ITA = { NOT = { has_completed_focus = ITA_leave_allies } }
+		original_tag = ITA
+	}
+}
+
+
+
+

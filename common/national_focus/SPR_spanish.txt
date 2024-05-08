@@ -1,0 +1,4170 @@
+focus_tree = {
+	id = spanish
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			OR = {
+			tag = SPR
+			tag = SPA 
+			tag = SPC
+			tag = SPB
+			}
+		}
+	}
+	continuous_focus_position = { x = 100 y = 600 }
+	#Focus for defend_democracy
+	focus = {
+		id = SPR_defend_democracy
+		icon = GFX_goal_support_democracy
+		x = 20
+		y = 1
+		cost = 8
+		available = {
+		has_country_flag = sp_sided_with_dem_flag
+		has_government = democratic
+		}
+		prerequisite = { focus = SPR_side_with_popular_front }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		remove_ideas = sp_bed_gov
+		remove_ideas = sp_national_strikes
+		add_political_power = 50
+		add_popularity = {
+					ideology = democratic
+					popularity = 0.03
+				}
+		}
+		}
+
+	#Focus for French Support
+	focus = {
+		id = SPR_french_aid
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 22
+		y = 2
+		cost = 8
+		available = {
+		NOT = {
+		has_war_with = FRA
+		}
+		controls_state = 165
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_defend_democracy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		FRA = {
+		country_event = { id = spain.22 hours = 3 }
+		}
+		}
+	}
+
+	#Focus for unified_front
+	focus = {
+		id = SPR_unified_front
+		icon = GFX_focus_generic_support_the_left_right
+		x = 32
+		y = 1
+		cost = 8
+		available = {
+		has_country_flag = sp_sided_with_unified_front
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_side_with_opposition }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		remove_ideas = sp_bed_gov
+		remove_ideas = sp_national_strikes
+		remove_ideas = sp_not_loyal_army
+		add_political_power = 60
+		add_stability = 0.15
+		add_war_support = 0.05
+		}
+	}
+	#Focus for Carlist Support
+	focus = {
+		id = SPR_carlist_support
+		icon = GFX_focus_spa_supremacy_of_the_communion
+		x = 31
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_unified_front }
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+		focus = SPR_placeholder5
+		}
+		completion_reward = {
+		add_stability = 0.05
+		add_political_power = 60
+		create_country_leader = {
+		name = "Manuel Fal Conde"
+		desc = "POLITICS_MANUEL_AZANA_DESC"
+		picture = "fal_conde.dds"
+		expire = "1965.1.1"
+		ideology = neutrality_subtype
+		traits = {
+		#
+		}
+		}
+		hidden_effect = {
+		SPR = { country_event = { id = spain.34 days = 60 } }
+		}
+		}
+	}
+	#Nationalise Industry
+	focus = {
+		id = SPR_placeholder5
+		icon = GFX_goal_generic_production
+		x = 33
+		y = 3
+		cost = 8
+		mutually_exclusive = {
+		focus = SPR_carlist_support
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_unified_front }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		army_experience = 10
+			random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			 type = arms_factory
+			 level = 2
+			 instant_build = yes
+		    }
+				
+		  }
+		}
+	}
+	#Focus for Carlist Militia
+	focus = {
+		id = SPR_carlist_militia
+		icon = GFX_focus_focus_fra_maquis
+		x = 31
+		y = 4
+		cost = 8
+		available = {
+		controls_state = 176
+		controls_state = 790
+		controls_state = 792
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_carlist_support }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = spr_carlist_militia_tt
+		hidden_effect = {
+		load_oob = SPR_carlist_militia_troops
+		}
+		}
+	}
+	focus = {
+		id = SPR_arm_weapons
+		icon = GFX_focus_secret_rearmament
+		x = 33
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+		focus = SPR_placeholder5
+		focus = SPR_carlist_support }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_manpower = 1000
+		add_equipment_to_stockpile = {
+        type = infantry_equipment
+        amount = 2500
+        producer = SPR
+        }
+		}
+	}
+	#SPR_milit_science
+	focus = {
+		id = SPR_placeholder4
+		icon = GFX_goal_generic_scientific_exchange
+		x = 35
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+		focus = SPR_reinforce_franco_rule
+		focus = SPR_placeholder5 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+
+	#Focus for Revive the Spanish Monarchy
+	focus = {
+		id = SPR_alliance_with_monarchists
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 28
+		y = 1
+		cost = 8
+		available = {
+		has_country_flag = sp_sided_with_monarchy_flag
+		}
+		prerequisite = { focus = SPR_side_with_opposition }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		remove_ideas = sp_bed_gov
+		remove_ideas = sp_national_strikes
+		add_political_power = 60
+		add_stability = 0.1
+		add_war_support = 0.1
+		}
+	}
+
+	#Focus for Maintaining the Second Republic
+	focus = {
+		id = SPR_republican_spain
+		icon = GFX_focus_spr_maintain_the_republic
+		x = 20
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_defend_democracy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.1
+		add_war_support = 0.1
+		}
+	}
+
+	#Focus for Alliance with Communists
+	focus = {
+		id = SPR_alliance_with_commis
+		icon = GFX_focus_generic_soviet_politics
+		x = 14
+		y = 1
+		cost = 8
+		available = {
+		has_country_flag = sp_sided_with_com_flag
+		has_government = communism
+		}
+		prerequisite = { focus = SPR_side_with_popular_front }
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+		remove_ideas = sp_bed_gov
+		remove_ideas = sp_national_strikes
+		add_stability = -0.05
+		add_manpower = 3000
+		add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+		add_war_support = 0.1
+		hidden_effect = {
+		if = {
+		limit = { NOT = { country_exists = SPA } }
+		country_event = { id = spain.32 days = 60 }
+		}
+		}
+		}
+		
+	}
+
+	#Focus for raise_guardia_civil
+	focus = {
+		id = SPR_raise_guardia_civil
+		icon = GFX_focus_generic_little_entente
+		x = 16
+		y = 2
+		cost = 8
+		prerequisite = { focus = SPR_side_with_popular_front }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 60
+		add_war_support = 0.05
+		add_manpower = 9500
+		}
+	}
+
+	#Focus for Side with CEDA
+	focus = {
+		id = SPR_side_with_opposition
+		icon = GFX_focus_intervention_spain_nationalists
+		x = 32
+		y = 0
+		cost = 1
+		available = {
+			has_country_flag = sp_sided_with_ceda_flag
+		}
+		available_if_capitulated = yes
+		#mutually_exclusive = { focus = SPR_side_with_popular_front }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 120
+		}
+	}
+
+	#Focus for sub_warfare
+	focus = {
+		id = SPR_sub_warfare
+		icon = GFX_goal_generic_wolf_pack
+		x = 20
+		y = 10
+		cost = 8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = SPR_navy
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+		}
+	}
+
+	#Focus for cruiser_effort
+	focus = {
+		id = SPR_cruiser_effort
+		icon = GFX_focus_generic_cruiser2
+		x = 19
+		y = 11
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SPR_grand_fleet 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				technology = improved_light_cruiser
+				technology = advanced_light_cruiser
+				technology = improved_heavy_cruiser
+				technology = advanced_heavy_cruiser
+			}
+		}
+	}
+
+	#Focus for battleship_effort
+	focus = {
+		id = SPR_battleship_effort
+		icon = GFX_goal_generic_navy_battleship
+		x = 18
+		y = 12
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_grand_fleet }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				uses = 1
+				technology = basic_battlecruiser
+				technology = basic_battleship
+				technology = improved_battleship
+				technology = advanced_battleship
+				technology = heavy_battleship
+				technology = heavy_battleship2
+			}
+		}
+	}
+
+	#Focus for sub_effort
+	focus = {
+		id = SPR_sub_effort
+		icon = GFX_goal_generic_navy_submarine
+		x = 21
+		y = 11
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_sub_warfare }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				technology = early_submarine
+				technology = basic_submarine
+				technology = improved_submarine
+				technology = advanced_submarine
+			}
+		}
+	}
+
+	#Focus for colonial_investments
+	focus = {
+		id = SPR_colonial_investments
+		icon = GFX_goal_generic_trade
+		x = 3
+		y = 10
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_rapid_railway }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			290 = {
+		if = {
+		limit = { is_controlled_by = ROOT }
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 2
+			 instant_build = yes
+		    }
+				
+		  }
+		}
+		}
+	}
+
+	#Focus for colonial_oil
+	focus = {
+		id = SPR_colonial_oil
+		icon = GFX_goal_generic_oil_refinery
+		x = 3
+		y = 11
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_colonial_investments }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			controls_state = 699
+		}
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 30
+				state = 699
+			}
+		}
+	}
+
+	#Focus for gibraltar_forts
+	focus = {
+		id = SPR_gibraltar_forts
+		icon = GFX_goal_generic_construct_civilian
+		x = 2
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_stabilize_country }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			169 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 10094
+					instant_build = yes
+				  }
+				 add_building_construction = {
+					type = bunker
+					level = 2
+					province = 1048
+					instant_build = yes
+				  } 			
+		         }	
+				}
+		173 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 7153
+					instant_build = yes
+				  }			
+		         }	
+				}
+		}
+	}
+
+	#Focus for armed_forces
+	focus = {
+		id = SPR_armed_forces
+		icon = GFX_focus_generic_combined_arms
+		x = 15
+		y = 8
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_rebuild_spain }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 10
+		navy_experience = 10
+		air_experience = 10
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = arms_factory
+			 level = 2
+			 instant_build = yes
+		    }
+				
+		  }
+		}
+	}
+
+	#Focus for rapid_railway
+	focus = {
+		id = SPR_rapid_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 4
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_stabilize_country }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			167 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		166 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+	}
+
+	#Focus for inv_VEN
+	focus = {
+		id = SPR_inv_ven
+		icon = GFX_goal_anschluss
+		x = 45
+		y = 12
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_form_spanish_faction }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			VEN = { is_in_faction_with = SPR }
+		}
+		available = {
+			VEN = { exists = yes }
+		}
+		completion_reward = {
+			VEN = {
+		country_event = { days = 1 id = generic.5 }
+		}
+		}
+	}
+
+	#Focus for Claim Americas
+	focus = {
+		id = SPR_claim_americas
+		icon = GFX_focus_por_recover_latin_america
+		x = 40
+		y = 11
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SPR_spanish_empire 
+			focus = SPR_form_spanish_faction 
+			focus = SPR_join_ger_franco 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_state_claim = 488
+		add_state_claim = 307
+		add_state_claim = 489
+		add_state_claim = 493
+		add_state_claim = 486
+		add_state_claim = 306
+		add_state_claim = 649
+		add_state_claim = 305
+		add_state_claim = 490
+		add_state_claim = 491
+		add_state_claim = 303
+		add_state_claim = 494
+		add_state_claim = 492
+		add_state_claim = 487
+		add_state_claim = 303
+		add_state_claim = 688
+		add_state_claim = 301
+		add_state_claim = 302
+		add_state_claim = 506
+		add_state_claim = 279
+		add_state_claim = 507
+		add_state_claim = 512
+		add_state_claim = 278
+		add_state_claim = 510
+		add_state_claim = 509
+		add_state_claim = 508
+		add_state_claim = 300
+		add_state_claim = 304
+		add_state_claim = 316
+		add_state_claim = 317
+		add_state_claim = 312
+		add_state_claim = 315
+		add_state_claim = 319
+		add_state_claim = 314
+		add_state_claim = 313
+		add_state_claim = 474
+		add_state_claim = 475
+		add_state_claim = 476
+		add_state_claim = 477
+		add_state_claim = 485
+		add_state_claim = 277
+		add_state_claim = 478
+		add_state_claim = 479
+		add_state_claim = 481
+		add_state_claim = 480
+		add_state_claim = 482
+		add_state_claim = 483
+		add_state_claim = 484
+		add_state_claim = 695
+		}
+	}
+
+	#Focus for monarchist_victory
+	focus = {
+		id = SPR_monarchist_victory
+		icon = GFX_focus_spa_supremacy_of_the_communion
+		x = 43
+		y = 8
+		cost = 2
+		available = {
+		has_government = neutrality
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_reestablish_diplomacy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 40
+		}
+	}
+	
+	
+	#Focus for socialist_spain
+	focus = {
+		id = SPR_socialist_spain
+		icon = GFX_focus_por_workers_of_iberia
+		x = 28
+		y = 8
+		cost = 2
+		available = {
+		has_government = communism
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_reestablish_diplomacy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 40
+		set_rule = { can_create_factions = yes }
+		}
+	}
+
+	#Focus for republican_spain_victory
+	focus = {
+		id = SPR_republican_spain_victory
+		icon = GFX_focus_spr_war_of_independence
+		x = 34
+		y = 8
+		cost = 2
+		available = {
+		has_government = democratic
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_reestablish_diplomacy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 40
+		}
+	}
+
+	#Focus for Re-Establish Diplomacy
+	focus = {
+		id = SPR_reestablish_diplomacy
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 38
+		y = 7
+		cost = 8
+		prerequisite = { focus = SPR_one_spain }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 200
+		}
+	}
+
+	#Focus for Red Army
+	focus = {
+		id = SPR_socialist_reforms
+		icon = GFX_goal_support_fourth_int
+		x = 15
+		y = 3
+		cost = 8
+		prerequisite = { focus = SPR_solidify_control }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 20
+		remove_ideas = sp_not_loyal_army
+		add_ideas = sp_red_army_idea
+		#custom_effect_tooltip = spr_democratic_uprising_tt
+		}
+	}
+
+	#Focus for army_of_africa
+	focus = {
+		id = SPR_army_of_africa
+		icon = GFX_focus_generic_manpower
+		x = 34
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SPR_unified_front 
+			focus = SPR_franco 
+		}
+		mutually_exclusive = { focus = SPR_expand_conscription }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		controls_state = 290
+		}
+		completion_reward = {
+		custom_effect_tooltip = spr_raise_africa_army_tt
+		hidden_effect = {
+		load_oob = SPR_army_of_africa_units
+		}
+		}
+	}
+
+	#Focus for support_fascism
+	focus = {
+		id = SPR_support_fascism
+		icon = GFX_goal_support_fascism
+		x = 37
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_franco }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.05
+		add_popularity = {
+					ideology = fascism
+					popularity = 0.15
+				}
+		}
+	}
+
+	#Focus for Expand Conscription
+	focus = {
+		id = SPR_expand_conscription
+		icon = GFX_goal_generic_special_forces
+		x = 30
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SPR_alliance_with_monarchists 
+			focus = SPR_unified_front 
+		}
+		mutually_exclusive = { 
+			focus = SPR_army_of_africa 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		army_experience = 5
+		add_ideas = sp_expanded_conscription_idea
+		}
+	}
+
+	#Focus for Invite Communist Ministers
+	focus = {
+		id = SPR_invite_commi_ministers
+		icon = GFX_focus_por_workers_of_iberia
+		x = 19
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_republican_spain }
+		mutually_exclusive = { focus = SPR_oppose_communists }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_manpower = 3500
+		add_stability = -0.05
+		add_popularity = {
+					ideology = communism
+					popularity = 0.07
+		}
+		}
+	}
+
+	#Focus for reinforce_franco_rule
+	focus = {
+		id = SPR_reinforce_franco_rule
+		icon = GFX_focus_generic_concessions
+		x = 35
+		y = 3
+		cost = 8
+		available = {
+		has_government = fascism
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = SPR_franco
+		}
+		completion_reward = {
+		add_war_support = 0.15
+		add_ideas = BAV_arrested_opposition
+		add_stability = 0.1
+		}
+	}
+	#SPR_offensive_army
+	focus = {
+		id = SPR_placeholder6
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 37
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = SPR_support_fascism
+		}
+		completion_reward = {
+		add_ideas = sp_offensive_army_idea
+		}
+	}
+	#SPR_steal_navy
+	focus = {
+		id = SPR_placeholder7
+		icon = GFX_focus_generic_navy_battleship2
+		x = 37
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		SPA = { exists = yes }
+		has_war_with = SPA
+		}
+		bypass = {
+		NOT = { country_exists = SPA }
+		}
+		prerequisite = {
+		focus = SPR_placeholder6
+		}
+		completion_reward = {
+		SPA = { country_event = { id = spain.43 days = 1 } }
+		SPA = {
+		transfer_navy = {
+			target = SPR
+		}
+		}
+		}
+	}
+	#Focus for Russian Aid
+	focus = {
+		id = SPR_russian_aid
+		icon = GFX_focus_generic_concessions
+		x = 26
+		y = 2
+		cost = 8
+		available = {
+		has_government = neutrality
+		RUS = {
+		NOT = {
+		has_government = communism
+		}
+		}
+		NOT = {
+		has_war_with = RUS
+		}
+		controls_state = 41
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_alliance_with_monarchists }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		RUS = { country_event = { id = spain.28 hours = 3 } }
+		}
+	}
+	#Focus for Oppose Communism
+	focus = {
+		id = SPR_oppose_communists
+		icon = GFX_goal_generic_attack_allies
+		x = 21
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_republican_spain }
+		mutually_exclusive = { focus = SPR_invite_commi_ministers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_popularity = {
+					ideology = communism
+					popularity = -0.30
+				}
+		custom_effect_tooltip = sp_commis_might_start_a_civil_war_tt
+		hidden_effect = {
+		country_event = { id = spain.20 days = 7 }
+		}		
+		}
+	}
+	#Focus for Side with Popular Front
+	focus = {
+		id = SPR_side_with_popular_front
+		icon = GFX_focus_intervention_spain_republic
+		x = 17
+		y = 0
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = sp_sided_with_pop_front_flag
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	#Focus for Socialist Reforms
+	focus = {
+		id = SPR_solidify_control
+		icon = GFX_focus_generic_join_comintern
+		x = 14
+		y = 2
+		cost = 5
+		prerequisite = { focus = SPR_alliance_with_commis }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = sp_socialist_reforms
+		}
+	}
+	focus = {
+		id = SPR_Finn_aid
+		icon = GFX_focus_invite_finland
+		x = 10
+		y = 2
+		cost = 8
+		mutually_exclusive = {
+			focus = SPR_Hun_aid
+		}
+		available = {
+		NOT = {
+		has_war_with = FIN
+		}
+		controls_state = 165
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_defend_democracy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			FIN = {
+				send_equipment = { target = SPA type = infantry_equipment amount = 1500 }
+				}
+		}
+	}
+	focus = {
+		id = SPR_Hun_aid
+		icon = GFX_focus_hun_begin
+		x = 12
+		y = 2
+		cost = 8
+		mutually_exclusive = {
+			focus = SPR_Finn_aid
+		}
+		available = {
+		NOT = {
+		has_war_with = HUN
+		}
+		controls_state = 165
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_defend_democracy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			SPA = { 
+				load_oob = SPR_Hungarian_troops
+				}
+		}
+	}
+
+	#Focus for Socialist Education
+	focus = {
+		id = SPR_socialist_education
+		icon = GFX_focus_generic_military_academy
+		x = 18
+		y = 5
+		cost = 5
+		prerequisite = { 
+			focus = SPR_socialists_slot_1 
+			focus = SPR_invite_commi_ministers 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = sp_socialist_education_idea
+		}
+	}
+
+	#Focus for secular_state
+	focus = {
+		id = SPR_secular_state
+		icon = GFX_focus_spr_crush_the_revolution
+		x = 31
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SPR_socialist_spain 
+			focus = SPR_republican_spain_victory 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 120
+		}
+	}
+
+	#Focus To liberate the French Workers
+	focus = {
+		id = SPR_liberate_french_workers
+		icon = GFX_focus_attack_france
+		x = 30
+		y = 12
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_prepare_for_war }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_army_manpower = { size > 450000 }
+		FRA = { exists = yes }
+		}
+		completion_reward = {
+			create_wargoal = {
+					type = puppet_wargoal_focus
+					target = FRA
+				}
+		}
+	}
+
+	#Focus for inv_PRU
+	focus = {
+		id = SPR_inv_pru
+		icon = GFX_goal_anschluss
+		x = 44
+		y = 13
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_form_spanish_faction }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			PRU = { is_in_faction_with = SPR }
+		}
+		available = {
+			PRU = { exists = yes }
+		}
+		completion_reward = {
+			PRU = {
+		country_event = { days = 1 id = generic.5 }
+		}
+		}
+	}
+
+	#Focus for Spanish Netherlands
+	focus = {
+		id = SPR_spanish_netherlands
+		icon = GFX_focus_hol_oranje_boven
+		x = 38
+		y = 12
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_claim_west_africa }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_state_claim = 35
+		add_state_claim = 816
+		add_state_claim = 8
+		add_state_claim = 815
+		add_state_claim = 34
+		add_state_claim = 6
+		}
+	}
+
+	#Focus for United Spain
+	focus = {
+		id = SPR_one_spain
+		icon = GFX_focus_generic_support_the_left_right
+		x = 24
+		y = 6
+		cost = 20
+		available_if_capitulated = no
+		available = {
+		OR = {
+		has_war = no 
+		#SPR = { 
+		#has_completed_focus = SPR_spain_in_exile
+		#}
+		}
+		controls_state = 41
+		controls_state = 167
+		controls_state = 165
+		}
+		prerequisite = { 
+			focus = SPR_new_government 
+			focus = SPR_return_of_the_king 
+			focus = SPR_new_socialist_government 
+			focus = SPR_military_state_of_spain
+		}
+		mutually_exclusive = { focus = SPR_spain_in_exile }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		remove_ideas = sp_civil_war_idea
+		add_timed_idea = { idea = sp_civil_war_recovery_idea days = 1020 }
+		if = {
+		limit = { has_idea = sp_the_civil_guard_idea }
+		remove_ideas = sp_the_civil_guard_idea
+		}
+		if = {
+		limit = { has_idea = sp_popular_army_idea }
+		remove_ideas = sp_popular_army_idea
+		}
+		if = {
+		limit = { has_idea = sp_red_army_idea }
+		remove_ideas = sp_red_army_idea
+		}
+		if = {
+		limit = { has_idea = sp_offensive_army_idea }
+		remove_ideas = sp_offensive_army_idea
+		}
+		add_war_support = -0.20
+		#This is where it gets tricky.
+		#Nationalist Spain Outcome
+		if = {
+		limit = {
+			AND = {
+			tag = SPR 
+			SPA = { has_country_flag = SPA_has_spawned_true }
+			}
+		}
+		SPA = {
+		remove_state_core = 174
+		remove_state_core = 171
+		remove_state_core = 166
+		remove_state_core = 165
+		remove_state_core = 167
+		remove_state_core = 168
+		remove_state_core = 173
+		remove_state_core = 794
+		remove_state_core = 790
+		remove_state_core = 177
+		remove_state_core = 178
+		remove_state_core = 41
+		remove_state_core = 791
+		remove_state_core = 788
+		remove_state_core = 170
+		remove_state_core = 175		
+		remove_state_core = 792
+		remove_state_core = 176
+		remove_state_core = 290
+		remove_state_core = 789
+		remove_state_core = 169
+		remove_state_claim = 118
+		remove_state_claim = 793
+		}
+		}
+		if = {
+		limit = {
+			AND = {
+			tag = SPR 
+			SPC = { has_country_flag = SPC_has_spawned_true }
+			}
+		}
+		SPC = {
+		remove_state_core = 174
+		remove_state_core = 171
+		remove_state_core = 166
+		remove_state_core = 165
+		remove_state_core = 167
+		remove_state_core = 168
+		remove_state_core = 173
+		remove_state_core = 794
+		remove_state_core = 790
+		remove_state_core = 177
+		remove_state_core = 178
+		remove_state_core = 41
+		remove_state_core = 791
+		remove_state_core = 788
+		remove_state_core = 170
+		remove_state_core = 175		
+		remove_state_core = 792
+		remove_state_core = 176
+		remove_state_core = 290
+		remove_state_core = 789
+		remove_state_core = 169
+		remove_state_claim = 118
+		remove_state_claim = 793
+		}
+		}
+		if = {
+		limit = {
+			AND = {
+			tag = SPR 
+			SPB = { has_country_flag = SPB_has_spawned_true }
+			}
+		}
+		SPB = {
+		remove_state_core = 174
+		remove_state_core = 171
+		remove_state_core = 166
+		remove_state_core = 165
+		remove_state_core = 167
+		remove_state_core = 168
+		remove_state_core = 173
+		remove_state_core = 794
+		remove_state_core = 790
+		remove_state_core = 177
+		remove_state_core = 178
+		remove_state_core = 41
+		remove_state_core = 791
+		remove_state_core = 788
+		remove_state_core = 170
+		remove_state_core = 175		
+		remove_state_core = 792
+		remove_state_core = 176
+		remove_state_core = 290
+		remove_state_core = 789
+		remove_state_core = 169
+		remove_state_claim = 118
+		remove_state_claim = 793
+		}
+		}
+		#Republican Outcome
+		if = {
+		limit = {
+			AND = {
+			tag = SPA 
+			SPR = { has_country_flag = SPR_has_spawned_true }
+			}
+		}
+		SPR = {
+		remove_state_core = 174
+		remove_state_core = 171
+		remove_state_core = 166
+		remove_state_core = 165
+		remove_state_core = 167
+		remove_state_core = 168
+		remove_state_core = 173
+		remove_state_core = 794
+		remove_state_core = 790
+		remove_state_core = 177
+		remove_state_core = 178
+		remove_state_core = 41
+		remove_state_core = 791
+		remove_state_core = 788
+		remove_state_core = 170
+		remove_state_core = 175		
+		remove_state_core = 792
+		remove_state_core = 176
+		remove_state_core = 290
+		remove_state_core = 789
+		remove_state_core = 169
+		remove_state_claim = 118
+		remove_state_claim = 793
+		}
+		}
+		if = {
+		limit = {
+			AND = {
+			tag = SPA 
+			SPC = { has_country_flag = SPC_has_spawned_true }
+			}
+		}
+		SPC = {
+		remove_state_core = 174
+		remove_state_core = 171
+		remove_state_core = 166
+		remove_state_core = 165
+		remove_state_core = 167
+		remove_state_core = 168
+		remove_state_core = 173
+		remove_state_core = 794
+		remove_state_core = 790
+		remove_state_core = 177
+		remove_state_core = 178
+		remove_state_core = 41
+		remove_state_core = 791
+		remove_state_core = 788
+		remove_state_core = 170
+		remove_state_core = 175		
+		remove_state_core = 792
+		remove_state_core = 176
+		remove_state_core = 290
+		remove_state_core = 789
+		remove_state_core = 169
+		remove_state_claim = 118
+		remove_state_claim = 793
+		}
+		}
+		if = {
+		limit = {
+			AND = {
+			tag = SPA
+			SPB = { has_country_flag = SPB_has_spawned_true }
+			}
+		}
+		SPB = {
+		remove_state_core = 174
+		remove_state_core = 171
+		remove_state_core = 166
+		remove_state_core = 165
+		remove_state_core = 167
+		remove_state_core = 168
+		remove_state_core = 173
+		remove_state_core = 794
+		remove_state_core = 790
+		remove_state_core = 177
+		remove_state_core = 178
+		remove_state_core = 41
+		remove_state_core = 791
+		remove_state_core = 788
+		remove_state_core = 170
+		remove_state_core = 175		
+		remove_state_core = 792
+		remove_state_core = 176
+		remove_state_core = 290
+		remove_state_core = 789
+		remove_state_core = 169
+		remove_state_claim = 118
+		remove_state_claim = 793
+		}
+		}
+		#Communist Outcome
+		if = {
+		limit = {
+			AND = {
+			tag = SPC
+			SPR = { has_country_flag = SPR_has_spawned_true }
+			}
+		}
+		SPR = {
+		remove_state_core = 174
+		remove_state_core = 171
+		remove_state_core = 166
+		remove_state_core = 165
+		remove_state_core = 167
+		remove_state_core = 168
+		remove_state_core = 173
+		remove_state_core = 794
+		remove_state_core = 790
+		remove_state_core = 177
+		remove_state_core = 178
+		remove_state_core = 41
+		remove_state_core = 791
+		remove_state_core = 788
+		remove_state_core = 170
+		remove_state_core = 175		
+		remove_state_core = 792
+		remove_state_core = 176
+		remove_state_core = 290
+		remove_state_core = 789
+		remove_state_core = 169
+		remove_state_claim = 118
+		remove_state_claim = 793
+		}
+		}
+		if = {
+		limit = {
+			AND = {
+			tag = SPC 
+			SPA = { has_country_flag = SPA_has_spawned_true }
+			}
+		}
+		SPA = {
+		remove_state_core = 174
+		remove_state_core = 171
+		remove_state_core = 166
+		remove_state_core = 165
+		remove_state_core = 167
+		remove_state_core = 168
+		remove_state_core = 173
+		remove_state_core = 794
+		remove_state_core = 790
+		remove_state_core = 177
+		remove_state_core = 178
+		remove_state_core = 41
+		remove_state_core = 791
+		remove_state_core = 788
+		remove_state_core = 170
+		remove_state_core = 175		
+		remove_state_core = 792
+		remove_state_core = 176
+		remove_state_core = 290
+		remove_state_core = 789
+		remove_state_core = 169
+		remove_state_claim = 118
+		remove_state_claim = 793
+		}
+		}
+		if = {
+		limit = {
+			AND = {
+			tag = SPC
+			SPB = { has_country_flag = SPB_has_spawned_true }
+			}
+		}
+		SPB = {
+		remove_state_core = 174
+		remove_state_core = 171
+		remove_state_core = 166
+		remove_state_core = 165
+		remove_state_core = 167
+		remove_state_core = 168
+		remove_state_core = 173
+		remove_state_core = 794
+		remove_state_core = 790
+		remove_state_core = 177
+		remove_state_core = 178
+		remove_state_core = 41
+		remove_state_core = 791
+		remove_state_core = 788
+		remove_state_core = 170
+		remove_state_core = 175		
+		remove_state_core = 792
+		remove_state_core = 176
+		remove_state_core = 290
+		remove_state_core = 789
+		remove_state_core = 169
+		remove_state_claim = 118
+		remove_state_claim = 793
+		}
+		}
+		#Monarchist Outcome though very unlikely to be used
+		if = {
+		limit = {
+			AND = {
+			tag = SPB
+			SPR = { has_country_flag = SPR_has_spawned_true }
+			}
+		}
+		SPR = {
+		remove_state_core = 174
+		remove_state_core = 171
+		remove_state_core = 166
+		remove_state_core = 165
+		remove_state_core = 167
+		remove_state_core = 168
+		remove_state_core = 173
+		remove_state_core = 794
+		remove_state_core = 790
+		remove_state_core = 177
+		remove_state_core = 178
+		remove_state_core = 41
+		remove_state_core = 791
+		remove_state_core = 788
+		remove_state_core = 170
+		remove_state_core = 175		
+		remove_state_core = 792
+		remove_state_core = 176
+		remove_state_core = 290
+		remove_state_core = 789
+		remove_state_core = 169
+		remove_state_claim = 118
+		remove_state_claim = 793
+		}
+		}
+		if = {
+		limit = {
+			AND = {
+			tag = SPB
+			SPA = { has_country_flag = SPA_has_spawned_true }
+			}
+		}
+		SPA = {
+		remove_state_core = 174
+		remove_state_core = 171
+		remove_state_core = 166
+		remove_state_core = 165
+		remove_state_core = 167
+		remove_state_core = 168
+		remove_state_core = 173
+		remove_state_core = 794
+		remove_state_core = 790
+		remove_state_core = 177
+		remove_state_core = 178
+		remove_state_core = 41
+		remove_state_core = 791
+		remove_state_core = 788
+		remove_state_core = 170
+		remove_state_core = 175		
+		remove_state_core = 792
+		remove_state_core = 176
+		remove_state_core = 290
+		remove_state_core = 789
+		remove_state_core = 169
+		remove_state_claim = 118
+		remove_state_claim = 793
+		}
+		}
+		if = {
+		limit = {
+			AND = {
+			tag = SPB
+			SPC = { has_country_flag = SPC_has_spawned_true }
+			}
+		}
+		SPC = {
+		remove_state_core = 174
+		remove_state_core = 171
+		remove_state_core = 166
+		remove_state_core = 165
+		remove_state_core = 167
+		remove_state_core = 168
+		remove_state_core = 173
+		remove_state_core = 794
+		remove_state_core = 790
+		remove_state_core = 177
+		remove_state_core = 178
+		remove_state_core = 41
+		remove_state_core = 791
+		remove_state_core = 788
+		remove_state_core = 170
+		remove_state_core = 175		
+		remove_state_core = 792
+		remove_state_core = 176
+		remove_state_core = 290
+		remove_state_core = 789
+		remove_state_core = 169
+		remove_state_claim = 118
+		remove_state_claim = 793
+		}
+		}
+		}
+	}
+
+	#Focus for pro_allies_agenda
+	focus = {
+		id = SPR_pro_allies_agenda
+		icon = GFX_goal_anschluss
+		x = 33
+		y = 9
+		cost = 8
+		available = {
+		ENG = { 
+		OR = {
+		has_government = democratic 
+		has_government = conservatives
+		has_government = socialist
+		has_government = neutrality
+		}
+		exists = yes
+		is_faction_leader = yes }
+		NOT = {
+		is_puppet = yes
+		has_war_with = ENG
+		}
+		}
+		available_if_capitulated = yes
+		mutually_exclusive = {
+		focus = SPR_stand_alone_allies
+		}
+		prerequisite = { focus = SPR_republican_spain_victory }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		ENG = {
+		country_event = { days = 1 id = generic.2 }
+		}
+		}
+	}
+
+	#Focus for franco_purge
+	focus = {
+		id = SPR_franco_purge
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		x = 47
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_franco_victory }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 20
+		country_event = { id = spain.44 hours = 6 }
+		}
+	}
+
+	#Focus for remain_neutral
+	focus = {
+		id = SPR_remain_neutral
+		icon = GFX_goal_generic_neutrality_focus
+		x = 48
+		y = 10
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_franco_purge }
+		mutually_exclusive = { focus = SPR_join_ger_franco }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = sp_neutrality_idea
+		}
+	}
+
+	#Focus for Join the Berliner Pakt
+	focus = {
+		id = SPR_join_ger_franco
+		icon = GFX_goal_generic_alliance
+		x = 46
+		y = 10
+		cost = 8
+		available_if_capitulated = no
+		prerequisite = { 
+			focus = SPR_king_rules 
+			focus = SPR_pm_rules 
+			focus = SPR_franco_purge 
+		}
+		mutually_exclusive = { focus = SPR_remain_neutral }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = { 
+		is_in_faction_with = GER } 
+		available = { 
+		NOT = { has_idea = sp_civil_war_recovery_idea }
+		NOT = { has_completed_focus = SPR_form_spanish_faction }
+		is_in_faction = no
+		is_puppet = no 
+		NOT = { 
+		country_exists = WSM
+		country_exists = SAX
+		has_war_with = GER }
+		GER = { exists = yes } 
+		}
+		completion_reward = {
+		GER = {
+		country_event = { days = 1 id = generic.2 }
+		}
+		}
+	}
+
+	#Focus for return_of_the_king
+	focus = {
+		id = SPR_return_of_the_king
+		icon = GFX_focus_generic_monarchy_2
+		x = 30
+		y = 5
+		cost = 8
+		available = {
+		has_government = neutrality
+		if = {
+		limit = { has_war_with = SPA }
+		SPA = { surrender_progress > 0.6 }
+		}
+		if = {
+		limit = { has_war_with = SPC }
+		SPC = { surrender_progress > 0.6 }
+		}
+		if = {
+		limit = { has_war_with = SPB }
+		SPB = { surrender_progress > 0.6 }
+		}
+		}
+		mutually_exclusive = {
+		focus = SPR_military_state_of_spain
+		}
+		prerequisite = { 
+		focus = SPR_royal_slot_1
+		focus = SPR_carlist_militia
+		focus = SPR_emergency_factories
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = spr_king_pick_tt
+		add_political_power = 20
+		add_popularity = {
+					ideology = neutrality
+					popularity = 0.14
+				}
+		if = {
+		limit = { has_completed_focus = SPR_alliance_with_monarchists }
+		set_party_name = {
+				ideology = neutrality
+				long_name = "Renovación Española"
+				name = "RE"
+				}
+		set_cosmetic_tag = SPR_carlist		
+		create_country_leader = {
+		name = "Alfonso XIII"
+		desc = "POLITICS_FRANCISCO_FRANCO_DESC"
+		picture = "alfonsoxiii.dds"
+		expire = "1965.1.1"
+		ideology = neutrality_subtype
+		traits = {
+			#
+		}
+		}
+		news_event = { days = 1 id = spain.15 }
+		}
+		if = {
+		limit = { has_completed_focus = SPR_carlist_support }
+		set_party_name = {
+				ideology = neutrality
+				long_name = "Partido Carlista"
+				name = "PC"
+				}
+		create_country_leader = {
+		name = "Xavier of Bourbon-Parma"
+		desc = "POLITICS_FRANCISCO_FRANCO_DESC"
+		picture = "carlist_king.dds"
+		expire = "1965.1.1"
+		ideology = neutrality_subtype
+		traits = {
+			#
+		}
+		}
+		#news_event = { days = 1 id = spain.38 }
+		}
+		}
+	}
+	#Focus for strat_bomber
+	focus = {
+		id = SPR_strat_bomber
+		icon = GFX_focus_usa_escort_fighters
+		x = 16
+		y = 12
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_cas_effort }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 1
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				#category = tactical_bomber
+			}
+		}
+	}
+
+	#Focus for fighter_effort
+	focus = {
+		id = SPR_fighter_effort
+		icon = GFX_goal_generic_air_fighter2
+		x = 14
+		y = 10
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_air_force }
+		mutually_exclusive = { focus = SPR_cas_effort }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 1
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+
+			}
+		}
+	}
+
+	#Focus for armour_effort
+	focus = {
+		id = SPR_armour_effort
+		icon = GFX_goal_generic_army_tanks
+		x = 10
+		y = 11
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_motorization }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.80
+				uses = 2
+				name = mech_army_bonus
+				technology = basic_medium_tank
+				technology = improved_medium_tank
+				technology = advanced_medium_tank
+				#technology = mechanised_infantry
+			}
+		}
+	}
+
+	#Focus for stabilize_country
+	focus = {
+		id = SPR_stabilize_country
+		icon = GFX_focus_generic_self_management
+		x = 5
+		y = 8
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_rebuild_spain }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war= no
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	#Focus for expand_mines
+	focus = {
+		id = SPR_expand_mines
+		icon = GFX_goal_generic_soviet_construction
+		x = 5
+		y = 11
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_civil_effort }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			controls_state = 41
+		}
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 30
+				state = 41
+			}
+		}
+	}
+
+	#Focus for nationalize_industry
+	focus = {
+		id = SPR_nationalize_industry
+		icon = GFX_goal_generic_construction2
+		x = 4
+		y = 12
+		cost = 8
+		available = {
+		OR = {
+		threat > 0.5
+		has_war = yes
+		}
+		}
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SPR_colonial_oil 
+			focus = SPR_expand_mines 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 2
+			 instant_build = yes
+		    }
+				
+		  }
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = arms_factory
+			 level = 2
+			 instant_build = yes
+		    }
+				
+		  }
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 2
+			 instant_build = yes
+		    }
+				
+		  }
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = arms_factory
+			 level = 2
+			 instant_build = yes
+		    }
+				
+		  }
+		}
+	}
+
+	#Focus for Complete the Recovery
+	focus = {
+		id = SPR_stimulate_economy
+		icon = GFX_focus_generic_support_the_left_right
+		x = 4
+		y = 13
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_nationalize_industry }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		if = {
+		limit = { has_idea = sp_civil_war_recovery_idea }
+		remove_ideas = sp_civil_war_recovery_idea
+		}
+		add_ideas = GER_economic_boom
+		}
+	}
+
+	#Focus for milit_effort
+	focus = {
+		id = SPR_milit_effort
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 8
+		y = 10
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SPR_infra_effort 
+		}
+		prerequisite = { 
+			focus = SPR_contract_weapons 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		random_owned_controlled_state = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
+	}
+
+	#Focus for dockyard_effort
+	focus = {
+		id = SPR_dockyard_effort
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 8
+		y = 11
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_milit_effort }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+		}
+	}
+
+	#Focus for officers
+	focus = {
+		id = SPR_officers
+		icon = GFX_focus_generic_military_mission
+		x = 12
+		y = 10
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_new_warfare }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = RUS_front_line
+		}
+	}
+
+	#Focus for slot_1
+	focus = {
+		id = SPR_slot_1
+		icon = GFX_goal_generic_scientific_exchange
+		x = 11
+		y = 12
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SPR_centralized_command 
+			focus = SPR_armour_effort 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	#Focus for centralized_command
+	focus = {
+		id = SPR_centralized_command
+		icon = GFX_goal_generic_air_doctrine
+		x = 12
+		y = 11
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_officers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = general_staff
+		}
+	}
+
+	#Focus for navy
+	focus = {
+		id = SPR_navy
+		icon = GFX_goal_generic_build_navy
+		x = 20
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_armed_forces }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+		}
+	}
+
+	#Focus for carrier_effort
+	focus = {
+		id = SPR_carrier_effort
+		icon = GFX_goal_generic_navy_carrier
+		x = 17
+		y = 11
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_grand_fleet }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				technology = early_carrier
+				technology = basic_carrier
+				technology = improved_carrier
+				technology = advanced_carrier
+			}
+		}
+	}
+
+	#Focus for french_forts
+	focus = {
+		id = SPR_french_forts
+		icon = GFX_goal_generic_fortify_city
+		x = 0
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_stabilize_country }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			165 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 9824
+					instant_build = yes
+				  }
+				 add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11779
+					instant_build = yes
+				  } 
+				  add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3898
+					instant_build = yes
+				  }
+				 add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3899
+					instant_build = yes
+				  }	
+					
+		         }	
+				}
+		166 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 899
+					instant_build = yes
+				  }
+				 add_building_construction = {
+					type = bunker
+					level = 2
+					province = 915
+					instant_build = yes
+				  } 
+				  add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11838
+					instant_build = yes
+				  }			
+		         }	
+				}
+			172 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3931
+					instant_build = yes
+				  }
+				 add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3737
+					instant_build = yes
+				  } 			
+		         }	
+				}
+		}
+	}
+
+	#Focus for infra_effort
+	focus = {
+		id = SPR_infra_effort
+		icon = GFX_goal_generic_construct_civilian
+		x = 6
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_stabilize_country }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		random_owned_controlled_state = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+	}
+
+	#Focus for civil_effort
+	focus = {
+		id = SPR_civil_effort
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 5
+		y = 10
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SPR_infra_effort 
+		}
+		prerequisite = { 
+			focus = SPR_rapid_railway 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		random_owned_controlled_state = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
+	}
+
+	#Focus for contract_weapons
+	focus = {
+		id = SPR_contract_weapons
+		icon = GFX_goal_generic_army_artillery2
+		x = 8
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_armed_forces }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	#Focus for new_warfare
+	focus = {
+		id = SPR_new_warfare
+		icon = GFX_goal_generic_cavalry
+		x = 11
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_armed_forces }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
+	#Focus for motorization
+	focus = {
+		id = SPR_motorization
+		icon = GFX_goal_generic_army_motorized
+		x = 10
+		y = 10
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_new_warfare }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				name = mech_army_bonus
+				#technology = basic_medium_tank
+				#technology = improved_medium_tank
+				#technology = advanced_medium_tank
+				technology = mechanised_infantry
+			}
+		}
+	}
+
+	#Focus for air_force
+	focus = {
+		id = SPR_air_force
+		icon = GFX_goal_generic_build_airforce
+		x = 15
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_armed_forces }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = airdoctrine_bonus
+				bonus = 1.0
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+
+	#Focus for tactical_bomber_effort
+	focus = {
+		id = SPR_tactical_bomber_effort
+		icon = GFX_goal_generic_air_bomber
+		x = 14
+		y = 12
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_fighter_effort }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 1
+				#technology = strategic_bomber1
+				#technology = strategic_bomber2
+				#technology = strategic_bomber3
+				category = tactical_bomber
+			}
+		}
+	}
+
+	#Focus for cas_effort
+	focus = {
+		id = SPR_cas_effort
+		icon = GFX_goal_generic_CAS
+		x = 16
+		y = 10
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_air_force }
+		mutually_exclusive = { focus = SPR_fighter_effort }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1.0
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+
+	#Focus for airfields
+	focus = {
+		id = SPR_airfields
+		icon = GFX_goal_continuous_air_production
+		x = 15
+		y = 11
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SPR_fighter_effort 
+			focus = SPR_cas_effort 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			41 = {
+		add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+		}
+		171 = {
+		add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+		}
+		169 = {
+		add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+		}
+		}
+	}
+
+	#Focus for grand_fleet
+	focus = {
+		id = SPR_grand_fleet
+		icon = GFX_focus_generic_navy_battleship2
+		x = 18
+		y = 10
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_navy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 1.0
+				uses = 2
+				category = fleet_in_being_tree
+			}
+		}
+	}
+
+	#Focus for screen_effort
+	focus = {
+		id = SPR_screen_effort
+		icon = GFX_focus_generic_destroyer
+		x = 20
+		y = 12
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_sub_warfare }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				technology = early_destroyer
+				technology = basic_destroyer
+				technology = improved_destroyer
+				technology = advanced_destroyer
+			}
+		}
+	}
+
+	#Focus for more_dockyards
+	focus = {
+		id = SPR_more_dockyards
+		icon = GFX_goal_generic_navy_cruiser
+		x = 22
+		y = 10
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_navy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+		}
+	}
+
+	#Focus for New Leadership
+	focus = {
+		id = SPR_new_government
+		icon = GFX_goal_tripartite_pact
+		x = 20
+		y = 5
+		cost = 8
+		prerequisite = { focus = SPR_popular_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 60
+		add_stability = 0.10
+		}
+	}
+
+	#Focus for Compromise with Nationalist Forces
+	focus = {
+		id = SPR_compromise_with_monarchists
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 28
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_alliance_with_monarchists }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		remove_ideas = sp_not_loyal_army
+		add_stability = 0.1
+		add_war_support = 0.1
+		create_corps_commander = {
+		name = "Francisco Franco"
+		picture = "franco_spain.dds"
+		traits = { desert_fox }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 1
+		planning_skill = 3
+		logistics_skill = 2
+		}
+		}
+	}
+	#Focus the Royal Guard Restoration
+	focus = {
+		id = SPR_spanish_royal_guard
+		icon = GFX_focus_generic_treaty
+		x = 29
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_compromise_with_monarchists }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		army_experience = 5
+		add_stability = 0.05
+		custom_effect_tooltip = spr_will_get_royal_units_tt
+		hidden_effect = {
+		load_oob = SPR_royal_guard_units
+		}
+		}
+	}
+	#Focus for 
+	focus = {
+		id = SPR_seize_the_spanish_gold
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 27
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_compromise_with_monarchists }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_timed_idea = { idea = sp_spanish_gold_idea days = 560 }
+		}
+	}
+	#Focus for 
+	focus = {
+		id = SPR_royal_slot_1
+		icon = GFX_focus_research2
+		x = 29
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+		focus = SPR_carlist_support
+		focus = SPR_spanish_royal_guard }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+	#Focus for 
+	focus = {
+		id = SPR_emergency_factories
+		icon = GFX_focus_generic_industry_3
+		x = 27
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_seize_the_spanish_gold }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		army_experience = 5
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = arms_factory
+			 level = 2
+			 instant_build = yes
+		    }
+				
+		  }
+		}
+	}
+
+	#Focus To Ban the Right Wing Parties
+	focus = {
+		id = SPR_ban_right_wing
+		icon = GFX_goal_generic_forceful_treaty
+		x = 14
+		y = 4
+		cost = 8
+		available = {
+		has_government = communism
+		}
+		prerequisite = { focus = SPR_socialist_reforms }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_popularity = {
+					ideology = fascism
+					popularity = -1
+				}
+		add_popularity = {
+					ideology = neutrality
+					popularity = -1
+				}		
+		}		
+	}
+
+	#Focus for Democratic Research Slot
+	focus = {
+		id = SPR_democratic_slot_1
+		icon = GFX_focus_research2
+		x = 18
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_defend_democracy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+
+	#Focus to Form the Popular Army
+	focus = {
+		id = SPR_popular_army
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 20
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+		focus = SPR_oppose_communists
+		focus = SPR_invite_commi_ministers
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		remove_ideas = sp_not_loyal_army
+		add_ideas = sp_popular_army_idea
+		}
+	}
+
+	#Focus for Raise the Peasant Militia
+	focus = {
+		id = SPR_raise_peasant_army
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 12
+		y = 4
+		cost = 8
+		available = {
+		has_government = communism
+		}
+		prerequisite = { focus = SPR_arm_militias }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = spr_raises_militia_tt
+		hidden_effect = {
+		load_oob = SPR_peasant_militia
+		}
+		}
+	}
+
+	#Focus for franco
+	focus = {
+		id = SPR_franco
+		icon = GFX_focus_spa_caudillo_of_spain
+		x = 36
+		y = 1
+		cost = 8
+		available = {
+		has_country_flag = sp_sided_with_franco
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_side_with_opposition }
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+			create_country_leader = {
+			name = "Francisco Franco"
+			desc = "POLITICS_FRANCISCO_FRANCO_DESC"
+			picture = "Portrait_Spain_Francisco_Franco.dds"
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				#
+			}
+			}
+			add_stability = 0.15
+		hidden_effect = {
+		country_event = { id = spain.34 days = 75 }
+		}		
+		}
+	}
+
+	#Focus for military_state_of_spain
+	focus = {
+		id = SPR_military_state_of_spain
+		icon = GFX_goal_generic_dangerous_deal
+		x = 34
+		y = 5
+		cost = 8
+		prerequisite = {
+		focus = SPR_placeholder4
+		focus = SPR_placeholder7
+		focus = SPR_arm_weapons
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 0
+		}
+		mutually_exclusive = {
+		focus = SPR_return_of_the_king
+		}
+		available = {
+		if = {
+		limit = { has_war_with = SPA }
+		SPA = { surrender_progress > 0.6 }
+		}
+		if = {
+		limit = { has_war_with = SPC }
+		SPC = { surrender_progress > 0.6 }
+		}
+		if = {
+		limit = { has_war_with = SPB }
+		SPB = { surrender_progress > 0.6 }
+		}
+		}
+		completion_reward = {
+		add_political_power = 120
+		if = { limit = { has_completed_focus = SPR_franco } 
+		create_country_leader = {
+		name = "Francisco Franco"
+		desc = "POLITICS_ANTÓNIO_DE_OLIVEIRA_SALAZAR_DESC"
+		picture = "franco_spain.dds"
+		expire = "1965.1.1"
+		ideology = rexism
+		traits = {
+
+		}
+		}
+		}
+		if = { limit = { has_completed_focus = SPR_unified_front } 
+		create_country_leader = {
+		name = "Emilio Mola"
+		desc = "POLITICS_ANTÓNIO_DE_OLIVEIRA_SALAZAR_DESC"
+		picture = "emilio_mola.dds"
+		expire = "1965.1.1"
+		ideology = despotism
+		traits = {
+
+		}
+		}
+		}
+		}
+	}
+	#Focus for New Marxist Government
+	focus = {
+		id = SPR_new_socialist_government
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 15
+		y = 5
+		cost = 8
+		available = {
+		has_government = communism
+		}
+		prerequisite = { focus = SPR_socialist_reforms }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.1
+		}
+	}
+
+	#Focus for redistribute_wealth
+	focus = {
+		id = SPR_redistribute_wealth
+		icon = GFX_goal_generic_consumer_goods
+		x = 27
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_socialist_spain }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = sp_socialist_spain_idea
+		}
+	}
+
+	#Focus for redistribute_land
+	focus = {
+		id = SPR_redistribute_land
+		icon = GFX_goal_generic_construct_civilian
+		x = 29
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_socialist_spain }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = arms_factory
+			 level = 1
+			 instant_build = yes
+		    }
+				
+		}
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		}
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 1
+		}
+		}
+	}
+
+	#Focus for inv_ELS
+	focus = {
+		id = SPR_inv_els
+		icon = GFX_goal_anschluss
+		x = 43
+		y = 12
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_form_spanish_faction }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			ELS = { is_in_faction_with = SPR }
+		}
+		available = {
+			ELS = { exists = yes }
+		}
+		completion_reward = {
+			ELS = {
+		country_event = { days = 1 id = generic.5 }
+		}
+		}
+	}
+
+	
+
+	#Focus for Avenge for 1898
+	focus = {
+		id = SPR_avenge_america
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 40
+		y = 12
+		cost = 8
+		available_if_capitulated = no
+		prerequisite = { focus = SPR_claim_americas }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		has_army_manpower = {
+		size > 550000
+		}
+		country_exists = USA
+		country_exists = PHI
+		is_puppet = no
+		}
+		completion_reward = {
+		create_wargoal = {
+					type = annex_everything
+					target = USA
+				}
+		create_wargoal = {
+					type = annex_everything
+					target = PHI
+				}		
+		add_state_claim = 375
+		add_state_claim = 371
+		add_state_claim = 370
+		add_state_claim = 366
+		add_state_claim = 376
+		add_state_claim = 377
+		add_state_claim = 378
+		add_state_claim = 379
+		}
+	}
+
+	#Focus for prepare_for_war
+	focus = {
+		id = SPR_prepare_for_war
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 28
+		y = 11
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_red_army }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		NOT = { has_idea = sp_civil_war_recovery_idea }
+		}
+		completion_reward = {
+		add_war_support = 0.15
+		add_political_power = 100
+		}
+	}
+
+	#Focus for Form the Hispanophone
+	focus = {
+		id = SPR_form_spanish_faction
+		icon = GFX_goal_generic_defence
+		x = 44
+		y = 10
+		cost = 8
+		available = {
+		NOT = { has_completed_focus = SPR_join_ger_franco }
+		NOT = { has_idea = sp_civil_war_recovery_idea }
+		}
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SPR_king_rules 
+			focus = SPR_pm_rules 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_in_faction = no
+		}
+		completion_reward = {
+		set_rule = { can_create_factions = yes }
+		create_faction = spanish_faction
+		}
+	}
+
+	#Focus for Spanish Empire
+	focus = {
+		id = SPR_king_rules
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 44
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_monarchist_victory }
+		mutually_exclusive = { focus = SPR_pm_rules }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = sp_monarchy_idea
+		add_political_power = 120
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.04
+		}
+		if = {
+		limit = { has_completed_focus = SPR_alliance_with_monarchists }
+		set_cosmetic_tag = SPC
+		}
+		news_event = { id = spain.37 hours = 1 }
+		}
+	}
+
+	#Focus for Kingdom of Spain
+	focus = {
+		id = SPR_pm_rules
+		icon = GFX_goal_support_democracy
+		x = 42
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_monarchist_victory }
+		mutually_exclusive = { focus = SPR_king_rules }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = sp_monarchy_idea
+		add_political_power = 120
+		add_stability = 0.05
+		set_politics = { ruling_party = conservatives elections_allowed = yes }
+		add_popularity = {
+			ideology = conservatives
+			popularity = 0.29
+		}
+		if = { 
+		limit = { has_completed_focus = SPR_alliance_with_monarchists }
+		create_country_leader = {
+		name = "José María Gil-Robles y Quiñones"
+		desc = "POLITICS_MANUEL_AZANA_DESC"
+		picture = "Jose_Maria_gil_robles_y_quinones.dds"
+		expire = "1965.1.1"
+		ideology = conservatives_subtype
+		traits = {
+		
+		}
+		}
+		if = {
+		limit = { tag = SPR }
+		set_cosmetic_tag = SPB
+		}
+		}
+		if = {
+		limit = { has_completed_focus = SPR_carlist_support }
+		create_country_leader = {
+		name = "Manuel Fal Conde"
+		desc = "POLITICS_MANUEL_AZANA_DESC"
+		picture = "fal_conde.dds"
+		expire = "1965.1.1"
+		ideology = conservatives_subtype
+		traits = {
+		#
+		}
+		}
+		}
+		news_event = { id = spain.36 hours = 1 }
+		}
+	}
+
+	#Focus for Kick Start Spain's Recovery
+	focus = {
+		id = SPR_rebuild_spain
+		icon = GFX_goal_generic_consumer_goods
+		x = 10
+		y = 7
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_one_spain }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.03
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 2
+			 instant_build = yes
+		    }
+				
+		  }
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 1
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 1
+			 instant_build = yes
+		    }
+				
+		  }
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 1
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 1
+			 instant_build = yes
+		    }
+				
+		  }
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 1
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 1
+			 instant_build = yes
+		    }
+				
+		  }	
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 1
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 1
+			 instant_build = yes
+		    }
+				
+		  }		
+		}
+	}
+
+	#Focus for franco_victory
+	focus = {
+		id = SPR_franco_victory
+		icon = GFX_focus_spa_the_phalanx_ascendant
+		x = 47
+		y = 8
+		cost = 2
+		available = {
+		has_government = fascism
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_reestablish_diplomacy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 40
+		}
+	}
+
+	
+
+	#Focus for Arm Militias
+	focus = {
+		id = SPR_arm_militias
+		icon = GFX_goal_generic_position_armies
+		x = 12
+		y = 3
+		cost = 8
+		available = {
+		has_government = communism
+		OR = {
+		has_war_with = SPR
+		has_war_with = SPA
+		has_war_with = SPC
+		has_war_with = SPB
+		}
+		OR = {
+		has_government = democratic
+		has_government = socialist
+		has_government = communism
+		}
+		controls_state = 165
+		controls_state = 794
+		controls_state = 167
+		}
+		prerequisite = { focus = SPR_solidify_control }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.1
+		add_war_support = 0.1
+		if = {
+		limit = { 
+		tag = SPA 
+		}
+		SPA = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 4500
+			producer = SPA
+			}
+		}
+		}
+		SPC = {
+		if = {
+		limit = { 
+		tag = SPC
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 4500
+			producer = SPC
+			}
+		}
+		}
+		}
+	}
+
+	#Focus for stand_alone_allies
+	focus = {
+		id = SPR_stand_alone_allies
+		icon = GFX_goal_generic_neutrality_focus
+		x = 35
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_republican_spain_victory }
+		mutually_exclusive = { focus = SPR_pro_allies_agenda }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		set_rule = { can_create_factions = yes }
+		add_stability = 0.05
+		}
+	}
+
+	#Focus for Socialist Research Foundation
+	focus = {
+		id = SPR_socialists_slot_1
+		icon = GFX_focus_research2
+		x = 17
+		y = 4
+		cost = 8
+		available = {
+		has_government = communism
+		}
+		prerequisite = { focus = SPR_socialist_reforms }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+
+	#Focus for german_aid
+	focus = {
+		id = SPR_german_aid
+		icon = GFX_goal_generic_construction2
+		x = 46
+		y = 11
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_join_ger_franco }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		is_in_faction_with = GER
+		}
+		completion_reward = {
+			GER = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.05
+				uses = 1
+				category = land_doctrine
+			}
+			}
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
+	#Focus for claim_iberia_right
+	focus = {
+		id = SPR_claim_iberia_right
+		icon = GFX_focus_por_iberian_summit
+		x = 42
+		y = 11
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SPR_spanish_empire 
+			focus = SPR_form_spanish_faction 
+			focus = SPR_join_ger_franco 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		create_wargoal = {
+					type = annex_everything
+					target = POR
+				}
+		add_state_claim = 179
+		add_state_claim = 795
+		add_state_claim = 112
+		add_state_claim = 181
+		add_state_claim = 180
+		}
+	}
+
+	#Focus for Proclaim the Spanish Empire
+	focus = {
+		id = SPR_spanish_empire
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		x = 40
+		y = 10
+		cost = 8
+		available = {
+		num_of_factories > 75
+		NOT = { has_idea = sp_civil_war_recovery_idea }
+		}
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SPR_pm_rules 
+			focus = SPR_king_rules 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = { 
+		remove_idea = sp_monarchy_idea
+		add_idea = sp_spanish_empire_idea }
+		}
+		}
+
+	#Focus for red_army
+	focus = {
+		id = SPR_red_army
+		icon = GFX_goal_generic_war_with_comintern
+		x = 28
+		y = 10
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SPR_redistribute_wealth 
+		}
+		prerequisite = { 
+			focus = SPR_redistribute_land 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = sp_red_army_II_idea
+		}
+	}
+
+	#Focus for propose_iberian_union
+	focus = {
+		id = SPR_propose_iberian_union
+		icon = GFX_focus_por_iberian_summit
+		x = 26
+		y = 12
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_prepare_for_war }
+		mutually_exclusive = { focus = SPR_form_iberian_union }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			POR = { 
+		exists = no  }
+		}
+		available = {
+			POR = { 
+		is_puppet = no 
+		exists = yes
+		NOT = { has_war_with = SPR }	
+		}
+		}
+		completion_reward = {
+			set_rule = {
+		can_create_factions = yes 
+		}
+		create_faction = iberian_faction
+		POR = {
+		country_event = { days = 1 id = generic.5 }
+		}
+		}
+	}
+
+	#Focus for form_iberian_union
+	focus = {
+		id = SPR_form_iberian_union
+		icon = GFX_goal_generic_political_pressure
+		x = 28
+		y = 12
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_prepare_for_war }
+		mutually_exclusive = { focus = SPR_propose_iberian_union }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			POR = { exists = yes }
+		}
+		completion_reward = {
+		set_cosmetic_tag = IBE
+		create_wargoal = {
+					type = annex_everything
+					target = POR
+				}
+		}
+	}
+
+	#Focus for West African Claims
+	focus = {
+		id = SPR_claim_west_africa
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 38
+		y = 11
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_spanish_empire }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_state_claim = 461
+		add_state_claim = 462
+		add_state_claim = 557
+		add_state_claim = 786
+		add_state_claim = 782
+		add_state_claim = 515
+		add_state_claim = 775
+		add_state_claim = 514
+		add_state_claim = 513
+		add_state_claim = 459
+		add_state_claim = 460
+		add_state_claim = 458
+		add_state_claim = 665
+		}
+	}
+
+	#Focus for rebuilding_spain
+	focus = {
+		id = SPR_rebuilding_spain
+		icon = GFX_focus_generic_self_management
+		x = 34
+		y = 10
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SPR_pro_allies_agenda 
+			focus = SPR_stand_alone_allies 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_timed_idea = { idea = sp_rebuild_spain_idea days = 140 }
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 2
+			 instant_build = yes
+		    }
+				
+		  }
+		}
+	}
+	#Anti-Nationalist Crusade
+	focus = {
+		id = SPR_placeholder8
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 33
+		y = 11
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SPR_rebuilding_spain
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		NOT = { has_idea = sp_civil_war_recovery_idea }
+		}
+	completion_reward = {
+	add_war_support = 0.05
+	GER = {
+				if = {
+					limit = { 
+					exists = yes 
+					OR = { has_government = fascism
+					has_government = neutrality }
+					}
+					add_opinion_modifier = { target = GER modifier = sp_crusade_against_nationalism }
+				}
+		}
+	RUS = {
+				if = {
+					limit = { 
+					exists = yes 
+					OR = { has_government = fascism
+					has_government = neutrality }
+					}
+					add_opinion_modifier = { target = RUS modifier = sp_crusade_against_nationalism }
+				}
+		}
+	POR = {
+				if = {
+					limit = { 
+					exists = yes 
+					OR = { has_government = fascism
+					has_government = neutrality }
+					}
+					add_opinion_modifier = { target = POR modifier = sp_crusade_against_nationalism }
+				}
+		}
+	ENG = {
+				if = {
+					limit = { 
+					exists = yes 
+					OR = { has_government = fascism
+					has_government = neutrality }
+					}
+					add_opinion_modifier = { target = ENG modifier = sp_crusade_against_nationalism }
+				}
+		}
+	ITA = {
+				if = {
+					limit = { 
+					exists = yes 
+					OR = { has_government = fascism
+					has_government = neutrality }
+					}
+					add_opinion_modifier = { target = ITA modifier = sp_crusade_against_nationalism }
+				}
+		}
+	FRA = {
+				if = {
+					limit = { 
+					exists = yes 
+					OR = { has_government = fascism
+					has_government = neutrality }
+					}
+					add_opinion_modifier = { target = FRA modifier = sp_crusade_against_nationalism }
+				}
+		}		
+	}
+	}
+	#Anti-Communist Crusade
+	focus = {
+		id = SPR_placeholder9
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		x = 35
+		y = 11
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SPR_rebuilding_spain
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		NOT = { has_idea = sp_civil_war_recovery_idea }
+		}
+	completion_reward = {
+	add_stability = 0.05
+	BAV = {
+				if = {
+					limit = { 
+					exists = yes 
+					OR = { has_government = communism
+					has_government = socialist }
+					}
+					add_opinion_modifier = { target = BAV modifier = sp_crusade_against_communism }
+				}
+		}
+	RUS = {
+				if = {
+					limit = { 
+					exists = yes 
+					has_government = communism
+					}
+					add_opinion_modifier = { target = RUS modifier = sp_crusade_against_communism }
+				}
+		}
+	HUN = {
+				if = {
+					limit = { 
+					exists = yes 
+					has_government = communism
+					}
+					add_opinion_modifier = { target = HUN modifier = sp_crusade_against_communism }
+				}
+		}
+	FRA = {
+				if = {
+					limit = { 
+					exists = yes 
+					has_government = communism
+					}
+					add_opinion_modifier = { target = FRA modifier = sp_crusade_against_communism }
+				}
+		}
+	ENG = {
+				if = {
+					limit = { 
+					exists = yes 
+					has_government = communism
+					}
+					add_opinion_modifier = { target = ENG modifier = sp_crusade_against_communism }
+				}
+		}		
+	
+	}
+	}
+	#Take down the Socialists
+	focus = {
+		id = SPR_placeholder10
+		icon = GFX_goal_anti_comintern_pact
+		x = 35
+		y = 12
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SPR_placeholder9
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	available = {
+	is_puppet = no
+	num_of_factories > 75
+	}
+	completion_reward = {
+	add_war_support = 0.05
+	if = { limit = { RUS = { has_government = communism } }
+	create_wargoal = { type = annex_everything target = RUS }
+	}
+	if = { limit = { BAV = { has_government = communism } }
+	create_wargoal = { type = annex_everything target = BAV }
+	}
+	if = { limit = { FRA = { has_government = communism } }
+	create_wargoal = { type = annex_everything target = FRA }
+	}
+	if = { limit = { HUN = { has_government = communism } }
+	create_wargoal = { type = annex_everything target = HUN }
+	}
+	if = { limit = { ENG = { has_government = communism } }
+	create_wargoal = { type = annex_everything target = ENG }
+	}
+	}
+	}
+	focus = {	
+		id = SPR_placeholder11
+		icon = GFX_goal_generic_attack_allies
+		x = 33
+		y = 12
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SPR_placeholder8
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	available = {
+	is_puppet = no
+	num_of_factories > 75
+	}
+	completion_reward = {
+	add_war_support = 0.05
+	if = { limit = { POR = { OR = { has_government = fascism 
+	has_government = neutrality }
+	} }
+	create_wargoal = { type = annex_everything target = POR }
+	}
+	if = { limit = { RUS = { OR = { has_government = fascism 
+	has_government = neutrality }
+	} }
+	create_wargoal = { type = annex_everything target = RUS }
+	}
+	if = { limit = { GER = { OR = { has_government = fascism 
+	has_government = neutrality }
+	} }
+	create_wargoal = { type = annex_everything target = GER }
+	}
+	if = { limit = { FRA = { OR = { has_government = fascism 
+	has_government = neutrality }
+	} }
+	create_wargoal = { type = annex_everything target = FRA }
+	}
+	if = { limit = { HUN = { OR = { has_government = fascism 
+	has_government = neutrality }
+	} }
+	create_wargoal = { type = annex_everything target = HUN }
+	}
+	if = { limit = { ENG = { OR = { has_government = fascism 
+	has_government = neutrality }
+	} }
+	create_wargoal = { type = annex_everything target = ENG }
+	}
+	}	
+	}
+	
+	
+	
+	
+	
+	#######################
+	#
+	#		  WIP
+    #
+	#######################
+	#Commented out focuses, will probably be added later.
+	#Focus for Spain in Exile
+	#focus = {
+	#	id = SPR_spain_in_exile
+	#	icon = GFX_focus_spr_torchbearers_of_tomorrow
+	#	x = 52
+	#	y = 6
+	#	cost = 3
+	#	available = {
+	#	tag = SPR
+	#	surrender_progress > 0.7
+	#	OR = {
+	#	has_war_with = SPR 
+	#	has_war_with = SPA
+	#	has_war_with = SPB
+	#	has_war_with = SPC
+	#	}
+	#	controls_state = 290
+	#	}
+	#	mutually_exclusive = { focus = SPR_one_spain }
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#	completion_reward = {
+	#	if = {
+	#	limit = {
+	#	tag = SPR
+	#	}
+	#	SPR = {
+	#	set_capital = 290
+	#	}
+	#	}
+	#	}
+	#}
+	#Focus for continue_fight_abroad
+	#focus = {
+	#	id = SPR_continue_fight_abroad
+	#	icon = GFX_goal_generic_political_pressure
+	#	x = 51
+	#	y = 8
+	#	cost = 8
+	#	available_if_capitulated = yes
+	#	prerequisite = { focus = SPR_form_the_government_in_exile }
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#	completion_reward = { 
+	#	swap_ideas = { 
+	#	remove_idea = sp_civil_war_idea
+	#	add_idea = sp_fight_continues }
+	#	}
+	#}
+
+	#Focus for sign_peace_abroad
+	#focus = {
+	#	id = SPR_sign_peace_abroad
+	#	icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+	#	x = 53
+	#	y = 8
+	#	cost = 8
+	#	available_if_capitulated = yes
+	#	prerequisite = { focus = SPR_form_the_government_in_exile }
+	#	mutually_exclusive = { focus = SPR_continue_fight_abroad }
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}
+	#Focus for Form the Government in Exile
+	#focus = {
+	#	id = SPR_form_the_government_in_exile
+	#	icon = GFX_focus_generic_military_academy
+	#	x = 52
+	#	y = 7
+	#	cost = 8
+	#	available_if_capitulated = yes
+	#	prerequisite = { focus = SPR_spain_in_exile }
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#	completion_reward = {
+	#	add_political_power = 100
+	#	add_ideas = sp_gov_in_exile
+	#	}
+	#}
+	#Focus for Develop Colonial Industry
+	#focus = {
+	#	id = SPR_develop_industry_colonies
+	#	icon = GFX_goal_generic_construct_mil_factory
+	#	x = 52
+	#	y = 10
+	#	cost = 8
+	#	available_if_capitulated = yes
+	#	prerequisite = { focus = SPR_core_colonies }
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#	completion_reward = {
+	#	random_owned_controlled_state = {
+	#	add_extra_state_shared_building_slots = 2
+	#	add_building_construction = {
+	#		 type = industrial_complex
+	#		 level = 1
+	#		 instant_build = yes
+	#	    }
+	#			
+	#	 }
+	#	random_owned_controlled_state = {
+	#	add_extra_state_shared_building_slots = 2
+	#	add_building_construction = {
+	#		 type = industrial_complex
+	#		 level = 1
+	#		 instant_build = yes
+	#	    }
+	#			
+	#	 }
+	#	random_owned_controlled_state = {
+	#	add_extra_state_shared_building_slots = 2
+	#	add_building_construction = {
+	#		 type = arms_factory
+	#		 level = 1
+	#		 instant_build = yes
+	#	    }
+	#			
+	#	 }	
+	#	}
+	#}
+
+	#Focus for manpower_colonies
+	#focus = {
+	#	id = SPR_manpower_colonies
+	#	icon = GFX_focus_generic_little_entente
+	#	x = 52
+	#	y = 11
+	#	cost = 8
+	#	available_if_capitulated = yes
+	#	prerequisite = { focus = SPR_develop_industry_colonies }
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#	completion_reward = {
+	#	add_manpower = 100000
+	#	add_political_power = 120
+	#	add_stability = 0.05
+	#	add_war_support = 0.1
+	#	}
+	#}
+
+	#Focus for prepare_liberation
+	#focus = {
+	#	id = SPR_prepare_liberation
+	#	icon = GFX_goal_generic_major_war
+	#	x = 53
+	#	y = 12
+	#	cost = 8
+	#	available_if_capitulated = yes
+	#	prerequisite = { 
+	#		focus = SPR_manpower_colonies 
+	#	}
+	#	prerequisite = { 
+	#		focus = SPR_sign_peace_abroad 
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#	completion_reward = {
+	#	if = {
+	#	limit = { SPA = { controls_state = 41 } }
+	#	create_wargoal = {
+	#				type = annex_everything
+	#				target = SPA
+	#			}
+	#	}
+	#	if = {
+	#	limit = { SPC = { controls_state = 41 } }
+	#	create_wargoal = {
+	#				type = annex_everything
+	#				target = SPC
+	#			}
+	#	}
+	#	if = {
+	#	limit = { SPB = { controls_state = 41 } }
+	#	create_wargoal = {
+	#				type = annex_everything
+	#				target = SPB
+	#			}
+	#	}
+	#	}
+	#}
+
+	#Focus for stage_coup
+	#focus = {
+	#	id = SPR_stage_coup
+	#	icon = GFX_goal_generic_secret_weapon
+	#	x = 51
+	#	y = 12
+	#	cost = 8
+	#	available = {
+	#	OR = {
+	#	has_war_with = SPA
+	#	has_war_with = SPB
+	#	has_war_with = SPC
+	#	}
+	#	}
+	#	available_if_capitulated = yes
+	#	prerequisite = { 
+	#		focus = SPR_manpower_colonies 
+	#	}
+	#	prerequisite = { 
+	#		focus = SPR_continue_fight_abroad 
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#	bypass = { 
+	#	controls_state = 41
+	#	}
+	#	completion_reward = {
+	#	if = {
+	#	limit = { SPB = { controls_state = 41 } }
+	#	SPB = { country_event = { id = spain.38 days = 1 } }
+	#	}
+	#	if = {
+	#	limit = { SPC = { controls_state = 41 } }
+	#	SPC = { country_event = { id = spain.38 days = 1 } }
+	#	}
+	#	if = {
+	#	limit = { SPA = { controls_state = 41 } }
+	#	SPA = { country_event = { id = spain.38 days = 1 } }
+	#	}
+	#	}
+	#}
+	#Focus for core_colonies
+	#focus = {
+	#	id = SPR_core_colonies
+	#	icon = GFX_goal_molotov_ribbentrop_pact
+	#	x = 52
+	#	y = 9
+	#	cost = 8
+	#	available_if_capitulated = yes
+	#	prerequisite = { 
+	#		focus = SPR_continue_fight_abroad 
+	#		focus = SPR_sign_peace_abroad 
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#	completion_reward = {
+	#	add_state_core = 699
+	#	add_state_core = 178
+	#	add_state_core = 783
+	#	add_state_core = 290
+	#	add_state_core = 297
+	#	}
+	#}
+#End of focuses 
+ }

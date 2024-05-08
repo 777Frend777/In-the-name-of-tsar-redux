@@ -1,0 +1,26 @@
+state={
+	id=938
+	name="STATE_938"
+	manpower = 1000
+	
+	state_category = town
+
+	history={
+		owner = SYR
+		victory_points = {
+			1549 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = SYR
+		add_core_of = KUR
+	}
+
+
+	provinces={
+		1549 1578 10882 
+	}
+
+	local_supplies=4.0 
+}

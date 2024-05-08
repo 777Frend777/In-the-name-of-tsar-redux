@@ -1,0 +1,510 @@
+ideas = {
+
+	country = {
+	
+	
+	AUS_pact_with_hungary = {
+
+			allowed = {
+					always = yes
+			}
+
+			picture = generic_war_preparation
+			removal_cost = -1
+
+			modifier = {
+			 	
+			}
+	}
+	
+	AUS_otto_king = {
+		cancel = {
+			has_government = communism
+		}
+			allowed = {
+					always = yes
+			}
+
+			picture = aus_otto
+			removal_cost = -1
+
+			modifier = {
+			 	stability_factor = 0.10 
+			}
+	}
+
+	AUS_otto_king_1 = {
+		cancel = {
+			has_government = communism
+		}
+			allowed = {
+					always = yes
+			}
+
+			picture = aus_otto
+			removal_cost = -1
+
+			modifier = {
+			 	stability_factor = 0.10 
+			 	 	political_power_gain = -0.1 
+			}
+	}
+
+	AUS_otto_king_2 = {
+		cancel = {
+			has_government = communism
+		}
+			allowed = {
+					always = yes
+			}
+
+			picture = aus_otto
+			removal_cost = -1
+
+			modifier = {
+			 	stability_factor = 0.10 
+			 	 	political_power_gain = -0.25 
+			}
+	}
+	AUS_aftermath_purge = {
+
+			allowed = {
+					always = yes
+			}
+
+			picture = aus_eco
+			removal_cost = -1
+
+			modifier = {
+			 	stability_factor = -0.10
+			 	production_speed_buildings_factor = -0.03
+				political_power_gain = -0.25
+			 	industrial_capacity_factory = -0.03
+			}
+	}
+	AUS_broke_eco = {
+
+			allowed = {
+					always = yes
+			}
+
+			picture = aus_eco
+			removal_cost = -1
+
+			modifier = {
+			 	stability_factor = -0.25
+			 	production_speed_buildings_factor = -0.1 
+			 	industrial_capacity_factory = -0.1 
+			}
+	}
+
+	AUS_army_rad = {
+
+			allowed = {
+					always = yes
+			}
+
+			picture = aus_army
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.015
+			 	war_support_factor = 0.05 
+			 	stability_factor = -0.05
+			}
+	}
+
+	AUS_army_rad_good = {
+
+			allowed = {
+					always = yes
+			}
+
+			picture = aus_army
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.015
+			 	war_support_factor = 0.10 
+			 	stability_factor = 0.025
+			}
+	}
+
+	AUS_army_mount = {
+
+			allowed = {
+					always = yes
+			}
+
+			picture = aus_mount
+			removal_cost = -1
+
+			modifier = {
+			    special_forces_attack_factor = 0.05 
+			    special_forces_defence_factor = 0.05
+			 	special_forces_cap = 0.15
+			}
+	}
+
+	AUS_quest_ger = {
+
+			allowed = {
+					always = yes
+			}
+
+			picture = aus_ger
+			removal_cost = -1
+
+			modifier = {
+			 stability_factor = -0.05 
+			
+			}
+	}
+	AUS_national_indus = {
+
+			allowed = {
+					always = yes
+			}
+
+			picture = generic_production_bonus
+			removal_cost = -1
+
+			modifier = {
+			 	production_speed_buildings_factor = 0.05
+			 	industrial_capacity_factory = 0.05
+			}
+	}
+	AUS_univ_suf = {
+
+			allowed = {
+					always = yes
+			}
+
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+
+			modifier = {
+			 	stability_factor = 0.05 
+			}
+	}
+	AUS_improved_conditions = {
+
+			allowed = {
+					always = yes
+			}
+
+			picture = FRA_factory_strikes
+			removal_cost = -1
+
+			modifier = {
+			 	stability_factor = 0.03
+				political_power_gain = 0.25 
+				production_speed_buildings_factor = -0.02		
+			}
+	}
+	AUS_farmer_boost = {
+
+			allowed = {
+					always = yes
+			}
+
+			#picture = aus_eco
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			 	#industrial_capacity_factory = 0.1		
+			}
+	}
+	AUS_demo_pwr = {
+
+			allowed = {
+					always = yes
+			}
+
+			picture = generic_morale_bonus
+			removal_cost = -1
+
+			modifier = {
+				democratic_acceptance = 85		
+			}
+	}
+#	AUS_demo_pwr = {
+#
+#			allowed = {
+#					always = yes
+#			}
+#
+#			#picture = aus_eco
+#			removal_cost = -1
+#
+	#		modifier = {
+	#			stability_factor = -0.15
+	#			production_speed_buildings_factor = -0.05
+	#		 	industrial_capacity_factory = -0.05
+	#			war_support_factor = -0.10 				
+	#		}
+	#}
+	AUS_socialist_opposition = {
+
+			allowed = {
+					always = yes
+			}
+
+			picture = chi_war_of_resistance2
+			removal_cost = -1
+
+			#modifier = {
+			#	stability_factor = -0.15
+			#	production_speed_buildings_factor = -0.05
+			#	industrial_capacity_factory = -0.05
+			#	war_support_factor = -0.10 				
+			#}
+	}
+	AUS_mob_idea = {
+
+			allowed = {
+					always = yes
+			}
+
+			picture = generic_manpower_bonus
+			removal_cost = -1
+
+			modifier = {
+			mobilization_speed = 0.1	
+			surrender_limit = 0.4	
+			mobilization_laws_cost_factor = -0.25
+			}
+	}
+	}  
+	political_advisor = {	
+	}
+
+	# TECHNOLOGY
+
+	tank_manufacturer = { 
+
+		designer = yes
+
+		steyr_daimler_puch = {
+			picture = generic_tank_manufacturer_3
+
+			
+			allowed = {
+				original_tag = AUS
+			}
+			
+			research_bonus = {
+				armor = 0.1
+			}
+			
+			traits = { tank_manufacturer }
+		}
+
+		AUS_ckd = {
+			
+			picture = aus_ckd
+
+			
+			allowed = {
+				original_tag = AUS
+			}
+
+			available = { 
+			controls_state = 9
+            }
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			equipment_bonus = {
+				# made light/medium tanks panzerkampfwagen 38
+			}
+		}
+
+		AUS_tatra = {
+			
+			picture = aus_tatra
+
+			
+			allowed = {
+				original_tag = AUS
+			}
+
+			available = { 
+			controls_state = 9
+            }
+
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			equipment_bonus = {
+			}
+		}
+
+		AUS_skoda_armor = {
+			
+			picture = aus_skoda_armor
+
+			
+			allowed = {
+				original_tag = AUS
+			}
+
+			available = { 
+			controls_state = 9
+            }
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			equipment_bonus = {
+			}
+		}
+	}
+
+	naval_manufacturer = {
+	
+		designer = yes
+	
+		AUS_naval_skoda = {
+			
+			picture = aus_skoda_shipyard
+
+			allowed = {
+				original_tag = AUS
+			}
+			
+            available = { 
+			controls_state = 9
+            }
+
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+
+			traits = { coastal_defence_naval_manufacturer }		
+			
+			equipment_bonus = {
+			}	
+		}
+	}
+
+	materiel_manufacturer = {
+
+	designer = yes
+
+	AUS_steyr_mannlicher_idea = {
+			
+			picture = generic_artillery_manufacturer_1
+
+
+			cost = 150
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			allowed = {
+				original_tag = AUS
+			}
+			equipment_bonus = {
+				# more research needed
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+	AUS_hirtenberger_idea = {
+				
+			picture = generic_artillery_manufacturer_2
+		
+			
+			allowed = {
+				original_tag = AUS
+			}
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+			
+			equipment_bonus = {
+				# artillery for coastral defence
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}	
+	AUS_steyr_tracktor_idea = {
+			
+			picture = aus_steyr
+
+			
+			allowed = {
+				original_tag = AUS
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+				# notable tanks L-120 and L-60, lighter tanks as well as the medium tank Stridsvagn m/42, that was mobile and well protected.
+			}
+		}	
+	}
+	industrial_concern = {
+	
+		AUS_AMAG_idea = {
+
+			available = {
+			has_completed_focus = AUS_civil_effort
+			}
+			cost = 150
+			allowed = {
+				original_tag = AUS
+			}
+			picture = generic_industrial_concern_1
+			
+			research_bonus = {
+				industry = 0.10
+				
+			}
+			
+			traits = { industrial_concern }
+		}
+	}	
+
+	theorist = {
+	}
+
+	army_chief = {
+
+    }
+
+    navy_chief = {
+		
+	}	
+
+    air_chief = {
+
+    }
+
+    high_command = {
+
+	}
+}

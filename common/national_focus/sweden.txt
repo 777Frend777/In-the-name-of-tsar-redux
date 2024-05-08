@@ -1,0 +1,3754 @@
+focus_tree = {
+	id = INOT_Sweden
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SWE
+		}
+	}
+	default = no
+	focus = {
+		id = SWE_introduce_funktionssocialism
+		icon = GFX_focus_FIN_socialist_wellfare
+		cost = 5.00
+		mutually_exclusive = {
+			focus = SWE_protectionist_theory
+			focus = SWE_liberal_economic_theories
+		}
+		x = 3
+		y = 0
+		
+		available = {
+			has_country_flag = SWE_1936_election_flag
+			OR = {
+				has_government = communism
+				has_government = socialist
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = -30
+			add_popularity = { ideology = socialist popularity = 0.01 }
+			add_ideas = SWE_introduce_funktionssocialism_idea
+		}
+
+	}
+	focus = {
+		id = SWE_liberal_economic_theories
+		icon = GFX_focus_mex_privatisation
+		cost = 5.00
+		mutually_exclusive = {
+			focus = SWE_protectionist_theory
+			focus = SWE_introduce_funktionssocialism
+		}
+		x = 7
+		y = 0
+		
+		available = {
+			has_country_flag = SWE_1936_election_flag
+			OR = {
+				has_government = democratic
+				has_government = conservatives
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = -30
+			add_popularity = { ideology = socialist popularity = -0.01 }
+			add_popularity = { ideology = fascism popularity = -0.01 }
+			add_ideas = SWE_liberal_economic_theories_idea
+		}
+
+	}
+	focus = {
+		id = SWE_protectionist_theory
+		icon = GFX_goal_generic_defence
+		cost = 5.00
+		mutually_exclusive = {
+			focus = SWE_introduce_funktionssocialism
+			focus = SWE_liberal_economic_theories
+		}
+		x = 5
+		y = 0
+		
+		available = {
+			has_country_flag = SWE_1936_election_flag
+			OR = {
+				has_government = conservatives
+				has_government = neutrality
+				has_government = fascism
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = -30
+			add_popularity = { ideology = neutrality popularity = 0.01 }
+			add_ideas = SWE_protectionist_theory_idea
+		}
+
+	}
+	focus = {
+		id = SWE_forsvarsbeslutet_1936
+		icon = GFX_goal_generic_build_tank
+		cost = 5.00
+		x = 13
+		y = 0
+		
+		available = {
+			date > 1936.5.1
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_war_support = 0.02
+			country_event = { id = sweden.4 days = 1 }
+		}
+
+	}
+	focus = {
+		id = SWE_armen
+		icon = GFX_focus_SWE_army
+		cost = 5.00
+		x = 17
+		y = 0
+		
+		available = {
+			has_completed_focus = SWE_forsvarsbeslutet_1936
+		}
+		
+		ai_will_do = {
+			factor = 15
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = SWE_expand_military_flag
+				}
+				army_experience = 35
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SWE_decrease_military_flag
+				}
+				army_experience = 10
+			}
+			else = {
+				army_experience = 20
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_svenska_flygvapnet
+		icon = GFX_focus_SWE_airforce
+		cost = 5.00
+		x = 21
+		y = 0
+		
+		available = {
+			has_completed_focus = SWE_forsvarsbeslutet_1936
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = SWE_expand_military_flag
+				}
+				air_experience = 35
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SWE_decrease_military_flag
+				}
+				air_experience = 10
+			}
+			else = {
+				air_experience = 20
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_svenska_marinen
+		icon = GFX_focus_SWE_navy
+		cost = 5.00
+		x = 25
+		y = 0
+		
+		available = {
+			has_completed_focus = SWE_forsvarsbeslutet_1936
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = SWE_expand_military_flag
+				}
+				navy_experience = 35
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SWE_decrease_military_flag
+				}
+				navy_experience = 10
+			}
+			else = {
+				navy_experience = 20
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_1936_election
+		icon = GFX_focus_generic_elections
+		cost = 2.90
+		x = 36
+		y = 0
+		
+		available = {
+			has_country_flag = SWE_1936_election_flag
+		}
+		
+		bypass = {
+			has_country_flag = SWE_1936_election_flag
+		}
+
+	}
+	focus = {
+		id = SWE_diplomatic_front
+		icon = GFX_focus_generic_develop_sweden_silhouette
+		cost = 2.00
+		x = 20
+		y = 6
+		
+		available = {
+			has_country_flag = SWE_1936_election_flag
+		}
+		
+		ai_will_do = {
+			factor = 15
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+		}
+
+	}
+	focus = {
+		id = SWE_control_capitalists
+		icon = GFX_focus_hun_cooperations
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_introduce_funktionssocialism
+		}
+		x = 1
+		y = 1
+		
+		available = {
+			controls_state = 141
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = 15
+			141 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_nationalize_key_industries
+		icon = GFX_focus_SWE_landsverk
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_introduce_funktionssocialism
+			focus = SWE_protectionist_theory
+		}
+		x = 3
+		y = 1
+		
+		available = {
+			controls_state = 141
+			controls_state = 140
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			141 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			140 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_swedish_five_year_plan
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_control_capitalists
+		}
+		prerequisite = {
+			focus = SWE_nationalize_key_industries
+		}
+		x = 1
+		y = 2
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = 10
+			custom_effect_tooltip  = SWE_swedish_five_year_plan_tooltip
+			hidden_effect = {
+				set_country_flag = SWE_swedish_five_year_plan_flag
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_housing_expantions
+		icon = GFX_focus_hun_health
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_swedish_five_year_plan
+		}
+		x = 1
+		y = 3
+		
+		available = {
+			controls_state = 141
+			controls_state = 140
+			controls_state = 138
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			141 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			140 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			138 = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_move_towards_autarky
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_protectionist_theory
+		}
+		x = 5
+		y = 1
+		
+		available = {
+			controls_state = 141
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = 15
+			141 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_northern_national_industries
+		icon = GFX_focus_jap_industry2
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_nationalize_key_industries
+			focus = SWE_move_towards_autarky
+		}
+		mutually_exclusive = {
+			focus = SWE_invite_steel_industry_investors
+		}
+		x = 4
+		y = 2
+		
+		available = {
+			controls_state = 38
+			controls_state = 666
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = -50
+			38 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			666 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_railway_expantions
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_northern_national_industries
+		}
+		x = 3
+		y = 3
+		
+		available = {
+			controls_state = 38
+			controls_state = 666
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			38 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			666 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_industrial_expantions
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_housing_expantions
+		}
+		prerequisite = {
+			focus = SWE_railway_expantions
+		}
+		x = 2
+		y = 4
+		
+		available = {
+			controls_state = 141
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			141 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_lower_taxes_swedish_corp
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_protectionist_theory
+			focus = SWE_liberal_economic_theories
+		}
+		x = 7
+		y = 1
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_ideas = SWE_lower_taxes_swedish_corp_idea
+		}
+
+	}
+	focus = {
+		id = SWE_invite_steel_industry_investors
+		icon = GFX_focus_swe_steel_industry_investors
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_move_towards_autarky
+			focus = SWE_lower_taxes_swedish_corp
+		}
+		mutually_exclusive = {
+			focus = SWE_northern_national_industries
+		}
+		x = 6
+		y = 2
+		
+		available = {
+			controls_state = 666
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = -50
+			666 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_resource = {
+				type = steel
+				amount = 5
+				state = 666
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_steel_autarky
+		icon = GFX_focus_generic_steel
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_northern_national_industries
+			focus = SWE_invite_steel_industry_investors
+		}
+		prerequisite = {
+			focus = SWE_move_towards_autarky
+		}
+		x = 5
+		y = 3
+		
+		available = {
+			controls_state = 666
+			controls_state = 38
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = -15
+			add_resource = {
+				type = steel
+				amount = 10
+				state = 666
+			}
+			add_resource = {
+				type = steel
+				amount = 10
+				state = 38
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_invite_railway_industrialists
+		icon = GFX_chi_left_infraproject
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_invite_steel_industry_investors
+		}
+		x = 7
+		y = 3
+		
+		available = {
+			controls_state = 38
+			controls_state = 666
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			38 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			666 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_agrarian_self_sufficiency
+		icon = GFX_focus_generic_agricultural_subsidies
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_railway_expantions
+			focus = SWE_invite_railway_industrialists
+		}
+		prerequisite = {
+			focus = SWE_steel_autarky
+		}
+		x = 5
+		y = 4
+		
+		available = {
+			controls_state = 139
+			controls_state = 38
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			139 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			38 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			swap_ideas = {
+				remove_idea = SWE_protectionist_theory_idea
+				add_idea = SWE_agrarian_self_sufficiency_idea
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_secure_free_trade_agreements
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_liberal_economic_theories
+		}
+		x = 9
+		y = 1
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 1 }
+			if = {
+				limit = {
+					NOT = { has_idea = free_trade }
+				}
+				add_ideas = free_trade
+			}
+			else = {
+				add_political_power = 20
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_invite_british_investors
+		icon = GFX_focus_chi_british_cooperation
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_lower_taxes_swedish_corp
+		}
+		prerequisite = {
+			focus = SWE_secure_free_trade_agreements
+		}
+		x = 9
+		y = 2
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_opinion_modifier = { target = ENG modifier = medium_increase }
+			ENG = { 
+			 	add_opinion_modifier = { target = SWE modifier = medium_increase } 
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_subsidise_small_buisnesses
+		icon = GFX_focus_generic_industry_1
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_invite_british_investors
+		}
+		x = 9
+		y = 3
+		
+		available = {
+			controls_state = 141
+			controls_state = 140
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = -25
+			141 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			140 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_privatisation
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_invite_railway_industrialists
+		}
+		prerequisite = {
+			focus = SWE_subsidise_small_buisnesses
+		}
+		x = 8
+		y = 4
+		
+		available = {
+			controls_state = 141
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			141 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_strengthen_military_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_forsvarsbeslutet_1936
+		}
+		x = 12
+		y = 1
+		
+		available = {
+			controls_state = 141
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = SWE_expand_military_flag
+				}
+				141 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SWE_decrease_military_flag
+				}
+				141 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			else = {
+				141 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_expand_kustartilleriet
+		icon = GFX_focus_generic_coastal_fort
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_strengthen_military_industry
+		}
+		x = 12
+		y = 3
+		
+		available = {
+			controls_state = 138
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			add_political_power = 15
+			138 = {
+				add_building_construction = {
+					type = coastal_bunker
+					province = 9279
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 11215
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 6412
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_establish_forsvarsstaben
+		icon = GFX_focus_swe_forsvarsstaben
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_forsvarsbeslutet_1936
+		}
+		prerequisite = {
+			focus = SWE_armen
+		}
+		x = 14
+		y = 1
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_ideas = SWE_establish_forsvarsstaben_idea
+		}
+
+	}
+	focus = {
+		id = SWE_modernize_old_tactics
+		icon = GFX_focus_chi_army_reform
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_establish_forsvarsstaben
+		}
+		mutually_exclusive = {
+			focus = SWE_motorized_tactics
+		}
+		x = 13
+		y = 2
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = SWE_expand_military_flag
+				}
+				add_tech_bonus = {
+					name = land_doc_bonus
+					bonus = 1
+					uses = 2
+					category = cat_superior_firepower
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SWE_decrease_military_flag
+				}
+				add_tech_bonus = {
+					name = land_doc_bonus
+					bonus = 1
+					uses = 1
+					category = cat_superior_firepower
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = land_doc_bonus
+					bonus = 1
+					uses = 2
+					category = cat_superior_firepower
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_motorized_tactics
+		icon = GFX_goal_generic_army_motorized
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_establish_forsvarsstaben
+		}
+		mutually_exclusive = {
+			focus = SWE_modernize_old_tactics
+		}
+		x = 15
+		y = 2
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = SWE_expand_military_flag
+				}
+				add_tech_bonus = {
+					name = land_doc_bonus
+					bonus = 1
+					uses = 2
+					category = cat_mobile_warfare
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SWE_decrease_military_flag
+				}
+				add_tech_bonus = {
+					name = land_doc_bonus
+					bonus = 1
+					uses = 1
+					category = cat_mobile_warfare
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = land_doc_bonus
+					bonus = 1
+					uses = 2
+					category = cat_mobile_warfare
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_finalize_army_training
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_modernize_old_tactics
+			focus = SWE_motorized_tactics
+		}
+		x = 14
+		y = 3
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = SWE_expand_military_flag
+				}
+				add_political_power = -30
+				add_tech_bonus = {
+					name = land_doc_bonus
+					bonus = 1
+					uses = 2
+					category = land_doctrine
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SWE_decrease_military_flag
+				}
+				add_tech_bonus = {
+					name = land_doc_bonus
+					bonus = 1
+					uses = 1
+					category = land_doctrine
+				}
+			}
+			else = {
+				add_political_power = -15
+				add_tech_bonus = {
+					name = land_doc_bonus
+					bonus = 1
+					uses = 2
+					category = land_doctrine
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_modernize_equipment
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_armen
+		}
+		x = 17
+		y = 1
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = SWE_expand_military_flag
+				}
+				add_tech_bonus = {
+					name = infantry_bonus
+					bonus = 1
+					uses = 2
+					category = infantry_weapons
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SWE_decrease_military_flag
+				}
+				add_tech_bonus = {
+					name = infantry_bonus
+					bonus = 1
+					uses = 1
+					category = infantry_weapons
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = infantry_bonus
+					bonus = 1
+					uses = 2
+					category = infantry_weapons
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_artillary_research
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_modernize_equipment
+		}
+		x = 17
+		y = 2
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = SWE_expand_military_flag
+				}
+				add_tech_bonus = {
+					name = artillery_bonus
+					bonus = 1
+					uses = 2
+					category = artillery
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SWE_decrease_military_flag
+				}
+				add_tech_bonus = {
+					name = artillery_bonus
+					bonus = 1
+					uses = 1
+					category = artillery
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = artillery_bonus
+					bonus = 1
+					uses = 2
+					category = artillery
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_swedish_tank_models
+		icon = GFX_goal_generic_army_tanks
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_motorized_tactics
+		}
+		prerequisite = {
+			focus = SWE_artillary_research
+		}
+		x = 16
+		y = 3
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = SWE_expand_military_flag
+				}
+				add_tech_bonus = {
+					name = armor_bonus
+					bonus = 1
+					uses = 2
+					category = armor
+				}
+				add_tech_bonus = {
+					name = motor_bonus
+					bonus = 1
+					uses = 1
+					category = motorized_equipment
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SWE_decrease_military_flag
+				}
+				add_tech_bonus = {
+					name = armor_bonus
+					bonus = 1
+					uses = 1
+					category = armor
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = armor_bonus
+					bonus = 1
+					uses = 2
+					category = armor
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_marine_training
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_modernize_equipment
+		}
+		x = 18
+		y = 3
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = SWE_expand_military_flag
+				}
+				add_tech_bonus = {
+					name = special_forces_bonus
+					bonus = 1
+					uses = 2
+					category = marine_tech
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SWE_decrease_military_flag
+				}
+				add_tech_bonus = {
+					name = special_forces_bonus
+					bonus = 1
+					uses = 1
+					category = marine_tech
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = special_forces_bonus
+					bonus = 1
+					uses = 2
+					category = marine_tech
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_modern_swedish_army
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_swedish_tank_models
+			focus = SWE_marine_training
+		}
+		prerequisite = {
+			focus = SWE_artillary_research
+		}
+		x = 17
+		y = 4
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_establish_saab
+		icon = GFX_goal_generic_air_production
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_svenska_flygvapnet
+		}
+		x = 21
+		y = 1
+		
+		available = {
+			controls_state = 141
+			controls_state = 140
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			air_experience = 10
+			141 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			140 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_invest_saab_fighters
+		icon = GFX_goal_generic_air_fighter
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_establish_saab
+		}
+		x = 20
+		y = 2
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = SWE_expand_military_flag
+				}
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1
+					uses = 2
+					category = light_fighter
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SWE_decrease_military_flag
+				}
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1
+					uses = 1
+					category = light_fighter
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1
+					uses = 2
+					category = light_fighter
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_heavy_fighter_production
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_invest_saab_fighters
+		}
+		x = 20
+		y = 3
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = SWE_expand_military_flag
+				}
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1
+					uses = 2
+					category = cat_heavy_fighter
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SWE_decrease_military_flag
+				}
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1
+					uses = 1
+					category = cat_heavy_fighter
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1
+					uses = 2
+					category = cat_heavy_fighter
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_invest_saab_bombers
+		icon = GFX_goal_generic_air_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_establish_saab
+		}
+		x = 22
+		y = 2
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = SWE_expand_military_flag
+				}
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1
+					uses = 2
+					category = tactical_bomber
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SWE_decrease_military_flag
+				}
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1
+					uses = 1
+					category = tactical_bomber
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1
+					uses = 2
+					category = tactical_bomber
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_invest_naval_bombers
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_invest_saab_bombers
+		}
+		x = 22
+		y = 3
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = SWE_expand_military_flag
+				}
+				add_tech_bonus = {
+					name = nav_bomber_bonus
+					bonus = 1
+					uses = 2
+					category = naval_bomber
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SWE_decrease_military_flag
+				}
+				add_tech_bonus = {
+					name = nav_bomber_bonus
+					bonus = 1
+					uses = 1
+					category = naval_bomber
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = nav_bomber_bonus
+					bonus = 1
+					uses = 2
+					category = naval_bomber
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_swedish_air_power
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_heavy_fighter_production
+		}
+		prerequisite = {
+			focus = SWE_invest_naval_bombers
+		}
+		x = 21
+		y = 4
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			air_experience = 5
+			if = {
+				limit = {
+					has_country_flag = SWE_expand_military_flag
+				}
+				add_tech_bonus = {
+					name = air_doc_bonus
+					bonus = 1
+					uses = 2
+					category = air_doctrine
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SWE_decrease_military_flag
+				}
+				add_tech_bonus = {
+					name = air_doc_bonus
+					bonus = 1
+					uses = 1
+					category = air_doctrine
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = air_doc_bonus
+					bonus = 1
+					uses = 2
+					category = air_doctrine
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_expand_swedish_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_svenska_marinen
+		}
+		x = 25
+		y = 1
+		
+		available = {
+			controls_state = 138
+			if = {
+				limit = {
+					has_country_flag = SWE_expand_military_flag
+				}
+				controls_state = 140
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = SWE_expand_military_flag
+				}
+				add_political_power = -45
+				138 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+				140 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SWE_decrease_military_flag
+				}
+				138 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			else = {
+				add_political_power = -20
+				138 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_new_cruisers
+		icon = GFX_focus_generic_cruiser2
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_expand_swedish_dockyards
+		}
+		x = 24
+		y = 2
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = SWE_expand_military_flag
+				}
+				add_tech_bonus = {
+					name = cr_bonus
+					bonus = 1
+					uses = 2
+					category = cl_tech
+					category = ca_tech
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SWE_decrease_military_flag
+				}
+				add_tech_bonus = {
+					name = cr_bonus
+					bonus = 1
+					uses = 1
+					category = cl_tech
+					category = ca_tech
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = cr_bonus
+					bonus = 1
+					uses = 2
+					category = cl_tech
+					category = ca_tech
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_flagship_for_navy
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_new_cruisers
+		}
+		mutually_exclusive = {
+			focus = SWE_costal_raiders
+		}
+		x = 24
+		y = 3
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = SWE_expand_military_flag
+				}
+				add_political_power = -35
+				add_tech_bonus = {
+					name = bc_bonus
+					bonus = 1
+					uses = 2
+					category = bc_tech
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SWE_decrease_military_flag
+				}
+				add_tech_bonus = {
+					name = bc_bonus
+					bonus = 1
+					uses = 1
+					category = bc_tech
+				}
+			}
+			else = {
+				add_political_power = -15
+				add_tech_bonus = {
+					name = bc_bonus
+					bonus = 1
+					uses = 2
+					category = bc_tech
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_new_submarines
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_expand_swedish_dockyards
+		}
+		x = 26
+		y = 2
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = SWE_expand_military_flag
+				}
+				add_tech_bonus = {
+					name = ss_bonus
+					bonus = 1
+					uses = 2
+					category = ss_tech
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SWE_decrease_military_flag
+				}
+				add_tech_bonus = {
+					name = ss_bonus
+					bonus = 1
+					uses = 1
+					category = ss_tech
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = ss_bonus
+					bonus = 1
+					uses = 2
+					category = ss_tech
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_costal_raiders
+		icon = GFX_goal_generic_wolf_pack
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_new_submarines
+		}
+		mutually_exclusive = {
+			focus = SWE_flagship_for_navy
+		}
+		x = 26
+		y = 3
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = SWE_expand_military_flag
+				}
+				add_tech_bonus = {
+					name = dd_bonus
+					bonus = 1
+					uses = 2
+					category = dd_tech
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SWE_decrease_military_flag
+				}
+				add_tech_bonus = {
+					name = dd_bonus
+					bonus = 1
+					uses = 1
+					category = dd_tech
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = dd_bonus
+					bonus = 1
+					uses = 2
+					category = dd_tech
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_swedish_ships_swedish_waters
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_flagship_for_navy
+			focus = SWE_costal_raiders
+		}
+		x = 25
+		y = 4
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			navy_experience = 5
+			if = {
+				limit = {
+					has_country_flag = SWE_expand_military_flag
+				}
+				add_tech_bonus = {
+					name = naval_doctrine_bonus
+					bonus = 1
+					uses = 2
+					category = naval_doctrine
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SWE_decrease_military_flag
+				}
+				add_tech_bonus = {
+					name = naval_doctrine_bonus
+					bonus = 1
+					uses = 1
+					category = naval_doctrine
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = naval_doctrine_bonus
+					bonus = 1
+					uses = 2
+					category = naval_doctrine
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_recognize_bavarians
+		icon = GFX_goal_generic_soviet_immirgrants
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_diplomatic_front
+		}
+		x = 12
+		y = 7
+		
+		available = {
+			has_government = socialist
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			BAV =  {
+				add_opinion_modifier = {
+					target = SWE
+					modifier = medium_increase
+				}
+			}
+			GER =  {
+				add_opinion_modifier = {
+					target = SWE
+					modifier = large_decrease
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_recognize_FINLAND
+		icon = GFX_focus_SWE_finnish_communists
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_balance_between_powers
+		}
+		x = 16
+		y = 9
+		
+		available = {
+			has_government = socialist
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			FIN =  {
+				add_opinion_modifier = {
+					target = SWE
+					modifier = medium_increase
+				}
+			}
+			RUS =  {
+				add_opinion_modifier = {
+					target = SWE
+					modifier = large_decrease
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_reaffirm_swedish_neutrality
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_diplomatic_front
+		}
+		mutually_exclusive = {
+			focus = SWE_reevalue_our_position
+		}
+		x = 14
+		y = 7
+		
+		available = {
+			OR = {
+				has_government = socialist
+				has_government = democratic
+				has_government = conservatives
+			}
+		}
+		
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_political_power = 20
+			swap_ideas = {
+				remove_idea = SWE_swedish_neutrality
+				add_idea = SWE_reaffirm_swedish_neutrality_idea
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_armed_neutrality
+		icon = GFX_goal_generic_defence
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_reaffirm_swedish_neutrality
+		}
+		x = 13
+		y = 8
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = 20
+			swap_ideas = {
+				remove_idea = SWE_reaffirm_swedish_neutrality_idea
+				add_idea = SWE_armed_neutrality_idea
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_propose_scandinavian_neutrality
+		icon = GFX_focus_SWE_the_nordic_defense_council
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_reaffirm_swedish_neutrality
+		}
+		x = 14
+		y = 9
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			DEN =  {
+				add_opinion_modifier = {
+					target = SWE
+					modifier = small_increase
+				}
+				country_event = {
+					id = sweden.57 days = 1
+				}
+			}
+			NOR =  {
+				add_opinion_modifier = {
+					target = SWE
+					modifier = small_increase
+				}
+				country_event = {
+					id = sweden.60 days = 1
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_deals_with_norway
+		icon = GFX_focus_generic_befriend_norway
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_propose_scandinavian_neutrality
+		}
+		x = 13
+		y = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = 15
+			NOR =  {
+				add_opinion_modifier = {
+					target = SWE
+					modifier = medium_increase
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_deals_with_denmark
+		icon = GFX_focus_generic_befriend_denmark
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_propose_scandinavian_neutrality
+		}
+		x = 15
+		y = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = 15
+			NOR =  {
+				add_opinion_modifier = {
+					target = SWE
+					modifier = medium_increase
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_balance_between_powers
+		icon = GFX_focus_hun_equal
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_reaffirm_swedish_neutrality
+		}
+		x = 15
+		y = 8
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = -20
+			ENG =  {
+				add_opinion_modifier = {
+					target = SWE
+					modifier = small_increase
+				}
+			}
+			GER =  {
+				add_opinion_modifier = {
+					target = SWE
+					modifier = small_increase
+				}
+			}
+			BAV =  {
+				add_opinion_modifier = {
+					target = SWE
+					modifier = small_increase
+				}
+			}
+			RUS =  {
+				add_opinion_modifier = {
+					target = SWE
+					modifier = small_increase
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_reevalue_our_position
+		icon = GFX_focus_generic_total_war
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_diplomatic_front
+		}
+		mutually_exclusive = {
+			focus = SWE_reaffirm_swedish_neutrality
+		}
+		x = 18
+		y = 7
+		
+		available = {
+			OR = {
+				has_government = socialist
+				has_government = democratic
+				has_government = conservatives
+			}
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		completion_reward = {
+			add_political_power = -20
+			remove_ideas = SWE_swedish_neutrality
+		}
+
+	}
+	focus = {
+		id = SWE_strengthen_british_relations
+		icon = GFX_focus_chi_british_cooperation
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_reevalue_our_position
+		}
+		x = 17
+		y = 8
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = 10
+			ENG =  {
+				add_opinion_modifier = {
+					target = SWE
+					modifier = medium_increase
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_strengthen_french_relations
+		icon = GFX_focus_chi_reach_out_to_france
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_reevalue_our_position
+		}
+		x = 19
+		y = 8
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = 10
+			FRA =  {
+				add_opinion_modifier = {
+					target = SWE
+					modifier = medium_increase
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_join_allies
+		icon = GFX_goal_generic_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_strengthen_british_relations
+		}
+		prerequisite = {
+			focus = SWE_strengthen_french_relations
+		}
+		mutually_exclusive = {
+			focus = SWE_alliance_with_berlin
+		}
+		x = 18
+		y = 9
+		
+		available = {
+			ENG = {
+				is_faction_leader = yes
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			ENG =  {
+				country_event = {
+					id = sweden.63 days = 1
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_allied_military_training
+		icon = GFX_focus_generic_license_production
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_join_allies
+		}
+		x = 18
+		y = 10
+		
+		available = {
+			is_in_faction_with = ENG
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			army_experience = 10
+			air_experience = 5
+			navy_experience = 5
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_relations_with_prussia
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_diplomatic_front
+		}
+		x = 20
+		y = 7
+		
+		available = {
+			OR = {
+				has_government = conservatives
+				has_government = neutrality
+				has_government = fascism
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = small_increase
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_meet_with_prussian_royals
+		icon = GFX_focus_ger_return_of_the_kaiser
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_diplomatic_front
+		}
+		x = 22
+		y = 7
+		
+		available = {
+			OR = {
+				has_government = conservatives
+				has_government = neutrality
+				has_government = fascism
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_popularity = { ideology = neutrality popularity = 0.02 }
+			GER =  {
+				add_opinion_modifier = {
+					target = SWE
+					modifier = small_increase
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_missions_to_berlin
+		icon = GFX_goal_german_sweden_alliance
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_relations_with_prussia
+		}
+		prerequisite = {
+			focus = SWE_meet_with_prussian_royals
+		}
+		x = 21
+		y = 8
+		
+		available = {
+			OR = {
+				has_government = neutrality
+				has_government = fascism
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = 20
+			remove_ideas = SWE_swedish_neutrality
+			GER =  {
+				add_opinion_modifier = {
+					target = SWE
+					modifier = medium_increase
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_alliance_with_berlin
+		icon = GFX_goal_generic_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_missions_to_berlin
+		}
+		mutually_exclusive = {
+			focus = SWE_join_allies
+		}
+		x = 21
+		y = 9
+		
+		available = {
+			GER = {
+				is_faction_leader = yes
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			GER =  {
+				country_event = {
+					id = sweden.66 days = 1
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_german_military_training
+		icon = GFX_focus_ger_oppose_hitler
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_alliance_with_berlin
+		}
+		x = 21
+		y = 10
+		
+		available = {
+			is_in_faction_with = GER
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			army_experience = 10
+			air_experience = 5
+			navy_experience = 5
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_wake_swedish_lion
+		icon = GFX_focus_hol_united_netherlands
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_diplomatic_front
+		}
+		x = 26
+		y = 7
+		
+		available = {
+			OR = {
+				has_government = neutrality
+				has_government = fascism
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = 15
+			remove_ideas = SWE_swedish_neutrality
+			add_ideas = SWE_wake_swedish_lion_idea
+		}
+
+	}
+	focus = {
+		id = SWE_pragmatic_expantion
+		icon = GFX_goal_generic_position_armies
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_wake_swedish_lion
+		}
+		x = 24
+		y = 8
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = 10
+			add_popularity = { ideology = neutrality popularity = 0.01 }
+			swap_ideas = {
+				remove_idea = SWE_wake_swedish_lion_idea
+				add_idea = SWE_pragmatic_expantion_idea
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_promote_unionism_norway
+		icon = GFX_focus_SWE_united_kingdoms_of_norway_and_sweden
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_pragmatic_expantion
+		}
+		x = 23
+		y = 9
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			NOR = {
+				country_event = {
+					id = sweden.72 days = 1
+				}
+				add_timed_idea = {
+					idea = SWE_promote_unionism_norway_idea
+					days = 100
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_demand_for_swedish_norwegian_union
+		icon = GFX_focus_swe_norway_unify
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_promote_unionism_norway
+		}
+		x = 23
+		y = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			NOR = {
+				country_event = {
+					id = sweden.73 days = 1
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_division_plan_denmark
+		icon = GFX_focus_generic_attack_denmark
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_pragmatic_expantion
+		}
+		x = 25
+		y = 9
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			GER = {
+				country_event = {
+					id = sweden.76 days = 1
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_divide_denmark
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_division_plan_denmark
+		}
+		x = 25
+		y = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			country_event = {
+				id = sweden.79 days = 1
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_new_scandinavianism
+		icon = GFX_focus_swe_scandinavianism
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_demand_for_swedish_norwegian_union
+		}
+		prerequisite = {
+			focus = SWE_divide_denmark
+		}
+		x = 24
+		y = 11
+		
+		available = {
+			controls_state = 110
+			controls_state = 37
+			NOT = {
+				country_exists = NOR
+				country_exists = DEN
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			set_cosmetic_tag = SWE_SCA
+			custom_effect_tooltip  = SWE_new_scandinavianism_tooltip
+			hidden_effect = {
+				set_country_flag = SWE_new_scandinavianism_flag
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_aggressive_expantion
+		icon = GFX_focus_eng_imperial_federation
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_wake_swedish_lion
+		}
+		x = 28
+		y = 8
+		
+		available = {
+			has_government = fascism
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = 10
+			add_popularity = { ideology = fascism popularity = 0.01 }
+			swap_ideas = {
+				remove_idea = SWE_wake_swedish_lion_idea
+				add_idea = SWE_aggressive_expantion_idea
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_revenge_for_karl_xii
+		icon = GFX_goal_generic_attack_allies
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_aggressive_expantion
+		}
+		x = 27
+		y = 9
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = NOR }
+			set_country_flag = SWE_revenge_for_karl_xii_flag
+		}
+
+	}
+	focus = {
+		id = SWE_new_four_houndred_year_night
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_revenge_for_karl_xii
+		}
+		x = 27
+		y = 10
+		
+		available = {
+			controls_state = 110
+			NOT = {
+				country_exists = NOR
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = -70
+			remove_ideas = SWE_revenge_for_karl_xii_idea
+			custom_effect_tooltip  = SWE_new_four_houndred_year_night_tooltip
+			hidden_effect = {
+				set_country_flag = SWE_new_four_houndred_year_night_flag
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_last_dano_swedish_war
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_aggressive_expantion
+		}
+		x = 29
+		y = 9
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = DEN }
+			set_country_flag = SWE_last_dano_swedish_war_flag
+		}
+
+	}
+	focus = {
+		id = SWE_sole_scandinavian_power
+		icon = GFX_focus_swe_dominate_scandinavia
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_last_dano_swedish_war
+		}
+		x = 29
+		y = 10
+		
+		available = {
+			controls_state = 37
+			NOT = {
+				country_exists = DEN
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			add_political_power = -70
+			remove_ideas = SWE_last_dano_swedish_war_idea
+			custom_effect_tooltip  = SWE_sole_scandinavian_power_tooltip
+			hidden_effect = {
+				set_country_flag = SWE_sole_scandinavian_power_flag
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_revenge_against_russia
+		icon = GFX_focus_ger_strike_at_the_source
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_new_four_houndred_year_night
+		}
+		prerequisite = {
+			focus = SWE_sole_scandinavian_power
+		}
+		x = 28
+		y = 11
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = puppet_wargoal_focus target = RUS }
+			create_wargoal = { type = annex_everything target = FIN }
+		}
+
+	}
+	focus = {
+		id = SWE_socialist_government
+		icon = GFX_focus_swe_socialist
+		cost = 2.90
+		prerequisite = {
+			focus = SWE_1936_election
+		}
+		x = 30
+		y = 1
+		
+		available = {
+			has_country_flag = SWE_socialist_government_flag
+			has_government = socialist
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_political_power = 25
+			add_popularity = { ideology = socialist popularity = 0.05 }
+		}
+
+	}
+	focus = {
+		id = SWE_referendum_on_monarchy
+		icon = GFX_focus_SWE_liquidate_the_monarchy
+		cost = 8.00
+		prerequisite = {
+			focus = SWE_socialist_government
+		}
+		x = 30
+		y = 2
+		
+		bypass = {
+			NOT = {
+				has_idea = SWE_king_gustaf_v
+			}
+		}
+		
+		available = {
+			has_government = socialist
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_political_power = 20
+			country_event = {
+				id = sweden.50 days = 1
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_folkhemmet
+		icon = GFX_focus_SWE_hygienic_housing
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_referendum_on_monarchy
+		}
+		x = 29
+		y = 3
+		
+		available = {
+			has_government = socialist
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_popularity = { ideology = communism popularity = -0.05 }
+			add_popularity = { ideology = fascism popularity = -0.05 }
+			add_ideas = SWE_folkhemmet_idea
+		}
+
+	}
+	focus = {
+		id = SWE_schools_for_every_child
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_folkhemmet
+		}
+		x = 28
+		y = 4
+		
+		available = {
+			has_government = socialist
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			if = {
+				limit = {
+					has_idea = SWE_folkhemmet_idea
+				}
+				swap_ideas = {
+					remove_idea = SWE_folkhemmet_idea
+					add_idea = SWE_folkhemmet_school_idea
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = SWE_folkhemmet_pention_idea
+					add_idea = SWE_folkhemmet_all_idea
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_pentions_for_old
+		icon = GFX_focus_SWE_privately_managed_vacation
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_folkhemmet
+		}
+		x = 30
+		y = 4
+		
+		available = {
+			has_government = socialist
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			if = {
+				limit = {
+					has_idea = SWE_folkhemmet_idea
+				}
+				swap_ideas = {
+					remove_idea = SWE_folkhemmet_idea
+					add_idea = SWE_folkhemmet_pention_idea
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = SWE_folkhemmet_school_idea
+					add_idea = SWE_folkhemmet_all_idea
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_workplace_democracy
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_referendum_on_monarchy
+		}
+		x = 32
+		y = 3
+		
+		available = {
+			has_government = socialist
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_popularity = { ideology = socialist popularity = 0.05 }
+			add_ideas = SWE_workplace_democracy_idea
+		}
+
+	}
+	focus = {
+		id = SWE_ensure_worker_rights
+		icon = GFX_goal_generic_production2
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_workplace_democracy
+		}
+		x = 32
+		y = 4
+		
+		available = {
+			has_government = socialist
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_popularity = { ideology = socialist popularity = 0.05 }
+			swap_ideas = {
+				remove_idea = SWE_workplace_democracy_idea
+				add_idea = SWE_ensure_worker_rights_idea
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_swedish_welfare_state
+		icon = GFX_focus_SWE_socialist_reforms
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_schools_for_every_child
+		}
+		prerequisite = {
+			focus = SWE_pentions_for_old
+		}
+		prerequisite = {
+			focus = SWE_ensure_worker_rights
+		}
+		x = 30
+		y = 5
+		
+		available = {
+			has_government = socialist
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = { ideology = socialist popularity = 0.05 }
+			remove_ideas = SWE_unstable_government
+		}
+
+	}
+	focus = {
+		id = SWE_liberal_government
+		icon = GFX_focus_swe_liberal
+		cost = 2.90
+		prerequisite = {
+			focus = SWE_1936_election
+		}
+		x = 35
+		y = 1
+		
+		available = {
+			has_country_flag = SWE_liberal_government_flag
+			has_government = democratic
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_political_power = 25
+			add_popularity = { ideology = democratic popularity = 0.05 }
+		}
+
+	}
+	focus = {
+		id = SWE_limit_monarchs_power
+		icon = GFX_focus_rom_handle_king
+		cost = 8.00
+		prerequisite = {
+			focus = SWE_liberal_government
+		}
+		x = 35
+		y = 2
+		
+		available = {
+			has_government = democratic
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_political_power = 20
+			country_event = {
+				id = sweden.53 days = 1
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_ohlins_liberalism
+		icon = GFX_focus_swe_ohlin
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_limit_monarchs_power
+		}
+		x = 34
+		y = 3
+		
+		available = {
+			has_government = democratic
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = { ideology = democratic popularity = 0.05 }
+			add_ideas = SWE_ohlins_liberalism_idea
+		}
+
+	}
+	focus = {
+		id = SWE_take_care_for_weak
+		icon = GFX_focus_generic_concessions
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_ohlins_liberalism
+		}
+		x = 34
+		y = 4
+		
+		available = {
+			has_government = democratic
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = { ideology = democratic popularity = 0.05 }
+			swap_ideas = {
+				remove_idea = SWE_ohlins_liberalism_idea
+				add_idea = SWE_take_care_for_weak_idea
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_conservative_government
+		icon = GFX_focus_swe_conservative
+		cost = 2.90
+		prerequisite = {
+			focus = SWE_1936_election
+		}
+		x = 37
+		y = 1
+		
+		available = {
+			has_country_flag = SWE_conservative_government_flag
+			has_government = conservatives
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_political_power = 25
+			add_popularity = { ideology = conservatives popularity = 0.05 }
+		}
+
+	}
+	focus = {
+		id = SWE_retain_monarchal_powers
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 8.00
+		prerequisite = {
+			focus = SWE_conservative_government
+		}
+		x = 37
+		y = 2
+		
+		available = {
+			has_government = conservatives
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_political_power = 20
+			country_event = {
+				id = sweden.54 days = 1
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_non_socialist_cooperation
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_limit_monarchs_power
+			focus = SWE_retain_monarchal_powers
+		}
+		x = 36
+		y = 3
+		
+		available = {
+			OR = {
+				has_government = democratic
+				has_government = conservatives
+			}
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_political_power = -75
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = { ideology = conservatives popularity = -0.07 }
+				add_popularity = { ideology = democratic popularity = 0.07 }
+			}
+			else = {
+				add_popularity = { ideology = democratic popularity = -0.07 }
+				add_popularity = { ideology = conservatives popularity = 0.07 }
+			}
+			remove_ideas = SWE_unstable_government
+		}
+
+	}
+	focus = {
+		id = SWE_political_moderation
+		icon = GFX_focus_swe_political_moderation
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_non_socialist_cooperation
+		}
+		x = 36
+		y = 4
+		
+		available = {
+			OR = {
+				has_government = democratic
+				has_government = conservatives
+			}
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = -40
+			add_popularity = { ideology = communism popularity = -0.05 }
+			add_popularity = { ideology = socialist popularity = -0.05 }
+			add_popularity = { ideology = fascism popularity = -0.05 }
+		}
+
+	}
+	focus = {
+		id = SWE_swedish_liberalism
+		icon = GFX_focus_bel_liberal
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_take_care_for_weak
+		}
+		prerequisite = {
+			focus = SWE_political_moderation
+		}
+		x = 35
+		y = 5
+		
+		available = {
+			has_government = democratic
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = { ideology = democratic popularity = 0.05 }
+		}
+
+	}
+	focus = {
+		id = SWE_uphold_church_influence
+		icon = GFX_focus_bel_christianity
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_retain_monarchal_powers
+		}
+		x = 38
+		y = 3
+		
+		available = {
+			has_government = conservatives
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = { ideology = conservatives popularity = 0.05 }
+			add_ideas = SWE_uphold_church_influence_idea
+		}
+
+	}
+	focus = {
+		id = SWE_swedish_temperance
+		icon = GFX_focus_hun_equal
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_uphold_church_influence
+		}
+		x = 38
+		y = 4
+		
+		available = {
+			has_government = conservatives
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = { ideology = conservatives popularity = 0.05 }
+			swap_ideas = {
+				remove_idea = SWE_uphold_church_influence_idea
+				add_idea = SWE_swedish_temperance_idea
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_swedish_conservatism
+		icon = GFX_focus_generic_bastion_of_democracy
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_political_moderation
+		}
+		prerequisite = {
+			focus = SWE_swedish_temperance
+		}
+		x = 37
+		y = 5
+		
+		available = {
+			has_government = conservatives
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = { ideology = conservatives popularity = 0.05 }
+		}
+
+	}
+	focus = {
+		id = SWE_kings_party_in_power
+		icon = GFX_focus_SWE_meet_with_the_king
+		cost = 2.90
+		prerequisite = {
+			focus = SWE_1936_election
+		}
+		x = 41
+		y = 1
+		
+		available = {
+			has_country_flag = SWE_kings_party_government_flag
+			has_government = neutrality
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_political_power = 25
+			add_popularity = { ideology = neutrality popularity = 0.05 }
+		}
+
+	}
+	focus = {
+		id = SWE_king_in_power
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_kings_party_in_power
+		}
+		x = 40
+		y = 2
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_political_power = 20
+			add_popularity = { ideology = neutrality popularity = 0.05 }
+			swap_ideas = {
+				remove_idea = SWE_king_gustaf_v
+				add_idea = SWE_king_gustaf_v_kingsparty
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_set_aside_riksdag
+		icon = GFX_focus_swe_set_aside_parliament
+		cost = 8.00
+		prerequisite = {
+			focus = SWE_king_in_power
+		}
+		x = 40
+		y = 3
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_political_power = 20
+			custom_effect_tooltip  = SWE_civil_war_tooltip
+			hidden_effect = {
+				country_event = {
+					id = sweden.55 days = 5
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_nationalist_government
+		icon = GFX_focus_FIN_national_fanatism
+		cost = 2.90
+		prerequisite = {
+			focus = SWE_1936_election
+		}
+		x = 43
+		y = 1
+		
+		available = {
+			has_country_flag = SWE_nationalist_government_flag
+			has_government = fascism
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_political_power = 25
+			add_popularity = { ideology = fascism popularity = 0.05 }
+		}
+
+	}
+	focus = {
+		id = SWE_crush_socialists
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_kings_party_in_power
+			focus = SWE_nationalist_government
+		}
+		x = 42
+		y = 2
+		
+		available = {
+			has_country_flag = SWE_civil_war_non_socialist
+			OR = {
+				has_government = neutrality
+				has_government = fascism
+			}
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = -75
+			add_popularity = { ideology = communism popularity = -0.04 }
+			add_popularity = { ideology = socialist popularity = -0.08 }
+			remove_ideas = SWE_unstable_government
+		}
+
+	}
+	focus = {
+		id = SWE_swedish_militarism
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_crush_socialists
+		}
+		x = 42
+		y = 3
+		
+		available = {
+			OR = {
+				has_government = neutrality
+				has_government = fascism
+			}
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_stability = 0.10
+			add_war_support = 0.10
+			add_ideas = SWE_swedish_militarism_idea
+		}
+
+	}
+	focus = {
+		id = SWE_reassure_military_loyalty
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_set_aside_riksdag
+		}
+		prerequisite = {
+			focus = SWE_swedish_militarism
+		}
+		x = 41
+		y = 4
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_political_power = -50
+			add_popularity = { ideology = neutrality popularity = 0.05 }
+			swap_ideas = {
+				remove_idea = SWE_swedish_militarism_idea
+				add_idea = SWE_reassure_military_loyalty_idea
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_long_live_king
+		icon = GFX_focus_swe_crown_loyalty
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_reassure_military_loyalty
+		}
+		x = 41
+		y = 5
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = { ideology = neutrality popularity = 0.05 }
+		}
+
+	}
+	focus = {
+		id = SWE_new_swedishness
+		icon = GFX_focus_ger_reichskommisariats
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_nationalist_government
+		}
+		x = 44
+		y = 2
+		
+		available = {
+			has_government = fascism
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_political_power = 20
+			add_popularity = { ideology = fascism popularity = 0.05 }
+			add_ideas = SWE_new_swedishness_idea
+		}
+
+	}
+	focus = {
+		id = SWE_control_branches_governance
+		icon = GFX_focus_swe_control_government
+		cost = 8.00
+		prerequisite = {
+			focus = SWE_new_swedishness
+		}
+		x = 44
+		y = 3
+		
+		available = {
+			has_government = fascism
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_political_power = 20
+			custom_effect_tooltip  = SWE_civil_war_tooltip
+			hidden_effect = {
+				country_event = {
+					id = sweden.55 days = 5
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_swedify_nation
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10.00
+		prerequisite = {
+			focus = SWE_swedish_militarism
+		}
+		prerequisite = {
+			focus = SWE_control_branches_governance
+		}
+		x = 43
+		y = 4
+		
+		available = {
+			has_government = fascism
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_political_power = -50
+			add_popularity = { ideology = fascism popularity = 0.05 }
+			swap_ideas = {
+				remove_idea = SWE_swedish_militarism_idea
+				add_idea = SWE_swedify_nation_idea
+			}
+		}
+
+	}
+	focus = {
+		id = SWE_new_empire_in_north
+		icon = GFX_focus_swe_vasa_logo
+		cost = 5.00
+		prerequisite = {
+			focus = SWE_swedify_nation
+		}
+		x = 43
+		y = 5
+		
+		available = {
+			has_government = fascism
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = { ideology = fascism popularity = 0.05 }
+		}
+
+	}
+}

@@ -1,0 +1,2269 @@
+##### ROM ######
+
+ideas = {
+	political_advisor = {
+		mohamed_naguib = {
+			picture = GFX_idea_mohamed_naguib
+
+			allowed = {
+				original_tag = EGY
+				always = yes
+			}
+			
+			available = {
+				NOT = {
+					has_country_flag = EGY_mohamed_naguib_purged
+				}
+			}
+			
+			traits = { silent_workhorse popular_figurehead }
+		}
+		
+		abdel_latif_boghdadi = {
+			picture = GFX_idea_abdel_latif_boghdadi
+			allowed = {
+				original_tag = EGY
+				always = yes
+			}
+			
+			available = {
+				NOT = {
+					has_country_flag = EGY_abdel_latif_boghdadi_purged
+				}
+			}
+			
+			traits = { prince_of_terror }
+		}
+		
+		hussein_serry_pasha = {
+			picture = GFX_idea_hussein_serry_pasha
+			allowed = {
+				original_tag = EGY
+			}
+			
+			available = {
+				NOT = {
+					has_country_flag = EGY_wafd_collapse
+				}
+			}
+			research_bonus = {
+				cat_grand_battle_plan = 0.15
+			}
+			traits = { popular_figurehead }
+		}
+		
+		ahmed_hussein = {
+            picture = GFX_idea_ahmed_hussein
+			allowed = {
+				original_tag = EGY
+			}
+			
+			cost = 50
+			
+			available = {
+				has_completed_focus = EGY_imperial_dream
+			}
+			
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = FASCIST
+					}
+					factor = 100
+				}
+				modifier = {
+					is_historical_focus_on = no
+					factor = 2
+				}
+			}
+			
+			traits = { nazi_admirer }
+		}
+		
+		mostafa_el-nahhas_pasha = {
+
+			picture = GFX_idea_mostafa_el-nahhas_pasha
+			allowed = {
+				original_tag = EGY
+			}
+			
+			available = {
+				NOT = {
+					has_country_flag = EGY_wafd_collapse
+				}
+				OR = {
+					has_completed_focus = EGY_reform_the_wafd
+					has_completed_focus = EGY_ban_boycotts
+				}
+			}
+			
+			cost = 150
+			
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					is_historical_focus_on = yes
+					factor = 3
+				}
+			}
+			
+			traits = { democratic_reformer old_judge }
+		}
+		
+		akram_al-hourani = {
+
+			picture = GFX_idea_akram_al-hourani
+			allowed = {
+				original_tag = EGY
+			}
+			
+			cost = 50
+			
+			available = {
+				has_completed_focus = EGY_begin_the_arab_socialist_movement
+			}
+			
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = COMMUNIST
+					}
+					factor = 100
+				}
+				modifier = {
+					is_historical_focus_on = no
+					factor = 2
+				}
+			}
+			
+			traits = { underground_revolutionary }
+		}
+		
+		makram_ebeid = {
+
+			picture = GFX_idea_makram_ebeid
+			allowed = {
+				original_tag = EGY
+			}
+			
+			cost = 150
+			
+			available = {
+				has_completed_focus = EGY_industrialisation_effort
+				NOT = {
+					has_country_flag = EGY_assassinated_makram_ebeid
+				}
+			}
+			
+			traits = { financial_expert economist }
+		}
+	}
+
+	industrial_concern = {
+		
+		bahgat_group = {
+
+			allowed = {
+				original_tag = EGY
+			}
+			
+			available = {
+				has_completed_focus = EGY_national_estate_developments
+			}
+			
+			cost = 50
+			removal_cost = 10
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}
+		
+	}
+	
+	materiel_manufacturer = {
+	
+		designer = yes
+	
+		egyptian_engineering_agencies = {
+
+			allowed = {
+				original_tag = EGY
+			}
+			
+			available = {
+				has_completed_focus = EGY_eea_company
+			}
+			
+			cost = 50
+			removal_cost = 10
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+		
+	}
+
+	theorist = {
+
+		gamal_abdel_nasser_hussein = {
+			ledger = army
+
+			picture = GFX_idea_gamal_abdel_nasser_hussein
+
+			allowed = {
+				original_tag = EGY
+			}
+			
+			available = {
+				NOT = {
+					has_country_flag = EGY_gamal_abdel_nasser_hussein_purged
+				}
+			}
+			
+			research_bonus = {
+				cat_grand_battle_plan = 0.15
+			}
+			
+			traits = { grand_battle_plan_expert }
+		}
+		
+	}
+
+	high_command = {
+
+		hassan_ibrahim = {
+		    ledger = air
+			picture = GFX_idea_hassan_ibrahim
+
+			allowed = {
+				original_tag = EGY
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		adel_amin_hafez = {
+			ledger = air
+			picture = GFX_idea_adel_amin_hafez
+			allowed = {
+				original_tag = EGY
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		saad_el-shazly = {
+			ledger = air
+			picture = GFX_idea_saad_el-shazly
+
+			allowed = {
+				original_tag = EGY
+			}
+			
+			traits = { air_airborne_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+	# MILITARY
+	army_chief = {
+		
+		aziz_ali_al-misri = {
+			picture = GFX_idea_aziz_ali_al-misri
+
+			allowed = {
+				original_tag = EGY
+			}
+			
+			available = {
+				has_completed_focus = EGY_educational_militarism
+			}
+			
+			traits = { army_chief_drill_3 }
+			
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		abdul_munim_riad = {
+			picture = GFX_idea_abdul_munim_riad-misri
+
+			allowed = {
+				original_tag = EGY
+			}
+			
+			traits = { army_commando_1 }
+			
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+	}
+
+	air_chief = {
+		
+
+		mohamed_sedky_mahmoud = {
+			
+			allowed = {
+				original_tag = EGY
+			}
+			
+			available = {
+				has_completed_focus = EGY_high_aviation_school
+			}
+			
+			traits = { air_pilot_training_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		hussein_refki_pasha = {
+			
+			allowed = {
+				original_tag = EGY
+			}
+			
+			traits = { navy_chief_old_guard }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+	country = {
+		
+		fuad_i_of_egypt = {
+			
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.001
+			}
+		}
+		sir_miles_lampson = {
+			
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {		
+				democratic_drift = 0.02
+			}
+		}
+		king_farouk_i = {
+			
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				fascism_drift = 0.02
+			}
+			
+		}
+		king_farouk_i_1 = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.15
+			}
+			
+		}
+		resistance_to_british_occupation = {			
+			
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				democratic_acceptance = -50
+				conscription_factor = -0.10
+				join_faction_tension = 0.5
+			}
+		}	
+		resistance_to_british_occupation_2 = {			
+			
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				democratic_acceptance = -25
+				conscription_factor = -0.10
+				join_faction_tension = 0.25
+			}
+		}	
+		british_military_technology = {
+
+			allowed = {
+				original_tag = EGY
+				has_government = democratic
+				ENG = {
+					has_government = democratic
+				}
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+				ENG = {
+					has_government = democratic
+				}
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+		}
+		a_colonized_nile = {
+			
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 10
+			}
+			
+		}
+		national_mobilization = {
+			
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.05
+				non_core_manpower = 0.03
+			}
+			
+		}
+		egypt_first = {
+			
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				trade_laws_cost_factor = -0.25
+				trade_opinion_factor = 0.25
+			}
+			
+		}
+		follow_the_monarch = {
+			
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				if = {
+					LIMIT = {
+						NOT = {
+							has_government = democratic
+						}
+					}
+					always = yes
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.05
+				fascism_acceptance = 85
+			}
+			
+		}
+		national_fascism = {
+			
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				fascism_acceptance = 30
+				drift_defence_factor = -0.2
+			}
+			
+		}
+		arab_socialist_movement = {
+			
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.10
+				communism_acceptance = 70
+			}
+			
+		}
+		ufo_runway_construction = {
+			
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.1
+			}
+			
+		}
+		ufo_runway_construction_1 = {
+			
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				political_power_gain = -0.25
+			}
+			
+		}
+		national_poverty = {
+
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				conscription_factor = -0.5
+				consumer_goods_factor = 0.2
+			}
+		}
+		national_poverty_2 = {
+
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				conscription_factor = -0.3
+				consumer_goods_factor = 0.15
+			}
+		}
+		national_poverty_3 = {
+
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				conscription_factor = -0.1
+				consumer_goods_factor = 0.10
+			}
+		}
+		british_military_training = {
+
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				training_time_army_factor = -0.1
+			}
+		}
+		the_british_protectorate = {
+
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				democratic_drift = 0.02
+			}
+		}
+		the_british_protectorate_1 = {
+
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+		}
+		crackdown_on_riots_democracy = {
+
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = -0.001
+				democratic_drift = -0.03
+			}
+		}
+		wafd_internal_collapse = {
+
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = 0.001
+				democratic_drift = -0.10
+			}
+		}
+		defense_of_the_motherland = {
+
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.01
+				army_core_defence_factor = 0.25
+				army_morale_factor = 0.1
+			}
+		}
+		ignite_the_warrior_spirit = {
+
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				heat_attrition_factor = -0.5
+				no_supply_grace = 48
+			}
+		}
+		ptah = {
+
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				global_building_slots_factor = 0.10
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		ra = {
+
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_air_base_factor = 0.1
+				air_air_superiority_attack_factor = 0.05
+				air_air_superiority_defence_factor = 0.05
+				air_air_superiority_agility_factor = 0.05
+			}
+		}
+		amen = {
+
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				min_export = -0.05
+				local_resources_factor = 0.10
+				consumer_goods_factor = -0.05
+			}
+		}
+		set = {
+
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				naval_hit_chance = 0.05
+				convoy_raiding_efficiency_factor = 0.1
+				army_infantry_attack_factor = 0.15
+				army_infantry_defence_factor = 0.15
+			}
+		}
+		a_flourishing_economy = {
+
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+		a_flourishing_economy_2 = {
+
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+		}
+		a_flourishing_economy_3 = {
+
+			allowed = {
+				original_tag = "EGY"
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.2
+			}
+		}
+		modern_education = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		the_proxy_nation = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+					has_government = fascism
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = 0.15
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+			}
+		}
+		ege_great_depression = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.5
+				join_faction_tension = 0.50
+				local_resources_factor = -0.8
+			}
+		}
+		ege_great_depression_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.3
+				join_faction_tension = 0.35
+				local_resources_factor = -0.5
+			}
+		}
+		ege_great_depression_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.15
+				join_faction_tension = 0.20
+				local_resources_factor = -0.2
+			}
+		}
+		divided_under_pharaonism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = -0.05
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+			}
+		}
+		united_under_pharaonism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+			}
+		}
+		riot_recovery = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				civilian_factory_use = 3
+				production_factory_efficiency_gain_factor = -0.3
+			}
+		}
+		biased_representation = {
+			
+			allowed = {
+				always = no
+			}	
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+				consumer_goods_factor = 0.05
+				industry_free_repair_factor = -0.5
+			}
+			
+		}
+		capitalist_purge = {
+			
+			allowed = {
+				always = no
+			}	
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.1
+				min_export = 0.10
+				trade_laws_cost_factor = 0.50
+			}
+			
+		}
+		united_under_christianity = {
+			
+			allowed = {
+				always = no
+			}	
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.05
+				stability_weekly = 0.001
+			}
+			
+		}
+		new_world_order = {
+			
+			allowed = {
+				always = no
+			}	
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.05
+				war_support_weekly = 0.001
+				justify_war_goal_time = -0.25
+			}
+			
+		}
+		collaborative_construction = {
+			
+			allowed = {
+				always = no
+			}	
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+			
+		}
+		soviet_military_training = {
+			
+			allowed = {
+				always = no
+			}	
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				training_time_army_factor = -0.05
+				minimum_training_level = -0.1
+			}
+			
+		}
+		gardens_of_egypt = {
+			
+			allowed = {
+				always = no
+			}	
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				supply_consumption_factor = -0.05
+			}
+			
+		}
+		european_intervention = {
+			
+			allowed = {
+				always = no
+			}	
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				send_volunteers_tension = -0.50
+				send_volunteer_divisions_required = -0.50
+				send_volunteer_size = 2
+				acclimatization_cold_climate_gain_factor = 0.1
+				winter_attrition_factor = -0.3
+			}
+			
+		}
+		youth_militia_program = {
+			
+			allowed = {
+				always = no
+			}	
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.025
+			}
+			
+		}
+		crackdown_on_extremist_bias = {
+			
+			allowed = {
+				always = no
+			}	
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = -0.05
+				communism_drift = -0.05
+			}
+			
+		}
+		anti-fascist_propaganda = {
+			
+			allowed = {
+				always = no
+			}	
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = -0.05
+				fascism_acceptance = -50
+				political_power_gain = -0.10
+			}
+			
+		}
+		boycott_ban = {
+			
+			allowed = {
+				always = no
+			}	
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.05
+				neutrality_drift = -0.10
+				political_power_gain = -0.10
+			}
+			
+		}
+		anti-western_policies = {
+			
+			allowed = {
+				always = no
+			}	
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.10
+				democratic_drift = -0.10
+				conscription = -0.02
+			}
+			
+		}
+		anti-western_policies_2 = {
+			
+			allowed = {
+				always = no
+			}	
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.10
+				democratic_drift = -0.10
+				conscription = -0.02
+				stability_factor = -0.05
+				political_power_gain = 0.20
+			}
+			
+		}
+		prepare_intervention = {
+			
+			allowed = {
+				always = no
+			}	
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				send_volunteers_tension = -0.50
+				send_volunteer_divisions_required = -1
+				send_volunteer_size = 3
+			}
+			
+		}
+		homeland_defense = {
+			
+			allowed = {
+				always = no
+			}	
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+				production_speed_anti_air_building_factor = 0.05
+			}
+			
+		}
+		leading_the_africa_front = {
+			
+			allowed = {
+				always = no
+			}	
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+			
+		}
+		arab_democracies_act = {
+			
+			allowed = {
+				always = no
+			}	
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.10
+				democratic_acceptance = 50
+				neutrality_drift = -0.05
+			}
+			
+		}
+		mediterranean_defense_committee_member = {
+			
+			allowed = {
+				always = no
+			}	
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_coastal_bunker_factor = 0.3
+			}
+			
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				submarine = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				light_cruiser = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+			
+		}
+		limited_intervention_act = {
+			
+			allowed = {
+				always = no
+			}	
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				send_volunteers_tension = -0.5
+				send_volunteer_divisions_required = -1
+				send_volunteer_size = 2
+				mobilization_laws_cost_factor = -0.25
+			}
+			
+		}
+		lend_lease_aid = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				lend_lease_tension = -1
+				join_faction_tension = 0.25
+				send_volunteers_tension = 0.5
+				guarantee_tension = 0.5
+			}
+		}
+		deal_of_the_two_empires = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		purge_of_democracy_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.03
+				democratic_drift = -0.03
+				war_support_weekly = 0.0002
+			}
+		}
+		purge_of_democracy_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.06
+				democratic_drift = -0.06
+				war_support_weekly = 0.0004
+			}
+		}
+		purge_of_democracy_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.09
+				democratic_drift = -0.09
+				war_support_weekly = 0.0006
+			}
+		}
+		purge_of_democracy_4 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.12
+				democratic_drift = -0.12
+				war_support_weekly = 0.0008
+			}
+		}
+		purge_of_democracy_5 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.15
+				democratic_drift = -0.15
+				war_support_weekly = 0.001
+			}
+		}
+		coptic_might = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		spread_the_muslim_brotherhood = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				generate_wargoal_tension = -1
+				justify_war_goal_time = -0.50
+				join_faction_tension = 1
+			}
+		}
+		egyptian_national_railways = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		industrial_labor_priority = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				conscription = -0.02
+			}
+		}
+		guns_of_the_napoleonic_wars = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				artillery_equipment = {
+					soft_attack = 0.1
+					instant = yes
+				}
+				rocket_artillery_equipment = {
+					soft_attack = 0.1
+					instant = yes
+				}
+			}
+			
+		}
+		camel_cavalry = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				cavalry_attack_factor = 0.15
+				cavalry_defence_factor = 0.15
+			}
+			
+		}
+		scarab_tanks = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_armor_speed_factor = 0.10
+			}
+			
+		}
+		infantry_weaponry_prioritisation = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+			}
+			
+		}
+		artillery_prioritisation = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				artillery_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+			}
+			
+		}
+		armor_prioritisation = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.10 instant = yes
+				}
+			}
+			
+		}
+####################################
+#INFLUENCE SYSTEM - MUSLIM
+####################################
+		muslim_influence_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_acceptance = 5
+				fascism_acceptance = 5
+			}
+		}
+		muslim_influence_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_acceptance = 10
+				fascism_acceptance = 10
+			}
+		}
+		muslim_influence_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_acceptance = 15
+				fascism_acceptance = 15
+				neutrality_drift = 0.02
+				fascism_drift = 0.01
+			}
+		}
+		muslim_influence_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_acceptance = 20
+				fascism_acceptance = 20
+				neutrality_drift = 0.02
+				fascism_drift = 0.01
+			}
+		}
+		muslim_influence_5 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_acceptance = 25
+				fascism_acceptance = 25
+				neutrality_drift = 0.02
+				fascism_drift = 0.01
+			}
+		}
+		muslim_influence_6 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_acceptance = 30
+				fascism_acceptance = 30
+				neutrality_drift = 0.02
+				fascism_drift = 0.02
+			}
+		}
+		muslim_influence_7 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_acceptance = 35
+				fascism_acceptance = 35
+				neutrality_drift = 0.02
+				fascism_drift = 0.02
+			}
+		}
+		muslim_influence_8 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_acceptance = 40
+				fascism_acceptance = 40
+				neutrality_drift = 0.02
+				fascism_drift = 0.03
+			}
+		}
+		muslim_influence_9 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_acceptance = 45
+				fascism_acceptance = 45
+				neutrality_drift = 0.02
+				fascism_drift = 0.03
+			}
+		}
+		muslim_influence_10 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_acceptance = 50
+				fascism_acceptance = 50
+				neutrality_drift = 0.02
+				fascism_drift = 0.04
+			}
+		}
+####################################
+#INFLUENCE SYSTEM - CHRISTIAN
+####################################
+		christian_influence_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_acceptance = 5
+				democratic_acceptance = 5
+				democratic_drift = 0.01
+			}
+		}
+		christian_influence_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_acceptance = 10
+				democratic_acceptance = 10
+				democratic_drift = 0.01
+			}
+		}
+		christian_influence_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_acceptance = 15
+				democratic_acceptance = 15
+				neutrality_drift = 0.02
+				democratic_drift = 0.01
+			}
+		}
+		christian_influence_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_acceptance = 20
+				democratic_acceptance = 20
+				neutrality_drift = 0.02
+				democratic_drift = 0.01
+			}
+		}
+		christian_influence_5 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_acceptance = 25
+				democratic_acceptance = 25
+				neutrality_drift = 0.02
+				democratic_drift = 0.01
+			}
+		}
+		christian_influence_6 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_acceptance = 30
+				democratic_acceptance = 30
+				neutrality_drift = 0.02
+				democratic_drift = 0.02
+			}
+		}
+		christian_influence_7 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_acceptance = 35
+				democratic_acceptance = 35
+				neutrality_drift = 0.02
+				democratic_drift = 0.02
+			}
+		}
+		christian_influence_8 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_acceptance = 40
+				democratic_acceptance = 40
+				neutrality_drift = 0.02
+				democratic_drift = 0.03
+			}
+		}
+		christian_influence_9 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_acceptance = 45
+				democratic_acceptance = 45
+				neutrality_drift = 0.02
+				democratic_drift = 0.03
+			}
+		}
+		christian_influence_10 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_acceptance = 50
+				democratic_acceptance = 50
+				neutrality_drift = 0.02
+				democratic_drift = 0.04
+			}
+		}
+#OTHERS		
+		arab_socialist_movementIRQ = {
+				
+			allowed = {
+				original_tag = "IRQ"
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.05
+				communism_acceptance = 50
+			}			
+		}
+		arab_socialist_movementPER = {
+				
+			allowed = {
+				original_tag = "PER"
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.05
+				communism_acceptance = 50
+			}			
+		}
+		arab_socialist_movementSAU = {
+				
+			allowed = {
+				original_tag = "SAU"
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.05
+				communism_acceptance = 50
+			}			
+		}
+	}
+}

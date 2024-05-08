@@ -1,0 +1,85 @@
+##### ROM ######
+
+add_namespace = britain 
+
+
+#Mandate negotiates for Israeli treaty to take Tel-Abib, Naqb, Haifa this will lead to resistance of palestinians
+country_event = {
+	id = britain.501
+	title = britain.501.t
+	desc = britain.501.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option { #accept
+		name = britain.501.a
+		news_event = { id = news.5002}
+
+		ai_chance = { factor = 80 }
+
+	    ISR = {
+            transfer_state = 971 
+            transfer_state = 970
+            transfer_state = 454
+            load_oob = "ISR_1936"
+	        change_tag_from = MAP
+        }
+		PAL = {
+			transfer_state = 972
+			transfer_state = 973
+			load_oob = "PAL_1936"
+
+            declare_war_on = {
+	            target = ISR
+	            type = annex_everything
+            }
+		}
+        
+	}
+
+	option { #refuse
+		name = britain.501.b
+		ai_chance = { factor = 20 }
+		
+		MAP = {
+			country_event = { id = mandate.6 hours = 1 }
+		}
+	}
+}
+
+#Mandate negotiates for Palistine freedom
+country_event = {
+	id = britain.502
+	title = britain.502.t
+	desc = britain.502.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option { #accept
+
+		name = britain.502.a
+		ai_chance = { factor = 65 }
+		news_event = { id = news.5003}
+		PAL = {
+			transfer_state = 454
+			transfer_state = 972
+			transfer_state = 973
+			transfer_state = 971
+			transfer_state = 970
+			load_oob = "PAL_1936"
+
+			change_tag_from = MAP
+		}
+	}
+
+	option { #refuse
+		name = britain.502.b
+		ai_chance = { factor = 35 }
+		
+		MAP = {
+			country_event = { id = mandate.6 hours = 1 }
+		}
+	}
+}

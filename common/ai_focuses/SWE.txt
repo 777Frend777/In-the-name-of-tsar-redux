@@ -1,0 +1,20 @@
+﻿ai_historical_focus_list_SWE = {
+	ai_national_focuses = {
+		# grab as fast as you can if available
+		
+		SWE_forsvarsbeslutet_1936
+		SWE_armen
+		SWE_establish_forsvarsstaben
+		SWE_svenska_marinen
+		SWE_socialist_government
+		SWE_referendum_on_monarchy
+		SWE_introduce_funktionssocialism
+		SWE_folkhemmet
+		SWE_schools_for_every_child
+		SWE_pentions_for_old
+		SWE_workplace_democracy
+		SWE_ensure_worker_rights
+		SWE_swedish_welfare_state
+		
+	}
+}

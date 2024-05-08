@@ -1,0 +1,103 @@
+ideas = {
+
+	country = {
+		GRK_influence_0 = {
+
+			picture = generic_political_support
+
+			allowed = {
+				OR = {
+				original_tag = WSM
+				original_tag = WUT
+				original_tag = SAX
+				}
+			}
+
+			removal_cost = -1
+		}	
+		GRK_influence_1 = {
+
+			picture = generic_political_support
+
+			allowed = {
+				OR = {
+				original_tag = WSM
+				original_tag = WUT
+				original_tag = SAX
+				}
+			}
+
+			removal_cost = -1
+		}
+		GRK_influence_2 = {
+
+			picture = generic_political_support
+
+			allowed = {
+				OR = {
+				original_tag = WSM
+				original_tag = WUT
+				original_tag = SAX
+				}
+			}
+
+			removal_cost = -1
+		}
+		GRK_influence_3 = {
+
+			picture = generic_political_support
+
+			allowed = {
+				OR = {
+				original_tag = WSM
+				original_tag = WUT
+				original_tag = SAX
+				}
+			}
+
+			removal_cost = -1
+		}
+		GRK_influence_-1 = {
+
+			picture = generic_political_support
+
+			allowed = {
+				OR = {
+				original_tag = WSM
+				original_tag = WUT
+				original_tag = SAX
+				}
+			}
+
+			removal_cost = -1
+		}
+		GRK_influence_-2 = {
+
+			picture = generic_political_support
+
+			allowed = {
+				OR = {
+				original_tag = WSM
+				original_tag = WUT
+				original_tag = SAX
+				}
+			}
+
+			removal_cost = -1
+		}
+		GRK_influence_-3 = {
+
+			picture = generic_political_support
+
+			allowed = {
+				OR = {
+				original_tag = WSM
+				original_tag = WUT
+				original_tag = SAX
+				}
+			}
+
+			removal_cost = -1
+		}
+	}
+}	

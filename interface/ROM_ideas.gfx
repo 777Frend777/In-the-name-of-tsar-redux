@@ -1,0 +1,613 @@
+spriteTypes = {	
+    spriteType = {
+		name = "GFX_idea_mohammed_aly_bey_al_abid_of_syria"
+		texturefile = "gfx/interface/ideas/idea_mohamed_aly_bey_of_syria.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_palestinians_resistance"
+		texturefile = "gfx/interface/ideas/idea_palestinians_resistance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fuad_i_of_egypt"
+		texturefile = "gfx/interface/ideas/idea_fuad_i_of_egypt.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_king_farouk_i"
+		texturefile = "gfx/interface/ideas/idea_king_farouk_i.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sir_miles_lampson"
+		texturefile = "gfx/interface/ideas/idea_sir_miles_lampson.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_resistance_to_french_occupation"
+		texturefile = "gfx/interface/ideas/idea_resistance_to_british_occupation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_resistance_to_french_occupation_2"
+		texturefile = "gfx/interface/ideas/idea_resistance_to_british_occupation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_resistance_to_british_occupation"
+		texturefile = "gfx/interface/ideas/idea_resistance_to_british_occupation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_resistance_to_british_occupation_2"
+		texturefile = "gfx/interface/ideas/idea_resistance_to_british_occupation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_british_military_technology"
+		texturefile = "gfx/interface/ideas/idea_british_military_technology.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_a_colonized_nile"
+		texturefile = "gfx/interface/ideas/idea_generic_agrarian_reform.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_national_mobilization"
+		texturefile = "gfx/interface/ideas/idea_generic_army_war_college.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_egypt_first"
+		texturefile = "gfx/interface/ideas/idea_can_wartime_prices_and_trade_board.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_follow_the_monarch"
+		texturefile = "gfx/interface/ideas/idea_hun_hungarian_monarchy_democratic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_national_fascism"
+		texturefile = "gfx/interface/ideas/generic_fascism_drift_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_national_socialism"
+		texturefile = "gfx/interface/ideas/generic_communism_drift_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_arab_socialist_movement"
+		texturefile = "gfx/interface/ideas/idea_raj_marginalized_muslim_community_angry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_arab_socialist_movementSAU"
+		texturefile = "gfx/interface/ideas/idea_raj_marginalized_muslim_community_angry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_arab_socialist_movementPER"
+		texturefile = "gfx/interface/ideas/idea_raj_marginalized_muslim_community_angry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_arab_socialist_movementIRQ"
+		texturefile = "gfx/interface/ideas/idea_raj_marginalized_muslim_community_angry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_arab_socialist_movementSAF"
+		texturefile = "gfx/interface/ideas/idea_raj_marginalized_muslim_community_angry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_national_democracy"
+		texturefile = "gfx/interface/ideas/generic_democratic_drift_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_national_neutrality"
+		texturefile = "gfx/interface/ideas/idea_generic_neutrality_drift_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ufo_runway_construction"
+		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ufo_runway_construction_1"
+		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_national_poverty"
+		texturefile = "gfx/interface/ideas/idea_raj_risk_of_famine.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_national_poverty_2"
+		texturefile = "gfx/interface/ideas/idea_raj_risk_of_famine.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_national_poverty_3"
+		texturefile = "gfx/interface/ideas/idea_raj_risk_of_famine.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_british_military_training"
+		texturefile = "gfx/interface/ideas/idea_generic_army_war_college.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_the_british_protectorate"
+		texturefile = "gfx/interface/ideas/brittish_stoicism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_the_british_protectorate_1"
+		texturefile = "gfx/interface/ideas/brittish_stoicism.dds"
+	}
+        spriteType = {
+		name = "GFX_idea_french_military_training"
+		texturefile = "gfx/interface/ideas/idea_generic_army_war_college.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_the_french_protectorate"
+		texturefile = "gfx/interface/ideas/fra_political_violence.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_the_french_protectorate_1"
+		texturefile = "gfx/interface/ideas/fra_political_violence.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_crackdown_on_riots_democracy"
+		texturefile = "gfx/interface/ideas/idea_mex_politicised_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wafd_internal_collapse"
+		texturefile = "gfx/interface/ideas/generic_disjointed_gov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_defense_of_the_motherland"
+		texturefile = "gfx/interface/ideas/idea_yug_federal_defense_council.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ignite_the_warrior_spirit"
+		texturefile = "gfx/interface/ideas/FRA_scw_intervention_nationalists_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ra"
+		texturefile = "gfx/interface/ideas/focus_ege_ra.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_amen"
+		texturefile = "gfx/interface/ideas/focus_ege_amen.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ptah"
+		texturefile = "gfx/interface/ideas/focus_ege_ptah.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_set"
+		texturefile = "gfx/interface/ideas/focus_ege_sutekh.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_a_flourishing_economy"
+		texturefile = "gfx/interface/ideas/idea_chi_hyper_inflation5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_a_flourishing_economy_2"
+		texturefile = "gfx/interface/ideas/idea_chi_hyper_inflation5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_a_flourishing_economy_3"
+		texturefile = "gfx/interface/ideas/idea_chi_hyper_inflation5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_modern_education"
+		texturefile = "gfx/interface/ideas/idea_generic_army_war_college.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_the_proxy_nation"
+		texturefile = "gfx/interface/ideas/idea_generic_fortify_the_borders.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ege_great_depression"
+		texturefile = "gfx/interface/ideas/great_depression.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ege_great_depression_2"
+		texturefile = "gfx/interface/ideas/great_depression.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ege_great_depression_3"
+		texturefile = "gfx/interface/ideas/great_depression.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_divided_under_pharaonism"
+		texturefile = "gfx/interface/ideas/FRA_scw_intervention_republicans_focus.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_united_under_pharaonism"
+		texturefile = "gfx/interface/ideas/generic_intel_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_riot_recovery"
+		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_akram_al-hourani"
+		texturefile = "gfx/interface/ideas/idea_akram_al-hourani.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mostafa_el-nahhas_pasha"
+		texturefile = "gfx/interface/ideas/idea_mostafa_el-nahhas_pasha.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ahmed_hussein"
+		texturefile = "gfx/interface/ideas/idea_ahmed_hussein.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_makram_ebeid"
+		texturefile = "gfx/interface/ideas/idea_makram_ebeid.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hussein_serry_pasha"
+		texturefile = "gfx/interface/ideas/idea_hussein_serry_pasha.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hussein_refki_pasha"
+		texturefile = "gfx/interface/ideas/idea_hussein_refki_pasha.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mohamed_naguib"
+		texturefile = "gfx/interface/ideas/idea_mohamed_naguib.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gamal_abdel_nasser_hussein"
+		texturefile = "gfx/interface/ideas/idea_gamal_abdel_nasser.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_aziz_ali_al-misri"
+		texturefile = "gfx/interface/ideas/idea_aziz_ali_al-misri.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_adel_amin_hafez"
+		texturefile = "gfx/interface/ideas/idea_adel_amin_hafez.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_abdul_munim_riad"
+		texturefile = "gfx/interface/ideas/idea_abdul_munim_riad.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hassan_ibrahim"
+		texturefile = "gfx/interface/ideas/idea_hassan_ibrahim.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mohamed_sedky_mahmoud"
+		texturefile = "gfx/interface/ideas/idea_mohamed_sedky_mahmoud.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_saad_el-shazly"
+		texturefile = "gfx/interface/ideas/idea_saad_el-shazly.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_abdel_latif_boghdadi"
+		texturefile = "gfx/interface/ideas/idea_abdel_latif_boghdadi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_biased_representation"
+		texturefile = "gfx/interface/ideas/idea_ast_classify_aliens.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_capitalist_purge"
+		texturefile = "gfx/interface/ideas/idea_eng_tackle_capitalism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_new_world_order"
+		texturefile = "gfx/interface/ideas/trotskyite_plot_purged.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_united_under_christianity"
+		texturefile = "gfx/interface/ideas/home_of_the_revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_collaborative_construction"
+		texturefile = "gfx/interface/ideas/idea_eng_spirit_of_the_industrial_revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_soviet_military_training"
+		texturefile = "gfx/interface/ideas/idea_generic_communist_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gardens_of_egypt"
+		texturefile = "gfx/interface/ideas/idea_generic_agrarian_society.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_european_intervention"
+		texturefile = "gfx/interface/ideas/idea_ger_the_great_red_menace.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_youth_militia_program"
+		texturefile = "gfx/interface/ideas/generic_manpower_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_crackdown_on_extremist_bias"
+		texturefile = "gfx/interface/ideas/idea_generic_secret_police.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_anti-fascist_propaganda"
+		texturefile = "gfx/interface/ideas/idea_generic_fascism_banned.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_boycott_ban"
+		texturefile = "gfx/interface/ideas/generic_democratic_drift_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_anti-western_policies"
+		texturefile = "gfx/interface/ideas/idea_ast_abandon_the_westminster_system.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_anti-western_policies_2"
+		texturefile = "gfx/interface/ideas/idea_ast_abandon_the_westminster_system.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_prepare_intervention"
+		texturefile = "gfx/interface/ideas/idea_ast_volunteer_defence_corps.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_homeland_defense"
+		texturefile = "gfx/interface/ideas/idea_generic_fortify_the_borders.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_leading_the_africa_front"
+		texturefile = "gfx/interface/ideas/idea_hun_secret_rearmament.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_arab_democracies_act"
+		texturefile = "gfx/interface/ideas/generic_democratic_drift_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mediterranean_defense_committee_member"
+		texturefile = "gfx/interface/ideas/generic_navy_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_limited_intervention_act"
+		texturefile = "gfx/interface/ideas/idea_ast_volunteer_defence_corps.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lend_lease_aid"
+		texturefile = "gfx/interface/ideas/generic_goods_red_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_deal_of_the_two_empires"
+		texturefile = "gfx/interface/ideas/idea_jap_intervene_in_china.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_purge_of_democracy_1"
+		texturefile = "gfx/interface/ideas/idea_generic_purge.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_purge_of_democracy_2"
+		texturefile = "gfx/interface/ideas/idea_generic_purge.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_purge_of_democracy_3"
+		texturefile = "gfx/interface/ideas/idea_generic_purge.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_purge_of_democracy_4"
+		texturefile = "gfx/interface/ideas/idea_generic_purge.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_purge_of_democracy_5"
+		texturefile = "gfx/interface/ideas/idea_generic_purge.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_coptic_might"
+		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spread_the_muslim_brotherhood"
+		texturefile = "gfx/interface/ideas/generic_disjointed_gov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_bahgat_group"
+		texturefile = "gfx/interface/ideas/idea_bahgat_group.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_egyptian_engineering_agencies"
+		texturefile = "gfx/interface/ideas/idea_egyptian_engineering_agencies.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_egyptian_national_railways"
+		texturefile = "gfx/interface/ideas/idea_egyptian_national_railways.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_industrial_labor_priority"
+		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_guns_of_the_napoleonic_wars"
+		texturefile = "gfx/interface/ideas/idea_generic_artillery_regiments.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_camel_cavalry"
+		texturefile = "gfx/interface/ideas/FRA_national_mobilization_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_scarab_tanks"
+		texturefile = "gfx/interface/ideas/idea_generic_acquire_tanks.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_infantry_weaponry_prioritisation"
+		texturefile = "gfx/interface/ideas/idea_ast_volunteer_defence_corps.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_artillery_prioritisation"
+		texturefile = "gfx/interface/ideas/idea_generic_artillery_manufacturer_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_armor_prioritisation"
+		texturefile = "gfx/interface/ideas/idea_man_five_year_plan_tank.dds"
+	}
+	##########################
+    #CHRISTIAN INFLUENCE IDEA GFX
+    ##########################
+	spriteType = {
+		name = "GFX_idea_christian_influence_1"
+		texturefile = "gfx/interface/ideas/idea_christian_influence.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_christian_influence_2"
+		texturefile = "gfx/interface/ideas/idea_christian_influence.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_christian_influence_3"
+		texturefile = "gfx/interface/ideas/idea_christian_influence.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_christian_influence_4"
+		texturefile = "gfx/interface/ideas/idea_christian_influence.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_christian_influence_5"
+		texturefile = "gfx/interface/ideas/idea_christian_influence.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_christian_influence_6"
+		texturefile = "gfx/interface/ideas/idea_christian_influence.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_christian_influence_7"
+		texturefile = "gfx/interface/ideas/idea_christian_influence.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_christian_influence_8"
+		texturefile = "gfx/interface/ideas/idea_christian_influence.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_christian_influence_9"
+		texturefile = "gfx/interface/ideas/idea_christian_influence.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_christian_influence_10"
+		texturefile = "gfx/interface/ideas/idea_christian_influence.dds"
+	}
+
+    ##########################
+    #MUSLIM INFLUENCE IDEA GFX
+    ##########################
+
+	spriteType = {
+		name = "GFX_idea_muslim_influence_1"
+		texturefile = "gfx/interface/ideas/idea_muslim_influence.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_muslim_influence_2"
+		texturefile = "gfx/interface/ideas/idea_muslim_influence.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_muslim_influence_3"
+		texturefile = "gfx/interface/ideas/idea_muslim_influence.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_muslim_influence_4"
+		texturefile = "gfx/interface/ideas/idea_muslim_influence.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_muslim_influence_5"
+		texturefile = "gfx/interface/ideas/idea_muslim_influence.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_muslim_influence_6"
+		texturefile = "gfx/interface/ideas/idea_muslim_influence.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_muslim_influence_7"
+		texturefile = "gfx/interface/ideas/idea_muslim_influence.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_muslim_influence_8"
+		texturefile = "gfx/interface/ideas/idea_muslim_influence.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_muslim_influence_9"
+		texturefile = "gfx/interface/ideas/idea_muslim_influence.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_muslim_influence_10"
+		texturefile = "gfx/interface/ideas/idea_muslim_influence.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ra"
+		texturefile = "gfx/interface/ideas/focus_ege_ra.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_amen"
+		texturefile = "gfx/interface/ideas/focus_ege_amen.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ptah"
+		texturefile = "gfx/interface/ideas/focus_ege_ptah.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_set"
+		texturefile = "gfx/interface/ideas/focus_ege_sutekh.dds"
+	}
+
+    ##### IRQ #####
+
+	spriteType = {
+		name = "GFX_idea_king_ghazi"
+		texturefile = "gfx/interface/ideas/idea_king_ghazi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_muhammad_al_sadr"
+		texturefile = "gfx/interface/ideas/idea_muhammad_al_sadr.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_mohammed_hadid"
+		texturefile = "gfx/interface/ideas/idea_mohammed_hadid.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_bakr_sidqi"
+		texturefile = "gfx/interface/ideas/idea_bakr_sidqi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_abd_al_karim_qasim"
+		texturefile = "gfx/interface/ideas/idea_abd_al_karim_qasim.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_husain_al_radi"
+		texturefile = "gfx/interface/ideas/idea_husain_al_radi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_hamdi_al_pachachi"
+		texturefile = "gfx/interface/ideas/idea_hamdi_al_pachachi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_naji_al_suwaydi"
+		texturefile = "gfx/interface/ideas/idea_naji_al_suwaydi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_muhammad_fadhel_al_jamali"
+		texturefile = "gfx/interface/ideas/idea_muhammad_fadhel_al_jamali.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_mahmud_salman"
+		texturefile = "gfx/interface/ideas/idea_mahmud_salman.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_abdul_salam_arif"
+		texturefile = "gfx/interface/ideas/idea_abdul_salam_arif.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_hardan_al_tikriti"
+		texturefile = "gfx/interface/ideas/idea_hardan_al_tikriti.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_abd_al_ilah"
+		texturefile = "gfx/interface/ideas/idea_abd_al_ilah.dds"
+	}
+
+    ##### SYR #####
+
+    SpriteType = {
+		name = "GFX_idea_SYR_syrian_catastrophe"
+		texturefile = "gfx/interface/ideas/SYR/SYR_syrian_catastrophe.dds"
+	}	
+	SpriteType = {
+		name = "GFX_idea_SYR_improved_syrian_army"
+		texturefile = "gfx/interface/ideas/SYR/SYR_improved_syrian_army.dds"
+	}
+
+}

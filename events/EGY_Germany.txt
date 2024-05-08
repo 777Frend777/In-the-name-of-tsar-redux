@@ -1,0 +1,39 @@
+﻿##### ROM ######
+
+add_namespace = germany
+
+# Egypt national focus -  Join Axis
+country_event = {
+	id = germany.1000
+	title = germany.1000.t
+	desc = germany.1000.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+		
+	option = {
+		name = germany.1000.a
+		GER = { add_to_faction = EGY }
+		EGY = {
+			add_ai_strategy = {
+				type = alliance
+				id = "GER"
+				value = 200
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = news.1006 }
+		}
+	}
+	option = {
+		name = germany.1000.b
+		ai_chance = { factor = 0 }
+		EGY = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = SOV_FRA_join_comintern_reject
+			}
+		}
+	}
+}
+

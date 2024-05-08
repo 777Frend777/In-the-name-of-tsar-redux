@@ -1,0 +1,46 @@
+USA_Civil_2_category = {
+Become_Orthodox_2 = {
+		icon = generic_construction
+
+		allowed = {
+			tag = USA
+		}
+
+		available = {
+	                393 = {
+		          owner = {
+                                                    has_war_with = USA
+                                          }
+                                                        }
+                                USA = { has_civil_war = yes }
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 2
+
+		modifier = {
+			
+		}
+
+		visible = {
+					
+		}
+
+		remove_effect = {
+		                 393 = {
+		                 owner = {
+                                                                 load_focus_tree = { 
+                                                                                              tree = union
+                                                                                              keep_completed = no
+                                                                                              }
+                                                           }
+                                                           }      
+		}
+                                ai_will_do = {
+			base = 200
+                                }
+	}
+}

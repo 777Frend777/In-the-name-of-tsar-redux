@@ -1,0 +1,70 @@
+﻿##### Division Templates #####
+
+division_template = {
+	name = "Milizia"		
+	division_names_group = ITA_MIL_01 
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+##### OOB #####
+units = {
+	division = {
+		name = "1. Milizia"
+		location = 6875
+		division_template = "Milizia"
+	}
+	division = {
+		name = "6. Milizia"
+		location = 6875
+		division_template = "Milizia"
+	}
+	division = {
+		name = "2. Milizia"
+		location = 9750
+		division_template = "Milizia"
+	}
+	division = {
+		name = "8. Milizia"
+		location = 9750
+		division_template = "Milizia"
+	}
+	division = {
+		name = "3. Milizia"
+		location = 3885
+		division_template = "Milizia"
+	}
+	division = {
+		name = "9. Milizia"
+		location = 3885
+		division_template = "Milizia"
+	}
+	division = {
+		name = "4. Milizia"
+		location = 6926
+		division_template = "Milizia"
+	}
+	division = {
+		name = "7. Milizia"
+		location = 6926
+		division_template = "Milizia"
+	}
+	division = {
+		name = "5. Milizia"
+		location = 11790
+		division_template = "Milizia"
+	}
+	division = {
+		name = "10. Milizia"
+		location = 11790
+		division_template = "Milizia"
+	}
+}

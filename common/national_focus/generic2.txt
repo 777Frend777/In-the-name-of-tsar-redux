@@ -1,0 +1,799 @@
+﻿#!gfx:interface/inot_focus_tree_goals.gfx
+#!gfx:interface/inot_goals_shine.gfx
+#!gfx:interface/KR_goals.gfx
+#!gfx:interface/KR_goals_shine.gfx
+search_filter_prios = {
+	FOCUS_FILTER_POLITICAL = 1010
+
+	
+ 
+	
+	
+	FOCUS_FILTER_RESEARCH = 522
+
+	
+	FOCUS_FILTER_INDUSTRY = 509
+
+	FOCUS_FILTER_SOV_POLITICAL_PARANOIA = 111
+	FOCUS_FILTER_PROPAGANDA = 110
+	FOCUS_FILTER_ARMY_XP = 103
+	FOCUS_FILTER_NAVY_XP = 102
+	FOCUS_FILTER_AIR_XP = 101
+
+}
+
+focus_tree = {
+	#id = generic_focus
+	
+	#country = {
+	#	factor = 1
+	#}
+	
+	#default = yes
+	#reset_on_civilwar = no
+
+	#initial_show_position = {
+	#	focus = industrial_effort
+	#}
+
+	focus = {
+		id = Military_college
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		x = 8
+		y = 0
+		#available = {
+		#has_country_flag = calph_council
+		#}
+		completion_reward = {
+		army_experience = 25
+			add_tech_bonus = {
+				name = Military_college
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = air_effort
+		icon = GFX_focus_NORDIC_com_airforce
+		cost = 10.00
+		prerequisite = {
+			focus = Military_college
+		}
+		relative_position_id = Military_college
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		complete_tooltip = {
+			air_experience = 25
+			if = { limit = { has_country_flag = aviation_effort_AB }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+
+		completion_reward = {
+			air_experience = 25
+
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							free_building_slots = {
+								building = air_base
+								size > 1
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}		
+	}
+	focus = {
+		id = fighter
+		icon = GFX_goal_generic_air_heavy_fighter_new
+		cost = 10.00
+		prerequisite = {
+			focus = air_effort
+		}
+		mutually_exclusive = {
+			focus = bomber
+		}
+		relative_position_id = Military_college
+		x = 1
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}
+	}
+	focus = {
+		id = cas
+		icon = GFX_focus_generic_cas_aircraft
+		cost = 10.00
+		prerequisite = {
+			focus = fighter
+		}
+		relative_position_id = Military_college
+		x = 1
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+	focus = {
+		id = air_effort_2
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
+		prerequisite = {
+			focus = air_effort
+		}
+		relative_position_id = Military_college
+		x = 2
+		y = 3
+		complete_tooltip = {
+			air_experience = 25
+			if = { limit = { has_country_flag = aviation_effort_2_AB }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name =  air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+		completion_reward = {
+			air_experience = 25
+			if = {
+				limit = {
+					capital_scope = {
+						OR = {
+							NOT = { is_controlled_by = ROOT }
+							NOT = {
+								free_building_slots = {
+									building = air_base
+									size > 1
+								}
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_2_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_2_AB }
+				}
+			}
+			add_tech_bonus = {
+				name =  air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = rocket
+		icon = GFX_focus_rocketry
+		cost = 10.00
+		prerequisite = {
+			focus = air_effort_2
+		}
+		relative_position_id = Military_college
+		x = 2
+		y = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 1.0
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+		}
+	}
+	focus = {
+		id = bomber
+		icon = GFX_goal_generic_air_bomber_new
+		cost = 10.00
+		prerequisite = {
+			focus = air_effort
+		}
+		mutually_exclusive = {
+			focus = fighter
+		}
+		relative_position_id = Military_college
+		x = 3
+		y = 2
+		completion_reward = {
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 2
+					technology = strategic_bomber1
+					technology = strategic_bomber2
+					technology = strategic_bomber3
+					category = tactical_bomber
+				}
+			}
+	}
+	focus = {
+		id = nav
+		icon = GFX_goal_generic_air_naval_bomber_new
+		cost = 5.00
+		prerequisite = {
+			focus = bomber
+		}
+		relative_position_id = Military_college
+		x = 3
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+	focus = {
+		id = naval
+		icon = GFX_goal_navy_hat_ships
+		cost = 10.00
+		prerequisite = {
+			focus = Military_college
+		}
+		relative_position_id = Military_college
+		x = 6
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		complete_tooltip = {
+			navy_experience = 25
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}	
+	}
+	focus = {
+		id = large
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 10.00
+		relative_position_id = Military_college
+		prerequisite = {
+			focus = naval
+		}
+		mutually_exclusive = {
+			focus = flex
+		}
+		x = 7
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 1.0
+				uses = 2
+				category = fleet_in_being_tree
+			}
+		}
+	}
+	focus = {
+		id = cruiser_
+		icon = GFX_focus_generic_cruiser2
+		cost = 10.00
+		prerequisite = {
+			focus = large
+		}
+		relative_position_id = Military_college
+		x = 7
+		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				technology = improved_light_cruiser
+				technology = advanced_light_cruiser
+				technology = improved_heavy_cruiser
+				technology = advanced_heavy_cruiser
+			}
+		}
+	}
+	focus = {
+		id = capital_ship
+		icon = GFX_goal_generic_naval_battleship2
+		cost = 10.00
+		prerequisite = {
+			focus = cruiser_
+		}
+		relative_position_id = Military_college
+		x = 7
+		y = 4
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				technology = basic_battlecruiser
+				technology = basic_battleship
+				technology = improved_battleship
+				technology = advanced_battleship
+				technology = heavy_battleship
+				technology = heavy_battleship2
+				technology = early_carrier
+				technology = basic_carrier
+				technology = improved_carrier
+				technology = advanced_carrier
+			}
+		}
+	}	
+	focus = {
+		id = flex
+		icon = GFX_focus_generic_merchant_fleet
+		cost = 10.00
+		prerequisite = {
+			focus = naval
+		}
+		mutually_exclusive = {
+			focus = large
+		}
+		relative_position_id = Military_college
+		x = 5
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+		}
+	}
+	focus = {
+		id = sub
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10.00
+		prerequisite = {
+			focus = flex
+		}
+		relative_position_id = Military_college
+		x = 5
+		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				technology = early_submarine
+				technology = basic_submarine
+				technology = improved_submarine
+				technology = advanced_submarine
+			}
+		}
+	}
+	focus = {
+		id = destroyer_
+		icon = GFX_goal_generic_naval_destroyer2
+		cost = 10.00
+		prerequisite = {
+			focus = sub
+		}
+		relative_position_id = Military_college
+		x = 5
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				technology = early_destroyer
+				technology = basic_destroyer
+				technology = improved_destroyer
+				technology = advanced_destroyer
+			}
+		}
+	}
+	focus = {
+		id = motorized
+		icon = GFX_goal_generic_army_motorized
+		cost = 5.00
+		prerequisite = {
+			focus = Military_college
+		}
+		relative_position_id = Military_college
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 1.0
+				technology = motorised_infantry
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = electronics
+		icon = GFX_goal_electronics
+		cost = 10.00
+		prerequisite = {
+			focus = motorized
+		}
+		relative_position_id = Military_college
+		x = -3
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1.0
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+	focus = {
+		id = armor
+		icon = GFX_goal_doctrine_tank_warfare
+		cost = 10.00
+		prerequisite = {
+			focus = motorized
+		}
+		relative_position_id = Military_college
+		x = -1
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = paramilitarism
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		prerequisite = {
+			focus = electronics
+		}
+		prerequisite = {
+			focus = armor
+		}
+		relative_position_id = Military_college
+		x = -2
+		y = 3
+		completion_reward = {
+			add_ideas = paramilitarism_focus
+		}
+	}
+	focus = {
+		id = special
+		icon = GFX_goal_generic_special_forces
+		cost = 10.00
+		prerequisite = {
+			focus = doctrines
+		}
+		prerequisite = {
+			focus = paramilitarism
+		}
+		relative_position_id = Military_college
+		x = -4
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = special
+				bonus = 1.0
+				uses = 2
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}
+	}
+	focus = {
+		id = reform_infantry
+		icon = GFX_goal_offensive_army
+		cost = 10.00
+		prerequisite = {
+			focus = Military_college
+		}
+		relative_position_id = Military_college
+		x = -6
+		y = 1
+		completion_reward = {
+		add_ideas = janisarries
+			add_tech_bonus = {
+				name = reform_infantry
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+		}
+	}
+	}
+	focus = {
+		id = artillery
+		icon = GFX_goal_generic_mountain_artillery
+		cost = 5.00
+		prerequisite = {
+			focus = reform_infantry
+		}
+		relative_position_id = Military_college
+		x = -7
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = support
+		icon = GFX_goal_generic_support_equipment
+		cost = 5.00
+		prerequisite = {
+			focus = reform_infantry
+		}
+		relative_position_id = Military_college
+		x = -5
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = logistics_tech
+				bonus = 1.0
+				uses = 1
+			}
+		}
+	}
+	focus = {
+		id = doctrines
+		icon = GFX_goal_generic_army_mass_assault
+		cost = 10.00
+		prerequisite = {
+			focus = artillery
+		}
+		prerequisite = {
+			focus = support
+		}
+		relative_position_id = Military_college
+		x = -6
+		y = 3
+		completion_reward = {
+		army_experience = 10
+ 		 add_tech_bonus = {
+ 			 name = doctrines
+ 			 bonus = 1.0
+ 			 uses = 2
+ 			 category = land_doctrine
+ 		 }
+ 	 }
+	}	
+
+}

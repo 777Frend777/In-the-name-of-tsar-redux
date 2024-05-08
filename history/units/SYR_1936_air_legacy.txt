@@ -1,0 +1,14 @@
+﻿
+
+
+air_wings = {
+	### Syrian Air Force (SAF)
+	554 = {
+		# 1st Squadron 
+		CAS_equipment_1 =  {
+			owner = "SYR" 
+			amount = 25
+		}
+	}
+}
+

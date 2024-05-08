@@ -1,0 +1,27 @@
+﻿division_template = {
+	name = "Requeté"			# International volunteers -- poor equipment, no experience (militia)
+	#is_locked = yes
+	division_names_group = SPR_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+units = {
+	division = {
+		name = "1a Requeté"
+		location = 11707  # Madrid
+		division_template = "Requeté"
+	}
+	division = {
+		name = "2a Requeté"
+		location = 740  # Madrid
+		division_template = "Requeté"
+	}
+	division = {
+		name = "3a Requeté"
+		location = 885  # Madrid
+		division_template = "Requeté"
+	}
+}

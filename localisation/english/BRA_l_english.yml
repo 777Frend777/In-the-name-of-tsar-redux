@@ -1,0 +1,20 @@
+﻿l_english:
+
+#Country names 
+ Chaco_war: "Legacy of the Chaco War"
+ Chaco_war2: "Legacy of the Chaco War"
+
+#Events
+ brasil.1.t: "Fall of the Vargas Government"
+ brasil.1.d: "Our revolt against President Getúlio Vargas has triumphed, bringing an end to his Estado Novo regime. Viva um Brasil Livre!"
+ brasil.1.a: "..."
+
+ brasil.2.t: "End of the Brazilian Civil War"
+ brasil.2.d: "Amidst the tumultuous aftermath of protracted conflict in Brazil, a defining resolution emerged when the Old Republicans, with determined resolve, entered Rio de Janeiro and successfully apprehended President Vargas. This watershed moment not only signifies the cessation of years of strife but also intricately shapes the trajectory of the nation."
+ brasil.2.a: "..."
+ brasil.3.t: "End of the Brazilian Civil War"
+ brasil.3.d: "In the wake of prolonged conflict in Brazil, the resolution unfolded dramatically as the Communists, taking center stage, entered Rio de Janeiro and carried out the execution of President Vargas. This watershed moment has not only concluded years of tumult but has also intricately shaped the trajectory of Brazil, propelling it into a neo-revolutionary era."
+ brasil.3.a: "..."
+
+ brasil.4.t: "Victory of the Estado Novo"
+ brasil.4.d: "President Getúlio Vargas adeptly steered his nation away from the brink of civil war, solidifying his leadership over Brazil and fortifying the foundations of his Estado Novo regime. In a strategic display of political prowess, Vargas not only averted internal conflict but also successfully consolidated his authority, empowering the Estado Novo with a resolute hand."

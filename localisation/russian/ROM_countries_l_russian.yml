@@ -1,0 +1,268 @@
+﻿l_russian:
+ EGY_fascism: "Хедиват Египта" #NT!
+ EGY_fascism_DEF: "Хедиват Египта" #NT!
+ EGY_democratic: "Королевство Египет" #NT!
+ EGY_democratic_DEF: "Королевство Египет" #NT!
+ EGY_neutrality: "Королевство Египет" #NT!
+ EGY_neutrality_DEF: "Королевство Египет" #NT!
+ EGY_communism: "Висел Египет" #NT!
+ EGY_communism_DEF: "Висел Египет" #NT!
+ EGY_fascism_ADJ: "Египетский" #NT!
+ EGY_democratic_ADJ: "Египетский" #NT!
+ EGY_neutrality_ADJ: "Египетский" #NT!
+ EGY_communism_ADJ: "египетский" #NT!
+  
+ CCE_fascism: "Коптская Республика Египет" #NT!
+ CCE_fascism_DEF: "Коптская Республика Египет" #NT!
+ CCE_democratic: "Коптская Республика Египет" #NT!
+ CCE_democratic_DEF: "Коптская Республика Египет" #NT!
+ CCE_neutrality: "Коптская Республика Египет" #NT!
+ CCE_neutrality_DEF: "Коптская Республика Египет" #NT!
+ CCE_communism: "Коптская Республика Египет" #NT!
+ CCE_communism_DEF: "Коптская Республика Египет" #NT!
+ CCE_fascism_ADJ: "Египетский" #NT!
+ CCE_democratic_ADJ: "Египетский" #NT!
+ CCE_neutrality_ADJ: "Египетский" #NT!
+ CCE_communism_ADJ: "Египетский" #NT!
+ MBH_fascism: "мусульманское братство" #NT!
+ MBH_fascism_DEF: "Братья-мусульмане" #NT!
+ MBH_democratic: "мусульманское братство" #NT!
+ MBH_democratic_DEF: "Братья-мусульмане" #NT!
+ MBH_neutrality: "мусульманское братство" #NT!
+ MBH_neutrality_DEF: "Братья-мусульмане" #NT!
+ MBH_communism: "мусульманское братство" #NT!
+ MBH_communism_DEF: "Братья-мусульмане" #NT!
+ MBH_fascism_ADJ: "Египетский" #NT!
+ MBH_democratic_ADJ: "Египетский" #NT!
+ MBH_neutrality_ADJ: "Египетский" #NT!
+ MBH_communism_ADJ: "Египетский" #NT!
+ YEM_fascism: "Федерация Южной Аравии" #NT!
+ YEM_fascism_DEF: "Федерация Южной Аравии" #NT!
+ YEM_democratic: "Йеменская Арабская Республика" #NT!
+ YEM_democratic_DEF: "Йеменская Арабская Республика" #NT!
+ YEM_neutrality: "Йемен" #NT!
+ YEM_neutrality_DEF: "Йемен" #NT!
+ YEM_communism: "Народно-Демократическая Республика Йемен" #NT!
+ YEM_communism_DEF: "Народная Демократическая Республика Йемен" #NT!
+ YEM_fascism_ADJ: "Йеменский" #NT!
+ YEM_democratic_ADJ: "Йеменский" #NT!
+ YEM_neutrality_ADJ: "Йеменский" #NT!
+ YEM_communism_ADJ: "Йеменский" #NT!
+ YEM: "Йемен" #NT!
+ YEM_DEF: "Йемен" #NT!
+ YEM_ADJ: "Йеменский" #NT!
+ ADP_fascism: "Аденский протекторат" #NT!
+ ADP_fascism_DEF: "Аденский протекторат" #NT!
+ ADP_democratic: "Аденский протекторат" #NT!
+ ADP_democratic_DEF: "Аденский протекторат" #NT!
+ ADP_neutrality: "Аденский протекторат" #NT!
+ ADP_neutrality_DEF: "Аденский протекторат" #NT!
+ ADP_communism: "Аденский протекторат" #NT!
+ ADP_communism_DEF: "Аденский протекторат" #NT!
+ ADP_fascism_ADJ: "Йеменский" #NT!
+ ADP_democratic_ADJ: "Йеменский" #NT!
+ ADP_neutrality_ADJ: "Йеменский" #NT!
+ ADP_communism_ADJ: "Йеменский" #NT!
+ ADP: "Йемен" #NT!
+ ADP_DEF: "Йемен" #NT!
+ ADP_ADJ: "Йеменский" #NT!
+ MAP_democratic: "Подмандатная Палестина" #NT!
+ MAP_democratic_DEF: "Подмандатная Палестина" #NT!
+ MAP_democratic_ADJ: "Обязательный гражданин Палестины" #NT!
+ MAP_fascism: "Палестинское движение" #NT!
+ MAP_fascism_DEF: "Палестинское движение" #NT!
+ MAP_fascism_ADJ: "палестинский" #NT!
+ MAP_communism: "Арабская Республика Палестина" #NT!
+ MAP_communism_DEF: "Арабская Республика Палестина" #NT!
+ MAP_communism_ADJ: "палестинский" #NT!
+ MAP_neutrality: "Королевство Палестина" #NT!
+ MAP_neutrality_DEF: "Подмандатная Палестина" #NT!
+ MAP_neutrality_ADJ: "Обязательный гражданин Палестины" #NT!
+ AES_democratic: "Англо-Египетский Судан" #NT!
+ AES_democratic_DEF: "Англо-египетский Судан" #NT!
+ AES_democratic_ADJ: "Англо-египетский гражданин Судана" #NT!
+ AES_fascism: "Суданский" #NT!
+ AES_fascism_DEF: "Англо-египетский Судан" #NT!
+ AES_fascism_ADJ: "Суданский" #NT!
+ AES_communism: "Англо-Египетский Судан" #NT!
+ AES_communism_DEF: "Англо-Египетский Судан" #NT!
+ AES_communism_ADJ: "Суданский" #NT!
+ AES_neutrality: "Англо-Египетский Судан" #NT!
+ AES_neutrality_DEF: "Англо-египетский Судан" #NT!
+ AES_neutrality_ADJ: "Суданский" #NT!
+ SYR_fascism: "Сирийское национальное государство" #NT!
+ SYR_fascism_DEF: "Сирийское национальное государство" #NT!
+ SYR_democratic: "Республика Сирия" #NT!
+ SYR_democratic_DEF: "Республика Сирия" #NT!
+ SYR_neutrality: "Республика Сирия" #NT!
+ SYR_neutrality_DEF: "Республика Сирия" #NT!
+ SYR_communism: "Социалистическое Государство Сирия" #NT!
+ SYR_communism_DEF: "Социалистическое Государство Сирия" #NT!
+ SYR_fascism_ADJ: "Сирийский" #NT!
+ SYR_democratic_ADJ: "Сирийский" #NT!
+ SYR_neutrality_ADJ: "Сирийский" #NT!
+ SYR_communism_ADJ: "Сирийский" #NT!
+ SYR: "Сирия" #NT!
+ SYR_DEF: "Сирия" #NT!
+ SYR_ADJ: "Сирийский" #NT!
+ ALP_fascism: "Штат Алеппо" #NT!
+ ALP_fascism_DEF: "Государство Алеппо" #NT!
+ ALP_democratic: "Республика Алеппо" #NT!
+ ALP_democratic_DEF: "Республика Алеппо" #NT!
+ ALP_neutrality: "Республика Алеппо" #NT!
+ ALP_neutrality_DEF: "Республика Алеппо" #NT!
+ ALP_communism: "Социалистическое государство Алеппо" #NT!
+ ALP_communism_DEF: "Социалистическое государство Алеппо" #NT!
+ ALP_fascism_ADJ: "Алеппо" #NT!
+ ALP_democratic_ADJ: "Алеппо" #NT!
+ ALP_neutrality_ADJ: "Алеппо" #NT!
+ ALP_communism_ADJ: "Алеппо" #NT!
+ ALP: "Алеппо" #NT!
+ ALP_DEF: "Алеппо" #NT!
+ ALP_ADJ: "Алеппо" #NT!
+ DRZ_fascism: "Друзский штат" #NT!
+ DRZ_fascism_DEF: "Друзское государство" #NT!
+ DRZ_democratic: "Республика Друзы" #NT!
+ DRZ_democratic_DEF: "Республика Друзы" #NT!
+ DRZ_neutrality: "Республика Друзы" #NT!
+ DRZ_neutrality_DEF: "Республика Друзы" #NT!
+ DRZ_communism: "Социалистическое государство друзов" #NT!
+ DRZ_communism_DEF: "Социалистическое государство друзов" #NT!
+ DRZ_fascism_ADJ: "Друзы" #NT!
+ DRZ_democratic_ADJ: "Друзы" #NT!
+ DRZ_neutrality_ADJ: "Друзы" #NT!
+ DRZ_communism_ADJ: "Друзы" #NT!
+ DRZ: "Друзы" #NT!
+ DRZ_DEF: "Друзы" #NT!
+ DRZ_ADJ: "Друзы" #NT!
+ PAL_fascism: "Джунд Палестина" #NT!
+ PAL_fascism_DEF: "Джунд Палестина" #NT!
+ PAL_democratic: "Палестина" #NT!
+ PAL_democratic_DEF: "Палестина" #NT!
+ PAL_neutrality: "Королевство Палестина" #NT!
+ PAL_neutrality_DEF: "Королевство Палестина" #NT!
+ PAL_communism: "Народная Социалистическая Палестина" #NT!
+ PAL_communism_DEF: "Народная Социалистическая Палестина" #NT!
+ PAL_fascism_ADJ: "палестинский" #NT!
+ PAL_democratic_ADJ: "палестинский" #NT!
+ PAL_neutrality_ADJ: "палестинский" #NT!
+ PAL_communism_ADJ: "палестинский" #NT!
+ PAL: "Палестина" #NT!
+ PAL_DEF: "Палестина" #NT!
+ PAL_ADJ: "палестинский" #NT!
+ ISR_fascism: "Израильский тоталитариат" #NT!
+ ISR_fascism_DEF: "израильский тоталитарный" #NT!
+ ISR_democratic: "Израиль" #NT!
+ ISR_democratic_DEF: "Израиль" #NT!
+ ISR_neutrality: "Израиль" #NT!
+ ISR_neutrality_DEF: "Израиль" #NT!
+ ISR_communism: "Левантийский союз" #NT!
+ ISR_communism_DEF: "Левантийский союз" #NT!
+ ISR_fascism_ADJ: "Израильский" #NT!
+ ISR_democratic_ADJ: "Израильский" #NT!
+ ISR_neutrality_ADJ: "Иерусалимец" #NT!
+ ISR_communism_ADJ: "Израильский" #NT!
+ ISR: "Израиль" #NT!
+ ISR_DEF: "Израиль" #NT!
+ ISR_ADJ: "Израильский" #NT!
+ IRQ_fascism: "Республика Ирак" #NT!
+ IRQ_fascism_DEF: "Республика Ирак" #NT!
+ IRQ_democratic: "Иракская Республика" #NT!
+ IRQ_democratic_DEF: "Иракская Республика" #NT!
+ IRQ_neutrality: "Королевство Ирак" #NT!
+ IRQ_neutrality_DEF: "Королевство Ирак" #NT!
+ IRQ_communism: "Иракское народное государство" #NT!
+ IRQ_communism_DEF: "Иракское Народное Государство" #NT!
+ IRQ_fascism_ADJ: "Иракский" #NT!
+ IRQ_democratic_ADJ: "Иракский" #NT!
+ IRQ_neutrality_ADJ: "Иракский" #NT!
+ IRQ_communism_ADJ: "Иракский" #NT!
+ IRQ: "Ирак" #NT!
+ IRQ_DEF: "Королевство Ирак" #NT!
+ IRQ_ADJ: "Иракский" #NT!
+ IRQ_subject: "$OVERLORDADJ$ $IRQ$" #NT!
+ IRQ_subject_DEF: "$OVERLORDADJ$ $IRQ$" #NT!
+ IRQ_GOLDEN_SQUARE_fascism: "Правительство национальной обороны" #NT!
+ IRQ_GOLDEN_SQUARE_fascism_DEF: "Правительство национальной обороны" #NT!
+ IRQ_GOLDEN_SQUARE_democratic: "Республика Золотого Квадрата" #NT!
+ IRQ_GOLDEN_SQUARE_democratic_DEF: "Республика Золотого Квадрата" #NT!
+ IRQ_GOLDEN_SQUARE_neutrality: "Золотой Квадрат Ирака" #NT!
+ IRQ_GOLDEN_SQUARE_neutrality_DEF: "Золотой Квадрат Ирака" #NT!
+ IRQ_GOLDEN_SQUARE_communism: "Круг семи" #NT!
+ IRQ_GOLDEN_SQUARE_communism_DEF: "Круг семи" #NT!
+ IRQ_GOLDEN_SQUARE_fascism_ADJ: "Иракский" #NT!
+ IRQ_GOLDEN_SQUARE_democratic_ADJ: "Иракский" #NT!
+ IRQ_GOLDEN_SQUARE_neutrality_ADJ: "Иракский" #NT!
+ IRQ_GOLDEN_SQUARE_communism_ADJ: "Иракский" #NT!
+ EGY_empire_fascism: "Египетская империя" #NT!
+ EGY_empire_neutrality: "Египетская империя" #NT!
+ EGY_empire_democratic: "Египетская империя" #NT!
+ EGY_empire_communism: "Египетская империя" #NT!
+ EGY_empire_fascism_DEF: "Египетская империя" #NT!
+ EGY_empire_neutrality_DEF: "Египетская империя" #NT!
+ EGY_empire_democratic_DEF: "Египетская империя" #NT!
+ EGY_empire_communism_DEF: "Египетская империя" #NT!
+ EGY_empire_fascism_ADJ: "Египетский" #NT!
+ EGY_empire_neutrality_ADJ: "Египетский" #NT!
+ EGY_empire_democratic_ADJ: "Египетский" #NT!
+ EGY_empire_communism_ADJ: "Египетский" #NT!
+ EGY_african_republic_fascism: "Африканская Республика" #NT!
+ EGY_african_republic_neutrality: "Африканская Республика" #NT!
+ EGY_african_republic_democratic: "Африканская Республика" #NT!
+ EGY_african_republic_communism: "Африканская Республика" #NT!
+ EGY_african_republic_fascism_DEF: "Африканская Республика" #NT!
+ EGY_african_republic_neutrality_DEF: "Африканская Республика" #NT!
+ EGY_african_republic_democratic_DEF: "Африканская Республика" #NT!
+ EGY_african_republic_communism_DEF: "Африканская Республика" #NT!
+ EGY_african_republic_fascism_ADJ: "Африканский" #NT!
+ EGY_african_republic_neutrality_ADJ: "Африканский" #NT!
+ EGY_african_republic_democratic_ADJ: "Африканский" #NT!
+ EGY_african_republic_communism_ADJ: "Африканский" #NT!
+ FOM_civil_war_democratic: "Свободный Египет" #NT!
+ FOM_civil_war_communism: "Свободный Египет" #NT!
+ FOM_civil_war_fascism: "Свободный Египет" #NT!
+ FOM_civil_war_neutrality: "Свободный Египет" #NT!
+ FOM_civil_war_democratic_DEF: "Свободный Египет" #NT!
+ FOM_civil_war_communism_DEF: "Свободный Египет" #NT!
+ FOM_civil_war_fascism_DEF: "Свободный Египет" #NT!
+ FOM_civil_war_neutrality_DEF: "Свободный Египет" #NT!
+ FOM_civil_war_democratic_ADJ: "Египетский" #NT!
+ FOM_civil_war_communism_ADJ: "Египетский" #NT!
+ FOM_civil_war_fascism_ADJ: "Египетский" #NT!
+ FOM_civil_war_neutrality_ADJ: "Египетский" #NT!
+ EGY_civil_war_democratic: "Королевство Египет" #NT!
+ EGY_civil_war_communism: "Королевство Египет" #NT!
+ EGY_civil_war_fascism: "Королевство Египет" #NT!
+ EGY_civil_war_neutrality: "Королевство Египет" #NT!
+ EGY_civil_war_democratic_DEF: "Королевство Египет" #NT!
+ EGY_civil_war_communism_DEF: "Королевство Египет" #NT!
+ EGY_civil_war_fascism_DEF: "Королевство Египет" #NT!
+ EGY_civil_war_neutrality_DEF: "Королевство Египет" #NT!
+ EGY_civil_war_democratic_ADJ: "Египетский" #NT!
+ EGY_civil_war_communism_ADJ: "Египетский" #NT!
+ EGY_civil_war_fascism_ADJ: "Египетский" #NT!
+ EGY_civil_war_neutrality_ADJ: "Египетский" #NT!
+ EGY_sultanate_of_egypt_democratic: "Султанат Египта" #NT!
+ EGY_sultanate_of_egypt_communism: "Султанат Египта" #NT!
+ EGY_sultanate_of_egypt_fascism: "Султанат Египта" #NT!
+ EGY_sultanate_of_egypt_neutrality: "Султанат Египта" #NT!
+ EGY_sultanate_of_egypt_democratic_DEF: "Султанат Египта" #NT!
+ EGY_sultanate_of_egypt_communism_DEF: "Султанат Египта" #NT!
+ EGY_sultanate_of_egypt_fascism_DEF: "Султанат Египта" #NT!
+ EGY_sultanate_of_egypt_neutrality_DEF: "Султанат Египта" #NT!
+ EGY_sultanate_of_egypt_democratic_ADJ: "Египетский" #NT!
+ EGY_sultanate_of_egypt_communism_ADJ: "Египетский" #NT!
+ EGY_sultanate_of_egypt_fascism_ADJ: "Египетский" #NT!
+ EGY_sultanate_of_egypt_neutrality_ADJ: "Египетский" #NT!
+ EGY_ottoman_empire_democratic: "Османская империя" #NT!
+ EGY_ottoman_empire_communism: "Османская империя" #NT!
+ EGY_ottoman_empire_fascism: "Османская империя" #NT!
+ EGY_ottoman_empire_neutrality: "Османская империя" #NT!
+ EGY_ottoman_empire_democratic_DEF: "Османская Империя" #NT!
+ EGY_ottoman_empire_communism_DEF: "Османская Империя" #NT!
+ EGY_ottoman_empire_fascism_DEF: "Османская Империя" #NT!
+ EGY_ottoman_empire_neutrality_DEF: "Османская Империя" #NT!
+ EGY_ottoman_empire_democratic_ADJ: "Османская" #NT!
+ EGY_ottoman_empire_communism_ADJ: "Османская" #NT!
+ EGY_ottoman_empire_fascism_ADJ: "Османская" #NT!
+ EGY_ottoman_empire_neutrality_ADJ: "Османская" #NT!

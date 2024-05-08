@@ -1,0 +1,61 @@
+#################
+#### BAYERN ####
+#################
+BAV_imminent_civil_war = {
+	priority = 10
+	icon = spr_the_seeds_of_revolution
+
+	picture = GFX_decision_cat_picture_spr_the_inevitable_civil_war
+	visible_when_empty = no
+	visible = {
+		OR = { 
+			has_idea = BAV_plot_against_the_commune
+			NOT = { country_exists = GER }
+		}
+	}
+	available = {
+		country_exists = GER
+	}
+	allowed = {
+		original_tag = BAV
+	}
+}
+BAV_reunification_category = {
+	icon = generic_operation
+	visible_when_empty = no
+	picture = GFX_decision_cat_generic_mefo_bills
+	available = {
+	BAV = { has_completed_focus = BAV_war_GER }
+	}
+	allowed = {
+		original_tag = BAV
+	}
+}
+BAV_generic_four_year_plan_category = {
+	priority = 9
+	icon = generic_operation
+	
+	picture = GFX_decision_cat_picture_soviet_national_academy_of_sciences
+	visible = {
+		AND = {
+			tag = BAV
+			has_completed_focus = BAV_five_year_plan
+		}
+	}
+	allowed = {
+		original_tag = BAV
+	}
+}
+BAV_expand_kommintern_category = {
+	icon = generic_operation
+	visible_when_empty = no
+	#picture = GFX_decision_cat_generic_mefo_bills
+	available = {
+	BAV = { has_completed_focus = BAV_seek_new_alliances }
+	}
+	allowed = {
+		original_tag = BAV
+	}
+}
+
+

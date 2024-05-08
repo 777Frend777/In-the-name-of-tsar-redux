@@ -1,0 +1,66 @@
+﻿capital = 617
+
+oob = "SIK_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	
+}
+
+set_politics = {
+	
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 10
+    neutrality = 50
+    fascism = 20 
+    communism = 0
+    socialist = 10
+    conservatives = 10
+}
+
+
+add_ideas = {
+SIK_chaos
+SIK_destroyed_economy
+SIK_turkic_unrest
+SIK_russian_pressure
+}
+
+create_country_leader = {
+	name = "Sheng Shicai"
+	desc = "POLITICS_SHENG_SHICAI_DESC"
+	picture = "gfx/leaders/SIK/Sheng_Shicai.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ma Zhongying"
+	desc = "POLITICS_MA_ZHONGYING_DESC"
+	picture = "gfx/leaders/SIK/mao_zhongying.dds"
+	expire = "1965.1.1"
+	ideology = fascism_subtype
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Ma Hu-shan"
+	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}

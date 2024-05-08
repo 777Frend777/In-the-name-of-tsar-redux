@@ -1,0 +1,47 @@
+Annex_TIB_category = {
+New_China1= {
+		icon = generic_construction
+
+		allowed = {
+		OR = { tag = CHI
+                                           tag = SHX
+                                           tag = PRC
+		}
+                                }
+
+		available = {
+			has_full_control_of_state = 322
+			has_full_control_of_state = 757
+			has_full_control_of_state = 758
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 30
+
+		modifier = {
+
+		}
+
+		visible = {
+		OR = {	tag = CHI
+			tag = SHX
+                                                tag = PRC
+		}
+                                }
+
+		remove_effect = {
+                                                 every_state = {
+                                                                limit = {  
+                                                                               is_core_of = TIB
+                                                                }
+                                                                add_core_of = ROOT
+                                                           }
+		}
+                                ai_will_do = {
+			base = 200
+                                }
+	}
+}

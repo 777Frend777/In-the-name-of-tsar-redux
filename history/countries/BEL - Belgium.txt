@@ -1,0 +1,172 @@
+﻿capital = 6
+
+oob = "BEL_1936"
+
+set_research_slots = 3
+set_stability = 0.72
+set_war_support = 0.05
+add_ideas = {
+        BEL_leopold
+		FRA_victors_of_wwi
+		BEL_wallonie_flanders_idea
+		BEL_unemployment_idea
+	}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	early_fighter = 1
+	trench_warfare = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	basic_train = 1
+}
+
+recruit_character = BEL_mcl_keyaerts
+recruit_character = BEL_georges_timmermans
+recruit_character = BEL_gilles_wyvekens
+recruit_character = BEL_fritz_conrad
+recruit_character = BEL_raoul_overstraeten
+recruit_character = BEL_georges_deffontaine
+recruit_character = BEL_victor_strydonck_burkel
+recruit_character = BEL_georges_vereecken
+recruit_character = BEL_jules_pire
+recruit_character = BEL_oscar_michiels
+recruit_character = BEL_charles_bastin
+recruit_character = BEL_yvan_gerard
+recruit_character = BEL_rene_lagrou
+recruit_character = BEL_fritz_lob
+recruit_character = BEL_jules_iserentant
+recruit_character = BEL_victor_van_strydonck_de_burkel
+recruit_character = BEL_paul-henri_spaak
+recruit_character = BEL_gaston_eyskens
+recruit_character = BEL_paul_van_zeeland
+
+
+
+
+set_politics = {
+	ruling_party = conservatives
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 16
+	conservatives = 28
+	fascism = 11
+	communism = 9
+	socialist = 30
+	neutrality = 6
+}
+
+
+set_convoys = 80
+set_variable = { var = BEL.rex_influence value = 3 }
+set_variable = { var = BEL.vnv_influence value = 3 }
+
+create_country_leader = {
+	name = "Emile Vandervelde"
+	desc = "POLITICS_EMILE_VANDERVELDE_DESC"
+	picture = "Emile_Vandervelde.dds"
+	expire = "1965.1.1"
+	ideology = socialist_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Hubert Pierlot"
+	desc = "POLITICS_HUBERT_PIERLOT_DESC"
+	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
+	expire = "1965.1.1"
+	ideology = democratic_subtype
+	traits = {
+		#
+	}
+}
+#create_country_leader = {
+#	name = "Léon Dens"
+#	desc = "POLITICS_HUBERT_PIERLOT_DESC"
+#	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
+#	expire = "1965.1.1"
+#	ideology = democratic_subtype
+#	traits = {
+#		#
+#	}
+#}
+create_country_leader = {
+	name = "Paul van Zeeland"
+	desc = "POLITICS_HUBERT_PIERLOT_DESC"
+	picture = "Paul_van_Zeeland.dds"
+	expire = "1965.1.1"
+	ideology = conservatives_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Staf De Clercq"
+	desc = "POLITICS_HUBERT_PIERLOT_DESC"
+	picture = "staft.dds"
+	expire = "1965.1.1"
+	ideology = neutrality_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Joseph Jacquemotte"
+	desc = "POLITICS_JOSEPH_JACQUEMOTTE_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = communism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Léon Degrelle"
+	desc = "POLITICS_LEON_DEGRELLE_DESC"
+	picture = "Leon_Degrelle.dds"
+	expire = "1965.1.1"
+	ideology = fascism_subtype
+	traits = {
+		#
+	}
+}
+create_corps_commander = {
+	name = "Jean Baptiste Piron"
+	picture = "Jean_Baptiste_Piron.dds"
+	traits = {  }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Victor van Strydonck de Burkul"
+	picture = "belgian_general_2.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Maurice Keyaerts"
+	picture = "belgian_general_3.dds"
+	traits = { ranger }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}

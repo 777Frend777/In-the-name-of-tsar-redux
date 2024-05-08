@@ -1,0 +1,49 @@
+#Add to scripted triggers if more levels of hyper inflation is added
+
+
+RMN_japanese_fall = {
+	if = {
+		limit = { has_idea = RMN_japanese_down }
+		modify_timed_idea = {
+			idea = RMN_japanese_down
+			days = 50
+		}
+	}
+	else = {
+		add_timed_idea = {
+			idea = RMN_japanese_down
+			days = 50
+		}
+	}
+}
+RMN_japanese_rise = {
+	if = {
+		limit = { has_idea = RMN_japanese_up }
+		modify_timed_idea = {
+			idea = RMN_japanese_up
+			days = 50
+		}
+	}
+	else = {
+		add_timed_idea = {
+			idea = RMN_japanese_up
+			days = 50
+		}
+	}
+}
+is_chinese_tag = {
+	custom_trigger_tooltip = {
+		tooltip = is_chinese_tag
+		OR = {
+			original_tag = SHX
+			original_tag = CHI
+			original_tag = SCH
+			original_tag = YUN
+			original_tag = PRC
+			original_tag = SIK
+			original_tag = XSM
+			original_tag = RMN
+			original_tag = MAN
+		}
+	}
+}

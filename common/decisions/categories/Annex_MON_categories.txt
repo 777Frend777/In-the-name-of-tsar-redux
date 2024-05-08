@@ -1,0 +1,3 @@
+Annex_MON_category = {
+	icon = generic_civil_support
+}

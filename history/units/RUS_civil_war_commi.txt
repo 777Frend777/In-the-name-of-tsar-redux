@@ -1,0 +1,263 @@
+﻿division_template = {
+	name = "Narodnaya Militsiya"
+	#is_locked = yes
+	division_names_group = RUS_POL_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "1ya Narodnaya Militsiya"
+		location = 9452  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "2ya Narodnaya Militsiya"
+		location = 11466 
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "3ya Narodnaya Militsiya"
+		location = 9544
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "4ya Narodnaya Militsiya"
+		location = 290 
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "5ya Narodnaya Militsiya"
+		location = 11247 
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "6ya Narodnaya Militsiya"
+		location = 318 
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "7ya Narodnaya Militsiya"
+		location = 6359  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "8ya Narodnaya Militsiya"
+		location = 9304  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "9ya Narodnaya Militsiya"
+		location = 11341  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "10ya Narodnaya Militsiya"
+		location = 3759   
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "11ya Narodnaya Militsiya"
+		location = 11313  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "12ya Narodnaya Militsiya"
+		location = 215  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "13ya Narodnaya Militsiya"
+		location = 9554  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "14ya Narodnaya Militsiya"
+		location = 6556  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "15ya Narodnaya Militsiya"
+		location = 11453  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "16ya Narodnaya Militsiya"
+		location = 3507 
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "17ya Narodnaya Militsiya"
+		location = 9249  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "18ya Narodnaya Militsiya"
+		location = 9288  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "19ya Narodnaya Militsiya"
+		location = 9342  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "20ya Narodnaya Militsiya"
+		location = 11229  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "21ya Narodnaya Militsiya"
+		location = 315  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "22ya Narodnaya Militsiya"
+		location = 343  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "23ya Narodnaya Militsiya"
+		location = 288  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "24ya Narodnaya Militsiya"
+		location = 6330 
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "25ya Narodnaya Militsiya"
+		location = 6386  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "26ya Narodnaya Militsiya"
+		location = 6355 
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "27ya Narodnaya Militsiya"
+		location = 9328  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "28ya Narodnaya Militsiya"
+		location = 11310  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "29ya Narodnaya Militsiya"
+		location = 11283  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "30ya Narodnaya Militsiya"
+		location = 302 
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "31ya Narodnaya Militsiya"
+		location = 3921  
+		division_template = "Narodnaya Militsiya"
+	} #To fill the gaps 
+	division = {
+		name = "32ya Narodnaya Militsiya"
+		location = 9273  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "33ya Narodnaya Militsiya"
+		location = 314 
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "34ya Narodnaya Militsiya"
+		location = 11258  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "35ya Narodnaya Militsiya"
+		location = 3302
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "36ya Narodnaya Militsiya"
+		location = 11363  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "37ya Narodnaya Militsiya"
+		location = 6284 
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "38ya Narodnaya Militsiya"
+		location = 3322 
+		division_template = "Narodnaya Militsiya"
+	} #To fill the gaps 
+	division = {
+		name = "39ya Narodnaya Militsiya"
+		location = 345  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "40ya Narodnaya Militsiya"
+		location = 3269  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "41ya Narodnaya Militsiya"
+		location = 11373  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "42ya Narodnaya Militsiya"
+		location = 286  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "43ya Narodnaya Militsiya"
+		location = 3196  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "44ya Narodnaya Militsiya"
+		location = 3372  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "45ya Narodnaya Militsiya"
+		location = 6394  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "46ya Narodnaya Militsiya"
+		location = 9365 
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "47ya Narodnaya Militsiya"
+		location = 9391  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "48ya Narodnaya Militsiya"
+		location = 365  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "49ya Narodnaya Militsiya"
+		location = 497  
+		division_template = "Narodnaya Militsiya"
+	}
+	division = {
+		name = "50ya Narodnaya Militsiya"
+		location = 9445  
+		division_template = "Narodnaya Militsiya"
+	}
+}

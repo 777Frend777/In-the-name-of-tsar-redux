@@ -1,0 +1,21 @@
+##### Division Templates #####					
+
+### Air Wings
+air_wings = {
+	
+
+	# MVO Aviatsya Komandovaniya
+	219 = {
+		# 2ya Istrebitel'nye Aviabrigada
+		# 3ya Dal'nyaya Bombardirovochnye Aviabrigada
+		# 13ya Dal'nyaya Bombardirovochnye Aviabrigada
+		strat_bomber_equipment_1 =  {
+			owner = "RUS" 
+			amount = 75
+		}
+		# TODO -- 46ya Transporta Aviabrigada -- transport planes
+	}
+}
+
+
+	#####################

@@ -1,0 +1,70 @@
+﻿capital = 608
+
+oob = "SHX_1936"
+
+set_stability = 0.5
+set_war_support = 0.4
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+add_ideas = {
+	CHI_risk_of_famine
+	SHX_Lost_mandate
+	SHX_allied_debt
+	unequal_treaties
+}
+
+recruit_character = SHX_zhang_shen
+recruit_character = SHX_luo_zhao
+recruit_character = SHX_liao_ting
+recruit_character = SHX_cheng_zhao
+recruit_character = SHX_ma_tian
+recruit_character = SHX_zhu_ting
+recruit_character = SHX_wang_li_sun
+recruit_character = SHX_min_lan_tung_tin
+recruit_character = SHX_tan_fang
+recruit_character = SHX_huang_peng
+recruit_character = SHX_peng_dong
+recruit_character = SHX_kong_fang
+recruit_character = SHX_yang_lu
+recruit_character = SHX_sun_li
+recruit_character = SHX_wang_zuanxu
+recruit_character = SHX_fu_zuoyi
+recruit_character = SHX_qu_yangke
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 40
+	socialist = 11
+	democratic = 20
+	fascism = 15
+	conservatives = 5
+	communism = 9
+}
+create_country_leader = {
+	name = "Aisin Gioro Puyi"
+	picture = "portrait_man_henry_pu_yi.dds"
+	expire = "1960.1.1"
+	ideology = neutrality_subtype
+	traits = {
+		warrior_code
+	}
+}
+
+create_corps_commander = {
+	name = "Wang Jingguo"
+	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+	traits = { politically_connected }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}

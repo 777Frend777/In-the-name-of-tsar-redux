@@ -1,0 +1,329 @@
+ideas = {
+
+	country = {
+		Jews_Security = {
+			picture = jewish_faith
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				
+				resistance_damage_to_garrison = -0.1
+				foreign_subversive_activites = -0.4
+				
+			}
+		}
+		Jews_Builder = {
+			picture = jewish_faith
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				
+			}
+		}
+
+		Jews_investor = {
+			picture = jewish_faith
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.07
+				
+			}
+		}
+		Jews_patience = {
+			picture = jewish_faith
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+			}
+		}
+		Jews_patience2 = {
+			picture = jewish_faith
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.1
+			}
+		}
+		Jews_Justice = {
+			picture = jewish_faith
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		Jews_Diplomacy = {
+			picture = jewish_faith
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				improve_relations_maintain_cost_factor = -0.5
+			}
+		}
+		Jewish_Bank2 = {
+			picture = jewish_faith
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.10
+			}
+		}
+		
+		Jewish_Youth = {
+			picture = jewish_faith
+			name = "Jewish Youth"
+			allowed = {
+				always = no
+			}
+			available = {
+				has_completed_focus = ISR_Youth
+			}
+			removal_cost = -1
+			modifier = {
+				recruitable_population = 0.05
+			}
+		}
+
+		Fascism = {
+			picture = generic_fascism_drift_bonus
+			allowed = {
+				always = no
+			}
+			available = { 
+				has_completed_focus = ISR_fascism
+			}
+			removal_cost = -1
+			modifier = {
+				fascism_acceptance = 50
+				fascism_drift = 0.10
+			}
+		}
+		Democracy = {
+			picture = generic_democratic_drift_bonus
+			allowed = {
+				always = no
+			}
+			available = { 
+				has_completed_focus = ISR_Democ_Democracy
+			}
+			removal_cost = -1
+			modifier = {
+				democratic_acceptance = 50
+				democratic_drift = 0.10
+			}
+		}
+		Communism = {
+			picture = generic_communism_drift_bonus
+			allowed = {
+				always = no
+			}
+			available = { 
+				has_completed_focus = ISR_communist
+				
+			}
+
+			removal_cost = -1
+			modifier = {
+				communism_acceptance = 50
+				communism_drift = 0.10
+			}
+		}
+		Non_alig = {
+			picture = idea_MEX_church_power_5
+			allowed = {
+				always = no
+			}
+			available = { 
+				has_completed_focus = ISR_Nonalig
+				
+			}
+
+			removal_cost = -1
+			modifier = {
+				neutrality_acceptance = 50
+				neutrality_drift = 0.10
+			}
+		}
+
+		Jewish_Bank = {
+			picture = jewish_faith
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.20
+			}
+		}
+		Jews_Army = {
+			picture = generic_manpower_bonus
+			allowed = {
+				always = no
+			}
+			available = { 
+				has_completed_focus = ISR_Jews_Rising
+			}
+			removal_cost = 10
+			
+			modifier = {
+				#local_non_core_manpower = 0.4
+				#recruitable_population_factor = 0.3
+				#recruitable_population = 0.03
+				weekly_manpower = 10000
+				#consumer_goods_factor = -0.07
+
+				
+			}
+		}
+	
+		ISR_neutrality_act = {
+			picture = neutrality_idea
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = 10
+			
+			modifier = {
+				join_faction_tension = 0.25
+				send_volunteers_tension = 0.5
+				guarantee_tension = 0.5
+				embargo_threshold_factor = 1.5
+			}
+		}
+		Israel_Remember_The_History ={
+			picture = jewish_faith
+			allowed = {
+				always = no
+			}
+			available = { 
+				has_completed_focus = ISR_army_innovation
+			}
+			allowed_civil_war = {
+				has_government = democratic
+				
+			}
+			removal_cost = 10
+			
+			modifier = {army_core_attack_factor = 0.2}
+			modifier = {army_core_defence_factor = 0.2}
+		}
+		Iron_Faith ={
+			picture = jewish_faith
+			name = "Iron Faith"
+			allowed = {
+				always = no
+			}
+			available = { 
+				has_completed_focus = ISR_Infantry4
+			}
+			allowed_civil_war = {
+				
+				
+			}
+			removal_cost = 10
+			
+			modifier = {army_attack_factor = 0.1}
+			modifier = {army_defence_factor = 0.1}
+		}
+		Economic_Grow_Up ={
+			allowed = {always = yes}
+			picture = generic_economic_increase
+			modifier = {industrial_capacity_factory = 0.10}
+			modifier = {industrial_capacity_dockyard = 0.10}
+		}
+        Coca_Cola ={
+			
+			allowed = {always = yes}
+			picture = Coca_Cola
+			modifier = {
+ 				industrial_concern_cost_factor = -0.35
+ 				tank_manufacturer_cost_factor = -0.15
+ 				materiel_manufacturer_cost_factor = -0.15
+ 				aircraft_manufacturer_cost_factor = -0.15
+ 				naval_manufacturer_cost_factor = -0.15
+				production_speed_buildings_factor = 0.10
+ 			}
+		}
+		
+
+
+	
+		aircraft_manufacturer = {
+				
+			
+			vef = {
+				picture = generic_air_manufacturer_1
+	
+				
+				allowed = {
+					original_tag = ISR
+				}
+				
+				research_bonus = {
+					air_equipment = 0.15
+				}
+				
+				traits = { light_aircraft_manufacturer }
+				
+				equipment_bonus = {
+					# made light bombers, fighters and trainers
+				}
+				
+				ai_will_do = {
+					factor = 1
+				}
+			}
+		}
+	
+		naval_manufacturer = {
+			
+			
+			generic_naval_manufacturer = {
+				picture = generic_naval_manufacturer_2
+	
+				
+				allowed = {
+					original_tag = ISR
+				}
+				
+				research_bonus = {
+					naval_equipment = 0.15
+				}
+				
+				equipment_bonus = {
+					# mer research
+				}
+				
+				traits = { naval_manufacturer }
+				
+				modifier = {
+				}
+			}
+		}
+	}
+}

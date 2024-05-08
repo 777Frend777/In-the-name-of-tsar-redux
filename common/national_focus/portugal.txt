@@ -1,0 +1,3108 @@
+focus_tree = { 
+	id = Portugal
+	country = { 
+	factor = 0 
+	modifier = { 
+	add = 10 
+	tag = POR 
+	} 
+	} 
+	#Focus for Naval Modernisation
+	focus = { 
+	id = POR_navalmodernisation
+	icon = GFX_goal_generic_occupy_states_coastal
+	x = 67
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_expanddockyardfacilities } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_ideas = POR_galleons
+	 } 
+	 } 
+	
+	#Focus for Propose Iberian Unification
+	focus = { 
+	id = POR_proposeiberianunification
+	icon = GFX_goal_tripartite_pact
+	x = 45
+	y = 9
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_restorethesavoys focus = POR_supportprincejuan focus = POR_restorealfonsoxiii  } 
+	mutually_exclusive = { focus = POR_establishtheiberianfront } 
+	ai_will_do = { 
+	 factor = 0
+	 } 
+	 completion_reward = {
+	 SPR = {  
+	 country_event = { id = portu.45 days = 1 }
+	 }
+	 }
+	 } 
+	
+	#Focus for Restore Alfonso XIII
+	focus = { 
+	id = POR_restorealfonsoxiii
+	icon = GFX_focus_por_alf
+	x = 41
+	y = 8
+	cost = 8
+	available = { 
+	SPR = { neutrality > 0.45 } 
+	}
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_monarchistspain } 
+	mutually_exclusive = { focus = POR_supportprincejuan } 
+	mutually_exclusive = { focus = POR_restorethesavoys } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 SPR = {
+	 set_politics = {
+		ruling_party = neutrality
+	 }
+	 create_country_leader = {
+			name = "Alfonso XIII"
+			desc = "POLITICS_ALEJANDRO_LERROUX_DESC"
+			picture = "alfonsoxiii.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+	 }
+	
+	 }
+	
+	 } 
+	 } 
+	
+	#Focus for Establish The Iberian Front
+	focus = { 
+	id = POR_establishtheiberianfront
+	icon = GFX_goal_anschluss
+	x = 47
+	y = 9
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_restorealfonsoxiii focus = POR_supportprincejuan focus = POR_restorethesavoys focus = POR_generalfrancoscoup } 
+	mutually_exclusive = { focus = POR_proposeiberianunification  }ai_will_do = { 
+	 factor = 0
+	 } 
+	 completion_reward = {
+	 create_faction = IberianFront
+	 POR = { add_to_faction = SPR }
+	 }
+	 } 
+	
+	#Focus for Domestic Investments
+	focus = { 
+	id = POR_domesticinvestments
+	icon = GFX_goal_generic_construction2
+	x = 3
+	y = 0
+	cost = 8
+	available_if_capitulated = yes 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_ideas = POR_domestic_goods
+	 add_tech_bonus = {
+		bonus = 1.0
+		uses = 1
+		category = industry
+	 }
+	 }
+	 } 
+	
+	#Focus for Develop Infrastructure
+	focus = { 
+	id = POR_developinfrastructure
+	icon = GFX_goal_generic_construct_infrastructure
+	x = 1
+	y = 1
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_domesticinvestments } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {	
+	 179 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+	 }	
+	 180 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+	 }
+	 }
+	 } 
+	
+	#Focus for Improve Military Sector
+	focus = { 
+	id = POR_improvemilitarysector
+	icon = GFX_goal_generic_construct_mil_factory
+	x = 6
+	y = 2
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_developfactories } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	179 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = arms_factory
+								level = 2
+								instant_build = yes
+							}
+						}
+	}
+	} 
+	}
+	
+	#Focus for Develop Factories
+	focus = { 
+	id = POR_developfactories
+	icon = GFX_focus_generic_industry_3
+	x = 5
+	y = 1
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_domesticinvestments } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 112 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+	 }
+	 698 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+	 }
+	 }
+	 } 
+	
+	#Focus for Domestic Infrastructure
+	focus = { 
+	id = POR_domesticinfrastructure
+	icon = GFX_goal_generic_construct_civilian
+	x = 0
+	y = 2
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_developinfrastructure } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	  112 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+	 }
+	 }
+	 } 
+	
+	#Focus for Domestic Mining Effort
+	focus = { 
+	id = POR_domesticminingeffort
+	icon = GFX_goal_generic_construction2
+	x = 2
+	y = 2
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_developinfrastructure } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	  181 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+	 }
+	 add_resource = {
+		type = tungsten
+		amount = 15
+		state = 181
+	 }
+	 }
+	 } 
+	
+	#Focus for New Mining Technologies
+	focus = { 
+	id = POR_newminingtechnologies
+	icon = GFX_focus_generic_steel
+	x = 1
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_domesticminingeffort } 
+	prerequisite = { focus = POR_domesticinfrastructure } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_ideas = POR_mining_upgrades
+	 add_tech_bonus = {
+		bonus = 1.0
+		uses = 1
+		category = excavation_tech
+	 }
+	 }
+	 } 
+	
+	#Focus for Improve Civilian Sector
+	focus = { 
+	id = POR_improveciviliansector
+	icon = GFX_goal_generic_construct_civ_factory
+	x = 4
+	y = 2
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_developfactories } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	181 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = industrial_complex
+								level = 2
+								instant_build = yes
+							}
+						}
+	 }
+	 180 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+	 }
+	 179 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+	 }
+	 } 
+	 }
+	
+	#Focus for New Construction Techniques
+	focus = { 
+	id = POR_newconstructiontechniques
+	icon = GFX_focus_generic_the_giant_wakes
+	x = 5
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_improveciviliansector } 
+	prerequisite = { focus = POR_improvemilitarysector } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_ideas = POR_new_construction
+	 } 
+	 }
+	
+	#Focus for Fund Additional Research
+	focus = { 
+	id = POR_fundadditionalresearch
+	icon = GFX_focus_research2
+	x = 3
+	y = 4
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_newminingtechnologies } 
+	prerequisite = { focus = POR_newconstructiontechniques } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+		   add_research_slot = 1	
+	 }
+	 } 
+	
+	#Focus for Colonial Reforms
+	focus = { 
+	id = POR_colonialreforms
+	icon = GFX_focus_por_decol
+	x = 9
+	y = 0
+	cost = 8
+	available = {
+	NOT = { has_government = conservatives }
+	NOT = { has_government = neutrality }
+	NOT = { has_government = fascism }
+	}
+	available_if_capitulated = yes 
+	mutually_exclusive = { focus = POR_colonialexpansion } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_stability = -0.1
+	 hidden_effect = { country_event = { id = portu.1 days = 1 } }
+	 }
+	 } 
+	
+	#Focus for Colonial Expansion
+	focus = { 
+	id = POR_colonialexpansion
+	icon = GFX_focus_por_colonies
+	x = 16
+	y = 0
+	available = {
+	NOT = { has_government = democratic }
+	NOT = { has_government = socialist }
+	NOT = { has_government = communism }
+	OR = {
+		has_completed_focus = POR_militarytakeover
+		has_completed_focus = POR_restorationofthemonarchy
+		has_completed_focus = POR_conservativemajority
+	}
+	}
+	cost = 8
+	available_if_capitulated = yes 
+	mutually_exclusive = { focus = POR_colonialreforms } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	
+	 } 
+	
+	#Focus for Establish Colonial Autonomy
+	focus = { 
+	id = POR_establishcolonialautonomy
+	icon = GFX_focus_por_auto
+	x = 9
+	y = 1
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_colonialreforms } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_stability = 0.025
+	 remove_ideas = POR_col_benefits 
+	 release_puppet = ANG
+	 release_puppet = MZB
+	 release_puppet = GNB
+	 } 
+	 }
+	
+	#Focus for Develop Angola
+	focus = { 
+	id = POR_developangola
+	icon = GFX_focus_por_angola
+	x = 8
+	y = 2
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_establishcolonialautonomy } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 540 = {
+	 add_extra_state_shared_building_slots = 2
+	 add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+	 }
+	 }
+	 } 
+	 } 
+	
+	#Focus for Restore Our Rule To Uruguay
+	focus = { 
+	id = POR_restoreourruletouruguay
+	icon = GFX_focus_por_uruguay
+	x = 16
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_colonialconquest } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 create_wargoal = {
+		type = annex_everything
+		 target = URG
+	 }
+	 }
+	 } 
+	
+	#Focus for Develop Mozambique
+	focus = { 
+	id = POR_developmozambique
+	icon = GFX_focus_por_mozam
+	x = 10
+	y = 2
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_establishcolonialautonomy } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 540 = {
+	 add_extra_state_shared_building_slots = 2
+	 add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+	 }
+	 }
+	 } 
+	 } 
+	
+	#Focus for Establish the Portuguese Coalition
+	focus = { 
+	id = POR_establishtheportuguesecoalition
+	icon = GFX_focus_por_col
+	x = 9
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_developangola } 
+	prerequisite = { focus = POR_developmozambique } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 POR = {
+	 give_guarantee = ANG
+	 give_guarantee = MZB
+	 give_guarantee = GNB
+	 }
+	 create_faction = PortugueseProtectionAlliance
+	 }
+	 } 
+	
+	#Focus for Formalise Colonial Independence
+	focus = { 
+	id = POR_formalisecolonialindependence
+	icon = GFX_goal_support_democracy
+	x = 9
+	y = 4
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_establishtheportuguesecoalition } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_stability = 0.1
+	 POR = {
+	 release = ANG
+	 release = MZB
+	 release = GNB
+	 }
+	 }
+	 } 
+	
+	#Focus for Further Colonial Intergration
+	focus = { 
+	id = POR_furthercolonialintergration
+	icon = GFX_focus_CZE_german_puppet
+	x = 18
+	y = 1
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_colonialexpansion } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 swap_ideas = {
+		remove_idea = POR_col_benefits
+		add_idea = POR_col_benefits_1
+	 }
+	 }
+	 } 
+	
+	#Focus for Colonial Resources
+	focus = { 
+	id = POR_colonies_resources
+	icon = GFX_focus_generic_rubber
+	x = 18
+	y = 2
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_furthercolonialintergration } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_resource = {
+		type = rubber
+		amount = 4
+		state = 296
+	 }
+	 add_resource = {
+		type = rubber
+		amount = 9
+		state = 540
+	 }
+	
+	 }
+	 } 
+	
+	#Focus for Colonial Labor
+	focus = { 
+	id = POR_colonial_labor
+	icon = GFX_goal_generic_secret_weapon
+	x = 18
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_colonies_resources } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_stability = -0.1
+	 540 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = industrial_complex
+								level = 2
+								instant_build = yes
+							}
+						}
+	 }
+	 544 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = industrial_complex
+								level = 2
+								instant_build = yes
+							}
+						}
+	 }
+	 }  
+	 } 
+	
+	 #Focus for Modernization of Colonies
+	focus = { 
+	id = POR_modern_colonies
+	icon = GFX_goal_generic_construction
+	x = 18
+	y = 4
+	cost = 14.3
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_colonial_labor } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_stability = -0.05
+	 540 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						 }
+	 }
+	 }
+	 544 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						 }
+	 }
+	 }
+	 296 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						 }
+	 }
+	 }
+	 702 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+							}
+							add_building_construction = {
+							type = naval_base
+							level = 2
+							instant_build = yes
+							}
+	 }
+	 }
+	 721 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						 }
+	 }
+	 }
+	 }
+	 }
+	
+	  #Focus for Colonieas are part of the State
+	focus = { 
+	id = POR_colonies_state
+	icon = GFX_focus_generic_support_the_left_right
+	x = 18
+	y = 5
+	cost = 20
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_modern_colonies } 
+	ai_will_do = { 
+	 factor = 1
+	 }
+	 completion_reward = {
+	 add_stability = -0.2
+	 add_state_core  = 702
+	 add_state_core  = 296
+	 add_state_core  = 540
+	 add_state_core  = 544
+	 add_state_core  = 321
+	 add_state_core  = 721
+	 }
+	 }
+	
+	#Focus for Colonial Purchases
+	focus = { 
+	id = POR_colonialpurchases
+	icon = GFX_focus_usa_reestablish_the_gold_standard
+	x = 13
+	y = 2
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_colonialconquest } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_ideas = POR_diplo
+	 } 
+	 } 
+	
+	#Focus for Colonial Conquest
+	focus = { 
+	id = POR_colonialconquest
+	icon = GFX_goal_generic_position_armies
+	x = 14
+	y = 1
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_colonialexpansion } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_war_support = 0.05
+	 }
+	 } 
+	
+	#Focus for Purchase Lesser Sunda
+	focus = { 
+	id = POR_purchaselessersunda
+	icon = GFX_focus_por_sunda
+	x = 12
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	available = {
+	INS = { controls_state = 667 }
+	}
+	prerequisite = { focus = POR_colonialpurchases } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 HOL = { country_event = { id = portu.8 days = 1 } }
+	 }
+	 }  
+	
+	#Focus for Purchase the Spanish Sahara
+	focus = { 
+	id = POR_purchasethespanishsahara
+	icon = GFX_focus_por_sahara
+	x = 14
+	y = 3
+	cost = 5
+	available_if_capitulated = yes 
+	available = {
+	SPR = { controls_state = 297 }
+	}
+	prerequisite = { focus = POR_colonialpurchases } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 SPR = { country_event = { id = portu.11 days = 1 } }
+	 } 
+	 } 
+	
+	#Focus for Purchase British Rhodesia
+	focus = { 
+	id = POR_purchasebritishrhodesia
+	icon = GFX_focus_eng_decolonization
+	x = 12
+	y = 4
+	cost = 8
+	available = {
+	ENG = {
+	controls_state = 545
+	controls_state = 771	
+	has_war = yes
+	}
+	}
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_purchaselessersunda } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 custom_effect_tooltip = POR_pink_dream
+	 } 
+	 }
+	
+	#Focus for Purchase Kongo
+	focus = { 
+	id = POR_reshape_congo
+	icon = GFX_focus_por_kongo
+	x = 14
+	y = 4
+	cost = 8
+	available_if_capitulated = yes
+	available = {
+	OR = {
+	threat > 0.6
+	BEL = { has_war = yes }
+	} 
+	}
+	prerequisite = { focus = POR_colonialpurchases } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 ENG = { country_event = { id = portu.14 days = 1 } }
+	 } 
+	 }
+	
+	#Focus for Restore Our Rule To Brazil
+	focus = { 
+	id = POR_restoreourruletobrazil
+	icon = GFX_focus_por_brazil
+	x = 16
+	y = 2
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_colonialconquest } 
+	ai_will_do = { 
+	factor = 1
+	} 
+	completion_reward = {
+	add_war_support = 0.1
+	create_wargoal = {
+		type = annex_everything
+		target = BRA
+	}
+	} 
+	}
+	 
+	
+	#Focus for Restoration of the Monarchy
+	focus = { 
+	id = POR_restorationofthemonarchy
+	icon = GFX_focus_generic_home_defense
+	x = 43
+	y = 2
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_removesalazar } 
+	mutually_exclusive = { focus = POR_militarytakeover } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	completion_reward = { 
+	set_cosmetic_tag = POR_MON
+	country_event= {
+	days = 1 
+	id = portu.3 
+	}
+	set_politics= {
+	ruling_party = neutrality
+	elections_allowed = no 
+	}
+	create_country_leader = {
+		name = "King Manuel II"
+		desc = "POLITICS_ANTÓNIO_DE_OLIVEIRA_SALAZAR_DESC"
+		picture = "GFX_manuel.dds"
+		expire = "1965.1.1"
+		ideology = despotism
+		traits = {
+	
+		}
+	}
+	set_party_name= { 
+	ideology = neutrality
+	long_name = POR_king 
+	name = POR_king  
+	}
+	add_stability = 0.2
+	add_popularity= { ideology = neutrality popularity = 0.5 }
+	hidden_effect = { 
+	country_event = { id = portu.48 days = 1095 } 
+	country_event = { id = portu.6 days = 250 } }
+	} 
+	} 
+	
+	#Focus for Democratize The Estado Novo
+	focus = { 
+	id = POR_democratizetheestadonovo
+	icon = GFX_goal_support_democracy
+	x = 30
+	y = 0
+	cost = 8
+	available_if_capitulated = yes 
+	mutually_exclusive = { focus = POR_usemilitaryforce } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	completion_reward = { 
+	set_politics= {
+	 ruling_party = conservatives 
+	elections_allowed = yes 
+	}
+	remove_ideas= POR_democratisation
+	add_popularity= { 
+	ideology = conservatives 
+	popularity = 0.3 
+	}
+	add_popularity= { 
+	ideology = democratic
+	popularity = 0.1
+	}
+	add_popularity= { 
+	ideology = neutrality 
+	popularity = -0.4 
+	}
+	add_popularity= { 
+	ideology = communism
+	popularity = 0.1
+	}
+	hidden_effect = { country_event = { id = portu.2 days = 1 } }
+	hidden_effect = { country_event = { id = portu.39 days = 10 } }
+	 } 
+	
+	 } 
+	
+	#Focus for 1937 General Election
+	focus = { 
+	id = POR_1937generalelection
+	icon = GFX_focus_por_ele
+	x = 30
+	y = 1
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_democratizetheestadonovo } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	
+	 } 
+	
+	#Focus for Liberal Majority
+	focus = { 
+	id = POR_liberalmajority
+	icon = GFX_focus_bel_liberal
+	x = 33
+	y = 2
+	cost = 8
+	available = {
+	has_government = democratic
+	}
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_1937generalelection } 
+	mutually_exclusive = { focus = POR_conservativemajority focus = POR_liberalmajority  focus = POR_syndicalistmajority  }
+	ai_will_do = { 
+	 factor = 1
+	}
+	completion_reward= {  
+	} 
+	}
+	
+	#Focus for Conservative Majority
+	focus = { 
+	id = POR_conservativemajority
+	icon = GFX_focus_bel_catholic
+	x = 37
+	y = 2
+	cost = 8
+	available = {
+	has_country_flag = election_winner
+	}
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_1937generalelection } 
+	mutually_exclusive = { focus = POR_liberalmajority focus = POR_syndicalistmajority  }
+	 ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward= {  
+	 } 
+	 } 
+	
+	#Focus for Syndicalist Majority
+	focus = { 
+	id = POR_syndicalistmajority
+	icon = GFX_focus_por_com
+	x = 25
+	y = 2
+	cost = 8
+	available = {
+	has_government = communism
+	}
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_1937generalelection } 
+	mutually_exclusive = { focus = POR_liberalmajority focus = POR_conservativemajority }
+	 ai_will_do = { 
+	 factor = 1
+	 } 
+	completion_reward = { 
+	 } 
+	 } 
+	
+	#Focus for Military Takeover
+	focus = { 
+	id = POR_militarytakeover
+	icon = GFX_focus_generic_little_entente
+	x = 45
+	y = 2
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_removesalazar } 
+	mutually_exclusive = { focus = POR_restorationofthemonarchy } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	completion_reward = { 
+	add_stability = 0.1
+	set_party_name= { 
+	ideology = neutrality
+	long_name = POR_milit 
+	name = POR_milit  
+	}
+	set_politics= {
+	 ruling_party = neutrality
+	elections_allowed = no 
+	}
+	add_popularity= { 
+	ideology = neutrality
+	popularity = 0.6 
+	}
+	 } 
+	
+	 } 
+	
+	#Focus for Use Military Force
+	focus = { 
+	id = POR_usemilitaryforce
+	icon = GFX_goal_generic_small_arms
+	x = 44
+	y = 0
+	cost = 8
+	available_if_capitulated = yes 
+	mutually_exclusive = { focus = POR_democratizetheestadonovo } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	completion_reward = { 
+	remove_ideas= POR_Democratisation
+	add_stability= -0.15
+	 } 
+	
+	 } 
+	
+	#Focus for Remove Salazar
+	focus = { 
+	id = POR_removesalazar
+	icon = GFX_focus_por_salazar
+	x = 44
+	y = 1
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_usemilitaryforce } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	completion_reward = { 
+	kill_country_leader= yes
+	add_stability= -0.1
+	create_country_leader = {
+		name = "Óscar Carmona"
+		desc = "POLITICS_FRANSISCO_BARCELOS_ROLAO_PRETO_DESC"
+		picture = "GFX_carmona.dds"
+		expire = "1965.1.1"
+		ideology = despotism
+		traits = {
+			#
+		}
+	}
+	} 
+	} 
+	
+	#Focus for Restore A Constitutional Monarchy
+	focus = { 
+	id = POR_restoreaconstitutionalmonarchy
+	icon = GFX_goal_tfv_strengthen_commonwealth_ties
+	x = 37
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_conservativemajority } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = { 
+	 add_ideas = POR_manuel
+	 add_popularity = { 
+	 ideology = conservatives
+	 popularity = 0.05
+	 }
+	 } 
+	 } 
+	
+	#Focus for Royal University Of Lisbon
+	focus = { 
+	id = POR_royaluniversityoflisbon
+	icon = GFX_focus_research2
+	x = 39
+	y = 4
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_improvednationalunity focus = POR_restoreaconstitutionalmonarchy } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = { 
+	 add_research_slot = 1
+	 } 
+	 } 
+	
+	#Focus for Purge The Armed Forces
+	focus = { 
+	id = POR_purgethearmedforces
+	icon = GFX_goal_generic_secret_weapon
+	x = 44
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_militarytakeover focus = POR_restorationofthemonarchy } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = { 
+	 add_timed_idea = {
+		idea = POR_armed_purged
+		days = 350
+	 }
+	 hidden_effect = { 
+	 if = {
+		limit = {
+			has_government = neutrality
+		}
+	 country_event = { id = portu.7 days = 50 } }
+	 }
+	 
+	 } 
+	 } 
+	
+	#Focus for Improved National Unity
+	focus = { 
+	id = POR_improvednationalunity
+	icon = GFX_goal_generic_national_unity
+	x = 41
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_restorationofthemonarchy } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = { 
+	 add_stability = 0.15
+	 } 
+	 }
+	
+	#Focus for Suppress Political Opponents
+	focus = { 
+	id = POR_suppresspoliticalopponents
+	icon = GFX_focus_eng_move_to_secure_the_dominions
+	x = 45
+	y = 4
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_purgethearmedforces } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = { 
+	 add_ideas = POR_power
+	 add_stability = -0.05
+	 } 
+	 } 
+	
+	#Focus for Introduce Mass Conscription
+	focus = { 
+	id = POR_introducemassconscription
+	icon = GFX_goal_rhineland
+	x = 47
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_militarytakeover } 
+	prerequisite = {  focus = POR_armydevelopment } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = { 
+	 add_ideas = POR_conscription
+	 } 
+	 }  
+	
+	#Focus for Army Development
+	focus = { 
+	id = POR_armydevelopment
+	icon = GFX_focus_generic_combined_arms
+	x = 49
+	y = 1
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_militaryexpansion } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = { 
+	 army_experience = 10
+	 add_tech_bonus = {
+					name = land_doc_bonus
+					bonus = 1.0
+					uses = 2
+					category = land_doctrine
+	 }
+	 }
+	 } 
+	
+	#Focus for Re-integrate The Church & State
+	focus = { 
+	id = POR_reintegratethechurchstate
+	icon = GFX_goal_demand_sudetenland
+	x = 37
+	y = 4
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_restoreaconstitutionalmonarchy focus = POR_improvednationalunity } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	completion_reward = { 
+	 add_popularity = { 
+	 ideology = conservatives
+	 popularity = 0.05
+	 }
+	 add_ideas = POR_church
+	 }
+	 } 
+	
+	#Focus for State Atheism
+	focus = { 
+	id = POR_stateatheism
+	icon = GFX_focus_mex_triumph_over_the_cristeros
+	x = 24
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_syndicalistmajority } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = { 
+	 add_stability = -0.1
+	 add_ideas = POR_atheist
+	 }
+	 }  
+	
+	#Focus for Support Bavaria
+	focus = { 
+	id = POR_supportbavaria
+	icon = GFX_focus_chi_mission_to_the_soviet_union
+	x = 26
+	y = 4
+	cost = 5
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_supportrepublicanspain } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = { 
+	 BAV = {  
+	 add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 2500
+		producer = POR
+	 }
+	 }
+	 add_tech_bonus = {
+		bonus = 1.0
+		uses = 1
+		category = land_doctrine
+	 }
+	 }
+	 } 
+	
+	#Focus for Mass Employment Programs
+	focus = { 
+	id = POR_massemploymentprograms
+	icon = GFX_focus_YUG_pan_slavic_congress
+	x = 28
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_syndicalistmajority } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_research_slot = 1
+	 112 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+	 }
+	 180 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+	 }
+	 }
+	 }
+	
+	#Focus for Spread Iberian Syndicalism
+	focus = { 
+	id = POR_spreadiberiansyndicalism
+	icon = GFX_focus_usa_focus_on_europe
+	x = 22
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_syndicalistmajority } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_war_support = 0.2
+	 }
+	 } 
+	#Focus for Spread The Revolution
+	focus = { 
+	id = POR_spreadtherevolution
+	icon = GFX_goal_generic_major_war
+	x = 22
+	y = 4
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_spreadiberiansyndicalism } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 create_wargoal = {
+		type = puppet_wargoal_focus
+		 target = SPR
+	 }
+	 }
+	 }  
+	
+	#Focus for Join The Comintern
+	focus = { 
+	id = POR_jointhecomintern
+	icon = GFX_goal_support_fourth_int
+	x = 26
+	y = 5
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_supportbavaria } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = { 
+	 BAV = {  
+	 country_event = { id = portu.4 days = 1 }
+	 }
+	 }
+	 } 
+	
+	#Focus for Political Purges
+	focus = { 
+	id = POR_politicalpurges
+	icon = GFX_goal_generic_secret_weapon
+	x = 24
+	y = 4
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_stateatheism } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = { 
+	 add_ideas = POR_purges
+	 }
+	 } 
+	
+	#Focus for Support Republican Spain
+	focus = { 
+	id = POR_supportrepublicanspain
+	icon = GFX_goal_generic_improve_relations
+	x = 26
+	y = 3
+	cost = 8
+	available = {
+	SPR = { has_government = communism }
+	}
+	bypass = {
+	NOT = { SPR = { has_government = communism } }
+	}
+	prerequisite = { focus = POR_syndicalistmajority } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward= {  
+	 SPR = {  
+	 add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 2500
+		producer = POR
+	 }
+	 }
+	 }
+	 } 
+	
+	#Focus for Form The Portuguese Red Army
+	focus = { 
+	id = POR_formtheportugueseredarmy
+	icon = GFX_focus_generic_join_comintern
+	x = 28
+	y = 4
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_massemploymentprograms } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward= { 
+	 add_ideas = POR_red_army
+	 } 
+	 } 
+	
+	#Focus for Invoke The Anglo-Portuguese Treaty Of 1373
+	focus = { 
+	id = POR_invoketheangloportuguesetreatyof1373
+	icon = GFX_focus_eng_the_sun_never_sets
+	x = 39
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_restorationofthemonarchy focus = POR_conservativemajority focus = POR_liberalmajority } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward= { 
+	  ENG = { country_event = { id = portu.35 days = 1 } }
+	 } 
+	 }
+	
+	#Focus for 1937 Constitution
+	focus = { 
+	id = POR_1937constitution
+	icon = GFX_focus_hol_the_foundations_of_defense
+	x = 35
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_liberalmajority focus = POR_conservativemajority } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward= { 
+	 add_stability = 0.2
+	 add_popularity = { 
+	 ideology = democratic
+	 popularity = 0.05
+	 }
+	 } 
+	 }  
+	
+	 #Focus for Liberal Industrial
+	focus = { 
+	id = POR_industry_reform
+	icon = GFX_focus_generic_the_giant_wakes
+	x = 33
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_liberalmajority } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward= { 
+	 112 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = industrial_complex
+								level = 2
+								instant_build = yes
+							}
+						}
+	 }
+	 180 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = industrial_complex
+								level = 2
+								instant_build = yes
+							}
+						}
+	 }
+	 179 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = industrial_complex
+								level = 2
+								instant_build = yes
+							}
+						}
+	 }
+	 } 
+	 }
+	
+	 #Focus Staytruetotherepublic
+	focus = { 
+	id = POR_stay_true_to_the_republic
+	icon = GFX_focus_aus_con
+	x = 33
+	y = 4
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_industry_reform } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward= { 
+	 add_stability = 0.15
+	 add_popularity = {
+		ideology = democratic
+		popularity = 0.3
+	 }
+	 }  
+	 } 
+	
+	 #Focus Staytruetotherepublic
+	focus = { 
+	id = POR_defend_this_land
+	icon = GFX_goal_generic_defence
+	x = 33
+	y = 5
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_stay_true_to_the_republic } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward= { 
+	 add_war_support = 0.15
+	 add_ideas = POR_defend
+	 }  
+	 }  
+	
+	
+	#Focus for Tear Up The Constitution
+	focus = { 
+	id = POR_tearuptheconstitution
+	icon = GFX_focus_renounce_the_treaty_of_trianon
+	x = 49
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_militarytakeover } 
+	prerequisite = { focus = POR_armydevelopment } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward= {
+	 add_stability = -0.05
+	 add_political_power = -200
+	 }
+	 } 
+	
+	#Focus for Declare Martial Law
+	focus = { 
+	id = POR_declaremartiallaw
+	icon = GFX_goal_demand_sudetenland
+	x = 49
+	y = 4
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_tearuptheconstitution } 
+	prerequisite = { focus = POR_introducemassconscription } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = { 
+	 add_stability = 0.10
+	 }
+	 } 
+	
+	 #Focus for adopting new ideas
+	focus = { 
+	id = POR_fascism_begin
+	icon = GFX_focus_por_fac_beg
+	x = 49
+	y = 5
+	cost = 5
+	available_if_capitulated = yes 
+	available = {
+	AUS = { has_government = fascism }
+	}
+	prerequisite = { focus = POR_declaremartiallaw } 
+	ai_will_do = { 
+	factor = 1
+	} 
+	completion_reward = { 
+	add_political_power = -50
+	add_ideas = POR_rising_party
+	}
+	} 
+	
+	  #Focus for cooperate with the national syndicalists
+	focus = { 
+	id = POR_cooperate_movimento
+	icon = GFX_focus_por_fac_cop
+	x = 49
+	y = 6
+	cost = 8
+	available_if_capitulated = yes 
+	available = {
+	fascism > 0.35
+	}
+	prerequisite = { focus = POR_fascism_begin } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = { 
+	 add_popularity = {
+		ideology = fascism
+		popularity = 0.2
+	 }
+	 remove_ideas = POR_rising_party
+	 }
+	 }
+	
+	#Focus for The National syndialists take over
+	focus = { 
+	id = POR_national_syndicalists
+	icon = GFX_focus_por_nat_sdy
+	x = 49
+	y = 7
+	cost = 3
+	available_if_capitulated = yes 
+	available = {
+	has_political_power > 100
+	has_stability > 0.5
+	}
+	prerequisite = { focus = POR_cooperate_movimento } 
+	ai_will_do = { 
+	 factor = 1
+	} 
+	completion_reward = { 
+	set_cosmetic_tag = POR_NAT
+	add_stability = -0.10
+	set_politics = {
+		ruling_party = fascism
+	}
+	add_popularity = {
+		ideology = fascism
+		popularity = 0.3
+	}
+	}
+	}
+	
+	#Focus for The National syndialists build up
+	focus = { 
+	id = POR_nat_syd_start
+	icon = GFX_focus_generic_support_the_left_right
+	x = 52
+	y = 8
+	cost = 1
+	available_if_capitulated = no
+	available = {
+	has_completed_focus = POR_national_syndicalists
+	}
+	bypass = {
+	has_completed_focus = POR_national_syndicalists
+	}
+	ai_will_do = { 
+	 factor = 1
+	} 
+	completion_reward = { 
+	}
+	}
+	
+	#Focus for The National syndialists workers
+	focus = { 
+	id = POR_nat_syd_social
+	icon = GFX_focus_YUG_pan_slavic_congress
+	x = 54
+	y = 9
+	cost = 8
+	available_if_capitulated = no
+	prerequisite = { focus = POR_nat_syd_start } 
+	ai_will_do = { 
+	 factor = 1
+	} 
+	completion_reward = { 
+	add_ideas = POR_workers
+	}
+	}
+	
+	#Focus for The National syndialists church
+	focus = { 
+	id = POR_nat_syd_church
+	icon = GFX_focus_por_nat_church
+	x = 50
+	y = 9
+	cost = 8
+	available_if_capitulated = no
+	prerequisite = { focus = POR_nat_syd_start } 
+	ai_will_do = { 
+	 factor = 1
+	} 
+	completion_reward = { 
+	add_ideas = POR_blessing
+	}
+	}
+	
+	#Focus for The National syndialists youth
+	focus = { 
+	id = POR_nat_syd_youth
+	icon = GFX_focus_por_nat_youth
+	x = 51
+	y = 10
+	cost = 8
+	available_if_capitulated = no
+	prerequisite = { focus = POR_nat_syd_church } 
+	ai_will_do = { 
+	 factor = 1
+	} 
+	completion_reward = { 
+	add_ideas = POR_youth
+	}
+	}
+	
+	#Focus for The National syndialists war
+	focus = { 
+	id = POR_nat_syd_war
+	icon = GFX_focus_generic_tank_production
+	x = 49
+	y = 10
+	cost = 8
+	available_if_capitulated = no
+	prerequisite = { focus = POR_nat_syd_church } 
+	ai_will_do = { 
+	 factor = 1
+	} 
+	completion_reward = { 
+	179 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = arms_factory
+								level = 2
+								instant_build = yes
+							}
+						}
+	}
+	181 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = arms_factory
+								level = 2
+								instant_build = yes
+							}
+						}
+	}
+	} 
+	}
+	
+	
+	#Focus for The National syndialists education
+	focus = { 
+	id = POR_nat_syd_edu
+	icon = GFX_focus_generic_socialist_science
+	x = 53
+	y = 10
+	cost = 8
+	available_if_capitulated = no
+	prerequisite = { focus = POR_nat_syd_social } 
+	ai_will_do = { 
+	 factor = 1
+	} 
+	completion_reward = { 
+	add_research_slot = 1
+	}
+	}
+	
+	#Focus for The National syndialists welfare
+	focus = { 
+	id = POR_nat_syd_welfare
+	icon = GFX_focus_eng_concessions_to_the_trade_unions
+	x = 55
+	y = 10
+	cost = 8
+	available_if_capitulated = no
+	prerequisite = { focus = POR_nat_syd_social } 
+	ai_will_do = { 
+	 factor = 1
+	} 
+	completion_reward = { 
+	add_ideas = POR_welfare
+	}
+	}
+	
+	#Focus for The National syndialists austria
+	focus = { 
+	id = POR_nat_syd_austria
+	icon = GFX_focus_aus_fasc
+	x = 52
+	y = 11
+	cost = 8
+	available_if_capitulated = no
+	prerequisite = { focus = POR_nat_syd_start } 
+	prerequisite = { focus = POR_nat_syd_edu }
+	prerequisite = { focus = POR_nat_syd_youth }
+	prerequisite = { focus = POR_nat_syd_church }
+	prerequisite = { focus = POR_nat_syd_social }
+	ai_will_do = { 
+	 factor = 1
+	} 
+	completion_reward = { 
+	 AUS = { country_event = { id = portu.37 days = 1 } }
+	}
+	}
+	
+	#Focus for The National syndialists galicia
+	focus = { 
+	id = POR_nat_syd_galicia
+	icon = GFX_goal_generic_political_pressure
+	x = 52
+	y = 12
+	cost = 8
+	available_if_capitulated = no
+	prerequisite = { focus = POR_nat_syd_austria } 
+	ai_will_do = { 
+	 factor = 1
+	} 
+	completion_reward = { 
+	add_state_core = 171
+	create_wargoal = {
+		type = take_state_focus
+		generator = { 171 }
+		target = SPR
+	}
+	}
+	}
+	
+	#Focus for Establish Military Acadamies
+	focus = { 
+	id = POR_establishmilitaryacadamies
+	icon = GFX_focus_generic_military_academy
+	x = 47
+	y = 4
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_introducemassconscription } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = { 
+	 army_experience = 25
+	 add_ideas = POR_academies
+	 add_tech_bonus = {
+					name = land_doc_bonus
+					bonus = 1.0
+					uses = 1
+					category = land_doctrine
+	 }
+	 }
+	 }
+	
+	#Focus for New Generals
+	focus = { 
+	id = POR_newgenerals
+	icon = GFX_focus_generic_military_mission
+	x = 47
+	y = 5
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_establishmilitaryacadamies } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = { 
+	 create_corps_commander = {
+		name = "António Vitorino da França Borges"
+		portrait_path = ""
+		traits = {  }
+		skill = 2
+	
+		attack_skill = 2 
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	
+	create_corps_commander = {
+		name = "Artur Carlos de Barros Basto"
+		portrait_path = ""
+		traits = {  }
+		skill = 2
+	
+		attack_skill = 3
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 1
+	}
+	
+	create_corps_commander = {
+		name = "João de Almeida"
+		portrait_path = ""
+		traits = {  }
+		skill = 2
+	
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 3
+		logistics_skill = 4
+	}
+	
+	create_corps_commander = {
+		name = "João Estêvão Águas"
+		portrait_path = ""
+		traits = {  }
+		skill = 2
+	
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 3
+		logistics_skill = 3
+	}
+	
+	create_corps_commander = {
+		name = "José Vicente de Freitas"
+		portrait_path = ""
+		traits = {  }
+		skill = 2
+	
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 2
+	}
+	
+	create_navy_leader = {
+		name = "José Mendes Cabeçadas"
+		portrait_path = ""
+		traits = {  }
+		skill = 2
+	
+		attack_skill = 1
+		defense_skill = 4
+		maneuvering_skill = 4
+		coordination_skill = 2
+	}
+	 }		
+	 } 
+	
+	#Focus for Install Family Members In The High Command
+	focus = { 
+	id = POR_installfamilymembersinthehighcommand
+	icon = GFX_focus_rom_royal_dictatorship
+	x = 43
+	y = 5
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_asforasarmadasreais } 
+	ai_will_do = { 
+	 factor = 1
+	} 
+	completion_reward = { 
+	create_corps_commander= { 
+	name = "Manuel the Second"
+	picture = "GFX_manuel.dds"
+	traits = {
+	 media_personality
+	 infantry_officer
+	}
+	skill = 1 
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	}
+	create_corps_commander= { 
+	name = "Duarte of Braganza"
+	picture = "GFX_duarte_general.dds"
+	traits = {
+	 media_personality
+	 infantry_officer
+	}
+	skill = 2 
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+	}
+	} 
+	} 
+	
+	#Focus for Invite Trotsky
+	focus = { 
+	id = POR_invitetrotsky
+	icon = GFX_focus_generic_concessions
+	x = 28
+	y = 5
+	cost = 8
+	available = {
+	NOT = { BAV = { has_completed_focus = BAV_bolshevik_militias } }
+	}
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_formtheportugueseredarmy } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = { 
+	 custom_effect_tooltip = BAV_bol_generals_tt
+					create_field_marshal = {
+						name = "Leon Trotsky"
+						picture = "GFX_trotsky.dds.dds"
+						traits = { inspirational_leader }
+						skill = 4
+						attack_skill = 3
+						defense_skill = 3
+						planning_skill = 2
+						logistics_skill = 3
+					}
+					#create_corps_commander = {
+					#	name = "Andrey Vlasov"
+					#	picture = "Portrait_Bavaria_Andrey_Vlasov.dds"
+					#	traits = { winter_specialist }
+					#	skill = 3
+					#}
+			custom_effect_tooltip = BAV_rus_mil_tt
+			hidden_effect = {
+			load_oob = BAV_rus_militas
+		}
+		}
+	}
+	
+	#Focus for Declare The Iberian Commune
+	focus = { 
+	id = POR_declaretheiberiancommune
+	icon = GFX_focus_generic_self_management
+	x = 22
+	y = 5
+	cost = 20
+	available = {
+	controls_state = 171
+	controls_state = 174
+	controls_state = 170
+	controls_state = 169
+	controls_state = 173
+	controls_state = 175
+	controls_state = 168
+	controls_state = 41
+	controls_state = 176
+	controls_state = 172
+	controls_state = 166
+	controls_state = 165
+	controls_state = 167
+	controls_state = 177
+	}
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_spreadtherevolution } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = { 
+	 set_cosmetic_tag = IBE
+	 add_state_core = 171
+	 add_state_core = 296
+	 add_state_core = 702
+	 add_state_core = 174
+	 add_state_core = 170
+	 add_state_core = 169
+	 add_state_core = 173
+	 add_state_core = 175
+	 add_state_core = 168
+	 add_state_core = 41
+	 add_state_core = 176
+	 add_state_core = 172
+	 add_state_core = 166
+	 add_state_core = 165
+	 add_state_core = 167
+	 add_state_core = 177
+	 add_state_core = 321
+	 add_state_core = 721
+	 } 
+	 }
+	
+	#Focus for Declare A One-Party State
+	focus = { 
+	id = POR_declareaonepartystate
+	icon = GFX_focus_generic_soviet_politics
+	x = 24
+	y = 5
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_politicalpurges } 
+	ai_will_do = { 
+	 factor = 1
+	 }
+	 completion_reward= {  
+	 add_popularity = { 
+	 ideology = communism
+	 popularity = 1 
+	 }
+	 } 
+	 }
+	
+	#Focus for Expand Dockyard Facilities
+	focus = { 
+	id = POR_expanddockyardfacilities
+	icon = GFX_goal_generic_construct_naval_dockyard
+	x = 62
+	y = 2
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_militaryexpansion } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 112 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = dockyard
+								level = 2
+								instant_build = yes
+							}
+						}
+	 }
+	 179 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = dockyard
+								level = 2
+								instant_build = yes
+							}
+						}
+	 }
+	 }  
+	 } 
+	 
+	
+	#Focus for Advanced Military Weapons
+	focus = { 
+	id = POR_advancedmilitaryweapons
+	icon = GFX_focus_por_forces
+	x = 54
+	y = 5
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_artillery } 
+	prerequisite = { focus = POR_tanks } 
+	prerequisite = { focus = POR_motorised } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_ideas = POR_modern_army
+	 } 
+	 }  
+	
+	#Focus for Motorised
+	focus = { 
+	id = POR_motorised
+	icon = GFX_goal_generic_army_motorized
+	x = 54
+	y = 4
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_modernisation } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_tech_bonus = {
+					name = land_doc_bonus
+					bonus = 1.0
+					uses = 2
+					category = motorized_equipment
+	 }
+	 }
+	 } 
+	
+	#Focus for Tanks
+	focus = { 
+	id = POR_tanks
+	icon = GFX_goal_generic_army_tanks
+	x = 56
+	y = 4
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_modernisation } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	  completion_reward = {
+	 add_tech_bonus = {
+					name = land_doc_bonus
+					bonus = 1.0
+					uses = 2
+					category = armor
+	 }
+	 } 
+	 } 
+	
+	#Focus for Artillery
+	focus = { 
+	id = POR_artillery
+	icon = GFX_goal_generic_army_artillery
+	x = 52
+	y = 4
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_modernisation } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_tech_bonus = {
+					name = land_doc_bonus
+					bonus = 1.0
+					uses = 2
+					category = artillery
+	 }
+	 } 
+	 } 
+	
+	#Focus for Modernisation
+	focus = { 
+	id = POR_modernisation
+	icon = GFX_goal_generic_allies_build_infantry
+	x = 54
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_armydevelopment } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 army_experience = 10
+	 add_tech_bonus = {
+					name = land_doc_bonus
+					bonus = 1.0
+					uses = 2
+					category = infantry_weapons
+	 }
+	 }
+	 } 
+	
+	#Focus for Pro-Government Propaganda
+	focus = { 
+	id = POR_progovernmentpropaganda
+	icon = GFX_goal_generic_propaganda
+	x = 45
+	y = 5
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_declaremartiallaw focus = POR_suppresspoliticalopponents } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_war_support = 0.2
+	 }
+	 } 
+	
+	#Focus for Military Expansion
+	focus = { 
+	id = POR_militaryexpansion
+	icon = GFX_focus_generic_license_production
+	x = 62
+	y = 0
+	cost = 8
+	available_if_capitulated = yes 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = { 
+	 army_experience = 25
+	 navy_experience = 25
+	 air_experience = 25
+	 }
+	 } 
+	
+	#Focus for Upgraded Naval Weaponry
+	focus = { 
+	id = POR_upgradednavalweaponry
+	icon = GFX_goal_generic_build_navy
+	x = 61
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_expanddockyardfacilities } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_tech_bonus = {
+		bonus = 1.0
+		uses = 2
+		category = naval_equipment
+	 } 
+	 } 
+	 }
+	
+	#Focus for Amphibious Tanks
+	focus = { 
+	id = POR_amphibioustanks
+	icon = GFX_focus_tanks_amph
+	x = 58
+	y = 5
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_tanks } 
+	prerequisite = { focus = POR_navalinvasiontraining } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_tech_bonus = {
+		bonus = 1.0
+		uses = 1
+		category = tp_tech
+	 } 
+	 }
+	 } 
+	
+	#Focus for Naval Invasion Training
+	focus = { 
+	id = POR_navalinvasiontraining
+	icon = GFX_goal_generic_amphibious_assault
+	x = 58
+	y = 3
+	cost = 4.4
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_expanddockyardfacilities } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_tech_bonus = {
+		bonus = 1.0
+		uses = 1
+		category = marine_tech
+	 } 
+	 } 
+	 } 
+	
+	#Focus for Establish A Naval Doctrine
+	focus = { 
+	id = POR_establishanavaldoctrine
+	icon = GFX_goal_generic_navy_doctrines_tactics
+	x = 63
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_expanddockyardfacilities } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 navy_experience = 25
+	 add_tech_bonus = {
+		bonus = 1.0
+		uses = 2
+		category = naval_doctrine
+	 }
+	 }
+	 }  
+	
+	#Focus for Military Oath To God
+	focus = { 
+	id = POR_militaryoathtogod
+	icon = GFX_focus_generic_little_entente
+	x = 37
+	y = 5
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_reintegratethechurchstate } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_ideas = POR_god_mil
+	 add_war_support = 0.1
+	 }
+	 } 
+	
+	#Focus for As Forças Armadas Reais
+	focus = { 
+	id = POR_asforasarmadasreais
+	icon = GFX_focus_por_royal_forces
+	x = 43
+	y = 4
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_purgethearmedforces } 
+	prerequisite = { focus = POR_restorationofthemonarchy } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_ideas = POR_royal_forces
+	 hidden_effect = { country_event = { id = portu.5 days = 5 } }
+	 create_corps_commander = {
+		name = "António Vitorino da França Borges"
+		portrait_path = ""
+		traits = {  }
+		skill = 2
+	
+		attack_skill = 2 
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	
+	create_corps_commander = {
+		name = "Artur Carlos de Barros Basto"
+		portrait_path = ""
+		traits = {  }
+		skill = 2
+	
+		attack_skill = 3
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 1
+	}
+	
+	create_corps_commander = {
+		name = "João de Almeida"
+		portrait_path = ""
+		traits = {  }
+		skill = 2
+	
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 3
+		logistics_skill = 4
+	}
+	
+	create_corps_commander = {
+		name = "João Estêvão Águas"
+		portrait_path = ""
+		traits = {  }
+		skill = 2
+	
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 3
+		logistics_skill = 3
+	}
+	
+	create_corps_commander = {
+		name = "José Vicente de Freitas"
+		portrait_path = ""
+		traits = {  }
+		skill = 2
+	
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 2
+	}
+	
+	create_navy_leader = {
+		name = "José Mendes Cabeçadas"
+		portrait_path = ""
+		traits = {  }
+		skill = 2
+	
+		attack_skill = 1
+		defense_skill = 4
+		maneuvering_skill = 4
+		coordination_skill = 2
+	}
+	 }		
+	 } 
+	
+	#Focus for Spanish Intervention
+	focus = { 
+	id = POR_spanishintervention
+	icon = GFX_goal_generic_political_pressure
+	x = 45
+	y = 6
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_newgenerals focus = POR_installfamilymembersinthehighcommand } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_ideas = POR_spanish_intervention
+	 }
+	 } 
+	
+	#Focus for Monarchist Spain
+	focus = { 
+	id = POR_monarchistspain
+	icon = GFX_goal_tfv_strengthen_commonwealth_ties
+	x = 43
+	y = 7
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_spanishintervention } 
+	prerequisite = { focus = POR_asforasarmadasreais } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 SPR = {
+	 add_ideas = POR_support_spain
+	 }
+	 }
+	 }
+	
+	#Focus for General Franco's Coup
+	focus = { 
+	id = POR_generalfrancoscoup
+	icon = GFX_focus_support_franco
+	x = 47
+	y = 7
+	bypass = {
+	has_completed_focus = POR_newgenerals
+	SPR = { has_government = fascism }
+	}
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_newgenerals } 
+	prerequisite = { focus = POR_spanishintervention } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 SPR = {
+	 create_country_leader = {
+		name = "Francisco Franco"
+		desc = "POLITICS_FRANCISCO_FRANCO_DESC"
+		picture = "Portrait_Spain_Francisco_Franco.dds"
+		expire = "1965.1.1"
+		ideology = fascism_ideology
+	}
+	 start_civil_war = {
+		ruling_party = fascism
+		ideology = ROOT
+		size = 0.3
+		capital = 41
+		states = { 
+			175 168 167 166 165 41 172
+		}
+	 } 
+	 } 
+	
+	 }
+	 } 
+	
+	#Focus for Support Prince Juan
+	focus = { 
+	id = POR_supportprincejuan
+	icon = GFX_focus_por_juan
+	x = 43
+	y = 8
+	cost = 8
+	available = { 
+	SPR = { neutrality > 0.45 } 
+	} 
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_monarchistspain } 
+	mutually_exclusive = { focus = POR_restorealfonsoxiii } 
+	mutually_exclusive = { focus = POR_restorethesavoys } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 SPR = {
+	 set_politics = {
+		ruling_party = neutrality
+	 }
+	 }
+	 } 
+	 }  
+	
+	#Focus for Restore The Savoys
+	focus = { 
+	id = POR_restorethesavoys
+	icon = GFX_focus_por_savoy
+	x = 45
+	y = 8
+	cost = 8
+	available = { 
+	SPR = { neutrality > 0.45 } 
+	}
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_monarchistspain } 
+	mutually_exclusive = { focus = POR_restorealfonsoxiii } 
+	mutually_exclusive = { focus = POR_supportprincejuan } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 SPR = {
+	 set_politics = {
+		ruling_party = neutrality
+	 }
+	 create_country_leader = {
+			name = "Amedeo Umberto"
+			desc = "POLITICS_ALEJANDRO_LERROUX_DESC"
+			picture = "duke_aosta.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+	 }
+	 }
+	
+	 } 
+	 } 
+	
+	#Focus for Advanced Cruiser Designs
+	focus = { 
+	id = POR_advancedcruiserdesigns
+	icon = GFX_focus_generic_cruiser2
+	x = 61
+	y = 4
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_upgradednavalweaponry } 
+	prerequisite = { focus = POR_establishanavaldoctrine } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_tech_bonus = {
+		bonus = 1.0
+		uses = 2
+		category = cl_tech
+	 } 
+	 } 
+	 } 
+	
+	#Focus for Battleship Designs
+	focus = { 
+	id = POR_battleshipdesigns
+	icon = GFX_goal_generic_navy_battleship
+	x = 63
+	y = 4
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_establishanavaldoctrine } 
+	prerequisite = { focus = POR_upgradednavalweaponry } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_tech_bonus = {
+		bonus = 1.0
+		uses = 2
+		category = bb_tech
+	 } 
+	 } 
+	 }  
+	
+	#Focus for Updated Destroyer Designs
+	focus = { 
+	id = POR_updateddestroyerdesigns
+	icon = GFX_goal_generic_navy_cruiser
+	x = 67
+	y = 4
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_navalmodernisation } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_tech_bonus = {
+		bonus = 1.0
+		uses = 1
+		category = dd_tech
+	 } 
+	 add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 1
+					category = asw_tech
+	 } 
+	 add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 1
+					category = naval_mines
+	 } 
+	 } 
+	 }  
+	
+	#Focus for Updated Submarine Designs
+	focus = { 
+	id = POR_updatedsubmarinedesigns
+	icon = GFX_goal_generic_navy_anti_submarine
+	x = 65
+	y = 4
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_establishanavaldoctrine } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_tech_bonus = {
+		bonus = 1.0
+		uses = 1
+		category = ss_tech
+	 } 
+	 add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 1
+					technology = advanced_ship_torpedo_launcher
+					technology = modern_ship_torpedo_launcher
+	 } 
+	 } 
+	 } 
+	
+	#Focus for Portuguese Galleons
+	focus = { 
+	id = POR_portuguesegalleons
+	icon = GFX_focus_por_ship
+	x = 62
+	y = 5
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_advancedcruiserdesigns } 
+	prerequisite = { focus = POR_battleshipdesigns } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 custom_effect_tooltip = POR_galleon_programm
+	 } 
+	 } 
+	
+	#Focus for Modern Carrier Designs
+	focus = { 
+	id = POR_moderncarrierdesigns
+	icon = GFX_goal_generic_navy_carrier
+	x = 68
+	y = 5
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_carrierbasedmodels } 
+	prerequisite = { focus = POR_navalmodernisation }  
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_tech_bonus = {
+		bonus = 1.0
+		uses = 2
+		category = cv_tech
+	 } 
+	 } 
+	 }
+	
+	#Focus for Modern Designs
+	focus = { 
+	id = POR_moderndesigns
+	icon = GFX_goal_generic_air_fighter
+	x = 69
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_fighterdevelopment } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_tech_bonus = {
+		bonus = 1.0
+		uses = 1
+		category = light_fighter
+	 } 
+	 }
+	 } 
+	
+	#Focus for Establish the Portuguese Airforce
+	focus = { 
+	id = POR_establishtheportugueseairforce
+	icon = GFX_goal_generic_air_production
+	x = 71
+	y = 1
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_militaryexpansion } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 air_experience = 25
+	 add_tech_bonus = {
+		bonus = 1.0
+		uses = 2
+		category = air_doctrine
+	 }
+	 112 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_building_construction = {
+								type = air_base
+								level = 2
+								instant_build = yes
+							}
+						}
+	 }
+	 179 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_building_construction = {
+								type = air_base
+								level = 2
+								instant_build = yes
+							}
+						}
+	 }
+	 180 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_building_construction = {
+								type = air_base
+								level = 2
+								instant_build = yes
+							}
+						}
+	 }
+	 702 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_building_construction = {
+								type = air_base
+								level = 1
+								instant_build = yes
+							}
+						}
+	 }
+	 698 = {
+						if = {
+							limit = { is_controlled_by = ROOT }
+							add_building_construction = {
+								type = air_base
+								level = 1
+								instant_build = yes
+							}
+						}
+	 }
+	 } 
+	 }
+	
+	#Focus for Fighter Development
+	focus = { 
+	id = POR_fighterdevelopment
+	icon = GFX_goal_generic_air_fighter2
+	x = 70
+	y = 2
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_establishtheportugueseairforce } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_tech_bonus = {
+		bonus = 1.0
+		uses = 1
+		category = light_fighter
+	 }
+	 } 
+	 }
+	
+	#Focus for Carrier-based Models
+	focus = { 
+	id = POR_carrierbasedmodels
+	icon = GFX_goal_generic_air_naval_bomber
+	x = 71
+	y = 4
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_navalbombers } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 2
+					technology = cv_naval_bomber1
+					technology = cv_naval_bomber2
+					technology = cv_early_fighter
+					technology = cv_fighter1
+					technology = cv_fighter2
+	 }
+	 } 
+	 } 
+	
+	#Focus for Bomber Project
+	focus = { 
+	id = POR_bomberproject
+	icon = GFX_goal_generic_air_bomber
+	x = 73
+	y = 2
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_establishtheportugueseairforce } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 1
+					category = tactical_bomber
+	 }
+	 } 
+	 } 
+	
+	#Focus for Establish a Parliamentary Assembly
+	focus = { 
+	id = POR_establishaparliamentaryassembly
+	icon = GFX_focus_generic_self_management
+	x = 35
+	y = 4
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_1937constitution } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_stability = 0.25
+	 add_political_power = 150
+	 } 
+	 } 
+	
+	
+	 #Focus for Bannign Extemism
+	focus = { 
+	id = POR_ban_extremist
+	icon = GFX_focus_generic_support_the_left_right
+	x = 35
+	y = 5
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_establishaparliamentaryassembly } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_stability = 0.1
+	 add_popularity = {
+		ideology = fascism
+		popularity = -0.5
+	 }
+	 add_popularity = {
+		ideology = neutrality
+		popularity = -0.5
+	}
+	add_popularity = {
+		ideology = communism
+		popularity = -0.5
+	}
+	 } 
+	 } 
+	
+	
+	#Focus for Light Bombers
+	focus = { 
+	id = POR_lightbombers
+	icon = GFX_goal_generic_CAS
+	x = 73
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_bomberproject } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 1
+					category = cas_bomber
+	 }
+	 } 
+	 }
+	
+	#Focus for Naval Bombers
+	focus = { 
+	id = POR_navalbombers
+	icon = GFX_focus_usa_escort_fighters
+	x = 71
+	y = 3
+	cost = 8
+	available_if_capitulated = yes 
+	prerequisite = { focus = POR_fighterdevelopment } 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	 completion_reward = {
+	 add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.5
+					uses = 1
+					technology = naval_bomber1
+					technology = naval_bomber2
+	 }
+	 } 
+	 }
+	
+	#End of focuses 
+	 }

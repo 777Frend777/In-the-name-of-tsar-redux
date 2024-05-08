@@ -1,0 +1,3 @@
+Integrate_CZE_category = {
+	icon = generic_civil_support
+}

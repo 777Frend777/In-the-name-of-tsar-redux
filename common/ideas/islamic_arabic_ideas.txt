@@ -1,0 +1,165 @@
+##### ROM ######
+
+ideas = {
+
+	country = {
+		islam_in_country = {
+			picture = islam_mama
+			
+			allowed = {
+				tag = AFG
+				tag = IRQ
+				tag = SAU
+				tag = PER
+				tag = OMA
+				tag = YEM
+			}
+			available = {
+			}
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_factor = 0.15
+			}
+		}
+	}
+	country = {
+		islam_in_country_2 = {
+			picture = islam_mama
+			
+			allowed = {
+				tag = AFG
+				tag = IRQ
+				tag = SAU
+				tag = PER
+				tag = OMA
+				tag = YEM
+			}
+			available = {
+			}
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_factor = -0.15
+				monthly_population = 0.05
+			}
+		}
+	}
+	country = {
+		islam_in_country_3 = {
+			picture = islam_mama
+			
+			allowed = {
+				tag = AFG
+				tag = IRQ
+				tag = SAU
+				tag = PER
+				tag = OMA
+				tag = YEM
+			}
+			available = {
+			}
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_factor = 0.3
+			}
+		}
+	}
+	country = {
+		islam_in_country_4 = {
+			picture = islam_mama
+			
+			allowed = {
+				tag = AFG
+				tag = IRQ
+				tag = SAU
+				tag = PER
+				tag = OMA
+				tag = YEM
+			}
+			available = {
+			}
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_factor = -0.3
+				war_support_weekly_factor = 0.15
+			}
+		}
+	}
+	country = {
+		economy_in_country = {
+			picture = ikonomika_mama
+			
+			allowed = {
+				tag = AFG
+				tag = IRQ
+				tag = SAU
+				tag = PER
+				tag = OMA
+				tag = YEM
+			}
+			available = {
+			}
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				local_resources_factor = -0.2
+			}
+		}
+	}
+	country = {
+		policy_in_country = {
+			picture = pravitelstvo_mama
+			
+			allowed = {
+				tag = AFG
+				tag = IRQ
+				tag = SAU
+				tag = PER
+				tag = OMA
+				tag = YEM
+			}
+			available = {
+			}
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_buildings_factor = -0.2
+				research_speed_factor = -0.5
+			}
+		}
+	}
+}

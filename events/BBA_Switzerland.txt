@@ -1,0 +1,418 @@
+####
+add_namespace = swissbop
+add_namespace = swiss
+country_event = { #nationalists
+	id = swissbop.1
+	title = swissbop.1.t
+	desc = swissbop.1.d
+	picture = GFX_report_event_SWI_council
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #Agree 
+		name = swissbop.1.a
+		set_politics = {
+			ruling_party = fascism
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_country_flag = SWI_National_Front_win
+		remove_power_balance = {
+			id = SWI_power_balance
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.5
+		}
+	}	
+}
+country_event = { #democrats
+	id = swissbop.2
+	title = swissbop.2.t
+	desc = swissbop.2.d
+	picture = GFX_report_event_SWI_council
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #Agree 
+		name = swissbop.2.a
+		set_country_flag = SWI_Democrats_win
+		remove_power_balance = {
+			id = SWI_power_balance
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.2
+		}
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = conservatives
+			popularity = 0.1
+		}
+		country_event = {
+			id = swissbop.3
+		}
+	}	
+}
+country_event = { #Elections
+	id = swissbop.3
+	title = swissbop.3.t
+	desc = swissbop.3.d
+	picture = GFX_report_event_SWI_council
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #Agree 
+		name = swissbop.3.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.4
+		}
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+		complete_national_focus = SWI_End_of_the_crisis
+		complete_national_focus = SWI_Council_Supreme
+		complete_national_focus = SWI_Free_Democrats
+	}	
+	option = { #Agree 
+		name = swissbop.3.b
+		add_popularity = {
+			ideology = conservatives
+			popularity = 0.4
+		}
+		set_politics = {
+			ruling_party = conservatives
+			elections_allowed = yes
+		}
+		complete_national_focus = SWI_End_of_the_crisis
+		complete_national_focus = SWI_Council_Supreme
+		complete_national_focus = SWI_Conservatives_agrarians
+	}	
+	option = { #Agree 
+		name = swissbop.3.c
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.4
+		}
+		set_politics = {
+			ruling_party = socialist
+			elections_allowed = yes
+		}
+		complete_national_focus = SWI_End_of_the_crisis
+		complete_national_focus = SWI_Council_Supreme
+		complete_national_focus = SWI_SocDems
+	}	
+	option = { #Agree 
+		name = swissbop.3.f
+		add_popularity = {
+			ideology = conservatives
+			popularity = 0.4
+		}
+		set_politics = {
+			ruling_party = conservatives
+			elections_allowed = yes
+		}
+		complete_national_focus = SWI_End_of_the_crisis
+		complete_national_focus = SWI_Council_Supreme
+		complete_national_focus = SWI_Conservatives_christians
+		set_party_name = {
+			ideology = conservatives
+			long_name = "Christian Democratic People's Party of Switzerland"
+			name = "CDP"
+		}
+	}
+}
+country_event = { #Communist Revolution
+	id = swissbop.4
+	title = swissbop.4.t
+	desc = swissbop.4.d
+	picture = GFX_report_event_SWI_socialist
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #Agree 
+		name = swissbop.4.a
+		set_politics = {
+			ruling_party = communism
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_country_flag = SWI_Communist_revolt
+		remove_power_balance = {
+			id = SWI_power_balance
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.5
+		}
+		news_event = {
+			id = swissbop.5
+			days = 2
+		}
+	}	
+}
+news_event = { #Communist Revolution
+	id = swissbop.5
+	title = swissbop.5.t
+	desc = swissbop.5.d
+	picture = GFX_news_event_SWI_romandy_revolution
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #Agree 
+		name = swissbop.5.a
+		
+	}	
+}
+country_event = { #nationalists
+	id = swissbop.6
+	title = swissbop.6.t
+	desc = swissbop.6.d
+	picture = GFX_report_event_RUS_Stalin_Gone
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #Agree 
+		name = swissbop.6.a
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05
+		}
+		SWI_increase_Nationalism_min = yes
+	}	
+	option = { #Agree 
+		name = swissbop.6.b
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		
+	}	
+}
+country_event = { #nationalists
+	id = swiss.1
+	title = swiss.1.t
+	desc = swiss.1.d
+	picture = GFX_report_event_SWI_council
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #Agree 
+		name = swiss.1.a
+		AUS={
+			add_opinion_modifier = {
+				target = SWI
+				modifier = large_increase
+			}
+			add_opinion_modifier = {
+				target = SWI
+				modifier = non_aggression_pact
+			}
+			transfer_state = 848
+		}
+	}	
+	option = { #Agree 
+		name = swiss.1.b
+		AUS={
+			add_opinion_modifier = {
+				target = SWI
+				modifier = large_decrease
+			}
+		}
+		
+	}	
+}
+news_event = { #nationalists
+	id = swiss.2
+	title = swiss.2.t
+	desc = swiss.2.d
+	immediate = {
+		hidden_effect = {
+			SWI={
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.4
+				}
+			}
+		}
+	}
+	picture = GFX_news_event_NFA_coup_algiers
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #Agree 
+		name = swiss.2.a
+		trigger = {
+			tag = FRA
+		}
+	}
+	option = { #Agree 
+		name = swiss.2.b
+		trigger = {
+			OR={
+				tag = GER
+				tag = BAV
+				tag = RHN
+				tag = SAX
+				tag = WSM
+			}
+		}
+	}
+	option = { #Agree 
+		name = swiss.2.c
+		trigger = {
+			tag = RUS
+		}
+	}
+	option = { #Agree 
+		name = swiss.2.f
+	}
+}
+
+news_event = { #nationalists
+	id = swiss.3
+	title = swiss.3.t
+	desc = swiss.3.d
+	immediate = {
+		hidden_effect = {
+			SWI={
+				retire_character = SWI_dr_max_leo_keller
+				add_country_leader_role = {
+					character = SWI_National_Government
+					country_leader = {
+						ideology = fascism_subtype
+						expire = "1965.3.1.1"
+					}
+					promote_leader = yes 
+				}
+				country_event = swiss.4
+			}
+		}
+	}
+	picture = GFX_news_event_RUS_assassination_of_alexander_kerensky
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #Agree 
+		name = swiss.2.a
+		trigger = {
+			tag = FRA
+		}
+	}
+	option = { #Agree 
+		name = swiss.2.b
+		trigger = {
+			OR={
+				tag = GER
+				tag = BAV
+				tag = RHN
+				tag = SAX
+				tag = WSM
+			}
+		}
+	}
+	option = { #Agree 
+		name = swiss.2.c
+		trigger = {
+			tag = RUS
+		}
+	}
+	option = { #Agree 
+		name = swiss.2.f
+	}
+}
+country_event = { #nationalists
+	id = swiss.4
+	title = swiss.4.t
+	desc = swiss.4.d
+	picture = GFX_report_event_SWI_natpop
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #Agree 
+		name = swiss.4.a
+		add_country_leader_role = {
+			character = SWI_robert_tobler
+			country_leader = {
+				ideology = fascism_subtype
+				traits = { national_integralist }
+				expire = "1965.3.1.1"
+			}
+			promote_leader = yes 
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = "National Front"
+			name = "National Front"
+		}
+	}	
+	option = { #Agree 
+		name = swiss.4.b
+		add_country_leader_role = {
+			character = SWI_Georges_Oltramare
+			country_leader = {
+				ideology = fascism_subtype
+				traits = { nationalist_journalist }
+				expire = "1965.3.1.1"
+			}
+			promote_leader = yes 
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = "National Union"
+			name = "National Union"
+		}
+		
+	}	
+}
+country_event = { #Communist Revolution
+	id = swiss.5
+	title = swiss.5.t
+	desc = swiss.5.d
+	picture = GFX_report_event_SWI_flag
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #Agree 
+		name = swiss.5.a
+		SWI_increase_Democracy_min = yes
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = conservatives
+			popularity = 0.01
+		}
+	}	
+	option = { #Agree 
+		name = swiss.5.b
+		trigger = {
+			has_power_balance = {
+				id = SWI_power_balance
+			}
+		}
+		SWI_increase_Nationalism_min = yes
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.01
+		}
+	}	
+	option = { #Agree 
+		name = swiss.5.c
+		trigger = {
+			has_power_balance = {
+				id = SWI_power_balance
+			}
+		}
+		add_days_mission_timeout = {
+			mission = SWI_act_quickly
+			days = -10
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.01
+		}
+	}	
+}

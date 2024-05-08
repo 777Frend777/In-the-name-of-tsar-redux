@@ -1,0 +1,23 @@
+################
+#### SWEDEN ####
+################
+
+SWE_five_years_plan_category = {
+	icon = generic_operation
+
+	picture = GFX_decision_cat_generic_mefo_bills
+	
+	allowed = {
+		original_tag = SWE
+	}
+}
+
+SWE_swedish_lion_diplomacy_category = {
+	icon = generic_operation
+
+	picture = GFX_decision_cat_generic_scandinavia
+	
+	allowed = {
+		original_tag = SWE
+	}
+}

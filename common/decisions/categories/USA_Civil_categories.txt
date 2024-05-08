@@ -1,0 +1,3 @@
+USA_Civil_category = {
+	icon = generic_civil_support
+}

@@ -1,0 +1,601 @@
+characters={
+	BAV_karl_liebknecht={
+		name = BAV_karl_liebknecht
+		portraits={
+			civilian={
+				large="gfx/leaders/BAV/Karl_Liebknecht.dds"
+			}
+		}
+		country_leader={
+			ideology=communism_subtype
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	BAV_ernst_thalmann ={ #Becomes leader via focus
+		name = BAV_ernst_thalmann
+		portraits={
+			army={
+				large="gfx/leaders/BAV/Ernst_Thelmann.dds"
+				small="gfx/interface/ideas/idea_ernst_thalmann.dds"
+			}
+			civilian={
+				large="gfx/leaders/BAV/Ernst_Thelmann.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = bav_ernst_thalmann
+			allowed = {
+				original_tag = BAV
+			}
+			traits = {
+				army_chief_defensive_2 #army_infantry_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+		field_marshal={
+			traits={ defensive_doctrine offensive_doctrine }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+	
+	BAV_congress_of_bavaria ={ 
+		name = BAV_congress_of_bavaria
+		portraits={
+			civilian={
+				large="gfx/leaders/BAV/congress_bav.dds"
+			}
+		}
+	}
+	
+	BAV_heinrich_himmler ={
+		name = BAV_heinrich_himmler
+		portraits={
+			army = {
+				small ="gfx/interface/ideas/idea_GER_heinrich_himmler.dds"
+			}
+			civilian={
+				large="gfx/leaders/BAV/Heinrich_Himmler.dds"
+			}
+		}
+		
+		advisor = {
+		slot = political_advisor
+		idea_token = BAV_himmler_idea
+		allowed = {
+			original_tag = BAV
+		}
+		available = {
+		OR = { 
+		has_government = fascism
+		has_government = neutrality
+		}
+		}
+		traits = {
+			propaganda_expert 
+		}
+		}
+		
+		country_leader={
+			ideology=fascism_subtype
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	BAV_herman_goring={
+		name=BAV_herman_goring
+		portraits={
+			army={
+				large="gfx/leaders/BAV/Hermann_Goering.dds"
+				small="gfx/interface/ideas/idea_GER_hermann_goring.dds"
+			}
+			civilian={
+				large="gfx/leaders/BAV/Hermann_Goering.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = BAV_herman_goring_idea
+			ledger = air
+			allowed = {
+				original_tag = BAV
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ trickster }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id=1000001
+		}
+	}
+	BAV_kronprinz_bayern={
+		name=BAV_kronprinz_bayern
+		portraits={
+			civilian={
+				large="gfx/leaders/BAV/Rupprecht_Von_Bayern.dds"
+			}
+		}
+		country_leader={
+			ideology=neutrality_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	BAV_franz_xaver_ritter_von_epp={
+		name=BAV_franz_xaver_ritter_von_epp
+		portraits={
+			army={
+				large="gfx/leaders/BAV/Franz_Xaver_Ritter_von_Epp.dds"
+				small="gfx/interface/ideas/idea_franz_von_epp.dds"
+			}
+		}	
+	
+		field_marshal={
+			traits={ offensive_doctrine war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 3
+			legacy_id=0
+		}
+	}
+
+	BAV_kurt_von_hammerstein_equord={
+		name=BAV_kurt_von_hammerstein_equord
+		portraits={
+			army={
+				large="gfx/leaders/BAV/Kurt_von_Hammerstein-Equord.dds"
+				small="gfx/interface/ideas/idea_kurt_von_hammerstein.dds"
+			}
+		}
+		corps_commander={
+			traits={ media_personality panzer_leader }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 5
+			legacy_id=0
+		}
+	}
+	
+	BAV_georg_lindemann={
+		name=BAV_georg_lindemann
+		portraits={
+			army={
+				large="gfx/leaders/BAV/Georg_Lindemann.dds"
+				small="gfx/interface/ideas/idea_georg_lindenmann.dds"
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist winter_specialist panzer_leader }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id=0
+		}
+	}
+	
+	BAV_wilhelm_groener={
+		name=BAV_wilhelm_groener
+		portraits={
+			army={
+				large="gfx/leaders/BAV/Wilhelm_Groener.dds"
+				small="gfx/interface/ideas/idea_Wilhelm_Groener.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = wilhelm_groener
+			ledger = army
+			allowed = {
+				original_tag = BAV
+			}
+			available = {
+				has_completed_focus = BAV_reform_high_command
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer media_personality }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+			legacy_id=0
+		}
+	}
+	
+	BAV_erich_muhsam={
+		name=BAV_erich_muhsam
+		portraits={
+			army={
+				large="gfx/leaders/BAV/Erich_Muhsam.dds"
+				small="gfx/interface/ideas/idea_GER_generic_land_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=0
+		}
+	}
+	
+	BAV_georg_ledebour={
+		name=BAV_georg_ledebour
+		portraits={
+			army={
+				large="gfx/leaders/BAV/Georg_Ledebour.dds"
+				small="gfx/interface/ideas/idea_GER_generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id=0
+		}
+	}
+	
+	BAV_hans_jendretzky={
+		name=BAV_hans_jendretzky
+		portraits={
+			army={
+				large="gfx/leaders/BAV/Hans_Jendretzky.dds"
+				small="gfx/interface/ideas/idea_GER_generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=0
+		}
+	}
+	
+	BAV_ernst_toller={
+		name=BAV_ernst_toller
+		portraits={
+			army={
+				large="gfx/leaders/BAV/Ernst_Toller.dds"
+				small="gfx/interface/ideas/idea_GER_generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ fortress_buster }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id=0
+		}
+	}
+	BAV_margit_zinke={
+		name=BAV_margit_zinke
+		portraits={
+			army={
+				large="gfx/leaders/BAV/Margit_Zinke.dds"
+				small="gfx/interface/ideas/idea_GER_generic_land_4.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = { has_completed_focus = BAV_women_army }
+		}
+	}
+	BAV_leon_trotsky={
+		name=BAV_leon_trotsky
+		portraits={
+			army={
+				large="gfx/leaders/BAV/Portrait_Bavaria_Leon_Trotsky.dds"
+				small="gfx/interface/ideas/advisor_trotsky.dds"
+			}
+		}
+		field_marshal = {
+			traits = { inspirational_leader }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+			visible = { has_completed_focus = BAV_bolshevik_militias }
+		}
+	}
+	BAV_ottomar_pech={
+		name=BAV_ottomar_pech
+		portraits={
+			army={
+				large="gfx/leaders/BAV/Ottomar_Pech.dds"
+				small="gfx/interface/ideas/bav_idea_ottomar_pech.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ottomar_pech
+			ledger = army
+			allowed = {
+				original_tag = BAV
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id=0
+		}
+	}
+
+	BAV_friedrich_paulus={
+		name=BAV_friedrich_paulus
+		portraits={
+			army={
+				large="gfx/leaders/BAV/Friedrich_Paulus.dds"
+				small="gfx/interface/ideas/idea_GER_friedrich_paulus.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious armor_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=1000002
+		}
+	}
+	
+	###Air Chiefs###
+	
+	#BAV_herman_goring
+	
+	BAV_hermann_kohl={
+		name=BAV_hermann_kohl
+		portraits={
+			army={
+				small="gfx/interface/ideas/bav_idea_kohl.dds"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = BAV_hermann_kohl_idea
+			ledger = air
+			allowed = {
+				original_tag = BAV
+			}
+			traits = {
+				air_bomber_interception_2
+			}
+		}
+	}
+
+
+
+	### THEORISTS ###
+
+	# Von Manstein up there
+
+	# Guderian up there
+
+	# Saalwachter up there
+
+	BAV_von_braun={
+		name=BAV_von_braun
+		portraits={
+			army={
+				small="GFX_idea_von_braun"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = BAV_von_braun_idea
+			ledger = air
+			available = {
+			TAG = BAV
+			NOT = { country_exists = GER }
+			controls_state = 64
+			}
+			research_bonus = {
+				rocketry = 0.150
+			}
+			traits = {
+				rocket_scientist
+			}
+		}
+	}
+
+	BAV_heisenberg={
+		name=BAV_heisenberg
+		portraits={
+			army={
+				small="GFX_idea_heisenberg"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = BAV_heisenberg_idea
+			ledger = army
+			available = {
+			TAG = BAV
+			NOT = { country_exists = GER }
+			controls_state = 64
+			}
+			research_bonus = {
+				nuclear = 0.150
+			}
+			traits = {
+				nuclear_scientist
+			}
+		}
+	}
+
+	### ARMY CHIEFS ###
+
+	BAV_august_willich={
+		name=BAV_august_willich
+		portraits={
+			army={
+				small="gfx/interface/ideas/generic_army_europe_3.dds"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = willich
+			ledger = army
+			allowed = {
+				original_tag = BAV
+			}
+			traits = {
+				military_theorist
+			}
+		}
+	}
+
+	### NAVY CHIEFS ###
+
+	# Dönitz up there
+
+	# Raeder up there
+
+
+	### AIR CHIEFS ###
+
+	# Kesselring up there
+
+	### MILITARY HIGH COMMAND ###
+
+	# Von Rundstedt up there
+
+	# Rommel up there
+
+	# Student up there
+
+	# Lütjens up there
+
+
+	### POLITICAL ADVISORS ###
+
+	BAV_kurt_eisner={
+		name=BAV_kurt_eisner
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/BAV_Kurt_Eisner_pic.dds"
+			}
+			
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = eisner
+			allowed = {
+				original_tag = BAV
+			}
+			cost = 150
+			available = {
+				NOT = { 
+					OR = {
+					has_government = neutrality
+					has_government = conservatives 
+					has_government = fascism
+					}
+				}
+				BAV = { has_completed_focus = BAV_boost_milit_spending }
+			}
+			traits = {
+				war_industrialist
+			}
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
+	}
+
+	BAV_rosa_luxemburg ={ 
+		name=BAV_rosa_luxemburg
+		portraits={
+			army={
+				small="GFX_idea_BAV_Rosa_Luxemburg"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = luxemburg
+			cost = 150
+			available = {
+			NOT = { 
+			OR = {
+			has_government = neutrality
+			has_government = conservatives 
+			has_government = fascism
+			}
+			}
+			}
+			allowed = {
+				original_tag = BAV
+			}
+			traits = {
+				popular_figurehead
+			}
+		}		
+	}
+	
+}

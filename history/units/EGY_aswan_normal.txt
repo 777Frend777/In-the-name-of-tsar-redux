@@ -1,0 +1,19 @@
+﻿division_template = {
+	name = "Greenshirt Militia"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+units = {
+	division= {
+		name = "Greenshirt Militia"
+		location = 11999
+		division_template = "Greenshirt Militia"
+		start_experience_factor = 0.1
+	}
+}

@@ -1,0 +1,309 @@
+﻿division_template = {
+	name = "Brigada Internacionales"			# International volunteers -- poor equipment, no experience (militia)
+	#is_locked = yes
+	division_names_group = SPR_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "División de Infantería" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = SPR_INF_01
+	# Note: Spanish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # Spanish Arty Rgt/Bge had 2 Bn 105mm arty
+		engineer = { x = 0 y = 1 }   # Eng Bn
+	}
+}
+division_template = {
+	name = "División de Caballería"  		# Only one Cavalry Division (3x bge of 2x2 Rgts)
+	division_names_group = SPR_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+		cavalry = { x = 2 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # Recon consisted of motorcycles and ACs
+	}
+}
+division_template = {
+	name = "Brigada Montaña"  		# Mountain Brigades were 2x2 Rgts + support
+	division_names_group = SPR_MNT_01
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # Spanish Arty Rgt/Bge had 2 Bn 105mm arty
+	}
+}
+division_template = {
+	name = "Brigada de Infantería" 		# Infantry Brigade - Used for smaller garrison units
+	division_names_group = SPR_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 1 }	
+		infantry = { x = 1 y = 0 }	
+		infantry = { x = 1 y = 1 }	
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   # Eng Bn
+	}
+}
+units = {
+	division = {
+		name = "20a División de Infantería"
+		location = 9699  # Madrid
+		division_template = "División de Infantería"
+	}
+	division = {
+		name = "21a División de Infantería"
+		location = 11707  # Madrid
+		division_template = "División de Infantería"
+	}
+	division = {
+		name = "22a División de Infantería"
+		location = 11956  # Madrid
+		division_template = "División de Infantería"
+	}
+	division = {
+		name = "23a División de Infantería"
+		location = 6907  # Madrid
+		division_template = "División de Infantería"
+	}
+	division = {
+		name = "24a División de Infantería"
+		location = 10009  # Madrid
+		division_template = "División de Infantería"
+	}
+	division = {
+		name = "25a División de Infantería"
+		location = 6907  # Madrid
+		division_template = "División de Infantería"
+	}
+	division = {
+		name = "26a División de Infantería"
+		location = 11807  # Madrid
+		division_template = "División de Infantería"
+	}
+	division = {
+		name = "I Brigada Internacionales"
+		location = 918  # Madrid
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "II Brigada Internacionales"
+		location = 918  # Madrid
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "III Brigada Internacionales"
+		location = 738  # Madrid
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "IV Brigada Internacionales"
+		location = 3920  # Madrid
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "V Brigada Internacionales"
+		location = 6746  # Madrid
+		division_template = "Brigada Internacionales"
+	}
+
+	division = {
+		name = "VI Brigada Internacionales"
+		location = 9699  # Barcelona
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "VII Brigada Internacionales"
+		location = 6749  # Barcelona
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "VIII Brigada Internacionales"
+		location = 11707  # Barcelona
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "IX Brigada Internacionales"
+		location = 7153  # Valencia
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "X Brigada Internacionales"
+		location = 10009  # Valencia
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "XI Brigada Internacionales"
+		location = 9979  # Valencia
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "XII Brigada Internacionales"
+		location = 7068  # Murcia
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "XIII Brigada Internacionales"
+		location = 1176  # Murcia
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "XIV Brigada Internacionales"
+		location = 7196 # Murcia
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "XV Brigada Internacionales"
+		location = 11807  # Malaga
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "XVI Brigada Internacionales"
+		location = 9979  # Malaga
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "XVII Brigada Internacionales"
+		location = 9979  # Malaga
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "XVIII Brigada Internacionales"
+		location = 11807  # Bilbao
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "XIX Brigada Internacionales"
+		location = 832  # Bilbao
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "XX Brigada Internacionales"
+		location = 3835  # Bilbao
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "XXI Brigada Internacionales"
+		location = 871  # Madrid
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "XXII Brigada Internacionales"
+		location = 9812  # Barcelona
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "XXIII Brigada Internacionales"
+		location = 7213  # Barcelona
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "XXIV Brigada Internacionales"
+		location = 948  # Barcelona
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "XXV Brigada Internacionales"
+		location = 813  # Barcelona
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "XXVI Brigada Internacionales"
+		location = 948  # Valencia
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "XXVII Brigada Internacionales"
+		location = 813  # Valencia
+		division_template = "Brigada Internacionales"
+	}
+
+	division = {
+		name = "XXVIII Brigada Internacionales"
+		location = 6878  
+		division_template = "Brigada Internacionales"
+	}	
+
+	division = {
+		name = "XXIX Brigada Internacionales"
+		location = 6901  
+		division_template = "Brigada Internacionales"
+	}	
+	division = {
+		name = "XXX Brigada Internacionales"
+		location = 9842  
+		division_template = "Brigada Internacionales"
+	}	
+	division = {
+		name = "XXXI Brigada Internacionales"
+		location = 11838  
+		division_template = "Brigada Internacionales"
+	}	
+	division = {
+		name = "XXXII Brigada Internacionales"
+		location = 9764  
+		division_template = "Brigada Internacionales"
+	}	
+	division = {
+		name = "XXXIII Brigada Internacionales"
+		location = 9764  
+		division_template = "Brigada Internacionales"
+	}	
+	division = {
+		name = "XXXIV Brigada Internacionales"
+		location = 6906  
+		division_template = "Brigada Internacionales"
+	}	
+	division = {
+		name = "XXXV Brigada Internacionales"
+		location = 6906  
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "27a División de Infantería"
+		location = 6906  # Madrid
+		division_template = "División de Infantería"
+	}
+	division = {
+		name = "28a División de Infantería"
+		location = 9764  # Madrid
+		division_template = "División de Infantería"
+	}
+	division = {
+		name = "29a División de Infantería"
+		location = 6901   # Madrid
+		division_template = "División de Infantería"
+	}
+
+}

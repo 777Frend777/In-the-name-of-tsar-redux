@@ -1,0 +1,12 @@
+﻿units = {
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "The New Hope"
+		naval_base = 4076 # Alexandria
+		task_force = {				
+			name = "The Ark"				
+			location =  4076 # Alexandria
+			ship = { name = "The Ark" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = EGY version_name = "Noah Class" } } }							
+		}										
+	}
+}

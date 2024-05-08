@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		SYR_Liberation = {
+			picture = NFA_lion
+			allowed = { always = no }
+            modifier = {
+				army_speed_factor = 0.10
+				army_attack_factor = 0.10
+				org_loss_when_moving = -0.20
+				army_org_regain = 0.10
+			}
+			SYR_Victory = {
+				picture = NFA_lion
+				allowed = { always = no }
+				modifier = {
+					stability_weekly = 0.01
+				}
+			}
+		}
+	}
+}	
+	

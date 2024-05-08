@@ -1,0 +1,8 @@
+﻿l_russian:
+general_border_conflict_decision_category: "Пограничный конфликт"
+general_border_conflict_initiate_incident: "Инициировать пограничный инцидент с помощью [FROM.GetName]"
+general_escalate_incident_to_border_conflict: "[FROM.GetName] Эскалация инцидента на границе"
+general_border_conflict_time_until_cancelled: "Постарайся выиграть быстро"
+general_border_conflict_escalate_conflict: "[FROM.GetName] Эскалация пограничного конфликта"
+general_border_conflict_escalate_to_war: "ВОЙНА"
+general_border_conflict_back_out_of_conflict: "Отступить"

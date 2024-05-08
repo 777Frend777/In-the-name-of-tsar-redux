@@ -1,0 +1,1659 @@
+﻿##### ROM ######
+
+add_namespace = egypt
+
+#Aly Maher Pasha Appointed
+country_event = {
+	id = egypt.1
+	title = egypt.1.t
+	desc = egypt.1.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	trigger = {
+		tag = EGY
+		date > 1936.1.29
+		has_government = neutrality
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.1.a
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Aly Maher Pasha"
+			desc = "POLITICS_ALY_MAHER_PASHA_DESC"
+			picture = "Portrait_Egypt_Aly_Maher_Pasha.dds"
+			expire = "1936.5.9"
+			ideology = moderatism
+			traits = {
+				#
+			}
+		}
+		set_country_flag = EGY_aly_maher_pasha_appointed
+	}
+}
+#King Fuad I Dies
+country_event = {
+	id = egypt.2
+	title = egypt.2.t
+	desc = egypt.2.d
+	picture = GFX_report_event_generic_funeral
+	
+	trigger = {
+		tag = EGY
+		date > 1936.4.10
+		date < 1936.5.1
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.2.a
+		swap_ideas = {
+			remove_idea = fuad_i_of_egypt
+			add_idea = king_farouk_i
+		}
+		hidden_effect = {
+			news_event = { id = news.1000 days = 1 }
+		}
+	}
+}
+#Britain Influences Egyptian Politics
+country_event = {
+	id = egypt.3
+	title = egypt.3.t
+	desc = egypt.3.d
+	picture = GFX_report_event_ast_parliament_house
+	
+	trigger = {
+		tag = EGY
+		has_idea = sir_miles_lampson
+		has_idea = king_farouk_i
+		NOT = {
+			is_in_faction_with = ENG
+		}
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.3.a
+		add_opinion_modifier = { target = ENG modifier = large_decrease }
+		add_opinion_modifier = { target = ITA modifier = huge_increase }
+	}
+	option = {
+		name = egypt.3.b
+		ai_chance = { factor = 0 }
+	}
+}
+#Makram Ebeid Assassinated
+country_event = {
+	id = egypt.4
+	title = egypt.4.t
+	desc = egypt.4.d
+	picture = GFX_report_event_europe_funeral
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_idea = makram_ebeid
+			}
+			remove_ideas = makram_ebeid
+		}
+	}
+
+	option = {
+		name = egypt.4.a
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.02
+		}
+	}
+}
+#Makram Ebeid Escapes
+country_event = {
+	id = egypt.5
+	title = egypt.5.t
+	desc = egypt.5.d
+	picture = GFX_report_event_soviet_purge_speech
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_idea = makram_ebeid
+			}
+			remove_ideas = makram_ebeid
+		}	
+	}
+	
+	option = {
+		name = egypt.5.a
+		add_stability = -0.05
+	}
+}
+#Egypt gets Suez
+country_event = {
+	id = egypt.6
+	title = egypt.6.t
+	desc = egypt.6.d
+	picture = GFX_report_event_usa_macarthur_speech
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.6.a
+	}
+}
+#Egypt DOESN'T get Suez
+country_event = {
+	id = egypt.7
+	title = egypt.7.t
+	desc = egypt.7.d
+	picture = GFX_report_event_usa_macarthur_speech
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.7.a
+	}
+}
+#Egypt gets British military ties
+country_event = {
+	id = egypt.8
+	title = egypt.8.t
+	desc = egypt.8.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.8.a
+		add_offsite_building = { type = arms_factory level = 1 }
+		add_stability = 0.03
+		add_war_support = 0.05
+		hidden_effect = { add_opinion_modifier = { target = ENG modifier = medium_increase } }
+	}
+}
+#Egypt DOESN'T get British military ties
+country_event = {
+	id = egypt.9
+	title = egypt.9.t
+	desc = egypt.9.d
+	picture = GFX_report_event_french_british_officers
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.9.a
+		add_war_support = 0.1
+		hidden_effect = { add_opinion_modifier = { target = ENG modifier = medium_decrease } }
+	}
+}
+
+#Election of 1936: Aly Maher Pasha and Mostafa el-Nahhas Pasha
+country_event = {
+	id = egypt.12
+	title = egypt.12.t
+	desc = egypt.12.d
+	picture = GFX_report_event_usa_election_generic
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = EGY
+		has_country_flag = EGY_aly_maher_pasha_appointed
+		date > 1936.5.1
+		date < 1936.5.31
+	}
+
+	option = { 	
+		name = egypt.12.a
+		ai_chance = {
+			factor = 25
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 10
+			}
+		}		
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		add_stability = -0.05
+		add_political_power = 100
+		custom_effect_tooltip = egypt.12_tt_1
+		hidden_effect = {
+			set_country_flag = EGY_1936_aly_maher_pasha_elected
+			EGY = { country_event = { id = egypt.10 hours = 6 } }
+		}
+	}
+
+	option = { 
+		name = egypt.12.b
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 90
+				is_historical_focus_on = yes
+			}
+		}
+		EGY = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}		
+		}
+		custom_effect_tooltip = egypt.12_tt_2
+		hidden_effect = {
+			set_country_flag = EGY_1936_mostafa_el-nahhas_pasha_elected
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+		}
+	}
+}
+#New Constitution Draft Begins
+country_event = {
+	id = egypt.13
+	title = egypt.13.t
+	desc = egypt.13.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.13.a
+	}
+}
+#Revision of Representative System
+country_event = {
+	id = egypt.14
+	title = egypt.14.t
+	desc = egypt.14.d
+	picture = GFX_report_event_saf_coup
+	
+	trigger = {
+		NOT = { has_completed_focus = EGY_draft_a_new_constitution }
+		focus_progress = {
+			focus = EGY_draft_a_new_constitution
+			progress > 0.25
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.14.a
+		ai_chance = {
+			factor = 1
+		}
+		add_political_power = 25
+		add_stability = 0.02
+		add_popularity = {
+			ideology = communism
+			popularity = 0.03
+		}
+	}
+	
+	option = {
+		name = egypt.14.b
+		ai_chance = {
+			factor = 1
+		}
+		add_political_power = -25
+		add_ideas = biased_representation
+	}
+}
+#Capitalist Purge
+country_event = {
+	id = egypt.15
+	title = egypt.15.t
+	desc = egypt.15.d
+	picture = GFX_report_event_vienna_award_hungary
+	
+	trigger = {
+		NOT = { has_completed_focus = EGY_draft_a_new_constitution }
+		focus_progress = {
+			focus = EGY_draft_a_new_constitution
+			progress > 0.50
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.15.a
+		ai_chance = {
+			factor = 1
+		}
+		add_timed_idea = {
+			idea = capitalist_purge
+			days = 180
+		}
+		add_stability = -0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		add_political_power = -75
+	}
+	
+	option = {
+		name = egypt.15.b
+		ai_chance = {
+			factor = 1
+		}
+		add_stability = 0.05
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.03
+		}
+		add_political_power = 50
+	}
+}
+#The Liberal Decision
+country_event = {
+	id = egypt.16
+	title = egypt.16.t
+	desc = egypt.16.d
+	picture = GFX_report_event_election_vote
+	
+	trigger = {
+		NOT = { has_completed_focus = EGY_draft_a_new_constitution }
+		focus_progress = {
+			focus = EGY_draft_a_new_constitution
+			progress > 0.75
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.16.a
+		ai_chance = {
+			factor = 1
+		}
+		add_stability = 0.05
+		add_war_support = -0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.07
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.03
+		}
+	}
+	
+	option = {
+		name = egypt.16.b
+		ai_chance = {
+			factor = 1
+		}
+		add_political_power = -25
+		add_stability = -0.05
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.07
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.03
+		}
+		add_political_power = -50
+	}
+}
+#Egyptian Military Academy Students Protest New Constitution
+country_event = {
+	id = egypt.17
+	title = egypt.17.t
+	desc = egypt.17.d
+	picture = GFX_report_event_gathering_protest
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.17.a
+		ai_chance = {
+			factor = 2
+		}
+		add_stability = -0.03
+		add_political_power = -50
+		unlock_decision_tooltip = EGY_purge_the_ministers
+		hidden_effect = {
+			set_country_flag = EGY_acted_on_new_constitution_protests
+		}
+	}
+	
+	option = {
+		name = egypt.17.b
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = egypt.17_tt
+		hidden_effect = {
+			set_country_flag = EGY_ignored_new_constitution_protests
+		}
+	}
+}
+#Free Officers Movement Coup d'etat
+country_event = {
+	id = egypt.18
+	title = egypt.18.t
+	desc = egypt.18.d
+	picture = GFX_report_event_gathering_protest
+	
+	trigger = {
+		has_country_flag = EGY_ignored_new_constitution_protests
+		has_idea = king_farouk_i
+		NOT = {
+			has_country_flag = EGY_air_department_reformed
+			has_country_flag = EGY_war_department_reformed
+			has_country_flag = EGY_ministers_purged
+			has_completed_focus = EGY_draft_a_new_constitution
+		}
+		NOT = {
+			OR = {
+				has_country_leader = {
+					name = "King Farouk I"
+				}
+				has_country_leader = {
+					name = "Emperor Farouk I"
+				}
+			}
+			fascism > 0.6
+		}
+		date > 1940.1.1
+	}
+	
+	mean_time_to_happen = {
+		days = 140
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.18.a
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = 0.05
+		remove_ideas = king_farouk_i
+		if = {
+			limit = {
+				OR = {
+					has_country_leader = {
+						name = "King Farouk I"
+					}
+					has_country_leader = {
+						name = "Emperor Farouk I"
+					}
+				}
+			}
+			retire_country_leader = yes
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.3
+		}
+		custom_effect_tooltip = egypt.18_tt_1
+		hidden_effect = {
+			set_politics = {
+				ruling_party = democratic
+			}
+		}
+	}
+	
+	option = {
+		name = egypt.18.b
+		custom_effect_tooltip = egypt.18_tt_2
+		hidden_effect = {
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = democratic
+				size = 0.5
+				capital = 447
+				states = { 
+					447 452 552 453
+				}
+				keep_unit_leaders = {
+					10001 10003 10004 10005
+				}
+			}
+			random_other_country = {
+				limit = {
+					original_tag = EGY
+					has_government = democratic
+				}
+				load_oob = "FOM_civil_war"
+				set_equipment_fraction = 0.4
+				set_stability = 0.8
+				set_war_support = 1.2
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.8
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.2
+				}
+				set_party_name = { 
+					ideology = democratic
+					name = FOM_democratic_party
+				}
+				create_country_leader = {
+					name = "Gamal Abdel Nasser Hussein"
+					desc = ""
+					picture = "Portrait_Egypt_Gamal_Abdel_Nasser.dds"
+					expire = "1965.1.1"
+					ideology = liberalism
+					traits = { 
+						little_churchill
+						champion_of_peace_1
+					}
+				}
+			}
+			random_other_country = {
+				limit = {
+					original_tag = EGY
+					has_government = democratic
+				}
+				set_cosmetic_tag = FOM_civil_war
+			}
+			set_cosmetic_tag = EGY_civil_war
+			load_oob = "EGY_civil_war"
+			set_equipment_fraction = 0.7
+			set_stability = 0.7
+			set_war_support = 0.8
+			add_popularity = {
+				ideology = fascism
+				popularity = 7
+			}
+			set_party_name = { 
+				ideology = fascism
+				name = EGY_monarchist_party
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_leader = {
+							name = "King Farouk I"
+						}
+					}
+					NOT = {
+						has_country_leader = {
+							name = "Emperor Farouk I"
+						}
+					}
+				}
+				create_country_leader = {
+					name = "King Farouk I"
+					desc = ""
+					picture = "Portrait_Egypt_King_Farouk_I.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = { 
+						headstrong
+					}
+				}
+			}
+			news_event = { id = news.1009 hours = 6 }
+		}
+	}
+}
+#King Farouk Arrested
+country_event = {
+	id = egypt.19
+	title = egypt.19.t
+	desc = egypt.19.d
+	picture = GFX_report_event_king_speech
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.19.a
+		add_stability = 0.05
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		}
+		remove_ideas = king_farouk_i
+	}
+}
+#King Farouk is Assassinated
+country_event = {
+	id = egypt.20
+	title = egypt.20.t
+	desc = egypt.20.d
+	picture = GFX_report_event_usa_funeral
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.20.a
+		add_stability = -0.03
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.03
+		}
+		remove_ideas = king_farouk_i
+	}
+}
+#King Farouk Escapes
+country_event = {
+	id = egypt.21
+	title = egypt.21.t
+	desc = egypt.21.d
+	picture = GFX_report_event_journalists_speech
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				25 = {
+					PER = {
+						add_ideas = king_farouk_i_1
+					}
+				}
+				25 = {
+					IRQ = {
+						add_ideas = king_farouk_i_1
+					}
+				}
+				10 = {
+					ITA = {
+						add_ideas = king_farouk_i_1
+					}
+				}
+				20 = {
+					SAU = {
+						add_ideas = king_farouk_i_1
+					}
+				}
+				10 = {
+					YEM = {
+						add_ideas = king_farouk_i_1
+					}
+				}
+				10 = {
+					OMA = {
+						add_ideas = king_farouk_i_1
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = egypt.21.a
+		add_stability = -0.03
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		}
+		remove_ideas = king_farouk_i
+	}
+}
+#Greenshirt great March in [statenamehere]!
+country_event = {
+	id = egypt.22
+	title = egypt.22.t
+	desc = egypt.22.d
+	picture = GFX_report_event_eng_blackshirt_march
+
+	is_triggered_only = yes
+
+	option = {
+		name = egypt.22.a
+		if = {
+			limit = {
+				has_country_flag = EGY_march_temp_cairo
+			}
+			add_political_power = 20
+			add_stability = -0.025
+			add_popularity = { ideology = fascism popularity = 0.066 }
+			446 = { set_state_flag = EGY_has_greenshirt_support }
+			custom_effect_tooltip = EGY_great_greenshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = EGY_march_temp_alexandria
+			}
+			add_political_power = 15
+			add_stability = -0.02
+			add_popularity = { ideology = fascism popularity = 0.044 }
+			447 = { set_state_flag = EGY_has_greenshirt_support }
+			custom_effect_tooltip = EGY_great_greenshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = EGY_march_temp_marsa_matruh
+			}
+			add_political_power = 10
+			add_stability = -0.015
+			add_popularity = { ideology = fascism popularity = 0.03 }
+			452 = { set_state_flag = EGY_has_greenshirt_support }
+			custom_effect_tooltip = EGY_great_greenshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = EGY_march_temp_aswan
+			}
+			add_political_power = 10
+			add_stability = -0.01
+			add_popularity = { ideology = fascism popularity = 0.02 }
+			456 = { set_state_flag = EGY_has_greenshirt_support }
+			custom_effect_tooltip = EGY_great_greenshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = EGY_march_temp_sinai
+			}
+			add_political_power = 10
+			add_stability = -0.01
+			add_popularity = { ideology = fascism popularity = 0.02 }
+			453 = { set_state_flag = EGY_has_greenshirt_support }
+			custom_effect_tooltip = EGY_great_greenshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = EGY_march_temp_eastern_desert
+			}
+			add_political_power = 10
+			add_stability = -0.01
+			add_popularity = { ideology = fascism popularity = 0.02 }
+			457 = { set_state_flag = EGY_has_greenshirt_support }
+			custom_effect_tooltip = EGY_great_greenshirt_march_tt
+		}
+		clr_country_flag = EGY_march_temp_cairo
+		clr_country_flag = EGY_march_temp_alexandria
+		clr_country_flag = EGY_march_temp_marsa_matruh
+		clr_country_flag = EGY_march_temp_aswan
+		clr_country_flag = EGY_march_temp_sinai
+		clr_country_flag = EGY_march_temp_eastern_desert
+		clr_country_flag = EGY_march_timer_flag
+	}
+}
+
+#Greenshirt normal March in [statenamehere]!
+country_event = {
+	id = egypt.23
+	title = egypt.23.t
+	desc = egypt.23.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+
+	option = {
+		name = egypt.23.a
+		if = {
+			limit = {
+				has_country_flag = EGY_march_temp_cairo
+			}
+			add_stability = -0.05
+			add_popularity = { ideology = fascism popularity = 0.066 }
+			446 = { set_state_flag = EGY_has_greenshirt_support }
+			custom_effect_tooltip = EGY_normal_greenshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = EGY_march_temp_alexandria
+			}
+			add_stability = -0.04
+			add_popularity = { ideology = fascism popularity = 0.044 }
+			447 = { set_state_flag = EGY_has_greenshirt_support }
+			custom_effect_tooltip = EGY_normal_greenshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = EGY_march_temp_marsa_matruh
+			}
+			add_stability = -0.03
+			add_popularity = { ideology = fascism popularity = 0.03 }
+			452 = { set_state_flag = EGY_has_greenshirt_support }
+			custom_effect_tooltip = EGY_normal_greenshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = EGY_march_temp_aswan
+			}
+			add_stability = -0.02
+			add_popularity = { ideology = fascism popularity = 0.02 }
+			456 = { set_state_flag = EGY_has_greenshirt_support }
+			custom_effect_tooltip = EGY_normal_greenshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = EGY_march_temp_sinai
+			}
+			add_stability = -0.02
+			add_popularity = { ideology = fascism popularity = 0.02 }
+			453 = { set_state_flag = EGY_has_greenshirt_support }
+			custom_effect_tooltip = EGY_normal_greenshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = EGY_march_temp_eastern_desert
+			}
+			add_stability = -0.02
+			add_popularity = { ideology = fascism popularity = 0.02 }
+			457 = { set_state_flag = EGY_has_greenshirt_support }
+			custom_effect_tooltip = EGY_normal_greenshirt_march_tt
+		}
+		clr_country_flag = EGY_march_temp_cairo
+		clr_country_flag = EGY_march_temp_alexandria
+		clr_country_flag = EGY_march_temp_marsa_matruh
+		clr_country_flag = EGY_march_temp_aswan
+		clr_country_flag = EGY_march_temp_sinai
+		clr_country_flag = EGY_march_temp_eastern_desert
+		clr_country_flag = EGY_march_timer_flag
+	}
+}
+
+#Greenshirt disastrous March in [statenamehere]!
+country_event = {
+	id = egypt.24
+	title = egypt.24.t
+	desc = egypt.24.d
+	picture = GFX_report_event_generic_riot
+
+	is_triggered_only = yes
+	
+	option = {
+		name = egypt.24.a
+		if = {
+			limit = {
+				has_country_flag = EGY_march_temp_cairo
+			}
+			add_political_power = -20
+			add_stability = -0.08
+			add_popularity = { ideology = fascism popularity = 0.066 }
+			446 = { set_state_flag = EGY_has_greenshirt_support }
+			custom_effect_tooltip = EGY_violent_greenshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = EGY_march_temp_alexandria
+			}
+			add_political_power = -15
+			add_stability = -0.06
+			add_popularity = { ideology = fascism popularity = 0.044 }
+			447 = { set_state_flag = EGY_has_greenshirt_support }
+			custom_effect_tooltip = EGY_violent_greenshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = EGY_march_temp_marsa_matruh
+			}
+			add_political_power = -10
+			add_stability = -0.05
+			add_popularity = { ideology = fascism popularity = 0.03 }
+			452 = { set_state_flag = EGY_has_greenshirt_support }
+			custom_effect_tooltip = EGY_violent_greenshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = EGY_march_temp_aswan
+			}
+			add_political_power = -10
+			add_stability = -0.03
+			add_popularity = { ideology = fascism popularity = 0.02 }
+			456 = { set_state_flag = EGY_has_greenshirt_support }
+			custom_effect_tooltip = EGY_violent_greenshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = EGY_march_temp_sinai
+			}
+			add_political_power = -10
+			add_stability = -0.03
+			add_popularity = { ideology = fascism popularity = 0.02 }
+			453 = { set_state_flag = EGY_has_greenshirt_support }
+			custom_effect_tooltip = EGY_violent_greenshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = EGY_march_temp_eastern_desert
+			}
+			add_political_power = -10
+			add_stability = -0.03
+			add_popularity = { ideology = fascism popularity = 0.02 }
+			457 = { set_state_flag = EGY_has_greenshirt_support }
+			custom_effect_tooltip = EGY_violent_greenshirt_march_tt
+		}
+		clr_country_flag = EGY_march_temp_cairo
+		clr_country_flag = EGY_march_temp_alexandria
+		clr_country_flag = EGY_march_temp_marsa_matruh
+		clr_country_flag = EGY_march_temp_aswan
+		clr_country_flag = EGY_march_temp_sinai
+		clr_country_flag = EGY_march_temp_eastern_desert
+		clr_country_flag = EGY_march_timer_flag
+	}
+}
+#Parliamentary Dissolution
+country_event = {
+	id = egypt.25
+	title = egypt.25.t
+	desc = egypt.25.d
+	picture = GFX_report_event_hungary_parliament
+	
+	trigger = {
+		date > 1936.7.1
+		NOT = {
+			has_country_flag = EGY_parliament_dissolution_timer
+		}
+		has_idea = king_farouk_i
+		NOT = {	
+			OR = {
+				has_completed_focus = EGY_adopt_the_westminster_system
+				has_completed_focus = EGY_ban_boycotts
+				has_completed_focus = EGY_anti-western_policies
+				has_completed_focus = EGY_cave_to_nationalism
+				has_completed_focus = EGY_an_egypt_for_the_people
+				has_completed_focus = EGY_the_last_party
+				has_country_flag = EGY_parliament_reforms
+			}
+		}
+		NOT = {
+			OR = {
+				has_country_leader = {
+					name = "King Farouk I"
+				}
+				has_country_leader = {
+					name = "Emperor Farouk I"
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	fire_only_once = no
+
+	option = {
+		name = egypt.25.a
+		add_political_power = -15
+		add_stability = -0.03
+		clr_country_flag = EGY_parliament_dissolution_timer
+		hidden_effect = {
+			random_list = {
+				2 = {
+					EGY = { set_country_flag = { flag = EGY_parliament_dissolution_timer value = 1 days = 120 } }
+				}
+				8 = {
+					EGY = { set_country_flag = { flag = EGY_parliament_dissolution_timer value = 1 days = 150 } }
+				}
+				30 = {
+					EGY = { set_country_flag = { flag = EGY_parliament_dissolution_timer value = 1 days = 200 } }
+				}
+				60 = {
+					EGY = { set_country_flag = { flag = EGY_parliament_dissolution_timer value = 1 days = 250 } }
+				}
+			}
+		}
+	}
+}
+#Pact of Umar
+country_event = {
+	id = egypt.26
+	title = egypt.26.t
+	desc = egypt.26.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.26.a
+		add_stability = 0.05
+		hidden_effect = {
+			set_temp_variable = { var = influence_remove value = MBH.muslim_church_influence }
+			MBH = { subtract_from_variable = { var = muslim_church_influence value = influence_remove } }
+			set_country_flag = EGY_muslim_brotherhood_disestablished
+			set_temp_variable = { var = influence_remove value = CCE.christian_church_influence }
+			CCE = { subtract_from_variable = { var = christian_church_influence value = influence_remove } }
+			set_country_flag = EGY_coptic_church_disestablished
+		}
+		EGY_remove_christian_influence = yes
+		EGY_remove_muslim_influence = yes
+		swap_ideas = {
+			remove_idea = divided_under_pharaonism
+			add_idea = united_under_pharaonism
+		}
+	}
+}
+#King Farouk Arrested AFTER PALACE STORM
+country_event = {
+	id = egypt.27
+	title = egypt.27.t
+	desc = egypt.27.d
+	picture = GFX_report_event_king_speech
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.27.a
+		add_stability = 0.05
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		remove_ideas = king_farouk_i
+	}
+}
+#Britain Accepts Africa Front Proposal
+country_event = {
+	id = egypt.28
+	title = egypt.28.t
+	desc = egypt.28.d
+	picture = GFX_report_event_french_british_officers
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.28.a
+		add_ideas = leading_the_africa_front
+	}
+}
+#Britain Denies Africa Front Proposal
+country_event = {
+	id = egypt.29
+	title = egypt.29.t
+	desc = egypt.29.d
+	picture = GFX_report_event_french_british_officers
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.29.a
+	}
+}
+#Britain Accepts Liberation
+country_event = {
+	id = egypt.30
+	title = egypt.30.t
+	desc = egypt.30.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.30.a
+		add_stability = 0.05
+	}
+}
+#Britain Refuses Liberation
+country_event = {
+	id = egypt.31
+	title = egypt.31.t
+	desc = egypt.31.d
+	picture = GFX_report_event_british_inspect_troops
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.31.a
+		add_war_support = 0.05
+	}
+}
+#China Gets Deal of the Two Empires
+country_event = {
+	id = egypt.32
+	title = egypt.32.t
+	desc = egypt.32.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.32.a
+		CHI = {
+			add_to_tech_sharing_group = empire_research_deal
+			add_ideas = deal_of_the_two_empires
+		}
+	}
+}
+#Turkey is invited to the Mediterranean Defense Committee
+country_event = {
+	id = egypt.33
+	title = egypt.33.t
+	desc = egypt.33.d
+	picture = GFX_report_event_french_british_officers
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.33.a
+		ai_chance = {
+			factor = 100
+		}
+		TUR = {
+			add_ideas = mediterranean_defense_committee_member
+		}
+		EGY = {
+			add_to_faction = TUR
+		}
+		hidden_effect = {
+			EGY = { country_event = { id = egypt.35 hours = 6 } }
+		}
+	}
+	
+	option = {
+		name = egypt.33.b
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+			EGY = { country_event = { id = egypt.36 hours = 6 } }
+		}
+	}
+}
+#Greece is invited to the Mediterranean Defense Committee
+country_event = {
+	id = egypt.34
+	title = egypt.34.t
+	desc = egypt.34.d
+	picture = GFX_report_event_french_british_officers
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.34.a
+		ai_chance = {
+			factor = 100
+		}
+		GRE = {
+			add_ideas = mediterranean_defense_committee_member
+		}
+		EGY = {
+			add_to_faction = GRE
+		}
+		hidden_effect = {
+			EGY = { country_event = { id = egypt.37 hours = 6 } }
+		}
+	}
+	
+	option = {
+		name = egypt.34.b
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+			EGY = { country_event = { id = egypt.38 hours = 6 } }
+		}
+	}
+}
+#Turkey Accepts Faction Invitation
+country_event = {
+	id = egypt.35
+	title = egypt.35.t
+	desc = egypt.35.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.35.a
+	}
+}
+#Turkey Refuses Faction Invitation
+country_event = {
+	id = egypt.36
+	title = egypt.36.t
+	desc = egypt.36.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.36.a
+	}
+}
+#Greece Accepts Faction Invitation
+country_event = {
+	id = egypt.37
+	title = egypt.37.t
+	desc = egypt.37.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.37.a
+	}
+}
+#Greece Refuses Faction Invitation
+country_event = {
+	id = egypt.38
+	title = egypt.38.t
+	desc = egypt.38.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.38.a
+	}
+}
+#Britain Accepts Mediterranean Decolonisation
+country_event = {
+	id = egypt.39
+	title = egypt.39.t
+	desc = egypt.39.d
+	picture = GFX_report_event_generic_naval_treaty
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.39.a
+	}
+}
+#Britain Refuses Mediterranean Decolonisation
+country_event = {
+	id = egypt.40
+	title = egypt.40.t
+	desc = egypt.40.d
+	picture = GFX_report_event_generic_naval_treaty
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.40.a
+	}
+}
+#Egyptian Constitution of 1923 is Destroyed
+country_event = {
+	id = egypt.41
+	title = egypt.41.t
+	desc = egypt.41.d
+	picture = GFX_report_event_ast_parliament_house
+	
+	trigger = {
+		NOT = { has_completed_focus = EGY_the_purge_of_democracy }
+		focus_progress = {
+			focus = EGY_the_purge_of_democracy
+			progress > 0.25
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.41.a
+		ai_chance = {
+			factor = 1
+		}
+		add_stability = -0.03
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.05
+		}
+		EGY_purge_of_democracy_level_up = yes
+	}
+}
+#Parliament Reforms
+country_event = {
+	id = egypt.42
+	title = egypt.42.t
+	desc = egypt.42.d
+	picture = GFX_report_event_generic_parliament
+	
+	trigger = {
+		NOT = { has_completed_focus = EGY_the_purge_of_democracy }
+		focus_progress = {
+			focus = EGY_the_purge_of_democracy
+			progress > 0.50
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.42.a
+		ai_chance = {
+			factor = 1
+		}
+		add_war_support = -0.03
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.05
+		}
+		add_timed_idea = {
+			idea = capitalist_purge
+			days = 140
+		}
+		EGY_purge_of_democracy_level_up = yes
+		add_political_power = -15
+		set_country_flag = EGY_parliament_reforms
+		custom_effect_tooltip = EGY_parliament_dissolution_tt
+	}
+}
+#Wafd Collapse
+country_event = {
+	id = egypt.43
+	title = egypt.43.t
+	desc = egypt.43.d
+	picture = GFX_report_event_romania_parliament
+	
+	trigger = {
+		NOT = { has_completed_focus = EGY_the_purge_of_democracy }
+		focus_progress = {
+			focus = EGY_the_purge_of_democracy
+			progress > 0.75
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.43.a
+		ai_chance = {
+			factor = 1
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.1
+		}
+		EGY_purge_of_democracy_level_up = yes
+		hidden_effect = {
+			set_country_flag = EGY_wafd_collapse
+			set_party_name = { 
+				ideology = democratic
+				name = EGY_fallen_wafd_party
+			}
+		}
+	}
+}
+#End of Egyptian Democracy
+country_event = {
+	id = egypt.44
+	title = egypt.44.t
+	desc = egypt.44.d
+	picture = GFX_report_event_romania_parliament
+	
+	trigger = {
+		has_completed_focus = EGY_the_purge_of_democracy
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.44.a
+		ai_chance = {
+			factor = 1
+		}
+		hidden_effect = {
+			ENG = {
+				end_puppet = EGY
+			}
+		}
+		ENG = {
+			set_autonomy = {
+				target = EGY
+				autonomy_state = autonomy_free
+			}
+		}
+		hidden_effect = {
+			set_country_flag = EGY_declared_independence
+		}
+	}
+}
+#Rekindle the Old Alliance (TURKEY ONLY)
+country_event = {
+	id = egypt.45
+	title = egypt.45.t
+	desc = egypt.45.d
+	picture = GFX_report_event_ast_transfer_singapore
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.45.a
+		ai_chance = {
+			factor = 60
+			modifier = {
+				TUR = {
+					has_government = neutrality
+				}
+				factor = 100
+			}
+		}
+		EGY = {
+			annex_country = {
+				target = TUR
+				transfer_troops = yes
+			}
+			set_cosmetic_tag = EGY_ottoman_empire
+		}
+		hidden_effect = {
+			EGY = { country_event = { id = egypt.46 hours = 6 } }
+		}
+	}
+	option = {
+		name = egypt.45.b
+		ai_chance = {
+			factor = 40
+		}
+		hidden_effect = {
+			EGY = { country_event = { id = egypt.47 hours = 6 } }
+		}
+	}
+}
+#Turkey Accepts Alliance
+country_event = {
+	id = egypt.46
+	title = egypt.46.t
+	desc = egypt.46.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.46.a
+	}
+}
+#Turkey Refuses Alliance
+country_event = {
+	id = egypt.47
+	title = egypt.47.t
+	desc = egypt.47.d
+	picture = GFX_report_event_degaulle_inspect_troops
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.47.a
+	}
+}
+#War Department Reform
+country_event = {
+	id = egypt.48
+	title = egypt.48.t
+	desc = egypt.48.d
+	picture = GFX_report_event_hol_cabinet_de_geer
+	
+	trigger = {
+		NOT = { has_completed_focus = EGY_war_department_reform }
+		focus_progress = {
+			focus = EGY_war_department_reform
+			progress > 0.50
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = EGY_war_department_reformed
+		}
+	}
+
+	option = {
+		name = egypt.48.a
+		army_experience = 25
+		add_ideas = infantry_weaponry_prioritisation
+		add_tech_bonus = {
+			name = land_doc_bonus
+			bonus = 1.0
+			uses = 1
+			category = land_doctrine
+		}
+	}
+	
+	option = {
+		name = egypt.48.b
+		army_experience = 25
+		add_ideas = artillery_prioritisation
+		add_tech_bonus = {
+			name = land_doc_bonus
+			bonus = 1.0
+			uses = 1
+			category = land_doctrine
+		}
+	}
+	
+	option = {
+		name = egypt.48.c
+		army_experience = 25
+		add_ideas = armor_prioritisation
+		add_tech_bonus = {
+			name = land_doc_bonus
+			bonus = 1.0
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+#Officer Purge After Reform
+country_event = {
+	id = egypt.49
+	title = egypt.49.t
+	desc = egypt.49.d
+	picture = GFX_report_event_hol_cabinet_gerbrandy
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = egypt.49.a
+		custom_effect_tooltip = remove_theorist
+		show_ideas_tooltip = gamal_abdel_nasser_hussein
+	}
+	
+	option = {
+		name = egypt.49.b
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = mohamed_naguib
+	}
+}

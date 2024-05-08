@@ -1,0 +1,432 @@
+#Category allowed for BEL&WAL
+
+BEL_state_integration = {
+
+	BEL_french_flanders = {
+
+		icon = generic_operation
+
+		available = {
+			owns_state = 29
+			original_tag = BEL
+		}
+
+		cost = 150
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = BEL
+			controls_state = 29
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			add_state_core = 29
+			set_province_name = { id = 575 name = "Duinkerke"}
+			set_province_name = { id = 11483 name = "Rijsel"}
+			set_province_name = { id = 11548 name = "Kales"}
+			29 = { set_state_name = "Westhoek" }
+			add_stability = -0.02
+		}
+	}
+	BEL_netherlands = {
+
+		icon = generic_nationalism
+
+		available = {
+			owns_state = 35
+            owns_state = 7
+            owns_state = 36
+			original_tag = BEL
+		}
+
+		cost = 50
+        days_remove = 75
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = BEL
+			owns_state = 35
+            owns_state = 7
+            owns_state = 36
+		}
+
+		modifier = {
+        political_power_gain = -0.25 
+        }
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		remove_effect = {
+			add_state_core = 7
+			add_state_core = 35
+			add_state_core = 36
+			add_political_power = -100
+		}
+	}
+}
+
+arms_sales = {
+	
+	sell_rifles = {
+		
+		icon = generic_prepare_civil_war
+
+		available = {
+		FROM = {num_of_civilian_factories_available_for_projects > 1}
+		BEL = {
+				has_equipment = {
+				infantry_equipment > 4999
+					}
+			  }
+        NOT = { BEL = { has_capitulated = yes } }
+		NOT = { original_tag = BEL }
+		NOT = { has_war_with = BEL }
+         
+		}
+			cost = 15
+
+			days_re_enable = 10
+			fire_only_once = no	
+
+		visible = {
+			NOT = { original_tag = BEL }
+			BEL = {	has_completed_focus = BEL_weapon_exports }
+			}
+     	
+     		complete_effect = {
+														#CONFOUND THESE SKELTONS#
+     		FROM = {
+     			random_owned_controlled_state = { 
+     				limit = {industrial_complex > 0}
+     				remove_building = {
+   				 		type = industrial_complex
+   				 		level = 1
+					}
+				}
+     		}
+
+			BEL = {
+				send_equipment = {
+					target = FROM
+					type = infantry_equipment
+					amount = 5000
+					old_prioritised = yes
+				}
+
+				add_offsite_building = {
+					type = industrial_complex
+   				 	level = 1
+				}
+			}
+		}
+   	}
+
+    sell_arty = {
+		
+		icon = generic_prepare_civil_war
+
+		available = {
+		FROM = {num_of_civilian_factories_available_for_projects > 1}
+		BEL = {
+				has_equipment = {
+				artillery_equipment > 749
+					}
+			  }
+
+		NOT = { BEL = { has_capitulated = yes } }
+		NOT = { original_tag = BEL }
+		NOT = { has_war_with = BEL }
+
+		}
+			cost = 15
+
+			days_re_enable = 10
+			fire_only_once = no	
+
+		visible = {
+			NOT = { original_tag = BEL }
+			BEL = {	has_completed_focus = BEL_weapon_exports }
+			}
+     	
+     		complete_effect = {
+														#CONFOUND THESE SKELTONS#
+     		FROM = {
+     			random_owned_controlled_state = { 
+     				limit = {industrial_complex > 0}
+     				remove_building = {
+   				 		type = industrial_complex
+   				 		level = 1
+					}
+				}
+     		}
+
+			BEL = {
+				send_equipment = {
+					target = FROM
+					type = artillery_equipment
+					amount = 750
+					old_prioritised = yes
+				}
+
+				add_offsite_building = {
+					type = industrial_complex
+   				 	level = 1
+				}
+			}
+		}
+    }
+
+    sell_sup = {
+		
+		icon = generic_prepare_civil_war
+
+		available = {
+		FROM = {num_of_civilian_factories_available_for_projects > 1}
+		BEL = {
+				has_equipment = {
+				support_equipment > 649
+					}
+			  }
+
+		NOT = { BEL = { has_capitulated = yes } }
+		NOT = { original_tag = BEL }
+		NOT = { has_war_with = BEL }	
+
+		}
+			cost = 15
+
+			days_re_enable = 10
+			fire_only_once = no	
+
+		visible = {
+			NOT = { original_tag = BEL }
+			BEL = {	has_completed_focus = BEL_weapon_exports }
+			}
+     	
+     		complete_effect = {
+     		FROM = {
+     			random_owned_controlled_state = { 
+     				limit = {industrial_complex > 0}
+     				remove_building = {
+   				 		type = industrial_complex
+   				 		level = 1
+					}
+				}
+     		}
+
+			BEL = {
+				send_equipment = {
+					target = FROM
+					type = support_equipment
+					amount = 650
+					old_prioritised = yes
+				}
+
+				add_offsite_building = {
+					type = industrial_complex
+   				 	level = 1
+				}
+			}
+		}
+    }	
+
+}
+
+
+BEL_power_struggle_rex = {
+
+BEL_infiltrate_the_vnv = {
+icon = eng_ally_imperialist_coup
+
+available = {
+			custom_trigger_tooltip = {
+				tooltip = BEL_1vnv
+				check_variable = { BEL.vnv_influence > 0 }
+	}
+}
+
+cost = 40
+days_remove = 60
+fire_only_once = no
+days_re_enable = 100
+
+modifier = {
+political_power_gain = -0.25 
+}
+
+ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				check_variable = { BEL.vnv_influence > 2 }
+			}
+}
+remove_effect = {
+			BEL_increase_rex = yes
+			custom_effect_tooltip = BEL_pol_rex
+			add_stability = -0.01
+}
+}
+
+BEL_verdinaso_rallies = {
+icon = eng_blackshirt_march
+
+available = {
+			custom_trigger_tooltip = {
+				tooltip = BEL_1vnv
+				check_variable = { BEL.vnv_influence > 0 }
+	}
+}
+
+cost = 75
+days_remove = 60
+fire_only_once = no
+days_re_enable = 100
+
+modifier = {
+political_power_gain = -0.1
+}
+
+ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				check_variable = { BEL.vnv_influence > 2 }
+			}
+}
+remove_effect = {
+			BEL_increase_rex = yes
+			custom_effect_tooltip = BEL_pol_rex
+			add_popularity = {
+            ideology = fascism
+            popularity = 0.05
+            }
+            add_popularity = {
+            ideology = neutrality
+            popularity = -0.05
+            }
+}
+}
+
+BEL_harass_political = {
+icon = oppression
+
+available = {
+			custom_trigger_tooltip = {
+				tooltip = BEL_1vnv
+				check_variable = { BEL.vnv_influence > 0 }
+	}
+}
+
+cost = 60
+days_remove = 60
+fire_only_once = no
+days_re_enable = 100
+
+modifier = {
+political_power_gain = -0.5
+}
+
+ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				check_variable = { BEL.vnv_influence > 2 }
+			}
+}
+remove_effect = {
+			BEL_increase_rex = yes
+			custom_effect_tooltip = BEL_pol_rex
+			add_manpower = -100
+			add_stability = -0.025
+			add_popularity = {
+            ideology = fascism
+            popularity = -0.025
+            }
+}
+}
+
+BEL_enforce_unity = {
+icon = generic_nationalism
+
+available = {
+			custom_trigger_tooltip = {
+				tooltip = BEL_1vnv
+				check_variable = { BEL.vnv_influence > 0 }
+	}
+}
+
+cost = 50
+days_remove = 60
+fire_only_once = no
+days_re_enable = 100
+
+modifier = {
+political_power_gain = -0.25 
+}
+
+ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				check_variable = { BEL.vnv_influence > 2 }
+			}
+}
+remove_effect = {
+			BEL_increase_rex = yes
+			custom_effect_tooltip = BEL_pol_rex
+			add_popularity = {
+            ideology = fascism
+            popularity = 0.025
+            }
+}
+}
+
+BEL_clock_ticking = {
+		icon = generic_ignite_civil_war
+		priority = 100
+
+		activation = { has_country_flag = rex_game } 
+
+		available = {
+				has_completed_focus = BEL_embrace_catholicism
+				has_completed_focus = BEL_youth_bond
+				has_completed_focus = BEL_corporatism
+				has_completed_focus = BEL_unite_the_communities
+                custom_trigger_tooltip = {
+				tooltip = BEL_10rex
+				check_variable = { BEL.rex_influence > 5 }
+	            }
+	            fascism > 0.7
+		}
+
+		fire_only_once = yes
+		is_good = no
+		days_mission_timeout = 400
+
+		timeout_effect = {
+			add_stability = -0.25
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.25
+			}
+			hidden_effect = { country_event = { id = belgium.32 days = 4 }}
+			custom_effect_tooltip = bel_civil_war_tt
+		}
+
+		complete_effect = {
+			add_stability = 0.05
+			custom_effect_tooltip = bel_united_tt
+			hidden_effect = { country_event = { id = belgium.29 days = 4 }}
+		}
+	}
+
+}

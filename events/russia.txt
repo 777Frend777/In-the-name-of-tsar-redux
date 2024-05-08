@@ -1,0 +1,2642 @@
+﻿###########################
+# Russia Events ###########last is 97
+###########################
+
+add_namespace = russia
+
+#####################################################################################################################################################
+#TRIGGER FOR THE EVENT
+news_event = {
+	id = russia.49
+	title = russia.49.t
+	desc = russia.49.d
+		picture = GFX_news_event_017
+		is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	 option = {
+		name = russia.49.a
+		trigger = {
+			NOT = {
+				TAG = RUS
+			}
+			}
+	}
+			option = {
+		name = russia.49.b
+			trigger = { TAG = RUS }
+	}
+
+}
+#France and France backs Turkey and joins the fight
+country_event = {
+	id = russia.64
+	title = russia.64.t
+	desc = russia.64.d
+	picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+
+	option = {
+		name = russia.64.a	
+    ai_chance = { factor = 100 }
+	ENG = {
+	add_to_war = { targeted_alliance = TUR enemy = RUS }
+	}
+	FRA = {
+	add_to_war = { targeted_alliance = TUR enemy = RUS }
+	}
+	}
+}
+#France to back Turkey
+country_event = {
+	id = russia.63
+	title = russia.63.t
+	desc = russia.63.d
+	picture = GFX_report_event_TUR_riot
+	is_triggered_only = yes
+
+	option = {
+		name = russia.63.a	
+    ai_chance = { factor = 99 }
+	ENG = {
+	country_event = { days = 2 id = russia.65 }
+	}
+	}
+	option = {
+		name = russia.63.b	
+    ai_chance = { factor = 1 }
+	custom_effect_tooltip = TUR_this_will_leave_turkey_to_die
+	}
+}
+#UK to back France
+country_event = {
+	id = russia.65
+	title = russia.65.t
+	desc = russia.65.d
+	picture = GFX_report_event_TUR_riot
+	is_triggered_only = yes
+
+	option = {
+		name = russia.65.a	
+    ai_chance = { factor = 99 }
+	RUS = {
+	country_event = { days = 2 id = russia.66 }
+	}
+	}
+	option = {
+		name = russia.65.b	
+    ai_chance = { factor = 1 }
+	custom_effect_tooltip = TUR_france_cannot_back_turkey_alone
+	}
+}
+#Russia war/back off
+country_event = {
+	id = russia.66
+	title = russia.66.t
+	desc = russia.66.d
+	picture = GFX_report_event_chamberlain_announce
+	is_triggered_only = yes
+
+	option = {
+		name = russia.66.a	
+    ai_chance = { factor = 90 }
+	add_war_support = 0.1
+	hidden_effect = {
+	news_event = { id = russia.68 }
+	FRA = {
+	country_event = { days = 3 id = russia.64 }
+	}
+	}
+	}
+	option = {
+	name = russia.66.b	
+    ai_chance = { factor = 10 }
+	custom_effect_tooltip = TUR_this_will_end_the_war
+	white_peace = TUR
+	hidden_effect = {
+	news_event = { id = russia.67 }
+	if = {
+	limit = { RUS = { has_war_with = FRA } }
+	white_peace = FRA
+	}
+	if = {
+	limit = { RUS = { has_war_with = ENG } }
+	white_peace = ENG
+	}
+	if = {
+	limit = { RUS = { has_war_with = FTU } }
+	white_peace = FTU
+	}
+	if = {
+	limit = { RUS = { has_war_with = CAN } }
+	white_peace = CAN
+	}
+	}
+	}
+	}
+
+news_event = { #Conflict Resolved in Turkey 
+    id = russia.67
+    title = russia.67.t
+    desc = russia.67.d
+    picture = news_event_012
+	major = yes
+
+        is_triggered_only = yes
+        option = {
+		name = russia.67.a
+		trigger = {
+			NOT = {
+				TAG = RUS
+			}
+			}
+	}
+			option = {
+		name = russia.67.b
+			trigger = { TAG = RUS }
+	}
+}
+news_event = { #War Breaks out on Turkey
+    id = russia.68
+    title = russia.68.t
+    desc = russia.68.d
+    picture = news_event_012
+	major = yes
+	is_triggered_only = yes
+    option = {
+	name = russia.68.a
+	trigger = {
+	NOT = {
+	TAG = RUS
+	}}
+	}
+	option = {
+	name = russia.68.b
+	trigger = { TAG = RUS }
+	}
+}
+news_event = { #Russian Expansion in Persia
+    id = russia.70
+    title = russia.70.t
+    desc = russia.70.d
+    picture = news_event_016
+	major = yes
+	is_triggered_only = yes
+    option = {
+	name = russia.70.a
+	trigger = {
+	NOT = {
+	TAG = RUS
+	}}
+	}
+	option = {
+	name = russia.70.b
+	trigger = { TAG = RUS }
+	}
+}
+news_event = { #Russia Reaffirms its Doctrine
+    id = russia.80
+    title = russia.80.t
+    desc = russia.80.d
+    picture = news_event_021
+	major = yes
+	is_triggered_only = yes
+    option = {
+	name = russia.80.a
+	trigger = {
+	NOT = {
+	TAG = RUS
+	}}
+	}
+	option = {
+	name = russia.80.b
+	trigger = { TAG = RUS }
+	}
+}		
+#End of strikes
+country_event = {
+	id = russia.69
+	title = russia.69.t
+	desc = russia.69.d
+	picture = GFX_news_event_002
+	is_triggered_only = yes
+
+	option = {
+		name = russia.69.a	
+	}
+}
+#Election of Duma
+country_event = {
+	id = russia.71
+	title = russia.71.t
+	desc = russia.71.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+
+	option = {
+		name = russia.71.a	
+    ai_chance = { factor = 100 }
+	set_country_flag = RUS_liberal_elections
+	add_popularity = {
+					ideology = communism
+					popularity = 0.03
+				}
+	add_popularity = {
+					ideology = socialist
+					popularity = 0.03
+				}			
+	hidden_effect = {
+	country_event = {
+	days = 45 id = russia.75
+	}
+	}
+	}
+	option = {
+		name = russia.71.b
+    ai_chance = { factor = 0 }
+	set_country_flag = RUS_banned_communists
+	hidden_effect = {
+	country_event = { 
+	days = 7 id = russia.72 
+	}
+	}
+	}
+}
+#Clashes in Moscow
+country_event = {
+	id = russia.72
+	title = russia.72.t
+	desc = russia.72.d
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+	is_triggered_only = yes
+
+	option = { #Agree to Their Demands
+		name = russia.72.a	
+    ai_chance = { factor = 50 }
+	add_stability = -0.1
+	add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+	add_popularity = {
+					ideology = socialist
+					popularity = 0.05
+				}
+		hidden_effect = {
+	country_event = { 
+	days = 14 id = russia.75
+	}
+	}			
+	}
+	option = { #Send in the Army, dont choose this if you want to live
+	name = russia.72.b
+    ai_chance = { factor = 50 }
+	add_political_power = -50
+	hidden_effect = {
+	country_event = { 
+	days = 14 id = russia.73
+	}
+	}
+	}
+}
+#Clashes in Petrograd
+country_event = {
+	id = russia.73
+	title = russia.73.t
+	desc = russia.73.d
+	picture = GFX_report_event_spain_civil_war_volunteers_02
+	is_triggered_only = yes
+
+	option = { #Agree to Their Demands
+		name = russia.73.a	
+    ai_chance = { factor = 50 }
+	add_political_power = -50
+	add_popularity = {
+					ideology = socialist
+					popularity = 0.02
+				}	
+	hidden_effect = {
+	country_event = { 
+	days = 14 id = russia.75
+	}
+	}			
+	}
+	option = { #Send in the Army, this is last warning 
+	name = russia.73.b
+    ai_chance = { factor = 50 }
+	add_political_power = -100
+	hidden_effect = {
+	country_event = { 
+	days = 14 id = russia.74
+	}
+	}
+	}
+}
+#People demand Referendum and Abdication of Tsar!
+country_event = {
+	id = russia.74
+	title = russia.74.t
+	desc = russia.74.d
+	picture = GFX_report_event_spain_civil_war_volunteers_02
+	is_triggered_only = yes
+
+	option = { #No way 
+		name = russia.74.a	
+    ai_chance = { factor = 50 }
+	add_political_power = -50
+	RUS = {
+	start_civil_war = {
+	ideology = communism
+	size = 0.5
+	states = { 769 788 239 225 401 257 238 93 94 199 198 78 192 201 202 203 197 196 137 200 226 259 193 255 220 240 221 227 228 260 245 218 234 265 217 236 237 235 232 233 231 230 229 407 406 }
+	}			
+	}
+	hidden_effect = {
+	225 = {
+	owner = {
+	load_oob = RUS_civil_war_commi_tsar
+	}
+	}
+	RUS = {
+	load_oob = RUS_civil_war_white_tsar
+	}
+	}
+	}
+	option = { #Referendum succeeds
+	name = russia.74.b
+    ai_chance = { factor = 50 }
+	add_political_power = -100
+	#set_politics = { ruling_party = communism elections_allowed = no }
+	complete_national_focus = RUS_force_abdication
+	}
+}
+#Conservative Coalition Wins
+country_event = {
+	id = russia.75
+	title = russia.75.t
+	desc = russia.75.d
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+
+	option = {
+		name = russia.75.a	
+	set_country_flag = RUS_conservative_coalition_wins
+	}
+}
+#Industry Planning Event
+country_event = {
+	id = russia.81
+	title = russia.81.t
+	desc = russia.81.d
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+
+	option = {
+		name = russia.81.a	#Agriculture
+    ai_chance = { factor = 25 }
+	set_country_flag = rus_agricole
+	}
+	option = {
+		name = russia.81.b	#Liberal Economy
+    ai_chance = { factor = 25 }
+	set_country_flag = rus_liberal_eco 
+	}
+	option = {
+		name = russia.81.c	#Industrialization
+    ai_chance = { factor = 25 }
+	set_country_flag = rus_industrialization 
+	}
+	option = {
+		name = russia.81.e #Centrally Controlled
+    ai_chance = { factor = 25 }
+	set_country_flag = rus_controlled_indus
+	}
+}
+#Poland Declares Independence
+country_event = {
+	id = russia.60
+	title = russia.60.t
+	desc = russia.60.d
+	picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+
+	option = {
+		name = russia.60.a	
+    ai_chance = { factor = 90 }
+		POL = {
+
+	transfer_state = 87
+	transfer_state = 10
+	transfer_state = 98
+	transfer_state = 97
+	transfer_state = 92
+	transfer_state = 90
+	load_oob = POL_revolt
+	}
+	}
+	option = {
+		name = russia.60.a	
+    ai_chance = { factor = 10 }
+		 declare_war_on = { target = POL type = annex_everything }
+		POL = {
+	
+	transfer_state = 87
+	transfer_state = 10
+	transfer_state = 98
+	transfer_state = 97
+	transfer_state = 92
+	transfer_state = 90
+	load_oob = POL_revolt
+	}
+	}
+}
+#Finland Declares Independence 
+country_event = {
+	id = russia.61
+	title = russia.61.t
+	desc = russia.61.d
+	picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+
+	option = {
+		name = russia.61.a	
+    ai_chance = { factor = 100 }
+	remove_unit_leader = 601
+	FIN = {
+	load_oob = FIN_1936
+	transfer_state = 111
+	transfer_state = 145
+	transfer_state = 150
+	transfer_state = 146
+	transfer_state = 149
+	transfer_state = 148
+	transfer_state = 147
+	transfer_state = 722
+	}
+	}
+	option = {
+		name = russia.61.a	
+    ai_chance = { factor = 0 }
+	remove_unit_leader = 601
+		 declare_war_on = { target = FIN type = annex_everything }
+	FIN = {
+	load_oob = FIN_1936
+	transfer_state = 111
+	transfer_state = 145
+	transfer_state = 150
+	transfer_state = 146
+	transfer_state = 149
+	transfer_state = 148
+	transfer_state = 147
+	transfer_state = 722
+	}
+	}
+}
+
+# Deal with his Majesty 
+country_event = {
+	id = russia.1
+	title = russia.1.t
+	desc = russia.1.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.1.a	# This one
+    ai_chance = {
+			factor = 99
+		}
+		RUS = {
+			country_event = { days = 1 id = russia.2 }
+		}
+	}
+
+	option = {
+		name = russia.1.b	#no way
+		ai_chance = { factor = 1  }
+		RUS = {
+			country_event = { days = 1 id = russia.3 }
+		}
+	}
+}
+
+#ENG accepts 
+country_event = {
+	id = russia.2
+	title = russia.2.t
+	desc = russia.2.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.2.a
+		RUS = { set_country_flag = eng_accepts }
+		diplomatic_relation = {
+			country = ENG
+			relation = non_aggression_pact
+		
+	}
+ }
+}
+
+# ENG rejects  
+country_event = {
+	id = russia.3
+	title = russia.3.t
+	desc = russia.3.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.3.a
+		RUS = { set_country_flag = eng_rejects }
+		reverse_add_opinion_modifier = { target = ENG modifier = RUS_bad_anglo-russo }
+		
+	 }
+  }
+
+#NIKOLAI DIES
+ country_event = {
+	id = russia.37
+	title = russia.37.t
+	desc = russia.37.d
+	picture = GFX_report_event_europe_funeral
+	#trigger = {
+	#	tag = RUS
+	#	date > 1936.7.1
+	#	date < 1936.7.18
+	#}
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = russia.37.a
+		news_event = { hours = 6 id = russia.38 }
+		RUS = {
+		add_political_power = -120
+		remove_unit_leader = 99999
+		kill_country_leader = yes
+		set_country_flag = RUS_provisional_government_flag
+		country_event = {
+			id = finland.0
+		}
+	create_country_leader = {
+	name = "Provisional Government of Russia"
+	desc = "POLITICS_PROV_GOV_RUS_DESC"
+	picture = "rus_senate.dds"
+	expire = "1965.1.1"
+	ideology = neutrality_subtype
+	traits = {
+	
+	}
+	}
+	create_country_leader = {
+	name = "Provisional Government of Russia"
+	desc = "POLITICS_PROV_GOV_RUS_DESC"
+	picture = "rus_senate.dds"
+	expire = "1965.1.1"
+	ideology = socialist_subtype
+	traits = {
+	
+	}
+	}
+	create_country_leader = {
+	name = "Provisional Government of Russia"
+	desc = "POLITICS_PROV_GOV_RUS_DESC"
+	picture = "rus_senate.dds"
+	expire = "1965.1.1"
+	ideology = democratic_subtype
+	traits = {
+	
+	}
+	}
+	create_country_leader = {
+	name = "Provisional Government of Russia"
+	desc = "POLITICS_PROV_GOV_RUS_DESC"
+	picture = "rus_senate.dds"
+	expire = "1965.1.1"
+	ideology = conservatives_subtype
+	traits = {
+	
+	}
+	}
+	}
+	hidden_effect = {
+	country_event = { days = 20 id = russia.58 }
+	if = { 
+	limit = { NOT = { ROM = { has_completed_focus = ROM_follow_RUS } } }
+	ROM = {
+	country_event = { days = 40 id = russia.88 }
+	}
+	}
+	}
+  }
+}
+ #Mikhail TSAR DIES 
+ country_event = {
+	id = russia.20
+	title = russia.20.t
+	desc = russia.20.d
+	picture = GFX_report_event_europe_funeral
+	trigger = {
+		tag = RUS
+		date > 1945.7.1
+		date < 1945.1.18
+		RUS = {
+		has_government = neutrality
+		}
+	}
+	fire_only_once = yes
+
+	option = {
+		name = russia.20.a
+		news_event = { hours = 6 id = russia.24 }
+		RUS = {
+		#add_national_unity = -0.1
+		add_political_power = -120
+		kill_country_leader = yes
+		#remove_ideas = RUS_provisional_gov
+		#set_country_flag = rus_general
+		set_country_flag = rus_georg_tsar
+					create_country_leader = {
+	name = "E.I.V Georg I"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "georgy_romanov.dds" 
+	expire = "1965.1.1"
+	ideology = neutrality_subtype
+	traits = {
+		
+	}
+	}
+	}
+  }
+}  
+
+
+
+# TSAR ELECTION AS IDEA
+country_event = {
+	id = russia.19
+	title = russia.19.t
+	desc = russia.19.d
+	picture = GFX_news_event_017
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.19.a	
+    ai_chance = {
+			factor = 90
+		}
+		RUS = {
+		country_event = { days = 1 id = russia.17 }
+		add_ideas = RUS_tsar_kirill
+	#		create_country_leader = {
+	#name = "Boris Vladimirovich Romanov"
+	#desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	#picture = "boris_vladimirovich" 
+	#expire = "1965.1.1"
+	#ideology = despotism
+	#traits = {
+	#	
+	#}
+	#}
+	}
+	}
+
+	option = {
+		name = russia.19.b	
+		ai_chance = { factor = 5 }
+		RUS = {
+		country_event = { days = 1 id = russia.17 }
+	add_ideas = RUS_tsar_boris	
+	#		create_country_leader = {
+	#name = "Kirill Vladimirovich Romanov"
+	#desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	#picture = "kirill_vladimirovich" 
+	#expire = "1965.1.1"
+	#ideology = oligarchism
+	#traits = {
+	#	
+	#}
+	#}
+	
+		
+				
+	}
+}
+
+	option = {
+		name = russia.19.c	
+		ai_chance = { factor = 5 }
+		
+		RUS = {
+		country_event = { days = 1 id = russia.17 }
+		add_ideas = RUS_tsar_alexander
+	#		create_country_leader = {
+	#name = "Alexander Kolchak"
+	#desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	#picture = "alexander_kolchak.dds" 
+	#expire = "1965.1.1"
+	#ideology = centrism
+	#traits = {
+	#	
+	#}
+	#}
+	
+	#	add_popularity = {
+	#				ideology = neutrality
+	#				popularity = 0.25
+	#			}
+	#		set_party_name = {
+	#				ideology = neutrality
+	#			long_name = "Tsar Loyalists"
+	#				name = "TLR"
+	#			}	
+	}
+	}
+}
+
+# Chancellor Election
+country_event = {
+	id = russia.26
+	title = russia.26.t
+	desc = russia.26.d
+	picture = GFX_news_event_017
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.26.a	
+    ai_chance = {
+			factor = 80
+		}
+		RUS = {
+		
+	
+			create_country_leader = {
+	name = "Alexander Kolchak"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "Alexander_Kolchak.dds" 
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {
+		
+	}
+	}
+	set_politics = { ruling_party = fascism elections_allowed = yes }
+	add_popularity = {
+					ideology = fascism
+					popularity = 0.3
+				}
+			set_party_name = {
+					ideology = fascism
+				long_name = "Russian National Party"
+					name = "RNP"
+				}
+	}
+	}
+
+	option = {
+		name = russia.26.b	
+		ai_chance = { factor = 20 }
+		RUS = {
+			create_country_leader = {
+	name = "Lavr Kornilov"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "Lavr_Kornilov.dds" 
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {
+		
+	}
+	}
+	set_politics = { ruling_party = fascism elections_allowed = yes }
+	add_popularity = {
+					ideology = fascism
+					popularity = 0.3
+				}
+			set_party_name = {
+					ideology = fascism
+				long_name = "Russian National Party"
+					name = "RNP"
+				}
+	}
+	
+		
+				
+}
+
+	option = {
+		name = russia.26.c	
+		ai_chance = { factor = 0 }
+		
+		RUS = {
+		
+			create_country_leader = {
+	name = "Mikhail Diterikhs"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "Mikhail_Diterikhs.dds" 
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {
+		
+	}
+	}
+	set_politics = { ruling_party = fascism elections_allowed = yes }
+	add_popularity = {
+					ideology = fascism
+					popularity = 0.3
+				}
+			set_party_name = {
+					ideology = fascism
+				long_name = "Russian National Party"
+					name = "RNP"
+				}
+	}
+	
+		
+				
+	}
+	}
+	
+		
+
+# TSAR ELECTION AS LEADER
+country_event = {
+	id = russia.25
+	title = russia.25.t
+	desc = russia.25.d
+	picture = GFX_news_event_017
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.25.a	
+    ai_chance = {
+			factor = 50
+		}
+		RUS = {
+		
+	
+			create_country_leader = {
+	name = "Boris Vladimirovich Romanov"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "boris_vladimirovich" 
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+	}
+	}
+	}
+
+	option = {
+		name = russia.25.b	
+		ai_chance = { factor = 25 }
+		RUS = {
+			create_country_leader = {
+	name = "Kirill Vladimirovich Romanov"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "kirill_vladimirovich" 
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		
+	}
+	}
+	
+		
+				
+	}
+}
+
+	option = {
+		name = russia.25.c	
+		ai_chance = { factor = 25 }
+		
+		RUS = {
+		
+			create_country_leader = {
+	name = "Alexander Mikhailovich Romanov"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "alexander_mikhailovich.dds" 
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		
+	}
+	}
+	
+		
+	}
+	}
+}
+# PRIME-MINISTER ELECTION
+country_event = {
+	id = russia.17
+	title = russia.17.t
+	desc = russia.17.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.17.a	# heh 65/35
+    ai_chance = {
+			factor = 34
+		}
+		RUS = {
+		set_politics = { ruling_party = conservatives elections_allowed = yes }
+	add_popularity = {
+					ideology = conservatives
+					popularity = 0.15
+				}
+		}
+	}
+
+	option = {
+		name = russia.17.b	
+		ai_chance = { factor = 33 }
+		RUS = {
+		set_politics = { ruling_party = conservatives elections_allowed = yes }
+			create_country_leader = {
+	name = "Alexander Guchkov"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "alexander_guchkov.dds" #To replace with actual portrait
+	expire = "1965.1.1"
+	ideology = conservatives_subtype
+	traits = {
+		
+	}
+}
+	
+		add_popularity = {
+					ideology = conservatives
+					popularity = 0.15
+				}	
+	}
+}
+
+	option = {
+		name = russia.17.c	
+		ai_chance = { factor = 33 }
+		
+		RUS = {
+		set_politics = { ruling_party = conservatives elections_allowed = yes }
+			create_country_leader = {
+	name = "Alexander Konovalov"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "Alexander_Konovalov.dds" #To replace with actual portrait
+	expire = "1965.1.1"
+	ideology = conservatives_subtype
+	traits = {
+		
+	}
+	}
+	add_popularity = {
+					ideology = conservatives
+					popularity = 0.15
+				}
+	}	
+	}
+}
+# PRESIDENT ELECTIONS
+country_event = {
+	id = russia.18
+	title = russia.18.t
+	desc = russia.18.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.18.a	# heh 65/35
+    ai_chance = {
+			factor = 34
+		}
+		RUS = {
+			create_country_leader = {
+	name = "Alexander Konovalov"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "Alexander_Konovalov.dds" 
+	expire = "1965.1.1"
+	ideology = democratic_subtype
+	traits = {
+	INOT_reformer	
+	}
+	}
+	}
+	}
+
+	option = {
+		name = russia.18.b	
+		ai_chance = { factor = 33 }
+		RUS = {
+		#set_politics = { ruling_party = conservatives elections_allowed = yes }
+			create_country_leader = {
+	name = "Felix Yusupov"
+	desc = "POLITICS_YUSUPOV_DESC"
+	picture = "felix_yusupov.dds" 
+	expire = "1965.1.1"
+	ideology = democratic_subtype
+	traits = {
+	INOT_industrialist_magnate	
+	}
+}	
+	}
+}
+
+	option = {
+		name = russia.18.c	
+		ai_chance = { factor = 33 }
+		RUS = {
+				
+			create_country_leader = {
+	name = "Alexander Kerensky"
+	desc = "POLITICS_KERENSKY_DESC"
+	picture = "gfx/leaders/RUS/alexander_kerensky.dds"
+	expire = "1965.1.1"
+	ideology = democratic_subtype
+	traits = {
+	INOT_moderate_socialist 	
+	}
+}	
+	}
+}
+}
+
+#KORNILOV ASSASSINATION
+country_event = {
+	id = russia.50
+	title = russia.50.t
+	desc = russia.50.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.50.a	#KORNILOV SURVIVES TAKING CONTROL OF RUSSIAN EMPIRE
+    ai_chance = {
+			factor = 50
+		}
+	RUS = {
+	add_political_power = -120
+	add_stability = -0.2
+	}	
+	}
+
+	option = {
+		name = russia.50.b	#KORNILOV DIES NATIONAL SAVINKOV TAKES POWER
+		ai_chance = { factor = 50 }
+		RUS = {
+		add_stability = -0.1
+		set_country_flag = rus_kornilov_dead
+		remove_ideas = RUS_lavr_kornilov 
+		kill_country_leader = yes
+		remove_unit_leader = 99998 #kills Kornilov
+		create_country_leader = {
+		name = "Boris Savinkov"
+		desc = "POLITICS_KONSTANTIN_RODZAEVSKY_DESC"
+		picture = "boris_savinkov.dds"
+		expire = "1953.3.1"
+		ideology = fascism_ideology
+		traits = {
+		
+		}
+	}
+	}
+}
+}  
+#Tsar Abdication Event 
+country_event = {
+	id = russia.82
+	title = russia.82.t
+	desc = russia.82.d
+	picture = GFX_report_event_vienna_award_hungary
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	TAG = RUS
+	has_war_with = GER
+	OR = {
+	has_government = neutrality 
+	has_government = conservatives
+	}
+	}
+	option = {
+		name = russia.82.a	#Tsar Abdicates and Duma Becomes the Leader
+    ai_chance = {
+			factor = 95
+		}
+	RUS = {
+	remove_ideas = RUS_russian_monarchy
+	create_country_leader = {
+	name = "Provisional Government of Russia"
+	desc = "POLITICS_PROV_GOV_RUS_DESC"
+	picture = "rus_senate.dds"
+	expire = "1965.1.1"
+	ideology = neutrality_subtype
+	traits = {
+	
+	}
+	}
+	create_country_leader = {
+	name = "Provisional Government of Russia"
+	desc = "POLITICS_PROV_GOV_RUS_DESC"
+	picture = "rus_senate.dds"
+	expire = "1965.1.1"
+	ideology = conservatives_subtype
+	traits = {
+	
+	}
+	}
+	}	
+	}
+
+	option = {
+		name = russia.82.b	#Tsar Does not Abdicate
+		ai_chance = { factor = 5 }
+		RUS = {
+		add_war_support = 0.05
+		add_stability = -0.05
+		}
+		hidden_effect = { 
+		RUS = {
+		country_event = { id = russia.83 days = 15 }
+		}
+		}
+	}
+} 
+#Generals Force Tsar to Abdicate 
+country_event = {
+	id = russia.83
+	title = russia.83.t
+	desc = russia.83.d
+	picture = GFX_report_event_vienna_award_hungary
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = russia.83.a	#Kornilov Takes Over 
+    ai_chance = {
+			factor = 50
+		}
+	RUS = {
+	create_country_leader = {
+	name = "Lavr Kornilov"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "Lavr_Kornilov.dds" 
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {
+		
+	        }
+	}
+	set_politics = { ruling_party = fascism elections_allowed = yes }
+	add_popularity = {
+					ideology = fascism
+					popularity = 0.25
+			
+	          }	
+	       }
+	}
+	option = {
+		name = russia.83.b	#Tsar Does not Abdicate/ Mutunies begin
+		ai_chance = { factor = 50 }
+		RUS = { 
+		add_timed_idea = { idea = RUS_nationalist_mutinies days = 150 }
+		}
+	}
+	} 	
+#Second Alaska Purchase
+country_event = {
+	id = russia.4
+	title = russia.4.t
+	desc = russia.4.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.4.a	#USA Sells Alaska
+		ai_chance = {
+			factor = 65
+		}
+		RUS = {
+			country_event = { days = 5 id = russia.5 } 
+		}
+	}
+	option = {
+		name = russia.4.b	#USA declines
+		ai_chance = { factor = 35 }
+		RUS = {
+			country_event = { days = 5 id = russia.6 }
+		}
+	}
+}
+
+#USA Accepts 
+country_event = {
+	id = russia.5
+	title = russia.5.t
+	desc = russia.5.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.5.a
+			news_event = { id = russia.23 }
+			RUS = { 
+			transfer_state = 463 
+			add_timed_idea = { idea = RUS_alaska_purchase_rus days = 200 }
+			}
+			USA = {
+			remove_state_core = 463
+			add_timed_idea = { idea = RUS_alaska_purchase_usa days = 200 }
+			}
+		
+	
+	}
+}
+
+# USA Rjects  
+country_event = {
+	id = russia.6
+	title = russia.6.t
+	desc = russia.6.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.6.a
+		
+		RUS = {
+		add_state_claim = 463
+		add_state_claim = 471
+		add_state_claim = 471
+		add_state_claim = 629
+		add_state_claim = 386
+		add_state_claim = 385
+		}
+		
+		
+	 }
+  }
+  
+######################################### EASTERN COALITION EVENTS 
+ # IN GENERAL
+country_event = {
+	id = russia.14
+	title = russia.14.t
+	desc = russia.14.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.14.a	# This one
+    ai_chance = {
+			factor = 85
+		}
+		RUS = {
+			country_event = { days = 1 id = russia.15 }
+		}
+	}
+
+	option = {
+		name = russia.1.b	#no way
+		ai_chance = { factor = 15  }
+		RUS = {
+			country_event = { days = 1 id = russia.16 }
+		}
+	}
+}
+############ACCEPT EVENTS 
+# Romania Agrees 
+country_event = {
+	id = russia.15
+	title = russia.15.t
+	desc = russia.15.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.15.a
+		RUS = { 
+		add_to_faction = ROM
+		}
+		
+		
+	
+ }
+}
+
+# Romania Rejects  
+country_event = {
+	id = russia.16
+	title = russia.16.t
+	desc = russia.16.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.15.a
+		RUS = { add_state_claim = 79 }
+		RUS = { add_state_claim = 80 }
+	 }
+  } 
+  
+ ######################################################################### 
+ # MANCHURIA OCCUPATION
+country_event = {
+	id = russia.11
+	title = russia.11.t
+	desc = russia.11.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.11.a	
+    ai_chance = {
+			factor = 1
+		}
+		RUS = {
+			country_event = { days = 1 id = russia.12 }
+		}
+	}
+
+	option = {
+		name = russia.11.b	
+		ai_chance = { factor = 99 }
+		RUS = {
+			country_event = { days = 1 id = russia.13 }
+		}
+	}
+}
+
+#JAPAN CEDES 
+country_event = {
+	id = russia.12
+	title = russia.12.t
+	desc = russia.12.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.12.a
+			news_event = { id = russia.22 }
+			RUS = {
+			transfer_state = 537  
+			transfer_state = 745 }
+			RMN = { 
+			transfer_state = 714
+		transfer_state = 717
+		transfer_state = 328
+		transfer_state = 716
+		transfer_state = 715
+		transfer_state = 610
+		transfer_state = 611
+		transfer_state = 609
+			}
+		
+	
+ }
+}
+
+# JAPAN HELL NAH  
+country_event = {
+	id = russia.13
+	title = russia.13.t
+	desc = russia.13.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.13.a
+		
+		RUS = {
+		add_state_claim = 714
+		add_state_claim = 717
+		add_state_claim = 761
+		add_state_claim = 555
+		RUS = {
+		declare_war_on = { target = JAP type = puppet_wargoal_focus }
+		}
+
+		}
+		
+		
+	 }
+  } 
+
+#Japan Loses Manchuria
+country_event = {
+	id = russia.7
+	title = russia.7.t
+	desc = russia.7.d
+	picture = GFX_report_event_soviet_tanks
+
+	#is_triggered_only = yes
+	trigger = {
+	TAG = JAP 
+	JAP = {
+	has_war_with = RUS
+	}
+	RUS = { 
+	controls_state = 717
+	controls_state = 714
+	controls_state = 328
+	}
+	}
+	option = {
+		name = russia.7.a	
+    ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = russia.7.b	
+		ai_chance = { factor = 99 }
+		RUS = {
+			country_event = { days = 1 id = russia.8 }
+		}
+	}
+} 
+#Russian Treaty
+country_event = {
+	id = russia.8
+	title = russia.8.t
+	desc = russia.8.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+	option = {
+		name = russia.8.a	
+    ai_chance = {
+			factor = 99
+		}
+	RUS = { 
+	white_peace = JAP
+	white_peace = MAN
+	puppet = KOR
+	transfer_state = 537
+	transfer_state = 745
+	}
+	RMN = {
+	diplomatic_relation = {
+    country = JAP
+    relation = military_access
+    active = no
+	}
+	white_peace = JAP
+	white_peace = MAN
+	transfer_state = 714
+	transfer_state = 717
+	transfer_state = 328
+	transfer_state = 716
+	transfer_state = 715
+	transfer_state = 610
+	transfer_state = 611
+	transfer_state = 609
+	}
+	KOR = {
+	transfer_state = 527
+	transfer_state = 525
+	}
+	hidden_effect = {
+	JAP = {
+	white_peace = CHI
+	white_peace = PRC
+	white_peace = SHX
+	white_peace = YUN
+	white_peace = KOR
+	}
+	}	
+	}
+
+	option = {
+		name = russia.8.b	
+		ai_chance = { factor = 1 }
+		add_war_support = 0.05
+	}
+} 
+######################################
+#
+# NOT WORKING ATM MIGHT IMPLEMENT LATER
+######################################
+  #white peace japan-russia
+ #Japan Loses
+#	country_event = {
+#	id = russia.7
+#	title = russia.7.t
+#	desc = russia.7.d
+#	picture = GFX_report_event_soviet_tanks
+#
+#	trigger = {
+#	tag = JAP
+#	JAP = { has_defensive_war_with = RUS }
+#	RUS = {
+#	controls_state = 714
+#	controls_state = 717
+#	controls_state = 537
+#	}
+#	}
+#	
+#	fire_only_once = yes
+#	mean_time_to_happen = {
+#		days = 5	
+#	}
+#	
+#	option = {
+#	name = russia.7.a	 #accept surrender	
+ #   ai_chance = {
+	#		factor = 70
+	#	}
+	#	
+	#		news_event = { id = russia.9 }
+	#		effect_tooltip = {
+	#		RUS = { 
+	#			white_peace = {
+	#				tag = JAP
+	#				message = JAP_agree_peace 
+	#			} 
+	#		transfer_state = 714
+	#		transfer_state = 717
+	#		transfer_state = 537
+	#		}
+	#		
+	#	}
+	#		
+	#}
+#
+#	option = {
+#		name = russia.7.b	# nah
+#		ai_chance = { factor = 30 }
+#		add_national_unity = 0.05
+#		
+#		
+#	}
+#	}
+	
+#Russia loses 	
+#country_event = {
+#	id = russia.8
+#	title = russia.8.t
+#	desc = russia.8.d
+#	picture = GFX_report_event_soviet_tanks
+#
+#	trigger = {
+#	tag = RUS
+#	has_war_with = JAP
+#	has_civil_war = no
+#	is_in_faction = no
+#	JAP = {
+#	controls_state = 408
+#	controls_state = 655
+#	controls_state = 409
+#	}
+#	}
+#	
+#	fire_only_once = yes
+#	#accept surrender	
+#	option = {
+#	name = russia.7.a	# 
+ #   ai_chance = {
+	#		factor = 99
+	#	}
+	#	
+	#		news_event = { id = russia.10 }
+	#		effect_tooltip = {
+	#		JAP = { 
+	#			white_peace = {
+	#				tag = RUS
+	#				message = RUS_agree_peace 
+	#			} 
+	#		}
+	#		transfer_state = 655
+	#	}
+	#		
+	#}
+#
+#	option = {
+	#	name = russia.7.b	# nah
+	#	ai_chance = { factor = 1 }
+	#	
+	#	
+	#}
+	#}
+	news_event = {
+        id = russia.9
+        title = russia.9.t
+        desc = russia.9.d
+        picture = GFX_report_news_event_003
+
+        major = yes
+
+        is_triggered_only = yes
+
+        fire_only_once = yes
+
+        option = {
+            name = russia.9.a
+            
+        }
+    }
+	news_event = {
+        id = russia.10
+        title = russia.10.t
+        desc = russia.10.d
+        picture = GFX_report_news_event_003
+
+        major = yes
+
+        is_triggered_only = yes
+
+        fire_only_once = yes
+
+        option = {
+            name = russia.10.a
+            
+        }
+    }
+	#Polish Revolt
+country_event = {
+     id = russia.27
+     title = russia.27.t
+     desc = russia.27.d
+     picture = GFX_news_event_034
+	 is_triggered_only = yes
+	 fire_only_once = yes
+	 
+	 option = { #Play as Poland
+	 name = russia.27.a
+	 ai_chance = { factor = 0 }
+	 POL = { 
+	 change_tag_from = RUS
+	 transfer_state = 10
+	 transfer_state = 98
+	 transfer_state = 87
+	 transfer_state = 90
+	 transfer_state = 92
+	 transfer_state = 97
+	 load_oob = POL_revolt
+     }
+	 RUS = {
+	 remove_state_core = 10
+	 remove_state_core = 98
+	 remove_state_core = 87
+	 remove_state_core = 90
+	 remove_state_core = 92
+	 remove_state_core = 97
+	 }
+	 news_event = { id = russia.54 }
+	 }
+	 option = { #Recognize Polish Independence
+	 name = russia.27.b
+	 ai_chance = { factor = 25 }
+	 POL = { 
+	 transfer_state = 10
+	 transfer_state = 98
+	 transfer_state = 87
+	 transfer_state = 90
+	 transfer_state = 92
+	 transfer_state = 97
+	 load_oob = POL_revolt
+	 country_event = { days = 12 id = generic.5 }
+     }
+	 RUS = {
+	 remove_state_core = 10
+	 remove_state_core = 98
+	 remove_state_core = 87
+	 remove_state_core = 90
+	 remove_state_core = 92
+	 remove_state_core = 97
+	 }
+	 news_event = { id = russia.54 }
+	 RUS = {
+	 give_guarantee = POL
+	 }
+	 }
+	 option = { #Negociate Annexation
+	 name = russia.27.c
+	 ai_chance = { factor = 75 }
+	 POL = { 
+	 transfer_state = 10
+	 transfer_state = 98
+	 transfer_state = 87
+	 transfer_state = 90
+	 transfer_state = 92
+	 transfer_state = 97
+	 load_oob = POL_revolt
+     }
+	  news_event = { id = russia.54 }
+	 POL = {
+	 country_event = { days = 3 id = russia.51 }
+	 }
+	 hidden_effect = {
+	 POL = {
+	 add_ideas = RUS_polish_nationalism
+	 }
+	 }
+	 }
+    }
+	#Polish Negociations
+country_event = {
+     id = russia.51
+     title = russia.51.t
+     desc = russia.51.d
+     picture = GFX_report_event_german_advisors_remain
+	 is_triggered_only = yes
+	 fire_only_once = yes
+	 
+	 option = { #Accept Puppet
+	 name = russia.51.a
+	 ai_chance = { factor = 50 }
+	 RUS = { 
+	 puppet = POL
+	 add_to_faction = POL
+	 country_event = { days = 2 id = russia.52 }
+	 }
+	 }
+	 option = { #No way!
+	 name = russia.51.b
+	 ai_chance = { factor = 50 }
+	 POL = {
+	 add_war_support = 0.5
+	 }
+	 RUS = { 
+	 country_event = { days = 12 id = russia.53 }
+	 }
+	 }
+    }	
+country_event = { #Instability in Russia
+     id = russia.58
+     title = russia.58.t
+     desc = russia.58.d
+     picture = GFX_report_event_worker_protests
+	 is_triggered_only = yes
+	 fire_only_once = yes
+	 
+	 option = { 
+	 name = russia.58.a #Moscow Accords
+	 ai_chance = {
+			factor = 100
+		}
+	 add_stability = -0.15
+	 add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+	 add_popularity = {
+					ideology = socialist
+					popularity = 0.07
+				}			
+	add_timed_idea = { idea = RUS_negociated_strikes days = 365 }
+	hidden_effect = {
+	 country_event = { days = 366 id = russia.69 }
+	 }
+	 }
+	 option = { 
+	 name = russia.58.b #Ignore Strike
+	 ai_chance = {
+			factor = 0
+		}
+	 add_stability = -0.1
+	 add_timed_idea = { idea = RUS_july_strikes days = 200 }
+	 hidden_effect = {
+	 country_event = { days = 201 id = russia.69 }
+	 country_event = { days = 15 id =  russia.55 }
+	 }
+	 }
+	}	
+country_event = { #Russia Receives Poland as Puppet 
+     id = russia.52
+     title = russia.52.t
+     desc = russia.52.d
+     picture = GFX_report_event_german_advisors_remain
+	 is_triggered_only = yes
+	 fire_only_once = yes
+	 
+	 option = { 
+	 name = russia.52.a
+	 }
+	}
+country_event = { #Poland says no
+     id = russia.53
+     title = russia.53.t
+     desc = russia.53.d
+     picture = GFX_report_event_german_advisors_remain
+	 is_triggered_only = yes
+	 fire_only_once = yes
+	 
+	 option = { 
+	 name = russia.53.a
+	 ai_chance = { factor = 90 }
+	 RUS = { 
+	 declare_war_on = { target = POL type = annex_everything }
+	 }
+	 }
+	 option = { 
+	 name = russia.53.a
+	 ai_chance = { factor = 10 }
+	 RUS = {
+	 remove_state_core = 10
+	 remove_state_core = 98
+	 remove_state_core = 87
+	 remove_state_core = 90
+	 remove_state_core = 92
+	 remove_state_core = 97
+	 }
+	 }
+	}
+news_event = { #Polish Rebellion Event
+     id = russia.54
+     title = russia.54.t
+     desc = russia.54.d
+     picture = GFX_news_event_034
+	 is_triggered_only = yes
+	 fire_only_once = yes
+	 major = yes
+	 option = { 
+	 name = russia.54.a
+	 trigger = {
+			NOT = {
+				TAG = RUS
+			}
+			}
+	 }
+	  option = { 
+	 name = russia.54.b
+	 trigger = {
+				TAG = RUS
+			}
+	 }
+	}
+news_event = { #Russia annouces its ambitions
+     id = russia.59
+     title = russia.59.t
+     desc = russia.59.d
+     picture = GFX_news_event_038
+	 is_triggered_only = yes
+	 fire_only_once = yes
+	 
+	 option = { 
+	 name = russia.59.a
+	 trigger = {
+			NOT = {
+				TAG = RUS
+			}
+			}
+	 }
+	  option = { 
+	 name = russia.59.b
+	 trigger = {
+				TAG = RUS
+			}
+	 }
+	}	
+	#Turkestan Revolt
+country_event = {
+     id = russia.55
+     title = russia.55.t
+     desc = russia.55.d
+     picture = GFX_news_event_military_planning
+	 is_triggered_only = yes
+	 fire_only_once = yes
+	 
+	 option = { #Play as Turkestan
+	 name = russia.55.a
+	 ai_chance = { factor = 0 }
+	 TUK = { 
+	 change_tag_from = RUS
+	 transfer_state = 584
+	 transfer_state = 587
+	 transfer_state = 732
+	 transfer_state = 586
+	 load_oob = TUK_1936
+     }
+	 RUS = {
+	 remove_state_core = 584
+	 remove_state_core = 587
+	 remove_state_core = 732
+	 remove_state_core = 586
+	 }
+	 news_event = { id = russia.56 }
+	 }
+	 option = { #Recognize Turkestan Independence
+	 name = russia.55.b
+	 ai_chance = { factor = 1 }
+	 TUK = { 
+	 transfer_state = 584
+	 transfer_state = 587
+	 transfer_state = 732
+	 transfer_state = 586
+	 load_oob = TUK_1936
+	 country_event = { days = 12 id = generic.5 }
+     }
+	 RUS = {
+	 remove_state_core = 584
+	 remove_state_core = 587
+	 remove_state_core = 732
+	 remove_state_core = 586
+	 }
+	 news_event = { id = russia.56 }
+	 RUS = {
+	 give_guarantee = TUK
+	 }
+	 }
+	 option = { #Invade Turkestan
+	 name = russia.55.c
+	 ai_chance = { factor = 99 }
+	 TUK = { 
+	 transfer_state = 584
+	 transfer_state = 587
+	 transfer_state = 732
+	 transfer_state = 586
+	 load_oob = TUK_1936
+     }
+	  news_event = { id = russia.56 }
+	 RUS = {
+	 country_event = { days = 10 id = russia.57 }
+	 }
+	 }
+    }
+news_event = { #Turkestan Rebellion
+     id = russia.56
+     title = russia.56.t
+     desc = russia.56.d
+     picture = GFX_news_event_military_planning
+	 is_triggered_only = yes
+	 fire_only_once = yes
+	 major = yes
+	 option = { 
+	 name = russia.56.a
+	 trigger = {
+			NOT = {
+				TAG = RUS
+			}
+			}
+	 }
+	  option = { 
+	 name = russia.56.b
+	 trigger = {
+				TAG = RUS
+			}
+	 }
+	}	
+country_event = { #Invasion of Turkestan
+     id = russia.57
+     title = russia.57.t
+     desc = russia.57.d
+     picture = GFX_news_event_polish_army
+	 is_triggered_only = yes
+	 fire_only_once = yes
+	 
+	 option = { 
+	 name = russia.57.a
+	 ai_chance = { factor = 100 }
+	 RUS = { 
+	 declare_war_on = { target = TUK 
+	 type = take_state_focus
+	 generator = { 584 587 732 	} }
+	 }
+	 }
+	 option = { 
+	 name = russia.57.b
+	 ai_chance = { factor = 0 }
+	 RUS = {
+	 remove_state_core = 584
+	 remove_state_core = 587
+	 remove_state_core = 732
+	 remove_state_core = 586
+	 }
+	 }
+	}	
+	news_event = {
+        id = russia.22
+        title = russia.22.t
+        desc = russia.22.d
+        picture = GFX_report_news_event_003
+
+        major = yes
+
+        is_triggered_only = yes
+
+        fire_only_once = yes
+
+        option = {
+            name = russia.22.a
+            
+        }
+    }
+	news_event = {
+        id = russia.23
+        title = russia.23.t
+        desc = russia.23.d
+        picture = GFX_report_news_event_003
+
+        major = yes
+
+        is_triggered_only = yes
+
+        fire_only_once = yes
+
+        option = {
+            name = russia.23.a
+            
+        }
+    }
+	#TSAR DIES NEWS EVENT
+	news_event = {
+        id = russia.24
+        title = russia.24.t
+        desc = russia.24.d
+        picture = GFX_news_event_generic_funeral
+
+        major = yes
+
+        is_triggered_only = yes
+		immediate = {
+		set_global_flag = RUS_tsar_died
+	}
+        option = {
+		name = russia.24.a
+		trigger = {
+			NOT = {
+				TAG = RUS
+			}
+			}
+	}
+			option = {
+		name = russia.24.b
+			trigger = { TAG = RUS }
+	}
+}
+#TSAR DIES NEWS EVENT
+	news_event = {
+        id = russia.38
+        title = russia.38.t
+        desc = russia.38.d
+        picture = GFX_news_event_generic_funeral
+
+        major = yes
+
+        is_triggered_only = yes
+		immediate = {
+		set_global_flag = RUS_tsar_died
+	}
+        option = {
+		name = russia.38.a
+		trigger = {
+			NOT = {
+				TAG = RUS
+			}
+			}
+	}
+			option = {
+		name = russia.38.b
+			trigger = { TAG = RUS }
+	}
+}
+	#RUSSIAN CIVIL WAR EVENT
+	news_event = {
+        id = russia.36
+        title = russia.36.t
+        desc = russia.36.d
+        picture = GFX_news_event_038
+
+        major = yes
+
+        is_triggered_only = yes
+		immediate = {
+		set_global_flag = RUS_civil_war
+	}
+        option = {
+		name = russia.36.a
+		trigger = {
+			NOT = {
+				TAG = RUS
+			}
+			}
+	}
+			option = {
+		name = russia.36.b
+			trigger = { TAG = RUS }
+	}
+}
+
+   # COMMUNIST COUP
+	news_event = {
+        id = russia.30
+        title = russia.30.t
+        desc = russia.30.d
+        picture = GFX_news_event_RUS_lenin
+
+        major = yes
+
+        is_triggered_only = yes
+		immediate = {
+		set_global_flag = RUS_coup
+	}
+        option = {
+		name = russia.30.a
+		trigger = {
+			NOT = {
+				TAG = RUS
+			}
+			}
+	}
+			option = {
+		name = russia.30.b
+			trigger = { TAG = RUS }
+	}
+}
+		# TSAR ABDICATES
+	news_event = {
+        id = russia.31
+        title = russia.31.t
+        desc = russia.31.d
+        picture = GFX_news_event_RUS_tsar_abdicates
+
+        major = yes
+
+        is_triggered_only = yes
+		immediate = {
+		set_global_flag = RUS_tsar_abdicated
+	}
+        option = {
+		name = russia.31.a
+		trigger = {
+			NOT = {
+				TAG = RUS
+			}
+			}
+	}
+			option = {
+		name = russia.31.b
+			trigger = { TAG = RUS }
+	}
+}
+		# TREATY JAPAN RUSSIA
+country_event = {
+	id = russia.32
+	title = russia.32.t
+	desc = russia.32.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.32.a	# This one
+    ai_chance = {
+			factor = 99
+		}
+		RUS = {
+			country_event = { days = 1 id = russia.33 }
+		}
+	}
+
+	option = {
+		name = russia.32.b	#no way
+		ai_chance = { factor = 1  }
+		RUS = {
+			country_event = { days = 1 id = russia.34 }
+		}
+	}
+}
+
+#JAPAN ACCEPTS
+country_event = {
+	id = russia.33
+	title = russia.33.t
+	desc = russia.33.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.33.a
+		#ENG = {  }
+		JAP = { 
+		add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.5
+				ahead_reduction = 1
+				uses = 1
+				technology = improved_light_cruiser
+				technology = advanced_light_cruiser
+				technology = improved_heavy_cruiser
+				technology = advanced_heavy_cruiser
+			}
+			#add_tech_bonus = {
+			#	name = armor_bonus
+			#	bonus = 0.75
+			#	uses = 1
+			#	category = armor
+			#}
+		}	
+		RUS = { 
+		set_country_flag = RUS_jap_treaty
+		diplomatic_relation = {
+			country = JAP
+			relation = non_aggression_pact
+		
+	}
+		add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.5
+				ahead_reduction = 1
+				uses = 1
+				technology = improved_light_cruiser
+				technology = advanced_light_cruiser
+				technology = improved_heavy_cruiser
+				technology = advanced_heavy_cruiser
+			}
+			#add_tech_bonus = {
+			#	name = armor_bonus
+			#	bonus = 0.75
+			#	uses = 1
+			#	category = armor
+			#}
+		}	
+			
+		}
+		}
+
+
+# JAPAN REFUSES 
+country_event = {
+	id = russia.34
+	title = russia.34.t
+	desc = russia.34.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.34.a
+		JAP = { add_political_power = 50 }
+		reverse_add_opinion_modifier = { target = JAP modifier = improved_bad }
+		
+	 }
+  }
+# The Fall of Warsaw 
+news_event = {
+	id = russia.83
+	title = russia.83.t
+	desc = russia.83.d
+	picture = GFX_news_event_RUS_warsaw
+	trigger = {
+		GER = {
+		controls_state = 10
+		has_war_with = RUS
+    }
+	}
+	option = {
+		name = russia.83.a
+		trigger = {
+			NOT = {
+				OR = {
+				TAG = GER
+				TAG = RUS
+				}
+	}
+	}
+	}
+	option = {
+		name = russia.83.b
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = news.100.c
+		trigger = { TAG = RUS }
+	}
+	}
+#Russian STAVKA upgrade 1
+country_event = {
+	id = russia.85
+	title = russia.85.t
+	desc = russia.85.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.85.a	
+		remove_ideas = RUS_general_staff_1
+		add_ideas = RUS_general_staff_2
+		hidden_effect = {
+		country_event = { id = russia.86 days = 180 }
+		}
+	}
+}
+#Russian STAVKA upgrade 2
+country_event = {
+	id = russia.86
+	title = russia.86.t
+	desc = russia.86.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.86.a	
+		remove_ideas = RUS_general_staff_2
+		add_ideas = RUS_general_staff_3
+		hidden_effect = {
+		country_event = { id = russia.87 days = 180 }
+		}
+	}
+}
+#Russian STAVKA upgrade 3
+country_event = {
+	id = russia.87
+	title = russia.87.t
+	desc = russia.87.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.87.a	
+		remove_ideas = RUS_general_staff_3
+		add_ideas = RUS_general_staff_4
+	}
+}
+#Romanian Coup events
+country_event = {
+	id = russia.88
+	title = russia.88.t
+	desc = russia.88.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = { #Accept coup
+		name = russia.88.a	
+		ai_chance = { factor = 100 }
+		RUS = { 
+		end_puppet = ROM
+		remove_from_faction = ROM
+		country_event = { id = russia.89 days = 2 }
+		}
+		ROM = { 
+		set_country_flag = ROM_joined_coup_rom
+		complete_national_focus = ROM_prepare_coup
+		#set_politics = { ruling_party = fascism elections_allowed = no }
+		}
+		
+	}
+	option = { #Remain loyal
+		name = russia.88.b	
+		ai_chance = { factor = 1  }
+		ROM = { 
+		set_country_flag = ROM_remained_royal_rus
+		add_stability = -0.1
+		}
+	}
+}
+#Russia receives the news about coup
+country_event = {
+	id = russia.89
+	title = russia.89.t
+	desc = russia.89.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.89.a	
+		news_event = { id = russia.90 days = 2 }
+		add_political_power = -50
+	}
+}	
+# Coup in Romania
+news_event = {
+	id = russia.90
+	title = russia.90.t
+	desc = russia.90.d
+	picture = GFX_news_event_RUS_warsaw
+	major = yes
+	is_triggered_only = yes
+	    option = {
+		name = russia.90.a
+		trigger = {
+			NOT = {
+				TAG = RUS
+			}
+			}
+	}
+			option = {
+		name = russia.90.b
+			trigger = { TAG = RUS }
+	}
+	}	
+#Sanctions to Prussia for annexing Nidederdeutschland
+country_event = {
+	id = russia.91
+	title = russia.91.t
+	desc = russia.91.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = { #Issue Sanctions
+		name = russia.91.a	
+		ai_chance = { factor = 75 }
+		GER = { 
+		add_timed_idea = { idea = russian_sanctions_idea days = 150 }
+		country_event = { id = russia.92 days = 2 }
+		}
+		
+	}
+	option = { #Do nothing
+		name = russia.91.b	
+		ai_chance = { factor = 25  }
+		add_political_power = -25
+	}
+}
+#Prussia sees Russian sanctions
+country_event = {
+	id = russia.92
+	title = russia.92.t
+	desc = russia.92.d
+	#picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = { #
+		name = russia.92.a	
+		ai_chance = { factor = 100 }
+		
+	}
+}
+#Lake Khasan Incident
+country_event = {
+	id = russia.93
+	title = russia.93.t
+	desc = russia.93.d
+	picture = GFX_report_event_japanese_soldiers_03
+
+	is_triggered_only = yes
+
+	option = { #
+		name = russia.93.a	
+		ai_chance = { factor = 100 }
+		unlock_national_focus = RUS_war_JAP
+		add_war_support = 0.05
+		hidden_effect = {
+		news_event = { id = russia.94 days = 3 }
+		}
+	}
+}
+#Lake Khasan Incident News Event
+country_event = {
+	id = russia.94
+	title = russia.94.t
+	desc = russia.94.d
+	picture = GFX_news_event_japanese_army_parade
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes 
+	option = {
+	name = russia.94.a
+		trigger = {
+			NOT = {
+				TAG = RUS
+			}
+			}
+	}
+			option = {
+		name = russia.94.b
+			trigger = { TAG = RUS }
+		}
+}	
+#Death of Stanislavski
+country_event = {
+	id = russia.95
+	title = russia.95.t
+	desc = russia.95.d
+	picture = GFX_report_event_europe_funeral
+	trigger = {
+		tag = RUS
+		date > 1938.8.6
+		date < 1938.8.8
+	}
+	fire_only_once = yes
+	mean_time_to_happen = { days = 2 }
+	option = { #
+		name = russia.95.a	
+	}
+}	
+#Russian Army Purge
+country_event = {
+	id = russia.96
+	title = russia.96.t
+	desc = russia.96.d
+	picture = GFX_report_event_japanese_soldiers_03
+
+	is_triggered_only = yes
+
+	option = { # Fire the Old Guard (gives better army spirit but removes 2 generals, takes longer to complete)
+		name = russia.96.a	
+		ai_chance = { factor = 50 }
+		remove_ideas = RUS_general_staff
+		add_ideas = RUS_general_staff_1
+		custom_effect_tooltip = RUS_begin_modernization 
+		remove_unit_leader = 99995
+		remove_unit_leader = 99996
+		hidden_effect = {
+		country_event = { id = russia.85 days = 180 }
+		}
+	}
+	option = { # Keep the Old Guard
+		name = russia.96.b #(gives better political spirit, does not remove 2 generals)
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = RUS_keeps_the_old_guard
+		remove_ideas = RUS_general_staff
+		add_ideas = RUS_general_staff_political_intermediate
+		hidden_effect = {
+		country_event = { id = russia.97 days = 180 }
+		}
+	}
+}
+#Russian Political Army
+country_event = {
+	id = russia.97
+	title = russia.97.t
+	desc = russia.97.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.97.a	
+		remove_ideas = RUS_general_staff_political_intermediate
+		add_ideas = RUS_general_staff_political
+	}
+}
+#Civil War Begins
+#Russian Civil War, Commis vs Nationalists
+country_event = {
+    id = russia.35
+    title = russia.35.t
+    desc = russia.35.d
+    picture = GFX_report_event_generic_panzer_attack
+    is_triggered_only = yes
+
+    option = {
+        name = russia.35.a
+        ai_chance = { factor = 100 }
+        hidden_effect = {
+            #country_event = { days = 25 id = russia.60 }
+            #country_event = { days = 35 id = russia.61 }
+            #country_event = { days = 5 id = russia.62 }
+            news_event = { id = russia.36 days = 1 }
+            RUS = {
+                remove_unit = 99997
+                load = RUS_civil_war_commi
+            }
+            137 = {
+                owner = {
+                    create_country_leader = {
+                        name = "Александр Колчак"
+                        desc = "Александр Васильевич Колчак русский государственный, политический и военный деятель, учёный-океанограф, полярный исследователь, флотоводец. Вошел в историю как руководитель Белого движения во время Гражданской войны в России."
+                        picture = "Alexander_Kolchak.dds"
+                        expire = "1965.1.1"
+                        ideology = fascism_ideology
+                        traits = {
+
+                        }
+                    }
+                    load = RUS_civil_war_white
+                }
+            }
+        }
+        end_puppet = KRW
+        end_puppet = MON
+        release = POL
+        end_puppet = POL
+        release = FIN
+        end_puppet = FIN
+        dismantle_faction = yes
+        RUS = {
+            start_civil_war = {
+                ideology = fascism
+                size = 0.5
+                provinces = { 769 788 239 225 401 257 238 93 94 199 198 78 192 201 202 203 197 196 137 200 226 259 193 255 220 240 221 227 228 260 245 218 234 265 217 236 237 235 232 233 231 230 229 407 406 }
+            }
+        }
+    }
+}

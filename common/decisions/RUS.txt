@@ -1,0 +1,439 @@
+
+RUS_integrate_territories_decisions = {
+
+	RUS_integrate_estonia = {
+	visible = {
+	#tag = RUS
+	controls_state = 13
+	OR = {
+	has_completed_focus = RUS_improve_national_uni
+	has_completed_focus = RUS_multireligion_society
+	}
+	}
+	available = {
+	NOT = { country_exists = EST }
+	is_subject = no 
+	}
+	days_remove = 90
+	cost = 0
+	ai_will_do = {
+		factor = 10
+	}
+	fire_only_once = yes
+	modifier = {
+			stability_factor = -0.05
+			political_power_gain = -0.25
+	}
+	remove_effect = {
+	add_state_core = 13
+	add_state_core = 191
+	add_state_core = 813
+	add_state_core = 811
+	add_state_core = 812
+	set_province_name = { id = 9221 name = "Yuriev" }
+	}
+	}
+	
+	RUS_integrate_latvia = {
+	visible = {
+	#tag = RUS
+	controls_state = 12
+	OR = {
+	has_completed_focus = RUS_improve_national_uni
+	has_completed_focus = RUS_multireligion_society
+	}
+	}
+	available = {
+	NOT = { country_exists = LAT }
+	is_subject = no 
+	}
+	days_remove = 90
+	cost = 0
+	ai_will_do = {
+		factor = 10
+	}
+	modifier = {
+			stability_factor = -0.05
+			political_power_gain = -0.25
+	}
+	fire_only_once = yes
+	remove_effect = {
+	add_state_core = 12
+	add_state_core = 190
+	add_state_core = 808
+	add_state_core = 809
+	}
+	}
+	
+	RUS_integrate_lithuania = {
+	visible = {
+	#tag = RUS
+	controls_state = 11
+	OR = {
+	has_completed_focus = RUS_improve_national_uni
+	has_completed_focus = RUS_multireligion_society
+	}
+	}
+	available = {
+	NOT = { country_exists = EST }
+	is_subject = no 
+	}
+	days_remove = 90
+	cost = 0
+	ai_will_do = {
+		factor = 10
+	}
+	modifier = {
+			stability_factor = -0.05
+			political_power_gain = -0.25
+	}
+	fire_only_once = yes
+	remove_effect = {
+	add_state_core = 11
+	add_state_core = 814
+	add_state_core = 815
+	add_state_core = 784
+	add_state_core = 189
+	}
+	
+	}
+	
+	RUS_integrate_karelia = {
+	visible = {
+	#tag = RUS
+	controls_state = 146
+	OR = {
+	has_completed_focus = RUS_improve_national_uni
+	has_completed_focus = RUS_multireligion_society
+	}
+	}
+	fire_only_once = yes
+	available = {
+	is_subject = no 
+	}
+	days_remove = 75
+	cost = 0
+	ai_will_do = {
+		factor = 10
+	}
+	modifier = {
+			stability_factor = -0.05
+			political_power_gain = -0.25
+	}
+	remove_effect = {
+	add_state_core = 146
+	146 = { set_state_name = "Karelia" }
+	set_province_name = { id = 9206 name = "Vyborg" }
+	}
+	
+	}
+	
+	
+	
+	RUS_integrate_poland = {
+	visible = {
+	#tag = RUS
+	controls_state = 10
+	OR = {
+	has_completed_focus = RUS_improve_national_uni
+	has_completed_focus = RUS_multireligion_society
+	}
+	}
+	available = {
+	NOT = { country_exists = POL }
+	is_subject = no 
+	}
+	fire_only_once = yes
+	days_remove = 200
+	cost = 0
+	ai_will_do = {
+		factor = 10
+	}
+	modifier = {
+			stability_factor = -0.05
+			political_power_gain = -0.25
+	}
+	remove_effect = {
+	add_state_core = 10
+	add_state_core = 97
+	add_state_core = 98
+	add_state_core = 87
+	add_state_core = 90
+	add_state_core = 92
+	add_state_core = 844
+	set_province_name = { id = 11301 name = "Belostok" }
+	}
+	
+	}
+	
+	RUS_integrate_bessarabia = {
+	visible = {
+	#tag = RUS
+	controls_state = 78
+	OR = {
+	has_completed_focus = RUS_improve_national_uni
+	has_completed_focus = RUS_multireligion_society
+	}
+	}
+	
+	available = {
+	is_subject = no 
+	}
+	
+	fire_only_once = yes
+	days_remove = 150
+	cost = 0
+	ai_will_do = {
+		factor = 10
+	}
+	modifier = {
+			stability_factor = -0.05
+			political_power_gain = -0.25
+	}
+	remove_effect = {
+	add_state_core = 78
+	add_state_core = 766
+	}
+	
+	}
+	
+	RUS_integrate_turkestan = {
+	visible = {
+	#tag = RUS
+	OR = {
+		has_completed_focus = RUS_improve_national_uni
+		has_completed_focus = RUS_multireligion_society
+	}
+	}
+	available = {
+	NOT = { country_exists = TUK }
+	NOT = { country_exists = BUK }
+	controls_state = 584
+	controls_state = 832
+	controls_state = 831
+	controls_state = 830
+	is_subject = no 
+	}
+	fire_only_once = yes
+	days_remove = 150
+	cost = 0
+	ai_will_do = {
+		factor = 10
+	}
+	modifier = {
+			stability_factor = -0.05
+			political_power_gain = -0.25
+	}
+	remove_effect = {
+	add_state_core = 584
+	add_state_core = 832
+	add_state_core = 831
+	add_state_core = 830
+	}
+	
+	}
+	RUS_integrate_caucasus = {
+	visible = {
+	#tag = RUS
+	OR = {
+		has_completed_focus = RUS_improve_national_uni
+		has_completed_focus = RUS_multireligion_society
+	}
+	}
+	available = {
+	NOT = { country_exists = GEO }
+	NOT = { country_exists = AZR }
+	NOT = { country_exists = ARM }
+	controls_state = 229
+	controls_state = 232
+	controls_state = 821
+	controls_state = 828
+	controls_state = 827
+	controls_state = 231
+	controls_state = 826
+	controls_state = 230
+	is_subject = no 
+	}
+	fire_only_once = yes
+	days_remove = 150
+	cost = 0
+	ai_will_do = {
+		factor = 10
+	}
+	modifier = {
+			stability_factor = -0.05
+			political_power_gain = -0.25
+	}
+	remove_effect = {
+	add_state_core = 229
+	add_state_core = 232
+	add_state_core = 821
+	add_state_core = 828
+	add_state_core = 827
+	add_state_core = 231
+	add_state_core = 826
+	add_state_core = 230
+	}
+	
+	}
+	
+	#Romania
+	RUS_fate_romania = {
+	
+	icon = decision_generic_decision
+	targets = { ROM }
+	visible = {
+	ROM = {
+	exists = no
+	}
+	RUS = { 
+	controls_state = 46
+	OR = {
+	controls_state = 76
+	controls_state = 84
+	}
+	NOT = { has_war_with = ROM }
+	}
+	}
+	fire_only_once = yes
+	available = {
+	is_puppet = no
+	}
+	cost = 15
+	days_remove = 3
+	ai_will_do = {
+			factor = 10
+		}
+	remove_effect = {
+	RUS = {
+	country_event = { id = russia_states.12 }
+	}
+	}
+	}
+}
+
+RUS_russian_coup = {
+RUS_kornilovs_affair = {
+icon = generic_operation
+available = {
+			original_tag = RUS
+			RUS = {
+			has_stability < 0.35
+			has_government = neutrality
+			is_puppet = no 
+			has_country_flag = RUS_provisional_government_flag
+			NOT = { 
+			has_completed_focus = RUS_power_tsar
+			has_completed_focus = RUS_force_abdication
+			has_completed_focus = RUS_pm_primacy
+			}
+			}
+		}
+	ai_will_do = {
+			factor = 0
+		}	
+		cost = 50
+		days_remove = 50
+		fire_only_once = yes
+		visible = {
+			original_tag = RUS
+			has_government = neutrality
+			NOT = { 
+			has_completed_focus = RUS_power_tsar
+			has_completed_focus = RUS_force_abdication
+			has_completed_focus = RUS_pm_primacy
+			}
+			}
+		remove_effect = {
+		unlock_national_focus = RUS_tsar_speech
+		RUS = {
+		news_event = { hours = 6 id = russia.49 }
+		set_politics = { ruling_party = fascism elections_allowed = no }
+		set_party_name = {
+				ideology = fascism
+				long_name = "Russian Martial Soviet"
+				name = "RMS"
+				}
+		create_country_leader = {
+		name = "Lavr Kornilov"
+		desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+		picture = "Lavr_Kornilov.dds" 
+		expire = "1965.1.1"
+		ideology = fascism_subtype
+		traits = {
+		
+		}
+		}
+		hidden_effect = {
+		add_popularity = {
+				ideology = fascism
+					popularity = 0.35
+				}
+		country_event = { id = russia.50 days = 35 }
+		}
+		}
+		}
+}
+
+RUS_lenin_from_exile = {
+icon = generic_operation
+available = {
+	original_tag = RUS
+	country_exists = SWI
+	RUS = {
+	has_government = communism
+	is_puppet = no
+	NOT = { 
+	has_war_with = SWI
+	}
+	}
+}
+ai_will_do = {
+	factor = 0
+}
+cost = 150
+fire_only_once = yes
+visible = {
+	original_tag = RUS
+	has_government = communism
+}
+complete_effect = {
+	create_country_leader = {
+		name = "Vladimir Lenin"
+		desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+		picture = "lenin.dds" 
+		expire = "1965.1.1"
+		ideology = communism_subtype
+		traits = {
+		
+		}
+		}
+
+		news_event = { id = russia_homeland.12 days = 1 }
+		
+		
+}
+}
+}
+
+RUS_army_actions = {
+
+RUS_no_step_back_decision = {
+
+icon = generic_operation
+available = {
+			original_tag = RUS
+			RUS = {
+			has_war = yes 
+			surrender_progress > 0.1
+			}
+		}	
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 25	
+		fire_only_once = yes
+		complete_effect = {
+		add_timed_idea = { idea = RUS_no_step_back days = 1095 }
+		}	
+}

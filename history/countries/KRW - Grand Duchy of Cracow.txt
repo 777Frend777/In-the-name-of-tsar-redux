@@ -1,0 +1,79 @@
+﻿capital = 91
+
+oob = "KRW_1936"
+
+set_research_slots = 2
+
+add_ideas = {
+	KRW_Ukrainian_Exiles
+	KRW_Agricultural_Economy
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	early_fighter = 1
+	early_submarine = 1
+}
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.7.1"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 10
+	conservatives = 10
+	fascism = 10
+	communism = 5
+	socialist = 5
+	neutrality = 60
+}
+
+create_country_leader = {
+	name = "Diet of Galicia and Lodomeria"
+	desc = "POLITICS_KONSTANTIN_PATS_DESC"
+	picture = "diet_galicia.dds"
+	expire = "1965.1.1"
+	ideology = neutrality_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Hieronim Tarnowski"
+	desc = "POLITICS_KRW_HIERONIM_TARNOWSKI.png"
+	picture = "gfx/leaders/KRW/Portrait_KRW_Hieronim_Tarnowski.png"
+	expire = "1965.1.1"
+	ideology = conservatives_subtype
+}
+create_country_leader = {
+	name = "Andriy Melnyk"
+	desc = "KRW_MELNYK_DESC"
+	picture = "gfx/leaders/KRW/Portrait_KRW_Andriy_Melnyk_Civilian.png"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+}
+create_country_leader = {
+	name = "Adam Heydel"
+	desc = "KRW_HEYDEL_DESC"
+	picture = "gfx/leaders/KRW/KRW_Adam_Heydel.png"
+	expire = "1965.1.1"
+	ideology = liberalism
+}
+create_country_leader = {
+	name = "Ignacy Daszyński"
+	desc = "POLITICS_KRW_INGACY_DASZYNSKI_DESC"
+	picture = "gfx/leaders/KRW/Portrait_KRW_Ignacy_Daszynski.png"
+	expire = "1965.1.1"
+	ideology = socialist_subtype
+}
+create_country_leader = {
+	name = "Lev Bachynsky"
+	desc = "POLITICS_KRW_LEV_BACHYNSKY_DESC"
+	picture = "gfx/leaders/KRW/Portrait_KRW_Lev_Bachynsky.png"
+	expire = "1965.1.1"
+	ideology = communism_subtype
+}

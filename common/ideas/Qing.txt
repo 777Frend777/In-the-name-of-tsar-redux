@@ -1,0 +1,155 @@
+ideas = {
+	trade_laws = {
+		law = yes
+		use_list_view = yes
+
+		unequal_treaties = {
+			picture = unequal_treaties
+			level = 3
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			allowed = { always = no }
+
+			modifier = {
+				min_export = 0.6
+				civilian_intel_to_others = 40.0
+			}
+			targeted_modifier = {
+				tag = JAP
+				cic_to_target_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = ENG
+				cic_to_target_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = FRA
+				cic_to_target_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = RUS
+				cic_to_target_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = USA
+				cic_to_target_factor = 0.1
+			}
+			allowed_to_remove = {
+				has_country_flag = China_unified
+			}
+		}
+
+		unequal_treaties_lesser = {
+			name = unequal_treaties
+			picture = unequal_treaties
+			level = 3
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			allowed = { always = no }
+
+			modifier = {
+				min_export = 0.6
+				civilian_intel_to_others = 40.0
+			}
+			targeted_modifier = {
+				tag = JAP
+				cic_to_target_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = ENG
+				cic_to_target_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = FRA
+				cic_to_target_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = RUS
+				cic_to_target_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = USA
+				cic_to_target_factor = 0.1
+			}
+			allowed_to_remove = {
+				has_country_flag = China_unified
+			}
+		}
+	}
+	country = {
+		SHX_Lost_mandate = {
+			picture = man_low_legitimacy
+			allowed = { always = no }
+			modifier = {
+				conscription_factor = -0.2
+				political_power_factor = -0.10
+			}
+		}
+		SHX_allied_debt = {
+			picture = gre_debt_to_the_ifc
+			allowed = { always = no }
+			modifier = {
+				production_speed_buildings_factor = -0.2
+				stability_factor = -0.2
+				trade_opinion_factor = -0.5
+			}
+		}
+	}
+
+	# TECHNOLOGY
+	
+	aircraft_manufacturer = { #
+			
+		designer = yes
+		
+		camco = {
+
+			picture = generic_air_manufacturer_3
+
+			allowed = {
+				original_tag = CHI
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			# assembled hawk II and hawk III fighter bombers as well as the Vultee V-11 ground attackers
+						
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	industrial_concern = {
+
+		CHI_mining_commission = {
+
+			picture = generic_industrial_concern_3		
+			
+			available = {
+			
+			}
+
+			allowed = {
+				original_tag = CHI
+			}
+
+			cost = 5 # ai doesnt like free ones. but lets fix this later
+			
+			ai_will_do = {
+				factor = 200
+			}
+
+			modifier = {
+				local_resources_factor = 0.1
+			}
+		}
+	}
+
+}

@@ -1,0 +1,15 @@
+﻿l_english:
+
+ ## EGY ##
+
+ empire_research_deal_name:0 "Empire Research Deal"
+ empire_research_deal_desc:0 "Reduced research time for technologies researched by either Egypt or China."
+
+ ### IRQ ###
+
+ IRQ_joint_oil_exploitation_company_name:0 "Joint Oil Exploitation Company"
+ IRQ_joint_oil_exploitation_company_desc:0 "Joint exploitation of oil between §YIraq§! and the §YUnited Kingdom§!."
+ IRQ_joint_air_innovation_name:0 "Iraqi-Italo Armour and Air Innovation"
+ IRQ_joint_air_innovation_desc:0 "A joint initiative to develop aircraft and armoured vehicles."
+ IRQ_baghdad_pact_name:0 "Baghdad Technology Group"
+ IRQ_baghdad_pact_desc:0 "Joint tech group between the members of the Baghdad Pact."
