@@ -249,6 +249,17 @@
  russia.75.t:0 "Conservative Majority Wins"
  russia.75.d:0 "After series of elections, Conservative coalition consisting of Oktyabrists and Constitutional-Conservative Party secure the majority. We can now choose whether to give full carte-blanche to His Majesty Mikhail II or rather empower the Prime-Minister backed by the Duma."
  russia.75.a:0 "Sweet!"
+
+ russia.77.t: "Romania refuses"
+ russia.77.d: "Romanian government refuses to return Moldavia and is ready for war"
+ russia.77.a: "War, so war!"
+ russia.78.t: "Russia demands Moldavia!"
+ russia.78.d: "Today a delegation from Russia came to us and they demand to give Russia its rightful land, namely Moldova, otherwise they will start a war against us"
+ russia.78.a: "We will give."
+ russia.78.b: "No, Moldova will be ours!"
+ russia.79.t: "Moldova is ours."
+ russia.79.d: "The Romanian government has decided to give Moldavia back."
+ russia.79.a: "Excellent."
  
  russia.81.t:0 "Industry Planning"
  russia.81.d:0 "Under new government it is time we begin industry planning for the future Russia. We can either continue developing agricultural industry, begin liberalization of the industry, side with industrialization or centralize our industry under state's control. The choice is yours..."

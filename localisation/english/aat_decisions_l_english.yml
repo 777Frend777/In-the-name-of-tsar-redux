@@ -720,4 +720,8 @@ ENG_explode_the_swedish_iron_ore_mine_tt: "We only have a limited time to sabota
  # THE UNITED STATES OF AMERICA
  USA_initiate_the_greenland_patrol: "Establish the Greenland Patrol"
 
+ RUS_kornilovgrad: "Change city name to Kornilovgard"
+ RUS_savinkovgrad: "Change city name to Savinkovgrad"
+ Savinkovgrad.1: "Savinkovgrad"
+ Kornilovgrad.1: "Kornilovgrad"
 

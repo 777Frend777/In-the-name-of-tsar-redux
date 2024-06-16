@@ -1904,7 +1904,8 @@ focus_tree = {
 		icon = GFX_goal_islamic_government
 		cost = 10.00
 		prerequisite = {
-			focus = TUR_guardian_council
+			focus = TUR_guardian_council 
+			focus = TUR_calph
 		}
 		prerequisite = {
 			focus = TUR_improve_police
@@ -1943,11 +1944,16 @@ focus_tree = {
 		}
 		x = 26
 		y = 5
-		available = {
-			FRA = {
-			controls_state = 554
-			}
-			}
+available = {
+                            OR = {
+            SYR = {
+            controls_state = 554
+            }
+            FRA = {
+            controls_state = 554
+            }
+            }
+}
 		bypass = {
 			controls_state = 554 
 		}
@@ -1958,6 +1964,7 @@ focus_tree = {
 		hidden_effect = { #Nerf to Turkish Coring
 		#add_state_core = 554 
 		#add_state_core = 553
+		add_state_core = 938
 		add_state_core = 677
 		add_state_core = 813
 		add_state_core = 680
@@ -2330,14 +2337,18 @@ focus_tree = {
 		}
 		x = 34
 		y = 5
+		available = {
+			country_exists = KUR
+		}
 		will_lead_to_war_with = KUR
 		completion_reward = {
-			declare_war_on = {
-				target = KUR
-			}
+		800 = {
+		owner = {
+		 country_event = { id = ottoman.52 }
+		 }
 		}
-
-	}
+	 }
+			}
 	focus = {
 		id = TUR_russia
 		icon = GFX_focus_attack_russia
@@ -2351,22 +2362,16 @@ focus_tree = {
 			factor = 0
 		}
 		available = {
-		RUS = {
-		exists = yes
+			country_exists = RUS
 		}
-		}
-		bypass = {
-		OR = {
-		RUS = { exists = no }
-		has_war_with = RUS
-		}
-		}
+		will_lead_to_war_with = RUS
 		completion_reward = {
-		create_wargoal = { type = take_state_focus
-					target = RUS
-					generator = { 354 }
-					}
-	}
+		195 = {
+		owner = {
+		 country_event = { id = ottoman.54 }
+		 }
+		}
+	 }
 	}
 	
 	
@@ -2469,7 +2474,7 @@ focus_tree = {
 		x = 17
 		y = 6
 		available = {
-				843 = {
+				211 = {
 						is_owned_by = TUR
 					}
 				48 = {
@@ -2924,11 +2929,16 @@ completion_reward = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
 			if = {
-				limit = {
+                limit = {	
+			AND = {
+			OR = {			
+					SYR = { owns_state = 799 }
 					FRA = { owns_state = 799 }
 				}
-				FRA = { country_event = { id = bftb_turkey.25 hours = 6 } }
-			}
+				}
+}
+				}
+				SYR = { country_event = { id = bftb_turkey.25 hours = 6 } }
 			else = {
 				random_neighbor_country = { 
 					limit = {
@@ -2939,8 +2949,6 @@ completion_reward = {
 			}
 			add_war_support = 0.05
 		}
-	}
-
 	focus = {
 		id = TUR_continue_liberalization
 		icon = GFX_goal_ideology_market_liberal
@@ -3031,4 +3039,5 @@ completion_reward = {
 			
 	    }
 	}
+}
 }

@@ -44,5 +44,18 @@
  CHI_new_investors: "Новые инвесторы" #NT!
  CHI_payments: "Платежи" #NT!
  CHI_true_peace: "Дух свободы" #NT!
- CHI_yan_xishan: "Yan Xishan" #NT!
- CHI_long_yun: "Long Yun" #NT!
+ CHI_yan_xishan: "Ян Сишань" #NT!
+ CHI_long_yun: "Лонг Юн" #NT!
+
+ SHX_Lost_mandate:0 "Утраченный Мандат Небес"
+ SHX_allied_debt:0 "Долг Антанте"
+ is_chinese_tag:0 "Это Китайская страна"
+ unequal_treaties: "Неравные договоры"
+ XSM_Islamic_law:0 "Закон шариата"
+ RMN_japanese_down:0 "Слабое японское влияние"
+ RMN_japanese_up:0 "Сильное японское влияние"
+ XSM_Unstable_Government:0 "Нестабильное правительство"
+ PRC_bastion_of_true_communism:0 "Революционный бастион"
+ MON_nomad:0 "Кочевая нация"
+ CHI_illiterate_population: "Широко распространенная неграмотность"
+ CHI_backwards_economy: "Обратная экономика"

@@ -20,6 +20,7 @@ starting_train_buffer = 4
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
+	add_ideas = MTG_naval_treaty_adherent
 	}
 	set_naval_oob = "ENG_1936_Naval"
 	else = {
@@ -144,6 +145,7 @@ if = {
 }
 
 add_ideas = {
+	MTG_naval_treaty_adherent
 	stiff_upper_lip
 	ENG_the_war_to_end_all_wars
 	UK_remembrance_of_1926_strike

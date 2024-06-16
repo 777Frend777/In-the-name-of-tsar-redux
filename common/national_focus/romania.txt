@@ -1058,6 +1058,10 @@ focus_tree = {
 		x = 24
 		y = 3
 		completion_reward = {
+		create_wargoal = {
+					type = puppet_wargoal_focus
+					target = KRW
+				}
 		add_political_power = 35
 		add_state_claim = 80
 		add_state_core = 80

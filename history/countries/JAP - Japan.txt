@@ -10,6 +10,7 @@ set_war_support = 0.65
 set_research_slots = 4
 set_fuel_ratio = 1.0
 add_ideas = {
+	MTG_naval_treaty_adherent
 	limited_exports
 	limited_conscription
 	JAP_Russo_Japnese_war_2nd

@@ -1,0 +1,29 @@
+state = {
+	id = 961
+	name = "STATE_961"
+	manpower = 1200000
+	state_category = large_city
+	
+	history = {
+		victory_points = {
+			9347 20
+		}
+		owner = WSM
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			dockyard = 6
+			air_base = 5
+		}
+		add_core_of = WSM
+		add_core_of = HMB
+		add_claim_by = GER
+		add_claim_by = BAV
+	}
+
+	provinces = {
+		 9347 
+ 	}
+
+	local_supplies = 0.0 
+}

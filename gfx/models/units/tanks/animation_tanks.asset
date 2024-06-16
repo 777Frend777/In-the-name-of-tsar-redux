@@ -1,0 +1,104 @@
+animation = {
+	name = "generic_tank_light_attack_animation"
+	file = "generic_tank_light_attack.anim"
+}
+
+animation = {
+	name = "generic_tank_light_idle_animation"
+	file = "generic_tank_light_idle.anim"
+}
+
+animation = {
+	name = "generic_tank_light_moving_animation"
+	file = "generic_tank_light_moving.anim"
+}
+
+animation = {
+	name = "generic_tank_medium_attack_animation"
+	file = "generic_tank_medium_attack.anim"
+}
+
+animation = {
+	name = "generic_tank_medium_idle_animation"
+	file = "generic_tank_medium_idle.anim"
+}
+
+animation = {
+	name = "generic_tank_medium_moving_animation"
+	file = "generic_tank_medium_moving.anim"
+}
+
+animation = {
+	name = "generic_tank_heavy_attack_animation"
+	file = "generic_tank_heavy_attack.anim"
+}
+
+animation = {
+	name = "generic_tank_heavy_idle_animation"
+	file = "generic_tank_heavy_idle.anim"
+}
+
+animation = {
+	name = "generic_tank_heavy_moving_animation"
+	file = "generic_tank_heavy_moving.anim"
+}
+
+animation = {
+	name = "RUS_tank_light_moving_animation"
+	file = "RUS_tank_light_moving.anim"
+}
+
+animation = {
+	name = "RUS_tank_light_attack_animation"
+	file = "RUS_tank_light_attack.anim"
+}
+
+animation = {
+	name = "RUS_tank_light_idle_animation"
+	file = "RUS_tank_light_idle.anim"
+}
+
+animation = {
+	name = "RUS_tank_medium_moving_animation"
+	file = "RUS_tank_medium_moving.anim"
+}
+
+animation = {
+	name = "RUS_tank_medium_attack_animation"
+	file = "RUS_tank_medium_attack.anim"
+}
+
+animation = {
+	name = "SOV_tank_medium_idle_animation"
+	file = "SOV_tank_medium_idle.anim"
+}
+
+animation = {
+	name = "RUS_tank_heavy_moving_animation"
+	file = "RUS_tank_heavy_moving.anim"
+}
+
+animation = {
+	name = "RUS_tank_heavy_attack_animation"
+	file = "RUS_tank_heavy_attack.anim"
+}
+
+animation = {
+	name = "RUS_tank_heavy_idle_animation"
+	file = "RUS_tank_heavy_idle.anim"
+}
+
+animation = {
+	name = "RUS_heavy_sp_artillery_brigade_1_attack_animation"
+	file = "RUS_heavy_sp_artillery_brigade_1_attack.anim"
+}
+
+animation = {
+	name = "RUS_heavy_sp_artillery_brigade_1_idle_animation"
+	file = "RUS_heavy_sp_artillery_brigade_1_idle.anim"
+}
+
+animation = {
+	name = "SOV_heavy_sp_artillery_brigade_1_moving_animation"
+	file = "SOV_heavy_sp_artillery_brigade_1_moving.anim"
+}

@@ -1,0 +1,404 @@
+﻿l_russian:
+ territorial_restorations_decisions: "Управление профессией" #NT!
+ territorial_restorations_decisions_desc: "[Root.GetName] имеет территории под своей оккупацией, что нам с ними делать?" #NT!
+  #Benelux 
+ GEN_release_HOL: "Судьба Нидерландов" #NT!
+ GEN_release_BEL: "Судьба Бельгии" #NT!
+ GEN_release_LUX: "Судьба Люксембурга" #NT!
+  
+  #Russia 
+ GEN_release_POL: "Судьба Польши" #NT!
+ GEN_release_LIT: "Судьба Литвы" #NT!
+ GEN_release_LAT: "Судьба Латвии" #NT!
+ GEN_release_EST: "Судьба Эстонии" #NT!
+ GEN_release_UKR: "Судьба Украины" #NT!
+ GEN_release_BLR: "Судьба Белой России" #NT!
+ GEN_release_MOL: "Судьба Молдовы" #NT!
+ GEN_release_FIN: "Судьба Финляндии" #NT!
+ GEN_release_RUS: "Судьба России" #NT!
+ GEN_release_KBN: "Судьба Кубани" #NT!
+ GEN_release_FAT: "Судьба Дальнего Востока" #NT!
+ GEN_release_KRYM: "Судьба Крыма" #NT!
+ GEN_release_KRL: "Судьба Карелии" #NT!
+ GEN_release_ALA: "Судьба Аландов" #NT!
+ GEN_release_GEO: "Судьба Грузии" #NT!
+ GEN_release_AZR: "Судьба Азербайджана" #NT!
+ GEN_release_ARM: "Судьба Армении" #NT!
+  
+  #Central Europe 
+ GEN_release_AUS: "Судьба Австрии" #NT!
+ GEN_release_SLV: "Судьба Словении" #NT!
+ GEN_release_CZE: "Судьба Чехословакии" #NT!
+ GEN_release_KRW: "Судьба Галиции" #NT!
+  
+  #Scandinavia 
+ GEN_release_SWE: "Судьба Швеции" #NT!
+ GEN_release_NOR: "Судьба Норвегии" #NT!
+ GEN_release_DEN: "Судьба Дании" #NT!
+  
+  #Balkans 
+ GEN_release_ROM: "Судьба Румынии" #NT!
+ GEN_release_TRN: "Судьба Трансильвании" #NT!
+ GEN_release_RDO: "Судьба Верхней Добруджи" #NT!
+  
+ GEN_release_BUL: "Судьба Болгарии" #NT!
+ GEN_release_BDO: "Судьба Нижней Добруджи" #NT!
+  
+ GEN_release_SER: "Судьба Сербии" #NT!
+ GEN_release_CRO: "Судьба Хорватии" #NT!
+ GEN_release_MNT: "Судьба Черногории" #NT!
+ GEN_release_GRE: "Судьба Греции" #NT!
+ GEN_release_ALB: "Судьба Албании" #NT!
+ GEN_release_HUN: "Судьба Венгрии" #NT!
+  
+  #West Europe 
+ GEN_release_FRA: "Судьба Франции" #NT!
+ GEN_release_NAN: "Судьба Эльзаса" #NT!
+ GEN_release_SAV: "Судьба Савойи" #NT!
+  
+ GEN_release_GER: "Судьба Пруссии" #NT!
+ GEN_release_GRM: "Судьба Германии" #NT!
+ GEN_release_WSM: "Судьба Северной Германии" #NT!
+ GEN_release_WUT: "Судьба Бадена" #NT!
+ GEN_release_RHN: "Судьба Рейнской области" #NT!
+ GEN_release_BAV: "Судьба Баварии" #NT!
+ GEN_release_WPU: "Судьба Пруссии и Данцига" #NT!
+ GEN_release_KOE: "Судьба Кенигсберга" #NT!
+ GEN_release_KNG: "Судьба Пруссии" #NT!
+  
+ GEN_release_ITA: "Судьба Италии" #NT!
+ GEN_release_TYR: "Судьба Тироля" #NT!
+  
+ GEN_release_SWI: "Судьба Швейцарии" #NT!
+ GEN_release_SPR: "Судьба Испании" #NT!
+ GEN_release_POR: "Судьба Португалии" #NT!
+ GEN_release_GBR: "Судьба Британии" #NT!
+ GEN_release_IRE: "Судьба Ирландии" #NT!
+  
+ GEN_release_EGE: "Судьба Восточной Германии" #NT!
+  
+  #Asia 
+ GEN_release_TUR: "Судьба Турции" #NT!
+ GEN_release_IST: "Судьба Стамбула" #NT!
+  
+ GEN_release_JAP: "Судьба Японии" #NT!
+ GEN_release_SAKH: "Судьба острова Сахалин" #NT!
+ GEN_release_CHI: "Судьба Китая" #NT!
+ GEN_release_SIK: "Fate of Xinjiang" #NT!
+ GEN_release_MAN: "Fate of Manchukuo" #NT!
+ GEN_release_TAI: "Судьба Тайваня" #NT!
+ GEN_release_RAJ: "Судьба Индии" #NT!
+ GEN_release_PAK: "Судьба Пакистана" #NT!
+ GEN_release_INS: "Судьба Индонезии" #NT!
+  
+  #Oceania 
+ GEN_release_AST: "Судьба Австралии" #NT!
+  
+  #Americas 
+ GEN_release_CAN: "Судьба Канады" #NT!
+ GEN_release_USA: "Судьба США" #NT!
+ GEN_release_MEX: "Судьба Мексики" #NT!
+  
+  
+  #Ideas 
+  
+  
+  #Events 
+ gen_states.1.t: "Судьба Нидерландов" #NT!
+ gen_states.1.d: "Страна Нидерланды находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.1.a: "Восстановить дружественные Нидерланды" #NT!
+ gen_states.1.b: "Оккупируйте Нидерланды" #NT!
+  
+ gen_states.2.t: "Судьба Бельгии" #NT!
+ gen_states.2.d: "Страна Бельгия находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.2.a: "Восстановить дружественную Бельгию" #NT!
+ gen_states.2.b: "Оккупируйте Бельгию" #NT!
+  
+ gen_states.3.t: "Судьба Люксембурга" #NT!
+ gen_states.3.d: "Страна Люксембург находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.3.a: "Восстановить дружественный Люксембург" #NT!
+ gen_states.3.b: "Оккупируйте Люксембург" #NT!
+  
+ gen_states.4.t: "Судьба Польши" #NT!
+ gen_states.4.d: "Страна Польша находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.4.a: "Восстановить дружественную Польшу" #NT!
+ gen_states.4.b: "Восстановить Польшу-Литву" #NT!
+ gen_states.4.c: "Оккупируйте Польшу" #NT!
+  
+ gen_states.5.t: "Судьба Польши" #NT!
+ gen_states.5.d: "Страна Польша находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.5.a: "Восстановить дружественную Польшу" #NT!
+ gen_states.5.b: "Оккупируйте Польшу" #NT!
+  
+ gen_states.6.t: "Судьба Литвы" #NT!
+ gen_states.6.d: "Страна Литва находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.6.a: "Восстановить дружественную Литву" #NT!
+ gen_states.6.b: "Оккупируйте Литву" #NT!
+  
+ gen_states.7.t: "Судьба Белой России" #NT!
+ gen_states.7.d: "Страна Белая Россия находится под контролем [Root.GetAdjective], как нам следует действовать?" #NT!
+ gen_states.7.a: "Восстановить дружественную белую Россию" #NT!
+ gen_states.7.b: "Оккупируем Белую Россию" #NT!
+ gen_states.7.e: "Белоруссия – это Россия." #NT!
+  
+ gen_states.8.t: "Судьба Латвии" #NT!
+ gen_states.8.d: "Страна Латвия находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.8.a: "Восстановить дружественную Латвию" #NT!
+ gen_states.8.b: "Оккупируйте Латвию" #NT!
+  
+ gen_states.9.t: "Судьба Эстонии" #NT!
+ gen_states.9.d: "Эстония находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.9.a: "Восстановить дружественную Эстонию" #NT!
+ gen_states.9.b: "Оккупируйте Эстонию" #NT!
+  
+ gen_states.10.t: "Судьба Молдовы" #NT!
+ gen_states.10.d: "Страна Молдова находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.10.a: "Восстановить дружественную Молдову" #NT!
+ gen_states.10.b: "Оккупируй Молдову" #NT!
+  
+ gen_states.11.t: "Судьба Финляндии" #NT!
+ gen_states.11.d: "Страна Финляндия находится под контролем [Root.GetAdjective], как нам следует действовать?" #NT!
+ gen_states.11.a: "Восстановить дружественную Финляндию" #NT!
+ gen_states.11.b: "Восстановить Большую Финляндию" #NT!
+ gen_states.11.c: "Оккупируйте Финляндию" #NT!
+  
+ gen_states.12.t: "Судьба Украины" #NT!
+ gen_states.12.d: "Страна Украина находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.12.a: "Восстановить Дружественную Украину" #NT!
+ gen_states.12.e: "Раскол Украины с Россией" #NT!
+ gen_states.12.b: "Оккупируй Украину" #NT!
+  
+ gen_states.13.t: "Судьба России" #NT!
+ gen_states.13.d: "Страна Россия находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.13.a: "Восстановить Дружественную Россию" #NT!
+ gen_states.13.b: "Оккупируй Россию" #NT!
+  
+  #Northern Europe 
+ gen_states.14.t: "Судьба Дании" #NT!
+ gen_states.14.d: "Страна Дания находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.14.a: "Восстановить дружественную Данию" #NT!
+ gen_states.14.b: "Оккупируйте Данию" #NT!
+  
+  #Western Europe 
+ gen_states.15.t: "Судьба Франции" #NT!
+ gen_states.15.d: "Страна Франция находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.15.a: "Восстановить дружественную Францию" #NT!
+ gen_states.15.b: "Оккупируйте Францию" #NT!
+  
+ gen_states.16.t: "Судьба Эльзаса" #NT!
+ gen_states.16.d: "Французский регион Гранд-Эст находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.16.a: "Вернуть Эльзас Франции." #NT!
+ gen_states.16.b: "Вернуть только Нэнси во Францию." #NT!
+ gen_states.16.c: "Оккупируйте Эльзас" #NT!
+  
+ gen_states.17.t: "Судьба Савойи" #NT!
+ gen_states.17.d: "Французский регион Савойя находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.17.a: "Вернуть Савойю во Францию" #NT!
+ gen_states.17.b: "Вернуть Савойю в Италию" #NT!
+ gen_states.17.c: "Оккупируй Савойю" #NT!
+  
+ gen_states.18.t: "Судьба Италии" #NT!
+ gen_states.18.d: "Страна Италия находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.18.a: "Восстановить дружественную Италию" #NT!
+ gen_states.18.b: "Оккупируйте Италию" #NT!
+  
+ gen_states.19.t: "Судьба Австрии" #NT!
+ gen_states.19.d: "Страна Австрия находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.19.a: "Восстановить Дружественный 1936 год, Австрия" #NT!
+ gen_states.19.b: "Оккупируйте Австрию" #NT!
+ gen_states.19.c: "Интегрировать Австрию" #NT!
+  
+ gen_states.20.t: "Судьба Тироля" #NT!
+ gen_states.20.d: "Итало-австрийский регион Тироль находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.20.a: "Возвращение Тироля в Италию" #NT!
+ gen_states.20.b: "Вернуть Тироль Австрии." #NT!
+ gen_states.20.c: "Оккупируйте Тироль" #NT!
+  
+ gen_states.21.t: "Судьба Бессарабии" #NT!
+ gen_states.21.d: "Район Бессарабия находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.21.a: "Вернуть Бессарабию Румынии." #NT!
+ gen_states.21.b: "Оккупируйте Бессарабию" #NT!
+ gen_states.21.e: "Создать дружественную Молдавию" #NT!
+  
+ gen_states.22.t: "Судьба Чехословакии" #NT!
+ gen_states.22.d: "Страна Чехословакия находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.22.a: "Восстановить дружественную Чехословакию" #NT!
+ gen_states.22.b: "Основание Чехии и Словакии" #NT!
+ gen_states.22.c: "Продолжать военную оккупацию" #NT!
+ gen_states.22.e: "Интегрировать немецкие Судеты" #NT!
+  
+ gen_states.23.t: "Судьба Германии" #NT!
+ gen_states.23.d: "Страна Германия находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.23.a: "Восстановить дружественную Германию" #NT!
+ gen_states.23.b: "Балканизация Германии на более мелкие государства" #NT!
+ gen_states.23.c: "Продолжать военную оккупацию" #NT!
+ gen_states.23.e: "Оккупировать Западный Рейн" #NT!
+  
+ gen_states.24.t: "Судьба Восточной Пруссии и Польши" #NT!
+ gen_states.24.d: "Область Пруссии находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.24.a: "Восстановление прусских границ 1936 года." #NT!
+ gen_states.24.b: "Создать Польское государство с Гданьском" #NT!
+ gen_states.24.c: "Создать Великопольское государство" #NT!
+ gen_states.24.e: "Продолжить военную оккупацию" #NT!
+  
+ gen_states.25.t: "Судьба Кенигсберга" #NT!
+ gen_states.25.d: "Город Кенигсберг находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.25.a: "Отдайте это Польше." #NT!
+ gen_states.25.b: "Оккупируйте Кенигсберг" #NT!
+  
+ gen_states.26.t: "Судьба Пруссии" #NT!
+ gen_states.26.d: "Область Пруссии находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.26.a: "Пруссия — это Германия." #NT!
+ gen_states.26.b: "Оккупируйте Пруссию" #NT!
+  
+ gen_states.27.t: "Судьба Восточной Германии" #NT!
+ gen_states.27.d: "Регион Восточной Германии находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.27.a: "Освободить дружественную Восточную Германию" #NT!
+ gen_states.27.b: "Балканская Восточная Германия" #NT!
+ gen_states.27.c: "Оккупируйте Восточную Германию" #NT!
+  
+ gen_states.28.t: "Судьба Кубани" #NT!
+ gen_states.28.d: "Район Кубани находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.28.a: "Кубань – это Россия." #NT!
+ gen_states.28.e: "Оккупируйте Южную Кубань." #NT!
+ gen_states.28.b: "Раскол между Украиной и Россией" #NT!
+ gen_states.28.c: "Оккупируй Кубань" #NT!
+  
+ gen_states.29.t: "Судьба Грузии" #NT!
+ gen_states.29.d: "Страна Грузия находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.29.a: "Создать дружественную Грузию" #NT!
+ gen_states.29.b: "Захватите Батуми, создайте Грузию" #NT!
+ gen_states.29.c: "Оккупируй Грузию" #NT!
+  
+ gen_states.30.t: "Судьба Азербайджана" #NT!
+ gen_states.30.d: "Страна Азербайджан находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.30.a: "Создать дружественный Азербайджан" #NT!
+ gen_states.30.b: "Продолжить оккупацию" #NT!
+  
+ gen_states.31.t: "Судьба Армении" #NT!
+ gen_states.31.d: "Страна Армения находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.31.a: "Создать дружественную Армению" #NT!
+ gen_states.31.b: "Создать Великую Армению" #NT!
+ gen_states.31.e: "Карс - турецкий." #NT!
+ gen_states.31.c: "Продолжить оккупацию" #NT!
+  
+ gen_states.32.t: "Судьба Карелии" #NT!
+ gen_states.32.d: "Район Карелия находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.32.a: "Раскол между Россией и Финляндией" #NT!
+ gen_states.32.b: "Карелия – это Россия." #NT!
+ gen_states.32.c: "Карьяла - финка" #NT!
+ gen_states.32.e: "Оккупируйте Карелию" #NT!
+  
+ gen_states.33.t: "Судьба Крыма" #NT!
+ gen_states.33.d: "Район Крыма находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.33.a: "Крым – российский." #NT!
+ gen_states.33.b: "Крым украинский." #NT!
+ gen_states.33.c: "Продолжить оккупацию" #NT!
+  
+ gen_states.34.t: "Статус Дальнего Востока" #NT!
+ gen_states.34.d: "Район Дальнего Востока России находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.34.a: "Дальний Восток — это Россия." #NT!
+ gen_states.34.b: "Отдать Владивосток Японии." #NT!
+ gen_states.34.c: "Оккупируйте Дальний Восток" #NT!
+  
+ gen_states.35.t: "Статус Испании" #NT!
+ gen_states.35.d: "Страна Испания находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.35.a: "Установить дружественную Испанию" #NT!
+ gen_states.35.b: "Захватить Галицию" #NT!
+ gen_states.35.c: "Оккупируйте Испанию" #NT!
+  
+ gen_states.36.t: "Статус Центральной Азии" #NT!
+ gen_states.36.d: "Регион Центральной Азии находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.36.a: "Создать дружественную Бухару" #NT!
+ gen_states.36.b: "Средняя Азия – это Россия." #NT!
+ gen_states.36.c: "Оккупируйте Среднюю Азию" #NT!
+  
+ gen_states.37.t: "Статус Венгрии" #NT!
+ gen_states.37.d: "Страна Венгрия находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.37.a: "Восстановить Венгерское государство" #NT!
+ gen_states.37.b: "Восстановить Венгрию, но Бургенланд — австрийский" #NT!
+ gen_states.37.c: "Оккупируйте Венгрию" #NT!
+  
+ gen_states.38.t: "Статус Болгарии" #NT!
+ gen_states.38.d: "Страна Болгария находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.38.a: "Восстановить дружественную Болгарию" #NT!
+ gen_states.38.b: "Захватить Фракию и Эдирне" #NT!
+ gen_states.38.e: "Фракия – греческая, Эдирне – турецкая." #NT!
+ gen_states.38.c: "Оккупируйте Болгарию" #NT!
+  
+ gen_states.39.t: "Статус Албании" #NT!
+ gen_states.39.d: "Страна Албания находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.39.a: "Восстановить дружественную Албанию" #NT!
+ gen_states.39.b: "Захватить Южную Албанию" #NT!
+ gen_states.39.c: "Оккупируйте Албанию" #NT!
+  
+ gen_states.40.t: "Статус Турции" #NT!
+ gen_states.40.d: "Страна Турция находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.40.a: "Восстановить дружественную Турцию" #NT!
+ gen_states.40.b: "Захватить Южную Турцию" #NT!
+ gen_states.40.c: "Захватить курдские земли" #NT!
+ gen_states.40.e: "Восстановить Турцию и Армению" #NT!
+ gen_states.40.f: "Оккупируйте Турцию" #NT!
+  
+ gen_states.41.t: "Статус западного побережья Турции" #NT!
+ gen_states.41.d: "Район западного побережья Турции находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.41.a: "Отдайте это туркам." #NT!
+ gen_states.41.b: "Отдайте это грекам." #NT!
+ gen_states.41.c: "Отдать грекам за альянс" #NT!
+ gen_states.41.f: "Отдать туркам"
+ gen_states.41.e: "Оставить себе и национализировать"
+  
+ gen_states.42.t: "Статус Соединенного Королевства" #NT!
+ gen_states.42.d: "Страна Соединенного Королевства находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.42.a: "Восстановить дружественное Соединенное Королевство" #NT!
+ gen_states.42.b: "Балканис Великобритания" #NT!
+ gen_states.42.e: "Захватить Дувр и восстановить Соединенное Королевство" #NT!
+ gen_states.42.f: "Отдать Северную Ирландию ирландцам" #NT!
+ gen_states.42.c: "Оккупируйте Соединенное Королевство" #NT!
+  
+ gen_states.43.t: "Статус Ирландии" #NT!
+ gen_states.43.d: "Страна Ирландия находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.43.a: "Восстановить дружественную Ирландию" #NT!
+ gen_states.43.b: "Интегрировать Ирландию" #NT!
+ gen_states.43.c: "Оккупируйте Ирландию" #NT!
+  
+ gen_states.44.t: "Статус Японии" #NT!
+ gen_states.44.d: "Родина Японии находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.44.a: "Восстановить дружественную Японию" #NT!
+ gen_states.44.c: "Оккупируйте Японию" #NT!
+  
+ gen_states.45.t: "Статус Румынии" #NT!
+ gen_states.45.d: "Страна Румыния находится под контролем [Root.GetAdjective], как нам действовать?" #NT!
+ gen_states.45.a: "Восстановить Румынию 1936 года." #NT!
+ gen_states.45.b: "Захватить Трансильванию" #NT!
+ gen_states.45.c: "Оккупируйте Румынию" #NT!
+  
+  #Cosmetic Tags 
+ POL_LIT: "Польско-Литовское государство" #NT!
+ POL_LIT_DEF: "Польско-Литовское государство" #NT!
+ POL_LIT_ADJ: "Польско-литовский" #NT!
+  
+ RUS_puppet: "Российское государство" #NT!
+ RUS_puppet_DEF: "Российское государство" #NT!
+ RUS_puppet_ADJ: "Русский" #NT!
+  
+ UKR_puppet: "Украина" #NT!
+ UKR_puppet_DEF: "Украина" #NT!
+ UKR_puppet_ADJ: "украинец" #NT!
+  
+ BLR_puppet: "Белая Россия" #NT!
+ BLR_puppet_DEF: "Белая Россия" #NT!
+ BLR_puppet_ADJ: "Белый русский" #NT!
+  
+ FIN_puppet: "Великая Финляндия" #NT!
+ FIN_puppet_DEF: "Великая Финляндия" #NT!
+ FIN_puppet_ADJ: "финский" #NT!
+  
+ GER_puppet: "Временное правительство Германии" #NT!
+ GER_puppet_DEF: "Временное правительство Германии" #NT!
+ GER_puppet_ADJ: "Немецкий" #NT!
+  
+  #Cosmetic Flags 
+ LIT_can_be_released: "Литва существует" #NT!
+ RUS_can_be_released: "Россия может быть освобождена" #NT!
+  

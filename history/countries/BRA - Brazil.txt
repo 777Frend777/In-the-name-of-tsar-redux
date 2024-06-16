@@ -88,6 +88,7 @@ recruit_character = BRA_washington_luis_pereira
 recruit_character = BRA_osvaldo_aranha
 recruit_character = BRA_arlindo_veiga_dos_santos
 
+set_country_flag = monroe_doctrine
 
 1939.1.1 = {
 

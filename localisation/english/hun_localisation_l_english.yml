@@ -92,6 +92,13 @@
  hung.1025.d:0 "The Government in Belgrade has proposed a deal for the situation in Vojovodina. They accept the transfer of the state if we agree to fully demilitarize it. While some of the General Staff oppose this deal, the Goverment wants to prevent blooshed for now and is assured that in a few months, the Military would be able to take up positions with no problems in the state."
  hung.1025.a:0 "It is ... acceptable"
 
+ hung.1027.t: "Hungarian-German agreement"
+ hung.1027.d: "Bavaria accepted"
+ hung.1027.a: "It sounds good!"
+ hung.1026.t: "Hungarian-German agreementе"
+ hung.1026.d: "Today the Hungarian delegation arrived in Munich and would like to make an agreement in the field of military technology with us"
+ hung.1026.a: "Sounds great!"
+
  hung.1028.t:0 "Civil War in Hungary - Burgenland back under our control"
  hung.1028.d:0 "The Hungarian Communist Republic crumbles. The Nationalists under Horthy have started a coup which engulfes the country in civil war. The German Region of Burgenland has asked that our troops enter their region to provide safety to any scale of conflict. Our troops were welcomed as liberators and with approval from the major allied nations we were allowed to reintegrate the state."
  hung.1028.a:0 "Finally united"
@@ -189,6 +196,14 @@
  hung.1083.t:0 "Escalation between Hungary and Serbia"
  hung.1083.d:0 "After diplomatic negotiations between the Serbian Government and the Hungarian Republic had failed over the Vojovodina issue failed some hoped that the situation would nevertheless escalate. These hopes have now been crushed. Hungary and Serbia are now at war and the war aims of Hungary have greatly increased. The Hungarian Peoples Republic now also declares to free the Croatians, Bosnians and Macedonians from Serbian dictatorship.\nFor now it is unclear if the Great Powers or other neighbours of Hungary will intervene in this conflict."
  hung.1083.a:0 "The Final war between those two nations?"
+ hung.1084.t: "Hungarian Elections"
+ hung.1084.d: "Elections in Hungary, who we will pick liberals or conservatives"
+ hung.1084.a: "Nemzeti Egység Pártja"
+ hung.1084.b: "Függetlenségi és 48-as Párt"
+ hung.1085.t: "Choose our King for our country"
+ hung.1085.t: "Our country needs a new leader, and most importantly, he should like the monarchy!"
+ hung.1085.a: "Adalbert von Preußen"
+ hung.1085.b: "Prince Wilhelm, Duke of Södermanland"
 
  #EventChain
  hung.1047.t:0 "A Night in Budapest - Part 1"
@@ -201,6 +216,7 @@
 
  #Ideas
  HUN_spirit:0 "Spirit of the Nation"
+ HUN_horthy_king: "king Horthy"
  HUN_spirit_desc:0 "The people have to trust their new government and soldiers. Without them we are nothing. We must encourage all Hungarians to hope for a brighter future."
  HUN_higher_conscription:0 "Protect your Country"
  HUN_higher_conscription_desc:0 "Hungarian! Protect your family, protect your faith, protect the revoultion against the dictators in this world!"

@@ -1,0 +1,155 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "sp_event_window"	
+		position = { x = 0 y = 0 }	
+		size = { width = 600 height = 510 }
+		orientation = center
+		origo = center
+		moveable = yes
+		click_to_front = no
+		clipping = no
+
+		background = {
+			name = "Background"	
+			spriteType = "GFX_sp_event_window"
+			position = {x = 0 y = 0}
+		}
+		
+		###############
+		### GERMANY ###
+		###############
+		iconType = {
+			name = "Super_Event_Bruderkrieg2"
+			spriteType = "GFX_Bruderkrieg2"
+			position = {x = 30 y = 80}
+		}
+		iconType = {
+			name = "Super_Event_Bavariaunitegemany"
+			spriteType = "GFX_Bavariaunitegemany"
+			position = {x = 30 y = 80}
+		}
+		iconType = {
+			name = "Super_Event_Prussiaunitegemany"
+			spriteType = "GFX_Prussiaunitegemany"
+			position = {x = 30 y = 80}
+		}
+		iconType = {
+			name = "Super_Event_WWII"
+			spriteType = "GFX_WWII"
+			position = {x = 30 y = 80}
+		}
+		################
+		#####FRANCE#####
+		################
+		iconType = {
+			name = "Super_Event_Napoleon"
+			spriteType = "GFX_Napoleon"
+			position = {x = 30 y = 80}
+		}
+		#################
+		######RUSSIA#####
+		#################
+		iconType = {
+			name = "Super_Event_RCW"
+			spriteType = "GFX_RCW"
+			position = {x = 30 y = 80}
+		}
+		iconType = {
+			name = "Super_Event_Russo-japanese"
+			spriteType = "GFX_Russo-japanese"
+			position = {x = 30 y = 80}
+		}
+		iconType = {
+			name = "Super_Event_Kornilov_putch"
+			spriteType = "GFX_Kornilov_putch"
+			position = {x = 30 y = 80}
+		}
+		################
+		#####TURKEY#####
+		################
+		iconType = {
+			name = "Super_Event_Osmanreturned"
+			spriteType = "GFX_Osmanreturned"
+			position = {x = 30 y = 80}
+		}
+		###############
+		#####SERBIA####
+		###############
+		iconType = {
+			name = "Super_Event_Yugoslaviacom"
+			spriteType = "GFX_Yugoslaviacom"
+			position = {x = 30 y = 80}
+		}
+		iconType = {
+			name = "Super_Event_Yugoslaviaunited"
+			spriteType = "GFX_Yugoslaviaunited"
+			position = {x = 30 y = 80}
+		}
+		###############
+		###  SPAIN  ###
+		###############
+		iconType = {
+			name = "Super_Event_SPRcivilwar"
+			spriteType = "GFX_SPRcivilwar"
+			position = {x = 30 y = 80}
+		}
+		iconType = {
+			name = "Super_Event_February_revolution"
+			spriteType = "GFX_February_revolution"
+			position = {x = 30 y = 80}
+		}
+		iconType = {
+			name = "Super_Event_usacivwar"
+			spriteType = "GFX_usacivwar"
+			position = {x = 30 y = 80}
+		}
+		iconType = {
+			name = "Super_Event_rusnewtsar"
+			spriteType = "GFX_rusnewtsar"
+			position = {x = 30 y = 80}
+		}
+		###############
+		###INTERFACE###
+		###############
+		
+		iconType = {
+			name = "sp_event_text_underlay"
+			spriteType = "GFX_sp_event_underlay"
+			position = { x = 178 y = 272 }
+		}
+		
+		instantTextBoxType = {
+			name = "super_quote"
+			position = { x = 222 y = 280 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_quote]"
+			maxWidth = 348
+			maxHeight = 110
+			fixedsize = yes	
+			format = right
+		}
+		
+		instantTextboxType = {
+			name = "super_title"
+			position = { x = -52 y = 25 }
+			font = "hoi_24header"
+			format = center
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 700
+			maxHeight = 50
+			fixedsize = yes
+		}
+		
+		buttonType = {
+			name = "sp_event_close_button"
+			spriteType = "GFX_sp_event_close_button"
+			position = { x = 120 y = 425 }
+			clicksound = click_close
+			buttonText = "[get_super_event_remark]"
+			buttonFont = "hoi_20b"
+		}
+	}
+}

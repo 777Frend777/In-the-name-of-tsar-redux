@@ -1473,145 +1473,45 @@ country_event = {
 	}
 }
 
-# Deal with Japan  also the new stuff
-country_event = {
-	id = britain.1000
-	title = britain.1000.t
-	desc = britain.1000.d
-	picture = GFX_report_event_vienna_award_hungary
-
-	is_triggered_only = yes
-
-	option = {
-		name = britain.1000.a	# This one
-    ai_chance = {
-			factor = 99
-		}
-		ENG = {
-			country_event = { days = 1 id = britain.1001 }
-		}
-	}
-
-	option = {
-		name = britain.1000.b	#no way
-		ai_chance = { factor = 1  }
-		ENG = {
-			country_event = { days = 1 id = britain.1001 }
-		}
-	}
-}
-
-#Japan accepts 
-country_event = {
-	id = britain.1001
-	title = britain.1001.t
-	desc = britain.1001.d
-	picture = GFX_report_event_generic_read_write
-
-	is_triggered_only = yes
-
-	option = {
-		name = britain.1001.a
-		ENG = { set_country_flag = jap_accepts }
-		JAP = { 
-		add_tech_bonus = {
-				name = capital_ships_bonus
-				bonus = 1
-				ahead_reduction = 1
-				uses = 1
-				technology = basic_battlecruiser
-				technology = basic_battleship
-				technology = improved_battleship
-				technology = advanced_battleship
-				technology = heavy_battleship
-				technology = heavy_battleship2
-				technology = early_carrier
-				technology = basic_carrier
-				technology = improved_carrier
-				technology = advanced_carrier
-			}
-		}
-		ENG = { 
-		add_tech_bonus = {
-				name = capital_ships_bonus
-				bonus = 1
-				ahead_reduction = 1
-				uses = 1
-				technology = basic_battlecruiser
-				technology = basic_battleship
-				technology = improved_battleship
-				technology = advanced_battleship
-				technology = heavy_battleship
-				technology = heavy_battleship2
-				technology = early_carrier
-				technology = basic_carrier
-				technology = improved_carrier
-				technology = advanced_carrier
-			}
-		}
-		diplomatic_relation = {
-			country = JAP
-			relation = non_aggression_pact
-		
-	}
- }
-}
-
-# Japan rejects  
-country_event = {
-	id = britain.1002
-	title = britain.1002.t
-	desc = britain.1002.d
-	picture = GFX_report_event_generic_read_write
-
-	is_triggered_only = yes
-
-	option = {
-		name = britain.1002.a
-		ENG = { set_country_flag = jap_rejects }
-		reverse_add_opinion_modifier = { target = JAP modifier = improved_bad }
-		
-	 }
-  }
    # Chinese Ultimatum
 country_event = {
-	id = britain.1003
-	title = britain.1003.t
-	desc = britain.1003.d
+	id = britain.1051
+	title = britain.1051.t
+	desc = britain.1051.d
 	picture = GFX_report_event_vienna_award_hungary
 
 	is_triggered_only = yes
 
 	option = {
-		name = britain.1003.a	# This one
+		name = britain.1051.a	# This one
     ai_chance = {
 			factor = 50
 		}
 		ENG = {
-			country_event = { days = 1 id = britain.1004 }
+			country_event = { days = 1 id = britain.1052 }
 		}
 	}
 
 	option = {
-		name = britain.1003.b	#no way
+		name = britain.1051.b	#no way
 		ai_chance = { factor = 50  }
 		ENG = {
-			country_event = { days = 1 id = britain.1005 }
+			country_event = { days = 1 id = britain.1053 }
 		}
 	}
 }
 
 #China accepts 
 country_event = {
-	id = britain.1004
-	title = britain.1004.t
-	desc = britain.1004.d
+	id = britain.1052
+	title = britain.1052.t
+	desc = britain.1052.d
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
 
 	option = {
-		name = britain.1004.a
+		name = britain.1052.a
 		ENG = { set_country_flag = chi_accepts }
 		ENG = { 
 		transfer_state = 593
@@ -1622,15 +1522,15 @@ country_event = {
 
 # China rejects  
 country_event = {
-	id = britain.1005
-	title = britain.1005.t
-	desc = britain.1005.d
+	id = britain.1053
+	title = britain.1053.t
+	desc = britain.1053.d
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
 
 	option = {
-		name = britain.1005.a
+		name = britain.1053.a
 		CHI = { add_stability = 0.10 }
 		create_wargoal = {
 					type = take_state_focus
@@ -1642,43 +1542,43 @@ country_event = {
   }
 	# Naval/Tank Treaty with Germany
 country_event = {
-	id = britain.1006
-	title = britain.1006.t
-	desc = britain.1006.d
+	id = britain.1054
+	title = britain.1054.t
+	desc = britain.1054.d
 	picture = GFX_report_event_vienna_award_hungary
 
 	is_triggered_only = yes
 
 	option = {
-		name = britain.1006.a	# This one
+		name = britain.1054.a	# This one
     ai_chance = {
 			factor = 99
 		}
 		ENG = {
-			country_event = { days = 1 id = britain.1007 }
+			country_event = { days = 1 id = britain.1055 }
 		}
 	}
 
 	option = {
-		name = britain.1006.b	#no way
+		name = britain.1054.b	#no way
 		ai_chance = { factor = 1  }
 		ENG = {
-			country_event = { days = 1 id = britain.1008 }
+			country_event = { days = 1 id = britain.1056 }
 		}
 	}
 }
 
 #Germany Accepts
 country_event = {
-	id = britain.1007
-	title = britain.1007.t
-	desc = britain.1007.d
+	id = britain.1055
+	title = britain.1055.t
+	desc = britain.1055.d
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
 
 	option = {
-		name = britain.1007.a
+		name = britain.1055.a
 		#ENG = {  }
 		GER = { 
 		add_tech_bonus = {
@@ -1724,15 +1624,15 @@ country_event = {
 
 # Germany rejects  
 country_event = {
-	id = britain.1008
-	title = britain.1008.t
-	desc = britain.1008.d
+	id = britain.1056
+	title = britain.1056.t
+	desc = britain.1056.d
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
 
 	option = {
-		name = britain.1008.a
+		name = britain.1056.a
 		GER = { add_political_power = 50 }
 		reverse_add_opinion_modifier = { target = GER modifier = improved_bad }
 		
@@ -1884,3 +1784,103 @@ news_event = {
 		}
 	}
 }
+# Deal with Japan  also the new stuff
+country_event = {
+	id = britain.1048
+	title = britain.1048.t
+	desc = britain.1048.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = britain.1048.a	# This one
+    ai_chance = {
+			factor = 99
+		}
+		ENG = {
+			country_event = { days = 1 id = britain.1049 }
+		}
+	}
+
+	option = {
+		name = britain.1048.b	#no way
+		ai_chance = { factor = 1  }
+		ENG = {
+			country_event = { days = 1 id = britain.1050 }
+		}
+	}
+}
+
+#Japan accepts 
+country_event = {
+	id = britain.1049
+	title = britain.1049.t
+	desc = britain.1049.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = britain.1049.a
+		ENG = { set_country_flag = jap_accepts }
+		JAP = { 
+		add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1
+				ahead_reduction = 1
+				uses = 1
+				technology = basic_battlecruiser
+				technology = basic_battleship
+				technology = improved_battleship
+				technology = advanced_battleship
+				technology = heavy_battleship
+				technology = heavy_battleship2
+				technology = early_carrier
+				technology = basic_carrier
+				technology = improved_carrier
+				technology = advanced_carrier
+			}
+		}
+		ENG = { 
+		add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1
+				ahead_reduction = 1
+				uses = 1
+				technology = basic_battlecruiser
+				technology = basic_battleship
+				technology = improved_battleship
+				technology = advanced_battleship
+				technology = heavy_battleship
+				technology = heavy_battleship2
+				technology = early_carrier
+				technology = basic_carrier
+				technology = improved_carrier
+				technology = advanced_carrier
+			}
+		}
+		diplomatic_relation = {
+			country = JAP
+			relation = non_aggression_pact
+		
+	}
+ }
+}
+
+# Japan rejects  
+country_event = {
+	id = britain.1050
+	title = britain.1050.t
+	desc = britain.1050.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = britain.1050.a
+		ENG = { set_country_flag = jap_rejects }
+		reverse_add_opinion_modifier = { target = JAP modifier = improved_bad }
+		
+	 }
+  }

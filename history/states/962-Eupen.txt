@@ -1,0 +1,22 @@
+
+state={
+	id=962
+	name="STATE_962"
+	manpower = 100000
+	
+	state_category = city
+
+	history={
+		owner = BEL
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = BEL
+	}
+
+	provinces={
+		3488 
+	}
+
+	local_supplies=14.0 
+}

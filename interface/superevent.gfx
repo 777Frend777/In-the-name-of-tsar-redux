@@ -1,0 +1,75 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_sp_event_window"
+		textureFile = "/gfx/super_event/super_event_assets/Super_Event_Window.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_close_button"
+		textureFile = /gfx/super_event/super_event_assets/Super_Event_Button.dds
+	}
+	spriteType = {
+		name = "GFX_sp_event_underlay"
+		textureFile = "/gfx/super_event/super_event_assets/Super_Event_Underlay.dds"
+	}
+	spriteType = {
+		name = "GFX_Bruderkrieg2"
+		textureFile = "/gfx/super_event/Bruderkrieg2.png"
+	}
+	spriteType = {
+		name = "GFX_RCW"
+		textureFile = "/gfx/super_event/RCW.png"
+	}
+	spriteType = {
+		name = "GFX_Napoleon"
+		textureFile = "/gfx/super_event/Napoleon.png"
+	}
+	spriteType = {
+		name = "GFX_SPRcivilwar"
+		textureFile = "/gfx/super_event/SPRcivilwar.png"
+	}
+	spriteType = {
+		name = "GFX_Osmanreturned"
+		textureFile = "/gfx/super_event/Osmanreturned.png"
+	}
+	spriteType = {
+		name = "GFX_Russo-japanese"
+		textureFile = "/gfx/super_event/Russo-japanese.png"
+	}
+	spriteType = {
+		name = "GFX_WWII"
+		textureFile = "/gfx/super_event/WWII.png"
+	}
+	spriteType = {
+		name = "GFX_Yugoslaviacom"
+		textureFile = "/gfx/super_event/Yugoslaviacom.png"
+	}
+	spriteType = {
+		name = "GFX_Yugoslaviaunited"
+		textureFile = "/gfx/super_event/Yugoslaviaunited.png"
+	}
+	spriteType = {
+		name = "GFX_Bavariaunitegemany"
+		textureFile = "/gfx/super_event/Bavariaunitegemany.png"
+	}
+	spriteType = {
+		name = "GFX_Prussiaunitegemany"
+		textureFile = "/gfx/super_event/Prussiaunitegemany.png"
+	}
+	spriteType = {
+		name = "GFX_Kornilov_putch"
+		textureFile = "/gfx/super_event/Kornilov_putch.png"
+	}
+	spriteType = {
+		name = "GFX_February_revolution"
+		textureFile = "/gfx/super_event/February_revolution.png"
+	}
+	spriteType = {
+		name = "GFX_usacivwar"
+		textureFile = "/gfx/super_event/usacivwar.png"
+	}
+	spriteType = {
+		name = "GFX_rusnewtsar"
+		textureFile = "/gfx/super_event/rusnewtsar.png"
+	}
+}

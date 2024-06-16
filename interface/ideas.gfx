@@ -8204,6 +8204,8 @@ spriteTypes = {
 		name = "GFX_idea_hih_siderius"
 		texturefile = "gfx/interface/ideas/idea_hol_hih_siderius.dds"
 	}
-	
-
+	spriteType = {
+		name = "GFX_epidemic"
+		texturefile = "gfx/interface/ideas/GFX_epidemic.dds"
+	}
 }

@@ -447,6 +447,7 @@
  MUT_UNIFIED_fascism_DEF: "Великий Зимбабве" #NT!
  MUT_UNIFIED_democratic_DEF: "Мутапа" #NT!
  MUT_UNIFIED_communism_DEF: "Социалистическое государство Мутапа" #NT!
+ SPQR_UNIFIED: "Римская империя"
  SPQR_UNIFIED_neutrality: "Регнум Романум" #NT!
  SPQR_UNIFIED_fascism: "Imperium Romanum"
  SPQR_UNIFIED_democratic: "Res Publica Romana"
@@ -1317,3 +1318,9 @@
  POL_RUS: "Великое Княжество Польское" #NT!
  POL_RUS_DEF: "Великое Княжество Польское" #NT!
  POL_RUS_ADJ: "Польский" #NT!
+ HMB_socialist: "Гамбургское восстание" #NT!
+ HMB_socialist_DEF: "Гамбургское восстание" #NT!
+
+ TMS_BAS: "Басмачи Эмират"
+ TMS_BAS_DEF: "Басмачи Эмират"
+ TMS_BAS_ADJ: "Басмачи"

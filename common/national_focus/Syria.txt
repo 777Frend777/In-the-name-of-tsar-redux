@@ -23,9 +23,6 @@
 		allow_branch = {
 			has_war_with = FRA
 		}
-		bypass = {
-			has_war_with = FRA
-		}
 		completion_reward = {
 			add_stability = 0.05
 			random_owned_controlled_state = {
@@ -354,13 +351,10 @@
 		x = 10
 		y = 0
 		available = {
-			NOT ={ has_war_with = FRA }
+			NOT = { has_war_with = FRA }
 		}
 		allow_branch = {
-			NOT ={ has_war_with = FRA }
-		}
-		bypass = {
-			NOT ={ has_war_with = FRA }
+			NOT = { has_war_with = FRA }
 		}
 		completion_reward = {
 			add_stability = 0.05
@@ -374,7 +368,6 @@
 		}
 
 	}
-}
 focus = {
 	id = SYR_Revolution
 	icon = GFX_focus_SWE_organize_a_putsch
@@ -383,13 +376,10 @@ focus = {
 	y = 1
 	prerequisite = { focus = SYR_Rebuild  }
 	available = {
-		NOT ={ has_war_with = FRA }
+		NOT = { has_war_with = FRA }
 	}
 	allow_branch = {
-		NOT ={ has_war_with = FRA }
-	}
-	bypass = {
-		NOT ={ has_war_with = FRA }
+		NOT = { has_war_with = FRA }
 	}
 	completion_reward = {
 		add_stability = 0.05
@@ -402,3 +392,4 @@ focus = {
 		}
 			}				
 		}	
+}

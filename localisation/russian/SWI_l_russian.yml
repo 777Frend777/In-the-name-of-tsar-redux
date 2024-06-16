@@ -29,6 +29,7 @@
  SWI_National_Front_win_tt: "Победа националистов" #NT!
  SWI_Communist_revolt_tt: "Коммунистическая революция" #NT!
  SWI_no_win_tt: "Тупик" #NT!
+ SWI_armed_neutrality_idea: "Вооруженный нейтралитет"
  SWI_communist_influence: "Увеличение коммунистического влияния" #NT!
  SWI_crackdown_on_socialism: "Репрессии против социализма" #NT!
  SWI_suspend_marxist_students: "Отстранить студентов-марксистов" #NT!
@@ -132,3 +133,9 @@
  SWI_pursue_greater_switzerland: "Преследовать Великую Швейцарию" #NT!
  SWI_expansionism_category: "Экспансионизм" #NT!
  SWI_Tobler: "Кабинет Тоблера" #NT!
+ SWI_restore_the_council: "восстановить совет"
+ SWI_unite_the_swiss: "объединить швейцарцев"	
+ SWI_maintain_the_course: "поддерживать курс"
+ SWI_Crackdown_on_democracy: "Подавление демократии"
+ SWI_Toblerone_donations: "Армейская реформа Тоблера"
+ SWI_Prussian_Military_Alliance: "Прусский военный союз"

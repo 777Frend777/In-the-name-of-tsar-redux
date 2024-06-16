@@ -1,0 +1,23 @@
+#############
+# Russia
+#############
+
+animation = {
+	name = "rus_battleship_idle_animation"
+	file = "rus_battleship_idle.anim"
+}
+
+animation = {
+	name = "rus_battleship_attack_animation"
+	file = "rus_battleship_attack.anim"
+}
+
+animation = {
+	name = "rus_battleship_defend_animation"
+	file = "rus_battleship_defend.anim"
+}
+
+animation = {
+	name = "rus_battleship_death_animation"
+	file = "rus_battleship_death.anim"
+}

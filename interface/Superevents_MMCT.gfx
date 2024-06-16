@@ -1,0 +1,7 @@
+spriteTypes = {
+    spriteType = {
+      name = "GFX_radio_station_cover_Superevents_MMCT"
+      textureFile = "gfx/radio_station_cover_Superevents_MMCT.png"
+      noOfFrames = 2
+    }
+}

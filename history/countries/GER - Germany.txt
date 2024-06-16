@@ -164,6 +164,7 @@ add_to_faction = SAX
 
 
 add_ideas = {
+        MTG_naval_treaty_adherent
 	GER_wilhelm_II
 }
 recruit_character = GER_hans_von_seeckt

@@ -1349,4 +1349,8 @@
 
  CYR: "Emirate of Cyrenaica"
  CYR_DEF: "the Emirate of Cyrenaica"
- CYR+ADJ: "Cyrenaician"
+ CYR_ADJ: "Cyrenaician"
+
+ HMB: "Hamburg uprising"
+ HMB_DEF: "Hamburg uprising"
+ HMB_ADJ: "Hamburg uprising"

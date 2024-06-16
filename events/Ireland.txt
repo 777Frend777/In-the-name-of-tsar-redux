@@ -5,14 +5,14 @@
 add_namespace = IRE
 country_event = {
 	id = IRE.1
-	title = "Unionist Riot"
+	title = "IRE.1.t"
 	desc = IRE.1.d
 	picture = GFX_report_event_IRE_Unionists
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Damn them Bloody Prods"
+		name = "IRE.1.s"
 		IRE_add_unionist_resistance = yes
 		add_ideas = IRE_Unionist_Riot
 	}

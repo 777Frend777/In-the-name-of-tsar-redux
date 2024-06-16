@@ -1,6 +1,120 @@
 ideas = {
 
 	country = {
+	GER_mefo_bills_1 = {
+			name = GER_mefo_bills
+			allowed = {
+				always = no
+			}
+		}	
+		GER_mefo_bills_2 = {
+			name = GER_mefo_bills
+			allowed = {
+				always = no
+			}
+		}
+		GER_mefo_bills_3 = {
+			name = GER_mefo_bills
+			allowed = {
+				always = no
+			}
+		}
+		GER_mefo_bills_4 = {
+			name = GER_mefo_bills
+			allowed = {
+				always = no
+			}
+		}
+		GER_mefo_bills_5 = {
+			name = GER_mefo_bills
+			allowed = {
+				always = no
+			}
+		}
+		GER_mefo_bills_6 = {
+			name = GER_mefo_bills
+			allowed = {
+				always = no
+			}
+		}
+		GER_mefo_bills_7 = {
+			name = GER_mefo_bills
+			allowed = {
+				always = no
+			}
+		}
+		GER_mefo_bills_8 = {
+			name = GER_mefo_bills
+			allowed = {
+				always = no
+			}
+		}
+		GER_mefo_bills_9 = {
+			name = GER_mefo_bills
+			allowed = {
+				always = no
+			}
+		}
+		GER_mefo_bills_10 = {
+			name = GER_mefo_bills
+			allowed = {
+				always = no
+			}
+		}
+		GER_mefo_bills_11 = {
+			name = GER_mefo_bills
+			allowed = {
+				always = no
+			}
+		}
+		GER_mefo_bills_12 = {
+			name = GER_mefo_bills
+			allowed = {
+				always = no
+			}
+		}
+		GER_mefo_bills_13 = {
+			name = GER_mefo_bills
+			allowed = {
+				always = no
+			}
+		}
+		GER_mefo_bills_14 = {
+			name = GER_mefo_bills
+			allowed = {
+				always = no
+			}
+		}
+		GER_mefo_bills_15 = {
+			name = GER_mefo_bills
+			allowed = {
+				always = no
+			}
+		}
+		GER_mefo_bills_16 = {
+			name = GER_mefo_bills
+			allowed = {
+				always = no
+			}
+		}
+		GER_mefo_bills_17 = {
+			name = GER_mefo_bills
+			allowed = {
+				always = no
+			}
+		}
+		GER_mefo_bills_18 = {
+			name = GER_mefo_bills
+			allowed = {
+				always = no
+			}
+		}
+		GER_mefo_bills_ended = {
+			name = GER_mefo_bills
+			allowed = {
+				always = no
+			}
+		}
 		sour_loser = {
 			
 			allowed = {

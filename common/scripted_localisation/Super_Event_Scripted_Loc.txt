@@ -1,0 +1,285 @@
+#Titles
+defined_text = {
+    name = get_super_event_title
+	
+    text = {
+        trigger = {
+            has_global_flag = Bruderkrieg2
+        }
+        localization_key = "sp_event_bruderkrieg"
+    }
+	 text = {
+        trigger = {
+            has_global_flag = RCW.super
+        }
+        localization_key = "sp_event_rcw"
+    }
+	text = {
+        trigger = {
+            has_global_flag = Napoleon.super
+        }
+        localization_key = "sp_event_napoleon"
+    }
+	text = {
+        trigger = {
+            has_global_flag = Yugoslaviacom.super
+        }
+        localization_key = "sp_event_yugoslaviacom"
+    }
+	 text = {
+        trigger = {
+            has_global_flag = Yugoslaviaunited.super
+        }
+        localization_key = "sp_event_yugoslaviaunited"
+    }
+	text = {
+        trigger = {
+            has_global_flag = WWII.super
+        }
+        localization_key = "sp_event_WWII"
+    }
+	text = {
+        trigger = {
+            has_global_flag = Russo-japanese.super
+        }
+        localization_key = "sp_event_russo-japanese"
+    }
+	 text = {
+        trigger = {
+            has_global_flag = SPRcivilwar.super
+        }
+        localization_key = "sp_event_sprcivilwar"
+    }
+	text = {
+        trigger = {
+            has_global_flag = Osmanreturned.super
+        }
+        localization_key = "sp_event_osmanreturned"
+    }
+	text = {
+        trigger = {
+            has_global_flag = Bavariaunitegemany.super
+        }
+        localization_key = "sp_event_bavariaunitegemany"
+    }
+	text = {
+        trigger = {
+            has_global_flag = Prussiaunitegemany.super
+        }
+        localization_key = "sp_event_prussiaunitegemany"
+    }
+	text = {
+        trigger = {
+            has_global_flag = Kornilov_putch.super
+        }
+        localization_key = "sp_event_Kornilov_putch"
+    }
+		text = {
+        trigger = {
+            has_global_flag = February_revolution.super
+        }
+        localization_key = "sp_event_February_revolution"
+    }
+			text = {
+        trigger = {
+            has_global_flag = usacivwar.super
+        }
+        localization_key = "sp_event_usacivwar"
+    }
+    			text = {
+        trigger = {
+            has_global_flag = rusnewtsar.super
+        }
+        localization_key = "sp_event_rusnewtsar"
+    }
+} 
+#Remarks
+defined_text = {
+    name = get_super_event_remark
+    
+	 text = {
+        trigger = {
+            has_global_flag = Bruderkrieg2
+        }
+        localization_key = "sp_event_bruderkrieg_REMARK"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = RCW.super
+        }
+        localization_key = "sp_event_rcw_REMARK"
+    }
+	text = {
+        trigger = {
+            has_global_flag = Napoleon.super
+        }
+        localization_key = "sp_event_napoleon_REMARK"
+    }
+		text = {
+        trigger = {
+            has_global_flag = Yugoslaviacom.super
+        }
+        localization_key = "sp_event_yugoslaviacom_REMARK"
+    }
+	 text = {
+        trigger = {
+            has_global_flag = Yugoslaviaunited.super
+        }
+        localization_key = "sp_event_yugoslaviaunited_REMARK"
+    }
+	text = {
+        trigger = {
+            has_global_flag = WWII.super
+        }
+        localization_key = "sp_event_WWII_REMARK"
+    }
+	text = {
+        trigger = {
+            has_global_flag = Russo-japanese.super
+        }
+        localization_key = "sp_event_russo-japanese_REMARK"
+    }
+	text = {
+        trigger = {
+            has_global_flag = SPRcivilwar.super
+        }
+        localization_key = "sp_event_sprcivilwar_REMARK"
+    }
+	text = {
+        trigger = {
+            has_global_flag = Osmanreturned.super
+        }
+        localization_key = "sp_event_osmanreturned_REMARK"
+    }
+	text = {
+        trigger = {
+            has_global_flag = Bavariaunitegemany.super
+        }
+        localization_key = "sp_event_bavariaunitegemany_REMARK"
+    }
+	text = {
+        trigger = {
+            has_global_flag = Prussiaunitegemany.super
+        }
+        localization_key = "sp_event_prussiaunitegemany_REMARK"
+		}
+	text = {
+        trigger = {
+            has_global_flag = Kornilov_putch.super
+        }
+        localization_key = "sp_event_Kornilov_putch_REMARK"
+    }
+		text = {
+        trigger = {
+            has_global_flag = February_revolution.super
+        }
+        localization_key = "sp_event_February_revolution_REMARK"
+    }
+			text = {
+        trigger = {
+            has_global_flag = usacivwar.super
+        }
+        localization_key = "sp_event_usacivwar_REMARK"
+    }
+    text = {
+        trigger = {
+            has_global_flag = rusnewtsar.super
+        }
+        localization_key = "sp_event_rusnewtsar_REMARK"
+    }
+}
+#Quotes
+defined_text = {
+    name = get_super_event_quote
+    
+	 text = {
+        trigger = {
+            has_global_flag = Bruderkrieg2
+        }
+        localization_key = "sp_event_bruderkrieg_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = RCW.super
+        }
+        localization_key = "sp_event_rcw_QUOTE"
+    }
+	text = {
+        trigger = {
+            has_global_flag = Napoleon.super
+        }
+        localization_key = "sp_event_napoleon_QUOTE"
+    }
+		text = {
+        trigger = {
+            has_global_flag = Yugoslaviacom.super
+        }
+        localization_key = "sp_event_yugoslaviacom_QUOTE"
+    }
+	 text = {
+        trigger = {
+            has_global_flag = Yugoslaviaunited.super
+        }
+        localization_key = "sp_event_yugoslaviaunited_QUOTE"
+    }
+	text = {
+        trigger = {
+            has_global_flag = WWII.super
+        }
+        localization_key = "sp_event_WWII_QUOTE"
+    }
+	text = {
+        trigger = {
+            has_global_flag = Russo-japanese.super
+        }
+        localization_key = "sp_event_russo-japanese_QUOTE"
+    }
+	 text = {
+        trigger = {
+            has_global_flag = SPRcivilwar.super
+        }
+        localization_key = "sp_event_sprcivilwar_QUOTE"
+    }
+	text = {
+        trigger = {
+            has_global_flag = Osmanreturned.super
+        }
+        localization_key = "sp_event_osmanreturned_QUOTE"
+    }
+	text = {
+        trigger = {
+            has_global_flag = Bavariaunitegemany.super
+        }
+        localization_key = "sp_event_bavariaunitegemany_QUOTE"
+    }
+	text = {
+        trigger = {
+            has_global_flag = Prussiaunitegemany.super
+        }
+        localization_key = "sp_event_prussiaunitegemany_QUOTE"
+    }
+	text = {
+        trigger = {
+            has_global_flag = Kornilov_putch.super
+        }
+        localization_key = "sp_event_Kornilov_putch_QUOTE"
+    }
+		text = {
+        trigger = {
+            has_global_flag = February_revolution.super
+        }
+        localization_key = "sp_event_February_revolution_QUOTE"
+    }
+			text = {
+        trigger = {
+            has_global_flag = usacivwar.super
+        }
+        localization_key = "sp_event_usacivwar_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = rusnewtsar.super
+        }
+        localization_key = "sp_event_rusnewtsar_QUOTE"
+    }
+}

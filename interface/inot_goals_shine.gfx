@@ -10452,7 +10452,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-}
 	SpriteType = {
 		name = "GFX_Focus_hatay"
 		texturefile = "gfx/interface/goals/GFX_Focus_hatay.png"
@@ -10483,3 +10482,5 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		legacy_lazy_load = no
+	}
+}

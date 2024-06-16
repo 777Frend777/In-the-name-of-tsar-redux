@@ -19,6 +19,23 @@ ideas = {
 				ai_get_ally_desire_factor = -100
 			}
 		}
+		SWE_paid_holidays_idea = { 
+			picture = generic_local_self_management
+
+			removal_cost = -1
+
+			allowed = {
+				original_tag = SWE
+			}
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				consumer_goods_factor = 0.06
+				political_power_factor = 0.05
+				stability_factor = 0.03
+				production_factory_max_efficiency_factor = 0.06
+			}
+		}
 		
 		SWE_unstable_government = {
 			

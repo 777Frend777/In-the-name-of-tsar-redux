@@ -31,22 +31,6 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		
-		"CHI"={
-			history = "CHI_ORIENT_DESC"
-			ideology = conservatives
-			ideas = {
-			BAV_home_of_revolution
-			BAV_national	
-			BAV_plot_against_the_commune
-			}
-			focuses = {
-				BAV_purge
-				BAV_liberate_french
-				BAV_world_revolution
-			}
-		}
-		
 
 		"RAJ"= {
 			history = "RAJ_ORIENT_DESC"

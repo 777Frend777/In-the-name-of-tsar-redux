@@ -1,0 +1,32 @@
+state={
+	id=958
+	name="STATE_958"
+
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+
+		}
+		add_core_of = RUS
+		add_core_of = ARM
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 3
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		4660 6642 
+	}
+	manpower=152684
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

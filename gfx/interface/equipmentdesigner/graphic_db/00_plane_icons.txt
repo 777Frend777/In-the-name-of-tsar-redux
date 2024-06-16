@@ -283,6 +283,7 @@ GER = {
 	}
 	
 	medium_plane_airframe = {
+
 		pool = {
 			icons = {
 				GFX_GER_tactical_bomber3_medium
@@ -295,13 +296,18 @@ GER = {
 				GFX_GER_jet_medium_plane_1_medium
 				GFX_GER_heavy_fighter2_medium
 				GFX_GER_early_bomber_medium
-				GFX_GER_scout_plane1_medium
-				GFX_GER_scout_plane2_medium
 				GFX_GER_heavy_fighter1_medium
 				GFX_GER_early_bomber_medium
 			}
 			models = {
 				GER_medium_plane_entity
+			}
+		}
+		pool = {
+			limit = { has_dlc = "La Resistance"}
+			icons = {
+				GFX_GER_scout_plane1_medium  
+				GFX_GER_scout_plane2_medium
 			}
 		}
 	}
@@ -374,8 +380,10 @@ GER = {
 	
 	medium_plane_scout_plane_airframe = {
 		pool = {
+			limit = { has_dlc = "La Resistance"}
 			weight = 1.1
 			icons = {
+				GFX_GER_scout_plane1_medium
 				GFX_GER_scout_plane2_medium
 			}
 		}
@@ -493,11 +501,16 @@ SOV = {
 				GFX_SOV_tactical_bomber1_medium
 				GFX_SOV_heavy_fighter1_medium
 				GFX_SOV_early_bomber_medium
-				GFX_SOV_scout_plane1_medium
-				GFX_SOV_scout_plane2_medium
 			}
 			models = {
 				SOV_medium_plane_entity
+			}
+		}
+		pool = {
+			limit = { has_dlc = "La Resistance"}
+			icons = {
+				GFX_SOV_scout_plane1_medium
+				GFX_SOV_scout_plane2_medium
 			}
 		}
 	}
@@ -582,6 +595,7 @@ USA = {
 	}
 
 	medium_plane_airframe = {
+
 		pool = {
 			icons = {
 				GFX_USA_tactical_bomber3_medium
@@ -596,11 +610,16 @@ USA = {
 				GFX_USA_naval_bomber1_medium
 				GFX_USA_heavy_fighter1_medium
 				GFX_USA_early_bomber_medium
-				GFX_USA_scout_plane1_medium
-				GFX_USA_scout_plane2_medium
 			}
 			models = {
 				USA_medium_plane_entity
+			}
+		}
+		pool = {
+			limit = { has_dlc = "La Resistance"}
+			icons = {
+				GFX_USA_scout_plane1_medium
+				GFX_USA_scout_plane2_medium
 			}
 		}
 	}
@@ -882,6 +901,7 @@ ENG = {
 	
 	
 	medium_plane_airframe = {
+
 		pool = {
 			icons = {
 				GFX_ENG_tactical_bomber3_medium
@@ -891,12 +911,17 @@ ENG = {
 				GFX_ENG_heavy_fighter2_medium
 				GFX_ENG_tactical_bomber1_medium
 				GFX_ENG_heavy_fighter1_medium
-				GFX_ENG_scout_plane1_medium
-				GFX_ENG_scout_plane2_medium
 				GFX_ENG_early_bomber_medium
 			}
 			models = {
 				ENG_medium_plane_entity
+			}
+		}
+		pool = {
+			limit = { has_dlc = "La Resistance" }
+			icons = {
+				GFX_ENG_scout_plane1_medium 
+				GFX_ENG_scout_plane2_medium
 			}
 		}
 	}
@@ -924,6 +949,7 @@ ENG = {
 	
 	medium_plane_scout_plane_airframe_1 = {
 		pool = {
+			limit = { has_dlc = "La Resistance"}
 			weight = 1.1
 			icons = {
 				GFX_ENG_scout_plane1_medium
@@ -954,6 +980,7 @@ ENG = {
 	
 	medium_plane_scout_plane_airframe_2 = {
 		pool = {
+			limit = { has_dlc = "La Resistance"}
 			weight = 1.1
 			icons = {
 				GFX_ENG_scout_plane2_medium
@@ -984,6 +1011,7 @@ ENG = {
 	
 	medium_plane_scout_plane_airframe_3 = {
 		pool = {
+			limit = { has_dlc = "La Resistance"}
 			weight = 1.1
 			icons = {
 				GFX_ENG_scout_plane2_medium
@@ -1094,11 +1122,16 @@ FRA = {
 				GFX_FRA_heavy_fighter1_medium
 				GFX_FRA_early_bomber_medium
 				GFX_FRA_medium_jet_plane_medium
-				GFX_FRA_scout_plane1_medium
-				GFX_FRA_scout_plane2_medium
 			}
 			models = {
 				FRA_medium_plane_entity
+			}
+		}
+		pool = {
+			limit = { has_dlc = "La Resistance"}
+			icons = {
+				GFX_FRA_scout_plane1_medium
+				GFX_FRA_scout_plane2_medium
 			}
 		}
 	}
@@ -1177,6 +1210,7 @@ JAP = {
 		}
 	}
 	medium_plane_airframe = {
+
 		pool = {
 			icons = {
 				GFX_JAP_tactical_bomber3_medium
@@ -1189,11 +1223,16 @@ JAP = {
 				GFX_JAP_naval_bomber1_medium
 				GFX_JAP_heavy_fighter1_medium
 				GFX_JAP_early_bomber_medium
-				GFX_JAP_scout_plane1_medium
-				GFX_JAP_scout_plane2_medium
 			}
 			models = {
 				JAP_medium_plane_entity
+			}
+		}
+		pool = {
+			limit = { has_dlc = "La Resistance"}
+			icons = {
+				GFX_JAP_scout_plane1_medium
+				GFX_JAP_scout_plane2_medium
 			}
 		}
 	}
@@ -1397,7 +1436,8 @@ AST = {
 		}
 	}
 	medium_plane_airframe = {
-		pool = {
+
+		pool = {			
 			icons = {
 				GFX_ENG_tactical_bomber3_medium
 				GFX_ENG_jet_medium_plane_1_medium
@@ -1407,11 +1447,16 @@ AST = {
 				GFX_ENG_tactical_bomber1_medium
 				GFX_ENG_heavy_fighter1_medium
 				GFX_ENG_early_bomber_medium
-				GFX_ITA_scout_plane1_medium
-				GFX_ITA_scout_plane2_medium
 			}
 			models = {
 				ENG_medium_plane_entity
+			}
+		}
+		pool = {
+			limit = { has_dlc = "La Resistance"}
+			icons = {
+				GFX_ITA_scout_plane1_medium
+				GFX_ITA_scout_plane2_medium
 			}
 		}
 	}
@@ -1787,6 +1832,7 @@ NZL = {
 POL = {
 	small_plane_airframe = {
 		pool = {
+			limit = { has_dlc = "Poland: United and Ready" }
 			icons = {
 				GFX_POL_fighter3_medium
 				GFX_POL_CAS3_medium
@@ -1803,7 +1849,7 @@ POL = {
 	}
 	cv_small_plane_airframe = {
 		pool = {
-			
+			limit = { has_dlc = "Poland: United and Ready" }
 			icons = {
 				GFX_POL_fighter3_medium
 				GFX_POL_CAS3_medium
@@ -1820,7 +1866,7 @@ POL = {
 	}
 	medium_plane_airframe = {
 		pool = {
-			
+			limit = { has_dlc = "Poland: United and Ready" }
 			icons = {
 				GFX_POL_heavy_fighter3_medium
 				GFX_POL_tactical_bomber3_medium
@@ -1834,7 +1880,7 @@ POL = {
 	}
 	large_plane_airframe = {
 		pool = {
-			
+			limit = { has_dlc = "Poland: United and Ready" }
 			icons = {
 				GFX_POL_strategic_bomber3_medium
 				GFX_POL_strategic_bomber2_medium

@@ -359,6 +359,7 @@ set_popularities = {
 }
 
 add_ideas = {
+        MTG_naval_treaty_adherent
 	FRA_scars_of_the_great_war
 	FRA_inefficient_gov_idea
 	FRA_political_instability_idea

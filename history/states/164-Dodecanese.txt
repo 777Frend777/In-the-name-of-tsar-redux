@@ -25,7 +25,7 @@ state=
 
 		#CONTROLLED BY ITALY AT GAME START -> ITALIAN NAMES
 		set_state_name = STATE_164_ITA
-		set_province_name = { id = 10007 name = VICTORY_POINTS_10007_ITA }
+		set_province_name = { id = 10007 name = VICTORY_POINTS_10007 }
 	}
 
 	provinces = {

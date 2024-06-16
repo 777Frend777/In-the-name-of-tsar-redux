@@ -53,25 +53,23 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "chart_explanation"
-			position = { x = 334 y = 297 }
-			size = { width = 216 height = 80 }
-			clipping = yes
-			verticalScrollbar = "right_vertical_slider"
-			margin = { top = 6 left = 0 bottom = 5 right = 0 }
-
-		background = {
-            		name = "Background"        
-            		quadTextureSprite ="GFX_tiled_bg_1_scrollbar"
-        	}
-        
-        	gridBoxType = {
-            		name = "parties_grid"
-            		position = { x = -55 y = 0 }
-            		size = { width = 100%% height = 100%% }
-            		slotsize = { width = 230 height = 16 }
-            		format = "UPPER_LEFT"
-        	}
-    	}
+			position = { x = 18 y = 116 }
+			size = { width = 330 height = 70 }
+			clipping = no
+			
+#			background = {
+#				name = "Background"		
+#				spriteType ="GFX_pol_piechart_bg"
+#			}
+			
+			gridBoxType = {
+				name = "parties_grid"
+				position = { x = 260 y = 184 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 230 height = 16 }
+				format = "UPPER_LEFT"
+			}
+		}
 
 		
 		containerWindowType = {
@@ -811,6 +809,20 @@ guiTypes = {
 			centerposition = yes
 			alwaystransparent = yes
 			frame = 1
+		}
+	}
+
+	containerWindowType = {
+		name = "industrial_org_entry"
+		size = { width = 53 height = 53 }
+		clipping = no
+
+		buttonType = {
+			name = "open_roster_button"
+			position = { x = 31 y = 31 }
+			spriteType = "GFX_add_pol_idea_button"
+			centerposition = yes
+			clicksound = click_default
 		}
 	}
 	
@@ -1750,57 +1762,5 @@ guiTypes = {
 			alwaystransparent = yes
 		}		
 		
-	}
-
-	# 2066 IDEOLOGIES
-
-	spriteType = {
-		name = "GFX_ideology_autocracy_group"
-		texturefile = "gfx/interface/ideologies/autocracy_group.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ideology_centrism_group"
-		texturefile = "gfx/interface/ideologies/centrism_group.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ideology_ecologism_group"
-		texturefile = "gfx/interface/ideologies/ecologism_group.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ideology_harmonism_group"
-		texturefile = "gfx/interface/ideologies/harmonism_group.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ideology_justicalism_group"
-		texturefile = "gfx/interface/ideologies/justicalism_group.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ideology_newcapitalism_group"
-		texturefile = "gfx/interface/ideologies/newcapitalism_group.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ideology_newrevolutionism_group"
-		texturefile = "gfx/interface/ideologies/newrevolutionism_group.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ideology_severism_group"
-		texturefile = "gfx/interface/ideologies/severism_group.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ideology_technocracy_group"
-		texturefile = "gfx/interface/ideologies/technocracy_group.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ideology_traditionalism"
-		texturefile = "gfx/interface/ideologies/traditionalism.dds"
 	}
 }

@@ -1,0 +1,27 @@
+state={
+	id=957
+	name="STATE_957"
+	resources={
+		oil=70 # was: 126.000
+	}
+
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = RUS
+		add_core_of = AZR 
+		add_core_of = GEO
+
+	}
+
+	provinces={
+	    6763
+	}
+	manpower=15463
+	buildings_max_level_factor=1.000
+	state_category=large_town
+
+	local_supplies=7.0 
+}

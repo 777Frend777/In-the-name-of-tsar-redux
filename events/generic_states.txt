@@ -4386,6 +4386,7 @@ country_event = {
 		trigger = {
 		country_exists = TUR
 		NOT = { has_war_with = TUR }
+		NOT = { TAG = RUS }
 		}
 		TUR = { 
 		transfer_state = 797
@@ -4415,7 +4416,7 @@ country_event = {
 			}
 		}	
 		trigger = {
-		NOT = { TAG = GRE }
+		NOT = { TAG = RUS }
 		country_exists = GRE
 		NOT = { has_war_with = GRE }
 		}
@@ -4433,8 +4434,67 @@ country_event = {
 		}
 	}
 	
-	option = { #Military occupation
+	option = { #Istanbul is Greek but tsargrad is RUSSIA
 		name = gen_states.41.c
+		ai_chance = {
+			factor = 100
+			modifier = {
+			factor = 100
+			TAG = RUS
+			}
+			modifier = {
+			factor = 0
+			TAG = GRE
+			}
+		}	
+		trigger = {
+		country_exists = GRE
+		NOT = { has_war_with = GRE }
+		tag = RUS
+		}
+		if = { limit = { controls_state = 341 }
+		GRE = { transfer_state = 341  }
+		}
+		if = { limit = { controls_state = 340 }
+		GRE = { transfer_state = 340 }
+		}
+		if = { limit = { controls_state = 339  }
+		GRE = { transfer_state = 339 }
+		}
+		GRE = {
+		country_event = { id = greece.5 days = 1 }
+		}
+	}
+	option = { #Istanbul is Turkish but tsargrad is russia
+		name = gen_states.41.f
+		ai_chance = {
+			factor = 100
+			modifier = {
+			factor = 0 
+			TAG = RUS
+			}
+			modifier = {
+			factor = 0
+			TAG = GRE
+			}
+		}	
+		trigger = {
+		country_exists = TUR
+		NOT = { has_war_with = TUR }
+		tag = RUS
+		}	
+		if = { limit = { controls_state = 341 }
+		TUR = { transfer_state = 341  }
+		}
+		if = { limit = { controls_state = 340 }
+		TUR = { transfer_state = 340 }
+		}
+		if = { limit = { controls_state = 339  }
+		TUR = { transfer_state = 339 }
+		}
+	}
+	option = { #Military occupation
+		name = gen_states.41.e
 		ai_chance = {
 			factor = 0
 			modifier = {

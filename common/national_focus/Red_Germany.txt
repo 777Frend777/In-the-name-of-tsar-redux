@@ -324,6 +324,7 @@ focus_tree = {
 		completion_reward = {
 		add_stability = 0.1
 		add_war_support = 0.1
+		add_state_core = 50
 			annex_country = {
 				target = WUT
 			}
@@ -385,7 +386,7 @@ focus_tree = {
 	#Purge the KPD
 	focus = {
 		id = BAV_arrest_opposition
-		icon = GFX_focus_RUS_military_purge
+		icon = GFX_goal_generic_political_purge
 		cost = 8.00
 		prerequisite = {
 			focus = BAV_deploy_sonder_troops
@@ -1169,7 +1170,7 @@ focus_tree = {
 	#Complete Army Reform
 	focus = {
 		id = BAV_army_complete
-		icon = GFX_focus_RUS_the_glory_of_the_red_army_communism
+		icon = GFX_goal_generic_socialist_army
 		cost = 8.00
 		prerequisite = {
 			

@@ -1,0 +1,435 @@
+add_namespace = super
+
+country_event = {	#second Bruderkieg
+	id = super.1
+	title = super.1.t
+	desc = super.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	major = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+		       OR = {
+				GER = { has_offensive_war_with = BAV }
+				BAV = { has_offensive_war_with = GER }
+			}
+			NOT = {
+				has_global_flag = Bruderkrieg2
+			}
+		}
+    }
+	option = {
+		name = super.1.a
+		set_global_flag = Super_Event_Visible
+		play_song = "bruderkrieg_MMCT"
+		
+		set_global_flag = Bruderkrieg2
+	}
+}
+country_event = {	#Russian Civil War
+	id = super.2
+	title = super.2.t
+	desc = super.2.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	major = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+		RUS = {
+		has_civil_war = yes
+		}
+			}
+			NOT = {
+				has_global_flag = RCW.super
+			}
+		}
+    }
+	option = {
+		name = super.2.a
+		
+		set_global_flag = Super_Event_Visible
+		play_song = "RCW"
+		
+		set_global_flag = RCW.super
+	}
+country_event = {	#Napoleon returned
+	id = super.3
+	title = super.3.t
+	desc = super.3.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	major = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+		       has_completed_focus = FR_empire_restoration
+			}
+			NOT = {
+				has_global_flag = Napoleon.super
+			}
+		}
+	option = {
+		name = super.3.a
+		
+		set_global_flag = Super_Event_Visible
+		play_song = "Napoleon"
+		
+		set_global_flag = Napoleon.super
+	}
+}
+country_event = {	#COMYugoslavia create
+	id = super.4
+	title = super.4.t
+	desc = super.4.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	major = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+		       has_completed_focus = SER_socialist_republic
+			}
+			NOT = {
+				has_global_flag = Yugoslaviacom.super
+			}
+		}
+	option = {
+		name = super.4.a
+		
+		set_global_flag = Super_Event_Visible
+		play_song = "Yugoslaviunitedcom"
+		
+		set_global_flag = Yugoslaviacom.super
+	}
+}
+country_event = {	#Yugoslavia create
+	id = super.5
+	title = super.5.t
+	desc = super.5.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	major = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+		       has_completed_focus = SER_create_yugoslavia
+			}
+			NOT = {
+				has_global_flag = Yugoslaviaunited.super
+			}
+		}
+	option = {
+		name = super.5.a
+		
+		set_global_flag = Super_Event_Visible
+		play_song = "Yogaslaviaunited"
+		
+		set_global_flag = Yugoslaviaunited.super
+	}
+}
+country_event = {	#WWII
+	id = super.6
+	title = super.6.t
+	desc = super.6.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	major = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+		       OR = {
+				GER = { has_war_with = FRA }
+				GER = { has_war_with = ENG }
+			   }
+				BAV = { has_war_with = FRA }
+				BAV = { has_war_with = ENG }
+			}
+		}
+
+			NOT = {
+				has_global_flag = WWII.super
+			}
+	option = {
+		name = super.6.a
+		set_global_flag = Super_Event_Visible
+		play_song = "WWII"
+		
+		set_global_flag = WWII.super
+	}
+}
+country_event = {	#russo-japanese
+	id = super.7
+	title = super.7.t
+	desc = super.7.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	major = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+				RUS = { has_war_with = JAP}
+			NOT = {
+				has_global_flag = Russo-japanese.super
+			}
+		}
+    }
+	option = {
+		name = super.7.a
+		set_global_flag = Super_Event_Visible
+		play_song = "Russo-japanese"
+		
+		set_global_flag = Russo-japanese.super
+	}
+}
+country_event = {	#spanish civil war
+	id = super.8
+	title = super.8.t
+	desc = super.8.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	major = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+				SPR = { has_war_with = SPA }
+				}
+			NOT = {
+				has_global_flag = SPRcivilwar.super
+			}
+    }
+	option = {
+		name = super.8.a
+		set_global_flag = Super_Event_Visible
+		play_song = "SPRcivilwar"
+		
+		set_global_flag = SPRcivilwar.super
+	}
+}
+country_event = {	#Osman returned
+	id = super.9
+	title = super.9.t
+	desc = super.9.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	major = yes
+
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+		    OR = {
+				has_completed_focus = TUR_calph
+				has_completed_focus = TUR_guardin_concil
+				 }
+			NOT = {
+				has_global_flag = Osmanreturned.super
+			}
+		}
+    }
+	option = {
+		name = super.9.a
+		set_global_flag = Super_Event_Visible
+		play_song = "Osmanreturned"
+		
+		set_global_flag = Osmanreturned.super
+	}
+}
+country_event = {	#Prussia united germany
+	id = super.10
+	title = super.10.t
+	desc = super.10.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	major = yes
+
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+				BAV = {
+		    exists = no
+			}
+			}
+			NOT = {
+				has_global_flag = Prussiaunitegemany.super
+			}
+		}
+	option = {
+		name = super.10.a
+		set_global_flag = Super_Event_Visible
+		play_song = "Prussiaunitegermany"
+		
+		set_global_flag = Prussiaunitegemany.super
+	}
+}
+country_event = {	#Bavaria united germany
+	id = super.11
+	title = super.11.t
+	desc = super.11.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	major = yes
+
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+				GER = {
+		    exists = no
+			}
+			}
+			NOT = {
+				has_global_flag = Bavariaunitegemany.super
+			}
+		}
+	option = {
+		name = super.11.a
+		set_global_flag = Super_Event_Visible
+		play_song = "Bavariaunitegermany"
+		
+		set_global_flag = Bavariaunitegemany.super
+	}
+}
+news_event = {	#February revolution
+	id = super.12
+	title = super.12.t
+	desc = super.12.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	major = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+		       has_completed_focus = RUS_force_abdication
+			}
+			NOT = {
+				has_global_flag = February_revolution.super
+			}
+		}
+	option = {
+		name = super.12.a
+		
+		set_global_flag = Super_Event_Visible
+		play_song = "February_revolution"
+		
+		set_global_flag = February_revolution.super
+	}
+}
+country_event = {	# usacivwar
+	id = super.13
+	title = super.13.t
+	desc = super.13.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	major = yes
+
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+		USA = {
+		has_civil_war = yes
+		}
+			}
+			NOT = {
+				has_global_flag = usacivwar.super
+			}
+		}
+	option = {
+		name = super.13.a
+		
+		set_global_flag = Super_Event_Visible
+		play_song = "usacivwar"
+		
+		set_global_flag = usacivwar.super
+	}
+}
+news_event = {	#New tsar for Russia
+	id = super.14
+	title = super.14.t
+	desc = super.14.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	major = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+		       has_completed_focus = RUS_power_tsar
+			}
+			NOT = {
+				has_global_flag = rusnewtsar.super
+			}
+		}
+	option = {
+		name = super.14.a
+		
+		set_global_flag = Super_Event_Visible
+		play_song = "rusnewtsar"
+		
+		set_global_flag = rusnewtsar.super
+	}

@@ -17,7 +17,7 @@ focus_tree = {
 			
 	focus = {
 		id = FIN_Reform_Red_Army
-		icon = GFX_focus_finnish_spirit
+		icon = GFX_goal_red_star_gold_wreath
 		x = 3
 		y = 0
 		cost = 6.5
@@ -2925,7 +2925,7 @@ focus = {
 		
 	    completion_reward = {
 		    add_stability = 0.1
-			add_ideas = FIN_appeace_farmers
+			add_ideas = FIN_appeace_farmers_idea
 	    }
 	}
 	focus = {
@@ -2941,7 +2941,7 @@ focus = {
 		
 	    completion_reward = {
 		    add_stability = 0.1
-			add_ideas = FIN_appeace_workers
+			add_ideas = FIN_appeace_workers_idea
 	    }
 	}
 	focus = {

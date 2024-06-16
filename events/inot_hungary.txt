@@ -933,13 +933,13 @@ country_event = {
 }
 country_event = {
 	id = hung.1085
-	title = "Choosing our King"
+	title = hung.1085.t
 	desc = hung.1085.d
 
 	is_triggered_only = yes
 
     option = {
-    name = "Adalbert von Preußen"
+    name = hung.1085.a
     ai_chance = {
 			factor = 33
 	}
@@ -954,7 +954,7 @@ country_event = {
     }
 
     option = {
-    name = "Prince Wilhelm, Duke of Södermanland"
+    name = hung.1085.b
     ai_chance = {
 			factor = 35
 	}
@@ -1124,7 +1124,7 @@ news_event = {
 }
 country_event = {
 	id = hung.1084
-	title = "Hungarian Elections"
+	title = hung.1084.t
 	desc = hung.1084.d
 	picture = GFX_report_event_HUN_wine
 
@@ -1133,7 +1133,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Nemzeti Egység Pártja"
+		name = hung.1084.a
 		set_politics = {
 			ruling_party = conservatives
 			elections_allowed = yes
@@ -1144,7 +1144,7 @@ country_event = {
 		complete_national_focus = hun_NEP
 	}
 	option = {
-		name = "Függetlenségi és 48-as Párt"
+		name = hung.1084.b
 		set_politics = {
 			ruling_party = democratic
 			elections_allowed = yes

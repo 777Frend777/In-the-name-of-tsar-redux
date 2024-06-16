@@ -42,6 +42,7 @@ country_event = {
 		TUR= {
     transfer_state = 799
   	transfer_state = 677
+    transfer_state = 938
     transfer_state = 680
     transfer_state = 554
     transfer_state = 553
@@ -635,6 +636,12 @@ news_event = {
 
 		              option = {
 		                name = ottoman.26.a
+		add_state_core = 184
+		add_state_core = 185
+		add_state_core = 47
+		add_state_core = 186
+		add_state_core = 182
+		add_state_core = 187
 		                TUR= {
 		                annex_country = { target = GRE transfer_troops = no }
 		              }
@@ -723,6 +730,7 @@ news_event = {
 
 			              option = {
 			                name = ottoman.29.a
+					add_state_core = 211
 			                TUR= {
 							transfer_state = 211
 			              }
@@ -789,6 +797,13 @@ news_event = {
 
   			              option = {
   			                name = ottoman.32.a
+		add_state_core = 106
+		add_state_core = 803
+		add_state_core = 802
+		add_state_core = 108
+		add_state_core = 107
+		add_state_core = 764
+		add_state_core = 45
   			                TUR= {
   			                annex_country = { target = SER transfer_troops = no }
   			              }
@@ -859,6 +874,9 @@ news_event = {
 
 	  			              option = {
 	  			                name = ottoman.35.a
+		add_state_core = 934
+		add_state_core = 44
+		add_state_core = 805
 	  			                TUR= {
 	  			                annex_country = { target = ALB transfer_troops = no }
 	
@@ -1162,3 +1180,139 @@ news_event = {
 						  			                }
 						  			               }
 						  			              }
+# Kurdistan event
+country_event = {
+	id = ottoman.52
+	title = ottoman.52.t
+	desc = ottoman.52.d
+	picture = GFX_report_event_generic_panzer_attack
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.52.a	#We cannot afford a war now
+    ai_chance = {
+		base = 50
+		}
+		TUR = {
+			country_event = { days = 12 id = ottoman.57 }
+		}
+	}
+	option = {
+		name = ottoman.52.c	#We ready for war
+    ai_chance = {
+		base = 50
+		}
+		TUR = {
+			country_event = { days = 12 id = ottoman.53 }
+		}
+	}
+}
+
+# Kurdistan surrender
+country_event = {
+	id = ottoman.57
+	title = ottoman.57.t
+	desc = ottoman.57.d
+	picture = GFX_report_event_military_planning
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.57.a
+		TUR= {
+		annex_country = { target = KUR transfer_troops = no }
+	}
+ }
+}
+# Kurdistan not surrender
+country_event = {
+	id = ottoman.53
+	title = ottoman.53.t
+	desc = ottoman.53.d
+	picture = GFX_report_event_generic_panzer_attack
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.53.a
+		create_wargoal = {
+			type = annex_everything
+			target = KUR
+		  }
+		  hidden_effect ={
+		  add_state_claim = 350
+		  add_state_claim = 352
+		  add_state_claim = 800
+		  add_state_claim = 941
+		  add_state_claim = 676
+		  }
+		 }
+	}
+
+# kars event
+country_event = {
+	id = ottoman.54
+	title = ottoman.54.t
+	desc = ottoman.54.d
+	picture = GFX_report_event_generic_panzer_attack
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.54.a	#We cannot afford a war now
+    ai_chance = {
+		base = 50
+		}
+		TUR = {
+			country_event = { days = 12 id = ottoman.56 }
+		}
+	}
+	option = {
+		name = ottoman.54.c	#We ready for war
+    ai_chance = {
+		base = 50
+		}
+		TUR = {
+			country_event = { days = 12 id = ottoman.55 }
+		}
+	}
+}
+
+# kars surrender
+country_event = {
+	id = ottoman.56
+	title = ottoman.56.t
+	desc = ottoman.56.d
+	picture = GFX_report_event_military_planning
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.56.a
+		TUR= {
+			transfer_state = 937
+		    add_state_core = 937
+	}
+ }
+}
+# kars not surrender
+country_event = {
+	id = ottoman.55
+	title = ottoman.55.t
+	desc = ottoman.55.d
+	picture = GFX_report_event_generic_panzer_attack
+
+	is_triggered_only = yes
+
+	option = {
+		name = ottoman.55.a
+		create_wargoal = {
+			type = annex_everything
+			target = RUS
+		  }
+		  hidden_effect ={
+		  add_state_claim = 937
+		  }
+		 }
+	}

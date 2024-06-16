@@ -1,0 +1,39 @@
+GER_generic_reunification_category = {
+Annex_HMB5= {
+		icon = GFX_decision_hand_grab
+
+		allowed = {
+			tag = BAV
+		}
+
+		available = {
+                            NOT = { has_war_with = GER }
+				 country_exists = HMB
+			    NOT = {country_exists = GER }
+
+                                                is_in_faction_with = BAV
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 2
+
+		modifier = {
+		}
+
+		visible = {
+			tag = BAV
+			
+		}
+
+		remove_effect = {  
+		add_state_core = 58                                             
+                                                 annex_country = { target = HMB transfer_troops = yes }
+		}
+                                ai_will_do = {
+			base = 200
+                                }
+	}
+}

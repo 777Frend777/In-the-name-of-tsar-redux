@@ -1648,7 +1648,7 @@ focus_tree = {
 		available = { GER = { exists = yes } }
 		completion_reward = {
 		GER = {
-		country_event = { days = 1 id = britain.1006 }
+		country_event = { days = 1 id = britain.1054 }
 		}
 	}
 	}
@@ -1776,7 +1776,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		JAP = {
-		country_event = { days = 1 id = britain.1000 }
+		country_event = { days = 1 id = britain.1048 }
 		}
 	}
 	}
@@ -1798,7 +1798,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		CHI = {
-		country_event = { days = 1 id = britain.1003 }
+		country_event = { days = 1 id = britain.1051 }
 		}
 	}
 	}

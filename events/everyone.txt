@@ -1,0 +1,16 @@
+add_namespace = virus
+country_event = {
+    id = virus.1
+    title = virus.1.t
+    desc = virus.1.d
+    is_triggered_only = yes
+trigger = {
+      has_war = yes
+    }
+
+    option = {
+        name = virus.1.a
+        ai_chance = { base = 100 }
+    add_timed_idea = {idea = epidemic_onfront days = 120}
+	}
+}

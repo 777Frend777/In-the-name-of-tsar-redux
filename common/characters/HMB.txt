@@ -1,0 +1,52 @@
+characters={
+	Ernst_Thalmann_1932={
+		name = Ernst_Thalmann_1932
+		portraits={
+			civilian={
+				large="gfx/leaders/HMB/Ernst_Thalmann_1932.dds"
+			}
+		}
+		country_leader={
+			ideology=communism_subtype
+			traits={ veteran_communist communist_revolutionary }
+			expire="1944.1.1.1"
+			id=-1
+		}
+	}
+
+
+    Hans_Kippenberger = {
+        name = Hans_Kippenberger
+        portraits = {
+            army = {
+                large = "gfx/leaders/HMB/Hans_Kippenberger.dds"
+            }
+        }
+        corps_commander = {
+            traits = { mass_assault_expert veteran_minister INOT_ww1_general }
+            skill = 5
+            attack_skill = 5
+            defense_skill = 2
+            planning_skill = 4
+            logistics_skill = 5
+            legacy_id = 410
+        }
+	}
+    Marinus_van_der_Lubbe = {
+        name = Marinus_van_der_Lubbe
+        portraits = {
+            army = {
+                large = "gfx/leaders/HMB/Marinus_van_der_Lubbe.dds"
+            }
+        }
+        corps_commander = {
+            traits = { mass_assault_expert veteran_minister INOT_ww1_general }
+            skill = 5
+            attack_skill = 5
+            defense_skill = 2
+            planning_skill = 4
+            logistics_skill = 5
+            legacy_id = 410
+        }
+	}
+	}

@@ -3,18 +3,19 @@
 ###########################
 
 add_namespace = finland
+add_namespace = WINTERWAR
 
 # Russian Ultimatum - Event for FIN
 country_event = {
 	id = finland.0
-	title = "Finnish revolution"
+	title = finland.0.t
 	desc = finland.0.d
 	picture = GFX_report_event_soviet_tanks_snow
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Ay, Ay Mikhail"
+		name = finland.0.a
 		FIN={
 			transfer_state = 148
 			transfer_state = 111
@@ -30,14 +31,19 @@ country_event = {
 	}
 }
 country_event = {
-	id = finland.1
-	title = "Russia Demands change of Government"
-	desc = finland.1.d
+	id = finland.100
+	title = finland.100.t
+	desc = finland.100.d
 	picture = GFX_report_event_soviet_tanks_snow
 	
 	is_triggered_only = yes
+	trigger = {
+		AND = {
+		       has_completed_focus = RUS_power_tsar
+			}
+}
 	option = { # Accept demands
-		name = "Fine"
+		name = finland.100.a
 		RUS={
 			puppet = FIN
 		}
@@ -56,81 +62,87 @@ country_event = {
 			popularity = 0.3
 		}
 		
-		country_event = { hours = 5 id = finland.2 }
+		country_event = { hours = 5 id = finland.200 }
 		}
 	}
 	option = { # Refuse
-		name = "No?"
+		name = finland.100.b
 		RUS = {
-			country_event = { days = 5 id = WINTERWAR.1 }
+			country_event = { days = 5 id = WINTERWAR.100 }
 			effect_tooltip = {
 				create_wargoal = {
+					RUS = {
 					type = annex_everything
 					target = FIN
 					generator = { 146 }
+					}
 				}
 			}
 		}
 	}
 }
 country_event = {
-	id = WINTERWAR.1
-	title = "Finland Refuses"
-	desc = WINTERWAR.1.d
+	id = WINTERWAR.100
+	title = WINTERWAR.100.t
+	desc = WINTERWAR.100.d
 	picture = GFX_report_event_soviet_tanks_snow
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Die commie scum"
+		name = WINTERWAR.100.a
+		RUS = {
 		create_wargoal = {
 			type = annex_country
 			target = FIN
 			generator = { 146 }
+		}
 		}	
 	}
 }
 country_event = {
-	id = WINTERWAR.2
-	title = "Finnish Red Army is defeated"
-	desc = WINTERWAR.2.d
-	picture = GFX_report_event_soviet_tanks_snow
-	
-	trigger ={
-		tag = RUS
-		RUS={
-			controls_state = 111
-		}
-	}
-	
-	option = {
-		name = "Slava Mother Rossyia"
-		RUS={
-			puppet = FIN
-		}
-		FIN={
-			set_country_flag = FIN_Submit
-			set_politics = {
-				ruling_party = neutrality
-				elections_allowed = no
-				last_election = "1935.12.17"
-				election_frequency = 48
-				long_name = FIN_regency
-				name = FIN_regency
-			}
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.3
-			}
-			country_event = { days = 1 id = finland.2 }
-		}
-		
-	}
+    id = WINTERWAR.200
+    title = WINTERWAR.200.t
+    desc = WINTERWAR.200.d
+    picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+    trigger ={
+        tag = RUS
+        RUS={
+            controls_state = 111
+        }
+    }
+
+    option = {
+        name = WINTERWAR.200.a
+        RUS={
+            puppet = FIN
+        }
+        FIN={
+            set_country_flag = FIN_Submit
+            set_politics = {
+                ruling_party = neutrality
+                elections_allowed = no
+                last_election = "1935.12.17"
+                election_frequency = 48
+                long_name = FIN_regency
+                name = FIN_regency
+            }
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.3
+            }
+            country_event = { days = 1 id = finland.200 }
+        }
+
+    }
 }
 country_event = {
-	id = WINTERWAR.3
-	title = "Finnish Forces enter Saint Petersberg"
-	desc = WINTERWAR.3.d
+	id = WINTERWAR.300
+	title = WINTERWAR.300.t
+	desc = WINTERWAR.300.d
 	picture = GFX_report_event_soviet_tanks_snow
 	
 	trigger ={
@@ -141,7 +153,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Ay Ay Mikhail"
+		name = WINTERWAR.300.a
 		RUS={
 			add_stability = -0.3
 			add_popularity = {
@@ -158,9 +170,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = finland.2
-	title = "King of Finland"
-	desc = finland.2.d
+	id = finland.200
+	title = finland.200.t
+	desc = finland.200.d
 	picture = GFX_report_event_soviet_tanks_snow
 	
 	is_triggered_only = yes

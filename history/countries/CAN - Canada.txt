@@ -23,7 +23,6 @@ if = {
 }
 
 set_research_slots = 3
-set_country_flag = monroe_doctrine
 set_stability = 0.8
 set_war_support = 0.1
 
@@ -67,6 +66,7 @@ recruit_character = CAN_leo_richer_lafleche
 recruit_character = CAN_r_b_bennett
 recruit_character = CAN_louis_st_laurent
 
+set_country_flag = monroe_doctrine
 
 # Starting tech
 set_technology = {

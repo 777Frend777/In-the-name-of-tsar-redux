@@ -24,6 +24,8 @@
  GER_nav:0 "Naval Bomber Focus"
  GER_nav_desc:0 "The efficacy of air strikes against naval targets was demonstrated by the Americans already back in 1921. We should not neglect this branch of the Air force if we intend to wage war on a naval power."
  GER_cas:0 "Bombers from Junkers"
+ Annex_HMB5: "Annex Hamburg"
+ Annex_HMB5_desc: ""
  GER_cas_desc:0 "Victory will be achieved by annihilating the enemy's ground forces. We must focus on supporting our own armies with tactical strikes against close and deep targets."
  GER_air_doctrine_goal:0 "Dominate the Skies"
  GER_air_doctrine_goal_desc:0 "The tasks of the Reich's Air Ministry are of paramount importance. The Luftwaffe must be the most advanced Air force in the world if it is to achieve superiority in the air."

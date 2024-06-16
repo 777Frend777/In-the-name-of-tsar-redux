@@ -24,28 +24,6 @@ news_event = {
 			trigger = { TAG = BEL }
 	}
 }
-news_event = {
-        id = belgium.1005
-        title = belgium.1005.t
-        desc = belgium.1005.d
-        picture = GFX_news_event_017 #To replace maybe
-
-        major = yes
-
-        is_triggered_only = yes
-        option = {
-		name = belgium.1005.a
-		trigger = {
-			NOT = {
-				TAG = BEL
-			}
-			}
-			}
-			option = {
-		name = belgium.1005.b
-			trigger = { TAG = BEL }
-	}
-}
 #country_event = {	#Flanders Declares Independence
 #	id = belgium.1
 #	title = belgium.1.t
@@ -300,6 +278,28 @@ country_event = { #formation of the benlux union (LUX)
 		}
 	}
 }
+news_event = {
+	id = belgium.1005
+	title = belgium.1005.t
+	desc = belgium.1005.d
+	picture = GFX_news_event_017 #To replace maybe
+
+	major = yes
+
+	is_triggered_only = yes
+	option = {
+	name = belgium.1005.a
+	trigger = {
+		NOT = {
+			TAG = BEL
+		}
+		}
+		}
+		option = {
+	name = belgium.1005.b
+		trigger = { TAG = BEL }
+}
+}
 country_event = { #Eupen for Flanders
 	id = belgium.10
 	title = belgium.10.t #
@@ -315,7 +315,7 @@ country_event = { #Eupen for Flanders
 		factor = 100
 		}
 		GER = {
-		transfer_state = 816
+		transfer_state = 962
 		give_guarantee = BEL
 		}
 		BEL = {

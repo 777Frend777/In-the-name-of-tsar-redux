@@ -1,1 +1,48 @@
-﻿###
+﻿# Event for target saying they are in violation of the Washington Naval Treaty and ENG wants them to scuttle some ships
+country_event = {
+	id = mtg_britain.106
+	title = mtg_britain.106.t
+	desc = mtg_britain.106.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = mtg_britain.106.a
+	}
+}
+
+# Event for ENG informing them that the target has scuttled some ships and is now compliant with the treaty
+country_event = {
+	id = mtg_britain.107
+	title = mtg_britain.107.t
+	desc = mtg_britain.107.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = mtg_britain.107.a
+	}
+}
+
+# Event for ENG saying target refused to get rid of ships and ENG now has a wargoal
+country_event = {
+	id = mtg_britain.108
+	title = mtg_britain.108.t
+	desc = mtg_britain.108.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = mtg_britain.108.a
+		create_wargoal = {
+			target = FROM
+			type = puppet_wargoal_focus
+			expire = 0
+		}
+	}

@@ -1836,7 +1836,7 @@ focus_tree = {
 				}
 		set_politics = { ruling_party = neutrality elections_allowed = no }
 		create_country_leader = {
-		name = "S.M.I. Napoleon VII"
+		name = "S.M.I. Napoleon VI"
 		desc = "POLITICS_DEMCHUGDONGRUB_DESC"
 		picture = "Louis_Napoleon_VI.dds" 		#picture = "Napoleon_VI.tga" 
 		expire = "1965.1.1"

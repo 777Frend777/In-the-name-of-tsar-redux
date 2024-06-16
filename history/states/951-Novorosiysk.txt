@@ -1,0 +1,33 @@
+
+state={
+	id=951
+	name="STATE_951"
+	manpower = 95240
+	
+	state_category = city
+
+	history={
+		owner = RUS
+		victory_points = {
+			3720 1 
+		}
+		victory_points = {
+			719 3
+		}
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 1
+			719 = {
+				naval_base = 3
+				coastal_bunker = 1
+			}
+		}
+		add_core_of = RUS
+	}
+
+	provinces={
+	  717 719 735 3717 3720 3760 6736 6738 9691 9694 9696 11681 11668
+	}
+
+	local_supplies=9.0 
+}

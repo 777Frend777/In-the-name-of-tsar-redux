@@ -70,8 +70,6 @@ recruit_character = CHL_luis_alamos_barros
 recruit_character = CHL_miguel_cruchaga_tacomal
 recruit_character = CHL_gustavo_ross_santa_maria
 
-
-
 set_country_flag = monroe_doctrine
 
 set_convoys = 20

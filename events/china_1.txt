@@ -715,6 +715,10 @@ country_event = {
     target = CHI
     type = annex_everything
     }
+    declare_war_on = {
+    target = PRC
+    type = annex_everything
+    }
 	}
     }
 } 
@@ -1001,10 +1005,12 @@ country_event = {
     }
 	option = {
 	name = china.1054.a
+PRC = {
 	declare_war_on = {
     target = SHX
     type = annex_everything
     }	
+    }
     }
 }
 ######################################################################################################################unifywithprc?

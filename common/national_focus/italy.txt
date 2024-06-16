@@ -1066,7 +1066,7 @@ focus_tree = {
 		y = 4
 		available = {
 		CRO = { exists = no }
-		YUG = { exists = yes }
+		SER = { exists = yes }
         }
 		completion_reward = {
 			    SER = {
@@ -1240,10 +1240,10 @@ focus_tree = {
 		x = 29
 		y = 4
 		bypass = {
-		YUG = { has_added_tension_amount > 25 }
+		SER = { has_added_tension_amount > 25 }
 		}
 		available = {
-		YUG = { 
+		SER = { 
 		has_war = no
 		NOT = { has_government = communism 
 		has_government = fascism
@@ -1484,7 +1484,7 @@ focus_tree = {
 		}
 		}
 		completion_reward = {
-		BAV =  {
+		FIN =  {
 						add_opinion_modifier = {
 							target = ITA
 							modifier = improved_good

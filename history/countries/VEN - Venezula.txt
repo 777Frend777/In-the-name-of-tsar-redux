@@ -32,7 +32,6 @@ recruit_character = VEN_manuel_diaz_rodriguez
 recruit_character = VEN_romulo_gallegos_freire
 recruit_character = VEN_isidoro_ruiz_tuerro
 
-
 set_country_flag = monroe_doctrine
 
 1939.1.1 = {

@@ -1555,7 +1555,7 @@
  RUS_desperate_measures_decisions_unlocked_tt: "Открывает несколько §Y$RUS_great_patriotic_war$§! решения." #NT!
  RUS_lessons_of_war_ns_tt: "Измените §Y$RUS_the_red_army_dynamic_modifier$§! от \nОрганизация отдела: §G+5.0%§! \nПрирост армейского опыта: §G+10.0%§! \nПотери опытных солдат: §G-25.0%§! \n\n" #NT!
  RUS_lessons_of_war_unlock_military_operations_tt: "Активация §Y$RUS_order_227$§! в свою очередь разблокирует решения для подготовки и проведения §YВоенного наступления§!." #NT!
- RUS_lessons_of_war_cowed_trait_tt: "\n§YКаждый лидер армии и флота§! с чертой §Y$trait_RUS_cowed_by_stalin_army$§!: \n Теряет §Y$trait_RUS_cowed_by_stalin_army$§!:\n - Скорость восстановления дивизии: §R-10.0%§_1 \n - Скорость пополнения: §R-2.0%§_1\ н" #NT!
+ RUS_lessons_of_war_cowed_trait_tt: "\n§YКаждый лидер армии и флота§! с чертой §Y$trait_RUS_cowed_by_stalin_army$§!: \n Теряет §Y$trait_RUS_cowed_by_stalin_army$§!:\n - Скорость восстановления дивизии: §R-10.0%§_1 \n - Скорость пополнения: §R-2.0%§_1\n" #NT!
  RUS_the_glory_of_the_red_army_masterful_blitz_tactic_tt: "\nВключает тактику: §Y$tactic_masterful_blitz$§!" #NT!
  RUS_major_purge_tt: "По крайней мере, произошла одна великая чистка." #NT!
  empty_line: "\n"

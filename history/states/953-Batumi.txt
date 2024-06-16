@@ -1,0 +1,39 @@
+state = {
+	id = 953
+	name = "STATE_953"
+
+	history = {
+		owner = RUS
+		victory_points = {
+			3653 3 
+		}
+		buildings = {
+			infrastructure = 2
+			3653 = {
+				naval_base = 2
+				coastal_bunker = 1
+
+			}
+
+		}
+		add_core_of = RUS
+		add_core_of = GEO
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 2
+
+			}
+
+		}
+
+	}
+
+	provinces = {
+		3653
+	}
+	manpower = 70000
+	buildings_max_level_factor = 1.000
+	state_category = town
+
+	local_supplies = 0.0 
+}

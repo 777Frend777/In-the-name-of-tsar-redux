@@ -1,0 +1,187 @@
+scripted_gui = {
+
+	sp_event_window = {
+		window_name = "sp_event_window"
+		context_type = player_context
+
+		visible = {
+			has_global_flag = Super_Event_Visible
+		}
+		
+		triggers = {
+			Super_Event_Bruderkrieg2_visible = {
+				has_global_flag = Bruderkrieg2
+			}
+		}
+		triggers = {
+			Super_Event_RCW_visible = {
+				has_global_flag = RCW.super
+			}
+		}	
+		triggers = {
+			Super_Event_Napoleon_visible = {
+				has_global_flag = Napoleon.super
+			}
+		}
+ 		triggers = {
+			Super_Event_Bavariaunitegemany_visible = {
+				has_global_flag = Bavariaunitegemany.super
+			}
+		}	
+		triggers = {
+			Super_Event_Prussiaunitegemany_visible = {
+				has_global_flag = Prussiaunitegemany.super
+			}
+		}
+		triggers = {
+			Super_Event_Osmanreturned_visible = {
+				has_global_flag = Osmanreturned.super
+			}
+		}	
+		triggers = {
+			Super_Event_WWII_visible = {
+				has_global_flag = WWII.super
+			}
+		}
+		triggers = {
+			Super_Event_SPRcivilwar_visible = {
+				has_global_flag = SPRcivilwar.super
+			}
+		}	
+		triggers = {
+			Super_Event_Russo-japanese_visible = {
+				has_global_flag = Russo-japanese.super
+			}
+		}
+		triggers = {
+			Super_Event_Yugoslaviacom_visible = {
+				has_global_flag = Yugoslaviacom.super
+			}
+		}	
+		triggers = {
+			Super_Event_Yugoslaviaunited_visible = {
+				has_global_flag = Yugoslaviaunited.super
+			}
+		}	
+		triggers = {
+			Super_Event_Kornilov_putch_visible = {
+				has_global_flag = Kornilov_putch.super
+			}
+		}	
+		triggers = {
+			Super_Event_February_revolution_visible = {
+				has_global_flag = February_revolution.super
+			}
+		}
+		triggers = {
+			Super_Event_usacivwar_visible = {
+				has_global_flag = usacivwar.super
+			}
+		}
+		triggers = {
+			Super_Event_rusnewtsar_visible = {
+				has_global_flag = rusnewtsar.super
+			}
+		}
+		############
+		###BUTTON###
+		############
+		
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+				if = {
+					limit = {
+						has_global_flag = Bruderkrieg2
+					}
+					clr_global_flag = Bruderkrieg2
+				}
+				if = {
+					limit = {
+						has_global_flag = RCW.super
+					}
+					clr_global_flag = RCW.super
+				}
+				if = {
+					limit = {
+						has_global_flag = Napoleon.super
+					}
+					clr_global_flag = Napoleon.super
+				}
+				if = {
+					limit = {
+						has_global_flag = Bavariaunitegemany.super
+					}
+					clr_global_flag = Bavariaunitegemany.super
+				}
+				if = {
+					limit = {
+						has_global_flag = Prussiaunitegemany.super
+					}
+					clr_global_flag = Prussiaunitegemany.super
+				}
+				if = {
+					limit = {
+						has_global_flag = Osmanreturned.super
+					}
+					clr_global_flag = Osmanreturned.super
+				}
+				if = {
+					limit = {
+						has_global_flag = Russo-japanese.super
+					}
+					clr_global_flag = Russo-japanese.super
+				}
+				if = {
+					limit = {
+						has_global_flag = SPRcivilwar.super
+					}
+					clr_global_flag = SPRcivilwar.super
+				}
+				if = {
+					limit = {
+						has_global_flag = WWII.super
+					}
+					clr_global_flag = WWII.super
+				}
+				if = {
+					limit = {
+						has_global_flag = Yugoslaviacom.super
+					}
+					clr_global_flag = Yugoslaviacom.super
+				}
+				if = {
+					limit = {
+						has_global_flag = Yugoslaviaunited.super
+					}
+					clr_global_flag = Yugoslaviaunited.super
+				}
+				if = {
+					limit = {
+						has_global_flag = Yugoslaviaunited.super
+					}
+					clr_global_flag = Kornilov_putch.super
+				}
+				if = {
+					limit = {
+						has_global_flag = February_revolution.super
+					}
+					clr_global_flag = February_revolution.super
+				}
+								if = {
+					limit = {
+						has_global_flag = usacivwar.super
+					}
+					clr_global_flag = usacivwar.super
+				}
+				if = {
+					limit = {
+						has_global_flag = rusnewtsar.super
+					}
+					clr_global_flag = rusnewtsar.super
+				}
+			}
+		}
+	}	
+}	

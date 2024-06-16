@@ -526,7 +526,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction
 		cost = 8.00
 		prerequisite = {
-			focus = RUS_infra
+			focus = RUS_resources
 		}
 		prerequisite = {
 			focus = RUS_liberal_economy
@@ -1956,9 +1956,14 @@ focus_tree = {
 		NOT = { has_completed_focus = RUS_force_abdication }
 		}
 		completion_reward = {
-		country_event = { 
-			id = finland.1
-			days = 15  
+		111 = {
+		owner = {
+		 country_event = { id = finland.100 }
+		 }
+		}
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
 		}
 		set_country_flag = rus_gov_is_set_up
 		add_popularity = {
@@ -2581,32 +2586,35 @@ focus_tree = {
 				create_wargoal = { type = puppet_wargoal_focus target = HUN }
 		}
 	}
-	focus = {
-		id = RUS_demand_moldova #Moldovan Claims
-		icon = GFX_focus_generic_little_entente
-		cost = 8.00
-		prerequisite = {
-			focus = RUS_inv_ROM
-		}
-		x = 35
-		y = 2
-		available = {
-		has_war = no
-		is_puppet = no
-		ROM = {
-        		exists = yes
-				is_puppet = no
-        	}	
-        				
-			}
-		bypass = {
-			NOT = { country_exists = ROM }
-		}
-		completion_reward = {
-		MOL = { add_state_core = 79 }
-		RUS = { add_state_claim = 79 }
-		}
-	}
+focus = {
+        id = RUS_demand_moldova #Moldovan Claims
+        icon = moldova
+        cost = 8.00
+        prerequisite = {
+            focus = RUS_inv_ROM
+        }
+        x = 35
+        y = 2
+        available = {
+        has_war = no
+        is_puppet = no
+        ROM = {
+                exists = yes
+                is_puppet = no
+            }
+
+            }
+        bypass = {
+            NOT = { country_exists = ROM }
+        }
+        completion_reward = {
+        MOL = { add_state_core = 79 }
+ROM = { 
+   country_event = { id = russia.78 days = 3 }
+        RUS = { add_state_claim = 79 }
+        }
+    }
+}
 	focus = {
 		id = RUS_inv_BUL #The Balkan Intervention
 		icon = GFX_focus_rus_inv_bul

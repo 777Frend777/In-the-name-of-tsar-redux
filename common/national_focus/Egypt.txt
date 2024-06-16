@@ -2475,7 +2475,7 @@ focus_tree = {
 			}
 			NOT = {
 				JAP = {
-					has_completed_focus = JAP_support_the_kodoha_faction
+					has_completed_focus = JAP_war_CHI
 				}
 			}
 		}

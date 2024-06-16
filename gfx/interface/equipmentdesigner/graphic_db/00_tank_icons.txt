@@ -1003,8 +1003,9 @@ GER = {
 		}
 	}
 
-	amphibious_tank_chassis = { # No need to check for MTG, these chassis  won't show up without the DLC
+	amphibious_tank_chassis = { # No need to check for MTG, these chassis  won't show up without the DLC, (But it throws errors, so please still do or the error log will be sad!)
 		pool = {
+			limit = { has_dlc = "Man the Guns"}
 			icons = {
 				GFX_GER_amphibious_tank_2_medium #Tauchpanzer III (Amphibious Tank II) #Sorted like this so that by default 2D icon and 3D model match (Amphibious Tank I)
 				GFX_GER_amphibious_tank_medium #Schwimmpanzer II (Amphibious Tank I)
@@ -1530,6 +1531,7 @@ SOV = {
 
 	amphibious_tank_chassis = {
 		pool = {
+			limit = {has_dlc = "Man the Guns"}
 			icons = {
 				GFX_SOV_amphibious_tank_2_medium #PT-76 (Amphibious Tank II) #Sorted like this so that by default 2D icon and 3D model match (Amphibious Tank I)
 				GFX_SOV_amphibious_tank_medium #T-40 (Amphibious Tank I)

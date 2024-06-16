@@ -1,0 +1,30 @@
+RUS_army_actions = {	
+	RUS_kornilovgrad = {
+		icon = generic_civil_support
+		allowed = {
+			TAG = RUS
+		}
+		available = {
+			217 = {is_fully_controlled_by = ROOT}
+		}
+
+		visible = {
+			TAG = RUS
+}
+		cost = 120
+		fire_only_once = yes
+
+		ai_will_do = { factor = 10 }
+
+		complete_effect = {
+			set_province_name = {
+				id = 3529
+				name = "Kornilovgrad.1"
+			}
+			add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+			}
+		}
+	}
+}

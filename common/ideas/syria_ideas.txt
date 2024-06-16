@@ -9,6 +9,7 @@ ideas = {
 				org_loss_when_moving = -0.20
 				army_org_regain = 0.10
 			}
+		}
 			SYR_Victory = {
 				picture = NFA_lion
 				allowed = { always = no }
@@ -16,7 +17,6 @@ ideas = {
 					stability_weekly = 0.01
 				}
 			}
-		}
 	}
 }	
 	

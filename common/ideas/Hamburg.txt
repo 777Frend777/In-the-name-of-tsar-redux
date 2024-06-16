@@ -1,0 +1,27 @@
+ideas = {
+	country = {
+		Hamburg_buffs = {
+	picture = tur_kemalism_with_socialist_characteristics
+	is_triggered_only = yes
+			allowed = {
+				original_tag = HMB
+			}
+
+			available = {
+				has_war_with = GER
+			}
+
+			cancel = {
+				NOT = {
+					has_war_with = GER
+				}
+			}
+
+			targeted_modifier = {
+				tag = GER
+				defense_bonus_against = 0.3
+				attack_bonus_against = 0.2
+			  }
+		}
+	}
+}

@@ -1,1 +1,33 @@
-add_namespace = syria
+﻿add_namespace = SYRIASYRWAR
+
+country_event = {
+	id = SYRIASYRWAR.1
+	title = "SYRIASYRWAR.1.t"
+	desc = SYRIASYRWAR.1.d
+	picture = GFX_report_event_japan_army_mountainside
+	
+	trigger = {
+		tag = SYR
+		SYR = {
+		has_war_with = FRA 
+		controls_state = 553
+		}
+	}
+	fire_only_once = yes
+
+	option = { #
+		name = SYRIASYRWAR.1.a
+		FRA = {
+			add_stability = -0.1
+		}
+		SYR = {
+			transfer_state = 553
+			add_state_core = 553
+			white_peace = FRA
+			swap_ideas = {
+				remove_idea = SYR_Liberation
+				add_idea = SYR_Victory
+			}
+		}
+	}
+}

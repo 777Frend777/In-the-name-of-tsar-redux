@@ -7,25 +7,30 @@ add_namespace = russia
 #####################################################################################################################################################
 #TRIGGER FOR THE EVENT
 news_event = {
-	id = russia.49
-	title = russia.49.t
-	desc = russia.49.d
-		picture = GFX_news_event_017
-		is_triggered_only = yes
-	fire_only_once = yes
-	major = yes
-	 option = {
-		name = russia.49.a
-		trigger = {
-			NOT = {
-				TAG = RUS
-			}
-			}
-	}
-			option = {
-		name = russia.49.b
-			trigger = { TAG = RUS }
-	}
+    id = russia.49
+    title = russia.49.t
+    desc = russia.49.d
+        picture = GFX_news_event_017
+        is_triggered_only = yes
+    fire_only_once = yes
+    major = yes
+     option = {
+        name = russia.49.a
+        trigger = {
+            NOT = {
+                TAG = RUS
+            }
+            }
+    }
+            option = {
+        name = russia.49.b
+        hidden_effect = {
+        set_global_flag = Super_Event_Visible
+        play_song = "Kornilovsokoevistuplenie"
+        set_global_flag = Kornilov_putch.super
+        }
+            trigger = { TAG = RUS }
+    }
 
 }
 #France and France backs Turkey and joins the fight
@@ -2636,6 +2641,129 @@ country_event = {
                 ideology = fascism
                 size = 0.5
                 provinces = { 769 788 239 225 401 257 238 93 94 199 198 78 192 201 202 203 197 196 137 200 226 259 193 255 220 240 221 227 228 260 245 218 234 265 217 236 237 235 232 233 231 230 229 407 406 }
+            }
+        }
+    }
+}
+country_event = {
+    id = russia.78
+    title = russia.78.t
+    desc = russia.78.d
+
+    picture = GFX_report_event_german_speech
+
+    is_triggered_only = yes
+
+    option = {
+        name = russia.78.a 
+        RUS = {
+        country_event = { id = russia.79 days = 3 } #ивент на согласие 
+        }
+    }
+
+    option = {
+        name = russia.78.b
+        RUS = {
+            country_event = { id = russia.80 days = 3 } #ивент на отказ
+        }
+    }
+}
+country_event = {
+    id = russia.79
+    title = russia.79.t
+    desc = russia.79.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = russia.79.a 
+        RUS = {
+            transfer_state = 79
+            add_state_core = 79
+        }
+    }
+}
+country_event = {
+    id = russia.77
+    title = russia.77.t
+    desc = russia.77.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = russia.77.a
+        RUS = { 
+        create_wargoal = {
+            type = puppet_wargoal_focus
+            target = ROM
+        }
+    }
+}
+}
+country_event = {
+    id = russia.130
+    title = russia.130.t
+    desc = russia.130.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = russia.130.a
+		TUR = {
+            transfer_state = 960
+            add_state_core = 960
+		}
+		TUR = {
+            transfer_state = 797
+            add_state_core = 797
+		}
+		TUR = {
+            transfer_state = 341
+            add_state_core = 341
+		}
+        RUS = { 
+			add_timed_idea = { idea = RUS_debtforallies_idea days = 365 }
+			White_peace = ENG
+			White_peace = FRA
+			White_peace = TUR
+        }
+    }
+}
+country_event = {
+    id = russia.131
+    title = russia.131.t
+    desc = russia.131.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = russia.131.a
+		TUR = {
+		give_military_access = RUS
+		}
+        RUS = { 
+			White_peace = ENG
+			White_peace = FRA
+			White_peace = TUR
+            RUS = {
+            transfer_state = 797
+            add_state_core = 797
+            }
+            RUS = {
+            transfer_state = 341
+            add_state_core = 341
+            }
+            RUS = {
+            transfer_state = 960
+            add_state_core = 960
+            }
+            RUS = {
+            transfer_state = 340
+            add_state_core = 340
+            }
+            RUS = {
+            transfer_state = 937
+            add_state_core = 937
             }
         }
     }

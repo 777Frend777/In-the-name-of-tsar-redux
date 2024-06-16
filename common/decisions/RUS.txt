@@ -316,63 +316,63 @@ RUS_russian_coup = {
 RUS_kornilovs_affair = {
 icon = generic_operation
 available = {
-			original_tag = RUS
-			RUS = {
-			has_stability < 0.35
-			has_government = neutrality
-			is_puppet = no 
-			has_country_flag = RUS_provisional_government_flag
-			NOT = { 
-			has_completed_focus = RUS_power_tsar
-			has_completed_focus = RUS_force_abdication
-			has_completed_focus = RUS_pm_primacy
-			}
-			}
-		}
-	ai_will_do = {
-			factor = 0
-		}	
-		cost = 50
-		days_remove = 50
-		fire_only_once = yes
-		visible = {
-			original_tag = RUS
-			has_government = neutrality
-			NOT = { 
-			has_completed_focus = RUS_power_tsar
-			has_completed_focus = RUS_force_abdication
-			has_completed_focus = RUS_pm_primacy
-			}
-			}
-		remove_effect = {
-		unlock_national_focus = RUS_tsar_speech
-		RUS = {
-		news_event = { hours = 6 id = russia.49 }
-		set_politics = { ruling_party = fascism elections_allowed = no }
-		set_party_name = {
-				ideology = fascism
-				long_name = "Russian Martial Soviet"
-				name = "RMS"
-				}
-		create_country_leader = {
-		name = "Lavr Kornilov"
-		desc = "POLITICS_DEMCHUGDONGRUB_DESC"
-		picture = "Lavr_Kornilov.dds" 
-		expire = "1965.1.1"
-		ideology = fascism_subtype
-		traits = {
-		
-		}
-		}
-		hidden_effect = {
-		add_popularity = {
-				ideology = fascism
-					popularity = 0.35
-				}
-		country_event = { id = russia.50 days = 35 }
-		}
-		}
-		}
+            original_tag = RUS
+            RUS = {
+            has_stability < 0.35
+            has_government = neutrality
+            is_puppet = no 
+            has_country_flag = RUS_provisional_government_flag
+            NOT = { 
+            has_completed_focus = RUS_power_tsar
+            has_completed_focus = RUS_force_abdication
+            has_completed_focus = RUS_pm_primacy
+            }
+            }
+        }
+    ai_will_do = {
+            factor = 0
+        }
+        cost = 50
+        days_remove = 50
+        fire_only_once = yes
+        visible = {
+            original_tag = RUS
+            has_government = neutrality
+            NOT = { 
+            has_completed_focus = RUS_power_tsar
+            has_completed_focus = RUS_force_abdication
+            has_completed_focus = RUS_pm_primacy
+            }
+            }
+        remove_effect = {
+        unlock_national_focus = RUS_tsar_speech
+        RUS = {
+        news_event = { hours = 6 id = russia.49 }
+        set_politics = { ruling_party = fascism elections_allowed = no }
+        set_party_name = {
+                ideology = fascism
+                long_name = "Russian Martial Soviet"
+                name = "RMS"
+                }
+        create_country_leader = {
+        name = "Lavr Kornilov"
+        desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+        picture = "Lavr_Kornilov.dds" 
+        expire = "1965.1.1"
+        ideology = fascism_subtype
+        traits = {
+
+        }
+        }
+        hidden_effect = {
+        add_popularity = {
+                ideology = fascism
+                    popularity = 0.35
+                }
+        country_event = { id = russia.50 days = 35 }
+        }
+        }
+        }
 }
 
 RUS_lenin_from_exile = {
@@ -436,4 +436,53 @@ available = {
 		complete_effect = {
 		add_timed_idea = { idea = RUS_no_step_back days = 1095 }
 		}	
+}
+}
+
+RUS_army_actions = {
+RUS_endkebab_decision = {
+priority = 30
+icon = GFX_decision_gre_faction_management
+        allowed = {
+        original_tag = RUS
+    }
+
+        activation = {
+            has_war_with = TUR
+        }
+
+        available = {
+	    AND = {
+            ROOT = {
+                controls_province = 11747
+				controls_province = 9833
+            }
+        }
+}
+
+        cancel_trigger = {
+            NOT = {has_war_with = TUR}
+        }
+
+        icon = GFX_mission_icon 
+        is_good = no
+        days_mission_timeout = 80
+
+        complete_effect = {
+            country_event = russia.131
+            white_peace = TUR
+            RUS = { 
+                RUS = {
+                    transfer_state = 797
+                    add_state_core = 797
+                }
+            }
+        }
+        
+        timeout_effect = {
+            white_peace = TUR
+			add_timed_idea = { idea = RUS_debtforallies_idea days = 365 }
+            country_event = russia.130
+        }
+    }
 }

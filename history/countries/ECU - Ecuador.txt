@@ -34,8 +34,8 @@ recruit_character = ECU_davide_flores
 recruit_character = ECU_carlos_arosemena_tola
 recruit_character = ECU_carlos_arroyo_del_rio
 
-
 set_country_flag = monroe_doctrine
+
 set_war_support = 0.1
 set_convoys = 5
 

@@ -8,7 +8,7 @@ add_namespace = SYRWAR
 
 country_event = {
 	id = SYRWAR.1
-	title = "Syria Defeats the French Army"
+	title = "SYRWAR.1.t"
 	desc = SYRWAR.1.d
 	picture = GFX_report_event_japan_army_mountainside
 	
@@ -19,7 +19,8 @@ country_event = {
 		controls_state = 553
 		}
 	}
-	
+	fire_only_once = yes
+
 	option = { #
 		name = SYRWAR.1.a
 		FRA = {

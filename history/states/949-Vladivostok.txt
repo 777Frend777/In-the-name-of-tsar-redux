@@ -1,0 +1,36 @@
+
+state = {
+	id = 949
+	name = "STATE_949"
+	manpower = 206974
+	resources = {
+		chromium=8 
+	}
+	
+	state_category = town
+
+	history={
+		owner = RUS
+		victory_points = {
+			957 15
+		}
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			air_base = 5
+			957 = {
+				naval_base = 8
+				coastal_bunker = 3
+			}
+		}
+		add_core_of = RUS
+		add_core_of = FER
+		add_core_of = VLA
+	}
+
+	provinces = {
+	    957 
+	}
+
+	local_supplies = 0.0 
+}

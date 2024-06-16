@@ -2,7 +2,7 @@ state = {
 	id = 233
 	name = "STATE_233"
 	resources = {
-		chromium = 18 # was: 46.000
+		chromium = 15 # was: 46.000
 	}
 
 	history = {
@@ -12,15 +12,12 @@ state = {
 
 		}
 		add_core_of = RUS
-		victory_points = {
-			9663 1
-		}
 	}
 
 	provinces = {
-		  3698 6692 6721 9649 9663 9674 11664 
+		  3698 6692 6721 9649 9674 11664 
 	}
-	manpower = 387990
+	manpower = 338177
 	buildings_max_level_factor = 1.000
 	state_category = rural
 
