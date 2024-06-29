@@ -82,54 +82,55 @@ if = {
 
 set_popularities = {
 	democratic = 15
-	neutrality = 20
-	communism = 60
-	fascism = 5
+	conservatives = 40
+	neutrality = 30
+	fascism = 15
 }
 
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
 create_country_leader = {
-    name = "Vasil Zacharka"
-    desc = ""
-	picture = GFX_portrait_Vasil_Zacharka
-    expire = "1965.1.1"
-    ideology = centrism
-    traits = {
-        #
-    }
+	name = "Rada BNR"
+	desc = "POLITICS_radabnr_DESC"
+	picture = "BLR_Rada.dds"
+	expire = "1965.1.1"
+	ideology = neutrality_subtype
+	traits = {
+	emergency_powers cabinet_crisis
+	}
 }
-
 create_country_leader = {
-    name = "Radasłaŭ Astroŭski"
-    desc = ""
-	picture = GFX_portrait_Radasłau_Astrouski
-    expire = "1965.1.1"
-    ideology = fascism_ideology
-    traits = {
-        #
-    }
+	name = "Rada BNR"
+	desc = "POLITICS_radabnr_DESC"
+	picture = "BLR_Rada.dds"
+	expire = "1965.1.1"
+	ideology = conservatives_subtype
+	traits = {
+	emergency_powers cabinet_crisis
+	}
 }
-
 create_country_leader = {
-    name = "Panteleimon Ponomarenko"
-    desc = ""
-	picture = GFX_portrait_Panteleimon_Ponomarenko
-    expire = "1965.1.1"
-    ideology = stalinism
-    traits = {
-        #
-    }
+	name = "Rada BNR"
+	desc = "POLITICS_radabnr_DESC"
+	picture = "BLR_Rada.dds"
+	expire = "1965.1.1"
+	ideology = socialist_subtype
+	traits = {
+	emergency_powers cabinet_crisis
+	}
 }
-
 create_country_leader = {
-    name = "Adam Stankievič"
-    desc = ""
-	picture = GFX_portrait_Adam_Stankievic
-    expire = "1965.1.1"
-    ideology = socialism
-    traits = {
-        #
-    }
+	name = "Rada BNR"
+	desc = "POLITICS_radabnr_DESC"
+	picture = "BLR_Rada.dds"
+	expire = "1965.1.1"
+	ideology = democratic_subtype
+	traits = {
+	emergency_powers cabinet_crisis
+	}
 }
-
-
 

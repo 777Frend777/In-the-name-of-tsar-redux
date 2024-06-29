@@ -1,48 +1,21 @@
 ideas = {
+
 	country = {
-		economic_boom_3 = {
-			allowed = {always = yes}
-				picture = chi_hyper_inflation5
-				modifier = {industrial_capacity_factory = +0.1}
-				modifier = {consumer_goods_factor = -0.1}
+	AFG_graveyard = {			
+			allowed = {
+				original_tag = AFG
 			}
-			available = { 
-				has_completed_focus = { AFG_economic_boom }
+			picture = BHU_mountain_nation
+			allowed_civil_war = {
+				always = yes
 			}
-	    afghan_style_production = {
-  
-				available = { 
-					has_completed_focus = AFG_weapons_production
-				}
-				picture = generic_production_bonus
-				equipment_bonus = {
-					infantry_equipment = {
-						build_cost_ic = -0.1
-						instant = yes
-					}
-				}
+			removal_cost = -1
+			modifier = {
+			surrender_limit	= 0.5
+			defensive_war_stability_factor	= 0.2
+			ai_focus_defense_factor = 0.20
+			army_core_defence_factor = 0.15
+			exiled_divisions_attack_factor = 0.1
 			}
-			dockyard_efort_3 = {
-  
-				available = { 
-					has_completed_focus = AFG_naval_speed
-				}
-	 			 picture = generic_navy_bonus
-			
-					modifier = {industrial_capacity_factory = +0.10}
-				}
-				economic_growth_4 = {
-  
-					allowed = {always = yes}
-							 picture = tur_balkan_central_bank_wealthy_greece
-							 modifier = {industrial_capacity_factory = +0.10}
-							 modifier = {consumer_goods_factor = -0.05}
-							 modifier = {industrial_capacity_dockyard = +0.10}
-							 available = { 
-								has_completed_focus = { AFG_infrastructure }
-							} 
-							}  
-
-
-				
-	 	
+		}
+}

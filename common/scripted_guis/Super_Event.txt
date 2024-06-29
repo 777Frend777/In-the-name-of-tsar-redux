@@ -83,6 +83,16 @@ scripted_gui = {
 				has_global_flag = rusnewtsar.super
 			}
 		}
+				triggers = {
+			Super_Event_whiterussiawonreds_visible = {
+				has_global_flag = whiterussiawonreds.super
+			}
+		}
+				triggers = {
+			Super_Event_redrussiawonwhite_visible = {
+				has_global_flag = redrussiawonwhite.super
+			}
+		}
 		############
 		###BUTTON###
 		############
@@ -180,6 +190,18 @@ scripted_gui = {
 						has_global_flag = rusnewtsar.super
 					}
 					clr_global_flag = rusnewtsar.super
+				}
+								if = {
+					limit = {
+						has_global_flag = whiterussiawonreds.super
+					}
+					clr_global_flag = whiterussiawonreds.super
+				}
+				if = {
+					limit = {
+						has_global_flag = redrussiawonwhite.super
+					}
+					clr_global_flag = redrussiawonwhite.super
 				}
 			}
 		}

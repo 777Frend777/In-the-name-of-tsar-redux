@@ -92,6 +92,18 @@ defined_text = {
         }
         localization_key = "sp_event_rusnewtsar"
     }
+	    			text = {
+        trigger = {
+            has_global_flag = whiterussiawonreds.super
+        }
+        localization_key = "sp_event_whiterussiawonreds"
+    }
+    text = {
+        trigger = {
+            has_global_flag = redrussiawonwhite.super
+        }
+        localization_key = "sp_event_redrussiawonwhite"
+    }
 } 
 #Remarks
 defined_text = {
@@ -187,6 +199,18 @@ defined_text = {
         }
         localization_key = "sp_event_rusnewtsar_REMARK"
     }
+	    text = {
+        trigger = {
+            has_global_flag = whiterussiawonreds.super
+        }
+        localization_key = "sp_event_whiterussiawonreds_REMARK"
+    }
+    text = {
+        trigger = {
+            has_global_flag = redrussiawonwhite.super
+        }
+        localization_key = "sp_event_redrussiawonwhite_REMARK"
+    }
 }
 #Quotes
 defined_text = {
@@ -281,5 +305,17 @@ defined_text = {
             has_global_flag = rusnewtsar.super
         }
         localization_key = "sp_event_rusnewtsar_QUOTE"
+    }
+	    text = {
+        trigger = {
+            has_global_flag = whiterussiawonreds.super
+        }
+        localization_key = "sp_event_whiterussiawonreds_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = redrussiawonwhite.super
+        }
+        localization_key = "sp_event_redrussiawonwhite_QUOTE"
     }
 }

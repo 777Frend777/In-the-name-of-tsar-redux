@@ -315,6 +315,7 @@ territorial_restorations_decisions = {
 	OR = {
 		TAG = MOL
 		TAG = RUS 
+		TAG = ROM
 	}
 	}
 	NOT = { has_war_with = MOL }
@@ -552,6 +553,7 @@ territorial_restorations_decisions = {
 	OR = {
 		TAG = RUS 
 		TAG = SOV
+		TAG = DON
 	}
 	}
 	RUS = {
@@ -565,6 +567,7 @@ territorial_restorations_decisions = {
 	
 	available = {
 	NOT = { TAG = RUS }
+	NOT = { TAG = DON }
 	is_puppet = no
 	}
 	
@@ -600,6 +603,7 @@ territorial_restorations_decisions = {
 	OR = {
 		TAG = GEO
 		TAG = RUS
+		TAG = CAU
 	}
 	}
 	RUS = {
@@ -620,7 +624,8 @@ territorial_restorations_decisions = {
 	available = {
 	NOT = { OR = {
 	TAG = GEO }
-	TAG = RUS }
+	TAG = RUS
+    TAG = CAU 	}
 	is_puppet = no
 	}
 	
@@ -654,6 +659,7 @@ territorial_restorations_decisions = {
 	OR = {
 		TAG = AZR
 		TAG = RUS
+		TAG = CAU
 	}
 	}
 	RUS = {
@@ -672,7 +678,9 @@ territorial_restorations_decisions = {
 	available = {
 	NOT = { OR = {
 	TAG = AZR }
-	TAG = RUS }
+	TAG = RUS
+    TAG = CAU 	
+	}
 	is_puppet = no
 	}
 	cancel_trigger = {
@@ -709,6 +717,7 @@ territorial_restorations_decisions = {
 	OR = {
 		TAG = ARM
 		TAG = RUS
+		TAG = CAU 
 	}
 	}
 	RUS = {
@@ -727,7 +736,9 @@ territorial_restorations_decisions = {
 	available = {
 	NOT = { OR = {
 	TAG = ARM }
-	TAG = RUS }
+	TAG = RUS 
+    TAG = CAU 
+	}
 	is_puppet = no
 	}
 	cancel_trigger = {

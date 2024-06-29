@@ -75,59 +75,57 @@ if = {
 }
 
 set_popularities = {
-	democratic = 20
-	fascism = 30
-	communism = 50
+	democratic = 15
+	conservatives = 40
+	neutrality = 30
+	fascism = 15
 }
 set_politics = {
-	ruling_party = democratic
-	last_election = "1932.9.18"
+	ruling_party = neutrality
+	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 create_country_leader = {
-	name = "Kost Levytsky"
-	desc = ""
-	picture = GFX_portrait_Kost_Levytsky
-	expire = "1953.3.1"
-	ideology = conservatism
+	name = "Pavlo Skoropadskyi"
+	desc = "POLITICS_skoropadskyi_DESC"
+	picture = "UKR_Skoropadskiy.dds"
+	expire = "1965.1.1"
+	ideology = neutrality_subtype
 	traits = {
-		
+	emergency_powers anti_communist
 	}
 }
-
 create_country_leader = {
-	name = "Nikita Sergeyevich Khrushchyov"
-	desc = ""
-	picture = GFX_portrait_Nikita_Sergeyevich_Khrushchyov
-	expire = "1953.3.1"
-	ideology = marxism
+	name = "Pavlo Skoropadskyi"
+	desc = "POLITICS_skoropadskyi_DESC"
+	picture = "UKR_Skoropadskiy.dds"
+	expire = "1965.1.1"
+	ideology = conservatives_subtype
 	traits = {
-		
+	emergency_powers anti_communist
 	}
 }
-
 create_country_leader = {
-	name = "Stepan Bandera"
-	desc = ""
-	picture = GFX_portrait_Stepan_Bandera
-	expire = "1953.3.1"
-	ideology = fascism_ideology
+	name = "Pavlo Skoropadskyi"
+	desc = "POLITICS_skoropadskyi_DESC"
+	picture = "UKR_Skoropadskiy.dds"
+	expire = "1965.1.1"
+	ideology = socialist_subtype
 	traits = {
-		
+	emergency_powers anti_communist
 	}
 }
-
-#create_country_leader = {
-#	name = ""
-#	desc = ""
-#	picture = ""
-#	expire = "1953.3.1"
-#	ideology = oligarchism
-#	traits = {
-#		
-#	}
-#}
+create_country_leader = {
+	name = "Pavlo Skoropadskyi"
+	desc = "POLITICS_skoropadskyi_DESC"
+	picture = "UKR_Skoropadskiy.dds"
+	expire = "1965.1.1"
+	ideology = democratic_subtype
+	traits = {
+	emergency_powers anti_communist	
+	}
+}
 
 
 

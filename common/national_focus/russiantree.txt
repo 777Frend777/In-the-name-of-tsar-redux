@@ -1615,6 +1615,267 @@ focus_tree = {
 		#RUS = { country_event = { id = russia.27 } }
 		RUS = { country_event = { id = russia.35 days = 35 } }	
 		}
+		hidden_effect = {
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_mikhail_kalinin
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_nikita_khrushchyov
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_nikolay_voznesensky
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_genrikh_yagoda
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_nikolay_yezhov
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_lavrenty_beriya
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_vyacheslav_molotov
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_maksim_litvinov
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_lev_trotsky
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_ivan_smirnov
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_ivar_smilga
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_karl_radek
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_yevgeny_preobrazhensky
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_aleksandr_shlyapnikov
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_nikolay_bukharin
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_aleksey_rykov
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_mikhail_tomsky
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_grigory_sokolnikov
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_grigory_zinovyev
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_lev_kamenev
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_martemyan_ryutin
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_konstantin_rodzayevsky
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_aleksandr_vasilevsky
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_aleksandr_golovanov
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_aleksandr_gorbatov
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_aleksandr_novikov
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_aleksandr_yegorov
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_andrey_grechko
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_andrey_vlasov
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_andrey_yeryomenko
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_arseny_golovko
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_dmitry_lelyushenko
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_filipp_golikov
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_filipp_oktyabrsky
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_georgy_zakharov
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_igor_kurchatov
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_ivan_konev
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_kliment_voroshilov
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_konstantin_rokossovsky
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_konstantin_vershinin
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_markian_popov
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_nikolay_vatutin
+				}
+			}
+			SOV = {
+                set_nationality = {
+                    target_country = RUS
+                    character = SOV_vasily_kuznetsov
+				}
+			}
+			retire_character = RUS_kerensky
+		}
 		add_popularity = {
 					ideology = communism
 					popularity = 0.35

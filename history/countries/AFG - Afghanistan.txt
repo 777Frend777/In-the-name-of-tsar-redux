@@ -37,6 +37,11 @@ if = {
 		
 	}
 }
+add_ideas = {
+AFG_graveyard
+}
+
+
 
 recruit_character = AFG_Nasrullah_shah
 recruit_character = AFG_akram_sattari

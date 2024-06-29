@@ -89,3 +89,15 @@ song = "rusnewtsar"
       modifier = { factor = 1 }
     }	
 }
+music = {
+song = "whiterussiawonreds"
+    chance = {
+      modifier = { factor = 1 }
+    }	
+}
+music = {
+song = "redrussiawonwhite"
+    chance = {
+      modifier = { factor = 1 }
+    }	
+}

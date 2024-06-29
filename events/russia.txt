@@ -1,5 +1,5 @@
-﻿###########################
-# Russia Events ###########last is 97
+###########################
+# Russia Events ###########last is 131
 ###########################
 
 add_namespace = russia
@@ -2598,173 +2598,3506 @@ country_event = {
     id = russia.35
     title = russia.35.t
     desc = russia.35.d
-    picture = GFX_report_event_generic_panzer_attack
+    picture = GFX_report_event_RUS_caucasus
     is_triggered_only = yes
 
     option = {
         name = russia.35.a
         ai_chance = { factor = 100 }
-        hidden_effect = {
-            #country_event = { days = 25 id = russia.60 }
-            #country_event = { days = 35 id = russia.61 }
-            #country_event = { days = 5 id = russia.62 }
-            news_event = { id = russia.36 days = 1 }
+			country_event = { id = russia.98 days = 4 }
+			set_global_flag = RCW_begun
+            RUS = {
+                remove_unit = 99997
+                load = RUS_civil_war_commi
+				set_autonomy = {
+					target = BUK
+					autonomy_state = autonomy_free
+				 }
+				 set_autonomy = {
+					target = KHI
+					autonomy_state = autonomy_free
+				 }
+				 set_autonomy = {
+					target = MON
+					autonomy_state = autonomy_free
+				 }
+		dismantle_faction = yes
+            }
+            DON = {
+                transfer_state = 218
+                transfer_state = 245
+                transfer_state = 238
+				transfer_state = 950
+				add_state_core = 950
+                add_state_core = 218
+                add_state_core = 245
+                add_state_core = 238
+                declare_war_on = {
+                    target = RUS
+                    type = civil_war
+					}
+				capital_scope = {
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = DON
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = DON
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = DON
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+                }
+			}
+			KUB = {
+                transfer_state = 234
+                transfer_state = 233
+				transfer_state = 951
+				transfer_state = 235
+				add_state_core = 234
+                add_state_core = 233
+				add_state_core = 951
+                add_state_core = 235
+				declare_war_on = {
+                    target = RUS
+                    type = civil_war
+            }   
+                capital_scope = {  			
+			    create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				}
+            }		
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = RUS_nabokov_jr_idea
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = RUS_boris_savinkov
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = RUS_konovalov
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = RUS_yusupov
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = RUS_Pyotr_Struve
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = RUS_pyotr_wrangel
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = RUS_kornilov
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = nikolay_kuznetsovs
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = RUS_alexander_kolchak
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = RUS_pavel_argeyev
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = RUS_tkachov
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = RUS_konev_idea
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = RUS_vasilevsky_idea
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = RUS_baranov
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = RUS_anton_denikin
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = RUS_altfater_idea
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = RUS_isakov_idea
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = RUS_monarstyrev_idea
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = RUS_shaposhnikov_idea
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = sergei_korolevs
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = igor_kurchatovs
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = alexander_golovanovs
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = sergei_rudenkos
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = vladimir_tributss
+				}
+			}
+			RUS = {
+				set_nationality = {
+					target_country = SIB
+					character = sergey_gorshkovs
+				}
+			}
+			ABK = {
+				transfer_state = 826
+				transfer_state = 952
+				add_state_core = 826
+				add_state_core = 952
+				capital_scope = {
+					create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = ABK
+					}
+					create_unit = {
+						division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = ABK
+					}
+			}
+			SOA = {
+				transfer_state = 963
+				add_state_core = 963
+				capital_scope = {
+					create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SOA
+					}
+					create_unit = {
+						division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SOA
+					}
+			}
+		}
+		MON = {
+			transfer_state = 329
+			transfer_state = 654
+			transfer_state = 566
+			transfer_state = 564
+			transfer_state = 563
+            }
+			JAP = {
+			transfer_state = 655
+			transfer_state = 562
+			transfer_state = 874
+			transfer_state = 637
+			transfer_state = 822
+			transfer_state = 875
+			transfer_state = 537
+			transfer_state = 555
+			transfer_state = 745
+		    transfer_state = 949
+            }
+			MAN = {
+			transfer_state = 714
+			transfer_state = 761
+			transfer_state = 409
+			transfer_state = 560
+			transfer_state = 657
+			transfer_state = 561
+			transfer_state = 717
+			transfer_state = 328
+			transfer_state = 716
+			transfer_state = 610
+			transfer_state = 715
+			transfer_state = 408
+            }
+			RUS = {
+			puppet = KAZ
+			}
+		}
+AZR = {
+	955 = { add_claim_by = AZR }
+	transfer_state = 956
+	transfer_state = 229
+	transfer_state = 959
+	transfer_state = 229
+	transfer_state = 957
+	add_state_core = 956
+	add_state_core = 229
+	add_state_core = 959
+	add_state_core = 957
+	capital_scope = {
+		create_unit = {
+		division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+		owner = AZR
+		}
+		create_unit = {
+			division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = AZR
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = AZR
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = AZR
+		}
+		}
+}
+KYR = {
+	transfer_state = 732
+	add_state_core = 732
+	capital_scope = {
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = KYR
+		}
+		}
+}
+ARM = {
+	transfer_state = 958
+	transfer_state = 230
+	transfer_state = 955
+	add_state_core = 958
+	add_state_core = 955
+	add_state_core = 230
+	capital_scope = {
+		create_unit = {
+		division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+		owner = ARM
+		}
+		create_unit = {
+			division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = ARM
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = ARM
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = ARM
+		}
+		}
+}
+GEO = {
+	transfer_state = 953
+	transfer_state = 954
+	transfer_state = 231
+	add_state_core = 953
+	add_state_core = 954
+	add_state_core = 231
+	capital_scope = {
+		create_unit = {
+		division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+		owner = GEO
+		}
+		create_unit = {
+			division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = GEO
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = GEO
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = GEO
+		}
+		}
+}
+			PER = {
+                transfer_state = 420
+            }
+			TUR = {
+                transfer_state = 937
+			}
+    }
+	}
+    option = {
+        name = russia.35.b
+        ai_chance = { factor = 100 }
+			country_event = { id = russia.98 days = 4 }
+			DON = { change_tag_from = RUS }
             RUS = {
                 remove_unit = 99997
                 load = RUS_civil_war_commi
             }
-            137 = {
-                owner = {
-                    create_country_leader = {
-                        name = "Александр Колчак"
-                        desc = "Александр Васильевич Колчак русский государственный, политический и военный деятель, учёный-океанограф, полярный исследователь, флотоводец. Вошел в историю как руководитель Белого движения во время Гражданской войны в России."
-                        picture = "Alexander_Kolchak.dds"
-                        expire = "1965.1.1"
-                        ideology = fascism_ideology
-                        traits = {
-
-                        }
-                    }
-                    load = RUS_civil_war_white
+            DON = {
+                transfer_state = 234
+                transfer_state = 233
+				transfer_state = 951
+				transfer_state = 235
+				add_state_core = 234
+                add_state_core = 233
+				add_state_core = 951
+                add_state_core = 235
+                declare_war_on = {
+                    target = RUS
+                    type = civil_war
                 }
+				capital_scope = {
+			    create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = DON
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = DON
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = DON
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				}
             }
-        }
-        end_puppet = KRW
-        end_puppet = MON
-        release = POL
-        end_puppet = POL
-        release = FIN
-        end_puppet = FIN
-        dismantle_faction = yes
-        RUS = {
-            start_civil_war = {
-                ideology = fascism
-                size = 0.5
-                provinces = { 769 788 239 225 401 257 238 93 94 199 198 78 192 201 202 203 197 196 137 200 226 259 193 255 220 240 221 227 228 260 245 218 234 265 217 236 237 235 232 233 231 230 229 407 406 }
+			KUB = {
+                transfer_state = 234
+                transfer_state = 233
+				transfer_state = 951
+				transfer_state = 235
+				add_state_core = 234
+                add_state_core = 233
+				add_state_core = 951
+                add_state_core = 235
+				declare_war_on = {
+                    target = RUS
+                    type = civil_war
+                }
+				capital_scope = {
+			    create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+                }				
             }
-        }
-    }
+			ABK = {
+				transfer_state = 826
+				transfer_state = 952
+				add_state_core = 826
+				add_state_core = 952
+				capital_scope = {
+					create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = ABK
+					}
+					create_unit = {
+						division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = ABK
+					}
+			}
+		}
+AZR = {
+	955 = { add_claim_by = AZR }
+	transfer_state = 956
+	transfer_state = 229
+	transfer_state = 959
+	transfer_state = 229
+	transfer_state = 957
+	add_state_core = 956
+	add_state_core = 229
+	add_state_core = 959
+	add_state_core = 957
+	capital_scope = {
+		create_unit = {
+		division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+		owner = AZR
+		}
+		create_unit = {
+			division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = AZR
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = AZR
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = AZR
+		}
+		}
+}
+ARM = {
+	transfer_state = 958
+	transfer_state = 230
+	transfer_state = 955
+	add_state_core = 958
+	add_state_core = 955
+	add_state_core = 230
+	capital_scope = {
+		create_unit = {
+		division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+		owner = ARM
+		}
+		create_unit = {
+			division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = ARM
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = ARM
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = ARM
+		}
+		}
+}
+GEO = {
+	transfer_state = 953
+	transfer_state = 954
+	transfer_state = 231
+	add_state_core = 953
+	add_state_core = 954
+	add_state_core = 231
+	capital_scope = {
+		create_unit = {
+		division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+		owner = GEO
+		}
+		create_unit = {
+			division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = GEO
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = GEO
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = GEO
+		}
+		}
+}
+			PER = {
+                transfer_state = 420
+            }
+			TUR = {
+                transfer_state = 937
+			}
+}
+
+    option = {
+        name = russia.35.e
+        ai_chance = { factor = 100 }
+			country_event = { id = russia.98 days = 4 }
+            KUB = { change_tag_from = RUS }
+			RUS = {
+                remove_unit = 99997
+                load = RUS_civil_war_commi
+            }
+            DON = {
+                transfer_state = 234
+                transfer_state = 233
+				transfer_state = 951
+				transfer_state = 235
+				add_state_core = 234
+                add_state_core = 233
+				add_state_core = 951
+                add_state_core = 235
+                declare_war_on = {
+                    target = RUS
+                    type = civil_war
+            }
+			capital_scope = {
+			create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = DON
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = DON
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = DON
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				}
+            }
+			KUB = {
+                 transfer_state = 234
+                transfer_state = 233
+				transfer_state = 951
+				transfer_state = 235
+				add_state_core = 234
+                add_state_core = 233
+				add_state_core = 951
+                add_state_core = 235
+				declare_war_on = {
+                    target = RUS
+                    type = civil_war
+            }
+			capital_scope = {
+			create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				}
+            }
+			ABK = {
+				transfer_state = 826
+				transfer_state = 952
+				add_state_core = 826
+				add_state_core = 952
+				capital_scope = {
+					create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = ABK
+					}
+					create_unit = {
+						division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = ABK
+					}
+			}
+		}
+AZR = {
+	955 = { add_claim_by = AZR }
+	transfer_state = 956
+	transfer_state = 229
+	transfer_state = 959
+	transfer_state = 229
+	transfer_state = 957
+	add_state_core = 956
+	add_state_core = 229
+	add_state_core = 959
+	add_state_core = 957
+	capital_scope = {
+		create_unit = {
+		division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+		owner = AZR
+		}
+		create_unit = {
+			division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = AZR
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = AZR
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = AZR
+		}
+		}
+}
+ARM = {
+	transfer_state = 958
+	transfer_state = 230
+	transfer_state = 955
+	add_state_core = 958
+	add_state_core = 955
+	add_state_core = 230
+	capital_scope = {
+		create_unit = {
+		division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+		owner = ARM
+		}
+		create_unit = {
+			division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = ARM
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = ARM
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = ARM
+		}
+		}
+}
+GEO = {
+	transfer_state = 953
+	transfer_state = 954
+	transfer_state = 231
+	add_state_core = 953
+	add_state_core = 954
+	add_state_core = 231
+	capital_scope = {
+		create_unit = {
+		division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+		owner = GEO
+		}
+		create_unit = {
+			division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = GEO
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = GEO
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = GEO
+		}
+		}
+}
+			PER = {
+                transfer_state = 420
+            }
+			TUR = {
+                transfer_state = 937
+			}
+}
+    option = {
+        name = russia.35.f
+        ai_chance = { factor = 100 }
+			country_event = { id = russia.98 days = 4 }
+			RUS = {
+                remove_unit = 99997
+                load = RUS_civil_war_commi
+            }
+            DON = {
+                transfer_state = 234
+                transfer_state = 233
+				transfer_state = 951
+				transfer_state = 235
+				add_state_core = 234
+                add_state_core = 233
+				add_state_core = 951
+                add_state_core = 235
+                declare_war_on = {
+                    target = RUS
+                    type = civil_war
+                }
+ 				capital_scope = {
+			    create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = DON
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = DON
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = DON
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = DON
+				}
+				}
+            }
+			KUB = {
+                transfer_state = 234
+                transfer_state = 233
+				transfer_state = 951
+				transfer_state = 235
+				add_state_core = 234
+                add_state_core = 233
+				add_state_core = 951
+                add_state_core = 235
+				declare_war_on = {
+                    target = RUS
+                    type = civil_war
+            }
+			capital_scope = {
+			create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KUB
+				}
+				}
+            }
+			ABK = {
+				transfer_state = 826
+				transfer_state = 952
+				add_state_core = 826
+				add_state_core = 952
+				capital_scope = {
+					create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = ABK
+					}
+					create_unit = {
+						division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = ABK
+					}
+			}
+		}
+AZR = {
+	955 = { add_claim_by = AZR }
+	transfer_state = 956
+	transfer_state = 229
+	transfer_state = 959
+	transfer_state = 229
+	transfer_state = 957
+	add_state_core = 956
+	add_state_core = 229
+	add_state_core = 959
+	add_state_core = 957
+	capital_scope = {
+		create_unit = {
+		division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+		owner = AZR
+		}
+		create_unit = {
+			division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = AZR
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = AZR
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = AZR
+		}
+		}
+}
+ARM = {
+	transfer_state = 958
+	transfer_state = 230
+	transfer_state = 955
+	add_state_core = 958
+	add_state_core = 955
+	add_state_core = 230
+	capital_scope = {
+		create_unit = {
+		division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+		owner = ARM
+		}
+		create_unit = {
+			division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = ARM
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = ARM
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = ARM
+		}
+		}
+}
+GEO = {
+	transfer_state = 953
+	transfer_state = 954
+	transfer_state = 231
+	add_state_core = 953
+	add_state_core = 954
+	add_state_core = 231
+	capital_scope = {
+		create_unit = {
+		division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+		owner = GEO
+		}
+		create_unit = {
+			division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = GEO
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = GEO
+		}
+		create_unit = {
+			division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+			owner = GEO
+		}
+		}
+}
+			PER = {
+                transfer_state = 420
+            }
+			TUR = {
+                transfer_state = 937
+			}
 }
 country_event = {
-    id = russia.78
-    title = russia.78.t
-    desc = russia.78.d
-
-    picture = GFX_report_event_german_speech
-
+    id = russia.98
+    title = russia.98.t
+    desc = russia.98.d
+    picture = GFX_report_event_RUS_army_1
     is_triggered_only = yes
-
+	
     option = {
-        name = russia.78.a 
-        RUS = {
-        country_event = { id = russia.79 days = 3 } #ивент на согласие 
-        }
-    }
-
+        name = russia.98.a
+        ai_chance = { factor = 100 }
+		country_event = { id = russia.99 days = 4 }
+            UKR = {
+                transfer_state = 227
+                transfer_state = 200
+                transfer_state = 196
+                transfer_state = 137
+                transfer_state = 228
+                transfer_state = 226
+				transfer_state = 221
+                transfer_state = 197
+                transfer_state = 259
+                transfer_state = 203
+                transfer_state = 192
+                transfer_state = 834
+				transfer_state = 198
+                transfer_state = 199
+                transfer_state = 199
+                transfer_state = 93
+                transfer_state = 201
+                transfer_state = 202
+				transfer_state = 193
+                transfer_state = 225
+                declare_war_on = {
+                    target = RUS
+                    type = civil_war
+            }
+			capital_scope   = {
+			create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Skoropadskiy batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Petlurovskiy batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+			create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Voloxskiy batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Grekovskiy batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+				division = "UKR = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}	
+				}
+            }
+			BLR = {
+                transfer_state = 94
+                transfer_state = 95
+				transfer_state = 96
+                transfer_state = 206
+				transfer_state = 204
+                transfer_state = 194
+				transfer_state = 241
+				transfer_state = 207
+				declare_war_on = {
+                    target = RUS
+                    type = civil_war
+            }
+			capital_scope  = {
+			create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+			create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				}
+            }
+			ROM = {
+				transfer_state = 78
+                transfer_state = 766
+            }
+			GER = {
+                transfer_state = 188
+            }
+			LIT = {
+                transfer_state = 784
+                transfer_state = 814
+				transfer_state = 11
+                transfer_state = 815
+				transfer_state = 189
+				capital_scope = {
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = LIT
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = LIT
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = LIT
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = LIT
+				}
+            }
+			}
+			LAT = {
+                transfer_state = 190
+                transfer_state = 809
+				transfer_state = 808
+                transfer_state = 810
+				transfer_state = 12
+				capital_scope = {
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = LAT
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = LAT
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = LAT
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = LAT
+				}
+				}
+            }
+			EST = {
+                transfer_state = 191
+                transfer_state = 13
+				transfer_state = 812
+                transfer_state = 813
+				transfer_state = 811
+				capital_scope = {
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = EST
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = EST
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = EST
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = EST
+				}
+				}
+            }
+			}
     option = {
-        name = russia.78.b
-        RUS = {
-            country_event = { id = russia.80 days = 3 } #ивент на отказ
+        name = russia.98.b
+        ai_chance = { factor = 100 }
+		country_event = { id = russia.99 days = 4 }
+		UKR = { change_tag_from = RUS }
+            UKR = {
+                transfer_state = 227
+                transfer_state = 200
+                transfer_state = 196
+                transfer_state = 137
+                transfer_state = 228
+                transfer_state = 226
+				transfer_state = 221
+                transfer_state = 197
+                transfer_state = 259
+                transfer_state = 203
+                transfer_state = 192
+                transfer_state = 834
+				transfer_state = 198
+                transfer_state = 199
+                transfer_state = 199
+                transfer_state = 93
+                transfer_state = 201
+                transfer_state = 202
+				transfer_state = 193
+                transfer_state = 225
+                declare_war_on = {
+                    target = RUS
+                    type = civil_war
+            }
+			capital_scope   = {
+			create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Skoropadskiy batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Petlurovskiy batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+			create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Voloxskiy batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Grekovskiy batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+				division = "UKR = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}	
+				}
+            }
+			BLR = {
+                transfer_state = 94
+                transfer_state = 95
+				transfer_state = 96
+                transfer_state = 206
+				transfer_state = 204
+                transfer_state = 194
+				transfer_state = 241
+				transfer_state = 207
+				declare_war_on = {
+                    target = RUS
+                    type = civil_war
+                }
+			capital_scope  = {
+			create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+			create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				}
+            }
+			ROM = {
+				transfer_state = 78
+                transfer_state = 766
+            }
+			GER = {
+                transfer_state = 188
+            }
+			LIT = {
+                transfer_state = 784
+                transfer_state = 814
+				transfer_state = 11
+                transfer_state = 815
+				transfer_state = 189
+				capital_scope = {
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = LIT
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = LIT
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = LIT
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = LIT
+				}
+				}
+            }
+			LAT = {
+                transfer_state = 190
+                transfer_state = 809
+				transfer_state = 808
+                transfer_state = 810
+				transfer_state = 12
+				capital_scope = {
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = LAT
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = LAT
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = LAT
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = LAT
+				}
+				}
+            }
+			EST = {
+                transfer_state = 191
+                transfer_state = 13
+				transfer_state = 812
+                transfer_state = 813
+				transfer_state = 811
+				capital_scope = {
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = EST
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = EST
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = EST
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = EST
+				}
+				}
+            }
+	    }
+    option = {
+        name = russia.98.c
+        ai_chance = { factor = 100 }
+		country_event = { id = russia.99 days = 4 }
+		BLR = { change_tag_from = RUS }
+            UKR = {
+                transfer_state = 227
+                transfer_state = 200
+                transfer_state = 196
+                transfer_state = 137
+                transfer_state = 228
+                transfer_state = 226
+				transfer_state = 221
+                transfer_state = 197
+                transfer_state = 259
+                transfer_state = 203
+                transfer_state = 192
+                transfer_state = 834
+				transfer_state = 198
+                transfer_state = 199
+                transfer_state = 199
+                transfer_state = 93
+                transfer_state = 201
+                transfer_state = 202
+				transfer_state = 193
+                transfer_state = 225
+                declare_war_on = {
+                    target = RUS
+                    type = civil_war
+            } 
+			capital_scope   = {
+			create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Skoropadskiy batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Petlurovskiy batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+			create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Voloxskiy batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Grekovskiy batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+				division = "UKR = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = UKR
+				}	
+				}
+			}	
+			BLR = {
+                transfer_state = 94
+                transfer_state = 95
+				transfer_state = 96
+                transfer_state = 206
+				transfer_state = 204
+                transfer_state = 194
+				transfer_state = 241
+				transfer_state = 207
+				declare_war_on = {
+                    target = RUS
+                    type = civil_war
+            }
+			random_owned_controlled_state = {
+			create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+			create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = BLR
+				}
+				}
+            }
+			
+			ROM = {
+				transfer_state = 78
+                transfer_state = 766
+            }
+			GER = {
+                transfer_state = 188
+            }
+			LIT = {
+                transfer_state = 784
+                transfer_state = 814
+				transfer_state = 11
+                transfer_state = 815
+				transfer_state = 189
+				capital_scope = {
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = LIT
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = LIT
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = LIT
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = LIT
+				}
+				}
+            }
+			LAT = {
+                transfer_state = 190
+                transfer_state = 809
+				transfer_state = 808
+                transfer_state = 810
+				transfer_state = 12
+                capital_scope = {
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = LAT
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = LAT
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = LAT
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = LAT
+				}
+            }
+			}
+			EST = {
+                transfer_state = 191
+                transfer_state = 13
+				transfer_state = 812
+                transfer_state = 813
+				transfer_state = 811
+				capital_scope = {
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = EST
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = EST
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = EST
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = EST
+				}
+            }			
+            }
+			
         }
-    }
-}
+    }		
 country_event = {
-    id = russia.79
-    title = russia.79.t
-    desc = russia.79.d
-
-    is_triggered_only = yes
-
+    id = russia.99
+    title = russia.99.t
+    desc = russia.99.d
+	is_triggered_only = yes
+	picture = GFX_report_event_RUS_siberia1
+	
     option = {
-        name = russia.79.a 
-        RUS = {
-            transfer_state = 79
-            add_state_core = 79
-        }
-    }
+        name = russia.99.a
+        ai_chance = { factor = 100 }
+		news_event = { id = russia.36 days = 1 }
+		hidden_effect = {
+		RUS = {
+            create_faction = krasnoe_dvizenie
+			}
+			}
+			KHI = {
+                transfer_state = 823
+                transfer_state = 585
+            } 
+			BUK = {
+                transfer_state = 1483
+            } 
+			KAZ = {
+                transfer_state = 406
+                transfer_state = 407
+				transfer_state = 402
+                transfer_state = 583
+				transfer_state = 881
+                transfer_state = 589
+				transfer_state = 590
+				transfer_state = 588
+				transfer_state = 882
+				transfer_state = 587
+				transfer_state = 404
+				transfer_state = 586
+				random_owned_controlled_state = {
+				create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+			create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+            }
+			}
+			hidden_effect = {
+				SIB = {
+			    create_faction = beloe_dvizenie
+				add_to_faction = UKR
+				add_to_faction = BLR
+				add_to_faction = DON
+				add_to_faction = KUB
+				add_to_faction = MON
+				add_to_faction = BUK
+				add_to_faction = KHI
+				}
+			}
+			SIB = {
+      			transfer_state = 653
+                transfer_state = 572
+				transfer_state = 580
+                transfer_state = 403
+				transfer_state = 577
+                transfer_state = 579
+				transfer_state = 571
+				transfer_state = 578
+                transfer_state = 40
+                transfer_state = 569
+				transfer_state = 576
+                transfer_state = 578
+				transfer_state = 570
+				transfer_state = 575
+                transfer_state = 878
+				transfer_state = 876
+                transfer_state = 575
+				transfer_state = 565
+                transfer_state = 574
+				transfer_state = 571
+				transfer_state = 516
+				transfer_state = 568
+                transfer_state = 567
+				transfer_state = 644
+				transfer_state = 877
+				transfer_state = 824
+				add_state_core = 653
+                add_state_core = 572
+				add_state_core = 580
+                add_state_core = 403
+				add_state_core = 577
+                add_state_core = 579
+				add_state_core = 571
+				add_state_core = 578
+                add_state_core = 40
+                add_state_core = 569
+				add_state_core = 576
+                add_state_core = 578
+				add_state_core = 570
+				add_state_core = 575
+                add_state_core = 878
+				add_state_core = 876
+                add_state_core = 575
+				add_state_core = 565
+				add_state_core = 571
+				add_state_core = 516
+				add_state_core = 568
+                add_state_core = 567
+				add_state_core = 824
+			}
+			SIB = {
+                declare_war_on = {
+                    target = RUS
+                    type = civil_war
+            }
+		}
+			capital_scope = {
+			    create_unit = {
+			        division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				    owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+			create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+			create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+			}
+			}
+			MON = {
+			transfer_state = 329
+			transfer_state = 654
+			transfer_state = 566
+			transfer_state = 564
+			transfer_state = 563
+            }
+			JAP = {
+			transfer_state = 655
+			transfer_state = 562
+			transfer_state = 874
+			transfer_state = 637
+			transfer_state = 822
+			transfer_state = 875
+			transfer_state = 537
+			transfer_state = 555
+			transfer_state = 745
+			transfer_state = 949
+            }
+			MAN = {
+			transfer_state = 714
+			transfer_state = 761
+			transfer_state = 409
+			transfer_state = 560
+			transfer_state = 657
+			transfer_state = 561
+			transfer_state = 717
+			transfer_state = 328
+			transfer_state = 716
+			transfer_state = 610
+			transfer_state = 715
+			transfer_state = 408
+            }
+			RUS = {
+				puppet = KAZ
+				}
+	    option = {
+        name = russia.99.b
+        ai_chance = { factor = 100 }
+		news_event = { id = russia.36 days = 1 }
+            SIB = { change_tag_from = RUS }
+			RUS = {
+            create_faction = krasnoe_dvizenie
+			}
+			 KHI = {
+                transfer_state = 823
+                transfer_state = 585
+            } 
+			BUK = {
+                transfer_state = 1483
+            } 
+			KAZ = {
+                transfer_state = 406
+                transfer_state = 407
+				transfer_state = 402
+                transfer_state = 583
+				transfer_state = 881
+                transfer_state = 589
+				transfer_state = 590
+				transfer_state = 588
+				transfer_state = 882
+				transfer_state = 587
+				transfer_state = 404
+				transfer_state = 586
+				random_owned_controlled_state = {
+				create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+			create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+            }
+			}
+			hidden_effect = {
+				SIB = {
+				create_faction = beloe_dvizenie
+				add_to_faction = UKR
+				add_to_faction = BLR
+				add_to_faction = DON
+				add_to_faction = KUB
+				add_to_faction = MON
+				add_to_faction = BUK
+				add_to_faction = KHI
+				}
+			}	
+				transfer_state = 653
+                transfer_state = 572
+				transfer_state = 580
+                transfer_state = 403
+				transfer_state = 577
+                transfer_state = 579
+				transfer_state = 571
+				transfer_state = 578
+                transfer_state = 40
+                transfer_state = 569
+				transfer_state = 576
+                transfer_state = 578
+				transfer_state = 570
+				transfer_state = 575
+                transfer_state = 878
+				transfer_state = 876
+                transfer_state = 575
+				transfer_state = 565
+                transfer_state = 574
+				transfer_state = 571
+				transfer_state = 516
+				transfer_state = 568
+                transfer_state = 567
+				transfer_state = 644
+				transfer_state = 877
+				transfer_state = 824
+				add_state_core = 653
+                add_state_core = 572
+				add_state_core = 580
+                add_state_core = 403
+				add_state_core = 577
+                add_state_core = 579
+				add_state_core = 571
+				add_state_core = 578
+                add_state_core = 40
+                add_state_core = 569
+				add_state_core = 576
+                add_state_core = 578
+				add_state_core = 570
+				add_state_core = 575
+                add_state_core = 878
+				add_state_core = 876
+                add_state_core = 575
+				add_state_core = 565
+				add_state_core = 571
+				add_state_core = 516
+				add_state_core = 568
+                add_state_core = 567
+				add_state_core = 824
+                declare_war_on = {
+                    target = RUS
+                    type = civil_war
+            }
+			capital_scope = {
+			create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+			create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+			create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = SIB
+				}
+			}
+			MON = {
+			transfer_state = 329
+			transfer_state = 654
+			transfer_state = 566
+			transfer_state = 564
+			transfer_state = 563
+            }
+			JAP = {
+			transfer_state = 655
+			transfer_state = 562
+			transfer_state = 874
+			transfer_state = 637
+			transfer_state = 822
+			transfer_state = 875
+			transfer_state = 537
+			transfer_state = 555
+			transfer_state = 745
+			transfer_state = 949
+            }
+			MAN = {
+			transfer_state = 714
+			transfer_state = 761
+			transfer_state = 409
+			transfer_state = 560
+			transfer_state = 657
+			transfer_state = 561
+			transfer_state = 717
+			transfer_state = 328
+			transfer_state = 716
+			transfer_state = 610
+			transfer_state = 715
+			transfer_state = 408
+            }
+			puppet = KAZ
+      option = {
+        name = russia.99.c
+        ai_chance = { factor = 100 }
+		news_event = { id = russia.36 days = 1 }
+            KAZ = { change_tag_from = RUS }
+			RUS = {
+            create_faction = krasnoe_dvizenie
+			}
+			 KHI = {
+                transfer_state = 823
+                transfer_state = 585
+            } 
+			BUK = {
+                transfer_state = 1483
+            } 
+			KAZ = {
+                transfer_state = 406
+                transfer_state = 407
+				transfer_state = 402
+                transfer_state = 583
+				transfer_state = 881
+                transfer_state = 589
+				transfer_state = 590
+				transfer_state = 588
+				transfer_state = 882
+				transfer_state = 587
+				transfer_state = 404
+				transfer_state = 586
+				random_owned_controlled_state = {
+				create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+			create_unit = {
+			    division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+           		create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+				division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+				create_unit = {
+					division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = KAZ
+				}
+            }
+			}
+			  hidden_effect = {
+			    create_faction = beloe_dvizenie
+			    add_to_faction = UKR				
+				add_to_faction = BLR
+				add_to_faction = DON
+				add_to_faction = KUB
+				add_to_faction = MON
+				add_to_faction = BUK
+				add_to_faction = KHI
+			 }
+				}	
+			SIB = {
+				transfer_state = 653
+                transfer_state = 572
+				transfer_state = 580
+                transfer_state = 403
+				transfer_state = 577
+                transfer_state = 579
+				transfer_state = 571
+				transfer_state = 578
+                transfer_state = 40
+                transfer_state = 569
+				transfer_state = 576
+                transfer_state = 578
+				transfer_state = 570
+				transfer_state = 575
+                transfer_state = 878
+				transfer_state = 876
+                transfer_state = 575
+				transfer_state = 565
+                transfer_state = 574
+				transfer_state = 571
+				transfer_state = 516
+				transfer_state = 568
+                transfer_state = 567
+				transfer_state = 644
+				transfer_state = 877
+				transfer_state = 824
+				add_state_core = 653
+                add_state_core = 572
+				add_state_core = 580
+                add_state_core = 403
+				add_state_core = 577
+                add_state_core = 579
+				add_state_core = 571
+				add_state_core = 578
+                add_state_core = 40
+                add_state_core = 569
+				add_state_core = 576
+                add_state_core = 578
+				add_state_core = 570
+				add_state_core = 575
+                add_state_core = 878
+				add_state_core = 876
+                add_state_core = 575
+				add_state_core = 565
+				add_state_core = 571
+				add_state_core = 516
+				add_state_core = 568
+                add_state_core = 567
+				add_state_core = 824
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						   create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+					create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						   create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						   create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+					create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						   create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+					}
+				}
+				SIB = {
+                declare_war_on = {
+                    target = RUS
+                    type = civil_war
+            }
+		}
+	}
 }
+#Kronstadt rebellion
 country_event = {
-    id = russia.77
-    title = russia.77.t
-    desc = russia.77.d
+    id = russia.100
+    title = russia.100.t
+    desc = russia.100.d
+    picture = GFX_report_event_ARM_army_training
 
     is_triggered_only = yes
-
-    option = {
-        name = russia.77.a
-        RUS = { 
-        create_wargoal = {
-            type = puppet_wargoal_focus
-            target = ROM
-        }
+    available = {
+    RUS = {
+    has_war_with = SIB
     }
 }
+
+    option = { #end them
+        name = russia.100.a
+RUS = {
+add_manpower = -2900
 }
+ }
+ option = { #ignore them
+	name = russia.100.b
+RUS = {
+	add_stability = -0.08
+	add_war_support = -0.05
+	add_political_power	= -50
+}
+}
+}
+#ottoman revolt for rus decision
 country_event = {
     id = russia.130
     title = russia.130.t
     desc = russia.130.d
+    picture = GFX_OTT_Parliament_Kemal
 
     is_triggered_only = yes
 
-    option = {
+    option = { #we tried
         name = russia.130.a
-		TUR = {
-            transfer_state = 960
-            add_state_core = 960
-		}
-		TUR = {
-            transfer_state = 797
-            add_state_core = 797
-		}
-		TUR = {
-            transfer_state = 341
-            add_state_core = 341
-		}
-        RUS = { 
+		RUS = {
 			add_timed_idea = { idea = RUS_debtforallies_idea days = 365 }
-			White_peace = ENG
-			White_peace = FRA
-			White_peace = TUR
-        }
-    }
+		}
+		TUR = {
+			transfer_state = 340
+			transfer_state = 341
+			transfer_state = 340
+			add_state_core = 341
+			transfer_state = 960
+			add_state_core = 960
+			transfer_state = 797
+			add_state_core = 797
+			transfer_state = 354
+			add_state_core = 354
+		}
+ }
 }
+#ottoman revolt for rus decision
 country_event = {
     id = russia.131
     title = russia.131.t
     desc = russia.131.d
+    picture = GFX_report_event_RUS_meeting
 
     is_triggered_only = yes
 
-    option = {
+    option = { #we won
         name = russia.131.a
-		TUR = {
-		give_military_access = RUS
+		RUS = {
+		transfer_state = 340
+		transfer_state = 341
+		transfer_state = 340
+		transfer_state = 797
+		add_state_core = 341
+		transfer_state = 960
+		add_state_core = 960
+		add_state_core = 937
+		add_state_core = 797
 		}
-        RUS = { 
-			White_peace = ENG
-			White_peace = FRA
-			White_peace = TUR
-            RUS = {
-            transfer_state = 797
-            add_state_core = 797
-            }
-            RUS = {
-            transfer_state = 341
-            add_state_core = 341
-            }
-            RUS = {
-            transfer_state = 960
-            add_state_core = 960
-            }
-            RUS = {
-            transfer_state = 340
-            add_state_core = 340
-            }
-            RUS = {
-            transfer_state = 937
-            add_state_core = 937
-            }
-        }
-    }
+ }
 }

@@ -47,15 +47,13 @@ country_event = {	#Russian Civil War
 	
 	trigger = {
 		AND = {
-		RUS = {
-		has_civil_war = yes
-		}
-			}
+			RUS = { has_war_with = SIB}
+
 			NOT = {
 				has_global_flag = RCW.super
 			}
 		}
-    }
+		}
 	option = {
 		name = super.2.a
 		
@@ -64,6 +62,7 @@ country_event = {	#Russian Civil War
 		
 		set_global_flag = RCW.super
 	}
+}
 country_event = {	#Napoleon returned
 	id = super.3
 	title = super.3.t
@@ -168,7 +167,6 @@ country_event = {	#WWII
 	hidden = yes
 	
 	trigger = {
-		AND = {
 		       OR = {
 				GER = { has_war_with = FRA }
 				GER = { has_war_with = ENG }
@@ -188,7 +186,6 @@ country_event = {	#WWII
 		
 		set_global_flag = WWII.super
 	}
-}
 country_event = {	#russo-japanese
 	id = super.7
 	title = super.7.t
@@ -264,7 +261,7 @@ country_event = {	#Osman returned
 		AND = {
 		    OR = {
 				has_completed_focus = TUR_calph
-				has_completed_focus = TUR_guardin_concil
+				has_completed_focus = TUR_guardian_council
 				 }
 			NOT = {
 				has_global_flag = Osmanreturned.super
@@ -341,7 +338,7 @@ country_event = {	#Bavaria united germany
 		set_global_flag = Bavariaunitegemany.super
 	}
 }
-news_event = {	#February revolution
+country_event = {	#February revolution
 	id = super.12
 	title = super.12.t
 	desc = super.12.d
@@ -404,7 +401,7 @@ country_event = {	# usacivwar
 		set_global_flag = usacivwar.super
 	}
 }
-news_event = {	#New tsar for Russia
+country_event = {	#New tsar for Russia
 	id = super.14
 	title = super.14.t
 	desc = super.14.d
@@ -433,3 +430,65 @@ news_event = {	#New tsar for Russia
 		
 		set_global_flag = rusnewtsar.super
 	}
+}
+country_event = {	#White Russia won
+	id = super.15
+	title = super.15.t
+	desc = super.15.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	major = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+	    country_exists = SIB
+		NOT = { country_exists = RUS }
+			}
+			NOT = {
+				has_global_flag = whiterussiawonreds.super
+			}
+		}
+	option = {
+		name = super.15.a
+		
+		set_global_flag = Super_Event_Visible
+		play_song = "whiterussiawonreds"
+		
+		set_global_flag = whiterussiawonreds.super
+	}
+}
+country_event = {	#Red Russia won
+	id = super.16
+	title = super.16.t
+	desc = super.16.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	major = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+			SIB = {
+			has_capitulated = yes
+			}
+			NOT = {
+				has_global_flag = redrussiawonwhite.super
+			}
+		}
+	option = {
+		name = super.16.a
+		
+		set_global_flag = Super_Event_Visible
+		play_song = "redrussiawonwhite"
+		
+		set_global_flag = redrussiawonwhite.super
+	}
+}

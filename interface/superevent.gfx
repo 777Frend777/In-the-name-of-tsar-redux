@@ -72,4 +72,12 @@ spriteTypes = {
 		name = "GFX_rusnewtsar"
 		textureFile = "/gfx/super_event/rusnewtsar.png"
 	}
+	spriteType = {
+		name = "GFX_whiterussiawonreds"
+		textureFile = "/gfx/super_event/whiterussiawonreds.png"
+	}
+	spriteType = {
+		name = "GFX_redrussiawonwhite"
+		textureFile = "/gfx/super_event/redrussiawonwhite.png"
+	}
 }

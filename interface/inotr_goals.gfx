@@ -5174,8 +5174,59 @@ spriteTypes = {
 		texturefile = "gfx/interface/moldova.png"
 	}
 	SpriteType = { 
-		name = "GFX_Hussar"
-		texturefile = "gfx/interface/GFX_Hussar.png
-}
-
+		name = "GFX_rob_gold_reserve"
+		texturefile = "gfx/interface/goals/rob_gold_reserve.dds"
+	}
+	SpriteType = { 
+		name = "GFX_omon"
+		texturefile = "gfx/interface/goals/omon.dds"
+	}
+	SpriteType = { 
+		name = "GFX_military_operations"
+		texturefile = "gfx/interface/goals/military_operations.dds"
+	}
+	SpriteType = { 
+		name = "GFX_partizanskaya_taktika"
+		texturefile = "gfx/interface/goals/partizanskaya_taktika.dds"
+	}
+	SpriteType = { 
+		name = "GFX_edinaya_i_nedelimaya"
+		texturefile = "gfx/interface/goals/edinaya_i_nedelimaya.dds"
+	}
+	SpriteType = { 
+		name = "GFX_podavit_oblastnikov"
+		texturefile = "gfx/interface/goals/podavit_oblastnikov.dds"
+	}
+	SpriteType = { 
+		name = "GFX_russian_ruble"
+		texturefile = "gfx/interface/goals/russian_ruble.dds"
+	}
+	SpriteType = { 
+		name = "GFX_crush_factories"
+		texturefile = "gfx/interface/goals/crush_factories.dds"
+	}
+	SpriteType = { 
+		name = "GFX_volunters"
+		texturefile = "gfx/interface/goals/volunters.dds"
+	}
+	SpriteType = { 
+		name = "GFX_vse_v_bochky"
+		texturefile = "gfx/interface/goals/vse_v_bochky.dds"
+	}
+	SpriteType = { 
+		name = "GFX_razorenie"
+		texturefile = "gfx/interface/goals/razorenie.dds"
+	}
+	SpriteType = { 
+		name = "GFX_kolchak_reform"
+		texturefile = "gfx/interface/goals/kolchak_reform.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_for_drozdovtsy"
+		texturefile = "gfx/interface/goals/focus_for_drozdovtsy.dds"
+	}
+	SpriteType = { 
+		name = "GFX_markov_focus"
+		texturefile = "gfx/interface/goals/markov_focus.dds"
+	}
 }

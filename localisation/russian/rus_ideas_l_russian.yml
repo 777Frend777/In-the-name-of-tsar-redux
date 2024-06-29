@@ -18,6 +18,8 @@
  RUS_tsar_boris: "Царь Борис Владимирович" #NT!
  RUS_tsar_alexander: "Царь Александр Михайлович" #NT!
  RUS_republic: "Российская Республика" #NT!
+ RUS_organized_wreckers_idea: "Сломанное производство"
+ RUS_organized_wreckers_idea_desc: "Враг с помощью коллаборантов сломал все наши железные дороги нам нужно быстро их починить иначе мы проиграем и очень быстро!"
  RUS_endkebab_decision: "Вернуть Царьград!"
  RUS_debtforallies_idea: "Репарации за войну"
  russia.130.t: "Мы проиграли Турции и союзникам!"

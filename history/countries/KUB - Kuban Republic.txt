@@ -73,4 +73,44 @@ set_popularities = {
 	fascism = 20
 }
 
+create_country_leader = {
+	name = "Mikhail Vasilyevich Alekseyev"
+	desc = "POLITICS_MikhailVA_DESC"
+	picture = "KUB_Mikhail.dds"
+	expire = "1965.1.1"
+	ideology = neutrality_subtype
+	traits = {
+	dictator INOT_ww1_general
+	}
+}
+create_country_leader = {
+	name = "Mikhail Vasilyevich Alekseyev"
+	desc = "POLITICS_MikhailVA_DESC"
+	picture = "KUB_Mikhail.dds"
+	expire = "1965.1.1"
+	ideology = conservatives_subtype
+	traits = {
+	dictator INOT_ww1_general
+	}
+}
+create_country_leader = {
+	name = "Mikhail Vasilyevich Alekseyev"
+	desc = "POLITICS_MikhailVA_DESC"
+	picture = "KUB_Mikhail.dds"
+	expire = "1965.1.1"
+	ideology = socialist_subtype
+	traits = {
+	dictator INOT_ww1_general
+	}
+}
+create_country_leader = {
+	name = "Mikhail Vasilyevich Alekseyev"
+	desc = "POLITICS_MikhailVA_DESC"
+	picture = "KUB_Mikhail.dds"
+	expire = "1965.1.1"
+	ideology = democratic_subtype
+	traits = {
+	dictator INOT_ww1_general	
+	}
+}
 #TODO, James make Ivan Kononov country leader for the fascists

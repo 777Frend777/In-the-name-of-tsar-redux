@@ -3217,3 +3217,116 @@
  HMB_fascism_ADJ:0 "Гамбургское восстание"
  HMB_democratic_ADJ:0 "Гамбургское восстание"
  HMB_neutrality_ADJ:0 "Гамбургское восстание"
+
+ SIB_neutrality: "Временное правительство автономной Сибири" #NT!
+ SIB_neutrality_DEF: "Временное правительство автономной Сибири" #NT!
+ SIB_neutrality_ADJ: "Сибирск." #NT!
+ SIB_democratic: "Сибирская республика" #NT!
+ SIB_democratic_DEF: "Сибирская республика" #NT!
+ SIB_democratic_ADJ: "Сибирск." #NT!
+ SIB_conservatives: "Сибирская республика" #NT!
+ SIB_conservatives_DEF: "Сибирская республика" #NT!
+ SIB_conservatives_ADJ: "Сибирск." #NT!
+ SIB_communism: "Сибирская коммуна" #NT!
+ SIB_communism_DEF: "Сибирская коммуна" #NT!
+ SIB_communism_ADJ: "Сибирск." #NT!
+ SIB_fascism: "Сибирская империя" #NT!
+ SIB_fascism_DEF: "Сибирская империя" #NT!
+ SIB_fascism_ADJ: "Сибирск." #NT!
+ SIB_socialist: "Сибирская республика" #NT!
+ SIB_socialist_DEF: "Сибирская республика" #NT!
+ SIB_socialist_ADJ: "Сибирск." #NT!
+ CAU_neutrality: "Закавказье" #NT!
+ CAU_neutrality_DEF: "Закавказье" #NT!
+ CAU_neutrality_ADJ: "Закавказ." #NT!
+ CAU_democratic: "Закавказская Демократическая Федеративная Республика" #NT!
+ CAU_democratic_DEF: "Закавказская Демократическая Федеративная Республика" #NT!
+ CAU_democratic_ADJ: "ЗДФР" #NT!
+ CAU_conservatives: "Закавказская Демократическая Федеративная Республика" #NT!
+ CAU_conservatives_DEF: "Закавказская Демократическая Федеративная Республика" #NT!
+ CAU_conservatives_ADJ: "ЗДФР" #NT!
+ CAU_communism: "Закавказская Социалистическая Федеративная Советская Республика" #NT!
+ CAU_communism_DEF: "Закавказская Социалистическая Федеративная Советская Республика" #NT!
+ CAU_communism_ADJ: "ЗСФСР" #NT!
+ CAU_socialist: "Закавказская Социалистическая Федеративная Республика" #NT!
+ CAU_socialist_DEF: "Закавказская Социалистическая Федеративная Республика" #NT!
+ CAU_socialist_ADJ: "ЗСФР" #NT!
+ CAU_fascism: "Закавказье" #NT!
+ CAU_fascism_DEF: "Закавказье" #NT!
+ CAU_fascismt_ADJ: "Закавказ." #NT!
+ DON_neutrality: "Всевеликое Войско Донское" #NT!
+ DON_neutrality_DEF: "Всевеликое Войско Донское" #NT!
+ DON_neutrality_ADJ: "Донск." #NT!
+ DON_democratic: "Донская Республика" #NT!
+ DON_democratic_DEF: "Донская Республика #NT!
+ DON_democratic_ADJ: "Донск." #NT!
+ DON_conservatives: "Всевеликое Войско Донское" #NT!
+ DON_conservatives_DEF: "Всевеликое Войско Донское" #NT!
+ DON_conservatives_ADJ: "Донск." #NT!
+ DON_communism: "Донская коммуна" #NT!
+ DON_communism_DEF: "Донская коммуна" #NT!
+ DON_communism_ADJ: "Донск." #NT!
+ DON_fascism: "Всевеликое Войско Донское" #NT!
+ DON_fascism_DEF: "Всевеликое Войско Донское" #NT!
+ DON_fascism_ADJ: "Донск." #NT!
+ DON_socialist: "Донская Республика" #NT!
+ DON_socialist_DEF: "Донская Республика" #NT!
+ DON_socialist_ADJ: "Донск." #NT!
+ KUB_neutrality: "Кубанская Народная Республикай" #NT!
+ KUB_neutrality_DEF: "Кубанская Народная Республикай" #NT!
+ KUB_neutrality_ADJ: "КНР." #NT!
+ KUB_democratic: "Кубанская Народная Республикай" #NT!
+ KUB_democratic_DEF: "Кубанская Народная Республикай" #NT!
+ KUB_democratic_ADJ: "КНР" #NT!
+ KUB_conservatives: "Кубанская Народная Республикай" #NT!
+ KUB_conservatives_DEF: "Кубанская Народная Республикай" #NT!
+ KUB_conservatives_ADJ: "КНР" #NT!
+ KUB_communism: "Кубанская советская республика" #NT!
+ KUB_communism_DEF: "Кубанская советская республика" #NT!
+ KUB_communism_ADJ: "КСР" #NT!
+ KUB_socialist: "Кубанская Народная Республикай" #NT!
+ KUB_socialist_DEF: "Кубанская Народная Республикай" #NT!
+ KUB_socialist_ADJ: "КНР" #NT!
+ KUB_fascism: "Русская Освободительная Армия" #NT!
+ KUB_fascism_DEF: "Русская Освободительная Армия" #NT!
+ KUB_fascismt_ADJ: "Русск." #NT!
+
+ ABK_fascism: "Православное государство Абхазия"
+ ABK_fascism_DEF: "Православное государство Абхазия"
+ ABK_democratic: "Абхазия"
+ ABK_democratic_DEF: "Абхазия"
+ ABK_communism: "Абхазская независимая коммуна"
+ ABK_communism_DEF: "Абхазская независимая коммуна"
+ ABK_neutrality: "Абхазская военная администрация"
+ ABK_neutrality_DEF: "Абхазская военная администрация"
+ ABK_fascism_ADJ: "Абхазск"
+ ABK_democratic_ADJ: "Абхазск"
+ ABK_communism_ADJ: "Абхазск"
+ ABK_neutrality_ADJ: "Абхазск"
+ ABK_SOV_communism_subject: "Абхазская автономная советская социалистическая республика"
+ ABK_SOV_communism_subject_DEF: "Абхазская автономная советская социалистическая республика"
+ ABK_SOV_communism_subject_ADJ: "Абхазск"
+
+ SOA_fascism: "Православное государство Южная оссетия"
+ SOA_fascism_DEF: "Православное государство Южная оссетия"
+ SOA_democratic: "Южная оссетия"
+ SOA_democratic_DEF: "Южная оссетия"
+ SOA_communism: "Южно оссетинская независимая коммуна"
+ SOA_communism_DEF: "Южно оссетинская независимая коммуна"
+ SOA_neutrality: "Южно оссетинская военная администрация"
+ SOA_neutrality_DEF: "Южно оссетинская военная администрация"
+ SOA_fascism_ADJ: "Южно оссетинск"
+ SOA_democratic_ADJ: "Южно оссетинск"
+ SOA_communism_ADJ: "Южно оссетинск"
+ SOA_neutrality_ADJ: "Южно оссетинск"
+ SOA_SOV_communism_subject: "Южно оссетинская автономная советская социалистическая республика"
+ SOA_SOV_communism_subject_DEF: "Южно оссетинская автономная советская социалистическая республика"
+ SOA_SOV_communism_subject_ADJ: "Южно оссетинск"
+
+ MKV: "Марковский полк"
+ MKV_DEF: "Марковский полк"
+ MKV_ADJ: "Марковский полк"
+
+ DOV: "Дроздовский полк"
+ DOV_DEF: "Дроздовский полк"
+ DOV_ADJ: "Дроздовский полк"

@@ -273,3 +273,7 @@ RUS_Puppet={
 	color = rgb { 80 160 80 }
     color_ui = rgb { 80 160 80 }
 }
+SIB_russiaforsiberia={
+	color = rgb { 125 13 24 }
+    color_ui = rgb { 125 13 24 }
+}

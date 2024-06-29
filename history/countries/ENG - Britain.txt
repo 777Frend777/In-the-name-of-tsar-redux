@@ -192,10 +192,6 @@ if = {
 		target = NZL
 		autonomous_state = autonomy_puppet
 	}
-	set_autonomy = {
-		target = AFG
-		autonomous_state = autonomy_satellite
-	}	
 	else = {
 		puppet = AST
 		puppet = WST
@@ -232,7 +228,6 @@ add_to_faction = NZL
 add_to_faction = SAF
 add_to_faction = EGY
 add_to_faction = BLC
-add_to_faction = AFG
 
 give_military_access = RAJ
 add_to_faction = RAJ		# Must be after puppet

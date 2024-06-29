@@ -635,3 +635,11 @@ WST = {
 	color = rgb { 90 130 55 }
 	color_ui = rgb { 80 190 120 }
 }
+CAU = {
+	color = rgb { 255  204  204 }
+	color_ui = rgb { 255  204  204 }
+}
+SIB = {
+	color = rgb { 173  245  118 }
+	color_ui = rgb { 173  245  118 }
+}
