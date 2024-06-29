@@ -1,0 +1,35 @@
+characters = {
+
+	SIB_Kolchak = {
+		name = Alexander_Kolchak
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIB/SIB_Kolchak.dds"
+			}
+		}
+		
+		country_leader = {
+			ideology = neutrality_subtype
+			traits = { anti_communist battlefleet_designer veteran_anti_bolshevik }
+			expire = "1953.3.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = socialist_subtype
+			traits = { anti_communist battlefleet_designer veteran_anti_bolshevik }
+			expire = "1953.3.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = conservatives_subtype
+			traits = { anti_communist battlefleet_designer veteran_anti_bolshevik }
+			expire = "1953.3.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = democratic_subtype
+			traits = { anti_communist battlefleet_designer veteran_anti_bolshevik }
+			expire = "1953.3.1.1"
+			id = -1
+		}
+}

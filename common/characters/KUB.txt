@@ -1,0 +1,34 @@
+characters = {
+
+	DON_Mikhail_Vasilyevich_Alekseyev = {
+		name = Mikhail_Vasilyevich_Alekseyev
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KUB/KUB_Mikhail.dds"
+			}
+		}
+		
+		country_leader = {
+			ideology = neutrality_subtype
+			traits = { dictator INOT_ww1_general }
+			expire = "1953.3.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = socialist_subtype
+			traits = { dictator INOT_ww1_general }
+			expire = "1953.3.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = conservatives_subtype
+			traits = { dictator INOT_ww1_general }
+			expire = "1953.3.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = democratic_subtype
+			traits = { dictator INOT_ww1_general }
+			expire = "1953.3.1.1"
+			id = -1
+		}

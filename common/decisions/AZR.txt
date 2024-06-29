@@ -1,0 +1,41 @@
+AZR_war_arm_category = {
+AZR_War_arm = {
+		icon = GFX_decision_hand_grab
+
+		allowed = {
+			tag = AZR
+		}
+
+		available = {
+    				country_exists = ARM
+			  }
+
+		cost = 40
+
+		fire_only_once = yes
+
+		days_remove = 30
+
+		modifier = {
+
+		}
+
+		visible = {
+			tag = AZR
+			
+		}
+
+		remove_effect = {
+AZR = {
+ declare_war_on = {
+	type = take_state_focus
+	target = ARM
+	generator = { 955 }
+}
+}
+		}
+                                ai_will_do = {
+			base = 200
+                                }
+	}
+}

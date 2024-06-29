@@ -1,0 +1,62 @@
+ideas = {
+        
+	country = {
+	    SIB_vidat_ordena = {
+			picture = advisors_russia
+			allowed = {
+				original_tag = SIB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.1
+			}
+		}
+	    SIB_partizansakaya_voina = {
+			picture = Recruitment_Crisis
+			allowed = {
+				original_tag = SIB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+			}
+		}
+    	    SIB_Russian_ruble = {
+			picture = MON_russian_help_icon
+			allowed = {
+				original_tag = SIB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		SIB_civil_war_recovery_idea = {
+
+			picture = LEC_exhausted_reserves
+
+			allowed = {
+				always = no # Added via focus
+			}
+			removal_cost = -1
+			modifier = {
+				ai_get_ally_desire_factor = -200
+				join_faction_tension = 0.5
+				stability_factor = -0.15
+				war_support_factor = -0.50
+			}
+		}
+	}
+}

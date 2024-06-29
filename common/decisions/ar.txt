@@ -1,0 +1,134 @@
+RUS_civil_war = {
+#белые выйграли
+	RUS_victory_over_the_reds = {
+	visible = {
+    OR = {	
+	    original_tag = DON
+		original_tag = KUB
+		original_tag = SIB
+		original_tag = UKR
+		original_tag = BLR
+	}
+	}
+	available = {
+	NOT = { country_exists = RUS }
+	is_subject = no 
+	}
+	cost = 0       
+	ai_will_do = {
+		factor = 10
+	}              
+	fire_only_once = yes
+	modifier = {                                                                         
+			stability_factor = 0.10
+	}
+	complete_effect = {
+		country_event = { id = ruscivilwar.4 days = 2 }
+		news_event = { id = ruscivilwar.2 days = 2 }
+		}
+}
+#красные выйграли
+	RUS_victory_over_the_whites = {
+	allowed = { 
+	original_tag = RUS 
+	}
+	available = {
+	NOT = {
+        OR = {	
+	    country_exists = SIB 
+		country_exists = KUB 
+		country_exists = UKR 
+		country_exists = BLR 
+		country_exists = DON 
+		}
+		}
+	is_subject = no 
+	}
+	cost = 0       
+	ai_will_do = {
+		factor = 10
+	}              
+	fire_only_once = yes
+	modifier = {                                                                         
+			stability_factor = 0.15
+	}
+	complete_effect = {
+		news_event = { id = ruscivilwar.1 days = 2 }
+		set_global_flag = RCW_over
+		}
+}
+	RUS_unite_russia = {
+	allowed = { 
+			OR =  {
+				tag = DON
+				tag = BLR
+				tag = SIB
+				tag = UKR
+				tag = KUB
+			}
+		}
+	available = {
+			if = {
+				limit = { tag = SIB }
+				NOT = { country_exists = DON }
+				NOT = { country_exists = KUB }
+				NOT = { country_exists = BLR }
+				NOT = { country_exists = UKR }
+			}
+			if = {
+				limit = { tag = DON }
+				NOT = { country_exists = SIB }
+				NOT = { country_exists = KUB }
+				NOT = { country_exists = BLR }
+				NOT = { country_exists = UKR }
+			}
+			if = {
+				limit = { tag = KUB }
+				NOT = { country_exists = DON }
+				NOT = { country_exists = SIB }
+				NOT = { country_exists = BLR }
+				NOT = { country_exists = UKR }
+			}
+			if = {
+				limit = { tag = BLR }
+				NOT = { country_exists = DON }
+				NOT = { country_exists = KUB }
+				NOT = { country_exists = SIB }
+				NOT = { country_exists = UKR }
+			}
+			if = {
+				limit = { tag = UKR }
+				NOT = { country_exists = DON }
+				NOT = { country_exists = KUB }
+				NOT = { country_exists = SIB }
+				NOT = { country_exists = BLR }
+			}
+			owns_state = 195
+			owns_state = 219
+		}
+	cost = 0       
+	ai_will_do = {
+		factor = 10
+	}              
+	fire_only_once = yes
+	
+	complete_effect = {
+		country_event = { id = ruscivilwar.3 days = 2 }
+		set_global_flag = RCW_over
+		}
+}
+SIB_oblastniki = {
+    activation = { always = no }
+    available = {
+        has_war = no
+    }
+	
+    icon = mission_icon     
+    is_good = yes
+    days_mission_timeout = 85
+    selectable_mission = no
+    timeout_effect = {
+        country_event = { id = siberia.1 days = 2 }
+    }
+}
+}

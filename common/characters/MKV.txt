@@ -1,0 +1,34 @@
+characters = {
+
+	MKV_Sergey_Leonidovich_Markov = {
+		name = Sergey_Leonidovich_Markov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MKV/MKV_markov.dds"
+			}
+		}
+		
+		country_leader = {
+			ideology = neutrality_subtype
+			traits = { anti_communist dictator INOT_ww1_general }
+			expire = "1953.3.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = socialist_subtype
+			traits = { anti_communist dictator INOT_ww1_general }
+			expire = "1953.3.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = conservatives_subtype
+			traits = { anti_communist dictator INOT_ww1_general }
+			expire = "1953.3.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = democratic_subtype
+			traits = { anti_communist dictator INOT_ww1_general }
+			expire = "1953.3.1.1"
+			id = -1
+		}

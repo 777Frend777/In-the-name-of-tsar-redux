@@ -1,0 +1,65 @@
+SIB_war_jap_category = {
+SIB_war_jap = {
+		icon = GFX_decision_hand_grab
+
+		allowed = {
+			tag = SIB
+		}
+
+		available = {
+    				country_exists = MAN
+    				country_exists = JAP
+				RUS = {
+					has_capitulated = yes
+					}
+
+			  }
+
+		cost = 40
+
+		fire_only_once = yes
+
+		days_remove = 7
+
+		modifier = {
+		}
+
+		visible = {
+			tag = SIB
+			
+		}
+
+		remove_effect = {
+SIB = {
+add_state_core = 562
+add_state_core = 874
+add_state_core = 822
+add_state_core = 637
+add_state_core = 875
+add_state_core = 561
+add_state_core = 560
+add_state_core = 409
+add_state_core = 408
+add_state_core = 949
+add_state_core = 537
+add_state_core = 655
+add_state_core = 555
+}
+SIB = {
+ declare_war_on = {
+    target = JAP
+    type = annex_everything
+}
+}
+SIB = {
+ declare_war_on = {
+    target = MAN
+    type = annex_everything
+}
+}
+		}
+                                ai_will_do = {
+			base = 200
+                                }
+	}
+}

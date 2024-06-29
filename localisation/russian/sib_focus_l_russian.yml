@@ -1,0 +1,35 @@
+﻿l_russian:
+ SIB_doloi_bolshevikov: "Долой большевиков !" #NT!
+ SIB_doloi_bolshevikov_desc: "Долой большевиков !" #NT!
+ SIB_Edinaya_i_nedelimaya: "Единая и неделимая" #NT!
+ SIB_Edinaya_i_nedelimaya_desc: "Единая и неделимая" #NT!
+ SIB_OMON: "ОМОН" #NT!
+ SIB_OMON_desc: "ОМОН" #NT!
+ SIB_reforma_kolchaka: "Реформа Колчака" #NT!
+ SIB_reforma_kolchaka_desc: "ОМОН" #NT!
+ SIB_pritok_dobrovolcev: "Приток добровольцев" #NT!
+ SIB_pritok_dobrovolcev_desc: "ОМОН" #NT!
+ SIB_operations: "Военные операции" #NT!
+ SIB_operations_desc: "ОМОН" #NT!
+ SIB_vidat_ordena: "Выдать ордена" #NT!
+ SIB_vidat_ordena_desc: "ОМОН" #NT!
+ SIB_opustoshenie_zapasov: "Опустошение запасов" #NT!
+ SIB_opustoshenie_zapasov_desc: "ОМОН" #NT!
+ SIB_naiti_artilleriu: ""По сусекам поскрести"" #NT!
+ SIB_naiti_artilleriu_desc: "ОМОН" #NT!
+ SIB_partizanskaya_voina: "Партизанская война" #NT!
+ SIB_partizanskaya_voina_desc: "ОМОН" #NT!
+ SIB_Russian_ruble: "Русский рубль" #NT!
+ SIB_Russian_ruble_desc: "ОМОН" #NT!
+ SIB_svorovat_zolotoi_zapas: "Своровать золотой запас" #NT!
+ SIB_svorovat_zolotoi_zapas_desc: "ОМОН" #NT!
+ SIB_podavit_sibirskih_oblastnikov: "Подавить сибирских областников" #NT!
+ SIB_podavit_sibirskih_oblastnikov_desc: "ОМОН" #NT!
+ SIB_crush_railways: "Сломать производство врагу!" #NT!
+ SIB_crush_railways_desc: "ОМОН" #NT!
+ SIB_partizansakaya_voina: "Партизанская помощь"
+ SIB_partizansakaya_voina_desc: ""
+ SIB_war_jap: "Вернуть дальний восток!"
+ SIB_war_jap_category: "Национальные территории"
+ Sovrus_war_jap: "Вернуть Дальний восток"
+ Sovrus_war_jap_category: "Национальные территории"

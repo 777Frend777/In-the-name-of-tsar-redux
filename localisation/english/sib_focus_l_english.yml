@@ -1,0 +1,35 @@
+﻿l_english:
+ SIB_doloi_bolshevikov: "Down with the Bolsheviks!" #NT!
+ SIB_doloi_bolshevikov_desc: "Down with the Bolsheviks!" #NT!
+ SIB_Edinaya_i_nedelimaya: "One and indivisible" #NT!
+ SIB_Edinaya_i_nedelimaya_desc: "One and indivisible" #NT!
+ SIB_OMON: "OMON" #NT!
+ SIB_OMON_desc: "OMON" #NT!
+ SIB_reforma_kolchaka: "Kolchak reform" #NT!
+ SIB_reforma_kolchaka_desc: "" #NT!
+ SIB_pritok_dobrovolcev: "Influx of volunteers" #NT!
+ SIB_pritok_dobrovolcev_desc: "" #NT!
+ SIB_operations: "Military operations" #NT!
+ SIB_operations_desc: "" #NT!
+ SIB_vidat_ordena: "Issue orders" #NT!
+ SIB_vidat_ordena_desc: "" #NT!
+ SIB_opustoshenie_zapasov: "Depletion of stocks" #NT!
+ SIB_opustoshenie_zapasov_desc: "" #NT!
+ SIB_naiti_artilleriu: ""Scrape the bottom of the barrel"" #NT!
+ SIB_naiti_artilleriu_desc: "" #NT!
+ SIB_partizanskaya_voina: "Guerrilla warfare" #NT!
+ SIB_partizanskaya_voina_desc: "" #NT!
+ SIB_Russian_ruble: "Russian ruble" #NT!
+ SIB_Russian_ruble_desc: "" #NT!
+ SIB_svorovat_zolotoi_zapas: "Steal the gold reserves" #NT!
+ SIB_svorovat_zolotoi_zapas_desc: "" #NT!
+ SIB_podavit_sibirskih_oblastnikov: "Suppress the Siberian regionalists" #NT!
+ SIB_podavit_sibirskih_oblastnikov_desc: "" #NT!
+ SIB_crush_railways: "Break the enemy's production!" #NT!
+ SIB_crush_railways_desc: "" #NT!
+ SIB_partizansakaya_voina: "Guerrilla assistance" #NT!
+ SIB_partizansakaya_voina_desc: ""
+ SIB_war_jap: "Take back the Far East!"
+ SIB_war_jap_category: "National territories"
+ Sovrus_war_jap: "Bring back the Far East"
+ Sovrus_war_jap_category: "National territories"

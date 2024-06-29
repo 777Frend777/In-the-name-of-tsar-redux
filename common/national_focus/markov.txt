@@ -1,0 +1,65 @@
+focus_tree = {
+	id = markov
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MKV
+		}
+	}
+	focus = {
+		id = MKV_Markov_regiment_marches
+		icon = GFX_markov_focus
+		cost = 0
+		x = 11
+		y = 0
+		completion_reward = {
+				capital_scope = {
+				create_unit = {
+					division = "name = \"Oficerskiy batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = MKV
+				}
+				create_unit = {
+					division = "name = \"Yunkerskiy batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = MKV
+				}
+				create_unit = {
+					division = "name = \"Kolchackovskiy batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = MKV
+				}
+						   create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = MKV
+						}
+						create_unit = {
+							division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = MKV
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = MKV
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = MKV
+						}
+						create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = MKV
+						}
+						create_unit = {
+							division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = MKV
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = MKV
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = MKV
+						}
+			}
+		}
+	}
+}

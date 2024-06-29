@@ -1,0 +1,53 @@
+﻿l_english:
+ MKV_Markov_regiment_marches: "The Markov Regiment is marching!" #NT!
+ DOV_Drozdov_regiment_marches: "The Drozdovsky regiment is marching!" #NT!
+ SIB_start_mutiny: "Sponsor a rebellion among enemies!" #NT!
+ SIB_start_mutiny_desc: "We need to choose which general will stage a mutiny against our enemies" #NT!
+ SIB_WIP: "Work in progress" #NT!
+ SIB_WIP_desc: "Be patient or if you want you can help with development in our discord" #NT!
+ siberia.20.t: "Who should be appointed to the rebellion?" #NT!
+ siberia.20.d: "We need to choose which of the generals will stage a rebellion in Soviet Russia" #NT!
+ siberia.20.a: "Markov" #NT!
+ siberia.20.b: "Drozdov" #NT!
+ siberia.21.t: "Mutiny in Soviet Russia" #NT!
+ siberia.21.d: "Due to instability in the country, a rebellion began from Markov and his regiment, perhaps he was exiled from Kolchak" #NT!
+ siberia.21.a: "Let's defeat them!" #NT!
+ siberia.22.t: "Mutiny in Soviet Russia" #NT!
+ siberia.22.d: "Due to instability in the country, a rebellion began from Drozdov and his regiment, perhaps he was exiled from Kolchak" #NT!
+ siberia.22.a: "Let's defeat them!" #NT!
+ AZR_war_arm_category: "Return national territories!" #NT!
+ AZR_War_arm: "Capture Nagorno-Karabakh!" #NT!
+ GEO_war_small_category: "Return national territories!" #NT!
+ GEO_War_os_abk: "Capture the breakaway republics!" #NT!
+ russia.98.t: "Collapse of the USSR" #NT!
+ russia.98.d: "Due to instability in the USSR, many republics decided to break away and declared independence; can we defeat them?" #NT!
+ russia.98.a: "We will defeat them!" #NT!
+ russia.98.b: "For Ukraine!" #NT!
+ russia.98.c: "For Belarus!" #NT!
+ russia.99.t: "Civil War!" #NT!
+ russia.99.d: "Since many republics broke away, many began to worry that this could be the end of Russia and many, including the White Guards, rebelled against the USSR" #NT!
+ russia.99.a: "For the Reds! (play for the USSR)" #NT!
+ russia.99.b: "Free Rus' will rise again! (play as the White Guards)" #NT!
+ russia.100.t: "Kronstadt uprising!" #NT!
+ russia.100.d: "An armed uprising began in Kronstadt by the garrison of the Kronstadt fortress, the crews of the Baltic Fleet ships and city residents against the Bolshevik dictatorship and the ongoing policy of “war communism”." #NT!
+ russia.100.a: "Suppress the rebellion!" #NT!
+ russia.100.b: "They'll calm down on their own" #NT!
+ SIB_go_exile_in_serbia: "Escape to [SER.GetName]" #NT!
+ SIB_go_exile_in_serbia_desc: "We lost..." #NT!
+ SIB_won_reds: "We won the civil war!" #NT!
+ SIB_won_reds_desc: "Although we won, this is not the end because there are still other countries before us" #NT!
+ SIB_civil_war_recovery_idea: "Recovery after the Civil War" #NT!
+ SIB_civil_war_recovery_idea_desc: ""
+ruscivilwar.3.t: "Russia united again!"
+ruscivilwar.3.d: "We won and now we're going to nationalise all the land"
+ruscivilwar.3.a: "Hooray!"
+RUS_civil_war: "Civil war"
+RUS_unite_russia: "Unite Russia"
+RUS_victory_over_the_reds: "Victory!"
+ruscivilwar.2.t: "The Russian Civil War ended"
+ruscivilwar.2.d: "After a long time, the bloody civil war ended."
+ruscivilwar.2.a: "What future awaits the new Russia?"
+ruscivilwar.4.t: "The time has come..."
+ruscivilwar.4.d: "It's time to end the smaller states to become united again!"
+ruscivilwar.4.a: "We're in charge here now!"
+RUS_victory_over_the_whites: "Unite Russia!"

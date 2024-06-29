@@ -1,0 +1,23 @@
+RUS_civil_war = {
+
+   icon = border_war
+   
+   priority = 90
+   
+   allowed = {
+   OR = {
+   original_tag = SIB
+   original_tag = KUB
+   original_tag = DON
+   original_tag = UKR
+   original_tag = BLR
+   original_tag = RUS
+   }
+}
+visible = {
+		OR = {
+			has_global_flag = RCW_begun
+		}
+		NOT = { has_global_flag = RCW_over }
+	}
+}

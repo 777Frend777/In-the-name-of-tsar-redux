@@ -1,0 +1,34 @@
+	characters = {
+
+	UKR_Skoropadskiy = {
+		name = Skoropadskiy
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UKR/UKR_Skoropadskiy.dds"
+			}
+		}
+		
+		country_leader = {
+			ideology = neutrality_subtype
+			traits = { emergency_powers anti_communist }
+			expire = "1953.3.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = socialist_subtype
+			traits = { emergency_powers anti_communist }
+			expire = "1953.3.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = conservatives_subtype
+			traits = { emergency_powers anti_communist }
+			expire = "1953.3.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = democratic_subtype
+			traits = { emergency_powers anti_communist }
+			expire = "1953.3.1.1"
+			id = -1
+		}

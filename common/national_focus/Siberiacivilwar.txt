@@ -1,0 +1,549 @@
+focus_tree = {
+	id = Siberiacivilwar
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SIB
+		}
+	}
+	default = no
+	focus = {
+		id = SIB_doloi_bolshevikov
+		icon = GFX_goal_broken_red_star
+		cost = 1
+		x = 11
+		y = 0
+		completion_reward = {
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						   create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+					create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						   create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						   create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+					create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Leyb-Gvardiya batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						   create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+						division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+						owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+						create_unit = {
+							division = "name = \"Kavaleriyskiy batal'yon\" division_template = \"Cossacks Brigada\" start_experience_factor = 0.85 start_equipment_factor = 1"
+							owner = SIB
+						}
+					}
+		add_political_power = 120
+		}
+	}
+	focus = {
+		id = SIB_reforma_kolchaka
+		icon = GFX_kolchak_reform
+		cost = 3,00
+		prerequisite = {
+			focus = SIB_doloi_bolshevikov
+		}
+		x = 6
+		y = 1
+		completion_reward = {
+		Army_experience = 50
+		add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SIB_opustoshenie_zapasov
+		icon = GFX_razorenie
+		cost = 3,00
+		prerequisite = {
+			focus = SIB_reforma_kolchaka
+		}
+		x = 4
+		y = 2
+        completion_reward = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 3000
+                producer = SIB
+            }
+		}
+	}
+	focus = {
+		id = SIB_vidat_ordena
+		icon = GFX_goal_RUS_white_legacy
+		cost = 3,00
+		prerequisite = {
+			focus = SIB_reforma_kolchaka
+		}
+		x = 5
+		y = 3
+        completion_reward = {
+		add_ideas = { SIB_vidat_ordena }
+	    }
+	}
+	focus = {
+		id = SIB_pritok_dobrovolcev
+		icon = GFX_volunters
+		cost = 3,00
+		prerequisite = {
+			focus = SIB_reforma_kolchaka
+		}
+		x = 7
+		y = 3
+		completion_reward = { 
+           capital_scope = {
+				create_unit = {
+					division = "name = \"Oficerskiy batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"Yunkerskiy batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"Kolchackovskiy batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = ROOT
+				}
+			}
+        }
+ 	} 	
+	focus = {
+		id = SIB_OMON
+		icon = GFX_omon
+		cost = 3,00
+		prerequisite = {
+			focus = SIB_reforma_kolchaka
+		}
+		x = 8
+		y = 2
+		completion_reward = { 
+		create_intelligence_agency = {
+            name = "OMON"
+            icon = GFX_goal_SIB_secret_agency
+        }
+		add_decryption = {
+            target = RUS
+            ratio = 0.3
+        }
+	}
+}
+	focus = {
+		id = SIB_Edinaya_i_nedelimaya
+		icon = GFX_edinaya_i_nedelimaya
+		cost = 3,00
+		prerequisite = {
+			focus = SIB_doloi_bolshevikov
+		}
+		x = 14
+		y = 1
+		completion_reward = {
+        add_stability = 0.1
+		}
+	}
+	focus = {
+		id = SIB_Russian_ruble
+		icon = GFX_russian_ruble
+		cost = 3,00
+		prerequisite = {
+			focus = SIB_Edinaya_i_nedelimaya
+		}
+		x = 11
+		y = 2
+		completion_reward = {
+		add_ideas = { SIB_Russian_ruble }
+	}
+	}
+	focus = {
+		id = SIB_svorovat_zolotoi_zapas
+		icon = GFX_rob_gold_reserve
+		cost = 3,00
+		prerequisite = {
+			focus = SIB_Edinaya_i_nedelimaya
+		}
+		x = 13
+		y = 2
+        completion_reward = {
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = arms_factory
+			 level = 2
+			 instant_build = yes
+		    }
+				
+		  }
+		 random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 2
+			 instant_build = yes
+		    }
+				
+		  } 
+		}
+	}
+	focus = {
+		id = SIB_podavit_sibirskih_oblastnikov
+		icon = GFX_podavit_oblastnikov
+		cost = 3,00
+		prerequisite = {
+			focus = SIB_Edinaya_i_nedelimaya
+		}
+		x = 15
+		y = 2
+		completion_reward = {
+			SIB = {
+                add_state_core = 877
+                add_state_core = 644
+		add_state_core = 574
+			}
+		}
+}
+	focus = {
+		id = SIB_start_mutiny
+		icon = GFX_goal_MON_we_dont_need_russia
+		cost = 3,00
+    available = {
+RUS = {
+    has_stability < 0.3
+}
+}
+			prerequisite = { focus = SIB_podavit_sibirskih_oblastnikov }
+			prerequisite = { focus = SIB_svorovat_zolotoi_zapas }	
+			prerequisite = { focus = SIB_Russian_ruble }
+			prerequisite = { focus = SIB_crush_railways }		
+		x = 15
+		y = 3
+		completion_reward = {
+			SIB = {
+		 country_event = { id = siberia.20 }
+			}
+		}
+}
+	focus = {
+		id = SIB_won_reds
+		icon = GFX_goal_RUS_monarchy
+		cost = 3,00
+    available = {
+		AND = {
+RUS = {
+		NOT = { country_exists = RUS }
+country_exists = SIB
+}
+}
+}
+			prerequisite = { focus = SIB_podavit_sibirskih_oblastnikov }
+			prerequisite = { focus = SIB_svorovat_zolotoi_zapas }	
+			prerequisite = { focus = SIB_Russian_ruble }
+			prerequisite = { focus = SIB_crush_railways }		
+		x = 13
+		y = 3
+		completion_reward = {
+			SIB = {
+set_cosmetic_tag = SIB_russiaforsiberia
+		load_focus_tree = russiantree
+add_timed_idea = { idea = SIB_civil_war_recovery_idea  days = 183 }
+complete_national_focus = RUS_tsar_speech
+complete_national_focus = RUS_force_abdication
+complete_national_focus = RUS_remove_tsar
+add_ideas = RUS_republic
+add_ideas = RUS_general_staff
+			}
+		}
+}
+	focus = {
+		id = SIB_operations
+		icon = GFX_military_operations
+		cost = 3,00
+		prerequisite = {
+			focus = SIB_reforma_kolchaka
+		}
+		x = 6
+		y = 4
+		completion_reward = {
+			RUS = {
+					every_controlled_state = {
+						limit = {
+							is_controlled_by = RUS
+							industrial_complex > 2
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 2
+						}
+					}
+				}
+}
+}
+	focus = {
+		id = SIB_partizanskaya_voina
+		icon = GFX_partizanskaya_taktika
+		cost = 3,00
+		prerequisite = {
+			focus = SIB_OMON
+		}
+		x = 9
+		y = 4
+        completion_reward = {
+			SIB = {
+		add_ideas = SIB_partizansakaya_voina 
+			}
+	}
+	}
+	focus = {
+		id = SIB_naiti_artilleriu
+		icon = GFX_vse_v_bochky
+		cost = 3,00
+		prerequisite = {
+			focus = SIB_opustoshenie_zapasov
+		}
+		x = 3
+		y = 4
+        completion_reward = {
+       capital_scope = {
+				create_unit = {
+					division = "name = \"Oficerskiy batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"Yunkerskiy batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"Kolchackovskiy batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"Kolchackovskiy batal'yon\" division_template = \"Leyb-Gvardiya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+					owner = ROOT
+				}
+			}
+}
+	}
+	focus = {
+		id = SIB_go_exile_in_serbia
+		icon = GFX_goal_PAL_Russian_Refugees
+		cost = 3,00
+		prerequisite = {
+			focus = SIB_naiti_artilleriu
+		}
+		x = 3
+		y = 5
+available = {
+SIB = {
+surrender_progress > 0.5
+}
+}
+        completion_reward = {
+SIB = {
+become_exiled_in = { target = SER legitimacy = 30 }
+}
+}
+            }
+	focus = {
+		id = SIB_crush_railways
+		icon = GFX_crush_factories
+		cost = 3,00
+		prerequisite = {
+			focus = SIB_Edinaya_i_nedelimaya
+		}
+		x = 17
+		y = 2
+        completion_reward = {
+			RUS = {
+		add_timed_idea = { 
+			idea = RUS_organized_wreckers_idea
+			days = 183 
+		}
+				hidden_effect = {
+					every_controlled_state = {
+						limit = {
+							is_controlled_by = RUS
+							industrial_complex > 2
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 2
+						}
+					}
+				}
+	}
+}
+}
+}

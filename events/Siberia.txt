@@ -1,0 +1,522 @@
+
+########################
+########################
+##                    ##
+##  SIBERIAN  EVENTS  ##
+##                    ##
+########################
+########################
+
+add_namespace = siberia
+country_event = {
+    id = siberia.1
+    title = siberia.1.t
+    desc = siberia.1.d
+    picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+	
+	option = {
+        name = siberia.1.a
+        ai_chance = { factor = 100 }
+		set_politics = {
+            ruling_party = democratic
+            elections_allowed = yes
+        }
+		load_focus_tree = {
+          tree = Oblastnikifocustree
+          keep_completed = yes
+        }
+		set_political_party = {
+            ideology = democratic
+            popularity = 50
+        }
+    }
+}	
+country_event = {
+    id = siberia.2
+    title = siberia.2.t
+    desc = siberia.2.d
+    picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+	
+	option = {
+        name = siberia.2.a
+        ai_chance = { factor = 80 }
+		SIB = { 
+        country_event = {
+			id = siberia.3
+			days = 1
+			}
+	    }		
+    }
+	option = {
+        name = siberia.2.a
+        ai_chance = { factor = 20 }
+        SIB = { 
+        country_event = {
+			id = siberia.4
+			days = 1
+			}
+	    }
+    }
+}
+country_event = {
+    id = siberia.3
+    title = siberia.3.t
+    desc = siberia.3.d
+    picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+	
+	option = {
+        name = siberia.3.a
+        complete_national_focus = SIB_mir
+		white_peace = RUS
+    }
+}	
+country_event = {
+    id = siberia.4
+    title = siberia.4.t
+    desc = siberia.4.d
+    picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+	
+	option = {
+        name = siberia.4.a
+        complete_national_focus = SIB_mira_ne_budet
+    }
+}	
+country_event = {
+    id = siberia.5
+    title = siberia.5.t
+    desc = siberia.5.d
+    picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+	
+	option = {
+        name = siberia.5.a
+        complete_national_focus = SIB_mira_ne_budet
+		capital_scope = {
+			    create_unit = {
+			        division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				    owner = SIB
+				}
+				create_unit = {
+			        division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				    owner = SIB
+				}
+				create_unit = {
+			        division = "name = \"Pekhotniy batal'yon\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				    owner = SIB
+				}
+		}		
+    }
+}
+country_event = {
+    id = siberia.6
+    title = siberia.6.t
+    desc = siberia.6.d
+    picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+	
+	option = {
+        name = siberia.6.a
+        complete_national_focus = SIB_uss
+    }
+    option = {
+        name = siberia.6.b
+        complete_national_focus = SIB_fed
+    }
+}
+country_event = {
+    id = siberia.7
+    title = siberia.7.t
+    desc = siberia.7.d
+    picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+	
+	option = {
+	ai_chance = { factor = 70 }
+        name = siberia.7.a
+		hidden_effect = {
+        complete_national_focus = SIB_vse_stalo_huze
+		}
+    }
+    option = {
+        name = siberia.7.b
+		ai_chance = { factor = 30 }
+       hidden_effect = {
+         country_event = {
+			id = siberia.8
+			days = 10
+			}
+		}
+    }
+}
+country_event = {
+    id = siberia.8
+    title = siberia.8.t
+    desc = siberia.8.d
+    picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+	
+	option = {
+        name = siberia.8.a
+		ai_chance = { factor = 100 }
+        hidden_effect = {
+         country_event = {
+			id = siberia.9
+			days = 10
+			}
+		}
+    }
+    option = {
+        name = siberia.8.b
+       hidden_effect = {
+        complete_national_focus = SIB_vse_stalo_huze
+		}
+    }
+}
+}
+country_event = {
+    id = siberia.9
+    title = siberia.9.t
+    desc = siberia.9.d
+    picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+	
+	option = {
+        name = siberia.9.a
+		hidden_effect = {
+        complete_national_focus = SIB_vse_stalo_huze
+		}
+    }
+    option = {
+        name = siberia.9.b
+		ai_chance = { factor = 100 }
+       hidden_effect = {
+        complete_national_focus = SIB_problema_reshena
+		}
+		}
+    }
+country_event = {
+    id = siberia.10
+    title = siberia.10.t
+    desc = siberia.10.d
+    picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+	
+	option = {
+        name = siberia.10.a
+		ai_chance = { factor = 80 }
+		 country_event = {
+			id = siberia.12
+			days = 11
+			}
+    }		
+    option = {
+        name = siberia.10.b
+		ai_chance = { factor = 20 }
+       country_event = {
+			id = siberia.11
+			days = 11
+			}
+		}
+    }	
+country_event = {
+    id = siberia.11
+    title = siberia.11.t
+    desc = siberia.11.d
+    picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+	
+	option = {
+        name = siberia.11.a
+		ai_chance = { factor = 80 }
+		add_political_power = -25
+    }
+}	
+country_event = {
+    id = siberia.12
+    title = siberia.12.t
+    desc = siberia.12.d
+    picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+	
+	option = {
+        name = siberia.12.a
+		{ factor = 80 }
+		add_political_power = 25
+    }
+}
+country_event = {
+    id = siberia.13
+    title = siberia.13.t
+    desc = siberia.13.d
+    picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+	
+	option = {
+        name = siberia.13.a
+		ai_chance = { factor = 100 }
+		set_global_flag = usa_priznal_sib
+		 country_event = {
+			id = siberia.12
+			days = 11
+			}
+    }
+	option = {
+        name = siberia.13.b
+		 country_event = {
+			id = siberia.11
+			days = 11
+			}
+    }
+}	
+country_event = {
+    id = siberia.14
+    title = siberia.14.t
+    desc = siberia.14.d
+    picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+	
+	option = {
+        name = siberia.14.a
+		ai_chance = { factor = 100 }
+		add_ideas = { SIB_kulturni_obmen }
+		SIB = {
+		add_ideas = { SIB_kulturni_obmen }
+	}	
+    }
+	option = {
+        name = siberia.14.b
+    }
+}
+country_event = {
+    id = siberia.15
+    title = siberia.15.t
+    desc = siberia.15.d
+    picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+	
+	option = {
+        name = siberia.15.a
+		ai_chance = { factor = 100 }
+		 SIB = {
+		 add_resource = {
+		        type = steel
+			    amount = 25
+			    state = 568
+			}
+			add_resource = {
+				type = rubber
+				amount = 25
+				state = 578
+			}
+			add_resource = {
+				type = oil
+				amount = 25
+				state = 653
+			} 
+			}
+		    add_resource = {
+		        type = steel
+			    amount = 25
+			    state = 361
+			}
+			add_resource = {
+				type = rubber
+				amount = 25
+				state = 361
+			}
+			add_resource = {
+				type = oil
+				amount = 25
+				state = 361
+		    }
+		}	
+	option = {
+        name = siberia.15.b
+    }
+}
+country_event = {
+    id = siberia.16
+    title = siberia.16.t
+    desc = siberia.16.d
+    picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+	
+	option = {
+        name = siberia.16.a
+		ai_chance = { factor = 100 }
+		create_faction = United_States
+		USA = { add_to_faction = SIB }	
+    }
+	option = {
+        name = siberia.16.b
+		
+    }
+}
+country_event = {
+    id = siberia.17
+    title = siberia.17.t
+    desc = siberia.17.d
+    picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+	
+	option = {
+        name = siberia.17.a
+		ai_chance = { factor = 100 }
+		army_experience = 25
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 3
+				category = land_doctrine
+			}
+	    SIB = { 
+		army_experience = 25
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 3
+				category = land_doctrine
+			}
+		}	
+    }
+	option = {
+        name = siberia.17.b
+		
+    }
+}
+country_event = {
+    id = siberia.18
+    title = siberia.18.t
+    desc = siberia.18.d
+    picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+	
+	option = {
+        name = siberia.18.a
+		ai_chance = { factor = 100 }
+		SIB = {
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 2
+			 instant_build = yes
+		    }
+	    }
+		}
+		random_owned_controlled_state = {
+		 add_extra_state_shared_building_slots = 2
+		 add_building_construction = {
+			 type = industrial_complex
+			 level = 2
+			 instant_build = yes
+		    }
+	    }
+    }
+	option = {
+        name = siberia.18.b
+		
+    }
+}
+country_event = { #Сибирь аннексит США
+    id = siberia.19
+    title = siberia.19.t
+    desc = siberia.19.d
+    picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+	
+	option = {
+        name = siberia.19.a
+		ai_chance = { factor = 100 }
+	SIB = {
+    annex_country = {
+    target = USA
+    transfer_troops = yes
+}
+}
+every_state = {
+			limit = {
+				is_core_of = USA
+			}
+			add_core_of = SIB
+		}
+}
+option = {
+        name = siberia.18.b
+		
+    }
+}	
+# which mutiny pick
+country_event = {
+	id = siberia.20
+	title = siberia.20.t
+	desc = siberia.20.d
+	picture = GFX_report_event_RUS_intro
+
+	is_triggered_only = yes
+
+	option = {
+		name = siberia.20.a	#Markov mutiny pick
+    ai_chance = {
+		base = 50
+		}
+		RUS = {
+			country_event = { days = 12 id = siberia.21 }
+		}
+	}
+	option = {
+		name = siberia.20.b	#Drozdov mutiny pick
+    ai_chance = {
+		base = 50
+		}
+		RUS = {
+			country_event = { days = 12 id = siberia.22 }
+		}
+	}
+}
+# Markov mutiny started
+country_event = {
+	id = siberia.21
+	title = siberia.21.t
+	desc = siberia.21.d
+	picture = GFX_report_event_RUS_partisans1
+
+	is_triggered_only = yes
+
+	option = {
+		name = siberia.21.a
+		MKV = {
+			transfer_state = 209
+		    add_state_core = 209
+			declare_war_on = {
+				target = RUS
+				type = civil_war
+		}
+	}
+ }
+}
+# Drozdov mutiny started
+country_event = {
+	id = siberia.22
+	title = siberia.22.t
+	desc = siberia.22.d
+	picture = GFX_report_event_RUS_army4
+
+	is_triggered_only = yes
+
+	option = {
+		name = siberia.22.a
+		DOV = {
+			transfer_state = 214
+		    add_state_core = 214
+			declare_war_on = {
+				target = RUS
+				type = civil_war
+		}
+	}
+ }
+}

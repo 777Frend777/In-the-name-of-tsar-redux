@@ -1,0 +1,84 @@
+###########################
+# Russian Civil War Events###########last is 
+###########################
+
+add_namespace = ruscivilwar
+
+#White win in civilwar
+news_event = {
+    id = ruscivilwar.1
+    title = ruscivilwar.1.t
+    desc = ruscivilwar.1.d
+    picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+	
+	option = {
+        name = russia.1.a
+        ai_chance = { factor = 100 }
+    }
+}
+
+#end of civilwar
+news_event = {
+    id = ruscivilwar.2
+    title = ruscivilwar.2.t
+    desc = ruscivilwar.2.d
+    picture = GFX_news_event_capture_moscow
+	is_triggered_only = yes
+	
+	option = {
+        name = russia.2.a
+        ai_chance = { factor = 100 }
+    }
+}
+
+country_event = {
+	id = ruscivilwar.3
+	title = ruscivilwar.3.t
+	desc = ruscivilwar.3.d
+	picture = GFX_news_event_RUS_tsardom_restored
+	
+	is_triggered_only = yes
+ 
+ option = {
+    name = ruscivilwar.3.a	
+	every_owned_state = {
+			limit = {
+				is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes
+			}
+			hidden_effect = { remove_claim_by = ROOT }
+			add_core_of = ROOT
+		}	
+    }
+}
+
+country_event = {
+	id = ruscivilwar.4
+	title = ruscivilwar.4.t
+	desc = ruscivilwar.4.d
+	picture = GFX_news_event_HUN_civil_war
+	
+	is_triggered_only = yes
+ 
+ option = {
+    name = ruscivilwar.4.a	
+	 SIB = {
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = DON 
+}	
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = KUB
+}
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = UKR
+}
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = BLR
+}
+}
+}
+}

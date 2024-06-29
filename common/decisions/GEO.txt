@@ -1,0 +1,45 @@
+GEO_war_small_category = {
+GEO_War_os_abk= {
+		icon = GFX_decision_hand_grab
+
+		allowed = {
+			tag = GEO
+		}
+
+		available = {
+    				country_exists = ABK
+    				country_exists = SOA
+			  }
+
+		cost = 40
+
+		fire_only_once = yes
+
+		days_remove = 30
+
+		modifier = {
+
+		}
+
+		visible = {
+			tag = GEO
+			
+		}
+
+		remove_effect = {
+GEO = {
+ declare_war_on = {
+    target = SOA
+    type = annex_everything
+}
+declare_war_on = {
+    target = ABK
+    type = annex_everything
+}
+}
+		}
+                                ai_will_do = {
+			base = 200
+                                }
+	}
+}
