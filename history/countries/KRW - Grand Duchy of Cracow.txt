@@ -4,6 +4,8 @@ oob = "KRW_1936"
 
 set_research_slots = 2
 
+set_cosmetic_tag = KRW_RUS
+
 add_ideas = {
 	KRW_Ukrainian_Exiles
 	KRW_Agricultural_Economy

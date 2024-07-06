@@ -1,0 +1,91 @@
+#this tree should be loaded at the start
+
+#todo add filters
+
+focus_tree = {
+	id = polandstart
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = POL
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+	
+	continuous_focus_position = { x = 50 y = 1500 }
+
+	focus = {
+		id = POL_destroy_resistance
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 8
+		y = 1
+		cost = 20
+
+		ai_will_do = {
+			factor = 10
+		}
+		cancelable = no
+		completion_reward = {
+		#custom reward with text
+			hidden_effect = {
+				POL = {
+					load_focus_tree = {
+						tree = polandwar
+					}
+				}
+				country_event = pol.1
+			}
+		}	
+	}
+
+	focus = {
+		id = POL_fortyfour
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 7
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = POL_destroy_resistance
+		}
+		mutually_exclusive = {
+			focus = POL_vistula_plan
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = POL_vistula_plan
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 9
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		mutually_exclusive = {
+			focus = POL_fortyfour
+		}
+		prerequisite = {
+			focus = POL_destroy_resistance
+		}
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+}

@@ -9,7 +9,11 @@ if = {
 	}
 }
 
-set_research_slots = 3
+set_research_slots = 2
+
+add_ideas = {
+	POL_clock_is_ticking
+}
 
 # Starting tech
 set_technology = {
@@ -66,34 +70,10 @@ if = {
 		basic_depth_charges = 1
 	}
 }
-if = {
-	limit = { has_dlc = "No Step Back" }
-	set_variable = {
-		var = pol_peasant_democracy
-		value = 30
-	}
-	set_variable = {
-		var = pol_peasant_communism
-		value = 30
-	}
-}
-
-if = {
-	limit = {
-		has_dlc = "Poland: United and Ready"
-	}
-	add_ideas = {
-		uncontrolled_exports
-		POL_looming_peasants_strike
-	}
-}
-
 
 85 = {
 	add_dynamic_modifier = { modifier = international_city }
 }
-
-set_convoys = 10
 
 set_politics = {
 	ruling_party = neutrality
@@ -102,15 +82,18 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 20
-	fascism = 11
-	communism = 19
-	neutrality = 50
+	democratic = 25
+	fascism = 15
+	communism = 0
+	socialism = 25
+	conservatives = 25
+	neutrality = 10
 }
 
 set_cosmetic_tag = POL_RUS
 
 recruit_character = POL_Kiril_romanov
+recruit_character = POL_rzad_tymczasowy
 recruit_character = POL_ignacy_moscicki
 recruit_character = POL_wladyslaw_sikorski
 recruit_character = POL_boleslaw_wieniawa_glugoszowski

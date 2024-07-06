@@ -1,0 +1,79 @@
+#this tree should be loaded at idependence war
+
+#todo add filters
+
+focus_tree = {
+	id = polandwar
+	
+	default = no
+	reset_on_civilwar = no
+	
+	continuous_focus_position = { x = 50 y = 1500 }
+
+	focus = {
+		id = POL_fortyfourb
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 7
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = {
+		id = POL_recruitment
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 6
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_fortyfourb
+		}
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = {
+		id = POL_call_for_help
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 8
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_fortyfourb
+		}
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = {
+		id = POL_desperate_defense
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 7
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_call_for_help
+			focus = POL_recruitment
+		}
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+}

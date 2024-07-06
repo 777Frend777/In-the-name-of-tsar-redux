@@ -8204,14 +8204,12 @@ spriteTypes = {
 		name = "GFX_idea_hih_siderius"
 		texturefile = "gfx/interface/ideas/idea_hol_hih_siderius.dds"
 	}
-
-        ### OTHER ###
 	spriteType = {
 		name = "GFX_epidemic"
 		texturefile = "gfx/interface/ideas/GFX_epidemic.dds"
 	}
 	spriteType = {
-		name = "GFX_graveyardafg"
-		texturefile = "gfx/interface/ideas/AFG_graveyard.dds"
+		name = "GFX_idea_clock_is_ticking"
+		texturefile = "gfx/interface/ideas/POL_clock_is_ticking.png"
 	}
 }

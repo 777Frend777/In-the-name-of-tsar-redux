@@ -41,6 +41,7 @@ recruit_character = alexander_golovanovs
 recruit_character = sergei_rudenkos
 recruit_character = vladimir_tributss
 recruit_character = sergey_gorshkovs
+	
 #Add synthetic refineries tech
 set_technology = {
 	synth_oil_experiments = 1
@@ -267,6 +268,10 @@ if = {
 	set_autonomy = {
 		target = KHI
 		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = KRW
+		autonomous_state = autonomy_puppet
 	}	
 	else = {
 		puppet = KHI
@@ -274,6 +279,7 @@ if = {
 		puppet = POL
 		puppet = RMN
 		puppet = KUR
+		puppet = KRW
 	}
 }
 if = {

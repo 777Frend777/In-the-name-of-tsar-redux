@@ -1,0 +1,13 @@
+ideas = {
+	country = {
+		POL_clock_is_ticking = {
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				stability_weekly = -0.05
+				conscription_factor = -0.1
+			}
+		}
+	}
+	
+}
