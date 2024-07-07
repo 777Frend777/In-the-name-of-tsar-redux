@@ -1,0 +1,315 @@
+
+shared_focus = {
+	id = POL_four_plan
+	icon = GFX_focus_POL_the_four_year_plan
+	x = 15
+	y = 10
+	cost = 2
+
+	ai_will_do = {
+		factor = 10
+	}
+	completion_reward = {
+	#custom reward with text
+	}
+}
+shared_focus = {
+	id = POL_silesia_industry
+	icon = GFX_focus_POL_the_four_year_plan
+	x = -2
+	y = 1
+	cost = 2
+
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = POL_four_plan
+	prerequisite = {
+		focus = POL_four_plan
+	}
+	completion_reward = {
+	#custom reward with text
+	}
+}
+shared_focus = {
+	id = POL_warsaw_industry
+	icon = GFX_focus_POL_the_four_year_plan
+	x = 0
+	y = 1
+	cost = 2
+
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = POL_four_plan
+	prerequisite = {
+		focus = POL_four_plan
+	}
+	completion_reward = {
+	#custom reward with text
+	}
+}
+shared_focus = {
+	id = POL_central_industry
+	icon = GFX_focus_POL_the_four_year_plan
+	x = 2
+	y = 1
+	cost = 2
+
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = POL_four_plan
+	prerequisite = {
+		focus = POL_four_plan
+	}
+	completion_reward = {
+	#custom reward with text
+	}
+}
+shared_focus = {
+	id = POL_autarky
+	icon = GFX_focus_POL_the_four_year_plan
+	x = -1
+	y = 2
+	cost = 2
+
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		NOT = {
+			is_puppet_of = RUS
+		}
+	}
+	relative_position_id = POL_four_plan
+	prerequisite = {
+		focus = POL_silesia_industry
+	}
+	prerequisite = {
+		focus = POL_warsaw_industry
+	}
+	prerequisite = {
+		focus = POL_central_industry
+	}
+	mutually_exclusive = {
+		focus = POL_reliance_russia
+	}
+	completion_reward = {
+	#custom reward with text
+	}
+}
+shared_focus = {
+	id = POL_reliance_russia
+	icon = GFX_focus_POL_the_four_year_plan
+	x = 1
+	y = 2
+	cost = 2
+
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = POL_four_plan
+	prerequisite = {
+		focus = POL_silesia_industry
+	}
+	prerequisite = {
+		focus = POL_warsaw_industry
+	}
+	prerequisite = {
+		focus = POL_central_industry
+	}
+	mutually_exclusive = {
+		focus = POL_autarky
+	}
+	available = {
+		is_puppet_of = RUS
+	}
+	completion_reward = {
+	#custom reward with text
+	}
+}
+shared_focus = {
+	id = POL_pkp
+	icon = GFX_focus_POL_the_four_year_plan
+	x = -3
+	y = 3
+	cost = 2
+
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = POL_four_plan
+	prerequisite = {
+		focus = POL_autarky
+		focus = POL_reliance_russia
+	}
+	completion_reward = {
+	#custom reward with text
+	}
+}
+shared_focus = {
+	id = POL_bridge_network
+	icon = GFX_focus_POL_the_four_year_plan
+	x = -1
+	y = 3
+	cost = 2
+
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = POL_four_plan
+	prerequisite = {
+		focus = POL_autarky
+		focus = POL_reliance_russia
+	}
+	completion_reward = {
+	#custom reward with text
+	}
+}
+shared_focus = {
+	id = POL_rubber_manufacturing
+	icon = GFX_focus_POL_the_four_year_plan
+	x = 1
+	y = 3
+	cost = 2
+
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = POL_four_plan
+	prerequisite = {
+		focus = POL_autarky
+		focus = POL_reliance_russia
+	}
+	completion_reward = {
+	#custom reward with text
+	}
+}
+shared_focus = {
+	id = POL_invest_universities
+	icon = GFX_focus_POL_the_four_year_plan
+	x = 3
+	y = 3
+	cost = 2
+
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = POL_four_plan
+	prerequisite = {
+		focus = POL_autarky
+		focus = POL_reliance_russia
+	}
+	completion_reward = {
+	#custom reward with text
+	}
+}
+shared_focus = {
+	id = POL_invest_armored_trains
+	icon = GFX_focus_POL_the_four_year_plan
+	x = -3
+	y = 4
+	cost = 2
+
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = POL_four_plan
+	prerequisite = {
+		focus = POL_pkp
+	}
+	completion_reward = {
+	#custom reward with text
+	}
+}
+shared_focus = {
+	id = POL_urbanisation
+	icon = GFX_focus_POL_the_four_year_plan
+	x = -1
+	y = 4
+	cost = 2
+
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = POL_four_plan
+	prerequisite = {
+		focus = POL_bridge_network
+	}
+	completion_reward = {
+	#custom reward with text
+	}
+}
+shared_focus = {
+	id = POL_polska_stal
+	icon = GFX_focus_POL_the_four_year_plan
+	x = 1
+	y = 4
+	cost = 2
+
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = POL_four_plan
+	prerequisite = {
+		focus = POL_rubber_manufacturing
+	}
+	completion_reward = {
+	#custom reward with text
+	}
+}
+shared_focus = {
+	id = POL_intellectual_renaissance
+	icon = GFX_focus_POL_the_four_year_plan
+	x = 3
+	y = 4
+	cost = 2
+
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = POL_four_plan
+	prerequisite = {
+		focus = POL_invest_universities
+	}
+	completion_reward = {
+	#custom reward with text
+	}
+}
+shared_focus = {
+	id = POL_poland_b
+	icon = GFX_focus_POL_the_four_year_plan
+	x = -1
+	y = 5
+	cost = 2
+
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = POL_four_plan
+	prerequisite = {
+		focus = POL_urbanisation
+	}
+	completion_reward = {
+	#custom reward with text
+	}
+}
+shared_focus = {
+	id = POL_invest_silesia
+	icon = GFX_focus_POL_the_four_year_plan
+	x = 1
+	y = 5
+	cost = 2
+
+	ai_will_do = {
+		factor = 10
+	}
+	relative_position_id = POL_four_plan
+	prerequisite = {
+		focus = POL_polska_stal
+	}
+	completion_reward = {
+	#custom reward with text
+	}
+}

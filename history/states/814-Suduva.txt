@@ -4,7 +4,7 @@ state={
 	name="STATE_814"
 
 	history={
-		owner = RUS
+		owner = POL
 		victory_points = {
 			11312 1 #Marijampole
 		}

@@ -38,24 +38,6 @@ country = {
 			modifier = {
 			}
 	}
-
-
-		RUS_organized_wreckers_idea = {
-
-			picture = SPA_recovering_from_the_civil_war
-			removal_cost = -1
-
-			allowed = {
-				always = no
-			}
-			available = {
-				always = yes
-			}
-
-			modifier = {
-				industry_repair_factor = -0.25
-			}
-		}
 	frn_idea_op = {
 			allowed = {
 				always = no

@@ -1,0 +1,582 @@
+#todo add filters
+
+focus_tree = {
+	id = polandrussialapdog
+	
+	default = no
+	reset_on_civilwar = no
+	
+	continuous_focus_position = { x = 50 y = 1500 }
+	shared_focus = POL_four_plan
+
+	focus = {
+		id = POL_resume_plan
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 5
+		y = 1
+		cost = 20
+
+		ai_will_do = {
+			factor = 10
+		}
+		cancelable = no
+		completion_reward = {
+		#custom reward with text
+			hidden_effect = {
+				POL = {
+					load_focus_tree = {
+						tree = polandwar
+					}
+				}
+				country_event = pol.1
+			}
+		}	
+	}
+
+
+
+
+
+
+	focus = {
+		id = POL_hunt_resistance
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = POL_resume_plan
+		}
+		relative_position_id = POL_resume_plan
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = POL_disarmament
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = POL_resume_plan
+		}
+		relative_position_id = POL_resume_plan
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+
+
+	focus = {
+		id = POL_cyrylic
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -2
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = POL_hunt_resistance
+		}
+		relative_position_id = POL_resume_plan
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = {
+		id = POL_mandatory_russian
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 0
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = POL_disarmament
+			focus = POL_hunt_resistance
+		}
+		relative_position_id = POL_resume_plan
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = {
+		id = POL_artificial_culture
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 2
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = POL_disarmament
+		}
+		relative_position_id = POL_resume_plan
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+
+
+
+
+	focus = {
+		id = POL_shield
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = POL_cyrylic
+			focus = POL_mandatory_russian
+		}
+		relative_position_id = POL_resume_plan
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = {
+		id = POL_garrison_reform
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 1
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = POL_mandatory_russian
+			focus = POL_artificial_culture
+		}
+		relative_position_id = POL_resume_plan
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+
+
+	focus = {
+		id = POL_link_economies
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 4
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = POL_shield
+		}
+		relative_position_id = POL_resume_plan
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = {
+		id = POL_seal_border
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 1
+		y = 4
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = POL_garrison_reform
+		}
+		relative_position_id = POL_resume_plan
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+
+
+	focus = {
+		id = POL_territorial_reform
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 0
+		y = 5
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = POL_seal_border
+			focus = POL_link_economies
+		}
+		relative_position_id = POL_resume_plan
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+
+
+
+
+
+
+	focus = {
+		id = POL_polish_army_russia
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 15
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+
+	focus = {
+		id = POL_air_force_russia
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -2
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = POL_polish_army_russia
+		}
+		relative_position_id = POL_polish_army_russia
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+	focus = {
+		id = POL_pucharse_russian_planes
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -3
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = POL_air_force_russia
+		}
+		relative_position_id = POL_polish_army_russia
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = {
+		id = POL_train_pilots_russia
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = POL_air_force_russia
+		}
+		relative_position_id = POL_polish_army_russia
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+
+	focus = {
+		id = POL_cover_western_front
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -2
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = POL_train_pilots_russia
+		}
+		prerequisite = {
+			focus = POL_pucharse_russian_planes
+		}
+		relative_position_id = POL_polish_army_russia
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+
+
+	focus = {
+		id = POL_ground_army_russia
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 2
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = POL_polish_army_russia
+		}
+		relative_position_id = POL_polish_army_russia
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+
+	focus = {
+		id = POL_mass_assault
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = POL_ground_army_russia
+		}
+		relative_position_id = POL_ground_army_russia
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = {
+		id = POL_russian_advisors
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = POL_ground_army_russia
+		}
+		relative_position_id = POL_ground_army_russia
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+
+	focus = {
+		id = POL_construct_military_facilities
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = POL_mass_assault
+		}
+		relative_position_id = POL_ground_army_russia
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = {
+		id = POL_buy_russian_weapon
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 1
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = POL_russian_advisors
+		}
+		relative_position_id = POL_ground_army_russia
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+
+
+	focus = {
+		id = POL_invest_russian_tanks
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = POL_construct_military_facilities
+		}
+		relative_position_id = POL_ground_army_russia
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = {
+		id = POL_military_integration
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 1
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = POL_buy_russian_weapon
+		}
+		relative_position_id = POL_ground_army_russia
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+
+
+	focus = {
+		id = POL_tsar_army
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 0
+		y = 4
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = POL_invest_russian_tanks
+		}
+		prerequisite = {
+			focus = POL_military_integration
+		}
+		relative_position_id = POL_ground_army_russia
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+}

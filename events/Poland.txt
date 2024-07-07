@@ -1,1 +1,117 @@
 ###
+add_namespace = pol
+country_event = { #idependence war
+	id = pol.1
+	title = pol.1.t
+	desc = pol.1.d
+	picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+
+	option = {
+		name = pol.1.a	
+		ai_chance = { factor = 100 }
+		RUS = {
+			end_puppet = POL
+		}
+		ROM = { #romania always refuses to join the war
+			set_truce = {
+				target = POL
+				days = 100
+			}
+		}
+		POL = {
+			88 = {
+				create_unit = {
+					division = "name = \"Galicia Rebels\" division_template = \"Dywizja Piechoty\" start_manpower_factor = 0.3"
+					owner = POL
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 442
+					count = 2
+				}
+			}
+			set_party_name = { 
+				ideology = democratic
+				long_name = POL_tempgov_long
+				name = POL_tempgov
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			drop_cosmetic_tag = yes
+			leave_faction = yes
+			declare_war_on = {
+				target = RUS
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = KRW
+				type = annex_everything
+			}
+			activate_mission = POL_dont_surrender
+		}
+	}
+#peace decision
+}
+
+country_event = { #polish victory
+	id = pol.2
+	title = pol.2.t
+	desc = pol.2.d
+	picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+
+	option = {
+		name = pol.2.a	
+		ai_chance = { factor = 100 }
+		POL = {
+			load_focus_tree = {
+				tree = polandindependence
+			}
+			set_state_owner = 97
+			set_state_owner = 88
+			white_peace = RUS
+			set_truce = {
+				target = RUS
+				days = 360
+			}
+			set_truce = {
+				target = KRW
+				days = 360
+			}
+			remove_wargoal = {
+				type = all
+				target = KRW
+			}
+		}
+		RUS = {
+			set_state_owner = 814
+		}
+	}
+}
+country_event = { #russian victory
+	id = pol.3
+	title = pol.3.t
+	desc = pol.3.d
+	picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+
+	option = {
+		name = pol.3.a	
+		ai_chance = { factor = 100 }
+		POL = {
+			white_peace = RUS
+			set_cosmetic_tag = POL_RUS
+			load_focus_tree = {
+				tree = polandrussialapdog
+			}
+			remove_wargoal = {
+				type = all
+				target = KRW
+			}
+		}
+		RUS = {
+			puppet = POL
+		}
+	}
+}

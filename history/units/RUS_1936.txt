@@ -373,7 +373,7 @@ units = {
 	
 	division= {			
 		name = "11iy Mekhanizirovaniy Korpus"		
-		location = 3544
+		location = 11301
 		division_template = "Mekhanizirovaniy Korpus"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
@@ -405,7 +405,7 @@ units = {
 	}
 	division= {			
 		name = "12ya Pekhotnaya Diviziya"		
-		location = 9508
+		location = 422
 		division_template = "Pekhotnaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
@@ -413,7 +413,7 @@ units = {
 	}
 	division= {			
 		name = "98ya Pekhotnaya Diviziya"		
-		location = 6321
+		location = 3393
 		division_template = "Pekhotnaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
@@ -421,7 +421,7 @@ units = {
 	}
 	division= {			
 		name = "99ya Pekhotnaya Diviziya"		
-		location = 6321
+		location = 3393
 		division_template = "Pekhotnaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1

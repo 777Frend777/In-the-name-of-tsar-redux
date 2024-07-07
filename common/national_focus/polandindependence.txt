@@ -1,0 +1,1700 @@
+#this tree should be loaded at idependence war
+
+#todo add filters
+
+focus_tree = {
+	id = polandindependence
+	
+	default = no
+	reset_on_civilwar = no
+	
+	continuous_focus_position = { x = 50 y = 1500 }
+	shared_focus = POL_four_plan
+
+	focus = {
+		id = POL_revenge
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 18
+		y = 0
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+
+
+
+	focus = {
+		id = POL_letter_to_tsar
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 0
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_revenge
+		}
+		relative_position_id = POL_revenge
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+	focus = {
+		id = POL_west_wall
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -5
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_letter_to_tsar
+		}
+		relative_position_id = POL_revenge
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = {
+		id = POL_train_rebels
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -3
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_letter_to_tsar
+		}
+		relative_position_id = POL_revenge
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = {
+		id = POL_smuggle_weapons
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_letter_to_tsar
+		}
+		relative_position_id = POL_revenge
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = {
+		id = POL_remember_greatness
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 1
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_letter_to_tsar
+		}
+		relative_position_id = POL_revenge
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = {
+		id = POL_anti_tsarist_propaganda
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 3
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_letter_to_tsar
+		}
+		relative_position_id = POL_revenge
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = {
+		id = POL_east_wall
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 5
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_letter_to_tsar
+		}
+		relative_position_id = POL_revenge
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+
+	focus = {
+		id = POL_greater_poland_uprising
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -3
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_west_wall
+		}
+		prerequisite = {
+			focus = POL_train_rebels
+		}
+		prerequisite = {
+			focus = POL_smuggle_weapons
+		}
+		relative_position_id = POL_revenge
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = {
+		id = POL_contact_polish_community
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 0
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_letter_to_tsar
+		}
+		relative_position_id = POL_revenge
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = {
+		id = POL_continuation_war
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 3
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_remember_greatness
+		}
+		prerequisite = {
+			focus = POL_anti_tsarist_propaganda
+		}
+		prerequisite = {
+			focus = POL_east_wall
+		}
+		relative_position_id = POL_revenge
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+
+
+	focus = {
+		id = POL_reach_oder #SN ONLY
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -3
+		y = 4
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_greater_poland_uprising
+		}
+		relative_position_id = POL_revenge
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = {
+		id = POL_demand_zaolzie
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 0
+		y = 4
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_contact_polish_community
+		}
+		relative_position_id = POL_revenge
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = {
+		id = POL_free_lithuania
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 2
+		y = 4
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_continuation_war
+		}
+		mutually_exclusive = {
+			focus = POL_polonization
+		}
+		relative_position_id = POL_revenge
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = {
+		id = POL_polonization #SN ONLY
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 4
+		y = 4
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_continuation_war
+		}
+		mutually_exclusive = {
+			focus = POL_free_lithuania
+		}
+		relative_position_id = POL_revenge
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+
+
+
+
+	focus = { #Chadecja
+		id = POL_ChD_gov
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 9
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_revenge
+		}
+		relative_position_id = POL_revenge
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+	focus = { 
+		id = POL_hard_work
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_ChD_gov
+		}
+		relative_position_id = POL_ChD_gov
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = { 
+		id = POL_local_communities
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_ChD_gov
+		}
+		relative_position_id = POL_ChD_gov
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+	focus = { 
+		id = POL_family_values
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -2
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_hard_work
+		}
+		relative_position_id = POL_ChD_gov
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = { 
+		id = POL_christianisation
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 0
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_hard_work
+		}
+		prerequisite = {
+			focus = POL_local_communities
+		}
+		relative_position_id = POL_ChD_gov
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = { 
+		id = POL_capitalism_human
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 2
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_local_communities
+		}
+		relative_position_id = POL_ChD_gov
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+
+	focus = { 
+		id = POL_christian_solidarity
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_family_values
+		}
+		prerequisite = {
+			focus = POL_christianisation
+		}
+		relative_position_id = POL_ChD_gov
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = { 
+		id = POL_soft_polonization
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 1
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_capitalism_human
+		}
+		prerequisite = {
+			focus = POL_christianisation
+		}
+		relative_position_id = POL_ChD_gov
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+
+	focus = { 
+		id = POL_defender_of_faith
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 0
+		y = 4
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_soft_polonization
+		}
+		prerequisite = {
+			focus = POL_christian_solidarity
+		}
+		relative_position_id = POL_ChD_gov
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+
+	focus = { #SN government
+		id = POL_SN_gov
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 16
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_revenge
+		}
+		relative_position_id = POL_revenge
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+
+	focus = { 
+		id = POL_independence_march
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_SN_gov
+		}
+		relative_position_id = POL_SN_gov
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = { 
+		id = POL_state_capitalism
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_SN_gov
+		}
+		relative_position_id = POL_SN_gov
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+
+	focus = { 
+		id = POL_force_polonization
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -2
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_independence_march
+		}
+		relative_position_id = POL_SN_gov
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = { 
+		id = POL_populist_rhetoric
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 0
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_independence_march
+		}
+		prerequisite = {
+			focus = POL_state_capitalism
+		}
+		relative_position_id = POL_SN_gov
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = { 
+		id = POL_censor_press
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 2
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_state_capitalism
+		}
+		relative_position_id = POL_SN_gov
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+
+
+
+
+	focus = { 
+		id = POL_militarism
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_force_polonization
+		}
+		prerequisite = {
+			focus = POL_populist_rhetoric
+		}
+		relative_position_id = POL_SN_gov
+		completion_reward = {
+		#custom reward with text
+		}
+	}
+	focus = { 
+		id = POL_cult_of_the_leader
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 1
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_populist_rhetoric
+		}
+		prerequisite = {
+			focus = POL_censor_press
+		}
+		relative_position_id = POL_SN_gov
+		completion_reward = {
+		#build a statue lol
+		}
+	}
+
+
+
+	focus = { 
+		id = POL_everything
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 0
+		y = 4
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_militarism
+		}
+		prerequisite = {
+			focus = POL_cult_of_the_leader
+		}
+		relative_position_id = POL_SN_gov
+		completion_reward = {
+		
+		}
+	}
+
+
+
+
+	focus = {  #PSL GOVERNMENT
+		id = POL_PSL_gov
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -8
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_revenge
+		}
+		relative_position_id = POL_revenge
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {  
+		id = POL_breadbasket
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_PSL_gov
+		}
+		relative_position_id = POL_PSL_gov
+		completion_reward = {
+		
+		}
+	}
+	focus = {  
+		id = POL_will_of_people
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_PSL_gov
+		}
+		relative_position_id = POL_PSL_gov
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {  
+		id = POL_feed_people
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_breadbasket
+		}
+		relative_position_id = POL_PSL_gov
+		completion_reward = {
+		
+		}
+	}
+	focus = {  
+		id = POL_resocialisation
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 1
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_will_of_people
+		}
+		relative_position_id = POL_PSL_gov
+		completion_reward = {
+		
+		}
+	}
+
+
+
+	focus = {  
+		id = POL_land_reform
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_feed_people
+		}
+		relative_position_id = POL_PSL_gov
+		completion_reward = {
+		
+		}
+	}
+	focus = {  
+		id = POL_open_to_world
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 1
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_resocialisation
+		}
+		relative_position_id = POL_PSL_gov
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {  
+		id = POL_feed_and_defend
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 0
+		y = 4
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_open_to_world
+		}
+		prerequisite = {
+			focus = POL_land_reform
+		}
+		prerequisite = {
+			focus = POL_secularization
+		}
+		relative_position_id = POL_PSL_gov
+		completion_reward = {
+		
+		}
+	}
+
+
+
+
+
+
+
+
+	focus = {  #PPS Government
+		id = POL_PPS_gov
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -16
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_revenge
+		}
+		relative_position_id = POL_revenge
+		completion_reward = {
+		
+		}
+	}
+
+
+
+	focus = {  
+		id = POL_workers_rights
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_PPS_gov
+		}
+		relative_position_id = POL_PPS_gov
+		completion_reward = {
+		
+		}
+	}
+	focus = {  
+		id = POL_denounce_authoritarianism
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_PPS_gov
+		}
+		relative_position_id = POL_PPS_gov
+		completion_reward = {
+		
+		}
+	}
+
+
+
+
+	focus = {  
+		id = POL_provide_housing
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_workers_rights
+		}
+		relative_position_id = POL_PPS_gov
+		completion_reward = {
+		
+		}
+	}
+	focus = {  
+		id = POL_fund_public_projects
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 1
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_denounce_authoritarianism
+		}
+		relative_position_id = POL_PPS_gov
+		completion_reward = {
+		
+		}
+	}
+
+
+
+
+	focus = {  
+		id = POL_eliminate_poverty
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_provide_housing
+		}
+		relative_position_id = POL_PPS_gov
+		completion_reward = {
+		
+		}
+	}
+	focus = {  
+		id = POL_free_women
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 1
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_fund_public_projects
+		}
+		relative_position_id = POL_PPS_gov
+		completion_reward = {
+		
+		}
+	}
+
+
+
+	focus = {  
+		id = POL_onwards_warsaw
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 0
+		y = 4
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_free_women
+		}
+		prerequisite = {
+			focus = POL_eliminate_poverty
+		}
+		prerequisite = {
+			focus = POL_secularization
+		}
+		relative_position_id = POL_PPS_gov
+		completion_reward = {
+		
+		}
+	}
+
+
+
+
+	focus = {  
+		id = POL_protect_minorities
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 4
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_PPS_gov
+			focus = POL_PSL_gov
+		}
+		relative_position_id = POL_PPS_gov
+		completion_reward = {
+		
+		}
+	}
+	focus = {  
+		id = POL_secularization
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 4
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_protect_minorities
+		}
+		relative_position_id = POL_PPS_gov
+		completion_reward = {
+		
+		}
+	}
+
+
+
+
+
+
+	focus = {  
+		id = POL_third_may
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -3
+		y = 6
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_defender_of_faith
+			focus = POL_feed_and_defend
+			focus = POL_onwards_warsaw
+		}
+		mutually_exclusive = {
+			focus = POL_end_democracy
+		}
+		relative_position_id = POL_revenge
+		completion_reward = {
+		
+		}
+	}
+	focus = {  
+		id = POL_end_democracy
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 16
+		y = 6
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_everything
+		}
+		mutually_exclusive = {
+			focus = POL_third_may
+		}
+		relative_position_id = POL_revenge
+		completion_reward = {
+		
+		}
+	}
+
+
+
+
+
+
+	focus = {  
+		id = POL_polish_army_independence
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 50
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+
+
+
+
+
+	focus = {  
+		id = POL_air_force_independence
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -7
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_polish_army_independence
+		}
+		relative_position_id = POL_polish_army_independence
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {  
+		id = POL_establish_airbase
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_air_force_independence
+		}
+		relative_position_id = POL_air_force_independence
+		completion_reward = {
+		
+		}
+	}
+	focus = {  
+		id = POL_polskie_zaklady
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_air_force_independence
+		}
+		relative_position_id = POL_air_force_independence
+		completion_reward = {
+		
+		}
+	}
+
+
+
+	focus = {  
+		id = POL_pucharse_foreign_aircraft
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_establish_airbase
+		}
+		relative_position_id = POL_air_force_independence
+		completion_reward = {
+		
+		}
+	}
+	focus = {  
+		id = POL_invest_air_defense
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 1
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_polskie_zaklady
+		}
+		relative_position_id = POL_air_force_independence
+		completion_reward = {
+		
+		}
+	}
+
+
+
+	focus = {  
+		id = POL_szkola_lotnictwa
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 0
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_pucharse_foreign_aircraft
+		}
+		prerequisite = {
+			focus = POL_invest_air_defense
+		}
+		relative_position_id = POL_air_force_independence
+		completion_reward = {
+		
+		}
+	}
+
+
+
+	focus = {  
+		id = POL_focus_on_cas
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 4
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_szkola_lotnictwa
+		}
+		mutually_exclusive = {
+			focus = POL_invest_strategic_bombers
+		}
+		relative_position_id = POL_air_force_independence
+		completion_reward = {
+		
+		}
+	}
+	focus = {  
+		id = POL_invest_strategic_bombers
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 1
+		y = 4
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_szkola_lotnictwa
+		}
+		mutually_exclusive = {
+			focus = POL_focus_on_cas
+		}
+		relative_position_id = POL_air_force_independence
+		completion_reward = {
+		
+		}
+	}
+
+
+
+
+
+	focus = {  
+		id = POL_ground_army
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 0
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_polish_army_independence
+		}
+		relative_position_id = POL_polish_army_independence
+		completion_reward = {
+		
+		}
+	}
+
+
+
+	focus = {  
+		id = POL_equipment_standarisation
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_ground_army
+		}
+		relative_position_id = POL_ground_army
+		completion_reward = {
+		
+		}
+	}
+	focus = {  
+		id = POL_our_own_tank
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 1
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_ground_army
+		}
+		relative_position_id = POL_ground_army
+		completion_reward = {
+		
+		}
+	}
+
+
+
+
+	focus = {  
+		id = POL_military_emergency_fuel_storage
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -2
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_equipment_standarisation
+		}
+		relative_position_id = POL_ground_army
+		completion_reward = {
+		
+		}
+	}
+	focus = {  
+		id = POL_weaponry_research
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 0
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_ground_army
+		}
+		relative_position_id = POL_ground_army
+		completion_reward = {
+		
+		}
+	}
+	focus = {  
+		id = POL_rifle_project
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 2
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_our_own_tank
+		}
+		relative_position_id = POL_ground_army
+		completion_reward = {
+		
+		}
+	}
+
+
+
+	focus = {  
+		id = POL_training
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_military_emergency_fuel_storage
+		}
+		relative_position_id = POL_ground_army
+		completion_reward = {
+		
+		}
+	}
+	focus = {  
+		id = POL_polska_artyleria
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 1
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_rifle_project
+		}
+		relative_position_id = POL_ground_army
+		completion_reward = {
+		
+		}
+	}
+
+
+
+	focus = {  
+		id = POL_no_surrender
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 0
+		y = 4
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_weaponry_research
+		}
+		prerequisite = {
+			focus = POL_training
+		}
+		prerequisite = {
+			focus = POL_polska_artyleria
+		}
+		relative_position_id = POL_ground_army
+		completion_reward = {
+		
+		}
+	}
+
+
+
+
+
+
+	focus = {  
+		id = POL_poland_marriage
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 7
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_polish_army_independence
+		}
+		relative_position_id = POL_polish_army_independence
+		completion_reward = {
+		
+		}
+	}
+
+
+
+
+	focus = {  
+		id = POL_revitalize_merchant_navy
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -2
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_poland_marriage
+		}
+		relative_position_id = POL_poland_marriage
+		completion_reward = {
+		
+		}
+	}
+	focus = {  
+		id = POL_baltic_sea_exercises
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 0
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_poland_marriage
+		}
+		relative_position_id = POL_poland_marriage
+		completion_reward = {
+		
+		}
+	}
+	focus = {  
+		id = POL_construct_navy
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 2
+		y = 1
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_poland_marriage
+		}
+		relative_position_id = POL_poland_marriage
+		completion_reward = {
+		
+		}
+	}
+
+
+
+
+
+	focus = {  
+		id = POL_gdansk_shipyard
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_revitalize_merchant_navy
+		}
+		prerequisite = {
+			focus = POL_baltic_sea_exercises
+		}
+		relative_position_id = POL_poland_marriage
+		completion_reward = {
+		
+		}
+	}
+	focus = {  
+		id = POL_coastal_defensee
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 1
+		y = 2
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_baltic_sea_exercises
+		}
+		prerequisite = {
+			focus = POL_construct_navy
+		}
+		relative_position_id = POL_poland_marriage
+		completion_reward = {
+		
+		}
+	}
+
+
+
+	focus = {  
+		id = POL_submarine_tech
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -2
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_gdansk_shipyard
+		}
+		prerequisite = {
+			focus = POL_coastal_defensee
+		}
+		mutually_exclusive = {
+			focus = POL_light_ship_tech
+			focus = POL_heavy_ship_tech
+		}
+		relative_position_id = POL_poland_marriage
+		completion_reward = {
+		
+		}
+	}
+	focus = {  
+		id = POL_light_ship_tech
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 0
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_gdansk_shipyard
+		}
+		prerequisite = {
+			focus = POL_coastal_defensee
+		}
+		mutually_exclusive = {
+			focus = POL_submarine_tech
+			focus = POL_heavy_ship_tech
+		}
+		relative_position_id = POL_poland_marriage
+		completion_reward = {
+		
+		}
+	}
+	focus = {  
+		id = POL_heavy_ship_tech
+		icon = GFX_focus_POL_the_four_year_plan
+		x = 2
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_gdansk_shipyard
+		}
+		prerequisite = {
+			focus = POL_coastal_defensee
+		}
+		mutually_exclusive = {
+			focus = POL_light_ship_tech
+			focus = POL_submarine_tech
+		}
+		relative_position_id = POL_poland_marriage
+		completion_reward = {
+		
+		}
+	}
+}
