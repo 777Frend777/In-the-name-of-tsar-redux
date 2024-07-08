@@ -6,7 +6,7 @@ state={
 	state_category = city
 	
 	history={
-		owner = POL
+		owner = KRW
 		victory_points = {
 			11479 3
 		}
@@ -19,6 +19,8 @@ state={
 			air_base = 5
 		}
 		add_core_of = UKR
+		add_core_of = POL
+		add_core_of = KRW
 	}
 
 	provinces={
