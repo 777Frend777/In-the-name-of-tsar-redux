@@ -277,3 +277,11 @@ SIB_russiaforsiberia={
 	color = rgb { 125 13 24 }
     color_ui = rgb { 125 13 24 }
 }
+POL_RUS={
+	color = rgb { 80 160 80 }
+    color_ui = rgb { 80 160 80 }
+}
+KRW_RUS={
+	color = rgb { 70 150 90 }
+    color_ui = rgb { 70 150 90 }
+}

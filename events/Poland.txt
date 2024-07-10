@@ -20,15 +20,7 @@ country_event = { #idependence war
 			}
 		}
 		POL = {
-			88 = {
-				create_unit = {
-					division = "name = \"Galicia Rebels\" division_template = \"Dywizja Piechoty\" start_manpower_factor = 0.3"
-					owner = POL
-					allow_spawning_on_enemy_provs = yes
-					prioritize_location = 442
-					count = 2
-				}
-			}
+			add_ideas = POL_spirit_of_freedom1
 			set_party_name = { 
 				ideology = democratic
 				long_name = POL_tempgov_long
@@ -49,6 +41,15 @@ country_event = { #idependence war
 				type = annex_everything
 			}
 			activate_mission = POL_dont_surrender
+			88 = {
+				create_unit = {
+					division = "name = \"Galicia Rebels\" division_template = \"Dywizja Piechoty\" start_manpower_factor = 0.3"
+					owner = POL
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 442
+					count = 2
+				}
+			}
 		}
 	}
 #peace decision
@@ -112,6 +113,38 @@ country_event = { #russian victory
 		}
 		RUS = {
 			puppet = POL
+		}
+	}
+}
+
+################
+#focus events
+country_event = { #smuggle weapons
+	id = pol.4
+	title = pol.4.t
+	desc = pol.4.d
+	picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+
+	option = {
+		name = pol.4.a	
+		ai_chance = { factor = 100 }
+		POL = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 400
+				producer = RUS
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 200
+				producer = CZE
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 200
+				producer = GER
+			}
 		}
 	}
 }

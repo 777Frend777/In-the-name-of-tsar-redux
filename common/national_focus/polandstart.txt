@@ -1,4 +1,5 @@
-#this tree should be loaded at the start
+#this tree should be loaded at the start!
+#Made by Fokeu
 
 #todo add filters
 
@@ -23,7 +24,7 @@ focus_tree = {
 		icon = GFX_focus_POL_the_four_year_plan
 		x = 8
 		y = 1
-		cost = 20
+		cost = 12
 
 		ai_will_do = {
 			factor = 10
@@ -39,6 +40,7 @@ focus_tree = {
 				}
 				country_event = pol.1
 			}
+			custom_effect_tooltip = POL_tooltip_destroy_resistance
 		}	
 	}
 
@@ -62,6 +64,7 @@ focus_tree = {
 			focus = POL_vistula_plan
 		}
 		completion_reward = {
+			custom_effect_tooltip = POL_tooltip_fortyfour
 		}
 	}
 
@@ -85,7 +88,7 @@ focus_tree = {
 			focus = POL_destroy_resistance
 		}
 		completion_reward = {
-		#custom reward with text
+			custom_effect_tooltip = POL_tooltip_vistula_plan
 		}
 	}
 }

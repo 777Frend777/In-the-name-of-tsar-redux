@@ -21,7 +21,10 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-		#custom reward with text
+			swap_ideas = {
+				remove_idea = POL_spirit_of_freedom1
+				add_idea = POL_spirit_of_freedom2
+			}
 		}
 	}
 	focus = {
@@ -38,7 +41,8 @@ focus_tree = {
 			focus = POL_fortyfourb
 		}
 		completion_reward = {
-		#custom reward with text
+			add_manpower = 30000
+			add_politcal_power = 50
 		}
 	}
 	focus = {
@@ -55,7 +59,7 @@ focus_tree = {
 			focus = POL_fortyfourb
 		}
 		completion_reward = {
-		#custom reward with text
+			country_event = pol.4
 		}
 	}
 	focus = {
@@ -73,7 +77,10 @@ focus_tree = {
 			focus = POL_recruitment
 		}
 		completion_reward = {
-		#custom reward with text
+			swap_ideas = {
+				remove_idea = POL_spirit_of_freedom2
+				add_idea = POL_spirit_of_freedom3
+			}
 		}
 	}
 }
