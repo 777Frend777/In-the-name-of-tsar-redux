@@ -29,7 +29,6 @@ state={
 		}
 		add_core_of = GER
 		add_claim_by = BAV
-		add_claim_by = POL
 		1939.1.1 = {
 			buildings = {
 				anti_air_building = 5

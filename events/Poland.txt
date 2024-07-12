@@ -21,6 +21,7 @@ country_event = { #idependence war
 		}
 		POL = {
 			add_ideas = POL_spirit_of_freedom1
+			remove_ideas = POL_clock_is_ticking
 			set_party_name = { 
 				ideology = democratic
 				long_name = POL_tempgov_long
@@ -84,6 +85,15 @@ country_event = { #polish victory
 				type = all
 				target = KRW
 			}
+			remove_ideas = {
+				POL_spirit_of_freedom1
+				POL_spirit_of_freedom2
+				POL_spirit_of_freedom3
+			}
+			add_timed_idea = {
+				idea = POL_destruction
+				days = 180
+			}
 		}
 		RUS = {
 			set_state_owner = 814
@@ -109,6 +119,15 @@ country_event = { #russian victory
 			remove_wargoal = {
 				type = all
 				target = KRW
+			}
+			remove_ideas = {
+				POL_spirit_of_freedom1
+				POL_spirit_of_freedom2
+				POL_spirit_of_freedom3
+			}
+			add_timed_idea = {
+				idea = POL_destruction
+				days = 180
 			}
 		}
 		RUS = {

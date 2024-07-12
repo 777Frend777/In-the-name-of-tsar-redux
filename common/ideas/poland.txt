@@ -1,11 +1,120 @@
 ideas = {
 	country = {
+		#start
 		POL_clock_is_ticking = {
 			allowed = { always = no }
 			picture = clock_is_ticking
 			modifier = {
 				stability_weekly = -0.05
 				conscription_factor = -0.1
+			}
+		}
+		#destruction timed idea
+		POL_destruction = {
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				stability_weekly = -0.01
+				production_speed_buildings_factor = -0.1
+				production_factory_start_efficiency_factor = -0.1
+				attrition = 0.1 
+				research_speed_factor = -0.1
+				local_resources_factor = -0.1
+			}
+		}
+		#focus tree ideas
+		POL_spirit_of_freedom1 = {
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				surrender_limit = 1000 #surrender is scripted
+			}
+		}
+		POL_spirit_of_freedom2 = {
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				surrender_limit = 1000 #surrender is scripted
+				offence = 0.05
+			}
+		}
+		POL_spirit_of_freedom3 = {
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				surrender_limit = 1000 #surrender is scripted
+				offence = 0.05
+				defence = 0.3
+			}
+		}
+		POL_never_targowica1 = {
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				war_support_factor = 0.05
+				surrender_limit = 0.05
+				conscription_factor = 0.05
+			}
+		}
+		POL_never_targowica2 = {
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				war_support_factor = 0.05
+				surrender_limit = 0.05
+				conscription_factor = 0.05
+				targeted_modifier = {
+					tag = RUS
+					attack_bonus_against = 0.1
+					defense_bonus_against = 0.1
+				}
+				targeted_modifier = {
+					tag = GER
+					attack_bonus_against = 0.1
+					defense_bonus_against = 0.1
+				}
+				targeted_modifier = {
+					tag = AUS
+					attack_bonus_against = 0.1
+					defense_bonus_against = 0.1
+				}
+			}
+		}
+		POL_four_year_plan = {
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		POL_autarky = {
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				local_resources = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+		POL_economic_reliance_on_rus = {
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				RUS = {
+					trade_opinion_factor = 0.9
+				}
+				faction_trade_opinion_factor = 0.4
+				production_lack_of_resource_penalty_factor = -0.1
+				army_fuel_consumption_factor = -0.1
+				air_fuel_consumption_factor = -0.1
+				production_factory_start_efficiency_factor = -0.03
+			}
+		}
+		POL_pkp_idea = {
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				out_of_supply_factor = -0.15
+				supply_factor = 0.15
 			}
 		}
 	}

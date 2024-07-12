@@ -10,7 +10,10 @@ shared_focus = {
 		factor = 10
 	}
 	completion_reward = {
-	#custom reward with text
+		add_timed_idea = {
+			idea = POL_four_year_plan
+			days = 1456
+		}
 	}
 }
 shared_focus = {
@@ -28,7 +31,7 @@ shared_focus = {
 		focus = POL_four_plan
 	}
 	completion_reward = {
-	#custom reward with text
+		custom_effect_tooltip = POL_tooltip_decision
 	}
 }
 shared_focus = {
@@ -46,7 +49,7 @@ shared_focus = {
 		focus = POL_four_plan
 	}
 	completion_reward = {
-	#custom reward with text
+		custom_effect_tooltip = POL_tooltip_decision
 	}
 }
 shared_focus = {
@@ -64,7 +67,7 @@ shared_focus = {
 		focus = POL_four_plan
 	}
 	completion_reward = {
-	#custom reward with text
+		custom_effect_tooltip = POL_tooltip_decision
 	}
 }
 shared_focus = {
@@ -96,7 +99,7 @@ shared_focus = {
 		focus = POL_reliance_russia
 	}
 	completion_reward = {
-	#custom reward with text
+		add_ideas = POL_autarky
 	}
 }
 shared_focus = {
@@ -126,7 +129,7 @@ shared_focus = {
 		is_puppet_of = RUS
 	}
 	completion_reward = {
-	#custom reward with text
+		add_ideas = POL_economic_reliance_on_rus
 	}
 }
 shared_focus = {
@@ -145,7 +148,7 @@ shared_focus = {
 		focus = POL_reliance_russia
 	}
 	completion_reward = {
-	#custom reward with text
+		add_ideas = POL_pkp_idea
 	}
 }
 shared_focus = {
@@ -164,7 +167,41 @@ shared_focus = {
 		focus = POL_reliance_russia
 	}
 	completion_reward = {
-	#custom reward with text
+		random_owned_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
 	}
 }
 shared_focus = {
@@ -183,7 +220,14 @@ shared_focus = {
 		focus = POL_reliance_russia
 	}
 	completion_reward = {
-	#custom reward with text
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 3
+				instant_build = yes
+			}
+		}
 	}
 }
 shared_focus = {
@@ -202,7 +246,7 @@ shared_focus = {
 		focus = POL_reliance_russia
 	}
 	completion_reward = {
-	#custom reward with text
+		custom_effect_tooltip = POL_tooltip_decision
 	}
 }
 shared_focus = {
@@ -220,7 +264,7 @@ shared_focus = {
 		focus = POL_pkp
 	}
 	completion_reward = {
-	#custom reward with text
+	#idk why are there no fucking armored trains in research
 	}
 }
 shared_focus = {
@@ -238,7 +282,34 @@ shared_focus = {
 		focus = POL_bridge_network
 	}
 	completion_reward = {
-	#custom reward with text
+		add_building_construction = {
+			type = bunker
+			level = 1
+			instant_build = yes
+			province = 3544
+		}
+		add_building_construction = {
+			type = bunker
+			level = 1
+			instant_build = yes
+			province = 9508
+		}
+		10 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 5
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		87 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 5
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
 	}
 }
 shared_focus = {
@@ -256,7 +327,18 @@ shared_focus = {
 		focus = POL_rubber_manufacturing
 	}
 	completion_reward = {
-	#custom reward with text
+		67 = {
+			add_resource = {
+				type = steel
+				amount = 20
+			}
+		}
+		90 = {
+			add_resource = {
+				type = steel
+				amount = 10
+			}
+		}
 	}
 }
 shared_focus = {
@@ -274,7 +356,7 @@ shared_focus = {
 		focus = POL_invest_universities
 	}
 	completion_reward = {
-	#custom reward with text
+		add_research_slot = 1
 	}
 }
 shared_focus = {
@@ -292,7 +374,7 @@ shared_focus = {
 		focus = POL_urbanisation
 	}
 	completion_reward = {
-	#custom reward with text
+		custom_effect_tooltip = POL_tooltip_decision
 	}
 }
 shared_focus = {
@@ -310,6 +392,17 @@ shared_focus = {
 		focus = POL_polska_stal
 	}
 	completion_reward = {
-	#custom reward with text
+		67 = {
+			add_resource = {
+				type = aluminium
+				amount = 10
+			}
+		}
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 1
 	}
 }

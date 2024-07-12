@@ -28,3 +28,417 @@ POL_independence_war = {
 		}
 	}
 }
+POL_four_year_plan = {
+	#silesia
+	POL_silesia_decision_arms = {
+		icon = decision_generic_industry
+		cost = 40
+		fire_only_once = yes
+		visible = {
+			POL = {
+				has_completed_focus = POL_silesia_industry
+			}
+		}
+		available = {
+			POL = {
+				has_completed_focus = POL_silesia_industry
+				controls_state = 67
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 30
+		remove_effect = {
+			67 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	POL_silesia_decision_civil = {
+		icon = decision_generic_industry
+		cost = 40
+		fire_only_once = yes
+		visible = {
+			POL = {
+				has_completed_focus = POL_silesia_industry
+			}
+		}
+		available = {
+			POL = {
+				has_completed_focus = POL_silesia_industry
+				controls_state = 67
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 30
+		remove_effect = {
+			67 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	####warsaw
+	POL_warsaw_decision_arms = {
+		icon = decision_generic_industry
+		cost = 40
+		fire_only_once = yes
+		visible = {
+			POL = {
+				has_completed_focus = POL_warsaw_industry
+			}
+		}
+		available = {
+			POL = {
+				has_completed_focus = POL_warsaw_industry
+				controls_state = 10
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 30
+		remove_effect = {
+			10 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	POL_warsaw_decision_civil = {
+		icon = decision_generic_industry
+		cost = 40
+		fire_only_once = yes
+		visible = {
+			POL = {
+				has_completed_focus = POL_warsaw_industry
+			}
+		}
+		available = {
+			POL = {
+				has_completed_focus = POL_warsaw_industry
+				controls_state = 10
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 30
+		remove_effect = {
+			10 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	###central
+	POL_central_decision_arms = {
+		icon = decision_generic_industry
+		cost = 40
+		fire_only_once = yes
+		visible = {
+			POL = {
+				has_completed_focus = POL_central_industry
+			}
+		}
+		available = {
+			POL = {
+				has_completed_focus = POL_central_industry
+				controls_state = 90
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 30
+		remove_effect = {
+			90 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	POL_central_decision_civil = {
+		icon = decision_generic_industry
+		cost = 40
+		fire_only_once = yes
+		visible = {
+			POL = {
+				has_completed_focus = POL_central_industry
+			}
+		}
+		available = {
+			POL = {
+				has_completed_focus = POL_central_industry
+				controls_state = 90
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 30
+		remove_effect = {
+			90 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	###universities
+	POL_education_investment_decision = {
+		icon = decision_generic_research
+		cost = 150
+		fire_only_once = yes
+		visible = {
+			POL = {
+				has_completed_focus = POL_invest_universities
+			}
+		}
+		available = {
+			POL = {
+				has_completed_focus = POL_invest_universities
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 30
+		remove_effect = {
+			add_research_slot = 1
+		}
+	}
+	###poland b 
+	POL_polandb_lublin_decision = {
+		icon = decision_generic_construction
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			POL = {
+				has_completed_focus = POL_poland_b
+			}
+		}
+		available = {
+			POL = {
+				has_completed_focus = POL_poland_b
+				controls_state = 746
+				controls_state = 92
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 30
+		remove_effect = {
+			92 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			762 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	POL_polandb_galicia_decision = {
+		icon = decision_generic_construction
+		cost = 70
+		fire_only_once = yes
+		visible = {
+			POL = {
+				has_completed_focus = POL_poland_b
+			}
+		}
+		available = {
+			POL = {
+				has_completed_focus = POL_poland_b
+				controls_state = 88
+				controls_state = 91
+				controls_state = 89
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 30
+		remove_effect = {
+			add_resource = {
+				type = oil
+				amount = 5
+				state = 88
+			}
+			88 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			91 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			89 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	POL_polandb_wolyn_decision = {
+		icon = decision_generic_construction
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			POL = {
+				has_completed_focus = POL_poland_b
+			}
+		}
+		available = {
+			POL = {
+				has_completed_focus = POL_poland_b
+				controls_state = 93
+				controls_state = 94
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 30
+		remove_effect = {
+			94 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			93 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	POL_polandb_nowogrodek_decision = {
+		icon = ddddddecision_generic_constructddion
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			POL = {
+				has_completed_focus = POL_poland_b
+			}
+		}
+		available = {
+			POL = {
+				has_completed_focus = POL_poland_b
+				controls_state = 95
+				controls_state = 96
+				controls_state = 784
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 30
+		remove_effect = {
+			784 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			96 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			95 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}

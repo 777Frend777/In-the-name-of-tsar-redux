@@ -2,10 +2,6 @@
 state={
 	id=762
 	name="STATE_762"
-	resources={
-		steel=19.000
-		aluminium=7.000
-	}
 
 	history={
 		victory_points = {

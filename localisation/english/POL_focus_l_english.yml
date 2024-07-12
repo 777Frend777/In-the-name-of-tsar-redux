@@ -151,12 +151,30 @@
  POL_tooltip_destroy_resistance:0 "§RIs everything going according to plan, Viceroy?§!"
  POL_tooltip_fortyfour:0 "??????????????????????????????????"
  POL_tooltip_vistula_plan:0 "??????????????????????????????????"
+ POL_tooltip_decision:0 "New decisions will be unlocked!"
 
  #decision
  POL_dont_surrender:0 "Hold out!"
+ POL_four_year_plan:0 "Four Year Plan"
+ POL_silesia_decision_arms:0 "Invest in Silesian Arms Industry"
+ POL_silesia_decision_civil:0 "Invest in Silesian Civilian Industry"
+ POL_warsaw_decision_arms:0 "Invest in Warsaw Arms Industry"
+ POL_warsaw_decision_civil:0 "Invest in Warsaw Civil Industry"
+ POL_central_decision_arms:0 "Invest in Central Arms Industry"
+ POL_central_decision_civil:0 "Invest in Central Civil Industry"
+ POL_education_investment_decision:0 "Invest in Education"
+ POL_polandb_lublin_decision:0 "Investments in Lublin and Podlasie"
+ POL_polandb_galicia_decision:0 "Investments in Galicia"
+ POL_polandb_wolyn_decision:0 "Investments in Wołyń"
+ POL_polandb_nowogrodek_decision:0 "Investments in Nowogródek"
 
  #fuck it im putting ideas here too 
  POL_clock_is_ticking:0 "The Clock is Ticking..."
  POL_clock_is_ticking_desc:0 "Despite what the Russian propaganda apparatus claims, the situation in the state is dire and the military is losing control over areas of the state."
- 
+ POL_spirit_of_freedom1:0 "Spirit of Freedom"
+ POL_spirit_of_freedom2:0 "Spirit of Freedom"
+ POL_spirit_of_freedom3:0 "Spirit of Freedom"
+ POL_destruction:0 "Post-War Recovery"
+ POL_economic_reliance_on_rus:0 "Economic Reliance on Russia"
+ POL_pkp_idea:0 "Polskie Koleje Państwowe"
 
