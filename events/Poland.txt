@@ -1,4 +1,7 @@
-###
+#MADE BY FOKEU
+
+#TODO:
+#REMOVE ALL IDEAS POL.5
 add_namespace = pol
 country_event = { #idependence war
 	id = pol.1
@@ -70,8 +73,8 @@ country_event = { #polish victory
 			load_focus_tree = {
 				tree = polandindependence
 			}
-			set_state_owner = 97
-			set_state_owner = 88
+			transfer_state = 97
+			transfer_state = 88
 			white_peace = RUS
 			set_truce = {
 				target = RUS
@@ -96,7 +99,7 @@ country_event = { #polish victory
 			}
 		}
 		RUS = {
-			set_state_owner = 814
+			transfer_state = 814
 		}
 	}
 }
@@ -135,6 +138,40 @@ country_event = { #russian victory
 		}
 	}
 }
+country_event = { #russian civil war after russian victory, garrison fails
+	id = pol.5
+	title = pol.5.t
+	desc = pol.5.d
+	picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+
+	option = {
+		name = pol.5.a	
+		ai_chance = { factor = 100 }
+		POL = {
+			drop_cosmetic_tag = yes
+			load_focus_tree = {
+				tree = polandindependence
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			unlock_national_focus = POL_revenge 
+			unlock_national_focus = POL_letter_to_tsar
+			#TODO REMOVE ALL PRO RUSSIAN IDEAS
+			add_timed_idea = {
+				idea = POL_destruction
+				days = 180
+			}
+		}
+		RUS = {
+			end_puppet = POL
+		}
+		white_peace = KUB
+		white_peace = DON
+	}
+}
 
 ################
 #focus events
@@ -164,6 +201,131 @@ country_event = { #smuggle weapons
 				amount = 200
 				producer = GER
 			}
+		}
+	}
+}
+country_event = { #disarmament
+	id = pol.6
+	title = pol.6.t
+	desc = pol.6.d
+	picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+
+	option = {
+		name = pol.6.a	
+		ai_chance = { factor = 100 }
+		POL = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 300
+				producer = RUS
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 50
+				producer = CZE
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 300
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 50
+				producer = AUS
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 300
+				producer = POL
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 50
+				producer = HUN
+			}
+		}
+	}
+}
+country_event = { #cyrylic
+	id = pol.7
+	title = pol.7.t
+	desc = pol.7.d
+	picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+
+	option = {
+		name = pol.7.a	
+		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				POL = {
+					has_completed_focus = POL_artificial_culture
+					has_completed_focus = POL_mandatory_russian
+				}
+			}
+			add_ideas = POL_puppet_government
+			add_Stability = 0.03
+		}
+		else = {
+			add_Stability = 0.03
+		}
+	}
+}
+country_event = { #mandatory russian
+	id = pol.8
+	title = pol.8.t
+	desc = pol.8.d
+	picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+
+	option = {
+		name = pol.4.a	
+		ai_chance = { factor = 100 }
+		POL = {
+			add_Stability = 0.03
+		}
+		if = {
+			limit = {
+				POL = {
+					has_completed_focus = POL_artificial_culture
+					has_completed_focus = POL_cyrylic
+				}
+			}
+			add_ideas = POL_puppet_government
+			add_Stability = 0.03
+		}
+		else = {
+			add_Stability = 0.03
+		}
+	}
+}
+country_event = { #artificial culture
+	id = pol.9
+	title = pol.9.t
+	desc = pol.9.d
+	picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+
+	option = {
+		name = pol.9.a	
+		ai_chance = { factor = 100 }
+		POL = {
+			add_Stability = 0.03
+		}
+		if = {
+			limit = {
+				POL = {
+					has_completed_focus = POL_cyrylic
+					has_completed_focus = POL_mandatory_russian
+				}
+			}
+			add_ideas = POL_puppet_government
+			add_Stability = 0.03
+		}
+		else = {
+			add_Stability = 0.03
 		}
 	}
 }

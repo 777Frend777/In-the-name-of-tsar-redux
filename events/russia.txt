@@ -417,44 +417,6 @@ country_event = {
 	set_country_flag = rus_controlled_indus
 	}
 }
-#Poland Declares Independence
-country_event = {
-	id = russia.60
-	title = russia.60.t
-	desc = russia.60.d
-	picture = GFX_report_event_generic_panzer_attack
-	is_triggered_only = yes
-
-	option = {
-		name = russia.60.a	
-    ai_chance = { factor = 90 }
-		POL = {
-
-	transfer_state = 87
-	transfer_state = 10
-	transfer_state = 98
-	transfer_state = 97
-	transfer_state = 92
-	transfer_state = 90
-	load_oob = POL_revolt
-	}
-	}
-	option = {
-		name = russia.60.a	
-    ai_chance = { factor = 10 }
-		 declare_war_on = { target = POL type = annex_everything }
-		POL = {
-	
-	transfer_state = 87
-	transfer_state = 10
-	transfer_state = 98
-	transfer_state = 97
-	transfer_state = 92
-	transfer_state = 90
-	load_oob = POL_revolt
-	}
-	}
-}
 #Finland Declares Independence 
 country_event = {
 	id = russia.61
@@ -1675,116 +1637,7 @@ country_event = {
             
         }
     }
-	#Polish Revolt
-country_event = {
-     id = russia.27
-     title = russia.27.t
-     desc = russia.27.d
-     picture = GFX_news_event_034
-	 is_triggered_only = yes
-	 fire_only_once = yes
-	 
-	 option = { #Play as Poland
-	 name = russia.27.a
-	 ai_chance = { factor = 0 }
-	 POL = { 
-	 change_tag_from = RUS
-	 transfer_state = 10
-	 transfer_state = 98
-	 transfer_state = 87
-	 transfer_state = 90
-	 transfer_state = 92
-	 transfer_state = 97
-	 load_oob = POL_revolt
-     }
-	 RUS = {
-	 remove_state_core = 10
-	 remove_state_core = 98
-	 remove_state_core = 87
-	 remove_state_core = 90
-	 remove_state_core = 92
-	 remove_state_core = 97
-	 }
-	 news_event = { id = russia.54 }
-	 }
-	 option = { #Recognize Polish Independence
-	 name = russia.27.b
-	 ai_chance = { factor = 25 }
-	 POL = { 
-	 transfer_state = 10
-	 transfer_state = 98
-	 transfer_state = 87
-	 transfer_state = 90
-	 transfer_state = 92
-	 transfer_state = 97
-	 load_oob = POL_revolt
-	 country_event = { days = 12 id = generic.5 }
-     }
-	 RUS = {
-	 remove_state_core = 10
-	 remove_state_core = 98
-	 remove_state_core = 87
-	 remove_state_core = 90
-	 remove_state_core = 92
-	 remove_state_core = 97
-	 }
-	 news_event = { id = russia.54 }
-	 RUS = {
-	 give_guarantee = POL
-	 }
-	 }
-	 option = { #Negociate Annexation
-	 name = russia.27.c
-	 ai_chance = { factor = 75 }
-	 POL = { 
-	 transfer_state = 10
-	 transfer_state = 98
-	 transfer_state = 87
-	 transfer_state = 90
-	 transfer_state = 92
-	 transfer_state = 97
-	 load_oob = POL_revolt
-     }
-	  news_event = { id = russia.54 }
-	 POL = {
-	 country_event = { days = 3 id = russia.51 }
-	 }
-	 hidden_effect = {
-	 POL = {
-	 add_ideas = RUS_polish_nationalism
-	 }
-	 }
-	 }
-    }
-	#Polish Negociations
-country_event = {
-     id = russia.51
-     title = russia.51.t
-     desc = russia.51.d
-     picture = GFX_report_event_german_advisors_remain
-	 is_triggered_only = yes
-	 fire_only_once = yes
-	 
-	 option = { #Accept Puppet
-	 name = russia.51.a
-	 ai_chance = { factor = 50 }
-	 RUS = { 
-	 puppet = POL
-	 add_to_faction = POL
-	 country_event = { days = 2 id = russia.52 }
-	 }
-	 }
-	 option = { #No way!
-	 name = russia.51.b
-	 ai_chance = { factor = 50 }
-	 POL = {
-	 add_war_support = 0.5
-	 }
-	 RUS = { 
-	 country_event = { days = 12 id = russia.53 }
-	 }
-	 }
-    }	
+}
 country_event = { #Instability in Russia
      id = russia.58
      title = russia.58.t
@@ -1824,70 +1677,7 @@ country_event = { #Instability in Russia
 	 country_event = { days = 15 id =  russia.55 }
 	 }
 	 }
-	}	
-country_event = { #Russia Receives Poland as Puppet 
-     id = russia.52
-     title = russia.52.t
-     desc = russia.52.d
-     picture = GFX_report_event_german_advisors_remain
-	 is_triggered_only = yes
-	 fire_only_once = yes
-	 
-	 option = { 
-	 name = russia.52.a
-	 }
-	}
-country_event = { #Poland says no
-     id = russia.53
-     title = russia.53.t
-     desc = russia.53.d
-     picture = GFX_report_event_german_advisors_remain
-	 is_triggered_only = yes
-	 fire_only_once = yes
-	 
-	 option = { 
-	 name = russia.53.a
-	 ai_chance = { factor = 90 }
-	 RUS = { 
-	 declare_war_on = { target = POL type = annex_everything }
-	 }
-	 }
-	 option = { 
-	 name = russia.53.a
-	 ai_chance = { factor = 10 }
-	 RUS = {
-	 remove_state_core = 10
-	 remove_state_core = 98
-	 remove_state_core = 87
-	 remove_state_core = 90
-	 remove_state_core = 92
-	 remove_state_core = 97
-	 }
-	 }
-	}
-news_event = { #Polish Rebellion Event
-     id = russia.54
-     title = russia.54.t
-     desc = russia.54.d
-     picture = GFX_news_event_034
-	 is_triggered_only = yes
-	 fire_only_once = yes
-	 major = yes
-	 option = { 
-	 name = russia.54.a
-	 trigger = {
-			NOT = {
-				TAG = RUS
-			}
-			}
-	 }
-	  option = { 
-	 name = russia.54.b
-	 trigger = {
-				TAG = RUS
-			}
-	 }
-	}
+}	
 news_event = { #Russia annouces its ambitions
      id = russia.59
      title = russia.59.t
@@ -2604,10 +2394,17 @@ country_event = {
     option = {
         name = russia.35.a
         ai_chance = { factor = 100 }
+
 			country_event = { id = russia.98 days = 4 }
 			set_global_flag = RCW_begun
+			POL = {
+				country_event = POL.5
+			}
             RUS = {
                 remove_unit = 99997
+				end_puppet = POL 
+				end_puppet = ROM 
+				end_puppet = KUR
                 load = RUS_civil_war_commi
 				set_autonomy = {
 					target = BUK
@@ -3804,6 +3601,10 @@ country_event = {
         name = russia.98.a
         ai_chance = { factor = 100 }
 		country_event = { id = russia.99 days = 4 }
+			POL = {
+				transfer_state = 88
+				transfer_state = 97
+			}
             UKR = {
                 transfer_state = 227
                 transfer_state = 200
@@ -3825,6 +3626,8 @@ country_event = {
                 transfer_state = 202
 				transfer_state = 193
                 transfer_state = 225
+				transfer_state = 91
+				transfer_state = 89
                 declare_war_on = {
                     target = RUS
                     type = civil_war
@@ -4043,10 +3846,14 @@ country_event = {
 			ROM = {
 				transfer_state = 78
                 transfer_state = 766
+				transfer_state = 80
             }
 			GER = {
                 transfer_state = 188
             }
+			HUN = {
+				transfer_state = 73
+			}
 			LIT = {
                 transfer_state = 784
                 transfer_state = 814
@@ -4128,6 +3935,10 @@ country_event = {
         ai_chance = { factor = 100 }
 		country_event = { id = russia.99 days = 4 }
 		UKR = { change_tag_from = RUS }
+			POL = {
+				transfer_state = 88
+				transfer_state = 97
+			}
             UKR = {
                 transfer_state = 227
                 transfer_state = 200
@@ -4452,6 +4263,10 @@ country_event = {
         ai_chance = { factor = 100 }
 		country_event = { id = russia.99 days = 4 }
 		BLR = { change_tag_from = RUS }
+			POL = {
+				transfer_state = 88
+				transfer_state = 97
+			}
             UKR = {
                 transfer_state = 227
                 transfer_state = 200

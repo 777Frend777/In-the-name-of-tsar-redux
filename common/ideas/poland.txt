@@ -117,6 +117,20 @@ ideas = {
 				supply_factor = 0.15
 			}
 		}
+		POL_puppet_government = {
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				local_resources_factor = 0.1
+				extra_trade_to_overlord_factor = 0.1
+				overlord_trade_cost_factor = -0.1
+				political_power_gain = -0.05
+				war_support_factor = -0.2
+				production_speed_bunker_factor = 0.15
+				army_core_defence_factor = 0.1
+				army_morale_factor = -0.05
+			}
+		}
 	}
 	
 }

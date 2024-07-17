@@ -14,3 +14,19 @@ POL_four_year_plan = {
 		original_tag = POL
 	}
 }
+POL_west_wall = {
+	icon = decision_category_generic_economy
+	priority = 10
+	picture = GFX_decision_cat_picture_government_in_exile
+	visible = {
+		original_tag = POL
+	}
+}
+POL_east_wall = {
+	icon = decision_category_generic_economy
+	priority = 10
+	picture = GFX_decision_cat_picture_government_in_exile
+	visible = {
+		original_tag = POL
+	}
+}
