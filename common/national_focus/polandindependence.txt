@@ -1,6 +1,8 @@
 #this tree should be loaded at idependence war
 
 #todo add filters
+#todo add event for end democracy
+#todo assign trait for proper nationalist leader
 
 focus_tree = {
 	id = polandindependence
@@ -417,7 +419,7 @@ focus_tree = {
 		icon = GFX_focus_POL_the_four_year_plan
 		x = 9
 		y = 1
-		cost = 2
+		cost = 1
 
 		ai_will_do = {
 			factor = 10
@@ -425,9 +427,12 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_revenge
 		}
+		available = {
+			always = no
+		}
 		relative_position_id = POL_revenge
 		completion_reward = {
-		#custom reward with text
+			custom_effect_tooltip = POL_tooltip_election_PSChD
 		}
 	}
 
@@ -447,7 +452,22 @@ focus_tree = {
 		}
 		relative_position_id = POL_ChD_gov
 		completion_reward = {
-		#custom reward with text
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = { 
@@ -465,7 +485,7 @@ focus_tree = {
 		}
 		relative_position_id = POL_ChD_gov
 		completion_reward = {
-		#custom reward with text
+			add_ideas = POL_local_communities
 		}
 	}
 
@@ -485,7 +505,7 @@ focus_tree = {
 		}
 		relative_position_id = POL_ChD_gov
 		completion_reward = {
-		#custom reward with text
+			add_ideas = POL_family_values
 		}
 	}
 	focus = { 
@@ -506,7 +526,7 @@ focus_tree = {
 		}
 		relative_position_id = POL_ChD_gov
 		completion_reward = {
-		#custom reward with text
+			add_ideas = POL_christianisation
 		}
 	}
 	focus = { 
@@ -524,7 +544,7 @@ focus_tree = {
 		}
 		relative_position_id = POL_ChD_gov
 		completion_reward = {
-		#custom reward with text
+			add_ideas = POL_capitalism_human
 		}
 	}
 
@@ -532,27 +552,6 @@ focus_tree = {
 
 	focus = { 
 		id = POL_christian_solidarity
-		icon = GFX_focus_POL_the_four_year_plan
-		x = -1
-		y = 3
-		cost = 2
-
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = POL_family_values
-		}
-		prerequisite = {
-			focus = POL_christianisation
-		}
-		relative_position_id = POL_ChD_gov
-		completion_reward = {
-		#custom reward with text
-		}
-	}
-	focus = { 
-		id = POL_soft_polonization
 		icon = GFX_focus_POL_the_four_year_plan
 		x = 1
 		y = 3
@@ -569,7 +568,31 @@ focus_tree = {
 		}
 		relative_position_id = POL_ChD_gov
 		completion_reward = {
-		#custom reward with text
+			swap_ideas = {
+				remove_idea = POL_capitalism_human
+				add_idea = POL_christian_solidarity
+			}
+		}
+	}
+	focus = { 
+		id = POL_soft_polonization
+		icon = GFX_focus_POL_the_four_year_plan
+		x = -1
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = POL_family_values
+		}
+		prerequisite = {
+			focus = POL_christianisation
+		}
+		relative_position_id = POL_ChD_gov
+		completion_reward = {
+			add_ideas = POL_gradual_polonization
 		}
 	}
 
@@ -593,7 +616,7 @@ focus_tree = {
 		}
 		relative_position_id = POL_ChD_gov
 		completion_reward = {
-		#custom reward with text
+			add_ideas = POL_defender_of_faith
 		}
 	}
 
@@ -604,7 +627,7 @@ focus_tree = {
 		icon = GFX_focus_POL_the_four_year_plan
 		x = 16
 		y = 1
-		cost = 2
+		cost = 1
 
 		ai_will_do = {
 			factor = 10
@@ -612,9 +635,12 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_revenge
 		}
+		available = {
+			always = no
+		}
 		relative_position_id = POL_revenge
 		completion_reward = {
-		#custom reward with text
+			custom_effect_tooltip = POL_tooltip_election_SN
 		}
 	}
 
@@ -635,7 +661,11 @@ focus_tree = {
 		}
 		relative_position_id = POL_SN_gov
 		completion_reward = {
-		#custom reward with text
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			add_political_power = 100
 		}
 	}
 	focus = { 
@@ -653,7 +683,22 @@ focus_tree = {
 		}
 		relative_position_id = POL_SN_gov
 		completion_reward = {
-		#custom reward with text
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -674,7 +719,7 @@ focus_tree = {
 		}
 		relative_position_id = POL_SN_gov
 		completion_reward = {
-		#custom reward with text
+			add_ideas = POL_agressive_polonization
 		}
 	}
 	focus = { 
@@ -695,11 +740,18 @@ focus_tree = {
 		}
 		relative_position_id = POL_SN_gov
 		completion_reward = {
-		#custom reward with text
+			add_ideas = extensive_conscription
+			add_political_power = 50
+			if = {
+				limit = {
+					has_idea = extensive_conscription
+				}
+				add_manpower = 10000
+			}
 		}
 	}
 	focus = { 
-		id = POL_censor_press
+		id = POL_jew_problem
 		icon = GFX_focus_POL_the_four_year_plan
 		x = 2
 		y = 2
@@ -713,7 +765,7 @@ focus_tree = {
 		}
 		relative_position_id = POL_SN_gov
 		completion_reward = {
-		#custom reward with text
+			add_ideas = POL_jewish_slaves
 		}
 	}
 
@@ -738,7 +790,7 @@ focus_tree = {
 		}
 		relative_position_id = POL_SN_gov
 		completion_reward = {
-		#custom reward with text
+			add_manpower = 30000
 		}
 	}
 	focus = { 
@@ -755,11 +807,11 @@ focus_tree = {
 			focus = POL_populist_rhetoric
 		}
 		prerequisite = {
-			focus = POL_censor_press
+			focus = POL_jew_problem
 		}
 		relative_position_id = POL_SN_gov
 		completion_reward = {
-		#build a statue lol
+			country_event = POL.11
 		}
 	}
 
@@ -783,7 +835,7 @@ focus_tree = {
 		}
 		relative_position_id = POL_SN_gov
 		completion_reward = {
-		
+			add_ideas = POL_everything
 		}
 	}
 
@@ -795,17 +847,20 @@ focus_tree = {
 		icon = GFX_focus_POL_the_four_year_plan
 		x = -8
 		y = 1
-		cost = 2
+		cost = 1
 
 		ai_will_do = {
 			factor = 10
+		}
+		available = {
+			always = no
 		}
 		prerequisite = {
 			focus = POL_revenge
 		}
 		relative_position_id = POL_revenge
 		completion_reward = {
-		
+			custom_effect_tooltip = POL_tooltip_election_PSL
 		}
 	}
 
@@ -825,7 +880,22 @@ focus_tree = {
 		}
 		relative_position_id = POL_PSL_gov
 		completion_reward = {
-		
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {  
@@ -843,7 +913,7 @@ focus_tree = {
 		}
 		relative_position_id = POL_PSL_gov
 		completion_reward = {
-		
+			add_ideas = POL_will_of_people
 		}
 	}
 
@@ -863,7 +933,11 @@ focus_tree = {
 		}
 		relative_position_id = POL_PSL_gov
 		completion_reward = {
-		
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = construction
+			}
 		}
 	}
 	focus = {  
@@ -881,7 +955,7 @@ focus_tree = {
 		}
 		relative_position_id = POL_PSL_gov
 		completion_reward = {
-		
+			custom_effect_tooltip = POL_tooltip_decision
 		}
 	}
 
@@ -902,7 +976,7 @@ focus_tree = {
 		}
 		relative_position_id = POL_PSL_gov
 		completion_reward = {
-		
+			add_ideas = POL_land_reform
 		}
 	}
 	focus = {  
@@ -920,7 +994,13 @@ focus_tree = {
 		}
 		relative_position_id = POL_PSL_gov
 		completion_reward = {
-		
+			add_ideas = free_trade
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = production
+			}
+			add_political_power = 50
 		}
 	}
 
@@ -946,7 +1026,8 @@ focus_tree = {
 		}
 		relative_position_id = POL_PSL_gov
 		completion_reward = {
-		
+			add_ideas = POL_feed_and_defend
+			add_offsite_building = { type = industrial_complex level = 1 }
 		}
 	}
 
@@ -962,17 +1043,20 @@ focus_tree = {
 		icon = GFX_focus_POL_the_four_year_plan
 		x = -16
 		y = 1
-		cost = 2
+		cost = 1
 
 		ai_will_do = {
 			factor = 10
+		}
+		available = {
+			always = no
 		}
 		prerequisite = {
 			focus = POL_revenge
 		}
 		relative_position_id = POL_revenge
 		completion_reward = {
-		
+			custom_effect_tooltip = POL_tooltip_election_PPS
 		}
 	}
 
@@ -993,7 +1077,7 @@ focus_tree = {
 		}
 		relative_position_id = POL_PPS_gov
 		completion_reward = {
-		
+			add_ideas = POL_workers_rights
 		}
 	}
 	focus = {  
@@ -1011,7 +1095,15 @@ focus_tree = {
 		}
 		relative_position_id = POL_PPS_gov
 		completion_reward = {
-		
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = socialist
+				popularity = -0.05
+			}
+			add_political_power = 50
 		}
 	}
 
@@ -1033,7 +1125,7 @@ focus_tree = {
 		}
 		relative_position_id = POL_PPS_gov
 		completion_reward = {
-		
+			add_ideas = POL_provide_housing
 		}
 	}
 	focus = {  
@@ -1051,7 +1143,22 @@ focus_tree = {
 		}
 		relative_position_id = POL_PPS_gov
 		completion_reward = {
-		
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1073,7 +1180,15 @@ focus_tree = {
 		}
 		relative_position_id = POL_PPS_gov
 		completion_reward = {
-		
+			add_political_power = -50
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {  
@@ -1091,7 +1206,7 @@ focus_tree = {
 		}
 		relative_position_id = POL_PPS_gov
 		completion_reward = {
-		
+			add_ideas = POL_free_women
 		}
 	}
 
@@ -1118,7 +1233,7 @@ focus_tree = {
 		}
 		relative_position_id = POL_PPS_gov
 		completion_reward = {
-		
+			add_ideas = POL_onwards_warsaw
 		}
 	}
 
@@ -1141,7 +1256,7 @@ focus_tree = {
 		}
 		relative_position_id = POL_PPS_gov
 		completion_reward = {
-		
+			add_ideas = POL_minority_protection
 		}
 	}
 	focus = {  
@@ -1159,7 +1274,7 @@ focus_tree = {
 		}
 		relative_position_id = POL_PPS_gov
 		completion_reward = {
-		
+			add_ideas = POL_secularization
 		}
 	}
 
@@ -1188,7 +1303,7 @@ focus_tree = {
 		}
 		relative_position_id = POL_revenge
 		completion_reward = {
-		
+			add_ideas = POL_third_may
 		}
 	}
 	focus = {  
@@ -1209,7 +1324,14 @@ focus_tree = {
 		}
 		relative_position_id = POL_revenge
 		completion_reward = {
-		
+			add_stability = -0.05
+			add_political_power = 50
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			set_cosmetic_tag = POL_dictatorship
+			#event
 		}
 	}
 

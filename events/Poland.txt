@@ -1,7 +1,7 @@
 #MADE BY FOKEU
 
 #TODO:
-#REMOVE ALL IDEAS POL.5
+#CHANGE LEADERS
 add_namespace = pol
 country_event = { #idependence war
 	id = pol.1
@@ -70,6 +70,14 @@ country_event = { #polish victory
 		name = pol.2.a	
 		ai_chance = { factor = 100 }
 		POL = {
+			set_popularities = {
+				democratic = 25
+				conservatives = 25
+				fascism = 15
+				communism = 0
+				socialist = 25
+				neutrality = 10
+			}
 			load_focus_tree = {
 				tree = polandindependence
 			}
@@ -96,6 +104,10 @@ country_event = { #polish victory
 			add_timed_idea = {
 				idea = POL_destruction
 				days = 180
+			}
+			country_event = {
+				id = pol.10
+				days = 5
 			}
 		}
 		RUS = {
@@ -159,10 +171,22 @@ country_event = { #russian civil war after russian victory, garrison fails
 			}
 			unlock_national_focus = POL_revenge 
 			unlock_national_focus = POL_letter_to_tsar
-			#TODO REMOVE ALL PRO RUSSIAN IDEAS
+			remove_ideas = POL_puppet_government
 			add_timed_idea = {
 				idea = POL_destruction
 				days = 180
+			}
+			set_popularities = {
+				democratic = 25
+				conservatives = 25
+				fascism = 15
+				communism = 0
+				socialist = 25
+				neutrality = 10
+			}
+			country_event = {
+				id = pol.10
+				days = 60
 			}
 		}
 		RUS = {
@@ -327,5 +351,81 @@ country_event = { #artificial culture
 		else = {
 			add_Stability = 0.03
 		}
+	}
+}
+#elections
+country_event = { 
+	id = pol.10
+	title = pol.10.t
+	desc = pol.10.d
+	picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+
+	option = {
+		name = pol.10.a	#socialists
+		ai_chance = { factor = 30 }
+		retire_country_leader = yes
+		set_politics = {
+			ruling_party = socialist
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		complete_national_focus = POL_PPS_gov
+	}
+	option = { #liberals
+		name = pol.10.b
+		ai_chance = { factor = 30 }
+		retire_country_leader = yes
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+			long_name = POL_democratic_party_long
+			name = POL_democratic_party
+		}
+		complete_national_focus = POL_PSL_gov
+	}
+	option = { #conservatives
+		name = pol.10.c
+		ai_chance = { factor = 25 }
+		retire_country_leader = yes
+		set_politics = {
+			ruling_party = conservatives
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		complete_national_focus = POL_ChD_gov
+	}
+	option = { #nationalists
+		name = pol.10.d
+		ai_chance = { factor = 15 }
+		retire_country_leader = yes
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		complete_national_focus = POL_SN_gov
+	}
+}
+country_event = { #build a monument
+	id = pol.11
+	title = pol.11.t
+	desc = pol.11.d
+	picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+
+	option = {
+		name = pol.11.a	
+		ai_chance = { factor = 100 }
+		#add_trait = {
+		#	character = TAG_my_leader
+		#	ideology = liberalism
+		#	trait = INOT_cult_of_leader
+		#}
 	}
 }

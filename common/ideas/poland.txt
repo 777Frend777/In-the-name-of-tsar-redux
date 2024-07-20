@@ -63,21 +63,21 @@ ideas = {
 				war_support_factor = 0.05
 				surrender_limit = 0.05
 				conscription_factor = 0.05
-				targeted_modifier = {
-					tag = RUS
-					attack_bonus_against = 0.1
-					defense_bonus_against = 0.1
-				}
-				targeted_modifier = {
-					tag = GER
-					attack_bonus_against = 0.1
-					defense_bonus_against = 0.1
-				}
-				targeted_modifier = {
-					tag = AUS
-					attack_bonus_against = 0.1
-					defense_bonus_against = 0.1
-				}
+			}
+			targeted_modifier = {
+				tag = RUS
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = AUS
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
 			}
 		}
 		POL_four_year_plan = {
@@ -129,6 +129,203 @@ ideas = {
 				production_speed_bunker_factor = 0.15
 				army_core_defence_factor = 0.1
 				army_morale_factor = -0.05
+			}
+		}
+		POL_minority_protection = {
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				compliance_growth_on_our_occupied_states = -0.2
+				resistance_activity = -0.2
+				autonomy_gain = 0.2
+				army_core_defence_factor = 0.2
+			}
+		}
+		POL_gradual_polonization = {
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				compliance_growth_on_our_occupied_states = 0.1
+				resistance_activity = 0.1
+				autonomy_gain = 0.1
+				army_core_defence_factor = -0.04
+				non_core_manpower = 0.05
+				recruitable_population_factor = 0.05
+			}
+		}
+		POL_agressive_polonization = {
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				compliance_growth_on_our_occupied_states = 0.2
+				resistance_activity = 0.2
+				autonomy_gain = -0.2
+				army_core_defence_factor = -0.08
+				non_core_manpower = 0.1
+				recruitable_population_factor = 0.1
+			}
+		}
+		POL_jewish_slaves = {
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				conscription_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				political_power_factor = -0.05
+			}
+		}
+		POL_everything = {
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				conscription_factor = 0.1
+				offence = 0.1
+				defence = 0.1
+				equipment_capture_factor = 0.2
+				army_morale = 0.1
+				coordination_bonus = -0.03
+			}
+		}
+		POL_local_communities = {
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				industry_air_damage_factor = -0.3
+				surrender_limit = 0.2
+			}
+		}
+		POL_family_values = {
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				recruitable_population = -0.01
+				resistance_decay = 0.1
+				monthly_population = 0.1
+			}
+		}
+		POL_capitalism_human = {
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				consumer_goods_factor = 0.03
+				monthly_population = 0.07
+				stability_factor = 0.1
+			}
+		}
+		POL_christian_solidarity = { #swap capitalism human
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				war_support_factor = -0.02
+				consumer_goods_factor = 0.06
+				monthly_population = 0.14
+				stability_factor = 0.2
+			}
+		}
+		POL_defender_of_faith = { 
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				targeted_modifier = {
+					tag = RUS
+					attack_bonus_against = 0.1
+					defense_bonus_against = 0.1
+				}
+				army_morale = 5
+				defensive_war_stability_factor = 0.1
+				production_speed_bunker_factor = 0.3
+			}
+		}
+		POL_will_of_people = { 
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				stability_factor = 0.1
+				conscription_factor = 0.05
+			}
+		}
+		POL_resocialisation = {
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				monthly_population = 0.03
+			}
+		}
+		POL_land_reform = { 
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				consumer_goods_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.1 
+			}
+		}
+		POL_feed_and_defend = { 
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				production_cost_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = 0.3 
+				recruitable_population_factor = 0.03
+			}
+		}
+		POL_workers_rights = { 
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				stability_weekly_factor = 0.3
+				war_support_weekly_factor = 0.3
+				production_factory_efficiency_gain_factor = 0.1 
+				production_factory_start_efficiency_factor = -0.05
+				consumer_goods_factor = 0.03
+			}
+		}
+		POL_provide_housing = { 
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				monthly_population = 0.1
+				consumer_goods_factor = 0.02
+			}
+		}
+		POL_free_women = { 
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				monthly_population = -0.05
+				stability_weekly_factor = 0.3
+			}
+		}
+		POL_onwards_warsaw = { 
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				training_time_factor = -0.1
+				attrition = -0.1
+			}
+		}
+		POL_third_may = { 
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				army_defence_against_major_factor = 0.1
+				army_attack_against_major_factor = 0.1
+			}
+		}
+		POL_christianisation = { 
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				monthly_population = 0.1
+			}
+		}
+		POL_secularization = { 
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				research_speed_factor = 0.1
 			}
 		}
 	}

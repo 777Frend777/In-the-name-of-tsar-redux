@@ -57,7 +57,7 @@
  POL_state_capitalism:0 "State Capitalism"
  POL_force_polonization:0 "Force Polonization"
  POL_populist_rhetoric:0 "Populist Rhetoric"
- POL_censor_press:0 "Press Censorship"
+ POL_jew_problem:0 "'Fix' the Jewish Problem"
  POL_militarism:0 "Militarism"
  POL_cult_of_the_leader:0 "Cult of the Leader"
  POL_everything:0 "Everything for the Nation"
@@ -152,6 +152,10 @@
  POL_tooltip_fortyfour:0 "??????????????????????????????????"
  POL_tooltip_vistula_plan:0 "??????????????????????????????????"
  POL_tooltip_decision:0 "New decisions will be unlocked!"
+ POL_tooltip_election_PPS:0 "§RThe PPS was elected in the first election§!"
+ POL_tooltip_election_PSL:0 "§GThe SL was elected in the first election§!"
+ POL_tooltip_election_PSChD:0 "§gThe PSChD was elected in the first election§!"
+ POL_tooltip_election_SN:0 "§8The SN was elected in the first election§!"
 
  #decision
  POL_dont_surrender:0 "Hold out!"
@@ -178,4 +182,10 @@
  POL_economic_reliance_on_rus:0 "Economic Reliance on Russia"
  POL_pkp_idea:0 "Polskie Koleje Państwowe"
  POL_puppet_government:0 "Puppet Government"
+ POL_jewish_slaves:0 "Jewish Slaves"
+ POL_never_targowica1:0 "Revenge against the Targowica"
+ POL_never_targowica2:0 "Revenge against the Targowica"
+ POL_minority_protection:0 "Protect the Minorities"
+ POL_gradual_polonization:0 "Gradual Polonization"
+ POL_agressive_polonization:0 "Agressive Polonization"
 

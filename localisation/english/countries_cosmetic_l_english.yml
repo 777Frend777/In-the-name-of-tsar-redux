@@ -1286,6 +1286,10 @@
  POL_RUS_DEF:0 "the Kingdom of Poland"
  POL_RUS_ADJ:0 "Polish"
 
+ POL_dictatorship:0 "Polish State"
+ POL_dictatorship_DEF:0 "the Polish State"
+ POL_dictatorship_ADJ:0 "Polish"
+
  Ikhwan: "Ikhwan Jazan State"
  Ikhwan_DEF: "Ikhwan Jazan State"
 
