@@ -328,6 +328,38 @@ ideas = {
 				research_speed_factor = 0.1
 			}
 		}
+		POL_construct_navy = { 
+			allowed = { always = no } #needs balance
+			picture = clock_is_ticking
+			modifier = {
+				experience_gain_navy_unit = 0.1
+				production_cost_max_ship_hull_cruiser = -3
+				production_cost_max_ship_hull_heavy = -3
+				production_cost_max_ship_hull_light = -3
+				production_cost_max_ship_hull_submarine  = -3
+			}
+		}
+		POL_tsar_army = { 
+			allowed = { always = no }
+			picture = clock_is_ticking
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = BAV
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		POL_no_surrender = { 
+			allowed = { always = no }
+			picture = clock_is_ticking
+			modifier = {
+				surrender_limit = 0.3
+				war_support_factor = 0.05
+			}
+		}
 	}
-	
 }

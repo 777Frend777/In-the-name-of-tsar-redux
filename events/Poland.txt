@@ -70,14 +70,6 @@ country_event = { #polish victory
 		name = pol.2.a	
 		ai_chance = { factor = 100 }
 		POL = {
-			set_popularities = {
-				democratic = 25
-				conservatives = 25
-				fascism = 15
-				communism = 0
-				socialist = 25
-				neutrality = 10
-			}
 			load_focus_tree = {
 				tree = polandindependence
 			}
@@ -175,14 +167,6 @@ country_event = { #russian civil war after russian victory, garrison fails
 			add_timed_idea = {
 				idea = POL_destruction
 				days = 180
-			}
-			set_popularities = {
-				democratic = 25
-				conservatives = 25
-				fascism = 15
-				communism = 0
-				socialist = 25
-				neutrality = 10
 			}
 			country_event = {
 				id = pol.10
@@ -371,6 +355,11 @@ country_event = {
 			last_election = "1935.12.17"
 			election_frequency = 48
 		}
+		set_party_name = { 
+			ideology = democratic
+			long_name = POL_democratic_party_long
+			name = POL_democratic_party
+		}
 		complete_national_focus = POL_PPS_gov
 	}
 	option = { #liberals
@@ -382,6 +371,11 @@ country_event = {
 			elections_allowed = no
 			last_election = "1935.12.17"
 			election_frequency = 48
+			long_name = POL_democratic_party_long
+			name = POL_democratic_party
+		}
+		set_party_name = { 
+			ideology = democratic
 			long_name = POL_democratic_party_long
 			name = POL_democratic_party
 		}
@@ -397,6 +391,11 @@ country_event = {
 			last_election = "1935.12.17"
 			election_frequency = 48
 		}
+		set_party_name = { 
+			ideology = democratic
+			long_name = POL_democratic_party_long
+			name = POL_democratic_party
+		}
 		complete_national_focus = POL_ChD_gov
 	}
 	option = { #nationalists
@@ -408,6 +407,11 @@ country_event = {
 			elections_allowed = no
 			last_election = "1935.12.17"
 			election_frequency = 48
+		}
+		set_party_name = { 
+			ideology = democratic
+			long_name = POL_democratic_party_long
+			name = POL_democratic_party
 		}
 		complete_national_focus = POL_SN_gov
 	}
@@ -421,6 +425,40 @@ country_event = { #build a monument
 
 	option = {
 		name = pol.11.a	
+		ai_chance = { factor = 100 }
+		#add_trait = {
+		#	character = TAG_my_leader
+		#	ideology = liberalism
+		#	trait = INOT_cult_of_leader
+		#}
+	}
+}
+country_event = { #army reform
+	id = pol.12
+	title = pol.12.t
+	desc = pol.12.d
+	picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+
+	option = {
+		name = pol.12.a	
+		ai_chance = { factor = 100 }
+		#add_trait = {
+		#	character = TAG_my_leader
+		#	ideology = liberalism
+		#	trait = INOT_cult_of_leader
+		#}
+	}
+}
+country_event = { #army reform congress
+	id = pol.13
+	title = pol.13.t
+	desc = pol.13.d
+	picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+
+	option = {
+		name = pol.13.a	
 		ai_chance = { factor = 100 }
 		#add_trait = {
 		#	character = TAG_my_leader

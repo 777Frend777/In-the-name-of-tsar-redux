@@ -1,4 +1,5 @@
 characters = {
+
 	POL_Kiril_romanov = {
 		name="Kirill Vladimirovich"
 		portraits = {
@@ -13,7 +14,19 @@ characters = {
 			id=-1
 		}
 	}
-
+	POL_rzad_tymczasowy = {
+		name="Tymczasowy Rząd Narodowy"
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_the_sejm"
+			}
+		}
+		country_leader = {
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	POL_karl_albrecht = {
 		name=POL_karl_albrecht
 		portraits = {
