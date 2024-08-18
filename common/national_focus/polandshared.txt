@@ -14,11 +14,12 @@ shared_focus = {
 			idea = POL_four_year_plan
 			days = 1456
 		}
+		country_event = pol.18
 	}
 }
 shared_focus = {
 	id = POL_silesia_industry
-	icon = GFX_focus_POL_the_four_year_plan
+	icon = GFX_goal_factory_complex
 	x = -2
 	y = 1
 	cost = 2
@@ -36,7 +37,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = POL_warsaw_industry
-	icon = GFX_focus_POL_the_four_year_plan
+	icon = GFX_goal_POL_industry_warsaw
 	x = 0
 	y = 1
 	cost = 2
@@ -54,7 +55,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = POL_central_industry
-	icon = GFX_focus_POL_the_four_year_plan
+	icon = GFX_goal_POL_industry_lublin
 	x = 2
 	y = 1
 	cost = 2
@@ -72,7 +73,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = POL_autarky
-	icon = GFX_focus_POL_the_four_year_plan
+	icon = GFX_goal_generic_autarky
 	x = -1
 	y = 2
 	cost = 2
@@ -104,7 +105,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = POL_reliance_russia
-	icon = GFX_focus_POL_the_four_year_plan
+	icon = GFX_focus_russian_cooperation
 	x = 1
 	y = 2
 	cost = 2
@@ -134,7 +135,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = POL_pkp
-	icon = GFX_focus_POL_the_four_year_plan
+	icon = GFX_goal_generic_railway_construction
 	x = -3
 	y = 3
 	cost = 2
@@ -153,7 +154,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = POL_bridge_network
-	icon = GFX_focus_POL_the_four_year_plan
+	icon = GFX_goal_generic_bridge
 	x = -1
 	y = 3
 	cost = 2
@@ -206,7 +207,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = POL_rubber_manufacturing
-	icon = GFX_focus_POL_the_four_year_plan
+	icon = GFX_goal_KTG_Rubber_Farming
 	x = 1
 	y = 3
 	cost = 2
@@ -232,7 +233,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = POL_invest_universities
-	icon = GFX_focus_POL_the_four_year_plan
+	icon = GFX_goal_bombay_university
 	x = 3
 	y = 3
 	cost = 2
@@ -250,26 +251,8 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = POL_invest_armored_trains
-	icon = GFX_focus_POL_the_four_year_plan
-	x = -3
-	y = 4
-	cost = 2
-
-	ai_will_do = {
-		factor = 10
-	}
-	relative_position_id = POL_four_plan
-	prerequisite = {
-		focus = POL_pkp
-	}
-	completion_reward = {
-	#idk why are there no fucking armored trains in research
-	}
-}
-shared_focus = {
 	id = POL_urbanisation
-	icon = GFX_focus_POL_the_four_year_plan
+	icon = GFX_goal_construction
 	x = -1
 	y = 4
 	cost = 2
@@ -314,7 +297,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = POL_polska_stal
-	icon = GFX_focus_POL_the_four_year_plan
+	icon = GFX_goal_SWI_steel
 	x = 1
 	y = 4
 	cost = 2
@@ -343,7 +326,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = POL_intellectual_renaissance
-	icon = GFX_focus_POL_the_four_year_plan
+	icon = GFX_goal_double_research
 	x = 3
 	y = 4
 	cost = 2
@@ -361,7 +344,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = POL_poland_b
-	icon = GFX_focus_POL_the_four_year_plan
+	icon = GFX_goal_generic_road_construction
 	x = -1
 	y = 5
 	cost = 2
@@ -379,7 +362,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = POL_invest_silesia
-	icon = GFX_focus_POL_the_four_year_plan
+	icon = GFX_goal_generic_coal_mining
 	x = 1
 	y = 5
 	cost = 2

@@ -1,7 +1,5 @@
 #MADE BY FOKEU
 
-#TODO:
-#CHANGE LEADERS
 add_namespace = pol
 country_event = { #idependence war
 	id = pol.1
@@ -22,7 +20,14 @@ country_event = { #idependence war
 				days = 100
 			}
 		}
+		88 = {
+			set_demilitarized_zone = no
+		}
+		97 = {
+			set_demilitarized_zone = no
+		}
 		POL = {
+			add_manpower = -100
 			add_ideas = POL_spirit_of_freedom1
 			remove_ideas = POL_clock_is_ticking
 			set_party_name = { 
@@ -30,6 +35,7 @@ country_event = { #idependence war
 				long_name = POL_tempgov_long
 				name = POL_tempgov
 			}
+			add_Stability = 0.15
 			set_politics = {
 				ruling_party = democratic
 				elections_allowed = no
@@ -63,7 +69,7 @@ country_event = { #polish victory
 	id = pol.2
 	title = pol.2.t
 	desc = pol.2.d
-	picture = GFX_report_event_generic_panzer_attack
+	picture = GFX_report_event_POL_resistance
 	is_triggered_only = yes
 
 	option = {
@@ -111,7 +117,7 @@ country_event = { #russian victory
 	id = pol.3
 	title = pol.3.t
 	desc = pol.3.d
-	picture = GFX_report_event_generic_panzer_attack
+	picture = GFX_report_event_POL_train_bomb
 	is_triggered_only = yes
 
 	option = {
@@ -187,7 +193,7 @@ country_event = { #smuggle weapons
 	id = pol.4
 	title = pol.4.t
 	desc = pol.4.d
-	picture = GFX_report_event_generic_panzer_attack
+	picture = GFX_report_event_generic_diplomacy3
 	is_triggered_only = yes
 
 	option = {
@@ -196,7 +202,7 @@ country_event = { #smuggle weapons
 		POL = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 400
+				amount = 600
 				producer = RUS
 			}
 			add_equipment_to_stockpile = {
@@ -206,7 +212,7 @@ country_event = { #smuggle weapons
 			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 200
+				amount = 300
 				producer = GER
 			}
 		}
@@ -216,7 +222,7 @@ country_event = { #disarmament
 	id = pol.6
 	title = pol.6.t
 	desc = pol.6.d
-	picture = GFX_report_event_generic_panzer_attack
+	picture = GFX_report_event_HOL_mass_arrests
 	is_triggered_only = yes
 
 	option = {
@@ -260,7 +266,7 @@ country_event = { #cyrylic
 	id = pol.7
 	title = pol.7.t
 	desc = pol.7.d
-	picture = GFX_report_event_generic_panzer_attack
+	picture = GFX_report_event_RUS_Latinization
 	is_triggered_only = yes
 
 	option = {
@@ -274,10 +280,10 @@ country_event = { #cyrylic
 				}
 			}
 			add_ideas = POL_puppet_government
-			add_Stability = 0.03
+			add_political_power = 10
 		}
 		else = {
-			add_Stability = 0.03
+			add_political_power = 10
 		}
 	}
 }
@@ -285,15 +291,12 @@ country_event = { #mandatory russian
 	id = pol.8
 	title = pol.8.t
 	desc = pol.8.d
-	picture = GFX_report_event_generic_panzer_attack
+	picture = GFX_OTT_Military_School
 	is_triggered_only = yes
 
 	option = {
-		name = pol.4.a	
+		name = pol.8.a	
 		ai_chance = { factor = 100 }
-		POL = {
-			add_Stability = 0.03
-		}
 		if = {
 			limit = {
 				POL = {
@@ -302,10 +305,10 @@ country_event = { #mandatory russian
 				}
 			}
 			add_ideas = POL_puppet_government
-			add_Stability = 0.03
+			add_political_power = 10
 		}
 		else = {
-			add_Stability = 0.03
+			add_political_power = 10
 		}
 	}
 }
@@ -313,15 +316,12 @@ country_event = { #artificial culture
 	id = pol.9
 	title = pol.9.t
 	desc = pol.9.d
-	picture = GFX_report_event_generic_panzer_attack
+	picture = GFX_report_event_POL_pacta_conventa
 	is_triggered_only = yes
 
 	option = {
 		name = pol.9.a	
 		ai_chance = { factor = 100 }
-		POL = {
-			add_Stability = 0.03
-		}
 		if = {
 			limit = {
 				POL = {
@@ -330,10 +330,10 @@ country_event = { #artificial culture
 				}
 			}
 			add_ideas = POL_puppet_government
-			add_Stability = 0.03
+			add_political_power = 10
 		}
 		else = {
-			add_Stability = 0.03
+			add_political_power = 10
 		}
 	}
 }
@@ -342,13 +342,12 @@ country_event = {
 	id = pol.10
 	title = pol.10.t
 	desc = pol.10.d
-	picture = GFX_report_event_generic_panzer_attack
+	picture = GFX_report_event_POL_council
 	is_triggered_only = yes
 
 	option = {
 		name = pol.10.a	#socialists
 		ai_chance = { factor = 30 }
-		retire_country_leader = yes
 		set_politics = {
 			ruling_party = socialist
 			elections_allowed = no
@@ -365,7 +364,6 @@ country_event = {
 	option = { #liberals
 		name = pol.10.b
 		ai_chance = { factor = 30 }
-		retire_country_leader = yes
 		set_politics = {
 			ruling_party = democratic
 			elections_allowed = no
@@ -379,12 +377,12 @@ country_event = {
 			long_name = POL_democratic_party_long
 			name = POL_democratic_party
 		}
+		retire_country_leader = yes
 		complete_national_focus = POL_PSL_gov
 	}
 	option = { #conservatives
 		name = pol.10.c
 		ai_chance = { factor = 25 }
-		retire_country_leader = yes
 		set_politics = {
 			ruling_party = conservatives
 			elections_allowed = no
@@ -399,9 +397,8 @@ country_event = {
 		complete_national_focus = POL_ChD_gov
 	}
 	option = { #nationalists
-		name = pol.10.d
+		name = pol.10.e
 		ai_chance = { factor = 15 }
-		retire_country_leader = yes
 		set_politics = {
 			ruling_party = fascism
 			elections_allowed = no
@@ -420,7 +417,7 @@ country_event = { #build a monument
 	id = pol.11
 	title = pol.11.t
 	desc = pol.11.d
-	picture = GFX_report_event_generic_panzer_attack
+	picture = GFX_report_event_ARM_construction_Tsitsernakaberd
 	is_triggered_only = yes
 
 	option = {
@@ -437,24 +434,19 @@ country_event = { #army reform
 	id = pol.12
 	title = pol.12.t
 	desc = pol.12.d
-	picture = GFX_report_event_generic_panzer_attack
+	picture = GFX_report_event_POL_army_march
 	is_triggered_only = yes
 
 	option = {
 		name = pol.12.a	
 		ai_chance = { factor = 100 }
-		#add_trait = {
-		#	character = TAG_my_leader
-		#	ideology = liberalism
-		#	trait = INOT_cult_of_leader
-		#}
 	}
 }
-country_event = { #army reform congress
+country_event = { #army reform independence
 	id = pol.13
 	title = pol.13.t
 	desc = pol.13.d
-	picture = GFX_report_event_generic_panzer_attack
+	picture = GFX_report_event_POL_army_march
 	is_triggered_only = yes
 
 	option = {
@@ -465,5 +457,271 @@ country_event = { #army reform congress
 		#	ideology = liberalism
 		#	trait = INOT_cult_of_leader
 		#}
+	}
+}
+country_event = { #lore
+	id = pol.14
+	title = pol.14.t
+	desc = pol.14.d
+	picture = GFX_report_event_POL_flag
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		original_tag = POL
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = pol.14.a	
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = pol.15
+			days = 5
+		}
+	}
+}
+country_event = { #guide
+	id = pol.15
+	title = pol.15.t
+	desc = pol.15.d
+	picture = GFX_report_event_POL_flag
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pol.15.a	
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = { #loosing control
+	id = pol.16
+	title = pol.16.t
+	desc = pol.16.d
+	picture = GFX_report_event_POL_assassination
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		original_tag = POL
+		POL = {
+			focus_progress = {
+				focus = POL_destroy_resistance
+				progress > 0.5
+			}
+		}
+	}
+	option = {
+		name = pol.16.a	
+		ai_chance = { factor = 100 }
+		add_political_power = -30
+		add_Stability = -0.1
+		88 = {
+			set_demilitarized_zone = yes
+		}
+		97 = {
+			set_demilitarized_zone = yes
+		}
+	}
+}
+country_event = { #end of democracy
+	id = pol.17
+	title = pol.17.t
+	desc = pol.17.d
+	picture = GFX_report_event_POL_council
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = pol.17.a	
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = { #four year plan
+	id = pol.18
+	title = pol.18.t
+	desc = pol.18.d
+	picture = GFX_report_event_FNG_industry3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = pol.18.a	
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = { #scripted peace with russia
+	id = pol.19
+	title = pol.19.t
+	desc = pol.19.d
+	picture = GFX_report_event_FNG_industry3
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		POL = {
+			controls_province = 11479
+			controls_province = 3393
+			controls_province = 422
+			controls_province = 406
+			has_war_with = RUS
+		}
+	}
+	option = {
+		name = pol.19.a	
+		ai_chance = { factor = 100 }
+		RUS = {
+			country_event = pol.20
+		}
+	}
+}
+country_event = { #event for russia
+	id = pol.20
+	title = pol.20.t
+	desc = pol.20.d
+	picture = GFX_report_event_FNG_industry3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = pol.20.a	#accept
+		ai_chance = { factor = 100 }
+		RUS = {
+			white_peace = {
+				tag = POL
+			}
+		}
+		POL = {
+			if = {
+				limit = {
+					784 = {
+						is_owned_by = RUS
+					}
+				}
+				transfer_state = 784
+			}
+			if = {
+				limit = {
+					96 = {
+						is_owned_by = RUS
+					}
+				}
+				transfer_state = 96
+			}
+			if = {
+				limit = {
+					95 = {
+						is_owned_by = RUS
+					}
+				}
+				transfer_state = 95
+			}
+			if = {
+				limit = {
+					94 = {
+						is_owned_by = RUS
+					}
+				}
+				transfer_state = 94
+			}
+			if = {
+				limit = {
+					91 = {
+						OR = {
+							is_owned_by = RUS
+							is_owned_by = KRW
+						}
+					}
+				}
+				transfer_state = 91
+			}
+			if = {
+				limit = {
+					89 = {
+						OR = {
+							is_owned_by = RUS
+							is_owned_by = KRW
+						}
+					}
+				}
+				transfer_state = 89
+			}
+			if = {
+				limit = {
+					80 = {
+						OR = {
+							is_owned_by = RUS
+							is_owned_by = KRW
+						}
+					}
+				}
+				transfer_state = 80
+			}
+			if = {
+				limit = {
+					73 = {
+						OR = {
+							is_owned_by = RUS
+							is_owned_by = KRW
+						}
+					}
+				}
+				transfer_state = 73
+			}
+		}
+	}
+	option = {
+		name = pol.20.b #refuse
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = { #event for controller of zaolzie
+	id = pol.21
+	title = pol.21.t
+	desc = pol.21.d
+	picture = GFX_report_event_FNG_industry3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = pol.21.a	#yes
+		ai_chance = { 
+			base = 10
+			modifier = {
+				factor = 2137
+				ROOT = {
+					has_war = yes
+				}
+			}
+			modifier = {
+				factor = 30
+				ROOT = {
+					strength_ratio = {
+						tag = POL
+						ratio < 1
+					}
+				}
+			}
+			modifier = {
+				factor = 2137
+				ROOT = {
+					strength_ratio = {
+						tag = POL
+						ratio < 0.5
+					}
+				}
+			}
+		}
+		POL = {
+			transfer_state = 72
+		}
+	}
+	option = {
+		name = pol.21.b #no
+		ai_chance = { 
+			base = 90
+		}
+		POL = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ROOT
+				generator = { 72 }
+			}
+		}
 	}
 }

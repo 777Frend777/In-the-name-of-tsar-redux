@@ -150,14 +150,8 @@ territorial_restorations_decisions = {
 	fire_only_once = yes
 	
 	available = {
-	OR = {
-		POL = { 
-		NOT = { controls_state = 11 }
-		exists = yes }
-		POL = { has_country_flag = LIT_can_be_released }
-	}
-	NOT = { TAG = LIT }
-	is_puppet = no
+		NOT = { TAG = LIT }
+		is_puppet = no
 	}
 	
 	cost = 0
@@ -394,47 +388,104 @@ territorial_restorations_decisions = {
 
 	}
 	
-	#Free Ukraine ex. RUS
+	#Free Ukraine 
 	GEN_release_UKR = {
-	
-	icon = decision_generic_decision
-	#targets = { UKR }
-	
-	visible = {
-	NOT = { 
-	OR = {
-		TAG = UKR
-		TAG = RUS 
-	}
-	}
-	UKR = {
-		exists = no
-	}
-	NOT = { has_war_with = UKR }
-	NOT = { has_war_with = RUS }
-	controls_state = 202
-	}
-	
-	fire_only_once = yes
-	
-	available = {
-	NOT = { TAG = UKR }
-	is_puppet = no
-	}
-	
-	cost = 0
-	days_remove = 3
-	
-	ai_will_do = {
-			factor = 10
+		icon = decision_generic_decision
+		#targets = { UKR }
+		
+		visible = {
+			NOT = { 
+				OR = {
+					TAG = UKR
+					TAG = RUS 
+				}
+			}
+			UKR = {
+				exists = no
+			}
+			controls_state = 202
 		}
 		
-	remove_effect = {
-				ROOT = {
-					country_event = { id = gen_states.12 }
-				}
+		fire_only_once = yes
+		
+		available = {
+			NOT = { TAG = UKR }
+			is_puppet = no
+		}
+		
+		cost = 0
+		days_remove = 3
+		
+		ai_will_do = {
+				factor = 10
+			}
+			
+		remove_effect = {
+			ROOT = {
+				country_event = { id = gen_states.12 }
+			}
+		}
 	}
-
+	GEN_release_carpathia = {
+		icon = decision_generic_decision
+		#targets = { UKR }
+		
+		visible = {
+			tag = POL
+			controls_state = 73
+		}
+		
+		fire_only_once = yes
+		
+		available = {
+			NOT = { TAG = UKR }
+			is_puppet = no
+		}
+		
+		cost = 0
+		days_remove = 3
+		
+		ai_will_do = {
+				factor = 10
+			}
+			
+		remove_effect = {
+			ROOT = {
+				country_event = { id = gen_states.46 }
+			}
+		}
+	}
+	GEN_release_bucovina = {
+		icon = decision_generic_decision
+		#targets = { UKR }
+		
+		visible = {
+			TAG = POL
+			UKR = {
+				exists = no
+			}
+			controls_state = 80
+		}
+		
+		fire_only_once = yes
+		
+		available = {
+			NOT = { TAG = UKR }
+			is_puppet = no
+		}
+		
+		cost = 0
+		days_remove = 3
+		
+		ai_will_do = {
+				factor = 10
+			}
+			
+		remove_effect = {
+			ROOT = {
+				country_event = { id = gen_states.47 }
+			}
+		}
 	}
 	###Russia###
 	#Free Poland ex. Russia

@@ -12,7 +12,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_fortyfourb
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_revolution
 		x = 7
 		y = 1
 		cost = 2
@@ -29,7 +29,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_recruitment
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_conscription
 		x = 6
 		y = 2
 		cost = 2
@@ -47,7 +47,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_call_for_help
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_focus_generic_military_equipment
 		x = 8
 		y = 2
 		cost = 2
@@ -64,7 +64,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_desperate_defense
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_RIG_city_defense
 		x = 7
 		y = 3
 		cost = 2

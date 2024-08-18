@@ -27,6 +27,32 @@ characters = {
 			id=-1
 		}
 	}
+	POL_wojciech_korfanty = {
+		name="Wojciech Korfanty"
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_wojciech_korfanty"
+			}
+		}
+		country_leader = {
+			ideology=conservatives_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	POL_norbert_barlicki = {
+		name="Norbert Barlicki"
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_Norbert_Barlicki"
+			}
+		}
+		country_leader = {
+			ideology=socialist_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	POL_karl_albrecht = {
 		name=POL_karl_albrecht
 		portraits = {
@@ -413,21 +439,6 @@ characters = {
 			expire="1965.1.1.1"
 			id=-1
 			traits = { father_of_polish_nationalism }
-		}
-	}
-
-	POL_boleslaw_piasecki = {
-		name=POL_boleslaw_piasecki
-		portraits = {
-			civilian = {
-				large="GFX_POL_boleslaw_piasecki"
-			}
-		}
-		country_leader = {
-			ideology=falangism
-			expire="1965.1.1.1"
-			id=-1
-			traits = { unruly_falangist }
 		}
 	}
 

@@ -381,52 +381,109 @@ country_event = {
 		name = gen_states.6.a
 		ai_chance = {
 			factor = 100
-			modifier = {
-			factor = 0
-			TAG = POL 
+		}
+		if = { 
+			limit = { 
+				controls_state = 11
+				if = {
+					limit = {
+						ROOT = {
+							tag = POL
+						}
+					}
+					NOT = {
+						has_government = fascism
+					}
+				}
 			}
+			LIT = { transfer_state = 11 }
 		}
-		LIT = {
-		set_country_flag = RUS_can_be_released
+		if = { 
+			limit = { 
+				controls_state = 814
+				if = {
+					limit = {
+						ROOT = {
+							tag = POL
+						}
+					}
+					NOT = {
+						has_government = fascism
+					}
+				}
+			}
+			LIT = { transfer_state = 814 }
 		}
-		LIT = { transfer_state = 11 }
+		if = { 
+			limit = { 
+				controls_state = 815
+				if = {
+					limit = {
+						ROOT = {
+							tag = POL
+						}
+					}
+					NOT = {
+						has_government = fascism
+					}
+				}
+			}
+			LIT = { transfer_state = 815 }
+		}
+		if = { 
+			limit = {
+				controls_state = 784
+				NOT = {
+					tag = POL
+				}
+			}
+			LIT = { transfer_state = 784 }
+		}
+		if = { 
+			limit = { 
+				controls_state = 189
+				if = {
+					limit = {
+						ROOT = {
+							tag = POL
+						}
+					}
+					NOT = {
+						has_government = fascism
+					}
+				}
+			}
+			LIT = { transfer_state = 189 }
+		}
 		if = {
-		limit = { controls_state = 814 }
-		LIT = { transfer_state = 814 }
+			limit = {
+				controls_state = 188
+				NOT = { 
+					OR = {
+						TAG = GER 
+						TAG = BAV 
+					}
+				}
+			}
+			LIT = { transfer_state = 188 }
 		}
-		if = {
-		limit = { controls_state = 815 }
-		LIT = { transfer_state = 815 }
+		if = { 
+			limit = { 
+				controls_state = 814
+				if = {
+					limit = {
+						ROOT = {
+							tag = POL
+						}
+					}
+					NOT = {
+						has_government = fascism
+					}
+				}
+			}
+			LIT = { transfer_state = 814 }
 		}
-		if = {
-		limit = { controls_state = 784 }
-		LIT = { transfer_state = 784 }
-		}
-		if = {
-		limit = { controls_state = 189 }
-		LIT = { transfer_state = 189 }
-		}
-		#if = {
-		#limit = { controls_state = 96 }
-		#LIT = { transfer_state = 96 }
-		#}
-		if = {
-		limit = { controls_state = 188
-		NOT = { 
-		OR = {
-		TAG = GER 
-		TAG = BAV 
-		}
-		}
-		}
-		LIT = { transfer_state = 188 }
-		}
-		if = {
-		limit = { controls_state = 814 }
-		LIT = { transfer_state = 814 }
-		}
-		ROOT = {
-		add_political_power = -15		
+		ROOT = {	
 		puppet = LIT
 		}
 	}
@@ -435,13 +492,6 @@ country_event = {
 		name = gen_states.6.b
 		ai_chance = {
 			factor = 0
-			modifier = {
-			factor = 100
-			TAG = POL 
-			}
-		}
-		LIT = {
-		set_country_flag = RUS_can_be_released
 		}
 		ROOT = {
 		add_political_power = -30
@@ -470,13 +520,23 @@ country_event = {
 		set_country_flag = RUS_can_be_released
 		}
 		BLR = { transfer_state = 206 }
-		if = {
-		limit = { controls_state = 95 }
-		BLR = { transfer_state = 95 }
+		if = { #only for poland
+			limit = {
+				controls_state = 95
+				NOT = {
+					tag = POL
+				}
+			}
+			BLR = { transfer_state = 95 }
 		}
-		if = {
-		limit = { controls_state = 94 }
-		BLR = { transfer_state = 94 }
+		if = { #only for poland
+			limit = {
+				controls_state = 94
+				NOT = {
+					tag = POL
+				}
+			}
+			BLR = { transfer_state = 94 }
 		}
 		if = {
 		limit = { controls_state = 194 }
@@ -486,10 +546,23 @@ country_event = {
 		limit = { controls_state = 204 }
 		BLR = { transfer_state = 204 }
 		}
-		#if = {
-		#limit = { controls_state = 207 }
-		#BLR = { transfer_state = 207 }
-		#}
+		if = {
+		limit = { controls_state = 241 }
+		BLR = { transfer_state = 241 }
+		}
+		if = {
+		limit = { controls_state = 207 }
+		BLR = { transfer_state = 207 }
+		}
+		if = { #only for poland
+			limit = {
+				controls_state = 96
+				NOT = {
+					tag = POL
+				}
+			}
+			BLR = { transfer_state = 96 }
+		}
 		ROOT = {
 		add_political_power = -15		
 		puppet = BLR
@@ -737,6 +810,30 @@ country_event = {
 		limit = { controls_state = 148 }
 		FIN = { transfer_state = 148 }
 		}
+		if = {
+		limit = { controls_state = 929 }
+		FIN = { transfer_state = 929 }
+		}
+		if = {
+		limit = { controls_state = 145 }
+		FIN = { transfer_state = 145 }
+		}
+		if = {
+		limit = { controls_state = 926 }
+		FIN = { transfer_state = 926 }
+		}
+		if = {
+		limit = { controls_state = 927 }
+		FIN = { transfer_state = 927 }
+		}
+		if = {
+		limit = { controls_state = 930 }
+		FIN = { transfer_state = 930 }
+		}
+		if = {
+		limit = { controls_state = 928 }
+		FIN = { transfer_state = 928 }
+		}
 		#if = {
 		#limit = { controls_state = 146 }
 		#FIN = { transfer_state = 146 }
@@ -795,6 +892,34 @@ country_event = {
 		limit = { controls_state = 213 }
 		FIN = { transfer_state = 213 }
 		}
+		if = {
+		limit = { controls_state = 216 }
+		FIN = { transfer_state = 216 }
+		}
+		if = {
+		limit = { controls_state = 928 }
+		FIN = { transfer_state = 928 }
+		}
+		if = {
+		limit = { controls_state = 930 }
+		FIN = { transfer_state = 930 }
+		}
+		if = {
+		limit = { controls_state = 927 }
+		FIN = { transfer_state = 927 }
+		}
+		if = {
+		limit = { controls_state = 926 }
+		FIN = { transfer_state = 926 }
+		}
+		if = {
+		limit = { controls_state = 929 }
+		FIN = { transfer_state = 929 }
+		}
+		if = {
+		limit = { controls_state = 145 }
+		FIN = { transfer_state = 145 }
+		}
 		ROOT = {
 		add_political_power = -15		
 		puppet = FIN
@@ -839,6 +964,42 @@ country_event = {
 		UKR = { transfer_state = 202 
 		set_country_flag = RUS_can_be_released
 		}
+		if = { #only for poland
+			limit = { 
+				controls_state = 93
+				NOT = {
+					tag = POL
+				}
+			}
+			UKR = { transfer_state = 93 }
+		}
+		if = {
+			limit = { 
+				controls_state = 91
+				NOT = {
+					tag = POL
+				}
+			}
+			UKR = { transfer_state = 91 }
+		}
+		if = {
+			limit = { 
+				controls_state = 89
+				NOT = {
+					tag = POL
+				}
+			}
+			UKR = { transfer_state = 89 }
+		}
+		if = {
+			limit = { 
+				controls_state = 80
+				NOT = {
+					tag = POL
+				}
+			}
+			UKR = { transfer_state = 80 }
+		}
 		if = {
 		limit = { controls_state = 201 }
 		UKR = { transfer_state = 201 }
@@ -854,23 +1015,7 @@ country_event = {
 		if = {
 		limit = { controls_state = 199 }
 		UKR = { transfer_state = 199 }
-		}
-		if = {
-		limit = { controls_state = 93 }
-		UKR = { transfer_state = 93 }
-		}
-		if = {
-		limit = { controls_state = 91 }
-		UKR = { transfer_state = 91 }
-		}
-		if = {
-		limit = { controls_state = 89 }
-		UKR = { transfer_state = 89 }
-		}
-		if = {
-		limit = { controls_state = 80 }
-		UKR = { transfer_state = 80 }
-		}
+		} 
 		if = {
 		limit = { controls_state = 192 }
 		UKR = { transfer_state = 192 }
@@ -1062,6 +1207,12 @@ country_event = {
 		if = { limit = { controls_state = 208 } #Luga
 		RUS = { transfer_state = 208 }
 		}
+		if = { limit = { controls_state = 880 } 
+		RUS = { transfer_state = 880 }
+		}
+		if = { limit = { controls_state = 879 } 
+		RUS = { transfer_state = 879 }
+		}
 		if = { limit = { controls_state = 248 } #Luga
 		RUS = { transfer_state = 248 }
 		}
@@ -1125,17 +1276,11 @@ country_event = {
 		if = { limit = { controls_state = 210 } #Nevel
 		RUS = { transfer_state = 210 }
 		}
-		if = { limit = { controls_state = 207 } #Vitebsk
-		RUS = { transfer_state = 207 }
-		}
 		if = { limit = { controls_state = 242 } #Smolensk
 		RUS = { transfer_state = 242 }
 		}
 		if = { limit = { controls_state = 205 } #Kaluga
 		RUS = { transfer_state = 205 }
-		}
-		if = { limit = { controls_state = 241 } #Gomel
-		RUS = { transfer_state = 241 }
 		}
 		if = { limit = { controls_state = 243 } #Roslavl
 		RUS = { transfer_state = 243 }
@@ -1889,8 +2034,14 @@ country_event = {
 		if = { limit = { controls_state = 75 }
 		CZE = { transfer_state = 75 }
 		}
-		if = { limit = { controls_state = 72 }
-		CZE = { transfer_state = 72 }
+		if = { 
+			limit = { 
+				controls_state = 72 
+				NOT = {
+					TAG = POL
+				}
+			}
+			CZE = { transfer_state = 72 }
 		}
 		if = { limit = { controls_state = 69 }
 		CZE = { transfer_state = 69 }
@@ -2035,6 +2186,40 @@ country_event = {
 		GER = { transfer_state = 61 } }
 		if = { limit = { controls_state = 62 }
 		GER = { transfer_state = 62 } }
+		if = { 
+			limit = { 
+				controls_state = 68 
+				if = {
+					limit = {
+						ROOT = {
+							tag = POL
+						}
+					}
+					NOT = {
+						has_government = fascism
+					}
+				}
+			}
+			GER = { transfer_state = 68 }
+		}
+		if = { 
+			limit = { 
+				controls_state = 63 
+				if = {
+					limit = {
+						ROOT = {
+							tag = POL
+						}
+					}
+					NOT = {
+						has_government = fascism
+					}
+				}
+			}
+			GER = { transfer_state = 63 }
+		}
+		if = { limit = { controls_state = 763 }
+		GER = { transfer_state = 763 } }
 		
 		#Northern Germany
 		if = { limit = { controls_state = 59 }
@@ -2043,6 +2228,10 @@ country_event = {
 		GER = { transfer_state = 56 } }
 		if = { limit = { controls_state = 57 }
 		GER = { transfer_state = 57 } }
+		if = { limit = { controls_state = 961 }
+		GER = { transfer_state = 961 } }
+		if = { limit = { controls_state = 909 }
+		GER = { transfer_state = 909 } }
 		
 		#West Germany
 		if = { limit = { controls_state = 51 }
@@ -2107,6 +2296,40 @@ country_event = {
 		GER = { transfer_state = 61 } }
 		if = { limit = { controls_state = 62 }
 		GER = { transfer_state = 62 } }
+		if = { 
+			limit = { 
+				controls_state = 68 
+				if = {
+					limit = {
+						ROOT = {
+							tag = POL
+						}
+					}
+					NOT = {
+						has_government = fascism
+					}
+				}
+			}
+			GER = { transfer_state = 68 }
+		}
+		if = { 
+			limit = { 
+				controls_state = 63 
+				if = {
+					limit = {
+						ROOT = {
+							tag = POL
+						}
+					}
+					NOT = {
+						has_government = fascism
+					}
+				}
+			}
+			GER = { transfer_state = 63 }
+		}
+		if = { limit = { controls_state = 763 }
+		GER = { transfer_state = 763 } }
 		
 		#Northern Germany
 		if = { limit = { controls_state = 59 }
@@ -2115,6 +2338,10 @@ country_event = {
 		WSM = { transfer_state = 56 } }
 		if = { limit = { controls_state = 57 }
 		WSM = { transfer_state = 57 } }
+		if = { limit = { controls_state = 961 }
+		WSM = { transfer_state = 961 } }
+		if = { limit = { controls_state = 909 }
+		WSM = { transfer_state = 909 } }
 		
 		#West Germany
 		if = { limit = { controls_state = 51 }
@@ -2421,52 +2648,52 @@ country_event = {
 }
 
 #Free Koenigsberg
-country_event = {
-	id = gen_states.25
-	title = gen_states.25.t
-	desc = gen_states.25.d
+#country_event = {
+#	id = gen_states.25
+#	title = gen_states.25.t
+#	desc = gen_states.25.d
 
-	is_triggered_only = yes
+#	is_triggered_only = yes
 
-	option = { #Give it to Poland
-		name = gen_states.25.a
-		ai_chance = {
-			factor = 0
-			modifier = {
-				factor = 100
-				NOT = { 
-				TAG = RUS
-				}
-			}
-		}
-		
-		POL = {
-		transfer_state = 763 	#Koenigsberg
-		transfer_state = 5
-		}
-		if = { limit = { controls_state = 188 }
-		POL = { transfer_state = 188 }
-		}
-	
-	}
-	
-	option = { #Occupy Koenigsberg
-		name = gen_states.25.b
-		ai_chance = {
-			factor = 100
-			modifier = {
-				factor = 0
-				NOT = { 
-				TAG = RUS
-				}
-			}
-		}
-		
-		POL = {
-		transfer_state = 5
-		}
-	}
-}
+#	option = { #Give it to Poland
+#		name = gen_states.25.a
+#		ai_chance = {
+#			factor = 0
+#			modifier = {
+#				factor = 100
+#				NOT = { 
+#				TAG = RUS
+#				}
+#			}
+#		}
+#		
+#		POL = {
+#		transfer_state = 763 	#Koenigsberg
+#		transfer_state = 5
+#		}
+#		if = { limit = { controls_state = 188 }
+#		POL = { transfer_state = 188 }
+#		}
+#	
+#	}
+#	
+#	option = { #Occupy Koenigsberg
+#		name = gen_states.25.b
+#		ai_chance = {
+#			factor = 100
+#			modifier = {
+#				factor = 0
+#				NOT = { 
+#				TAG = RUS
+#				}
+#			}
+#		}
+#		
+#		POL = {
+#		transfer_state = 5
+#		}
+#	}
+#}
 
 #Free Prussia
 country_event = {
@@ -2745,6 +2972,12 @@ country_event = {
 		}
 		if = { limit = { controls_state = 826 }
 		GEO = { transfer_state = 826 } }
+		if = { limit = { controls_state = 963 }
+		GEO = { transfer_state = 963 } }
+		if = { limit = { controls_state = 954 }
+		GEO = { transfer_state = 954 } }
+		if = { limit = { controls_state = 953 }
+		GEO = { transfer_state = 953 } }
 		
 		ROOT = {
 		puppet = GEO
@@ -2806,6 +3039,14 @@ country_event = {
 		AZR = { 
 		transfer_state = 229
 		}
+		if = { limit = { controls_state = 420 }
+		AZR = { transfer_state = 420 } }
+		if = { limit = { controls_state = 956 }
+		AZR = { transfer_state = 956 } }
+		if = { limit = { controls_state = 955 }
+		AZR = { transfer_state = 955 } }
+		if = { limit = { controls_state = 957 }
+		AZR = { transfer_state = 957 } }
 	
 		ROOT = {
 		puppet = AZR
@@ -3116,6 +3357,37 @@ country_event = {
 		RUS = {
 		transfer_state = 653 #Eburg
 		}
+		if = { limit = { controls_state = 878 } 
+		RUS = { transfer_state =  878 }
+		}
+		if = { limit = { controls_state = 876 } 
+		RUS = { transfer_state =  876 }
+		}
+		if = { limit = { controls_state = 877 } 
+		RUS = { transfer_state =  877 }
+		}
+		if = { limit = { controls_state = 874 } 
+		RUS = { transfer_state =  874 }
+		}
+		if = { limit = { controls_state = 329 } 
+		RUS = { transfer_state =  329 }
+		}
+		if = { limit = { controls_state = 882 } 
+		RUS = { transfer_state =  882 }
+		}
+		if = { limit = { controls_state = 881 } 
+		RUS = { transfer_state =  881 }
+		}
+		if = { limit = { controls_state = 587 } 
+		RUS = { transfer_state =  587 }
+		}
+		if = { limit = { controls_state = 823 } 
+		RUS = { transfer_state =  823 }
+		}
+		if = { limit = { controls_state = 585 } 
+		RUS = { transfer_state =  585 }
+		}
+		###
 		if = { limit = { controls_state = 573 } #Zlatoust
 		RUS = { transfer_state =  573 }
 		}
@@ -4838,4 +5110,84 @@ country_event = {
 	}
 	
 }
+country_event = { #carpathian ruthenia as poland 
+	id = gen_states.46
+	title = gen_states.46.t
+	desc = gen_states.46.d
 
+	is_triggered_only = yes
+
+	option = { #sell to hungary
+		name = gen_states.46.a
+		ai_chance = {
+			factor = 100
+		}
+		
+		if = {
+			limit = { controls_state = 73 }
+			HUN = { transfer_state = 73 }
+		}
+		add_political_power = 100
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = HUN
+		}
+	}
+	option = { #ukrainian exclave
+		name = gen_states.46.b
+		ai_chance = {
+			factor = 100
+		}
+		
+		if = {
+			limit = {
+				NOT = {
+					country_exists = UKR
+				}
+			}
+			UKR = { transfer_state = 73 }
+			puppet = UKR
+		}
+		else = {
+			UKR = { transfer_state = 73 }
+		}
+	}
+	option = { #Military Occupation
+		name = gen_states.46.c
+		ai_chance = {
+			factor = 0
+		}	
+	}
+}
+country_event = { #bucovina as poland 
+	id = gen_states.47
+	title = gen_states.47.t
+	desc = gen_states.47.d
+
+	is_triggered_only = yes
+
+	option = { #sell to romania
+		name = gen_states.47.a
+		ai_chance = {
+			factor = 100
+		}
+		
+		if = {
+			limit = { controls_state = 80 }
+			ROM = { transfer_state = 80 }
+		}
+		add_political_power = 100
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = ROM
+		}
+	}
+	option = { #Military Occupation
+		name = gen_states.47.b
+		ai_chance = {
+			factor = 0
+		}	
+	}
+}

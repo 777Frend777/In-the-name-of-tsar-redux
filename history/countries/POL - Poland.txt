@@ -95,6 +95,8 @@ set_cosmetic_tag = POL_RUS
 
 recruit_character = POL_Kiril_romanov
 recruit_character = POL_rzad_tymczasowy
+recruit_character = POL_wojciech_korfanty
+recruit_character = POL_norbert_barlicki
 recruit_character = POL_ignacy_moscicki
 recruit_character = POL_wladyslaw_sikorski
 recruit_character = POL_boleslaw_wieniawa_glugoszowski

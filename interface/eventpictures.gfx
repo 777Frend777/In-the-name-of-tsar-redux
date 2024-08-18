@@ -3445,4 +3445,25 @@ spriteTypes = {
 		name = "GFX_report_event_DEN_exiled_king"
 		texturefile = "gfx/event_pictures/report_event_DEN_exiled_king.dds"
 	}
+	spriteType = {
+		name = "GFX_report_event_DEN_exiled_king"
+		texturefile = "gfx/event_pictures/report_event_DEN_exiled_king.dds"
+	}
+### POL ### 
+	spriteType = {
+		name = "GFX_report_event_POL_assassination"
+		texturefile = "gfx/event_pictures/Europe/Poland/POL_event_assassination.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_POL_flag"
+		texturefile = "gfx/event_pictures/Europe/Poland/POL_event_kingdom_flag.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_POL_resistance"
+		texturefile = "gfx/event_pictures/Europe/Poland/POL_event_resistance.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_POL_train_bomb"
+		texturefile = "gfx/event_pictures/Europe/Poland/POL_event_train_bomb.png"
+	}
 }

@@ -11,7 +11,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_resume_plan
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_skull_treaty
 		x = 5
 		y = 1
 		cost = 20
@@ -37,7 +37,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_hunt_resistance
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_imprison_people
 		x = -1
 		y = 1
 		cost = 2
@@ -56,7 +56,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_disarmament
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_secret_police
 		x = 1
 		y = 1
 		cost = 2
@@ -78,7 +78,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_cyrylic
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_secret_documents
 		x = -2
 		y = 2
 		cost = 2
@@ -96,7 +96,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_mandatory_russian
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_russia
 		x = 0
 		y = 2
 		cost = 2
@@ -115,7 +115,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_artificial_culture
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_propaganda_film
 		x = 2
 		y = 2
 		cost = 2
@@ -139,7 +139,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_shield
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_skull_fortification
 		x = -1
 		y = 3
 		cost = 2
@@ -170,7 +170,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_garrison_reform
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_design_equipment_standards
 		x = 1
 		y = 3
 		cost = 2
@@ -199,7 +199,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_link_economies
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_economic_control
 		x = -1
 		y = 4
 		cost = 2
@@ -223,7 +223,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_seal_border
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_army_guy
 		x = 1
 		y = 4
 		cost = 2
@@ -310,7 +310,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_territorial_reform
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_step_on_skull
 		x = 0
 		y = 5
 		cost = 2
@@ -355,7 +355,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_polish_army_russia
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_RUS_army 
 		x = 15
 		y = 1
 		cost = 1
@@ -372,7 +372,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_air_force_russia
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_new_airforce
 		x = -2
 		y = 1
 		cost = 2
@@ -392,7 +392,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_pucharse_russian_planes
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_air_CAS_russian
 		x = -3
 		y = 2
 		cost = 2
@@ -414,7 +414,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_train_pilots_russia
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_military_academy
 		x = -1
 		y = 2
 		cost = 2
@@ -435,7 +435,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_cover_western_front
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_ideology_social_conservative
 		x = -2
 		y = 3
 		cost = 2
@@ -486,7 +486,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_ground_army_russia
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_army_guy
 		x = 2
 		y = 1
 		cost = 2
@@ -507,7 +507,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_mass_assault
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_army_mass_assault
 		x = -1
 		y = 1
 		cost = 2
@@ -529,7 +529,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_russian_advisors
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_army_command_power
 		x = 1
 		y = 1
 		cost = 2
@@ -550,7 +550,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_construct_military_facilities
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_barricades
 		x = -1
 		y = 2
 		cost = 2
@@ -575,7 +575,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_buy_russian_weapon
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_seize_money
 		x = 1
 		y = 2
 		cost = 2
@@ -601,7 +601,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_invest_russian_tanks
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_army_tanks3
 		x = -1
 		y = 3
 		cost = 2
@@ -623,7 +623,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_military_integration
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_army_cooperation
 		x = 1
 		y = 3
 		cost = 2
@@ -645,7 +645,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_tsar_army
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_RUS_flag
 		x = 0
 		y = 4
 		cost = 2

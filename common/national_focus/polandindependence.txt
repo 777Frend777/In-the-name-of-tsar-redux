@@ -15,7 +15,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_revenge
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_step_on_skull
 		x = 18
 		y = 0
 		cost = 2
@@ -34,7 +34,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_letter_to_tsar
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_authority
 		x = 0
 		y = 1
 		cost = 2
@@ -57,7 +57,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_west_wall
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_skull_fortification
 		x = -5
 		y = 2
 		cost = 2
@@ -83,7 +83,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_train_rebels
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_army_training
 		x = -3
 		y = 2
 		cost = 2
@@ -104,7 +104,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_smuggle_weapons
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_focus_generic_military_equipment
 		x = -1
 		y = 2
 		cost = 2
@@ -135,7 +135,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_remember_greatness
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_POL_flag
 		x = 1
 		y = 2
 		cost = 2
@@ -157,7 +157,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_anti_tsarist_propaganda
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_propaganda_film
 		x = 3
 		y = 2
 		cost = 2
@@ -194,7 +194,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_east_wall
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_skull_fortification
 		x = 5
 		y = 2
 		cost = 2
@@ -223,7 +223,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_greater_poland_uprising
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_revolution
 		x = -3
 		y = 3
 		cost = 2
@@ -242,6 +242,7 @@ focus_tree = {
 		}
 		relative_position_id = POL_revenge
 		completion_reward = {
+			add_political_power = 100
 			86 = {
 				controller = {
 					POL = {
@@ -259,8 +260,15 @@ focus_tree = {
 						division = "name = \"Greater Poland Rebels\" division_template = \"Dywizja Piechoty\" start_manpower_factor = 0.3"
 						owner = POL
 						allow_spawning_on_enemy_provs = yes
-						prioritize_location = 6558
-						count = 4
+						count = 8
+					}
+				}
+				807 = {
+					create_unit = {
+						division = "name = \"Kujawy Rebels\" division_template = \"Dywizja Piechoty\" start_manpower_factor = 0.3"
+						owner = POL
+						allow_spawning_on_enemy_provs = yes
+						count = 2
 					}
 				}
 			}
@@ -268,7 +276,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_contact_polish_community
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_radio
 		x = 0
 		y = 3
 		cost = 2
@@ -286,7 +294,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_continuation_war
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_russia
 		x = 3
 		y = 3
 		cost = 2
@@ -305,7 +313,7 @@ focus_tree = {
 		}
 		relative_position_id = POL_revenge
 		completion_reward = {
-		#custom reward with text
+			custom_effect_tooltip = POL_tooltip_decision
 		}
 	}
 
@@ -314,7 +322,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_reach_oder #SN ONLY
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_ideology_national_populist
 		x = -3
 		y = 4
 		cost = 2
@@ -339,7 +347,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_demand_zaolzie
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_offensive_army
 		x = 0
 		y = 4
 		cost = 2
@@ -347,17 +355,35 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		available = {
+			POL = {
+				NOT = {
+					owns_state = 72
+				}
+			}
+			72 = {
+				owner = {
+					NOT = {
+						is_ally_with = POL
+					}
+				}
+			}
+		}
 		prerequisite = {
 			focus = POL_contact_polish_community
 		}
 		relative_position_id = POL_revenge
 		completion_reward = {
-		#custom reward with text
+			72 = {
+				owner = {
+					country_event = POL.21
+				}
+			}
 		}
 	}
 	focus = {
 		id = POL_free_lithuania
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_Fight_for_Freedom
 		x = 2
 		y = 4
 		cost = 2
@@ -381,7 +407,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_polonization #SN ONLY
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_imprison_people
 		x = 4
 		y = 4
 		cost = 2
@@ -416,7 +442,7 @@ focus_tree = {
 
 	focus = { #Chadecja
 		id = POL_ChD_gov
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_BEL_Improve_Catholic_Relations
 		x = 9
 		y = 1
 		cost = 1
@@ -439,7 +465,7 @@ focus_tree = {
 
 	focus = { 
 		id = POL_hard_work
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_construction_engineering
 		x = -1
 		y = 1
 		cost = 2
@@ -472,7 +498,7 @@ focus_tree = {
 	}
 	focus = { 
 		id = POL_local_communities
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_government_deals
 		x = 1
 		y = 1
 		cost = 2
@@ -492,7 +518,7 @@ focus_tree = {
 
 	focus = { 
 		id = POL_family_values
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_BRA_catholic_education
 		x = -2
 		y = 2
 		cost = 2
@@ -510,7 +536,7 @@ focus_tree = {
 	}
 	focus = { 
 		id = POL_christianisation
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_malta_cross
 		x = 0
 		y = 2
 		cost = 2
@@ -531,7 +557,7 @@ focus_tree = {
 	}
 	focus = { 
 		id = POL_capitalism_human
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_ideology_social_conservative
 		x = 2
 		y = 2
 		cost = 2
@@ -552,7 +578,7 @@ focus_tree = {
 
 	focus = { 
 		id = POL_christian_solidarity
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_agricultural_aid
 		x = 1
 		y = 3
 		cost = 2
@@ -576,7 +602,7 @@ focus_tree = {
 	}
 	focus = { 
 		id = POL_soft_polonization
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_poland
 		x = -1
 		y = 3
 		cost = 2
@@ -600,7 +626,7 @@ focus_tree = {
 
 	focus = { 
 		id = POL_defender_of_faith
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_PAP_crusade
 		x = 0
 		y = 4
 		cost = 2
@@ -624,7 +650,7 @@ focus_tree = {
 
 	focus = { #SN government
 		id = POL_SN_gov
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_ideology_national_populist
 		x = 16
 		y = 1
 		cost = 1
@@ -648,7 +674,7 @@ focus_tree = {
 
 	focus = { 
 		id = POL_independence_march
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_army_guy
 		x = -1
 		y = 1
 		cost = 2
@@ -670,7 +696,7 @@ focus_tree = {
 	}
 	focus = { 
 		id = POL_state_capitalism
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_corporatism
 		x = 1
 		y = 1
 		cost = 2
@@ -706,7 +732,7 @@ focus_tree = {
 
 	focus = { 
 		id = POL_force_polonization
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_graveyard
 		x = -2
 		y = 2
 		cost = 2
@@ -724,7 +750,7 @@ focus_tree = {
 	}
 	focus = { 
 		id = POL_populist_rhetoric
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_government_icon
 		x = 0
 		y = 2
 		cost = 2
@@ -752,7 +778,7 @@ focus_tree = {
 	}
 	focus = { 
 		id = POL_jew_problem
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_SYR_Stop_Jewish_Settlers
 		x = 2
 		y = 2
 		cost = 2
@@ -774,7 +800,7 @@ focus_tree = {
 
 	focus = { 
 		id = POL_militarism
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_drafted_army
 		x = -1
 		y = 3
 		cost = 2
@@ -795,7 +821,7 @@ focus_tree = {
 	}
 	focus = { 
 		id = POL_cult_of_the_leader
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_authority
 		x = 1
 		y = 3
 		cost = 2
@@ -819,7 +845,7 @@ focus_tree = {
 
 	focus = { 
 		id = POL_everything
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_national_mobilization
 		x = 0
 		y = 4
 		cost = 2
@@ -844,7 +870,7 @@ focus_tree = {
 
 	focus = {  #PSL GOVERNMENT
 		id = POL_PSL_gov
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_agrarian_soldiers
 		x = -8
 		y = 1
 		cost = 1
@@ -867,7 +893,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_breadbasket
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_agriculture2
 		x = -1
 		y = 1
 		cost = 2
@@ -900,7 +926,7 @@ focus_tree = {
 	}
 	focus = {  
 		id = POL_will_of_people
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_SAF_reform_voting_law
 		x = 1
 		y = 1
 		cost = 2
@@ -920,7 +946,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_feed_people
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_food_processing
 		x = -1
 		y = 2
 		cost = 2
@@ -942,7 +968,7 @@ focus_tree = {
 	}
 	focus = {  
 		id = POL_resocialisation
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_trial
 		x = 1
 		y = 2
 		cost = 2
@@ -963,7 +989,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_land_reform
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_land_reform
 		x = -1
 		y = 3
 		cost = 2
@@ -981,7 +1007,7 @@ focus_tree = {
 	}
 	focus = {  
 		id = POL_open_to_world
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_positive_trade_relations_gold
 		x = 1
 		y = 3
 		cost = 2
@@ -1007,7 +1033,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_feed_and_defend
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_focus_generic_agriculture
 		x = 0
 		y = 4
 		cost = 2
@@ -1040,7 +1066,7 @@ focus_tree = {
 
 	focus = {  #PPS Government
 		id = POL_PPS_gov
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_ideology_radical_socialist
 		x = -16
 		y = 1
 		cost = 1
@@ -1064,7 +1090,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_workers_rights
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_syndicalist_workers
 		x = -1
 		y = 1
 		cost = 2
@@ -1082,7 +1108,7 @@ focus_tree = {
 	}
 	focus = {  
 		id = POL_denounce_authoritarianism
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_Fight_for_Freedom
 		x = 1
 		y = 1
 		cost = 2
@@ -1112,7 +1138,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_provide_housing
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_construct_public_housing
 		x = -1
 		y = 2
 		cost = 2
@@ -1130,7 +1156,7 @@ focus_tree = {
 	}
 	focus = {  
 		id = POL_fund_public_projects
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_socialist_infrastructure
 		x = 1
 		y = 2
 		cost = 2
@@ -1167,7 +1193,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_eliminate_poverty
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_cash_stimulus_plan
 		x = -1
 		y = 3
 		cost = 2
@@ -1193,7 +1219,7 @@ focus_tree = {
 	}
 	focus = {  
 		id = POL_free_women
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_focus_generic_female_rights
 		x = 1
 		y = 3
 		cost = 2
@@ -1214,7 +1240,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_onwards_warsaw
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_socialist_army
 		x = 0
 		y = 4
 		cost = 2
@@ -1242,7 +1268,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_protect_minorities
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_UKR_minority_rights
 		x = 4
 		y = 1
 		cost = 2
@@ -1261,7 +1287,7 @@ focus_tree = {
 	}
 	focus = {  
 		id = POL_secularization
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_social_reforms
 		x = 4
 		y = 3
 		cost = 2
@@ -1285,7 +1311,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_third_may
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_focus_generic_bastion_of_democracy
 		x = -3
 		y = 6
 		cost = 2
@@ -1308,7 +1334,7 @@ focus_tree = {
 	}
 	focus = {  
 		id = POL_end_democracy
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_dissolve_parliament1
 		x = 16
 		y = 6
 		cost = 2
@@ -1331,7 +1357,7 @@ focus_tree = {
 				popularity = 0.1
 			}
 			set_cosmetic_tag = POL_dictatorship
-			#event
+			country_event = pol.17
 		}
 	}
 
@@ -1342,7 +1368,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_polish_army_independence
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_POL_flag
 		x = 50
 		y = 1
 		cost = 1
@@ -1351,7 +1377,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			country_event = POL.11
+			country_event = POL.13
 		}
 	}
 
@@ -1361,7 +1387,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_air_force_independence
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_POL_airforce
 		x = -7
 		y = 1
 		cost = 2
@@ -1381,7 +1407,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_establish_airbase
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_airports
 		x = -1
 		y = 1
 		cost = 2
@@ -1412,7 +1438,7 @@ focus_tree = {
 	}
 	focus = {  
 		id = POL_polskie_zaklady
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_industry_air
 		x = 1
 		y = 1
 		cost = 2
@@ -1440,7 +1466,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_pucharse_foreign_aircraft
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_deals
 		x = -1
 		y = 2
 		cost = 2
@@ -1463,7 +1489,7 @@ focus_tree = {
 	}
 	focus = {  
 		id = POL_invest_air_defense
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_anti_air
 		x = 1
 		y = 2
 		cost = 2
@@ -1509,7 +1535,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_szkola_lotnictwa
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_military_academy
 		x = 0
 		y = 3
 		cost = 2
@@ -1533,7 +1559,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_focus_on_cas
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_air_CAS_new
 		x = -1
 		y = 4
 		cost = 2
@@ -1558,7 +1584,7 @@ focus_tree = {
 	}
 	focus = {  
 		id = POL_invest_strategic_bombers
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_air_strategic_bomber_new
 		x = 1
 		y = 4
 		cost = 2
@@ -1588,7 +1614,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_ground_army
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_POL_army
 		x = 0
 		y = 1
 		cost = 2
@@ -1609,7 +1635,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_equipment_standarisation
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_design_equipment_standards
 		x = -1
 		y = 1
 		cost = 2
@@ -1634,7 +1660,7 @@ focus_tree = {
 	}
 	focus = {  
 		id = POL_our_own_tank
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_army_tanks2
 		x = 1
 		y = 1
 		cost = 2
@@ -1660,7 +1686,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_military_emergency_fuel_storage
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_DOM_Air_Fuel
 		x = -2
 		y = 2
 		cost = 2
@@ -1685,7 +1711,7 @@ focus_tree = {
 	}
 	focus = {  
 		id = POL_weaponry_research
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_military_research
 		x = 0
 		y = 2
 		cost = 2
@@ -1703,7 +1729,7 @@ focus_tree = {
 	}
 	focus = {  
 		id = POL_rifle_project
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_focus_generic_military_equipment
 		x = 2
 		y = 2
 		cost = 2
@@ -1728,7 +1754,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_training
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_army_training
 		x = -1
 		y = 3
 		cost = 2
@@ -1746,7 +1772,7 @@ focus_tree = {
 	}
 	focus = {  
 		id = POL_polska_artyleria
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_national_artillery
 		x = 1
 		y = 3
 		cost = 2
@@ -1771,7 +1797,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_no_surrender
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_Fight_for_Freedom
 		x = 0
 		y = 4
 		cost = 2
@@ -1801,7 +1827,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_poland_marriage
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_baltic_sea
 		x = 7
 		y = 1
 		cost = 2
@@ -1826,7 +1852,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_revitalize_merchant_navy
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_positive_trade_relations_gold
 		x = -2
 		y = 1
 		cost = 2
@@ -1855,7 +1881,7 @@ focus_tree = {
 	}
 	focus = {  
 		id = POL_baltic_sea_exercises
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_naval_academy
 		x = 0
 		y = 1
 		cost = 2
@@ -1876,7 +1902,7 @@ focus_tree = {
 	}
 	focus = {  
 		id = POL_construct_navy
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_buy_ships
 		x = 2
 		y = 1
 		cost = 2
@@ -1902,7 +1928,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_gdansk_shipyard
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_shipyard
 		x = -1
 		y = 2
 		cost = 2
@@ -1933,7 +1959,7 @@ focus_tree = {
 	}
 	focus = {  
 		id = POL_coastal_defensee
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_nested_fortifications
 		x = 1
 		y = 2
 		cost = 2
@@ -1973,7 +1999,7 @@ focus_tree = {
 
 	focus = {  
 		id = POL_submarine_tech
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_naval_submarine2
 		x = -2
 		y = 3
 		cost = 2
@@ -2007,7 +2033,7 @@ focus_tree = {
 	}
 	focus = {  
 		id = POL_light_ship_tech
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_naval_destroyer2
 		x = 0
 		y = 3
 		cost = 2
@@ -2041,7 +2067,7 @@ focus_tree = {
 	}
 	focus = {  
 		id = POL_heavy_ship_tech
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_naval_battleship2
 		x = 2
 		y = 3
 		cost = 2

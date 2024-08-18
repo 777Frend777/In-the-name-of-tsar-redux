@@ -27,6 +27,191 @@ POL_independence_war = {
 			}
 		}
 	}
+	POL_attack_ukraine = {
+		icon = decision_generic_industry
+		cost = 40
+		fire_only_once = yes
+		visible = {
+			POL = {
+				has_completed_focus = POL_continuation_war
+			}
+		}
+		available = {
+			POL = {
+				has_completed_focus = POL_continuation_war
+				OR = {
+					UKR = { controls_state = 93 }
+					UKR = { controls_state = 91 }
+					UKR = { controls_state = 89 }
+				}
+				NOT = {
+					has_subject = UKR
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 30
+		remove_effect = {
+			declare_war_on = {
+				target = UKR
+				type = annex_everything
+			}
+		}
+	}
+	POL_attack_belarus = {
+		icon = decision_generic_industry
+		cost = 40
+		fire_only_once = yes
+		visible = {
+			POL = {
+				has_completed_focus = POL_continuation_war
+			}
+		}
+		available = {
+			POL = {
+				has_completed_focus = POL_continuation_war
+				OR = {
+					BLR = { controls_state = 96 }
+					BLR = { controls_state = 95 }
+					BLR = { controls_state = 94 }
+				}
+				NOT = {
+					has_subject = BLR
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 30
+		remove_effect = {
+			declare_war_on = {
+				target = BLR
+				type = annex_everything
+			}
+		}
+	}
+	POL_attack_lithuania = {
+		icon = decision_generic_industry
+		cost = 40
+		fire_only_once = yes
+		visible = {
+			POL = {
+				has_completed_focus = POL_continuation_war
+			}
+		}
+		available = {
+			POL = {
+				has_completed_focus = POL_continuation_war
+				OR = {
+					LIT = { controls_state = 188 }
+					LIT = { controls_state = 189 }
+					LIT = { controls_state = 815 }
+					LIT = { controls_state = 11 }
+					LIT = { controls_state = 814 }
+					LIT = { controls_state = 784 }
+				}
+				NOT = {
+					has_subject = LIT
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 30
+		remove_effect = {
+			declare_war_on = {
+				target = LIT
+				type = annex_everything
+			}
+		}
+	}
+	POL_attack_russia = {
+		icon = decision_generic_industry
+		cost = 40
+		fire_only_once = yes
+		visible = {
+			POL = {
+				has_completed_focus = POL_continuation_war
+			}
+		}
+		available = {
+			POL = {
+				has_completed_focus = POL_continuation_war
+				OR = {
+					RUS = { controls_state = 96 }
+					RUS = { controls_state = 784 }
+					RUS = { controls_state = 95 }
+					RUS = { controls_state = 94 }
+					RUS = { controls_state = 93 }
+					RUS = { controls_state = 91 }
+					RUS = { controls_state = 89 }
+				}
+				NOT = {
+					has_subject = RUS
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 30
+		remove_effect = {
+			declare_war_on = {
+				target = RUS
+				type = annex_everything
+			}
+			if = {
+				limit = {
+					RUS = {
+						controls_state = 93
+					}
+				}
+				93 = {
+					create_unit = {
+						division = "name = \"Wolyn Rebels\" division_template = \"Dywizja Piechoty\" start_manpower_factor = 0.3"
+						owner = POL
+						allow_spawning_on_enemy_provs = yes
+						count = 2
+					}
+				}
+			}
+			if = {
+				limit = {
+					RUS = {
+						controls_state = 94
+					}
+				}
+				94 = {
+					create_unit = {
+						division = "name = \"Polesie Rebels\" division_template = \"Dywizja Piechoty\" start_manpower_factor = 0.3"
+						owner = POL
+						allow_spawning_on_enemy_provs = yes
+						count = 2
+					}
+				}
+			}
+			if = {
+				limit = {
+					RUS = {
+						controls_state = 95
+					}
+				}
+				95 = {
+					create_unit = {
+						division = "name = \"Grodno Rebels\" division_template = \"Dywizja Piechoty\" start_manpower_factor = 0.3"
+						owner = POL
+						allow_spawning_on_enemy_provs = yes
+						count = 2
+					}
+				}
+			}
+			add_political_power = 100
+		}
+	}
 }
 POL_four_year_plan = {
 	#silesia

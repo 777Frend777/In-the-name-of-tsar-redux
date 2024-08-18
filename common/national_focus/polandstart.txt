@@ -21,10 +21,10 @@ focus_tree = {
 
 	focus = {
 		id = POL_destroy_resistance
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_secret_police
 		x = 8
 		y = 1
-		cost = 12
+		cost = 9
 
 		ai_will_do = {
 			factor = 10
@@ -46,10 +46,10 @@ focus_tree = {
 
 	focus = {
 		id = POL_fortyfour
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_revolution
 		x = 7
 		y = 2
-		cost = 2
+		cost = 0
 
 		ai_will_do = {
 			factor = 10
@@ -70,10 +70,10 @@ focus_tree = {
 
 	focus = {
 		id = POL_vistula_plan
-		icon = GFX_focus_POL_the_four_year_plan
+		icon = GFX_goal_generic_secret_documents
 		x = 9
 		y = 2
-		cost = 2
+		cost = 0
 
 		ai_will_do = {
 			factor = 10
