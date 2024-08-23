@@ -2610,7 +2610,7 @@ focus = {
         completion_reward = {
         MOL = { add_state_core = 79 }
 ROM = { 
-   country_event = { id = russia.78 days = 3 }
+   country_event = { id = russia.133 days = 3 }
         RUS = { add_state_claim = 79 }
         }
     }

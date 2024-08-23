@@ -28,6 +28,7 @@
  russia.131.a: "Glory to the Russian Empire!"
  RUS_church:0 "Russian Orthodox Church"
  RUS_russian_monarchy:0 "House of Romanov"
+ RUS_russian_monarchy_desc: "\n\n£GFX_RUS_romanov_house\n\n\n"
  RUS_provisional_government:0 "Provisional Government"
  RUS_stolypin_reform:0 "Stolypin Reform"
  RUS_okhranka:0 "Okhranka Secret Police"

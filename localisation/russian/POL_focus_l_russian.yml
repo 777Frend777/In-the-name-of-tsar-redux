@@ -1,0 +1,208 @@
+﻿l_russian:
+ POL_destroy_resistance: "Уничтожьте Сопротивление!" #NT!
+ POL_destroy_resistance_desc: "£GFX_POL_texticon_warforindependence\n\n\n\n \nПоложение очень тяжелое, если мы хотим осуществить план «Висла», нам придется уничтожить антицарскую оппозицию.\n" #NT!
+ POL_fortyfour: "44" #NT!
+ POL_fortyfourb: "44" #NT!
+ POL_vistula_plan: "Реализовать план «Висла»" #NT!
+ POL_vistula_plan_long: "Польская автономия ставит нас в сомнительное положение. Пришло время для ассимиляции Польши и аннексии Галиции-Лодомерии-Буковины" #NT!
+ POL_recruitment: "ВЫ нужны Польше!" #NT!
+ POL_recruitment_desc: ""
+ POL_call_for_help: "Позовите на помощь!" #NT!
+ POL_call_for_help_desc: ""
+ POL_desperate_defense: "Отчаянная защита" #NT!
+ POL_desperate_defense_desc: ""
+  
+ POL_resume_plan: "Продолжить план..." #NT!
+ POL_hunt_resistance: "Выследить Сопротивление" #NT!
+ POL_disarmament: "Разоружение" #NT!
+ POL_cyrylic: "Кириллический алфавит" #NT!
+ POL_mandatory_russian: "Обязательное изучение русского языка" #NT!
+ POL_artificial_culture: "Искусственная культура" #NT!
+ POL_shield: "Западный щит Империи" #NT!
+ POL_garrison_reform: "Реформа гарнизона" #NT!
+ POL_link_economies: "Свяжите экономики" #NT!
+ POL_seal_border: "Закройте границу" #NT!
+ POL_territorial_reform: "Имперская территориальная реформа" #NT!
+  
+ POL_revenge: "Месть" #NT!
+ POL_letter_to_tsar: "Письмо царю" #NT!
+ POL_west_wall: "Западная стена" #NT!
+ POL_train_rebels: "Поезд Повстанцев" #NT!
+ POL_smuggle_weapons: "Контрабанда оружия в Пруссию" #NT!
+ POL_remember_greatness: "Помните былое величие" #NT!
+ POL_anti_tsarist_propaganda: "Антицарская пропаганда" #NT!
+ POL_east_wall: "Восточная стена" #NT!
+ POL_greater_poland_uprising: "Великопольское восстание" #NT!
+ POL_contact_polish_community: "Связаться с польским населением" #NT!
+ POL_continuation_war: "Продолжение войны" #NT!
+ POL_reach_oder: "Достигните Одера!" #NT!
+ POL_demand_zaolzie: "Спрос Заолзье" #NT!
+ POL_free_lithuania: "Освободите литовцев" #NT!
+ POL_polonization: "полонизация" #NT!
+  
+ POL_ChD_gov: "Правительство ПСЧД" #NT!
+ POL_hard_work: "Тяжелая работа делает нас сильными" #NT!
+ POL_local_communities: "Децентрализованные сообщества" #NT!
+ POL_family_values: "Христианские ценности" #NT!
+ POL_christianisation: "Христианизация" #NT!
+ POL_capitalism_human: "Капитализм с человеческим лицом" #NT!
+ POL_christian_solidarity: "Христианская солидарность" #NT!
+ POL_soft_polonization: "«Мягкая» полонизация" #NT!
+ POL_defender_of_faith: "Защитник веры" #NT!
+  
+ POL_SN_gov: "Правительство SN" #NT!
+ POL_independence_march: "Марш Независимости" #NT!
+ POL_state_capitalism: "Государственный капитализм" #NT!
+ POL_force_polonization: "Принудительная полонизация" #NT!
+ POL_populist_rhetoric: "Популистская риторика" #NT!
+ POL_jew_problem: "«Решить» еврейскую проблему" #NT!
+ POL_militarism: "Милитаризм" #NT!
+ POL_cult_of_the_leader: "Культ Лидера" #NT!
+ POL_everything: "Все для нации" #NT!
+ POL_end_democracy: "Убить демократию" #NT!
+  
+ POL_PSL_gov: "Правительство СЛ" #NT!
+ POL_breadbasket: "Хлебница" #NT!
+ POL_will_of_people: "Воля народа" #NT!
+ POL_feed_people: "Накорми людей" #NT!
+ POL_resocialisation: "Ресоциализация" #NT!
+ POL_land_reform: "Земельная реформа" #NT!
+ POL_open_to_world: "Откройте Польшу миру" #NT!
+ POL_feed_and_defend: "Они кормят и защищают" #NT!
+  
+ POL_protect_minorities: "Защитить меньшинства" #NT!
+ POL_secularization: "Секуляризация" #NT!
+  
+ POL_PPS_gov: "Правительство ППС" #NT!
+ POL_workers_rights: "Права трудящихся" #NT!
+ POL_denounce_authoritarianism: "Осуждать авторитаризм" #NT!
+ POL_provide_housing: "Предоставить жилье" #NT!
+ POL_fund_public_projects: "Фонд общественных проектов" #NT!
+ POL_eliminate_poverty: "Ликвидировать бедность" #NT!
+ POL_free_women: "Борьба с дискриминацией" #NT!
+ POL_onwards_warsaw: "Вперед, Варшава!" #NT!
+  
+ POL_third_may: "Третье мая, снова!" #NT!
+  
+ POL_polish_army_russia: "Армия Конгресса Польши" #NT!
+ POL_air_force_russia: "Военно-воздушные силы Конгресса Польши" #NT!
+ POL_pucharse_russian_planes: "Купить российские самолеты" #NT!
+ POL_train_pilots_russia: "Подготовка пилотов в России" #NT!
+ POL_cover_western_front: "Прикройте Западный фронт!" #NT!
+ POL_ground_army_russia: "Сухопутная армия Конгресса Польши" #NT!
+ POL_mass_assault: "Массовое нападение" #NT!
+ POL_russian_advisors: "Русские Советники" #NT!
+ POL_construct_military_facilities: "Строительство военных объектов" #NT!
+ POL_buy_russian_weapon: "Излишки оружия закупаются" #NT!
+ POL_invest_russian_tanks: "Инвестируйте в российские танки" #NT!
+ POL_military_integration: "Военная интеграция" #NT!
+ POL_tsar_army: "Царская армия" #NT!
+  
+ POL_polish_army_independence: "Польские Вооруженные Силы" #NT!
+  
+ POL_air_force_independence: "Польские ВВС" #NT!
+ POL_establish_airbase: "Создание новых авиабаз" #NT!
+ POL_polskie_zaklady: "Польские пивные заводы" #NT!
+ POL_pucharse_foreign_aircraft: "Закупка иностранных самолетов" #NT!
+ POL_invest_air_defense: "Инвист в противовоздушной обороне" #NT!
+ POL_szkola_lotnictwa: "Школа Лотництва" #NT!
+ POL_focus_on_cas: "Фокус на CAS" #NT!
+ POL_invest_strategic_bombers: "Инвестируйте в стратегические бомбардировщики" #NT!
+  
+ POL_ground_army: "Польская Сухопутная Армия" #NT!
+ POL_equipment_standarisation: "Стандартизация оборудования" #NT!
+ POL_our_own_tank: "Наш собственный проект танка" #NT!
+ POL_military_emergency_fuel_storage: "Аварийное хранение топлива" #NT!
+ POL_weaponry_research: "Исследования вооружения" #NT!
+ POL_rifle_project: "Проект «Винтовка»" #NT!
+ POL_training: "Новая программа обучения" #NT!
+ POL_polska_artyleria: "Польская Артиллерия" #NT!
+ POL_no_surrender: "Никакой сдачи" #NT!
+  
+ POL_poland_marriage: "Брак с Балтийским морем" #NT!
+ POL_revitalize_merchant_navy: "Возрождение торгового флота" #NT!
+ POL_baltic_sea_exercises: "Учения в Балтийском море" #NT!
+ POL_construct_navy: "Построить флот" #NT!
+ POL_gdansk_shipyard: "Гданьская судоверфь" #NT!
+ POL_coastal_defensee: "Береговая оборона" #NT!
+ POL_submarine_tech: "В центре внимания — подводные лодки" #NT!
+ POL_light_ship_tech: "Фокус на легких судах" #NT!
+ POL_heavy_ship_tech: "Фокус на тяжелых кораблях" #NT!
+  
+ POL_four_plan: "Четырехлетний план" #NT!
+ POL_silesia_industry: "Силезский промышленный округ" #NT!
+ POL_warsaw_industry: "Варшавский промышленный район" #NT!
+ POL_central_industry: "Центральный промышленный район" #NT!
+ POL_autarky: "автаркия" #NT!
+ POL_reliance_russia: "Зависимость от России" #NT!
+ POL_bridge_network: "Мостовая сеть" #NT!
+ POL_rubber_manufacturing: "Производство резины" #NT!
+ POL_invest_universities: "Инвестируйте в университеты" #NT!
+ POL_invest_armored_trains: "Инвестируйте в бронепоезда" #NT!
+ POL_urbanisation: "Урбанизация" #NT!
+ POL_polska_stal: "Польская сталь" #NT!
+ POL_intellectual_renaissance: "Интеллектуальный Ренессанс" #NT!
+ POL_poland_b: "Польша Б" #NT!
+ POL_invest_silesia: "Инвестируйте в силезское сырье" #NT!
+  
+  #tooltips 
+ POL_tooltip_destroy_resistance: "§RВсе ли идет по плану, вице-король?§!" #NT!
+ POL_tooltip_fortyfour: "????????????????????????????????????" #NT!
+ POL_tooltip_vistula_plan: "????????????????????????????????????" #NT!
+ POL_tooltip_decision: "Будут разблокированы новые решения!" #NT!
+ POL_tooltip_election_PPS: "§RППС была избрана на первых выборах§!" #NT!
+ POL_tooltip_election_PSL: "§GSL был избран на первых выборах§!" #NT!
+ POL_tooltip_election_PSChD: "§gПСЧД была избрана на первых выборах§!" #NT!
+ POL_tooltip_election_SN: "§8SN был избран на первых выборах§!" #NT!
+  
+  #decision 
+ POL_independence_war: "Война за независимость Польши" #NT!
+ POL_dont_surrender: "Держитесь!" #NT!
+ POL_attack_ukraine: "Атака на Украину" #NT!
+ POL_attack_belarus: "Атака на Беларусь" #NT!
+ POL_attack_lithuania: "Атака на Литву" #NT!
+ POL_attack_russia: "Атаковать Россию" #NT!
+ POL_fortify_lublin_border: "Укрепить границу Люблинского воеводства" #NT!
+ POL_fortify_bialystok_suwalki_border: "Укрепить границу Подляского региона" #NT!
+ POL_fortify_silesia_border: "Укрепить границу Силезского региона" #NT!
+ POL_fortify_plock_border: "Укрепить границу Плоцкого региона" #NT!
+ POL_fortify_western_cities: "Укрепите западные города" #NT!
+ POL_fortify_eastern_cities: "Укрепите восточные города" #NT!
+ POL_four_year_plan: "Четырехлетний план" #NT!
+ POL_silesia_decision_arms: "Инвестируйте в силезскую оружейную промышленность" #NT!
+ POL_silesia_decision_civil: "Инвестируйте в гражданскую промышленность Силезии" #NT!
+ POL_warsaw_decision_arms: "Инвестируйте в Варшавскую оружейную промышленность" #NT!
+ POL_warsaw_decision_civil: "Инвестируйте в гражданскую промышленность Варшавы" #NT!
+ POL_central_decision_arms: "Инвестируйте в центральную оружейную промышленность" #NT!
+ POL_central_decision_civil: "Инвестируйте в центральную гражданскую промышленность" #NT!
+ POL_education_investment_decision: "Инвестируйте в образование" #NT!
+ POL_polandb_lublin_decision: "Инвестиции в Люблине и Подляском воеводстве" #NT!
+ POL_polandb_galicia_decision: "Инвестиции в Галисии" #NT!
+ POL_polandb_wolyn_decision: "Инвестиции в Волынь" #NT!
+ POL_polandb_nowogrodek_decision: "Инвестиции в Новогрудке" #NT!
+ POL_resocialisation_programme: "Проект ресоциализации" #NT!
+ POL_resocialise_prisoners: "Ресоциализация заключенных" #NT!
+  
+  #fuck it im putting ideas here too 
+ POL_clock_is_ticking: "Часы тикают..." #NT!
+ POL_clock_is_ticking_desc: "Несмотря на утверждения российской пропаганды, ситуация в штате ужасная, и военные теряют контроль над некоторыми районами штата." #NT!
+ POL_spirit_of_freedom1: "Дух Свободы" #NT!
+ POL_spirit_of_freedom2: "Дух Свободы" #NT!
+ POL_spirit_of_freedom3: "Дух Свободы" #NT!
+ POL_destruction: "Послевоенное восстановление" #NT!
+ POL_economic_reliance_on_rus: "Экономическая зависимость от России" #NT!
+ POL_pkp_idea: "Польские колеи Польши" #NT!
+ POL_puppet_government: "Марионеточное правительство" #NT!
+ POL_jewish_slaves: "Еврейские Рабы" #NT!
+ POL_never_targowica1: "Месть Тарговице" #NT!
+ POL_never_targowica2: "Месть Тарговице" #NT!
+ POL_minority_protection: "Защитите меньшинства" #NT!
+ POL_gradual_polonization: "Постепенная полонизация" #NT!
+ POL_agressive_polonization: "Агрессивная полонизация" #NT!
+  
+  #trait 
+ INOT_cult_of_leader: "Культ Лидера" #NT!
+  
+  #bookmark 
+ POL_Occident_DESC: "Когда-то Польша была мировой державой, простиравшейся от Гданьска до Москвы. К сожалению, олигархия шляхты ослабила Польшу, чем воспользовались Пруссия, Россия и Австрия. В результате Польша потеряла независимость на следующие 141 год, что продолжается и по сей день. Однако ослабленная Великой войной Россия могла предоставить возможность окончательно уничтожить русских разделителей и отомстить предателям Тарговицы" #NT!
+  

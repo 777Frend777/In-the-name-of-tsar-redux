@@ -30,6 +30,16 @@ focus_tree = {
 			factor = 10
 		}
 		cancelable = no
+available = {
+NOT = {
+RUS = {
+has_country_leader = {
+    name = "E.I.V Nikolai II"
+    ruling_only = yes
+}
+}
+}
+}
 		completion_reward = {
 		#custom reward with text
 			hidden_effect = {

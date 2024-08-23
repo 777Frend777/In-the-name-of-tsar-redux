@@ -1,1 +1,18 @@
-#this shit caused 100000 errors (im not joking, the error counter says that) so im deleting it 
+ideas = {
+
+    country = { 
+        BUL_army_restrictions_aat = {
+			name = BUL_army_restrictions
+			picture = tfv_can_conscription_crisis
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				tag = BUL
+			}
+			removal_cost = -1
+
+        }
+    }
+}

@@ -5860,7 +5860,7 @@ add_manpower = -2900
 RUS = {
 	add_stability = -0.08
 	add_war_support = -0.05
-	add_political_power	= -50
+	add_political_power = -50
 }
 }
 }
@@ -5916,3 +5916,69 @@ country_event = {
 		}
  }
 }
+#demand moldova from romania
+country_event = {
+    id = russia.133
+    title = russia.133.t
+    desc = russia.133.d
+    picture = GFX_report_event_RUS_troops
+
+    is_triggered_only = yes
+
+    option = { #No
+        name = russia.133.a
+		RUS = {
+		country_event = { id = russia.135 }
+		}
+			MOL = {
+			add_state_core = 79
+		}
+ }
+ option = { #yes
+ name = russia.133.b
+ RUS = {
+ country_event = { id = russia.134 }
+ }
+	 MOL = {
+	 add_state_core = 79
+ }
+}
+}
+#demand moldova from romania to russia YES
+country_event = {
+    id = russia.134
+    title = russia.134.t
+    desc = russia.134.d
+    picture = GFX_report_event_soviet_tank_parade
+
+    is_triggered_only = yes
+
+    option = { #rom said yes
+        name = russia.134.a
+		RUS = {
+		transfer_state = 79
+		add_state_core = 79
+		}
+ }
+}
+#demand moldova from romania to russia NO
+country_event = {
+    id = russia.135
+    title = russia.135.t
+    desc = russia.135.d
+    picture = GFX_report_event_ROM_carol_inspection
+
+    is_triggered_only = yes
+
+    option = { #rom said no
+        name = russia.135.a
+		RUS = {
+				create_wargoal = {
+					type = take_state_focus
+					target = ROM
+					generator = { 79 }
+				}
+				add_state_core = 79
+			}
+		}
+ }

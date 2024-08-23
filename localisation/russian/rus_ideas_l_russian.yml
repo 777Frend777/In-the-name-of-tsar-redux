@@ -30,6 +30,7 @@
  russia.131.a: "Слава Российской империи!"
  RUS_church: "Русская Православная Церковь" #NT!
  RUS_russian_monarchy: "Дом Романовых" #NT!
+ RUS_russian_monarchy_desc: "\n\n£GFX_RUS_romanov_house\n\n\n"
  RUS_provisional_government: "Временное правительство" #NT!
  RUS_stolypin_reform: "Столыпинская реформа" #NT!
  RUS_okhranka: "Охранка тайной полиции" #NT!

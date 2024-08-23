@@ -1,0 +1,274 @@
+﻿l_russian:
+ DECISIONVIEW_TITLE: "События и решения" #NT!
+ DECISIONSVIEW_EVENT_HEADER: "События" #NT!
+ POPUP_NEWS: "Всплывающее окно новостей" #NT!
+ POPUP_EVENTS: "Всплывающее окно события" #NT!
+ CATEGORY_COLLAPSE_DESC: "§GClick§! рухнуть" #NT!
+ CATEGORY_EXPAND_DESC: "§GClick§! развернуть" #NT!
+ DECISION_KEEP_NOTIFIED: "§HNotify§!\n\n§GClick§! чтобы §Rне быть уведомленным§!, когда можно будет принять это решение.\n" #NT!
+ DECISION_NOT_KEEP_NOTIFIED: "§HNotify§!\n\n§GClick§! чтобы §Gполучить уведомление§!, когда можно будет принять это решение.\n" #NT!
+ TAKE_DECISION_HEADER: "§HПринять решение§!\n\n" #NT!
+ NEWS_POPUP_CHECKBOX_TOOLTIP: "§GClick§! для переключения уведомлений о новостях." #NT!
+ EVENT_POPUP_CHECKBOX_TOOLTIP: "§GClick§! для переключения уведомлений о событиях." #NT!
+ MINOR_EVENT_POPUP_CHECKBOX_TOOLTIP: "§GClick§! для переключения уведомлений о незначительных событиях, таких как события Ace Pilot." #NT!
+ POPUP_MINOR_EVENTS: "Незначительное всплывающее окно" #NT!
+ DECISION_COST_DESC: "Принятие решения стоит £pol_power $VAL|H0$" #NT!
+ DECISION_COST_NOT_ENOUGH: "Принятие решения стоит £pol_power $VAL|HR0$" #NT!
+ ON_MAP_DECISION_NAME_DEFAULT: "Найдите решения на карте." #NT!
+ ADD_DAYS_TO_DECISION: "Добавить $DAYS|H$ дней к Решению $DECISION|H$" #NT!
+ REMOVE_DAYS_TO_DECISION: "Удалить $DAYS|H$ дней из Решения $DECISION|H$" #NT!
+ ADD_DAYS_TO_MISSION: "Добавьте $DAYS|H$ дней к Миссии $MISSION|H$" #NT!
+ REMOVE_DAYS_TO_MISSION: "Удалить $DAYS|H$ дней из Миссии $MISSION|H$" #NT!
+ CLICK_TO_TOGGLE_ALL_CATEGORY_DECISION_TRACKING: "§GClick§! для переключения статуса уведомления для всех решений в этой категории." #NT!
+ banned_communism_flag: "Запретил коммунистические партии" #NT!
+ FRA_civil_unrest_category: "Гражданские беспорядки" #NT!
+ FRA_communist_civil_war_decision: "Неизбежное коммунистическое восстание" #NT!
+ FRA_communist_civil_war_decision_desc: "Растущий фурор радикальной политики становится все труднее утихомирить — в конце концов, нам придется так или иначе противостоять ему." #NT!
+ FRA_fascist_civil_war_decision: "Неизбежное фашистское восстание" #NT!
+ FRA_fascist_civil_war_decision_desc: "Растущие популистские настроения оказываются неудержимой волной. Неизбежного не избежать." #NT!
+ ETH_defeat_italy: "Победите колонизаторов" #NT!
+ ETH_defeat_italy_category: "Вторая итало-эфиопская война" #NT!
+ ETH_defeat_italy_category_desc: "Италия снова стремится превратить Эфиопию в простую колонию. Мы победили этих захватчиков в прошлый раз, и мы можем победить их снова, если только сможем удалить их от наших границ навсегда!" #NT!
+ seize_some_trains_woo: "Управлять гражданскими поездами" #NT!
+ seize_some_trains_woo_desc: "Компании торговых железных дорог контролируют нашу инфраструктуру. С надвигающейся войной мы имеем полное право конфисковать оборудование для государственных нужд." #NT!
+ random_general_monarchy_tt: "Случайный генерал [FROM.GetAdjective] обретет тайные монархические симпатии." #NT!
+ removed_when_cancelled_war_prop: "Пропагандистские кампании прекращены." #NT!
+ war_propaganda_casualties: "Призывать к героизму" #NT!
+ war_propaganda_casualties_desc: "Несмотря на то, что число жертв растет, наш народ необходимо учить тому, что только в бою закаляются герои." #NT!
+ war_propaganda_convoys: "Поощряйте бережливость" #NT!
+ war_propaganda_convoys_desc: "Даже гражданские лица могут помочь выиграть войну — благодаря заботе и вниманию к использованию материалов каждый грамм стали может стать в два раза более ценным для военных целей." #NT!
+ war_propaganda_bombing: "Поддержите Духов" #NT!
+ war_propaganda_bombing_desc: "Хотя бомбы падают вокруг нас, наши храбрые рабочие продолжают сражаться. Именно благодаря этому духу мы победим." #NT!
+ war_support_during_war: "Поддержка войны" #NT!
+ CHI_occupation_actions: "Меры по борьбе с оккупацией" #NT!
+ CHI_breach_the_yellow_river: "Прорыв плотин реки Хуанхэ" #NT!
+ CHI_breach_the_yellow_river_desc: "Река Хуанхэ является источником жизненной силы окружающих регионов, но стоит на пути надвигающегося вторжения. В качестве последнего средства для замедления сил вторжения было сделано предложение взорвать сложную систему дамб и плотин.\n\nЭффективность этого действия трудно определить, но последствия будут серьезными." #NT!
+ yellow_river_blown: "Экстремальное наводнение" #NT!
+ yellow_river_blown_desc: "Этот регион сильно затоплен из-за саботажа защитных сооружений от наводнений на реке Хуанхэ." #NT!
+  
+ decision_cost_CP_15: "£command_power  §Y15§!" #NT!
+ decision_cost_CP_15_blocked: "£command_power  §R15§!" #NT!
+ decision_cost_CP_15_tooltip: "Принять решение стоит £command_power  §Y15§!" #NT!
+  
+ decision_cost_CP_25: "£command_power  §Y25§!" #NT!
+ decision_cost_CP_25_blocked: "£command_power  §R25§!" #NT!
+ decision_cost_CP_25_tooltip: "Принять решение стоит £command_power  §Y25§!" #NT!
+  
+ decision_cost_CP_35: "£command_power  §Y35§!" #NT!
+ decision_cost_CP_35_blocked: "£command_power  §R35§!" #NT!
+ decision_cost_CP_35_tooltip: "Принять решение стоит £command_power  §Y35§!" #NT!
+  
+ decision_cost_CP_75: "£command_power  §Y75§!" #NT!
+ decision_cost_CP_75_blocked: "£command_power  §R75§!" #NT!
+ decision_cost_CP_75_tooltip: "Принять решение стоит £command_power  §Y75§!" #NT!
+  
+ decision_cost_CP_50: "£command_power  §Y50§!" #NT!
+ decision_cost_CP_50_blocked: "£command_power  §R50§!" #NT!
+ decision_cost_CP_50_tooltip: "Принять решение стоит £command_power  §Y50§!" #NT!
+  
+ decision_cost_CP_5_pp_25: "£command_power  §Y5§! £pol_power  §Y25§!" #NT!
+ decision_cost_CP_5_pp_25_blocked: "£command_power  §R5§! £pol_power  §R25§!" #NT!
+ decision_cost_CP_5_pp_25_tooltip: "Принять решение стоит £command_power  §Y5§! £pol_power  §Y25§!" #NT!
+  
+ decision_cost_CP_25_pp_50: "£command_power  §Y25§! £pol_power  §Y50§!" #NT!
+ decision_cost_CP_25_pp_50_blocked: "£command_power  §R25§! £pol_power  §R50§!" #NT!
+ decision_cost_CP_25_pp_50_tooltip: "Принять решение стоит £command_power  §Y25§! £pol_power  §Y50§!" #NT!
+  
+ decision_cost_CP_25_pp_25: "£command_power  §Y25§! £pol_power  §Y25§!" #NT!
+ decision_cost_CP_25_pp_25_blocked: "£command_power  §R25§! £pol_power  §R25§!" #NT!
+ decision_cost_CP_25_pp_25_tooltip: "Принять решение стоит £command_power  §Y25§! £pol_power  §Y25§!" #NT!
+  
+ decision_cost_CP_50_pp_50: "£command_power  §Y50§! £pol_power  §Y50§!" #NT!
+ decision_cost_CP_50_pp_50_blocked: "£command_power  §R50§! £pol_power  §R50§!" #NT!
+ decision_cost_CP_50_pp_50_tooltip: "Принять решение стоит £command_power  §Y50§! £pol_power  §Y50§!" #NT!
+  
+ decision_cost_CP_25_pp_75: "£command_power  §Y25§! £pol_power  §Y75§!" #NT!
+ decision_cost_CP_25_pp_75_blocked: "£command_power  §R25§! £pol_power  §R75§!" #NT!
+ decision_cost_CP_25_pp_75_tooltip: "Принять решение стоит £command_power  §Y25§! £pol_power  §Y75§!" #NT!
+  
+ decision_cost_CP_50_PP_100: "£command_power  §Y50§! £pol_power  §Y100§!" #NT!
+ decision_cost_CP_50_PP_100_blocked: "£command_power  §R50§! £pol_power  §R100§!" #NT!
+ decision_cost_CP_50_PP_100_tooltip: "Принять решение стоит £command_power  §Y50§! £pol_power  §Y100§!" #NT!
+  
+ decision_cost_pp_25_ie_1000: "£pol_power  §Y25§! £infantry_equipment_text_icon  §Y1000§!" #NT!
+ decision_cost_pp_25_ie_1000_blocked: "£pol_power  §R25§! £infantry_equipment_text_icon  §R1000§!" #NT!
+ decision_cost_pp_25_ie_1000_tooltip: "Принять решение стоит £pol_power  §Y25§! £infantry_equipment_text_icon  §Y1000§!" #NT!
+  
+ decision_cost_ie_1000: "£infantry_equipment_text_icon  §Y1000§!" #NT!
+ decision_cost_ie_1000_blocked: "£infantry_equipment_text_icon  §R1000§!" #NT!
+ decision_cost_ie_1000_tooltip: "Принять решение стоит £infantry_equipment_text_icon  §Y1000§!" #NT!
+  
+ decision_cost_ie_2000: "£infantry_equipment_text_icon  §Y2000§!" #NT!
+ decision_cost_ie_2000_blocked: "£infantry_equipment_text_icon  §R2000§!" #NT!
+ decision_cost_ie_2000_tooltip: "Принять решение стоит £infantry_equipment_text_icon  §Y2000§!" #NT!
+  
+ decision_cost_ie_500: "£infantry_equipment_text_icon  §Y500§!" #NT!
+ decision_cost_ie_500_blocked: "£infantry_equipment_text_icon  §R500§!" #NT!
+ decision_cost_ie_500_tooltip: "Принять решение стоит £infantry_equipment_text_icon  §Y500§!" #NT!
+  
+ decision_cost_civ_factory_1: "£civ_factory  §Y1§!" #NT!
+ decision_cost_civ_factory_1_blocked: "£civ_factory  §R1§!" #NT!
+ decision_cost_civ_factory_1_tooltip: "Это стоит £civ_factory  §Y1§! пока это решение активно" #NT!
+  
+ decision_cost_civ_factory_2: "£civ_factory  §Y2§!" #NT!
+ decision_cost_civ_factory_2_blocked: "£civ_factory  §R2§!" #NT!
+ decision_cost_civ_factory_2_tooltip: "Это стоит £civ_factory  §Y2§! пока это решение активно" #NT!
+  
+ decision_cost_civ_factory_3: "£civ_factory  §Y3§!" #NT!
+ decision_cost_civ_factory_3_blocked: "£civ_factory  §R3§!" #NT!
+ decision_cost_civ_factory_3_tooltip: "Это стоит £civ_factory  §Y3§! пока это решение активно" #NT!
+  
+ decision_cost_civ_factory_5: "£civ_factory  §Y5§!" #NT!
+ decision_cost_civ_factory_5_blocked: "£civ_factory  §R5§!" #NT!
+ decision_cost_civ_factory_5_tooltip: "Это стоит £civ_factory  §Y5§! пока это решение активно" #NT!
+  
+ decision_cost_MP_300: "£manpower_texticon  §Y300§!" #NT!
+ decision_cost_MP_300_blocked: "£manpower_texticon  §R300§!" #NT!
+ decision_cost_MP_300_tooltip: "Принять это решение стоит £manpower_texticon  §Y300§!" #NT!
+  
+ decision_cost_ie_500_MP_500_CP_25: "£infantry_equipment_text_icon  §Y500§! £manpower_texticon  §Y500§! £command_power  §Y25§!" #NT!
+ decision_cost_ie_500_MP_500_CP_25_blocked: "£infantry_equipment_text_icon  §R500§! £manpower_texticon  §R500§! £command_power  §R25§!" #NT!
+ decision_cost_ie_500_MP_500_CP_25_tooltip: "Принять решение стоит £infantry_equipment_text_icon  §Y500§! £manpower_texticon  §Y500§! £command_power  §Y25§!" #NT!
+  
+ RAJ_population_decisions: "Сельская индустриализация" #NT!
+ RAJ_industrialize_state: "Индустриализация [FROM.GetName]" #NT!
+ RAJ_industrialize_state_desc: "Наша страна снова на подъеме. Хотя задача и велика, приведение сельских территорий в современную эпоху, несомненно, принесет дивиденды в будущем." #NT!
+ RAJ_industrialized_this_state: "§HСельские районы уже индустриализированы§!" #NT!
+ RAJ_reduce_agrarian_society_value_tooltip: "\n§H$RAJ_agrarian_society$§!\nФактор рекрутируемого населения: [?RAJ_agrarian_society_increment|+=%]\n" #NT!
+ war_propaganda_radio_industry: "Радиопропаганда" #NT!
+ war_propaganda_radio_industry_desc: "Технологии достигли такого уровня развития, что значительная часть нашего населения имеет доступ к домашнему радио. Государственные СМИ являются идеальным инструментом для разжигания военных усилий в сердцах наших людей." #NT!
+ war_propaganda_film_industry: "[ROOT.GetImportOrDomesticFilmIndustry]" #NT!
+ war_propaganda_film_industry_desc: "[ROOT.GetImportOrDomesticFilmIndustryDesc]" #NT!
+ DOMESTIC_FILM_INDUSTRY: "Использовать отечественную киноиндустрию" #NT!
+ IMPORTED_FILM_INDUSTRY: "Импортировать пропагандистские фильмы союзников" #NT!
+ DOMESTIC_FILM_INDUSTRY_DESC: "Киноиндустрия [ROOT.GetAdjective] значительно развилась за последнее десятилетие. С населением, изголодавшимся по развлечениям, мы можем выиграть от кинематографической продукции, призванной разжигать патриотические чувства." #NT!
+ IMPORTED_FILM_INDUSTRY_DESC: "Наши благодетели и союзники стратегически используют пропагандистские фильмы. При небольших инвестициях мы могли бы показывать эти постановки по всей нашей стране, чтобы подстегнуть военный дух среди нашего народа." #NT!
+  ##Eng films for above 
+ the_lion_has_wings: "У льва есть крылья" #NT!
+ the_battle_of_london: "Битва за Лондон" #NT!
+ queens_messengers: "Посланники королевы" #NT!
+ in_which_we_serve: "В котором мы служим" #NT!
+ the_volunteer: "Волонтер" #NT!
+ fires_were_started: "Начались пожары" #NT!
+  ##Aus 
+ men_of_timor: "Мужчины Тимора" #NT!
+ soldiers_without_uniform: "Солдаты без формы" #NT!
+ mid_east: "Средний Восток" #NT!
+  ##Can 
+ atlantic_patrol: "Атлантический патруль" #NT!
+ front_of_steel: "Фронт из стали" #NT!
+ home_front: "Внутренний фронт" #NT!
+ wings_of_youth: "Крылья Молодости" #NT!
+ all_out_for_war: "Все на войну" #NT!
+ banshees_over_canada: "Банши над Канадой" #NT!
+  ##RAJ_agrarian_society$§ 
+ the_planes_of_hindustan: "Самолеты Индостана" #NT!
+ road_to_victory: "Дорога к победе" #NT!
+ hes_in_the_navy: "Он на флоте." #NT!
+ in_self_defence: "В целях самообороны" #NT!
+  ##USA 
+ women_in_defense: "Женщины в обороне" #NT!
+ winning_your_wings: "Выиграй свои крылья" #NT!
+ the_world_at_war: "Мир в состоянии войны" #NT!
+ mission_accomplished: "Миссия выполнена" #NT!
+ the_fleet_that_came_to_stay: "Флот, который пришел, чтобы остаться" #NT!
+ fury_in_the_pacific: "Ярость в Тихом океане" #NT!
+ its_your_war_too: "Это и твоя война тоже" #NT!
+  ##Holland/Belgium 
+ belguique_toujours: "Belgique Toujours" #NT!
+ high_stakes_in_the_east: "Высокие ставки на Востоке" #NT!
+ glorious_colours: "Великолепные цвета" #NT!
+ litte_belgium: "Маленькая Бельгия" #NT!
+  ##Sov 
+ for_the_front: "Для фронта" #NT!
+ the_peoples_avengers: "Народные мстители" #NT!
+ day_of_war: "День войны" #NT!
+ film_motherland: "Родина-мать" #NT!
+ sons_of_the_motherland: "Сыны Отечества" #NT!
+ moscow_strikes_back: "Москва наносит ответный удар" #NT!
+  ##Ger 
+ fluchtlinge: "Флюхтлинге" #NT!
+ film_bismarck: "Бисмарк" #NT!
+ wunschkonzert: "Wunschkonzert" #NT!
+ anschlag_auf_baku: "Аншлаг в Баку" #NT!
+ die_entlassung: "Die Entlassung" #NT!
+ besatzung_dora: "Бесатцунг Дора" #NT!
+ opfergang: "Опферганг" #NT!
+ panorama: "Панорама" #NT!
+ kolberg: "Кольберг" #NT!
+  ##Japan 
+ monkey_king: "Король обезьян" #NT!
+ genghis_khan: "Чингисхан" #NT!
+ vow_in_the_desert: "Клятва в пустыне" #NT!
+ song_of_the_white_orchid: "Песнь Белой Орхидеи" #NT!
+ five_scouts: "Пять скаутов" #NT!
+ fire_on_that_flag: "Огонь по этому флагу!" #NT!
+  ##Ita (hard to find it seems) 
+ condottieri: "Кондотьеры" #NT!
+ scipio_africano: "Сципион Африкано" #NT!
+ the_man_with_the_cross: "Человек с крестом" #NT!
+  ##Generic 
+ our_war: "Наша война" #NT!
+ the_war_for_our_existence: "Война за наше существование" #NT!
+ war_in_the_skies: "Война в небе" #NT!
+ flags_raised: "Поднятые флаги" #NT!
+ the_day_of_sacrifice: "День Жертвоприношения" #NT!
+ blood_and_toil: "Кровь и труд" #NT!
+  
+  
+  
+ RUS_attack_poland: "Верните Польшу!" #NT!
+  
+  
+  ############### Foreign MIOs ############### 
+ available_mio_tt: "§GAvailable§! как §YВоенно-промышленная организация§!:" #NT!
+ foreign_mio_decisions_category: "Приглашение иностранных предприятий" #NT!
+ invite_GER_henschel_organization: "Пригласите §Y$GER_henschel_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_RUS_okmo_organization: "Пригласите §Y$RUS_okmo_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_ENG_vickers_armstrong_eng_organization: "Пригласите §Y$ENG_vickers_armstrong_eng_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_ITA_fiat_organization: "Пригласите §Y$ITA_fiat_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_RUS_nevskoye_design_bureau_organization: "Пригласите §Y$RUS_nevskoye_design_bureau_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_ENG_yarrow_shipbuilders_organization: "Пригласите §Y$ENG_yarrow_shipbuilders_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_ITA_crda_organization: "Пригласите §Y$ITA_crda_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_GER_heinkel_organization: "Пригласите §Y$GER_heinkel_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_ENG_fairey_aviation_organization: "Пригласите §Y$ENG_fairey_aviation_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_RUS_ilyushin_design_bureau_organization: "Пригласите §Y$RUS_ilyushin_design_bureau_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_RUS_gaz_organization: "Пригласите §Y$RUS_gaz_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_GER_opel_organization: "Пригласите §Y$GER_opel_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_ENG_vauxhall_organization: "Пригласите §Y$ENG_vauxhall_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_ITA_lancia_organization: "Пригласите §Y$ITA_lancia_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_CZE_skoda_artillery_organization: "Пригласите §Y$CZE_skoda_artillery_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_FRA_mas_organization: "Пригласите §Y$FRA_mas_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_JAP_nissan_organization: "Пригласите §Y$JAP_nissan_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_CZE_ckd_organization: "Пригласите §Y$CZE_ckd_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_CZE_skoda_armor_organization: "Пригласите §Y$CZE_skoda_armor_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_FRA_renault_organization: "Пригласите §Y$FRA_renault_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_JAP_maizuru_naval_arsenal_organization: "Пригласите §Y$JAP_maizuru_naval_arsenal_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_JAP_mitsubishi_organization: "Пригласите §Y$JAP_mitsubishi_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_FRA_bloch_organization: "Пригласите §Y$FRA_bloch_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_GER_junkers_organization: "Пригласите §Y$GER_junkers_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_GER_mauser_organization: "Пригласите §Y$GER_mauser_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+ invite_ENG_john_brown_organization: "Пригласите §Y$ENG_john_brown_organization$§! в §Y[ROOT.GetNameWithFlag]§!" #NT!
+  
+ invites_mio_tt: "\n§YПриглашает иностранную военно-промышленную организацию§!:" #NT!
+  
+  
+  ############### Generic Purchase Ship ################ 
+  
+ generic_purchase_old_ships_category: "Военно-морские закупки" #NT!
+ generic_purchase_old_ships_category_desc: "Поскольку мир становится все более нестабильным, нам необходимо расширить возможности проецирования морской мощи. К счастью для нас, некоторые из крупных флотов могут быть готовы расстаться со своими старыми судами." #NT!
+ purchase_ships_eng: "[ENG.GetFlag] Купить старые [ENG.GetAdjective] Эсминцы" #NT!
+ purchase_ships_sov: "[RUS.GetFlag] Купить старые [RUS.GetAdjective] Линкоры" #NT!
+ purchase_ships_ger: "[GER.GetFlag] Купить старые [GER.GetAdjective] подводные лодки" #NT!
+ purchase_ships_usa: "[USA.GetFlag] Купить старые [USA.GetAdjective] Эсминцы" #NT!
+  
+   #### Generic Refit Civilian Ships #### 
+ generic_refit_civilian_ships_category: "Военное переоборудование гражданских судов" #NT!
+ generic_refit_civilian_ships_category_desc: "Наш флот не может реально надеяться конкурировать с гораздо более крупными военно-морскими силами, которые нам угрожают. Мы должны спешно закупить более крупный флот, переоборудовав гражданские суда для военных целей." #NT!
+ refit_to_destroyer: "Переоборудовать корабли в эсминцы" #NT!
+ refit_to_cruiser: "Переоборудование кораблей в крейсеры" #NT!
+  
+   #### Special Forces 
+ diversify_special_forces: "Диверсификация элитных сил" #NT!
+ diversify_special_forces_desc: "Наших обычных сил просто недостаточно для борьбы с надвигающейся бурей. Мы должны внедрять инновации." #NT!
+ add_potential_special_forces_tree_tt: "Добавляет §H1§! бесплатно Спецназ §HСпециализация отделения§!" #NT!

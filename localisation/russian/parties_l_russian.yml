@@ -1017,3 +1017,18 @@
  SCH_communism_party: "ЗМТ" #NT!
  SCH_communism_party_long: "Чжунго Миньчжу Тонгмэн" #NT!
  ################################ 
+ #POLAND
+ POL_fascism_party:0 "НП"
+ POL_fascism_party_long:0 "Национальная партия"
+ POL_communism_party:0 "СОК"
+ POL_communism_party_long:0 "Союз освобождения крестьян"
+ POL_socialist_party:0 "ПСП"
+ POL_socialist_party_long:0 "Польская социалистическая партия"
+ POL_democratic_party:0 "ПНП"
+ POL_democratic_party_long:0 "Польская народная партия"
+ POL_neutrality_party:0 "Романов"
+ POL_conservatives_party:0 "ХД"
+ POL_conservatives_party_long:0 "Христианская демократия"
+ POL_tempgov:0 "ВНП"
+ POL_tempgov_long:0 "Временное национальное правительство"
+ ################################
