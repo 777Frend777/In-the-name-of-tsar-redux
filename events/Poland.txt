@@ -7,50 +7,56 @@ country_event = { #idependence war
 	desc = pol.1.d
 	picture = GFX_report_event_generic_panzer_attack
 	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			RUS = {
+				end_puppet = POL
+			}
+			ROM = { #romania always refuses to join the war
+				set_truce = {
+					target = POL
+					days = 100
+				}
+			}
+			88 = {
+				set_demilitarized_zone = no
+			}
+			97 = {
+				set_demilitarized_zone = no
+			}
+			POL = {
+				add_manpower = -100
+				add_ideas = POL_spirit_of_freedom1
+				remove_ideas = POL_clock_is_ticking
+				set_party_name = { 
+					ideology = democratic
+					long_name = POL_tempgov_long
+					name = POL_tempgov
+				}
+				add_Stability = 0.15
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+				}
+				drop_cosmetic_tag = yes
+				leave_faction = yes
+				declare_war_on = {
+					target = RUS
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = KRW
+					type = annex_everything
+				}
+				activate_mission = POL_dont_surrender
+			}
+		}
+	}	
 
 	option = {
 		name = pol.1.a	
 		ai_chance = { factor = 100 }
-		RUS = {
-			end_puppet = POL
-		}
-		ROM = { #romania always refuses to join the war
-			set_truce = {
-				target = POL
-				days = 100
-			}
-		}
-		88 = {
-			set_demilitarized_zone = no
-		}
-		97 = {
-			set_demilitarized_zone = no
-		}
 		POL = {
-			add_manpower = -100
-			add_ideas = POL_spirit_of_freedom1
-			remove_ideas = POL_clock_is_ticking
-			set_party_name = { 
-				ideology = democratic
-				long_name = POL_tempgov_long
-				name = POL_tempgov
-			}
-			add_Stability = 0.15
-			set_politics = {
-				ruling_party = democratic
-				elections_allowed = no
-			}
-			drop_cosmetic_tag = yes
-			leave_faction = yes
-			declare_war_on = {
-				target = RUS
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = KRW
-				type = annex_everything
-			}
-			activate_mission = POL_dont_surrender
 			88 = {
 				create_unit = {
 					division = "name = \"Galicia Rebels\" division_template = \"Dywizja Piechoty\" start_manpower_factor = 0.3"
@@ -71,46 +77,50 @@ country_event = { #polish victory
 	desc = pol.2.d
 	picture = GFX_report_event_POL_resistance
 	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			POL = {
+				load_focus_tree = {
+					tree = polandindependence
+				}
+				transfer_state = 97
+				transfer_state = 88
+				white_peace = RUS
+				set_truce = {
+					target = RUS
+					days = 360
+				}
+				set_truce = {
+					target = KRW
+					days = 360
+				}
+				remove_wargoal = {
+					type = all
+					target = KRW
+				}
+				remove_ideas = {
+					POL_spirit_of_freedom1
+					POL_spirit_of_freedom2
+					POL_spirit_of_freedom3
+				}
+				add_timed_idea = {
+					idea = POL_destruction
+					days = 180
+				}
+				country_event = {
+					id = pol.10
+					days = 60
+				}
+			}
+			RUS = {
+				transfer_state = 814
+			}
+		}
+	}
 
 	option = {
 		name = pol.2.a	
 		ai_chance = { factor = 100 }
-		POL = {
-			load_focus_tree = {
-				tree = polandindependence
-			}
-			transfer_state = 97
-			transfer_state = 88
-			white_peace = RUS
-			set_truce = {
-				target = RUS
-				days = 360
-			}
-			set_truce = {
-				target = KRW
-				days = 360
-			}
-			remove_wargoal = {
-				type = all
-				target = KRW
-			}
-			remove_ideas = {
-				POL_spirit_of_freedom1
-				POL_spirit_of_freedom2
-				POL_spirit_of_freedom3
-			}
-			add_timed_idea = {
-				idea = POL_destruction
-				days = 180
-			}
-			country_event = {
-				id = pol.10
-				days = 5
-			}
-		}
-		RUS = {
-			transfer_state = 814
-		}
 	}
 }
 country_event = { #russian victory
@@ -119,33 +129,37 @@ country_event = { #russian victory
 	desc = pol.3.d
 	picture = GFX_report_event_POL_train_bomb
 	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			POL = {
+				white_peace = RUS
+				set_cosmetic_tag = POL_RUS
+				load_focus_tree = {
+					tree = polandrussialapdog
+				}
+				remove_wargoal = {
+					type = all
+					target = KRW
+				}
+				remove_ideas = {
+					POL_spirit_of_freedom1
+					POL_spirit_of_freedom2
+					POL_spirit_of_freedom3
+				}
+				add_timed_idea = {
+					idea = POL_destruction
+					days = 180
+				}
+			}
+			RUS = {
+				puppet = POL
+			}
+		}
+	}
 
 	option = {
 		name = pol.3.a	
 		ai_chance = { factor = 100 }
-		POL = {
-			white_peace = RUS
-			set_cosmetic_tag = POL_RUS
-			load_focus_tree = {
-				tree = polandrussialapdog
-			}
-			remove_wargoal = {
-				type = all
-				target = KRW
-			}
-			remove_ideas = {
-				POL_spirit_of_freedom1
-				POL_spirit_of_freedom2
-				POL_spirit_of_freedom3
-			}
-			add_timed_idea = {
-				idea = POL_destruction
-				days = 180
-			}
-		}
-		RUS = {
-			puppet = POL
-		}
 	}
 }
 country_event = { #russian civil war after russian victory, garrison fails
@@ -154,36 +168,40 @@ country_event = { #russian civil war after russian victory, garrison fails
 	desc = pol.5.d
 	picture = GFX_report_event_generic_panzer_attack
 	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			POL = {
+				drop_cosmetic_tag = yes
+				load_focus_tree = {
+					tree = polandindependence
+				}
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+				}
+				unlock_national_focus = POL_revenge 
+				unlock_national_focus = POL_letter_to_tsar
+				remove_ideas = POL_puppet_government
+				add_timed_idea = {
+					idea = POL_destruction
+					days = 180
+				}
+				country_event = {
+					id = pol.10
+					days = 60
+				}
+			}
+			RUS = {
+				end_puppet = POL
+			}
+			white_peace = KUB
+			white_peace = DON
+		}
+	}
 
 	option = {
 		name = pol.5.a	
 		ai_chance = { factor = 100 }
-		POL = {
-			drop_cosmetic_tag = yes
-			load_focus_tree = {
-				tree = polandindependence
-			}
-			set_politics = {
-				ruling_party = democratic
-				elections_allowed = no
-			}
-			unlock_national_focus = POL_revenge 
-			unlock_national_focus = POL_letter_to_tsar
-			remove_ideas = POL_puppet_government
-			add_timed_idea = {
-				idea = POL_destruction
-				days = 180
-			}
-			country_event = {
-				id = pol.10
-				days = 60
-			}
-		}
-		RUS = {
-			end_puppet = POL
-		}
-		white_peace = KUB
-		white_peace = DON
 	}
 }
 
@@ -423,11 +441,11 @@ country_event = { #build a monument
 	option = {
 		name = pol.11.a	
 		ai_chance = { factor = 100 }
-		#add_trait = {
-		#	character = TAG_my_leader
-		#	ideology = liberalism
-		#	trait = INOT_cult_of_leader
-		#}
+		add_trait = {
+			character = POL_roman_dmowski
+			ideology = fascism_ideology
+			trait = INOT_cult_of_leader
+		}
 	}
 }
 country_event = { #army reform
@@ -547,15 +565,15 @@ country_event = { #four year plan
 		ai_chance = { factor = 100 }
 	}
 }
-country_event = { #scripted peace with russia
+country_event = { #event for russia
 	id = pol.19
 	title = pol.19.t
 	desc = pol.19.d
-	picture = GFX_report_event_FNG_industry3
+	picture = GFX_report_event_RUS_riders
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
-		tag = POL
+		tag = RUS
 		POL = {
 			controls_province = 11479
 			controls_province = 3393
@@ -564,23 +582,34 @@ country_event = { #scripted peace with russia
 			has_war_with = RUS
 		}
 	}
-	option = {
+	option = { #accept
 		name = pol.19.a	
 		ai_chance = { factor = 100 }
-		RUS = {
+		POL = {
 			country_event = pol.20
+		}
+		add_political_power = -100
+	}
+	option = { #refuse
+		name = pol.19.b
+		ai_chance = { factor = 0 }
+		add_Stability = -0.05
+		add_manpower = -7000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -2000
 		}
 	}
 }
-country_event = { #event for russia
+country_event = { #event for poland
 	id = pol.20
 	title = pol.20.t
 	desc = pol.20.d
-	picture = GFX_report_event_FNG_industry3
+	picture = GFX_report_event_generic_diplomacy1
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = pol.20.a	#accept
+		name = pol.20.a	
 		ai_chance = { factor = 100 }
 		RUS = {
 			white_peace = {
@@ -666,16 +695,12 @@ country_event = { #event for russia
 			}
 		}
 	}
-	option = {
-		name = pol.20.b #refuse
-		ai_chance = { factor = 0 }
-	}
 }
 country_event = { #event for controller of zaolzie
 	id = pol.21
 	title = pol.21.t
 	desc = pol.21.d
-	picture = GFX_report_event_FNG_industry3
+	picture = GFX_report_event_generic_scandal
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -709,6 +734,10 @@ country_event = { #event for controller of zaolzie
 		}
 		POL = {
 			transfer_state = 72
+			country_event = {
+				id = pol.22
+				days = 1
+			}
 		}
 	}
 	option = {
@@ -722,6 +751,34 @@ country_event = { #event for controller of zaolzie
 				target = ROOT
 				generator = { 72 }
 			}
+			country_event = {
+				id = pol.23
+				days = 1
+			}
 		}
+	}
+}
+country_event = { #for poland, zaolzie accept
+	id = pol.22
+	title = pol.22.t
+	desc = pol.22.d
+	picture = GFX_report_event_generic_diplomacy3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = pol.22.a	
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = { #for poland, zaolzie deny
+	id = pol.23
+	title = pol.23.t
+	desc = pol.23.d
+	picture = GFX_report_event_generic_towar
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = pol.23.a	
+		ai_chance = { factor = 100 }
 	}
 }

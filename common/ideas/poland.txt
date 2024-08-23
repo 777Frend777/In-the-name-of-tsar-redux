@@ -12,7 +12,7 @@ ideas = {
 		#destruction timed idea
 		POL_destruction = {
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = generic_destruction
 			modifier = {
 				stability_weekly = -0.01
 				production_speed_buildings_factor = -0.1
@@ -25,14 +25,14 @@ ideas = {
 		#focus tree ideas
 		POL_spirit_of_freedom1 = {
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = advisors_poland
 			modifier = {
 				surrender_limit = 1000 #surrender is scripted
 			}
 		}
 		POL_spirit_of_freedom2 = {
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = advisors_poland
 			modifier = {
 				surrender_limit = 1000 #surrender is scripted
 				offence = 0.05
@@ -40,7 +40,7 @@ ideas = {
 		}
 		POL_spirit_of_freedom3 = {
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = advisors_poland
 			modifier = {
 				surrender_limit = 1000 #surrender is scripted
 				offence = 0.05
@@ -49,7 +49,7 @@ ideas = {
 		}
 		POL_never_targowica1 = {
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = advisors_poland
 			modifier = {
 				war_support_factor = 0.05
 				surrender_limit = 0.05
@@ -58,7 +58,7 @@ ideas = {
 		}
 		POL_never_targowica2 = {
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = advisors_poland
 			modifier = {
 				war_support_factor = 0.05
 				surrender_limit = 0.05
@@ -82,14 +82,14 @@ ideas = {
 		}
 		POL_four_year_plan = {
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = generic_improved_industries
 			modifier = {
 				production_speed_buildings_factor = 0.15
 			}
 		}
 		POL_autarky = {
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = IRE_heavy_industry
 			modifier = {
 				local_resources = 0.1
 				production_factory_start_efficiency_factor = 0.1
@@ -97,7 +97,7 @@ ideas = {
 		}
 		POL_economic_reliance_on_rus = {
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = advisors_russia2
 			modifier = {
 				RUS = {
 					trade_opinion_factor = 0.9
@@ -111,7 +111,7 @@ ideas = {
 		}
 		POL_pkp_idea = {
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = generic_train_tracks
 			modifier = {
 				out_of_supply_factor = -0.15
 				supply_factor = 0.15
@@ -119,7 +119,7 @@ ideas = {
 		}
 		POL_puppet_government = {
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = generic_democracy_banned
 			modifier = {
 				local_resources_factor = 0.1
 				extra_trade_to_overlord_factor = 0.1
@@ -133,7 +133,7 @@ ideas = {
 		}
 		POL_minority_protection = {
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = generic_democratic_drift_bonus
 			modifier = {
 				compliance_growth_on_our_occupied_states = -0.2
 				resistance_activity = -0.2
@@ -143,7 +143,7 @@ ideas = {
 		}
 		POL_gradual_polonization = {
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = generic_deal_with_the_devil
 			modifier = {
 				compliance_growth_on_our_occupied_states = 0.1
 				resistance_activity = 0.1
@@ -155,7 +155,7 @@ ideas = {
 		}
 		POL_agressive_polonization = {
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = idea_generic_oppression
 			modifier = {
 				compliance_growth_on_our_occupied_states = 0.2
 				resistance_activity = 0.2
@@ -167,7 +167,7 @@ ideas = {
 		}
 		POL_jewish_slaves = {
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = generic_migration
 			modifier = {
 				conscription_factor = -0.05
 				production_speed_buildings_factor = 0.1
@@ -178,7 +178,7 @@ ideas = {
 		}
 		POL_everything = {
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = FRA_scw_intervention_nationalists_focus
 			modifier = {
 				conscription_factor = 0.1
 				offence = 0.1
@@ -190,7 +190,7 @@ ideas = {
 		}
 		POL_local_communities = {
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = government
 			modifier = {
 				industry_air_damage_factor = -0.3
 				surrender_limit = 0.2
@@ -198,7 +198,7 @@ ideas = {
 		}
 		POL_family_values = {
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = SHX_christian_statism
 			modifier = {
 				recruitable_population = -0.01
 				resistance_decay = 0.1
@@ -207,7 +207,7 @@ ideas = {
 		}
 		POL_capitalism_human = {
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = HOL_welfare_state
 			modifier = {
 				consumer_goods_factor = 0.03
 				monthly_population = 0.07
@@ -216,7 +216,7 @@ ideas = {
 		}
 		POL_christian_solidarity = { #swap capitalism human
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = HOL_welfare_state
 			modifier = {
 				war_support_factor = -0.02
 				consumer_goods_factor = 0.06
@@ -226,7 +226,7 @@ ideas = {
 		}
 		POL_defender_of_faith = { 
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = IRE_catholic
 			modifier = {
 				targeted_modifier = {
 					tag = RUS
@@ -240,7 +240,7 @@ ideas = {
 		}
 		POL_will_of_people = { 
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = HOL_workplace_democracy
 			modifier = {
 				stability_factor = 0.1
 				conscription_factor = 0.05
@@ -248,14 +248,14 @@ ideas = {
 		}
 		POL_resocialisation = {
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = idea_generic_army_war_college
 			modifier = {
 				monthly_population = 0.03
 			}
 		}
 		POL_land_reform = { 
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = RUS_land_reforms
 			modifier = {
 				consumer_goods_factor = 0.03
 				production_factory_efficiency_gain_factor = 0.1 
@@ -263,7 +263,7 @@ ideas = {
 		}
 		POL_feed_and_defend = { 
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = RUS_agricole_power
 			modifier = {
 				production_cost_industrial_complex_factor = -0.1
 				production_speed_arms_factory_factor = 0.3 
@@ -272,7 +272,7 @@ ideas = {
 		}
 		POL_workers_rights = { 
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = generic_syndicalist_worker
 			modifier = {
 				stability_weekly_factor = 0.3
 				war_support_weekly_factor = 0.3
@@ -283,7 +283,7 @@ ideas = {
 		}
 		POL_provide_housing = { 
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = HOL_welfare_state
 			modifier = {
 				monthly_population = 0.1
 				consumer_goods_factor = 0.02
@@ -291,7 +291,7 @@ ideas = {
 		}
 		POL_free_women = { 
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = generic_democratic_drift_bonus
 			modifier = {
 				monthly_population = -0.05
 				stability_weekly_factor = 0.3
@@ -299,7 +299,7 @@ ideas = {
 		}
 		POL_onwards_warsaw = { 
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = FIN_socialist_wellfare
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.1
 				training_time_factor = -0.1
@@ -308,7 +308,7 @@ ideas = {
 		}
 		POL_third_may = { 
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = POL_royal_army
 			modifier = {
 				army_defence_against_major_factor = 0.1
 				army_attack_against_major_factor = 0.1
@@ -316,21 +316,21 @@ ideas = {
 		}
 		POL_christianisation = { 
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = SPA_carlism
 			modifier = {
 				monthly_population = 0.1
 			}
 		}
 		POL_secularization = { 
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = HOL_syndicalist_neutrality
 			modifier = {
 				research_speed_factor = 0.1
 			}
 		}
 		POL_construct_navy = { 
 			allowed = { always = no } #needs balance
-			picture = clock_is_ticking
+			picture = generic_navy
 			modifier = {
 				experience_gain_navy_unit = 0.1
 				production_cost_max_ship_hull_cruiser = -3
@@ -341,7 +341,7 @@ ideas = {
 		}
 		POL_tsar_army = { 
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = RUS_training_barracks
 			targeted_modifier = {
 				tag = GER
 				attack_bonus_against = 0.1
@@ -355,7 +355,7 @@ ideas = {
 		}
 		POL_no_surrender = { 
 			allowed = { always = no }
-			picture = clock_is_ticking
+			picture = CAN_darkest_hour
 			modifier = {
 				surrender_limit = 0.3
 				war_support_factor = 0.05

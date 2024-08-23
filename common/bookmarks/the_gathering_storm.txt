@@ -114,7 +114,21 @@ bookmarks = {
 				ITA_nationalist_party
 			}			
 		}
-		
+		"POL"={
+			minor = yes
+			history = "POL_Occident_DESC"
+			ideology = neutrality
+			ideas = {
+				POL_clock_is_ticking
+				POL_four_year_plan
+				POL_spirit_of_freedom1
+			}	
+			focuses = {
+				POL_revenge
+				POL_resume_plan
+				POL_poland_marriage
+			}			
+		}
 		
 		
 

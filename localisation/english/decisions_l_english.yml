@@ -216,6 +216,10 @@
  blood_and_toil:0 "Blood and Toil"
 
 
+
+ RUS_attack_poland:0 "Reclaim Poland!"
+
+
  ############### Foreign MIOs ###############
  available_mio_tt: "§GAvailable§! as §YMilitary Industrial Organization§!: "
  foreign_mio_decisions_category: "Invite Foreign Industries"

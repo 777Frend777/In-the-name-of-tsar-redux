@@ -1,6 +1,41 @@
 
 RUS_integrate_territories_decisions = {
-
+	RUS_attack_poland = {
+		visible = {
+			tag = RUS
+			country_exists = POL
+			POL = {
+				NOT = {
+					is_puppet_of = RUS
+					is_ally_with = RUS
+				}
+			}
+		}
+		available = {
+			is_neighbor_of = POL
+			date > 1937.10.01
+		}
+		days_remove = 30
+		cost = 100
+		ai_will_do = {
+			base = 0
+			factor = {
+				add = 1000
+				strength_ratio = {
+					tag = POL
+					ratio > 0.8
+				}
+				has_war = no
+			}
+		}
+		fire_only_once = yes
+		remove_effect = {
+			declare_war_on = {
+				target = POL
+				type = annex_everything
+			}
+		}
+	}
 	RUS_integrate_estonia = {
 	visible = {
 	#tag = RUS
@@ -124,44 +159,6 @@ RUS_integrate_territories_decisions = {
 	add_state_core = 146
 	146 = { set_state_name = "Karelia" }
 	set_province_name = { id = 9206 name = "Vyborg" }
-	}
-	
-	}
-	
-	
-	
-	RUS_integrate_poland = {
-	visible = {
-	#tag = RUS
-	controls_state = 10
-	OR = {
-	has_completed_focus = RUS_improve_national_uni
-	has_completed_focus = RUS_multireligion_society
-	}
-	}
-	available = {
-	NOT = { country_exists = POL }
-	is_subject = no 
-	}
-	fire_only_once = yes
-	days_remove = 200
-	cost = 0
-	ai_will_do = {
-		factor = 10
-	}
-	modifier = {
-			stability_factor = -0.05
-			political_power_gain = -0.25
-	}
-	remove_effect = {
-	add_state_core = 10
-	add_state_core = 97
-	add_state_core = 98
-	add_state_core = 87
-	add_state_core = 90
-	add_state_core = 92
-	add_state_core = 844
-	set_province_name = { id = 11301 name = "Belostok" }
 	}
 	
 	}

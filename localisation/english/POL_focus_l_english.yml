@@ -156,7 +156,18 @@
  POL_tooltip_election_SN:0 "§8The SN was elected in the first election§!"
 
  #decision
+ POL_independence_war:0 "The War for Polish Independence"
  POL_dont_surrender:0 "Hold out!"
+ POL_attack_ukraine:0 "Attack Ukraine"
+ POL_attack_belarus:0 "Attack Belarus"
+ POL_attack_lithuania:0 "Attack Lithuania"
+ POL_attack_russia:0 "Attack Russia"
+ POL_fortify_lublin_border:0 "Fortify the Lublin Region Border"
+ POL_fortify_bialystok_suwalki_border:0 "Fortify the Podlasie Region Border"
+ POL_fortify_silesia_border:0 "Fortify the Silesia Region Border"
+ POL_fortify_plock_border:0 "Fortify the Plock Region Border"
+ POL_fortify_western_cities:0 "Fortify the Western Cities"
+ POL_fortify_eastern_cities:0 "Fortify the Eastern Cities"
  POL_four_year_plan:0 "Four Year Plan"
  POL_silesia_decision_arms:0 "Invest in Silesian Arms Industry"
  POL_silesia_decision_civil:0 "Invest in Silesian Civilian Industry"
@@ -169,6 +180,8 @@
  POL_polandb_galicia_decision:0 "Investments in Galicia"
  POL_polandb_wolyn_decision:0 "Investments in Wołyń"
  POL_polandb_nowogrodek_decision:0 "Investments in Nowogródek"
+ POL_resocialisation_programme:0 "Resocialisation project"
+ POL_resocialise_prisoners:0 "Resocialise Prisoners"
 
  #fuck it im putting ideas here too 
  POL_clock_is_ticking:0 "The Clock is Ticking..."
@@ -186,4 +199,10 @@
  POL_minority_protection:0 "Protect the Minorities"
  POL_gradual_polonization:0 "Gradual Polonization"
  POL_agressive_polonization:0 "Agressive Polonization"
+
+ #trait
+ INOT_cult_of_leader:0 "Cult of the Leader"
+
+ #bookmark
+ POL_Occident_DESC:0 "Once upon a time, Poland was a world power, stretching from Gdansk to Moscow. Unfortunately, the oligarchy of the nobility caused Poland to weaken, which was exploited by Prussia, Russia and Austria. As a result, Poland lost its independence for the next 141 years, a situation that continues to this day. However, Russia, weakened by the Great War, could provide an opportunity to finally destroy the Russian partitioners and take revenge on the traitors of Targowica"
 

@@ -14,7 +14,7 @@ focus_tree = {
 		icon = GFX_goal_skull_treaty
 		x = 5
 		y = 1
-		cost = 20
+		cost = 6
 
 		ai_will_do = {
 			factor = 10
@@ -40,7 +40,7 @@ focus_tree = {
 		icon = GFX_goal_generic_imprison_people
 		x = -1
 		y = 1
-		cost = 2
+		cost = 6
 
 		ai_will_do = {
 			factor = 10
@@ -59,7 +59,7 @@ focus_tree = {
 		icon = GFX_goal_secret_police
 		x = 1
 		y = 1
-		cost = 2
+		cost = 6
 
 		ai_will_do = {
 			factor = 10
@@ -81,7 +81,7 @@ focus_tree = {
 		icon = GFX_goal_generic_secret_documents
 		x = -2
 		y = 2
-		cost = 2
+		cost = 6
 
 		ai_will_do = {
 			factor = 10
@@ -99,7 +99,7 @@ focus_tree = {
 		icon = GFX_goal_russia
 		x = 0
 		y = 2
-		cost = 2
+		cost = 6
 
 		ai_will_do = {
 			factor = 10
@@ -118,7 +118,7 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda_film
 		x = 2
 		y = 2
-		cost = 2
+		cost = 6
 
 		ai_will_do = {
 			factor = 10
@@ -142,7 +142,7 @@ focus_tree = {
 		icon = GFX_goal_skull_fortification
 		x = -1
 		y = 3
-		cost = 2
+		cost = 6
 
 		ai_will_do = {
 			factor = 10
@@ -176,7 +176,7 @@ focus_tree = {
 		cost = 2
 
 		ai_will_do = {
-			factor = 10
+			factor = 6
 		}
 		prerequisite = {
 			focus = POL_mandatory_russian
@@ -202,7 +202,7 @@ focus_tree = {
 		icon = GFX_goal_economic_control
 		x = -1
 		y = 4
-		cost = 2
+		cost = 6
 
 		ai_will_do = {
 			factor = 10
@@ -226,7 +226,7 @@ focus_tree = {
 		icon = GFX_goal_army_guy
 		x = 1
 		y = 4
-		cost = 2
+		cost = 6
 
 		ai_will_do = {
 			factor = 10
@@ -313,7 +313,7 @@ focus_tree = {
 		icon = GFX_goal_step_on_skull
 		x = 0
 		y = 5
-		cost = 2
+		cost = 6
 
 		ai_will_do = {
 			factor = 10
@@ -395,7 +395,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_CAS_russian
 		x = -3
 		y = 2
-		cost = 2
+		cost = 6
 
 		ai_will_do = {
 			factor = 10
@@ -417,7 +417,7 @@ focus_tree = {
 		icon = GFX_goal_military_academy
 		x = -1
 		y = 2
-		cost = 2
+		cost = 6
 
 		ai_will_do = {
 			factor = 10
@@ -438,7 +438,7 @@ focus_tree = {
 		icon = GFX_goal_ideology_social_conservative
 		x = -2
 		y = 3
-		cost = 2
+		cost = 6
 
 		ai_will_do = {
 			factor = 10
@@ -510,7 +510,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_mass_assault
 		x = -1
 		y = 1
-		cost = 2
+		cost = 6
 
 		ai_will_do = {
 			factor = 10
@@ -532,7 +532,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_command_power
 		x = 1
 		y = 1
-		cost = 2
+		cost = 6
 
 		ai_will_do = {
 			factor = 10
@@ -553,7 +553,7 @@ focus_tree = {
 		icon = GFX_goal_generic_barricades
 		x = -1
 		y = 2
-		cost = 2
+		cost = 6
 
 		ai_will_do = {
 			factor = 10
@@ -578,7 +578,7 @@ focus_tree = {
 		icon = GFX_goal_generic_seize_money
 		x = 1
 		y = 2
-		cost = 2
+		cost = 6
 
 		ai_will_do = {
 			factor = 10
@@ -604,7 +604,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_tanks3
 		x = -1
 		y = 3
-		cost = 2
+		cost = 6
 
 		ai_will_do = {
 			factor = 10
@@ -626,7 +626,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_cooperation
 		x = 1
 		y = 3
-		cost = 2
+		cost = 6
 
 		ai_will_do = {
 			factor = 10
@@ -648,7 +648,7 @@ focus_tree = {
 		icon = GFX_goal_RUS_flag
 		x = 0
 		y = 4
-		cost = 2
+		cost = 6
 
 		ai_will_do = {
 			factor = 10

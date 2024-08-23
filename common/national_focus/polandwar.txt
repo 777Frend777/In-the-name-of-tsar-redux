@@ -64,7 +64,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_desperate_defense
-		icon = GFX_RIG_city_defense
+		icon = GFX_goal_skull_fortification
 		x = 7
 		y = 3
 		cost = 2

@@ -1429,4 +1429,36 @@ spriteTypes = {
 		name = "GFX_idea_werner_risch"
 		texturefile = "gfx/interface/ideas/SWI_werner_risch.png"
 	}
+	spriteType = {
+		name = "GFX_idea_HOL_welfare_state"
+		texturefile = "gfx/interface/ideas/HOL_welfare_state.png"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_royal_army"
+		texturefile = "gfx/interface/ideas/POL_royal_army.png"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_syndicalist_neutrality"
+		texturefile = "gfx/interface/ideas/HOL_syndicalist_neutrality.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_HOL_workplace_democracy"
+		texturefile = "gfx/interface/ideas/HOL_workplace_democracy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_land_reforms"
+		texturefile = "gfx/interface/ideas/RUS_land_reforms.png"
+	}
+	spriteType = {
+		name = "GFX_idea_IRE_catholic"
+		texturefile = "gfx/interface/ideas/IRE_catholic.png"
+	}
+	spriteType = {
+		name = "GFX_idea_IRE_heavy_industry"
+		texturefile = "gfx/interface/ideas/IRE_heavy_industry.png"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_training_barracks"
+		texturefile = "gfx/interface/ideas/RUS_training_barracks.png"
+	}
 }

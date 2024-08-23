@@ -1,8 +1,6 @@
 #this tree should be loaded at idependence war
 
 #todo add filters
-#todo add event for end democracy
-#todo assign trait for proper nationalist leader
 
 focus_tree = {
 	id = polandindependence
@@ -18,10 +16,10 @@ focus_tree = {
 		icon = GFX_goal_step_on_skull
 		x = 18
 		y = 0
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 1000
 		}
 		completion_reward = {
 			add_ideas = POL_never_targowica1
@@ -37,10 +35,10 @@ focus_tree = {
 		icon = GFX_goal_authority
 		x = 0
 		y = 1
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 100
 		}
 		prerequisite = {
 			focus = POL_revenge
@@ -60,10 +58,10 @@ focus_tree = {
 		icon = GFX_goal_skull_fortification
 		x = -5
 		y = 2
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 		prerequisite = {
 			focus = POL_letter_to_tsar
@@ -86,10 +84,10 @@ focus_tree = {
 		icon = GFX_goal_generic_army_training
 		x = -3
 		y = 2
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 		prerequisite = {
 			focus = POL_letter_to_tsar
@@ -107,10 +105,10 @@ focus_tree = {
 		icon = GFX_focus_generic_military_equipment
 		x = -1
 		y = 2
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 		prerequisite = {
 			focus = POL_letter_to_tsar
@@ -138,10 +136,10 @@ focus_tree = {
 		icon = GFX_goal_POL_flag
 		x = 1
 		y = 2
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 		prerequisite = {
 			focus = POL_letter_to_tsar
@@ -160,10 +158,10 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda_film
 		x = 3
 		y = 2
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 		prerequisite = {
 			focus = POL_letter_to_tsar
@@ -197,10 +195,10 @@ focus_tree = {
 		icon = GFX_goal_skull_fortification
 		x = 5
 		y = 2
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 		prerequisite = {
 			focus = POL_letter_to_tsar
@@ -226,10 +224,18 @@ focus_tree = {
 		icon = GFX_goal_revolution
 		x = -3
 		y = 3
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			base = 0
+			modifier = {
+				add = 1000
+				strength_ratio = {
+					tag = GER
+					ratio > 0.9
+				}
+				has_war = no
+			}
 		}
 		prerequisite = {
 			focus = POL_west_wall
@@ -279,10 +285,10 @@ focus_tree = {
 		icon = GFX_goal_radio
 		x = 0
 		y = 3
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 		prerequisite = {
 			focus = POL_letter_to_tsar
@@ -297,10 +303,10 @@ focus_tree = {
 		icon = GFX_goal_russia
 		x = 3
 		y = 3
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 100
 		}
 		prerequisite = {
 			focus = POL_remember_greatness
@@ -325,10 +331,10 @@ focus_tree = {
 		icon = GFX_goal_ideology_national_populist
 		x = -3
 		y = 4
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 100
 		}
 		prerequisite = {
 			focus = POL_greater_poland_uprising
@@ -350,10 +356,18 @@ focus_tree = {
 		icon = GFX_goal_offensive_army
 		x = 0
 		y = 4
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			base = 0
+			modifier = {
+				add = 1000
+				strength_ratio = {
+					tag = CZE
+					ratio > 1.1
+				}
+				has_war = no
+			}
 		}
 		available = {
 			POL = {
@@ -386,7 +400,7 @@ focus_tree = {
 		icon = GFX_goal_Fight_for_Freedom
 		x = 2
 		y = 4
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -398,7 +412,9 @@ focus_tree = {
 			focus = POL_polonization
 		}
 		available = {
-			always = no
+			NOT = {
+				has_government = fascism
+			}
 		}
 		relative_position_id = POL_revenge
 		completion_reward = {
@@ -410,7 +426,7 @@ focus_tree = {
 		icon = GFX_goal_generic_imprison_people
 		x = 4
 		y = 4
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -423,7 +439,6 @@ focus_tree = {
 		}
 		available = {
 			has_government = fascism
-			always = no
 		}
 		relative_position_id = POL_revenge
 		completion_reward = {
@@ -445,7 +460,7 @@ focus_tree = {
 		icon = GFX_BEL_Improve_Catholic_Relations
 		x = 9
 		y = 1
-		cost = 1
+		cost = 0
 
 		ai_will_do = {
 			factor = 10
@@ -468,7 +483,7 @@ focus_tree = {
 		icon = GFX_goal_construction_engineering
 		x = -1
 		y = 1
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -501,7 +516,7 @@ focus_tree = {
 		icon = GFX_goal_generic_government_deals
 		x = 1
 		y = 1
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -521,7 +536,7 @@ focus_tree = {
 		icon = GFX_goal_BRA_catholic_education
 		x = -2
 		y = 2
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -539,7 +554,7 @@ focus_tree = {
 		icon = GFX_goal_malta_cross
 		x = 0
 		y = 2
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -560,7 +575,7 @@ focus_tree = {
 		icon = GFX_goal_ideology_social_conservative
 		x = 2
 		y = 2
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -581,7 +596,7 @@ focus_tree = {
 		icon = GFX_goal_agricultural_aid
 		x = 1
 		y = 3
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -605,7 +620,7 @@ focus_tree = {
 		icon = GFX_goal_poland
 		x = -1
 		y = 3
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -629,10 +644,10 @@ focus_tree = {
 		icon = GFX_goal_PAP_crusade
 		x = 0
 		y = 4
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 500
 		}
 		prerequisite = {
 			focus = POL_soft_polonization
@@ -653,7 +668,7 @@ focus_tree = {
 		icon = GFX_goal_ideology_national_populist
 		x = 16
 		y = 1
-		cost = 1
+		cost = 0
 
 		ai_will_do = {
 			factor = 10
@@ -677,7 +692,7 @@ focus_tree = {
 		icon = GFX_goal_army_guy
 		x = -1
 		y = 1
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -699,7 +714,7 @@ focus_tree = {
 		icon = GFX_goal_generic_corporatism
 		x = 1
 		y = 1
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -735,7 +750,7 @@ focus_tree = {
 		icon = GFX_goal_graveyard
 		x = -2
 		y = 2
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -753,7 +768,7 @@ focus_tree = {
 		icon = GFX_goal_government_icon
 		x = 0
 		y = 2
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -781,7 +796,7 @@ focus_tree = {
 		icon = GFX_goal_SYR_Stop_Jewish_Settlers
 		x = 2
 		y = 2
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -803,7 +818,7 @@ focus_tree = {
 		icon = GFX_goal_generic_drafted_army
 		x = -1
 		y = 3
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -824,7 +839,7 @@ focus_tree = {
 		icon = GFX_goal_authority
 		x = 1
 		y = 3
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -848,10 +863,10 @@ focus_tree = {
 		icon = GFX_goal_national_mobilization
 		x = 0
 		y = 4
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 500
 		}
 		prerequisite = {
 			focus = POL_militarism
@@ -873,7 +888,7 @@ focus_tree = {
 		icon = GFX_goal_agrarian_soldiers
 		x = -8
 		y = 1
-		cost = 1
+		cost = 0
 
 		ai_will_do = {
 			factor = 10
@@ -896,7 +911,7 @@ focus_tree = {
 		icon = GFX_goal_generic_agriculture2
 		x = -1
 		y = 1
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -929,7 +944,7 @@ focus_tree = {
 		icon = GFX_goal_SAF_reform_voting_law
 		x = 1
 		y = 1
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -949,7 +964,7 @@ focus_tree = {
 		icon = GFX_goal_generic_food_processing
 		x = -1
 		y = 2
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -971,7 +986,7 @@ focus_tree = {
 		icon = GFX_goal_generic_trial
 		x = 1
 		y = 2
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -992,7 +1007,7 @@ focus_tree = {
 		icon = GFX_goal_generic_land_reform
 		x = -1
 		y = 3
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1010,7 +1025,7 @@ focus_tree = {
 		icon = GFX_goal_generic_positive_trade_relations_gold
 		x = 1
 		y = 3
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1036,10 +1051,10 @@ focus_tree = {
 		icon = GFX_focus_generic_agriculture
 		x = 0
 		y = 4
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 500
 		}
 		prerequisite = {
 			focus = POL_open_to_world
@@ -1069,7 +1084,7 @@ focus_tree = {
 		icon = GFX_goal_ideology_radical_socialist
 		x = -16
 		y = 1
-		cost = 1
+		cost = 0
 
 		ai_will_do = {
 			factor = 10
@@ -1093,7 +1108,7 @@ focus_tree = {
 		icon = GFX_goal_syndicalist_workers
 		x = -1
 		y = 1
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1111,7 +1126,7 @@ focus_tree = {
 		icon = GFX_goal_Fight_for_Freedom
 		x = 1
 		y = 1
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1141,7 +1156,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_public_housing
 		x = -1
 		y = 2
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1159,7 +1174,7 @@ focus_tree = {
 		icon = GFX_goal_socialist_infrastructure
 		x = 1
 		y = 2
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1196,7 +1211,7 @@ focus_tree = {
 		icon = GFX_goal_generic_cash_stimulus_plan
 		x = -1
 		y = 3
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1222,7 +1237,7 @@ focus_tree = {
 		icon = GFX_focus_generic_female_rights
 		x = 1
 		y = 3
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1243,10 +1258,10 @@ focus_tree = {
 		icon = GFX_goal_generic_socialist_army
 		x = 0
 		y = 4
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 500
 		}
 		prerequisite = {
 			focus = POL_free_women
@@ -1271,7 +1286,7 @@ focus_tree = {
 		icon = GFX_goal_UKR_minority_rights
 		x = 4
 		y = 1
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1290,7 +1305,7 @@ focus_tree = {
 		icon = GFX_goal_social_reforms
 		x = 4
 		y = 3
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1314,10 +1329,10 @@ focus_tree = {
 		icon = GFX_focus_generic_bastion_of_democracy
 		x = -3
 		y = 6
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 1000
 		}
 		prerequisite = {
 			focus = POL_defender_of_faith
@@ -1337,10 +1352,10 @@ focus_tree = {
 		icon = GFX_goal_generic_dissolve_parliament1
 		x = 16
 		y = 6
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 1000
 		}
 		prerequisite = {
 			focus = POL_everything
@@ -1410,7 +1425,7 @@ focus_tree = {
 		icon = GFX_goal_generic_airports
 		x = -1
 		y = 1
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1441,7 +1456,7 @@ focus_tree = {
 		icon = GFX_goal_industry_air
 		x = 1
 		y = 1
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1469,7 +1484,7 @@ focus_tree = {
 		icon = GFX_goal_generic_deals
 		x = -1
 		y = 2
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1492,7 +1507,7 @@ focus_tree = {
 		icon = GFX_goal_anti_air
 		x = 1
 		y = 2
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1538,7 +1553,7 @@ focus_tree = {
 		icon = GFX_goal_military_academy
 		x = 0
 		y = 3
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1562,7 +1577,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_CAS_new
 		x = -1
 		y = 4
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1587,7 +1602,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_strategic_bomber_new
 		x = 1
 		y = 4
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1638,7 +1653,7 @@ focus_tree = {
 		icon = GFX_goal_generic_design_equipment_standards
 		x = -1
 		y = 1
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1663,7 +1678,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_tanks2
 		x = 1
 		y = 1
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1689,7 +1704,7 @@ focus_tree = {
 		icon = GFX_goal_DOM_Air_Fuel
 		x = -2
 		y = 2
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1714,7 +1729,7 @@ focus_tree = {
 		icon = GFX_goal_military_research
 		x = 0
 		y = 2
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1732,7 +1747,7 @@ focus_tree = {
 		icon = GFX_focus_generic_military_equipment
 		x = 2
 		y = 2
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1757,7 +1772,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_training
 		x = -1
 		y = 3
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1775,7 +1790,7 @@ focus_tree = {
 		icon = GFX_goal_national_artillery
 		x = 1
 		y = 3
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1800,7 +1815,7 @@ focus_tree = {
 		icon = GFX_goal_Fight_for_Freedom
 		x = 0
 		y = 4
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1833,7 +1848,7 @@ focus_tree = {
 		cost = 2
 
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
 		prerequisite = {
 			focus = POL_polish_army_independence
@@ -1855,10 +1870,10 @@ focus_tree = {
 		icon = GFX_goal_generic_positive_trade_relations_gold
 		x = -2
 		y = 1
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
 		prerequisite = {
 			focus = POL_poland_marriage
@@ -1884,10 +1899,10 @@ focus_tree = {
 		icon = GFX_goal_generic_naval_academy
 		x = 0
 		y = 1
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
 		prerequisite = {
 			focus = POL_poland_marriage
@@ -1905,10 +1920,10 @@ focus_tree = {
 		icon = GFX_goal_generic_buy_ships
 		x = 2
 		y = 1
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
 		prerequisite = {
 			focus = POL_poland_marriage
@@ -1931,10 +1946,10 @@ focus_tree = {
 		icon = GFX_goal_generic_shipyard
 		x = -1
 		y = 2
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
 		prerequisite = {
 			focus = POL_revitalize_merchant_navy
@@ -1962,10 +1977,10 @@ focus_tree = {
 		icon = GFX_goal_nested_fortifications
 		x = 1
 		y = 2
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
 		prerequisite = {
 			focus = POL_baltic_sea_exercises
@@ -2002,10 +2017,10 @@ focus_tree = {
 		icon = GFX_goal_generic_naval_submarine2
 		x = -2
 		y = 3
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
 		prerequisite = {
 			focus = POL_gdansk_shipyard
@@ -2036,10 +2051,10 @@ focus_tree = {
 		icon = GFX_goal_generic_naval_destroyer2
 		x = 0
 		y = 3
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
 		prerequisite = {
 			focus = POL_gdansk_shipyard
@@ -2070,10 +2085,10 @@ focus_tree = {
 		icon = GFX_goal_generic_naval_battleship2
 		x = 2
 		y = 3
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
 		prerequisite = {
 			focus = POL_gdansk_shipyard
