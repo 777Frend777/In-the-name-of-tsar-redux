@@ -22,33 +22,49 @@ bookmarks = {
 			}			
 		}
 		
-		"SHX"={
-			history = "SHX_ORIENT_DESC"
+		"RUS"={
+			history = "RUS_ORIENT_DESC"
 			ideology = neutrality
 			ideas = {
-				
+				RUS_russian_monarchy
+				FRA_victors_of_wwi
+				RUS_okhranka
 			}
 			focuses = {
+			RUS_cult_monarchy
+			RUS_regain_stability
+			RUS_contest_UK
 			}
 		}
 
-		"RAJ"= {
-			history = "RAJ_ORIENT_DESC"
+		"GER"= {
+			history = "GER_ORIENT_DESC"
 			ideology = neutrality
 			ideas = {
+			ITA_economic_dependence_allies
+			GER_wilhelm_II
 			}
 			focuses = {
-				
+			GRK_one_germany
+			GER_fascist
+			GER_prussian_eco
+			GER_start_bomber
 			}
 		}
 		
 
-		"AST"={
-			history = "AST_ORIENT_DESC"
-			ideology = democratic
+		"ENG"={
+			history = "ENG_ORIENT_DESC"
+			ideology = conservatives
 			ideas = {
+			george_v
+			UK_remembrance_of_1926_strike
+			FRA_victors_of_wwi
 			}
 			focuses = {
+			UK_reinforce_empire
+			UK_against_RUS
+			UK_political_stability
 			}
 		}
 			
@@ -56,19 +72,57 @@ bookmarks = {
 			history = "EGY_ORIENT_DESC"
 			ideology = neutrality
 			ideas = {
-			
-				
+			fuad_i_of_egypt
+			resistance_to_british_occupation
+			divided_under_pharaonism
 			}
 			focuses = {
-				
+			EGY_reform_agrarian_culture
+			EGY_prepare_for_the_next_war
+			EGY_anglo-egyptian_treaty
 			}	
 		}
-		"IRQ"={
-			history = "IRQ_ORIENT_DESC"
-			ideology = conservatives
+		"FRA"={
+			history = "FRA_ORIENT_DESC"
+			ideology = democratic
 			ideas = {
+			FRA_victors_of_wwi
+			FRA_inefficient_gov_idea
+			FRA_political_instability_idea
 			}	
 			focuses = {
+			FR_demo
+			FR_adress_industry
+			FR_natural_borders
+			}			
+		}
+		"POL"={
+			minor = yes
+			history = "POL_Occident_DESC"
+			ideology = neutrality
+			ideas = {
+				POL_clock_is_ticking
+				POL_four_year_plan
+				POL_spirit_of_freedom1
+			}	
+			focuses = {
+				POL_revenge
+				POL_resume_plan
+				POL_poland_marriage
+			}			
+		}
+		"TUR"={
+			minor = yes
+			history = "TUR_Occident_DESC"
+			ideology = neutrality
+			ideas = {
+			TUR_sharia_law
+			TUR_disjointed_nation
+			}	
+			focuses = {
+			TUR_Kemalism_lives
+			TUR_jihad
+			TUR_turkification
 			}			
 		}
 		
