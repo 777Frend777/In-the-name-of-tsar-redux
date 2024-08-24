@@ -8434,5 +8434,9 @@ spriteTypes = {
 		name = "GFX_portrait_MNT_blazo_dukanovic"
 		texturefile = "gfx/leaders/ITA/portrait_MNT_blazo_dukanovic.dds"
 	}
+	spriteType = {
+		name = "GFX_Portrait_POL_Boleslaw_Piasecki"
+		texturefile = "gfx/leaders/POL/Portrait_POL_Boleslaw_Piasecki.png"
+	}
 	
 }

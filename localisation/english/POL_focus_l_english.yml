@@ -50,7 +50,7 @@
  POL_soft_polonization:0 "'Soft' Polonization"
  POL_defender_of_faith:0 "Defender of Faith"
 
- POL_SN_gov:0 "SN Government"
+ POL_SN_gov:0 "ONR Government"
  POL_independence_march:0 "Independence March"
  POL_state_capitalism:0 "State Capitalism"
  POL_force_polonization:0 "Force Polonization"
@@ -153,7 +153,7 @@
  POL_tooltip_election_PPS:0 "§RThe PPS was elected in the first election§!"
  POL_tooltip_election_PSL:0 "§GThe SL was elected in the first election§!"
  POL_tooltip_election_PSChD:0 "§gThe PSChD was elected in the first election§!"
- POL_tooltip_election_SN:0 "§8The SN was elected in the first election§!"
+ POL_tooltip_election_SN:0 "§8The ONR was elected in the first election§!"
 
  #decision
  POL_independence_war:0 "The War for Polish Independence"

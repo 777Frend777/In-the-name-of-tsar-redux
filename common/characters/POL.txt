@@ -374,71 +374,17 @@ characters = {
 		}
 	}
 
-	POL_roman_dmowski = {
-		name=POL_roman_dmowski
+	POL_boleslaw_piasecki = {
+		name="Bolesław Piasecki"
 		portraits={
 			civilian = {
-				large="GFX_portrait_POL_roman_dmowski"
-			}
-			army={
-				small=GFX_portrait_POL_roman_dmowski_small
+				large="GFX_Portrait_POL_Boleslaw_Piasecki"
 			}
 		}
-		advisor={
-			cost = 100
-			slot = political_advisor
-			idea_token = POL_roman_dmowski
-			allowed = {
-				original_tag = POL
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-				if = {
-					limit = {
-						has_dlc = "Poland: United and Ready"
-						NOT = {
-							has_dlc = "No Step Back"
-						}
-					}
-					has_completed_focus = POL_restore_the_sejm 
-				}
-				if = {
-					limit = {
-						has_dlc = "No Step Back"
-					}
-					has_completed_focus = POL_nationalist_constitution 
-				}
-			}
-			traits = {
-				fascist_demagogue 
-			}
-			ai_will_do = {
-				factor = 0.000
-				modifier = {
-					add = 100.000
-					OR = {
-						has_country_flag = POL_AI_RANDOM_FASCIST 
-						has_game_rule = {
-							rule = POL_ai_behavior 
-							option = FASCIST 
-						}
-					}
-				}
-			}
-		}
-		
 		country_leader = {
 			ideology=fascism_ideology
 			expire="1965.1.1.1"
 			id=-1
-			#traits = { father_of_polish_nationalism }
 		}
 	}
 

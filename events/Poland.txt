@@ -83,6 +83,10 @@ country_event = { #polish victory
 				load_focus_tree = {
 					tree = polandindependence
 				}
+				country_event = {
+					id = pol.24
+					days = 30
+				}
 				transfer_state = 97
 				transfer_state = 88
 				white_peace = RUS
@@ -189,6 +193,10 @@ country_event = { #russian civil war after russian victory, garrison fails
 				country_event = {
 					id = pol.10
 					days = 60
+				}
+				country_event = {
+					id = pol.24
+					days = 30
 				}
 			}
 			RUS = {
@@ -779,6 +787,18 @@ country_event = { #for poland, zaolzie deny
 	fire_only_once = yes
 	option = {
 		name = pol.23.a	
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = { 
+	id = pol.24
+	title = pol.24.t
+	desc = pol.24.d
+	picture = GFX_report_event_POL_ONR
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = pol.24.a	
 		ai_chance = { factor = 100 }
 	}
 }
