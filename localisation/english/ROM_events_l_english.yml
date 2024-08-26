@@ -284,18 +284,18 @@
 
  ### Egyptian Italy Events ###
 
- italy.1000.t:0 "Egypt wants Libyan Control"
- italy.1000.d:0 "Egypt has recently requested for the complete control of our African territory in Libya. By surrendering our territory to the Egyptians, we can let them control the African front for the Axis whilst we focus on defeating the Allies."
- italy.1000.a:0 "If Egypt wants Libya, Egypt will get Libya"
- italy.1000.b:0 "No!"
+ italy.1552.t:0 "Egypt wants Libyan Control"
+ italy.1552.d:0 "Egypt has recently requested for the complete control of our African territory in Libya. By surrendering our territory to the Egyptians, we can let them control the African front for the Axis whilst we focus on defeating the Allies."
+ italy.1552.a:0 "If Egypt wants Libya, Egypt will get Libya"
+ italy.1552.b:0 "No!"
  italy.1001.t:0 "Arab Socialist Movement Supporters Liberate Ethiopia"
  italy.1001.d:0 "Ethiopian rebel militias, believed to be involved with and supported by a mysterious underground faction known as the Arab Socialist Movement, have recently overthrown the fascist government installed by us after our success in the war. The rebels were able to re-occupy Ethiopia through several simultaneous riots around key cities and towns throughout the country, overthrowing the government and murdering hundreds of Italian citizens."
  italy.1001.a:0 "Ethiopia is ours!"
  italy.1001.b:0 "There is only one country that could possibly have organised such an uprising."
  italy.1001.c:0 "We have more pressing matters at hand."
- italy.1002.t:0 "Egypt Surrenders Themselves To Us"
- italy.1002.d:0 "Increased political pressure imposed onto Egypt by our significant presence in the east has led them to surrender all of their current territory to us."
- italy.1002.a:0 "Egypt is a welcome addition to the empire."
+ italy.1551.t:0 "Egypt Surrenders Themselves To Us"
+ italy.1551.d:0 "Increased political pressure imposed onto Egypt by our significant presence in the east has led them to surrender all of their current territory to us."
+ italy.1551.a:0 "Egypt is a welcome addition to the empire."
 
 
  ####################  ROM  #####################
