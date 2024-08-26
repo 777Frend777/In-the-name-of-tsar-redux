@@ -80,6 +80,7 @@ country_event = { #polish victory
 	immediate = {
 		hidden_effect = {
 			POL = {
+				add_stability = 0.2
 				load_focus_tree = {
 					tree = polandindependence
 				}
@@ -136,6 +137,7 @@ country_event = { #russian victory
 	immediate = {
 		hidden_effect = {
 			POL = {
+				add_stability = 0.1
 				white_peace = RUS
 				set_cosmetic_tag = POL_RUS
 				load_focus_tree = {
