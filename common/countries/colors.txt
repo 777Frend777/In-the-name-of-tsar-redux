@@ -643,3 +643,7 @@ SIB = {
 	color = rgb { 173  245  118 }
 	color_ui = rgb { 173  245  118 }
 }
+DRZ = {
+	color = rgb { 100  100  150 }
+	color_ui = rgb { 100  100  150 }
+}

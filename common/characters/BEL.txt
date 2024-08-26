@@ -374,6 +374,7 @@ characters={
 		name=BEL_paul-henri_spaak
 		portraits={
 			army={
+				large="gfx/leaders/BEL/henri_spaak.dds"
 				small="gfx/interface/ideas/BEL_spaack.dds"
 			}
 		}

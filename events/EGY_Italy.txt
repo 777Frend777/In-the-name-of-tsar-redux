@@ -4,16 +4,16 @@ add_namespace = italy
 
 # Egypt requests Libya
 country_event = {
-	id = italy.1000
-	title = italy.1000.t
-	desc = italy.1000.d
+	id = italy.1552
+	title = italy.1552.t
+	desc = italy.1552.d
  
 	picture = GFX_report_event_generic_sign_treaty1
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = italy.1000.a
+		name = italy.1552.a
 		ai_chance = { 
 			factor = 100
 	    }
@@ -33,7 +33,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = italy.1000.b
+		name = italy.1552.b
 	}
 }
 #Rebels Re-occupy Ethiopia
@@ -254,16 +254,16 @@ country_event = {
 }
 #Egypt Surrenders Territory
 country_event = {
-	id = italy.1002
-	title = italy.1002.t
-	desc = italy.1002.d
+	id = italy.1551
+	title = italy.1551.t
+	desc = italy.1551.d
  
 	picture = GFX_report_event_generic_sign_treaty1
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = italy.1002.a
+		name = italy.1551.a
 		ai_chance = { 
 			factor = 100
 	    }

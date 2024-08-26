@@ -174,7 +174,6 @@ country_event = {	#WWII
 				BAV = { has_war_with = FRA }
 				BAV = { has_war_with = ENG }
 			}
-		}
 
 			NOT = {
 				has_global_flag = WWII.super
@@ -186,6 +185,7 @@ country_event = {	#WWII
 		
 		set_global_flag = WWII.super
 	}
+}
 country_event = {	#russo-japanese
 	id = super.7
 	title = super.7.t

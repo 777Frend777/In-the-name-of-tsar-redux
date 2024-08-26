@@ -674,7 +674,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			ITA = {country_event = { id = Italy.1000 hours = 6 }}
+			ITA = {country_event = { id = Italy.1552 hours = 6 }}
 		}
 	}
 	focus = {
@@ -886,11 +886,11 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				every_other_country = {
-					limit = { is_in_faction_with = SOV }
+					limit = { is_in_faction_with = RUS }
 					add_opinion_modifier = { target = EGY modifier = large_increase }
 				}
 				EGY = {
-					add_opinion_modifier = { target = SOV modifier = huge_increase }
+					add_opinion_modifier = { target = RUS modifier = huge_increase }
 				}
 				EGY = {
 					add_opinion_modifier = { target = TAN modifier = huge_increase }
@@ -898,13 +898,13 @@ focus_tree = {
 				EGY = {
 					add_opinion_modifier = { target = MON modifier = huge_increase }
 				}
-				SOV = {
+				RUS = {
 					add_opinion_modifier = { target = EGY modifier = large_increase }
 				}
 			}
 			custom_effect_tooltip = EGY_seek_foreign_cooperation_tt
 			add_political_power = 200
-			SOV = { country_event = { id = soviet.1000 hours = 6 } }
+			RUS = { country_event = { id = soviet.1000 hours = 6 } }
 		}
 	}
 	focus = {
@@ -1322,10 +1322,10 @@ focus_tree = {
 		cost = 8.7
 
 		available = {
-			SOV = {
+			RUS = {
 				has_war = yes
 			}
-			is_in_faction_with = SOV
+			is_in_faction_with = RUS
 		}
 
 		ai_will_do = {
@@ -3423,7 +3423,7 @@ focus_tree = {
 				}
 				custom_effect_tooltip = EGY_surrender_to_the_catholic_church_tt
 			}
-			ITA = { country_event = { id = Italy.1002 hours = 1 } }
+			ITA = { country_event = { id = Italy.1551 hours = 1 } }
 		}
 	}
 	focus = {

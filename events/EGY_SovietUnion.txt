@@ -13,11 +13,11 @@ country_event = {
 		
 	option = {
 		name = soviet.1000.a
-		SOV = { add_to_faction = EGY }
+		RUS = { add_to_faction = EGY }
 		EGY = {
 			add_ai_strategy = {
 				type = alliance
-				id = "SOV"
+				id = "RUS"
 				value = 200
 			}
 		}
@@ -30,7 +30,7 @@ country_event = {
 		ai_chance = { factor = 0 }
 		EGY = {
 			add_opinion_modifier = {
-				target = SOV
+				target = RUS
 				modifier = SOV_FRA_join_comintern_reject
 			}
 		}

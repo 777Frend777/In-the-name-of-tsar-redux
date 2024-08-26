@@ -1,0 +1,67 @@
+﻿division_template = {
+	name = "Free Officers Militia"		
+
+	# Note: Represents both regular infantry and militia units
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 4076
+		division_template = "Free Officers Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 4076
+		division_template = "Free Officers Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 1071
+		division_template = "Free Officers Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 4145
+		division_template = "Free Officers Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 7146
+		division_template = "Free Officers Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 10073
+		division_template = "Free Officers Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+}

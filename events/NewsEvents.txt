@@ -13092,3 +13092,55 @@ news_event = {
 		}
 	}
 }
+
+# Book where germany won ww1 (KX reference?)
+news_event = {
+	id = news.338
+	title = news.338.t
+	desc = news.338.d
+	picture = GFX_news_event_GER_colonial
+	
+	major = yes
+
+	fire_only_once = yes
+	
+		trigger = {
+	date > 1936.6.23
+	date < 1937.6.30
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+
+	}
+	
+	option = {
+		name = news.338.a
+		trigger = {
+			NOT = { tag = FRA }
+			NOT = { tag = ENG }
+			NOT = { tag = RUS }
+		}
+	}
+	option = {
+		name = news.338.b
+		trigger = {
+			tag = FRA
+		}
+	}
+	option = {
+		name = news.338.c
+		trigger = {
+			tag = ENG
+		}
+	}
+	option = {
+		name = news.338.y
+		trigger = {
+			tag = RUS
+		}
+	}
+}

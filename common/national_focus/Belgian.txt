@@ -894,7 +894,6 @@
 		controls_state = 18
 		controls_state = 27
 		controls_state = 785
-		controls_state = 840
 		35 = { is_core_of = BEL }
 		36 = { is_core_of = BEL }
 		7 = { is_core_of = BEL }
@@ -998,11 +997,11 @@
 		x = 30
 		y = 3
 		bypass = {
-		controls_state = 840
+		controls_state = 29
 		}
 		completion_reward = {
-		add_state_claim = 840
-		create_wargoal = { type = take_state_focus target = FRA generator = { 840 } }
+		add_state_claim = 29
+		create_wargoal = { type = take_state_focus target = FRA generator = { 29 } }
 		}
 	}
 	focus = {
