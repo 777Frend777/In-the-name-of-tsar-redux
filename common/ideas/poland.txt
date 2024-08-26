@@ -155,7 +155,7 @@ ideas = {
 		}
 		POL_agressive_polonization = {
 			allowed = { always = no }
-			picture = idea_generic_oppression
+			picture = generic_oppression
 			modifier = {
 				compliance_growth_on_our_occupied_states = 0.2
 				resistance_activity = 0.2

@@ -362,5 +362,9 @@ spriteTypes = {
 		name = "GFX_idea_generic_broken_champagne"
 		texturefile = "gfx/interface/ideas/generic_broken_champagne.png"
 	}
+	spriteType = {
+		name = "GFX_idea_CAN_darkest_hour"
+		texturefile = "gfx/interface/ideas/CAN_darkest_hour.png"
+	}
 }
 
