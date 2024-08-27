@@ -516,6 +516,6 @@ country_event = {	#Second war between Prussia and France
 		
 		set_global_flag = Prussia_and_France.super
 		set_global_flag = Super_Event_Visible
-		play_song = "redrussiawonwhite"
+		play_song = "franceagainstgermany"
 	}
 }
