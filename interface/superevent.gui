@@ -39,6 +39,11 @@ guiTypes = {
 			spriteType = "GFX_WWII"
 			position = {x = 30 y = 80}
 		}
+		iconType = {
+			name = "Super_Event_Prussia_and_France"
+			spriteType = "GFX_superevent_napoleonvsprussia"
+			position = {x = 0 y = 0}
+		}
 		################
 		#####FRANCE#####
 		################
@@ -92,7 +97,7 @@ guiTypes = {
 		iconType = {
 			name = "Super_Event_SPRcivilwar"
 			spriteType = "GFX_SPRcivilwar"
-			position = {x = 30 y = 80}
+			position = {x = 0 y = 0}
 		}
 		iconType = {
 			name = "Super_Event_February_revolution"

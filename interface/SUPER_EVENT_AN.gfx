@@ -1,0 +1,26 @@
+spriteTypes = {
+	FrameAnimatedSpriteType = {
+		name = "GFX_superevent_htilerdie"
+		textureFile = "gfx//superevent_pictures//htilerdie.dds"
+		noOfFrames = 27
+		loadType = "INGAME"
+		allwaystransparent = no
+		animation_rate_fps = 8
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_superevent_napoleonvsprussia"
+		textureFile = "gfx//superevent_pictures//napoleonvsprussia.dds"
+		noOfFrames = 27
+		loadType = "INGAME"
+		allwaystransparent = no
+		animation_rate_fps = 8
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+}
+	

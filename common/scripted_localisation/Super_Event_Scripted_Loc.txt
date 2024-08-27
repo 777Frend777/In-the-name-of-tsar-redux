@@ -92,7 +92,7 @@ defined_text = {
         }
         localization_key = "sp_event_rusnewtsar"
     }
-	    			text = {
+	text = {
         trigger = {
             has_global_flag = whiterussiawonreds.super
         }
@@ -103,6 +103,12 @@ defined_text = {
             has_global_flag = redrussiawonwhite.super
         }
         localization_key = "sp_event_redrussiawonwhite"
+    }
+	text = {
+        trigger = {
+            has_global_flag = Prussia_and_France.super
+        }
+        localization_key = "sp_event_Prussia_and_France"
     }
 } 
 #Remarks
@@ -211,6 +217,12 @@ defined_text = {
         }
         localization_key = "sp_event_redrussiawonwhite_REMARK"
     }
+	text = {
+        trigger = {
+            has_global_flag = Prussia_and_France.super
+        }
+        localization_key = "sp_event_Prussia_and_France_REMARK"
+    }
 }
 #Quotes
 defined_text = {
@@ -317,5 +329,11 @@ defined_text = {
             has_global_flag = redrussiawonwhite.super
         }
         localization_key = "sp_event_redrussiawonwhite_QUOTE"
+    }
+	text = {
+        trigger = {
+            has_global_flag = Prussia_and_France.super
+        }
+        localization_key = "sp_event_Prussia_and_France_QUOTE"
     }
 }
