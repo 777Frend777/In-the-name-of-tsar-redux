@@ -482,7 +482,7 @@ country_event = {	#Red Russia won
 			NOT = {
 				has_global_flag = redrussiawonwhite.super
 			}
-		}
+	}
 	option = {
 		name = super.16.a
 		
@@ -506,7 +506,10 @@ country_event = {	#Second war between Prussia and France
 	hidden = yes
 	
 	trigger = {
+	    OR = {
 		FRA = { has_war_with = GER }
+		FRA = { has_war_with = BAV }
+		}
 	}
 	option = {
 		name = super.17.a
