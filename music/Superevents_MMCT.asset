@@ -90,3 +90,8 @@ music = {
     file = "redrussiawonwhite.ogg"
     volume = 0.65
 }
+music = {
+    name = "franceagainstgermany"
+    file = "franceagainstgermany.ogg"
+    volume = 0.65
+}

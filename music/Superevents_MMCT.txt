@@ -101,3 +101,9 @@ song = "redrussiawonwhite"
       modifier = { factor = 1 }
     }	
 }
+music = {
+song = "franceagainstgermany"
+    chance = {
+      modifier = { factor = 1 }
+    }	
+}
