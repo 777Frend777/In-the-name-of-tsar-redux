@@ -1,5 +1,7 @@
-﻿capital = 448
-set_cosmetic_tag = CYR
+﻿capital = 663
+
+oob = "LBA_1936"
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -64,11 +66,19 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 25
-	fascism = 20
-	communism = 5
-	neutrality = 50
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
 }
+
+add_ideas = {
+	limited_conscription
+	limited_exports
+	partial_economic_mobilisation
+}
+
+recruit_character = LBA_idris
 
 create_country_leader = {
 	name = "Bashir es Sadawi"
@@ -85,16 +95,6 @@ create_country_leader = {
 	desc = ""
 	picture = GFX_portrait_Ettore_Bastico
 	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Idris Senussi"
-	desc = ""
-	picture = GFX_portrait_Idris_Senussi
-	ideology = despotism
 	traits = {
 		#
 	}

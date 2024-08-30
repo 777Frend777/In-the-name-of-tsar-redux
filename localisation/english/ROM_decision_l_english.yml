@@ -89,3 +89,6 @@
  IRQ_synthetic_refineries:0 "Request Synthetic Refineries"
  IRQ_arms_factories:0 "Request Arms Factories"
  develop_aluminium_mines_iraq:0 "Develop Aluminium Mines"
+ LBA_decisions:0 "The Emirate of Cyrenaica"
+ LBA_form_libya:0 "Form Libya"
+ LBA_partition:0 "Partition of Cyrenaica"

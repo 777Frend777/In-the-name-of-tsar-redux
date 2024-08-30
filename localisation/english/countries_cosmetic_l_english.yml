@@ -1306,10 +1306,10 @@
  TMS_BAS_DEF: "the Basmachi Emirate"
  TMS_BAS_ADJ: "Basmachi"
 
- CYR: "Emirate of Cyrenaica"
- CYR_DEF: "the Emirate of Cyrenaica"
- CYR_ADJ: "Cyrenaician"
-
  HMB: "Hamburg uprising"
  HMB_DEF: "Hamburg uprising"
  HMB_ADJ: "Hamburg uprising"
+
+ LBA_libya: "Emirate of Libya"
+ LBA_libya_DEF: "the Emirate of Libya"
+ LBA_libya_ADJ: "Libyan"

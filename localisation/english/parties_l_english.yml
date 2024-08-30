@@ -1087,5 +1087,6 @@ l_english:
  SCH_socialist_party:0 "Left Kuomintang"
  SCH_communism_party:0 "ZMT"
  SCH_communism_party_long:0 "Zhōngguó Mínzhǔ Tóngméng"
-################################
 
+#Cyrenaica
+ LBA_neutrality_party:0 "Senussi Order"
