@@ -213,7 +213,37 @@ units = {
 		division_template = "Infantry Division"		# Regular Infantry
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 10749
+		division_template = "Infantry Division"		# Regular Infantry
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 10749
+		division_template = "Infantry Division"		# Regular Infantry
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
 
+	#FLEET
+	fleet = {
+		name = "Zeila Fleet"
+		naval_base = 10749 # Zeila
+		task_force = {				
+			name = "Zeila Fleet"
+			location = 10749 # Zeila
+			ship = { name = "Zeila" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ETH } } }
+		}	
 	}
 }
 

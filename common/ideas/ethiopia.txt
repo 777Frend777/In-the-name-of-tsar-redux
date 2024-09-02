@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		#start
+		ETH_last_bastion = { #the last bastion
+			allowed = { always = no }
+			picture = ETH_army_2
+			modifier = {
+				surrender_limit = 0.15
+				army_attack_against_major_factor = 0.05
+				army_defence_against_major_factor = 0.05
+			}
+		}
+	}
+}

@@ -6,7 +6,21 @@ oob = "ETH_1936"
 set_technology = {
 	infantry_weapons = 1
 	tech_mountaineers = 1
+	early_destroyer = 1
+	transport = 1
 }
+
+give_docking_rights = RUS
+add_opinion_modifier = {
+    target = RUS
+    modifier = INOT_friendly_regime
+}
+
+
+add_ideas = {
+	ETH_last_bastion
+}
+
 
 recruit_character = ETH_haile_selassie
 recruit_character = ETH_fitawrari_yeebio_woldai
@@ -32,7 +46,7 @@ recruit_character = ETH_bedjironde_tekle_hawariate
 recruit_character = ETH_makonnen_endelkatchew
 
 
-set_convoys = 5
+set_convoys = 7
 
 1939.1.1 = {
 	#generic focuses
@@ -70,7 +84,6 @@ set_convoys = 5
 	}
 }
 
-# A colony of Italy in 1939, however if independent it would have the same politics as in 1936
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"

@@ -57,7 +57,7 @@ LBA_decisions = {
 					country_exists = FRA 
 				}
 				FRA = {
-					transfer_state = 345
+					transfer_state = 775
 				}
 			}
 			ITA = {

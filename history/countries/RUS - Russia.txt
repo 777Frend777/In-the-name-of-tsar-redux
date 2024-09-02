@@ -47,6 +47,11 @@ set_technology = {
 	synth_oil_experiments = 1
 }
 
+give_docking_rights = ETH
+add_opinion_modifier = {
+    target = ETH
+    modifier = INOT_friendly_regime
+}
 
 ####
 #### VANILLA ####

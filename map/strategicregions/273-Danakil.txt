@@ -1,8 +1,9 @@
+
 strategic_region={
 	id=273
 	name="STRATEGICREGION_273"
 	provinces={
-		2072 4985 5017 5041 5047 5091 5097 7944 8043 8124 12723 12766 13236 13237 13238 13240 13250 13251 
+		2072 4985 5017 5041 5047 5091 5097 7944 8043 8124 12723 12766 12849 13236 13237 13238 13240 13250 13251 
 	}
 	weather={
 		period={
@@ -153,7 +154,7 @@ strategic_region={
 			temperature={ 16.0 36.0 }
 			no_phenomenon=0.850
 			rain_light=0.100
-			rain_heavy=0.50
+			rain_heavy=0.500
 			snow=0.000
 			blizzard=0.000
 			arctic_water=0.000

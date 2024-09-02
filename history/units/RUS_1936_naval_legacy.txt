@@ -173,7 +173,17 @@ units= {
 			ship = { name = "Shch-112" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS } } }			
 		}		
 	}
-} 
+	fleet = {
+		name = "Sagallskaya Flotiliya"
+		naval_base = 12849 # Sagallo
+		task_force = {				
+			name = "Sagallskaya Flotiliya"
+			location = 12849 # Sagallo
+			ship = { name = "Sagallo" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+			ship = { name = "Suez" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS } } }
+		}	
+	}
+}
 
 
 

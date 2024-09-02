@@ -1,0 +1,25 @@
+state={
+	id=965
+	name="STATE_965"
+	provinces={
+		10749 
+	}
+	history={
+		victory_points = { 10749 5 }
+		owner = ETH
+		add_core_of = ETH
+		add_core_of = SOM
+		buildings = {
+			10749 = {
+				coastal_bunker = 1
+				naval_base = 2
+			}
+			dockyard = 1
+			infrastructure = 1
+		}
+	}
+	manpower=7819
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=rural
+}
