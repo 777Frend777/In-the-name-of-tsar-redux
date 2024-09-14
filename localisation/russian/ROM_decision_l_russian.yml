@@ -88,3 +88,7 @@
  IRQ_synthetic_refineries: "Запросить синтетические нефтеперерабатывающие заводы" #NT!
  IRQ_arms_factories: "Запросить оружейные заводы" #NT!
  develop_aluminium_mines_iraq: "Разработка алюминиевых рудников" #NT!
+ develop_aluminium_mines_iraq:0 "Разработка алюминиевых рудников"
+ LBA_decisions:0 "Эмират Киренаика"
+ LBA_form_libya:0 "Сформировать Ливию"
+ LBA_partition:0 "Раздел Киренаики"
