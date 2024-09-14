@@ -1,0 +1,115 @@
+
+
+small_armor_army_offset = { # Factory Size
+    enable = { arms_factory > 15 }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = role_ratio
+        id = armor_role
+        value = 80
+    }
+}
+
+medium_armor_army_offset = { # Factory Size
+    enable = { arms_factory > 30 }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = role_ratio
+        id = armor_role
+		value = 80
+    }
+}
+
+large_armor_army_offset = { # Factory Size
+    enable = { arms_factory > 45 }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = role_ratio
+        id = armor_role
+        value = 80
+    }
+} 
+
+large_armor_production_offset = { # Army Size
+    enable = {
+		num_divisions > 56
+		has_army_size = { size > 56 type = infantry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = -40
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = -10
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = armor_role
+		value = 80
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 80
+	}
+}
+
+massive_armor_production_offset = { # Army Size
+	enable = {
+		num_divisions > 112
+		has_army_size = { size > 112 type = infantry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = -40
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = -10
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = armor_role
+		value = 80
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 80
+	}
+}
+
+gigantic_armor_production_offset = { # Army Size
+	enable = {
+		num_divisions > 168
+		has_army_size = { size > 168 type = infantry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = -40
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = -10
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = armor_role
+		value = 80
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 80
+	}
+}

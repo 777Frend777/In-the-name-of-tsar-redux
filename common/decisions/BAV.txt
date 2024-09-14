@@ -423,6 +423,12 @@ complete_effect = {
                 type = annex_everything
 }
 }
+        HMB = {
+            declare_war_on = {
+                target = WSM
+                type = annex_everything
+}
+}
      961 = {
     create_unit = {
     division = "name = \"Infanterie-Abteilung\" division_template = \"Leichte Infanteriedivision\" start_experience_factor = 0.85 start_equipment_factor = 1"

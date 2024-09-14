@@ -1,5 +1,5 @@
 technologies = {
-	
+
 	iw_small_airframe = {
 
 		enable_equipments = {
@@ -12,21 +12,19 @@ technologies = {
 			cv_small_plane_naval_bomber_airframe_0
 			cv_small_plane_suicide_airframe_0
 		}
-		
-	
+
 		path = {
 			leads_to_tech = basic_small_airframe
 			research_cost_coeff = 1
 		}
-		
-		
+
 		research_cost = 2
-		start_year = 1926
+		start_year = 1922
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 2 }
 		}
-		
+
 		categories = {
 			light_air
 			light_fighter
@@ -40,19 +38,34 @@ technologies = {
 			mio_cat_all_light_aircraft_and_modules
 		}
 
-		
 		ai_will_do = {
-			factor = 1
-			
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { is_eligible_for_light_aircraft_production = yes }
+			}
 			modifier = {
 				factor = 2
-				is_major = yes
+				date > "1936.6.6"
+			}
+			modifier = {
+				factor = 2.5
+				date > "1936.12.12"
+			}
+			modifier = {
+				factor = 2
+				date > "1937.6.6"
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					has_tech = engines_1
+					is_researching_technology = engines_1
+				}
 			}
 		}
 	}
-	
-	
-	
+
 	basic_small_airframe = {
 
 		enable_equipments = {
@@ -65,12 +78,12 @@ technologies = {
 			cv_small_plane_naval_bomber_airframe_1
 			cv_small_plane_suicide_airframe_1
 		}
-	
+
 		path = {
 			leads_to_tech = improved_small_airframe
 			research_cost_coeff = 1
 		}
-		
+
 		research_cost = 2
 		start_year = 1936
 
@@ -78,7 +91,7 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 4 }
 		}
-		
+
 		categories = {
 			light_air
 			light_fighter
@@ -91,41 +104,35 @@ technologies = {
 			mio_cat_all_naval_bomber_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		
-		
-		
+
 		ai_will_do = {
-			factor = 2
-			
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { is_eligible_for_light_aircraft_production = yes }
+			}
 			modifier = {
 				factor = 2
-				is_major = yes
+				date > "1936.6.6"
 			}
-			
 			modifier = {
-				factor = 1.2
-				date > "1937.1.1"
+				factor = 2.5
+				date > "1936.12.12"
 			}
-			
 			modifier = {
-				factor = 1.2
-				date > "1938.1.1"
+				factor = 2
+				date > "1937.6.6"
 			}
-			
 			modifier = {
-				factor = 1.2
-				date > "1939.1.1"
-			}
-			
-			modifier = {
-				factor = 5
-				date > "1940.1.1"
+				factor = 100
+				OR = {
+					has_tech = engines_2
+					is_researching_technology = engines_2
+				}
 			}
 		}
 	}
-	
-	
-	
+
 	improved_small_airframe = {
 
 		enable_equipments = {
@@ -138,12 +145,11 @@ technologies = {
 			cv_small_plane_naval_bomber_airframe_2
 			cv_small_plane_suicide_airframe_2
 		}
-	
+
 		path = {
 			leads_to_tech = advanced_small_airframe
 			research_cost_coeff = 1
 		}
-				
 
 		research_cost = 2
 		start_year = 1940
@@ -151,11 +157,11 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 6 }
 		}
-		folder = {
-			name = secret_weapons_folder
-			position = { x = 6 y = 8 }
-		}
-		
+		# folder = { # secret_weapons_folder is commented in vanilla, see technology_tags/technology.txt
+		# 	name = secret_weapons_folder
+		# 	position = { x = 6 y = 8 }
+		# }
+
 		categories = {
 			light_air
 			light_fighter
@@ -168,43 +174,35 @@ technologies = {
 			mio_cat_all_naval_bomber_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		
-		ai_will_do = {
-			factor = 2
-			
-			modifier = {
-				factor = 4
-				is_major = yes
-			}
 
+		ai_will_do = {
+			factor = 10
 			modifier = {
 				factor = 0
-				original_tag = GER
-				date < "1941.1.1"
+				NOT = { is_eligible_for_light_aircraft_production = yes }
 			}
-
 			modifier = {
-				factor = 1.2
-				date > "1941.1.1"
+				factor = 2
+				date > "1940.6.6"
 			}
-			
 			modifier = {
-				factor = 1.2
-				date > "1942.1.1"
+				factor = 2.5
+				date > "1940.12.12"
 			}
-			
 			modifier = {
-				factor = 1.2
-				date > "1943.1.1"
+				factor = 2
+				date > "1941.6.6"
 			}
-			
 			modifier = {
-				factor = 5
-				date > "1944.1.1"
+				factor = 100
+				OR = {
+					has_tech = engines_3
+					is_researching_technology = engines_3
+				}
 			}
 		}
 	}
-	
+
 	advanced_small_airframe = {
 
 		enable_equipments = {
@@ -217,12 +215,12 @@ technologies = {
 			cv_small_plane_naval_bomber_airframe_3
 			cv_small_plane_suicide_airframe_3
 		}
-		
+
 		path = {
 			leads_to_tech = modern_small_airframe
 			research_cost_coeff = 1
 		}
-		
+
 		research_cost = 2
 		start_year = 1944
 
@@ -230,7 +228,7 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 8 }
 		}
-		
+
 		categories = {
 			light_air
 			light_fighter
@@ -243,37 +241,35 @@ technologies = {
 			mio_cat_all_naval_bomber_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 2
-			
+			factor = 10
 			modifier = {
-				factor = 4
-				is_major = yes
+				factor = 0
+				NOT = { is_eligible_for_light_aircraft_production = yes }
 			}
-			
 			modifier = {
-				factor = 1.2
-				date > "1945.1.1"
+				factor = 2
+				date > "1944.6.6"
 			}
-			
 			modifier = {
-				factor = 1.2
-				date > "1946.1.1"
+				factor = 2.5
+				date > "1944.12.12"
 			}
-			
 			modifier = {
-				factor = 1.2
-				date > "1947.1.1"
+				factor = 2
+				date > "1945.6.6"
 			}
-			
 			modifier = {
-				factor = 5
-				date > "1948.1.1"
+				factor = 100
+				OR = {
+					has_tech = engines_4
+					is_researching_technology = engines_4
+				}
 			}
 		}
 	}
-	
+
 	modern_small_airframe = {
 
 		enable_equipments = {
@@ -290,7 +286,7 @@ technologies = {
 		dependencies = {
 			jet_engines = 1
 		}
-		
+
 		research_cost = 2
 		start_year = 1945
 
@@ -298,7 +294,7 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 12 }
 		}
-		
+
 		categories = {
 			light_air
 			light_fighter
@@ -314,18 +310,33 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 			modifier = {
-				is_major = yes
-				factor = 2
+				factor = 0
+				NOT = { is_eligible_for_light_aircraft_production = yes }
 			}
 			modifier = {
-				tag = GER
 				factor = 2
+				date > "1945.6.6"
+			}
+			modifier = {
+				factor = 2.5
+				date > "1945.12.12"
+			}
+			modifier = {
+				factor = 2
+				date > "1946.6.6"
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					has_tech = jet_engines
+					is_researching_technology = jet_engines
+				}
 			}
 		}
 	}
-	
+
 	iw_medium_airframe = {
 
 		enable_equipments = {
@@ -338,14 +349,14 @@ technologies = {
 			leads_to_tech = basic_medium_airframe
 			research_cost_coeff = 1
 		}
-		
+
 		research_cost = 2
-		start_year = 1926
+		start_year = 1922
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 2 }
 		}
-		
+
 		categories = {
 			medium_air
 			tactical_bomber
@@ -353,12 +364,22 @@ technologies = {
 			air_equipment
 			mio_cat_all_medium_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 1
+			base = 0
+			modifier = {
+				add = 20
+				is_eligible_for_medium_aircraft_production = yes
+			}
+			modifier = {
+				factor = 5
+				date > "1937.6.6"
+				has_tech = engines_1
+				is_eligible_for_medium_aircraft_production = yes
+			}
 		}
 	}
-	
+
 	basic_medium_airframe = {
 
 		enable_equipments = {
@@ -366,7 +387,7 @@ technologies = {
 			medium_plane_fighter_airframe_1
 			medium_plane_scout_plane_airframe_1
 		}
-	
+
 		path = {
 			leads_to_tech = improved_medium_airframe
 			research_cost_coeff = 1
@@ -379,7 +400,7 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 4 }
 		}
-		
+
 		categories = {
 			medium_air
 			tactical_bomber
@@ -387,36 +408,22 @@ technologies = {
 			air_equipment
 			mio_cat_all_medium_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 1
-			
+			base = 0
 			modifier = {
-				factor = 1.2
-				is_major = yes
-				date > "1936.1.1"
+				add = 20
+				is_eligible_for_medium_aircraft_production = yes
 			}
-			modifier = {
-				has_deployed_air_force_size = {
-					size > 500
-					type = tactical_bomber
-				}
-				factor = 2
-			}
-			modifier = {
-				factor = 1.2
-				is_major = yes
-				date > "1938.1.1"
-			}
-			
 			modifier = {
 				factor = 5
-				is_major = yes
-				date > "1940.1.1"
+				date > "1937.6.6"
+				has_tech = engines_2
+				is_eligible_for_medium_aircraft_production = yes
 			}
 		}
 	}
-	
+
 	improved_medium_airframe = {
 
 		enable_equipments = {
@@ -424,19 +431,19 @@ technologies = {
 			medium_plane_fighter_airframe_2
 			medium_plane_scout_plane_airframe_2
 		}
-	
+
 		path = {
 			leads_to_tech = advanced_medium_airframe
 			research_cost_coeff = 1
 		}
-		
+
 		research_cost = 2
 		start_year = 1940
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 6 }
 		}
-		
+
 		categories = {
 			medium_air
 			tactical_bomber
@@ -444,36 +451,22 @@ technologies = {
 			air_equipment
 			mio_cat_all_medium_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 1
-			
+			base = 0
 			modifier = {
-				factor = 1.2
-				is_major = yes
-				date > "1940.1.1"
+				add = 20
+				is_eligible_for_medium_aircraft_production = yes
 			}
-			modifier = {
-				has_deployed_air_force_size = {
-					size > 500
-					type = tactical_bomber
-				}
-				factor = 2
-			}
-			modifier = {
-				factor = 1.2
-				is_major = yes
-				date > "1941.1.1"
-			}
-			
 			modifier = {
 				factor = 5
-				is_major = yes
-				date > "1944.1.1"
+				date > "1941.6.6"
+				has_tech = engines_3
+				is_eligible_for_medium_aircraft_production = yes
 			}
 		}
 	}
-	
+
 	advanced_medium_airframe = {
 
 		enable_equipments = {
@@ -481,7 +474,7 @@ technologies = {
 			medium_plane_fighter_airframe_3
 			medium_plane_scout_plane_airframe_3
 		}
-		
+
 		path = {
 			leads_to_tech = modern_medium_airframe
 			research_cost_coeff = 1
@@ -493,7 +486,7 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 8 }
 		}
-		
+
 		categories = {
 			medium_air
 			tactical_bomber
@@ -501,30 +494,22 @@ technologies = {
 			air_equipment
 			mio_cat_all_medium_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 1
-			
+			base = 0
 			modifier = {
-				factor = 1.2
-				is_major = yes
-				date > "1944.1.1"
+				add = 20
+				is_eligible_for_medium_aircraft_production = yes
 			}
 			modifier = {
-				has_deployed_air_force_size = {
-					size > 500
-					type = tactical_bomber
-				}
-				factor = 2
-			}
-			modifier = {
-				factor = 1.2
-				is_major = yes
-				date > "1945.1.1"
+				factor = 5
+				date > "1945.6.6"
+				has_tech = engines_4
+				is_eligible_for_medium_aircraft_production = yes
 			}
 		}
 	}
-	
+
 	modern_medium_airframe = {
 
 		enable_equipments = {
@@ -532,19 +517,19 @@ technologies = {
 			medium_plane_fighter_airframe_4
 			medium_plane_scout_plane_airframe_4
 		}
-		
+
 		dependencies = {
 			jet_engines = 1
 		}
 
 		research_cost = 2
 		start_year = 1945
-		
+
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 12 }
 		}
-		
+
 		categories = {
 			medium_air
 			jet_technology
@@ -552,12 +537,18 @@ technologies = {
 			tactical_bomber
 			mio_cat_all_medium_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 1
+			base = 0
 			modifier = {
-				is_major = yes
-				factor = 4
+				add = 20
+				is_eligible_for_medium_aircraft_production = yes
+			}
+			modifier = {
+				factor = 5
+				date > "1946.6.6"
+				has_tech = jet_engines
+				is_eligible_for_medium_aircraft_production = yes
 			}
 		}
 	}
@@ -568,49 +559,48 @@ technologies = {
 			large_plane_airframe_0
 			large_plane_maritime_patrol_plane_airframe_0
 		}
-	
+
 		path = {
 			leads_to_tech = basic_large_airframe
 			research_cost_coeff = 1
 		}
 
 		research_cost = 2
-		start_year = 1926
+		start_year = 1922
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 2 }
 		}
-		
+
 		categories = {
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
 			mio_cat_all_heavy_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 1
-			
+			base = 0
+			modifier = {
+				add = 20
+				is_eligible_for_heavy_aircraft_production = yes
+			}
 			modifier = {
 				factor = 5
-				tag = ENG
-			}
-			
-			modifier = {
-				factor = 10
-				tag = USA
-				date > 1937.1.1
+				date > "1937.6.6"
+				has_tech = engines_1
+				is_eligible_for_heavy_aircraft_production = yes
 			}
 		}
 	}
-	
+
 	basic_large_airframe = {
 
 		enable_equipments = {
 			large_plane_airframe_1
 			large_plane_maritime_patrol_plane_airframe_1
 		}
-	
+
 		path = {
 			leads_to_tech = improved_large_airframe
 			research_cost_coeff = 1
@@ -622,77 +612,77 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 4 }
 		}
-		
+
 		categories = {
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
 			mio_cat_all_heavy_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 1
-			
+			base = 0
+			modifier = {
+				add = 20
+				is_eligible_for_heavy_aircraft_production = yes
+			}
 			modifier = {
 				factor = 5
-				tag = ENG
-			}
-			
-			modifier = {
-				factor = 10
-				tag = USA
+				date > "1937.6.6"
+				has_tech = engines_2
+				is_eligible_for_heavy_aircraft_production = yes
 			}
 		}
 	}
-	
+
 	improved_large_airframe = {
 
 		enable_equipments = {
 			large_plane_airframe_2
 			large_plane_maritime_patrol_plane_airframe_2
 		}
-	
+
 		path = {
 			leads_to_tech = advanced_large_airframe
 			research_cost_coeff = 1
 		}
-		
+
 		research_cost = 2
 		start_year = 1940
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 6 }
 		}
-		
+
 		categories = {
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
 			mio_cat_all_heavy_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 1
-			
+			base = 0
 			modifier = {
-				factor = 5
-				tag = ENG
+				add = 20
+				is_eligible_for_heavy_aircraft_production = yes
 			}
-			
 			modifier = {
 				factor = 5
-				tag = USA
+				date > "1941.6.6"
+				has_tech = engines_3
+				is_eligible_for_heavy_aircraft_production = yes
 			}
 		}
 	}
-	
+
 	advanced_large_airframe = {
 
 		enable_equipments = {
 			large_plane_airframe_3
 			large_plane_maritime_patrol_plane_airframe_3
 		}
-		
+
 		path = {
 			leads_to_tech = modern_large_airframe
 			research_cost_coeff = 1
@@ -704,36 +694,36 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 8 }
 		}
-		
+
 		categories = {
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
 			mio_cat_all_heavy_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 1
-			
+			base = 0
 			modifier = {
-				factor = 5
-				tag = ENG
+				add = 20
+				is_eligible_for_heavy_aircraft_production = yes
 			}
-			
 			modifier = {
 				factor = 5
-				tag = USA
+				date > "1945.6.6"
+				has_tech = engines_4
+				is_eligible_for_heavy_aircraft_production = yes
 			}
 		}
 	}
-	
+
 	modern_large_airframe = {
 
 		enable_equipments = {
 			large_plane_airframe_4
 			large_plane_maritime_patrol_plane_airframe_4
 		}
-		
+
 		research_cost = 2
 		start_year = 1950
 
@@ -745,34 +735,38 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 12 }
 		}
-		
+
 		categories = {
 			heavy_air
 			jet_technology
 			cat_strategic_bomber
 			mio_cat_all_heavy_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 1
+			base = 0
 			modifier = {
-				has_deployed_air_force_size = {
-					size > 500
-					type = strategic_bomber
-				}
-				factor = 4.5
+				add = 20
+				is_eligible_for_heavy_aircraft_production = yes
+			}
+			modifier = {
+				factor = 5
+				date > "1946.6.6"
+				has_tech = jet_engines
+				is_eligible_for_heavy_aircraft_production = yes
 			}
 		}
 	}
 
 	early_bombs = {
+
 		enable_equipment_modules = {
-					bomb_locks
-					small_bomb_bay
-					medium_bomb_bay
-					large_bomb_bay
+			bomb_locks
+			small_bomb_bay
+			medium_bomb_bay
+			large_bomb_bay
 		}
-			
+
 		research_cost = 1
 		start_year = 1922
 
@@ -790,7 +784,7 @@ technologies = {
 			leads_to_tech = heavy_bombs
 			research_cost_coeff = 1
 		}
-		
+
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -800,25 +794,28 @@ technologies = {
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 1
+			base = 0
 			modifier = {
+				add = 25
+				is_eligible_for_light_aircraft_production = yes
+			}
+			modifier = {
+				factor = 100
 				OR = {
 					has_tech = iw_small_airframe
-					has_tech = iw_medium_airframe
-					has_tech = iw_large_airframe
+					is_researching_technology = iw_small_airframe
 				}
-				factor = 5
 			}
 		}
 	}
 
 	heavy_bombs = {
 		enable_equipment_modules = {
-					heavy_bomb_locks
+			heavy_bomb_locks
 		}
-			
+
 		research_cost = 1
 		start_year = 1940
 
@@ -826,7 +823,7 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 6 }
 		}
-		
+
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -835,16 +832,19 @@ technologies = {
 			mio_cat_all_medium_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 1
+			base = 0
 			modifier = {
+				add = 25
+				is_eligible_for_light_aircraft_production = yes
+			}
+			modifier = {
+				factor = 100
 				OR = {
-					has_tech = iw_small_airframe
-					has_tech = iw_medium_airframe
-					has_tech = iw_large_airframe
+					has_tech = improved_small_airframe
+					is_researching_technology = improved_small_airframe
 				}
-				factor = 5
 			}
 		}
 	}
@@ -854,7 +854,7 @@ technologies = {
 		enable_equipment_modules = {
 			armor_piercing_bomb_locks
 		}
-			
+
 		research_cost = 1
 		start_year = 1936
 
@@ -862,7 +862,7 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 2 }
 		}
-		
+
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -871,25 +871,29 @@ technologies = {
 			mio_cat_all_medium_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					has_tech = iw_small_airframe
-					has_tech = iw_medium_airframe
-					has_tech = iw_large_airframe
-				}
-				factor = 5
-			}
+			base = 0
+			#modifier = {
+			#	add = 25
+			#	is_eligible_for_light_aircraft_production = yes
+			#}
+			#modifier = {
+			#	factor = 100
+			#	OR = {
+			#		has_tech = basic_small_airframe
+			#		is_researching_technology = basic_small_airframe
+			#	}
+			#}
 		}
 	}
 
 	photo_reconnaisance = {
+
 		enable_equipment_modules = {
 			recon_camera
 		}
-		
+
 		research_cost = 1
 		start_year = 1922
 
@@ -899,20 +903,23 @@ technologies = {
 		}
 
 		allow_branch = { has_dlc = "La Resistance" }
-		
+
 		categories = {
 			air_equipment
 			plane_modules_tech
 			mio_cat_all_medium_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 1
+			base = 0
 			modifier = {
-				OR = {
-					has_tech = basic_medium_airframe
-				}
-				factor = 5
+				add = 20
+				has_tech = iw_medium_airframe
+				is_eligible_for_medium_aircraft_production = yes
+			}
+			modifier = {
+				factor = 3
+				has_tech = basic_medium_airframe
 			}
 		}
 	}
@@ -921,7 +928,7 @@ technologies = {
 		enable_equipment_modules = {
 			torpedo_mounting
 		}
-			
+
 		research_cost = 1
 		start_year = 1936
 
@@ -934,7 +941,7 @@ technologies = {
 			leads_to_tech = air_torpedoe_2
 			research_cost_coeff = 1
 		}
-		
+
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -944,16 +951,19 @@ technologies = {
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 2
+			base = 0
 			modifier = {
+				add = 25
+				is_eligible_for_light_aircraft_production = yes
+			}
+			modifier = {
+				factor = 100
 				OR = {
-					has_tech = iw_small_airframe
-					has_tech = iw_medium_airframe
-					has_tech = iw_large_airframe
+					has_tech = basic_small_airframe
+					is_researching_technology = basic_small_airframe
 				}
-				factor = 5
 			}
 		}
 	}
@@ -962,7 +972,7 @@ technologies = {
 		enable_equipment_modules = {
 			torpedo_mounting_2
 		}
-			
+
 		research_cost = 1
 		start_year = 1940
 
@@ -975,7 +985,7 @@ technologies = {
 			leads_to_tech = air_torpedoe_3
 			research_cost_coeff = 1
 		}
-		
+
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -985,16 +995,19 @@ technologies = {
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 1
+			base = 0
 			modifier = {
+				add = 25
+				is_eligible_for_light_aircraft_production = yes
+			}
+			modifier = {
+				factor = 100
 				OR = {
-					has_tech = iw_small_airframe
-					has_tech = iw_medium_airframe
-					has_tech = iw_large_airframe
+					has_tech = improved_small_airframe
+					is_researching_technology = improved_small_airframe
 				}
-				factor = 5
 			}
 		}
 	}
@@ -1003,7 +1016,7 @@ technologies = {
 		enable_equipment_modules = {
 			torpedo_mounting_3
 		}
-			
+
 		research_cost = 1
 		start_year = 1944
 
@@ -1021,16 +1034,19 @@ technologies = {
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 1
+			base = 0
 			modifier = {
+				add = 25
+				is_eligible_for_light_aircraft_production = yes
+			}
+			modifier = {
+				factor = 100
 				OR = {
-					has_tech = iw_small_airframe
-					has_tech = iw_medium_airframe
-					has_tech = iw_large_airframe
+					has_tech = advanced_small_airframe
+					is_researching_technology = advanced_small_airframe
 				}
-				factor = 5
 			}
 		}
 	}
@@ -1043,7 +1059,7 @@ technologies = {
 			lmg_defense_turret
 			lmg_defense_turret_2x
 		}
-		
+
 		research_cost = 1
 		start_year = 1922
 
@@ -1066,7 +1082,7 @@ technologies = {
 			leads_to_tech = survivability_studies
 			research_cost_coeff = 1
 		}
-		
+
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1076,16 +1092,19 @@ technologies = {
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 1
+			base = 0
 			modifier = {
+				add = 25
+				is_eligible_for_light_aircraft_production = yes
+			}
+			modifier = {
+				factor = 100
 				OR = {
 					has_tech = iw_small_airframe
-					has_tech = iw_medium_airframe
-					has_tech = iw_large_airframe
+					is_researching_technology = iw_small_airframe
 				}
-				factor = 5
 			}
 		}
 	}
@@ -1100,7 +1119,7 @@ technologies = {
 			armor_plate_medium
 			armor_plate_large
 		}
-		
+
 		research_cost = 1
 		start_year = 1939
 
@@ -1117,24 +1136,17 @@ technologies = {
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 1
+			base = 0
 			modifier = {
-				date > "1937.1.1"
-				factor = 1.5
+				add = 25
+				has_tech = basic_small_airframe
+				is_eligible_for_light_aircraft_production = yes
 			}
 			modifier = {
-				date > "1938.1.1"
-				factor = 1.5
-			}
-			modifier = {
-				date > "1939.1.1"
 				factor = 3
-			}
-			modifier = {
-				has_War = yes
-				factor = 3
+				has_tech = improved_small_airframe
 			}
 		}
 	}
@@ -1147,7 +1159,7 @@ technologies = {
 			hmg_defense_turret
 			hmg_defense_turret_2x
 		}
-		
+
 		research_cost = 1
 		start_year = 1939
 
@@ -1165,23 +1177,17 @@ technologies = {
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 1
+			base = 0
 			modifier = {
-				OR = {
-					has_tech = basic_small_airframe
-					has_tech = basic_medium_airframe
-					has_tech = basic_large_airframe
-				}
-				factor = 5
+				add = 25
+				has_tech = basic_small_airframe
+				is_eligible_for_improved_light_aircraft_production = yes
 			}
 			modifier = {
-				OR = {
-					tag = USA
-					tag = GER
-				}
 				factor = 3
+				has_tech = improved_small_airframe
 			}
 		}
 	}
@@ -1192,7 +1198,7 @@ technologies = {
 			aircraft_cannon_1_1x
 			aircraft_cannon_1_2x
 		}
-		
+
 		research_cost = 1
 		start_year = 1939
 
@@ -1204,7 +1210,6 @@ technologies = {
 			leads_to_tech = aa_cannon_2
 			research_cost_coeff = 1
 		}
-
 		path = {
 			leads_to_tech = aa_cannon_3
 			research_cost_coeff = 1
@@ -1219,24 +1224,17 @@ technologies = {
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 1
+			base = 0
 			modifier = {
-				OR = {
-					has_tech = basic_small_airframe
-					has_tech = basic_medium_airframe
-					has_tech = basic_large_airframe
-				}
-				factor = 5
+				add = 25
+				has_tech = basic_small_airframe
+				is_eligible_for_improved_light_aircraft_production = yes
 			}
 			modifier = {
-				OR = {
-					tag = GER
-					tag = SOV
-					tag = ENG
-				}
 				factor = 3
+				has_tech = improved_small_airframe
 			}
 		}
 	}
@@ -1249,7 +1247,7 @@ technologies = {
 			cannon_defense_turret
 			cannon_defense_turret_2x
 		}
-		
+
 		research_cost = 1.5
 		start_year = 1943
 
@@ -1267,24 +1265,17 @@ technologies = {
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 1
+			base = 0
 			modifier = {
-				OR = {
-					has_tech = improved_small_airframe
-					has_tech = improved_medium_airframe
-					has_tech = improved_large_airframe
-				}
-				factor = 5
+				add = 25
+				has_tech = improved_small_airframe
+				is_eligible_for_improved_light_aircraft_production = yes
 			}
 			modifier = {
-				OR = {
-					tag = GER
-					tag = SOV
-					tag = ENG
-				}
 				factor = 3
+				has_tech = advanced_small_airframe
 			}
 		}
 	}
@@ -1297,7 +1288,7 @@ technologies = {
 			cannon_defense_turret
 			cannon_defense_turret_2x
 		}
-		
+
 		research_cost = 2
 		start_year = 1945
 
@@ -1315,24 +1306,17 @@ technologies = {
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 1
+			base = 0
 			modifier = {
-				OR = {
-					has_tech = improved_small_airframe
-					has_tech = improved_medium_airframe
-					has_tech = improved_large_airframe
-				}
-				factor = 5
+				add = 25
+				has_tech = improved_small_airframe
+				is_eligible_for_improved_light_aircraft_production = yes
 			}
 			modifier = {
-				OR = {
-					tag = GER
-					tag = SOV
-					tag = ENG
-				}
 				factor = 3
+				has_tech = advanced_small_airframe
 			}
 		}
 	}
@@ -1344,9 +1328,9 @@ technologies = {
 			engine_1_2x
 			engine_1_3x
 			engine_1_4x
-			engine_1_6x	
+			engine_1_6x
 		}
-		
+
 		research_cost = 1
 		start_year = 1922
 
@@ -1381,36 +1365,19 @@ technologies = {
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 1
+			base = 0
 			modifier = {
+				add = 30
+				is_eligible_for_light_aircraft_production = yes
+			}
+			modifier = {
+				factor = 100
 				OR = {
 					has_tech = iw_small_airframe
-					has_tech = iw_medium_airframe
-					has_tech = iw_large_airframe
+					is_researching_technology = iw_small_airframe
 				}
-				factor = 5
-			}
-			modifier = {
-				is_major = yes
-				factor = 2
-			}
-			modifier = {
-				num_of_military_factories < 10
-				factor = 0
-			}
-			modifier = {
-				date > "1937.1.1"
-				factor = 1.5
-			}
-			modifier = {
-				date > "1938.1.1"
-				factor = 1.5
-			}
-			modifier = {
-				date > "1939.1.1"
-				factor = 3
 			}
 		}
 	}
@@ -1422,9 +1389,9 @@ technologies = {
 			engine_2_2x
 			engine_2_3x
 			engine_2_4x
-			engine_2_6x	
+			engine_2_6x
 		}
-		
+
 		research_cost = 1
 		start_year = 1936
 
@@ -1449,28 +1416,20 @@ technologies = {
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 5
+			base = 0
 			modifier = {
-				is_major = yes
-				factor = 2
+				add = 30
+				has_tech = iw_small_airframe
+				is_eligible_for_light_aircraft_production = yes
 			}
 			modifier = {
-				num_of_military_factories < 10
-				factor = 0
-			}
-			modifier = {
-				date > "1937.1.1"
-				factor = 1.5
-			}
-			modifier = {
-				date > "1938.1.1"
-				factor = 1.5
-			}
-			modifier = {
-				date > "1939.1.1"
-				factor = 3
+				factor = 100
+				OR = {
+					has_tech = basic_small_airframe
+					is_researching_technology = basic_small_airframe
+				}
 			}
 		}
 	}
@@ -1482,9 +1441,9 @@ technologies = {
 			engine_3_2x
 			engine_3_3x
 			engine_3_4x
-			engine_3_6x	
+			engine_3_6x
 		}
-		
+
 		research_cost = 1.5
 		start_year = 1940
 
@@ -1509,28 +1468,20 @@ technologies = {
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 5
+			base = 0
 			modifier = {
-				is_major = yes
-				factor = 5
+				add = 30
+				has_tech = basic_small_airframe
+				is_eligible_for_improved_light_aircraft_production = yes
 			}
 			modifier = {
-				num_of_military_factories < 10
-				factor = 0
-			}
-			modifier = {
-				date > "1941.1.1"
-				factor = 1.5
-			}
-			modifier = {
-				date > "1942.1.1"
-				factor = 1.5
-			}
-			modifier = {
-				date > "1943.1.1"
-				factor = 3
+				factor = 100
+				OR = {
+					has_tech = improved_small_airframe
+					is_researching_technology = improved_small_airframe
+				}
 			}
 		}
 	}
@@ -1542,9 +1493,9 @@ technologies = {
 			engine_4_2x
 			engine_4_3x
 			engine_4_4x
-			engine_4_6x	
+			engine_4_6x
 		}
-		
+
 		research_cost = 1.5
 		start_year = 1944
 
@@ -1564,28 +1515,20 @@ technologies = {
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 5
+			base = 0
 			modifier = {
-				is_major = yes
-				factor = 2
+				add = 30
+				has_tech = improved_small_airframe
+				is_eligible_for_improved_light_aircraft_production = yes
 			}
 			modifier = {
-				num_of_military_factories < 10
-				factor = 0
-			}
-			modifier = {
-				date > "1943.1.1"
-				factor = 1.5
-			}
-			modifier = {
-				date > "1944.1.1"
-				factor = 1.5
-			}
-			modifier = {
-				date > "1945.1.1"
-				factor = 3
+				factor = 100
+				OR = {
+					has_tech = advanced_small_airframe
+					is_researching_technology = advanced_small_airframe
+				}
 			}
 		}
 	}
@@ -1598,7 +1541,7 @@ technologies = {
 			fuel_tanks_large
 			drop_tanks
 		}
-		
+
 		research_cost = 1
 		start_year = 1936
 
@@ -1617,35 +1560,17 @@ technologies = {
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 5
+			base = 0
 			modifier = {
-				is_major = yes
-				factor = 2
+				add = 25
+				has_tech = basic_small_airframe
+				is_eligible_for_light_aircraft_production = yes
 			}
 			modifier = {
-				num_of_military_factories < 10
-				factor = 0
-			}
-			modifier = {
-				date > "1937.1.1"
-				factor = 1.5
-			}
-			modifier = {
-				date > "1938.1.1"
-				factor = 1.5
-			}
-			modifier = {
-				date > "1939.1.1"
 				factor = 3
-			}
-			modifier = {
-				OR = {
-					tag = USA
-					tag = JAP
-				}
-				factor = 3
+				has_tech = improved_small_airframe
 			}
 		}
 	}
@@ -1661,7 +1586,7 @@ technologies = {
 			non_strategic_materials_large
 			flying_boat_large
 		}
-		
+
 		research_cost = 1
 		start_year = 1936
 
@@ -1680,9 +1605,18 @@ technologies = {
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		
+
 		ai_will_do = {
-			factor = 5
+			base = 0
+			modifier = {
+				add = 25
+				has_tech = basic_small_airframe
+				is_eligible_for_light_aircraft_production = yes
+			}
+			modifier = {
+				factor = 3
+				has_tech = improved_small_airframe
+			}
 		}
 	}
 
@@ -1691,7 +1625,7 @@ technologies = {
 		enable_equipment_modules = {
 			fixed_explosive_charge
 		}
-				
+
 		research_cost = 1.5 #Carrier Variant
 		start_year = 1944
 
@@ -1704,9 +1638,9 @@ technologies = {
 		#	name = air_techs_folder
 		#	position = { x = -2 y = 8 }
 		#}
-		
+
 		ai_will_do = {
-			factor = 0
+			base = 0
 		}
 		################
 	}
