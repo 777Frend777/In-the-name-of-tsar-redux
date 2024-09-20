@@ -11,16 +11,7 @@ state = {
 	history = {
 		owner = ALB
 		victory_points = {
-			9914 5 
-		}
-		victory_points = {
-			11767 2 
-		}
-		victory_points = {
-			13255 2
-		}
-		victory_points = {
-			6900 2
+			9914 6
 		}
 		buildings = {
 			infrastructure = 2 
@@ -36,7 +27,7 @@ state = {
 	}
 
 	provinces = {
-		3448 3884 6900 9875 9914 11767 13255 9780 10893
+		3448 3884 6900 9875 9914 13255 9780 10893
 	}
 	manpower = 623867
 	buildings_max_level_factor = 1.000

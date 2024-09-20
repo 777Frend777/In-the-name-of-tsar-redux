@@ -4202,57 +4202,54 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { #Restore 1936 Albania
+	option = { #Free Albania
 		name = gen_states.39.a
 		ai_chance = {
 			factor = 100
-			modifier = {
-			factor = 0 
-			TAG = GRE
-			}
 		}	
 		ALB = { 
-		transfer_state = 44
+			transfer_state = 44
 		}	
-		if = { limit = { controls_state = 805 }
-		ALB = { transfer_state = 805 }
-		}
-		
-		ROOT = {
-		puppet = ALB
-		}
-	}
-	option = { #Seize Southern Albania
-		name = gen_states.39.b
-		ai_chance = {
-			factor = 0
-			modifier = {
-			factor = 100
-			TAG = GRE
+		if = { 
+			limit = { 
+				controls_state = 934
+				NOT = { 
+					TAG = MNT
+					TAG = SER
+				}
 			}
+			ALB = { transfer_state = 934 }
 		}
-		trigger = { 
-		controls_state = 832
-		tag = GRE
+		if = { 
+			limit = { 
+				controls_state = 805
+				NOT = { 
+					TAG = GRE
+				}
+			}
+			ALB = { transfer_state = 805 }
 		}
-		GRE = { 
-		transfer_state = 44
-		}	
-		
+		if = { 
+			limit = { 
+				controls_state = 967
+				NOT = { 
+					TAG = ITA
+				}
+			}
+			ALB = { transfer_state = 967 }
+		}
 		ROOT = {
-		puppet = ALB
+			puppet = ALB
 		}
 	}
-		
 	option = { #Occupation
 		name = gen_states.39.c
 		ai_chance = {
 			factor = 0
 		}	
-		
 		ROOT = {
-		add_political_power = -40
-		add_stability = -0.03
+			add_political_power = -40
+			add_stability = -0.03
 		}
 	}
 	
@@ -5189,5 +5186,198 @@ country_event = { #bucovina as poland
 		ai_chance = {
 			factor = 0
 		}	
+	}
+}
+country_event = { #montenegro
+	id = gen_states.48
+	title = gen_states.48.t
+	desc = gen_states.48.d
+
+	is_triggered_only = yes
+
+	option = { #release montenegro
+		name = gen_states.48.a
+		ai_chance = {
+			factor = 100
+		}
+		MNT = { transfer_state = 105 }
+		ROOT = {
+			puppet = MNT
+		}
+	}
+	option = { #Military Occupation
+		name = gen_states.48.b
+		ai_chance = {
+			factor = 0
+		}
+		ROOT = {
+			add_political_power = -150
+			add_stability = -0.1
+		}
+	}
+}
+country_event = { #serbia
+	id = gen_states.49
+	title = gen_states.49.t
+	desc = gen_states.49.d		
+
+	is_triggered_only = yes
+
+	option = { #release serbia
+		name = gen_states.49.a
+		ai_chance = {
+			factor = 100
+		}
+		ROOT = {
+			puppet = SER
+		}
+		if = {
+			limit = { 
+				controls_state = 45
+				NOT = { TAG = HUN }
+			}
+			SER = { transfer_state = 45 }
+		}
+		if = {
+			limit = { 
+				controls_state = 764
+				NOT = { 
+					TAG = ROM 
+					TAG = HUN
+				}
+			}
+			SER = { transfer_state = 764 }
+		}
+		if = {
+			limit = { 
+				controls_state = 107
+			}
+			SER = { transfer_state = 107 }
+		}
+		if = {
+			limit = { 
+				controls_state = 108
+			}
+			SER = { transfer_state = 108 }
+		}
+		if = {
+			limit = { 
+				controls_state = 803
+				NOT = { TAG = HUN }
+			}
+			SER = { transfer_state = 803 }
+		}
+	}
+	option = { #Military Occupation
+		name = gen_states.49.b
+		ai_chance = {
+			factor = 0
+		}
+		ROOT = {
+			add_political_power = -150
+			add_stability = -0.1
+		}
+	}
+}
+country_event = { #kosovo
+	id = gen_states.50
+	title = gen_states.50.t
+	desc = gen_states.50.d		
+
+	is_triggered_only = yes
+
+	option = { #give to albania
+		name = gen_states.50.a
+		ai_chance = {
+			factor = 100
+		}
+		ALB = { transfer_state = 802 }
+	}
+	option = { #give to serbia
+		name = gen_states.50.b
+		ai_chance = {
+			factor = 100
+		}
+		SER = { transfer_state = 802 }
+	}
+	option = { #Military Occupation
+		name = gen_states.50.c
+		ai_chance = {
+			factor = 0
+		}
+		ROOT = {
+			add_political_power = -150
+			add_stability = -0.1
+		}
+	}
+}
+country_event = { #MACEDONIA
+	id = gen_states.51
+	title = gen_states.51.t
+	desc = gen_states.51.d		
+
+	is_triggered_only = yes
+
+	option = { #give all to bulgaria
+		name = gen_states.51.a
+		ai_chance = {
+			factor = 100
+		}
+		BUL = { transfer_state = 106 }
+		if = {
+			limit = { 
+				controls_state = 968
+			}
+			BUL = { transfer_state = 968 }
+		}
+	}
+	option = { #give all to serbia
+		name = gen_states.51.b
+		ai_chance = {
+			factor = 100
+		}
+		SER = { transfer_state = 106 }
+		if = {
+			limit = { 
+				controls_state = 968
+			}
+			SER = { transfer_state = 968 }
+		}
+	}
+	option = { #give to albania and bulgaria
+		name = gen_states.51.c
+		ai_chance = {
+			factor = 100
+		}
+		BUL = { transfer_state = 106 }
+		if = {
+			limit = { 
+				controls_state = 968
+			}
+			ALB = { transfer_state = 968 }
+		}
+	}
+	option = { #give to albania and serbia
+		name = gen_states.51.e
+		ai_chance = {
+			factor = 100
+		}
+		SER = { transfer_state = 106 }
+		if = {
+			limit = { 
+				controls_state = 968
+			}
+			ALB = { transfer_state = 968 }
+		}
+	}
+	option = { #Military Occupation
+		name = gen_states.51.f
+		ai_chance = {
+			factor = 0
+		}
+		ROOT = {
+			add_political_power = -150
+			add_stability = -0.1
+		}
 	}
 }
