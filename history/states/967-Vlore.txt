@@ -1,0 +1,32 @@
+
+state = {
+	id = 967
+	name = "STATE_967"
+
+	history = {
+		owner = ITA
+		victory_points = {
+			11767 5 
+		}
+		buildings = {
+			infrastructure = 2 
+			industrial_complex = 1
+			air_base = 1
+			11767 = {
+				naval_base = 3
+				coastal_bunker = 1
+			}
+			dockyard = 2
+
+		}
+		add_core_of = ALB
+	}
+
+	provinces = {
+		11767
+	}
+	manpower = 23500
+	buildings_max_level_factor = 1.000
+	state_category = town
+	local_supplies = 5.000
+}

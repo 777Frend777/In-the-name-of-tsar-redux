@@ -1,0 +1,25 @@
+state={
+	id=968
+	name="STATE_968"
+	history={
+		owner = SER
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			11856 3
+		}
+		add_core_of = SER
+		add_core_of = BUL
+		add_claim_by = ALB
+
+	}
+	provinces={
+		833 11856 867
+	}
+	manpower=156789
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=rural
+}

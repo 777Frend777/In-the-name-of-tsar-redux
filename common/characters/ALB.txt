@@ -1,6 +1,6 @@
 characters={
 	ALB_king_zog={
-		name="King Zog"
+		name="Ahmed Zogu"
 		portraits={
 			civilian={
 				large=GFX_portrait_King_Zog

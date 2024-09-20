@@ -2,8 +2,12 @@
 
 oob = "MNT_1936"
 
-set_research_slots = 3
+set_research_slots = 2
 
+add_opinion_modifier = {
+    target = ALB
+    modifier = INOT_imposed_sanctions
+}
 
 set_technology = {
 	tech_support = 1		

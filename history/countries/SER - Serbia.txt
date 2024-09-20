@@ -20,6 +20,12 @@ if = {
 		autonomous_state = autonomy_puppet
 	}
 }
+
+add_opinion_modifier = {
+    target = ALB
+    modifier = INOT_imposed_sanctions
+}
+
 set_technology = {
 	gw_artillery = 1
 	tech_support = 1		

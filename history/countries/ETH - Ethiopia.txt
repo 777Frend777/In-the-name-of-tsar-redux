@@ -10,7 +10,17 @@ set_technology = {
 	transport = 1
 }
 
-give_docking_rights = RUS
+diplomatic_relation = {
+    country = RUS
+    relation = non_aggression_pact
+    active = yes
+}
+diplomatic_relation = {
+    country = RUS
+    relation = docking_rights
+    active = yes
+}
+
 add_opinion_modifier = {
     target = RUS
     modifier = INOT_friendly_regime

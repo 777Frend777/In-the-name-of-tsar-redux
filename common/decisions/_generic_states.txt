@@ -1841,44 +1841,43 @@ territorial_restorations_decisions = {
 	
 	#Fate of Albania
 	GEN_release_ALB = {
-	
-	icon = decision_generic_decision
-	#targets = { POL }
-	selectable_mission = yes
-	days_mission_timeout = 45
-	is_good = no
-	cost = 0
-	
-	activation = {
-	NOT = { 
-	tag = ALB
-	country_exists = ALB
-	}
-	controls_state = 44
-	}
-	
-	fire_only_once = yes
-	
-	available = {
-	NOT = { TAG = ALB }
-	is_puppet = no
-	}
-	cancel_trigger = {
-	NOT = { controls_state = 44 }
-	}
-	ai_will_do = {
+		icon = decision_generic_decision
+		#targets = { POL }
+		selectable_mission = yes
+		days_mission_timeout = 30
+		is_good = yes
+		cost = 0
+		
+		activation = {
+			NOT = { 
+				tag = ALB
+				country_exists = ALB
+			}
+			controls_state = 44
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			NOT = { TAG = ALB }
+			is_puppet = no
+		}
+		cancel_trigger = {
+			NOT = { controls_state = 44 }
+		}
+		ai_will_do = {
 			factor = 1000
 		}
-	complete_effect = {
-		ROOT = {
-			country_event = { id = gen_states.39 }
+		complete_effect = {
+			ROOT = {
+				country_event = { id = gen_states.39 }
+			}
+		}	
+		remove_effect = {
+			ROOT = {
+				country_event = { id = gen_states.39 }
+			}
 		}
-	}	
-	remove_effect = {
-		ROOT = {
-			country_event = { id = gen_states.39 }
-		}
-	}
 	}
 	
 	#Fate of Turkey
@@ -2134,5 +2133,175 @@ territorial_restorations_decisions = {
 	}
 	}
 	
+	GEN_release_MNT = { #montenegro
+		icon = decision_generic_decision
+		#targets = { POL }
+		selectable_mission = yes
+		days_mission_timeout = 30
+		is_good = yes
+		cost = 0
+		
+		activation = {
+			NOT = { 
+				tag = MNT
+				tag = SER
+				tag = CRO
+				country_exists = MNT
+			}
+			controls_state = 105
+		}
 
+		fire_only_once = yes
+		
+		available = {
+			NOT = { 
+				TAG = MNT 
+				TAG = SER
+				TAG = CRO
+			}
+			is_puppet = no
+		}
+		cancel_trigger = {
+			NOT = { controls_state = 105 }
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		complete_effect = {
+			ROOT = {
+				country_event = { id = gen_states.48 }
+			}
+		}	
+		remove_effect = {
+			ROOT = {
+				country_event = { id = gen_states.48 }
+			}
+		}
+	}
+	GEN_release_SER = { #serbia
+		icon = decision_generic_decision
+		#targets = { POL }
+		selectable_mission = yes
+		days_mission_timeout = 30
+		is_good = yes
+		cost = 0
+		
+		activation = {
+			NOT = { 
+				tag = CRO
+				country_exists = SER
+			}
+			controls_state = 107
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			NOT = { 
+				TAG = CRO
+				country_exists = SER
+			}
+			is_puppet = no
+		}
+		cancel_trigger = {
+			NOT = { controls_state = 107 }
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		complete_effect = {
+			ROOT = {
+				country_event = { id = gen_states.49 }
+			}
+		}	
+		remove_effect = {
+			ROOT = {
+				country_event = { id = gen_states.49 }
+			}
+		}
+	}
+	GEN_release_KOS = { #kosovo
+		icon = decision_generic_decision
+		#targets = { POL }
+		selectable_mission = yes
+		days_mission_timeout = 30
+		is_good = yes
+		cost = 0
+		
+		activation = {
+			NOT = { 
+				tag = ALB
+				tag = SER
+			}
+			controls_state = 802
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			NOT = { 
+				tag = ALB
+				tag = SER
+			}
+			is_puppet = no
+		}
+		cancel_trigger = {
+			NOT = { controls_state = 802 }
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		complete_effect = {
+			ROOT = {
+				country_event = { id = gen_states.50 }
+			}
+		}	
+		remove_effect = {
+			ROOT = {
+				country_event = { id = gen_states.50 }
+			}
+		}
+	}
+	GEN_release_MAC = { #macedonia
+		icon = decision_generic_decision
+		#targets = { POL }
+		selectable_mission = yes
+		days_mission_timeout = 30
+		is_good = yes
+		cost = 0
+		
+		activation = {
+			NOT = { 
+				tag = SER
+				tag = BUL
+			}
+			controls_state = 106
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			NOT = { 
+				tag = BUL
+				tag = SER
+			}
+			is_puppet = no
+		}
+		cancel_trigger = {
+			NOT = { controls_state = 106 }
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		complete_effect = {
+			ROOT = {
+				country_event = { id = gen_states.51 }
+			}
+		}	
+		remove_effect = {
+			ROOT = {
+				country_event = { id = gen_states.51 }
+			}
+		}
+	}
 }
