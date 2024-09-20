@@ -2,11 +2,29 @@
 
 OOB = "ALB_1936"
 
+set_cosmetic_tag = ALB_ITA
+
 set_technology = {
 	infantry_weapons = 1
 	tech_support = 1
 	tech_recon = 1
 }
+
+add_ideas = {
+	ALB_victor_emmanuel
+	ALB_irredentist_tendencies
+	ALB_bird_cage
+}
+
+add_opinion_modifier = {
+    target = SER
+    modifier = INOT_imposed_sanctions
+}
+add_opinion_modifier = {
+    target = MNT
+    modifier = INOT_imposed_sanctions
+}
+
 
 recruit_character = ALB_king_zog
 recruit_character = ALB_enver_hoxha
@@ -41,8 +59,13 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 100
+	democratic = 25
+	conservatives = 25
+	fascism = 3
+	communism = 0
+	socialist = 7
+	neutrality = 40
 }
 
-set_convoys = 5
+set_convoys = 10
 

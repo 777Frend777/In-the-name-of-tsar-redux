@@ -536,8 +536,6 @@ l_english:
  CHL_communism_party_long:0 "Partido Comunista de Chile"
  ETH_neutrality_party:0 "Solomonic Dynasty"
  ETH_democratic_party:0 "Woyane rebellion"
- ALB_neutrality_party:0 "House of Zogu"
- ALB_neutrality_party_long:0 "House of Zogu"
  BOL_democratic_party:0 "PL"
  BOL_democratic_party_long:0 "Partido Liberal"
  BOL_fascism_party:0 "FSB"
@@ -1090,3 +1088,17 @@ l_english:
 
 #Cyrenaica
  LBA_neutrality_party:0 "Senussi Order"
+
+#Albania
+ ALB_neutrality_party:0 "Monarchist Movement"
+ ALB_neutrality_party_long:0 "Lëvizja Monarkiste"
+ ALB_conservatives_party:0 "Progressive Party"
+ ALB_conservatives_party_long:0 "Partia Përparimtare" 
+ ALB_democratic_party:0 "Popular Party" 
+ ALB_democratic_party_long:0 "Partia Popullore" 
+ ALB_fascism_party:0 "Bashkimi"
+ ALB_fascism_party_long:0 "Bashkimi" 
+ ALB_socialist_party:0 "National Revolutionary Committee"
+ ALB_socialist_party_long:0 "Komiteti Kombëtar Revolucionar" 
+ ALB_communism_party:0 "National Revolutionary Committee"
+ ALB_communism_party_long:0 "Komiteti Kombëtar Revolucionar" 
