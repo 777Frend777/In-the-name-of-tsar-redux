@@ -471,7 +471,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "discord_button"
-			position = { x=105 y=-5 }
+			position = { x=105 y=-57 }
 			quadTextureSprite ="discord"
 			clicksound = click_default
 			#pdx_tooltip = "MENU_DISCORD"

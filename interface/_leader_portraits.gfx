@@ -8438,5 +8438,8 @@ spriteTypes = {
 		name = "GFX_Portrait_POL_Boleslaw_Piasecki"
 		texturefile = "gfx/leaders/POL/Portrait_POL_Boleslaw_Piasecki.png"
 	}
-	
+	spriteType = {
+		name = "GFX_Portrait_LBA_idris"
+		texturefile = "gfx/leaders/LBA/LBA_idris.png"
+	}
 }
