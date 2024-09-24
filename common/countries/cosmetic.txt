@@ -285,3 +285,7 @@ KRW_RUS={
 	color = rgb { 70 150 90 }
     color_ui = rgb { 70 150 90 }
 }
+SLV_AUS = {
+	color = rgb { 237 234 250 }
+	color_ui = rgb { 237 234 244 }
+}

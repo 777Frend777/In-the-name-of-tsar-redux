@@ -8442,4 +8442,8 @@ spriteTypes = {
 		name = "GFX_Portrait_LBA_idris"
 		texturefile = "gfx/leaders/LBA/LBA_idris.png"
 	}
+	spriteType = {
+		name = "GFX_Portrait_SLV_landtag"
+		texturefile = "gfx/leaders/SLV/SLV_landtag.png"
+	}
 }

@@ -1102,3 +1102,16 @@ l_english:
  ALB_socialist_party_long:0 "Komiteti Kombëtar Revolucionar" 
  ALB_communism_party:0 "National Revolutionary Committee"
  ALB_communism_party_long:0 "Komiteti Kombëtar Revolucionar" 
+
+#Slovenia
+ SLV_conservatives_party:0 "Landtag - Parlament"
+ SLV_conservatives_party_long:0 "Landtag - Parlament" 
+ SLV_democratic_party:0 "Austrosceptic opposition" 
+ SLV_democratic_party_long:0 "Avstroskeptično nasprotovanje" 
+ SLV_fascism_party:0 "Chetniks"
+ SLV_fascism_party_long:0 "Četniki" 
+ SLV_socialist_party:0 "SSS - M"
+ SLV_socialist_party_long:0 "Socialistična stranka Slovenije - Moderates" 
+ SLV_communism_party:0 "SSS - R"
+ SLV_communism_party_long:0 "Socialistična stranka Slovenije - Radicals" 
+
