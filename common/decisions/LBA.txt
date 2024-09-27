@@ -1,0 +1,79 @@
+
+LBA_decisions = {
+	LBA_form_libya = {
+		icon = decision_category_generic_political_actions
+		cost = 0
+		fire_only_once = yes
+		visible = {
+			tag = LBA
+		}
+		available = {
+			LBA = {
+				controls_state = 663
+				controls_state = 451
+				controls_state = 450
+				controls_state = 662
+				controls_state = 449
+				controls_state = 661
+				controls_state = 448
+			}
+		}
+		ai_will_do = {
+			factor = 100000
+		}
+		remove_effect = {
+			LBA = {
+				set_capital = {state = 448}
+				set_cosmetic_tag = LBA_libya
+				add_political_power = 100
+				add_Stability = 0.1
+			}
+		}
+	}
+	LBA_partition = {
+		icon = decision_category_border_war
+		cost = 0
+		fire_only_once = yes
+		visible = {
+			tag = ITA
+		}
+		available = {
+			date > 1936.07.01
+			LBA = {
+				controls_state = 663
+				controls_state = 964
+			}
+			country_exists = LBA
+			country_exists = EGY
+		}
+		will_lead_to_war_with = LBA
+		days_remove = 30
+		ai_will_do = {
+			factor = 100000
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					country_exists = FRA 
+				}
+				FRA = {
+					transfer_state = 775
+				}
+			}
+			ITA = {
+				declare_war_on = {
+					target = LBA
+					type = annex_everything
+				}
+				add_state_claim = 663
+				add_state_claim = 273
+			}
+			EGY = {
+				declare_war_on = {
+					target = LBA
+					type = annex_everything
+				}
+			}
+		}
+	}
+}

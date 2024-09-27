@@ -56,14 +56,6 @@ guiTypes = {
 				pdx_tooltip = "REPAIR_ASSIGNMENT_INFO_FACTORIES"
 			}
 
-			iconType = {
-				name = "factories_used"
-				position = { x=3 y=2 }
-				spriteType = "GFX_factory_icon_with_wrench"
-				frame = 1
-				pdx_tooltip = "REPAIR_ASSIGNMENT_INFO_FACTORIES"
-			}
-
 			instantTextboxType = {
 				name = "factories_used_txt"
 				position = { x=50 y=6 }

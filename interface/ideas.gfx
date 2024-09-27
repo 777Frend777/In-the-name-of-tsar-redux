@@ -8212,4 +8212,16 @@ spriteTypes = {
 		name = "GFX_idea_clock_is_ticking"
 		texturefile = "gfx/interface/ideas/POL_clock_is_ticking.png"
 	}
+	spriteType = {
+		name = "GFX_idea_ALB_irredentism"
+		texturefile = "gfx/interface/ideas/ALB/ALB_irredentism.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SLV_enemies"
+		texturefile = "gfx/interface/ideas/SLV/SLV_enemies.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SLV_grand_duchy"
+		texturefile = "gfx/interface/ideas/SLV/SLV_grand_duchy.png"
+	}
 }

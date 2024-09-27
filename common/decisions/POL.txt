@@ -481,7 +481,7 @@ POL_four_year_plan = {
 		available = {
 			POL = {
 				has_completed_focus = POL_poland_b
-				controls_state = 746
+				controls_state = 762
 				controls_state = 92
 			}
 		}

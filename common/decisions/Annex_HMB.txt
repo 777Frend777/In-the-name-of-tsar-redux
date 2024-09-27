@@ -29,7 +29,7 @@ Annex_HMB5= {
 		}
 
 		remove_effect = {  
-		add_state_core = 58                                             
+		add_state_core = 961                                             
                                                  annex_country = { target = HMB transfer_troops = yes }
 		}
                                 ai_will_do = {

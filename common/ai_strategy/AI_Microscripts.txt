@@ -1,0 +1,369 @@
+#########ALL VERY WIP strike_force_home_base  ["HOLD", "PATROL", "STRIKE_FORCE", "CONVOY_RAIDING", "CONVOY_ESCORT", "MINES_PLANTING", "MINES_SWEEPING", "TRAINING", "RESERVE_FLEET", "NAVAL_INVASION_SUPPORT"];
+
+industrialization_effort = {
+    enable = {
+        NOT = {
+            has_war = yes
+            threat > 0.25
+        }
+    }
+
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = -100
+    }
+    ai_strategy = {
+        type = dockyard_to_military_factory_ratio
+        value = -100
+    }
+    ai_strategy = {
+        type = building_target
+        id = industrial_complex
+        value = 9999
+    }
+    ai_strategy = {
+        type = building_target
+        id = fuel_silo
+        value = -9999
+    }
+    ai_strategy = {
+        type = building_target
+        id = synthetic_refinery
+        value = -9999
+    }
+    ai_strategy = {
+        type = equipment_market_spend_factories
+        value = -9999  # Factor for the EQUIPMENT_MARKET_MAX_CIVS_FOR_PURCHASES_RATIO define (value = 20 results in a factor of 1.2)    
+    }
+}
+
+total_war_is_upon_us = {
+    enable = {
+        threat > 0.25
+        has_war = yes
+    }
+
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 1000
+    }
+    ai_strategy = {
+        type = dockyard_to_military_factory_ratio
+        value = -100
+    }
+    ai_strategy = {
+        type = building_target
+        id = arms_factory
+        value = 9999
+    }
+    ai_strategy = {
+        type = building_target
+        id = fuel_silo
+        value = -9999
+    }
+
+}
+
+no_losing_to_naval_invasions = {
+    allowed = {
+        is_island_state = yes
+    }
+    enable = {
+        alliance_naval_strength_ratio < 0.7
+    }
+
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = garrison
+        value = 1000
+    }
+}
+
+forced_check_omega_lul = {
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = front_unit_request
+		state_trigger = {
+			is_controlled_by = FROM.FROM
+			any_province_building_level = {
+				province = {
+					all_provinces = yes
+				}
+				building = supply_node
+				level > 0
+			}
+		}
+		value = 15
+	}
+	ai_strategy = {
+		type = front_unit_request
+		state_trigger = {
+			is_controlled_by = FROM
+			NOT = {
+				any_province_building_level = {
+					province = {
+						all_provinces = yes
+					}
+					building = supply_node
+					level > 0
+				}
+			}
+		}
+		value = -5
+	}
+	ai_strategy = {
+		type = front_unit_request
+		state_trigger = { 
+			OR = {
+				is_capital = yes
+				any_neighbor_state = { is_capital = yes }
+			}
+		}
+		value = 15
+	}
+	ai_strategy = {
+		type = front_unit_request
+		state_trigger = { 
+			is_capital = yes
+			owner = { tag = FROM.FROM }
+		}
+		value = 50
+	}
+	ai_strategy = {
+		type = invasion_unit_request
+		state_trigger = {
+			NOT = { has_state_flag = recent_naval_invasion_flag }
+			check_variable = { state_strategic_value < 3 }
+		}
+		value = -5
+	}
+	ai_strategy = {
+		type = invasion_unit_request
+		state_trigger = { 
+			NOT = { is_core_of = FROM.FROM }
+			NOT = { has_state_flag = recent_naval_invasion_flag }
+			check_variable = { state_strategic_value < 8 }
+		}
+		value = -3
+	}
+	ai_strategy = {
+		type = invasion_unit_request
+		state_trigger = { 
+			NOT = { is_core_of = FROM.FROM }
+			NOT = { has_state_flag = recent_naval_invasion_flag }
+		}
+		value = -3
+	}
+	ai_strategy = {
+		type = invasion_unit_request
+		state_trigger = { 
+			NOT = { is_core_of = FROM.FROM }
+			NOT = { has_state_flag = recent_naval_invasion_flag }
+			NOT = {
+				any_province_building_level = {
+					province = {
+						all_provinces = yes
+					}
+					building = supply_node
+					level > 0
+				}
+			}
+		}
+		value = -2
+	}
+}
+
+there_is_no_place_for_coward_in_a_civil_war = {
+	enable = {
+		has_civil_war = yes
+		NOT = { original_tag = SPR }
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+		country_trigger = {
+			has_war_with = ROOT
+			original_tag = ROOT
+		}
+
+		ratio = 0.3
+
+		priority = 1000
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+}
+
+inland_dont_need_garrison = {
+	enable = {
+		NOT = {
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = garrison
+		value = -9999
+	}
+}
+
+at_war_with_inland_dont_need_garrison = {
+
+	enable = {
+		NOT = {
+			any_country = {
+				has_war_with = ROOT
+				any_owned_state = {
+					is_coastal = yes
+				}
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = garrison
+		value = -50
+	}
+}
+
+end_pocket = {
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = front_control
+		state_trigger = {
+			OR = {
+				AND = {
+					is_controlled_by = FROM.FROM
+					NOT = {
+						is_fully_controlled_by = FROM.FROM
+					}
+				}
+				controller = {
+					has_war_with = FROM.FROM
+				}
+			}
+			all_neighbor_state = {
+				controller = {
+					NOT = {
+						has_war_with = FROM.FROM
+					}
+				}
+			}
+		}
+		ratio = 0.0
+		priority = 110
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+		manual_attack = yes
+	}
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state_trigger = {
+			OR = {
+				AND = {
+					is_controlled_by = FROM.FROM
+					NOT = {
+						is_fully_controlled_by = FROM.FROM
+					}
+				}
+				controller = {
+					has_war_with = FROM.FROM
+				}
+			}
+			all_neighbor_state = {
+				controller = {
+					NOT = {
+						has_war_with = FROM.FROM
+					}
+				}
+			}
+		}		
+		value = 40 
+	}	
+}
+
+naval_invasions = {
+	enable = {
+		has_war = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = 100
+	}
+}
+
+convoy_raiding_enthusiast = {
+	enable = {
+		has_war = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = naval_mission_threshold
+		id = MISSION_CONVOY_RAIDING
+		value = 50
+	}
+}
+
+basic_mil_fulfillment = {
+	enable = {
+		num_of_military_factories < 5
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 5
+	}
+}
+
+will_you_micro = {
+	enable = {
+		always = no
+	}
+
+	abort = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = front_control
+
+		country_trigger = {
+			has_war_with = FROM
+		}
+
+		ratio = 0.1
+
+		priority = 30000
+		ordertype = front
+		execution_type = balanced
+		manual_attack = yes
+	}
+
+}

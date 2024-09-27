@@ -1106,7 +1106,16 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
-	}			
+	}		
+	division= {	#SAGALLO
+		name = "'Sagallskaya' Brigada"		
+		location = 12849
+		division_template = "Reservnaya Diviziya"		
+		force_equipment_variants = { infantry_equipment_0 = { owner = "RUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}		
 }					
 
 ### Air Wings

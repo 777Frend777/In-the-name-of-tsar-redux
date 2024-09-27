@@ -1,0 +1,28 @@
+state={
+	id=966
+	name="STATE_966"
+	provinces={
+		12849 
+	}
+	history={
+		victory_points = { 12849 3 }
+		owner = RUS
+		add_core_of = DJI
+		add_core_of = SOM
+		buildings = {
+			infrastructure = 1
+			12849 = {
+				coastal_bunker = 1
+				naval_base = 2
+			}
+			dockyard = 2
+			fuel_silo = 2
+
+		}
+
+	}
+	manpower=1568
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=rural
+}

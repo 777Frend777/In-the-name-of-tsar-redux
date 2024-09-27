@@ -8,7 +8,7 @@ state={
 		owner = IKH
 		add_core_of = IKH
 	}
-	manpower=69
+	manpower=67890
 	state_category=pastoral
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

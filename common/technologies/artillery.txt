@@ -39,22 +39,21 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 
 			modifier = {
 				factor = 2
-				date > "1937.1.1"
+				date > "1936.6.6"
+			}
+			modifier = {
+				factor = 2.5
+				date > "1936.12.12"
+			}
+			modifier = {
+				factor = 2
+				date > "1937.6.6"
 			}
 
-			modifier = {
-				factor = 5
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1939.1.1"
-			}
 		}
 	}
 
@@ -81,14 +80,15 @@ technologies = {
 		super_heavy_sp_artillery_brigade = {
 			soft_attack = 0.15
 		}
-		modern_sp_artillery_brigade= {
+		modern_sp_artillery_brigade = {
 			soft_attack = 0.15
 		}
 
 		enable_equipment_modules = {
 			tank_small_cannon_2
 			tank_close_support_gun
-			secondary_turret_close_support_gun
+			### Do not uncomment this, this module has never been added to the game
+			## secondary_turret_close_support_gun
 		}
 
 		path = {
@@ -111,21 +111,19 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 
 			modifier = {
 				factor = 2
-				date > "1937.1.1"
+				date > "1936.6.6"
 			}
-
+			modifier = {
+				factor = 2.5
+				date > "1936.12.12"
+			}
 			modifier = {
 				factor = 2
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1939.1.1"
+				date > "1937.6.6"
 			}
 		}
 	}
@@ -139,6 +137,7 @@ technologies = {
 		enable_equipment_modules = {
 			tank_medium_howitzer
 			tank_medium_cannon
+
 		}
 
 		path = {
@@ -161,21 +160,19 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 
 			modifier = {
 				factor = 2
-				date > "1938.1.9"
+				date > "1939.6.6"
 			}
-
+			modifier = {
+				factor = 2.5
+				date > "1939.12.12"
+			}
 			modifier = {
 				factor = 2
-				date > "1939.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1939.1.6"
+				date > "1940.6.6"
 			}
 		}
 	}
@@ -203,7 +200,7 @@ technologies = {
 		super_heavy_sp_artillery_brigade = {
 			soft_attack = 0.1
 		}
-		modern_sp_artillery_brigade= {
+		modern_sp_artillery_brigade = {
 			soft_attack = 0.1
 		}
 
@@ -232,21 +229,19 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 
 			modifier = {
 				factor = 2
-				date > "1940.1.6"
+				date > "1940.6.6"
 			}
-
+			modifier = {
+				factor = 2.5
+				date > "1940.12.12"
+			}
 			modifier = {
 				factor = 2
-				date > "1941.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1942.1.1"
+				date > "1941.6.6"
 			}
 		}
 	}
@@ -274,7 +269,7 @@ technologies = {
 		super_heavy_sp_artillery_brigade = {
 			soft_attack = 0.05
 		}
-		modern_sp_artillery_brigade= {
+		modern_sp_artillery_brigade = {
 			soft_attack = 0.05
 		}
 
@@ -301,16 +296,19 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 
 			modifier = {
 				factor = 2
-				date > "1941.1.6"
+				date > "1941.6.6"
 			}
-
 			modifier = {
-				factor = 5
-				date > "1942.1.1"
+				factor = 2.5
+				date > "1941.12.12"
+			}
+			modifier = {
+				factor = 2
+				date > "1942.6.6"
 			}
 		}
 	}
@@ -344,21 +342,19 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 
 			modifier = {
 				factor = 2
-				date > "1941.1.9"
+				date > "1942.6.6"
 			}
-
+			modifier = {
+				factor = 2.5
+				date > "1942.12.12"
+			}
 			modifier = {
 				factor = 2
-				date > "1942.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1942.1.6"
+				date > "1943.6.6"
 			}
 		}
 	}
@@ -386,7 +382,7 @@ technologies = {
 		super_heavy_sp_artillery_brigade = {
 			soft_attack = 0.05
 		}
-		modern_sp_artillery_brigade= {
+		modern_sp_artillery_brigade = {
 			soft_attack = 0.05
 		}
 
@@ -410,43 +406,19 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 
 			modifier = {
 				factor = 2
-				date > "1943.1.6"
+				date > "1943.6.6"
 			}
-
+			modifier = {
+				factor = 2.5
+				date > "1943.12.12"
+			}
 			modifier = {
 				factor = 2
-				date > "1944.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1945.1.1"
-			}
-		}
-	}
-
-	mountain_gun = {
-
-		research_cost = 1
-
-		# only from focus!!! #####
-		allow = {
-			always = no
-		}
-
-		artillery_brigade = {
-			mountain = {
-				movement = 0.15 #If you change this - Change the custom tooltip too: RAJ_revive_the_screw_guns_effect ROM_modern_at_guns_tech_tt
-			}
-		}
-
-		anti_tank_brigade = {
-			mountain = {
-				movement = 0.15 #If you change this - Change the custom tooltip too: RAJ_revive_the_screw_guns_effect ROM_modern_at_guns_tech_tt
+				date > "1944.6.6"
 			}
 		}
 	}
@@ -480,12 +452,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
+			base = 0
 		}
 
 		categories = {
@@ -513,7 +480,6 @@ technologies = {
 			leads_to_tech = rocket_artillery3
 			research_cost_coeff = 1
 		}
-
 		research_cost = 1
 
 		start_year = 1941
@@ -524,12 +490,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
+			base = 0
 		}
 
 		categories = {
@@ -568,12 +529,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
+			base = 0
 		}
 
 		categories = {
@@ -603,12 +559,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
+			base = 0
 		}
 
 		categories = {
@@ -650,34 +601,19 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 
 			modifier = {
-				factor = 0.5
-
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-				}
+				factor = 2
+				date > "1936.6.6"
+			}
+			modifier = {
+				factor = 2.5
+				date > "1936.12.12"
 			}
 			modifier = {
 				factor = 2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1939.1.1"
+				date > "1937.6.6"
 			}
 		}
 
@@ -717,19 +653,19 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
+
 			modifier = {
-				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
-				}
-				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
-				}
-				factor = 5
+				factor = 2
+				date > "1939.6.6"
+			}
+			modifier = {
+				factor = 2.5
+				date > "1939.12.12"
+			}
+			modifier = {
+				factor = 2
+				date > "1940.6.6"
 			}
 		}
 
@@ -769,19 +705,19 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
+
 			modifier = {
-				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
-				}
-				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
-				}
-				factor = 5
+				factor = 2
+				date > "1940.6.6"
+			}
+			modifier = {
+				factor = 2.5
+				date > "1940.12.12"
+			}
+			modifier = {
+				factor = 2
+				date > "1941.6.6"
 			}
 		}
 
@@ -825,19 +761,19 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
+
 			modifier = {
-				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
-				}
-				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
-				}
-				factor = 5
+				factor = 2
+				date > "1941.6.6"
+			}
+			modifier = {
+				factor = 2.5
+				date > "1941.12.12"
+			}
+			modifier = {
+				factor = 2
+				date > "1942.6.6"
 			}
 		}
 
@@ -877,19 +813,19 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
+
 			modifier = {
-				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
-				}
-				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
-				}
-				factor = 5
+				factor = 2
+				date > "1942.6.6"
+			}
+			modifier = {
+				factor = 2.5
+				date > "1942.12.12"
+			}
+			modifier = {
+				factor = 2
+				date > "1943.6.6"
 			}
 		}
 
@@ -925,19 +861,19 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
+
 			modifier = {
-				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
-				}
-				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
-				}
-				factor = 5
+				factor = 2
+				date > "1943.6.6"
+			}
+			modifier = {
+				factor = 2.5
+				date > "1943.12.12"
+			}
+			modifier = {
+				factor = 2
+				date > "1944.6.6"
 			}
 		}
 
@@ -949,7 +885,6 @@ technologies = {
 	}
 
 	interwar_antitank = {
-
 		enable_equipments = {
 			anti_tank_equipment_1
 		}
@@ -973,55 +908,19 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 
 			modifier = {
-				factor = 0.2
-
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-				}
+				factor = 2
+				date > "1936.6.6"
 			}
 			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_War_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
+				factor = 2.5
+				date > "1936.12.12"
 			}
 			modifier = {
 				factor = 2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1939.1.1"
-			}
-			modifier = {
-				factor = 10
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 30
-						}
-					}
-				}
+				date > "1937.6.6"
 			}
 		}
 
@@ -1086,36 +985,19 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
+
 			modifier = {
-				factor = 10
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 30
-						}
-					}
-				}
+				factor = 2
+				date > "1939.6.6"
 			}
 			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_War_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
+				factor = 2.5
+				date > "1939.12.12"
 			}
 			modifier = {
 				factor = 2
-				date > "1939.1.6"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1940.1.1"
+				date > "1940.6.6"
 			}
 		}
 
@@ -1155,45 +1037,19 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 
 			modifier = {
 				factor = 2
-				date > "1939.1.9"
+				date > "1940.6.6"
 			}
 			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_War_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
+				factor = 2.5
+				date > "1940.12.12"
 			}
 			modifier = {
 				factor = 2
-				date > "1940.1.1"
-			}
-			modifier = {
-				tag = USA
-				has_War = no
-				factor = 0.5 #this tank nonsense will never catch on
-			}
-			modifier = {
-				factor = 5
-				date > "1940.1.6"
-			}
-			modifier = {
-				factor = 10
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 32
-						}
-					}
-				}
+				date > "1941.6.6"
 			}
 		}
 
@@ -1256,41 +1112,19 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 
 			modifier = {
 				factor = 2
-				date > "1941.1.6"
+				date > "1941.6.6"
 			}
 			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_War_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
+				factor = 2.5
+				date > "1941.12.12"
 			}
 			modifier = {
 				factor = 2
-				date > "1942.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1943.1.1"
-			}
-			modifier = {
-				factor = 10
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 32
-						}
-					}
-				}
+				date > "1942.6.6"
 			}
 		}
 
@@ -1353,36 +1187,19 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 
 			modifier = {
 				factor = 2
-				date > "1942.1.6"
+				date > "1942.6.6"
 			}
 			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_War_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
+				factor = 2.5
+				date > "1942.12.12"
 			}
 			modifier = {
-				factor = 5
-				date > "1943.1.1"
-			}
-			modifier = {
-				factor = 10
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 35
-						}
-					}
-				}
+				factor = 2
+				date > "1943.6.6"
 			}
 		}
 
@@ -1413,41 +1230,20 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+
+			factor = 10
 
 			modifier = {
 				factor = 2
-				date > "1942.1.9"
+				date > "1943.6.6"
 			}
 			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_War_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
+				factor = 2.5
+				date > "1943.12.12"
 			}
 			modifier = {
 				factor = 2
-				date > "1943.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1943.1.6"
-			}
-			modifier = {
-				factor = 10
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 35
-						}
-					}
-				}
+				date > "1944.6.6"
 			}
 		}
 
@@ -1457,54 +1253,4 @@ technologies = {
 			mio_cat_all_artillery_equipment
 		}
 	}
-
-	SWE_bofors_antitank_gun = {
-
-		research_cost = 1
-
-		# only from focus!!! Bofors anti tank gun ##### 
-		allow = {
-			always = no
-		}
-
-		anti_tank = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		anti_tank_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		mot_anti_tank_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		light_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		medium_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		super_heavy_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		modern_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-
-		categories = {
-			cat_anti_tank
-			artillery
-			mio_cat_all_artillery_equipment
-		}
-	}
-
 }

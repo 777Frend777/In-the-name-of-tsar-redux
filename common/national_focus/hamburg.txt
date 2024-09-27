@@ -1,5 +1,5 @@
 focus_tree = {
-	id = focuses
+	id = HMB_focuses
 	country = {
 		factor = 0
 		modifier = {
@@ -57,38 +57,17 @@ add_ideas = Hamburg_buffs
 		y = 2
         completion_reward = {
         HMB = {
-		58 = {
+		961 = {
 		 add_building_construction = {
 			 type = bunker
 			 level = 6
 			 province = 9347
 			 instant_build = yes
-		    }
-		add_building_construction = {
-			 type = bunker
-			 level = 4
-			 province = 9320
-			 instant_build = yes
-		    } 
-		add_building_construction = {
-			 type = bunker
-			 level = 4
-			 province = 11331
-			 instant_build = yes
-		    }
-		add_building_construction = {
-			 type = bunker
-			 level = 4
-			 province = 6389
-			 instant_build = yes
-		    }           
-				
+		    }         	
 		  } 
-		
 	}
 	}
 	}
-
 	focus = {
 		id = HMB_get_weapon
 		icon = GFX_focus_secret_rearmament
@@ -105,6 +84,29 @@ completion_reward = {
                 producer = HMB	
             }
     }
-
 	}
+	focus = {
+		id = HMB_get_aviation
+		icon = GFX_goal_generic_air_fighter_new
+		cost = 2
+		prerequisite = { focus = HMB_get_weapon }
+		prerequisite = { focus = HMB_Fortify_hamburg }
+		prerequisite = { focus = HMB_MARCH_ON_BERLIN }
+		x = 9
+		y = 3
+        completion_reward = {
+			hidden_effect = {
+	load_focus_tree = GER_shared
+	complete_national_focus = GRK_world_recognition
+	complete_national_focus = GRK_commi
+	complete_national_focus = GRK_recover_civil_war
+	complete_national_focus = GRK_trade_BAV
+			}
+	add_equipment_to_stockpile = {
+    type = fighter_equipment_1
+    amount = 250
+	producer = BAV	
+}
+}
+}
 }

@@ -1,0 +1,45 @@
+﻿division_template = {
+	name = "Senussi Cavalry" 			
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		location = 12764  
+		division_template = "Senussi Cavalry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		location = 12764  
+		division_template = "Senussi Cavalry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		location = 1140
+		division_template = "Senussi Cavalry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		location = 10754
+		division_template = "Senussi Cavalry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		location = 10754
+		division_template = "Senussi Cavalry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+}

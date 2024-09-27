@@ -1,0 +1,25 @@
+############################################################################################################
+#	Expert AI mod - decisions
+############################################################################################################
+
+DAI_division_decisions = {
+	priority = 0
+	allowed = {
+		always = yes
+	}
+	visible = {
+		always = yes
+	}
+}
+
+DAI_division_decisions_armor = {
+	priority = 0
+	allowed = {
+		always = yes
+	}
+	visible = {
+		always = yes
+	}
+}
+
+
