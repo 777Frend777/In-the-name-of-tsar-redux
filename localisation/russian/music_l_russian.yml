@@ -1,4 +1,5 @@
 ﻿l_russian:
+ INOTR_MUSIC_STATION_MMCT_TITLE: "Музыка мода"
  maintheme: "Прощание славянки!" #NT!
   #Russia 
  rus_peace_1: "Молитва русского народа" #NT!
@@ -20,7 +21,7 @@
  rus_war_7: "Тачанка" #NT!
  rus_war_8: "В саду" #NT!
  rus_war_9: "Катюша" #NT!
- rus_war_10: "Сяккиярвен Полкка" #NT!
+ rus_war_10: "Säkkijärven Polkka" #NT!
   #Soviet 
  sov_peace_1: "Подмосковные вечера" #NT!
  sov_peace_2: "Советский вальс" #NT!
@@ -43,74 +44,74 @@
  sov_war_9: "Единая Победа" #NT!
  sov_war_10: "Марш гвардейских минометчиков" #NT!
   #Germany and Austria Peace 
- ger_peace_1: "Эрлкениг" #NT!
- ger_peace_2: "Leichte Kavallerie, увертюра" #NT!
- ger_peace_3: "Ан Дер Шёнен Блауэн Донау" #NT!
- ger_peace_4: "Ода умереть Фрейде" #NT!
- ger_peace_5: "Хавок" #NT!
- ger_peace_6: "Лунная соната" #NT!
- ger_peace_7: "Сарабанда" #NT!
- ger_peace_8: "Полет Валькирий" #NT!
- ger_peace_9: "Токката и фуга" #NT!
- ger_peace_10: "Лакримоза" #NT!
- ger_peace_11: "Аве Мария" #NT!
+ ger_peace_1:0 "Erlkönig"
+ ger_peace_2:0 "Leichte Kavallerie Overture"
+ ger_peace_3:0 "An Der Schönen Blauen Donau"
+ ger_peace_4:0 "Ode an die Freude"
+ ger_peace_5:0 "Havok"
+ ger_peace_6:0 "Moonlight Sonata"
+ ger_peace_7:0 "Sarabande"
+ ger_peace_8:0 "Ride of the Valkyries"
+ ger_peace_9:0 "Toccata et Fugue"
+ ger_peace_10:0 "Lacrimosa"
+ ger_peace_11:0 "Ave Maria"
   #Germany War 
- ger_war_1: "Преуссен Глория" #NT!
- ger_war_2: "Вестервальдлид" #NT!
- ger_war_3: "Вахт на Рейне" #NT!
- ger_war_4: "Панцерлид" #NT!
- ger_war_5: "Кёниггрецер Марш" #NT!
- ger_war_6: "Паризер Айнцугсмарш" #NT!
- ger_war_7: "Kreuzritter-фанфары" #NT!
- ger_war_8: "Дефильермарш" #NT!
- ger_war_9: "Альте Камераден" #NT!
- ger_war_10: "Поездка в Мадагаскар" #NT!
+ ger_war_1:0 "Preussens Gloria"
+ ger_war_2:0 "Westerwaldlied"
+ ger_war_3:0 "Die Wacht am Rhein"
+ ger_war_4:0 "Panzerlied"
+ ger_war_5:0 "Königgrätzer Marsch"
+ ger_war_6:0 "Pariser Einzugsmarsch"
+ ger_war_7:0 "Kreuzritter-fanfare"
+ ger_war_8:0 "Defiliermarsch"
+ ger_war_9:0 "Alte Kameraden"
+ ger_war_10:0 "Wir lagen vor Madagaskar"
   #Austria War 
- aus_war_1: "Унтер дем двойник" #NT!
- aus_war_2: "Радецкий Марш" #NT!
- aus_war_3: "К.У.К. Марш" #NT!
- aus_war_4: "37-й полкмарш" #NT!
- aus_war_5: "Габленц-Марш" #NT!
- aus_war_6: "Беллмонд-Марш" #NT!
- aus_war_7: "Гессенмарш" #NT!
- aus_war_8: "Полк Sein Strassen Zieht" #NT!
- aus_war_9: "Эйн-полк фон Унгарланд" #NT!
- aus_war_10: "Альпиньегер Марш" #NT!
+ aus_war_1:0 "Unter dem Doppeladler"
+ aus_war_2:0 "Radetzky Marsch"
+ aus_war_3:0 "K.U.K. Marsch"
+ aus_war_4:0 "37er Regimentsmarsch"
+ aus_war_5:0 "Gablenz-Marsch"
+ aus_war_6:0 "Bellmond-Marsch"
+ aus_war_7:0 "Hessenmarsch"
+ aus_war_8:0 "Regiment sein Strassen zieht"
+ aus_war_9:0 "Ein Regiment von Ungarland"
+ aus_war_10:0 "Alpinjäger Marsch"
  #Undefined 
- china_1: "Mu Guiying Takes Command" #NT!
- china_2: "Император Цинлоня" #NT!
- china_3: "Цветы весны" #NT!
- china_4: "Дракон" #NT!
- china_5: "Мечта о любви" #NT!
- china_6: "Деревенская баллада" #NT!
- china_7: "Баллада о Северной Хэнани" #NT!
- china_8: "Черепаха" #NT!
- china_9: "Отражение лунного света на Эрцюане" #NT!
- qing_1: "Song of Beiyang" #NT!
- qing_2: "Кубок из чистого золота" #NT!
- qing_3: "Песня Бэйянского флота" #NT!
- qing_4: "Tai He" #NT!
- qing_5: "Король Цинь прорывает линию фронта" #NT!
- qing_6: "Идем на битву" #NT!
- roc_1: "Неукротимый дух" #NT!
- roc_2: "Амбиции в небе" #NT!
- roc_3: "Героические воины" #NT!
- roc_4: "Душа Хуан Пу" #NT!
- prc_1: "Учитесь на хорошем примере Лэй Фэна" #NT!
- prc_2: "Когда наступит день" #NT!
- prc_3: "Марш НОАК" #NT!
- prc_4: "Гимн НОАК" #NT!
- prc_5: "Три правила дисциплины и восемь правил внимания" #NT!
- prc_6: "Солдаты принадлежат на поле боя" #NT!
- bav_1: "Оген Герадеус" #NT!
- bav_2: "Айнхайтсфронт" #NT!
- bav_3: "Юнг синд ди Линден" #NT!
- bav_4: "гимн СВА" #NT!
- bav_5: "Унсер танковая дивизия" #NT!
- bav_6: "Ауф Пролетарий" #NT!
- bav_7: "Auferstanden aus Ruinen" #NT!
- bav_8: "Штайгерлайд" #NT!
- bav_9: "Ложь от Фатерланда" #NT!
- bav_10: "Варшавянка" #NT!
- bav_11: "Арбайтер фон Вена" #NT!
- bav_12: "Дер Шлиммсте Фейнд" #NT!
+china_1:0 "Mu Guiying Takes Command"
+china_2:0 "Emperor of Qinglonh"
+china_3:0 "Blossoms of Spring"
+china_4:0 "Dragon"
+china_5:0 "The Dream of Love"
+china_6:0 "Countryside Ballad"
+china_7:0 "Ballad of North-Henan"
+china_8:0 "Tortoise"
+china_9:0 "The Moonlight Reflection on Erquan"
+qing_1:0 "Song of Beiyang"
+qing_2:0 "Cup of Solid Gold"
+qing_3:0 "Song of the Beiyang Fleet"
+qing_4:0 "Tai He"
+qing_5:0 "King Qin Breaks the Front Lines"
+qing_6:0 "Going for a Battle"
+roc_1:0 "Indomitable Spirit"
+roc_2:0 "Ambitions in the Sky"
+roc_3:0 "Heroic Warriors"
+roc_4:0 "Huang Pu's Soul"
+prc_1:0 "Learn from Lei Feng's Good Example"
+prc_2:0 "When the Day Comes"
+prc_3:0 "March of the PLA"
+prc_4:0 "Anthem of the PLA"
+prc_5:0 "Three Rules of Discipline and Eight Rules of Attention"
+prc_6:0 "Soldiers Belong on the Battlefield"
+bav_1:0 "Augen Geradeaus"
+bav_2:0 "Einheitsfront"
+bav_3:0 "Jung sind die Linden"
+bav_4:0 "NVA anthem"
+bav_5:0 "Unser Panzerdivision"
+bav_6:0 "Auf Proletarier"
+bav_7:0 "Auferstanden aus Ruinen"
+bav_8:0 "Steigerlied"
+bav_9:0 "Lied vom Vaterland"
+bav_10:0 "Warschawjanka"
+bav_11:0 "Arbeiter von Wien"
+bav_12:0 "Der Schlimmste Feind"

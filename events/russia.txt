@@ -5876,6 +5876,8 @@ country_event = {
     option = { #we tried
         name = russia.130.a
 		RUS = {
+		white_peace = ENG
+		white_peace = TUR
 			add_timed_idea = { idea = RUS_debtforallies_idea days = 365 }
 		}
 		TUR = {
@@ -5904,6 +5906,8 @@ country_event = {
     option = { #we won
         name = russia.131.a
 		RUS = {
+		white_peace = ENG
+		white_peace = TUR
 		transfer_state = 340
 		transfer_state = 341
 		transfer_state = 340

@@ -1,4 +1,27 @@
 ﻿l_english:
+ ###music names and station
+ Superevents_MMCT_TITLE: "Music of supervents (in the discord server I can write the names)"
+ bruderkrieg_MMCT: "German Civil War"
+ RCW: "Russian Civil War"
+ Napoleon: "Napoleon in France"
+ Bavariaunitegermany: "Bavaria has united Germany"
+ Osmanreturned: "The Ottomans have returned"
+ Prussiaunitegermany: "Prussia united Germany"
+ Russo-japanese: "Russo-Japanese War"
+ SPRcivilwar: "Spanish Civil War"
+ WWII: "World War II (temporarily inactive)"
+ Yogaslaviaunited: "Serbia united Yugoslavia."
+ Yugoslaviunitedcom: "(Com.Serbia) Tito united Yugoslavia."
+ Kornilovsokoevistuplenie: "Kornilov mutiny"
+ February_revolution: "February Revolution"
+ usacivwar: "USA Civil War"
+ rusnewtsar: "A new Tsar in Russia"
+ whiterussiawonreds: "The white army defeated the red army"
+ redrussiawonwhite: "The Red Army defeated the White Army"
+ franceagainstgermany: "Franco-Prussian War"
+ parade_in_berlin: "Parade in Berlin"
+ ###
+ #Superevents
 sp_event_bruderkrieg:0 "Second Bruderkrieg"
 sp_event_bruderkrieg_QUOTE:0 "The position of Prussia in Germany will not be determined by its liberalism but by its power. Prussia must concentrate its strength and hold it for the favourable moment, which has already come and gone several times. Since the treaties of Vienna, our frontiers have been ill-designed for a healthy body politic. Not through speeches and majority decisions will the great questions of the day be decided—that was the great mistake of 1848 and 1849—but by iron and blood. \n- Otto von Bismarck"
 sp_event_bruderkrieg_REMARK:0 "War who changes everything"

@@ -1,8 +1,8 @@
-version="1.14.4"
+version="1.14.8"
 tags={
 	"Alternative History"
 }
-name="In the name of tsar redux"
+name="In The Name Of The Tsar Redux"
 replace_path="history/states"
 replace_path="map"
 replace_path="map/strategicregions"

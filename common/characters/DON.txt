@@ -7,6 +7,25 @@ characters = {
 				large = "gfx/leaders/DON/DON_peter_krasnov.dds"
 			}
 		}
+		}
+				DON_kutepov = {
+        name = Alexander_Pavlovich_Kutepov
+        portraits = {
+            army = {
+                large = "gfx/leaders/DON/Kutepov.dds"
+            }
+        }
+        corps_commander = {
+            traits = { mass_assault_expert INOT_ww1_general }
+            skill = 5
+            attack_skill = 5
+            defense_skill = 2
+            planning_skill = 4
+            logistics_skill = 5
+            legacy_id = 410
+        }
+	}
+	}
 		
 		country_leader = {
 			ideology = neutrality_subtype
