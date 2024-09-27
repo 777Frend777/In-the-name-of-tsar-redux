@@ -44,6 +44,11 @@ guiTypes = {
 			spriteType = "GFX_superevent_napoleonvsprussia"
 			position = {x = 0 y = 0}
 		}
+		iconType = {
+			name = "Super_Event_The_Coup_of_Budyonny_on_the_Don"
+			spriteType = "GFX_superevent_The_Coup_of_Budyonny_on_the_Don"
+			position = {x = 0 y = 0}
+		}
 		################
 		#####FRANCE#####
 		################

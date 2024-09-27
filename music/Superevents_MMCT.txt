@@ -107,3 +107,9 @@ song = "franceagainstgermany"
       modifier = { factor = 1 }
     }	
 }
+music = {
+song = "Cossack_1937"
+    chance = {
+      modifier = { factor = 1 }
+    }	
+}

@@ -519,3 +519,28 @@ country_event = {	#Second war between Prussia and France
 		play_song = "franceagainstgermany"
 	}
 }
+
+country_event = {	#The Coup of Budyonny on the Don
+	id = super.18
+	title = super.18.t
+	desc = super.18.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	major = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+	    has_completed_focus = DON_byddonyi_our_leader	    
+	}
+	option = {
+		name = super.18.a
+		
+		set_global_flag = The_Coup_of_Budyonny_on_the_Don.super
+		set_global_flag = Super_Event_Visible
+		play_song = "Cossack_1937"
+	}
+}

@@ -98,6 +98,11 @@ scripted_gui = {
 				has_global_flag = Prussia_and_France.super
 			}
 		}
+		triggers = {
+			Super_Event_The_Coup_of_Budyonny_on_the_Don_visible = {
+				has_global_flag = The_Coup_of_Budyonny_on_the_Don.super
+			}
+		}
 		############
 		###BUTTON###
 		############
@@ -213,6 +218,12 @@ scripted_gui = {
 						has_global_flag = Prussia_and_France.super
 					}
 					clr_global_flag = Prussia_and_France.super
+				}
+				if = {
+					limit = {
+						has_global_flag = The_Coup_of_Budyonny_on_the_Don.super
+					}
+					clr_global_flag = The_Coup_of_Budyonny_on_the_Don.super
 				}
 			}
 		}
