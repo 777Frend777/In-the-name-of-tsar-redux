@@ -25,6 +25,7 @@ country = {
 		production_speed_buildings_factor = 0.1
             }
         }
+}
 country = {
 
 		RUS_debtforallies_idea = {

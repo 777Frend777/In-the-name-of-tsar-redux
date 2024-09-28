@@ -4,6 +4,13 @@ music_station = "INOTR_MUSIC_STATION_MMCT"
 
 #Rus
 music = {
+    song = "Tsar2"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
 	song = "rus_peace_1"
 	
 	chance = {

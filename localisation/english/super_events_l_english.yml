@@ -1,6 +1,6 @@
 ﻿l_english:
  ###music names and station
- Superevents_MMCT_TITLE: "Music of supervents (in the discord server I can write the names)"
+ Superevents_MMCT_TITLE: "Music of superevents (in the discord server I can write the names)"
  bruderkrieg_MMCT: "German Civil War"
  RCW: "Russian Civil War"
  Napoleon: "Napoleon in France"
@@ -76,3 +76,6 @@ sp_event_Kornilov_putch_REMARK:0 "Kornilovism..."
   sp_event_Prussia_and_France:0 "Second Franco-Prussian War"
   sp_event_Prussia_and_France_QUOTE:0 "Hegel once said that all historical events and persons appear, as if to say, twice. He forgot to add: the first time as a tragedy, the second time as a farce \n- §yKarl Marx§y"
   sp_event_Prussia_and_France_REMARK:0 "Which tricolor will be over Paris this time?"
+  sp_event_The_Coup_of_Budyonny_on_the_Don:0 "Budyonny's coup on the Don"
+  sp_event_The_Coup_of_Budyonny_on_the_Don_QUOTE:0 "If I had Cossacks, I'd conquer the whole world. \n- §yNapoleon I Bonaparte§y"
+  sp_event_The_Coup_of_Budyonny_on_the_Don_REMARK:0 "Don now pro-soviet government?"
