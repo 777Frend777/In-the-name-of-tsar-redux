@@ -3401,3 +3401,116 @@ AFG_socialist_ADJ:0 "Afghan"
  HMB: "Hamburg uprising"
  HMB_DEF: "Hamburg uprising"
  HMB_ADJ: "Hamburg uprising"
+
+ SIB_neutrality: "Provisional Government of Autonomous Siberia" #NT!
+ SIB_neutrality_DEF: "Provisional Government of Autonomous Siberia" #NT!
+ SIB_neutrality_ADJ: "Sibirsk." #NT!
+ SIB_democratic: "Siberian Republic" #NT!
+ SIB_democratic_DEF: "Siberian Republic" #NT!
+ SIB_democratic_ADJ: "Sibirsk." #NT!
+ SIB_conservatives: "Siberian Republic" #NT!
+ SIB_conservatives_DEF: "Siberian Republic" #NT!
+ SIB_conservatives_ADJ: "Sibirsk." #NT!
+ SIB_communism: "Siberian commune" #NT!
+ SIB_communism_DEF: "Siberian commune" #NT!
+ SIB_communism_ADJ: "Sibirsk." #NT!
+ SIB_fascism: "Siberian Empire" #NT!
+ SIB_fascism_DEF: "Siberian Empire" #NT!
+ SIB_fascism_ADJ: "Sibirsk." #NT!
+ SIB_socialist: "Siberian Republic" #NT!
+ SIB_socialist_DEF: "Siberian Republic" #NT!
+ SIB_socialist_ADJ: "Sibirsk." #NT!
+ CAU_neutrality: "Transcaucasia" #NT!
+ CAU_neutrality_DEF: "Transcaucasia" #NT!
+ CAU_neutrality_ADJ: "Transcaucasus" #NT!
+ CAU_democratic: "Transcaucasian Democratic Federative Republic" #NT!
+ CAU_democratic_DEF: "Transcaucasian Democratic Federative Republic" #NT!
+ CAU_democratic_ADJ: "ZDFR" #NT!
+ CAU_conservatives: "Transcaucasian Democratic Federative Republic" #NT!
+ CAU_conservatives_DEF: "Transcaucasian Democratic Federative Republic" #NT!
+ CAU_conservatives_ADJ: "ZDFR" #NT!
+ CAU_communism: "Transcaucasian Socialist Federative Soviet Republic" #NT!
+ CAU_communism_DEF: "Transcaucasian Socialist Federative Soviet Republic" #NT!
+ CAU_communism_ADJ: "ZSFSR" #NT!
+ CAU_socialist: "Transcaucasian Socialist Federative Soviet Republic" #NT!
+ CAU_socialist_DEF: "Transcaucasian Socialist Federative Soviet Republic" #NT!
+ CAU_socialist_ADJ: "ZSFSR" #NT!
+ CAU_fascism: "Transcaucasia" #NT!
+ CAU_fascism_DEF: "Transcaucasia" #NT!
+ CAU_fascismt_ADJ: "Transcaucasus." #NT!
+ DON_neutrality: "Great Don Host" #NT!
+ DON_neutrality_DEF: "Great Don Host" #NT!
+ DON_neutrality_ADJ: "Donsk." #NT!
+ DON_democratic: "Don Republic" #NT!
+ DON_democratic_DEF: "Don Republic #NT!
+ DON_democratic_ADJ: "Donsk." #NT!
+ DON_conservatives: "Great Don Host" #NT!
+ DON_conservatives_DEF: "Great Don Host" #NT!
+ DON_conservatives_ADJ: "Donsk." #NT!
+ DON_communism: "Don Commune" #NT!
+ DON_communism_DEF: "Don Commune" #NT!
+ DON_communism_ADJ: "Donsk." #NT!
+ DON_fascism: "Great Don Host" #NT!
+ DON_fascism_DEF: "Great Don Host" #NT!
+ DON_fascism_ADJ: "Donsk." #NT!
+ DON_socialist: "Don Republic" #NT!
+ DON_socialist_DEF: "Don Republic" #NT!
+ DON_socialist_ADJ: "Donsk." #NT!
+ KUB_neutrality: "Kuban People's Republic" #NT!
+ KUB_neutrality_DEF: "Kuban People's Republic" #NT!
+ KUB_neutrality_ADJ: "PRK." #NT!
+ KUB_democratic: "Kuban People's Republic" #NT!
+ KUB_democratic_DEF: "Kuban People's Republic" #NT!
+ KUB_democratic_ADJ: "PRK" #NT!
+ KUB_conservatives: "Kuban People's Republic" #NT!
+ KUB_conservatives_DEF: "Kuban People's Republic" #NT!
+ KUB_conservatives_ADJ: "PRK" #NT!
+ KUB_communism: "Kuban Soviet Republic" #NT!
+ KUB_communism_DEF: "Kuban Soviet Republic" #NT!
+ KUB_communism_ADJ: "KSR" #NT!
+ KUB_socialist: "Kuban People's Republic" #NT!
+ KUB_socialist_DEF: "Kuban People's Republic" #NT!
+ KUB_socialist_ADJ: "PRK" #NT!
+ KUB_fascism: "Russian Liberation Army" #NT!
+ KUB_fascism_DEF: "Russian Liberation Army" #NT!
+ KUB_fascismt_ADJ: "Russ." #NT!
+
+ ABK_fascism:0 "Orthodox State of Abkhazia"
+ ABK_fascism_DEF:0 "the Orthodox State of Abkhazia"
+ ABK_democratic:0 "Abkhazia"
+ ABK_democratic_DEF:0 "Abkhazia"
+ ABK_communism:0 "Abkhaz Independent Commune"
+ ABK_communism_DEF:0 "the Abkhaz Independent Commune"
+ ABK_neutrality:0 "Abkhaz Military Authority"
+ ABK_neutrality_DEF:0 "the Abkhaz Military Authority"
+ ABK_fascism_ADJ:0 "Abkhaz"
+ ABK_democratic_ADJ:0 "Abkhaz"
+ ABK_communism_ADJ:0 "Abkhaz"
+ ABK_neutrality_ADJ:0 "Abkhaz"
+ ABK_RUS_communism_subject:0 "Abkhaz Autonomous Soviet Socialist Republic"
+ ABK_RUS_communism_subject_DEF:0 "the Abkhaz Autonomous Soviet Socialist Republic"
+ ABK_RUS_communism_subject_ADJ:0 "Abkhaz"
+
+SOA_fascism:0 "Kingdom of Alania"
+SOA_fascism_DEF:0 "the Kingdom of Alania"
+SOA_democratic:0 "North Ossetia-Alania"
+SOA_democratic_DEF:0 "North Ossetia-Alania"
+SOA_communism:0 "Alanian People's Republic"
+SOA_communism_DEF:0 "the Alanian People's Republic"
+SOA_neutrality:0 "North Ossetian Patriarchy"
+SOA_neutrality_DEF:0 "the North Ossetian Patriarchy"
+SOA_fascism_ADJ:0 "Alanian"
+SOA_democratic_ADJ:0 "North Ossetian"
+SOA_communism_ADJ:0 "Alanian"
+SOA_neutrality_ADJ:0 "North Ossetian"
+SOA_RUS_communism_subject:0 "North Ossetian Autonomous Soviet Socialist Republic"
+SOA_RUS_communism_subject_DEF:0 "the North Ossetian Autonomous Soviet Socialist Republic"
+SOA_RUS_communism_subject_ADJ:0 "North Ossetian"
+
+ MKV: "Markov Regiment"
+ MKV_DEF: "Markov Regiment"
+ MKV_ADJ: "Markov Regiment"
+
+ DOV: "Drozdovsky Regiment"
+ DOV_DEF: "Drozdovsky Regiment"
+ DOV_ADJ: "Drozdovsky Regiment"
