@@ -1,0 +1,152 @@
+focus_tree = {
+	id = Zheltorossiya_RMN
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RMN
+		}
+	}
+	default = no
+	focus = {
+		id = RMN_dela_gosva
+		icon = GFX_goal_kmt_contest_the_japanese
+		cost = 10
+		x = 6
+		y = 2
+		completion_reward = {
+		RMN = { country_event = RMN.1 }
+	}
+	}
+	focus = {
+		id = RMN_is_diterhis_alive
+		icon = GFX_goal_LEP_governor_question
+		cost = 10
+		mutually_exclusive = {
+			focus = RMN_diterhis_got_killed
+		}
+		x = 10
+		y = 2
+	available = {
+		always = false
+}
+	}
+	focus = {
+		id = RMN_diterhis_got_killed
+		icon = GFX_goal_revolution
+		cost = 10
+		mutually_exclusive = {
+			focus = RMN_is_diterhis_alive
+		}
+		x = 12
+		y = 2
+	available = {
+		always = false
+}
+
+	}
+	focus = {
+		id = RMN_uspokoit_naselenie
+		icon = GFX_goal_generic_political_purge
+		cost = 10
+		prerequisite = {
+			focus = RMN_dela_gosva
+		}
+		x = 6
+		y = 3
+		completion_reward = {
+			RMN = { country_event = RMN.2 }
+		}
+		}
+	focus = {
+		id = RMN_voennoe_polozenie
+		icon = GFX_goal_HOL_ban_paramilitary
+		cost = 10
+		prerequisite = {
+			focus = RMN_uspokoit_naselenie
+		}
+		x = 6
+		y = 4
+	available = {
+		always = false
+}
+completion_reward = {
+	add_ideas = {
+		DON_martial_law
+		}
+		}
+	}
+	focus = {
+		id = RMN_end_Japan_influence
+		icon = GFX_goal_skull_treaty2
+		cost = 10
+		prerequisite = {
+			focus = RMN_voennoe_polozenie
+		}
+		x = 6
+		y = 5
+		completion_reward = {
+remove_ideas = 	RMN_japanese_down
+hidden_effect = {
+	RMN = { country_event = RMN.5 }	
+}
+}
+available = {
+NOT = {
+RUS = {
+has_country_leader = {
+    name = "E.I.V Nikolai II"
+    ruling_only = yes
+}
+}
+}
+}
+	}
+	focus = {
+		id = RMN_what_next
+		icon = GFX_goal_PAL_Russian_Refugees
+		cost = 4
+		prerequisite = {
+			focus = RMN_diterhis_got_killed
+			focus = RMN_is_diterhis_alive
+		}
+		x = 11
+		y = 3
+		completion_reward = {
+			RMN = { country_event = RMN.4 }
+		}
+	}
+	focus = {
+		id = RMN_surrender
+		icon = GFX_goal_anarcho_communism
+		cost = 10
+		prerequisite = {
+			focus = RMN_end_Japan_influence
+		}
+		mutually_exclusive = {
+			focus = RMN_save_zheltorossiya
+		}
+		x = 5
+		y = 6
+	available = {
+		always = false
+}
+	}
+	focus = {
+		id = RMN_save_zheltorossiya
+		icon = GFX_goal_generic_dissolve_parliament2
+		cost = 10
+		prerequisite = {
+			focus = RMN_end_Japan_influence
+		}
+		mutually_exclusive = {
+			focus = RMN_surrender
+		}
+		x = 7
+		y = 6
+	available = {
+		always = false
+}
+
+	}
+}

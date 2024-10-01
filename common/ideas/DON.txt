@@ -1,0 +1,38 @@
+ideas = {
+
+	country = {
+		DON_martial_law = {
+			picture = HNN_hopes_dashed
+			modifier = {
+				war_support_factor = -0.05
+				stability_factor = -0.2
+				communism_drift = -0.3
+				political_power_gain = -0.2
+			}
+		}
+	}
+	country = {
+		DON_cossacks_cant_believe = {
+			picture = PER_untrained_officer
+			modifier = {
+				army_morale_factor = -0.1
+				army_org_factor = -0.09
+				army_attack_factor = -0.2
+				army_defence_factor = -0.15
+				conscription_factor = -0.17
+			}
+		}
+	    }
+	country = {
+	DON_cossacks_believe_us = {
+			picture = big_entente_idea
+			modifier = {
+				army_morale_factor = 0.1
+				army_org_factor = 0.1
+				army_attack_factor = 0.2
+				army_defence_factor = 0.15
+				conscription_factor = 0.1
+			}
+		}
+	    }
+}

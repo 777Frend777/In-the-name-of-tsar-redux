@@ -3076,6 +3076,9 @@
  RMN_socialist: "Желтороссия" #NT!
  RMN_socialist_DEF: "Желтороссия" #NT!
  RMN_socialist_ADJ: "Желторусский" #NT!
+ RMN_communism: "Желтороссия" #NT!
+ RMN_communism_DEF: "Желтороссия" #NT!
+ RMN_communism_ADJ: "Желторусский" #NT!
  RMN_fascism: "Желтороссия" #NT!
  RMN_fascism_DEF: "Желтороссия" #NT!
  RMN_fascism_ADJ: "Желторусский" #NT!
@@ -3330,3 +3333,7 @@
  DOV: "Дроздовский полк"
  DOV_DEF: "Дроздовский полк"
  DOV_ADJ: "Дроздовский полк"
+
+ GMC: "Маньчжурское восстание"
+ GMC_DEF: "Маньчжурское восстание"
+ GMC_ADJ: "Маньчжурское восстание"

@@ -2,7 +2,6 @@
 
 create_faction = Jap_prosperity_sphere_faction
 add_to_faction = JAP
-add_to_faction = MAN
 
 set_stability = 0.7
 set_war_support = 0.65
@@ -186,13 +185,6 @@ create_import = {
 }
 
 set_convoys = 400
-
-if = {
-	set_autonomy = {
-		target = MAN
-		autonomous_state = autonomy_puppet
-	}
-}
 
 set_politics = {
 	ruling_party = fascism
