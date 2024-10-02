@@ -15,6 +15,11 @@ focus_tree = {
 		cost = 10
 		x = 6
 		y = 2
+    allow_branch = {
+        NOT = {
+            has_completed_focus = RMN_save_zheltorossiya
+        }
+    }
 		completion_reward = {
 		RMN = { country_event = RMN.1 }
 	}
@@ -150,6 +155,9 @@ has_country_leader = {
 	available = {
 		always = false
 }
+completion_reward  = {
+mark_focus_tree_layout_dirty = yes
+}
 
 	}
 	
@@ -157,12 +165,9 @@ has_country_leader = {
 		id = RMN_emergency_conscription
 		icon = GFX_goal_conscription
 		cost = 5
-		prerequisite = {
-			focus = RMN_save_zheltorossiya
-		}
-		x = 2
-		y = 1
-		relative_position_id = RMN_save_zheltorossiya
+		allow_branch = { has_completed_focus = RMN_save_zheltorossiya }
+		x = 20
+		y = 2
 		completion_reward = {
 		add_ideas = {
 		RMN_emergency_conscription
@@ -248,12 +253,9 @@ create_unit = {
 		id = RMN_address_the_defecits
 		icon = GFX_focus_generic_military_equipment
 		cost = 5
-		prerequisite = {
-			focus = RMN_save_zheltorossiya
-		}
-		x = -2
-		y = 1
-		relative_position_id = RMN_save_zheltorossiya
+		allow_branch = { has_completed_focus = RMN_save_zheltorossiya }
+		x = 16
+		y = 2
 		completion_reward = {
 		add_ideas = {
 		RMN_fixing_defecits
