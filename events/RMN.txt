@@ -139,11 +139,32 @@ declare_war_on = {
 			add_core_of = RMN
 			}
 			GMC = {
-				load_oob = "RMN_1936"
+				load_oob = "GMC_1936"
 				}
 				MAN = {
-				load_oob = "RMN_1936"
+				load_oob = "MAN_1936"
 				}
+				RMN = {
+					declare_war_on = {
+						target = MAN
+						type = annex_everything
+					}
+				}
+				GMC = {
+				add_ideas = {
+					SPA_death_before_surrender_capitulation
+				}
+			}
+			MAN = {
+				add_ideas = {
+					SPA_death_before_surrender_capitulation
+				}
+			}
+			RMN = {
+				add_ideas = {
+					SPA_death_before_surrender_capitulation
+				}
+			}
 		complete_national_focus = RMN_save_zheltorossiya
 	}
 }
@@ -165,10 +186,10 @@ declare_war_on = {
 								add_state_core = 717
 							}
 			GMC = {
-			load_oob = "RMN_1936"
+			load_oob = "GMC_1936"
 			}
 			MAN = {
-			load_oob = "RMN_1936"
+			load_oob = "MAN_1936"
 			}
 			RMN = {
 				add_core_of = MAN
@@ -183,6 +204,16 @@ declare_war_on = {
 		annex_country = {
 			target = RMN
 			transfer_troops = no
+		}
+	}
+	GMC = {
+		add_ideas = {
+			SPA_death_before_surrender_capitulation
+		}
+	}
+	MAN = {
+		add_ideas = {
+			SPA_death_before_surrender_capitulation
 		}
 	}
 		complete_national_focus = RMN_surrender

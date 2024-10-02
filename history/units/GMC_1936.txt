@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "NRA_GMC"			# Rifle Division
 
 	regiments = {
@@ -19,48 +19,48 @@
 units = {
 	
 	division= {			
-		name = "1 Manchukuo Imperial Army"		
-		location = 11771
+		name = "1 National Revolutionary Army"		
+		location = 12337
 		division_template = "Pekhotnaya Diviziya"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 
 	}
                 division= {			
-		name = "2  Manchukuo Imperial Army"		
-		location = 12355
+		name = "2  National Revolutionary Army"		
+		location = 10499
 		division_template = "Pekhotnaya Diviziya"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 
 	}
                 division= {			
-		name = "3 Manchukuo Imperial Army"		
-		location = 7652
+		name = "3 National Revolutionary Army"		
+		location = 814
 		division_template = "Pekhotnaya Diviziya"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 
 	}
                 division= {			
-		name = "4 Manchukuo Imperial Army"		
-		location = 9835
+		name = "4 National Revolutionary Army"		
+		location = 10426
 		division_template = "Pekhotnaya Diviziya"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 
 	}
                 division= {			
-		name = "5 Manchukuo Imperial Army"		
-		location = 4503
+		name = "5 National Revolutionary Army"		
+		location = 9927
 		division_template = "Pekhotnaya Diviziya"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 
 	}
                 division= {			
-		name = "6 Manchukuo Imperial Army"		
-		location = 800
+		name = "6 National Revolutionary Army"		
+		location = 3881
 		division_template = "Pekhotnaya Diviziya"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
@@ -75,10 +75,11 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
-			creator = "MAN"
+			creator = "GMC"
 		}
 		requested_factories = 1
 		progress = 0.52
 		efficiency = 100
 	}
 }
+			

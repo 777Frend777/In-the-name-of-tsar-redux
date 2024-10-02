@@ -18,6 +18,10 @@ RMN_surrender: "Surrender"
 RMN_surrender_desc: "§REverything we did was useless!§"
 RMN_save_zheltorossiya: "Save Zheltorossiya"
 RMN_save_zheltorossiya_desc: "§GEverything we did was not in vain?§"
+
+#ideas
+RMN_chinese_down: "Weak Chinese influence"
+RMN_chinese_up: "Strong Chinese influence"
 DON_martial_law: "Martial law"
 
 #events

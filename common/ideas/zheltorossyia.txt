@@ -30,6 +30,39 @@ ideas = {
 			}
 		}
 	}
+	country = {
+		RMN_chinese_up = {
+			picture = LEC_China_Rising
+			allowed = { always = no }
+			modifier = {
+				stability_weekly = -0.01
+				legitimacy_daily = -1
+			}
+			targeted_modifier = {
+				tag = CHI
+				extra_trade_to_target_factor = 0.1
+				cic_to_target_factor = 0.1
+				mic_to_target_factor = 0.1
+				targeted_legitimacy_daily = 0.1
+				attack_bonus_against = 0.1
+			}
+		}
+	}
+	country = {
+	RMN_chinese_down = {
+		picture = LEC_China_Falling
+		allowed = { always = no }
+		modifier = {
+			stability_weekly = 0.01
+			legitimacy_daily = 1
+		}
+		targeted_modifier = {
+			tag = CHI
+			extra_trade_to_target_factor = -0.1
+			attack_bonus_against = -0.1
+		}
+	}
+}
 
 	# TECHNOLOGY
 	
