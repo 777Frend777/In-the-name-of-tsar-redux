@@ -64,6 +64,63 @@ ideas = {
 	}
 }
 
+	country = {
+	RMN_emergency_conscription = {
+		picture = MON_conscript_conquered
+		allowed = { always = no }
+		modifier = {
+			recruitable_population_factor = 0.1
+			stability_factor = -0.1
+		}
+	}
+}
+	country = {
+	RMN_mongol_horsmen = {
+		picture = MON_ger
+		allowed = { always = no }
+		modifier = {
+			send_volunteer_divisions_required = -1
+		}
+	}
+}
+	country = {
+	RMN_fixing_defecits = {
+		picture = KTG_Mitteleuropan_Industrial_Support
+		allowed = { always = no }
+		modifier = {
+			industrial_capacity_factory = 0.25
+		}
+	}
+}
+	country = {
+	RMN_art_of_capture = {
+		picture = big_entente_idea
+		allowed = { always = no }
+		modifier = {
+			equipment_capture = 0.2
+		}
+	}
+}
+	country = {
+	RMN_functioning_army = {
+		picture = army_cooperation
+		allowed = { always = no }
+		modifier = {
+			experience_gain_army = 0.1
+			command_power_gain = 0.1
+		}
+	}
+}
+	country = {
+	RMN_standardised_conscription = {
+		picture = MON_conscript_conquered
+		allowed = { always = no }
+		modifier = {
+			recruitable_population_factor = 0.1
+		}
+	}
+}
+
 	# TECHNOLOGY
 	
 	aircraft_manufacturer = { #
