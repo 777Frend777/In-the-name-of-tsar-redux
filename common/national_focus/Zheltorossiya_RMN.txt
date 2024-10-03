@@ -149,6 +149,10 @@ has_country_leader = {
 		mutually_exclusive = {
 			focus = RMN_surrender
 		}
+		bypass = {
+		has_war_with = GMC
+		has_war_with = GMC
+		}
 		x = 0
 		y = 1
 		relative_position_id = RMN_end_Japan_influence

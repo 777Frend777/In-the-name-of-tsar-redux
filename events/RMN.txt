@@ -149,6 +149,7 @@ declare_war_on = {
 						target = MAN
 						type = annex_everything
 					}
+					load_oob = "RMN_collapse"
 				}
 				GMC = {
 				add_ideas = {
@@ -171,25 +172,48 @@ declare_war_on = {
 	option = {
 		name = RMN.5.b
 		custom_effect_tooltip = RMN_civil_war_start_tt
-		custom_effect_tooltip = everyone_its_end_for_u_tt
 		hidden_effect = {
-			MAN = {	
-				declare_war_on = {
-					target = GMC
-					type = annex_everything
-				}
-								transfer_state = 716
-								transfer_state = 328
-								transfer_state = 717
-								add_state_core = 716
-								add_state_core = 328
-								add_state_core = 717
-							}
-			GMC = {
-			load_oob = "GMC_1936"
+			RUS = {
+			remove_from_faction = RMN
 			}
-			MAN = {
-			load_oob = "MAN_1936"
+			RUS = {
+				set_autonomy = {
+					target = RMN
+					autonomous_state = autonomy_free
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+			MAN = {	
+declare_war_on = {
+    target = RMN
+    type = annex_everything
+}
+declare_war_on = {
+    target = GMC
+    type = annex_everything
+}
+				transfer_state = 716
+				transfer_state = 328
+				transfer_state = 717
+				add_state_core = 716
+				add_state_core = 328
+				add_state_core = 717
+			}
+			GMC = {
+			transfer_state = 610
+			transfer_state = 715
+			add_state_core = 610
+			add_state_core = 715
+			declare_war_on = {
+				target = RMN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = MAN
+				type = annex_everything
+			}
+			change_tag_from = RMN
 			}
 			RMN = {
 				add_core_of = MAN
@@ -200,23 +224,127 @@ declare_war_on = {
 		GMC = {
 			add_core_of = RMN
 			}
+			GMC = {
+				load_oob = "GMC_1936"
+				}
+				MAN = {
+				load_oob = "MAN_1936"
+				}
+				RMN = {
+					declare_war_on = {
+						target = MAN
+						type = annex_everything
+					}
+					load_oob = "RMN_collapse"
+				}
+				GMC = {
+				add_ideas = {
+					SPA_death_before_surrender_capitulation
+				}
+			}
+			MAN = {
+				add_ideas = {
+					SPA_death_before_surrender_capitulation
+				}
+			}
+			RMN = {
+				add_ideas = {
+					SPA_death_before_surrender_capitulation
+				}
+				country_event = {
+    id = RMN.7
+    days = 3
+	}
+			}
+	}
+}
+	option = {
+		name = RMN.5.c
+		custom_effect_tooltip = RMN_civil_war_start_tt
+		hidden_effect = {
+			RUS = {
+			remove_from_faction = RMN
+			}
+			RUS = {
+				set_autonomy = {
+					target = RMN
+					autonomous_state = autonomy_free
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+			MAN = {	
+declare_war_on = {
+    target = RMN
+    type = annex_everything
+}
+declare_war_on = {
+    target = GMC
+    type = annex_everything
+}
+				transfer_state = 716
+				transfer_state = 328
+				transfer_state = 717
+				add_state_core = 716
+				add_state_core = 328
+				add_state_core = 717
+				change_tag_from = RMN
+			}
+			GMC = {
+			transfer_state = 610
+			transfer_state = 715
+			add_state_core = 610
+			add_state_core = 715
+			declare_war_on = {
+				target = RMN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = MAN
+				type = annex_everything
+			}
+			}
+			RMN = {
+				add_core_of = MAN
+				}
+			GMC = {
+				add_core_of = MAN
+				}
 		GMC = {
-		annex_country = {
-			target = RMN
-			transfer_troops = no
-		}
+			add_core_of = RMN
+			}
+			GMC = {
+				load_oob = "GMC_1936"
+				}
+				MAN = {
+				load_oob = "MAN_1936"
+				}
+				RMN = {
+					declare_war_on = {
+						target = MAN
+						type = annex_everything
+					}
+					load_oob = "RMN_collapse"
+				}
+				GMC = {
+				add_ideas = {
+					SPA_death_before_surrender_capitulation
+				}
+			}
+			MAN = {
+				add_ideas = {
+					SPA_death_before_surrender_capitulation
+				}
+			}
+			RMN = {
+				add_ideas = {
+					SPA_death_before_surrender_capitulation
+				}
+				country_event = {
+    id = RMN.7
+    days = 3
 	}
-	GMC = {
-		add_ideas = {
-			SPA_death_before_surrender_capitulation
-		}
-	}
-	MAN = {
-		add_ideas = {
-			SPA_death_before_surrender_capitulation
-		}
-	}
-		complete_national_focus = RMN_surrender
+			}
 	}
 }
 }
@@ -250,5 +378,19 @@ country_event = {
 			base = 1
 		}
 		name = RMN.6.b
+	}
+}
+
+country_event = {
+	id = RMN.7
+	title = RMN.7.t
+	desc = RMN.7.d
+	picture = GFX_report_event_RUS_army4
+
+	is_triggered_only = yes
+
+	option = {
+		name = RMN.7.a
+		complete_national_focus = RMN_save_zheltorossiya
 	}
 }

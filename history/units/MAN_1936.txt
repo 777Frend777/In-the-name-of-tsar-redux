@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "NRA_GMC"			# Rifle Division
+	name = "Manchu Imperial Infantry"			 #Rifle Division
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -11,66 +11,117 @@
 
 	}
 	support = {
-		artillery = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+		artillery = { x = 0 y = 0 } 		 #Recon bn had 16 L tanks, 10 ACs, 1x mot inf co Eng and recon removed and they seem rather OP. Could revisit if balance changes
 		
 	}
 }
 
 units = {
-	
-	division= {			
-		name = "1 Manchukuo Imperial Army"		
-		location = 11771
-		division_template = "Pekhotnaya Diviziya"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-
+	division = {
+		name = "1. Manchu Imperial Infantry"
+		location = 4551
+		division_template = "Manchu Imperial Infantry"
 	}
-                division= {			
-		name = "2  Manchukuo Imperial Army"		
+	division = {
+		name = "2. Manchu Imperial Infantry"
+		location = 12342
+		division_template = "Manchu Imperial Infantry"
+	}
+	division = {
+		name = "3. Manchu Imperial Infantry"
+		location = 9623
+		division_template = "Manchu Imperial Infantry"
+	}
+	division = {
+		name = "4. Manchu Imperial Infantry"
+		location = 10463
+		division_template = "Manchu Imperial Infantry"
+	}
+	division = {
+		name = "5. Manchu Imperial Infanty"
+		location = 7670
+		division_template = "Manchu Imperial Infantry"
+	}
+	division = {
+		name = "6. Manchu Imperial Infantry"
 		location = 12355
-		division_template = "Pekhotnaya Diviziya"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-
+		division_template = "Manchu Imperial Infantry"
 	}
-                division= {			
-		name = "3 Manchukuo Imperial Army"		
+	division = {
+		name = "7. Manchu Imperial Infantry"
+		location = 12412
+		division_template = "Manchu Imperial Infantry"
+	}
+	division = {
+		name = "8. Manchu Imperial Infantry"
+		location = 10433
+		division_template = "Manchu Imperial Infantry"
+	}
+	division = {
+		name = "9. Manchu Imperial Infantry"
 		location = 7652
-		division_template = "Pekhotnaya Diviziya"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-
+		division_template = "Manchu Imperial Infantry"
 	}
-                division= {			
-		name = "4 Manchukuo Imperial Army"		
-		location = 9835
-		division_template = "Pekhotnaya Diviziya"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-
-	}
-                division= {			
-		name = "5 Manchukuo Imperial Army"		
+	division = {
+		name = "10. Manchu Imperial Infantry"
 		location = 4503
-		division_template = "Pekhotnaya Diviziya"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-
+		division_template = "Manchu Imperial Infantry"
 	}
-                division= {			
-		name = "6 Manchukuo Imperial Army"		
-		location = 800
-		division_template = "Pekhotnaya Diviziya"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-
-	}	
+	division = {
+		name = "11. Manchu Imperial Infantry"
+		location = 4572
+		division_template = "Manchu Imperial Infantry"
+	}
+	division = {
+		name = "12. Manchu Imperial Infantry"
+		location = 1567 
+		division_template = "Manchu Imperial Infantry"
+	}
+	division = {
+		name = "13. Manchu Imperial Infantry"
+		location = 3913 
+		division_template = "Manchu Imperial Infantry"
+	}
+	division = {
+		name = "14. Manchu Imperial Infantry"
+		location = 887 
+		division_template = "Manchu Imperial Infantry"
+	}
+	division = {
+		name = "15. Manchu Imperial Infantry"
+		location = 11808 
+		division_template = "Manchu Imperial Infantry"
+	}
+	division = {
+		name = "16. Manchu Imperial Infantry"
+		location = 846 
+		division_template = "Manchu Imperial Infantry"
+	}
+	division = {
+		name = "17. Manchu Imperial Infantry"
+		location = 6951
+		division_template = "Manchu Imperial Infantry"
+	}
+	division = {
+		name = "18. Manchu Imperial Infantry"
+		location = 9788
+		division_template = "Manchu Imperial Infantry"
+	}
+	division = {
+		name = "19. Manchu Imperial Infantry"
+		location = 11815
+		division_template = "Manchu Imperial Infantry"
+	}
+	division = {
+		name = "20. Manchu Imperial Infantry"
+		location = 9835
+		division_template = "Manchu Imperial Infantry"
+	}
 }
 
 			
 
-########## STARTING PRODUCTION ##########
+ STARTING PRODUCTION 
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
