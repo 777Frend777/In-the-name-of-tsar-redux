@@ -1,0 +1,4 @@
+SLV_decisions = {
+	icon = decision_category_generic_political_actions
+	priority = 10
+}

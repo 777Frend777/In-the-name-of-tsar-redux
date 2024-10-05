@@ -19,6 +19,7 @@ state={
 			3882 5 
 		}
 		add_core_of = SER
+		add_claim_by = CRO
 		add_core_of = BUL
 
 	}

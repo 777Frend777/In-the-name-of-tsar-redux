@@ -2255,7 +2255,7 @@ focus = {
 		completion_reward = {
 		create_wargoal = {
         type = annex_everything
-        target = SER
+        target = CRO
            }
 		}
 	}	

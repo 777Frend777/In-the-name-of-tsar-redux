@@ -1321,3 +1321,11 @@
  SLV_AUS: "Slovenia"
  SLV_AUS_DEF: "the Grand Duchy of Slovenia"
  SLV_AUS_ADJ: "Slovenian"
+
+ SLV_AUSplus: "Kingdom of Illyria"
+ SLV_AUSplus_DEF: "the Kingdom of Illyria"
+ SLV_AUSplus_ADJ: "Illyrian"
+
+ CRO_YUG: "Yugoslavia"
+ CRO_YUG_DEF: "the Socialist Federal Republic of Yugoslavia"
+ CRO_YUG_ADJ: "Yugoslav"

@@ -1,1 +1,235 @@
-﻿##
+#MADE BY FOKEU
+
+add_namespace = cro
+country_event = { #annexation of montenegro, will be replaced with a separate mechanic soon, but for now it's 50/50
+	id = cro.1
+	title = cro.1.t
+	desc = cro.1.d
+	picture = GFX_report_event_generic_panzer_attack
+	fire_only_once = yes
+	trigger = {
+		original_tag = MNT
+		country_exists = MNT
+		country_exists = SER
+		country_exists = CRO
+		date > 1936.5.1 
+	}
+	option = {
+		name = cro.1.a	
+		ai_chance = { factor = 50 }
+		CRO = {
+			annex_country = {
+				target = MNT
+				transfer_troops = yes
+			}
+		}
+	}
+	option = {
+		name = cro.1.b	
+		ai_chance = { factor = 50 }
+		SER = {
+			annex_country = {
+				target = MNT
+				transfer_troops = yes
+			}
+		}
+	}
+}
+country_event = { #war trigger
+	id = cro.2
+	title = cro.2.t
+	desc = cro.2.d
+	picture = GFX_report_event_generic_panzer_attack
+	fire_only_once = yes
+	trigger = {
+		original_tag = CRO
+		country_exists = SER
+		country_exists = CRO
+		date > 1936.7.5  
+	}
+	immediate = {
+		declare_war_on = {
+			target = SER
+			type = annex_everything
+		}
+		CRO = { remove_ideas = CRO_frozen_war }
+		SER = { remove_ideas = SER_frozen_war }
+		SER = { remove_ideas = SER_rebels }
+	}
+	option = {
+		name = cro.2.a	
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = cro.3
+			days = 360
+		}
+	}
+}
+country_event = { #war for more than one year
+	id = cro.3
+	title = cro.3.t
+	desc = cro.3.d
+	picture = GFX_report_event_generic_panzer_attack
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				CRO = {
+					has_war_with = SER
+				}
+			}
+			if = {
+				limit = {
+					country_exists = BUL
+					OR = {
+						SER = { 
+							owns_state = 803
+						}
+						CRO = { 
+							owns_state = 803 
+						}
+					}
+					OR = {
+						SER = { 
+							owns_state = 106
+						}
+						CRO = { 
+							owns_state = 106
+						}
+					}
+				}
+				BUL = {
+					transfer_state = 803
+					transfer_state = 106
+				}
+			}
+			if = {
+				limit = {
+					country_exists = ALB
+					OR = {
+						SER = { 
+							owns_state = 968
+						}
+						CRO = { 
+							owns_state = 968
+						}
+					}
+					OR = {
+						SER = { 
+							owns_state = 802
+						}
+						CRO = { 
+							owns_state = 802
+						}
+					}
+					OR = {
+						SER = { 
+							owns_state = 934
+						}
+						CRO = { 
+							owns_state = 934
+						}
+					}
+				}
+				ALB = {
+					transfer_state = 968
+					transfer_state = 802
+					transfer_state = 934
+				}
+			}
+			if = {
+				limit = {
+					country_exists = ITA
+					OR = {
+						SER = { owns_state = 103 }
+						CRO = { owns_state = 103 }
+					}
+				}
+				ITA = {
+					transfer_state = 103
+				}
+			}
+			if = {
+				limit = {
+					country_exists = HUN
+					OR = {
+						SER = { 
+							owns_state = 971
+						}
+						CRO = { 
+							owns_state = 971
+						}
+					}
+					OR = {
+						SER = { 
+							owns_state = 45
+						}
+						CRO = { 
+							owns_state = 45
+						}
+					}
+				}
+				HUN = {
+					transfer_state = 971
+					transfer_state = 45
+				}
+			}
+			if = {
+				limit = {
+					country_exists = SLV
+					SLV = {
+						is_puppet_of = AUS
+					}
+					OR = {
+						SER = { owns_state = 109 }
+						CRO = { owns_state = 109 }
+					}
+				}
+				SLV = {
+					transfer_state = 109
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						SER = { 
+							owns_state = 804
+						}
+						CRO = { 
+							owns_state = 804
+						}
+					}
+					OR = {
+						SER = { 
+							owns_state = 104
+						}
+						CRO = { 
+							owns_state = 104
+						}
+					}
+				}
+				BOS = {
+					transfer_state = 804
+					transfer_state = 104
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						SER = { owns_state = 105 }
+						CRO = { owns_state = 105 }
+					}
+				}
+				MNT = {
+					transfer_state = 105
+				}
+			}
+		}
+	}
+	option = {
+		name = cro.3.a	
+		ai_chance = { factor = 100 }
+	}
+}
