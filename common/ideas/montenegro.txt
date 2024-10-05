@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		MNT_buffer_state = { 
+			picture = GFX_idea_MNT_buffer_state
+			modifier = {
+				political_power_factor = -0.1
+				enemy_justify_war_goal_time = 100
+			}
+			rule = {
+				can_join_factions = no
+				can_not_declare_war = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+characters={
+	CRO_tito = {
+		name="Josip Broz Tito"
+		portraits={
+			civilian={
+				large="GFX_Portrait_CRO_tito"
+			}
+		}
+		country_leader={
+			ideology=socialist_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

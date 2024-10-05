@@ -1,4 +1,17 @@
 characters={
+	SLV_alexander = {
+		name="Alexander Karađorđević"
+		portraits={
+			civilian={
+				large="GFX_Portrait_SER_alexander"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1 
+		}
+	}
 	SER_acd2={
 		advisor={
 			slot = army_chief
