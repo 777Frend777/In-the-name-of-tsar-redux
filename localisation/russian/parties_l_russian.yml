@@ -1035,3 +1035,15 @@
  ####ETH
  LBA_neutrality_party:0 "Орден Сенусси"
  ####
+
+#Brazil
+ BRA_fascism_party:0 "ANI"
+ BRA_fascism_party_long:0 "Ação Nacional Integralista."
+ BRA_conservatives_party:0 "PD"
+ BRA_conservatives_party_long:0 "Partido Democrático"
+ BRA_liberalism_party_long:0 "PRP"
+ BRA_liberalism_party_long:0 "Partido Republicano Paulista"
+ BRA_communism_party:0 "PCB"
+ BRA_communism_party_long:0 "Partido Comunista Brasileiro"
+ BRA_socialist_party:0 "PSB"
+ BRA_socialist_party_long:0 "Partido Socialista Brasileiro"

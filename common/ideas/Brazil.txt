@@ -1,0 +1,100 @@
+ideas = {
+	country = {
+		BRA_Recovering_from_the_Civil_War = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			picture = GFX_idea_BRA_Recovering_from_the_Civil_War
+			modifier = {
+
+			}
+		}
+	}
+	country = {
+		BRA_Political_Violence = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			picture = GFX_idea_BRA_Political_Violence
+			modifier = {
+
+			}
+		}
+	}
+		country = {
+		BRA_Legacy_of_the_1930_Revolution = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			picture = BRA_Legacy_of_the_1930_Revolution
+			modifier = {
+
+			}
+		}
+	}
+		country = {
+		BRA_Influence_of_the_Coffee_Elites = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			picture = GFX_idea_BRA_Influence_of_the_Coffee_Elites
+			modifier = {
+
+			}
+		}
+	}
+		country = {
+		BRA_Agrarian_Economy = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			picture = GFX_idea_BRA_Agrarian_economy
+			modifier = {
+
+			}
+		}
+		}
+}
+				
+				
+	
