@@ -981,3 +981,8 @@
  STATE_969: "Prekmurje"
  STATE_970: "Srem"
  STATE_971: "Baranja"
+ STATE_972: "Harbin-Manzhouli Railway"
+ STATE_973: "Beijing-Harbin Railway"
+ STATE_974: "Harbin-Suifenhe Railway"
+ STATE_975: "Harbin"
+ STATE_976: "Hausaland"
