@@ -1,0 +1,741 @@
+focus_tree = {
+	id = Basmachi_focuses
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TUK
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 2000 }
+	focus = {
+		id = TUK_ottoman_help
+		icon = GFX_goal_OTT_Military_Mission
+		cost = 3
+		x = 7
+		y = 0
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1500
+				producer = TUR
+			}
+			
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 1500
+				producer = TUR
+			}
+		}
+	}
+	focus = {
+		id = TUK_elections
+		icon = GFX_goal_generic_elections
+		cost = 10
+		available = {
+			always = false	
+			}
+		x = 16
+		y = 0
+
+	}
+	focus = {
+		id = TUK_country_reforms
+		icon = GFX_goal_generic_army_high_command
+		cost = 10
+		x = 26
+		y = 1
+		completion_reward = {
+			army_experience = 10
+			navy_experience = 10
+			air_experience = 10
+		}
+	}
+	focus = {
+		id = TUK_upgrade_army
+		icon = GFX_goal_generic_army_training
+		cost = 10
+		prerequisite = {
+			focus = TUK_build_factories_for_army
+		}
+		x = 29
+		y = 7
+		completion_reward = {
+	add_doctrine_cost_reduction = {
+		cost_reduction = 0.5
+		uses = 2
+		category = land_doctrine
+	}
+}
+	}
+	focus = {
+		id = TUK_produce_equipment
+		icon = GFX_focus_generic_military_equipment
+		cost = 10
+		prerequisite = {
+			focus = TUK_build_factories_for_army
+		}
+		x = 31
+		y = 7
+		completion_reward = {
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 1500
+			producer = TUK
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 1500
+			producer = TUK
+		}
+	}
+	}
+	focus = {
+		id = TUK_ottoman_peopletous
+		icon = GFX_goal_OTT_Muslim_Solidarity
+		cost = 2
+		prerequisite = {
+			focus = TUK_ottoman_help
+		}
+		x = 7
+		y = 1
+		completion_reward = {
+			584 = {
+				add_manpower = 50000
+			}
+		}
+	}
+	focus = {
+		id = TUK_we_needeverything_fromottoman
+		icon = GFX_goal_OTT_Years_of_Progress
+		cost = 2
+		prerequisite = {
+			focus = TUK_ottoman_peopletous
+		}
+		x = 7
+		y = 2
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 1500
+				producer = TUR
+			}
+	}
+}
+	focus = {
+		id = TUK_stay_with_ottomans
+		icon = GFX_goal_ottoman
+		cost = 10
+		prerequisite = {
+			focus = TUK_we_needeverything_fromottoman
+		}
+		x = 5
+		y = 3
+completion_reward = {
+	add_opinion_modifier = {
+		target = TUR
+		modifier = INOT_close_allies
+	}
+	TUR = {
+	add_opinion_modifier = {
+		target = TUK
+		modifier = INOT_close_allies
+	}
+}
+}
+	}
+	focus = {
+		id = TUK_sponsor_azers
+		icon = GFX_goal_flag_azerbaijan
+		cost = 4
+		prerequisite = {
+			focus = TUK_we_needeverything_fromottoman
+		}
+		available = {
+			NOT = {
+			RUS = {
+			has_country_leader = {
+				name = "E.I.V Nikolai II"
+				ruling_only = yes
+			}
+			}
+			}
+			}
+		x = 7
+		y = 3
+completion_reward = {
+	random_list = {
+		40 = {
+			country_event = tuk.1
+		}
+		60 = {
+			country_event = tuk.2
+		}
+	}
+}
+	}
+	focus = {
+		id = TUK_help_azers
+		icon = GFX_goal_Arms_Export
+		cost = 1
+		prerequisite = {
+			focus = TUK_sponsor_azers
+		}
+		mutually_exclusive = {
+			focus = TUK_betray_azers
+		}
+		x = 6
+		y = 4
+		completion_reward = {
+			add_opinion_modifier = {
+				target = AZR
+				modifier = INOT_close_allies
+			}
+			AZR = {
+			add_opinion_modifier = {
+				target = TUK	
+				modifier = INOT_close_allies
+			}
+		}
+			AZR = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1000
+				producer = TUK
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 1000
+				producer = TUK
+			}
+		}
+		}
+	}
+	focus = {
+		id = TUK_betray_azers
+		icon = GFX_goal_OTT_Integrate_Azerbaijan
+		cost = 1
+		prerequisite = {
+			focus = TUK_sponsor_azers
+		}
+		mutually_exclusive = {
+			focus = TUK_help_azers
+		}
+		x = 8
+		y = 4
+		completion_reward = {
+			add_opinion_modifier = {
+				target = AZR
+				modifier = hostile_status
+			}
+			AZR = {
+			add_opinion_modifier = {
+				target = TUK
+				modifier = hostile_status
+			}
+		}
+		hidden_effect = {
+			release_puppet = AZR
+		}
+	}
+}
+	focus = {
+		id = TUK_lets_make_us_bigger
+		icon = GFX_goal_PER_Claim_Turkmenistan
+		cost = 10
+		prerequisite = {
+			focus = TUK_betray_azers
+			focus = TUK_help_azers
+		}
+		x = 7
+		y = 5
+
+	}
+	focus = {
+		id = TUK_to_afghan
+		icon = GFX_goal_afghanistan
+		cost = 10
+		prerequisite = {
+			focus = TUK_lets_make_us_bigger
+		}
+		x = 8
+		y = 6
+
+	}
+	focus = {
+		id = TUK_to_iran
+		icon = GFX_goal_PER_modernist_campaign
+		cost = 10
+		prerequisite = {
+			focus = TUK_lets_make_us_bigger
+		}
+		x = 6
+		y = 6
+
+	}
+	focus = {
+		id = TUK_taxes
+		icon = GFX_goal_generic_cash_stimulus_plan
+		cost = 10
+		prerequisite = {
+			focus = TUK_to_afghan
+		}
+		prerequisite = {
+			focus = TUK_to_iran
+		}
+		x = 7
+		y = 7
+
+	}
+	focus = {
+		id = TUK_demand_asia
+		icon = GFX_goal_RUS_central_asia
+		cost = 10
+		prerequisite = {
+			focus = TUK_taxes
+		}
+		x = 7
+		y = 8
+
+	}
+	focus = {
+		id = TUK_we_need_buk_and_khiva
+		icon = GFX_goal_KHI_airforce
+		cost = 2
+		prerequisite = {
+			focus = TUK_we_needeverything_fromottoman
+		}
+		available = {
+			NOT = {
+			RUS = {
+			has_country_leader = {
+				name = "E.I.V Nikolai II"
+				ruling_only = yes
+			}
+			}
+			}
+			}
+		x = 9
+		y = 3
+		completion_reward = {
+			custom_effect_tooltip = TUK_war_bukhara_and_khiva
+			hidden_effect = {
+		RUS = {
+			release = BUK
+			release = KHI
+		}
+		TUK = {
+			create_wargoal = { type = annex_everything target = BUK }
+			}
+			TUK = {
+			create_wargoal = { type = annex_everything target = KHI }
+			}
+		}
+	}
+	}
+	focus = {
+		id = TUK_accept_enverism
+		icon = GFX_goal_islamic_government
+		cost = 10
+		prerequisite = {
+			focus = TUK_we_needeverything_fromottoman
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = TUK_military_junta
+		icon = GFX_goal_generic_drafted_army
+		cost = 10
+		available = {
+		always = false	
+		}
+		prerequisite = {
+			focus = TUK_elections
+		}
+		mutually_exclusive = {
+			focus = TUK_pasha_saved
+		}
+		x = 15
+		y = 1
+
+	}
+	focus = {
+		id = TUK_what_do_to_pasha
+		icon = GFX_goal_LEP_governor_question
+		cost = 10
+		prerequisite = {
+			focus = TUK_military_junta
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = TUK_arrest_him
+		icon = GFX_goal_NFA_end_parliamentarism
+		cost = 10
+		prerequisite = {
+			focus = TUK_what_do_to_pasha
+		}
+		mutually_exclusive = {
+			focus = TUK_save_him
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = TUK_save_him
+		icon = GFX_goal_HOL_amend_wapenwet
+		cost = 10
+		prerequisite = {
+			focus = TUK_what_do_to_pasha
+		}
+		mutually_exclusive = {
+			focus = TUK_arrest_him
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = TUK_to_be_continued
+		icon = GFX_goal_WIP
+		cost = 10
+		available = {
+			always = false	
+			}
+		prerequisite = {
+			focus = TUK_save_him
+			focus = TUK_arrest_him
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = TUK_pasha_saved
+		icon = GFX_goal_focus_chain_army
+		cost = 10
+		available = {
+			always = false	
+			}
+		prerequisite = {
+			focus = TUK_elections
+		}
+		mutually_exclusive = {
+			focus = TUK_military_junta
+		}
+		x = 19
+		y = 1
+
+	}
+	focus = {
+		id = TUK_kingdom_of_turks
+		icon = GFX_goal_PER_Claim_Turkmenistan
+		cost = 10
+		prerequisite = {
+			focus = TUK_pasha_saved
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = TUK_old_brothers
+		icon = GFX_goal_OTT_Abolish_Mecelle
+		cost = 10
+		prerequisite = {
+			focus = TUK_kingdom_of_turks
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = TUK_infrastucture
+		icon = GFX_goal_construction_engineering
+		cost = 10
+		prerequisite = {
+			focus = TUK_country_reforms
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = TUK_oil
+		icon = GFX_goal_oil
+		cost = 10
+		prerequisite = {
+			focus = TUK_country_reforms
+		}
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 20
+				state = 584
+			}
+		}
+		x = 26
+		y = 2
+
+	}
+	focus = {
+		id = TUK_resources
+		icon = GFX_all_resource
+		cost = 10
+		prerequisite = {
+			focus = TUK_oil
+		}
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 15
+				state = 584
+			}
+			add_resource = {
+				type = rubber
+				amount = 15
+				state = 584
+			}
+	
+		}
+		x = 26
+		y = 3
+
+	}
+	focus = {
+		id = TUK_for_tanks
+		icon = GFX_goal_doctrine_tank_warfare
+		cost = 10
+		prerequisite = {
+			focus = TUK_resources
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+		
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = TUK_aviation
+		icon = GFX_goal_generic_air_command
+		cost = 10
+		prerequisite = {
+			focus = TUK_for_tanks
+		}
+		x = 23
+		y = 5
+completion_reward = {
+		air_experience = 50
+	}
+}
+	focus = {
+		id = TUK_techs
+		icon = GFX_goal_double_research
+		cost = 10
+		prerequisite = {
+			focus = TUK_for_tanks
+		}
+		x = 26
+		y = 5
+		completion_reward = {
+	add_research_slot = 1
+
+}
+	}
+	focus = {
+		id = TUK_manpower
+		icon = GFX_goal_national_mobilization
+		cost = 10
+		prerequisite = {
+			focus = TUK_techs
+		}
+		x = 26
+		y = 6
+		completion_reward = {
+			random_list = {
+			50 = {
+			add_manpower = 7000
+			add_war_support = 0.05
+			}
+			50 = {
+				add_manpower = 1000
+			add_war_support = 0.2
+			}
+		}
+}
+	}
+	focus = {
+		id = TUK_defence
+		icon = GFX_goal_nested_fortifications
+		cost = 10
+		prerequisite = {
+			focus = TUK_manpower
+		}
+		x = 26
+		y = 7
+		completion_reward = {
+			add_building_construction = {
+				type = bunker
+				level = 5
+				instant_build = yes
+				province = 12333
+			}
+		}
+
+	}
+	focus = {
+		id = TUK_military_factories
+		icon = GFX_goal_factory_complex
+		cost = 10
+		prerequisite = {
+			focus = TUK_country_reforms
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+		x = 28
+		y = 2
+
+}
+	focus = {
+		id = TUK_our_army
+		icon = GFX_goal_TRK_army
+		cost = 10
+		prerequisite = {
+			focus = TUK_for_tanks
+		}
+		completion_reward = {
+			army_experience = 50
+		}
+		x = 30
+		y = 5
+
+	}
+	focus = {
+		id = TUK_build_factories_for_army
+		icon = GFX_goal_generic_artillery_factories
+		cost = 10
+		prerequisite = {
+			focus = TUK_our_army
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+		x = 30
+		y = 6
+
+	}
+	focus = {
+		id = TUK_end_army_reforms
+		icon = GFX_goal_mass_concentration_of_army
+		cost = 10
+		prerequisite = {
+			focus = TUK_produce_equipment
+		}
+		prerequisite = {
+			focus = TUK_upgrade_army
+		}
+		x = 30
+		y = 8
+
+	}
+	focus = {
+		id = TUK_improve_our_country
+		icon = GFX_goal_generic_banking_legislation
+		cost = 10
+		prerequisite = {
+			focus = TUK_demand_asia
+		}
+		x = 7
+		y = 9
+
+	}
+	focus = {
+		id = TUK_airbases
+		icon = GFX_goal_generic_airports
+		cost = 10
+		prerequisite = {
+			focus = TUK_aviation
+		}
+		x = 23
+		y = 6
+completion_reward = {
+	random_owned_controlled_state = {
+	set_building_level = {
+		type = air_base
+		level = 5
+		instant_build = yes
+	}
+}
+}
+	}
+	focus = {
+		id = TUK_craft_air
+		icon = GFX_goal_air_armada
+		cost = 10
+		prerequisite = {
+			focus = TUK_airbases
+		}
+		x = 22
+		y = 7
+		completion_reward = {
+	add_doctrine_cost_reduction = {
+		cost_reduction = 0.5
+		uses = 2
+		category = air_doctrine
+	}
+}
+	}
+	focus = {
+		id = TUK_get_from_ottoman
+		icon = GFX_goal_OTT_air_command
+		cost = 10
+		prerequisite = {
+			focus = TUK_airbases
+		}
+		x = 24
+		y = 7
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = fighter_equipment_0
+			amount = 500
+			producer = TUR
+		}
+	}
+}
+}

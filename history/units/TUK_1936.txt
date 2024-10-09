@@ -14,7 +14,7 @@
 units = {
 	division = {
 		name = "1. Turkestan Rebels"
-		location = 642
+		location = 10510
 		division_template = "Turkestan-Militia"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -22,7 +22,7 @@ units = {
 	}
 	division = {
 		name = "2. Turkestan Rebels"
-		location = 1591
+		location = 12333
 		division_template = "Turkestan-Militia"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -30,7 +30,7 @@ units = {
 	}
 	division = {
 		name = "3. Turkestan Rebels"
-		location = 4581
+		location = 1632
 		division_template = "Turkestan-Militia"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -38,7 +38,7 @@ units = {
 	}
 	division = {
 		name = "4. Turkestan Rebels"
-		location = 4686
+		location = 10359
 		division_template = "Turkestan-Militia"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -46,7 +46,7 @@ units = {
 	}
 	division = {
 		name = "5. Turkestan Rebels"
-		location = 10353
+		location = 7563
 		division_template = "Turkestan-Militia"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -54,7 +54,7 @@ units = {
 	}
 	division = {
 		name = "6. Turkestan Rebels"
-		location = 4224
+		location = 4958
 		division_template = "Turkestan-Militia"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
