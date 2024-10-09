@@ -1,0 +1,48 @@
+###########################
+# Basmachi Events
+###########################
+
+add_namespace = tuk
+
+# Azer uprising
+country_event = {
+	id = tuk.1
+	title = tuk.1.t
+	desc = tuk.1.d
+	picture = GFX_report_event_FNG_protest
+
+	is_triggered_only = yes
+
+	option = {
+		name = tuk.1.a
+		hidden_effect = {
+		AZR = {
+			transfer_state = 957
+			transfer_state = 229
+			transfer_state = 956
+			transfer_state = 420
+		}
+		TUK = {
+			puppet = AZR
+		}
+	}
+ }
+}
+#Azers uprising lost
+country_event = {
+	id = tuk.2
+	title = tuk.2.t
+	desc = tuk.2.d
+	picture = GFX_report_event_AST_protest2
+
+	is_triggered_only = yes
+
+	option = {
+		name = tuk.2.a
+		TUK = {
+		add_stability = -0.1
+		add_war_support = -0.1
+		add_manpower = -1000
+		}
+ }
+}
