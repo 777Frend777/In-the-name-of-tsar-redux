@@ -300,6 +300,7 @@ declare_war_on = {
 				add_state_core = 716
 				add_state_core = 328
 				add_state_core = 717
+				change_tag_from = RMN
 			}
 			GMC = {
 			transfer_state = 610
