@@ -54,66 +54,61 @@ units = {
 	}
 	division = {
 		name = "8. Manchu Imperial Infantry"
-		location = 10433
+		location = 9782
 		division_template = "Manchu Imperial Infantry"
 	}
 	division = {
 		name = "9. Manchu Imperial Infantry"
-		location = 7652
+		location = 7523
 		division_template = "Manchu Imperial Infantry"
 	}
 	division = {
 		name = "10. Manchu Imperial Infantry"
-		location = 4503
+		location = 10917
 		division_template = "Manchu Imperial Infantry"
 	}
 	division = {
 		name = "11. Manchu Imperial Infantry"
-		location = 4572
+		location = 7652
 		division_template = "Manchu Imperial Infantry"
 	}
 	division = {
 		name = "12. Manchu Imperial Infantry"
-		location = 1567 
+		location = 4503
 		division_template = "Manchu Imperial Infantry"
 	}
 	division = {
 		name = "13. Manchu Imperial Infantry"
-		location = 3913 
+		location = 4572 
 		division_template = "Manchu Imperial Infantry"
 	}
 	division = {
 		name = "14. Manchu Imperial Infantry"
-		location = 887 
-		division_template = "Manchu Imperial Infantry"
-	}
-	division = {
-		name = "15. Manchu Imperial Infantry"
 		location = 11808 
 		division_template = "Manchu Imperial Infantry"
 	}
 	division = {
-		name = "16. Manchu Imperial Infantry"
+		name = "15. Manchu Imperial Infantry"
 		location = 846 
 		division_template = "Manchu Imperial Infantry"
 	}
 	division = {
-		name = "17. Manchu Imperial Infantry"
+		name = "16. Manchu Imperial Infantry"
 		location = 6951
 		division_template = "Manchu Imperial Infantry"
 	}
 	division = {
-		name = "18. Manchu Imperial Infantry"
+		name = "17. Manchu Imperial Infantry"
 		location = 9788
 		division_template = "Manchu Imperial Infantry"
 	}
 	division = {
-		name = "19. Manchu Imperial Infantry"
+		name = "18. Manchu Imperial Infantry"
 		location = 11815
 		division_template = "Manchu Imperial Infantry"
 	}
 	division = {
-		name = "20. Manchu Imperial Infantry"
+		name = "19. Manchu Imperial Infantry"
 		location = 9835
 		division_template = "Manchu Imperial Infantry"
 	}
