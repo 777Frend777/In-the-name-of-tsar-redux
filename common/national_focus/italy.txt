@@ -1056,30 +1056,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ITA_return_dalmatia
-		icon = GFX_focus_ser_yugoslavia
-		cost = 10.00
-		prerequisite = {
-			focus = ITA_diplomatic_missions
-		}
-		x = 23
-		y = 4
-		available = {
-		CRO = { exists = no }
-		SER = { exists = yes }
-        }
-		completion_reward = {
-			    SER = {
-				transfer_state = 103
-				}	
-				hidden_effect = {
-				ITA_leverage_up = yes
-				ITA_leverage_up = yes
-				}
-				custom_effect_tooltip = ITA_two_points_gained
-		}
-	}
-	focus = {
 		id = ITA_slave_dockyards
 		icon = GFX_focus_generic_navy_battleship2
 		cost = 10.00
@@ -1908,23 +1884,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ITA_annex_ALB
-		icon = GFX_focus_ITA_albanian_irredentism
-		cost = 10.00
-		prerequisite = {
-			focus = ITA_nationalist_party
-		}
-		x = 40
-		y = 5
-		available = {
-			country_exists = ALB
-		}
-		will_lead_to_war_with = ALB
-		completion_reward = {
-			ALB = { country_event = { id = italy.3 } }
-		}
-	}
-	focus = {
 		id = ITA_ser_claims
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 10.00
@@ -1960,24 +1919,24 @@ focus_tree = {
 		bypass = { has_war_with = SER }
 		completion_reward = {
 			if = { 
-				limit = { CRO = { is_subject_of = SER } }
+				limit = {
+					country_exists = SER
+				}
 				create_wargoal = {
-				target = CRO
-				type = annex_everything
+					target = SER
+					type = annex_everything
 				}
 			}
 			if = { 
-				limit = { MNT = { is_subject_of = SER } }
+				limit = {
+					country_exists = CRO
+				}
 				create_wargoal = {
-				target = MNT
-				type = annex_everything
+					target = CRO
+					type = annex_everything
 				}
 			}
-			create_wargoal = {
-				target = SER
-				type = annex_everything
-				}
-			}
+		}
 	}
 	focus = {
 		id = ITA_roman_empire
@@ -2155,7 +2114,7 @@ focus_tree = {
 		icon = GFX_focus_attack_switzerland
 		cost = 10.00
 		prerequisite = {
-			focus = ITA_annex_ALB
+			focus = ITA_nationalist_party
 		}
 		x = 40
 		y = 6

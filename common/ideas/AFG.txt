@@ -1,21 +1,22 @@
 ideas = {
 
 	country = {
-	AFG_graveyard = {			
+	AFG_graveyardofempires = {			
 			allowed = {
 				original_tag = AFG
 			}
-			picture = BHU_mountain_nation
+			picture = GFX_idea_AFG_graveyardofempires
 			allowed_civil_war = {
 				always = yes
 			}
 			removal_cost = -1
 			modifier = {
-			surrender_limit	= 0.5
-			defensive_war_stability_factor	= 0.2
-			ai_focus_defense_factor = 0.20
-			army_core_defence_factor = 0.15
-			exiled_divisions_attack_factor = 0.1
+			surrender_limit	= 10
+			army_core_attack_factor = 0.15
+			ai_focus_defense_factor = 1.0
+			army_core_defence_factor = 0.25
+			supply_combat_penalties_on_core_factor = -0.3
+			acclimatization_hot_climate_gain_factor = 0.2
 			}
 		}
 }

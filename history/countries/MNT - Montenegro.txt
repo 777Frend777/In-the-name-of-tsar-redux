@@ -9,6 +9,12 @@ add_opinion_modifier = {
     modifier = INOT_imposed_sanctions
 }
 
+add_ideas = {
+	disarmed_nation
+	free_trade
+	MNT_buffer_state
+}
+
 set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
@@ -28,12 +34,12 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 18
+	democratic = 0
 	conservatives = 0
-	fascism = 20
-	communism = 9
-	socialist = 0
-	neutrality = 53
+	fascism = 24
+	communism = 0
+	socialist = 24
+	neutrality = 52
 }
 create_country_leader = {
 	name = "Sekula Drljević"

@@ -289,3 +289,7 @@ SLV_AUS = {
 	color = rgb { 237 234 250 }
 	color_ui = rgb { 237 234 244 }
 }
+SLV_AUSplus = {
+	color = rgb { 237 234 250 }
+	color_ui = rgb { 237 234 244 }
+}

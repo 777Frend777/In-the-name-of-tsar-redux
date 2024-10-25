@@ -776,6 +776,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_Portrait_romania_gheorghe_tatarescu"
+		texturefile = "gfx/leaders/ROM/Portrait_Romania_Gheorghe_Tatarescu.dds"
+	}
+
+	spriteType = {
 		name = "GFX_Portrait_romania_Carol_II_small"
 		texturefile = "gfx/interface/ideas/idea_europe_generic_4.dds"
 	}
@@ -8446,4 +8451,15 @@ spriteTypes = {
 		name = "GFX_Portrait_SLV_landtag"
 		texturefile = "gfx/leaders/SLV/SLV_landtag.png"
 	}
+	spriteType = {
+		name = "GFX_Portrait_RUS_alexander_kerensky"
+		texturefile = "gfx/leaders/RUS/alexander_kerensky.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_CRO_tito"
+		texturefile = "gfx/leaders/CRO/CRO_tito.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SER_alexander"
+		texturefile = "gfx/leaders/SER/Alexander.png"
 }

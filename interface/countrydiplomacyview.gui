@@ -734,6 +734,7 @@ guiTypes = {
 				buttonText = "OPEN_COUNTRY_LIST"
 				clicksound = click_close
 			}
+
 			
 			buttonType = {
 				name = "logistics_button"
@@ -744,6 +745,8 @@ guiTypes = {
 				buttonText = "OPEN_COUNTRY_LOGISTICS"
 				clicksound = click_close
 			}
+
+
 		}
 
 		iconType ={

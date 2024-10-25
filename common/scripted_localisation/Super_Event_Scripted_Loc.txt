@@ -116,6 +116,12 @@ defined_text = {
         }
         localization_key = "sp_event_The_Coup_of_Budyonny_on_the_Don"
     }
+    text = {
+        trigger = {
+            has_global_flag = turkestan_unification.super
+        }
+        localization_key = "sp_event_turkestan_unification"
+    }
 } 
 #Remarks
 defined_text = {
@@ -235,6 +241,12 @@ defined_text = {
         }
         localization_key = "sp_event_The_Coup_of_Budyonny_on_the_Don_REMARK"
     }
+    text = {
+        trigger = {
+            has_global_flag = turkestan_unification.super
+        }
+        localization_key = "sp_event_turkestan_unification_REMARK"
+    }
 }
 #Quotes
 defined_text = {
@@ -353,5 +365,11 @@ defined_text = {
             has_global_flag = The_Coup_of_Budyonny_on_the_Don.super
         }
         localization_key = "sp_event_The_Coup_of_Budyonny_on_the_Don_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = turkestan_unification.super
+        }
+        localization_key = "sp_event_turkestan_unification_QUOTE"
     }
 }

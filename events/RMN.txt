@@ -1,0 +1,222 @@
+add_namespace = RMN
+
+# situation in the country zheltorossiya
+country_event = {
+	id = RMN.1
+	title = RMN.1.t
+	desc = RMN.1.d
+	picture = GFX_report_event_generic_north_east_map
+
+	is_triggered_only = yes
+
+	option = {
+		name = RMN.1.a
+		add_stability = -0.1
+		add_war_support = -0.2
+}
+}
+# Calm people down 
+country_event = {
+	id = RMN.2
+	title = RMN.2.t
+	desc = RMN.2.d
+	picture = GFX_report_event_BEL_Protest
+
+	is_triggered_only = yes
+	#Calm people down with military
+	option = {
+		hidden_effect = {
+			complete_national_focus = RMN_is_diterhis_alive
+		}
+		name = RMN.2.a
+		add_stability = -0.2
+		add_war_support = -0.05
+			add_ideas = {
+			DON_martial_law
+			}
+			complete_national_focus = RMN_voennoe_polozenie
+}
+# try to calm people peaceful
+option = {
+name = RMN.2.b
+RMN = { country_event = RMN.3 }
+}
+}
+# diterikhs got killed
+country_event = {
+	id = RMN.3
+	title = RMN.3.t
+	desc = RMN.3.d
+	picture = GFX_report_event_AST_protest1
+
+	is_triggered_only = yes
+
+	option = {
+		name = RMN.3.a
+		unlock_national_focus = RMN_voennoe_polozenie
+		RMN = {
+		kill_country_leader = yes
+		}
+		complete_national_focus = RMN_diterhis_got_killed
+	}
+}
+# what next? focus
+country_event = {
+	id = RMN.4
+	title = RMN.4.t
+	desc = RMN.4.d
+	picture = GFX_report_event_RUS_intro
+
+	is_triggered_only = yes
+
+	option = {
+		name = RMN.4.a
+		add_stability = 0.2
+		add_war_support = 0.1
+	}
+}
+# civil war start
+country_event = {
+	id = RMN.5
+	title = RMN.5.t
+	desc = RMN.5.d
+	picture = GFX_report_event_generic_riot2
+
+	is_triggered_only = yes
+
+	option = {
+		name = RMN.5.a
+		custom_effect_tooltip = RMN_civil_war_start_tt
+		hidden_effect = {
+			RUS = {
+			remove_from_faction = RMN
+			}
+			RUS = {
+				set_autonomy = {
+					target = RMN
+					autonomous_state = autonomy_free
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+			MAN = {	
+declare_war_on = {
+    target = RMN
+    type = annex_everything
+}
+declare_war_on = {
+    target = GMC
+    type = annex_everything
+}
+				transfer_state = 716
+				transfer_state = 328
+				transfer_state = 717
+				add_state_core = 716
+				add_state_core = 328
+				add_state_core = 717
+			}
+			GMC = {
+			transfer_state = 610
+			transfer_state = 715
+			add_state_core = 610
+			add_state_core = 715
+			declare_war_on = {
+				target = RMN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = MAN
+				type = annex_everything
+			}
+			}
+			RMN = {
+				add_core_of = MAN
+				}
+			GMC = {
+				add_core_of = MAN
+				}
+		GMC = {
+			add_core_of = RMN
+			}
+			GMC = {
+				load_oob = "GMC_1936"
+				}
+				MAN = {
+				load_oob = "MAN_1936"
+				}
+				RMN = {
+					declare_war_on = {
+						target = MAN
+						type = annex_everything
+					}
+				}
+				GMC = {
+				add_ideas = {
+					SPA_death_before_surrender_capitulation
+				}
+			}
+			MAN = {
+				add_ideas = {
+					SPA_death_before_surrender_capitulation
+				}
+			}
+			RMN = {
+				add_ideas = {
+					SPA_death_before_surrender_capitulation
+				}
+			}
+		complete_national_focus = RMN_save_zheltorossiya
+	}
+}
+	option = {
+		name = RMN.5.b
+		custom_effect_tooltip = RMN_civil_war_start_tt
+		custom_effect_tooltip = everyone_its_end_for_u_tt
+		hidden_effect = {
+			MAN = {	
+				declare_war_on = {
+					target = GMC
+					type = annex_everything
+				}
+								transfer_state = 716
+								transfer_state = 328
+								transfer_state = 717
+								add_state_core = 716
+								add_state_core = 328
+								add_state_core = 717
+							}
+			GMC = {
+			load_oob = "GMC_1936"
+			}
+			MAN = {
+			load_oob = "MAN_1936"
+			}
+			RMN = {
+				add_core_of = MAN
+				}
+			GMC = {
+				add_core_of = MAN
+				}
+		GMC = {
+			add_core_of = RMN
+			}
+		GMC = {
+		annex_country = {
+			target = RMN
+			transfer_troops = no
+		}
+	}
+	GMC = {
+		add_ideas = {
+			SPA_death_before_surrender_capitulation
+		}
+	}
+	MAN = {
+		add_ideas = {
+			SPA_death_before_surrender_capitulation
+		}
+	}
+		complete_national_focus = RMN_surrender
+	}
+}
+}

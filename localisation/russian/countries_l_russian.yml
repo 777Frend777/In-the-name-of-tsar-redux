@@ -3076,6 +3076,9 @@
  RMN_socialist: "Желтороссия" #NT!
  RMN_socialist_DEF: "Желтороссия" #NT!
  RMN_socialist_ADJ: "Желторусский" #NT!
+ RMN_communism: "Желтороссия" #NT!
+ RMN_communism_DEF: "Желтороссия" #NT!
+ RMN_communism_ADJ: "Желторусский" #NT!
  RMN_fascism: "Желтороссия" #NT!
  RMN_fascism_DEF: "Желтороссия" #NT!
  RMN_fascism_ADJ: "Желторусский" #NT!
@@ -3272,20 +3275,20 @@
  DON_socialist: "Донская Республика" #NT!
  DON_socialist_DEF: "Донская Республика" #NT!
  DON_socialist_ADJ: "Донск." #NT!
- KUB_neutrality: "Кубанская Народная Республикай" #NT!
- KUB_neutrality_DEF: "Кубанская Народная Республикай" #NT!
+ KUB_neutrality: "Кубанская Народная Республика" #NT!
+ KUB_neutrality_DEF: "Кубанская Народная Республика" #NT!
  KUB_neutrality_ADJ: "КНР." #NT!
- KUB_democratic: "Кубанская Народная Республикай" #NT!
- KUB_democratic_DEF: "Кубанская Народная Республикай" #NT!
+ KUB_democratic: "Кубанская Народная Республика" #NT!
+ KUB_democratic_DEF: "Кубанская Народная Республика" #NT!
  KUB_democratic_ADJ: "КНР" #NT!
- KUB_conservatives: "Кубанская Народная Республикай" #NT!
- KUB_conservatives_DEF: "Кубанская Народная Республикай" #NT!
+ KUB_conservatives: "Кубанская Народная Республика" #NT!
+ KUB_conservatives_DEF: "Кубанская Народная Республика" #NT!
  KUB_conservatives_ADJ: "КНР" #NT!
  KUB_communism: "Кубанская советская республика" #NT!
  KUB_communism_DEF: "Кубанская советская республика" #NT!
  KUB_communism_ADJ: "КСР" #NT!
- KUB_socialist: "Кубанская Народная Республикай" #NT!
- KUB_socialist_DEF: "Кубанская Народная Республикай" #NT!
+ KUB_socialist: "Кубанская Народная Республика" #NT!
+ KUB_socialist_DEF: "Кубанская Народная Республика" #NT!
  KUB_socialist_ADJ: "КНР" #NT!
  KUB_fascism: "Русская Освободительная Армия" #NT!
  KUB_fascism_DEF: "Русская Освободительная Армия" #NT!
@@ -3330,3 +3333,7 @@
  DOV: "Дроздовский полк"
  DOV_DEF: "Дроздовский полк"
  DOV_ADJ: "Дроздовский полк"
+
+ GMC: "Маньчжурское восстание"
+ GMC_DEF: "Маньчжурское восстание"
+ GMC_ADJ: "Маньчжурское восстание"

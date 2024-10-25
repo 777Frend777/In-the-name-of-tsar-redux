@@ -320,4 +320,46 @@ ideologies = {
 	}
 	
 	
+	Annihilationism = { #taboritsky reference
+	
+	types = {
+	
+		Annihilationism_ideology = {
+		}
+	}
+	
+	dynamic_faction_names = {
+		"FACTION_NAME_FASCIST_1"
+		"FACTION_NAME_FASCIST_2"
+		"FACTION_NAME_FASCIST_3"
+		"FACTION_NAME_FASCIST_4"
+		"FACTION_NAME_FASCIST_5"
+	}
+	
+	color = { 30 30 30 }
+	
+	war_impact_on_world_tension = 1.00			#evil!
+	faction_impact_on_world_tension = 1.0
+	
+	rules = {
+		can_force_government = no
+		can_send_volunteers = yes
+		can_puppet = no
+	}
+	
+	modifiers = {
+		generate_wargoal_tension = 0.25
+		justify_war_goal_when_in_major_war_time = -0.80
+		join_faction_tension = 0.1
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 10.0
+		navy_intel_to_others = 10.0
+		airforce_intel_to_others = 10.0
+	}
+
+	ai_neutral = yes 
+}
+
+
+
 }

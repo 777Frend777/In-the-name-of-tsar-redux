@@ -467,6 +467,7 @@ icon = GFX_decision_gre_faction_management
 
         complete_effect = {
             country_event = russia.131
+	    white_peace = ENG
             white_peace = TUR
             RUS = { 
                 RUS = {
@@ -477,8 +478,12 @@ icon = GFX_decision_gre_faction_management
         }
         
         timeout_effect = {
+	    white_peace = ENG
             white_peace = TUR
-			add_timed_idea = { idea = RUS_debtforallies_idea days = 365 }
+	    TUR = {
+	    add_timed_idea = { idea = TUR_debtforallies_idea days = 365 }
+ }
+	    add_timed_idea = { idea = RUS_debtforallies_idea days = 365 }
             country_event = russia.130
         }
     }

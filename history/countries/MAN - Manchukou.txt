@@ -27,6 +27,10 @@ recruit_character = MAN_guan_xingde
 
 set_convoys = 5
 
+add_ideas = {
+	RMN_japanese_up
+}
+
 set_politics = {
 	ruling_party = fascism
 	last_election = "1936.1.1"

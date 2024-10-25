@@ -1,0 +1,172 @@
+ideas = {
+	country = {
+		TUK_disorganized_army = {
+			picture = SIA_military_expenditure_cut
+            modifier = {
+				army_speed_factor = -0.10
+				army_defence_factor = -0.10
+				army_attack_factor = -0.10
+				army_org_regain = -0.10
+			}
+		}
+}
+country = {
+	TUK_disorganized_army2 = {
+		picture = SIA_military_expenditure_cut
+		modifier = {
+			army_speed_factor = -0.08
+			army_defence_factor = -0.08
+			army_attack_factor = -0.08
+			army_org_regain = -0.08
+		}
+	}
+}
+country = {
+	TUK_disorganized_army3 = {
+		picture = SIA_military_expenditure_cut
+		modifier = {
+			army_speed_factor = -0.08
+			army_defence_factor = -0.08
+			army_attack_factor = -0.08
+			army_org_regain = -0.08
+		}
+	}
+}
+country = {
+	TUK_disorganized_army4 = {
+		picture = SIA_military_expenditure_cut
+		modifier = {
+			army_speed_factor = -0.07
+			army_defence_factor = -0.07
+			army_attack_factor = -0.07
+			army_org_regain = -0.07
+		}
+	}
+}
+country = {
+	TUK_disorganized_airplanes = {
+		picture = PER_untrained_officer
+		modifier = {
+			air_accidents_factor = 0.2
+			air_ace_generation_chance_factor = -0.5
+			air_attack_factor = -0.15
+			air_defence_factor = -0.15
+			industry_air_damage_factor = 0.3
+		}
+	}
+}
+country = {
+TUK_good_airplanes = {
+	picture = generic_airforce
+	modifier = {
+		air_accidents_factor = -0.1
+		air_ace_generation_chance_factor = 0.4
+		air_attack_factor = 0.12
+		air_defence_factor = 0.12
+		industry_air_damage_factor = -0.1
+	}
+}
+}
+country = {
+	TUK_good_army = {
+		picture = big_entente_idea	
+		modifier = {
+			army_speed_factor = 0.1
+			army_defence_factor = 0.12
+			army_attack_factor = 0.12
+			army_org_regain = 0.05
+		}
+	}
+}
+country = {
+TUK_idea_accept_enverism = { 
+
+	allowed = {
+		original_tag = TUK
+	}
+
+	picture = CAN_darkest_hour
+		
+	removal_cost = -1
+		
+	modifier = {
+		stability_factor = 0.15
+		war_support_factor = 0.35
+		offence = 0.05
+		defence = 0.05
+		monthly_population = 0.02
+		justify_war_goal_time = -0.05
+		command_power_gain = 0.1
+		research_speed_factor = 0.05
+		political_power_gain = 0.05
+	}
+}
+}
+country = {
+	TUK_idea_taxes = { 
+	
+		allowed = {
+			original_tag = TUK
+		}
+	
+		picture = capital_outflow
+			
+		removal_cost = -1
+			
+		modifier = {
+			consumer_goods_factor = -0.15
+		}
+	}
+	}
+	country = {
+		TUK_idea_money_for_graveyard = { 
+		
+			allowed = {
+				original_tag = TUK
+			}
+		
+			picture = generic_loans
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.15
+			}
+		}
+		}
+		country = {
+			TUK_idea_debts_from_turkiye = { 
+			
+				allowed = {
+					original_tag = TUK
+				}
+			
+				picture = generic_coins
+					
+				removal_cost = -1
+					
+				modifier = {
+					consumer_goods_factor = -0.15
+					industrial_capacity_factory = 0.15
+				}
+			}
+			}
+			country = {
+				TUK_high_turkish_influence = {
+					picture = advisors_ottoman
+					allowed = { original_tag = TUK }
+					modifier = {
+						legitimacy_daily = -1
+					}
+					targeted_modifier = {
+						tag = TUR
+						extra_trade_to_target_factor = 0.1
+						cic_to_target_factor = 0.1
+						mic_to_target_factor = 0.1
+						targeted_legitimacy_daily = 0.1
+						attack_bonus_against = 0.1
+					}
+				}
+			}
+}

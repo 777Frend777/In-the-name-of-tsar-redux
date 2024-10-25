@@ -103,6 +103,11 @@ scripted_gui = {
 				has_global_flag = The_Coup_of_Budyonny_on_the_Don.super
 			}
 		}
+		triggers = {
+			Super_Event_turkestan_unification_visible = {
+				has_global_flag = turkestan_unification.super
+			}
+		}
 		############
 		###BUTTON###
 		############
@@ -224,6 +229,12 @@ scripted_gui = {
 						has_global_flag = The_Coup_of_Budyonny_on_the_Don.super
 					}
 					clr_global_flag = The_Coup_of_Budyonny_on_the_Don.super
+				}
+				if = {
+					limit = {
+						has_global_flag = turkestan_unification.super
+					}
+					clr_global_flag = turkestan_unification.super
 				}
 			}
 		}

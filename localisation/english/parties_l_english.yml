@@ -411,19 +411,16 @@ l_english:
  YUG_fascism_party:0 "JRZ"
  YUG_fascism_party_long:0 "Jugoslovanska radikalna skupnost"
  
- SER_communism_party:0 "League of Communists"
- SER_communism_party_long:0 "League of Communists"
- SER_socialist_party:0 "Srpski Socijalisti"
- SER_democratic_party:0 "DS"
- SER_democratic_party_long:0 "Demokratska Stranka"
- SER_democratic_party:0 "NRS"
- SER_conservatives_party_long:0 "Narodna Radikalna Stranka"
- SER_fascism_party:1 "SRS"
- SER_fascism_party_long:1 "Srpska Radikalna Zajednica"
- SER_conservatives_party:0 "SNS"
- SER_conservatives_party_long:0 "Srpska Nacionalna Stranka"
- SER_neutrality_party:0 "Regency Council"
- SER_neutrality_party_long:0 "Regency Council"
+ SER_communism_party:0 "SSJ"
+ SER_communism_party_long:0 "Savez Socijalista Jugoslavije - Srbija"
+ SER_socialist_party:0 "SSJ"
+ SER_socialist_party_long:0 "Savez Socijalista Jugoslavije - Srbija"
+ SER_democratic_party:0 "Anti-monarchist Opposition"
+ SER_democratic_party_long:0 "Antimonarhističko Protivljenje"
+ SER_conservatives_party:0 "Conservative Opposition"
+ SER_conservatives_party_long:0 "Konzervativna Opozicija"
+ SER_fascism_party:0 "SNS"
+ SER_fascism_party_long:0 "Srpska Narodna Stranka"
  
  BUL_neutrality_party:0 "Tsar Boris loyalists"
  BUL_communism_party:0 "BCP"
@@ -536,6 +533,8 @@ l_english:
  CHL_communism_party_long:0 "Partido Comunista de Chile"
  ETH_neutrality_party:0 "Solomonic Dynasty"
  ETH_democratic_party:0 "Woyane rebellion"
+ ALB_neutrality_party:0 "House of Zogu"
+ ALB_neutrality_party_long:0 "House of Zogu"
  BOL_democratic_party:0 "PL"
  BOL_democratic_party_long:0 "Partido Liberal"
  BOL_fascism_party:0 "FSB"
@@ -1065,7 +1064,7 @@ l_english:
 
  # Galicia
  KRW_conservatives_party:0 "SPN"
- KRW_conservatives_party_long:0 "Stronnictwo Prawicy Narodowej" #Hieronim Tarnowski
+ KRW_conservatives_party_long:0 "Stronnictwo Prawicy Narodowej" #Hieronim Tarnowski"
  KRW_neutrality_party:0 "Ducal Diet"
  KRW_democratic_party:0 "SLD" #Andriy_Melnyk
  KRW_democratic_party_long:0 "Stronnictwo Liberalno-Demokratyczne" #Adam Heydel
@@ -1089,6 +1088,39 @@ l_english:
 #Cyrenaica
  LBA_neutrality_party:0 "Senussi Order"
 
+#Brazil
+ BRA_fascism_party:0 "ANI"
+ BRA_fascism_party_long:0 "Ação Nacional Integralista."
+ BRA_conservatives_party:0 "PD"
+ BRA_conservatives_party_long:0 "Partido Democrático"
+ BRA_liberalism_party_long:0 "PRP"
+ BRA_liberalism_party_long:0 "Partido Republicano Paulista"
+ BRA_communism_party:0 "PCB"
+ BRA_communism_party_long:0 "Partido Comunista Brasileiro"
+ BRA_socialist_party:0 "PSB"
+ BRA_socialist_party_long:0 "Partido Socialista Brasileiro"
+
+  # Basmachi/TUK/Turkestan
+ TUK_democratic_party: "HİF" #NT!
+ TUK_democratic_party_long: "Hürriyet ve İtilaf Fırkası" #NT!
+ TUK_liberalism_party: "§RBanned!§!"
+ TUK_conservatives_party: "§RBanned!§!" #NT!
+ TUK_socialist_party: "§RBanned!§!" #NT!
+ TUK_communism_party_long: "Turkistan İşçi Partisi" #NT!
+ TUK_communism_party: "TİP" #NT!
+ TUK_fascism_party:0 "Osmanlıcılar"
+ TUK_fascism_party_long:0 "Osmanlıcı Parti"
+ TUK_neutrality_party: "EP" #NT!
+ TUK_neutrality_party_long: "Enverist Partisi" #NT!
+
+ CRO_fascism_party:0 "SPSZ"
+ CRO_fascism_party_long:0 "Stranka za Povrat Severozapadnih Zemalja"
+ CRO_communism_party:0 "SSJ"
+ CRO_communism_party_long:0 "Savez Socijalista Jugoslavije"
+ CRO_socialist_party:0 "SSJ"
+ CRO_socialist_party_long:0 "Savez Socijalista Jugoslavije"
+ CRO_democratic_party:0 "LSJ"
+ CRO_democratic_party_long:0 "Liberalna Stranka Jugoslavije"
 #Albania
  ALB_neutrality_party:0 "Monarchist Movement"
  ALB_neutrality_party_long:0 "Lëvizja Monarkiste"
@@ -1103,6 +1135,13 @@ l_english:
  ALB_communism_party:0 "National Revolutionary Committee"
  ALB_communism_party_long:0 "Komiteti Kombëtar Revolucionar" 
 
+ MNT_fascism_party:0 "SNS"
+ MNT_fascism_party_long:0 "Srpska Narodna Stranka"
+ MNT_communism_party:0 "SSJ"
+ MNT_socialist_party:0 "SSJ"
+ MNT_communism_party_long:0 "Savez Socijalista Jugoslavije - Crna Gora" 
+ MNT_socialist_party_long:0 "Savez Socijalista Jugoslavije - Crna Gora"
+
 #Slovenia
  SLV_conservatives_party:0 "Landtag - Parlament"
  SLV_conservatives_party_long:0 "Landtag - Parlament" 
@@ -1114,4 +1153,3 @@ l_english:
  SLV_socialist_party_long:0 "Socialistična stranka Slovenije - Moderates" 
  SLV_communism_party:0 "SSS - R"
  SLV_communism_party_long:0 "Socialistična stranka Slovenije - Radicals" 
-

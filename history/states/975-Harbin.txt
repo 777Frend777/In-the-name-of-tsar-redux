@@ -1,0 +1,23 @@
+state={
+	id=975
+	name="STATE_975"
+	history={
+		owner = RMN
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 4
+		}
+		victory_points = {
+			10433 5
+		}
+	}
+	provinces={
+		10433 
+	}
+	manpower=199948
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=town
+}

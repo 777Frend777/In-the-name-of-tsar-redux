@@ -1,0 +1,21 @@
+state={
+	id=974
+	name="STATE_974"
+	history={
+		owner = RMN
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 4
+
+		}
+	}
+	provinces={
+		9782 3791
+	}
+	manpower=1919
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=rural
+}

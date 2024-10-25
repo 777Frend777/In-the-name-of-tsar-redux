@@ -113,3 +113,9 @@ song = "Cossack_1937"
       modifier = { factor = 1 }
     }	
 }
+music = {
+song = "parade_in_berlin"
+    chance = {
+      modifier = { factor = 1 }
+    }	
+}

@@ -11,6 +11,7 @@ set_convoys = 10
 
 add_ideas = {
 	RMN_japanese_down
+	RMN_chinese_down
 }
 set_politics = {
 	

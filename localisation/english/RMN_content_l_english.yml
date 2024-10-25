@@ -1,0 +1,48 @@
+﻿l_english:
+#focuses
+RMN_dela_gosva: "Country Affairs"
+RMN_dela_gosva_desc: "§RIt's all falling apart very quickly!§"
+RMN_diterhis_got_killed: "Diterikhs has been killed?"
+RMN_diterhis_got_killed_desc: "§ROur last days...§"
+RMN_is_diterhis_alive: "Diterikhs alive?"
+RMN_is_diterhis_alive_desc: "§GThe country will live?§"
+RMN_what_next: "What's next?"
+RMN_what_next_desc: "There's no telling what the future holds for us yet"
+RMN_uspokoit_naselenie: "Calm people down"
+RMN_uspokoit_naselenie_desc: "§RWe urgently need to calm people down in any way we can: even with weapons, or peacefully, but very urgently!§"
+RMN_voennoe_polozenie: "Declare martial law"
+RMN_voennoe_polozenie_desc: "§RThere's no choice anymore...§"
+RMN_end_Japan_influence: "Destroy the Japanese influence"
+RMN_end_Japan_influence_desc: "§RThe day has come!§"
+RMN_surrender: "Surrender"
+RMN_surrender_desc: "§REverything we did was useless!§"
+RMN_save_zheltorossiya: "Save Zheltorossiya"
+RMN_save_zheltorossiya_desc: "§GEverything we did was not in vain?§"
+
+#ideas
+RMN_chinese_down: "Weak Chinese influence"
+RMN_chinese_up: "Strong Chinese influence"
+DON_martial_law: "Martial law"
+
+#events
+RMN.1.t: "The affairs of our Country"
+RMN.1.d: "Although our state has appeared recently, after the end of the First World War, but the problems do not change. And lately the Japanese and Chinese populations have been very rebellious! Because the Russians are given more rights, but they have very few of them, besides the economy is in a terrible state, and the Japanese themselves are trying to influence our country. We have a lot of problems, but can we fix them? Or are we finished?"
+RMN.1.a: "We urgently need reforms!"
+RMN.2.t: "An attempt to calm people down"
+RMN.2.d: "Today was a normal day, as it always is. But it quickly changed when Chinese and Japanese people started making rallies all over the country. And they'd be in 1 squad, but they're all rioting in different parts of our country, and separately. Basically, it's obvious that the Japanese and Chinese don't get along, but can we survive it all?"
+RMN.2.a: "No choice! Martial law now!"
+RMN.2.b: "Try to negotiate peacefully"
+RMN.3.t: "An attempt to negotiate"
+RMN.3.d: "People didn't give us a chance, so we decided to try to act peacefully. At the beginning everything was fine, and we even thought that we could come to an agreement. But when the question of the rights of the Russians in our country came up, we could not reach an agreement, and shooting was heard, in the course of which all those who had been sent to negotiate were killed, and the Chinese population started storming our capital, and the Japanese started storming small towns, and Diterikhs was killed during the storming of Mukden, our capital. Looks like, §Rit's the end?§"
+RMN.3.a: "§RIt was a mistake!..§"
+RMN.4.t: "What's next?"
+RMN.4.d: "Lately, we've been coping with everything possible. We have regained full control of our country. All that remains is to deal with the Chinese and Japanese people, and after we will hold elections."
+RMN.4.a: "A time of stability?"
+RMN.5.t: "Japanese and Chinese rebellion!"
+RMN.5.d: "An era of stability? We thought so, but today something happened that we didn't expect, namely: the Japanese and Chinese rebelled at the same time! And now we have to do something and deal with them before they deal with us."
+RMN.5.a: "We will win! For Russia!"
+RMN.5.b: "Surrender"
+
+#tooltips
+RMN_civil_war_start_tt: "§RCivil war begins§ (can be a little laggy.)"
+everyone_its_end_for_u_tt: "§RThe game will be over for you!§"

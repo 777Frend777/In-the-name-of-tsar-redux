@@ -1,7 +1,7 @@
 spriteTypes = {
     spriteType = {
       name = "GFX_radio_station_cover_Superevents_MMCT"
-      textureFile = "gfx/radio_station_cover_Superevents_MMCT.png"
+      textureFile = "gfx/INOTR_superevent_image/INOTR_superevents.png"
       noOfFrames = 2
     }
 }

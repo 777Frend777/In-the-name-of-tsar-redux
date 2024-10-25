@@ -1,0 +1,27 @@
+
+SLV_decisions = {
+	SLV_form_illyria = {
+		icon = decision_category_generic_political_actions
+		cost = 0
+		fire_only_once = yes
+		visible = {
+			tag = SLV
+		}
+		available = {
+			SLV = {
+				controls_state = 109
+			}
+		}
+		ai_will_do = {
+			factor = 100000
+		}
+		remove_effect = {
+			SLV = {
+				set_capital = {state = 109}
+				set_cosmetic_tag = SLV_AUSplus
+				add_political_power = 100
+				add_Stability = 0.1
+			}
+		}
+	}
+}

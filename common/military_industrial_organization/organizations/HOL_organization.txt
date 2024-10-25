@@ -56,7 +56,7 @@ HOL_fokker_organization = {
 		tag = HOL
 	}
 	available = {
-		owner = { has_completed_focus = HOL_fokker }
+		
 	}
 }
 
@@ -87,7 +87,6 @@ HOL_daf_organization = {
 		tag = HOL
 	}
 	available = {
-		owner = { has_completed_focus = HOL_daf }
 	}
 }
 

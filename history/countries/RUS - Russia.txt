@@ -47,17 +47,7 @@ set_technology = {
 	synth_oil_experiments = 1
 }
 
-diplomatic_relation = {
-    country = ETH
-    relation = non_aggression_pact
-    active = yes
-}
-diplomatic_relation = {
-    country = ETH
-    relation = docking_rights
-    active = yes
-}
-
+give_docking_rights = ETH
 add_opinion_modifier = {
     target = ETH
     modifier = INOT_friendly_regime
