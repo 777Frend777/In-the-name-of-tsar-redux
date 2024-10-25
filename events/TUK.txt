@@ -15,6 +15,7 @@ country_event = {
 
 	option = {
 		name = tuk.1.a
+		news_event = news.339
 		hidden_effect = {
 		AZR = {
 			transfer_state = 957
@@ -25,9 +26,12 @@ country_event = {
 		TUK = {
 			puppet = AZR
 		}
+		AZR = {
+			load_oob = "AZR_1936"
+		}
 	}
- }
 }
+ }
 #Azers uprising lost
 country_event = {
 	id = tuk.2
@@ -39,10 +43,339 @@ country_event = {
 
 	option = {
 		name = tuk.2.a
+		complete_national_focus = TUK_betray_azers
 		TUK = {
 		add_stability = -0.1
 		add_war_support = -0.1
 		add_manpower = -1000
 		}
  }
+}
+#demand afghanistan
+country_event = {
+	id = tuk.3
+	title = tuk.3.t
+	desc = tuk.3.d
+	picture = GFX_report_event_generic_diplomacy4
+
+	is_triggered_only = yes
+
+	option = {
+		name = tuk.3.a
+		TUK = {
+			annex_country = {
+				target = AFG
+				transfer_troops = yes
+			}
+			add_state_core = 267
+			add_state_core = 415
+			add_state_core = 445
+			add_state_core = 442
+		}
+ }
+ option = {
+	name = tuk.3.b
+	TUK = {
+	country_event = tuk.4
+	}
+ }
+}
+#Afghanistan declined
+country_event = {
+	id = tuk.4
+	title = tuk.4.t
+	desc = tuk.4.d
+	picture = GFX_report_event_SPA_civwar3
+
+	is_triggered_only = yes
+
+	option = {
+		name = tuk.4.a
+		hidden_effect = {
+		TUK = {
+			set_rule = {
+				desc = TUK_no_factions_in_war
+				can_join_factions = no
+			}
+			declare_war_on = {
+				target = AFG
+				type = annex_everything
+			}
+			add_state_core = 267
+			add_state_core = 415
+			add_state_core = 445
+			add_state_core = 442
+		}
+			RAJ = {
+				declare_war_on = {
+					target = AFG
+					type = take_state_focus
+					generator = { 445 442 }
+				}
+				add_state_core = 445
+				add_state_core = 442
+			}
+		}
+	}
+	option = {
+		name = tuk.4.b
+		add_stability = -0.05
+		add_war_support = -0.1
+		}
+	}
+#demand Iran
+country_event = {
+	id = tuk.5
+	title = tuk.5.t
+	desc = tuk.5.d
+	picture = GFX_report_event_generic_diplomacy2
+
+	is_triggered_only = yes
+
+	option = {
+		name = tuk.5.a
+		TUK = {
+			annex_country = {
+				target = PER
+				transfer_troops = yes
+			}
+			add_state_core = 266
+			add_state_core = 416
+			add_state_core = 418
+			add_state_core = 414
+			add_state_core = 412
+			add_state_core = 411
+			add_state_core = 942
+			add_state_core = 417
+			add_state_core = 419
+			add_state_core = 421
+		}
+ }
+ option = {
+	name = tuk.5.b
+	TUK = {
+	country_event = tuk.6
+	}
+ }
+}
+#Iran declined
+country_event = {
+	id = tuk.6
+	title = tuk.6.t
+	desc = tuk.6.d
+	picture = GFX_report_event_CHI_warlord_battle
+
+	is_triggered_only = yes
+
+	option = {
+		name = tuk.6.a
+		TUK = {
+			declare_war_on = {
+				target = PER
+				type = annex_everything
+			}
+			add_state_core = 266
+			add_state_core = 416
+			add_state_core = 418
+			add_state_core = 414
+			add_state_core = 412
+			add_state_core = 411
+			add_state_core = 942
+			add_state_core = 417
+			add_state_core = 419
+			add_state_core = 421
+		}
+	}
+	option = {
+		name = tuk.6.b
+		add_stability = -0.05
+		add_war_support = -0.1
+		}
+	}
+#elections
+country_event = {
+	id = tuk.7
+	title = tuk.7.t
+	desc = tuk.7.d
+	picture = GFX_report_event_AST_election
+
+	is_triggered_only = yes
+
+	option = {
+		name = tuk.7.a
+		add_stability = 0.1
+		complete_national_focus = TUK_pasha_saved
+	}
+	option = {
+		ai_will_do = {
+			factor = 60
+		}
+		name = tuk.7.b
+		country_event = tuk.8
+		}
+	}
+#military junta in elections
+country_event = {
+	id = tuk.8
+	title = tuk.8.t
+	desc = tuk.8.d
+	picture = GFX_report_event_HOL_groningen_mutiny
+
+	is_triggered_only = yes
+
+	option = {
+		name = tuk.8.a
+		kill_country_leader = yes
+		complete_national_focus = TUK_military_junta
+		complete_national_focus = TUK_what_do_to_pasha
+		add_stability = -0.05
+		add_war_support = -0.1
+	}
+}
+# demand central asia from Russia
+country_event = {
+	id = tuk.9
+	title = tuk.9.t
+	desc = tuk.9.d
+	picture = GFX_report_event_ARG_car9
+
+	is_triggered_only = yes
+
+	option = {
+		name = tuk.9.a #sure why not
+		hidden_effect = {
+TUK = {
+	add_state_core = 823
+	add_state_core = 585
+	add_state_core = 406
+	add_state_core = 407
+	add_state_core = 402
+	add_state_core = 583
+	add_state_core = 881
+	add_state_core = 589
+	add_state_core = 590
+	add_state_core = 588
+	add_state_core = 882
+	add_state_core = 587
+	add_state_core = 404
+	add_state_core = 586
+	add_state_core = 732
+	transfer_state = 406
+	transfer_state = 407
+	transfer_state = 402
+	transfer_state = 583
+	transfer_state = 881
+	transfer_state = 589
+	transfer_state = 590
+	transfer_state = 588
+	transfer_state = 882
+	transfer_state = 587
+	transfer_state = 404
+	transfer_state = 586
+	transfer_state = 732
+	transfer_state = 823
+	transfer_state = 585
+}
+	}
+}
+option = { #hell no
+	name = tuk.9.b
+	hidden_effect = {
+		TUK = {
+			country_event = tuk.10
+		}
+	}
+ }
+}
+#russia decline give turkestan
+country_event = {
+	id = tuk.10
+	title = tuk.10.t
+	desc = tuk.10.d
+	picture = GFX_report_event_LIT_germans_disarmed
+
+	is_triggered_only = yes
+
+	option = {
+		name = tuk.10.a # war!
+		custom_effect_tooltip = TUK_there_scripted_war
+		TUK = {
+			add_war_support = 0.1
+			declare_war_on = {
+				target = RUS
+				type = annex_everything
+			}
+		}
+	}
+	option = {
+		name = tuk.10.b # we not ready
+		TUK = {
+			add_war_support = -0.05
+		}
+}
+}
+# Turkestan won russia
+country_event = {
+	id = tuk.11
+	title = tuk.11.t
+	desc = tuk.11.d
+	picture = GFX_report_event_OTT_intro01
+
+	is_triggered_only = yes
+
+	option = {
+		name = tuk.11.a #ez
+		hidden_effect = {
+			white_peace = RUS
+TUK = {
+	add_state_core = 823
+	add_state_core = 585
+	add_state_core = 406
+	add_state_core = 407
+	add_state_core = 402
+	add_state_core = 583
+	add_state_core = 881
+	add_state_core = 589
+	add_state_core = 590
+	add_state_core = 588
+	add_state_core = 882
+	add_state_core = 587
+	add_state_core = 404
+	add_state_core = 586
+	add_state_core = 732
+	transfer_state = 406
+	transfer_state = 407
+	transfer_state = 402
+	transfer_state = 583
+	transfer_state = 881
+	transfer_state = 589
+	transfer_state = 590
+	transfer_state = 588
+	transfer_state = 882
+	transfer_state = 587
+	transfer_state = 404
+	transfer_state = 586
+	transfer_state = 732
+	transfer_state = 823
+	transfer_state = 585
+}
+	}
+}
+}
+# Russia won turkestan 
+country_event = {
+	id = tuk.12
+	title = tuk.12.t
+	desc = tuk.12.d
+	picture = GFX_report_event_RUS_intro
+
+	is_triggered_only = yes
+
+	option = {
+		name = tuk.12.a #nice try turkestan
+		RUS = {
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
 }

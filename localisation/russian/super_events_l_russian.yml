@@ -20,6 +20,8 @@
  redrussiawonwhite: "Красная армия победила белую армию"
  franceagainstgermany: "Франко-Прусская война"
  parade_in_berlin: "Парад в Берлине"
+ turkestan_unification_music: "Обьединение Туркестана"
+ Cossack_1937: "Коммунисты на Дону"
  ###
  #СУПЕРИВЕНТЫ
   sp_event_bruderkrieg:0 "Второй Bruderkrieg"
@@ -80,3 +82,6 @@
   sp_event_The_Coup_of_Budyonny_on_the_Don:0 "Переворот Будённого на Дону"
   sp_event_The_Coup_of_Budyonny_on_the_Don_QUOTE:0 "Если бы у меня были казаки — я завоевал бы весь мир. \n- §yНаполеон I Бонапарт§y"
   sp_event_The_Coup_of_Budyonny_on_the_Don_REMARK:0 "Пора надевать будёновки - теперь это модно!"
+  sp_event_turkestan_unification:0 "Воссоединение Туркестана"
+  sp_event_turkestan_unification_QUOTE:0 "Если русские отступят, им конец. \n- §yЭнвер-паша§y"
+  sp_event_turkestan_unification_REMARK:0 "Никто не верил, но это произошло!"

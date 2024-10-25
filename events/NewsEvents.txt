@@ -13144,3 +13144,57 @@ news_event = {
 		}
 	}
 }
+#Azerbaijan independence
+news_event = {
+	id = news.339
+	title = news.339.t
+	desc = news.339.d
+	picture = GFX_news_event_BRA_syndicalist_failure
+	
+	major = yes
+
+	fire_only_once = yes
+	
+		trigger = {
+
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+
+	}
+	option = {
+		name = news.339.a
+		
+	}
+}
+#pasha assasination
+news_event = {
+	id = news.340
+	title = news.340.t
+	desc = news.340.d
+	picture = GFX_news_event_LEC_war_shanghai
+	
+	major = yes
+
+	fire_only_once = yes
+	
+		trigger = {
+
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+
+	}
+	option = {
+		name = news.340.a
+		
+	}
+}

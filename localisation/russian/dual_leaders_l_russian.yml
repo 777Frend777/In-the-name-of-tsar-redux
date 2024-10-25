@@ -1,0 +1,23 @@
+﻿l_russian:
+    # GUI Localisation, do not edit!
+ first_leader_title:0 "[ROOT.GetFirstTitle]"
+ second_leader_title:0 "[ROOT.GetSecondTitle]"
+ dual_leader_name:0 "[ROOT.GetDualLeaderName]"
+ DEFAULT_TITLE:0 "Вакантно"
+ DEFAULT_FIRST_TITLE:0 "Лидер"
+ DESCRIPTION_TEST:0 "Его Величество"
+ second_leader_tt:0 "§Y[ROOT.GetDualLeaderName]§!"
+ first_leader_diplo_tt:0 "§Y[From.GetLeader]§!\n[From.GetFirstTitle] [From.GetNameDef]"
+ second_leader_diplo_tt:0 "§Y[From.GetDualLeaderName]§!\n[From.GetSecondTitle] [From.GetNameDef]"
+ dual_leader_desc_tt:0 "§g[From.GetDualLeaderDesc]§!"
+ first_leader_desc_tt:0 "§g[From.GetFirstLeaderDesc]§!"
+    # Nation Specific Localisation
+ ENG_PRIME_MINISTER_TITLE:0 "Премьер министр"
+ ENG_KING_TITLE:0 "Монарх"
+ ENG_GEORGE_V:0 "Георг V"
+ ROM_PRIME_MINISTER_TITLE:0 "Премьер министр"
+ ROM_MONARCH_TITLE:0 "Монарх"
+ ROM_CAROL_II:0 "Карол II"
+ RUS_PRIME_MINISTER_TITLE:0 "Император"
+ RUS_MONARCH_TITLE:0 "Императрица"
+ RUS_ALEXANDRA_FEDOROVNA: "Александра Фёдоровна"

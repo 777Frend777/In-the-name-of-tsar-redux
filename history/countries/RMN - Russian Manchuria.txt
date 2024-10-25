@@ -1,4 +1,4 @@
-﻿capital = 975
+﻿capital = 761
 
 oob = "RMN_1936"
 
