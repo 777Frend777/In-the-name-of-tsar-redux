@@ -8205,51 +8205,15 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_hol_hih_siderius.dds"
 	}
 	spriteType = {
-		name = "GFX_epidemic"
+		name = "GFX_idea_epidemic"
 		texturefile = "gfx/interface/ideas/GFX_epidemic.dds"
 	}
-	spriteType = {
-		name = "GFX_idea_clock_is_ticking"
-		texturefile = "gfx/interface/ideas/POL_clock_is_ticking.png"
-	}
-	spriteType = {
-		name = "GFX_idea_ALB_irredentism"
-		texturefile = "gfx/interface/ideas/ALB/ALB_irredentism.png"
-	}
-	spriteType = {
-		name = "GFX_idea_SLV_enemies"
-		texturefile = "gfx/interface/ideas/SLV/SLV_enemies.png"
-	}
-	spriteType = {
-		name = "GFX_idea_SLV_grand_duchy"
-		texturefile = "gfx/interface/ideas/SLV/SLV_grand_duchy.png"
-	}
-	spriteType = {
-		name = "GFX_idea_MNT_buffer_state"
-		texturefile = "gfx/interface/ideas/MNT/MNT_buffer_state.png"
-	}
-	spriteType = {
-		name = "GFX_idea_CRO_frozen_war"
-		texturefile = "gfx/interface/ideas/CRO/CRO_frozen_war.png"
-	}
-	spriteType = {
-		name = "GFX_idea_SER_frozen_war"
-		texturefile = "gfx/interface/ideas/SER/SER_frozen_war.png"
-	}
-	spriteType = {
-		name = "GFX_idea_SER_royal_dictatorship"
-		texturefile = "gfx/interface/ideas/SER/SER_royal_dictatorship.png"
-	}
-	spriteType = {
-		name = "GFX_idea_SER_rebels"
-		texturefile = "gfx/interface/ideas/SER/SER_rebels.png"
-	}
-	spriteType = {
-		name = "GFX_idea_CRO_rump_state"
-		texturefile = "gfx/interface/ideas/CRO/CRO_rump_state.png"
-	}
-	spriteType = {
-		name = "GFX_idea_CRO_ethnic_clusterfuck"
-		texturefile = "gfx/interface/ideas/CRO/CRO_ethnic_clusterfuck.png"
-	}
+		spriteType = {
+			name = "GFX_idea_clock_is_ticking"
+			texturefile = "gfx/interface/ideas/POL_clock_is_ticking.png"
+		}
+		spriteType = {
+			name = "GFX_ideology_Annihilationism_group"
+			texturefile = "gfx/interface/ideologies/Annihilationism_group.dds"
+		}
 }

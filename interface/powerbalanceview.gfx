@@ -482,4 +482,4 @@ spriteTypes = {
 		name = "GFX_bop_FIN_prince_wolfgang_bad_improved_side"
 		texturefile = "gfx/interface/bop/bop_FIN_prince_wolfgang_bad_improved_side.dds"
 	}
-}
+

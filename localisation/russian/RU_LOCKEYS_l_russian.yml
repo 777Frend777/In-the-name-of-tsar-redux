@@ -1,0 +1,74 @@
+﻿l_russian:
+
+#####################################################
+#   Hearts of Iron IV RUSSIAN CUSTOM LOCALISATION   #
+#    By Loktionov Alexander	       					#
+#####################################################
+
+ ### Ideologies
+ #Adherents Nominativ: GetRulingIdeology_RU_lower_Adherent_Nom
+ RU_lower_Adherent_Nom_communism: "коммунист"
+ RU_lower_Adherent_Nom_democratic: "демократ"
+ RU_lower_Adherent_Nom_fascism: "фашист"
+ RU_lower_Adherent_Nom_neutrality: "нейтрал"
+ 
+ #GetRulingIdeology_RU_lower_ShortAdj
+ RU_lower_ShortAdj_communism: "коммунистическ"
+ RU_lower_ShortAdj_democratic: "демократическ"
+ RU_lower_ShortAdj_fascism: "фашистск"
+ RU_lower_ShortAdj_neutrality: "нейтральн"
+ 
+ #GetRulingIdeologyNoun_RU_lower_Nom
+ RU_lower_Nom_communism: "коммунизм"
+ RU_lower_Nom_democratic: "демократия"
+ RU_lower_Nom_fascism: "фашизм"
+ RU_lower_Nom_neutrality: "нейтралитет"
+ 
+ #GetRulingIdeologyNoun_RU_lower_Gen
+ RU_lower_Gen_communism: "коммунизма"
+ RU_lower_Gen_democratic: "демократии"
+ RU_lower_Gen_fascism: "фашизма"
+ RU_lower_Gen_neutrality: "нейтралитета"
+ 
+ #GetRulingIdeologyNoun_RU_lower_Acc
+ RU_lower_Acc_communism: "коммунизм"
+ RU_lower_Acc_democratic: "демократию"
+ RU_lower_Acc_fascism: "фашизм"
+ RU_lower_Acc_neutrality: "нейтралитет"
+ 
+ RU_Adj_Ending_Ie: "ие"
+ RU_Adj_Ending_Ye: "ые"
+ 
+ RU_Adj_Ending_Ih: "их"
+ RU_Adj_Ending_Yh: "ых"
+ 
+ RU_Adj_Ending_Aya: "ая"
+ RU_Adj_Ending_Yy: "ый"
+ RU_Adj_Ending_Iy: "ий"
+ 
+ RU_Adj_Ending_Oy: "ой"
+ RU_Adj_Ending_Ogo: "ого"
+ RU_Adj_Ending_Omu: "ому"
+ RU_Adj_Ending_Om: "ом"
+ RU_Adj_Ending_Ym: "ым"
+ 
+ ### Demonyms
+ # GetRussiansDemonym_RU_Gen
+ RU_Gen_SOV_RUSSIANS_DEMONYM_SOVIETS: "советов"
+ RU_Gen_SOV_RUSSIANS_DEMONYM_RUSSIANS: "русских"
+ 
+ #GetRussiansDemonym_RU_Dat
+ RU_Dat_SOV_RUSSIANS_DEMONYM_SOVIETS: "советам"
+ RU_Dat_SOV_RUSSIANS_DEMONYM_RUSSIANS: "русским"
+ 
+ #GetRussiansDemonym_RU_Acc
+ RU_Acc_SOV_RUSSIANS_DEMONYM_SOVIETS: "советы"
+ RU_Acc_SOV_RUSSIANS_DEMONYM_RUSSIANS: "русских"
+ 
+ #GetRussiansDemonym_RU_Inst
+ RU_Inst_SOV_RUSSIANS_DEMONYM_SOVIETS: "советами"
+ RU_Inst_SOV_RUSSIANS_DEMONYM_RUSSIANS: "русскими"
+ 
+ #GetRussiansDemonym_RU_Prep
+ RU_Prep_SOV_RUSSIANS_DEMONYM_SOVIETS: "советах"
+ RU_Prep_SOV_RUSSIANS_DEMONYM_RUSSIANS: "русских"

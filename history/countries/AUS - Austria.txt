@@ -20,24 +20,6 @@ set_technology = {
 	motorised_infantry = 1
 	early_bomber = 1
 }
-
-if = {
-	limit = {
-		OR={
-			has_dlc = "La Resistance"
-			has_dlc = "Together for Victory"
-		}
-		
-	 }
-	 set_autonomy = {
-		target = SLV
-		autonomous_state = autonomy_colony
-	}
-	else = {
-		puppet = SLV
-	}
-}
-
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {

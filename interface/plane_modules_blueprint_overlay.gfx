@@ -30,6 +30,12 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	spriteType = {
+		name = "GFX_TC_small_plane_airframe_5"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/generic_fighter_5.dds"
+		legacy_lazy_load = no
+	}
+
 	# generic small_plane_cas_airframe
 
 	spriteType = {
@@ -165,6 +171,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_TC_large_plane_airframe_4"
 		textureFile = "gfx/interface/equipmentdesigner/planes/generic/generic_strat_bomber_4.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TC_large_plane_airframe_5"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/generic_strat_bomber_5.dds"
 		legacy_lazy_load = no
 	}
 
@@ -366,6 +377,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_TC_large_plane_airframe_4_eng"
 		textureFile = "gfx/interface/equipmentdesigner/planes/eng/eng_strat_bomber_4.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TC_large_plane_airframe_5_eng"
+		textureFile = "gfx/interface/equipmentdesigner/planes/eng/eng_strat_bomber_5.dds"
 		legacy_lazy_load = no
 	}
 
@@ -574,6 +590,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/fra/fra_strat_bomber_4.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_TC_large_plane_airframe_5_fra"
+		textureFile = "gfx/interface/equipmentdesigner/planes/fra/fra_strat_bomber_5.dds"
+		legacy_lazy_load = no
+	}
 
 	# fra large_plane_maritime_patrol_plane_airframe
 
@@ -780,6 +801,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/ger/ger_strat_bomber_4.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_TC_large_plane_airframe_5_ger"
+		textureFile = "gfx/interface/equipmentdesigner/planes/ger/ger_strat_bomber_5.dds"
+		legacy_lazy_load = no
+	}
 
 	# ger large_plane_maritime_patrol_plane_airframe
 
@@ -979,6 +1005,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_TC_large_plane_airframe_2_ita"
 		textureFile = "gfx/interface/equipmentdesigner/planes/ita/ita_strat_bomber_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TC_large_plane_airframe_5_ita"
+		textureFile = "gfx/interface/equipmentdesigner/planes/ita/ita_strat_bomber_5.dds"
 		legacy_lazy_load = no
 	}
 
@@ -1182,6 +1213,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/jap/jap_strat_bomber_4.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_TC_large_plane_airframe_5_jap"
+		textureFile = "gfx/interface/equipmentdesigner/planes/jap/jap_strat_bomber_5.dds"
+		legacy_lazy_load = no
+	}
 
 	# jap large_plane_maritime_patrol_plane_airframe
 
@@ -1381,6 +1417,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_TC_large_plane_airframe_4_sov"
 		textureFile = "gfx/interface/equipmentdesigner/planes/sov/sov_strat_bomber_4.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TC_large_plane_airframe_5_sov"
+		textureFile = "gfx/interface/equipmentdesigner/planes/sov/sov_strat_bomber_5.dds"
 		legacy_lazy_load = no
 	}
 

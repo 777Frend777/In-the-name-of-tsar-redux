@@ -226,6 +226,16 @@ country_event = {
 	option = {
 		name = tuk.8.a
 		kill_country_leader = yes
+		create_country_leader = {
+		name = "Korshirmat"
+		desc = "POLITICS_KORSHIRMAT_DESC"
+		picture = "gfx//leaders/TUK/Portrait_TUK_Korsirmat.png"
+		expire = "1965.1.1"
+		ideology = despotism
+		traits = {
+		
+		}
+		}
 		complete_national_focus = TUK_military_junta
 		complete_national_focus = TUK_what_do_to_pasha
 		add_stability = -0.05

@@ -8,27 +8,28 @@ state = {
 	}
 
 	history = {
-		owner = MNT
+		owner = ALB
         victory_points = {
-            3896 3 
+            9780 3 
         }
         buildings = {
             infrastructure = 2
             industrial_complex = 1
-			3896 = {
-				naval_base = 1
-			}
 		}
 		add_core_of = ALB
-		add_core_of = MNT
-		add_claim_by = SER
-		add_claim_by = CRO
+		add_claim_by = ITA
+		1939.4.12 = {
+		    owner = ITA
+		    controller = ITA
+		    remove_claim_by = ITA
+		}
+
 	}
 
 	provinces = {
-		3896 11762
+		3896 9780 11762
 	}
-	manpower = 116933
+	manpower = 246933
 	state_category = rural
 	local_supplies = 5.000
 }

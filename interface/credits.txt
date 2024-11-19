@@ -1,4 +1,631 @@
-﻿#Hearts of Iron IV: Arms Against Tyranny
+﻿#Hearts of Iron IV: Götterdämmerung
+
+#GAME DIRECTOR
+Peter Nicholson
+
+#PRODUCERS
+Martin Svenblad
+Milica Maricic
+
+#TECHNICAL COORDINATOR
+Erik Nikko
+
+#PROGRAMMERS
+Björn Persson Mattsson
+Erik Nikko
+Jan Takac
+Jacob Johansson
+Jonathan Lundgren
+Mathieu Ropert
+Robert Khalikov
+Tao Chen
+Virani Baskurt
+
+#RELEASE ENGINEER
+Benjamin Larsson
+
+#DESIGN LEAD
+Thomas Årnfelt
+
+#DESIGNER
+Tomasz Żwirski
+
+#UX DESIGNER
+Peter Johannesson
+
+#CONTENT DESIGNERS
+Amy Stephenson-Dickinson
+Daniel Sandin
+Eilidh MacRuaidhri
+Gareth Kay
+Jonathan Ramström
+Manuel Molina Grande
+Malin Hallgren
+Viktor Dahlberg
+Thomas Årnfelt
+
+#ARTISTS 2D
+Jimmy Laskowski
+Marie Sommerdahl
+
+#ARTIST 3D
+John Gustafsson 
+
+#QA TESTERS
+Gustav Nenzén
+Vedran Uzelac
+Jean Noblet-Sidwall
+Niklas Ivarsson
+
+
+#STUDIO MANAGEMENT
+
+#STUDIO MANAGERS
+Thomas Johansson
+Niels Uiterwijk
+
+#OPERATIONS DIRECTOR
+Hedvig Skagh
+
+#ART MANAGER
+Bijoy Thomas
+
+
+#PARADOX INTERACTIVE
+
+#PRODUCT MANAGEMENT TEAM
+
+#BUSINESS OWNER
+Fredrik Sellden
+
+
+#PRODUCTION TEAM
+
+#RELEASE MANAGERS
+Louise Mutel
+Nicole Savage
+Becky Gelson
+Ida Ankarstrand
+
+#LOCALIZATION PRODUCERS
+Nick Citkoŭ
+Michael Radnitz
+
+
+#MARKETING
+
+#PRODUCT MARKETING MANAGEMENT
+Alan Mahmodian
+
+#COMMUNITY MANAGEMENT
+Erik Jakobsson
+Michaela Aicardi
+Per Bonomi
+
+#COMMUNITY AMBASSADORS
+Alex Dunk
+Nicholas Hubert
+Klara Joelsson Träff
+Miaosen Teng
+
+#MARKETING CREATIVE PRODUCER
+Oskar Petrén
+
+#PAID MEDIA
+Henrik Bonnichsen
+Linn Yngvesson
+Anton Rask
+Sofia Lundstedt Radetzki
+
+#PUBLIC RELATIONS
+Troy Goodfellow
+
+#SOCIAL VIDEO PRODUCTION
+Cissi Ramsby
+Alexander Eliasson
+Benjamin Magnus Kajfasz
+
+#INFLUENCER RELATIONS
+Jonathan Whitley
+Dennis Johnni
+
+#CUSTOMER SUPPORT
+Christian Arvidsson
+Debbie Lane
+
+#MARKETING AUTOMATION SPECIALIST
+Annie Alström
+
+#RESEARCHERS
+Agata Macuba
+Filip Stenback
+
+#DATA SCIENTIST
+Cláudio Rosa
+
+#PARTNER ACCOUNT MANAGER
+Jackson Downing 
+
+#PARTNER MARKETING MANAGER
+Kimberly Trapnell
+
+#COMMERCIAL MANAGER
+Peter Skog
+
+
+#AUDIO
+
+#HEAD OF AUDIO
+Franco Freda
+
+#AUDIO PRODUCER
+Samet Atasoy
+
+#SOUND DESIGNER
+Andrew J Ryan
+
+#MUSIC
+
+#MUSIC COMPOSED AND PRODUCED BY
+Audinity (Yannick Süß & Robin Birner)
+
+#ORCHESTRATION
+Benny Oschmann
+
+#ORCHESTRA
+Bratislava Symphony Orchestra
+Recorded in the Studio 1 of the Slovak Radio in Bratislava (Slovakia)
+
+#ORCHESTRA CONDUCTOR
+David Hernando Rico
+
+#RECORDING ENGINEER
+Martin Roller
+
+
+#BUILD TEAM
+
+#DIRECTOR OF TECH AND SERVICES
+Leif Dellmar
+
+#TECH LEAD
+Mark Dickie
+
+#BUILD ENGINEERS
+Alexander Fast
+Alexander Smedin
+Jakov Denona
+Johan Yngman
+Per Hasselström
+
+#TEST AUTOMATION ENGINEERS
+Albin Wallin
+Maryna Barysava
+
+
+#EXTERNAL PARTNERS
+
+#ART
+Rocketbrush Studio
+
+#TECHNOLOGY
+Heroic Labs - Nakama
+
+#LOCALISATION
+Localisation coordination: Native Prime
+Spanish - Q-Loc
+French - Nicolas Fouqué aka Elfryc
+German - Native Prime
+Polish - Q-Loc
+Russian - Most Games
+Brazilian Portuguese - Native Prime
+
+
+#QUALITY ASSURANCE
+#QLOC S.A
+
+#PROJECT MANAGER
+Andrzej Tsupko
+
+#TEAM LEADS
+Krystian Bas
+Marta Czekalska
+Maria Latanowicz
+Marcin Oprządek
+Pamela Zawisko
+
+#TESTERS
+Stanisław Dul
+Krzysztof Owczarek
+Mateusz Rosłaniec
+Patryk Sawicki
+Michał Szcześniak
+Aleksander Taras
+Tomasz Wypych
+Piotr Zaszczyński
+
+
+#SENIOR MODERATORS
+Fanstar 1
+Grazik
+Kasper "ChatKat" Smolders
+
+#MODERATORS
+Marijn "marijn211" Vroegh
+Felix “Kongou”
+Marc “DJFlannas” Docherty
+ElytraSama
+Joris “Blackdeath_LP” Dröge
+Lady Valentina "Lady Shion" Valentine-Ortiz
+Bennet “Avemew”
+Artemis
+Cruz "Ash" Fantauzzo
+Danteee
+Sir Arthur Wellesley	
+Zi Yao (Terence) Zhang
+Julian “TheMcWhiskers” Zea
+
+#BETA TESTERS
+Jonathan Edward Francis Bagley
+Clara Rayner
+Tomasz 'Zwirbaum' Żwirski
+Guilherme Zottele
+William P. Corr
+Jakub Mozgawa
+Jan Peter Dijkstra
+Francesco Teruzzi
+Borna Hlousek
+Jimmy Williams
+Edgars Ancītis
+Miguel Martínez Olmos
+Yanjie Feng
+Brian Haddad
+Voigt
+David Wayne Sparks
+Thomas Albert Foster
+Jason Pitruzzello
+Ethan '156' Mayer
+David Long
+Andy Rowland
+Théo Rosier
+Thomas Perry
+Maddison Reddie-Clifford
+Bengt Weiberg
+John Shelton
+
+
+
+#Hearts of Iron IV: Content Creator Pack
+#Soviet Union 2D Art
+
+#SCRIPTING
+Ethan '156' Mayer
+
+#ART
+Aqeel 'Uncharted' Mughal
+
+
+
+#Hearts of Iron IV: Trial of Allegiance
+
+# GAME DIRECTOR
+Peter Nicholson
+Dan Lind
+
+# PRODUCERS
+Martin Svenblad
+Milica Maricic
+
+# PROGRAMMERS
+Aurelien Delay
+Björn Persson Mattsson
+Erik Nikko
+Jan Takac
+Jacob Johansson
+Jonathan Lundgren
+Mathieu Ropert
+Robert Khalikov
+
+# DESIGNERS
+Bradley Faithfull-Wright
+
+# UX DESIGNER
+Peter Johannesson
+
+# DESIGN LEAD
+Thomas Årnfelt
+
+# CONTENT DESIGNERS
+Amy Stephenson-Dickinson
+Daniel Sandin
+Eilidh MacRuaidhri
+Gareth Kay
+Jonathan Ramström
+Manuel Molina Grande
+Malin Hallgren
+Viktor Dahlberg
+
+# ARTISTS 2D
+Jimmy Laskowski
+Marie Sommerdahl
+
+# ARTISTS 3D
+John Gustafsson 
+
+# QA TESTERS
+Vedran Uzelac
+Jean Sidvall
+Niklas Ivarsson
+Rohan Naik
+
+# ADDITIONAL ART
+Jonathan Bagley
+
+# STUDIO MANAGEMENT
+
+# STUDIO MANAGER
+Thomas Johansson
+
+# OPERATIONS DIRECTOR
+Hedvig Skagh
+
+
+# TECH DIRECTOR
+Olof Björk
+
+# Art Manager
+Bijoy Thomas
+
+# PARADOX INTERACTIVE
+
+# PRODUCT MANAGEMENT TEAM
+
+# BUSINESS OWNER
+Fabricio Santos
+Fredrik Sellden
+
+# PRODUCTION TEAM
+# RELEASE MANAGERS
+Alva Hemmingsson
+Niki Savage
+Robyn Svanström
+
+# MARKETING
+
+# PRODUCT MARKETING MANAGEMENT
+Alan Mahmodian
+
+# COMMUNITY MANAGEMENT
+Erik Jakobsson
+
+# COMMUNITY AMBASSADORS
+Alex Dunk
+Amelie Archibald
+Nicholas Hubert
+
+# MARKETING CREATIVE PRODUCERS
+Oskar Petrén
+Rachel Oratis
+Moushumi Angre
+
+# PAID MEDIA
+Henrik Bonnichsen
+Camilla Wemmenlöv
+Linn Yngvesson
+Anton Rask
+
+# PUBLIC RELATIONS
+Troy Goodfellow
+
+# LIVE CONTENT
+Alexander Eliasson
+Madeleine Jonsson
+Benjamin Magnus Kajfasz
+
+# INFLUENCER RELATIONS
+Jonathan Whitley
+David Furberg
+
+# CUSTOMER SUPPORT
+Christian Arvidsson
+Debbie Lane
+
+# MARKETING AUTOMATION SPECIALIST
+Annie Alström
+
+# CRM CONTENT PRODUCER
+Christopher Borén
+
+# RESEARCHERS
+Agata Macuba
+Filip Stenback
+
+# DATA SCIENTISTS
+Andrew Buckner
+
+# PARTNER ACCOUNT MANAGERS
+Jackson Downing 
+
+# PARTNER MARKETING MANAGER
+Dennis Johnni
+
+# COMMERCIAL MANAGER
+Mattias Rengstedt
+
+# AUDIO
+
+# HEAD OF AUDIO
+Franco Freda
+
+# AUDIO PRODUCER
+Samet Atasoy
+Sound Designers
+Robert Wozniak
+
+# MUSIC 
+
+# COMPOSER
+Magnus Ringblom 
+
+# FLUTES, CLARINET AND SAXOPHONES 
+Magnus Ringblom
+
+# PERCUSSION
+Niklas Gabrielsson
+
+# BUILD TEAM
+
+# DIRECTOR OF TECH AND SERVICES
+Leif Dellmar
+
+# TECH LEAD
+Mark Dickie
+
+# BUILD ENGINEERS
+Alexander Fast
+Alexander Smedin
+Jakov Denona
+Johan Yngman
+Per Hasselström
+
+# TEST AUTOMATION ENGINEERS
+Albin Wallin
+Maryna Barysava
+
+# EXTERNAL PARTNERS
+
+# ART
+Rocketbrush Studio
+
+# TECHNOLOGY
+Heroic Labs - Nakama
+
+# LOCALISATION
+Localisation coordination: Native Prime
+Spanish - Q-Loc
+French - Nicolas Fouqué aka Elfryc
+German - Native Prime
+Polish - Q-Loc
+Russian - Most Games
+Brazilian Portuguese - Native Prime
+
+# QUALITY ASSURANCE
+# KEYWORDS STUDIOS KATOWICE
+
+# FQA REGIONAL DIRECTOR
+Chris Bewick
+
+# QA MANAGER
+Łukasz Szewczyk
+Marcin Jankowski
+Łukasz Blaszczak
+
+# FQA PROJECT MANAGER
+Marcin Jankowski
+Jakub Lipiec
+
+# FQA LEAD
+Krzysztof Bochenek
+FQA Associate Lead
+Krzysztof Bochenek
+
+# FQA TESTER
+Damian Arbitan
+Sebastian Drobniak
+Dawid Kabasinski
+Arkadiusz Klonek
+Aleksander Sławski
+Damian Pluta
+Wojciech Wasilewski
+Kamil Pora
+Robert Kubista
+Kamil Cholewa
+Łukasz Krawcow
+
+# QLOC S.A
+
+# PROJECT MANAGER
+Andrzej Tsupko
+
+# TEAM LEADS
+Krystian Bas
+Maria Latanowicz
+Pamela Zawisko
+
+# TESTERS
+Mateusz Rosłaniec
+Piotr Zaszczyński
+Patryk Sawicki
+Stanisław Dul
+Tomasz Wypych
+
+# SENIOR MODERATORS
+Fanstar 1
+Ghost
+Grazik
+
+# MODERATORS
+Tahsein Mustafa
+Shyy
+Alfie Watkins
+Marijn "marijn211" Vroegh
+Arturo "Cloudread" Martinez
+Felix “Kongou”
+Marc “DJFlannas” Docherty
+ElytraSama
+Harvey “Sekiy” Cross
+Joris “Blackdeath_LP” Dröge
+Valentina “ZephyrKitty” Ortiz
+Bennet “Avemew”
+Kasper "ChatKat" Smolders
+
+# BETA TESTERS
+
+Jonathan Bagley
+Clara Rayner
+Tomasz Żwirski
+Guilherme Zottele
+William P. Corr
+Jakub Mozgawa
+Jan Peter Dijkstra
+Adam Sherman
+Francesco Teruzzi
+Borna Hlousek
+Matti Salo
+Kasper Smolders
+Bengt Weiberg
+Jimmy Williams
+Felix Schrider
+Edgars Ancītis
+Miguel Martínez Olmos
+Zane Griffin
+Yanjie Feng
+Brian Haddad
+Brendon Ford
+Voigt
+David Wayne Sparks
+Kristian König
+Joris Dröge
+Alexander Brunius
+Zachary Beechler
+Thomas Albert Foster
+Jason Pitruzzello
+Arturo Andres Martinez Sarapuu
+Ethan Mayer
+Lady Valentina Valentine-Ortiz
+John Shelton
+David William Long
+Andy Rowland
+Théo Rosier
+Thomas Perry
+Maddison Reddie-Clifford
+Jørgen Larsen
+
+# IN MEMORY OF
+jju_57
+
+
+#Hearts of Iron IV: Arms Against Tyranny
 
 In loving memory of Adam Nowicki
 
@@ -310,7 +937,7 @@ Bennet “Avemew”
 Kasper "ChatKat" Smolders
 
 #BETA TESTERS
-Jonathan Edward Francis Bagley
+Jonathan Bagley
 Clara Rayner
 Tomasz Żwirski
 Guilherme Zottele

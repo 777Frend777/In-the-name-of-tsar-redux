@@ -42,12 +42,7 @@ characters = {
 			expire = "1953.3.1.1"
 			id = -1
 		}
-		country_leader = {
-			ideology = democratic_subtype
-			traits = { INOT_tsar_of_all_russians }
-			expire = "1953.3.1.1"
-			id = -1
-		}
+	
 		
 		field_marshal = {
 			traits = { old_guard war_hero }
@@ -60,7 +55,20 @@ characters = {
 			visible = { NOT = { has_government = communism } }
 		}
 	}
-	
+	RUS_new_kerensky = {
+		name = RUS_new_kerensky
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RUS/Portrait_RUS_New_Kerensky.png"
+			}
+			country_leader = {
+				ideology = democratic_subtype
+				traits = {  }
+				expire = "1953.3.1.1"
+				id = -1
+			}
+		}
+	}
 	RUS_nabokov_jr_idea = {
 		name = RUS_nabokov_jr_idea
 		portraits = {

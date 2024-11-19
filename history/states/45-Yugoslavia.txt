@@ -1,27 +1,24 @@
-
 state={
 	id=45
 	name="STATE_45"
 
 	history={
-		victory_points = {
-			619 3 
-		}
+		victory_points = { 619 3 }
 		owner = SER
 		buildings = {
 			infrastructure = 3
 
 		}
 		add_core_of = SER
-		add_claim_by = CRO
 
 	}
 
 	provinces={
-		619 3617 3623 9621
+		619 3617 3623 9621 11580
 	}
-	manpower=638621
+	manpower=838621
 	buildings_max_level_factor=1.000
 	state_category=town
-	local_supplies=0.000
+
+	local_supplies=0.0 
 }

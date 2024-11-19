@@ -341,7 +341,7 @@ guiTypes = {
 			position = { x = -60 y = -58 }
 			quadTextureSprite ="GFX_button_reset_123x34"
 			font = "hoi_18mbs"
-			text = "OK"
+			buttonText = BUTTON_DISMISS
 			shortcut = "RETURN"
 			Orientation = "CENTER_DOWN"
 			clicksound = click_close
