@@ -2,9 +2,9 @@
 # Serbia Events ###########
 ###########################
 
-#add_namespace = serbia
+add_namespace = serbia
 
-#temp deleted
+
 
 # Comintern
 country_event = {

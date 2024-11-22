@@ -252,18 +252,18 @@ spriteTypes = {
 		texturefile = "gfx/aces/Amelia_Earhart_ace.dds"
 	}
 
-	# RUS #
+	# SOV #
 	spriteType = {
-		name = "GFX_RUS_ace_Lidiya_Litvyak"
-		texturefile = "gfx/aces/RUS_lidiya_litvyak_ace.dds"
+		name = "GFX_SOV_ace_Lidiya_Litvyak"
+		texturefile = "gfx/aces/SOV_lidiya_litvyak_ace.dds"
 	}
 	spriteType = {
-		name = "GFX_RUS_ace_Yevdokiya_Bershanskaya"
-		texturefile = "gfx/aces/RUS_yevdokiya_bershanskaya_ace.dds"
+		name = "GFX_SOV_ace_Yevdokiya_Bershanskaya"
+		texturefile = "gfx/aces/SOV_yevdokiya_bershanskaya_ace.dds"
 	}
 	spriteType = {
-		name = "GFX_RUS_ace_Marina_Raskova"
-		texturefile = "gfx/aces/RUS_marina_raskova_ace.dds"
+		name = "GFX_SOV_ace_Marina_Raskova"
+		texturefile = "gfx/aces/SOV_marina_raskova_ace.dds"
 	}
 
 	# ITA #
@@ -284,7 +284,7 @@ spriteTypes = {
 		texturefile = "gfx/aces/ITA_adriano_visconti_ace.dds"
 	}
 	spriteType = {
-		name = "GFX_ITA_ace_Giulio_Graziani" #TODO_Manu: Real name is Giulio Cesare Graziani but portrait won't hook in with double name
+		name = "GFX_ITA_ace_Giulio_Graziani" #MM: Real name is Giulio Cesare Graziani but portrait won't hook in with double name
 		texturefile = "gfx/aces/ITA_giulio_cesare_graziani_ace.dds"
 	}
 	spriteType = {
@@ -294,6 +294,87 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ITA_ace_Giuseppe_Cenni"
 		texturefile = "gfx/aces/ITA_giuseppe_cenni_ace.dds"
+	}
+
+
+
+ #     #     #     # 
+ #  #  #     #  #  # 
+ #  #  #     #  #  # 
+ #  #  #     #  #  # 
+ #  #  # ### #  #  # 
+ #  #  # ### #  #  # 
+  ## ##  ###  ## ##  
+                     
+
+
+	spriteType = {
+		name = "GFX_GER_ace_Alois_Wosnitza"
+		texturefile = "gfx/aces/GER_Alois_Wosnitza_ace.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_ace_Anton_Hubsch"
+		texturefile = "gfx/aces/GER_Anton_Hubsch_ace.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_ace_Bernhard_Jope"
+		texturefile = "gfx/aces/GER_Bernhard_Jope_ace.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_ace_Erich_Hartmann"
+		texturefile = "gfx/aces/GER_Erich_Hartmann_ace.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_ace_Gerhard_Barkhorn"
+		texturefile = "gfx/aces/GER_Gerhard_Barkhorn_ace.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_ace_Gerhard_Studemann"
+		texturefile = "gfx/aces/GER_Gerhard_Studemann_ace.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_ace_Gunther_Rall"
+		texturefile = "gfx/aces/GER_Gunther_Rall.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_ace_Hansgeorg_Batcher"
+		texturefile = "gfx/aces/GER_Hansgeorg_Batcher_ace.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_ace_Hans_Rudel"
+		texturefile = "gfx/aces/GER_Hans_Rudel_ace.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_ace_Heinz_Schnaufer"
+		texturefile = "gfx/aces/GER_Heinz_Schnaufer_ace.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_ace_Helmut_Lent"
+		texturefile = "gfx/aces/GER_Helmut_Lent_ace.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_ace_Horst_Rudat"
+		texturefile = "gfx/aces/GER_Horst_Rudat_ace.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_ace_Werner_Baumbach"
+		texturefile = "gfx/aces/GER_Werner_Baumbach_ace.dds"
+	}
+	spriteType = {
+		name = "GFX_HUN_ace_Istvan_Horthy"
+		texturefile = "gfx/aces/HUN_Istvan_Horthy_ace.dds"
+	}
+	spriteType = {
+		name = "GFX_AUS_ace_Walter_Nowotny"
+		texturefile = "gfx/aces/AUS_Walter_Nowotny_ace.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_ace_Charles_Brown"
+		texturefile = "gfx/aces/USA_Charles_Brown_ace.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_ace_Franz_Stigler"
+		texturefile = "gfx/aces/GER_Franz_Stigler_ace.dds"
 	}
 
 }

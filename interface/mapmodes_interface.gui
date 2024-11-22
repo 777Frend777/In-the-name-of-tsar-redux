@@ -5,12 +5,11 @@ guiTypes = {
 	#	position = { x=41 y=0 }
 	#}
 
-	containerWindowType =  {
+	containerWindowType = {
 		name = "MapmodesInterface_Ingame"
 		position = { x=-631 y=-244 }
 		size = { width=314 height=31 }
 		Orientation = lower_RIGHT
-
 		containerWindowType = {
 			name = "social_view_interface_window"
 			position = { x = 564 y = -30 }
@@ -536,6 +535,41 @@ guiTypes = {
 					y = 0
 					relative = yes #It is default set to yes ( to the gui object )
 				}	
+			}
+
+			# 10th BUTTON (SMALL)
+			iconType = {
+				name = "mapmode_button_12_s_bg"
+				quadTextureSprite = "GFX_mapmode_button_depressed"
+				alwaysTransparent = no
+				position = { x=606 y=205 }
+			}
+
+			buttonType = {
+				name = "mapmode_button_12"
+				position = { x=608 y=205 }
+				quadTextureSprite ="GFX_mapmode_buttons_deselected_small"
+				#shortcut = "t"
+				#TODO: make a new sound for this!
+				clicksound = ui_mapmode_raids
+				pdx_tooltip_anchor =
+				{
+					x = -153
+					y = 0
+					relative = yes #It is default set to yes ( to the gui object )
+				}
+			}
+			buttonType = {
+				name = "mapmode_button_12_s"
+				position = { x=608 y=205 }
+				quadTextureSprite ="GFX_mapmode_buttons_selected_small"
+				#shortcut = "F5"
+				pdx_tooltip_anchor =
+				{
+					x = -153
+					y = 0
+					relative = yes #It is default set to yes ( to the gui object )
+				}
 			}
 		}
 
@@ -1270,8 +1304,8 @@ guiTypes = {
 	# A window with the list of all possible map modes that is attached to the "WindowWithMapModeSlots".
 	containerWindowType =  {
 		name = "WindowWithAllMapModes"
-		position = { x=-255 y=-300 }	
-		size = { width=180 height=274 }
+		position = { x=-255 y=-322 }
+		size = { width=180 height=296 }
 		Orientation = lower_RIGHT
 		fade_time = 500
 		fade_type = linear
@@ -1284,7 +1318,7 @@ guiTypes = {
 		gridboxtype = {
 			name = "slots"
 			position = { x = 0 y = 5 }
-			size = { width = 160 height = 242 }
+			size = { width = 160 height = 264 }
 			slotsize = { width = 156 height = 22 }
 			max_slots_horizontal = 1
 		}
@@ -1293,8 +1327,8 @@ guiTypes = {
 	# A window with the list of all possible map modes that is attached to the main map-modes window.
 	containerWindowType =  {
 		name = "WindowWithAllMapModes_Standalone"
-		position = { x=-255 y=-300 }	
-		size = { width=180 height=274 }
+		position = { x=-255 y=-292 }
+		size = { width=180 height=296 }
 		Orientation = lower_RIGHT
 		fade_time = 500
 		fade_type = linear
@@ -1307,10 +1341,9 @@ guiTypes = {
 		gridboxtype = {
 			name = "slots"
 			position = { x = 2 y = 5 }
-			size = { width = 160 height = 262 }
+			size = { width = 160 height = 284 }
 			slotsize = { width = 160 height = 22 }
 			max_slots_horizontal = 1
 		}
-	}	
-	
+	}
 }

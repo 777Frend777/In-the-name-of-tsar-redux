@@ -70,7 +70,7 @@ units = {
 	### Obalnim Armija ###
 	division = {
 		name = "12. 'Jadranska' Pesadijska Div."  			# Peadijska if we get font support
-		location = 3609
+		location = 9586
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
@@ -80,7 +80,7 @@ units = {
 	### 5. Armija ###
 	division = {
 		name = "8. 'Krajinska' Pesadijska Div."  			# Peadijska if we get font support
-		location = 3882
+		location = 907
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
@@ -88,14 +88,14 @@ units = {
 	}
 	division = {
 		name = "9. 'Timocka' Pesadijska Div."  				# Peadijska if we get font support
-		location = 3922
+		location = 11868
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "2. Konjička Divizija"
-		location = 3956
+		location = 11887
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
@@ -105,7 +105,7 @@ units = {
 	### 6. Armija ###
 	division = {
 		name = "3. 'Dunavska' Pesadijska Div."  			# Peadijska if we get font support
-		location = 9621
+		location = 3614
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
@@ -124,7 +124,7 @@ units = {
 	}
 	division = {
 		name = "3. Pesadijska Div."
-		location = 797
+		location = 614
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
@@ -134,7 +134,7 @@ units = {
 	### 2. Armija ###
 	division = {
 		name = "10. 'Bosanska' Pesadijska Div."  			# Peadijska if we get font support
-		location = 11577
+		location = 3627
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
@@ -153,14 +153,14 @@ units = {
 	### 3. Armija ###
 	division = {
 		name = "13. 'Hercegovacka' Pesadijska Div."  		# Peadijska if we get font support
-		location = 6940
+		location = 833
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
 
 	}
 	division = {
 		name = "25. 'Vardarsa' Pesadijska Div."  			# Peadijska if we get font support
-		location = 619
+		location = 9809
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
 

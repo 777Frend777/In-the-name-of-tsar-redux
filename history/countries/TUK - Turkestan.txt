@@ -40,3 +40,21 @@ create_country_leader = {
 		INOTR_man_of_the_people INOTR_dislike_armenians
 	}
 }
+#create_country_leader = {
+#	name = "Korshirmat"
+#	picture = "gfx//leaders/TUK/Portrait_TUK_Korsirmat.png"
+#	expire = "1965.1.1"
+#	ideology = despotism
+#	traits = {
+#		
+#	}
+#}
+create_country_leader = {
+	name = "Jānis Rudzutaks"
+	picture = "gfx//leaders/TUK/Portrait_TUK_Janis_Rudzutaks.png"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		
+	}
+}

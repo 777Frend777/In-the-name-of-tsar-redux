@@ -58,7 +58,7 @@ units = {
 	######## LAND UNITS ########
 	division = {
 		name = "1. Gorska Pesadija"  		# Peadijska if we get font support
-		location = 9809
+		location = 11856
 		division_template = "Gorska Pesadija"
 		start_experience_factor = 0.3
 

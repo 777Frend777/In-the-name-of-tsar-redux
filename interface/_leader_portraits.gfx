@@ -8455,11 +8455,4 @@ spriteTypes = {
 		name = "GFX_Portrait_RUS_alexander_kerensky"
 		texturefile = "gfx/leaders/RUS/alexander_kerensky.dds"
 	}
-	spriteType = {
-		name = "GFX_Portrait_CRO_tito"
-		texturefile = "gfx/leaders/CRO/CRO_tito.png"
-	}
-	spriteType = {
-		name = "GFX_Portrait_SER_alexander"
-		texturefile = "gfx/leaders/SER/Alexander.png"
 }

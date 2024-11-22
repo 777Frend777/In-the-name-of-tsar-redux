@@ -438,7 +438,6 @@ completion_reward = {
 		x = 15
 		y = 1
 		completion_reward = {
-		custom_effect_tooltip = TUK_DONT_USE_IT_WIP
 		}
 	}
 	focus = {
@@ -876,6 +875,9 @@ focus = {
 	x = 7
 	y = 10
 	completion_reward = {
+		remove_ideas = {
+			TUK_high_turkish_influence
+		}
 		TUK = {
 			create_wargoal = {
 				type = annex_everything
