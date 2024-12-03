@@ -2,19 +2,17 @@ MTG_naval_treaties = {
 	MTG_abandon_treaty_democratic = {
 
 		icon = generic
-			
 	
 		available = {
 			OR = {
 				threat > 0.2
-				has_global_flag = MTG_second_london_conference
 			}
 		}
 	
 		cost = 150
 		fire_only_once = yes
 		ai_will_do = {
-			factor = 0
+			base = 0
 		}
 	
 		visible = {
@@ -91,20 +89,19 @@ MTG_naval_treaties = {
 		available = {
 			OR = {
 				threat > 0.2
-				has_global_flag = MTG_second_london_conference
 			}
 		}
 	
 		cost = 25
 		fire_only_once = yes
 		ai_will_do = {
-			factor = 1
+			base = 1
 			modifier = {
 				OR = {
 					tag = ITA
 					tag = JAP
 				}
-				add = 1
+				add = 3
 			}
 			modifier = {
 				tag = USA
@@ -114,7 +111,7 @@ MTG_naval_treaties = {
 			modifier = {
 				tag = JAP
 				is_historical_focus_on = yes
-				add = 50
+				add = 300
 			}
 			modifier = {
 				tag = JAP

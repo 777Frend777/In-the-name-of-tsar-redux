@@ -297,30 +297,30 @@ spriteTypes = {
 		texturefile = "gfx/leaders/scientists/portrait_JAP_yoji_ito.dds"
 	}
 
-	## RUS ##
+	## SOV ##
 	spriteType = {
-		name = "GFX_portrait_RUS_abram_ioffe"
-		texturefile = "gfx/leaders/scientists/portrait_RUS_abram_ioffe.dds"
+		name = "GFX_portrait_SOV_abram_ioffe"
+		texturefile = "gfx/leaders/scientists/portrait_SOV_abram_ioffe.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_RUS_arkady_nazarov"
-		texturefile = "gfx/leaders/scientists/portrait_RUS_arkady_nazarov.dds"
+		name = "GFX_portrait_SOV_arkady_nazarov"
+		texturefile = "gfx/leaders/scientists/portrait_SOV_arkady_nazarov.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_RUS_boris_stechkin"
-		texturefile = "gfx/leaders/scientists/portrait_RUS_boris_stechkin.dds"
+		name = "GFX_portrait_SOV_boris_stechkin"
+		texturefile = "gfx/leaders/scientists/portrait_SOV_boris_stechkin.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_RUS_igor_kurchatov"
-		texturefile = "gfx/leaders/scientists/portrait_RUS_igor_kurchatov.dds"
+		name = "GFX_portrait_SOV_igor_kurchatov"
+		texturefile = "gfx/leaders/scientists/portrait_SOV_igor_kurchatov.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_RUS_sergei_korolev"
-		texturefile = "gfx/leaders/scientists/portrait_RUS_sergei_korolev.dds"
+		name = "GFX_portrait_SOV_sergei_korolev"
+		texturefile = "gfx/leaders/scientists/portrait_SOV_sergei_korolev.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_RUS_vladimir_kotelnikov"
-		texturefile = "gfx/leaders/scientists/portrait_RUS_vladimir_kotelnikov.dds"
+		name = "GFX_portrait_SOV_vladimir_kotelnikov"
+		texturefile = "gfx/leaders/scientists/portrait_SOV_vladimir_kotelnikov.dds"
 	}
 
 	## SWE ##

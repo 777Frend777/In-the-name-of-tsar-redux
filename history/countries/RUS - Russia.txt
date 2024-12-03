@@ -205,6 +205,7 @@ if = {
 
 add_ideas = {
         MTG_naval_treaty_adherent
+	partial_economic_mobilisation
 	RUS_peasant_unrest
 	RUS_russian_monarchy
 	RUS_church

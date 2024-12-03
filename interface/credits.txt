@@ -29,6 +29,7 @@ Thomas Årnfelt
 
 #DESIGNER
 Tomasz Żwirski
+Bradley Faithfull-wright
 
 #UX DESIGNER
 Peter Johannesson

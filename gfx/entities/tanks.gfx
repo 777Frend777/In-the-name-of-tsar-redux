@@ -279,7 +279,33 @@ objectTypes = {
 	
 	
 	
+#Leichttraktor Vs.Kfz.31
+	pdxmesh = {
+		name = "GER_iw_armor_mesh"
+		file = "gfx/models/units/tanks/GER_iw_armor.mesh"
 
+		animation = { id = "attack"			type = "GER_iw_armor_attack_animation" }
+		animation = { id = "idle"			type = "GER_iw_armor_idle_animation" }
+		animation = { id = "move"			type = "GER_iw_armor_moving_animation" }
+
+		meshsettings = {
+			name = "GER_iw_armorShape"
+			index = 0
+			texture_diffuse = "GER_iw_armor_diffuse.dds"
+			texture_normal = "GER_iw_armor_normal.dds"
+			texture_specular = "GER_iw_armor_specular.dds"
+			shader = "PdxMeshAdvanced"
+		}
+
+		meshsettings = {
+			name = "GER_iw_armorShape"
+			index = 0
+			texture_diffuse = "tank_threads_01_diffuse.dds"
+			texture_normal = "tank_threads_01_normal.dds"
+			texture_specular = "tank_threads_01_specular.dds"
+			shader = "PdxMeshAdvancedAnim"
+		}
+	}
 
 	pdxmesh = {
 		name = "GER_tank_light_mesh"
@@ -385,28 +411,28 @@ objectTypes = {
 
 	
 	pdxmesh = {
-		name = "RUS_tank_light_mesh"
-		file = "gfx/models/units/tanks/RUS_tank_light.mesh"
+		name = "SOV_tank_light_mesh"
+		file = "gfx/models/units/tanks/SOV_tank_light.mesh"
 
-		animation = { id = "attack"			type = "RUS_tank_light_attack_animation" }
-		animation = { id = "idle"			type = "RUS_tank_light_idle_animation" }
-		animation = { id = "move"			type = "RUS_tank_light_moving_animation" }
+		animation = { id = "attack"			type = "SOV_tank_light_attack_animation" }
+		animation = { id = "idle"			type = "SOV_tank_light_idle_animation" }
+		animation = { id = "move"			type = "SOV_tank_light_moving_animation" }
 		scale = 0.6
 	}
 
 	pdxmesh = {
-		name = "RUS_tank_medium_mesh"
-		file = "gfx/models/units/tanks/RUS_tank_medium.mesh"
+		name = "SOV_tank_medium_mesh"
+		file = "gfx/models/units/tanks/SOV_tank_medium.mesh"
 
-		animation = { id = "attack"			type = "RUS_tank_medium_attack_animation" }
-		animation = { id = "idle"			type = "RUS_tank_medium_idle_animation" }
-		animation = { id = "move"			type = "RUS_tank_medium_moving_animation" }
+		animation = { id = "attack"			type = "SOV_tank_medium_attack_animation" }
+		animation = { id = "idle"			type = "SOV_tank_medium_idle_animation" }
+		animation = { id = "move"			type = "SOV_tank_medium_moving_animation" }
 		scale = 0.5
 	}		
 
 #T-28 Soviet
 	pdxmesh = {
-		name = "RUS_medium_gw_armor_0_mesh"
+		name = "SOV_medium_gw_armor_0_mesh"
 		file = "gfx/models/units/tanks/FIN_medium_gw_armor_0.mesh"
 
 		animation = { id = "attack"			type = "FIN_medium_gw_armor_0_attack_animation" }
@@ -416,9 +442,9 @@ objectTypes = {
 		meshsettings = {
 			name = "FIN_medium_gw_armor_0Shape"
 			index = 1
-			texture_diffuse = "RUS_medium_gw_armor_0_diffuse.dds"
-			texture_normal = "RUS_medium_gw_armor_0_normal.dds"
-			texture_specular = "RUS_medium_gw_armor_0_specular.dds"
+			texture_diffuse = "SOV_medium_gw_armor_0_diffuse.dds"
+			texture_normal = "SOV_medium_gw_armor_0_normal.dds"
+			texture_specular = "SOV_medium_gw_armor_0_specular.dds"
 			shader = "PdxMeshAdvanced"
 		}
 
@@ -433,26 +459,26 @@ objectTypes = {
 	}
 
 	pdxmesh = {
-		name = "RUS_tank_heavy_mesh"
-		file = "gfx/models/units/tanks/RUS_tank_heavy.mesh"
+		name = "SOV_tank_heavy_mesh"
+		file = "gfx/models/units/tanks/SOV_tank_heavy.mesh"
 
-		animation = { id = "attack"			type = "RUS_tank_heavy_attack_animation" }
-		animation = { id = "idle"			type = "RUS_tank_heavy_idle_animation" }
-		animation = { id = "move"			type = "RUS_tank_heavy_moving_animation" }
+		animation = { id = "attack"			type = "SOV_tank_heavy_attack_animation" }
+		animation = { id = "idle"			type = "SOV_tank_heavy_idle_animation" }
+		animation = { id = "move"			type = "SOV_tank_heavy_moving_animation" }
 		scale = 0.65
 	}	
 	
 	#KV-2 
 	pdxmesh = {
-		name = "RUS_heavy_sp_artillery_brigade_1_mesh"
+		name = "SOV_heavy_sp_artillery_brigade_1_mesh"
 		file = "gfx/models/units/tanks/SOV_heavy_sp_artillery_brigade_1.mesh"
 
-		animation = { id = "attack"			type = "RUS_heavy_sp_artillery_brigade_1_attack_animation" }
-		animation = { id = "idle"			type = "RUS_heavy_sp_artillery_brigade_1_idle_animation" }
-		animation = { id = "move"			type = "RUS_heavy_sp_artillery_brigade_1_moving_animation" }
+		animation = { id = "attack"			type = "SOV_heavy_sp_artillery_brigade_1_attack_animation" }
+		animation = { id = "idle"			type = "SOV_heavy_sp_artillery_brigade_1_idle_animation" }
+		animation = { id = "move"			type = "SOV_heavy_sp_artillery_brigade_1_moving_animation" }
 
 		meshsettings = {
-			name = "RUS_heavy_sp_artillery_brigade_1Shape"
+			name = "SOV_heavy_sp_artillery_brigade_1Shape"
 			index = 0
 			texture_diffuse = "tank_threads_01_diffuse.dds"
 			texture_normal = "tank_threads_01_normal.dds"
@@ -461,11 +487,11 @@ objectTypes = {
 		}
 
 		meshsettings = {
-			name = "RUS_heavy_sp_artillery_brigade_1Shape"
+			name = "SOV_heavy_sp_artillery_brigade_1Shape"
 			index = 1
-			texture_diffuse = "RUS_heavy_sp_artillery_brigade_1_diffuse.dds"
-			texture_normal = "RUS_heavy_sp_artillery_brigade_1_normal.dds"
-			texture_specular = "RUS_heavy_sp_artillery_brigade_1_specular.dds"
+			texture_diffuse = "SOV_heavy_sp_artillery_brigade_1_diffuse.dds"
+			texture_normal = "SOV_heavy_sp_artillery_brigade_1_normal.dds"
+			texture_specular = "SOV_heavy_sp_artillery_brigade_1_specular.dds"
 			shader = "PdxMeshAdvanced"
 		}
 	}

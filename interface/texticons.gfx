@@ -2465,17 +2465,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
-	#################
-	spriteType = {
-		name = "GFX_POL_texticon_warforindependence"
-		texturefile = "gfx/texticons/GFX_POL_texticon_warforindependence.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_RUS_romanov_house"
-		texturefile = "gfx/texticons/GFX_RUS_romanov_house.dds"
-		legacy_lazy_load = no
-	}
+	
 	
 
 
