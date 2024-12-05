@@ -1,0 +1,58 @@
+ideas = {
+
+	hidden_ideas = {
+	
+	
+	
+	
+			mechdesignworkaround = { 
+			name = mechdesignworkaround
+
+			removal_cost = -1
+
+			picture = generic_air_bonus
+
+			allowed = {
+				always = no
+			}
+
+			
+			equipment_bonus = {
+				mechanized = {
+					instant = yes
+					build_cost_ic = -0.5
+				}
+    
+}
+
+
+}
+
+
+		ProductionFix = {
+		name = AIProductionFix
+		
+		removal_cost = -1
+		
+		picture = generic_air_bonus
+		
+		allowed = {
+		always = no
+		}
+		
+		
+		
+		modifier = {
+		
+	
+		production_factory_start_efficiency_factor = 0.3
+		
+		
+		
+		}
+
+}
+
+
+}
+}

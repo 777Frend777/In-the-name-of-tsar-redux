@@ -97,7 +97,7 @@ ideas = {
 		}
 		POL_economic_reliance_on_rus = {
 			allowed = { always = no }
-			picture = advisors_russia2
+			picture = RUS_training_barracks
 			modifier = {
 				RUS = {
 					trade_opinion_factor = 0.9

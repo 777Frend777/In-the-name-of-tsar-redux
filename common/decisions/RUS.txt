@@ -30,10 +30,9 @@ RUS_integrate_territories_decisions = {
 		}
 		fire_only_once = yes
 		remove_effect = {
-			declare_war_on = {
-				target = POL
-				type = annex_everything
-			}
+		RUS = {
+		declare_war_on = { target = POL type = puppet_wargoal_focus }
+		}
 		}
 	}
 	RUS_integrate_estonia = {

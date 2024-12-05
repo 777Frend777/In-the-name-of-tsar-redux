@@ -8216,4 +8216,8 @@ spriteTypes = {
 			name = "GFX_ideology_Annihilationism_group"
 			texturefile = "gfx/interface/ideologies/Annihilationism_group.dds"
 		}
+	spriteType = {
+		name = "GFX_idea_ALB_irredentism"
+		texturefile = "gfx/interface/ideas/ALB/ALB_irredentism.png"
+	}
 }

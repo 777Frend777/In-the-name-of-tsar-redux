@@ -1115,3 +1115,17 @@ l_english:
  TUK_fascism_party_long:0 "Osmanlıcı Parti"
  TUK_neutrality_party: "EP" #NT!
  TUK_neutrality_party_long: "Enverist Partisi" #NT!
+
+#Albania
+ ALB_neutrality_party:0 "Monarchist Movement"
+ ALB_neutrality_party_long:0 "Lëvizja Monarkiste"
+ ALB_conservatives_party:0 "Progressive Party"
+ ALB_conservatives_party_long:0 "Partia Përparimtare" 
+ ALB_democratic_party:0 "Popular Party" 
+ ALB_democratic_party_long:0 "Partia Popullore" 
+ ALB_fascism_party:0 "Bashkimi"
+ ALB_fascism_party_long:0 "Bashkimi" 
+ ALB_socialist_party:0 "National Revolutionary Committee"
+ ALB_socialist_party_long:0 "Komiteti Kombëtar Revolucionar" 
+ ALB_communism_party:0 "National Revolutionary Committee"
+ ALB_communism_party_long:0 "Komiteti Kombëtar Revolucionar" 

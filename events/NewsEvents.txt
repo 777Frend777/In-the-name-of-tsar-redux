@@ -2132,12 +2132,24 @@ news_event = {
 	
 	option = {
 		name = news.63.a
+every_country = {
+set_rule = {
+ desc = SPA_allow_volunteers
+ can_send_volunteers = yes
+}
+}
 		trigger = {
 			NOT = { original_tag = SPR }
 		}
 	}
 	option = {
 		name = news.63.b
+every_country = {
+set_rule = {
+ desc = SPR_allow_volunteers
+ can_send_volunteers = yes
+}
+}
 		trigger = { 
 			original_tag = SPR
 		}
@@ -2179,6 +2191,12 @@ news_event = {
 	}
 	
 	option = {
+every_country = {
+set_rule = {
+ desc = SPS_allow_volunteers
+ can_send_volunteers = no
+}
+}
 		name = news.64.a
 		trigger = {
 			NOT = { original_tag = SPR }
@@ -2226,6 +2244,12 @@ news_event = {
 	}
 	
 	option = {
+every_country = {
+set_rule = {
+ desc = SPS_allow_volunteers
+ can_send_volunteers = no
+}
+}
 		name = news.65.a
 		trigger = {
 			NOT = { original_tag = SPR }
