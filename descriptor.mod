@@ -1,4 +1,4 @@
-version="1.15.1"
+version="1.15.2"
 tags={
 	"Alternative History"
 }
@@ -11,5 +11,5 @@ replace_path="common/countries"
 replace_path="common/country_leader"
 replace_path="events"
 replace_path="common/national_focus"
-supported_version="1.15.1"
+supported_version="1.15.2"
 remote_file_id="3377218942"
