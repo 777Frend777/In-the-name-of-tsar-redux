@@ -1,6 +1,5 @@
 #WIP
 
-## Industrial Tree
 focus_tree = {
 	id = Bulgaria
 	country = {
@@ -13,6 +12,7 @@ focus_tree = {
 
 	default = no
 
+## Industrial Tree
     focus = {
         id = BUL_revitilise_economy
         icon = GFX_goal_generic_construction2
@@ -275,11 +275,11 @@ focus_tree = {
         prerequisite = {
             focus = BUL_construct_civilian
         }
-        prerequisite = {
-            controls_state = 106
+        available = {
+                owns_state = 106
         }
         completion_reward = {
-            random_owned_controlled_state = {
+            106 = {
                 add_extra_state_shared_building_slots = 6
                 add_building_construction = {
                     type = arms_factory
@@ -311,11 +311,473 @@ focus_tree = {
         prerequisite = {
             focus = BUL_construct_civilian
         }
-        prerequisite = {
-            controls_state = 106
+        available = {
+                owns_state = 106
         }
         completion_reward = {
 		    add_research_slot = 1
 		}
     }
+## Military Path
+    focus = {
+        id = BUL_plan_rearmament
+        icon = GFX_goal_generic_axis_build_infantry
+        x = 12
+        y = 0
+        cost = 8
+        ai_will_do = {
+			factor = 5
+		}
+        completion_reward = {
+		    army_experience = 25
+		}
+    }
+    focus = {
+        id = BUL_gain_public_support
+        icon = GFX_focus_generic_little_entente
+        x = 12
+        y = 1
+        cost = 8
+        ai_will_do = {
+			factor = 5
+		}
+        prerequisite = {
+            focus = BUL_plan_rearmament
+        }
+        completion_reward = {
+            add_political_power = 150
+		}
+    }
+    focus = {
+        id = BUL_forceful_rearmament
+        icon = GFX_focus_generic_military_mission
+        x = 10
+        y = 2
+        cost = 8
+        ai_will_do = {
+			factor = 5
+		}
+        prerequisite = {
+            focus = BUL_gain_public_support
+        }
+        prerequisite = {
+            BUL = {
+                is_in_faction_with = GER
+            }
+            BUL = {
+                is_in_faction_with = GER
+            }
+        }
+        mutually_exclusive = {
+            focus = BUL_request_lifting_restriction
+        }
+        completion_reward = {
+            remove_ideas = BUL_army_restrictions
+		}
+    }
+    focus = {
+        id = BUL_request_lifting_restriction
+        icon = GFX_goal_generic_forceful_treaty
+        x = 14
+        y = 2
+        cost = 8
+        ai_will_do = {
+			factor = 5
+		}
+        prerequisite = {
+            focus = BUL_gain_public_support
+        }
+        mutually_exclusive = {
+            focus = BUL_forceful_rearmament
+        }
+        completion_reward = {
+            # TODO: Actually do this focus and the event chain
+		}
+    }
+    focus = {
+        id = BUL_rebuild_army
+        icon = GFX_focus_generic_little_entente
+        x = 12
+        y = 3
+        cost = 8
+        ai_will_do = {
+			factor = 5
+		}
+        prerequisite = {
+            focus = BUL_forceful_rearmament
+            focus = BUL_request_lifting_restriction
+        }
+        
+        available = {
+            NOT = {
+                has_idea = BUL_army_restrictions
+            }
+        }
+        completion_reward = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+				amount = 2000
+            }
+		}
+    }
+    focus = {
+        id = BUL_weapons
+        icon = GFX_goal_generic_build_tank
+
+        x = 12
+        y = 4
+        cost = 8
+        ai_will_do = {
+			factor = 5
+		}
+        prerequisite = {
+            focus = BUL_rebuild_army
+        }
+        completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+    }
+    focus = {
+        id = BUL_ww1_veterans
+        icon = GFX_goal_generic_army_doctrines
+
+        x = 12
+        y = 5
+        cost = 8
+        ai_will_do = {
+			factor = 5
+		}
+        prerequisite = {
+            focus = BUL_weapons
+        }
+        completion_reward = {
+            add_timed_idea = {
+                idea = BUL_veteran_training
+                days = 365
+            }
+		}
+    }
+    focus = {
+        id = BUL_fortify_danube
+        icon = GFX_goal_generic_fortify_city
+        x = 10
+        y = 5
+        cost = 8
+        ai_will_do = {
+			factor = 5
+		}
+        prerequisite = {
+            focus = BUL_weapons
+        }
+        completion_reward = {
+            48 = {
+                add_building_construction = {
+                    type = bunker
+                    level = 3
+                    province = 9771
+                    instant_build = yes	
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 3
+                    province = 11754
+                    instant_build = yes	
+                }	
+                add_building_construction = {
+                    type = bunker
+                    level = 3
+                    province = 793
+                    instant_build = yes	
+                }	
+			}
+            801 = {
+                add_building_construction = {
+                    type = bunker
+                    level = 3
+                    province = 3796
+                    instant_build = yes	
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 3
+                    province = 9610
+                    instant_build = yes	
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 3
+                    province = 9612
+                    instant_build = yes	
+                }
+			}
+            211 = {
+                add_building_construction = {
+                    type = bunker
+                    level = 3
+                    province = 649
+                    instant_build = yes	
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 3
+                    province = 9783
+                    instant_build = yes	
+                }
+			}
+        }
+    }
+    focus = {
+        id = BUL_fortify_macedonia
+        icon = GFX_goal_generic_fortify_city
+        x = 8
+        y = 6
+        cost = 8
+        ai_will_do = {
+			factor = 5
+		}
+        prerequisite = {
+            focus = BUL_fortify_danube
+        }
+        completion_reward = {
+            48 = {
+                add_building_construction = {
+                    type = bunker
+                    level = 3
+                    province = 9771
+                    instant_build = yes	
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 3
+                    province = 965
+                    instant_build = yes	
+                }	
+                add_building_construction = {
+                    type = bunker
+                    level = 3
+                    province = 935
+                    instant_build = yes	
+                }	
+			}
+            212 = {
+                add_building_construction = {
+                    type = bunker
+                    level = 3
+                    province = 6857
+                    instant_build = yes	
+                }
+			}
+        }
+    }
+    focus = {
+        id = BUL_fortify_thrace
+        icon = GFX_goal_generic_fortify_city
+        x = 10
+        y = 6
+        cost = 8
+        ai_will_do = {
+			factor = 5
+		}
+        prerequisite = {
+            focus = BUL_fortify_danube
+        }
+        completion_reward = {
+            211 = {
+                add_building_construction = {
+                    type = bunker
+                    level = 3
+                    province = 9902
+                    instant_build = yes	
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 3
+                    province = 9888
+                    instant_build = yes	
+                }		
+			}
+            212 = {
+                add_building_construction = {
+                    type = bunker
+                    level = 3
+                    province = 9862
+                    instant_build = yes	
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 3
+                    province = 878
+                    instant_build = yes	
+                }		
+			}
+        }
+    }
+    focus = {
+        id = BUL_millitary_tactics
+        icon = GFX_goal_generic_cavalry
+        x = 14
+        y = 5
+        cost = 8
+        ai_will_do = {
+			factor = 5
+		}
+        prerequisite = {
+            focus = BUL_weapons
+        }
+        completion_reward = {
+            army_experience = 25
+            add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+    }
+    focus = {
+        id = BUL_focus_navy
+        icon = GFX_goal_generic_build_navy
+        x = 13
+        y = 6
+        cost = 8
+        ai_will_do = {
+			factor = 5
+		}
+        prerequisite = {
+            focus = BUL_millitary_tactics
+        }
+        mutually_exclusive = {
+            focus = BUL_focus_air
+        }
+        completion_reward = {
+            navy_experience = 25
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = naval_doctrine
+			}
+            random_owned_controlled_state = {
+                limit = {
+                    is_coastal = yes
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = dockyard
+                    level = 2
+                    instant_build = yes
+                }
+			}
+            random_owned_controlled_state = {
+                limit = {
+                    is_coastal = yes
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = dockyard
+                    level = 1
+                    instant_build = yes
+                }
+			}
+		}
+    }
+    focus = {
+        id = BUL_focus_air
+        icon = GFX_goal_generic_build_airforce
+        x = 15
+        y = 6
+        cost = 8
+        ai_will_do = {
+			factor = 5
+		}
+        prerequisite = {
+            focus = BUL_millitary_tactics
+        }
+        mutually_exclusive = {
+            focus = BUL_focus_navy
+        }
+        completion_reward = {
+            air_experience = 25
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = air_doctrine
+			}
+            random_owned_controlled_state = {
+                add_building_construction = {
+                    type = air_base
+                    level = 3
+                    instant_build = yes
+                }
+			}
+            random_owned_controlled_state = {
+                add_building_construction = {
+                    type = air_base
+                    level = 4
+                    instant_build = yes
+                }
+			}
+		}
+    }
+    focus = {
+        id = BUL_integrate_imro
+        icon = GFX_focus_generic_military_mission
+        x = 17
+        y = 6
+        cost = 8
+        ai_will_do = {
+			factor = 5
+		}
+        available = {
+                owns_state = 106
+        }
+        prerequisite = {
+            focus = BUL_weapons
+        }
+        completion_reward = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+				amount = 2000
+            }
+
+		}
+    }
+    focus = {
+        id = BUL_prussia_of_balkans
+        icon = GFX_goal_generic_axis_build_infantry
+
+        x = 12
+        y = 7
+        cost = 8
+        ai_will_do = {
+			factor = 5
+		}
+        prerequisite = {
+            focus = BUL_ww1_veterans
+        }
+        prerequisite = {
+            focus = BUL_fortify_thrace
+        }
+        prerequisite = {
+            focus = BUL_fortify_macedonia
+        }
+        prerequisite = {
+            focus = BUL_integrate_imro
+        }
+        prerequisite = {
+            focus = BUL_focus_air
+            focus = BUL_focus_navy
+        }
+        available = {
+            NOT = {
+                has_idea = BUL_veteran_training
+            }
+        }
+        completion_reward = {
+            add_ideas = BUL_balkan_prussia
+		}
+    }
+## Political Path
 }

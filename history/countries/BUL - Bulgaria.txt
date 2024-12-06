@@ -5,7 +5,7 @@ oob = "BUL_1936" #VANILLA & DLC
 set_convoys = 5 #VANILLA & DLC
 
 add_ideas = { #VANILLA
-			limited_conscription
+			BUL_army_restrictions
 		}
 
 		#POLITICS
