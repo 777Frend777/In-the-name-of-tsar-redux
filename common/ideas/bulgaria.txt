@@ -1,7 +1,6 @@
 ideas = {
-
     country = { 
-        BUL_army_restrictions_aat = {
+        BUL_army_restrictions = {
 			name = BUL_army_restrictions
 			picture = tfv_can_conscription_crisis
 
@@ -11,8 +10,49 @@ ideas = {
 			allowed_civil_war = {
 				tag = BUL
 			}
+			rule = {
+				can_not_declare_war = yes
+			}
 			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.45
+				custom_modifier_tooltip = BUL_army_restrictions_mobilization_law_tt
+			}
+        }
+		BUL_veteran_training = {
+			name = BUL_veteran_training
+			picture = tfv_can_conscription_crisis
 
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				tag = BUL
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.5
+				experience_gain_army_factor = 0.2
+				experience_gain_air_factor = 0.2
+				experience_gain_navy_factor = 0.2
+			}
+        }
+		BUL_balkan_prussia = {
+			name = BUL_balkan_prussia
+			picture = tfv_can_conscription_crisis
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				tag = BUL
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.05
+				army_speed_factor = 0.1
+			}
         }
     }
 }
