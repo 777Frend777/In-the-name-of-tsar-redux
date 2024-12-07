@@ -373,6 +373,10 @@ focus_tree = {
         }
         completion_reward = {
             remove_ideas = BUL_army_restrictions
+            add_timed_idea = {
+                idea = BUL_western_blockade
+                days = 365
+            }
 		}
     }
     focus = {
@@ -391,7 +395,7 @@ focus_tree = {
             focus = BUL_forceful_rearmament
         }
         completion_reward = {
-            # TODO: Actually do this focus and the event chain
+            country_event = bulgaria.1
 		}
     }
     focus = {
