@@ -1,0 +1,36 @@
+state={
+	id=969
+	name="STATE_969"
+	resources={
+		chromium=7.000
+		aluminium=24.000
+	}
+
+	history={
+		owner = SER
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 2
+
+		}
+		victory_points = {
+			867 5
+		}
+		victory_points = {
+			833 5
+		}
+		add_core_of = SER
+		add_core_of = MAC
+		add_claim_by = BUL
+	}
+
+	provinces={
+		833 867 11856 
+	}
+	manpower=376110
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=0.0 
+}

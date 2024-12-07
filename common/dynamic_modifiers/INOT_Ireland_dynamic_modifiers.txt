@@ -1,5 +1,5 @@
 IRE_unionist_resistance_in_north = {
-  icon = "GFX_idea_IRE_ulster_on_fire"
+  icon = GFX_idea_IRE_ulster_on_fire
   remove_trigger = {
     is_controlled_by = ENG
   }
