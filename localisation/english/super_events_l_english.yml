@@ -20,6 +20,8 @@
  redrussiawonwhite: "The Red Army defeated the White Army"
  franceagainstgermany: "Franco-Prussian War"
  parade_in_berlin: "Parade in Berlin"
+ turkestan_unification_music: "The unification of Turkestan"
+ Cossack_1937: "Communists on the Don"
  ###
  #Superevents
 sp_event_bruderkrieg:0 "Second Bruderkrieg"
@@ -79,3 +81,6 @@ sp_event_Kornilov_putch_REMARK:0 "Kornilovism..."
   sp_event_The_Coup_of_Budyonny_on_the_Don:0 "Budyonny's coup on the Don"
   sp_event_The_Coup_of_Budyonny_on_the_Don_QUOTE:0 "If I had Cossacks, I'd conquer the whole world. \n- §yNapoleon I Bonaparte§y"
   sp_event_The_Coup_of_Budyonny_on_the_Don_REMARK:0 "Don now pro-soviet government?"
+  sp_event_turkestan_unification:0 "Reunification of Turkestan"
+  sp_event_turkestan_unification_QUOTE:0 "If the Russians retreat, they are done. \n- §yEnver Pasha§y"
+  sp_event_turkestan_unification_REMARK:0 "Nobody believed it, but it happened!"

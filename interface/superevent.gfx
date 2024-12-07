@@ -80,4 +80,8 @@ spriteTypes = {
 		name = "GFX_redrussiawonwhite"
 		textureFile = "/gfx/super_event/redrussiawonwhite.png"
 	}
+	spriteType = {
+		name = "GFX_turkestan_unification"
+		textureFile = "/gfx/super_event/turkestan_unification.png"
+	}
 }

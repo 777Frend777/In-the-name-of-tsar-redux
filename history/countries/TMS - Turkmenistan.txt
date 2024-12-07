@@ -1,6 +1,6 @@
 ﻿capital = 584
 
-#oob = ""
+oob = "TUK_INF_1936"
 
 # Starting tech
 set_technology = {

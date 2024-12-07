@@ -274,6 +274,12 @@ spriteTypes = {
 		name = "GFX_idea_slot_theorist"
 		textureFile = "gfx/interface/officer_corp/select_advisor.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_send_units_entry_bg"
+		textureFile = "gfx/interface/send_units_entry_bg.dds"
+		noOfFrames = 2
+	}
 
 	spriteType = {
 		name = "GFX_idea_slot_industrial_concern"

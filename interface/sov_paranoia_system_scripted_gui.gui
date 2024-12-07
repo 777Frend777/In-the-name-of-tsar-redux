@@ -27,7 +27,6 @@ guiTypes = {
 			name ="paranoia_main_bg"
 			spriteType = "GFX_SOV_paranoia_bg"
 			position = { x=@PARANOIA_PARANOIAMETER_BG_X	 y=@PARANOIA_PARANOIAMETER_BG_Y }
-			#pdx_tooltip = SOV_PROPAGANDA_CAMPAIGN_TT_LEFT
 		}
 
 		#PARANOIAMETER
@@ -35,7 +34,6 @@ guiTypes = {
 			name ="paranoia_main_paranoiameter"
 			spriteType = "GFX_SOV_paranoia_meter"
 			position = { x=@PARANOIA_PARANOIAMETER_MAIN_X	 y=@PARANOIA_PARANOIAMETER_MAIN_Y }
-			#pdx_tooltip = SOV_PROPAGANDA_CAMPAIGN_TT_LEFT
 		}
 
 		#PARANOIAMETER
@@ -43,7 +41,6 @@ guiTypes = {
 			name ="paranoia_main_needle"
 			spriteType = "GFX_SOV_paranoia_needle"
 			position = { x=@PARANOIA_PARANOIAMETER_MAIN_X	 y=@PARANOIA_PARANOIAMETER_MAIN_Y }
-			#pdx_tooltip = SOV_PROPAGANDA_CAMPAIGN_TT_LEFT
 		}
 
 		#PARANOIA TEXT

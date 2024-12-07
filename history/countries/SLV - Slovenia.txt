@@ -1,36 +1,6 @@
-﻿capital = 853
+﻿capital = 102
 
-oob = "SLV_1936"
-
-set_research_slots = 2
-
-set_cosmetic_tag = SLV_AUS
-
-recruit_character = SLV_landtag
-
-add_ideas = { 
-	SLV_otto_king
-	SLV_grand_duchy
-	SLV_enemies
-	limited_conscription
-}
-
-add_opinion_modifier = {
-    target = CRO
-    modifier = INOT_hostile_regime
-}
-add_opinion_modifier = {
-    target = SER
-    modifier = INOT_hostile_regime
-}
-add_opinion_modifier = {
-    target = HUN
-    modifier = INOT_disapproves_of_govt
-}
-add_opinion_modifier = {
-    target = ITA
-    modifier = INOT_disapproves_of_govt
-}
+set_research_slots = 3
 
 # Starting tech
 # clone of Yugoslavia
@@ -67,17 +37,14 @@ if = {
 }
 
 set_politics = {
-	ruling_party = conservatives
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 32
-	conservatives = 40
-	fascism = 14
-	communism = 0
-	socialist = 14
-	neutrality = 0
+	democratic = 33
+	neutrality = 33
+	communism = 34
 }

@@ -11,6 +11,22 @@ propaganda_efforts = {
 
 	}
 }
+MTG_naval_treaties = {
+	picture = GFX_decision_cat_picture_naval_treaties
+	allowed = {
+		has_dlc = "Man the Guns"
+	}
+	visible = {
+		OR = {
+			has_naval_treaty_trigger = yes
+			is_major = yes
+		}
+		any_owned_state = {
+			is_coastal = yes
+		}
+	}
+	priority = 10
+}
 issue_sanctions_decisions = { #for now only majors, more to come 
 	icon = generic_crisis
 

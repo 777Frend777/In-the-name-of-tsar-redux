@@ -47,51 +47,51 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	#spriteType = {
-	#	name = "GFX_trait_trait_RUS_cowed_by_stalin_army"
-	#	texturefile = "gfx/interface/traits/personal/trait_RUS_cowed_by_stalin_army.dds"
-	#	legacy_lazy_load = no
-	#}
-
 	spriteType = {
-		name = "GFX_trait_trait_RUS_cowed_by_stalin_navy"
-		texturefile = "gfx/interface/traits/personal/trait_RUS_cowed_by_stalin_navy.dds"
+		name = "GFX_trait_trait_SOV_cowed_by_stalin_army"
+		texturefile = "gfx/interface/traits/personal/trait_SOV_cowed_by_stalin_army.dds"
 		legacy_lazy_load = no
 	}
 
 	spriteType = {
-		name = "GFX_trait_trait_RUS_determined"
-		texturefile = "gfx/interface/traits/personal/trait_RUS_determined.dds"
+		name = "GFX_trait_trait_SOV_cowed_by_stalin_navy"
+		texturefile = "gfx/interface/traits/personal/trait_SOV_cowed_by_stalin_navy.dds"
 		legacy_lazy_load = no
 	}
 
 	spriteType = {
-		name = "GFX_trait_trait_RUS_stalinist"
-		texturefile = "gfx/interface/traits/personal/trait_RUS_stalinist.dds"
+		name = "GFX_trait_trait_SOV_determined"
+		texturefile = "gfx/interface/traits/personal/trait_SOV_determined.dds"
 		legacy_lazy_load = no
 	}
 
 	spriteType = {
-		name = "GFX_trait_trait_RUS_trotskyist"
-		texturefile = "gfx/interface/traits/personal/trait_RUS_trotskyist.dds"
+		name = "GFX_trait_trait_SOV_stalinist"
+		texturefile = "gfx/interface/traits/personal/trait_SOV_stalinist.dds"
 		legacy_lazy_load = no
 	}
 
 	spriteType = {
-		name = "GFX_trait_trait_RUS_bukharinist"
-		texturefile = "gfx/interface/traits/personal/trait_RUS_bukharinist.dds"
+		name = "GFX_trait_trait_SOV_trotskyist"
+		texturefile = "gfx/interface/traits/personal/trait_SOV_trotskyist.dds"
 		legacy_lazy_load = no
 	}
 
 	spriteType = {
-		name = "GFX_trait_RUS_monarchist_sympathizer"
-		texturefile = "gfx/interface/traits/personal/trait_RUS_monarchist_sympathizer.dds"
+		name = "GFX_trait_trait_SOV_bukharinist"
+		texturefile = "gfx/interface/traits/personal/trait_SOV_bukharinist.dds"
 		legacy_lazy_load = no
 	}
 
 	spriteType = {
-		name = "GFX_trait_trait_RUS_foreign_military_advisor"
-		texturefile = "gfx/interface/traits/personal/trait_RUS_foreign_military_advisor.dds"
+		name = "GFX_trait_SOV_monarchist_sympathizer"
+		texturefile = "gfx/interface/traits/personal/trait_SOV_monarchist_sympathizer.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_trait_SOV_foreign_military_advisor"
+		texturefile = "gfx/interface/traits/personal/trait_SOV_foreign_military_advisor.dds"
 		legacy_lazy_load = no
 	}
 }

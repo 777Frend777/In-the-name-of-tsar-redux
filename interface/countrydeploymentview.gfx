@@ -81,6 +81,11 @@ spriteTypes = {
 		name = "GFX_operations_deploy_icon"
 		textureFile = "gfx//interface//operations_deploy_icon.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_deploy_raids_icon"
+		textureFile = "gfx/interface/deploy_raids_icon.dds"
+	}
 	
 	SpriteType = {
 		name = "GFX_deploy_reinforcements_entry"
@@ -123,7 +128,7 @@ spriteTypes = {
 		name = "GFX_deploy_garrisons_entry"
 		textureFile = "gfx//interface//deploy_garrisons_entry.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-	}	
+	}
 
 	textSpriteType = {
 		name = "GFX_small_button_71x26"

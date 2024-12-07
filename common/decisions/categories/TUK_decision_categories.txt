@@ -1,0 +1,9 @@
+TUK_demand_central_asia = {
+	icon = GFX_decision_cat_WIF_rebelion
+
+	picture = GFX_decision_cat_INC_vietminh
+
+	allowed = {
+		original_tag = TUK
+	}
+}

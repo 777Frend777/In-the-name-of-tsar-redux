@@ -189,6 +189,35 @@ spriteTypes = {
 	
 		legacy_lazy_load = no
 	}
+
+	SpriteType = {
+		name = "GFX_focus_completed"
+		texturefile = "gfx/interface/focusview/titlebar/focus_completed_bg.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+#		effectFile = "gfx/FX/buttonstate.lua"		
+		animation = {
+			animationmaskfile = "gfx/interface/focusview/titlebar/focus_completed_mask.dds"
+			animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds" 	# <- the animated file
+			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 26.0				# in seconds
+			animationdelay = 0.0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+#			animationframes = {1 2 3 }
+		}
+	
+		legacy_lazy_load = no
+	}	
+
+
+###############
+##### AAT #####
+###############
+
+
 	spriteType = {
 		name = "GFX_focus_unavailable_joint"
 		textureFile = "gfx/interface/focusview/titlebar/focus_unavailable_joint_bg.dds"
@@ -254,9 +283,64 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 
+
+	
+
+
+#############################
+##### WW BEL-COG FLAGS  #####
+#############################
+
+
+### BEL ###
+
+
+	spriteType = {
+		name = "GFX_focus_unavailable_joint_BEL"
+		textureFile = "gfx/interface/focusview/titlebar/focus_unavailable_joint_BEL_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_can_start_joint_BEL"
+		textureFile = "gfx/interface/focusview/titlebar/focus_can_start_joint_BEL_bg.dds"
+	}
+
 	SpriteType = {
-		name = "GFX_focus_completed"
-		texturefile = "gfx/interface/focusview/titlebar/focus_completed_bg.dds"
+		name = "GFX_focus_current_joint_BEL"  
+		texturefile = "gfx/interface/focusview/titlebar/focus_can_start_joint_BEL_bg.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+#		effectFile = "gfx/FX/buttonstate.lua"		
+		animation = {
+			animationmaskfile = "gfx/interface/focusview/titlebar/focus_ongoing_mask2.dds"
+			animationtexturefile = "gfx/interface/focusview/titlebar/focus_ongoing_texture.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 20.0				# in seconds
+			animationdelay = 0.2			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "rotating"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+#			animationframes = {1 2 3 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/focusview/titlebar/focus_ongoing_mask4.dds"
+			animationtexturefile = "gfx/interface/focusview/titlebar/focus_ongoing_texture.dds"
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 15.0				# in seconds
+			animationdelay = 0.2			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "rotating_ccw"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+#			animationframes = {1 2 3 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_completed_joint_BEL"
+		texturefile = "gfx/interface/focusview/titlebar/focus_completed_joint_BEL_bg.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 #		effectFile = "gfx/FX/buttonstate.lua"		
 		animation = {
@@ -275,7 +359,227 @@ spriteTypes = {
 	
 		legacy_lazy_load = no
 	}	
+
+
+### COG ###
+
+
+	spriteType = {
+		name = "GFX_focus_unavailable_joint_COG"
+		textureFile = "gfx/interface/focusview/titlebar/focus_unavailable_joint_COG_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_can_start_joint_COG"
+		textureFile = "gfx/interface/focusview/titlebar/focus_can_start_joint_COG_bg.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_current_joint_COG"  
+		texturefile = "gfx/interface/focusview/titlebar/focus_can_start_joint_COG_bg.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+#		effectFile = "gfx/FX/buttonstate.lua"		
+		animation = {
+			animationmaskfile = "gfx/interface/focusview/titlebar/focus_ongoing_mask2.dds"
+			animationtexturefile = "gfx/interface/focusview/titlebar/focus_ongoing_texture.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 20.0				# in seconds
+			animationdelay = 0.2			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "rotating"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+#			animationframes = {1 2 3 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/focusview/titlebar/focus_ongoing_mask4.dds"
+			animationtexturefile = "gfx/interface/focusview/titlebar/focus_ongoing_texture.dds"
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 15.0				# in seconds
+			animationdelay = 0.2			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "rotating_ccw"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+#			animationframes = {1 2 3 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_completed_joint_COG"
+		texturefile = "gfx/interface/focusview/titlebar/focus_completed_joint_COG_bg.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+#		effectFile = "gfx/FX/buttonstate.lua"		
+		animation = {
+			animationmaskfile = "gfx/interface/focusview/titlebar/focus_completed_mask.dds"
+			animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds" 	# <- the animated file
+			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 26.0				# in seconds
+			animationdelay = 0.0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+#			animationframes = {1 2 3 }
+		}
 	
+		legacy_lazy_load = no
+	}	
+
+
+### BEL_COG ###
+
+
+	spriteType = {
+		name = "GFX_focus_unavailable_joint_BEL_COG"
+		textureFile = "gfx/interface/focusview/titlebar/focus_unavailable_joint_BEL_COG_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_can_start_joint_BEL_COG"
+		textureFile = "gfx/interface/focusview/titlebar/focus_can_start_joint_BEL_COG_bg.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_current_joint_BEL_COG"  
+		texturefile = "gfx/interface/focusview/titlebar/focus_can_start_joint_BEL_COG_bg.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+#		effectFile = "gfx/FX/buttonstate.lua"		
+		animation = {
+			animationmaskfile = "gfx/interface/focusview/titlebar/focus_ongoing_mask2.dds"
+			animationtexturefile = "gfx/interface/focusview/titlebar/focus_ongoing_texture.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 20.0				# in seconds
+			animationdelay = 0.2			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "rotating"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+#			animationframes = {1 2 3 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/focusview/titlebar/focus_ongoing_mask4.dds"
+			animationtexturefile = "gfx/interface/focusview/titlebar/focus_ongoing_texture.dds"
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 15.0				# in seconds
+			animationdelay = 0.2			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "rotating_ccw"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+#			animationframes = {1 2 3 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_completed_joint_BEL_COG"
+		texturefile = "gfx/interface/focusview/titlebar/focus_completed_joint_BEL_COG_bg.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+#		effectFile = "gfx/FX/buttonstate.lua"		
+		animation = {
+			animationmaskfile = "gfx/interface/focusview/titlebar/focus_completed_mask.dds"
+			animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds" 	# <- the animated file
+			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 26.0				# in seconds
+			animationdelay = 0.0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+#			animationframes = {1 2 3 }
+		}
+	
+		legacy_lazy_load = no
+	}	
+
+
+#############################
+#### WW BEL-COG FLAGS END ###
+#############################
+
+
+
+### GER - Inner Circle ###
+
+
+	spriteType = {
+		name = "GFX_focus_unavailable_joint_GER_inner_circle"
+		textureFile = "gfx/interface/focusview/titlebar/focus_unavailable_inner_circle_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_can_start_joint_GER_inner_circle"
+		textureFile = "gfx/interface/focusview/titlebar/focus_start_inner_circle_bg.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_current_joint_GER_inner_circle"  
+		texturefile = "gfx/interface/focusview/titlebar/focus_start_inner_circle_bg.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+#		effectFile = "gfx/FX/buttonstate.lua"		
+		animation = {
+			animationmaskfile = "gfx/interface/focusview/titlebar/focus_ongoing_mask2.dds"
+			animationtexturefile = "gfx/interface/focusview/titlebar/focus_ongoing_texture.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 20.0				# in seconds
+			animationdelay = 0.2			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "rotating"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+#			animationframes = {1 2 3 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/focusview/titlebar/focus_ongoing_mask4.dds"
+			animationtexturefile = "gfx/interface/focusview/titlebar/focus_ongoing_texture.dds"
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 15.0				# in seconds
+			animationdelay = 0.2			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "rotating_ccw"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+#			animationframes = {1 2 3 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_completed_joint_GER_inner_circle"
+		texturefile = "gfx/interface/focusview/titlebar/focus_completed_inner_circle_bg.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+#		effectFile = "gfx/FX/buttonstate.lua"		
+		animation = {
+			animationmaskfile = "gfx/interface/focusview/titlebar/focus_completed_mask.dds"
+			animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds" 	# <- the animated file
+			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 26.0				# in seconds
+			animationdelay = 0.0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+#			animationframes = {1 2 3 }
+		}
+	
+		legacy_lazy_load = no
+	}	
+
+
+##################################
+#### WW GER - Inner Circle END ###
+##################################
+
+
 	
 	spriteType = {
 		name = "GFX_FOCUS_FILTER_ICON_BG"
@@ -302,7 +606,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/focusview/filter/find_editbox.dds"
 	}
 	
-	
+	spriteType = {
+		name = "GFX_FOCUS_ICON_SET_HISTORICAL_KEY_FOCUS"
+		textureFile = "gfx/interface/focusview/filter/GER_historical_key_focus.dds"
+	}
+
 	spriteType = {
 		name = "GFX_FOCUS_FILTER_POLITICAL"
 		textureFile = "gfx/interface/focusview/filter/pol_power_icon.dds"
@@ -405,13 +713,13 @@ spriteTypes = {
 	}
 			
 	spriteType = {
-		name = "GFX_FOCUS_FILTER_RUS_POLITICAL_PARANOIA"
-		texturefile = "gfx/interface/focusview/filter/RUS_paranoia_icon.dds"
+		name = "GFX_FOCUS_FILTER_SOV_POLITICAL_PARANOIA"
+		texturefile = "gfx/interface/focusview/filter/SOV_paranoia_icon.dds"
 	}
 			
 	spriteType = {
 		name = "GFX_FOCUS_FILTER_PROPAGANDA"
-		texturefile = "gfx/interface/focusview/filter/RUS_propaganda_icon.dds"
+		texturefile = "gfx/interface/focusview/filter/SOV_propaganda_icon.dds"
 	}
 
 	spriteType = {
@@ -467,5 +775,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_FOCUS_FILTER_HISTORICAL"
 		texturefile = "gfx/interface/focusview/filter/historical_focus_filter_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_FOCUS_FILTER_INNER_CIRCLE"
+		texturefile = "gfx/interface/focusview/filter/GER_inner_circle.dds"
 	}
 }

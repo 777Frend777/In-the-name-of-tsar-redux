@@ -181,7 +181,7 @@ POL_buffs_in_war = {
 
 ai_strategy = {
     type = put_unit_buffers
-    ratio = 0.4
+    ratio = 0.7
     states = {
         10
         98

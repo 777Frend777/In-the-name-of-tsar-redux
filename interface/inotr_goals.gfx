@@ -5229,4 +5229,16 @@ spriteTypes = {
 		name = "GFX_markov_focus"
 		texturefile = "gfx/interface/goals/markov_focus.dds"
 	}
+	SpriteType = { 
+		name = "GFX_focus_subjugate_afghanistan"
+		texturefile = "gfx/interface/goals/subjugate_afghanistan.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_subjugate_iran"
+		texturefile = "gfx/interface/goals/subjugate_iran.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_help_azeri"
+		texturefile = "gfx/interface/goals/help_azeri.dds"
+	}
 }

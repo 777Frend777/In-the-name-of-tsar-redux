@@ -1,0 +1,73 @@
+﻿l_russian:
+  #Serbian planes 
+ SER_fighter_equipment_0: "Авиа-Икарус BH-33" #NT!
+ SER_fighter_equipment_0_short: "БХ-33" #NT!
+ SER_fighter_equipment_1: "Икарус ИК-2" #NT!
+ SER_fighter_equipment_1_short: "ИК-2" #NT!
+ SER_fighter_equipment_2: "Рогозарский ИК-3" #NT!
+ SER_fighter_equipment_2_short: "ИК-3" #NT!
+ SER_fighter_equipment_3: "Икарус С-49" #NT!
+ SER_fighter_equipment_3_short: "С-49" #NT!
+  
+ SER_heavy_fighter_equipment_1: "Рогозарский ИК-5" #NT!
+ SER_heavy_fighter_equipment_1_short: "ИК-5" #NT!
+ SER_heavy_fighter_equipment_2: "Рогозарский Р-313" #NT!
+ SER_heavy_fighter_equipment_2_short: "Р-313" #NT!
+ SER_heavy_fighter_equipment_3: "Ненадович-Митрович" #NT!
+ SER_heavy_fighter_equipment_3_short: "НЕМИ" #NT!
+  
+ SER_CAS_equipment_1: "Рогозарский Р-100" #NT!
+ SER_CAS_equipment_1_short: "Р-100" #NT!
+ SER_CAS_equipment_2: "Икарус Оркан" #NT!
+ SER_CAS_equipment_2_short: "Икарус Оркан" #NT!
+ SER_CAS_equipment_3: "Икарус Тайфун" #NT!
+ SER_CAS_equipment_3_short: "Икарус Тайфун" #NT!
+  
+ SER_tac_bomber_equipment_0: "Змай А-5" #NT!
+ SER_tac_bomber_equipment_0_short: "А-5" #NT!
+ SER_tac_bomber_equipment_1: "Змай С-17" #NT!
+ SER_tac_bomber_equipment_1_short: "Змай С-17" #NT!
+ SER_tac_bomber_equipment_2: "Змай Г-2" #NT!
+ SER_tac_bomber_equipment_2_short: "Г-2" #NT!
+ SER_tac_bomber_equipment_3: "Змай Р-1" #NT!
+ SER_tac_bomber_equipment_3_short: "Р-1" #NT!
+  
+ SER_strat_bomber_equipment_0: "Рогозарский Р-401" #NT!
+ SER_strat_bomber_equipment_0_short: "Р-401" #NT!
+ SER_strat_bomber_equipment_1: "Змай Q-12" #NT!
+ SER_strat_bomber_equipment_1_short: "Змай Q-12" #NT!
+ SER_strat_bomber_equipment_2: "Рогозарский Р-522" #NT!
+ SER_strat_bomber_equipment_2_short: "Р-522" #NT!
+ SER_strat_bomber_equipment_3: "Змай Т-155" #NT!
+ SER_strat_bomber_equipment_3_short: "Т-155" #NT!
+  
+ SER_nav_bomber_equipment_1: "Рогозарский SIM-XIV-H" #NT!
+ SER_nav_bomber_equipment_1_short: "SIM-XIV-H" #NT!
+ SER_nav_bomber_equipment_2: "Рогозарский SIM-XIX-V" #NT!
+ SER_nav_bomber_equipment_2_short: "SIM-XIX-V" #NT!
+ SER_nav_bomber_equipment_3: "Икарус ИК-19" #NT!
+ SER_nav_bomber_equipment_3_short: "ИК-19" #NT!
+  
+  #Illyrian planes 
+ CRO_fighter_equipment_0: "Хоукер Харт" #NT!
+ CRO_fighter_equipment_0_short: "Харт" #NT!
+ CRO_fighter_equipment_1: "Кончар Проторип 1" #NT!
+ CRO_fighter_equipment_1_short: "КП1" #NT!
+ CRO_fighter_equipment_2: "Кончар 2" #NT!
+ CRO_fighter_equipment_2_short: "К-2" #NT!
+ CRO_fighter_equipment_3: "Авиа Загреб 41" #NT!
+ CRO_fighter_equipment_3_short: "АЗ-41" #NT!
+  
+ CRO_heavy_fighter_equipment_1: "Кончар Бомбардер 1" #NT!
+ CRO_heavy_fighter_equipment_1_short: "КБ1" #NT!
+ CRO_heavy_fighter_equipment_2: "Авиа Загреб ТБ-22" #NT!
+ CRO_heavy_fighter_equipment_2_short: "ТБ-22" #NT!
+ CRO_heavy_fighter_equipment_3: "Авиа Загреб TB-105" #NT!
+ CRO_heavy_fighter_equipment_3_short: "ТБ-105" #NT!
+  
+ CRO_CAS_equipment_1: "Аждая АП-10" #NT!
+ CRO_CAS_equipment_1_short: "АП-10" #NT!
+ CRO_CAS_equipment_2: "Аждая АП-20" #NT!
+ CRO_CAS_equipment_2_short: "АП-20" #NT!
+ CRO_CAS_equipment_3: "Аждая AP-35 Олуя" #NT!
+ CRO_CAS_equipment_3_short: "AP-35 Олуджа" #NT!

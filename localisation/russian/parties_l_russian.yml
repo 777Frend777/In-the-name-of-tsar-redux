@@ -993,8 +993,7 @@
  CHU_democratic_party_long: "Чувашско-Тюркский государственный совет" #NT!
  CHU_neutrality_party: "КОУ" #NT!
  CHU_neutrality_party_long: "Чувашский Православный Союз" #NT!
- TUK_democratic_party: "Алаш Партия" #NT!
- TAG_Purged: "§RОчищено!" #NT!
+ TAG_Purged: "§RОчищено!§!" #NT!
   # Galicia 
  KRW_conservatives_party: "СПН" #NT!
  KRW_conservatives_party_long: "Стронництво Правицы Народовей" #NT!
@@ -1035,3 +1034,28 @@
  ####ETH
  LBA_neutrality_party:0 "Орден Сенусси"
  ####
+
+#Brazil
+ BRA_fascism_party:0 "ANI"
+ BRA_fascism_party_long:0 "Ação Nacional Integralista."
+ BRA_conservatives_party:0 "PD"
+ BRA_conservatives_party_long:0 "Partido Democrático"
+ BRA_liberalism_party:0 "PRP"
+ BRA_liberalism_party_long:0 "Partido Republicano Paulista"
+ BRA_communism_party:0 "PCB"
+ BRA_communism_party_long:0 "Partido Comunista Brasileiro"
+ BRA_socialist_party:0 "PSB"
+ BRA_socialist_party_long:0 "Partido Socialista Brasileiro"
+
+  # Basmachi/TUK/Turkestan
+ TUK_democratic_party: "HİF" #NT!
+ TUK_democratic_party_long: "Hürriyet ve İtilaf Fırkası" #NT!
+ TUK_liberalism_party: "§RЗапрещена!§!"
+ TUK_conservatives_party: "§RЗапрещена!§!" #NT!
+ TUK_socialist_party: "§RЗапрещена!§!" #NT!
+ TUK_communism_party_long: "Turkistan İşçi Partisi" #NT!
+ TUK_communism_party: "TİP" #NT!
+ TUK_fascism_party:0 "Osmanlıcılar"
+ TUK_fascism_party_long:0 "Osmanlıcı Parti"
+ TUK_neutrality_party: "EP" #NT!
+ TUK_neutrality_party_long: "Enverist Partisi" #NT!

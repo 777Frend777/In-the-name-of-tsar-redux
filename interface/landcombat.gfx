@@ -166,8 +166,8 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_RUS_tank_desant_blitz"
-		texturefile = "gfx/interface/landcombat/tactics/RUS_tank_desant_blitz.dds"
+		name = "GFX_SOV_tank_desant_blitz"
+		texturefile = "gfx/interface/landcombat/tactics/SOV_tank_desant_blitz.dds"
 	}
 
 	spriteType = {
