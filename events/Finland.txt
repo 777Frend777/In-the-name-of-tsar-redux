@@ -93,8 +93,9 @@ country_event = {
 		name = WINTERWAR.100.a
 		RUS = {
 		create_wargoal = {
-			type = annex_everything
+			type = annex_country
 			target = FIN
+			generator = { 146 }
 		}
 		}	
 	}

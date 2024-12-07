@@ -1,4 +1,4 @@
-version="1.15.2"
+version="1.14.8"
 tags={
 	"Alternative History"
 }
@@ -6,10 +6,5 @@ name="In The Name Of The Tsar Redux"
 replace_path="history/states"
 replace_path="map"
 replace_path="map/strategicregions"
-replace_path="history/countries"
-replace_path="common/countries"
-replace_path="common/country_leader"
-replace_path="events"
-replace_path="common/national_focus"
-supported_version="1.15.2"
-remote_file_id="3377218942"
+supported_version="1.14.9"
+remote_file_id="3144323621"

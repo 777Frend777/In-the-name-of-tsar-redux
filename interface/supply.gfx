@@ -9,7 +9,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_supply_hub_icon_strip"
 		texturefile = "gfx/interface/mapicons/supply/supply_hub_icon_strip.dds"
-		noOfFrames = 5
+		noOfFrames = 4
 	}
 
 	spriteType = {

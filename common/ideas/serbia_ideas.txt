@@ -1,22 +1,6 @@
 ideas = {
 
 	country = {
-		SER_alexander = {
-
-			allowed = {
-				original_tag = SER
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-            picture = ser_alexander
-			removal_cost = -1
-			
-			modifier = {
-			     	stability_factor = 0.05 
-			}	
-		}
 	SER_peoples_army = {
 			allowed = {
 				original_tag = SER
@@ -437,4 +421,4 @@ ideas = {
 		}
 	}
 }	
-}	
+	

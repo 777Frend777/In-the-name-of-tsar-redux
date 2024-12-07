@@ -534,8 +534,6 @@ l_english:
  CHL_communism_party_long:0 "Partido Comunista de Chile"
  ETH_neutrality_party:0 "Solomonic Dynasty"
  ETH_democratic_party:0 "Woyane rebellion"
- ALB_neutrality_party:0 "House of Zogu"
- ALB_neutrality_party_long:0 "House of Zogu"
  BOL_democratic_party:0 "PL"
  BOL_democratic_party_long:0 "Partido Liberal"
  BOL_fascism_party:0 "FSB"
@@ -1069,7 +1067,7 @@ l_english:
 
  # Galicia
  KRW_conservatives_party:0 "SPN"
- KRW_conservatives_party_long:0 "Stronnictwo Prawicy Narodowej" #Hieronim Tarnowski"
+ KRW_conservatives_party_long:0 "Stronnictwo Prawicy Narodowej" #Hieronim Tarnowski
  KRW_neutrality_party:0 "Ducal Diet"
  KRW_democratic_party:0 "SLD" #Andriy_Melnyk
  KRW_democratic_party_long:0 "Stronnictwo Liberalno-Demokratyczne" #Adam Heydel
@@ -1093,31 +1091,6 @@ l_english:
 #Cyrenaica
  LBA_neutrality_party:0 "Senussi Order"
 
-#Brazil
- BRA_fascism_party:0 "ANI"
- BRA_fascism_party_long:0 "Ação Nacional Integralista."
- BRA_conservatives_party:0 "PD"
- BRA_conservatives_party_long:0 "Partido Democrático"
- BRA_liberalism_party_long:0 "PRP"
- BRA_liberalism_party_long:0 "Partido Republicano Paulista"
- BRA_communism_party:0 "PCB"
- BRA_communism_party_long:0 "Partido Comunista Brasileiro"
- BRA_socialist_party:0 "PSB"
- BRA_socialist_party_long:0 "Partido Socialista Brasileiro"
-
-  # Basmachi/TUK/Turkestan
- TUK_democratic_party: "HİF" #NT!
- TUK_democratic_party_long: "Hürriyet ve İtilaf Fırkası" #NT!
- TUK_liberalism_party: "§RBanned!§!"
- TUK_conservatives_party: "§RBanned!§!" #NT!
- TUK_socialist_party: "§RBanned!§!" #NT!
- TUK_communism_party_long: "Turkistan İşçi Partisi" #NT!
- TUK_communism_party: "TİP" #NT!
- TUK_fascism_party:0 "Osmanlıcılar"
- TUK_fascism_party_long:0 "Osmanlıcı Parti"
- TUK_neutrality_party: "EP" #NT!
- TUK_neutrality_party_long: "Enverist Partisi" #NT!
-
 #Albania
  ALB_neutrality_party:0 "Monarchist Movement"
  ALB_neutrality_party_long:0 "Lëvizja Monarkiste"
@@ -1131,3 +1104,16 @@ l_english:
  ALB_socialist_party_long:0 "Komiteti Kombëtar Revolucionar" 
  ALB_communism_party:0 "National Revolutionary Committee"
  ALB_communism_party_long:0 "Komiteti Kombëtar Revolucionar" 
+
+#Slovenia
+ SLV_conservatives_party:0 "Landtag - Parlament"
+ SLV_conservatives_party_long:0 "Landtag - Parlament" 
+ SLV_democratic_party:0 "Austrosceptic opposition" 
+ SLV_democratic_party_long:0 "Avstroskeptično nasprotovanje" 
+ SLV_fascism_party:0 "Chetniks"
+ SLV_fascism_party_long:0 "Četniki" 
+ SLV_socialist_party:0 "SSS - M"
+ SLV_socialist_party_long:0 "Socialistična stranka Slovenije - Moderates" 
+ SLV_communism_party:0 "SSS - R"
+ SLV_communism_party_long:0 "Socialistična stranka Slovenije - Radicals" 
+

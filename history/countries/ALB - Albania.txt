@@ -10,6 +10,22 @@ set_technology = {
 	tech_recon = 1
 }
 
+add_ideas = {
+	ALB_victor_emmanuel
+	ALB_irredentist_tendencies
+	ALB_bird_cage
+}
+
+add_opinion_modifier = {
+    target = SER
+    modifier = INOT_imposed_sanctions
+}
+add_opinion_modifier = {
+    target = MNT
+    modifier = INOT_imposed_sanctions
+}
+
+
 recruit_character = ALB_king_zog
 recruit_character = ALB_enver_hoxha
 recruit_character = ALB_xhemal_aranitasi
@@ -34,24 +50,22 @@ recruit_character = ALB_fiqri_dine
 recruit_character = ALB_midhat_frasheri
 recruit_character = ALB_jocelyn_percy
 
-add_ideas = {
-ALB_victor_emmanuel
-ALB_irredentist_tendencies
-ALB_bird_cage
-}
-
 
 set_politics = {
 	ruling_party = neutrality
-
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	neutrality = 100
+	democratic = 25
+	conservatives = 25
+	fascism = 3
+	communism = 0
+	socialist = 7
+	neutrality = 40
 }
 
-set_convoys = 5
+set_convoys = 10
 

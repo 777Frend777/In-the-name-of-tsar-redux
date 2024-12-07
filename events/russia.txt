@@ -989,7 +989,7 @@ country_event = {
 			create_country_leader = {
 	name = "Alexander Konovalov"
 	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
-	picture = "gfx/leaders/RUS/Portrait_RUS_Alexander_Konovalov.dds"
+	picture = "Alexander_Konovalov.dds" 
 	expire = "1965.1.1"
 	ideology = democratic_subtype
 	traits = {
@@ -998,14 +998,16 @@ country_event = {
 	}
 	}
 	}
+
 	option = {
 		name = russia.18.b	
-		ai_chance = { factor = 33 }			#set_politics = { ruling_party = conservatives elections_allowed = yes }
+		ai_chance = { factor = 33 }
 		RUS = {
+		#set_politics = { ruling_party = conservatives elections_allowed = yes }
 			create_country_leader = {
 	name = "Felix Yusupov"
 	desc = "POLITICS_YUSUPOV_DESC"
-	picture = "gfx/leaders/RUS/Portrait_RUS_Yusupov.png"
+	picture = "felix_yusupov.dds" 
 	expire = "1965.1.1"
 	ideology = democratic_subtype
 	traits = {
@@ -1014,14 +1016,16 @@ country_event = {
 }	
 	}
 }
+
 	option = {
 		name = russia.18.c	
 		ai_chance = { factor = 33 }
 		RUS = {
+				
 			create_country_leader = {
 	name = "Alexander Kerensky"
 	desc = "POLITICS_KERENSKY_DESC"
-	picture = "gfx/leaders/RUS/Portrait_RUS_Kerensky.png"
+	picture = "gfx/leaders/RUS/alexander_kerensky.dds"
 	expire = "1965.1.1"
 	ideology = democratic_subtype
 	traits = {

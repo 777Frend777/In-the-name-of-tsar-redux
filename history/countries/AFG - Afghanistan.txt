@@ -38,7 +38,7 @@ if = {
 	}
 }
 add_ideas = {
-AFG_graveyardofempires
+AFG_graveyard
 }
 
 

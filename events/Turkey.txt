@@ -43,12 +43,9 @@ country_event = {
 		name = turkey.1.a
 		every_country = {
 	 		limit = {
-				has_country_leader = {
-					character = TUR_mustafa_kemal_ataturk
-					ruling_only = yes
-				}				
+				TUR_mustafa_kemal_ataturk = { is_unit_leader = yes }
 			}
-			kill_country_leader = yes
+	 		TUR_mustafa_kemal_ataturk = { remove_unit_leader_role = yes }
 	 	}	
 	}			
 }

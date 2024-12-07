@@ -1,6 +1,6 @@
 ﻿capital = 584
 
-oob = "TUK_INF_1936"
+#oob = ""
 
 # Starting tech
 set_technology = {

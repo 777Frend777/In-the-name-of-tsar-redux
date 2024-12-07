@@ -1,27 +1,31 @@
-state=
-{
+
+state={
 	id=102
 	name="STATE_102"
-	manpower = 811050 # was 1144300 before Ljubljana split
-	
-	state_category = large_town
-	
-	history =
-	{
-		owner = AUS
+
+	history={
+		owner = SLV
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 1
+			596 = {
+				bunker = 1
+			}
 		}
 		victory_points = {
-			665 1
+			596 2
 		}
-		add_core_of = AUS
-		add_core_of = SER
+		add_claim_by = CRO
+		add_claim_by = SER
 		add_core_of = SLV
+
 	}
+
 	provinces={
-		596 665 3631 3654 6672 9596
+		596 665 3631 3654 9596 
 	}
-	
-	local_supplies=0.0 
+	manpower=721050
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
 }
