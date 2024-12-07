@@ -27,6 +27,14 @@ objectTypes = {
 	}
 
 	pdxmesh = {
+		name = "GER_mechanized_vehicle_0_mesh"
+		file = "gfx/models/units/vehicles/GER_mechanized_vehicle_0.mesh"
+		
+		animation = { id = "idle"			type = "GER_mechanized_vehicle_0_idle_animation" }
+		animation = { id = "move"			type = "GER_mechanized_vehicle_0_move_animation" }
+	}
+
+	pdxmesh = {
 		name = "GER_mechanized_mesh"
 		file = "gfx/models/units/vehicles/GER_mechanized_01.mesh"
 		
@@ -42,6 +50,7 @@ objectTypes = {
 		animation = { id = "idle"			type = "GER_motorized_01_idle_animation" }
 		animation = { id = "move"			type = "GER_motorized_01_move_animation" }
 	}
+
 	
 ####################################################### FINLAND ###########################################################
 #Aerosled
@@ -251,19 +260,19 @@ objectTypes = {
 ####################################################### SOVIET ###########################################################
 
 	pdxmesh = {
-		name = "RUS_mechanized_mesh"
-		file = "gfx/models/units/vehicles/RUS_mechanized_01.mesh"
+		name = "SOV_mechanized_mesh"
+		file = "gfx/models/units/vehicles/SOV_mechanized_01.mesh"
 		
-		animation = { id = "idle"			type = "RUS_mechanized_01_idle_animation" }
-		animation = { id = "move"			type = "RUS_mechanized_01_move_animation" }
+		animation = { id = "idle"			type = "SOV_mechanized_01_idle_animation" }
+		animation = { id = "move"			type = "SOV_mechanized_01_move_animation" }
 	}
 	
 	pdxmesh = {
-		name = "RUS_motorized_mesh"
-		file = "gfx/models/units/vehicles/RUS_motorized_01.mesh"
+		name = "SOV_motorized_mesh"
+		file = "gfx/models/units/vehicles/SOV_motorized_01.mesh"
 		
-		animation = { id = "idle"			type = "RUS_motorized_01_idle_animation" }
-		animation = { id = "move"			type = "RUS_motorized_01_move_animation" }
+		animation = { id = "idle"			type = "SOV_motorized_01_idle_animation" }
+		animation = { id = "move"			type = "SOV_motorized_01_move_animation" }
 	}
 
 ######################################################## USA #############################################################

@@ -104,16 +104,25 @@ guiTypes = {
 			spriteType = "GFX_SPRcivilwar"
 			position = {x = 30 y = 80}
 		}
+		###############
+		###  RUSSIA  ###
+		###############
 		iconType = {
 			name = "Super_Event_February_revolution"
 			spriteType = "GFX_February_revolution"
 			position = {x = 30 y = 80}
 		}
+		###############
+		###  USA  ###
+		###############
 		iconType = {
 			name = "Super_Event_usacivwar"
 			spriteType = "GFX_usacivwar"
 			position = {x = 30 y = 80}
 		}
+		###############
+		###  Russian empire  ###
+		###############
 		iconType = {
 			name = "Super_Event_rusnewtsar"
 			spriteType = "GFX_rusnewtsar"
@@ -127,6 +136,14 @@ guiTypes = {
 		iconType = {
 			name = "Super_Event_redrussiawonwhite"
 			spriteType = "GFX_redrussiawonwhite"
+			position = {x = 30 y = 80}
+		}
+		###############
+		###  Turkestan/Basmachi Emirate  ###
+		###############
+		iconType = {
+			name = "Super_Event_turkestan_unification"
+			spriteType = "GFX_turkestan_unification"
 			position = {x = 30 y = 80}
 		}
 		###############

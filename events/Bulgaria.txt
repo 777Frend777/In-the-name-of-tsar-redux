@@ -1,1 +1,65 @@
-﻿###
+﻿add_namespace = bulgaria
+
+#Chain of events to remilitirise
+country_event = {
+    id = bulgaria.1
+    title = bulgaria.1.t
+    desc = bulgaria.1.d
+    is_triggered_only = yes
+
+    option = { # Ask France
+        name = bulgaria.1.a
+        ai_chance = {
+            factor = 90
+        }
+        FRA = {
+            country_event = france.32
+        }
+    }
+    option = { # Ask uk
+        name = bulgaria.1.b
+        ai_chance = {
+            factor = 90
+        }
+        ENG = {
+            country_event = britain.2000
+        }
+    }
+}
+country_event = { # Denied remilitirisation
+    id = bulgaria.2
+    title = bulgaria.2.t
+    desc = bulgaria.2.d
+    is_triggered_only = yes
+
+    option = { # Accept Defeat
+        name = bulgaria.2.a
+        ai_chance = {
+            factor = 50
+        }
+    }
+    option = { # Remilitirse by force
+        name = bulgaria.2.b
+        ai_chance = {
+            factor = 40
+        }
+        ENG = {
+            country_event = britain.2001
+        }
+        FRA = {
+            country_event = france.33
+        }
+        remove_ideas = BUL_army_restrictions
+    }
+}
+country_event = { # Rearmament accepted
+    id = bulgaria.3
+    title = bulgaria.3.t
+    desc = bulgaria.3.d
+    is_triggered_only = yes
+
+    option = {
+        name = bulgaria.3.a
+        remove_ideas = BUL_army_restrictions
+    }
+}

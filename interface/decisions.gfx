@@ -236,36 +236,36 @@ spriteTypes = {
 	}
 		
 	spriteType = {
-		name = "GFX_decision_category_RUS_propaganda"
-		texturefile = "gfx/interface/decisions/decision_category_RUS_propaganda.dds"
+		name = "GFX_decision_category_SOV_propaganda"
+		texturefile = "gfx/interface/decisions/decision_category_SOV_propaganda.dds"
 	}
 	spriteType = {
-		name = "GFX_decision_category_RUS_support_the_poum"
-		texturefile = "gfx/interface/decisions/decision_category_RUS_support_the_poum.dds"
+		name = "GFX_decision_category_SOV_support_the_poum"
+		texturefile = "gfx/interface/decisions/decision_category_SOV_support_the_poum.dds"
 	}
 	spriteType = {
-		name = "GFX_decision_category_RUS_paranoia"
-		texturefile = "gfx/interface/decisions/decision_category_RUS_paranoia.dds"
+		name = "GFX_decision_category_SOV_paranoia"
+		texturefile = "gfx/interface/decisions/decision_category_SOV_paranoia.dds"
 	}
 	spriteType = {
-		name = "GFX_decision_category_RUS_civil_war"
-		texturefile = "gfx/interface/decisions/decision_category_RUS_civil_war.dds"
+		name = "GFX_decision_category_SOV_civil_war"
+		texturefile = "gfx/interface/decisions/decision_category_SOV_civil_war.dds"
 	}
 	spriteType = {
-		name = "GFX_decision_category_RUS_permanent_revolution"
-		texturefile = "gfx/interface/decisions/decision_category_RUS_permanent_revolution.dds"
+		name = "GFX_decision_category_SOV_permanent_revolution"
+		texturefile = "gfx/interface/decisions/decision_category_SOV_permanent_revolution.dds"
 	}
 	spriteType = {
-		name = "GFX_decision_category_RUS_civil_puppet_interaction"
-		texturefile = "gfx/interface/decisions/decision_category_RUS_civil_puppet_interaction.dds"
+		name = "GFX_decision_category_SOV_civil_puppet_interaction"
+		texturefile = "gfx/interface/decisions/decision_category_SOV_civil_puppet_interaction.dds"
 	}
 	spriteType = {
-		name = "GFX_decision_category_RUS_soviet_academy_of_sciences"
-		texturefile = "gfx/interface/decisions/decision_category_RUS_soviet_academy_of_sciences.dds"
+		name = "GFX_decision_category_SOV_soviet_academy_of_sciences"
+		texturefile = "gfx/interface/decisions/decision_category_SOV_soviet_academy_of_sciences.dds"
 	}
 	spriteType = {
-		name = "GFX_decision_category_RUS_merge_designers"
-		texturefile = "gfx/interface/decisions/decision_category_RUS_merge_designers.dds"
+		name = "GFX_decision_category_SOV_merge_designers"
+		texturefile = "gfx/interface/decisions/decision_category_SOV_merge_designers.dds"
 	}
 	spriteType = {
 		name = "GFX_decision_category_generic_foreign_policy"
@@ -322,6 +322,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_decision_category_SWI_military_readiness_decisions"
 		texturefile = "gfx/interface/decisions/decision_category_SWI_military_readiness_decisions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_category_PLACEHOLDER"
+		texturefile = "gfx/interface/decisions/decision_category_PLACEHOLDER.dds"
 	}
 
 	
@@ -604,6 +609,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_decision_cat_picture_SWI_absolute_neutrality"
 		texturefile = "gfx/interface/decisions/decision_cat_picture_SWI_absolute_neutrality.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_picture_PLACEHOLDER"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_PLACEHOLDER.dds"
 	}
 
 
@@ -1121,8 +1131,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_POL_looming_peasants_strike.dds"
 	}
 	spriteType = {
-		name = "GFX_decision_RUS_academy_of_sciences"
-		texturefile = "gfx/interface/decisions/decision_RUS_academy_of_sciences.dds"
+		name = "GFX_decision_SOV_academy_of_sciences"
+		texturefile = "gfx/interface/decisions/decision_SOV_academy_of_sciences.dds"
 	}
 	spriteType = {
 		name = "GFX_decision_generic_merge_plant_materiel"
@@ -1145,36 +1155,36 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_generic_wreckers.dds"
 	}
 	spriteType = {
-		name = "GFX_decision_RUS_left_opposition_state"
-		texturefile = "gfx/interface/decisions/decision_RUS_left_opposition_state.dds"
+		name = "GFX_decision_SOV_left_opposition_state"
+		texturefile = "gfx/interface/decisions/decision_SOV_left_opposition_state.dds"
 	}
 	spriteType = {
-		name = "GFX_decision_RUS_right_opposition_state"
-		texturefile = "gfx/interface/decisions/decision_RUS_right_opposition_state.dds"
+		name = "GFX_decision_SOV_right_opposition_state"
+		texturefile = "gfx/interface/decisions/decision_SOV_right_opposition_state.dds"
 	}
 	spriteType = {
-		name = "GFX_decision_RUS_stalinist_state"
-		texturefile = "gfx/interface/decisions/decision_RUS_stalinist_state.dds"
+		name = "GFX_decision_SOV_stalinist_state"
+		texturefile = "gfx/interface/decisions/decision_SOV_stalinist_state.dds"
 	}
 	spriteType = {
-		name = "GFX_decision_RUS_exiles_state"
-		texturefile = "gfx/interface/decisions/decision_RUS_exiles_state.dds"
+		name = "GFX_decision_SOV_exiles_state"
+		texturefile = "gfx/interface/decisions/decision_SOV_exiles_state.dds"
 	}
 	spriteType = {
-		name = "GFX_decision_RUS_place_hq"
-		texturefile = "gfx/interface/decisions/decision_RUS_place_hq.dds"
+		name = "GFX_decision_SOV_place_hq"
+		texturefile = "gfx/interface/decisions/decision_SOV_place_hq.dds"
 	}
 	spriteType = {
-		name = "GFX_decision_RUS_place_hq_left_opposition"
-		texturefile = "gfx/interface/decisions/decision_RUS_place_hq_left_opposition.dds"
+		name = "GFX_decision_SOV_place_hq_left_opposition"
+		texturefile = "gfx/interface/decisions/decision_SOV_place_hq_left_opposition.dds"
 	}
 	spriteType = {
-		name = "GFX_decision_RUS_place_hq_right_opposition"
-		texturefile = "gfx/interface/decisions/decision_RUS_place_hq_right_opposition.dds"
+		name = "GFX_decision_SOV_place_hq_right_opposition"
+		texturefile = "gfx/interface/decisions/decision_SOV_place_hq_right_opposition.dds"
 	}
 	spriteType = {
-		name = "GFX_decision_RUS_place_hq_exiles"
-		texturefile = "gfx/interface/decisions/decision_RUS_place_hq_exiles.dds"
+		name = "GFX_decision_SOV_place_hq_exiles"
+		texturefile = "gfx/interface/decisions/decision_SOV_place_hq_exiles.dds"
 	}
 	spriteType = {
 		name = "GFX_decision_ITA_italian_east_africa"
@@ -1271,6 +1281,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_decision_generic_human_torpedo"
 		texturefile = "gfx/interface/decisions/decision_generic_human_torpedo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_generic_PLACEHOLDER"
+		texturefile = "gfx/interface/decisions/decision_generic_PLACEHOLDER.dds"
 	}
 
 
@@ -1801,94 +1816,94 @@ spriteTypes = {
 
 	# placeholder art TODO: Replace with correct
 	spriteType = {
-		name = "GFX_decision_RUS_left_opposition_state"
-		texturefile = "gfx/interface/decisions/decision_RUS_left_opposition_state.dds"
+		name = "GFX_decision_SOV_left_opposition_state"
+		texturefile = "gfx/interface/decisions/decision_SOV_left_opposition_state.dds"
 	}
 
 	spriteType = {
-		name = "GFX_decision_RUS_right_opposition_state"
-		texturefile = "gfx/interface/decisions/decision_RUS_right_opposition_state.dds"
+		name = "GFX_decision_SOV_right_opposition_state"
+		texturefile = "gfx/interface/decisions/decision_SOV_right_opposition_state.dds"
 	}
 
 	spriteType = {
-		name = "GFX_decision_RUS_stalinist_state"
-		texturefile = "gfx/interface/decisions/decision_RUS_stalinist_state.dds"
+		name = "GFX_decision_SOV_stalinist_state"
+		texturefile = "gfx/interface/decisions/decision_SOV_stalinist_state.dds"
 	}
 
 	spriteType = {
-		name = "GFX_decision_RUS_exiles_state"
-		texturefile = "gfx/interface/decisions/decision_RUS_exiles_state.dds"
+		name = "GFX_decision_SOV_exiles_state"
+		texturefile = "gfx/interface/decisions/decision_SOV_exiles_state.dds"
 	}
 
 	spriteType = {
-		name = "GFX_decision_RUS_place_hq"
-		texturefile = "gfx/interface/decisions/decision_RUS_place_hq.dds"
+		name = "GFX_decision_SOV_place_hq"
+		texturefile = "gfx/interface/decisions/decision_SOV_place_hq.dds"
 	}
 
 	spriteType = {
-		name = "GFX_decision_RUS_place_hq_left_opposition"
-		texturefile = "gfx/interface/decisions/decision_RUS_place_hq_left_opposition.dds"
+		name = "GFX_decision_SOV_place_hq_left_opposition"
+		texturefile = "gfx/interface/decisions/decision_SOV_place_hq_left_opposition.dds"
 	}
 
 
 	spriteType = {
-		name = "GFX_decision_RUS_place_hq_right_opposition"
-		texturefile = "gfx/interface/decisions/decision_RUS_place_hq_right_opposition.dds"
+		name = "GFX_decision_SOV_place_hq_right_opposition"
+		texturefile = "gfx/interface/decisions/decision_SOV_place_hq_right_opposition.dds"
 	}
 
 	spriteType = {
-		name = "GFX_decision_RUS_place_hq_exiles"
-		texturefile = "gfx/interface/decisions/decision_RUS_place_hq_exiles.dds"
+		name = "GFX_decision_SOV_place_hq_exiles"
+		texturefile = "gfx/interface/decisions/decision_SOV_place_hq_exiles.dds"
 	}
 
 	spriteType = {
-		name = "GFX_decision_RUS_the_centre"
-		texturefile = "gfx/interface/decisions/decision_RUS_the_centre.dds"
+		name = "GFX_decision_SOV_the_centre"
+		texturefile = "gfx/interface/decisions/decision_SOV_the_centre.dds"
 	}
 
 	spriteType = {
-		name = "GFX_decision_RUS_the_stalin_constitution"
-		texturefile = "gfx/interface/decisions/decision_RUS_the_stalin_constitution.dds"
+		name = "GFX_decision_SOV_the_stalin_constitution"
+		texturefile = "gfx/interface/decisions/decision_SOV_the_stalin_constitution.dds"
 	}
 
 	spriteType = {
-		name = "GFX_decision_RUS_the_zinovyevite_terrorist_center"
-		texturefile = "gfx/interface/decisions/decision_RUS_the_zinovyevite_terrorist_center.dds"
+		name = "GFX_decision_SOV_the_zinovyevite_terrorist_center"
+		texturefile = "gfx/interface/decisions/decision_SOV_the_zinovyevite_terrorist_center.dds"
 	}
 
 	spriteType = {
-		name = "GFX_decision_RUS_the_anti_soviet_trotskyist_center"
-		texturefile = "gfx/interface/decisions/decision_RUS_the_anti_soviet_trotskyist_center.dds"
+		name = "GFX_decision_SOV_the_anti_soviet_trotskyist_center"
+		texturefile = "gfx/interface/decisions/decision_SOV_the_anti_soviet_trotskyist_center.dds"
 	}
 
 	spriteType = {
-		name = "GFX_decision_RUS_the_workers_dictatorship"
-		texturefile = "gfx/interface/decisions/decision_RUS_the_workers_dictatorship.dds"
+		name = "GFX_decision_SOV_the_workers_dictatorship"
+		texturefile = "gfx/interface/decisions/decision_SOV_the_workers_dictatorship.dds"
 	}
 
 	spriteType = {
-		name = "GFX_decision_RUS_the_military_conspiracy"
-		texturefile = "gfx/interface/decisions/decision_RUS_the_military_conspiracy.dds"
+		name = "GFX_decision_SOV_the_military_conspiracy"
+		texturefile = "gfx/interface/decisions/decision_SOV_the_military_conspiracy.dds"
 	}
 
 	spriteType = {
-		name = "GFX_decision_RUS_socialism_in_one_country"
-		texturefile = "gfx/interface/decisions/decision_RUS_socialism_in_one_country.dds"
+		name = "GFX_decision_SOV_socialism_in_one_country"
+		texturefile = "gfx/interface/decisions/decision_SOV_socialism_in_one_country.dds"
 	}
 
 	spriteType = {
-		name = "GFX_decision_RUS_secure_the_administration"
-		texturefile = "gfx/interface/decisions/decision_RUS_secure_the_administration.dds"
+		name = "GFX_decision_SOV_secure_the_administration"
+		texturefile = "gfx/interface/decisions/decision_SOV_secure_the_administration.dds"
 	}
 
 	spriteType = {
-		name = "GFX_decision_RUS_the_bloc_of_rights_and_trotskyites"
-		texturefile = "gfx/interface/decisions/decision_RUS_the_bloc_of_rights_and_trotskyites.dds"
+		name = "GFX_decision_SOV_the_bloc_of_rights_and_trotskyites"
+		texturefile = "gfx/interface/decisions/decision_SOV_the_bloc_of_rights_and_trotskyites.dds"
 	}
 
 	spriteType = {
-		name = "GFX_decision_RUS_behead_the_snake"
-		texturefile = "gfx/interface/decisions/decision_RUS_behead_the_snake.dds"
+		name = "GFX_decision_SOV_behead_the_snake"
+		texturefile = "gfx/interface/decisions/decision_SOV_behead_the_snake.dds"
 	}
 
 	spriteType = {
@@ -2236,5 +2251,416 @@ spriteTypes = {
 	}
 
 	### SWE ####
+
+
+
+	###########################
+	###########################
+	###########################
+	###########################
+	########### TOA ###########
+	###########################
+	###########################
+	###########################
+	###########################
+
+	### Decision Category Icons ### 
+
+	spriteType = {
+		name = "GFX_decision_category_CHL_hispanic_unity_decisions"
+		texturefile = "gfx/interface/decisions/decision_category_CHL_hispanic_unity_decisions.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_CHL_mapuche_nationalism_decisions"
+		texturefile = "gfx/interface/decisions/decision_category_CHL_mapuche_nationalism_decisions.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_CHL_mapuche_reconcilliation_decisions"
+		texturefile = "gfx/interface/decisions/decision_category_CHL_mapuche_reconcilliation_decisions.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_CHL_nacista_decisions"
+		texturefile = "gfx/interface/decisions/decision_category_CHL_nacista_decisions.dds"
+	}
+
+
+	### Decision Icons ### 
+
+
+	################
+	##### MISC ##### 
+	################
+
+
+	spriteType = {
+		name = "GFX_decision_BOL_establish_arica_department"
+		texturefile = "gfx/interface/decisions/decision_BOL_establish_arica_department.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_BOL_reintegrate_acre_state"
+		texturefile = "gfx/interface/decisions/decision_BOL_reintegrate_acre_state.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_BOL_reintegrate_litoral_department"
+		texturefile = "gfx/interface/decisions/decision_BOL_reintegrate_litoral_department.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_forestry"
+		texturefile = "gfx/interface/decisions/decision_generic_forestry.dds"
+	}
+
+
+	################
+	##### BRA  ##### 
+	################
+
+	spriteType = {
+		name = "GFX_decision_BRA_integralism"
+		texturefile = "gfx/interface/decisions/decision_BRA_integralism.dds"
+	}
+
+
+	################
+	##### CHL  ##### 
+	################
+
+
+	spriteType = {
+		name = "GFX_decision_CHL_carabineros"
+		texturefile = "gfx/interface/decisions/decision_CHL_carabineros.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_pickelhaube"
+		texturefile = "gfx/interface/decisions/decision_generic_pickelhaube.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_grant_full_rights_to_the_mapuche"
+		texturefile = "gfx/interface/decisions/decision_CHL_grant_full_rights_to_the_mapuche.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_nacista_coup_attempt"
+		texturefile = "gfx/interface/decisions/decision_CHL_nacista_coup_attempt.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_ibanez_cracking_down_on_mapuche_organizations_mission"
+		texturefile = "gfx/interface/decisions/decision_CHL_ibanez_cracking_down_on_mapuche_organizations_mission.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_rapa_nuis"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_rapa_nuis.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_tahiti"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_tahiti.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_samoa"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_samoa.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_hawaii"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_hawaii.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_guarani"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_guarani.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_inca"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_inca.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_miskito"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_miskito.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_maya"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_maya.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_inuit"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_inuit.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_charrua"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_charrua.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_itza"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_itza.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_nahua"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_nahua.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_isthmo_amerindia"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_isthmo_amerindia.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_reorganize_the_bolivian_government"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_reorganize_the_bolivian_government.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_establish_a_guianan_government"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_establish_a_guianan_government.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_reorganize_the_brazilian_government"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_reorganize_the_brazilian_government.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_reorganize_the_american_government"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_reorganize_the_american_government.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_araucania_establish_a_hispaniolan_kingdom"
+		texturefile = "gfx/interface/decisions/decision_CHL_araucania_establish_a_hispaniolan_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_reorganize_the_mexican_government"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_reorganize_the_mexican_government.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_reorganize_the_canadian_government"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_reorganize_the_canadian_government.dds"
+	}
+
+
+	### Decision Cat Pictures ### 
+
+
+	################
+	##### ARG  ##### 
+	################
+
+
+	spriteType = {
+		name = "GFX_decision_cat_picture_ARG_international_loan_decisions"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_ARG_international_loan_decisions.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_ARG_island_negotiations_decisions"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_ARG_island_negotiations_decisions.dds"
+	}
+
+
+	################
+	##### BRA  ##### 
+	################
+
+
+	spriteType = {
+		name = "GFX_decision_cat_picture_BRA_cangaco"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_BRA_cangaco.dds"
+	}
+
+
+	################
+	##### CHL  ##### 
+	################
+
+
+	spriteType = {
+		name = "GFX_decision_cat_picture_CHL_nacista_insurgency"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_CHL_nacista_insurgency.dds"
+	}
+
+
+	################
+	##### MISC ##### 
+	################
+
+
+	spriteType = {
+		name = "GFX_decision_cat_picture_generic_promote_immigration_cat"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_generic_promote_immigration_cat.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_generic_south_american_naval_race"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_generic_south_american_naval_race.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_generic_unified_hispaniola"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_generic_unified_hispaniola.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_generic_united_guiana"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_generic_united_guiana.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_PER_unified_peru_bolivia"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_PER_unified_peru_bolivia.dds"
+	}
+
+
+
+		####          ####  ####          ####
+		 ##            ##    ##            ##
+		 ##            ##    ##            ##
+		 ##            ##    ##            ##
+		 ##    ####    ##    ##    ####    ##
+          ##    ##    ##      ##    ##    ##
+	       ##   ##   ##   # #  ##   ##   ##
+            ####  ####    ###   ####  ####
+	
+
+
+		        ### GERMANY ###
+		## Decision Category Icons ##
+	spriteType = {
+		name = "GFX_decision_category_generic_naval"
+		texturefile = "gfx/interface/decisions/decision_category_generic_naval.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_GER_seize_gold_reserves"
+		texturefile = "gfx/interface/decisions/decision_category_GER_seize_gold_reserves.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_GER_war_planning"
+		texturefile = "gfx/interface/decisions/decision_category_GER_war_planning.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_decision_category_GER_volkskommissariats"
+		texturefile = "gfx/interface/decisions/decision_decision_category_GER_volkskommissariats.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_GER_weltpolitik"
+		texturefile = "gfx/interface/decisions/decision_category_GER_weltpolitik.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_generic_communist_revolution"
+		texturefile = "gfx/interface/decisions/decision_category_generic_communist_revolution.dds"
+	}
+
+		## Decision Category Pictures ##
+	spriteType = {
+		name = "GFX_decision_cat_picture_operational_planning"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_operational_planning.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_seize_gold_reserves"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_seize_gold_reserves.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_antischluss_measures"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_antischluss_measures.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_becoming_grossosterreich"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_becoming_grossosterreich.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_danubian_federation"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_danubian_federation.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_greater_german_reich"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_greater_german_reich.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_greater_proletarian_germany"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_greater_proletarian_germany.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_grenzshutz"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_grenzshutz.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_spreading_the_red_flame"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_spreading_the_red_flame.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_unite_germany"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_unite_germany.dds"
+	}
+
+
+
+
+		## Decision Icons ##
+	spriteType = {
+		name = "GFX_decision_generic_confiscation"
+		texturefile = "gfx/interface/decisions/decision_generic_confiscation.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_GER_flag"
+		texturefile = "gfx/interface/decisions/decision_generic_GER_flag.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_USA_flag"
+		texturefile = "gfx/interface/decisions/decision_generic_USA_flag.dds"
+	}
+
+		## RK Iconography ##
+	spriteType = {
+		name = "GFX_rk_bg_solid"
+		texturefile = "gfx/interface/decisions/rk/rk_bg_solid.dds"
+	}
+	spriteType = {
+		name = "GFX_rk_bg_50"
+		texturefile = "gfx/interface/decisions/rk/rk_bg_50.dds"
+	}
+	spriteType = {
+		name = "GFX_rk_bg_60"
+		texturefile = "gfx/interface/decisions/rk/rk_bg_60.dds"
+	}
+	spriteType = {
+		name = "GFX_rk_bg_70"
+		texturefile = "gfx/interface/decisions/rk/rk_bg_70.dds"
+	}
+
+
+
+				### AUSTRIA ###
+
+		## Decision Category Icons ##
+	spriteType = {
+		name = "GFX_decision_category_AUS_becoming_grossosterreich_category"
+		texturefile = "gfx/interface/decisions/decision_category_AUS_becoming_grossosterreich_category.dds"
+	}
+
+
+
+				### HUNGARY ###
+
+		## Decision Category Icons ##
+	spriteType = {
+		name = "GFX_decision_cat_generic_austria_hungary_icon"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_austria_hungaryy.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_hun_arrow_cross_party"
+		texturefile = "gfx/interface/decisions/decision_cat_hun_arrow_cross_party.dds"
+	}
+
+
+		## Decision Category Pictures ##
+	spriteType = {
+		name = "GFX_decision_cat_generic_sweden_hungary"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_sweden_hungary.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_generic_unified_antilles"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_generic_unified_antilles.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_greater_hungary"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_greater_hungary.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_generic_unified_latin_africa"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_generic_unified_latin_africa.dds"
+	}
+
+
+				### BELGIUM ###
+
+		## Decision Icons ##
+	spriteType = {
+		name = "GFX_decision_generic_belgian_colonial_helmet"
+		texturefile = "gfx/interface/decisions/decision_generic_belgian_colonial_helmet.dds"
+	}
+
 
 }

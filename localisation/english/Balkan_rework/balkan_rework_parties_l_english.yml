@@ -1,0 +1,30 @@
+﻿l_english:
+ CRO_fascism_party:0 "Katolička združba"
+ CRO_fascism_party_long:0 "Ilirska katolička združba"
+ CRO_communism_party:0 "SKK"
+ CRO_communism_party_long:0 "Savezni komitet komunista"
+ CRO_democratic_party:0 "RSS"
+ CRO_democratic_party_long:0 "Republikansko-seljačka stranka"
+ CRO_neutrality_party:0 "Stranka prava"
+ CRO_neutrality_party_long:0 "Stranka prava"
+ MNT_fascism_party:0 "NCG"
+ MNT_fascism_party_long:0 "Nezavisna Crna Gora"
+ MNT_communism_party:0 "CKK"
+ MNT_communism_party_long:0 "Crnogorski komitet komunista"
+ MNT_democratic_party:0 "Savezna stranka"
+ MNT_democratic_party_long:0 "Savezna stranka"
+ MNT_neutrality_party:0 "House of Petrović"
+ MNT_neutrality_party_long:0 "House of Petrović"
+ 
+ 
+ MAC_communism_party:0 "Left VMRO"
+ MAC_neutrality_party:0 "Center VMRO"
+ MAC_fascism_party:0 "Right VMRO"
+ 
+ 
+ BOS_fascism_party:0 "Mlada Bosna"
+ BOS_communism_party:0 "BKKPJ"
+ BOS_communism_party_long:0 "Bosanski komitet komunističke partije Jugoslavije"
+ BOS_democratic_party:0 "BSS"
+ BOS_democratic_party_long:0 "Bosanska seljačka stranka"
+ BOS_neutrality_party:0 "Muslimanska organizacija"

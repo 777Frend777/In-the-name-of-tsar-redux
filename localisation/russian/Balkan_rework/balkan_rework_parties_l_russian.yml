@@ -1,0 +1,30 @@
+﻿l_russian:
+ CRO_fascism_party: "Katolička združba" #NT!
+ CRO_fascism_party_long: "Илирская католическая дружба" #NT!
+ CRO_communism_party: "СКК" #NT!
+ CRO_communism_party_long: "Советский комитет коммуны" #NT!
+ CRO_democratic_party: "RSS" #NT!
+ CRO_democratic_party_long: "Республиканско-сельская страна" #NT!
+ CRO_neutrality_party: "Страна права" #NT!
+ CRO_neutrality_party_long: "Страна права" #NT!
+ MNT_fascism_party: "NCG" #NT!
+ MNT_fascism_party_long: "Независна Црна Гора" #NT!
+ MNT_communism_party: "СКК" #NT!
+ MNT_communism_party_long: "Черногорский комитет коммуниста" #NT!
+ MNT_democratic_party: "Сохранённая страна" #NT!
+ MNT_democratic_party_long: "Сохранённая страна" #NT!
+ MNT_neutrality_party: "Дом Петровичей" #NT!
+ MNT_neutrality_party_long: "Дом Петровичей" #NT!
+  
+  
+ MAC_communism_party: "Левый ВМРО" #NT!
+ MAC_neutrality_party: "Центр ВМРО" #NT!
+ MAC_fascism_party: "Правый ВМРО" #NT!
+  
+  
+ BOS_fascism_party: "Млада Босна" #NT!
+ BOS_communism_party: "БККПЖ" #NT!
+ BOS_communism_party_long: "Босанский комитет коммунистической партии Югославии" #NT!
+ BOS_democratic_party: "БСС" #NT!
+ BOS_democratic_party_long: "Боснийская сельская страна" #NT!
+ BOS_neutrality_party: "Мусульманская организация" #NT!

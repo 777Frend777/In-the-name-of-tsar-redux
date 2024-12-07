@@ -1,0 +1,10 @@
+CRO_autonomous_bosnia_modifier = {
+  icon = GFX_select_headquarters_texticon
+  remove_trigger = {
+    is_controlled_by = SER
+  }
+
+  local_resources = -0.40
+     local_manpower = -0.3
+
+}

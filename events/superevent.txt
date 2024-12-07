@@ -544,3 +544,27 @@ country_event = {	#The Coup of Budyonny on the Don
 		play_song = "Cossack_1937"
 	}
 }
+country_event = {	#turkestan unification
+	id = super.19
+	title = super.19.t
+	desc = super.19.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	major = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+	    has_completed_focus = TUK_kingdom_of_turks	    
+	}
+	option = {
+		name = super.19.a
+		
+		set_global_flag = turkestan_unification.super
+		set_global_flag = Super_Event_Visible
+		play_song = "turkestan_unification_music"
+	}
+}

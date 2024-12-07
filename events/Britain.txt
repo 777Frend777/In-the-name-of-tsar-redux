@@ -1884,3 +1884,43 @@ country_event = {
 		
 	 }
   }
+#Bulgaria asks to remilitirise
+country_event = {
+	id = britain.2000
+    title = britain.2000.t
+    desc = britain.2000.d
+	option = { # Accept
+        name = britain.2000.a
+		add_political_power = -10
+        ai_chance = {
+            factor = 50
+        }
+        BUL = {
+            country_event = bulgaria.3
+        }
+    }
+	option = { # Deny
+        name = britain.2000.b
+		add_political_power = 15
+        ai_chance = {
+            factor = 50
+        }
+        BUL = {
+            country_event = bulgaria.2
+        }
+    }
+	
+}
+#Bulgaria forcefully rearms
+country_event = {
+	id = britain.2001
+    title = britain.2001.t
+    desc = britain.2001.d
+	option = { # Accept
+        name = britain.2001.a
+        create_wargoal = {
+			type = annex_everything
+			target = BUL
+		}
+    }
+}

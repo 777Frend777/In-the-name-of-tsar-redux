@@ -1,4 +1,22 @@
 characters={
+	BRA_Julio_Prestes = {
+		name= BRA_Julio_Prestes
+		portraits={
+			civilian={
+				large = "gfx/leaders/BRA/Julio_Prestes.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+			traits = {
+				INOTR_Legitimate_President
+				INOTR_Provisional_President
+			}
+		}
+	}
+
 	BRA_getulio_vargas={
 		name=BRA_getulio_vargas
 		portraits={
@@ -53,20 +71,6 @@ characters={
 		}
 		country_leader={
 			ideology=marxism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	BRA_armando_sales={
-		name=BRA_armando_sales
-		portraits={
-			civilian={
-				large=GFX_portrait_BRA_armando_sales
-			}
-		}
-		country_leader={
-			ideology=conservatism
 			expire="1965.1.1.1"
 			id=-1
 		}

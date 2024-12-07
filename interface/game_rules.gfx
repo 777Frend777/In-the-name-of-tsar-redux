@@ -68,4 +68,5 @@ spriteTypes = {
 		name = "GFX_scorched_earth"
 		texturefile = "gfx/game_rules/scorched_earth.dds"
 	}
+	
 }

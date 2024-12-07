@@ -1,0 +1,108 @@
+###########################
+# Illyria Events
+###########################
+
+add_namespace = CRO
+
+# Election Time
+country_event = {
+	id = CRO.1
+	title = CRO.1.t
+	desc = CRO.1.d
+	picture = GFX_report_event_election_vote
+
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = CRO
+		date < 1937.1.1
+	}	
+
+	
+
+	option = {
+		name = CRO.1.a
+		ai_chance = { factor = 40 }
+		
+		add_political_power = 50
+		add_national_unity = 0.05
+		
+		set_country_flag = IPPP_wins
+		add_popularity = { ideology = democratic popularity = 0.25 }
+	}
+		option = {
+		name = CRO.1.b
+		ai_chance = { factor = 40 }
+		set_politics = {
+			ruling_party = neutrality
+		
+		}
+		add_popularity = { ideology = neutrality popularity = 0.25 }
+		set_country_flag = pro_serbian_won_elections
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = CRO_vladimir_nazor_again
+	}
+		option = {
+		name = CRO.1.c
+		ai_chance = { factor = 20 }
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		add_popularity = { ideology = fascism popularity = 0.15 }
+		set_country_flag = pavelic_wins
+	}
+}
+	# National Day!
+country_event = {
+	id = CRO.2
+	title = CRO.2.t
+	desc = CRO.2.d
+	picture = GFX_report_event_national_day
+
+	
+	is_triggered_only = yes
+	
+
+	immediate = {
+	hidden_effect = {
+	country_event = {id = CRO.2 days = 365}
+		}
+	}
+
+	option = {
+		name = CRO.2.a
+		
+		add_political_power = 25
+		
+	}
+		
+		
+}
+# Victory at Tuzla
+country_event = {
+	id = CRO.3
+	title = CRO.3.t
+	desc = CRO.3.d
+	picture = GFX_report_event_tuzla
+
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	hidden_effect = {
+		country_event = {id = CRO.3 days = 365}
+		}
+	}
+	
+
+	option = {
+		name = CRO.3.a
+		add_political_power = 25
+		
+		
+	}
+	
+		
+}

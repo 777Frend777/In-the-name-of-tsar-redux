@@ -61,13 +61,13 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_RUS_heavy_battleship_medium"
-		texturefile = "gfx/interface/technologies/RUS_heavy_battleship.dds"
+		name = "GFX_SOV_heavy_battleship_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_battleship.dds"
 	}	
 
 	SpriteType = {
-		name = "GFX_RUS_heavy_battleship2_medium"
-		texturefile = "gfx/interface/technologies/RUS_heavy_battleship2.dds"
+		name = "GFX_SOV_heavy_battleship2_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_battleship2.dds"
 	}	
 
 	SpriteType = {
@@ -137,8 +137,8 @@ spriteTypes = {
 	}	
 
 	SpriteType = {
-		name = "GFX_RUS_ship_hull_super_heavy_1_medium"
-		texturefile = "gfx/interface/technologies/RUS_heavy_battleship.dds"
+		name = "GFX_SOV_ship_hull_super_heavy_1_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_battleship.dds"
 	}		
 
 	SpriteType = {

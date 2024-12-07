@@ -6,20 +6,20 @@ spriteTypes = {
 	### Basic assets ###
 				
 	spriteType = {
-		name = "GFX_RUS_paranoia_meter"
-		texturefile = "gfx/interface/paranoia/RUS_paranoia_meter.dds"
+		name = "GFX_SOV_paranoia_meter"
+		texturefile = "gfx/interface/paranoia/SOV_paranoia_meter.dds"
 		legacy_lazy_load = no
 		noOfFrames = 21
 	}
 	spriteType = {
-		name = "GFX_RUS_paranoia_needle"
-		texturefile = "gfx/interface/paranoia/RUS_paranoia_needle.dds"
+		name = "GFX_SOV_paranoia_needle"
+		texturefile = "gfx/interface/paranoia/SOV_paranoia_needle.dds"
 		legacy_lazy_load = no
 		noOfFrames = 21
 	}
 	spriteType = {
-		name = "GFX_RUS_paranoia_bg"
-		texturefile = "gfx/interface/paranoia/RUS_paranoia_bg.dds"
+		name = "GFX_SOV_paranoia_bg"
+		texturefile = "gfx/interface/paranoia/SOV_paranoia_bg.dds"
 		legacy_lazy_load = no
 	}
 

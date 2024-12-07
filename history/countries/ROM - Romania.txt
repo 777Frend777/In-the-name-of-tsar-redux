@@ -121,17 +121,17 @@ set_popularities = {
     socialist = 0
     conservatives = 0
 }
+
 create_country_leader = {
-	name = "Carol II"
-	desc = "POLITICS_GHEORGHE_TATARESCU_DESC"
-	picture = "carol_ii.dds"
+	name = "Gheorghe Tătărescu"
+	desc = "POLITICS_Tatarescu_DESC"
+	picture = "GFX_Portrait_romania_gheorghe_tatarescu"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "Constantin Ion Parhon"
 	desc = "POLITICS_CONSTANTIN_PARHON_DESC"
