@@ -1,5 +1,8 @@
+#!gfx:interface/inot_focus_tree_goals.gfx
+#!gfx:interface/inot_goals_shine.gfx
+#!gfx:interface/KR_goals.gfx
+#!gfx:interface/KR_goals_shine.gfx
 #WIP
-
 focus_tree = {
 	id = Bulgaria
 	country = {
@@ -735,7 +738,7 @@ focus_tree = {
 			factor = 5
 		}
         available = {
-                owns_state = 106
+            owns_state = 106
         }
         prerequisite = {
             focus = BUL_weapons
@@ -783,5 +786,196 @@ focus_tree = {
             add_ideas = BUL_balkan_prussia
 		}
     }
-## Political Path
+## Political Path (not at all finished)
+    focus = {
+        id = BUL_capitalise_on_romania
+        icon = GFX_focus_rom_preserve_romania
+        x = 25
+        y = 0
+        cost = 8
+        ai_will_do = {
+			factor = 5
+		}
+        available = {
+            ROM = {
+                has_completed_focus = ROM_prepare_coup
+            }
+        }
+        mutually_exclusive = {
+            focus = BUL_crisis_ignored
+        }
+        completion_reward = {
+            RUS = {
+                add_to_faction = BUL
+            }
+		}
+    }
+    focus = {
+        id = BUL_crisis_ignored
+        icon = GFX_focus_generic_treaty
+        x = 27
+        y = 0
+        cost = 8
+        ai_will_do = {
+			factor = 5
+		}
+        available = {
+            ROM = {
+                has_completed_focus = ROM_prepare_coup
+            }
+        }
+        bypass = {
+            ROM = {
+                has_completed_focus = ROM_follow_RUS
+            }
+        }
+        mutually_exclusive = {
+            focus = BUL_capitalise_on_romania
+        }
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+    focus = {
+        id = BUL_support_imro
+        icon = GFX_focus_BUL_support_macedonian_organizations
+        x = 26
+        y = 1
+        cost = 8
+        ai_will_do = {
+			factor = 5
+		}
+        available = {
+            NOT = {
+                has_idea = BUL_army_restrictions
+            }
+        }
+        prerequisite = {
+            focus = BUL_capitalise_on_romania
+            focus = BUL_crisis_ignored
+        }
+        completion_reward = {
+            # TODO fix the values
+            MAC = {
+                transfer_state = x
+			    add_state_core = x
+            }
+			puppet = MAC
+        }
+    }
+    focus = {
+        id = BUL_fund_imro
+        icon = GFX_focus_generic_little_entente
+        x = 26
+        y = 2
+        cost = 8
+        ai_will_do = {
+			factor = 5
+		}
+        prerequisite = {
+            focus = BUL_support_imro
+        }
+        completion_reward = {
+    		send_equipment = { 
+                target = MAC
+                type = infantry_equipment
+                amount = 2000
+            }
+        }
+    }
+    focus = {
+        id = BUL_vardar_in_flames
+        icon = GFX_goal_SER_macedonia_in_flames
+        x = 26
+        y = 3
+        cost = 8
+        ai_will_do = {
+			factor = 5
+		}
+        prerequisite = {
+            focus = BUL_fund_imro
+        }
+        completion_reward = {
+            MAC = {
+                declare_war_on = {
+                    target = SER
+                }
+            }
+        }
+    }
+    focus = {
+        id = BUL_unite_macedonia
+        icon = GFX_focus_generic_attack_greece
+        x = 26
+        y = 4
+        cost = 8
+        ai_will_do = {
+			factor = 5
+		}
+        available = {
+            owns_state = 106
+        }
+        prerequisite = {
+            focus = BUL_vardar_in_flames
+        }
+        completion_reward = {
+            completion_reward = {
+                MAC = {
+                    declare_war_on = {
+                        target = GRE
+                    }
+                }
+            }
+        }
+    }
+    focus = {
+        id = BUL_autonomous_macedonia
+        icon = GFX_focus_BUL_support_macedonian_organizations
+        x = 25
+        y = 5
+        cost = 8
+        ai_will_do = {
+			factor = 5
+		}
+        available = {
+            owns_state = 106
+            owns_state = x #TODO find out name of state
+        }
+        prerequisite = {
+            focus = BUL_unite_macedonia
+        }
+        mutually_exclusive = {
+            focus = BUL_bulgaria_united
+        }
+        completion_reward = {
+            add_political_power = 150
+        }
+    }
+    focus = {
+        id = BUL_bulgaria_united
+        icon = GFX_focus_BUL_promote_bulgarian_nationalism
+        x = 27
+        y = 5
+        cost = 8
+        ai_will_do = {
+			factor = 5
+		}
+        available = {
+            owns_state = 106
+            owns_state = x #TODO find out name of state
+        }
+        prerequisite = {
+            focus = BUL_unite_macedonia
+        }
+        mutually_exclusive = {
+            focus = BUL_autonomous_macedonia
+        }
+        completion_reward = {
+            annex_country = {
+                target = MAC
+                transfer_troops = yes
+            }
+            add_political_power = -100
+        }
+    }
 }
