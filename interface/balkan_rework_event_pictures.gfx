@@ -1,0 +1,62 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_report_event_radic_dies"
+		texturefile = "gfx/event_pictures/report_event_radic_dies.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_report_yugo_divided"
+		texturefile = "gfx/event_pictures/yugoslav_divided.tga"
+	}
+	spriteType = {
+		name = "GFX_news_ferd_ret"
+		texturefile = "gfx/event_pictures/tsar_ferd.tga"
+	}
+	spriteType = {
+		name = "GFX_news_panslav"
+		texturefile = "gfx/event_pictures/balkan_union.tga"
+	}
+	spriteType = {
+		name = "GFX_report_event_panslav"
+		texturefile = "gfx/event_pictures/report_event_panslav.tga"
+	}
+	spriteType = {
+		name = "GFX_news_event_king_election"
+		texturefile = "gfx/event_pictures/sabor_bill.tga"
+	}
+	spriteType = {
+		name = "GFX_report_event_chocolate"
+		texturefile = "gfx/event_pictures/repor_event_chocolate_shop.tga"
+	}
+	spriteType = {
+		name = "GFX_report_event_national_day"
+		texturefile = "gfx/event_pictures/report_event_national_day.tga"
+	}
+	spriteType = {
+		name = "GFX_report_event_ilica_street"
+		texturefile = "gfx/event_pictures/report_event_Ilica_Street_Brawl.tga"
+	}
+	spriteType = {
+		name = "GFX_report_event_antun_bauer"
+		texturefile = "gfx/event_pictures/report_event_Anton_Bauer.tga"
+	}
+	spriteType = {
+		name = "GFX_report_event_tuzla"
+		texturefile = "gfx/event_pictures/report_event_Tuzla.tga"
+	}
+	spriteType = {
+		name = "GFX_report_event_tomislav_II"
+		texturefile = "gfx/event_pictures/report_event_Tomislav_II.tga"
+	}
+	spriteType = {
+		name = "GFX_news_document_signing"
+		texturefile = "gfx/event_pictures/document_signing.tga"
+	}
+	spriteType = {
+		name = "GFX_report_zagreb"
+		texturefile = "gfx/event_pictures/report_event_zagreb.tga"
+	}
+	}
+	
+	
