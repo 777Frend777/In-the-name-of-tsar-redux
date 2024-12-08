@@ -1,0 +1,210 @@
+spriteTypes = {	
+##ILLYRIAN ADVISORS
+
+
+spriteType = {
+		name = "GFX_idea_Vladimir_Nazor"
+		texturefile = "gfx/interface/ideas/idea_Vladimir_Nazor.tga"
+	}	
+spriteType = {
+		name = "GFX_idea_Mladen_Lorkovic"
+		texturefile = "gfx/interface/ideas/idea_Mladen_Lorkovic.tga"
+	}	
+spriteType = {
+		name = "GFX_idea_Ljudevit_Tomasic"
+		texturefile = "gfx/interface/ideas/idea_Ljudevit_Tomasic.tga"
+	}	
+spriteType = {
+		name = "GFX_idea_Ante_Trumbic"
+		texturefile = "gfx/interface/ideas/idea_Ante_Trumbic.tga"
+	}	
+spriteType = {
+		name = "GFX_idea_Julije_Makanec"
+		texturefile = "gfx/interface/ideas/idea_Julije_Makanec.tga"
+	}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+spriteType = {
+		name = "GFX_idea_slavko_stancer"
+		texturefile = "gfx/interface/ideas/idea_slavko_stancer.tga"
+	}	
+
+spriteType = {
+		name = "GFX_idea_Andrija_Artukovic"
+		texturefile = "gfx/interface/ideas/idea_Andrija_Artukovic.tga"
+	}	
+spriteType = {
+		name = "GFX_idea_Zvonimir_Richtmann"
+		texturefile = "gfx/interface/ideas/idea_Zvonimir_Richtmann.tga"
+	}	
+spriteType = {
+		name = "GFX_idea_August_Kosutic"
+		texturefile = "gfx/interface/ideas/idea_August_Kosutic.tga"
+	}	
+spriteType = {
+		name = "GFX_idea_Georg_Dragicevic"
+		texturefile = "gfx/interface/ideas/idea_Georg_Dragicevic.tga"
+	}
+spriteType = {
+		name = "GFX_idea_Eduard_Bunic"
+		texturefile = "gfx/interface/ideas/idea_Eduard_Bunic.tga"
+	}
+spriteType = {
+		name = "GFX_idea_Viktor_Pavicic"
+		texturefile = "gfx/interface/ideas/idea_Viktor_Pavicic.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_Rudolf_Fizir"
+		texturefile = "gfx/interface/ideas/idea_rudolf_fizir.tga"
+	}
+spriteType = {
+		name = "GFX_idea_Franjo_Dzal"
+		texturefile = "gfx/interface/ideas/idea_Franjo_Dzal.tga"
+	}
+spriteType = {
+		name = "GFX_idea_Cvitan_Galic"
+		texturefile = "gfx/interface/ideas/idea_Cvitan_Galic.tga"
+	}
+spriteType = {
+		name = "GFX_idea_Ivan_Kern"
+		texturefile = "gfx/interface/ideas/idea_Ivan_Kern.tga"
+	}
+spriteType = {
+		name = "GFX_idea_Vilko_Begic"
+		texturefile = "gfx/interface/ideas/idea_Vilko_Begic.tga"
+	}
+spriteType = {
+		name = "GFX_idea_Mihajlo_Lukic"
+		texturefile = "gfx/interface/ideas/idea_Mihajlo_Lukic.tga"
+	}
+spriteType = {
+		name = "GFX_idea_Miroslav_Navratil"
+		texturefile = "gfx/interface/ideas/idea_Miroslav_Navratil.tga"
+	}
+spriteType = {
+		name = "GFX_idea_Duro_Jakcin"
+		texturefile = "gfx/interface/ideas/idea_Duro_Jakcin.tga"
+	}
+spriteType = {
+		name = "GFX_idea_Vladimir_Kren"
+		texturefile = "gfx/interface/ideas/idea_Vladimir_Kren.tga"
+	}
+
+
+
+
+#######
+
+
+##BULGARIA STUFF
+
+
+spriteType = {
+		name = "GFX_idea_Military_dep_econ"
+		texturefile = "gfx/interface/ideas/BUL_Military_Dependent_Economy.tga"
+	}	
+spriteType = {
+		name = "GFX_idea_BUL_SIR"
+		texturefile = "gfx/interface/ideas/BUL_SIR.tga"
+	}	
+	
+spriteType = {
+		name = "GFX_idea_BUL_gold_mining"
+		texturefile = "gfx/interface/ideas/idea_gold_idea_yeah.tga"
+	}
+
+spriteType = {
+		name = "GFX_idea_BUL_MILITARISM_IDEA"
+		texturefile = "gfx/interface/ideas/BUL_MILITARISM_IDEAS.tga"
+	}
+spriteType = {
+		name = "GFX_idea_BUL_RATNIK_IDEA"
+		texturefile = "gfx/interface/ideas/BUL_RATNIK_PARA.tga"
+	}
+spriteType = {
+		name = "GFX_idea_BUL_YOUTH_UBNL"
+		texturefile = "gfx/interface/ideas/UBNL_IDEA.tga"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#####################################################################################################
+
+
+
+	spriteType = {
+		name = "GFX_idea_CRO_GERMAN_MILITARY_STAFF"
+		texturefile = "gfx/interface/ideas/idea_cro_gen_staff.tga"
+	}	
+
+
+	spriteType = {
+		name = "GFX_idea_Brodosplit"
+		texturefile = "gfx/interface/ideas/idea_Brodosplit.tga"
+	}	
+spriteType = {
+		name = "GFX_idea_Kraljevica"
+		texturefile = "gfx/interface/ideas/idea_Kraljevica.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ILL_Crusaders_Militia"
+		texturefile = "gfx/interface/ideas/idea_Crusaders_Militia.tga"
+	}
+spriteType = {
+		name = "GFX_idea_Radio_stanica_Zagreb"
+		texturefile = "gfx/interface/ideas/idea_Radio_stanica_Zagreb.tga"
+	}	
+spriteType = {
+		name = "GFX_idea_CRO_InnerNationalism"
+		texturefile = "gfx/interface/ideas/idea_innernationalism.tga"
+	}	
+	
+spriteType = {
+		name = "GFX_idea_CRO_WOMEN_WORKING"
+		texturefile = "gfx/interface/ideas/WOMEN_WORKING.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_CRO_Balkandinar_idea"
+		texturefile = "gfx/interface/ideas/idea_Balkandinar.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_CRO_Public_works_IDEA"
+		texturefile = "gfx/interface/ideas/illyrian_public_works.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_CRO_Illyrian_Identity"
+		texturefile = "gfx/interface/ideas/illyrian_identity.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_CRO_IDEA_ARMED_DEFENSE"
+		texturefile = "gfx/interface/ideas/CRO_ARMED_DEF_IDEA.tga"
+	}
+		spriteType = {
+		name = "GFX_ace_Mato_Dukovac"
+		texturefile = "gfx/aces/Illyrian_ace_Mato_dukovac.tga"
+	}
+}
