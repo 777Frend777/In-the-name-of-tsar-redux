@@ -52,16 +52,4 @@ spriteTypes = {
         	name = "GFX_RUS_Alexandra_Fedorovna"
         	texturefile = "gfx/dual_leaders/RUS/Alexandra_Fedorovna.dds"
     	}
-	spriteType = {
-        	name = "GFX_ITA_Vittorio_Emanuele_III"
-        	texturefile = "gfx/dual_leaders/ITA/Portrait_Italy_Victor_Emmanuel_III.dds"
-    	}
-	spriteType = {
-        	name = "GFX_PER_Ahmad_Shah_Qajar"
-        	texturefile = "gfx/dual_leaders/PER/Portrait_Persia_Ahmad_Shah_Qajar.png"
-    	}
-	spriteType = {
-        	name = "GFX_ENG_King_Edward_VIII"
-        	texturefile = "gfx/dual_leaders/ENG/King_Edward_VIII.dds"
-    	}
 }

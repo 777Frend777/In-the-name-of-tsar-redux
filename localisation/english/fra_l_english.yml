@@ -714,11 +714,4 @@
  FRA_lw_warning:0 "If §YMarxist§!'s influence is §YModerate§! or higher, a §RCivil War will errupt!§!\n"
  FRA_rw_warning:0 "If §YLa Cagoule§!'s influence is §YModerate§! or higher, a §RCivil War will errupt!§!\n"
  
- france.32.t:0 "Bulgaria requests remilitirisation."
- france.32.d:0 "Following the defeat of Bulgaria in The Great War, and the following treaty of Neuilly Sur-Seine the Bulgarian nation has had a restriction of their army to 20 thousand men. Now the Bulgarians want to remobilise."
- france.32.a:0 "Accept the Bulgarian Terms."
- france.32.b:0 "Deny the Bulgarians remilitirisation."
 
- france.33.t:0 "Bulgaria breaks the Neuilly Sur-Seine!"
- france.33.d:0 "Following failed talks over the remilitirisation of Bulgaria, the Tsar of Bulgaria, Tsar Boris, has declared the treaty dead."
- france.33.a:0 "We must Intervene!"
