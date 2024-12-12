@@ -8,12 +8,18 @@ focus_tree = {
 		}
 	}
 	default = no
+	continuous_focus_position = { x = 50 y = 2000 }
 	focus = {
 		id = RMN_dela_gosva
 		icon = GFX_goal_kmt_contest_the_japanese
 		cost = 10
 		x = 6
 		y = 2
+    allow_branch = {
+        NOT = {
+            has_completed_focus = RMN_save_zheltorossiya
+        }
+    }
 		completion_reward = {
 		RMN = { country_event = RMN.1 }
 	}
@@ -126,8 +132,9 @@ has_country_leader = {
 		mutually_exclusive = {
 			focus = RMN_save_zheltorossiya
 		}
-		x = 5
-		y = 6
+		x = -2
+		y = 1
+		relative_position_id = RMN_end_Japan_influence
 	available = {
 		always = false
 }
@@ -142,11 +149,190 @@ has_country_leader = {
 		mutually_exclusive = {
 			focus = RMN_surrender
 		}
-		x = 7
-		y = 6
+		bypass = {
+		has_war_with = GMC
+		has_war_with = GMC
+		}
+		x = 0
+		y = 1
+		relative_position_id = RMN_end_Japan_influence
 	available = {
 		always = false
 }
+completion_reward  = {
+mark_focus_tree_layout_dirty = yes
+}
 
+	}
+	
+	focus = {
+		id = RMN_emergency_conscription
+		icon = GFX_goal_conscription
+		cost = 5
+		allow_branch = { has_completed_focus = RMN_save_zheltorossiya }
+		x = 20
+		y = 2
+		completion_reward = {
+		add_ideas = {
+		RMN_emergency_conscription
+		}
+		}
+	}
+	
+	focus = {
+		id = RMN_mongol_horsemen
+		icon = GFX_goal_MON_Bogd_Khan
+		cost = 5
+		prerequisite = {
+			focus = RMN_emergency_conscription
+		}
+		x = 1
+		y = 1
+		relative_position_id = RMN_emergency_conscription
+		completion_reward = {
+		MON = {
+		add_ideas = RMN_mongol_horsmen
+		add_relation_rule_override = {
+		target = RMN
+		can_send_volunteers = yes
+		}
+		add_ai_strategy = {
+		type = send_volunteers_desire
+		id = RMN
+		value = 900
+	}
+		}
+		}
+	}
+	focus = {
+		id = RMN_manchu_independence_army
+		icon = GFX_goal_FNG_fengtian_army
+		cost = 5
+		prerequisite = {
+			focus = RMN_emergency_conscription
+		}
+		x = -1
+		y = 1
+		relative_position_id = RMN_emergency_conscription
+		completion_reward = {
+		random_owned_state = {
+		create_unit = {
+    division = "name = \"Manchu Independence Army\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.3 start_equipment_factor = 1"
+	owner = RMN
+}
+		}
+	}
+	}
+	focus = {
+		id = RMN_Legacy_of_3
+		icon = GFX_goal_RUS_army
+		cost = 5
+		prerequisite = {
+			focus = RMN_manchu_independence_army
+		}
+		prerequisite = {
+			focus = RMN_mongol_horsemen
+		}
+		x = 1
+		y = 1
+		relative_position_id = RMN_manchu_independence_army
+		completion_reward = {
+		random_owned_state = {
+create_unit = {
+    division = "name = \"1st Manchurian Army\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.5"
+	owner = RMN
+}
+create_unit = {
+    division = "name = \"2nd Manchurian Army\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.5"
+	owner = RMN
+}
+create_unit = {
+    division = "name = \"3rd Manchurian Army\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.5"
+	owner = RMN
+}
+		}
+	}
+	}
+	focus = {
+		id = RMN_address_the_defecits
+		icon = GFX_focus_generic_military_equipment
+		cost = 5
+		allow_branch = { has_completed_focus = RMN_save_zheltorossiya }
+		x = 16
+		y = 2
+		completion_reward = {
+		add_ideas = {
+		RMN_fixing_defecits
+		}
+		}
+	}
+	
+	focus = {
+		id = RMN_russian_scraps
+		icon = GFX_goal_Arms_Export
+		cost = 5
+		prerequisite = {
+			focus = RMN_address_the_defecits
+		}
+		x = -1
+		y = 1
+		relative_position_id = RMN_address_the_defecits
+		completion_reward = {
+		RUS = {
+		country_event = RMN.6
+		}
+		}
+	}
+	focus = {
+		id = RMN_art_of_capture
+		icon = GFX_focus_DEN_heavy_regulations
+		cost = 5
+		prerequisite = {
+			focus = RMN_address_the_defecits
+		}
+		x = 1
+		y = 1
+		relative_position_id = RMN_address_the_defecits
+		completion_reward = {
+		add_ideas = RMN_art_of_capture
+		}
+	}
+	focus = {
+		id = RMN_a_well_equipped_army
+		icon = GFX_goal_generic_army_mass_assault
+		cost = 5
+		prerequisite = {
+			focus = RMN_russian_scraps
+		}
+		prerequisite = {
+			focus = RMN_art_of_capture
+		}
+		x = 1
+		y = 1
+		relative_position_id = RMN_russian_scraps
+		completion_reward = {
+		remove_ideas = RMN_fixing_defecits
+		}
+	}
+	focus = {
+		id = RMN_a_functioning_army
+		icon = GFX_goal_generic_army_training
+		cost = 5
+		prerequisite = {
+			focus = RMN_a_well_equipped_army
+		}
+		prerequisite = {
+			focus = RMN_Legacy_of_3
+		}
+		x = 2
+		y = 1
+		relative_position_id = RMN_a_well_equipped_army
+		completion_reward = {
+		add_ideas = RMN_functioning_army
+		swap_ideas = {
+    remove_idea = RMN_emergency_conscription
+    add_idea = RMN_standardised_conscription
+}
+		}
 	}
 }

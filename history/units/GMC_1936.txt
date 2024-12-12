@@ -1,5 +1,5 @@
 division_template = {
-	name = "NRA_GMC"			# Rifle Division
+	name = "Manchu Revolters"			 #Rifle Division
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -11,75 +11,85 @@ division_template = {
 
 	}
 	support = {
-		artillery = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+		artillery = { x = 0 y = 0 } 		 #Recon bn had 16 L tanks, 10 ACs, 1x mot inf co Eng and recon removed and they seem rather OP. Could revisit if balance changes
 		
 	}
 }
 
 units = {
-	
-	division= {			
-		name = "1 National Revolutionary Army"		
-		location = 12337
-		division_template = "Pekhotnaya Diviziya"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-
+	division = {
+		name = "1. Manchu Revolters"
+		location = 7812
+		division_template = "Manchu Revolters"
 	}
-                division= {			
-		name = "2  National Revolutionary Army"		
-		location = 10499
-		division_template = "Pekhotnaya Diviziya"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-
+	division = {
+		name = "2. Manchu Revolters"
+		location = 1627
+		division_template = "Manchu Revolters"
 	}
-                division= {			
-		name = "3 National Revolutionary Army"		
-		location = 814
-		division_template = "Pekhotnaya Diviziya"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-
+	division = {
+		name = "3. Manchu Revolters"
+		location = 4561
+		division_template = "Manchu Revolters"
 	}
-                division= {			
-		name = "4 National Revolutionary Army"		
-		location = 10426
-		division_template = "Pekhotnaya Diviziya"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-
+	division = {
+		name = "4. Manchu Revolters"
+		location = 4633
+		division_template = "Manchu Revolters"
 	}
-                division= {			
-		name = "5 National Revolutionary Army"		
+	division = {
+		name = "5. Manchu Imperial Infanty"
+		location = 930
+		division_template = "Manchu Revolters"
+	}
+	division = {
+		name = "6. Manchu Revolters"
+		location = 916
+		division_template = "Manchu Revolters"
+	}
+	division = {
+		name = "7. Manchu Revolters"
+		location = 9831
+		division_template = "Manchu Revolters"
+	}
+	division = {
+		name = "8. Manchu Revolters"
+		location = 6893
+		division_template = "Manchu Revolters"
+	}
+	division = {
+		name = "9. Manchu Revolters"
 		location = 9927
-		division_template = "Pekhotnaya Diviziya"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-
+		division_template = "Manchu Revolters"
 	}
-                division= {			
-		name = "6 National Revolutionary Army"		
-		location = 3881
-		division_template = "Pekhotnaya Diviziya"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-
-	}	
+	division = {
+		name = "10. Manchu Revolters"
+		location = 3934
+		division_template = "Manchu Revolters"
+	}
+	division = {
+		name = "11. Manchu Revolters"
+		location = 934
+		division_template = "Manchu Revolters"
+	}
+	division = {
+		name = "12. Manchu Revolters"
+		location = 6837
+		division_template = "Manchu Revolters"
+	}
 }
 
 			
 
-########## STARTING PRODUCTION ##########
+ STARTING PRODUCTION 
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
-			creator = "GMC"
+			creator = "MAN"
 		}
 		requested_factories = 1
 		progress = 0.52
 		efficiency = 100
 	}
 }
-			
