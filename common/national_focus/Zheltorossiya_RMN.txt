@@ -28,6 +28,11 @@ focus_tree = {
 		id = RMN_is_diterhis_alive
 		icon = GFX_goal_LEP_governor_question
 		cost = 10
+    allow_branch = {
+        NOT = {
+            has_completed_focus = RMN_save_zheltorossiya
+        }
+    }
 		mutually_exclusive = {
 			focus = RMN_diterhis_got_killed
 		}
@@ -41,6 +46,11 @@ focus_tree = {
 		id = RMN_diterhis_got_killed
 		icon = GFX_goal_revolution
 		cost = 10
+    allow_branch = {
+        NOT = {
+            has_completed_focus = RMN_save_zheltorossiya
+        }
+    }
 		mutually_exclusive = {
 			focus = RMN_is_diterhis_alive
 		}
@@ -170,7 +180,7 @@ mark_focus_tree_layout_dirty = yes
 		icon = GFX_goal_conscription
 		cost = 5
 		allow_branch = { has_completed_focus = RMN_save_zheltorossiya }
-		x = 20
+		x = 5
 		y = 2
 		completion_reward = {
 		add_ideas = {
@@ -258,7 +268,7 @@ create_unit = {
 		icon = GFX_focus_generic_military_equipment
 		cost = 5
 		allow_branch = { has_completed_focus = RMN_save_zheltorossiya }
-		x = 16
+		x = 9
 		y = 2
 		completion_reward = {
 		add_ideas = {
@@ -324,7 +334,7 @@ create_unit = {
 		prerequisite = {
 			focus = RMN_Legacy_of_3
 		}
-		x = 2
+		x = -2
 		y = 1
 		relative_position_id = RMN_a_well_equipped_army
 		completion_reward = {

@@ -130,7 +130,18 @@ bookmarks = {
 			}			
 		}
 		
-		
+		"RMN"={
+			minor = yes
+			history = ""
+			ideology = neutrality
+			ideas = {
+			}	
+			focuses = {
+				RMN_is_diterhis_alive
+				RMN_save_zheltorossiya
+				RMN_a_functioning_army
+			}					
+		}
 
 		"---"={
 			history = "OTHER_Occident_DESC"
