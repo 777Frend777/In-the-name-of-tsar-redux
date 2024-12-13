@@ -308,7 +308,7 @@ RUS_integrate_territories_decisions = {
 	}
 }
 
-RUS_russian_coup = {
+RUS_russian_coups_old = {
 RUS_kornilovs_affair = {
 icon = generic_operation
 available = {
