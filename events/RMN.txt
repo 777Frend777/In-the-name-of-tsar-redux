@@ -389,6 +389,9 @@ country_event = {
             base = 15
         }
         name = RMN.6.a
+		trigger = {
+            tag = RUS
+        }
         send_equipment = {
             equipment = infantry_equipment
             amount = 200
@@ -405,6 +408,25 @@ country_event = {
             base = 1
         }
         name = RMN.6.b
+    }
+	option = {
+        ai_chance = {
+            base = 15
+        }
+        name = RMN.6.c
+		trigger = {
+            tag = JAP
+        }
+        send_equipment = {
+            equipment = infantry_equipment
+            amount = 200
+            target = RMN
+        }
+        send_equipment = {
+            equipment = artillery_equipment
+            amount = 75
+            target = RMN
+        }
     }
 }
 

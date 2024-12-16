@@ -1,0 +1,180 @@
+focus_tree = {
+	id = GMC
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GMC
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 2000 }
+	focus = {
+		id = GMC_emergency_conscription
+		icon = GFX_goal_conscription
+		cost = 5
+		x = 5
+		y = 2
+		completion_reward = {
+		add_ideas = {
+		RMN_emergency_conscription
+		}
+		}
+	}
+	
+	focus = {
+		id = GMC_kuomintang_support
+		icon = GFX_goal_japanese_instructors
+		cost = 5
+		prerequisite = {
+			focus = GMC_emergency_conscription
+		}
+		x = 1
+		y = 1
+		relative_position_id = GMC_emergency_conscription
+		completion_reward = {
+		CHI = {
+		add_ideas = RMN_mongol_horsmen
+		add_relation_rule_override = {
+		target = GMC
+		can_send_volunteers = yes
+		}
+		add_ai_strategy = {
+		type = send_volunteers_desire
+		id = GMC
+		value = 900
+	}
+		}
+		}
+	}
+	focus = {
+		id = GMC_manchu_revolters
+		icon = GFX_goal_FNG_fengtian_army
+		cost = 5
+		prerequisite = {
+			focus = GMC_emergency_conscription
+		}
+		x = -1
+		y = 1
+		relative_position_id = GMC_emergency_conscription
+		completion_reward = {
+		random_owned_state = {
+		create_unit = {
+    division = "name = \"Manchu Independence Army\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.3 start_equipment_factor = 1"
+	owner = GMC
+}
+		}
+	}
+	}
+	focus = {
+		id = GMC_help_from_neighbours
+		icon = GFX_goal_CHI_greater_asian_sphere
+		cost = 5
+		prerequisite = {
+			focus = GMC_manchu_revolters
+		}
+		prerequisite = {
+			focus = GMC_kuomintang_support
+		}
+		x = 1
+		y = 1
+		relative_position_id = GMC_manchu_revolters
+		completion_reward = {
+		random_owned_state = {
+create_unit = {
+    division = "name = \"Korean Friendship Fighters\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.5"
+	owner = GMC
+}
+create_unit = {
+    division = "name = \"Taiwanese Volunteers\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.5"
+	owner = GMC
+}
+create_unit = {
+    division = "name = \"Japanese Infantry\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.5"
+	owner = GMC
+}
+		}
+	}
+	}
+	focus = {
+		id = GMC_address_the_defecits
+		icon = GFX_focus_generic_military_equipment
+		cost = 5
+		x = 9
+		y = 2
+		completion_reward = {
+		add_ideas = {
+		RMN_fixing_defecits
+		}
+		}
+	}
+	
+	focus = {
+		id = GMC_japanese_scraps
+		icon = GFX_goal_Arms_Export
+		cost = 5
+		prerequisite = {
+			focus = GMC_address_the_defecits
+		}
+		x = -1
+		y = 1
+		relative_position_id = GMC_address_the_defecits
+		completion_reward = {
+		CHI = {
+		country_event = RMN.6
+		}
+		}
+	}
+	focus = {
+		id = GMC_art_of_capture
+		icon = GFX_focus_DEN_heavy_regulations
+		cost = 5
+		prerequisite = {
+			focus = GMC_address_the_defecits
+		}
+		x = 1
+		y = 1
+		relative_position_id = GMC_address_the_defecits
+		completion_reward = {
+		add_ideas = RMN_art_of_capture
+		}
+	}
+	focus = {
+		id = GMC_a_well_equipped_army
+		icon = GFX_goal_generic_army_mass_assault
+		cost = 5
+		prerequisite = {
+			focus = GMC_japanese_scraps
+		}
+		prerequisite = {
+			focus = GMC_art_of_capture
+		}
+		x = 1
+		y = 1
+		relative_position_id = GMC_japanese_scraps
+		completion_reward = {
+		remove_ideas = RMN_fixing_defecits
+		}
+	}
+	focus = {
+		id = GMC_a_functioning_army
+		icon = GFX_goal_generic_army_training
+		cost = 5
+		prerequisite = {
+			focus = GMC_a_well_equipped_army
+		}
+		prerequisite = {
+			focus = GMC_help_from_neighbours
+		}
+		x = -2
+		y = 1
+		relative_position_id = GMC_a_well_equipped_army
+		completion_reward = {
+		add_ideas = RMN_functioning_army
+		swap_ideas = {
+    remove_idea = RMN_emergency_conscription
+    add_idea = RMN_standardised_conscription
+}
+		}
+	}
+}

@@ -1,0 +1,180 @@
+focus_tree = {
+	id = Imperial_MAN
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MAN
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 2000 }
+	focus = {
+		id = MAN_emergency_conscription
+		icon = GFX_goal_conscription
+		cost = 5
+		x = 5
+		y = 2
+		completion_reward = {
+		add_ideas = {
+		RMN_emergency_conscription
+		}
+		}
+	}
+	
+	focus = {
+		id = MAN_japanese_infantry
+		icon = GFX_goal_japanese_instructors
+		cost = 5
+		prerequisite = {
+			focus = MAN_emergency_conscription
+		}
+		x = 1
+		y = 1
+		relative_position_id = MAN_emergency_conscription
+		completion_reward = {
+		JAP = {
+		add_ideas = RMN_mongol_horsmen
+		add_relation_rule_override = {
+		target = MAN
+		can_send_volunteers = yes
+		}
+		add_ai_strategy = {
+		type = send_volunteers_desire
+		id = MAN
+		value = 900
+	}
+		}
+		}
+	}
+	focus = {
+		id = MAN_manchu_imperial_guard
+		icon = GFX_goal_FNG_fengtian_army
+		cost = 5
+		prerequisite = {
+			focus = MAN_emergency_conscription
+		}
+		x = -1
+		y = 1
+		relative_position_id = MAN_emergency_conscription
+		completion_reward = {
+		random_owned_state = {
+		create_unit = {
+    division = "name = \"Manchu Independence Army\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.3 start_equipment_factor = 1"
+	owner = MAN
+}
+		}
+	}
+	}
+	focus = {
+		id = MAN_help_from_neighbours
+		icon = GFX_goal_JAP_greater_asian_sphere
+		cost = 5
+		prerequisite = {
+			focus = MAN_manchu_imperial_guard
+		}
+		prerequisite = {
+			focus = MAN_japanese_infantry
+		}
+		x = 1
+		y = 1
+		relative_position_id = MAN_manchu_imperial_guard
+		completion_reward = {
+		random_owned_state = {
+create_unit = {
+    division = "name = \"Korean Friendship Fighters\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.5"
+	owner = MAN
+}
+create_unit = {
+    division = "name = \"Taiwanese Volunteers\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.5"
+	owner = MAN
+}
+create_unit = {
+    division = "name = \"Japanese Infantry\" division_template = \"Pekhotnaya Diviziya\" start_experience_factor = 0.5"
+	owner = MAN
+}
+		}
+	}
+	}
+	focus = {
+		id = MAN_address_the_defecits
+		icon = GFX_focus_generic_military_equipment
+		cost = 5
+		x = 9
+		y = 2
+		completion_reward = {
+		add_ideas = {
+		RMN_fixing_defecits
+		}
+		}
+	}
+	
+	focus = {
+		id = MAN_japanese_scraps
+		icon = GFX_goal_Arms_Export
+		cost = 5
+		prerequisite = {
+			focus = MAN_address_the_defecits
+		}
+		x = -1
+		y = 1
+		relative_position_id = MAN_address_the_defecits
+		completion_reward = {
+		JAP = {
+		country_event = RMN.6
+		}
+		}
+	}
+	focus = {
+		id = MAN_art_of_capture
+		icon = GFX_focus_DEN_heavy_regulations
+		cost = 5
+		prerequisite = {
+			focus = MAN_address_the_defecits
+		}
+		x = 1
+		y = 1
+		relative_position_id = MAN_address_the_defecits
+		completion_reward = {
+		add_ideas = RMN_art_of_capture
+		}
+	}
+	focus = {
+		id = MAN_a_well_equipped_army
+		icon = GFX_goal_generic_army_mass_assault
+		cost = 5
+		prerequisite = {
+			focus = MAN_japanese_scraps
+		}
+		prerequisite = {
+			focus = MAN_art_of_capture
+		}
+		x = 1
+		y = 1
+		relative_position_id = MAN_japanese_scraps
+		completion_reward = {
+		remove_ideas = RMN_fixing_defecits
+		}
+	}
+	focus = {
+		id = MAN_a_functioning_army
+		icon = GFX_goal_generic_army_training
+		cost = 5
+		prerequisite = {
+			focus = MAN_a_well_equipped_army
+		}
+		prerequisite = {
+			focus = MAN_help_from_neighbours
+		}
+		x = -2
+		y = 1
+		relative_position_id = MAN_a_well_equipped_army
+		completion_reward = {
+		add_ideas = RMN_functioning_army
+		swap_ideas = {
+    remove_idea = RMN_emergency_conscription
+    add_idea = RMN_standardised_conscription
+}
+		}
+	}
+}
