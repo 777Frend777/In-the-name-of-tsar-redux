@@ -101,6 +101,10 @@ l_english:
  
  # Zheltorossiya
  RMN_neutrality_party:0 "Nationalniy Soyuz"
+ RMN_fascism_party:0 "Zh.G.Zh"
+ RMN_fascism_party_long:0 "Zheleznaya Gvardiya Zheltorossii"
+ RMN_communism_party:0 "Z.R.A"
+ RMN_communism_party_long:0 "Zheltorossiya Rabochiy Avangard"
 
  # Southern Commune & German Republic
  BAV_communism_party:0 "KPD"
