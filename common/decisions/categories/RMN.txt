@@ -1,0 +1,5 @@
+RMN_elections_category = {
+	icon = GFX_decision_SWI_swiss_democratic_tradition_campaign
+	priority = 1000
+	visible = { has_global_flag = RMN_victory }
+}

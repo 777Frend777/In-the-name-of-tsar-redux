@@ -1,4 +1,5 @@
 add_namespace = RMN
+add_namespace = rmnelection
 
 # situation in the country zheltorossiya
 country_event = {
@@ -442,4 +443,38 @@ country_event = {
         name = RMN.7.a
         complete_national_focus = RMN_save_zheltorossiya
     }
+}
+
+country_event = {
+    id = rmnelection.1
+    title = rmnelection.1.t
+    desc = rmnelection.1.d
+    picture = GFX_report_event_generic_north_east_map
+
+    is_triggered_only = yes
+	trigger = {
+	has_global_flag = RMN_victory
+	}
+	option = {
+		name = rmnelection.1.a
+		set_variable = { RMN_loyalist_var = 2 }
+		set_variable = { RMN_black_var = 1 }
+		set_variable = { RMN_eurasian_var = 2 }
+		set_variable = { RUS_socialist_var = 1 }
+		activate_mission = RMN_election
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					set_politics = {
+						ruling_party = neutrality
+						last_election = "[CURRENT_DATE]"
+						election_frequency = 3
+						elections_allowed = yes
+					}
+				}
+				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			}
+			
+		}
+	}
 }

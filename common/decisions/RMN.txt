@@ -1,0 +1,86 @@
+RMN_elections_category = {
+	RMN_random_popular = {
+	allowed = { always = no } #manually activated
+		available = { hidden_trigger = { always = no } }
+		selectable_mission = yes
+		is_good = no
+		fire_only_once = no
+		days_mission_timeout = 10
+		timeout_effect = {
+		random_list = {
+    10 = {
+add_to_variable = {
+    var = RMN_loyalist_var
+    value = 1
+}
+    }
+    10 = {
+        add_to_variable = {
+    var = RMN_black_var
+    value = 1
+}
+    }
+    10 = {
+        add_to_variable = {
+    var = RMN_eurasian_var
+    value = 1
+}
+    }
+    10 = {
+        add_to_variable = {
+    var = RMN_socialist_var
+    value = 1
+}
+    }
+}
+if = {
+NOT = {
+has_country_flag = RMN_loyalist_victory
+has_country_flag = RMN_black_victory
+has_country_flag = RMN_socialist_victory
+has_country_flag = RMN_eurasian_victory
+}
+activate_mission = RMN_random_popular
+}
+else = {
+}
+		}
+	}
+	RMN_election = {
+		allowed = { always = no } #manually activated
+		available = { hidden_trigger = { always = no } }
+		selectable_mission = yes
+		is_good = no
+		fire_only_once = yes
+		days_mission_timeout = 90
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = { var = RMN_loyalist_var value = RMN_black_var compare = greater_than_or_equals }
+					check_variable = { var = RMN_loyalist_var value = RMN_eurasian_var compare = greater_than_or_equals }
+					check_variable = { var = RMN_loyalist_var value = RMN_socialist_var compare = greater_than_or_equals }
+				}
+				set_country_flag = RMN_loyalist_victory
+			}
+			else_if = {
+				limit = {
+					check_variable = { var = RMN_black_var value = RMN_loyalist_var compare = greater_than_or_equals }
+					check_variable = { var = RMN_black_var value = RMN_eurasian_var compare = greater_than_or_equals }
+					check_variable = { var = RMN_black_var value = RMN_socialist_var compare = greater_than_or_equals }
+				}
+				set_country_flag = RMN_black_victory
+			}
+			else_if = {
+				limit = {
+					check_variable = { var = RMN_socialist_var value = RMN_loyalist_var compare = greater_than_or_equals }
+					check_variable = { var = RMN_socialist_var value = RMN_eurasian_var compare = greater_than_or_equals }
+					check_variable = { var = RMN_socialist_var value = RMN_black_var compare = greater_than_or_equals }
+				}
+				set_country_flag = RMN_socialist_victory
+			}
+			else = {
+				set_country_flag = RMN_eurasian_victory
+			}
+			country_event = ruselections.30
+		}
+	}
