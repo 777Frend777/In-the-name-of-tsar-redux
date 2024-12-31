@@ -1,4 +1,140 @@
 RMN_elections_category = {
+	RMN_campaign_loyalist = {
+	icon = decision_generic_decision
+	visible = {
+		has_global_flag = RMN_victory
+	}
+	cost = 25
+	days_re_enable = 10
+	complete_effect = {
+			random_list = {
+    10 = {
+add_to_variable = {
+    var = RMN_loyalist_var
+    value = 0
+	tooltip = RMN_loyalist_var_tt
+}
+    }
+    20 = {
+        add_to_variable = {
+    var = RMN_loyalist_var
+    value = 1
+	tooltip = RMN_loyalist_var_tt
+}
+    }
+    10 = {
+        add_to_variable = {
+    var = RMN_loyalist_var
+    value = 2
+	tooltip = RMN_loyalist_var_tt
+}
+    }
+}
+	}
+	
+	}
+	RMN_campaign_black = {
+	icon = decision_generic_decision
+	visible = {
+		has_global_flag = RMN_victory
+	}
+	cost = 25
+	days_re_enable = 10
+	complete_effect = {
+		random_list = {
+			10 = {
+				add_to_variable = {
+					var = RMN_black_var
+					value = 0
+					tooltip = RMN_black_var_tt
+				}
+			}
+			20 = {
+				add_to_variable = {
+					var = RMN_black_var
+					value = 1
+					tooltip = RMN_black_var_tt
+				}
+			}
+			10 = {
+				add_to_variable = {
+					var = RMN_black_var
+					value = 2
+					tooltip = RMN_black_var_tt
+				}
+			}
+		}
+	}
+}
+
+RMN_campaign_eurasian = {
+	icon = decision_generic_decision
+	visible = {
+		has_global_flag = RMN_victory
+	}
+	cost = 25
+	days_re_enable = 10
+	complete_effect = {
+		random_list = {
+			10 = {
+				add_to_variable = {
+					var = RMN_eurasian_var
+					value = 0
+					tooltip = RMN_eurasian_var_tt
+				}
+			}
+			20 = {
+				add_to_variable = {
+					var = RMN_eurasian_var
+					value = 1
+					tooltip = RMN_eurasian_var_tt
+				}
+			}
+			10 = {
+				add_to_variable = {
+					var = RMN_eurasian_var
+					value = 2
+					tooltip = RMN_eurasian_var_tt
+				}
+			}
+		}
+	}
+}
+
+RMN_campaign_socialist = {
+	icon = decision_generic_decision
+	visible = {
+		has_global_flag = RMN_victory
+	}
+	cost = 25
+	days_re_enable = 10
+	complete_effect = {
+		random_list = {
+			10 = {
+				add_to_variable = {
+					var = RMN_socialist_var
+					value = 0
+					tooltip = RMN_socialist_var_tt
+				}
+			}
+			20 = {
+				add_to_variable = {
+					var = RMN_socialist_var
+					value = 1
+					tooltip = RMN_socialist_var_tt
+				}
+			}
+			10 = {
+				add_to_variable = {
+					var = RMN_socialist_var
+					value = 2
+					tooltip = RMN_socialist_var_tt
+				}
+			}
+		}
+	}
+}
+
 	RMN_random_popular = {
 	allowed = { always = no } #manually activated
 		available = { hidden_trigger = { always = no } }
@@ -12,24 +148,28 @@ RMN_elections_category = {
 add_to_variable = {
     var = RMN_loyalist_var
     value = 1
+	tooltip = RMN_loyalist_var_tt
 }
     }
     10 = {
         add_to_variable = {
     var = RMN_black_var
     value = 1
+	tooltip = RMN_black_var_tt
 }
     }
     10 = {
         add_to_variable = {
     var = RMN_eurasian_var
     value = 1
+	tooltip = RMN_eurasian_var_tt
 }
     }
     10 = {
         add_to_variable = {
     var = RMN_socialist_var
     value = 1
+	tooltip = RMN_socialist_var_tt
 }
     }
 }
@@ -81,6 +221,5 @@ activate_mission = RMN_random_popular
 			else = {
 				set_country_flag = RMN_eurasian_victory
 			}
-			country_event = ruselections.30
 		}
 	}

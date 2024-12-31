@@ -73,6 +73,15 @@ RMN.6.d: "Zheltorossiya has formally requested military aid from the Russian Emp
 RMN.6.a: "Send the equipment"
 RMN.6.b: "Deny the request"
 
+#decision
+ RMN_elections_category: "Elections of National Salvation"
+ RMN_elections_category_desc: "([?RMN_loyalist_var|B0] [?RMN_black_var|L0] [?RMN_eurasian_var|O0] [?RMN_socialist_var|R0])"
+
+#variables
+ RMN_loyalist_var_tt: "§B National Union §!"
+ RMN_black_var_tt: "§L Black Hundreds of Zheltorossiya §!"
+ RMN_eurasian_var_tt: "§O All-Russian Eurasianist Party §!"
+ RMN_socialist_var_tt: "§R Zheltorossiya Worker's Vanguard §!"
 
 #tooltips
 RMN_civil_war_start_tt: "§RCivil war begins§ (can be a little laggy.)"

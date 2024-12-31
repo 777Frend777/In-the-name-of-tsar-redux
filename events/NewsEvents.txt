@@ -13237,6 +13237,7 @@ news_event = {
 		has_war = no
 		}
 		country_exists = RMN
+		date > 1937.01.01
 		}
 	}
 

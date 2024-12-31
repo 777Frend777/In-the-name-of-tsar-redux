@@ -457,10 +457,26 @@ country_event = {
 	option = {
 		name = rmnelection.1.a
 		log = "[GetDateText]: [Root.GetName]: Event RMN_election"
-		set_variable = { RMN_loyalist_var = 2 }
-		set_variable = { RMN_black_var = 1 }
-		set_variable = { RMN_eurasian_var = 2 }
-		set_variable = { RMN_socialist_var = 1 }
+		set_variable = {
+    var = RMN_loyalist_var
+    value = 2
+    tooltip = RMN_loyalist_var_tt
+}
+set_variable = {
+    var = RMN_black_var
+    value = 1
+    tooltip = RMN_black_var_tt
+}
+set_variable = {
+    var = RMN_eurasian_var
+    value = 2
+    tooltip = RMN_eurasian_var_tt
+}
+set_variable = {
+    var = RMN_socialist_var
+    value = 1
+    tooltip = RMN_socialist_var_tt
+}
 		activate_mission = RMN_election
 		activate_mission = RMN_random_popular
 		hidden_effect = {
