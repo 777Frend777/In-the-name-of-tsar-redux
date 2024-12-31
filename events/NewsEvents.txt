@@ -13228,8 +13228,6 @@ news_event = {
 	title = news.341.t
 	desc = news.341.d
 	picture = GFX_news_event_LEC_war_shanghai
-	
-	major = yes
 
 	fire_only_once = yes
 	
@@ -13259,8 +13257,6 @@ news_event = {
 	title = news.342.t
 	desc = news.342.d
 	picture = GFX_news_event_LEC_war_shanghai
-	
-	major = yes
 
 	fire_only_once = yes
 	
@@ -13290,8 +13286,6 @@ news_event = {
 	title = news.343.t
 	desc = news.343.d
 	picture = GFX_news_event_LEC_war_shanghai
-	
-	major = yes
 
 	fire_only_once = yes
 	

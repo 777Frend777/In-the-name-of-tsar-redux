@@ -34,15 +34,15 @@ add_to_variable = {
     }
 }
 if = {
-NOT = {
+limit = {
 has_country_flag = RMN_loyalist_victory
 has_country_flag = RMN_black_victory
 has_country_flag = RMN_socialist_victory
 has_country_flag = RMN_eurasian_victory
 }
-activate_mission = RMN_random_popular
 }
 else = {
+activate_mission = RMN_random_popular
 }
 		}
 	}
