@@ -501,6 +501,16 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_ideology_black_hundredism"
+		texturefile = "gfx/interface/ideologies/black_hundreds_placeholder.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_eurasianism"
+		texturefile = "gfx/interface/ideologies/eurasianism_subtype.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_ideology_unknown"
 		texturefile = "gfx/interface/ideologies/unknown.dds"
 		legacy_lazy_load = no

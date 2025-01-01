@@ -285,6 +285,8 @@ ideologies = {
 			}
 			fascism_subtype = {
 			}
+			eurasianism = {
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -325,6 +327,8 @@ ideologies = {
 	types = {
 	
 		Annihilationism_ideology = {
+		}
+		black_hundredism = {
 		}
 	}
 	

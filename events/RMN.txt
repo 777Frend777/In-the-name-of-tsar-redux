@@ -450,48 +450,359 @@ country_event = {
     title = rmnelection.1.t
     desc = rmnelection.1.d
     picture = GFX_report_event_generic_north_east_map
-	
-	trigger = {
-		has_global_flag = RMN_victory
-	}
-	option = {
-		name = rmnelection.1.a
-		log = "[GetDateText]: [Root.GetName]: Event RMN_election"
-		set_variable = {
-    var = RMN_loyalist_var
-    value = 2
-    tooltip = RMN_loyalist_var_tt
+
+    trigger = {
+        has_global_flag = RMN_victory
+    }
+
+    option = {
+        name = rmnelection.1.a
+        log = "[GetDateText]: [Root.GetName]: Event RMN_election"
+
+        set_variable = {
+            var = RMN_loyalist_var
+            value = 2
+            tooltip = RMN_loyalist_var_tt
+        }
+        set_variable = {
+            var = RMN_black_var
+            value = 1
+            tooltip = RMN_black_var_tt
+        }
+        set_variable = {
+            var = RMN_eurasian_var
+            value = 2
+            tooltip = RMN_eurasian_var_tt
+        }
+        set_variable = {
+            var = RMN_socialist_var
+            value = 1
+            tooltip = RMN_socialist_var_tt
+        }
+
+        activate_mission = RMN_election
+        activate_mission = RMN_random_popular
+
+        hidden_effect = {
+            meta_effect = {
+                text = {
+                    set_politics = {
+                        ruling_party = neutrality
+                        last_election = "[CURRENT_DATE]"
+                        election_frequency = 3
+                        elections_allowed = yes
+                    }
+                }
+                CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+            }
+        }
+    }
 }
-set_variable = {
-    var = RMN_black_var
-    value = 1
-    tooltip = RMN_black_var_tt
+
+country_event = {
+    id = rmnelection.2
+    title = rmnelection.2.t
+    desc = rmnelection.2.d
+    picture = GFX_report_event_RUS_army4
+
+    is_triggered_only = yes
+
+    option = {
+        name = rmnelection.2.a
+        if = {
+            limit = {
+                check_variable = {
+                    RMN_loyalist_var > 20
+                }
+                set_political_party = {
+                    ideology = neutrality
+                    popularity = 100
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    RMN_loyalist_var > 17
+                }
+                set_political_party = {
+                    ideology = neutrality
+                    popularity = 90
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    RMN_loyalist_var > 14
+                }
+                set_political_party = {
+                    ideology = neutrality
+                    popularity = 80
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    RMN_loyalist_var > 11
+                }
+                set_political_party = {
+                    ideology = neutrality
+                    popularity = 70
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    RMN_loyalist_var > 8
+                }
+                set_political_party = {
+                    ideology = neutrality
+                    popularity = 60
+                }
+            }
+        }
+        else = {
+            set_political_party = {
+                ideology = neutrality
+                popularity = 50
+            }
+        }
+    }
 }
-set_variable = {
-    var = RMN_eurasian_var
-    value = 2
-    tooltip = RMN_eurasian_var_tt
-}
-set_variable = {
-    var = RMN_socialist_var
-    value = 1
-    tooltip = RMN_socialist_var_tt
-}
-		activate_mission = RMN_election
-		activate_mission = RMN_random_popular
-		hidden_effect = {
-			meta_effect = {
-				text = {
-					set_politics = {
-						ruling_party = neutrality
-						last_election = "[CURRENT_DATE]"
-						election_frequency = 3
-						elections_allowed = yes
-					}
-				}
-				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
-			}
-			
+
+country_event = {
+    id = rmnelection.3
+    title = rmnelection.3.t
+    desc = rmnelection.3.d
+    picture = GFX_report_event_RUS_army4
+
+    is_triggered_only = yes
+
+    option = {
+        name = rmnelection.3.a
+        if = {
+            limit = {
+                check_variable = {
+                    RMN_black_var > 20
+                }
+                set_political_party = {
+                    ideology = Annihilationism
+                    popularity = 100
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    RMN_black_var > 17
+                }
+                set_political_party = {
+                    ideology = Annihilationism
+                    popularity = 90
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    RMN_black_var > 14
+                }
+                set_political_party = {
+                    ideology = Annihilationism
+                    popularity = 80
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    RMN_black_var > 11
+                }
+                set_political_party = {
+                    ideology = Annihilationism
+                    popularity = 70
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    RMN_black_var > 8
+                }
+                set_political_party = {
+                    ideology = Annihilationism
+                    popularity = 60
+                }
+            }
+        }
+        else = {
+            set_political_party = {
+                ideology = Annihilationism
+                popularity = 50
+            }
+        }
+		set_politics = {
+			ruling_party = Annihilationism
+			elections_allowed = yes
 		}
-	}
+    }
+}
+
+country_event = {
+    id = rmnelection.4
+    title = rmnelection.4.t
+    desc = rmnelection.4.d
+    picture = GFX_report_event_RUS_army4
+
+    is_triggered_only = yes
+
+    option = {
+        name = rmnelection.4.a
+        if = {
+            limit = {
+                check_variable = {
+                    RMN_eurasian_var > 20
+                }
+                set_political_party = {
+                    ideology = fascism
+                    popularity = 100
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    RMN_eurasian_var > 17
+                }
+                set_political_party = {
+                    ideology = fascism
+                    popularity = 90
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    RMN_eurasian_var > 14
+                }
+                set_political_party = {
+                    ideology = fascism
+                    popularity = 80
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    RMN_eurasian_var > 11
+                }
+                set_political_party = {
+                    ideology = fascism
+                    popularity = 70
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    RMN_eurasian_var > 8
+                }
+                set_political_party = {
+                    ideology = fascism
+                    popularity = 60
+                }
+            }
+        }
+        else = {
+            set_political_party = {
+                ideology = fascism
+                popularity = 50
+            }
+        }
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = yes
+		}
+    }
+}
+
+country_event = {
+    id = rmnelection.5
+    title = rmnelection.5.t
+    desc = rmnelection.5.d
+    picture = GFX_report_event_RUS_army4
+
+    is_triggered_only = yes
+
+    option = {
+        name = rmnelection.5.a
+        if = {
+            limit = {
+                check_variable = {
+                    RMN_socialist_var > 20
+                }
+                set_political_party = {
+                    ideology = socialist
+                    popularity = 100
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    RMN_socialist_var > 17
+                }
+                set_political_party = {
+                    ideology = socialist
+                    popularity = 90
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    RMN_socialist_var > 14
+                }
+                set_political_party = {
+                    ideology = socialist
+                    popularity = 80
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    RMN_socialist_var > 11
+                }
+                set_political_party = {
+                    ideology = socialist
+                    popularity = 70
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    RMN_socialist_var > 8
+                }
+                set_political_party = {
+                    ideology = socialist
+                    popularity = 60
+                }
+            }
+        }
+        else = {
+            set_political_party = {
+                ideology = socialist
+                popularity = 50
+            }
+        }
+		set_politics = {
+			ruling_party = socialist
+			elections_allowed = yes
+		}
+    }
 }

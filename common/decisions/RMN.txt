@@ -134,57 +134,62 @@ RMN_campaign_socialist = {
 	}
 }
 
-	RMN_random_popular = {
-	allowed = { always = no } #manually activated
-		available = { hidden_trigger = { always = no } }
-		selectable_mission = yes
-		is_good = no
-		fire_only_once = no
-		days_mission_timeout = 10
-		timeout_effect = {
-		random_list = {
-    10 = {
-add_to_variable = {
-    var = RMN_loyalist_var
-    value = 1
-	tooltip = RMN_loyalist_var_tt
-}
+RMN_random_popular = {
+    allowed = { always = no } #manually activated
+    available = { hidden_trigger = { always = no } }
+    selectable_mission = yes
+    is_good = no
+    fire_only_once = no
+    days_mission_timeout = 10
+
+    timeout_effect = {
+        random_list = {
+            10 = {
+                add_to_variable = {
+                    var = RMN_loyalist_var
+                    value = 1
+                    tooltip = RMN_loyalist_var_tt
+                }
+            }
+            10 = {
+                add_to_variable = {
+                    var = RMN_black_var
+                    value = 1
+                    tooltip = RMN_black_var_tt
+                }
+            }
+            10 = {
+                add_to_variable = {
+                    var = RMN_eurasian_var
+                    value = 1
+                    tooltip = RMN_eurasian_var_tt
+                }
+            }
+            10 = {
+                add_to_variable = {
+                    var = RMN_socialist_var
+                    value = 1
+                    tooltip = RMN_socialist_var_tt
+                }
+            }
+        }
+
+        if = {
+            limit = {
+				OR = {
+					has_country_flag = RMN_loyalist_victory
+					has_country_flag = RMN_black_victory
+					has_country_flag = RMN_socialist_victory
+					has_country_flag = RMN_eurasian_victory
+				}
+            }
+        }
+        else = {
+            activate_mission = RMN_random_popular
+        }
     }
-    10 = {
-        add_to_variable = {
-    var = RMN_black_var
-    value = 1
-	tooltip = RMN_black_var_tt
 }
-    }
-    10 = {
-        add_to_variable = {
-    var = RMN_eurasian_var
-    value = 1
-	tooltip = RMN_eurasian_var_tt
-}
-    }
-    10 = {
-        add_to_variable = {
-    var = RMN_socialist_var
-    value = 1
-	tooltip = RMN_socialist_var_tt
-}
-    }
-}
-if = {
-limit = {
-has_country_flag = RMN_loyalist_victory
-has_country_flag = RMN_black_victory
-has_country_flag = RMN_socialist_victory
-has_country_flag = RMN_eurasian_victory
-}
-}
-else = {
-activate_mission = RMN_random_popular
-}
-		}
-	}
+
 	RMN_election = {
 		allowed = { always = no } #manually activated
 		available = { hidden_trigger = { always = no } }
