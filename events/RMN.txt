@@ -450,7 +450,9 @@ country_event = {
     title = rmnelection.1.t
     desc = rmnelection.1.d
     picture = GFX_report_event_generic_north_east_map
-
+	
+	fire_only_once = yes
+	
     trigger = {
         has_global_flag = RMN_victory
     }
@@ -514,10 +516,10 @@ country_event = {
                 check_variable = {
                     RMN_loyalist_var > 20
                 }
-                set_political_party = {
-                    ideology = neutrality
-                    popularity = 100
-                }
+            }
+            set_political_party = {
+                ideology = neutrality
+                popularity = 100
             }
         }
         else_if = {
@@ -525,10 +527,10 @@ country_event = {
                 check_variable = {
                     RMN_loyalist_var > 17
                 }
-                set_political_party = {
-                    ideology = neutrality
-                    popularity = 90
-                }
+            }
+            set_political_party = {
+                ideology = neutrality
+                popularity = 90
             }
         }
         else_if = {
@@ -536,10 +538,10 @@ country_event = {
                 check_variable = {
                     RMN_loyalist_var > 14
                 }
-                set_political_party = {
-                    ideology = neutrality
-                    popularity = 80
-                }
+            }
+            set_political_party = {
+                ideology = neutrality
+                popularity = 80
             }
         }
         else_if = {
@@ -547,10 +549,10 @@ country_event = {
                 check_variable = {
                     RMN_loyalist_var > 11
                 }
-                set_political_party = {
-                    ideology = neutrality
-                    popularity = 70
-                }
+            }
+            set_political_party = {
+                ideology = neutrality
+                popularity = 70
             }
         }
         else_if = {
@@ -558,10 +560,10 @@ country_event = {
                 check_variable = {
                     RMN_loyalist_var > 8
                 }
-                set_political_party = {
-                    ideology = neutrality
-                    popularity = 60
-                }
+            }
+            set_political_party = {
+                ideology = neutrality
+                popularity = 60
             }
         }
         else = {
@@ -588,10 +590,10 @@ country_event = {
                 check_variable = {
                     RMN_black_var > 20
                 }
-                set_political_party = {
-                    ideology = Annihilationism
-                    popularity = 100
-                }
+            }
+            set_political_party = {
+                ideology = fascism
+                popularity = 100
             }
         }
         else_if = {
@@ -599,10 +601,10 @@ country_event = {
                 check_variable = {
                     RMN_black_var > 17
                 }
-                set_political_party = {
-                    ideology = Annihilationism
-                    popularity = 90
-                }
+            }
+            set_political_party = {
+                ideology = fascism
+                popularity = 90
             }
         }
         else_if = {
@@ -610,10 +612,10 @@ country_event = {
                 check_variable = {
                     RMN_black_var > 14
                 }
-                set_political_party = {
-                    ideology = Annihilationism
-                    popularity = 80
-                }
+            }
+            set_political_party = {
+                ideology = fascism
+                popularity = 80
             }
         }
         else_if = {
@@ -621,10 +623,10 @@ country_event = {
                 check_variable = {
                     RMN_black_var > 11
                 }
-                set_political_party = {
-                    ideology = Annihilationism
-                    popularity = 70
-                }
+            }
+            set_political_party = {
+                ideology = fascism
+                popularity = 70
             }
         }
         else_if = {
@@ -632,22 +634,22 @@ country_event = {
                 check_variable = {
                     RMN_black_var > 8
                 }
-                set_political_party = {
-                    ideology = Annihilationism
-                    popularity = 60
-                }
+            }
+            set_political_party = {
+                ideology = fascism
+                popularity = 60
             }
         }
         else = {
             set_political_party = {
-                ideology = Annihilationism
+                ideology = fascism
                 popularity = 50
             }
         }
-		set_politics = {
-			ruling_party = Annihilationism
-			elections_allowed = yes
-		}
+        set_politics = {
+            ruling_party = fascism
+            elections_allowed = yes
+        }
     }
 }
 
@@ -666,10 +668,10 @@ country_event = {
                 check_variable = {
                     RMN_eurasian_var > 20
                 }
-                set_political_party = {
-                    ideology = fascism
-                    popularity = 100
-                }
+            }
+            set_political_party = {
+                ideology = conservatives
+                popularity = 100
             }
         }
         else_if = {
@@ -677,10 +679,10 @@ country_event = {
                 check_variable = {
                     RMN_eurasian_var > 17
                 }
-                set_political_party = {
-                    ideology = fascism
-                    popularity = 90
-                }
+            }
+            set_political_party = {
+                ideology = conservatives
+                popularity = 90
             }
         }
         else_if = {
@@ -688,10 +690,10 @@ country_event = {
                 check_variable = {
                     RMN_eurasian_var > 14
                 }
-                set_political_party = {
-                    ideology = fascism
-                    popularity = 80
-                }
+            }
+            set_political_party = {
+                ideology = conservatives
+                popularity = 80
             }
         }
         else_if = {
@@ -699,10 +701,10 @@ country_event = {
                 check_variable = {
                     RMN_eurasian_var > 11
                 }
-                set_political_party = {
-                    ideology = fascism
-                    popularity = 70
-                }
+            }
+            set_political_party = {
+                ideology = conservatives
+                popularity = 70
             }
         }
         else_if = {
@@ -710,22 +712,22 @@ country_event = {
                 check_variable = {
                     RMN_eurasian_var > 8
                 }
-                set_political_party = {
-                    ideology = fascism
-                    popularity = 60
-                }
+            }
+            set_political_party = {
+                ideology = conservatives
+                popularity = 60
             }
         }
         else = {
             set_political_party = {
-                ideology = fascism
+                ideology = conservatives
                 popularity = 50
             }
         }
-		set_politics = {
-			ruling_party = fascism
-			elections_allowed = yes
-		}
+        set_politics = {
+            ruling_party = conservatives
+            elections_allowed = yes
+        }
     }
 }
 
@@ -744,10 +746,10 @@ country_event = {
                 check_variable = {
                     RMN_socialist_var > 20
                 }
-                set_political_party = {
-                    ideology = socialist
-                    popularity = 100
-                }
+            }
+            set_political_party = {
+                ideology = socialist
+                popularity = 100
             }
         }
         else_if = {
@@ -755,10 +757,10 @@ country_event = {
                 check_variable = {
                     RMN_socialist_var > 17
                 }
-                set_political_party = {
-                    ideology = socialist
-                    popularity = 90
-                }
+            }
+            set_political_party = {
+                ideology = socialist
+                popularity = 90
             }
         }
         else_if = {
@@ -766,10 +768,10 @@ country_event = {
                 check_variable = {
                     RMN_socialist_var > 14
                 }
-                set_political_party = {
-                    ideology = socialist
-                    popularity = 80
-                }
+            }
+            set_political_party = {
+                ideology = socialist
+                popularity = 80
             }
         }
         else_if = {
@@ -777,10 +779,10 @@ country_event = {
                 check_variable = {
                     RMN_socialist_var > 11
                 }
-                set_political_party = {
-                    ideology = socialist
-                    popularity = 70
-                }
+            }
+            set_political_party = {
+                ideology = socialist
+                popularity = 70
             }
         }
         else_if = {
@@ -788,10 +790,10 @@ country_event = {
                 check_variable = {
                     RMN_socialist_var > 8
                 }
-                set_political_party = {
-                    ideology = socialist
-                    popularity = 60
-                }
+            }
+            set_political_party = {
+                ideology = socialist
+                popularity = 60
             }
         }
         else = {
@@ -800,9 +802,9 @@ country_event = {
                 popularity = 50
             }
         }
-		set_politics = {
-			ruling_party = socialist
-			elections_allowed = yes
-		}
+        set_politics = {
+            ruling_party = socialist
+            elections_allowed = yes
+        }
     }
 }

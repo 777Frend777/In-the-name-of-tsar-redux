@@ -101,12 +101,12 @@ l_english:
  
  # Zheltorossiya
  RMN_neutrality_party:0 "Nationalniy Soyuz"
- RMN_Annihilationism_party:0 "Ch.S.Zh"
- RMN_Annihilationism_party_long:0 "Chernaya Sotnya Zheltorossii"
+ RMN_fascism_party:0 "Ch.S.Zh"
+ RMN_fascism_party_long:0 "Chernaya Sotnya Zheltorossii"
  RMN_socialist_party:0 "Zh.R.A"
  RMN_socialist_party_long:0 "Zheltorossiya Rabochiy Avangard"
- RMN_fascism_party:0 "V.E.P"
- RMN_fascism_party_long:0 "Vserossiyskaya Yevraziyskaya Partiya"
+ RMN_conservatives_party:0 "V.E.P"
+ RMN_conservatives_party_long:0 "Vserossiyskaya Yevraziyskaya Partiya"
 
  # Southern Commune & German Republic
  BAV_communism_party:0 "KPD"

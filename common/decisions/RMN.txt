@@ -8,13 +8,6 @@ RMN_campaign_loyalist = {
     days_re_enable = 10
     complete_effect = {
         random_list = {
-            10 = {
-                add_to_variable = {
-                    var = RMN_loyalist_var
-                    value = 0
-                    tooltip = RMN_loyalist_var_tt
-                }
-            }
             20 = {
                 add_to_variable = {
                     var = RMN_loyalist_var
@@ -41,13 +34,6 @@ RMN_campaign_loyalist = {
 	days_re_enable = 10
 	complete_effect = {
 		random_list = {
-			10 = {
-				add_to_variable = {
-					var = RMN_black_var
-					value = 0
-					tooltip = RMN_black_var_tt
-				}
-			}
 			20 = {
 				add_to_variable = {
 					var = RMN_black_var
@@ -75,13 +61,6 @@ RMN_campaign_eurasian = {
 	days_re_enable = 10
 	complete_effect = {
 		random_list = {
-			10 = {
-				add_to_variable = {
-					var = RMN_eurasian_var
-					value = 0
-					tooltip = RMN_eurasian_var_tt
-				}
-			}
 			20 = {
 				add_to_variable = {
 					var = RMN_eurasian_var
@@ -109,13 +88,6 @@ RMN_campaign_socialist = {
 	days_re_enable = 10
 	complete_effect = {
 		random_list = {
-			10 = {
-				add_to_variable = {
-					var = RMN_socialist_var
-					value = 0
-					tooltip = RMN_socialist_var_tt
-				}
-			}
 			20 = {
 				add_to_variable = {
 					var = RMN_socialist_var
@@ -205,6 +177,7 @@ RMN_random_popular = {
 					check_variable = { var = RMN_loyalist_var value = RMN_socialist_var compare = greater_than_or_equals }
 				}
 				set_country_flag = RMN_loyalist_victory
+				country_event = rmnelection.2
 			}
 			else_if = {
 				limit = {
@@ -213,6 +186,7 @@ RMN_random_popular = {
 					check_variable = { var = RMN_black_var value = RMN_socialist_var compare = greater_than_or_equals }
 				}
 				set_country_flag = RMN_black_victory
+				country_event = rmnelection.3
 			}
 			else_if = {
 				limit = {
@@ -221,9 +195,11 @@ RMN_random_popular = {
 					check_variable = { var = RMN_socialist_var value = RMN_black_var compare = greater_than_or_equals }
 				}
 				set_country_flag = RMN_socialist_victory
+				country_event = rmnelection.5
 			}
 			else = {
 				set_country_flag = RMN_eurasian_victory
+				country_event = rmnelection.4
 			}
 		}
 	}

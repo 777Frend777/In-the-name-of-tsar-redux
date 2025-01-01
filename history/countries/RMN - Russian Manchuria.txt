@@ -49,3 +49,34 @@ create_country_leader = {
 		#
 	}
 }
+create_country_leader = {
+	name = "Nikolai Trubetzkoy" 
+	desc = "POLITICS_Diterikhs_DESC"
+	picture = "gfx/leaders/RMN/Portrait_RMN_Nikolai_Trubetzkoy.png"
+	expire = "1965.1.1"
+	ideology = eurasianism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Vladimir Purishkevich" 
+	desc = "POLITICS_Diterikhs_DESC"
+	picture = "gfx/leaders/RMN/Portrait_RMN_Vladimir_Purishkevich.png"
+	expire = "1965.1.1"
+	ideology = black_hundredism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Mikhail Borodin" 
+	desc = "POLITICS_Diterikhs_DESC"
+	picture = "gfx/leaders/leader_unknown.dds"
+	expire = "1965.1.1"
+	ideology = socialist_subtype
+	traits = {
+		#
+	}
+}
