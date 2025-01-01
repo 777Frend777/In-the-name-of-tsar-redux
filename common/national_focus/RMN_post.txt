@@ -1,0 +1,39 @@
+focus_tree = {
+	id = RMN_post
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RMN
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 2000 }
+	focus = {
+		id = RMN_elections
+		icon = GFX_goal_generic_parliament
+		cost = 10
+		x = 10
+		y = 2
+		completion_reward = {
+	}
+	}
+	
+#####################EURASIA#####################
+	focus = {
+		id = RMN_eurasianists
+		icon = GFX_RUS_scythian_eurasia
+		cost = 10
+		x = 5
+		y = 1
+		available = {
+		always = false
+		}
+		prerequisite = {
+			focus = RMN_elections
+		}
+		relative_position_id = RMN_elections
+		completion_reward = {
+	}
+	}
+}

@@ -153,17 +153,102 @@ country_event = {
     add_core_of = GMC 
 }
             GMC = {
-                load_oob = "GMC_1936"
+                division_template = {
+	name = "Manchu Revolters"			 #Rifle Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 		 #Recon bn had 16 L tanks, 10 ACs, 1x mot inf co Eng and recon removed and they seem rather OP. Could revisit if balance changes
+		
+	}
+}
+		random_owned_state = {
+create_unit = {
+    division = "name = \"Manchu Revolters\" division_template = \"Manchu Revolters\" start_experience_factor = 0.5"
+	owner = GMC
+}
+create_unit = {
+    division = "name = \"Manchu Revolters\" division_template = \"Manchu Revolters\" start_experience_factor = 0.5"
+	owner = GMC
+}
+create_unit = {
+    division = "name = \"Manchu Revolters\" division_template = \"Manchu Revolters\" start_experience_factor = 0.5"
+	owner = GMC
+}
+create_unit = {
+    division = "name = \"Manchu Revolters\" division_template = \"Manchu Revolters\" start_experience_factor = 0.5"
+	owner = GMC
+}
+create_unit = {
+    division = "name = \"Manchu Revolters\" division_template = \"Manchu Revolters\" start_experience_factor = 0.5"
+	owner = GMC
+}
+create_unit = {
+    division = "name = \"Manchu Revolters\" division_template = \"Manchu Revolters\" start_experience_factor = 0.5"
+	owner = GMC
+}
+		}
             }
             MAN = {
-                load_oob = "MAN_1936"
+division_template = {
+	name = "Manchu Imperial Infantry"			 #Rifle Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 		 #Recon bn had 16 L tanks, 10 ACs, 1x mot inf co Eng and recon removed and they seem rather OP. Could revisit if balance changes
+		
+	}
+}
+		random_owned_state = {
+create_unit = {
+    division = "name = \"Manchu Imperial Infantry\" division_template = \"Manchu Imperial Infantry\" start_experience_factor = 0.5"
+	owner = MAN
+}
+create_unit = {
+    division = "name = \"Manchu Imperial Infantry\" division_template = \"Manchu Imperial Infantry\" start_experience_factor = 0.5"
+	owner = MAN
+}
+create_unit = {
+    division = "name = \"Manchu Imperial Infantry\" division_template = \"Manchu Imperial Infantry\" start_experience_factor = 0.5"
+	owner = MAN
+}
+create_unit = {
+    division = "name = \"Manchu Imperial Infantry\" division_template = \"Manchu Imperial Infantry\" start_experience_factor = 0.5"
+	owner = MAN
+}
+create_unit = {
+    division = "name = \"Manchu Imperial Infantry\" division_template = \"Manchu Imperial Infantry\" start_experience_factor = 0.5"
+	owner = MAN
+}
+create_unit = {
+    division = "name = \"Manchu Imperial Infantry\" division_template = \"Manchu Imperial Infantry\" start_experience_factor = 0.5"
+	owner = MAN
+}
+		}
+
             }
+            
             RMN = {
                 declare_war_on = {
                     target = MAN
                     type = annex_everything
                 }
-                load_oob = "RMN_collapse"
             }
             GMC = {
                 add_ideas = {
@@ -180,9 +265,10 @@ country_event = {
                     SPA_death_before_surrender_capitulation
                 }
             }
+			}
             complete_national_focus = RMN_save_zheltorossiya
         }
-    }
+    
     option = {
         name = RMN.5.b
         custom_effect_tooltip = RMN_civil_war_start_tt
@@ -246,17 +332,101 @@ country_event = {
     add_core_of = GMC 
 }
             GMC = {
-                load_oob = "GMC_1936"
+                division_template = {
+	name = "Manchu Revolters"			 #Rifle Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 		 #Recon bn had 16 L tanks, 10 ACs, 1x mot inf co Eng and recon removed and they seem rather OP. Could revisit if balance changes
+		
+	}
+}
+		random_owned_state = {
+create_unit = {
+    division = "name = \"Manchu Revolters\" division_template = \"Manchu Revolters\" start_experience_factor = 0.5"
+	owner = GMC
+}
+create_unit = {
+    division = "name = \"Manchu Revolters\" division_template = \"Manchu Revolters\" start_experience_factor = 0.5"
+	owner = GMC
+}
+create_unit = {
+    division = "name = \"Manchu Revolters\" division_template = \"Manchu Revolters\" start_experience_factor = 0.5"
+	owner = GMC
+}
+create_unit = {
+    division = "name = \"Manchu Revolters\" division_template = \"Manchu Revolters\" start_experience_factor = 0.5"
+	owner = GMC
+}
+create_unit = {
+    division = "name = \"Manchu Revolters\" division_template = \"Manchu Revolters\" start_experience_factor = 0.5"
+	owner = GMC
+}
+create_unit = {
+    division = "name = \"Manchu Revolters\" division_template = \"Manchu Revolters\" start_experience_factor = 0.5"
+	owner = GMC
+}
+		}
             }
             MAN = {
-                load_oob = "MAN_1936"
+division_template = {
+	name = "Manchu Imperial Infantry"			 #Rifle Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 		 #Recon bn had 16 L tanks, 10 ACs, 1x mot inf co Eng and recon removed and they seem rather OP. Could revisit if balance changes
+		
+	}
+}
+		random_owned_state = {
+create_unit = {
+    division = "name = \"Manchu Imperial Infantry\" division_template = \"Manchu Imperial Infantry\" start_experience_factor = 0.5"
+	owner = MAN
+}
+create_unit = {
+    division = "name = \"Manchu Imperial Infantry\" division_template = \"Manchu Imperial Infantry\" start_experience_factor = 0.5"
+	owner = MAN
+}
+create_unit = {
+    division = "name = \"Manchu Imperial Infantry\" division_template = \"Manchu Imperial Infantry\" start_experience_factor = 0.5"
+	owner = MAN
+}
+create_unit = {
+    division = "name = \"Manchu Imperial Infantry\" division_template = \"Manchu Imperial Infantry\" start_experience_factor = 0.5"
+	owner = MAN
+}
+create_unit = {
+    division = "name = \"Manchu Imperial Infantry\" division_template = \"Manchu Imperial Infantry\" start_experience_factor = 0.5"
+	owner = MAN
+}
+create_unit = {
+    division = "name = \"Manchu Imperial Infantry\" division_template = \"Manchu Imperial Infantry\" start_experience_factor = 0.5"
+	owner = MAN
+}
+		}
+
             }
             RMN = {
                 declare_war_on = {
                     target = MAN
                     type = annex_everything
                 }
-                load_oob = "RMN_collapse"
             }
             GMC = {
                 add_ideas = {
@@ -279,6 +449,7 @@ country_event = {
             }
         }
     }
+	
     option = {
         name = RMN.5.c
         custom_effect_tooltip = RMN_civil_war_start_tt
@@ -342,17 +513,101 @@ country_event = {
     add_core_of = GMC 
 }
             GMC = {
-                load_oob = "GMC_1936"
+                division_template = {
+	name = "Manchu Revolters"			 #Rifle Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 		 #Recon bn had 16 L tanks, 10 ACs, 1x mot inf co Eng and recon removed and they seem rather OP. Could revisit if balance changes
+		
+	}
+}
+		random_owned_state = {
+create_unit = {
+    division = "name = \"Manchu Revolters\" division_template = \"Manchu Revolters\" start_experience_factor = 0.5"
+	owner = GMC
+}
+create_unit = {
+    division = "name = \"Manchu Revolters\" division_template = \"Manchu Revolters\" start_experience_factor = 0.5"
+	owner = GMC
+}
+create_unit = {
+    division = "name = \"Manchu Revolters\" division_template = \"Manchu Revolters\" start_experience_factor = 0.5"
+	owner = GMC
+}
+create_unit = {
+    division = "name = \"Manchu Revolters\" division_template = \"Manchu Revolters\" start_experience_factor = 0.5"
+	owner = GMC
+}
+create_unit = {
+    division = "name = \"Manchu Revolters\" division_template = \"Manchu Revolters\" start_experience_factor = 0.5"
+	owner = GMC
+}
+create_unit = {
+    division = "name = \"Manchu Revolters\" division_template = \"Manchu Revolters\" start_experience_factor = 0.5"
+	owner = GMC
+}
+		}
             }
             MAN = {
-                load_oob = "MAN_1936"
+division_template = {
+	name = "Manchu Imperial Infantry"			 #Rifle Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 		 #Recon bn had 16 L tanks, 10 ACs, 1x mot inf co Eng and recon removed and they seem rather OP. Could revisit if balance changes
+		
+	}
+}
+		random_owned_state = {
+create_unit = {
+    division = "name = \"Manchu Imperial Infantry\" division_template = \"Manchu Imperial Infantry\" start_experience_factor = 0.5"
+	owner = MAN
+}
+create_unit = {
+    division = "name = \"Manchu Imperial Infantry\" division_template = \"Manchu Imperial Infantry\" start_experience_factor = 0.5"
+	owner = MAN
+}
+create_unit = {
+    division = "name = \"Manchu Imperial Infantry\" division_template = \"Manchu Imperial Infantry\" start_experience_factor = 0.5"
+	owner = MAN
+}
+create_unit = {
+    division = "name = \"Manchu Imperial Infantry\" division_template = \"Manchu Imperial Infantry\" start_experience_factor = 0.5"
+	owner = MAN
+}
+create_unit = {
+    division = "name = \"Manchu Imperial Infantry\" division_template = \"Manchu Imperial Infantry\" start_experience_factor = 0.5"
+	owner = MAN
+}
+create_unit = {
+    division = "name = \"Manchu Imperial Infantry\" division_template = \"Manchu Imperial Infantry\" start_experience_factor = 0.5"
+	owner = MAN
+}
+		}
+
             }
             RMN = {
                 declare_war_on = {
                     target = MAN
                     type = annex_everything
                 }
-                load_oob = "RMN_collapse"
             }
             GMC = {
                 add_ideas = {
@@ -484,7 +739,8 @@ country_event = {
 
         activate_mission = RMN_election
         activate_mission = RMN_random_popular
-
+			load_focus_tree = RMN_post
+			complete_national_focus = RMN_elections
         hidden_effect = {
             meta_effect = {
                 text = {
@@ -497,6 +753,7 @@ country_event = {
                 }
                 CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
             }
+
         }
     }
 }
@@ -728,6 +985,7 @@ country_event = {
             ruling_party = conservatives
             elections_allowed = yes
         }
+		complete_national_focus = RMN_eurasianists
     }
 }
 

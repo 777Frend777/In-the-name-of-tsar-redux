@@ -13237,12 +13237,8 @@ news_event = {
 		has_war = no
 		}
 		country_exists = RMN
-		date > 1937.01.01
+		date > 1936.9.1
 		}
-	}
-
-	mean_time_to_happen = {
-		days = 1
 	}
 
 	immediate = {
@@ -13251,6 +13247,9 @@ news_event = {
 	option = {
 		name = news.341.a
 		set_global_flag = RMN_victory
+		RMN = {
+		country_event = rmnelection.1
+		}
 	}
 }
 news_event = {

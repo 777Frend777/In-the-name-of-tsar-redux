@@ -507,7 +507,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_ideology_eurasianism"
-		texturefile = "gfx/interface/ideologies/eurasianism_subtype.dds"
+		texturefile = "gfx/interface/ideologies/eurasianism_subtype.png"
 	}
 	
 	spriteType = {
