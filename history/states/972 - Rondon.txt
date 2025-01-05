@@ -1,0 +1,28 @@
+state={
+	id=972
+	name="STATE_972"
+	resources={
+		chromium=70.00
+		aluminium=16.00
+	}
+
+	history={
+		owner = BRA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = BRA
+	}
+
+	provinces={
+        2198 5216 8254 8185
+	}
+	manpower=178440
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	impassable = yes
+
+	local_supplies=0.0 
+}
