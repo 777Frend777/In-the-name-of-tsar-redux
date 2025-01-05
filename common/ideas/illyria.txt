@@ -1,0 +1,852 @@
+ideas = {
+	country = {
+		CRO_IDEA_ARMED_DEFENSE = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				max_planning = 0.25
+				
+				production_speed_bunker_factor = 0.35
+				production_speed_coastal_bunker_factor = 0.55
+				conscription = 0.015
+			}
+		}
+		CRO_CRUSADERS_YOUTH = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				conscription_factor = 0.15
+			}
+		}
+		
+		
+		
+		
+		CRO_TITOISM_IDEA = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+			    PRODUCTION_SPEED_BUILDINGS_FACTOR = 0.25
+				join_faction_tension = 1.00
+				ai_get_ally_desire_factor = -100
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	CRO_The_Troubles_of_Our_Time = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				consumer_goods_factor = 0.30
+				communism_drift = 0.01
+				fascism_drift = 0.01
+				min_export = 0.15
+				production_speed_infrastructure_factor = -0.35
+				industrial_capacity_dockyard = -0.95
+			}
+		}
+	CRO_Public_works_IDEA = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				
+				production_speed_infrastructure_factor = 0.25
+				PRODUCTION_SPEED_BUILDINGS_FACTOR = 0.15
+				industrial_capacity_factory = 0.15
+				consumer_goods_factor = -0.05
+			}
+		}	
+		
+		CRO_Illyrian_Identity = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.25
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		
+		
+		
+		
+		
+		CRO_Long_Strike = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.30
+				communism_drift = 0.03
+				PRODUCTION_SPEED_BUILDINGS_FACTOR = -0.95
+				industrial_capacity_dockyard = -0.95
+			}
+		}
+	
+	CRO_The_Troubles_of_Our_Time_BRODO_BAIL = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				consumer_goods_factor = 0.40
+				fascism_drift = 0.01
+				min_export = 0.15
+				production_speed_infrastructure_factor = -0.35
+				industrial_capacity_dockyard = -0.45
+			}
+		}
+	CRO_local_militia = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				stability_factor = 0.05
+				conscription = 0.015
+			
+			}
+		}
+	
+	CRO_Agri_Reform = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_agrarian_society
+			
+			modifier = {
+				monthly_population = 0.35
+				consumer_goods_factor = -0.1
+			}
+		}
+		CRO_Social_Security_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+		picture = generic_pp_unity_bonus
+			
+			modifier = {
+				industrial_capacity_factory = 0.2
+				conscription = 0.015
+				consumer_goods_factor = 0.03
+			}
+		}
+	
+	     CRO_Crusaders_Militia = {
+		                     			
+		
+			   
+		   allowed = {
+				original_tag = CRO
+				NOT ={
+					has_government = communism
+				}
+			}
+			
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+				
+			}
+			
+			removal_cost = -1
+			
+			modifier = { conscription = 0.035 }
+			
+		 }
+		 
+	     CRO_Conversionprogram = {
+		                     			
+		
+			   picture = generic_production_bonus
+		   allowed = {
+				original_tag = CRO
+			
+			}
+			
+			allowed_civil_war = {
+				always = no
+				
+			}
+			
+			removal_cost = -1
+			
+			modifier = { 	conversion_cost_civ_to_mil_factor = -0.80 }
+			
+		 }
+		  CRO_Balkandinar_idea = {
+		                     			
+		
+		
+			
+			allowed_civil_war = {
+				always = no
+				
+			}
+			
+			removal_cost = -1
+			
+			modifier = { 
+			
+			consumer_goods_factor = -0.05
+			industrial_capacity_factory = 0.15
+			conversion_cost_civ_to_mil_factor = -0.10
+			political_power_gain = -0.15
+			}
+		
+		
+		
+		 }
+		   CRO_InnerNationalism = {
+		                     			
+		
+			 
+		   allowed = {
+				original_tag = CRO
+			
+			}
+			
+			allowed_civil_war = {
+				always = no
+				
+			}
+			
+			removal_cost = -1
+			
+			modifier = {consumer_goods_factor = 0.05 stability_factor = -0.1	political_power_gain = -0.25 conscription_factor = -0.25 }
+			
+		 }
+		 
+		  CRO_Stimulus_IDEA = {
+		                     			
+		   picture = generic_production_bonus
+			 
+		   allowed = {
+				original_tag = CRO
+			
+			}
+			
+			allowed_civil_war = {
+				always = no
+				
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			production_speed_arms_factory_factor = 0.15
+				production_speed_dockyard_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				
+			consumer_goods_factor = 0.05 
+			
+			}
+			
+		 }
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 CRO_GERMAN_MILITARY_STAFF = {
+		                     			
+		   picture = generic_production_bonus
+			 
+		   allowed = {
+				original_tag = CRO
+			
+			}
+			
+			allowed_civil_war = {
+				always = no
+				
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			army_org_Factor = 0.05
+			planning_speed = 0.25
+			land_doctrine = -0.15
+			}
+			
+		 }
+		 CRO_KING_AND_REALM = {
+		                     			
+		   picture = generic_manpower_bonus
+			 
+		   allowed = {
+				original_tag = CRO
+			
+			}
+			
+			allowed_civil_war = {
+				always = no
+				
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			conscription = 0.025
+			}
+			
+		 } 
+		 
+		 
+		 
+		 CRO_WOMEN_WORKING = {
+		                     			
+		
+			 
+		   allowed = {
+				original_tag = CRO
+			
+			}
+			
+			allowed_civil_war = {
+				always = no
+				
+			}
+			
+			removal_cost = -1
+			
+			modifier = { conscription_factor = 0.25 industrial_capacity_factory = 0.10 	consumer_goods_factor = -0.05 }
+			
+		 }
+		 }
+
+
+	political_advisor = {
+
+	Vladimir_Nazor = {
+
+
+			allowed = {
+				original_tag = CRO
+			}
+			
+			traits = { popular_figurehead }
+		}
+	Mladen_Lorkovic = {
+
+
+			allowed = {
+				original_tag = CRO
+			}
+			
+			traits = { backroom_backstabber }
+		}
+	Ljudevit_Tomasic = {
+
+
+			allowed = {
+				original_tag = CRO
+			}
+			
+			traits = { silent_workhorse }
+		}
+	Ante_Trumbic = {
+
+
+			allowed = {
+				original_tag = CRO
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+		Julije_Makanec = {
+
+
+			allowed = {
+				original_tag = CRO
+			}
+			
+			traits = { prince_of_terror }
+		}
+	
+	
+	
+	
+	
+	
+		Andrija_Artukovic = {
+
+
+			allowed = {
+				original_tag = CRO
+			}
+			
+			traits = { fascist_demagogue }
+		}
+
+		Zvonimir_Richtmann = {
+
+		
+				
+			allowed = {
+				original_tag = CRO
+			}
+			
+			traits = { communist_revolutionary }
+		}
+				August_Kosutic = {
+
+		
+				
+			allowed = {
+				original_tag = CRO
+			}
+			
+			traits = { democratic_reformer }
+		}
+
+
+	}
+
+	army_chief = {
+
+		Eduard_Bunic = {
+		
+			
+			allowed = {
+				original_tag = CRO
+			}
+			
+
+			
+			traits = { army_cavalry_2 }
+			
+			ai_wCRO_do = {
+				factor = 1
+			}
+		}
+
+		Georg_Dragicevic = {
+		
+			
+			allowed = {
+				original_tag = CRO
+			}
+			
+
+			
+			traits = { army_artillery_2 }
+			
+			ai_wCRO_do = {
+				factor = 1
+			}
+		}
+
+		Viktor_Pavicic = {
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = CRO
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_wCRO_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		Franjo_Dzal = {
+			
+			
+			allowed = {
+				original_tag = CRO
+			}
+			
+
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_wCRO_do = {
+				factor = 1
+			}
+		}
+
+		Cvitan_Galic = {
+			
+			
+			allowed = {
+				original_tag = CRO
+			}
+			
+
+			
+			traits = { air_air_combat_training_2 }
+			
+			ai_wCRO_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+
+		Ivan_Kern = {
+		
+			
+			allowed = {
+				original_tag = CRO
+			}
+			
+
+			
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_wCRO_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		Vilko_Begic = {
+		
+			allowed = {
+				original_tag = CRO
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_wCRO_do = {
+				factor = 1
+			}
+		}
+		Mihajlo_Lukic = {
+		
+			allowed = {
+				original_tag = CRO
+			}
+			
+			traits = { army_chief_organizational_2 }
+			
+			ai_wCRO_do = {
+				factor = 1
+			}
+		}
+		Miroslav_Navratil = {
+		
+			allowed = {
+				original_tag = CRO
+			}
+			
+			traits = { army_chief_reform_3 }
+			
+			ai_wCRO_do = {
+				factor = 1
+			}
+		}
+		Milan_Uzelac = {
+
+	
+			
+			allowed = {
+				original_tag = CRO
+			}
+			
+			traits = { air_chief_old_guard }
+			
+			ai_wCRO_do = {
+				factor = 1
+			}
+		}
+
+		
+
+		Duro_Jakcin = {
+
+	
+			
+			allowed = {
+				original_tag = CRO
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_wCRO_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		slavko_stancer = {
+			
+		
+
+			allowed = {
+				original_tag = CRO
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		Vladimir_Kren = {
+			
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = CRO
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+		CRO_georges_deffontaine = {
+
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = CRO
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+			
+			traits = { naval_theorist }
+		}
+
+	}
+
+
+	
+
+	aircraft_manufacturer = {
+	
+		designer = yes
+		
+		Rudolf_Fizir = {
+		available = {
+		has_completed_focus = CRO_Fizer_Designs
+		}
+			
+
+			
+			allowed = {
+				original_tag = CRO
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			
+			
+			ai_wCRO_do = {
+				factor = 1
+			}
+		}
+
+		
+	}
+	
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		Brodosplit = { 
+			picture = idea_Brodosplit
+
+			
+			allowed = {
+				original_tag = CRO
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+		
+						
+			traits = { coastal_defence_naval_manufacturer }
+		}
+			Kraljevica = { 
+			picture = idea_Kraljevica
+
+			
+			allowed = {
+				original_tag = CRO
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+		
+						
+			traits = { raiding_fleet_naval_manufacturer }
+		}
+	}
+	industrial_concern = {
+					
+		Radio_stanica_Zagreb = {
+			
+			picture = idea_Radio_stanica_Zagreb
+			allowed = {
+				original_tag = CRO
+			}
+			
+
+			
+			research_bonus = {
+			radar_tech = 0.15
+			electronics = 0.05
+			}
+			
+			traits = { electronics_concern }
+			
+		}
+		}
+
+}

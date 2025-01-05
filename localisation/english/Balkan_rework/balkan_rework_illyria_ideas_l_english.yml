@@ -4,39 +4,8 @@ CRO_KING_AND_REALM:0 "For King and Country"
 BUL_RATNIK_IDEA:0 "Ratnik Paramilitary"
 
 CRO_Balkandinar_idea:0 "The Balkan-Dinar"
-CRO.14.d:0 "Our nation is now at war. Our economy is in the gutter but that it is far from our greatest concern. What we must concern ourselves with is utilizing everything at our disposal for waging war."
-
-SER_CRO_POP_EXCHANGE:0 "Population Exchanges"
-GER_CRO_Appeasement:0 "German Appeasement"
-CRO_ALLY_REL:0 "Allies Alignment"
-CRO_FORGIVE:0 "Forgiven"
 POLITICS_BORIS_III_DESC:0 "Tsar Boris rose to the throne after the abdication of his father in 1918. What followed was almost two decades of political strife between revolutionaries. The officers, who traditionally aligned with the Tsar, created their own political bloc and staged a coup in 1934. This coup was later faced with mounting political pressure from figureheads within the nation and brought the Tsar back to power. With almost unlimited power, Tsar Boris will have to repair the nation by hand."
-BUL_ally_hitler:0 "German Alignment"
-laser_eyes:0 "Laser Eyes"
-
-stuff.69.d:0 "Upon hearing of a universe with a disunited Yugoslavia, Slobodan Milošević has traveled back in time to unite Yugoslavia; however, he has some friends. Armed with the Laser Vision Implants from 6000 AD, Slobodan Milošević can wipe out millions of people in a second on his own. He was welcome to Belgrade with pure awe as anyone who questioned him was disintegrated. His first action in office was to unite all of Yugoslavia, through means of warfare. There is no way to beat his Laser Vision, all is lost."
-stuff.70.d:0 "Upon being found guilty of 5 counts of crimes against humanity, Slobodan Praljak drank what he claimed to be poison; however, this was a clever lie. Praljak drank a magic potion that sent him back in time- with laser vision. With his newfound abilities, he has taken over Illyria and has come to deliver brutal justice to Serbia. There is no way to beat his laser vision, all is lost."
-
-
-
-
-Bulge.500.d:0 "The war so far has been less than favorable. Bulgaria has secured their claims in Thrace and are making an advance through Macedonia. Many in our war cabinet are beginning to question the feasibility of a Greek victory. They view surrendering to their claims as a necessity for our nation survival. However [GRE.GetLeader], if you deem we can still win the fight, we shall continue to despite their objections."
-Bulge.501.d:0 "A Greek diplomat has arrived to our occupied territory in Thrace and his offered to accept our terms of peace. However, given our rapid advance into Greece, we can always have a late change of heart."
-Bulge.502.d:0 "We have lost support for the war amongst the populace. Widespread protests have put the nation in a state of martial law. It was a matter of time before the people and the Old Guard of the military back the return of George II to power. A March on Athens with over 6000 armed men and tens of thousands of people led by George II are deposing our government, promising to end this bloody conflict."
-Bulge.9999.d:0 "A joint deep state operation by Zaimov, SIR, and other military officers has enstated a Marxist state in Bulgaria. While many of the officers themselves disagree with the concept of class struggle in Marxism, they view Marxism as a means of securing absolute power with little opposition from the populace. Zaimov has been appointed as Supreme Secretary of Bulgaria with a thunderous applause from the residents of Sofia. Bulgaria is the latest state in the Marxist revolution, and hopefully not the last."
-
-CRO.13.d:0 "With the election of Maximillian, there has always been an increase in relations between Austria and Illyria. However, now that Austria is now under the Illyrian Kingdom, many in the Party of Rights have speculated the crowning of Maximillian as the King of an Austro-Illyrian Kingdom, effectively integrating Austria into our nation and give us claim to territories beyond our borders. The notion passed the Sabor with only 7 nays. Long Live the King! Long Live Maximillian!"
-
-BUL_VMRO_funding:0"VMRO Funding"
-BUL_VMRO_funding_desc:0 "The VMRO for the better part of two decades has been waging a pro-Bulgaria war of terror on Greece and Serbia. Bulgaria has been not so secretly funneling money to the organization to help maintain their claims to the region."
-
-Bulge.19.d:0 "A declaration by former Entente members from the Great War has been issued stating we no longer pose a threat to the region alone and as such, they have granted us limited rights to rearm and move troops into Northern Thrace. While many of the former treaties pressed against us still remain, this is a move in the right direction."
-
-
-BUL_MILITARISM_IDEA:0 "Bulgarian Nationalism"
-BUL_MILITARISM_IDEA_desc:0""
-
- CRO.44.d:0 "Illyria, fearing our Aryan race and our boundless might, has approached us with a non-aggression pact. They view it as a necessity to their nation's survival. Should we accept their cowardly offer? They may serve as a faithful ally later on."
+laser_eyes:0 "Laser Eyes" #dont ask why its here
 
 
  CRO_TITOISM_IDEA:0 "Titoism"
@@ -44,33 +13,10 @@ BUL_MILITARISM_IDEA_desc:0""
  
  polovinik_trait:0 "Polovinik"
  talented_diplo:0 "Renowned Diplomat"
- 
- Bulge.8.d:0"The first son of Tsar Boris III has been born! He was named Simeon after Simeon I of Bulgaria, who reigned from 893 to 927. An air force officer has been sent by the Tsar to the Jordan River to fetch water for Simeon's baptism. Simeon's birth was widely publicized, reinforcing monarchist tendencies in the nation."
- Bulge.9.d:0 "Nikola Zhekov served as the commander-in-chief of our armed forces during the Great War. He fled into exile after the disgraceful defeat and only returned in the 20s to defend whatever reputation he has left. As a new war approaches, should we consider offering him his old job back? Despite the defeats, he clearly has skill- especially compared to our current officers."
- 
- Bulge.10.d:0 "In the April Fools Edition of Trud, our first weekly newspaper, a front page headline detailed 'Latvian Butter Knife Bandits'. Disregarding the fact Latvia doesn't border us and the Latvian nationals in our country is in the double-digits, the paper describes a gang of 20 Latvian soldiers that brutally assaulted a farmer with butter knives. The paper made sure to mention that the farmer made a full recovery but the suspects still roam the countryside. Regardless, much of the uneducated population was frightened by this news and has caused a surge in recruitment to fight the 'Butter knife Menace'."
- 
- Bulge.11.d:0 "A recently recruited diplomat arrived in Bucharest to discuss relations between our nations. The Bulgarian diplomat sat down with the Romanian representative to talk about concerns the nation has about a future war in the Balkans. The Romanian asked 'Does your nation have any plans of war against us?'. The Bulgarian had clear instructions to indicate no plans of war and instead promote unity between them. The Bulgarian nodded- maniacally. While nodding in most of Europe indicates approval, in Bulgaria it means no. The Romanian was clearly not used to Bulgarian culture and stormed out of the meeting angry."
- Bulge.12.d:0 "The Bulgarian State Football Championship was played yesterday. Twelve teams participated with two teams heading to the finals. PFC Slavia Sofia easily breezed past Georgi Drazhev Yambol in the semifinals 6-0 and faced Ticha Varna in the finals. Similar to their domination in previous years, Slavia Sofia won easily 2-0."
- Bulge.13.d:0 "Vladimir Zaimov is one of our most talented officers; however, he has had a rocky history with us. Last year we had to arrest him for conspiracy against the state, charges we had to drop due to the lack of evidence as well as the influence the co-conspirators carried. Last week, Zaimov managed to avoid a conviction for the attempted murder of Damian Velchev. The SIR, our intelligence agency, has been preparing an investagation into Zaimov's life for a grand treason conviction. The investagation breaches various privacy laws and needs to ordered directly from the head of state."
- Bulge.14.d:0 "While looking at Zaimov's financial records, we have discovered a cardboard factory under his name. The purchase of the land as well as the construction of the factory are fishy to say the least and they may serve as a cover for a subversive cause of his. SIR agents armed with carbines are ready to raid the factory for info, though waiting could yield more substantial evidence."
- Bulge.15.d:0 "The raid on the cardboard factory was underwhelming. Nothing of any value was found regarding the investagation and the raid has been widely publicized in the press as 'a failure by the SIR'. Zaimov has demanded a warrant for the raid and we don't have any. The investagation can't continue."
- Bulge.16.d:0 "SIR has discovered that Zaimov's nephew, Evgeni Chemshirov, has been willing to cooperate with our investagation. Evgeni details a 1935 meeting between Zaimov and Colonel T.B. Suhoruukov of the Red Army. The two men discussed a possible Soviet-backed military coup that would put Zaimov as the Supreme Secretary of the nation. While the interrogation of Evgeni alone can't be used to convict Zaimov, it gives us a lead on Zaimov and his possible foreign loyalties."
- Bulge.17.d:0 "SIR agents outside Zaimov's home have witnessed a Soviet national and Zaimov conversing in Zaimov's dining room. While the details of the conversation are unknown, the Soviet matched the description of a Soviet who arrived in Varna last week under possibly fraudlent identification. We have a reason to suspect the Soviet is a spy sent by [SOV.GetLeader] to establish a Soviet dicatorship in Sofia. The evidence is stacking against Zaimov, but it isn't enough."
- Bulge.18.d:0 "A SIR agent under the name of Georgy Nikolovich managed to gain Zaimov's trust and begin a discussion about Zaimov's plans. Zaimov detailed to Georgy Operation Red Dawn, which would capitalize on the national instability and secure a military dicatorship with marxist characteristics, with Zaimov at the helm of course. At that instant, Georgy drew out his pistol and forced Zaimov to his knees. 6 more SIR agents emerged from nearby shrubery to send Zaimov to an undisclosed location and executed him. This is a decisive victory for SIR, establishing it as a serious intelligence agency."
- 
- 
- Bulge.80.d:0 "A Bulgarian diplomat has approached us with a shocking proposal. He offers a federal South Slavic state between our two nations. Serbia would effectively cease to exist and would become one with Bulgaria in the State of Yugoslavia. Strength derives from unity, but is it worth our sovreignity?"
- 
- YD_news.21.d:0 "At 4:08 am this morning, after a night of long negotiations and compromises, the Serbian and Bulgarian nation became one. This new nation, Yugoslavia, had its blue-white-red flag raised over Sofia and Belgrade at 7am. The new nation formed a new parliament under the Midnight Constitution, named after its time of birth. Each municipality will elect 1 representative into parliament with a vice-chancellory, presiding above it. The vice-chancellory will have a Serbian elect and a Bulgarian elect to remove Serbian fears of Bulgarian domination. The Balkans after centuries of war, may soon unite."
- 
- 
- BUL_SIR:0 "SIR"
- BUL_SIR_desc:0 ""
+
  
  
  
- YD_news.20.d:0 "Ferdinand I, the former Tsar of Bulgaria, has returned to Sofia and usurped the throne from his son Boris. Ferdinand was exiled from Bulgaria after two military failures in the Second Balkan War and the Great War, but recent irrendist tendencies within the nation has brought him back. Hot-headed and neurotic, no one truly knows what to expect from him."
  
  
  
@@ -80,196 +26,20 @@ BUL_NEUILLY_REVI_FERD:0 "Tsar Ferdinand has returned to power"
  BALKAN_RAILS:0 "Balkan Railway Investment"
  disasterous_politics:0 "Disasterous Political History"
  military_figurehead:0 "Military Figurehead"
- Bulge.1.d:0 "[BUL.GetName] has offered us a joint military venture. Upon our agreement, Bulgaria and us will declare war on Greece. They promise us Macedonia in exchange for our military aid. The war should be rather easy together; however, this will disturb peace within the Balkans- isn't this the exact same thing that caused the Great War? Regardless, we have to choose now: join or stay out."
- Bulge.7.d:0 "In an rather odd turn of events, Bulgaria calls for our attendence at a summit in Varna. The negotiations occuring there center around the prospect of a open border treaty between our nation as well as a joint defense pact. Many conservatives within our nation fear this will inevitably lead to the destruction of our sovreignity as well as higher crime due to the influx of 'dirty Bulgarian half-breeds'. Our recent victory together over Greece has certainly bound us together militarily, perhaps we should accept their calls?"
- BUL_agrar_reform:0 "Agrarian Reform"
- BUL_agrar_reform_desc:0 ""
- 
- YD_news.18.d:0 "Earlier this morning a joint Serbian-Bulgarian army stormed checkpoints on the Greek border and entered Greek Macedonia. Within minutes the first shots of the Third Balkan War were fired. In an attempt to unify all Slavic people, Bulgaria has recently positioned itself against Greece and has sacrificed its loose claims in Greek Macedonia for the Serbian alliance. [GRE.GetLeader] spoke on the matter: 'This Pan-slavic rhetoric is frankly ridculous and has only caused troubles within Europe. These beasts must repulsed at all costs.'"
-  
- 
- 
- 
- BUL_MOTOR_OOB:0 "A division with 4 §YMotorized§! Brigades and 2 §YCavalry§! Brigades will appear in §YSofia§!. The §Ydivision template§! will also be unlocked."
- 
- BUL_KING_OOB:0 "§YThree elite divisions§! will be raised in §YSofia§! fully equipped."
- 
- BUL_RATNIK_IDEA:0 "Ratnik Divisions"
- BUL_RATNIK_IDEA_desc:0 ""
- 
- BUL_TRACTORS:0 "Mechanized Agriculture"
- BUL_TRACTORS_desc:0""
- 
+
  BUL_Treaty_of_Neuilly:0 "Treaty of Neuilly-sur-Seine"
  BUL_Treaty_of_Neuilly_desc:0 "Bulgaria's second humiliating defeat in a mere 3 years left the nation in peril, forcing the Tsar Ferdinand to abdicate in favor of his son and flee into exile. The nation was left with a crippling treaty known as the Treaty of Neuilly-sur-Seine. Bulgaria's army was limited drastically and was forced to pay 100 million pounds in reparations. The treaty humiliates the nation, which hungers for war..."
  
  Military_dep_econ:0 "Military Dependent Economy"
  Military_dep_econ_desc:0 "Bulgaria is rather agrarian and whatever industry exists is mostly arms related. This emphasis on arms is influenced by the overwhelming nationalism and jingoism Bulgaria exerts. Whatever steel, copper, zinc, aluminium is dug out of the bowels of the Earth, it immediately feeds the Bulgarian war machine; however, inactive it may be."
  
- BUL_fallout_of_1934:0 "Fallout of May 1934"
- BUL_fallout_of_1934_desc:0 "Bulgaria has undergone multiple coups since their humiliating defeat in 1918; however, the most recent has torn the nation apart. In 1934, the military/political organization Zveno initiated a coup against the left-leaning Popular Bloc government and instituted a military dicatorship under Kimon Georgiev. This wouldn't last forever as Zveno's anti monarchist position led to a counter coup that forced Georgiev to resign and gave Tsar Boris III effectively total dominion over the nation. Many Bulgarians long for a return of democracy- but a little stability would suffice..."
- 
- BUL_Zvenos:0 "Zveno"
- BUL_Zvenol:0 "Zveno"
- 
- BUL_Axis_Cabinet:0 "Axis Aligned Cabinet"
- BUL_Axis_Cabinet_desc:""
- 
- YD_news.17.d:0 "The Treaty of Neuilly-sur-Seine, signed in the aftermath of the Great War, has been revoked by the Bulgarian government. This move, though brash, was expected by many in the political scene in the next few years. The treaty enforced long lasting reparations and limitations on the size of the Bulgarian army; however, the heavily nationalist Bulgaria could no longer withstand the stress of being contained by a piece of paper. The League of Nations has been rather mute on the issue, choosing to follow a policy of appeasement and isolation. The Bulgarian foreign minister spoke on behalf of the decision earlier today: 'The war reparations have been paid off and peace for our generation in Europe has been established. There is no fear any nation in Europe should have towards our decision. We are merely executing the will of the people'."
- 
- YD_news.18.d:0 "After a few years of political turmoil, the military organization known as Zveno has initiated a coup d'etat against Tsar Boris III's royal dicatorship. Military generals and right wing figures led by Kimon Georgiev marched through the streets of Sofia and into the National Assembly building and seized control of the weak nation. With no army to defend himself with, Tsar Boris went into exile in Switzerland. Georgiev was declared Prime Minister and stripped the Tsar of all titles and lands. While not explicitly fascist, many of Zveno's supporters are and both support statist and corporatist policies, drawing heavily from nationalism and militarism."
+#in beta bulgaria_news.17.d:0 "The Treaty of Neuilly-sur-Seine, signed in the aftermath of the Great War, has been revoked by the Bulgarian government. This move, though brash, was expected by many in the political scene in the next few years. The treaty enforced long lasting reparations and limitations on the size of the Bulgarian army; however, the heavily nationalist Bulgaria could no longer withstand the stress of being contained by a piece of paper. The League of Nations has been rather mute on the issue, choosing to follow a policy of appeasement and isolation. The Bulgarian foreign minister spoke on behalf of the decision earlier today: 'The war reparations have been paid off and peace for our generation in Europe has been established. There is no fear any nation in Europe should have towards our decision. We are merely executing the will of the people'."
  
  
  BUL_Revise_Neuilly:0 "End Neuilly-sur-Seine"
  BUL_Revise_Neuilly_desc:0 "The Treaty of Neuilly-sur-Seine was a humiliating treaty imposed on us by the Westerners to throw our nation in power and brand us as weak. As their positioning in the world fades, perhaps it is time for us to show them that we are not the weak ones, they are."
  
- BUL_Zveno_Counter_Coup:0 "Zveno Counter-Coup"
- BUL_Zveno_Counter_Coup_desc:0 "Political instability and coups have thrown the nation into chaos. We must end this now with a fourth coup in the past decade to reinstate the Zveno."
- 
- BUL_Axis_Aligned_Cabinet:0 "Axis Aligned Cabinet"
- BUL_Axis_Aligned_Cabinet_desc:0 "Many officers within our armed forces harbor sympathies to the fascist cause. By appointing them as ministers, we can shift our foreign policy to the new movement."
- 
- BUL_Reinforce_The_Monarchy:0 "Strengthen Monarchists"
- BUL_Reinforce_The_Monarchy_desc:0 "As fascism spreads amongst the population, a conservative bloc of our population still back the Tsardom. By reinforcing the monarchists, we can assure stability in our nation without a political revolution."
- 
- BUL_Invest_in_DAR:0 "Invest in DAR"
- BUL_Invest_in_DAR_desc:0 "DAR, Darzhavna Aeroplanna Rabotilnitsa, is our only domestic aircraft designer. Overreliance on foreign aircraft hurts DAR's development."
- 
- BUL_Foreign_Models:0 "Buy Foreign Models"
- BUL_Foreign_Models_desc:0 "In a war, we have to an airforce to defend every acre of our nation. While it may increase our reliance on foreign nations, it is for the greater good of our nation."
- 
- BUL_Access_To_The_Aegean:0 "Access to the Aegean"
- BUL_Access_To_The_Aegean_desc:0 "At last, we have obtained access to the Aegean Sea. We can now develop a new navy focused on competing with our neighbors. The Bulgarian navy shall no longer be torpedo boats and minelayers, it shall be a grand fleet!"
-
- BUL_Expand_Varna_Shipping:0 "Expand Varna Shipping"
- BUL_Expand_Varna_Shipping_desc:0 "Varna is our largest port and serves as a great point of economic development. Its expansion will fuel our economy by bringing in new businesses to the region as well as expand our convoy fleet."
-
- BUL_Illegal_Arms_Development:0 "Illegal Arms Buildup"
- BUL_Illegal_Arms_Development_desc:0 "Shhhh... we must build up our military quietly. Building up our military was clearly outlined as a violation of the Treaty of Neuilly-sur-Seine."
-
- BUL_Army_of_Quality:0 "Army of Quality"
-
- BUL_Modernize_The_Cavalry:0 "Modernize The Cavalry"
-
- BUL_Specialists:0 "Special Forces"
-
- BUL_VMZ_Sopot:0 "VMZ Sopot"
-
- BUL_Artillery_Development:0 "Artillery Research"
-
- BUL_Arms_Research:0 "Develop Domestic Arms"
-
- BUL_Militarism:0 "Bulgarian Nationalism"
-
- BUL_Kings_Men:0 "Royal Guard"
-
- BUL_VMRO_Border_Clashes:0 "VMRO Border Clashes"
-
- BUL_Foreign_Weapon_Shipments:0 "Foreign Arms"
-
- BUL_Serbian_Cooperation:0 "Friendship with Serbia"
-
- BUL_National_Duty:0 "National Duty"
-
- BUL_Third_Balkan_War:0 "The Third Balkan War"
-
- BUL_Varna_Treaty:0 "Varna Treaty"
-
- BUL_PanSlavic_Thought:0 "Pan-Slavic Thought"
-
- BUL_Propose_Merger_State:0 "Propose Integral Yugoslavia"
-
- BUL_Cease_Major_Industries:0 "Seize Major Industries"
-
- BUL_Military_Resources:0 "Mine for the Military"
-
- BUL_Paramilitary_Ratniks:0 "Paramilitary Ratniks"
-
- BUL_German_Friendship:0 "German Friendship"
-
- BUL_UBNL_Youth:0 "UBNL Youth"
-
- BUL_NSM:0 "Side with the National Social Movement"
-
- BUL_Lukov_Leadership:0 "Lukov Leadership"
-
- BUL_Treaty_of_Craiova:0 "Treaty of Craiova"
-
- BUL_Reassure_Balkan_Borders:0 "Summit on Balkan Borders"
-
- BUL_Ban_The_Ratniks:0 "Ban the Ratniks"
-
- BUL_Oppose_Hitler:0 "Stand Against Hitler"
-
- BUL_Balkan_Railways:0 "Connect Balkan Railways"
-
- BUL_Reintroduce_Elections:0 "Reintroduce Elections"
-
- BUL_Agrarian_Reform:0 "Agrarian Subsidies"
-
- BUL_Appoint_A_Prime_Minister:0 "Appoint A Prime Minister"
-
- BUL_Ferdinands_Return:0 "Tsar Ferdinand's Return"
-
- BUL_Reassert_Thracian_Claims:0 "Reassert Thracian Claims"
-
- BUL_Anti_Turkish_Posturing:0 "Anti-Greek Positioning"
- 
- BUL_Serbo_Bulgarian_Crusade:0 "War on Greece"
-
- BUL_Military_Industrial_Research:0 "Military Industrial Research"
-
- BUL_Tractor_Adoption:0 "Adopt Mechanized Agriculture"
-
- BUL_Subsidize_Textiles:0 "Subsidize Textiles"
-
- BUL_Crop_Insurance:0 "Provide Crop Insurance"
-
- BUL_Rush_For_Steel:0 "Steel Rush"
-
- BUL_Gold_Mining:0 "Fuel Gold Mining"
-
- BUL_Fighter_Designs:0 "Fighter Designs"
-
- BUL_Bomber_Designs:0 "Bomber Designs"
-
- BUL_Reestablish_THE_BAF:0 "Reestablish The BAF"
-
- BUL_Expand_Airports:0 "Expand Airports"
-
- BUL_Purchase_I:0 "Air Purchase I"
-
- BUL_Purchase_II:0 "Air Purchase II"
-
- BUL_Modernize_Tactics:0 "Modern Naval Tactics"
-
- BUL_Cruiser_Effort:0 "Cruiser Models"
-
- BUL_Battleships:0 "Bulgarian Battleships"
-
- BUL_Develop_Thrace:0 "Develop Thrace"
-
- BUL_Merge_or_War:0 "Illyrian Union Or War"
-
- BUL_Join_Axis:0 "Join the Axis"
-
- BUL_Greek_Overlords:0 "Greek Dominance"
-
- BUL_Proclaim_The_Bulgarian_Empire:0 "Proclaim the New Bulgarian Empire"
-
- BUL_Join_The_Allies:0 "Join the Allies"
-
- BUL_The_Adrianople_konkordat:0 "The Adrianople Konkordat"
-
- BUL_Underhand_Tactics:0 "Anti-Soviet Tactics"
-
- BUL_gold_mining:0 "Gold Mining"
- BUL_gold_mining_desc:0 "Gold has retained value for thousands of years. By increasing our exports of it we can boost our economy to unbelievable levels."
-
- BUL_Reasserted_Claims_Gre:0 "Reasserted Thracian Claims!"
- BUL_Reasserted_Claims_Tur:0 "Reasserted Thracian Claims!"
- 
- hot_headed:0 "Hot Headed"
+ hot_headed:0 "Hot Headed" #just dont ask
  
  
  
@@ -311,8 +81,7 @@ BUL_NEUILLY_REVI_FERD:0 "Tsar Ferdinand has returned to power"
 
  CRO.42.d:0 "The Election of the King has begun! The election has narrowed down to 4 candidates. First is the Italian prospect, Amedeo. Amedeo hails from the House of Savoy, earning his name from his service in the Abbsynian War. He seems like a great choice; however there are worries about his ability to be manipulated by fascists. Next is the German propsect, Fredrich Christian. Fredrich Christian is from the House of Schaumberg-Lippe and is an SS officer in Germany. The few non Party of Rights members who are voting propose Henry, brother of George VI of Britain. The final candidate dates back centuries, Maximillian. Maximillian is the son of Franz Ferdinand, who's death triggered the bloodiest war the world has ever scene. Maximillian was excluded from the Habsburg succession line as his father's marriage was morgantic. Everyone is uneasy over each candidate, but a conclusion must be reached."
  
- YD_news.15.d:0 "The Sabor, the legislative body of Illyria, came to a consensus to elect Prince Amedeo of Savoy-Aosta as king. Amedeo is the Duke of Aosta and served as Colonial Governor to Italian Somaliland. He arrived in Zagreb this morning to a thunderous applause from the populace. At last, the Illyrian people have a king of their own."
- YD_news.16.d:0 "The Sabor, the legislative body of Illyria, came to a consensus to elect Maximillian Von Hohenburg as king. Maximillian is the son of Franz Ferdinand but was removed from the Habsburg crown due to his father's morgantic marriage. He came to Illyria with a thunderous applause, especially from the elderly and ethnic Germans.  After 500 years of subjugation, the Illyrians at last have a king of their own."
+ CRO_news.15.d:0 "The Sabor, the legislative body of Illyria, came to a consensus to elect Prince Amedeo of Savoy-Aosta as king. Amedeo is the Duke of Aosta and served as Colonial Governor to Italian Somaliland. He arrived in Zagreb this morning to a thunderous applause from the populace. At last, the Illyrian people have a king of their own."
  
  german_king:0 "German King"
  british_king:0 "British King"
@@ -327,16 +96,8 @@ BUL_NEUILLY_REVI_FERD:0 "Tsar Ferdinand has returned to power"
  CRO_COMMIE_UNITED:0 "Communist Party of Illyria"
  CRO_COMMIE_UNITED_SH:0 "CPI"
 
- stuff.6.d:0 "Welcome to Yugoslavia Divided. Briefly after the Great War, the State of Slovenes, Croats and Serbs was proclaimed in the remnants of the Austro-Hungarian Empire. While initially seeking a pan-slavic union with the Kingdom of Serbia, a popular decision was made to remain independent. This has left a bitter taste in the mouth of the Kingdom of Serbia, who declared war on the new state in 1921. This war would be known as the Adriatic War and will go down as one of the greatest David and Goliath wars in history with a victory for the State of Slovenes, Croats and Serbs. We arrive in the year 1936 today, the ideals of Benito Mussolini and Hitler are fueling the politics of both nations as a dark cloud rapidly approaches Europe, the same cloud that engulfed Europe only two decades before. The fate of the Balkans will be determined in the next few years by you."
  
- stuff.7.d:0 "While originally the State of Slovenes, Croats and Serbs, the nation has become known internationally as Illyria in 1923. Illyria, since its concept has been a multiethnic nation. The lack of a clear ethnic majority has created a disfunctional political system in the early years of Illyrian democracy. Regionalist factions representing each ethnicity dominated the Sabor, the legislative body of Illyria. Eventually the two fathers of Illyrian politics, Stjepan Radic and Anton Korosec, ideological opponents, united the regionalist parties into two predominant parties, the Peasants Party and the Party of Rights. The two men exchanged the precious prime minister seat for 18 years. The nation economically and politically has always relied on the British. Without the British, Illyria would've never existed. The overreliance on foreign aid caused the Stock Market Crash of 1929 to almost destroy the nation. This led to the rise in labor unions and ,accompanied with the rise of Mussolini, fascist movements. The largest of these is the Catholic Union, an clerical fascist organization led by Ante Pavelic. They are overwhelming xenophobic and anti-semetic, blaming Jews and Serbs for the recent downturn in the economy and the rise of Communism, both abroad and domestic. Politics are obviously becoming more and more polarized, making the future of Illyria uncertain."
- 
- 
- 
- 
- YD_news.12.d:0 "At 7:04am this morning, a bomber flew over the White City. In a flash, the city was destroyed by intense heat never seen before on Earth. The Belgrade Fortress, built over 2 millenia ago, was dissolved into pebbles. Hundreds of lawmakers and politicians were killed in the blast; however, a Serbian emergency government has been formed in the countryside. They broadcasted over public radio hours after the blast to rally the populace. However, in the face of utter destruction, can one truly rally?"
- YD_news.10.d:0 "Earlier this morning, Illyrias as well as representatives from other Balkan nations have announced the Balkandinar. The Balkandinar is a new international currency created by Illyria. International currencies have been proposed before, but many economists brush them off as Ponzi schemes and 'having no value outside of what people want to pay for it'. Despite the fears by the economists, the New York Stock Exchange shot up today, with the Dow Jones increasing by 2.1% in one day. What will become of the Balkandinar is up in the air; however, the nation of Illyria believes it will bring economic stability to the nation."
- 
+
  CRO_Privatize_Licensing:0 "Allow Unlicensed Professions"
  CRO_Privatize_Licensing_desc:0 "In an economic downturn, we can't have a board of bureaucrats dictating who can do what and where. Even if it is unsafe, we must allow unlicensed individuals to enter professions that typically require licensing. According to economists, this will decrease the influence of union heads and lower prices as a result."
  

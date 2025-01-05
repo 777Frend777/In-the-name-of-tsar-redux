@@ -1,0 +1,31 @@
+ideas = {
+country = {
+		### VMRO + SER Ideas
+
+		IMRO_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IMRO_idea" }
+			picture = MAC_IMRO_idea
+			allowed = { tag = MAC }
+			modifier = {
+				surrender_limit = 0.5
+				army_core_defence_factor = 0.1
+				resistance_damage_to_garrison_on_our_occupied_states = 0.25
+				civilian_intel_to_others = 60
+				unit_limit_bonus = 5
+				cannot_receive_volunteers = 1
+			}
+		}
+		SER_debuffs_by_IMRO = {
+			picture = MAC_IMRO_idea
+			allowed = { tag = SER }
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.15
+				army_attack_factor = -0.1
+				resistance_growth = 0.2
+				resistance_target = 0.1
+				compliance_growth = -0.15
+			}
+		}
+}
+}

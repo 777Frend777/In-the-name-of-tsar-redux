@@ -1,0 +1,12 @@
+on_actions = {
+on_weekly = {
+    effect = {
+
+                has_variable = RUS_march_on_petrograd
+            add_to_variable = {
+              var = RUS_march_on_petrograd
+              value = 5
+            }
+    }
+}
+}

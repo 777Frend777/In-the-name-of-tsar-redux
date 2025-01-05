@@ -1,0 +1,14 @@
+on_actions = {
+on_startup = {
+	effect = {
+		BUL = {
+			if = {
+				limit = {
+					has_idea =  BUL_army_restrictions_aat
+				}
+				country_lock_all_division_template = yes
+			}
+		}
+	}
+}
+}

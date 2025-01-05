@@ -13276,6 +13276,7 @@
 13275;70;152;138;land;false;mountain;7
 13276;204;63;176;land;false;hills;1
 13277;255;127;39;land;false;land;1
+<<<<<<< HEAD
 13278;255;231;1;land;false;jungle;3
 13279;255;231;2;land;false;jungle;3
 13280;255;231;3;land;false;jungle;3
@@ -13348,3 +13349,5 @@
 13347;255;231;69;land;false;jungle;3
 13348;255;231;70;land;false;jungle;3
 13349;137;140;35;land;false;jungle;3
+=======
+>>>>>>> 593571bcce148d460600976ca98a66e3e9769998

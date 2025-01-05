@@ -1,0 +1,40 @@
+characters = {
+	MAC_ivan_mihajlov = {
+		name = MAC_ivan_mihajlov
+		portraits = {
+			army = {
+				small = GFX_portrait_MAC_ivan_mihajlov_army_small
+				large = GFX_portrait_MAC_ivan_mihajlov_army_large
+			}
+		}
+		country_leader = {
+			desc = MAC_ivan_mihajlov_leader_desc
+			ideology = fascism_ideology
+		}
+		corps_commander = {
+			traits = { trickster guerilla_fighter }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	MAC_imro_joint_command = {
+		name = MAC_imro_joint_command
+		portraits = {
+			army = {
+				small = GFX_portrait_MAC_imro_joint_command_army_small
+				large = GFX_portrait_MAC_imro_joint_command_army_large
+			}
+		}
+		field_marshal = {
+			traits = { defensive_doctrine }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

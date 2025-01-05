@@ -18,7 +18,7 @@ set_technology = {
 	transport = 1
 }
 add_ideas={
-	SER_alexander
+
 }
 set_convoys = 5
 

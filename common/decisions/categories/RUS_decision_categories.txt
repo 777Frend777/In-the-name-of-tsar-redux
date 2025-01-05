@@ -13,13 +13,22 @@ RUS_integrate_territories_decisions = {
 		original_tag = RUS
 	}
 }
-RUS_russian_coup = {
-	icon = generic_operation
+RUS_russian_coups_old = {
+	icon = GFX_decision_cat_WIF_rebelion
 
-	picture = GFX_decision_cat_generic_mefo_bills
+	picture = GFX_decision_cat_generic_swi_new_order
 
 	allowed = {
 		original_tag = RUS
+	}
+}
+RUS_russian_coup = {
+	icon = GFX_decision_cat_WIF_rebelion
+
+	picture = GFX_decision_cat_generic_swi_new_order
+
+	allowed = {
+		always = no
 	}
 }
 RUS_army_actions = {

@@ -31,7 +31,7 @@ RUS_integrate_territories_decisions = {
 		fire_only_once = yes
 		remove_effect = {
 		RUS = {
-		declare_war_on = { target = POL type = puppet_wargoal_focus }
+		declare_war_on = { target = POL type = annex_everything }
 		}
 		}
 	}
@@ -308,7 +308,7 @@ RUS_integrate_territories_decisions = {
 	}
 }
 
-RUS_russian_coup = {
+RUS_russian_coups_old = {
 RUS_kornilovs_affair = {
 icon = generic_operation
 available = {

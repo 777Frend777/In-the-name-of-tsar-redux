@@ -50,17 +50,17 @@
 			
 			# Captured/Converted/Older Models
 			"Ioshima" "Yasoshima" "Mogami" "Mikuma" "Suzuya" "Kumano" "Yodo" "Hirado" "Yahagi" 
-			"Tenryu" "Tatsuta" "Kuma" "Tama" "Kitikami" "Oi" "Kiso" "Nagara" "Isuzu" "Natori" "Yura" "Kinu" "Abukuma" "Yubari" "Sendai" "Jintsu" "Naka" 
+			"Tenryu" "Tatsuta" "Kuma" "Tama" "Kitakami" "Oi" "Kiso" "Nagara" "Isuzu" "Natori" "Yura" "Kinu" "Abukuma" "Yubari" "Sendai" "Jintsu" "Naka" 
 			"Furutaka" "Kako" "Aoba" "Kinugasa" "Myoko" "Nachi" "Haguro" "Ashigara" "Takao" "Atago" "Maya" "Chokai" "Tone" "Chikuma" "Aso" "Tsugaru" "Soya" "Ibuki" "Haogi"
 			# Fictional
 			"Iwaki" "Mabechi" "Takase" "Naruse" "Yoneshiro" "Omono" "Koyoshi" "Kuji" "Tsurumi" "Oyabe" "Tedori" "Kano" "Shonai" "Suzuka" "Kumozu" "Kushida" "Maruyama" "Hino"
-			"Takatsu" "Yoshii" "Takahashi" "Ashida" "Yoshino" "Onga" "Yabe" "Matsuura" "Yamakuni" "Chikugo" "Rokkaku" "Kikuchi" "Kase" "Honmyo" "Ooita" "Ono" "Ota" "Banjo"
+			"Takatsu" "Yoshii" "Takahashi" "Ashida" "Yoshino" "Onga" "Yabe" "Matsuura" "Yamakuni" "Chikugo" "Rokkaku" "Kikuchi" "Kase" "Honmyo" "Oita" "Ono" "Ota" "Banjo"
 			"Gokase" "Omaru" "Kimotsuki"
 		}
 	}
 	heavy_cruiser = {
 		prefix = ""
-		generic = { "Jun'yokan" }
+		generic = { "Jujun'yokan" }
 		unique = {
 			"Mogami" "Mikuma" "Suzuya" "Kumano" "Tone" "Chikuma" "Aso" "Tsugaru" "Soya" 
 			# Older Models
@@ -110,7 +110,7 @@
 	}
 	air_wing_names_template = AIR_WING_NAME_JAP_FALLBACK
 
-	cv_fighter_equipment = {
+	cv_small_plane_airframe = {
 		prefix = ""
 		generic = { "Kokutai" }
 		generic_pattern = AIR_WING_NAME_JAP_CARRIER
@@ -118,14 +118,7 @@
 		}	
 	}
 
-	cv_CAS_equipment = {
-		prefix = ""
-		generic = { "Kokutai" }
-		generic_pattern = AIR_WING_NAME_JAP_CARRIER
-		unique = {
-		}	
-	}
-	cv_nav_bomber_equipment = {
+	large_plane_maritime_patrol_plane_airframe = {
 		prefix = ""
 		generic = { "Kokutai" }
 		generic_pattern = AIR_WING_NAME_JAP_CARRIER
@@ -133,7 +126,30 @@
 		}	
 	}
 
-	suicide_craft_equipment = {
+	cv_small_plane_cas_airframe = {
+		prefix = ""
+		generic = { "Kokutai" }
+		generic_pattern = AIR_WING_NAME_JAP_CARRIER
+		unique = {
+		}	
+	}
+	cv_small_plane_naval_bomber_airframe = {
+		prefix = ""
+		generic = { "Kokutai" }
+		generic_pattern = AIR_WING_NAME_JAP_CARRIER
+		unique = {
+		}	
+	}
+
+	small_plane_suicide_airframe = {
+		prefix = ""
+		generic = { "Tokubetsu Kogekitai" }
+		generic_pattern = AIR_WING_NAME_JAP_CARRIER
+		unique = {
+		}	
+	}
+	
+	cv_small_plane_suicide_airframe = {
 		prefix = ""
 		generic = { "Tokubetsu Kogekitai" }
 		generic_pattern = AIR_WING_NAME_JAP_CARRIER

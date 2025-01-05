@@ -1,0 +1,56 @@
+RUS_russian_coup = {
+RUS_kornilov_affair_new = {
+icon = GFX_decision_soldierly_discipline
+available = {
+            original_tag = RUS
+            RUS = {
+            has_stability < 0.35
+            has_government = neutrality
+            is_puppet = no 
+            has_country_flag = RUS_provisional_government_flag
+            }
+        }
+    ai_will_do = {
+            factor = 50
+        }
+        fire_only_once = yes
+        visible = {
+            original_tag = RUS
+            has_government = neutrality
+            NOT = { 
+            has_completed_focus = RUS_power_tsar
+            has_completed_focus = RUS_force_abdication
+            has_completed_focus = RUS_pm_primacy
+            }
+            }
+        remove_effect = {
+        unlock_national_focus = RUS_tsar_speech
+        RUS = {
+        news_event = { hours = 6 id = russia.49 }
+        set_politics = { ruling_party = fascism elections_allowed = no }
+        set_party_name = {
+                ideology = fascism
+                long_name = "Russian Martial Soviet"
+                name = "RMS"
+                }
+        create_country_leader = {
+        name = "Lavr Kornilov"
+        desc = "POLITICS_Kornilov_DESC"
+        picture = "Lavr_Kornilov.dds" 
+        expire = "1965.1.1"
+        ideology = fascism_subtype
+        traits = {
+
+        }
+        }
+        hidden_effect = {
+        add_popularity = {
+                ideology = fascism
+                    popularity = 0.35
+                }
+        country_event = { id = russia.50 days = 35 }
+        }
+        }
+        }
+		}
+		}
