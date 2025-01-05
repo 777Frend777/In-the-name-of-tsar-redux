@@ -4978,7 +4978,7 @@
 4977;51;75;63;land;true;hills;2
 4978;51;75;168;land;false;plains;5
 4979;51;78;28;land;false;plains;6
-4980;51;78;83;land;false;jungle;3
+4980;51;78;83;land;true;jungle;3
 4981;51;78;133;land;false;mountain;7
 4982;51;81;48;land;true;jungle;3
 4983;51;81;93;land;false;mountain;7
@@ -13277,6 +13277,7 @@
 13276;204;63;176;land;false;hills;1
 13277;255;127;39;land;false;land;1
 <<<<<<< HEAD
+<<<<<<< HEAD
 13278;255;231;1;land;false;jungle;3
 13279;255;231;2;land;false;jungle;3
 13280;255;231;3;land;false;jungle;3
@@ -13351,3 +13352,5 @@
 13349;137;140;35;land;false;jungle;3
 =======
 >>>>>>> 593571bcce148d460600976ca98a66e3e9769998
+=======
+>>>>>>> 4a83e2dadc9d0bfac5dc8840ebb9e53593b5b09d
