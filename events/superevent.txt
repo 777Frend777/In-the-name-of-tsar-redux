@@ -108,7 +108,7 @@ country_event = {	#COMYugoslavia create
 	
 	trigger = {
 		AND = {
-		       has_completed_focus = SER_socialist_republic
+		       has_completed_focus = CRO_new_country_yugoslavia
 			}
 			NOT = {
 				has_global_flag = Yugoslaviacom.super

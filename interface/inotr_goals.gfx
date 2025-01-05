@@ -5241,4 +5241,8 @@ spriteTypes = {
 		name = "GFX_focus_help_azeri"
 		texturefile = "gfx/interface/goals/help_azeri.dds"
 	}
+	SpriteType = { 
+		name = "GFX_focus_tito_has_won_election"
+		texturefile = "gfx/interface/goals/tito_has_won_election.png"
+	}
 }

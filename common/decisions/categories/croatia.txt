@@ -1,0 +1,4 @@
+CRO_war_small_category = {
+	icon = GFX_decision_category_patriotic
+	picture = GFX_decision_category_SER_road_to_unification
+}

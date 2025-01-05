@@ -1,0 +1,52 @@
+ideas = {
+	country = {
+		BOS_Yugoslav_Muslim_Organization = {
+		
+			allowed = {
+				always = no
+			}
+
+			picture = PER_religious_discontent
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				ai_focus_defense_factor = 1.0
+				ai_desired_divisions_factor = 0.5
+				stability_factor = 0.15
+				war_support_factor = 0.1
+				army_core_defence_factor = 0.2
+				surrender_limit = 0.5
+				resistance_damage_to_garrison_on_our_occupied_states = 0.3
+			}
+		}
+		bosnia_buffs = {
+	picture = LBA_Senussi_Order
+			allowed = {
+				original_tag = BOS
+			}
+
+			available = {
+				has_war_with = CRO
+			}
+
+			cancel = {
+				NOT = {
+					has_war_with = CRO
+				}
+			}
+
+			targeted_modifier = {
+				tag = CRO
+				defense_bonus_against = 0.4
+				attack_bonus_against = 0.2
+			  }
+		}
+}
+}

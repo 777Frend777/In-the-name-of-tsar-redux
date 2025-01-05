@@ -1,0 +1,70 @@
+division_template = {
+	name = "Militsija"				# Infantry Brigade
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+
+    priority = 0
+
+	}
+}
+
+units = {
+	division= {	
+		name = "1. Militsija"
+		location = 13277
+		division_template = "Militsija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		name = "2. Militsija"
+		location = 13277
+		division_template = "Militsija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}
+
+	# I Hadtest
+	division= {	
+		name = "3. Militsija"
+		location = 13277
+		division_template = "Militsija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}
+	# I Hadtest
+	division= {	
+		name = "4. Militsija"
+		location = 13277
+		division_template = "Militsija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}
+	# I Hadtest
+	division= {	
+		name = "5. Militsija"
+		location = 13277
+		division_template = "Militsija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}
+	# I Hadtest
+	division= {	
+		name = "6. Militsija"
+		location = 13277
+		division_template = "Militsija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}

@@ -1,0 +1,32 @@
+
+state={
+	id=973
+	name="STATE_973"
+	manpower =1910200
+	
+	
+	state_category = town
+	
+	resources={
+		aluminium=7 # was: 10
+	}
+
+	history={
+		owner = CRO
+		victory_points = {
+			6983 3
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 2
+		}
+		add_core_of = SER
+	}
+
+	provinces={
+		 9591 11572 6983
+	}
+
+	local_supplies=7.0 
+}

@@ -1,5 +1,7 @@
 ﻿capital = 104
 
+oob = "BOS_1936"
+
 set_research_slots = 3
 
 # Starting tech
@@ -12,6 +14,13 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	basic_train = 1
+}
+
+add_ideas = {
+BOS_Yugoslav_Muslim_Organization
+limited_conscription
+partial_economic_mobilisation
+closed_economy
 }
 
 if = {
@@ -71,4 +80,15 @@ set_popularities = {
 	democratic = 33
 	neutrality = 33
 	communism = 34
+}
+
+create_country_leader = {
+    name = "Mehmed Spaho"
+	desc = ""
+	picture = GFX_Portrait_BOS_Mehmed_Spaho
+	expire = "1936.1.30"
+	ideology = conservatism
+	traits = {
+		#
+	}
 }

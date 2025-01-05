@@ -163,7 +163,6 @@
   ######################## 
  RUS_provisional_government_flag: "Временное правительство у власти" #NT!
  Mikhail_inagurated: "Царь Михаил принимает власть" #NT!
- RUS_russian_coup: "Российское лидерство" #NT!
  RUS_no_step_back: "Ни шагу назад!" #NT!
  RUS_kornilovs_affair: "Дело Корнилова" #NT!
  RUS_kornilovs_affair_desc: "Временное правительство России оказалось хрупким режимом. Генерал Корнилов планирует воспользоваться этой ситуацией и захватить контроль над Российской Империей!" #NT!
@@ -197,3 +196,8 @@
  RUS_fate_luxembourg: "Спутник Люксембург" #NT!
  RUS_integrate_caucasus: "Интегрировать Кавказ" #NT!
  TUR_debtforallies_idea: "Выплата репараций нам"
+#### russian rework
+ RUS_kornilov_affair_new: "Корниловское выступление"
+ RUS_russian_coup: "Российское лидерство" #NT!
+ RUS_russian_coup_desc: "Временное правительство России оказалось хрупким режимом. Генерал Корнилов планирует воспользоваться этой ситуацией и захватить контроль над Российской Империей!\n\n£GFX_manpower_texticon §RСилы Корнилова§!: [?RUS_kornilov_army|0+%%]\n£GFX_pol_violence §gПройденный путь Корнилова§!: [?RUS_march_on_petrograd|0+%%]" #NT!
+ RUS_kornilovs_affair_desc: "Временное правительство России оказалось хрупким режимом. Генерал Корнилов планирует воспользоваться этой ситуацией и захватить контроль над Российской Империей!\n\n£GFX_manpower_texticon §RСилы Корнилова§!: [?RUS_kornilov_army|0+%%]\n£GFX_pol_violencey §gПройденный путь Корнилова§!: [?RUS_march_on_petrograd|0+%%]" #NT!

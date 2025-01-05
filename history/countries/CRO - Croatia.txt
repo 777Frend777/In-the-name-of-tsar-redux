@@ -17,9 +17,15 @@ set_technology = {
 	early_battleship = 1
 	transport = 1
 }
-add_ideas={
-	SER_alexander
+
+add_ideas = {
+CRO_The_Troubles_of_Our_Time
+CRO_InnerNationalism
+CRO_frozen_war
 }
+
+recruit_character = CRO_josip_broz_tito
+
 set_convoys = 5
 
 set_politics = {
@@ -57,3 +63,66 @@ create_country_leader = {
 		#
 	}
 }
+
+create_corps_commander = {
+	name = "Slavko Kvaternik"
+	picture = "PORTRAIT_SLAVKO_KVATERNIK.tga"
+	traits = { independence_veteran }
+	skill = 3
+}
+create_corps_commander = {
+	name = "Lothar Rendulic"
+	picture = "Portrait_Illyria_Lothar_Rendulic.tga"
+	traits = { commando }
+	skill = 1
+}
+create_field_marshal = {
+	name = "Slavko Štancer"
+	picture = "Portrait_Illyria_Slavko_Stanzer.tga"
+	traits = { fast_planner }
+	skill = 2
+}
+create_corps_commander = {
+	name = "Leon Rupnik"
+	picture = "Portrait_Illyria_Leon_Rupnik.tga"
+	traits = { }
+	skill = 3
+}
+create_corps_commander = {
+	name = "Muhamed Hadžiefendić"
+	picture = "Portrait_Illyria_Muhamed_Hadziefendic.tga"
+	traits = {trickster }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Matija Čanić"
+	picture = "Portrait_Illyria_Matija_Canic.tga"
+	traits = { hill_fighter }
+	skill = 2
+}
+create_corps_commander = {
+	name = "Dusan Palcic"
+	picture = "Portrait_Illyria_dusan_palcic.tga"
+	traits = { independence_veteran }
+	skill = 2
+}
+create_corps_commander = {
+	name = "Fedor Dragojlov"
+	picture = "Portrait_Illyria_Fedor_Dragojlov.tga"
+	traits = { old_guard independence_veteran}
+	skill = 2
+}
+
+
+create_navy_leader = {
+	name = "Marijan Polić"
+	gfx = GFX_Portrait_yugoslavia_marijan_polic
+	traits = {  }
+	skill = 2
+}
+	create_navy_leader = {
+		name = "Ivan Kern"
+		picture = "gfx/leaders/ILL/Portrait_Illyria_Ivan_Kern.tga"
+		traits = { spotter }
+		skill = 1
+	}

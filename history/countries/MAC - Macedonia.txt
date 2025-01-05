@@ -1,6 +1,7 @@
 ﻿capital = 106
 
 set_research_slots = 3
+set_war_support = 0.9
 
 # Starting tech
 # clone of Yugoslavia
@@ -12,6 +13,16 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 }
+
+recruit_character = MAC_ivan_mihajlov
+recruit_character = MAC_imro_joint_command
+
+add_ideas = {
+	war_economy
+	closed_economy
+	service_by_requirement
+}
+
 if = {
 	limit = {
 		NOT = {
@@ -60,14 +71,11 @@ if = {
 }
 
 set_politics = {
-	ruling_party = democratic
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = yes
+	ruling_party = fascism
+	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 33
-	neutrality = 33
-	communism = 34
+	fascism = 60
+	neutrality = 40
 }

@@ -11,12 +11,40 @@ ideas = { #TEMP, SERB IDEAS ARE HERE FOR NOW
 				can_not_declare_war = yes
 			}
 		}
+		CRO_worker_union_with_bela_kun = { 
+			picture = generic_syndicalist_worker
+			modifier = {
+				research_speed_factor = 0.1
+				production_speed_buildings_factor = 0.2
+				consumer_goods_factor = -0.2
+				industrial_capacity_factory = 0.1
+			}
+		}
 		CRO_rump_state = {  
 			picture = GFX_idea_CRO_rump_state
 			modifier = {
 				political_power_factor = -0.03
 				surrender_limit = 0.1
 				army_org_factor = -0.1
+			}
+		}
+		CRO_idea_local_militias = {
+			
+			picture = YUG_local_militias
+
+			allowed = {
+				original_tag = CRO
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.02
 			}
 		}
 		CRO_ethnic_clusterfuck = {  
@@ -55,6 +83,25 @@ ideas = { #TEMP, SERB IDEAS ARE HERE FOR NOW
 				research_speed_factor = -0.07
 				trade_opinion_factor = -0.1
 				drift_defence_factor = 0.2
+				political_power_factor = 0.05
+			}
+		}
+		CRO_union_reforms = {  
+			picture = generic_syndicalist_militia
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.2 
+				political_power_factor = -0.05
+			}
+		}
+		CRO_banned_unions = {  
+			picture = HOL_banned_unions
+			modifier = {
+				stability_factor = 0.15
+				local_resources_factor = -0.1
+				war_support_factor = 0.1
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.1
 				political_power_factor = 0.05
 			}
 		}

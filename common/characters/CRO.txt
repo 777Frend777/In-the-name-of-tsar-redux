@@ -1,15 +1,40 @@
 characters={
-	CRO_tito = {
-		name="Josip Broz Tito"
-		portraits={
-			civilian={
-				large="GFX_Portrait_CRO_tito"
-			}
+		CRO_josip_broz_tito={
+		name=CRO_josip_broz_tito
+		advisor={
+			slot = army_chief
+			idea_token = GFX_Portrait_CRO_tito
+			allowed = {
+					original_tag = CRO
+				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = tito_is_not_dead_tt
+						not = {
+							has_global_flag = Tito_killed
+						}
+					}
+				}
+				traits = {
+					army_chief_morale_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
 		}
 		country_leader={
-			ideology=socialist_subtype
-			expire="1965.1.1.1"
+			ideology=leninism
+			expire="1966.1.1.1"
 			id=-1
+		}
+		portraits={
+			army={
+				small="GFX_idea_YUG_josip_broz_tito"
+			}
+			civilian={
+				large=GFX_Portrait_CRO_josip_broz_tito
+			}
 		}
 	}
 }

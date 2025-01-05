@@ -8455,4 +8455,16 @@ spriteTypes = {
 		name = "GFX_Portrait_RUS_alexander_kerensky"
 		texturefile = "gfx/leaders/RUS/alexander_kerensky.dds"
 	}
+	spriteType = {
+		name = "GFX_Portrait_SER_Andrija_Hebrang"
+		texturefile = "gfx/leaders/SER/Andrija_Hebrang.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_CRO_josip_broz_tito"
+		texturefile = "gfx/leaders/CRO/josip_broz_tito.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_BOS_Mehmed_Spaho"
+		texturefile = "gfx/leaders/BOS/Mehmed_Spaho.png"
+	}
 }
