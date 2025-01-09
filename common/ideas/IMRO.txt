@@ -16,6 +16,7 @@ country = {
 			}
 		}
 		SER_debuffs_by_IMRO = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SER_debuffs_by_IMRO" }
 			picture = MAC_IMRO_idea
 			allowed = { tag = SER }
 			modifier = {
@@ -26,6 +27,31 @@ country = {
 				resistance_target = 0.1
 				compliance_growth = -0.15
 			}
+		}
+		IMRO_svoboda_ili_smert = { #freedom or death
+		on_add = { log = "[GetDateText]: [Root.GetName]: add idea IMRO_svoboda_ili_smert" }
+			picture = death_men
+			allowed = { tag = MAC }
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.2
+				army_attack_factor = 0.1
+				army_defence_factor = 0.2
+				training_time_factor = -0.2
+				minimum_training_level = -0.3
+				conscription = 0.05
+				weekly_manpower = 1000
+			}
+		}
+		IMRO_we_know_their_tactic = {
+		on_add = { log = "[GetDateText]: [Root.GetName]: add idea IMRO_we_know_their_tactic" }
+			picture = advisors_serbia
+			allowed = { tag = MAC }
+			targeted_modifier = {
+				tag = SER
+				defense_bonus_against = 0.3
+				attack_bonus_against = 0.2
+			  }
 		}
 }
 }

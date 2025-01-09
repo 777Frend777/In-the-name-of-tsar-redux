@@ -26,22 +26,25 @@ country_event = {
 		ai_chance = { factor = 40 }
 		
 		add_political_power = 50
-		add_national_unity = 0.05
 		
-		set_country_flag = IPPP_wins
-		add_popularity = { ideology = democratic popularity = 0.25 }
+		add_popularity = { ideology = neutrality popularity = 0.25 }
+		set_country_flag = pro_serbian_won_elections
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = CRO_vladimir_nazor_again
+		add_popularity = { ideology = neutrality popularity = 0.25 }
 	}
 		option = {
 		name = CRO.1.b
 		ai_chance = { factor = 40 }
 		set_politics = {
-			ruling_party = neutrality
+			ruling_party = communism
 		
 		}
-		add_popularity = { ideology = neutrality popularity = 0.25 }
-		set_country_flag = pro_serbian_won_elections
+
+		set_country_flag = serbian_communist_march
+		set_country_flag = croatian_world_revolution
 		mark_focus_tree_layout_dirty = yes
-		complete_national_focus = CRO_vladimir_nazor_again
+		complete_national_focus = CRO_tito_won
 	}
 		option = {
 		name = CRO.1.c
@@ -106,3 +109,267 @@ country_event = {
 	
 		
 }
+# dalmatian uprising (bela kun)
+country_event = {
+	id = CRO.4
+	title = CRO.4.t
+	desc = CRO.4.d
+	picture = GFX_report_event_generic_civil_war2
+
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = CRO.4.a
+		hidden_effect = {
+		DAL = { transfer_state = 103 }
+		DAL = {
+			load_oob = DAL_1936
+		}
+		DAL = {
+			declare_war_on = {
+				target = ITA
+				type = annex_everything
+			}
+		}
+	}	
+	}
+		
+}
+country_event = {
+	id = CRO.5
+	title = CRO.5.t
+	desc = CRO.5.d
+	picture = GFX_report_event_BUL_Victory
+	
+	trigger = {
+		tag = CRO
+		DAL = {
+		has_war_with = ITA 
+		controls_state = 163
+		controls_state = 852
+		}
+	}
+	fire_only_once = yes
+
+	option = { # erm what the sigma
+		name = CRO.5.a
+		ITA = {
+			add_stability = -0.1
+		}
+		CRO = {
+			transfer_state = 103
+			add_state_core = 103
+			transfer_state = 163
+			add_state_core = 163
+			transfer_state = 852
+			add_state_core = 852
+			transfer_state = 736
+			add_state_core = 736
+		}
+	}
+}
+#bosnian uprising
+country_event = {
+	id = CRO.6
+	title = CRO.6.t
+	desc = CRO.6.d
+	picture = GFX_report_event_ser_bosnian_rebellion
+
+	is_triggered_only = no
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 1 }
+
+	trigger = {
+		focus_progress = {
+			focus = CRO_end_bosnia
+			progress > 0.5
+		}
+	}
+
+	option = {
+		name = CRO.6.a
+		CRO = {
+			add_stability = -0.05
+		}
+		BOS = {
+			transfer_state = 104
+			transfer_state = 974
+			transfer_state = 804
+			load_oob = BOS_1936
+		}
+		CRO = {
+declare_war_on = {
+    target = BOS
+    type = annex_everything
+}
+		}
+	}
+}
+# demand dalmatia (workers revolution path)
+country_event = {
+	id = CRO.7
+	title = CRO.7.t
+	desc = CRO.7.d
+	picture = GFX_report_event_generic_diplomacy4
+
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = CRO.7.a
+		hidden_effect = {
+		CRO = { 
+		transfer_state = 103 
+		transfer_state = 163
+		transfer_state = 852
+		transfer_state = 736
+	}
+	}	
+	}
+	option = {
+		name = CRO.7.b
+		hidden_effect = {
+		DAL = { transfer_state = 103 }
+		DAL = {
+			load_oob = DAL_1936
+		}
+		DAL = {
+			declare_war_on = {
+				target = ITA
+				type = annex_everything
+			}
+		}
+	}	
+	}	
+}
+# demand slovenia (workers revolution path)
+country_event = {
+	id = CRO.8
+	title = CRO.8.t
+	desc = CRO.8.d
+	picture = GFX_report_event_generic_diplomacy2
+
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = CRO.8.a
+		hidden_effect = {
+		CRO = { 
+		transfer_state = 102
+		transfer_state = 853
+		add_state_core = 102
+		add_state_core = 853
+	}
+	}	
+	}
+	option = {
+		name = CRO.8.b
+		hidden_effect = {
+			set_autonomy = {
+				target = SLV
+				autonomous_state = autonomy_free
+				end_wars = yes
+				end_civil_wars = no
+			}
+		SLV = {
+			declare_war_on = {
+				target = AUS
+				type = annex_everything
+			}
+			remove_ideas = {
+				SLV_otto_king
+				SLV_grand_duchy
+			}
+		}
+		CRO = {
+			declare_war_on = {
+				target = AUS
+				type = annex_everything
+			}
+		}
+	}	
+	}	
+}
+country_event = {
+	id = CRO.9
+	title = CRO.9.t
+	desc = CRO.9.d
+	picture = GFX_report_event_generic_diplomacy2
+
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = CRO.9.a
+		hidden_effect = {
+		CRO = { 
+		transfer_state = 102
+		transfer_state = 853
+		add_state_core = 102
+		add_state_core = 853
+	}
+	}	
+	}
+	option = {
+		name = CRO.8.b
+		hidden_effect = {
+		CRO = {
+			declare_war_on = {
+				target = AUS
+				type = annex_everything
+			}
+		}
+	}	
+	}
+}
+country_event = {
+	id = CRO.10
+	title = CRO.10.t
+	desc = CRO.10.d
+	picture = GFX_report_event_generic_diplomacy2
+
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = CRO.10.a
+		hidden_effect = {
+		CRO = { 
+		transfer_state = 103
+		transfer_state = 163
+		add_state_core = 103
+		add_state_core = 163
+	}
+	}	
+	}
+	option = {
+		name = CRO.10.b
+		hidden_effect = {
+		DAL = { transfer_state = 103 }
+		DAL = {
+			load_oob = DAL_1936
+		}
+		DAL = {
+			declare_war_on = {
+				target = ITA
+				type = annex_everything
+			}
+		}
+		CRO = {
+			declare_war_on = {
+				target = ITA
+				type = annex_everything
+			}
+		}
+	}	
+	}	
+	}

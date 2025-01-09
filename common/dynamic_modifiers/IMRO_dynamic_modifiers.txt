@@ -1,0 +1,14 @@
+SER_IMRO_occupation_of_pirin = {
+	icon = GFX_resistance_icon
+	remove_trigger = {
+		OR = {
+			NOT = { is_controlled_by = BUL }
+			NOT = {
+				SER = { has_war_with = MAC }
+			}
+		}
+	}
+
+	local_manpower = -0.7
+	local_factories = -0.7
+}

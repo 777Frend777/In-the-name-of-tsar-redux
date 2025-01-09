@@ -2264,48 +2264,6 @@ territorial_restorations_decisions = {
 			}
 		}
 	}
-	GEN_release_MAC = { #macedonia
-		icon = decision_generic_decision
-		#targets = { POL }
-		selectable_mission = yes
-		days_mission_timeout = 30
-		is_good = no
-		cost = 0
-		
-		activation = {
-			NOT = { 
-				tag = SER
-				tag = BUL
-			}
-			controls_state = 106
-		}
-
-		fire_only_once = yes
-		
-		available = {
-			NOT = { 
-				tag = BUL
-				tag = SER
-			}
-			is_puppet = no
-		}
-		cancel_trigger = {
-			NOT = { controls_state = 106 }
-		}
-		ai_will_do = {
-			factor = 1000
-		}
-		complete_effect = {
-			ROOT = {
-				country_event = { id = gen_states.51 }
-			}
-		}	
-		remove_effect = {
-			ROOT = {
-				country_event = { id = gen_states.51 }
-			}
-		}
-	}
 	GEN_release_SLV = { #slovenia
 		icon = decision_generic_decision
 		#targets = { POL }

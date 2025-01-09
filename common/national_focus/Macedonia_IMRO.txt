@@ -1,1 +1,359 @@
-#
+#########################################
+# IMRO Focus Tree (AI only)       		#
+# By FASHUST_NAXER                      #
+#########################################
+
+focus_tree = {
+	id = Macedonia_IMRO
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MAC
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 2000 }
+
+	focus = {
+		id = IMRO_war_of_independence
+		icon = GFX_goal_SER_macedonia_in_flames
+		cost = 0
+		x = 7
+		y = 1
+		completion_reward = {
+			add_ideas = IMRO_idea
+			load_oob = MAC_1936
+		}
+	}
+	focus = {
+		id = IMRO_study_their_tactics
+		icon = GFX_goal_generic_drafted_army
+		cost = 5
+		mutually_exclusive = {
+			focus = IMRO_undeground_tactic
+		}
+		x = 14
+		y = 2
+			completion_reward = {
+				army_experience = 250
+				add_ideas = IMRO_we_know_their_tactic
+			}
+	}
+	focus = {
+		id = IMRO_undeground_tactic
+		icon = GFX_goal_mass_concentration_of_army
+		cost = 2
+		mutually_exclusive = {
+			focus = IMRO_study_their_tactics
+		}
+		x = 16
+		y = 2
+		completion_reward = {
+			army_experience = 150
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = IMRO_independence_propaganda
+		icon = GFX_focus_focus_fra_revolution_utmost
+		cost = 1
+		prerequisite = {
+			focus = IMRO_war_of_independence
+		}
+		x = 5
+		y = 2
+		completion_reward = {
+			106 = {
+				add_resistance = 20
+				add_resistance_target = {
+					amount = 10
+					occupier = SER
+					days = 180
+				}
+			}
+		}
+	}
+	focus = {
+		id = IMRO_mobilisation
+		icon = GFX_goal_national_mobilization
+		cost = 2
+		prerequisite = {
+			focus = IMRO_independence_propaganda
+		}
+		x = 4
+		y = 3
+		completion_reward = {
+			add_manpower = 50000
+				capital_scope = {
+	 create_unit = {
+	 division = "name = \"Makedonija loyalists\" division_template = \"Militsija\" start_experience_factor = 0.85 start_equipment_factor = 1"
+	 owner = ROOT
+	 }
+	 create_unit = {
+	 division = "name = \"Makedonija loyalists\" division_template = \"Militsija\" start_experience_factor = 0.85 start_equipment_factor = 1"
+	 owner = ROOT
+	 }
+	 }
+			 }
+		}
+
+	focus = {
+		id = IMRO_chaos_to_serbia
+		icon = GFX_goal_flames_of_rebellion
+		cost = 1
+		prerequisite = {
+			focus = IMRO_independence_propaganda
+		}
+		x = 6
+		y = 3
+		completion_reward = {
+			SER = {
+				add_timed_idea = { idea = SER_debuffs_by_IMRO  days = 120 }
+			}
+		}
+	}
+	focus = {
+		id = IMRO_march_to_pirin
+		icon = GFX_goal_generic_expel_people
+		cost = 0
+		prerequisite = {
+			focus = IMRO_war_of_independence
+		}
+		x = 9
+		y = 2
+		completion_reward = {
+			212 = {
+				add_dynamic_modifier = { modifier = SER_IMRO_occupation_of_pirin }
+			}
+		}
+	}
+	focus = {
+		id = IMRO_get_weapon_at_macedonia
+		icon = GFX_goal_Arms_Export
+		cost = 1
+		prerequisite = {
+			focus = IMRO_march_to_pirin
+		}
+		x = 8
+		y = 3
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 2500
+				producer = SER
+			}
+		}
+	}
+	focus = {
+		id = IMRO_we_need_help
+		icon = GFX_goal_foreign_diplomacy
+		cost = 2
+		prerequisite = {
+			focus = IMRO_march_to_pirin
+		}
+		x = 10
+		y = 3
+		completion_reward = {
+			add_manpower = 25000
+			capital_scope = {
+				create_unit = {
+				division = "name = \"Foreign volunteers\" division_template = \"Militsija\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = ROOT
+				}
+				create_unit = {
+				division = "name = \"Foreign volunteers\" division_template = \"Militsija\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = ROOT
+				}
+				}
+		}
+	}
+	focus = {
+		id = IMRO_reorganize_our_country
+		icon = GFX_goal_generic_government_deals
+		cost = 2
+		prerequisite = {
+			focus = IMRO_chaos_to_serbia
+		}
+		prerequisite = {
+			focus = IMRO_mobilisation
+		}
+		prerequisite = {
+			focus = IMRO_get_weapon_at_macedonia
+		}
+		prerequisite = {
+			focus = IMRO_we_need_help
+		}
+		x = 7
+		y = 4
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = IMRO_bulgarian_volunteers
+		icon = GFX_BUL_bulgarian_officer
+		cost = 1
+		prerequisite = {
+			focus = IMRO_reorganize_our_country
+		}
+		x = 6
+		y = 5
+		completion_reward = { 
+			capital_scope = {
+ create_unit = {
+ division = "name = \"Bulgarian volunteers\" division_template = \"Militsija\" start_experience_factor = 0.85 start_equipment_factor = 1"
+ owner = ROOT
+ }
+ create_unit = {
+ division = "name = \"Bulgarian volunteers\" division_template = \"Militsija\" start_experience_factor = 0.85 start_equipment_factor = 1"
+ owner = ROOT
+ }
+ create_unit = {
+ division = "name = \"Bulgarian volunteers\" division_template = \"Militsija\" start_experience_factor = 0.85 start_equipment_factor = 1"
+ owner = ROOT
+ }
+ }
+		 }
+	}
+	focus = {
+		id = IMRO_get_forts
+		icon = GFX_goal_skull_fortification
+		cost = 2
+		prerequisite = {
+			focus = IMRO_reorganize_our_country
+		}
+		x = 8
+		y = 5
+        completion_reward = {
+			capital_scope = {
+			 add_building_construction = {
+				 type = bunker
+				 level = 6
+				 instant_build = yes
+				}         	
+			  } 
+		}
+	}
+	focus = {
+		id = IMRO_bomb_railroads
+		icon = GFX_goal_generic_seize_railway
+		cost = 1
+		prerequisite = {
+			focus = IMRO_undeground_tactic
+			focus = IMRO_study_their_tactics
+		}
+		x = 15
+		y = 3
+		completion_reward = {
+			SER = {
+			random_owned_state = {
+				damage_building = {
+    			type = supply_node
+ 			   	damage = 1
+}
+			}
+		}
+		}
+	}
+	focus = {
+		id = IMRO_freedom_or_death
+		icon = GFX_goal_HOL_fires_of_revolution_faux
+		cost = 3
+		prerequisite = {
+			focus = IMRO_get_forts
+			focus = IMRO_bulgarian_volunteers
+		}
+		x = 7
+		y = 6
+		completion_reward = {
+			add_ideas = IMRO_svoboda_ili_smert 
+		}
+	}
+	focus = {
+		id = IMRO_ask_for_peace
+		icon = GFX_goal_skull_treaty
+		cost = 1
+		prerequisite = {
+			focus = IMRO_freedom_or_death
+		}
+		x = 7
+		y = 7
+		available = {
+			longest_war_length > 5
+		}
+		completion_reward = {
+			SER = {
+			country_event = IMRO.1
+			}
+		}
+	}
+	focus = {
+		id = IMRO_join_bulgaria
+		icon = GFX_BUL_memorials
+		cost = 1
+		prerequisite = {
+			focus = IMRO_ask_for_peace
+		}
+		mutually_exclusive = {
+			focus = IMRO_independence
+		}
+		x = 6
+		y = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			NOT = {
+			has_war_with = SER
+			}
+		}
+			completion_reward = {
+				BUL = {
+				annex_country = {
+    			target = MAC
+ 	   			transfer_troops = yes
+}
+				}
+			}
+	}
+	focus = {
+		id = IMRO_independence
+		icon = GFX_goal_Fight_for_Freedom
+		cost = 4
+		prerequisite = {
+			focus = IMRO_ask_for_peace
+		}
+		mutually_exclusive = {
+			focus = IMRO_join_bulgaria
+		}
+		x = 8
+		y = 8
+		available = {
+			NOT = {
+			has_war_with = SER
+			}
+		}
+
+	}
+	focus = {
+		id = IMRO_change_government
+		icon = GFX_goal_shadow_government
+		cost = 5
+		prerequisite = {
+			focus = IMRO_independence
+		}
+		x = 8
+		y = 9
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.3
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = yes
+			}
+		}
+	}
+}

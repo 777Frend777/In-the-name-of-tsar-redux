@@ -1,1 +1,2464 @@
-#
+focus_tree = {
+	id = Illyria
+	country = {
+		factor = 0
+		modifier = {
+			add = 1000
+			tag = CRO
+		}
+	}
+	default = no
+	#great depression reforms
+	focus = {
+		id = CRO_fix_economy_problems
+		icon = GFX_focus_empty_coffers
+		cost = 0
+		x = 50
+		y = 0
+
+	}
+	focus = {
+		id = CRO_industrialisation
+		icon = GFX_goal_generic_improve_industry
+		cost = 1
+		prerequisite = {
+			focus = CRO_fix_economy_problems
+		}
+		x = 48
+		y = 1
+
+	}
+	focus = {
+		id = CRO_many_fabrics_many_money
+		icon = GFX_goal_construction
+		cost = 10
+		prerequisite = {
+			focus = CRO_industrialisation
+		}
+		mutually_exclusive = {
+			focus = CRO_continue_agricultural
+		}
+		x = 47
+		y = 2
+		completion_reward = {
+			add_stability = 0.05
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = CRO_many_rights_to_workers
+		icon = GFX_goal_workers_rights
+		cost = 10
+		prerequisite = {
+			focus = CRO_many_fabrics_many_money
+		}
+		x = 46
+		y = 3
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = CRO_continue_agricultural
+		icon = GFX_goal_agrarian_reform
+		cost = 10
+		prerequisite = {
+			focus = CRO_industrialisation
+		}
+		mutually_exclusive = {
+			focus = CRO_many_fabrics_many_money
+		}
+		x = 49
+		y = 2
+		completion_reward = {
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = CRO_many_rights_to_farmers
+		icon = GFX_goal_agrarian_soldiers
+		cost = 10
+		prerequisite = {
+			focus = CRO_continue_agricultural
+		}
+		x = 49
+		y = 3
+		completion_reward = {
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = CRO_support_bosnian_farmers
+		icon = GFX_goal_agricultural_aid
+		cost = 10
+		prerequisite = {
+			focus = CRO_many_rights_to_farmers
+		}
+		x = 49
+		y = 4
+		completion_reward = {
+			add_stability = 0.07
+		}
+	}
+	focus = {
+		id = CRO_trade_union_problem
+		icon = GFX_GBR_fate_of_unions
+		cost = 1
+		prerequisite = {
+			focus = CRO_fix_economy_problems
+		}
+		x = 52
+		y = 1
+
+	}
+	focus = {
+		id = CRO_war_way
+		icon = GFX_goal_generic_crush_unions
+		cost = 10
+		prerequisite = {
+			focus = CRO_trade_union_problem
+		}
+		mutually_exclusive = {
+			focus = CRO_peaceful_way
+		}
+		x = 51
+		y = 2
+		completion_reward = {
+			add_stability = -0.05
+			add_timed_idea = {
+				idea = CRO_union_reforms
+				days = 180
+			}
+		}
+	}
+	focus = {
+		id = CRO_ban_many_unions
+		icon = GFX_goal_generic_imprison_people
+		cost = 10
+		prerequisite = {
+			focus = CRO_war_way
+		}
+		x = 51
+		y = 3
+		completion_reward = {
+			add_ideas = CRO_banned_unions
+		}
+	}
+	focus = {
+		id = CRO_all_unions_made_by_commies
+		icon = GFX_goal_UK_ban_unions
+		cost = 10
+		prerequisite = {
+			focus = CRO_ban_many_unions
+		}
+		x = 51
+		y = 4
+		available = {
+			NOT = {
+				has_government = communism
+			}
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CRO_banned_unions
+				add_idea = CRO_pro_government_unions
+			}
+		}
+	}
+	focus = {
+		id = CRO_build_many_factories
+		icon = GFX_goal_munitions_factories
+		cost = 10
+		prerequisite = {
+			focus = CRO_many_rights_to_workers
+		}
+		x = 46
+		y = 4
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = CRO_peaceful_way
+		icon = GFX_goal_generic_union_agreement
+		cost = 10
+		prerequisite = {
+			focus = CRO_trade_union_problem
+		}
+		mutually_exclusive = {
+			focus = CRO_war_way
+		}
+		x = 53
+		y = 2
+		completion_reward = {
+			add_stability = 0.05
+			add_timed_idea = {
+				idea = CRO_union_reforms
+				days = 180
+			}
+		}
+	}
+	focus = {
+		id = CRO_agreement_with_them
+		icon = GFX_goal_constitutional_guarantees
+		cost = 10
+		prerequisite = {
+			focus = CRO_peaceful_way
+		}
+		x = 53
+		y = 3
+		completion_reward = {
+			add_ideas = CRO_agreement_with_unions
+		}
+	}
+	focus = {
+		id = CRO_give_more_rights_them
+		icon = GFX_socialist_constitution
+		cost = 10
+		prerequisite = {
+			focus = CRO_agreement_with_them
+		}
+		available = {
+			OR = {
+			has_government = democratic
+			has_government = neutrality
+			}
+		}
+		x = 53
+		y = 4
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CRO_agreement_with_unions
+				add_idea = CRO_worker_rights
+			}
+		}
+	}
+	focus = {
+		id = CRO_new_best_croatia
+		icon = GFX_goal_CRO_peasant_republic
+		cost = 10
+		prerequisite = {
+			focus = CRO_support_bosnian_farmers
+			focus = CRO_build_many_factories
+		}
+		x = 47
+		y = 5
+		completion_reward = {
+			remove_ideas = CRO_The_Troubles_of_Our_Time
+		}
+	}
+#other
+	focus = {
+		id = CRO_The_Conversion_Program
+		icon = GFX_goal_generic_production2
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Rupnik_Line
+			focus = CRO_Kvaternik_Line
+		}
+		x = 61
+		y = 1
+	completion_reward = {
+	add_ideas = CRO_Conversionprogram
+	}
+	}
+	focus = {
+		id = CRO_Last_War_Reparations
+		icon = GFX_goal_bag_of_money
+		cost = 10.00
+		x = 7
+		y = 0
+	completion_reward = {
+	add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1100 producer = AUS }
+	hidden_effect = {
+	if = {
+	limit = {AUS = {exists = yes}}
+	news_event = balkan.1
+	}
+	}
+	}
+	}
+		focus = {
+		id = CRO_Semi_Auto_Rifles
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Last_War_Reparations
+		}
+		x = 3
+		y = 1
+	completion_reward = {
+	add_tech_bonus = {
+						bonus = 0.5
+						uses = 2
+						category = infantry_weapons
+						
+						}
+	}
+	}
+	focus = {
+		id = CRO_Develop_Our_Artillery
+		icon = GFX_goal_national_artillery
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Semi_Auto_Rifles
+		}
+		x = 2
+		y = 2
+	completion_reward = {
+	add_tech_bonus = {
+						ahead_reduction = 0.75
+						uses = 1
+						category = artillery
+						
+						}
+	}
+	}
+	focus = {
+		id = CRO_Motorization_Program
+		icon = GFX_goal_generic_mobile_trucks
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Semi_Auto_Rifles
+		}
+		x = 4
+		y = 2
+	completion_reward= {
+		add_tech_bonus = {
+						bonus = 0.75
+						uses = 1
+						category = motorized_equipment
+						category = cat_mechanized_equipment
+						}
+	}
+	}
+	focus = {
+		id = CRO_Operation_LEO
+		icon = GFX_goal_double_research
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Develop_Our_Artillery
+		}
+		prerequisite = {
+			focus = CRO_Motorization_Program
+		}
+		x = 3
+		y = 3
+	completion_reward = {
+	add_research_slot = 1
+	}
+	}
+	focus = {
+		id = CRO_Support_Ustase_Militia
+		icon = GFX_goal_CRO_authoritarian
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Last_War_Reparations
+		}
+		mutually_exclusive = {
+			focus = CRO_Raise_Local_Militias
+		}
+		x = 6
+		y = 1
+	completion_reward = {
+	add_ideas = CRO_Crusaders_Militia
+	}
+	}
+	focus = {
+		id = CRO_Raise_Local_Militias
+		icon = GFX_goal_enlist_the_police
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Last_War_Reparations
+		}
+		mutually_exclusive = {
+			focus = CRO_Support_Ustase_Militia
+		}
+		x = 8
+		y = 1
+		completion_reward = {
+		add_ideas = CRO_local_militia
+		}
+	}
+	focus = {
+		id = CRO_1st_Mountaineer_Division
+		icon = GFX_goal_generic_mountain_warfare2
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Last_War_Reparations
+		}
+		x = 11
+		y = 1
+	completion_reward = {
+		add_tech_bonus = {
+						bonus = 0.75
+						uses = 1
+						category = mountaineers_tech
+						
+						}
+	}
+	}
+	focus = {
+		id = CRO_Superior_Firepower
+		icon = GFX_goal_generic_army_superior_firepower
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_1st_Mountaineer_Division
+		}
+		mutually_exclusive = {
+			focus = CRO_Grand_Battleplan
+		}
+		x = 10
+		y = 2
+	completion_reward = {
+	add_tech_bonus = {
+						bonus = 0.6
+						uses = 2
+						category = cat_superior_firepower
+						
+						}
+	}
+	}
+	focus = {
+		id = CRO_Grand_Battleplan
+		icon = GFX_goal_generic_army_grand_battleplan
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_1st_Mountaineer_Division
+		}
+		mutually_exclusive = {
+			focus = CRO_Superior_Firepower
+		}
+		x = 12
+		y = 2
+	completion_reward = {
+	add_tech_bonus = {
+						bonus = 0.6
+						uses = 2
+						category = cat_grand_battle_plan
+						
+						}
+	}
+	}
+	focus = {
+		id = CRO_Lessons_From_the_Great_War
+		icon = GFX_goal_generic_destruction_civil_war
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Superior_Firepower
+			focus = CRO_Grand_Battleplan
+		}
+		x = 11
+		y = 3
+	completion_reward = {
+	army_experience = 50
+	}
+	}
+	focus = {
+		id = CRO_Underhand_Tactics
+		icon = GFX_goal_generic_wolf_pack
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Expand_Brodosplit
+		}
+		prerequisite = {
+			focus = CRO_Focus_On_The_Navy
+		}
+		mutually_exclusive = {
+			focus = CRO_Face_to_Face
+		}
+		x = 14
+		y = 1
+	completion_reward = {
+	add_tech_bonus = {
+						bonus = 0.4
+						uses = 4
+						category = cat_trade_interdiction
+						
+						}
+	}
+	}
+	focus = {
+		id = CRO_Submarine_Development
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Underhand_Tactics
+		}
+		x = 14
+		y = 2
+	completion_reward  = {
+		add_tech_bonus = {
+						bonus = 0.7
+						uses = 1
+						category = ss_tech
+						
+						}
+	}
+	
+	}
+	focus = {
+		id = CRO_Face_to_Face
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Expand_Brodosplit
+		}
+		prerequisite = {
+			focus = CRO_Focus_On_The_Navy
+		}
+		mutually_exclusive = {
+			focus = CRO_Underhand_Tactics
+		}
+		x = 16
+		y = 1
+	completion_reward  = {
+		add_tech_bonus = {
+						bonus = 0.5
+						uses = 3
+						category = cat_fleet_in_being
+						
+						}
+	}
+	}
+	focus = {
+		id = CRO_Copy_Italian_Prototypes
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Face_to_Face
+		}
+		x = 16
+		y = 2
+	completion_reward = {
+	add_tech_bonus = {
+						bonus = 0.5
+						uses = 1
+						category = bb_tech
+						
+						}
+	}
+	}
+	focus = {
+		id = CRO_Naval_Bombers
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Focus_On_The_Navy
+			focus = CRO_Focus_On_The_Airforce
+		}
+		x = 18
+		y = 1
+	completion_reward = {
+	add_tech_bonus = {
+						bonus = 0.5
+						uses = 1
+						category = naval_bomber
+						
+						}
+	}
+	}
+	focus = {
+		id = CRO_Illyrian_Carriers
+		icon = GFX_goal_generic_navy_carrier
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Naval_Bombers
+		}
+		x = 18
+		y = 2
+	completion_reward = {
+	add_tech_bonus = {
+						bonus = 0.5
+						uses = 1
+						category = ca_tech
+						
+						}
+	}
+	}
+	focus = {
+		id = CRO_Borongaj_Airport
+		icon = GFX_goal_generic_air_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Focus_On_The_Airforce
+		}
+		prerequisite = {
+			focus = CRO_Expand_Northern_Anti_Air
+		}
+		x = 20
+		y = 1
+	completion_reward = {
+	109 = {
+	add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+	}
+	}
+	}
+	focus = {
+		id = CRO_Split_Air_Academy
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Expand_Northern_Anti_Air
+		}
+		x = 22
+		y = 1
+	completion_reward = {
+	add_tech_bonus = {
+						bonus = 0.5
+						uses = 2
+						category = air_doctrine
+						
+						}
+	}
+	}
+	focus = {
+		id = CRO_Fizer_Designs
+		icon = GFX_goal_generic_air_production
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Borongaj_Airport
+		}
+		prerequisite = {
+			focus = CRO_Split_Air_Academy
+		}
+		x = 21
+		y = 2
+		completion_reward = {
+		custom_effect_tooltip = available_RF
+			show_ideas_tooltip = Rudolf_Fizir
+			hidden_effect = {
+			add_ideas = Rudolf_Fizir
+			}
+		}
+	}
+		focus = {
+		id = CRO_Rupnik_Line
+		icon = GFX_goal_generic_construct_military
+		cost = 10.00
+		mutually_exclusive = {
+			focus = CRO_Kvaternik_Line
+		}
+		x = 60
+		y = 0
+	completion_reward = {
+		102 = {
+	add_building_construction = {
+	type = bunker
+	level = 4
+	province = 11612
+	
+	}
+	add_building_construction = {
+	type = bunker
+	level = 4
+	province = 3631
+	
+	}
+	add_building_construction = {
+	type = bunker
+	level = 4
+	province = 9627
+	
+	}
+	
+	}
+	109 = {
+	add_building_construction = {
+	type = bunker
+	level = 4
+	province = 11564
+	
+	}
+	
+	}
+	
+	
+	}
+	}
+	focus = {
+		id = CRO_Kvaternik_Line
+		icon = GFX_goal_generic_fortify_city
+		cost = 10.00
+		mutually_exclusive = {
+			focus = CRO_Rupnik_Line
+		}
+		x = 62
+		y = 0
+	completion_reward = {
+	if ={limit={controls_state = 762}
+		762 = {
+	add_building_construction = {
+	type = bunker
+	level = 1
+	province = 3627
+	
+	}
+	add_building_construction = {
+	type = bunker
+	level = 1
+	province = 6647
+	
+	}
+	}
+	
+	
+	}
+	if ={limit={controls_state = 763}
+	763 = {
+	add_building_construction = {
+	type = bunker
+	level = 1
+	province = 11580
+	
+	}
+	add_building_construction = {
+	type = bunker
+	level = 1
+	province = 11577
+	
+	}
+	
+	}
+	}
+	
+	
+	if ={limit={controls_state = 104}
+	104 = {
+	add_building_construction = {
+	type = bunker
+	level = 3
+	province = 606
+	
+	}
+	add_building_construction = {
+	type = bunker
+	level = 1
+	province = 11741
+	
+	}
+	add_building_construction = {
+	type = bunker
+	level = 1
+	province = 982
+	
+	}
+	add_building_construction = {
+	type = bunker
+	level = 1
+	province = 11845
+	
+	}
+	}
+	}
+	
+	
+	if ={limit={controls_state = 103}
+	103 = {
+	add_building_construction = {
+	type = bunker
+	level = 3
+	province = 6889
+	
+	}
+
+	}
+	}
+	
+	
+	
+	
+	}
+	}
+	focus = {
+		id = CRO_Exploit_Bosnian_Mines
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		x = 67
+		y = 0
+	completion_reward = {
+	104 = {
+	add_resource = { type = steel amount = 12 }
+	add_resource = { type = chromium amount = 20 }
+	}
+	}
+	}
+	focus = {
+		id = CRO_Croatian_Artillery
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_The_Conversion_Program
+		}
+		x = 61
+		y = 2
+		available = {
+		controls_state = 109
+		}
+	completion_reward = {
+	109 = {
+	add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+	}
+	}
+	}
+	focus = {
+		id = CRO_Bosnian_Equipment
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_The_Conversion_Program
+		}
+		x = 63
+		y = 2
+		available = {
+		controls_state = 104
+		}
+	completion_reward = {
+	104 = {
+	add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+	}
+	}
+	}
+		focus = {
+		id = CRO_Dalmatian_Shipping
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Exploit_Bosnian_Mines
+		}
+		available = {
+		controls_state = 103
+		}
+		x = 65
+		y = 1
+	completion_reward = {
+	103 = {
+	add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+	}
+	}
+	}
+	focus = {
+		id = CRO_Early_Fish_Oil_Experiments
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Dalmatian_Shipping
+		}
+		x = 65
+		y = 2
+	completion_reward = {
+	if = {limit = {controls_state = 103}
+	
+	103 = {
+	
+	add_resource = { type = oil amount = 6 }
+	
+	}
+	}
+						add_tech_bonus = {
+						bonus = 0.65
+						uses = 1
+						category = synth_resources
+						}
+	
+	
+	}
+	}
+	focus = {
+		id = CRO_Bosnian_Infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Exploit_Bosnian_Mines
+		}
+		x = 67
+		y = 1
+	completion_reward = {
+	104 = {
+		add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+	}
+	}
+	}
+	focus = {
+		id = CRO_Bring_Jobs_South
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Bosnian_Infrastructure
+		}
+		x = 67
+		y = 2
+	completion_reward = {
+	104 = {
+	add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+	}
+	}
+	}
+		focus = {
+		id = CRO_Focus_On_The_Navy
+		icon = GFX_goal_generic_build_navy
+		cost = 10.00
+		mutually_exclusive = {
+			focus = CRO_Focus_On_The_Airforce
+		}
+		x = 16
+		y = 0
+	completion_reward = {
+	navy_experience = 50
+	}
+	}
+		focus = {
+		id = CRO_Focus_On_The_Airforce
+		icon = GFX_goal_generic_build_airforce
+		cost = 10.00
+		mutually_exclusive = {
+			focus = CRO_Focus_On_The_Navy
+		}
+		x = 20
+		y = 0
+completion_reward = {
+	air_experience = 50
+	}
+	}
+		focus = {
+		id = CRO_Expand_Northern_Anti_Air
+		icon = GFX_goal_anti_air
+		cost = 10.00
+		x = 22
+		y = 0
+		available ={
+			controls_state = 102
+			}
+	completion_reward = {
+	102 = {
+	add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+	}
+	
+	}
+	}
+		focus = {
+		id = CRO_Expand_Zoning
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Exploit_Bosnian_Mines
+		}
+		x = 69
+		y = 1
+	completion_reward = {
+	random_owned_controlled_state = {
+	add_extra_state_shared_building_slots = 1
+	add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+									}
+	}
+	}
+		focus = {
+		id = CRO_Expand_Brodosplit
+		icon = GFX_goal_navy_decision
+		cost = 10.00
+		x = 14
+		y = 0
+		available ={
+		controls_state = 103
+		}
+	completion_reward = {
+
+	103 = {
+		add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+	}
+	}
+	}
+	focus = {
+		id = CRO_Urbanization
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Expand_Zoning
+		}
+		x = 69
+		y = 2
+		completion_reward = {
+		every_state = {
+		limit={ is_controlled_by = CRO}
+		add_extra_state_shared_building_slots = 1
+		}
+		}
+	}
+		focus = {
+		id = CRO_Stimulus_Package
+		icon = GFX_goal_generic_construction
+		cost = 10.00
+		prerequisite = {
+			focus = CRO_Early_Fish_Oil_Experiments
+		}
+		prerequisite = {
+			focus = CRO_Bring_Jobs_South
+		}
+		prerequisite = {
+			focus = CRO_Urbanization
+		}
+		x = 67
+		y = 3
+	completion_reward = {
+	add_timed_idea = { idea = CRO_Stimulus_IDEA days = 365 }
+	
+	}
+	}
+	# pro serbian guy
+	focus = {
+		id = CRO_vladimir_nazor_again
+		icon = GFX_goal_CRO_republican_yugoslavism
+		cost = 10
+		x = 1
+		y = -1
+		allow_branch = {
+			has_country_flag = pro_serbian_won_elections
+		}
+		offset = {
+			x = 23
+			y = 2
+			trigger = {
+				has_government = neutrality
+			}
+		}
+		completion_reward = {
+			#no need
+		}
+	}
+	focus = {
+		id = CRO_do_a_speech
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		prerequisite = {
+			focus = CRO_vladimir_nazor_again
+		}
+		x = 24
+		y = 2
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = CRO_be_good_to_serbia
+		icon = GFX_goal_CRO_yugoslav_unification
+		cost = 10
+		prerequisite = {
+			focus = CRO_do_a_speech
+		}
+		x = 24
+		y = 3
+		completion_reward = {
+			add_opinion_modifier = {
+				target = SER
+				modifier = INOT_close_allies
+			}
+		}
+	}
+	focus = {
+		id = CRO_king_alexander
+		icon = GFX_goal_SER_king
+		cost = 10
+		prerequisite = {
+			focus = CRO_be_good_to_serbia
+		}
+		x = 24
+		y = 4
+		completion_reward = {
+			add_ideas = {
+				SER_alexander
+			}
+		}
+	}
+	focus = {
+		id = CRO_Serbification
+		icon = GFX_goal_conspiracy
+		cost = 10
+		prerequisite = {
+			focus = CRO_king_alexander
+		}
+		mutually_exclusive = {
+			focus = CRO_autonomous_bosnia
+		}
+		x = 23
+		y = 5
+		completion_reward = {
+			add_state_core = 104
+			add_war_support = -0.15
+			add_stability = -0.1
+			104 = {
+			add_manpower = -100000
+			add_manpower = 50000
+			}
+		}
+	}
+	focus = {
+		id = CRO_autonomous_bosnia
+		icon = GFX_goal_bosnia
+		cost = 10
+		prerequisite = {
+			focus = CRO_king_alexander
+		}
+		mutually_exclusive = {
+			focus = CRO_Serbification
+		}
+		x = 25
+		y = 5
+		completion_reward = {
+			add_state_core = 104
+			104 = {
+			add_dynamic_modifier = {
+				modifier = CRO_autonomous_bosnia_modifier
+			}
+		}
+		force_update_dynamic_modifier = yes
+		}
+	}
+	focus = {
+		id = CRO_alliance_with_serbia
+		icon = GFX_goal_SER_yugoslavia
+		cost = 10
+		prerequisite = {
+			focus = CRO_autonomous_bosnia
+			focus = CRO_Serbification
+		}
+		x = 24
+		y = 6
+		completion_reward = {
+			SER = {
+				puppet = CRO
+			}
+		}
+	}
+	focus = {
+		id = CRO_hungary_is_bad
+		icon = GFX_goal_flames_of_rebellion
+		cost = 10
+		prerequisite = {
+			focus = CRO_alliance_with_serbia
+		}
+		mutually_exclusive = {
+			focus = CRO_italy_is_bad
+		}
+		x = 25
+		y = 7
+		completion_reward = {
+			add_opinion_modifier = {
+				target = HUN
+				modifier = INOT_hostile_regime
+			}
+		}
+	}
+	focus = {
+		id = CRO_italy_is_bad
+		icon = GFX_focus_attack_italy
+		cost = 10
+		prerequisite = {
+			focus = CRO_alliance_with_serbia
+		}
+		mutually_exclusive = {
+			focus = CRO_hungary_is_bad
+		}
+		x = 23
+		y = 7
+		completion_reward = {
+			add_opinion_modifier = {
+				target = ITA
+				modifier = holds_our_cores
+			}
+		}
+	}
+	focus = {
+		id = CRO_ban_communists
+		icon = GFX_goal_broken_red_star
+		cost = 10
+		prerequisite = {
+			focus = CRO_hungary_is_bad
+			focus = CRO_italy_is_bad
+		}
+		x = 24
+		y = 8
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -1.0
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = CRO_communism_party_ban_long
+				name = CRO_communism_party_ban
+			}
+		}
+	}
+	focus = {
+		id = CRO_purge_tito
+		icon = GFX_goal_generic_political_purge
+		cost = 10
+		prerequisite = {
+			focus = CRO_ban_communists
+		}
+		x = 24
+		y = 9
+		completion_reward = {
+			random_list = {
+				50 = {
+					kill_ideology_leader = communism
+					set_global_flag = Tito_killed
+				}
+				50 = {
+					custom_effect_tooltip = iosip_tito_escapes_tt
+					retire_character = CRO_josip_broz_tito
+					}
+				}
+			}
+		}
+		#tito guy (sigma)
+		focus = {
+			id = CRO_tito_won
+			icon = GFX_focus_tito_has_won_election
+			cost = 10
+			x = 1
+			y = -1
+			allow_branch = {
+				has_country_flag = serbian_communist_march
+			}
+			offset = {
+				x = 22
+				y = 3
+				trigger = {
+					has_government = communism
+				}
+			}
+	
+		}
+		focus = {
+			id = CRO_do_a_speech_tito
+			icon = GFX_goal_generic_propaganda
+			cost = 10
+			prerequisite = {
+				focus = CRO_tito_won
+			}
+			x = 23
+			y = 3
+			completion_reward = {
+				add_stability = 0.1
+				add_war_support = 0.1
+			}
+		}
+		focus = {
+			id = CRO_integrate_comunist_militia
+			icon = GFX_goal_integrate_the_militia
+			cost = 10
+			prerequisite = {
+				focus = CRO_do_a_speech_tito
+			}
+			x = 22
+			y = 4
+				completion_reward = {
+					add_ideas = CRO_idea_local_militias
+				}
+		}
+		focus = {
+			id = CRO_more_workers_rights
+			icon = GFX_goal_workers_rights
+			cost = 10
+			prerequisite = {
+				focus = CRO_do_a_speech_tito
+			}
+			x = 24
+			y = 4
+				completion_reward = {
+					add_ideas = HUN_freedom_worker
+				}
+		}
+		focus = {
+			id = CRO_what_we_gonna_do
+			icon = GFX_goal_SER_yugoslavia
+			cost = 10
+			prerequisite = {
+				focus = CRO_more_workers_rights
+			}
+			prerequisite = {
+				focus = CRO_integrate_comunist_militia
+			}
+			x = 23
+			y = 5
+	
+		}
+		focus = {
+			id = CRO_rebuild_yugoslavia
+			icon = GFX_goal_CRO_yugoslav_unification
+			cost = 10
+			prerequisite = {
+				focus = CRO_what_we_gonna_do
+			}
+			mutually_exclusive = {
+				focus = CRO_bela_kun_only
+			}
+			allow_branch = {
+				has_country_flag = serbian_communist_march
+				NOT = { has_completed_focus = CRO_bela_kun_only }
+			}
+			x = 21
+			y = 6
+			completion_reward = {
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+		focus = {
+			id = CRO_no_death_to_workers
+			icon = GFX_goal_COS_Peace
+			cost = 10
+			prerequisite = {
+				focus = CRO_rebuild_yugoslavia
+			}
+			mutually_exclusive = {
+				focus = CRO_workers_revolution
+			}
+			allow_branch = {
+					AND = {
+					has_country_flag = serbian_communist_march
+					NOT = { has_completed_focus = CRO_workers_revolution }
+					NOT = { has_completed_focus = CRO_bela_kun_only }
+					}
+			}
+			x = 19
+			y = 7
+			completion_reward = {
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+		focus = {
+			id = CRO_buy_slovenia
+			icon = GFX_focus_austrian_cooperation
+			cost = 10
+			prerequisite = {
+				focus = CRO_no_death_to_workers
+			}
+			x = 18
+			y = 8
+			available = { 
+				has_war = no
+			}
+			completion_reward = {
+				AUS = { country_event = CRO.9 }
+			}
+		}
+		focus = {
+			id = CRO_ask_for_dalmatia
+			icon = GFX_goal_bag_of_money
+			cost = 10
+			prerequisite = {
+				focus = CRO_no_death_to_workers
+			}
+			x = 20
+			y = 8
+			available = { 
+				has_war = no
+			}
+			completion_reward = {
+				ITA = { country_event = CRO.10 }
+			}
+		}
+		focus = {
+			id = CRO_workers_revolution
+			icon = GFX_goal_generic_workers_democracy
+			cost = 10
+			prerequisite = {
+				focus = CRO_rebuild_yugoslavia
+			}
+			mutually_exclusive = {
+				focus = CRO_no_death_to_workers
+			}
+			allow_branch = {
+				AND = {
+				has_country_flag = serbian_communist_march
+				NOT = { has_completed_focus = CRO_no_death_to_workers }
+				NOT = { has_completed_focus = CRO_bela_kun_only }
+				}
+			}
+			x = 23
+			y = 7
+			completion_reward = {
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+		focus = {
+			id = CRO_demand_slovenia
+			icon = GFX_goal_slovenia
+			cost = 10
+			prerequisite = {
+				focus = CRO_workers_revolution
+			}
+			x = 22
+			y = 8
+			available = { 
+				has_war = no
+			}
+			completion_reward = {
+				AUS = {
+					country_event = CRO.8
+				}
+			}
+		}
+		focus = {
+			id = CRO_demand_dalmatia
+			icon = GFX_ITA_irridentism
+			cost = 10
+			prerequisite = {
+				focus = CRO_workers_revolution
+			}
+			x = 24
+			y = 8
+			available = { 
+				has_war = no
+			}
+			completion_reward = {
+				ITA = {
+				country_event = CRO.7
+				}
+			}
+		}
+		focus = {
+			id = CRO_start_uprising_in_montenegro
+			icon = GFX_goal_MNT_Republic
+			cost = 10
+			prerequisite = {
+				focus = CRO_demand_dalmatia
+				focus = CRO_demand_slovenia
+			}
+			x = 23
+			y = 9
+			bypass = {
+				country_exists = MNT
+			}
+			completion_reward = {
+				custom_effect_tooltip = montenegro_uprising
+			hidden_effect = {
+				MNT = { transfer_state = 105 }
+				MNT = {
+					set_politics = {
+						ruling_party = communism
+						elections_allowed = no
+					}
+				}
+				MNT = {
+					load_oob = MNT_1937
+				}
+				MNT = {
+					declare_war_on = {
+						target = SER
+						type = annex_everything
+					}
+				}
+			}
+		}
+		}
+		focus = {
+			id = CRO_march_to_belgrade
+			icon = GFX_focus_hun_ser_cro
+			cost = 10
+			prerequisite = {
+				focus = CRO_start_uprising_in_montenegro
+			}
+			x = 23
+			y = 10
+			available = { 
+				has_war = no
+				country_exists = SER
+			}
+			completion_reward = {
+				every_state = { 
+					limit = {
+					 is_core_of = SER
+					}
+					add_core_of = CRO
+		}
+		declare_war_on = {
+			target = SER
+			type = annex_everything
+		}
+	}
+			}
+		focus = {
+			id = CRO_bela_kun_only
+			icon = GFX_focus_hun_begin
+			cost = 10
+			prerequisite = {
+				focus = CRO_what_we_gonna_do
+			}
+			mutually_exclusive = {
+				focus = CRO_rebuild_yugoslavia
+			}
+			allow_branch = {
+				AND = {
+				has_country_flag = serbian_communist_march
+				NOT = { has_completed_focus = CRO_rebuild_yugoslavia }
+				NOT = { has_completed_focus = CRO_no_death_to_workers }
+				NOT = { has_completed_focus = CRO_workers_revolution }
+				}
+			}
+			x = 28
+			y = 6
+			available = {
+				AND = {
+				HUN = {
+					has_government = communism
+				}
+				country_exists = HUN
+				}
+			}
+			completion_reward = {
+				mark_focus_tree_layout_dirty = yes
+				add_opinion_modifier = {
+					target = HUN
+					modifier = INOT_friendly_regime
+				}
+				HUN = {
+				add_opinion_modifier = {
+					target = CRO
+					modifier = INOT_friendly_regime
+				}
+			}
+			}
+		}
+		focus = {
+			id = CRO_union_with_hungarian_workers
+			icon = GFX_goal_syndicalist_workers
+			cost = 10
+			prerequisite = {
+				focus = CRO_bela_kun_only
+			}
+			x = 27
+			y = 7
+			available = {
+				AND = {
+				HUN = {
+					has_government = communism
+				}
+				country_exists = HUN
+				}
+			}
+			completion_reward = {
+				CRO = {
+				add_ideas = CRO_worker_union_with_bela_kun
+			}
+			HUN = {
+				add_ideas = CRO_worker_union_with_bela_kun
+			}
+		}
+	}
+		focus = {
+			id = CRO_hungarian_equipment
+			icon = GFX_focus_hun_plans
+			cost = 10
+			prerequisite = {
+				focus = CRO_union_with_hungarian_workers
+			}
+			x = 27
+			y = 8
+			available = {
+				AND = {
+				HUN = {
+					has_government = communism
+				}
+				country_exists = HUN
+				}
+			}
+			completion_reward = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 3500
+					producer = HUN
+				}
+			}
+		}
+		focus = {
+			id = CRO_dalmatian_revolution
+			icon = GFX_goal_revolution_tools
+			cost = 10
+			prerequisite = {
+				focus = CRO_bela_kun_only
+			}
+			x = 29
+			y = 7
+			completion_reward = {
+				ITA = { country_event = CRO.4 }
+				create_wargoal = { type = annex_everything target = ITA }
+			}
+		}
+		focus = {
+			id = CRO_time_for_yugoslavia
+			icon = GFX_hun_ser_menace
+			cost = 10
+			prerequisite = {
+				focus = CRO_dalmatian_revolution
+			}
+			x = 29
+			y = 8
+			available = { 
+				country_exists = SER
+			}
+			completion_reward = {
+				every_state = { 
+					limit = {
+					 is_core_of = SER
+					}
+					add_core_of = CRO
+		}
+		declare_war_on = {
+			target = SER
+			type = annex_everything
+		}
+	}
+		}
+		focus = {
+			id = CRO_balkan_workers
+			icon = GFX_goal_balkan_fist
+			cost = 10
+			prerequisite = {
+				focus = CRO_time_for_yugoslavia
+			}
+			prerequisite = {
+				focus = CRO_hungarian_equipment
+			}
+			available = {
+						AND = {
+						HUN = {
+							has_government = communism
+						}
+						country_exists = HUN
+						}
+					}
+			x = 28
+			y = 9
+			completion_reward = {
+				if = {
+					limit = {
+						HUN = {
+							is_faction_leader = yes
+							has_government = communism
+						}
+					}
+					HUN = { country_event = generic.2 }
+				}
+				else_if = {
+					limit = {
+						HUN = {
+							is_in_faction = yes
+							is_faction_leader = no
+							has_government = communism
+						}
+					}
+					random_country = {
+						limit = {
+							is_in_faction_with = HUN
+							is_faction_leader = yes
+						}
+						country_event = generic.2
+					}
+				}
+				else = {
+					set_rule = { can_create_factions = yes }
+					HUN = { create_faction = balkan_league }
+					CRO = { country_event = generic.2 }
+				}
+			}
+		}
+		focus = {
+			id = CRO_betray_them
+			icon = GFX_goal_generic_crush_unions
+			cost = 10
+			prerequisite = {
+				focus = CRO_balkan_workers
+			}
+			mutually_exclusive = {
+				focus = CRO_be_with_them_until_death
+			}
+			available = {
+				AND = {
+				is_in_faction_with = HUN
+				country_exists = HUN
+				}
+			}
+			x = 26
+			y = 10
+			completion_reward = {
+				every_state = { 
+					limit = {
+					 is_core_of = HUN
+					}
+					add_core_of = CRO
+		}
+				leave_faction = yes
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = HUN
+				}
+			}
+		}
+		focus = {
+			id = CRO_time_for_serbia
+			icon = GFX_goal_serbia
+			cost = 10
+			prerequisite = {
+				focus = CRO_ask_for_dalmatia
+				focus = CRO_buy_slovenia
+			}
+			x = 19
+			y = 9
+	
+		}
+		focus = {
+			id = CRO_socialist_in_one_country
+			icon = GFX_socialist_constitution
+			cost = 10
+			prerequisite = {
+				focus = CRO_time_for_serbia
+			}
+			mutually_exclusive = {
+				focus = CRO_do_coup_in_serbia
+			}
+			x = 18
+			y = 10
+	
+		}
+		focus = {
+			id = CRO_do_coup_in_serbia
+			icon = GFX_goal_generic_revolutionary_government
+			cost = 10
+			prerequisite = {
+				focus = CRO_time_for_serbia
+			}
+			mutually_exclusive = {
+				focus = CRO_socialist_in_one_country
+			}
+			x = 20
+			y = 10
+			available = { 
+				country_exists = SER
+			}
+	
+		}
+		focus = {
+			id = CRO_union_with_serbia
+			icon = GFX_goal_CRO_yugoslav_unification
+			cost = 10
+			prerequisite = {
+				focus = CRO_do_coup_in_serbia
+			}
+			x = 20
+			y = 11
+			available = {
+				always = no
+			}
+			completion_reward = {
+			}
+		}
+		focus = {
+			id = CRO_new_country_yugoslavia
+			icon = GFX_focus_declare_yugo_sfr
+			cost = 10
+			prerequisite = {
+				focus = CRO_march_to_belgrade
+				focus = CRO_union_with_serbia
+			}
+			x = 22
+			y = 12
+			available = {
+				NOT = {
+					country_exists = SER
+				}
+			}
+			completion_reward = {
+				set_cosmetic_tag = CRO_made_yugoslavia
+	}
+		}
+		focus = {
+			id = CRO_be_with_them_until_death
+			icon = GFX_goal_volunteer_alliance
+			cost = 10
+			prerequisite = {
+				focus = CRO_balkan_workers
+			}
+			mutually_exclusive = {
+				focus = CRO_betray_them
+			}
+			x = 30
+			y = 10
+	
+		}
+		focus = {
+			id = CRO_greater_hungary_plan
+			icon = GFX_focus_hun_promise
+			cost = 10
+			prerequisite = {
+				focus = CRO_be_with_them_until_death
+			}
+			x = 30
+			y = 11
+			available = {
+				AND = {
+				HUN = {
+					has_government = communism
+				}
+				country_exists = HUN
+				}
+			}
+	completion_reward = {
+		custom_effect_tooltip = it_gives_territories_to_hungary_tt
+		every_controlled_state = { 
+			limit = {
+			   is_core_of = HUN
+			}
+			transfer_state_to = HUN
+		   }
+	}
+		}
+		focus = {
+			id = CRO_yugoslavia_time
+			icon = GFX_goal_SER_yugoslavia
+			cost = 10
+			prerequisite = {
+				focus = CRO_betray_them
+			}
+			x = 26
+			y = 11
+			available = {
+				NOT = {
+					country_exists = SER
+				}
+			}
+			completion_reward = {
+				set_cosmetic_tag = CRO_made_yugoslavia
+	}
+		}
+				focus = {
+					id = CRO_end_bosnia
+					icon = GFX_goal_generic_political_purge
+					cost = 10
+					x = 1
+					y = -1
+					allow_branch = {
+						has_country_flag = serbian_communist_march
+					}
+					mutually_exclusive = {
+						focus = CRO_autonomy_of_bosnia
+					}
+					available = {
+						104 = {
+						compliance > 49
+						}
+					}
+					offset = {
+						x = 30
+						y = 3
+						trigger = {
+							has_government = communism
+						}
+					}
+					completion_reward = {
+						add_state_core = 104
+						add_war_support = -0.15
+						add_stability = -0.1
+						104 = {
+						add_manpower = -100000
+						}
+					}
+				}
+		focus = {
+			id = CRO_autonomy_of_bosnia
+			icon = GFX_goal_bosnia
+			cost = 10
+			x = 1
+			y = -1
+			mutually_exclusive = {
+				focus = CRO_end_bosnia
+			}
+			allow_branch = {
+				has_country_flag = serbian_communist_march
+			}
+			offset = {
+				x = 28
+				y = 3
+				trigger = {
+					has_government = communism
+				}
+			}
+			completion_reward = {
+				add_state_core = 104
+				104 = {
+				add_dynamic_modifier = {
+					modifier = CRO_autonomous_bosnia_modifier
+				}
+			}
+			force_update_dynamic_modifier = yes
+			remove_ideas =  CRO_InnerNationalism
+			}
+		}
+		focus = {
+			id = CRO_time_has_come
+			icon = GFX_goal_communist_world_revolution
+			cost = 10.00
+			x = 1
+			y = -1
+			allow_branch = {
+				has_country_flag = serbian_communist_march
+				has_country_flag = croatian_world_revolution
+			}
+			offset = {
+				x = 32
+				y = 5
+				trigger = {
+					has_government = communism
+				}
+			}
+			
+			completion_reward = {
+				add_threat = 5
+		}
+	}
+		focus = {
+			id = CRO_submission_greece
+			icon = GFX_goal_tfv_can_forced_quebec_conscription
+			cost = 10.00
+			x = 33
+			y = 5
+			available = { 
+				has_war = no
+				GRE = { exists = yes }
+			}
+			prerequisite = {
+				focus = CRO_time_has_come
+			}
+			bypass = {
+				has_war_with = GRE
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					GRE = {
+						OR = { 
+							NOT = { is_in_faction_with = FRA }
+							NOT = { is_in_faction_with = ENG }
+							NOT = { is_in_faction_with = RUS }
+							NOT = { is_in_faction_with = ITA }
+						}
+					}
+				}
+				factor = 6
+			}
+			will_lead_to_war_with = GRE
+			completion_reward = {
+				every_state = { 
+					limit = {
+					 is_core_of = GRE
+					}
+					add_core_of = CRO
+		}
+		create_wargoal = { type = annex_everything target = GRE }
+		}	
+		}
+		focus = {
+			id = CRO_free_bulgaria
+			icon = GFX_BUL_broken_crown
+			cost = 10.00
+			x = 35
+			y = 5
+			available = { 
+				has_war = no
+				has_army_manpower = {
+					size > 175000
+				}
+				BUL = { exists = yes }
+			}
+			prerequisite = {
+				focus = CRO_time_has_come
+			}
+			bypass = {
+				has_war_with = BUL
+			}
+			ai_will_do = {
+				factor = 5
+				modifier = {
+					NOT = { 
+						BUL = { 
+							OR = {
+								is_in_faction_with = RUS
+								is_in_faction_with = TUR
+								is_in_faction_with = ITA
+							}						
+						}
+					}
+					factor = 1
+				}
+			}
+			will_lead_to_war_with = BUL
+			completion_reward = {
+				every_state = { 
+					limit = {
+					 is_core_of = BUL
+					}
+					add_core_of = CRO
+		}
+				create_wargoal = { type = annex_everything target = BUL }
+			}		
+		}
+		focus = {
+			id = CRO_romania_coup
+			icon = GFX_focus_hun_destroy_rom
+			cost = 10.00
+			x = 31
+			y = 5
+			available = { 
+				has_war = no
+				ROM = { exists = yes }
+			}
+			bypass = {
+				has_war_with = ROM
+			}
+			prerequisite = {
+				focus = CRO_time_has_come
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			will_lead_to_war_with = ROM
+			completion_reward = {
+				every_state = { 
+					limit = {
+					 is_core_of = ROM
+					}
+					add_core_of = CRO
+		}
+				CRO = { create_wargoal = { type = puppet_wargoal_focus target = ROM } }
+			}	
+		}
+		focus = {
+			id = CRO_time_for_roma
+			icon = GFX_goal_italianfed
+			cost = 11.50
+			x = 37
+			y = 5
+			available = { 
+				has_war = no
+			has_army_manpower = {
+				size > 300000
+			}
+				ITA = { exists = yes }
+			}
+			ai_will_do = {
+				factor = 0
+			}
+			prerequisite = {
+				focus = CRO_time_has_come
+			}
+			will_lead_to_war_with = ITA
+			will_lead_to_war_with = ALB
+			completion_reward = {
+				every_state = { 
+					limit = {
+					 is_core_of = ALB
+					}
+					add_core_of = CRO
+		}
+				create_wargoal = { type = annex_everything target = ITA }
+				create_wargoal = { type = annex_everything target = ALB }
+				}
+		}
+		focus = {
+			id = CRO_time_for_austria
+			icon = GFX_focus_hun_austria
+			cost = 11.50
+			x = 39
+			y = 5
+			available = { 
+				has_war = no
+			has_army_manpower = {
+				size > 300000
+			}
+				AUS = { exists = yes }
+			}
+			ai_will_do = {
+				factor = 0
+			}
+			prerequisite = {
+				focus = CRO_time_has_come
+			}
+			will_lead_to_war_with = AUS
+			completion_reward = {
+				create_wargoal = { type = annex_everything target = AUS }
+				add_state_core = 102
+				add_state_core = 853
+				}
+		}
+		#Ustase path/Fascist
+		focus = {
+			id = CRO_for_croatia_and_god
+			icon = GFX_goal_CRO_authoritarian
+			cost = 10
+			x = 1
+			y = -1
+			allow_branch = {
+				has_country_flag = pavelic_wins
+			}
+			offset = {
+				x = 29
+				y = 4
+				trigger = {
+					has_government = fascism
+				}
+			}
+	
+		}
+		focus = {
+			id = CRO_we_did_alot_reforms
+			icon = GFX_goal_unknown
+			cost = 10
+			x = 19
+			y = 4
+	
+		}
+		focus = {
+			id = CRO_uprising_in_slovenia
+			icon = GFX_goal_unknown
+			cost = 10
+			prerequisite = {
+				focus = CRO_we_did_alot_reforms
+			}
+			x = 17
+			y = 5
+	
+		}
+		focus = {
+			id = CRO_bring_chaos_to_austria
+			icon = GFX_goal_unknown
+			cost = 10
+			prerequisite = {
+				focus = CRO_uprising_in_slovenia
+			}
+			x = 17
+			y = 6
+	
+		}
+		focus = {
+			id = CRO_start_march_to_vienna
+			icon = GFX_goal_unknown
+			cost = 10
+			prerequisite = {
+				focus = CRO_bring_chaos_to_austria
+			}
+			x = 17
+			y = 7
+	
+		}
+		focus = {
+			id = CRO_time_for_serbia_ustase
+			icon = GFX_goal_unknown
+			cost = 10
+			prerequisite = {
+				focus = CRO_we_did_alot_reforms
+			}
+			x = 19
+			y = 5
+	
+		}
+		focus = {
+			id = CRO_fire_at_all_serbia
+			icon = GFX_goal_unknown
+			cost = 10
+			prerequisite = {
+				focus = CRO_time_for_serbia_ustase
+			}
+			x = 19
+			y = 6
+	
+		}
+		focus = {
+			id = CRO_deport_all_serbians
+			icon = GFX_goal_unknown
+			cost = 10
+			prerequisite = {
+				focus = CRO_fire_at_all_serbia
+			}
+			x = 19
+			y = 7
+	
+		}
+		focus = {
+			id = CRO_annex_whole_montenegro
+			icon = GFX_goal_unknown
+			cost = 10
+			prerequisite = {
+				focus = CRO_deport_all_serbians
+			}
+			x = 19
+			y = 8
+	
+		}
+		focus = {
+			id = CRO_Greater_croatia_are_done
+			icon = GFX_goal_unknown
+			cost = 10
+			prerequisite = {
+				focus = CRO_annex_whole_montenegro
+			}
+			x = 19
+			y = 9
+	
+		}
+		focus = {
+			id = CRO_occupy_zadar_and_istra
+			icon = GFX_goal_unknown
+			cost = 10
+			prerequisite = {
+				focus = CRO_we_did_alot_reforms
+			}
+			x = 21
+			y = 5
+	
+		}
+		focus = {
+			id = CRO_do_our_navy
+			icon = GFX_goal_unknown
+			cost = 10
+			prerequisite = {
+				focus = CRO_occupy_zadar_and_istra
+			}
+			x = 21
+			y = 6
+	
+		}
+		focus = {
+			id = CRO_buy_part_of_italian_slovenia
+			icon = GFX_goal_unknown
+			cost = 10
+			prerequisite = {
+				focus = CRO_do_our_navy
+			}
+			x = 21
+			y = 7
+	
+		}
+		focus = {
+			id = CRO_pacify_bosnia
+			icon = GFX_goal_unknown
+			cost = 10
+			prerequisite = {
+				focus = CRO_we_did_alot_reforms
+			}
+			x = 23
+			y = 5
+	
+		}
+		focus = {
+			id = CRO_pacify_serbians_in_bosnia
+			icon = GFX_goal_unknown
+			cost = 10
+			prerequisite = {
+				focus = CRO_pacify_bosnia
+			}
+			x = 23
+			y = 6
+	
+		}
+		focus = {
+			id = CRO_silence_the_undesirables
+			icon = GFX_goal_generic_imprison_people
+			cost = 10
+			prerequisite = {
+				focus = CRO_for_croatia_and_god
+			}
+			x = 30
+			y = 4
+	
+		}
+		focus = {
+			id = CRO_national_guard
+			icon = GFX_goal_army_guy_2
+			cost = 10
+			prerequisite = {
+				focus = CRO_silence_the_undesirables
+			}
+			x = 29
+			y = 5
+	
+		}
+		focus = {
+			id = CRO_many_mil_factories
+			icon = GFX_goal_factory_complex
+			cost = 10
+			prerequisite = {
+				focus = CRO_silence_the_undesirables
+			}
+			x = 31
+			y = 5
+	
+		}
+		focus = {
+			id = CRO_find_nazor
+			icon = GFX_goal_unknown
+			cost = 10
+			prerequisite = {
+				focus = CRO_many_mil_factories
+			}
+			prerequisite = {
+				focus = CRO_national_guard
+			}
+			x = 30
+			y = 6
+	
+		}
+		focus = {
+			id = CRO_bosnian_divisions
+			icon = GFX_goal_bosnia
+			cost = 10
+			prerequisite = {
+				focus = CRO_national_guard
+			}
+			prerequisite = {
+				focus = CRO_many_mil_factories
+			}
+			x = 28
+			y = 6
+	
+		}
+		focus = {
+			id = CRO_anti_communist_legion
+			icon = GFX_goal_unknown
+			cost = 10
+			prerequisite = {
+				focus = CRO_many_mil_factories
+			}
+			prerequisite = {
+				focus = CRO_national_guard
+			}
+			x = 32
+			y = 6
+	
+		}
+		focus = {
+			id = CRO_ban_communists_in_croatia
+			icon = GFX_goal_UK_ban_unions
+			cost = 10
+			prerequisite = {
+				focus = CRO_anti_communist_legion
+			}
+			prerequisite = {
+				focus = CRO_find_nazor
+			}
+			prerequisite = {
+				focus = CRO_bosnian_divisions
+			}
+			x = 30
+			y = 7
+	
+		}
+		focus = {
+			id = CRO_remove_tito
+			icon = GFX_goal_unknown
+			cost = 10
+			prerequisite = {
+				focus = CRO_ban_communists_in_croatia
+			}
+			x = 30
+			y = 8
+	
+		}
+		focus = {
+			id = CRO_deport_them
+			icon = GFX_goal_unknown
+			cost = 10
+			prerequisite = {
+				focus = CRO_remove_tito
+			}
+			mutually_exclusive = {
+				focus = CRO_integrate_muslim_croatians
+			}
+			x = 29
+			y = 9
+	
+		}
+		focus = {
+			id = CRO_integrate_muslim_croatians
+			icon = GFX_goal_unknown
+			cost = 10
+			prerequisite = {
+				focus = CRO_remove_tito
+			}
+			mutually_exclusive = {
+				focus = CRO_deport_them
+			}
+			x = 31
+			y = 9
+	
+		}
+		focus = {
+			id = CRO_fascist_youth_league
+			icon = GFX_goal_unknown
+			cost = 10
+			prerequisite = {
+				focus = CRO_integrate_muslim_croatians
+			}
+			prerequisite = {
+				focus = CRO_deport_them
+			}
+			x = 30
+			y = 10
+	
+		}
+
+	}

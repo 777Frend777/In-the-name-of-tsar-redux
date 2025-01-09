@@ -1,0 +1,125 @@
+focus_tree = {
+	id = BOS_focuses
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BOS
+		}
+	}
+	default = no
+	focus = {
+		id = BOS_Mobilization_for_revolt
+		icon = GFX_goal_BOS_habsburg
+		cost = 1
+		x = 9
+		y = 1
+completion_reward = { 
+           capital_scope = {
+create_unit = {
+division = "name = \"Armija Republike Bosne i Hercegovine\" division_template = \"Militsija\" start_experience_factor = 0.85 start_equipment_factor = 1"
+owner = ROOT
+}
+create_unit = {
+division = "name = \"Armija Republike Bosne i Hercegovine\" division_template = \"Militsija\" start_experience_factor = 0.85 start_equipment_factor = 1"
+owner = ROOT
+}
+create_unit = {
+division = "name = \"Armija Republike Bosne i Hercegovine\" division_template = \"Militsija\" start_experience_factor = 0.85 start_equipment_factor = 1"
+owner = ROOT
+}
+}
+        }
+ }
+
+	focus = {
+		id = BOS_MARCH_ON_zagreb
+		icon = GFX_goal_islamic_government
+		cost = 3
+		prerequisite = {
+			focus = BOS_Mobilization_for_revolt
+		}
+		x = 9
+		y = 2
+completion_reward = {
+add_ideas = bosnia_buffs
+}
+	}
+	focus = {
+		id = BOS_Fortify_sarajevo
+		icon = GFX_goal_skull_fortification
+		cost = 2
+		prerequisite = {
+			focus = BOS_Mobilization_for_revolt
+		}
+		x = 6
+		y = 2
+        completion_reward = {
+		BOS = {
+		104 = {
+		 add_building_construction = {
+			 type = bunker
+			 level = 6
+			 province = 11899
+			 instant_build = yes
+		    }         	
+		  } 
+	}
+	}
+	}
+	focus = {
+		id = BOS_get_weapon
+		icon = GFX_goal_Arms_Export
+		cost = 1
+		prerequisite = {
+			focus = BOS_Mobilization_for_revolt
+		}
+		x = 12
+		y = 2
+completion_reward = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 5000
+                producer = SER	
+            }
+    }
+	}
+	focus = {
+		id = BOS_artillery
+		icon = GFX_goal_artillery
+		cost = 1
+		prerequisite = {
+			focus = BOS_Mobilization_for_revolt
+		}
+		x = 15
+		y = 2
+completion_reward = {
+            add_equipment_to_stockpile = {
+                type = artillery_equipment_1
+                amount = 3000
+                producer = SER	
+            }
+    }
+	}
+	focus = {
+		id = BOS_get_aviation
+		icon = GFX_goal_generic_air_CAS_new
+		cost = 2
+		prerequisite = { focus = BOS_get_weapon }
+		prerequisite = { focus = BOS_Fortify_sarajevo }
+		prerequisite = { focus = BOS_MARCH_ON_zagreb }
+		prerequisite = { focus = BOS_artillery }
+		x = 9
+		y = 3
+        completion_reward = {
+			hidden_effect = {
+			load_focus_tree = generic
+			}
+	add_equipment_to_stockpile = {
+    type = fighter_equipment_0
+    amount = 250
+	producer = SER	
+}
+}
+}
+}

@@ -23,4 +23,12 @@ spriteTypes = {
 		name = "GFX_idea_AFG_graveyardofempires"
 		texturefile = "gfx/interface/ideas/AFG_graveyardofempires.png"
 	}
+	spriteType = {
+		name = "GFX_idea_CRO_frozen_war"
+		texturefile = "gfx/interface/ideas/CRO/CRO_frozen_war.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SER_frozen_war"
+		texturefile = "gfx/interface/ideas/SER/SER_frozen_war.png"
+	}
 }

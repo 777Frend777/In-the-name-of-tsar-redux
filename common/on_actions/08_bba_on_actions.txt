@@ -1225,12 +1225,47 @@ on_actions = {
 						original_tag = AUS
 					}
 					ITA = {
-						has_completed_focus = ITA_guarantee_austrian_independence
+						OR = {
+							has_completed_focus = ITA_guarantee_austrian_independence
+							has_guaranteed = AUS
+							has_country_flag = AUS_got_ita_guarantee_flag
+						}
+						
 					}
 				}
 
 				AUS = {
 					give_military_access = ITA
+				}
+
+				ITA = {
+					add_timed_idea = {
+						idea = ITA_alpine_defense
+						days = 360
+					}
+				}
+			}
+		}
+
+		effect = {
+			#Italy defends Austria from Germany
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = ITA
+					}
+					FROM = {
+						original_tag = GER
+						has_country_flag = AUS_annexed
+					}
+					ITA = {
+						OR = {
+							has_completed_focus = ITA_guarantee_austrian_independence
+							has_guaranteed = AUS
+							has_country_flag = AUS_got_ita_guarantee_flag
+						}
+						
+					}
 				}
 
 				ITA = {
@@ -1427,62 +1462,15 @@ on_actions = {
 			}
 		}
 
-		#Mafia State modifiers
-		effect = {
-			if = {
-				limit = {
-					FROM.FROM = {
-						ITA_state_has_any_version_of_mafia_rising_modifier = yes
-					}
-					ROOT = {
-						original_tag = ITA
-						has_completed_focus = ITA_cooperate_with_the_mafia
-					}
-				}
-				if = {
-					limit = {
-						has_dynamic_modifier = { modifier = ITA_mafia_on_the_rise_no_lar }
-					}
-					remove_dynamic_modifier = { modifier = ITA_mafia_on_the_rise_no_lar }
-					add_dynamic_modifier = { modifier = ITA_established_mafia_no_lar }
-				}
-				else = {
-					remove_dynamic_modifier = { modifier = ITA_mafia_on_the_rise }
-					add_dynamic_modifier = { modifier = ITA_established_mafia }
-				}
-			}
-			else_if = {
-				limit = {
-					FROM.FROM = {
-						ITA_state_has_any_version_of_mafia_rising_modifier = yes
-					}
-					ROOT = {
-						NOT = { original_tag = ITA }
-					}
-				}
-				if = {
-					limit = {
-						has_dynamic_modifier = { modifier = ITA_established_mafia_no_lar }
-					}
-					remove_dynamic_modifier = { modifier = ITA_established_mafia_no_lar }
-					add_dynamic_modifier = { modifier = ITA_mafia_on_the_rise_no_lar }
-				}
-				else = {
-					remove_dynamic_modifier = { modifier = ITA_established_mafia }
-					add_dynamic_modifier = { modifier = ITA_mafia_on_the_rise }
-				}
-			}
-		}
-
 		#RENAME STATES/VPs
-		effect = {
-			if = {
-				limit = {
-					ITA_state_or_vp_name_should_change = yes
-				}
-				ITA_change_name_of_state_or_vp = yes
-			}
-		}
+		#effect = {
+		#	if = {
+		#		limit = {
+		#			ITA_state_or_vp_name_should_change = yes
+		#		}
+		#		ITA_change_name_of_state_or_vp = yes
+		#	}
+		#}
 		effect = {
 			if = {
 				limit = { #SWI loses a state

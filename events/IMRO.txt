@@ -1,0 +1,46 @@
+###########################
+# IMRO Events
+###########################
+
+add_namespace = IMRO
+
+country_event = {
+	id = IMRO.1
+	title = IMRO.1.t
+	desc = IMRO.1.d
+	picture = GFX_report_event_generic_diplomacy3
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # peace
+		name = IMRO.1.a
+		white_peace = MAC
+		hidden_effect = {
+			transfer_state = 969
+			transfer_state = 106
+			transfer_state = 971
+			transfer_state = 970
+		}
+	}
+	option = { #no peace
+	name = IMRO.1.b
+	MAC = {
+	country_event = IMRO.2
+	}
+}
+}
+country_event = {
+	id = IMRO.2
+	title = IMRO.2.t
+	desc = IMRO.2.d
+	picture = GFX_report_event_generic_diplomacy1
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # to imro from serbia (decline)
+		name = IMRO.2.a
+
+	}
+}

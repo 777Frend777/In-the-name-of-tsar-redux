@@ -28,6 +28,28 @@ on_actions = {
 		
 				
 			}
+			on_war = {
+				effect = {
+					if = {
+						limit = {
+							OR = {
+					CRO = {
+						has_war_with = SER
+					}
+					SER = {
+						has_war_with = CRO
+					}
+				}
+				}
+				SER = {
+				remove_ideas = SER_frozen_war
+				}
+				CRO = {
+					remove_ideas = CRO_frozen_war
+					}
+			}
+				}
+			}
 			}
 			
 		
