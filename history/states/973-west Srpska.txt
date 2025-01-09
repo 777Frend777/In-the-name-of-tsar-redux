@@ -1,7 +1,7 @@
 
 state={
-	id=104
-	name="STATE_104"
+	id=973
+	name="STATE_973"
 	manpower =1910200
 	
 	
@@ -14,7 +14,7 @@ state={
 	history={
 		owner = CRO
 		victory_points = {
-			11899 5 
+			6983 3
 		}
 		buildings = {
 			infrastructure = 3
@@ -22,11 +22,10 @@ state={
 			air_base = 2
 		}
 		add_core_of = SER
-		add_core_of = BOS
 	}
 
 	provinces={
-		6799 9922 11572 11574 11872 11899 
+		 9591 11572 6983
 	}
 
 	local_supplies=7.0 

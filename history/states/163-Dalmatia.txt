@@ -17,6 +17,7 @@ state = {
 			}
 		}
 		add_core_of = SER
+		add_core_of = DAL
 		add_core_of = CRO
 		add_core_of = LBV
 		start_resistance = CRO #Yugoslavia shouldn't resist occupation

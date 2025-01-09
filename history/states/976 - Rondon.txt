@@ -1,6 +1,6 @@
 state={
-	id=973
-	name="STATE_973"
+	id=976
+	name="STATE_976"
 	resources={
 		chromium=70.00
 		aluminium=16.00
@@ -16,7 +16,7 @@ state={
 	}
 
 	provinces={
-        13083 12919
+        2198 5216 8254 8185
 	}
 	manpower=178440
 	buildings_max_level_factor=1.000
