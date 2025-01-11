@@ -261,7 +261,7 @@ focus_tree = {
 				desc = "POLITICS_KING_FAROUK_I_DESC"
 				picture = "Portrait_Egypt_Farouk_Muhammad_Ali.dds"
 				expire = "1965.1.1"
-				ideology = nazism
+				ideology = National_Socialism
 				traits = { 
 					inexperienced_imperialist
 					fascist_sympathies
@@ -619,7 +619,7 @@ focus_tree = {
 						desc = "POLITICS_KING_FAROUK_I_DESC"
 						picture = "Portrait_Egypt_Farouk_Muhammad_Ali.dds"
 						expire = "1965.1.1"
-						ideology = nazism
+						ideology = National_Socialism
 						traits = { 
 							emperor_of_egypt
 							fascist_sympathies

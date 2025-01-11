@@ -1305,6 +1305,7 @@ focus_tree = {
 				}
 			}	
 	}
+}
 	focus = {
 		id = AUS_milit_effort
 		icon = GFX_goal_generic_construct_mil_factory
@@ -1896,11 +1897,11 @@ focus_tree = {
 		will_lead_to_war_with = RUS
 		available = {
 		RUS = { 
-		controls_state = 10
 		has_added_tension_amount > 15
 		exists = yes
-		} 
 		}
+		POL = { is_puppet_of = RUS } 
+	}
 		completion_reward = {
 		create_wargoal = { type = puppet_wargoal_focus target = RUS }
 		}

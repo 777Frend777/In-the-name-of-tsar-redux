@@ -55,6 +55,8 @@ country_event = {
 		}
 		add_popularity = { ideology = fascism popularity = 0.15 }
 		set_country_flag = pavelic_wins
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = CRO_for_croatia_and_god
 	}
 }
 	# National Day!
@@ -184,10 +186,16 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 
 	trigger = {
+		OR = {
 		focus_progress = {
 			focus = CRO_end_bosnia
 			progress > 0.5
 		}
+		focus_progress = {
+			focus = CRO_pacify_bosnia
+			progress > 0.5
+		}
+	}
 	}
 
 	option = {

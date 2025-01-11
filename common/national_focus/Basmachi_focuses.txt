@@ -427,7 +427,7 @@ completion_reward = {
 		icon = GFX_goal_generic_drafted_army
 		cost = 10
 		available = {
-		always = false	
+		always = no	
 		}
 		prerequisite = {
 			focus = TUK_elections
@@ -495,7 +495,7 @@ completion_reward = {
 		icon = GFX_goal_WIP
 		cost = 10
 		available = {
-			always = false	
+			always = no	
 			}
 		prerequisite = {
 			focus = TUK_save_him
@@ -510,7 +510,7 @@ completion_reward = {
 		icon = GFX_goal_focus_chain_army
 		cost = 10
 		available = {
-			always = false	
+			always = no	
 			}
 		prerequisite = {
 			focus = TUK_elections

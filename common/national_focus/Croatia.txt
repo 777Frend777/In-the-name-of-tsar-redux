@@ -2168,8 +2168,18 @@ completion_reward = {
 			id = CRO_we_did_alot_reforms
 			icon = GFX_goal_unknown
 			cost = 10
-			x = 19
-			y = 4
+			x = 1
+			y = -1
+			allow_branch = {
+				has_country_flag = pavelic_wins
+			}
+			offset = {
+				x = 19
+				y = 5
+				trigger = {
+					has_government = fascism
+				}
+			}
 	
 		}
 		focus = {
@@ -2302,7 +2312,16 @@ completion_reward = {
 			}
 			x = 23
 			y = 5
-	
+			completion_reward = {
+				add_state_core = 104
+				add_state_core = 804
+				add_state_core = 974
+				add_war_support = -0.15
+				add_stability = -0.1
+				104 = {
+				add_manpower = -100000
+				}
+			}
 		}
 		focus = {
 			id = CRO_pacify_serbians_in_bosnia
@@ -2313,7 +2332,13 @@ completion_reward = {
 			}
 			x = 23
 			y = 6
-	
+			completion_reward = {
+				add_state_core = 972
+				add_state_core = 973
+				add_state_core = 975
+				add_war_support = -0.02
+				add_stability = -0.03
+			}
 		}
 		focus = {
 			id = CRO_silence_the_undesirables
@@ -2324,7 +2349,11 @@ completion_reward = {
 			}
 			x = 30
 			y = 4
-	
+			completion_reward = {
+				add_political_power = 50
+				add_stability = -0.1
+				add_war_support = 0.15
+			}
 		}
 		focus = {
 			id = CRO_national_guard
@@ -2346,7 +2375,16 @@ completion_reward = {
 			}
 			x = 31
 			y = 5
-	
+			completion_reward = {
+					random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+					}
+			}
 		}
 		focus = {
 			id = CRO_find_nazor
@@ -2360,7 +2398,13 @@ completion_reward = {
 			}
 			x = 30
 			y = 6
-	
+			completion_reward = {
+				kill_ideology_leader = neutrality
+				add_popularity = {
+					ideology = neutrality
+					popularity = -0.15
+				}
+			}
 		}
 		focus = {
 			id = CRO_bosnian_divisions
@@ -2374,7 +2418,9 @@ completion_reward = {
 			}
 			x = 28
 			y = 6
-	
+			completion_reward = {
+				load_oob = BOS_CRO_1936
+			}
 		}
 		focus = {
 			id = CRO_anti_communist_legion
@@ -2405,7 +2451,17 @@ completion_reward = {
 			}
 			x = 30
 			y = 7
-	
+			completion_reward = {
+				add_popularity = {
+					ideology = communism
+					popularity = -1
+				}
+				set_party_name = {
+					ideology = communism
+					long_name = CRO_communism_party_ban_long
+					name = CRO_communism_party_ban
+				}
+			}
 		}
 		focus = {
 			id = CRO_remove_tito
@@ -2416,11 +2472,22 @@ completion_reward = {
 			}
 			x = 30
 			y = 8
-	
+				completion_reward = {
+					random_list = {
+						50 = {
+							kill_ideology_leader = communism
+							set_global_flag = Tito_killed
+						}
+						50 = {
+							custom_effect_tooltip = iosip_tito_escapes_tt
+							retire_character = CRO_josip_broz_tito
+							}
+						}
+			}
 		}
 		focus = {
 			id = CRO_deport_them
-			icon = GFX_goal_unknown
+			icon = GFX_goal_generic_expel_people
 			cost = 10
 			prerequisite = {
 				focus = CRO_remove_tito
@@ -2430,11 +2497,15 @@ completion_reward = {
 			}
 			x = 29
 			y = 9
-	
+			completion_reward = {
+				109 = {
+				add_manpower = -5000
+				}
+			}
 		}
 		focus = {
 			id = CRO_integrate_muslim_croatians
-			icon = GFX_goal_unknown
+			icon = GFX_goal_OTT_Muslim_Relations
 			cost = 10
 			prerequisite = {
 				focus = CRO_remove_tito

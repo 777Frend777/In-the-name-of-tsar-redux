@@ -39,11 +39,15 @@ on_actions = {
 					SER = {
 						has_war_with = CRO
 					}
+					
 				}
 				}
 				SER = {
 				remove_ideas = SER_frozen_war
 				}
+				MNT = {
+					remove_ideas = MNT_buffer_state
+					}
 				CRO = {
 					remove_ideas = CRO_frozen_war
 					}
