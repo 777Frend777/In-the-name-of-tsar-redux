@@ -280,9 +280,13 @@ ideologies = {
 			
 			falangism = {
 			}
+
+			clerical_fascism = {
+			}
 			
 			rexism = {
 			}
+
 			fascism_subtype = {
 			}
 		}

@@ -31,4 +31,12 @@ spriteTypes = {
 		name = "GFX_idea_SER_frozen_war"
 		texturefile = "gfx/interface/ideas/SER/SER_frozen_war.png"
 	}
+	spriteType = {
+		name = "GFX_idea_MNT_buffer_state"
+		texturefile = "gfx/interface/ideas/MNT/MNT_buffer_state.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_clerical_fascism"
+		texturefile = "gfx/interface/ideologies/subideologies/clerical_fascism.png"
+	}
 }

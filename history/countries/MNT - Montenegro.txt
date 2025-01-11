@@ -17,6 +17,10 @@ set_technology = {
 	early_submarine = 1
 }
 
+add_ideas = {
+MNT_buffer_state
+}
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.7.1"
