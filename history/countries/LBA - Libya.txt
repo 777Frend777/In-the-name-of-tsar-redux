@@ -8,6 +8,12 @@ set_technology = {
 	gwtank = 1
 }
 
+add_ideas = {
+LBA_Senussi_Order
+LBA_traders_of_east_sahara
+LBA_Between_colonisers
+}
+
 set_convoys = 20
 
 1939.1.1 = {

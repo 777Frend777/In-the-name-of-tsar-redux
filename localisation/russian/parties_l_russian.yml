@@ -1059,3 +1059,7 @@
  TUK_fascism_party_long:0 "Osmanlıcı Parti"
  TUK_neutrality_party: "EP" #NT!
  TUK_neutrality_party_long: "Enverist Partisi" #NT!
+
+#Vatican
+ VAT_neutrality_party:0 "ПСП"
+ VAT_neutrality_party_long:0 "Партия  Святого  Престола"

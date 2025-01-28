@@ -1129,3 +1129,7 @@ l_english:
  ALB_socialist_party_long:0 "Komiteti Kombëtar Revolucionar" 
  ALB_communism_party:0 "National Revolutionary Committee"
  ALB_communism_party_long:0 "Komiteti Kombëtar Revolucionar" 
+
+#Vatican
+ VAT_neutrality_party:0 "HSP"
+ VAT_neutrality_party_long:0 "Holy See Party"

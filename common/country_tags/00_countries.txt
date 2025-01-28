@@ -240,7 +240,7 @@ UDM = "countries/Udmurtia.txt"
 CHU = "countries/Chuvashia.txt"
 MEL = "countries/Mariel.txt"
 
-###INOT Tags here###
+###INOT/INOTR Tags here###
 BAV = "countries/Bavaria.txt"	#Custom Tag here
 RUS = "countries/Russia.txt"
 RHN = "countries/Rhine.txt" 
@@ -277,3 +277,4 @@ DOV = "countries/drozdov.txt"
 MKV = "countries/markov.txt"
 GMC = "countries/GMC.txt"
 DAL = "countries/DAL.txt"
+VAT = "countries/Vatican.txt"

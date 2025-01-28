@@ -324,7 +324,7 @@ ideologies = {
 	}
 	
 	
-	Annihilationism = { #taboritsky reference
+	Annihilationism = {
 	
 	types = {
 	
