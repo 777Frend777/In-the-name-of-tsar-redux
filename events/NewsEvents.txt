@@ -13222,3 +13222,23 @@ news_event = {
 		
 	}
 }
+#unification war of saudi arabia
+news_event = {
+	id = news.341
+	title = news.341.t
+	desc = news.341.d
+	picture = GFX_news_event_OTT_buraimi
+	
+	major = yes
+
+	is_triggered_only = yes
+
+
+	immediate = {
+
+	}
+	option = {
+		name = news.341.a
+		
+	}
+}

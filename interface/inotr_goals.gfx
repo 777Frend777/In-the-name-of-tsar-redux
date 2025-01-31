@@ -5245,4 +5245,28 @@ spriteTypes = {
 		name = "GFX_focus_tito_has_won_election"
 		texturefile = "gfx/interface/goals/tito_has_won_election.png"
 	}
+	SpriteType = { 
+		name = "GFX_focus_end_all_reforms"
+		texturefile = "gfx/interface/goals/end_all_reforms.png"
+	}
+	SpriteType = { 
+		name = "GFX_focus_time_for_unification"
+		texturefile = "gfx/interface/goals/time_for_unification.png"
+	}
+	SpriteType = { 
+		name = "GFX_focus_Get_weapons"
+		texturefile = "gfx/interface/goals/Get_weapons.png"
+	}
+	SpriteType = { 
+		name = "GFX_focus_volunteers_from_all_arabian_countries"
+		texturefile = "gfx/interface/goals/volunteers_from_all_arabian_countries.png"
+	}
+	SpriteType = { 
+		name = "GFX_focus_Heart_of_Arabia"
+		texturefile = "gfx/interface/goals/Heart_of_Arabia.png"
+	}
+	SpriteType = { 
+		name = "GFX_focus_improve_our_infrastucture"
+		texturefile = "gfx/interface/goals/improve_our_infrastucture.png"
+	}
 }

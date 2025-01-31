@@ -1,0 +1,40 @@
+division_template = {
+	name = "Militia"		# 'Infantry Division' - Represents local tribal levies (militia)
+
+	division_names_group = SAU_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Militia"		# Camel-mounted levies (militia)
+
+	division_names_group = SAU_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+	######## No notable air force ########
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "JBS"
+		}
+		requested_factories = 1
+		progress = 0.38
+		efficiency = 100
+	}
+}

@@ -1,0 +1,44 @@
+###########################
+# Saudi arabian Events
+###########################
+
+add_namespace = sau
+
+# arabs has took our land in middle east to ENG
+country_event = {
+	id = sau.1
+	title = sau.1.t
+	desc = sau.1.d
+	picture = GFX_OTT_Civil_War_Jabal
+
+	is_triggered_only = yes
+
+	option = {
+		name = sau.1.a
+		ENG = {
+		declare_war_on = {
+			target = HEJ
+			type = annex_everything
+		 }
+		 declare_war_on = {
+			target = SAU
+			type = annex_everything
+		 }
+		 declare_war_on = {
+			target = IKH
+			type = annex_everything
+		 }
+		 declare_war_on = {
+			target = JBS
+			type = annex_everything
+		 }
+		}
+}
+option = {
+	name = sau.1.b
+	ai_chance = {
+		base = 90
+		factor = 10
+	}
+}
+ }

@@ -46,7 +46,6 @@ LBA_decisions = {
 			country_exists = LBA
 			country_exists = EGY
 		}
-		will_lead_to_war_with = LBA
 		days_remove = 30
 		ai_will_do = {
 			factor = 100000

@@ -125,6 +125,11 @@ country_event = { #polish victory
 
 	option = {
 		name = pol.2.a	
+		hidden_effect = {
+			load_focus_tree = {
+				tree = polandindependence
+			}
+		}
 		ai_chance = { factor = 100 }
 	}
 }
