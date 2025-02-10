@@ -1,0 +1,9 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			RUS = {
+			set_global_flag = VOLGA_DON_NOT_BUILT
+			}
+		}
+	}
+}
