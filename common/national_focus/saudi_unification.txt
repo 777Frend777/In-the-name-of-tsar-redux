@@ -12,6 +12,7 @@ focus_tree = {
 			}
 		}
 	}
+	continuous_focus_position = { x = 50 y = 1350 }
 	default = no
 	focus = {
 		id = Heart_of_Arabia
@@ -26,7 +27,30 @@ focus_tree = {
 	}
 	focus = {
 		id = Egyptian_volunteers
-		icon = GFX_goal_EGY_sons
+		icon = {
+			value = GFX_focus_SAU_Egyptian_volunteers
+			trigger = {
+				original_tag = SAU
+			}
+		}
+		icon = {
+			value = GFX_focus_IKH_Egyptian_volunteers
+			trigger = {
+				original_tag = IKH
+			}
+		}
+		icon = {
+			value = GFX_focus_HEJ_Egyptian_volunteers
+			trigger = {
+				original_tag = HEJ
+			}
+		}
+		icon = {
+			value = GFX_focus_JBS_Egyptian_volunteers
+			trigger = {
+				original_tag = JBS
+			}
+		}
 		cost = 2
 		prerequisite = {
 			focus = Heart_of_Arabia
@@ -223,7 +247,30 @@ focus_tree = {
 	}
 	focus = {
 		id = We_united_again
-		icon = GFX_goal_unknown
+		icon = {
+			value = GFX_focus_IKH_We_united_again
+			trigger = {
+				original_tag = IKH
+			}
+		}
+		icon = {
+			value = GFX_focus_We_united_again
+			trigger = {
+				original_tag = SAU
+			}
+		}
+		icon = {
+			value = GFX_focus_We_united_again
+			trigger = {
+				original_tag = JBS
+			}
+		}
+		icon = {
+			value = GFX_focus_We_united_again
+			trigger = {
+				original_tag = HEJ
+			}
+		}
 		cost = 1
 		prerequisite = {
 			focus = time_for_unification
@@ -270,7 +317,7 @@ every_state = {
 		}
 	focus = {
 		id = demand_our_lands_from_uk
-		icon = GFX_goal_unknown
+		icon = GFX_focus_demand_our_lands_from_uk
 		cost = 3
 		prerequisite = {
 			focus = We_united_again
@@ -283,6 +330,112 @@ every_state = {
 				transfer_state = 859
 			}
 			ENG = { country_event = sau.1 }
+		}
+	}
+	focus = {
+		id = we_now_ruling_saudi
+		icon = GFX_goal_SAU_royal_house
+		mutually_exclusive = {
+			focus = go_with_turkey_jabal
+		}
+		mutually_exclusive = {
+			focus = peace_time_hejaz
+		}
+		mutually_exclusive = {
+			focus = time_for_jihad_ikhwan
+		}
+		cost = 3
+		available = {
+			tag = SAU
+			has_war = no
+		}
+		prerequisite = {
+			focus = demand_our_lands_from_uk
+		}
+		x = 6
+		y = 7
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = time_for_jihad_ikhwan
+		icon = GFX_goal_hunt_down_saudis
+		mutually_exclusive = {
+			focus = go_with_turkey_jabal
+		}
+		mutually_exclusive = {
+			focus = peace_time_hejaz
+		}
+		mutually_exclusive = {
+			focus = we_now_ruling_saudi
+		}
+		cost = 3
+		available = {
+			tag = IKH
+			has_war = no
+		}
+		prerequisite = {
+			focus = demand_our_lands_from_uk
+		}
+		x = 8
+		y = 7
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = peace_time_hejaz
+		icon = GFX_goal_HEJ_royal_house_hashemite
+		cost = 3
+		mutually_exclusive = {
+			focus = go_with_turkey_jabal
+		}
+		mutually_exclusive = {
+			focus = time_for_jihad_ikhwan
+		}
+		mutually_exclusive = {
+			focus = we_now_ruling_saudi
+		}
+		available = {
+			tag = HEJ
+			has_war = no
+		}
+		prerequisite = {
+			focus = demand_our_lands_from_uk
+		}
+		x = 10
+		y = 7
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = go_with_turkey_jabal
+		icon = GFX_goal_JBS_royal_house_rashid
+		cost = 3
+		available = {
+			tag = JBS
+			has_war = no
+		}
+		mutually_exclusive = {
+			focus = peace_time_hejaz
+		}
+		mutually_exclusive = {
+			focus = time_for_jihad_ikhwan
+		}
+		mutually_exclusive = {
+			focus = we_now_ruling_saudi
+		}
+		prerequisite = {
+			focus = demand_our_lands_from_uk
+		}
+		x = 4
+		y = 7
+		completion_reward = {
+			TUR = {
+			puppet = {
+				target = JBS
+				end_wars = yes
+			}
+		}
 		}
 	}
 }

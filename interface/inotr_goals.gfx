@@ -5269,4 +5269,32 @@ spriteTypes = {
 		name = "GFX_focus_improve_our_infrastucture"
 		texturefile = "gfx/interface/goals/improve_our_infrastucture.png"
 	}
+	SpriteType = { 
+		name = "GFX_focus_demand_our_lands_from_uk"
+		texturefile = "gfx/interface/goals/demand_our_lands_from_uk.png"
+	}
+	SpriteType = { 
+		name = "GFX_focus_We_united_again"
+		texturefile = "gfx/interface/goals/We_united_again.png"
+	}
+	SpriteType = { 
+		name = "GFX_focus_SAU_Egyptian_volunteers"
+		texturefile = "gfx/interface/goals/SAU_Egyptian_volunteers.png"
+	}
+	SpriteType = { 
+		name = "GFX_focus_JBS_Egyptian_volunteers"
+		texturefile = "gfx/interface/goals/JBS_Egyptian_volunteers.png"
+	}
+	SpriteType = { 
+		name = "GFX_focus_IKH_Egyptian_volunteers"
+		texturefile = "gfx/interface/goals/IKH_Egyptian_volunteers.png"
+	}
+	SpriteType = { 
+		name = "GFX_focus_HEJ_Egyptian_volunteers"
+		texturefile = "gfx/interface/goals/HEJ_Egyptian_volunteers.png"
+	}
+	SpriteType = { 
+		name = "GFX_focus_IKH_We_united_again"
+		texturefile = "gfx/interface/goals/IKH_We_united_again.png"
+	}
 }
