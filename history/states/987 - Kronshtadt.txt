@@ -1,0 +1,26 @@
+
+state={
+	id=987
+	name="STATE_987"
+	manpower =30000
+	
+	
+	state_category = town
+
+	history={
+		owner = RUS
+		victory_points = {
+			13858 5 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+	}
+
+	provinces={
+		13858
+	}
+
+	local_supplies=7.0 
+}
