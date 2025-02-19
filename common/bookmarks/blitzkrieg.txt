@@ -4,115 +4,67 @@ bookmarks = {
 		desc = "ORIENT_DESC"
 		date = 1936.1.1.12
 		picture = "GFX_select_date_1939"
-		default_country = "JAP"
+		default_country = "RUS"
 		default = yes
 		
-		"JAP"={
-			history = "JAP_Occident_DESC"
-			ideology = fascism
-			ideas = {
-			JAP_army_planning
-			JAP_democratic_popularity
-			JAP_slaves
-			}	
-			focuses = {
-				JAP_liberalization_of_regime
-				JAP_rising_sun
-				JAP_military
-			}			
-		}
-		
-		"RUS"={
-			history = "RUS_ORIENT_DESC"
-			ideology = neutrality
-			ideas = {
-				RUS_russian_monarchy
-				FRA_victors_of_wwi
-				RUS_okhranka
-			}
-			focuses = {
-			RUS_cult_monarchy
-			RUS_regain_stability
-			RUS_contest_UK
-			}
-		}
-
 		"GER"= {
-			history = "GER_ORIENT_DESC"
+			history = "GER_Occident_DESC"
 			ideology = neutrality
 			ideas = {
-			ITA_economic_dependence_allies
-			GER_wilhelm_II
+				GER_wilhelm_II
 			}
 			focuses = {
-			GRK_one_germany
-			GER_fascist
-			GER_prussian_eco
-			GER_start_bomber
+				GER_freikorps
+				GER_prussian_eco
+				GER_army_innovations
+				
 			}
 		}
 		
-
 		"ENG"={
-			history = "ENG_ORIENT_DESC"
-			ideology = conservatives
-			ideas = {
-			george_v
-			UK_remembrance_of_1926_strike
-			FRA_victors_of_wwi
-			}
-			focuses = {
-			UK_reinforce_empire
-			UK_against_RUS
-			UK_political_stability
-			}
-		}
-			
-		"EGY"={
-			history = "EGY_ORIENT_DESC"
-			ideology = neutrality
-			ideas = {
-			fuad_i_of_egypt
-			resistance_to_british_occupation
-			divided_under_pharaonism
-			}
-			focuses = {
-			EGY_reform_agrarian_culture
-			EGY_prepare_for_the_next_war
-			EGY_anglo-egyptian_treaty
-			}	
-		}
-		"FRA"={
-			history = "FRA_ORIENT_DESC"
+			history = "ENG_Occident_DESC"
 			ideology = democratic
 			ideas = {
-			FRA_victors_of_wwi
-			FRA_inefficient_gov_idea
-			FRA_political_instability_idea
-			}	
+				stiff_upper_lip
+				ENG_the_war_to_end_all_wars
+				george_v
+			}
 			focuses = {
-			FR_demo
-			FR_adress_industry
-			FR_natural_borders
-			}			
+				UK_world_power
+				UK_embargo_RUS
+				UK_intervene_usa
+			}
 		}
-		"POL"={
-			minor = yes
-			history = "POL_Occident_DESC"
-			ideology = neutrality
+		"FRA"={
+			history = "FRA_Occident_DESC"
+			ideology = democratic
 			ideas = {
-				POL_clock_is_ticking
-				POL_four_year_plan
-				POL_spirit_of_freedom1
-			}	
+				FRA_scars_of_the_great_war
+				FRA_inefficient_gov_idea
+				FRA_political_instability_idea
+			}
 			focuses = {
-				POL_revenge
-				POL_resume_plan
-				POL_poland_marriage
-			}			
+				FR_demo
+				FR_commi
+				FR_fascist
+			}
+		}
+
+		"BAV"={
+			history = "BAV_Occident_DESC"
+			ideology = communism
+			ideas = {
+			BAV_home_of_revolution
+			BAV_national	
+			BAV_plot_against_the_commune
+			}
+			focuses = {
+				BAV_purge
+				BAV_liberate_french
+				BAV_world_revolution
+			}
 		}
 		"TUR"={
-			minor = yes
 			history = "TUR_Occident_DESC"
 			ideology = neutrality
 			ideas = {
@@ -125,10 +77,39 @@ bookmarks = {
 			TUR_turkification
 			}			
 		}
-		
-		
-		
-
+			
+		"RUS"={
+			history = "RUS_Occident_DESC"
+			ideology = democratic
+			ideas = {
+			#RUS_agricole_power
+			RUS_russian_monarchy
+			RUS_church
+			RUS_peasant_unrest
+			
+				
+			}
+			focuses = {
+			RUS_consolidate_eastern_coalition
+			RUS_greater_russia
+			RUS_army_modernization	
+				
+			}	
+		}
+		"ITA"={
+			history = "ITA_Occident_DESC"
+			ideology = conservatives
+			ideas = {
+				victor_emmanuel
+				ITA_economic_dependence_allies
+				ITA_army_shortages_idea
+			}	
+			focuses = {
+				ITA_preserve_democracy
+				ITA_communist_party
+				ITA_nationalist_party
+			}			
+		}
 		"---"={
 			history = "OTHER_Occident_DESC"
 		}

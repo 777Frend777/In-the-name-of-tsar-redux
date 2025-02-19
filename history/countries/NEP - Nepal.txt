@@ -26,6 +26,7 @@ recruit_character = NEP_sidney_r_planter
 
 add_ideas = {
 	NEP_royal_army
+	NEP_himalayan_kingdom
 }
 
 # Starting tech
