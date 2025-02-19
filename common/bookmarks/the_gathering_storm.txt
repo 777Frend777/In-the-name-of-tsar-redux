@@ -6,19 +6,18 @@ bookmarks = {
 		picture = "GFX_select_date_1936"
 		default_country = "RUS"
 		default = yes
-		
-		"FRA"={
-			history = "FRA_Occident_DESC"
-			ideology = democratic
+
+		"GER"= {
+			history = "GER_Occident_DESC"
+			ideology = neutrality
 			ideas = {
-				FRA_scars_of_the_great_war
-				FRA_inefficient_gov_idea
-				FRA_political_instability_idea
+				GER_wilhelm_II
 			}
 			focuses = {
-				FR_demo
-				FR_commi
-				FR_fascist
+				GER_freikorps
+				GER_prussian_eco
+				GER_army_innovations
+				
 			}
 		}
 		
@@ -36,6 +35,21 @@ bookmarks = {
 				UK_intervene_usa
 			}
 		}
+		"FRA"={
+			history = "FRA_Occident_DESC"
+			ideology = democratic
+			ideas = {
+				FRA_scars_of_the_great_war
+				FRA_inefficient_gov_idea
+				FRA_political_instability_idea
+			}
+			focuses = {
+				FR_demo
+				FR_commi
+				FR_fascist
+			}
+		}
+
 		"BAV"={
 			history = "BAV_Occident_DESC"
 			ideology = communism
@@ -50,36 +64,18 @@ bookmarks = {
 				BAV_world_revolution
 			}
 		}
-		
-
-		"GER"= {
-			history = "GER_Occident_DESC"
+		"TUR"={
+			history = "TUR_Occident_DESC"
 			ideology = neutrality
 			ideas = {
-				GER_wilhelm_II
-			}
+			TUR_sharia_law
+			TUR_disjointed_nation
+			}	
 			focuses = {
-				GER_freikorps
-				GER_prussian_eco
-				GER_army_innovations
-				
-			}
-		}
-		
-
-		"USA"={
-			history = "USA_Occident_DESC"
-			ideology = democratic
-			ideas = {
-				us_isolationism_policy
-				US_unemployment_rate
-				US_famine_stage_1_idea
-			}
-			focuses = {
-				US_dpt_labour
-				US_ally_silver_legion
-				US_reform_treasury
-			}
+			TUR_Kemalism_lives
+			TUR_jihad
+			TUR_turkification
+			}			
 		}
 			
 		"RUS"={
@@ -114,24 +110,6 @@ bookmarks = {
 				ITA_nationalist_party
 			}			
 		}
-		"POL"={
-			minor = yes
-			history = "POL_Occident_DESC"
-			ideology = neutrality
-			ideas = {
-				POL_clock_is_ticking
-				POL_four_year_plan
-				POL_spirit_of_freedom1
-			}	
-			focuses = {
-				POL_revenge
-				POL_resume_plan
-				POL_poland_marriage
-			}			
-		}
-		
-		
-
 		"---"={
 			history = "OTHER_Occident_DESC"
 		}
