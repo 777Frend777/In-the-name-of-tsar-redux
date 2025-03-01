@@ -73,6 +73,9 @@ if = {
 	}
 	set_naval_oob = "WST_1936_naval"
 }
+add_ideas = {
+	WST_disapproval_from_the_crown
+}
 
 recruit_character = WST_Keith_Watson
 
