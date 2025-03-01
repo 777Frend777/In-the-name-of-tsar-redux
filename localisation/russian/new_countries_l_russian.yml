@@ -253,8 +253,8 @@
  LIT_fascism_DEF: "Великое Литовское государство" #NT!
  LIT_neutrality: "Литва" #NT!
  LIT_neutrality_DEF: "Литва" #NT!
- LIT_socialist: "Литва" #NT!
- LIT_socialist_DEF: "Литва" #NT!
+ LIT_socialist: "Литовская Республика" #NT!
+ LIT_socialist_DEF: "Литовская Республика" #NT!
  LIT_conservatives: "Литва" #NT!
  LIT_conservatives_DEF: "Литва" #NT!
  LIT_democratic: "Литовская Республика" #NT!
@@ -267,8 +267,8 @@
  LIT_communism_ADJ: "Литовский" #NT!
  LIT_socialist_ADJ: "Литовский" #NT!
  LIT_conservatives_ADJ: "Литовский" #NT!
- EST_fascism: "Балтийская империя" #NT!
- EST_fascism_DEF: "Балтийская империя" #NT!
+ EST_fascism: "Великая Эстония" #NT!
+ EST_fascism_DEF: "Великая Эстония" #NT!
  EST_neutrality: "Эстония" #NT!
  EST_neutrality_DEF: "Эстония" #NT!
  EST_democratic: "Эстонская Республика" #NT!
@@ -279,30 +279,30 @@
  EST_socialist_DEF: "Эстонская Республика" #NT!
  EST_conservatives: "Эстония" #NT!
  EST_conservatives_DEF: "Эстония" #NT!
- EST_fascism_ADJ: "Балтика" #NT!
- EST_democratic_ADJ: "эстонский" #NT!
- EST_neutrality_ADJ: "эстонский" #NT!
- EST_communism_ADJ: "эстонский" #NT!
- EST_socialist_ADJ: "эстонский" #NT!
- EST_conservatives_ADJ: "эстонский" #NT!
+ EST_fascism_ADJ: "Эстонский" #NT!
+ EST_democratic_ADJ: "Эстонский" #NT!
+ EST_neutrality_ADJ: "Эстонский" #NT!
+ EST_communism_ADJ: "Эстонский" #NT!
+ EST_socialist_ADJ: "Эстонский" #NT!
+ EST_conservatives_ADJ: "Эстонский" #NT!
  LAT_socialist: "Латвийская Республика" #NT!
  LAT_socialist_DEF: "Латвийская Республика" #NT!
  LAT_conservatives: "Латвия" #NT!
  LAT_conservatives_DEF: "Латвия" #NT!
- LAT_fascism: "Рижская Империя" #NT!
- LAT_fascism_DEF: "Рижская Империя" #NT!
+ LAT_fascism: "Великая Латвия" #NT!
+ LAT_fascism_DEF: "Великая Латвия" #NT!
  LAT_democratic: "Латвия" #NT!
  LAT_democratic_DEF: "Латвия" #NT!
- LAT_neutrality: "Курземе-Ливония" #NT!
- LAT_neutrality_DEF: "Курземе-Ливония" #NT!
- LAT_communism: "Латвийская ССР" #NT!
- LAT_communism_DEF: "Латвийская ССР" #NT!
+ LAT_neutrality: "Латвия" #NT!
+ LAT_neutrality_DEF: "Латвия" #NT!
+ LAT_communism: "Латвийская Народная Республика" #NT!
+ LAT_communism_DEF: "Латвийская Народная Республика" #NT!
  LAT_socialist_ADJ: "Латышский" #NT!
  LAT_conservatives_ADJ: "Латышский" #NT!
- LAT_fascism_ADJ: "Рижанин" #NT!
- LAT_democratic_ADJ: "Куршско-Ливонский" #NT!
- LAT_neutrality_ADJ: "Ливонский" #NT!
- LAT_communism_ADJ: "Куршско-Ливонский" #NT!
+ LAT_fascism_ADJ: "Латышский" #NT!
+ LAT_democratic_ADJ: "Латышский" #NT!
+ LAT_neutrality_ADJ: "Латышский" #NT!
+ LAT_communism_ADJ: "Латышский" #NT!
   #Nationalist Spain 
  SPR_fascism: "Испанское государство" #NT!
  SPR_fascism_DEF: "Испанское государство" #NT!
