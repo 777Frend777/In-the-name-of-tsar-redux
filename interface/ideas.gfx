@@ -8232,4 +8232,10 @@ spriteTypes = {
 		name = "GFX_idea_SLV_enemies"
 		texturefile = "gfx/interface/ideas/SLV/SLV_enemies.png"
 	}
+
+	### WESTRALIA ###
+	spriteType = {
+		name = "GFX_idea_WST_flag_up"
+		texturefile = "gfx/interface/ideas/WST_flag_up.png"
+	}
 }

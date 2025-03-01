@@ -1,0 +1,10 @@
+ideas = {
+	country = {
+        WST_disapproval_from_the_crown = {
+            picture = WST_flag_up
+            modifier = {
+                stability_factor = -0.1
+            }
+        }
+    }
+}
