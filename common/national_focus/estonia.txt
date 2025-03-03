@@ -290,5 +290,124 @@
 	    }
     }
 
+	focus = {
+		id = EST_postwar_estonia
+		icon = GFX_goal_red_star_gold_wreath
+		x = 30
+		y = 0
+		cost = 4
+		
+		
+		available_if_capitulated = yes
+		
+	    completion_reward = {
+ 
+	    }
+    }
+
+	focus = {
+		id = EST_question_of_communism_on_elections
+		icon = GFX_goal_red_star_gold_wreath
+		prerequisite = { focus = EST_postwar_estonia }
+		x = -1
+		y = 1
+		relative_position_id = EST_postwar_estonia
+		cost = 4
+		
+		
+		available_if_capitulated = yes
+		
+	    completion_reward = {
+
+	    }
+    }
+
+	focus = {
+		id = EST_law_on_the_abolition_of_estates
+		icon = GFX_goal_red_star_gold_wreath
+		prerequisite = { focus = EST_postwar_estonia }
+		x = 1
+		y = 1
+		relative_position_id = EST_postwar_estonia
+		cost = 4
+		
+		
+		available_if_capitulated = yes
+		
+	    completion_reward = {
+		    add_manpower = 20000
+ 
+	    }
+    }
+
+	focus = {
+		id = EST_holding_elections
+		icon = GFX_goal_red_star_gold_wreath
+		prerequisite = { focus = EST_question_of_communism_on_elections }
+		prerequisite = { focus = EST_law_on_the_abolition_of_estates }
+		x = 0
+		y = 2
+		relative_position_id = EST_postwar_estonia
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+	    completion_reward = {
+ 
+	    }
+    }
+
+	focus = {
+		id = EST_konstantin_pats_victory 
+		icon = GFX_goal_red_star_gold_wreath
+		prerequisite = { focus = EST_holding_elections }
+		x = 0
+		y = 4
+		relative_position_id = EST_postwar_estonia
+		cost = 4
+		
+		
+		available_if_capitulated = yes
+		
+	    completion_reward = {
+ 
+	    }
+    }
+
+	focus = {
+		id = EST_carry_out_monetary_reform
+		icon = GFX_goal_red_star_gold_wreath
+		prerequisite = { focus = EST_konstantin_pats_victory }
+		x = 1
+		y = 5
+		relative_position_id = EST_postwar_estonia
+		cost = 4
+		
+		
+		available_if_capitulated = yes
+		
+	    completion_reward = {
+ 
+	    }
+    }
+
+	focus = {
+		id = EST_carry_out_monetary_reform
+		icon = GFX_goal_red_star_gold_wreath
+		prerequisite = { focus = EST_konstantin_pats_victory }
+		x = -1
+		y = 5
+		relative_position_id = EST_postwar_estonia
+		cost = 4
+		
+		
+		available_if_capitulated = yes
+		
+	    completion_reward = {
+ 
+	    }
+    }
+
 
 }
