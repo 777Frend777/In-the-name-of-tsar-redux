@@ -1,0 +1,20 @@
+###########################
+# Estonian Events ###########last is 131
+###########################
+
+add_namespace = estonia
+
+#####################################################################################################################################################
+#War fatigue
+country_event = {
+	id = estonia.1
+	title = estonia.1.t
+	desc = estonia.1.d
+	picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+
+	option = {
+		name = estonia.1.a	
+        add_ideas = EST_war_fatigue
+	}
+}

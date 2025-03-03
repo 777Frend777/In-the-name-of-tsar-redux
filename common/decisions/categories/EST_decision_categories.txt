@@ -1,0 +1,17 @@
+##### EST ######
+
+EST_war_of_independence = {
+	icon = GFX_decision_category_generic_independence
+	
+	picture = GFX_decision_cat_picture_disestablish_british_influence
+	
+	priority = {
+		base = 90
+	}
+	allowed = {
+		original_tag = EST
+	}
+	visible = {
+		has_completed_focus = EST_convene_the_high_command
+	}
+}
